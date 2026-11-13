@@ -1,0 +1,13 @@
+{
+  "name": "sporttery-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "SportteryAPI 统一调用桥 — MCP / REST / 直接库调用 多方法回退，供竞彩 Agent 管道使用",
+  "scripts": {
+    "cli": "node --no-warnings --experimental-strip-types bin/sporttery.mjs",
+    "self-test": "node --no-warnings --experimental-strip-types bin/sporttery.mjs self-test",
+    "methods": "node --no-warnings --experimental-strip-types bin/sporttery.mjs methods",
+    "matches": "node --no-warnings --experimental-strip-types bin/sporttery.mjs matches --pools had,hhad,crs,ttg,hafu"
+  }
+}

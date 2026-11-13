@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>金泉尚武 vs 大田市民 深度分析 | 2026-07-25</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0f0f1a;color:#e0e0e0;font-family:'Segoe UI',system-ui,sans-serif;line-height:1.7}
+.header{background:linear-gradient(135deg,#1a1a3e,#2d1b4e);padding:30px;text-align:center;border-bottom:3px solid #ff6b35}
+.header h1{font-size:2em;color:#fff;margin-bottom:6px}
+.header p{color:#aaa;font-size:0.9em}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.section{background:#1a1a2e;border:1px solid #2a2a4a;border-radius:12px;margin-bottom:20px;overflow:hidden}
+.section-header{background:#252545;padding:12px 16px;font-size:1.05em;font-weight:700;color:#ff6b35;border-bottom:1px solid #333}
+.section-body{padding:16px}
+table{width:100%;border-collapse:collapse;font-size:0.88em;margin-bottom:10px}
+th{background:#252545;color:#aaa;padding:7px 10px;text-align:left;font-weight:500;border-bottom:2px solid #333}
+td{padding:6px 10px;border-bottom:1px solid #1a1a2e}
+tr:hover td{background:#1e1e35}
+.up{color:#4caf50;font-weight:600}.dn{color:#f44336;font-weight:600}.dr{color:#ff9800;font-weight:600}
+.bold{font-weight:700;color:#fff}
+.highlight{color:#ffeb3b;font-weight:700}
+.tag{display:inline-block;padding:2px 10px;border-radius:10px;font-size:0.78em;margin:2px}
+.tag-official{background:#1a3a5a;color:#4fc3f7}.tag-ext{background:#3a3a1a;color:#ffeb3b}
+.tag-rule{background:#4a2a4a;color:#ce93d8}.tag-risk{background:#4a2a2a;color:#ef9a9a}
+.tag-h{background:#2d4a2d;color:#4caf50}.tag-d{background:#4a4a2d;color:#ff9800}.tag-a{background:#4a2d2d;color:#f44336}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+@media(max-width:768px){.grid2,.grid3{grid-template-columns:1fr}}
+.progress-bar{background:#1a1a2e;border-radius:6px;height:22px;overflow:hidden;position:relative;margin:2px 0}
+.progress-fill{height:100%;border-radius:6px;display:flex;align-items:center;padding-left:8px;font-size:0.8em;color:#fff;font-weight:600}
+.rec-box{background:linear-gradient(135deg,#1a2a3e,#2a1a3e);border-radius:10px;padding:16px;margin-top:12px}
+.rec-box h3{color:#ff6b35;margin-bottom:8px;font-size:1em}
+.rec-box p{font-size:0.9em;color:#ccc;margin-bottom:4px}
+.stat-card{background:#252545;border-radius:8px;padding:12px;text-align:center}
+.stat-card .val{font-size:1.6em;font-weight:700;color:#ff6b35}
+.stat-card .lbl{font-size:0.8em;color:#aaa;margin-top:2px}
+.conf-high{color:#4caf50}.conf-mid{color:#ff9800}.conf-low{color:#f44336}
+.risk-box{background:#2a1a1a;border:1px solid #4a2a2a;border-radius:10px;padding:16px;margin-top:20px;font-size:0.85em;color:#cc8888;text-align:center}
+.odds-table{font-size:0.85em}
+.odds-table td{padding:4px 8px}
+.divider{border-top:1px solid #333;margin:12px 0}
+.note{background:#1e1e38;border-radius:8px;padding:10px 14px;margin:8px 0;font-size:0.85em;color:#bbb;border-left:3px solid #ff6b35}
+.warning{background:#3a2a1a;border-left:3px solid #ff9800;border-radius:0 8px 8px 0;padding:10px 14px;margin:8px 0;font-size:0.85em;color:#ffd54f}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>金泉尚武 vs 大田市民 深度分析</h1>
+<p>2026-07-25 18:30 (周六) | 韩K联第20轮 | 编号201 | 标准泊松(主)+DC(辅)+Skellam+NB+蒙特卡洛+Shin校准</p>
+</div>
+<div class="container">
+
+<div class="grid3" style="margin-bottom:20px">
+<div class="stat-card"><div class="val">22.2%</div><div class="lbl">主胜(融合)</div></div>
+<div class="stat-card"><div class="val" style="color:#ff9800">34.0%</div><div class="lbl">平局(融合)</div></div>
+<div class="stat-card"><div class="val" style="color:#f44336">43.9%</div><div class="lbl">客胜(融合)</div></div>
+</div>
+<div class="grid3" style="margin-bottom:20px">
+<div class="stat-card"><div class="val" style="font-size:1.3em">★★</div><div class="lbl">中置信度</div></div>
+<div class="stat-card"><div class="val">1.892</div><div class="lbl">预期总进球</div></div>
+<div class="stat-card"><div class="val">71%</div><div class="lbl">小球2.5概率</div></div>
+</div>
+
+<div class="section">
+<div class="section-header">基本信息</div>
+<div class="section-body">
+<table>
+<tr><th>联赛</th><td>韩国K联赛1 2026赛季 第20轮</td><th>比赛时间</th><td>2026-07-25 18:30 (北京时间)</td></tr>
+<tr><th>主队</th><td>金泉尚武 [联赛第11, 17分]</td><th>客队</th><td>大田市民 [联赛第9, 20分]</td></tr>
+<tr><th>主队战绩</th><td>19轮 2胜11平6负 (平局率58%)</td><th>客队战绩</th><td>19轮 4胜8平7负</td></tr>
+<tr><th>主场战绩</th><td class="dn">9场 0胜6平3负 (主场0胜!)</td><th>客场战绩</th><td class="up">9场 4胜3平2负 (客场龙)</td></tr>
+<tr><th>主队近6轮</th><td>0胜4平2负 (连续8轮不胜)</td><th>客队近6轮</th><td>0胜4平2负 (85天不胜)</td></tr>
+</table>
+<div class="note">
+<b>核心矛盾：</b>「平局大师」(金泉58%平局率, 主场0胜) vs「客场龙」(大田4胜全来自客场, 客场场均仅失0.67球)。
+金泉急需打破主场不胜魔咒，大田则希望延续客场拿分势头。两队分差仅3分，均处保级附加赛区边缘，战意明确。
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-header">赔率对比与盘口分析</div>
+<div class="section-body">
+<table>
+<tr><th>来源</th><th>主胜</th><th>平局</th><th>客胜</th><th>抽水率</th></tr>
+<tr><td><span class="tag tag-official">体彩官方</span></td><td class="bold">2.85</td><td class="bold">3.05</td><td class="bold">2.22</td><td>12.9%</td></tr>
+<tr><td><span class="tag tag-ext">外盘均值</span></td><td>2.7</td><td>3.05</td><td>2.25</td><td>14.8%</td></tr>
+<tr><td>威廉希尔</td><td>2.90</td><td>3.25</td><td>2.30</td><td>-</td></tr>
+<tr><td>Bet365</td><td>2.80</td><td>3.25</td><td>2.37</td><td>-</td></tr>
+<tr><td>澳门</td><td>2.83</td><td>3.20</td><td>2.18 (全市场最低)</td><td>-</td></tr>
+</table>
+
+<table>
+<tr><th>让球(+1)</th><th>让胜</th><th>让平</th><th>让负</th></tr>
+<tr><td><span class="tag tag-official">体彩官方</span></td><td class="highlight">1.51</td><td class="highlight">3.75</td><td class="highlight">5.0</td></tr>
+</table>
+
+<table>
+<tr><th>总进球</th><th>0球</th><th>1球</th><th>2球</th><th>3球</th><th>4球</th><th>5球</th><th>6球</th><th>7+球</th></tr>
+<tr><td><span class="tag tag-official">体彩</span></td>
+<td class="highlight">11.0</td><td class="highlight">4.95</td><td class="highlight">3.15</td><td class="highlight">3.4</td><td class="highlight">5.6</td><td class="highlight">10.5</td><td class="highlight">21.0</td><td class="highlight">36.0</td></tr></table>
+<div class="note">
+<b>亚盘走势：</b>初盘混乱(平手/客让平半并存)，即时已统一至<b>客让平半(-0.25)</b>，客队低水0.80-0.85。
+Bet365/韦德/18bet三家集体从平手升盘至客让平半且客队降水，属经典正向防范信号。
+立博独自维持客让半球超低水0.60，对客胜极致防范。必发客胜成交占比56.96%，平局32.91%，主胜仅10.13%。
+</div>
+<div class="warning">
+<b>盘口信号解读：</b>全市场"主胜普涨、客胜普降"，但力度温和。核心信号是<b>竞彩平赔下调(3.10→3.00)与让平下调(3.80→3.70)</b>——
+机构在确认客队优势的同时，通过平赔下压表达对平局的特殊防范。澳门客胜2.18全市场最低，但Bet365客胜2.37高位形成反向制衡。
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-header">赔率校准对比</div>
+<div class="section-body">
+<table>
+<tr><th>方法</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th><th>备注</th></tr>
+<tr><td>归一化去水(体彩)</td><td>32.0%</td><td>30.9%</td><td>37.1%</td><td>等比例去水</td></tr>
+<tr><td class="bold">Shin去水(体彩) ★</td><td class="bold">32.0%</td><td class="bold">30.9%</td><td class="bold">37.1%</td><td>z=0.1000</td></tr>
+<tr><td>Shin去水(外盘)</td><td>32.8%</td><td>30.7%</td><td>36.5%</td><td>z≈0.10</td></tr>
+</table>
+<div class="note">
+<b>Shin校准结论：</b>体彩Shin真实概率为主胜32.0%/平局30.9%/客胜37.1%。客胜为市场首选方向但优势不大(37%)，
+平局权重高达31%，与金泉58%平局率高度吻合。Shin z参数=0.10偏高，说明庄家预估内幕交易者比例较高，冷门概率有上修空间。
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-header">xG校准分析（核心特征工程）</div>
+<div class="section-body">
+<table>
+<tr><th>指标</th><th>金泉尚武(主场)</th><th>大田市民(客场)</th></tr>
+<tr><td>近10场 xG (期望进球)</td><td class="bold">0.81</td><td class="bold">1.12</td></tr>
+<tr><td>近10场 xGA (期望失球)</td><td class="dn">1.47</td><td class="up">1.03</td></tr>
+<tr><td>实际场均进球</td><td>0.78</td><td>1.56</td></tr>
+<tr><td>实际场均失球</td><td>1.56</td><td>0.67</td></tr>
+<tr><td>xG偏离幅度</td><td>-3.7% (基本一致)</td><td>+39.3% (远超xG!)</td></tr>
+</table>
+<div class="note">
+<b>xG校准结论：</b>
+<br>• 金泉尚武 xG=0.81 vs 实际0.78 → 偏离仅3.7%，进攻效率与期望一致，状态可持续
+<br>• 大田市民 xG=1.12 vs 实际1.56 → 偏离+39.3%！实际进球远超期望进球，存在<b>显著运气成分</b>，
+预计未来进球将向xG均值回归。但需注意大田客场xGA=1.03(防守好)，xG=1.12(进攻尚可)，基础面仍优于金泉
+<br>• <b>校准后λ：</b>主队 0.651 / 客队 1.241（已含伤停修正）
+<br>• 预期总进球 E(G) = 1.892
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-header">模型概率对比（核心）</div>
+<div class="section-body">
+<table>
+<tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th><th>备注</th></tr>
+<tr><td class="bold">标准泊松(主力)</td><td>19.5%</td><td>29.9%</td><td>50.6%</td><td>λ_h=0.651, λ_a=1.241</td></tr>
+<tr><td>DC模型(辅助)</td><td>20.5%</td><td>28.0%</td><td>51.5%</td><td>ρ=-0.08</td></tr>
+<tr><td>负二项分布</td><td>20.3%</td><td>30.2%</td><td>49.5%</td><td>VMR=1.18</td></tr>
+<tr><td>Skellam进球差</td><td>19.5%</td><td>29.9%</td><td>50.6%</td><td>直接建模进球差</td></tr>
+<tr><td>蒙特卡洛(10000场)</td><td>19.3%</td><td>29.4%</td><td>51.2%</td><td>模拟验证</td></tr>
+<tr><td>Shin校准(市场)</td><td>32.0%</td><td>30.9%</td><td>37.1%</td><td>市场真实概率</td></tr>
+<tr style="border-top:2px solid #ff6b35"><td class="bold">加权融合</td>
+<td class="bold up">22.2%</td>
+<td class="bold dr">34.0%</td>
+<td class="bold dn">43.9%</td>
+<td>含规则16平局上修10%</td></tr>
+</table>
+
+<div class="note">
+<b>模型一致度：</b>主胜σ=0.5% / 平局σ=0.8% / 客胜σ=0.7%
+→ <b>高度一致 (+1)</b>。五个模型高度收敛，客胜方向一致在50-52%区间。
+</div>
+<div class="warning">
+<b>模型vs市场分歧：</b>融合客胜43.9% vs Shin客胜37.1% → 差6.8%（模型更看好客胜）。
+融合主胜22.2% vs Shin主胜32.0% → 差9.8%（模型更不看好主胜）。
+模型与市场对客胜方向一致，但幅度有分歧。差距均<15%，未触发规则8严重分歧。
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-header">比分TOP10（标准泊松主力模型）</div>
+<div class="section-body">
+<table class="odds-table">
+<tr><th>排名</th><th>比分</th><th>概率</th><th>方向</th><th>体彩赔率</th><th>进度</th></tr>
+<tr><td>1</td><td class="bold">0:1</td><td>18.7%</td><td class="dn">客胜</td><td class="highlight">8.0</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:74.83999999999999%;background:#f44336">18.7%</div></div></td></tr><tr><td>2</td><td class="bold">0:0</td><td>15.1%</td><td class="dr">平局</td><td class="highlight">11.0</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:60.31999999999999%;background:#ff9800">15.1%</div></div></td></tr><tr><td>3</td><td class="bold">1:1</td><td>12.2%</td><td class="dr">平局</td><td class="highlight">5.5</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:48.72%;background:#ff9800">12.2%</div></div></td></tr><tr><td>4</td><td class="bold">0:2</td><td>11.6%</td><td class="dn">客胜</td><td class="highlight">11.0</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:46.44%;background:#f44336">11.6%</div></div></td></tr><tr><td>5</td><td class="bold">1:0</td><td>9.8%</td><td class="up">主胜</td><td class="highlight">9.5</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:39.24%;background:#4caf50">9.8%</div></div></td></tr><tr><td>6</td><td class="bold">1:2</td><td>7.6%</td><td class="dn">客胜</td><td class="highlight">7.25</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:30.240000000000002%;background:#f44336">7.6%</div></div></td></tr><tr><td>7</td><td class="bold">0:3</td><td>4.8%</td><td class="dn">客胜</td><td class="highlight">22.0</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:19.2%;background:#f44336">4.8%</div></div></td></tr><tr><td>8</td><td class="bold">2:1</td><td>4.0%</td><td class="up">主胜</td><td class="highlight">8.5</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:15.840000000000002%;background:#4caf50">4.0%</div></div></td></tr><tr><td>9</td><td class="bold">2:0</td><td>3.2%</td><td class="up">主胜</td><td class="highlight">14.5</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:12.76%;background:#4caf50">3.2%</div></div></td></tr><tr><td>10</td><td class="bold">1:3</td><td>3.1%</td><td class="dn">客胜</td><td class="highlight">16.0</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:12.520000000000001%;background:#f44336">3.1%</div></div></td></tr></table>
+<div class="note">
+<b>比分分析：</b>TOP3为 0:1(18.7%) / 0:0(15.1%) / 1:1(12.2%)。客胜方向比分(0:1, 0:2, 1:2)合计38%，
+平局方向(0:0, 1:1)合计27.3%，主胜方向(1:0, 2:1, 2:0)合计17%。比分矩阵首选方向(客胜)与综合方向(客胜43.9%)一致。
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-header">半场比分TOP5（规则13必须输出）</div>
+<div class="section-body">
+<table class="odds-table">
+<tr><th>排名</th><th>半场比分</th><th>概率</th><th>方向</th><th>进度</th></tr>
+<tr><td>1</td><td class="bold">0:0</td><td>42.7%</td><td class="dr">平局</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:85.36%;background:#ff9800">42.7%</div></div></td></tr><tr><td>2</td><td class="bold">0:1</td><td>23.8%</td><td class="dn">客胜</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:47.68%;background:#f44336">23.8%</div></div></td></tr><tr><td>3</td><td class="bold">1:0</td><td>12.5%</td><td class="up">主胜</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:25.0%;background:#4caf50">12.5%</div></div></td></tr><tr><td>4</td><td class="bold">1:1</td><td>7.0%</td><td class="dr">平局</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:13.96%;background:#ff9800">7.0%</div></div></td></tr><tr><td>5</td><td class="bold">0:2</td><td>6.7%</td><td class="dn">客胜</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:13.320000000000002%;background:#f44336">6.7%</div></div></td></tr></table>
+<div class="note">
+<b>半场分析：</b>半场λ_h=0.29, λ_a=0.56（全场λ×0.45）。半场0:0概率高达42.7%，反映两队上半场均偏保守：
+金泉半场得分率仅30%，大田客场主打541大巴防守反击。关联规则5（补时进球场景）：若上半场0:0，
+下半场60-75分钟为K联赛进球高发时段，末段绝杀率较高。
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-header">总进球分布与大小球</div>
+<div class="section-body">
+<table class="odds-table">
+<tr><th>进球数</th><th>模型概率</th><th>体彩赔率</th><th>进度</th></tr>
+<tr><td class="bold">0球</td><td>15.1%</td><td class="highlight">11.0</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:45.239999999999995%;background:#4fc3f7">15.1%</div></div></td></tr><tr><td class="bold">1球</td><td>28.5%</td><td class="highlight">4.95</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:85.59%;background:#4fc3f7">28.5%</div></div></td></tr><tr><td class="bold">2球</td><td>27.0%</td><td class="highlight">3.15</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:80.97%;background:#4fc3f7">27.0%</div></div></td></tr><tr><td class="bold">3球</td><td>17.0%</td><td class="highlight">3.4</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:51.059999999999995%;background:#4fc3f7">17.0%</div></div></td></tr><tr><td class="bold">4球</td><td>8.1%</td><td class="highlight">5.6</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:24.150000000000002%;background:#4fc3f7">8.1%</div></div></td></tr><tr><td class="bold">5球</td><td>3.0%</td><td class="highlight">10.5</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:9.15%;background:#4fc3f7">3.0%</div></div></td></tr><tr><td class="bold">6球</td><td>1.0%</td><td class="highlight">21.0</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:2.88%;background:#4fc3f7">1.0%</div></div></td></tr><tr><td class="bold">7+球</td><td>0.3%</td><td class="highlight">36.0</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:1.02%;background:#4fc3f7">0.3%</div></div></td></tr></table>
+<div class="note">
+<b>总进球分析：</b>预期总进球E(G)=1.892。1球(28.5%)和2球(27.0%)为最高概率区间，
+0球(15.1%)也有不低概率。大小球2.5：大球29.4% / 小球70.6%，
+<b>强烈小球倾向</b>。两队进攻均有短板，大田客场防守稳固(场均失0.67球)，金泉主场进攻效率极低(场均0.78球)。
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-header">让球胜平负分析（+1）</div>
+<div class="section-body">
+<table>
+<tr><th>结果</th><th>模型概率</th><th>体彩赔率</th><th>说明</th></tr>
+<tr><td class="up">让胜(金泉不败)</td><td class="bold">49.4%</td><td class="highlight">1.51</td><td>金泉赢或平或输1球以内</td></tr>
+<tr><td class="dr">让平(金泉恰好输1球)</td><td class="bold">27.4%</td><td class="highlight">3.75</td><td>客队1球小胜</td></tr>
+<tr><td class="dn">让负(金泉输2球+)</td><td class="bold">23.2%</td><td class="highlight">5.0</td><td>客队大胜</td></tr>
+</table>
+<div class="note">
+<b>让球分析：</b>让胜概率49.4%接近50%，体彩让胜赔率1.51极低，
+机构明确封堵金泉大败的可能。让平27.4%对应赔率3.75，
+是对"客队一球小胜"的防范。让负仅23.2%，大田客场大胜概率很低。
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-header">半全场概率（9种组合）</div>
+<div class="section-body">
+<table class="odds-table">
+<tr><th>组合</th><th>概率</th><th>进度</th></tr>
+<tr><td class="bold">平平</td><td>29.2%</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:87.57%;background:#ce93d8">29.2%</div></div></td></tr><tr><td class="bold">负负</td><td>20.7%</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:62.22%;background:#ce93d8">20.7%</div></div></td></tr><tr><td class="bold">平负</td><td>20.1%</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:60.33%;background:#ce93d8">20.1%</div></div></td></tr><tr><td class="bold">平胜</td><td>10.2%</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:30.48%;background:#ce93d8">10.2%</div></div></td></tr><tr><td class="bold">负平</td><td>8.0%</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:24.09%;background:#ce93d8">8.0%</div></div></td></tr><tr><td class="bold">胜胜</td><td>4.8%</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:14.37%;background:#ce93d8">4.8%</div></div></td></tr><tr><td class="bold">胜平</td><td>3.7%</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:11.010000000000002%;background:#ce93d8">3.7%</div></div></td></tr><tr><td class="bold">负胜</td><td>1.8%</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:5.250000000000001%;background:#ce93d8">1.8%</div></div></td></tr><tr><td class="bold">胜负</td><td>1.6%</td><td><div class="progress-bar" style="height:16px"><div class="progress-fill" style="width:4.74%;background:#ce93d8">1.6%</div></div></td></tr></table>
+<div class="note">
+<b>半全场分析：</b>平平(29.2%)为首选，反映上半场胶着+全场平局的最可能路径。负负(20.7%)和平负(20.1%)为次选，
+对应上半场客队领先→全场客胜 或 上半场平局→下半场客队破局。
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-header">伤停影响分析（规则9/10/18精细化折算）</div>
+<div class="section-body">
+<table>
+<tr><th>球队</th><th>球员</th><th>位置</th><th>状态</th><th>重要性</th><th>λ修正</th></tr>
+<tr><td rowspan="3">金泉尚武</td><td>李秀彬</td><td>中场组织核心</td><td class="dn">确认停赛(黄牌累积)</td><td>核心(13场11首发)</td><td class="dn">λ_home ×0.85</td></tr>
+<tr><td>徐荣宰</td><td>主力边卫</td><td class="dn">持续伤缺</td><td>主力</td><td class="dn">边路防守削弱→λ_away ×1.05</td></tr>
+<tr><td>李政宅</td><td>后防核心中卫</td><td class="up">解禁复出!</td><td>核心(17场全首发)</td><td class="up">λ_away ×0.92 (防守加强)</td></tr>
+<tr><td rowspan="2">大田市民</td><td>迪奥戈</td><td>外援前锋</td><td class="dn">确认伤缺</td><td>主力(16场8首发)</td><td class="dn">λ_away ×0.90</td></tr>
+<tr><td>李淳敏</td><td>中场队长</td><td class="up">停赛期满回归!</td><td>核心</td><td class="up">λ_home ×0.95 (拦截加强)</td></tr>
+</table>
+<div class="note">
+<b>伤停综合评估（规则18核心缺阵非线性折算）：</b>
+<br>• 金泉：<b>李秀彬停赛影响最大</b>——他是中场攻防转换节拍器，缺阵使本就不流畅的进攻进一步受阻。但李政宅复出补强防守，
+部分对冲客队进攻优势。净影响：λ_home下降约19%，λ_away下降约4%（李政宅复出+徐荣宰伤缺对冲）
+<br>• 大田：迪奥戈伤缺削弱锋线终结能力，但大田客场本就以防守反击为主，影响可控。李淳敏回归加强中场拦截
+<br>• <b>综合λ修正后：</b>λ_home=0.651, λ_away=1.241（较伤停前均下降，但客队进攻仍优于主队）
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-header">历史交锋与心理权重（规则12）</div>
+<div class="section-body">
+<table>
+<tr><th>日期</th><th>赛事</th><th>对阵</th><th>比分</th><th>结果</th></tr>
+<tr><td>2026-03-14</td><td>韩K联</td><td>大田市民(主) vs 金泉尚武(客)</td><td>1:1</td><td class="dr">平局</td></tr>
+<tr><td>2025-11-30</td><td>韩K联</td><td>金泉尚武(主) vs 大田市民(客)</td><td>0:3</td><td class="dn">客胜</td></tr>
+<tr><td>2025-08-xx</td><td>韩K联</td><td>大田市民(主) vs 金泉尚武(客)</td><td>2:1</td><td class="up">主胜(大田)</td></tr>
+<tr><td>2025-04-19</td><td>韩K联</td><td>金泉尚武(主) vs 大田市民(客)</td><td>0:2</td><td class="dn">客胜</td></tr>
+</table>
+<div class="note">
+<b>历史交锋心理分析：</b>大田市民近6次对阵金泉尚武<b>3胜3平保持不败</b>，形成完全克制关系。
+金泉主场面对大田已连续3场未赢球，包括0:3、0:2的惨败，心理劣势明显。
+大田的防守反击打法天然克制金泉的高位逼抢战术——金泉压上后身后空间被大田精准利用。
+历史交锋中小比分场次占比更高，进球多集中在下半场60分钟后。
+</div>
+<div class="warning">
+<b>规则12心理权重：</b>历史交锋的战术克制和心理压制已纳入模型——大田的战术风格克制金泉，
+即使金泉有主场之利(虽0胜)，也难以打破克制格局。这也是模型给客胜50%+概率的重要依据。
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-header">网友意见精华（已过滤不可靠信息）</div>
+<div class="section-body">
+<table>
+<tr><th>来源</th><th>核心观点</th><th>倾向</th><th>评级</th></tr>
+<tr><td>头条-莫浅忆54</td><td>平局首选, 客胜次选, 让平核心防范</td><td class="dr">平局</td><td>B</td></tr>
+<tr><td>头条-JHG</td><td>大田不败是大概率, 平局第一落点</td><td class="dr">平局</td><td>B</td></tr>
+<tr><td>头条-木槿朝华</td><td>小球格局, 1-1/1-0/0-1高概率</td><td class="dr">平局</td><td>B</td></tr>
+<tr><td>头条-Saarland</td><td>核心路径平局(1:1), 总进球2球, 半场平局</td><td class="dr">平局</td><td>B</td></tr>
+<tr><td>头条-明适</td><td>主胜35.2%/平29.8%/客32.9%, 2球33.9%</td><td>均衡</td><td>C</td></tr>
+<tr><td>头条-奋发铅笔</td><td>平局首选, 1-1/0-1, 总进球≤2</td><td class="dr">平局</td><td>C</td></tr>
+<tr><td>网易</td><td>大田小胜或平局, 0:1或1:1</td><td class="dn">客胜/平</td><td>B</td></tr>
+<tr><td>Forebet</td><td>预测平局概率56%</td><td class="dr">平局</td><td>A</td></tr>
+<tr><td>bettingclosed</td><td>预测0:2客胜</td><td class="dn">客胜</td><td>C</td></tr>
+<tr><td>mybets.today</td><td>预测1:2客胜(12%)</td><td class="dn">客胜</td><td>C</td></tr>
+<tr><td>footballvnn</td><td>预测1:1平局</td><td class="dr">平局</td><td>C</td></tr>
+</table>
+<div class="note">
+<b>网友意见汇总：</b>中文社区共识为<b>平局首选(7/11)</b>，客胜次选(3/11)，均衡/其他(1/11)。
+比分共识集中在1:1和0:1。Forebet模型预测平局概率高达56%。
+已过滤：小编推荐类、博彩引流贴、纯情绪化内容。
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="section-header">核心规则标注</div>
+<div class="section-body">
+<table>
+<tr><th>规则</th><th>说明</th><th>执行情况</th></tr>
+<tr><td><span class="tag tag-rule">规则16</span></td><td>极端平局率58%→平局上修10%</td><td class="up">已执行: 平局从30.9%上修至34.0%</td></tr>
+<tr><td><span class="tag tag-rule">规则17</span></td><td>比分矩阵方向优先标注</td><td class="up">比分TOP1(0:1客胜)与综合方向(客胜43.9%)一致</td></tr>
+<tr><td><span class="tag tag-rule">规则9/18</span></td><td>伤停折算精细化/非线性</td><td class="up">已按位置区分折算(中场×0.85/前锋×0.90/中卫×0.92)</td></tr>
+<tr><td><span class="tag tag-rule">规则12</span></td><td>历史交锋心理权重</td><td class="up">大田6场不败克制关系已纳入Elo/Pi评级</td></tr>
+<tr><td><span class="tag tag-rule">规则20</span></td><td>小联赛主场优势权重</td><td class="up">金泉主场0胜→主场系数0.98(负优势)</td></tr>
+<tr><td><span class="tag tag-rule">规则21</span></td><td>反热门偏误校正</td><td class="up">市场热门客胜→已检查冷门因素(平局)</td></tr>
+<tr><td><span class="tag tag-rule">规则8</span></td><td>模型与市场严重分歧处理</td><td class="up">最大差9.8%<15%, 未触发</td></tr>
+<tr><td><span class="tag tag-rule">规则13</span></td><td>半场比分必须输出</td><td class="up">已输出半场TOP5</td></tr>
+</table>
+</div>
+</div>
+
+<div class="section">
+<div class="section-header">综合推荐</div>
+<div class="section-body">
+<div class="rec-box">
+<h3>胜平负推荐</h3>
+<p><b>首选：</b><span class="tag tag-d">平局</span> 34.0%（置信度：★★ 中）</p>
+<p><b>次选：</b><span class="tag tag-a">客胜</span> 43.9%</p>
+<p><b>稳健双选：</b>平 + 负（覆盖77.8%概率）</p>
+<p><b>主胜概率最低：</b>22.2%（金泉主场0胜魔咒）</p>
+</div>
+
+<div class="rec-box">
+<h3>比分推荐</h3>
+<p><b>首选：</b>0:1(18.7%) / 0:0(15.1%) / 1:1(12.2%)</p>
+<p><b>备选：</b>0:2(11.6%) / 1:0(9.8%)</p>
+<p><b>冷门预警：</b>1:0(9.8%) — 金泉主场首胜的均值回归压力</p>
+</div>
+
+<div class="rec-box">
+<h3>半场比分推荐</h3>
+<p><b>首选：</b>0:0(42.7%) — 两队上半场均保守</p>
+<p><b>次选：</b>0:1(23.8%) — 大田客场反击偷袭</p>
+<p><b>备选：</b>1:0(12.5%) — 金泉定位球先拔头筹</p>
+</div>
+
+<div class="rec-box">
+<h3>总进球推荐</h3>
+<p><b>首选：</b>1球(28.5%) / 2球(27.0%)</p>
+<p><b>大小球：</b>小球2.5 (70.6%) — 强烈小球倾向</p>
+</div>
+
+<div class="rec-box">
+<h3>让球胜平负推荐（+1）</h3>
+<p><b>首选：</b><span class="tag tag-h">让胜</span> 49.4% (赔率1.51) — 金泉受让后不败概率接近50%</p>
+<p><b>防范：</b><span class="tag tag-d">让平</span> 27.4% (赔率3.75) — 客队一球小胜</p>
+</div>
+
+<div class="rec-box">
+<h3>半全场推荐</h3>
+<p><b>首选：</b>平平(29.2%) — 上半场胶着+全场平局</p>
+<p><b>次选：</b>负负(20.7%) / 平负(20.1%)</p>
+</div>
+
+<div class="warning">
+<b>规则21反热门偏误校正：</b>市场热门方向为客胜(赔率2.22最低)，但需警惕——
+金泉平局率58%极高，大田85天不胜+核心前锋伤缺，客胜并非铁板钉钉。
+平局是更安全的落点，建议双选平+负而非单选客胜。
+</div>
+</div>
+</div>
+
+<div class="risk-box">
+<p>⚠️ 风险提示</p>
+<p>• 足球比赛存在极大不确定性，任何模型预测均非100%准确</p>
+<p>• 模型基于历史数据，突发因素（红牌、点球、天气等）无法完全预测</p>
+<p>• 赔率数据可能随时间变化，请以实时数据为准</p>
+<p>• 大田xG偏离+39.3%，实际进球远超预期，存在均值回归风险</p>
+<p>• 金泉主场0胜存在均值回归压力，首胜可能随时到来</p>
+<p>• 双赛周4天两赛，60分钟后体能下降可能改变比赛走势</p>
+<p>• 置信度评级仅供预测可靠性参考，不代表实际结果保证</p>
+<p>• <b>理性看待预测，切勿沉迷赌博</b></p>
+</div>
+
+</div>
+</body>
+</html>

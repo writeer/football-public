@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周六竞彩11场分析 v2 | 2026-07-25</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0f0f1a;color:#e0e0e0;font-family:'Segoe UI',system-ui,sans-serif;line-height:1.6}
+.header{background:linear-gradient(135deg,#1a1a3e,#2d1b4e);padding:24px;text-align:center;border-bottom:3px solid #ff6b35}
+.header h1{font-size:1.8em;color:#fff;margin-bottom:4px}
+.header p{color:#aaa;font-size:0.9em}
+.container{max-width:1200px;margin:0 auto;padding:16px}
+.match-card{background:#1a1a2e;border:1px solid #2a2a4a;border-radius:12px;margin-bottom:20px;overflow:hidden}
+.match-header{background:#252545;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.match-header .title{font-size:1.1em;font-weight:700;color:#ff6b35}
+.match-header .teams{font-size:1.2em;color:#fff;font-weight:600}
+.match-header .time{color:#aaa;font-size:0.9em}
+.match-header .conf{font-size:0.95em}
+.conf.high{color:#4caf50}.conf.mid{color:#ff9800}.conf.low{color:#f44336}.conf.vlow{color:#9e9e9e}
+.body{padding:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+@media(max-width:768px){.grid2,.grid3{grid-template-columns:1fr}}
+table{width:100%;border-collapse:collapse;font-size:0.85em;margin-bottom:8px}
+th{background:#252545;color:#aaa;padding:6px 8px;text-align:left;font-weight:500;border-bottom:1px solid #333}
+td{padding:5px 8px;border-bottom:1px solid #1a1a2e}
+tr:hover td{background:#1e1e35}
+.up{color:#4caf50;font-weight:600}.dn{color:#f44336;font-weight:600}.dr{color:#ff9800;font-weight:600}
+.bold{font-weight:700;color:#fff}
+.rec{background:#252545;border-radius:8px;padding:10px 12px;margin-top:8px}
+.rec h4{color:#ff6b35;margin-bottom:6px;font-size:0.9em}
+.rec p{font-size:0.85em;color:#ccc;margin-bottom:2px}
+.notes{background:#1e1e38;border-radius:8px;padding:10px 12px;margin-top:8px;font-size:0.85em;color:#bbb}
+.tag{display:inline-block;padding:2px 8px;border-radius:10px;font-size:0.75em;margin:2px}
+.tag-h{background:#2d4a2d;color:#4caf50}.tag-d{background:#4a4a2d;color:#ff9800}.tag-a{background:#4a2d2d;color:#f44336}
+.tag-official{background:#1a3a5a;color:#4fc3f7}.tag-est{background:#3a3a1a;color:#ffeb3b}
+.section-title{color:#ff6b35;font-size:0.9em;font-weight:600;margin:10px 0 6px;padding-bottom:4px;border-bottom:1px solid #333}
+.odds-table{font-size:0.8em}
+.odds-table td{padding:3px 6px}
+.odds-highlight{color:#ffeb3b;font-weight:700}
+.risk{background:#2a1a1a;border:1px solid #4a2a2a;border-radius:8px;padding:16px;margin-top:20px;font-size:0.8em;color:#cc8888;text-align:center}
+.summary-card{background:linear-gradient(135deg,#1a2a3e,#2a1a3e);border-radius:12px;padding:16px;margin-bottom:20px;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-around}
+.summary-item{text-align:center}
+.summary-item .val{font-size:1.8em;font-weight:700;color:#ff6b35}
+.summary-item .lbl{font-size:0.8em;color:#aaa}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>⚽ 周六竞彩11场全方位分析 v2</h1>
+<p>2026-07-25 (周六) | 编号日期 260725 | 标准泊松(主) + DC(辅) + Skellam + 蒙特卡洛 + Shin校准 | 含体彩赔率</p>
+</div>
+<div class="container">
+
+<div class="summary-card">
+<div class="summary-item"><div class="val">11</div><div class="lbl">分析场次</div></div>
+<div class="summary-item"><div class="val" style="color:#4caf50">2</div><div class="lbl">高置信度</div></div>
+<div class="summary-item"><div class="val" style="color:#ff9800">8</div><div class="lbl">中置信度</div></div>
+<div class="summary-item"><div class="val" style="color:#f44336">1</div><div class="lbl">低置信度</div></div>
+<div class="summary-item"><div class="val">5</div><div class="lbl">推荐主胜</div></div>
+<div class="summary-item"><div class="val">1</div><div class="lbl">推荐平局</div></div>
+<div class="summary-item"><div class="val">5</div><div class="lbl">推荐客胜</div></div>
+</div>
+
+<!-- 201 韩职 金泉尚武 vs 大田市民 -->
+<div class="match-card">
+<div class="match-header">
+<div>
+<span class="title">201 韩职</span><br>
+<span class="teams">金泉尚武 [11] vs 大田市民 [9]</span>
+</div>
+<div style="text-align:right">
+<div class="time">18:30</div>
+<div class="conf mid">★★ 中置信度</div>
+</div>
+</div>
+<div class="body">
+<div class="notes">金泉尚武主场0胜！平局率58%极高。大田客场4胜3平2负表现好。历史交锋大田5胜1平4负压制。</div>
+
+<div class="section-title">赔率与校准 <span class="tag tag-official">体彩官方</span></div>
+<table><tr><th>方法</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>体彩官方</td><td>2.85</td><td>3.05</td><td>2.22</td></tr>
+<tr><td>Shin去水</td><td class="bold">31.4%</td><td class="bold">29.8%</td><td class="bold">38.7%</td></tr></table>
+
+<table><tr><th>让球(+1)</th><th>让胜</th><th>让平</th><th>让负</th></tr>
+<tr><td>体彩官方</td><td class="odds-highlight">1.51</td><td class="odds-highlight">3.75</td><td class="odds-highlight">5.0</td></tr></table>
+
+<div class="section-title">模型概率对比</div>
+<table><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>标准泊松(主)</td><td>14.4%</td><td>29.2%</td><td>56.5%</td></tr>
+<tr><td>DC模型(辅)</td><td>13.3%</td><td>31.3%</td><td>55.4%</td></tr>
+<tr><td>负二项</td><td>15.6%</td><td>30.4%</td><td>53.9%</td></tr>
+<tr><td>Skellam</td><td>14.4%</td><td>29.2%</td><td>56.5%</td></tr>
+<tr><td>蒙特卡洛</td><td>14.2%</td><td>28.9%</td><td>56.9%</td></tr>
+<tr><td class="bold">加权融合</td><td class="bold ">19.8%</td><td class="bold ">34.0%</td><td class="bold dn">46.2%</td></tr></table>
+<div class="grid2"><div><div class="section-title">比分TOP10（标准泊松）</div><table class="odds-table"><tr><th>比分</th><th>概率</th><th>方向</th><th>体彩赔率</th></tr><tr><td class="bold">0:1</td><td>21.4%</td><td class="dn">客胜</td><td><span class="odds-highlight">8.0</span></td></tr><tr><td class="bold">0:0</td><td>16.5%</td><td class="dr">平局</td><td><span class="odds-highlight">11.0</span></td></tr><tr><td class="bold">0:2</td><td>13.9%</td><td class="dn">客胜</td><td><span class="odds-highlight">11.0</span></td></tr><tr><td class="bold">1:1</td><td>10.8%</td><td class="dr">平局</td><td><span class="odds-highlight">5.5</span></td></tr><tr><td class="bold">1:0</td><td>8.3%</td><td class="up">主胜</td><td><span class="odds-highlight">9.5</span></td></tr><tr><td class="bold">1:2</td><td>7.0%</td><td class="dn">客胜</td><td><span class="odds-highlight">7.25</span></td></tr><tr><td class="bold">0:3</td><td>6.0%</td><td class="dn">客胜</td><td><span class="odds-highlight">22.0</span></td></tr><tr><td class="bold">1:3</td><td>3.0%</td><td class="dn">客胜</td><td><span class="odds-highlight">16.0</span></td></tr><tr><td class="bold">2:1</td><td>2.7%</td><td class="up">主胜</td><td><span class="odds-highlight">8.5</span></td></tr><tr><td class="bold">2:0</td><td>2.1%</td><td class="up">主胜</td><td><span class="odds-highlight">14.5</span></td></tr></table></div><div><div class="section-title">半场TOP5</div><table class="odds-table"><tr><th>半场比分</th><th>概率</th><th>方向</th></tr><tr><td class="bold">0:0</td><td>46.9%</td><td class="dr">平局</td></tr><tr><td class="bold">0:1</td><td>25.6%</td><td class="dn">客胜</td></tr><tr><td class="bold">1:0</td><td>9.9%</td><td class="up">主胜</td></tr><tr><td class="bold">0:2</td><td>7.0%</td><td class="dn">客胜</td></tr><tr><td class="bold">1:1</td><td>5.4%</td><td class="dr">平局</td></tr></table><div class="section-title">半全场（估算赔率）</div><table class="odds-table"><tr><th>组合</th><th>概率</th><th>赔率</th></tr><tr><td>胜胜</td><td>2.7%</td><td>32.49</td></tr><tr><td>胜平</td><td>2.4%</td><td>37.84</td></tr><tr><td>胜负</td><td>1.1%</td><td>83.54</td></tr><tr><td>平胜</td><td>9.7%</td><td>9.22</td></tr><tr><td>平平</td><td>31.2%</td><td>2.87</td></tr><tr><td>平负</td><td>22.6%</td><td>3.95</td></tr><tr><td>负胜</td><td>1.5%</td><td>59.2</td></tr><tr><td>负平</td><td>7.8%</td><td>11.49</td></tr><tr><td>负负</td><td>21.1%</td><td>4.23</td></tr></table><div class="section-title">总进球分布</div><table class="odds-table"><tr><th>进球数</th><th>概率</th><th>体彩赔率</th></tr><tr><td>0球</td><td>16.5%</td><td><span class="odds-highlight">11.0</span></td></tr><tr><td>1球</td><td>29.7%</td><td><span class="odds-highlight">4.7</span></td></tr><tr><td>2球</td><td>26.8%</td><td><span class="odds-highlight">3.25</span></td></tr><tr><td>3球</td><td>16.1%</td><td><span class="odds-highlight">3.5</span></td></tr><tr><td>4球</td><td>7.3%</td><td><span class="odds-highlight">5.6</span></td></tr><tr><td>5球</td><td>2.6%</td><td><span class="odds-highlight">10.5</span></td></tr><tr><td>6球</td><td>0.8%</td><td><span class="odds-highlight">19.0</span></td></tr><tr><td>7+球</td><td>0.2%</td><td><span class="odds-highlight">32.0</span></td></tr></table><p style="font-size:0.8em;color:#aaa;margin-top:4px">大小球2.5: 大球 <b style="color:#f44336)">27.1%</b> / 小球 <b style="color:#4caf50)">72.9%</b></p></div></div>
+<div class="rec">
+<h4>🎯 综合推荐</h4>
+<p><b>方向：</b>客胜 ~46%</p>
+<p><b>比分：</b>首选 0:1(21.4%) / 次选 0:0(16.5%) / 备选 0:2(13.9%)</p>
+<p><b>半场比分：</b>首选 0:0(46.9%)</p>
+<p><b>总进球：</b>1球首选(29.7%) — 小球倾向</p>
+<p><span class="tag tag-d">规则16: 极端平局率58%→平局上修</span> <span class="tag tag-official">体彩官方开售</span></p></div></div></div>
+<!-- 202 韩职 浦项制铁 vs 全北现代 -->
+<div class="match-card">
+<div class="match-header">
+<div>
+<span class="title">202 韩职</span><br>
+<span class="teams">浦项制铁 [5] vs 全北现代 [3]</span>
+</div>
+<div style="text-align:right">
+<div class="time">18:30</div>
+<div class="conf mid">★★ 中置信度</div>
+</div>
+</div>
+<div class="body">
+<div class="notes">浦项主场进攻差(场均0.5球)但客场强。全北客场不败率80%。上回合全北3:2胜浦项。</div>
+
+<div class="section-title">赔率与校准 <span class="tag tag-official">体彩官方</span></div>
+<table><tr><th>方法</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>体彩官方</td><td>3.03</td><td>2.95</td><td>2.17</td></tr>
+<tr><td>Shin去水</td><td class="bold">29.9%</td><td class="bold">30.6%</td><td class="bold">39.5%</td></tr></table>
+
+<table><tr><th>让球(+1)</th><th>让胜</th><th>让平</th><th>让负</th></tr>
+<tr><td>体彩官方</td><td class="odds-highlight">1.54</td><td class="odds-highlight">3.52</td><td class="odds-highlight">5.1</td></tr></table>
+
+<div class="section-title">模型概率对比</div>
+<table><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>标准泊松(主)</td><td>15.7%</td><td>50.5%</td><td>33.8%</td></tr>
+<tr><td>DC模型(辅)</td><td>15.0%</td><td>51.9%</td><td>33.1%</td></tr>
+<tr><td>负二项</td><td>15.8%</td><td>51.3%</td><td>32.9%</td></tr>
+<tr><td>Skellam</td><td>15.7%</td><td>50.5%</td><td>33.8%</td></tr>
+<tr><td>蒙特卡洛</td><td>15.1%</td><td>50.9%</td><td>34.0%</td></tr>
+<tr><td class="bold">加权融合</td><td class="bold ">22.3%</td><td class="bold dr">42.5%</td><td class="bold ">35.2%</td></tr></table>
+<div class="grid2"><div><div class="section-title">比分TOP10（标准泊松）</div><table class="odds-table"><tr><th>比分</th><th>概率</th><th>方向</th><th>体彩赔率</th></tr><tr><td class="bold">0:0</td><td>43.4%</td><td class="dr">平局</td><td>2.06</td></tr><tr><td class="bold">0:1</td><td>23.7%</td><td class="dn">客胜</td><td>3.77</td></tr><tr><td class="bold">1:0</td><td>12.5%</td><td class="up">主胜</td><td>7.14</td></tr><tr><td class="bold">1:1</td><td>6.8%</td><td class="dr">平局</td><td>13.13</td></tr><tr><td class="bold">0:2</td><td>6.5%</td><td class="dn">客胜</td><td>13.74</td></tr><tr><td class="bold">1:2</td><td>1.9%</td><td class="dn">客胜</td><td>46.99</td></tr><tr><td class="bold">2:0</td><td>1.8%</td><td class="up">主胜</td><td>49.6</td></tr><tr><td class="bold">0:3</td><td>1.2%</td><td class="dn">客胜</td><td>74.4</td></tr><tr><td class="bold">2:1</td><td>1.0%</td><td class="up">主胜</td><td>89.29</td></tr><tr><td class="bold">1:3</td><td>0.3%</td><td class="dn">客胜</td><td>297.62</td></tr></table></div><div><div class="section-title">半场TOP5</div><table class="odds-table"><tr><th>半场比分</th><th>概率</th><th>方向</th></tr><tr><td class="bold">0:0</td><td>70.4%</td><td class="dr">平局</td></tr><tr><td class="bold">0:1</td><td>16.1%</td><td class="dn">客胜</td></tr><tr><td class="bold">1:0</td><td>8.5%</td><td class="up">主胜</td></tr><tr><td class="bold">1:1</td><td>2.0%</td><td class="dr">平局</td></tr><tr><td class="bold">0:2</td><td>1.9%</td><td class="dn">客胜</td></tr></table><div class="section-title">半全场（估算赔率）</div><table class="odds-table"><tr><th>组合</th><th>概率</th><th>赔率</th></tr><tr><td>胜胜</td><td>2.3%</td><td>38.27</td></tr><tr><td>胜平</td><td>2.2%</td><td>40.16</td></tr><tr><td>胜负</td><td>0.6%</td><td>145.47</td></tr><tr><td>平胜</td><td>13.2%</td><td>6.74</td></tr><tr><td>平平</td><td>47.3%</td><td>1.89</td></tr><tr><td>平负</td><td>20.9%</td><td>4.27</td></tr><tr><td>负胜</td><td>0.8%</td><td>108.43</td></tr><tr><td>负平</td><td>4.7%</td><td>18.97</td></tr><tr><td>负负</td><td>7.8%</td><td>11.45</td></tr></table><div class="section-title">总进球分布</div><table class="odds-table"><tr><th>进球数</th><th>概率</th><th>体彩赔率</th></tr><tr><td>0球</td><td>43.4%</td><td><span class="odds-highlight">9.0</span></td></tr><tr><td>1球</td><td>36.2%</td><td><span class="odds-highlight">3.9</span></td></tr><tr><td>2球</td><td>15.1%</td><td><span class="odds-highlight">3.1</span></td></tr><tr><td>3球</td><td>4.2%</td><td><span class="odds-highlight">3.75</span></td></tr><tr><td>4球</td><td>0.9%</td><td><span class="odds-highlight">6.5</span></td></tr><tr><td>5球</td><td>0.1%</td><td><span class="odds-highlight">13.0</span></td></tr><tr><td>6球</td><td>0.0%</td><td><span class="odds-highlight">25.0</span></td></tr><tr><td>7+球</td><td>0.0%</td><td><span class="odds-highlight">37.0</span></td></tr></table><p style="font-size:0.8em;color:#aaa;margin-top:4px">大小球2.5: 大球 <b style="color:#f44336)">5.2%</b> / 小球 <b style="color:#4caf50)">94.8%</b></p></div></div>
+<div class="rec">
+<h4>🎯 综合推荐</h4>
+<p><b>方向：</b>平局 ~42%</p>
+<p><b>比分：</b>首选 0:0(43.4%) / 次选 0:1(23.7%) / 备选 1:0(12.5%)</p>
+<p><b>半场比分：</b>首选 0:0(70.4%)</p>
+<p><b>总进球：</b>0球首选(43.4%) — 小球倾向</p>
+<p><span class="tag tag-official">体彩官方开售</span></p></div></div></div>
+<!-- 203 瑞超 代格福什 vs 佐加顿斯 -->
+<div class="match-card">
+<div class="match-header">
+<div>
+<span class="title">203 瑞超</span><br>
+<span class="teams">代格福什 [14] vs 佐加顿斯 [5]</span>
+</div>
+<div style="text-align:right">
+<div class="time">21:00</div>
+<div class="conf low">★ 低置信度</div>
+</div>
+</div>
+<div class="body">
+<div class="notes">代格福什9轮不胜，主场1胜2平4负，进攻哑火。佐加顿斯客场60%胜率，火力猛。交锋佐加顿斯碾压(6胜)。</div>
+
+<div class="section-title">赔率与校准 <span class="tag tag-est">外盘均值</span></div>
+<table><tr><th>方法</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>外盘均值</td><td>4.29</td><td>3.75</td><td>1.72</td></tr>
+<tr><td>Shin去水</td><td class="bold">24.0%</td><td class="bold">26.2%</td><td class="bold">49.8%</td></tr></table>
+
+<table><tr><th>让球(+1)</th><th>让胜</th><th>让平</th><th>让负</th></tr>
+<tr><td>估算</td><td>1.84</td><td>12.82</td><td>2.01</td></tr></table>
+
+<div class="section-title">模型概率对比</div>
+<table><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>标准泊松(主)</td><td>16.8%</td><td>21.6%</td><td>61.6%</td></tr>
+<tr><td>DC模型(辅)</td><td>15.8%</td><td>23.6%</td><td>60.6%</td></tr>
+<tr><td>负二项</td><td>19.4%</td><td>22.2%</td><td>58.4%</td></tr>
+<tr><td>Skellam</td><td>16.8%</td><td>21.6%</td><td>61.4%</td></tr>
+<tr><td>蒙特卡洛</td><td>17.0%</td><td>21.4%</td><td>61.7%</td></tr>
+<tr><td class="bold">加权融合</td><td class="bold ">20.4%</td><td class="bold ">22.2%</td><td class="bold dn">57.5%</td></tr></table>
+<div class="grid2"><div><div class="section-title">比分TOP10（标准泊松）</div><table class="odds-table"><tr><th>比分</th><th>概率</th><th>方向</th><th>体彩赔率</th></tr><tr><td class="bold">0:1</td><td>11.5%</td><td class="dn">客胜</td><td>7.76</td></tr><tr><td class="bold">0:2</td><td>11.1%</td><td class="dn">客胜</td><td>8.04</td></tr><tr><td class="bold">1:1</td><td>10.3%</td><td class="dr">平局</td><td>8.67</td></tr><tr><td class="bold">1:2</td><td>9.9%</td><td class="dn">客胜</td><td>9.02</td></tr><tr><td class="bold">0:3</td><td>7.1%</td><td class="dn">客胜</td><td>12.58</td></tr><tr><td class="bold">1:3</td><td>6.4%</td><td class="dn">客胜</td><td>13.95</td></tr><tr><td class="bold">0:0</td><td>5.9%</td><td class="dr">平局</td><td>15.13</td></tr><tr><td class="bold">1:0</td><td>5.3%</td><td class="up">主胜</td><td>16.85</td></tr><tr><td class="bold">2:1</td><td>4.6%</td><td class="up">主胜</td><td>19.41</td></tr><tr><td class="bold">2:2</td><td>4.4%</td><td class="dr">平局</td><td>20.29</td></tr></table></div><div><div class="section-title">半场TOP5</div><table class="odds-table"><tr><th>半场比分</th><th>概率</th><th>方向</th></tr><tr><td class="bold">0:0</td><td>30.6%</td><td class="dr">平局</td></tr><tr><td class="bold">0:1</td><td>24.8%</td><td class="dn">客胜</td></tr><tr><td class="bold">1:0</td><td>11.5%</td><td class="up">主胜</td></tr><tr><td class="bold">0:2</td><td>10.0%</td><td class="dn">客胜</td></tr><tr><td class="bold">1:1</td><td>9.3%</td><td class="dr">平局</td></tr></table><div class="section-title">半全场（估算赔率）</div><table class="odds-table"><tr><th>组合</th><th>概率</th><th>赔率</th></tr><tr><td>胜胜</td><td>3.8%</td><td>23.43</td></tr><tr><td>胜平</td><td>2.1%</td><td>43.07</td></tr><tr><td>胜负</td><td>1.8%</td><td>49.88</td></tr><tr><td>平胜</td><td>8.8%</td><td>10.13</td></tr><tr><td>平平</td><td>18.0%</td><td>4.97</td></tr><tr><td>平负</td><td>24.8%</td><td>3.59</td></tr><tr><td>负胜</td><td>1.9%</td><td>46.46</td></tr><tr><td>负平</td><td>6.3%</td><td>14.23</td></tr><tr><td>负负</td><td>32.5%</td><td>2.75</td></tr></table><div class="section-title">总进球分布</div><table class="odds-table"><tr><th>进球数</th><th>概率</th><th>体彩赔率</th></tr><tr><td>0球</td><td>5.9%</td><td>15.13</td></tr><tr><td>1球</td><td>16.8%</td><td>5.31</td></tr><tr><td>2球</td><td>23.7%</td><td>3.77</td></tr><tr><td>3球</td><td>22.3%</td><td>4.0</td></tr><tr><td>4球</td><td>15.7%</td><td>5.69</td></tr><tr><td>5球</td><td>8.9%</td><td>10.03</td></tr><tr><td>6球</td><td>4.2%</td><td>21.26</td></tr><tr><td>7+球</td><td>1.7%</td><td>52.52</td></tr></table><p style="font-size:0.8em;color:#aaa;margin-top:4px">大小球2.5: 大球 <b style="color:#4caf50)">53.7%</b> / 小球 <b style="color:#f44336)">46.3%</b></p></div></div>
+<div class="rec">
+<h4>🎯 综合推荐</h4>
+<p><b>方向：</b>客胜 ~57%</p>
+<p><b>比分：</b>首选 0:1(11.5%) / 次选 0:2(11.1%) / 备选 1:1(10.3%)</p>
+<p><b>半场比分：</b>首选 0:0(30.6%)</p>
+<p><b>总进球：</b>2球首选(23.7%) — 大球倾向</p>
+<p><span class="tag tag-d">规则21: 模型>50%→强制冷门检查</span></p></div></div></div>
+<!-- 204 芬超 玛丽港 vs AC奥卢 -->
+<div class="match-card">
+<div class="match-header">
+<div>
+<span class="title">204 芬超</span><br>
+<span class="teams">玛丽港 [12] vs AC奥卢 [4]</span>
+</div>
+<div style="text-align:right">
+<div class="time">21:30</div>
+<div class="conf high">★★★ 高置信度</div>
+</div>
+</div>
+<div class="body">
+<div class="notes">玛丽港主场1胜3平4负，攻弱。AC奥卢客场4胜2平3负表现好。</div>
+
+<div class="section-title">赔率与校准 <span class="tag tag-est">外盘均值</span></div>
+<table><tr><th>方法</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>外盘均值</td><td>4.97</td><td>3.99</td><td>1.58</td></tr>
+<tr><td>Shin去水</td><td class="bold">21.7%</td><td class="bold">24.9%</td><td class="bold">53.4%</td></tr></table>
+
+<table><tr><th>让球(+1)</th><th>让胜</th><th>让平</th><th>让负</th></tr>
+<tr><td>估算</td><td>1.64</td><td>11.45</td><td>2.37</td></tr></table>
+
+<div class="section-title">模型概率对比</div>
+<table><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>标准泊松(主)</td><td>22.9%</td><td>25.6%</td><td>51.5%</td></tr>
+<tr><td>DC模型(辅)</td><td>21.7%</td><td>28.0%</td><td>50.3%</td></tr>
+<tr><td>负二项</td><td>24.7%</td><td>25.5%</td><td>49.8%</td></tr>
+<tr><td>Skellam</td><td>22.9%</td><td>25.6%</td><td>51.5%</td></tr>
+<tr><td>蒙特卡洛</td><td>23.1%</td><td>25.9%</td><td>51.0%</td></tr>
+<tr><td class="bold">加权融合</td><td class="bold ">24.5%</td><td class="bold ">24.7%</td><td class="bold dn">50.8%</td></tr></table>
+<div class="grid2"><div><div class="section-title">比分TOP10（标准泊松）</div><table class="odds-table"><tr><th>比分</th><th>概率</th><th>方向</th><th>体彩赔率</th></tr><tr><td class="bold">0:1</td><td>12.8%</td><td class="dn">客胜</td><td>6.98</td></tr><tr><td class="bold">1:1</td><td>12.1%</td><td class="dr">平局</td><td>7.38</td></tr><tr><td class="bold">0:2</td><td>10.0%</td><td class="dn">客胜</td><td>8.93</td></tr><tr><td class="bold">1:2</td><td>9.4%</td><td class="dn">客胜</td><td>9.5</td></tr><tr><td class="bold">0:0</td><td>8.3%</td><td class="dr">平局</td><td>10.76</td></tr><tr><td class="bold">1:0</td><td>7.8%</td><td class="up">主胜</td><td>11.45</td></tr><tr><td class="bold">2:1</td><td>5.7%</td><td class="up">主胜</td><td>15.66</td></tr><tr><td class="bold">0:3</td><td>5.1%</td><td class="dn">客胜</td><td>17.51</td></tr><tr><td class="bold">1:3</td><td>4.8%</td><td class="dn">客胜</td><td>18.6</td></tr><tr><td class="bold">2:2</td><td>4.4%</td><td class="dr">平局</td><td>20.29</td></tr></table></div><div><div class="section-title">半场TOP5</div><table class="odds-table"><tr><th>半场比分</th><th>概率</th><th>方向</th></tr><tr><td class="bold">0:0</td><td>35.1%</td><td class="dr">平局</td></tr><tr><td class="bold">0:1</td><td>22.9%</td><td class="dn">客胜</td></tr><tr><td class="bold">1:0</td><td>13.9%</td><td class="up">主胜</td></tr><tr><td class="bold">1:1</td><td>9.0%</td><td class="dr">平局</td></tr><tr><td class="bold">0:2</td><td>7.4%</td><td class="dn">客胜</td></tr></table><div class="section-title">半全场（估算赔率）</div><table class="odds-table"><tr><th>组合</th><th>概率</th><th>赔率</th></tr><tr><td>胜胜</td><td>5.5%</td><td>16.37</td></tr><tr><td>胜平</td><td>2.7%</td><td>32.47</td></tr><tr><td>胜负</td><td>1.9%</td><td>47.36</td></tr><tr><td>平胜</td><td>11.5%</td><td>7.74</td></tr><tr><td>平平</td><td>21.8%</td><td>4.09</td></tr><tr><td>平负</td><td>23.9%</td><td>3.73</td></tr><tr><td>负胜</td><td>2.0%</td><td>45.05</td></tr><tr><td>负平</td><td>6.0%</td><td>14.89</td></tr><tr><td>负负</td><td>24.7%</td><td>3.62</td></tr></table><div class="section-title">总进球分布</div><table class="odds-table"><tr><th>进球数</th><th>概率</th><th>体彩赔率</th></tr><tr><td>0球</td><td>8.3%</td><td>10.76</td></tr><tr><td>1球</td><td>20.6%</td><td>4.33</td></tr><tr><td>2球</td><td>25.7%</td><td>3.47</td></tr><tr><td>3球</td><td>21.3%</td><td>4.19</td></tr><tr><td>4球</td><td>13.3%</td><td>6.71</td></tr><tr><td>5球</td><td>6.6%</td><td>13.53</td></tr><tr><td>6球</td><td>2.7%</td><td>33.07</td></tr><tr><td>7+球</td><td>1.0%</td><td>89.29</td></tr></table><p style="font-size:0.8em;color:#aaa;margin-top:4px">大小球2.5: 大球 <b style="color:#f44336)">45.3%</b> / 小球 <b style="color:#4caf50)">54.7%</b></p></div></div>
+<div class="rec">
+<h4>🎯 综合推荐</h4>
+<p><b>方向：</b>客胜 ~51%</p>
+<p><b>比分：</b>首选 0:1(12.8%) / 次选 1:1(12.1%) / 备选 0:2(10.0%)</p>
+<p><b>半场比分：</b>首选 0:0(35.1%)</p>
+<p><b>总进球：</b>2球首选(25.7%) — 小球倾向</p>
+<p><span class="tag tag-d">规则21: 模型>50%→强制冷门检查</span></p></div></div></div>
+<!-- 205 挪超 克里斯蒂安松 vs 斯达 -->
+<div class="match-card">
+<div class="match-header">
+<div>
+<span class="title">205 挪超</span><br>
+<span class="teams">克里斯蒂安松 [15] vs 斯达 [16]</span>
+</div>
+<div style="text-align:right">
+<div class="time">22:00</div>
+<div class="conf high">★★★ 高置信度</div>
+</div>
+</div>
+<div class="body">
+<div class="notes">两队都在降级区。克里斯蒂安松主场略好于斯达客场。垫底之战。</div>
+
+<div class="section-title">赔率与校准 <span class="tag tag-est">外盘均值</span></div>
+<table><tr><th>方法</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>外盘均值</td><td>2.17</td><td>3.47</td><td>2.99</td></tr>
+<tr><td>Shin去水</td><td class="bold">40.8%</td><td class="bold">27.9%</td><td class="bold">31.3%</td></tr></table>
+
+<table><tr><th>让球(-1)</th><th>让胜</th><th>让平</th><th>让负</th></tr>
+<tr><td>估算</td><td>4.24</td><td>10.03</td><td>1.28</td></tr></table>
+
+<div class="section-title">模型概率对比</div>
+<table><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>标准泊松(主)</td><td>37.2%</td><td>30.8%</td><td>32.0%</td></tr>
+<tr><td>DC模型(辅)</td><td>35.9%</td><td>33.5%</td><td>30.6%</td></tr>
+<tr><td>负二项</td><td>37.0%</td><td>30.6%</td><td>32.3%</td></tr>
+<tr><td>Skellam</td><td>37.2%</td><td>30.8%</td><td>32.0%</td></tr>
+<tr><td>蒙特卡洛</td><td>36.5%</td><td>31.6%</td><td>31.9%</td></tr>
+<tr><td class="bold">加权融合</td><td class="bold up">39.9%</td><td class="bold ">28.0%</td><td class="bold ">32.1%</td></tr></table>
+<div class="grid2"><div><div class="section-title">比分TOP10（标准泊松）</div><table class="odds-table"><tr><th>比分</th><th>概率</th><th>方向</th><th>体彩赔率</th></tr><tr><td class="bold">1:0</td><td>14.2%</td><td class="up">主胜</td><td>6.29</td></tr><tr><td class="bold">0:0</td><td>13.5%</td><td class="dr">平局</td><td>6.61</td></tr><tr><td class="bold">1:1</td><td>13.5%</td><td class="dr">平局</td><td>6.61</td></tr><tr><td class="bold">0:1</td><td>12.9%</td><td class="dn">客胜</td><td>6.92</td></tr><tr><td class="bold">2:0</td><td>7.5%</td><td class="up">主胜</td><td>11.9</td></tr><tr><td class="bold">2:1</td><td>7.1%</td><td class="up">主胜</td><td>12.58</td></tr><tr><td class="bold">1:2</td><td>6.4%</td><td class="dn">客胜</td><td>13.95</td></tr><tr><td class="bold">0:2</td><td>6.1%</td><td class="dn">客胜</td><td>14.64</td></tr><tr><td class="bold">2:2</td><td>3.4%</td><td class="dr">平局</td><td>26.26</td></tr><tr><td class="bold">3:0</td><td>2.6%</td><td class="up">主胜</td><td>34.34</td></tr></table></div><div><div class="section-title">半场TOP5</div><table class="odds-table"><tr><th>半场比分</th><th>概率</th><th>方向</th></tr><tr><td class="bold">0:0</td><td>43.2%</td><td class="dr">平局</td></tr><tr><td class="bold">1:0</td><td>19.0%</td><td class="up">主胜</td></tr><tr><td class="bold">0:1</td><td>17.2%</td><td class="dn">客胜</td></tr><tr><td class="bold">1:1</td><td>7.6%</td><td class="dr">平局</td></tr><tr><td class="bold">2:0</td><td>4.2%</td><td class="up">主胜</td></tr></table><div class="section-title">半全场（估算赔率）</div><table class="odds-table"><tr><th>组合</th><th>概率</th><th>赔率</th></tr><tr><td>胜胜</td><td>14.2%</td><td>6.27</td></tr><tr><td>胜平</td><td>5.0%</td><td>17.86</td></tr><tr><td>胜负</td><td>1.9%</td><td>46.75</td></tr><tr><td>平胜</td><td>20.8%</td><td>4.29</td></tr><tr><td>平平</td><td>27.4%</td><td>3.26</td></tr><tr><td>平负</td><td>16.7%</td><td>5.34</td></tr><tr><td>负胜</td><td>1.8%</td><td>50.73</td></tr><tr><td>负平</td><td>3.7%</td><td>24.09</td></tr><tr><td>负负</td><td>8.5%</td><td>10.51</td></tr></table><div class="section-title">总进球分布</div><table class="odds-table"><tr><th>进球数</th><th>概率</th><th>体彩赔率</th></tr><tr><td>0球</td><td>13.5%</td><td>6.61</td></tr><tr><td>1球</td><td>27.1%</td><td>3.29</td></tr><tr><td>2球</td><td>27.1%</td><td>3.29</td></tr><tr><td>3球</td><td>18.0%</td><td>4.96</td></tr><tr><td>4球</td><td>9.0%</td><td>9.92</td></tr><tr><td>5球</td><td>3.6%</td><td>24.8</td></tr><tr><td>6球</td><td>1.2%</td><td>74.4</td></tr><tr><td>7+球</td><td>0.3%</td><td>297.62</td></tr></table><p style="font-size:0.8em;color:#aaa;margin-top:4px">大小球2.5: 大球 <b style="color:#f44336)">32.2%</b> / 小球 <b style="color:#4caf50)">67.8%</b></p></div></div>
+<div class="rec">
+<h4>🎯 综合推荐</h4>
+<p><b>方向：</b>主胜 ~40%</p>
+<p><b>比分：</b>首选 1:0(14.2%) / 次选 0:0(13.5%) / 备选 1:1(13.5%)</p>
+<p><b>半场比分：</b>首选 0:0(43.2%)</p>
+<p><b>总进球：</b>1球首选(27.1%) — 小球倾向</p>
+</div></div></div>
+<!-- 206 芬超 库奥皮奥 vs 瓦萨 -->
+<div class="match-card">
+<div class="match-header">
+<div>
+<span class="title">206 芬超</span><br>
+<span class="teams">库奥皮奥 [1] vs 瓦萨 [3]</span>
+</div>
+<div style="text-align:right">
+<div class="time">22:00</div>
+<div class="conf mid">★★ 中置信度</div>
+</div>
+</div>
+<div class="body">
+<div class="notes">库奥皮奥联赛第1主场强势。瓦萨客场3胜3平2负不俗。榜首vs第3。</div>
+
+<div class="section-title">赔率与校准 <span class="tag tag-est">外盘均值</span></div>
+<table><tr><th>方法</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>外盘均值</td><td>1.91</td><td>3.57</td><td>3.54</td></tr>
+<tr><td>Shin去水</td><td class="bold">45.4%</td><td class="bold">27.2%</td><td class="bold">27.4%</td></tr></table>
+
+<table><tr><th>让球(-1)</th><th>让胜</th><th>让平</th><th>让负</th></tr>
+<tr><td>估算</td><td>2.54</td><td>11.96</td><td>1.56</td></tr></table>
+
+<div class="section-title">模型概率对比</div>
+<table><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>标准泊松(主)</td><td>55.4%</td><td>25.0%</td><td>19.6%</td></tr>
+<tr><td>DC模型(辅)</td><td>54.2%</td><td>27.4%</td><td>18.4%</td></tr>
+<tr><td>负二项</td><td>53.1%</td><td>25.4%</td><td>21.5%</td></tr>
+<tr><td>Skellam</td><td>55.3%</td><td>25.0%</td><td>19.6%</td></tr>
+<tr><td>蒙特卡洛</td><td>54.8%</td><td>25.4%</td><td>19.8%</td></tr>
+<tr><td class="bold">加权融合</td><td class="bold up">53.5%</td><td class="bold ">23.7%</td><td class="bold ">22.8%</td></tr></table>
+<div class="grid2"><div><div class="section-title">比分TOP10（标准泊松）</div><table class="odds-table"><tr><th>比分</th><th>概率</th><th>方向</th><th>体彩赔率</th></tr><tr><td class="bold">1:0</td><td>14.0%</td><td class="up">主胜</td><td>6.38</td></tr><tr><td class="bold">1:1</td><td>11.7%</td><td class="dr">平局</td><td>7.63</td></tr><tr><td class="bold">2:0</td><td>11.2%</td><td class="up">主胜</td><td>7.97</td></tr><tr><td class="bold">2:1</td><td>9.4%</td><td class="up">主胜</td><td>9.5</td></tr><tr><td class="bold">0:0</td><td>8.7%</td><td class="dr">平局</td><td>10.26</td></tr><tr><td class="bold">0:1</td><td>7.3%</td><td class="dn">客胜</td><td>12.23</td></tr><tr><td class="bold">3:0</td><td>6.0%</td><td class="up">主胜</td><td>14.88</td></tr><tr><td class="bold">3:1</td><td>5.0%</td><td class="up">主胜</td><td>17.86</td></tr><tr><td class="bold">1:2</td><td>4.9%</td><td class="dn">客胜</td><td>18.22</td></tr><tr><td class="bold">2:2</td><td>3.9%</td><td class="dr">平局</td><td>22.89</td></tr></table></div><div><div class="section-title">半场TOP5</div><table class="odds-table"><tr><th>半场比分</th><th>概率</th><th>方向</th></tr><tr><td class="bold">0:0</td><td>35.9%</td><td class="dr">平局</td></tr><tr><td class="bold">1:0</td><td>24.1%</td><td class="up">主胜</td></tr><tr><td class="bold">0:1</td><td>12.6%</td><td class="dn">客胜</td></tr><tr><td class="bold">1:1</td><td>8.5%</td><td class="dr">平局</td></tr><tr><td class="bold">2:0</td><td>8.1%</td><td class="up">主胜</td></tr></table><div class="section-title">半全场（估算赔率）</div><table class="odds-table"><tr><th>组合</th><th>概率</th><th>赔率</th></tr><tr><td>胜胜</td><td>27.1%</td><td>3.29</td></tr><tr><td>胜平</td><td>6.0%</td><td>14.86</td></tr><tr><td>胜负</td><td>1.9%</td><td>46.33</td></tr><tr><td>平胜</td><td>24.9%</td><td>3.58</td></tr><tr><td>平平</td><td>20.7%</td><td>4.31</td></tr><tr><td>平负</td><td>10.6%</td><td>8.4</td></tr><tr><td>负胜</td><td>1.8%</td><td>50.46</td></tr><tr><td>负平</td><td>2.4%</td><td>37.97</td></tr><tr><td>负负</td><td>4.5%</td><td>19.73</td></tr></table><div class="section-title">总进球分布</div><table class="odds-table"><tr><th>进球数</th><th>概率</th><th>体彩赔率</th></tr><tr><td>0球</td><td>8.7%</td><td>10.26</td></tr><tr><td>1球</td><td>21.3%</td><td>4.19</td></tr><tr><td>2球</td><td>26.0%</td><td>3.43</td></tr><tr><td>3球</td><td>21.1%</td><td>4.23</td></tr><tr><td>4球</td><td>12.8%</td><td>6.98</td></tr><tr><td>5球</td><td>6.3%</td><td>14.17</td></tr><tr><td>6球</td><td>2.5%</td><td>35.71</td></tr><tr><td>7+球</td><td>0.9%</td><td>99.21</td></tr></table><p style="font-size:0.8em;color:#aaa;margin-top:4px">大小球2.5: 大球 <b style="color:#f44336)">44.0%</b> / 小球 <b style="color:#4caf50)">56.0%</b></p></div></div>
+<div class="rec">
+<h4>🎯 综合推荐</h4>
+<p><b>方向：</b>主胜 ~54%</p>
+<p><b>比分：</b>首选 1:0(14.0%) / 次选 1:1(11.7%) / 备选 2:0(11.2%)</p>
+<p><b>半场比分：</b>首选 0:0(35.9%)</p>
+<p><b>总进球：</b>2球首选(26.0%) — 小球倾向</p>
+<p><span class="tag tag-d">规则21: 模型>50%→强制冷门检查</span></p></div></div></div>
+<!-- 207 瑞超 卡尔马 vs 米亚尔比 -->
+<div class="match-card">
+<div class="match-header">
+<div>
+<span class="title">207 瑞超</span><br>
+<span class="teams">卡尔马 [12] vs 米亚尔比 [10]</span>
+</div>
+<div style="text-align:right">
+<div class="time">23:30</div>
+<div class="conf mid">★★ 中置信度</div>
+</div>
+</div>
+<div class="body">
+<div class="notes">双方实力接近。米亚尔比客场不败率62.5%。</div>
+
+<div class="section-title">赔率与校准 <span class="tag tag-est">外盘均值</span></div>
+<table><tr><th>方法</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>外盘均值</td><td>2.3</td><td>3.41</td><td>2.82</td></tr>
+<tr><td>Shin去水</td><td class="bold">38.9%</td><td class="bold">28.3%</td><td class="bold">32.8%</td></tr></table>
+
+<table><tr><th>让球(+1)</th><th>让胜</th><th>让平</th><th>让负</th></tr>
+<tr><td>估算</td><td>1.32</td><td>11.03</td><td>3.7</td></tr></table>
+
+<div class="section-title">模型概率对比</div>
+<table><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>标准泊松(主)</td><td>34.1%</td><td>27.0%</td><td>38.9%</td></tr>
+<tr><td>DC模型(辅)</td><td>32.9%</td><td>29.5%</td><td>37.6%</td></tr>
+<tr><td>负二项</td><td>34.7%</td><td>26.3%</td><td>38.9%</td></tr>
+<tr><td>Skellam</td><td>34.1%</td><td>27.0%</td><td>38.9%</td></tr>
+<tr><td>蒙特卡洛</td><td>33.1%</td><td>27.8%</td><td>39.1%</td></tr>
+<tr><td class="bold">加权融合</td><td class="bold ">36.5%</td><td class="bold ">25.6%</td><td class="bold dn">37.9%</td></tr></table>
+<div class="grid2"><div><div class="section-title">比分TOP10（标准泊松）</div><table class="odds-table"><tr><th>比分</th><th>概率</th><th>方向</th><th>体彩赔率</th></tr><tr><td class="bold">1:1</td><td>12.8%</td><td class="dr">平局</td><td>6.98</td></tr><tr><td class="bold">0:1</td><td>10.7%</td><td class="dn">客胜</td><td>8.34</td></tr><tr><td class="bold">1:0</td><td>9.9%</td><td class="up">主胜</td><td>9.02</td></tr><tr><td class="bold">1:2</td><td>8.3%</td><td class="dn">客胜</td><td>10.76</td></tr><tr><td class="bold">0:0</td><td>8.2%</td><td class="dr">平局</td><td>10.89</td></tr><tr><td class="bold">2:1</td><td>7.7%</td><td class="up">主胜</td><td>11.6</td></tr><tr><td class="bold">0:2</td><td>6.9%</td><td class="dn">客胜</td><td>12.94</td></tr><tr><td class="bold">2:0</td><td>5.9%</td><td class="up">主胜</td><td>15.13</td></tr><tr><td class="bold">2:2</td><td>5.0%</td><td class="dr">平局</td><td>17.86</td></tr><tr><td class="bold">1:3</td><td>3.6%</td><td class="dn">客胜</td><td>24.8</td></tr></table></div><div><div class="section-title">半场TOP5</div><table class="odds-table"><tr><th>半场比分</th><th>概率</th><th>方向</th></tr><tr><td class="bold">0:0</td><td>35.0%</td><td class="dr">平局</td></tr><tr><td class="bold">0:1</td><td>19.1%</td><td class="dn">客胜</td></tr><tr><td class="bold">1:0</td><td>17.6%</td><td class="up">主胜</td></tr><tr><td class="bold">1:1</td><td>9.6%</td><td class="dr">平局</td></tr><tr><td class="bold">0:2</td><td>5.2%</td><td class="dn">客胜</td></tr></table><div class="section-title">半全场（估算赔率）</div><table class="odds-table"><tr><th>组合</th><th>概率</th><th>赔率</th></tr><tr><td>胜胜</td><td>10.7%</td><td>8.34</td></tr><tr><td>胜平</td><td>3.8%</td><td>23.77</td></tr><tr><td>胜负</td><td>1.9%</td><td>48.17</td></tr><tr><td>平胜</td><td>18.1%</td><td>4.93</td></tr><tr><td>平平</td><td>23.8%</td><td>3.75</td></tr><tr><td>平负</td><td>18.8%</td><td>4.75</td></tr><tr><td>负胜</td><td>2.5%</td><td>36.23</td></tr><tr><td>负平</td><td>5.2%</td><td>17.22</td></tr><tr><td>负负</td><td>15.4%</td><td>5.81</td></tr></table><div class="section-title">总进球分布</div><table class="odds-table"><tr><th>进球数</th><th>概率</th><th>体彩赔率</th></tr><tr><td>0球</td><td>8.2%</td><td>10.89</td></tr><tr><td>1球</td><td>20.5%</td><td>4.36</td></tr><tr><td>2球</td><td>25.7%</td><td>3.47</td></tr><tr><td>3球</td><td>21.4%</td><td>4.17</td></tr><tr><td>4球</td><td>13.4%</td><td>6.66</td></tr><tr><td>5球</td><td>6.7%</td><td>13.33</td></tr><tr><td>6球</td><td>2.8%</td><td>31.89</td></tr><tr><td>7+球</td><td>1.0%</td><td>89.29</td></tr></table><p style="font-size:0.8em;color:#aaa;margin-top:4px">大小球2.5: 大球 <b style="color:#f44336)">45.7%</b> / 小球 <b style="color:#4caf50)">54.3%</b></p></div></div>
+<div class="rec">
+<h4>🎯 综合推荐</h4>
+<p><b>方向：</b>客胜 ~38%</p>
+<p><b>比分：</b>首选 1:1(12.8%) / 次选 0:1(10.7%) / 备选 1:0(9.9%)</p>
+<p><b>半场比分：</b>首选 0:0(35.0%)</p>
+<p><b>总进球：</b>2球首选(25.7%) — 小球倾向</p>
+</div></div></div>
+<!-- 208 巴甲 巴拉纳竞技 vs 巴西国际 -->
+<div class="match-card">
+<div class="match-header">
+<div>
+<span class="title">208 巴甲</span><br>
+<span class="teams">巴拉纳竞技 [3] vs 巴西国际 [14]</span>
+</div>
+<div style="text-align:right">
+<div class="time">次日05:30</div>
+<div class="conf mid">★★ 中置信度</div>
+</div>
+</div>
+<div class="body">
+<div class="notes">巴拉纳竞技主场强势。巴西国际客场0胜4平5负不胜。</div>
+
+<div class="section-title">赔率与校准 <span class="tag tag-est">外盘均值</span></div>
+<table><tr><th>方法</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>外盘均值</td><td>1.99</td><td>3.21</td><td>3.81</td></tr>
+<tr><td>Shin去水</td><td class="bold">44.1%</td><td class="bold">29.7%</td><td class="bold">26.2%</td></tr></table>
+
+<table><tr><th>让球(-1)</th><th>让胜</th><th>让平</th><th>让负</th></tr>
+<tr><td>估算</td><td>1.86</td><td>12.99</td><td>1.97</td></tr></table>
+
+<div class="section-title">模型概率对比</div>
+<table><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>标准泊松(主)</td><td>69.7%</td><td>22.6%</td><td>7.6%</td></tr>
+<tr><td>DC模型(辅)</td><td>69.0%</td><td>24.2%</td><td>6.8%</td></tr>
+<tr><td>负二项</td><td>65.7%</td><td>25.3%</td><td>9.0%</td></tr>
+<tr><td>Skellam</td><td>69.6%</td><td>22.6%</td><td>7.6%</td></tr>
+<tr><td>蒙特卡洛</td><td>69.3%</td><td>23.0%</td><td>7.7%</td></tr>
+<tr><td class="bold">加权融合</td><td class="bold up">65.8%</td><td class="bold ">21.9%</td><td class="bold ">12.3%</td></tr></table>
+<div class="grid2"><div><div class="section-title">比分TOP10（标准泊松）</div><table class="odds-table"><tr><th>比分</th><th>概率</th><th>方向</th><th>体彩赔率</th></tr><tr><td class="bold">1:0</td><td>22.1%</td><td class="up">主胜</td><td>4.04</td></tr><tr><td class="bold">2:0</td><td>18.2%</td><td class="up">主胜</td><td>4.91</td></tr><tr><td class="bold">0:0</td><td>13.4%</td><td class="dr">平局</td><td>6.66</td></tr><tr><td class="bold">3:0</td><td>10.0%</td><td class="up">主胜</td><td>8.93</td></tr><tr><td class="bold">1:1</td><td>8.0%</td><td class="dr">平局</td><td>11.16</td></tr><tr><td class="bold">2:1</td><td>6.6%</td><td class="up">主胜</td><td>13.53</td></tr><tr><td class="bold">0:1</td><td>4.8%</td><td class="dn">客胜</td><td>18.6</td></tr><tr><td class="bold">4:0</td><td>4.1%</td><td class="up">主胜</td><td>21.78</td></tr><tr><td class="bold">3:1</td><td>3.6%</td><td class="up">主胜</td><td>24.8</td></tr><tr><td class="bold">4:1</td><td>1.5%</td><td class="up">主胜</td><td>59.52</td></tr></table></div><div><div class="section-title">半场TOP5</div><table class="odds-table"><tr><th>半场比分</th><th>概率</th><th>方向</th></tr><tr><td class="bold">0:0</td><td>43.0%</td><td class="dr">平局</td></tr><tr><td class="bold">1:0</td><td>29.8%</td><td class="up">主胜</td></tr><tr><td class="bold">2:0</td><td>10.3%</td><td class="up">主胜</td></tr><tr><td class="bold">0:1</td><td>6.5%</td><td class="dn">客胜</td></tr><tr><td class="bold">1:1</td><td>4.5%</td><td class="dr">平局</td></tr></table><div class="section-title">半全场（估算赔率）</div><table class="odds-table"><tr><th>组合</th><th>概率</th><th>赔率</th></tr><tr><td>胜胜</td><td>36.9%</td><td>2.42</td></tr><tr><td>胜平</td><td>6.1%</td><td>14.55</td></tr><tr><td>胜负</td><td>1.1%</td><td>77.72</td></tr><tr><td>平胜</td><td>29.1%</td><td>3.07</td></tr><tr><td>平平</td><td>18.2%</td><td>4.91</td></tr><tr><td>平负</td><td>5.4%</td><td>16.4</td></tr><tr><td>负胜</td><td>1.0%</td><td>89.63</td></tr><tr><td>负平</td><td>1.0%</td><td>89.77</td></tr><tr><td>负负</td><td>1.1%</td><td>79.91</td></tr></table><div class="section-title">总进球分布</div><table class="odds-table"><tr><th>进球数</th><th>概率</th><th>体彩赔率</th></tr><tr><td>0球</td><td>13.4%</td><td>6.66</td></tr><tr><td>1球</td><td>26.9%</td><td>3.32</td></tr><tr><td>2球</td><td>27.1%</td><td>3.29</td></tr><tr><td>3球</td><td>18.1%</td><td>4.93</td></tr><tr><td>4球</td><td>9.1%</td><td>9.81</td></tr><tr><td>5球</td><td>3.7%</td><td>24.13</td></tr><tr><td>6球</td><td>1.2%</td><td>74.4</td></tr><tr><td>7+球</td><td>0.4%</td><td>223.21</td></tr></table><p style="font-size:0.8em;color:#aaa;margin-top:4px">大小球2.5: 大球 <b style="color:#f44336)">32.6%</b> / 小球 <b style="color:#4caf50)">67.4%</b></p></div></div>
+<div class="rec">
+<h4>🎯 综合推荐</h4>
+<p><b>方向：</b>主胜 ~66%</p>
+<p><b>比分：</b>首选 1:0(22.1%) / 次选 2:0(18.2%) / 备选 0:0(13.4%)</p>
+<p><b>半场比分：</b>首选 0:0(43.0%)</p>
+<p><b>总进球：</b>2球首选(27.1%) — 小球倾向</p>
+<p><span class="tag tag-a">⚠️ 模型vs市场分歧>15%，不确定性极高</span> <span class="tag tag-d">规则21: 模型>50%→强制冷门检查</span></p></div></div></div>
+<!-- 209 巴甲 桑托斯 vs 沙佩科恩斯 -->
+<div class="match-card">
+<div class="match-header">
+<div>
+<span class="title">209 巴甲</span><br>
+<span class="teams">桑托斯 [15] vs 沙佩科恩斯 [20]</span>
+</div>
+<div style="text-align:right">
+<div class="time">次日05:30</div>
+<div class="conf mid">★★ 中置信度</div>
+</div>
+</div>
+<div class="body">
+<div class="notes">垫底大战！双方进攻都极差。沙佩科恩斯客场0胜！</div>
+
+<div class="section-title">赔率与校准 <span class="tag tag-est">外盘均值</span></div>
+<table><tr><th>方法</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>外盘均值</td><td>1.4</td><td>4.51</td><td>7.11</td></tr>
+<tr><td>Shin去水</td><td class="bold">59.1%</td><td class="bold">22.8%</td><td class="bold">18.1%</td></tr></table>
+
+<table><tr><th>让球(-1)</th><th>让胜</th><th>让平</th><th>让负</th></tr>
+<tr><td>估算</td><td>3.01</td><td>8.59</td><td>1.49</td></tr></table>
+
+<div class="section-title">模型概率对比</div>
+<table><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>标准泊松(主)</td><td>42.7%</td><td>38.7%</td><td>18.6%</td></tr>
+<tr><td>DC模型(辅)</td><td>41.7%</td><td>40.8%</td><td>17.5%</td></tr>
+<tr><td>负二项</td><td>41.4%</td><td>39.5%</td><td>19.1%</td></tr>
+<tr><td>Skellam</td><td>42.7%</td><td>38.7%</td><td>18.6%</td></tr>
+<tr><td>蒙特卡洛</td><td>42.3%</td><td>39.2%</td><td>18.5%</td></tr>
+<tr><td class="bold">加权融合</td><td class="bold up">47.7%</td><td class="bold ">32.4%</td><td class="bold ">19.9%</td></tr></table>
+<div class="grid2"><div><div class="section-title">比分TOP10（标准泊松）</div><table class="odds-table"><tr><th>比分</th><th>概率</th><th>方向</th><th>体彩赔率</th></tr><tr><td class="bold">0:0</td><td>27.1%</td><td class="dr">平局</td><td>3.29</td></tr><tr><td class="bold">1:0</td><td>23.0%</td><td class="up">主胜</td><td>3.88</td></tr><tr><td class="bold">0:1</td><td>12.3%</td><td class="dn">客胜</td><td>7.26</td></tr><tr><td class="bold">1:1</td><td>10.5%</td><td class="dr">平局</td><td>8.5</td></tr><tr><td class="bold">2:0</td><td>9.8%</td><td class="up">主胜</td><td>9.11</td></tr><tr><td class="bold">2:1</td><td>4.5%</td><td class="up">主胜</td><td>19.84</td></tr><tr><td class="bold">0:2</td><td>2.8%</td><td class="dn">客胜</td><td>31.89</td></tr><tr><td class="bold">3:0</td><td>2.8%</td><td class="up">主胜</td><td>31.89</td></tr><tr><td class="bold">1:2</td><td>2.4%</td><td class="dn">客胜</td><td>37.2</td></tr><tr><td class="bold">3:1</td><td>1.3%</td><td class="up">主胜</td><td>68.68</td></tr></table></div><div><div class="section-title">半场TOP5</div><table class="odds-table"><tr><th>半场比分</th><th>概率</th><th>方向</th></tr><tr><td class="bold">0:0</td><td>57.8%</td><td class="dr">平局</td></tr><tr><td class="bold">1:0</td><td>20.6%</td><td class="up">主胜</td></tr><tr><td class="bold">0:1</td><td>11.0%</td><td class="dn">客胜</td></tr><tr><td class="bold">1:1</td><td>3.9%</td><td class="dr">平局</td></tr><tr><td class="bold">2:0</td><td>3.7%</td><td class="up">主胜</td></tr></table><div class="section-title">半全场（估算赔率）</div><table class="odds-table"><tr><th>组合</th><th>概率</th><th>赔率</th></tr><tr><td>胜胜</td><td>15.7%</td><td>5.7</td></tr><tr><td>胜平</td><td>5.3%</td><td>16.78</td></tr><tr><td>胜负</td><td>1.1%</td><td>81.95</td></tr><tr><td>平胜</td><td>26.5%</td><td>3.37</td></tr><tr><td>平平</td><td>33.8%</td><td>2.64</td></tr><tr><td>平负</td><td>11.1%</td><td>8.07</td></tr><tr><td>负胜</td><td>1.2%</td><td>75.53</td></tr><tr><td>负平</td><td>2.4%</td><td>37.06</td></tr><tr><td>负负</td><td>3.0%</td><td>30.17</td></tr></table><div class="section-title">总进球分布</div><table class="odds-table"><tr><th>进球数</th><th>概率</th><th>体彩赔率</th></tr><tr><td>0球</td><td>27.1%</td><td>3.29</td></tr><tr><td>1球</td><td>35.4%</td><td>2.52</td></tr><tr><td>2球</td><td>23.1%</td><td>3.87</td></tr><tr><td>3球</td><td>10.0%</td><td>8.93</td></tr><tr><td>4球</td><td>3.3%</td><td>27.06</td></tr><tr><td>5球</td><td>0.9%</td><td>99.21</td></tr><tr><td>6球</td><td>0.2%</td><td>446.43</td></tr><tr><td>7+球</td><td>0.0%</td><td>999.0</td></tr></table><p style="font-size:0.8em;color:#aaa;margin-top:4px">大小球2.5: 大球 <b style="color:#f44336)">14.4%</b> / 小球 <b style="color:#4caf50)">85.6%</b></p></div></div>
+<div class="rec">
+<h4>🎯 综合推荐</h4>
+<p><b>方向：</b>主胜 ~48%</p>
+<p><b>比分：</b>首选 0:0(27.1%) / 次选 1:0(23.0%) / 备选 0:1(12.3%)</p>
+<p><b>半场比分：</b>首选 0:0(57.8%)</p>
+<p><b>总进球：</b>1球首选(35.4%) — 小球倾向</p>
+</div></div></div>
+<!-- 210 美职 圣迭戈FC vs 达拉斯FC -->
+<div class="match-card">
+<div class="match-header">
+<div>
+<span class="title">210 美职</span><br>
+<span class="teams">圣迭戈FC [22] vs 达拉斯FC [7]</span>
+</div>
+<div style="text-align:right">
+<div class="time">次日09:30</div>
+<div class="conf mid">★★ 中置信度</div>
+</div>
+</div>
+<div class="body">
+<div class="notes">圣迭戈FC是扩张新军。无历史交锋，参考有限（规则19）。</div>
+
+<div class="section-title">赔率与校准 <span class="tag tag-est">外盘均值</span></div>
+<table><tr><th>方法</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>外盘均值</td><td>2.06</td><td>3.87</td><td>2.97</td></tr>
+<tr><td>Shin去水</td><td class="bold">42.7%</td><td class="bold">25.9%</td><td class="bold">31.4%</td></tr></table>
+
+<table><tr><th>让球(+1)</th><th>让胜</th><th>让平</th><th>让负</th></tr>
+<tr><td>估算</td><td>1.41</td><td>10.94</td><td>3.14</td></tr></table>
+
+<div class="section-title">模型概率对比</div>
+<table><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>标准泊松(主)</td><td>32.2%</td><td>26.2%</td><td>41.6%</td></tr>
+<tr><td>DC模型(辅)</td><td>31.0%</td><td>28.7%</td><td>40.3%</td></tr>
+<tr><td>负二项</td><td>33.1%</td><td>25.6%</td><td>41.3%</td></tr>
+<tr><td>Skellam</td><td>32.2%</td><td>26.2%</td><td>41.5%</td></tr>
+<tr><td>蒙特卡洛</td><td>31.1%</td><td>27.0%</td><td>41.8%</td></tr>
+<tr><td class="bold">加权融合</td><td class="bold ">32.2%</td><td class="bold ">25.8%</td><td class="bold dn">42.0%</td></tr></table>
+<div class="grid2"><div><div class="section-title">比分TOP10（标准泊松）</div><table class="odds-table"><tr><th>比分</th><th>概率</th><th>方向</th><th>体彩赔率</th></tr><tr><td class="bold">1:1</td><td>12.5%</td><td class="dr">平局</td><td>7.14</td></tr><tr><td class="bold">0:1</td><td>10.4%</td><td class="dn">客胜</td><td>8.59</td></tr><tr><td class="bold">1:0</td><td>8.9%</td><td class="up">主胜</td><td>10.03</td></tr><tr><td class="bold">1:2</td><td>8.7%</td><td class="dn">客胜</td><td>10.26</td></tr><tr><td class="bold">2:1</td><td>7.5%</td><td class="up">主胜</td><td>11.9</td></tr><tr><td class="bold">0:0</td><td>7.4%</td><td class="dr">平局</td><td>12.07</td></tr><tr><td class="bold">0:2</td><td>7.3%</td><td class="dn">客胜</td><td>12.23</td></tr><tr><td class="bold">2:0</td><td>5.3%</td><td class="up">主胜</td><td>16.85</td></tr><tr><td class="bold">2:2</td><td>5.2%</td><td class="dr">平局</td><td>17.17</td></tr><tr><td class="bold">1:3</td><td>4.1%</td><td class="dn">客胜</td><td>21.78</td></tr></table></div><div><div class="section-title">半场TOP5</div><table class="odds-table"><tr><th>半场比分</th><th>概率</th><th>方向</th></tr><tr><td class="bold">0:0</td><td>33.6%</td><td class="dr">平局</td></tr><tr><td class="bold">0:1</td><td>19.7%</td><td class="dn">客胜</td></tr><tr><td class="bold">1:0</td><td>16.9%</td><td class="up">主胜</td></tr><tr><td class="bold">1:1</td><td>9.9%</td><td class="dr">平局</td></tr><tr><td class="bold">0:2</td><td>5.8%</td><td class="dn">客胜</td></tr></table><div class="section-title">半全场（估算赔率）</div><table class="odds-table"><tr><th>组合</th><th>概率</th><th>赔率</th></tr><tr><td>胜胜</td><td>9.1%</td><td>9.8</td></tr><tr><td>胜平</td><td>3.7%</td><td>24.46</td></tr><tr><td>胜负</td><td>2.0%</td><td>45.07</td></tr><tr><td>平胜</td><td>15.6%</td><td>5.71</td></tr><tr><td>平平</td><td>23.5%</td><td>3.8</td></tr><tr><td>平负</td><td>20.4%</td><td>4.38</td></tr><tr><td>负胜</td><td>2.3%</td><td>38.96</td></tr><tr><td>负平</td><td>5.5%</td><td>16.21</td></tr><tr><td>负负</td><td>17.9%</td><td>4.98</td></tr></table><div class="section-title">总进球分布</div><table class="odds-table"><tr><th>进球数</th><th>概率</th><th>体彩赔率</th></tr><tr><td>0球</td><td>7.4%</td><td>12.07</td></tr><tr><td>1球</td><td>19.3%</td><td>4.63</td></tr><tr><td>2球</td><td>25.1%</td><td>3.56</td></tr><tr><td>3球</td><td>21.8%</td><td>4.1</td></tr><tr><td>4球</td><td>14.1%</td><td>6.33</td></tr><tr><td>5球</td><td>7.4%</td><td>12.07</td></tr><tr><td>6球</td><td>3.2%</td><td>27.9</td></tr><tr><td>7+球</td><td>1.2%</td><td>74.4</td></tr></table><p style="font-size:0.8em;color:#aaa;margin-top:4px">大小球2.5: 大球 <b style="color:#f44336)">48.2%</b> / 小球 <b style="color:#4caf50)">51.8%</b></p></div></div>
+<div class="rec">
+<h4>🎯 综合推荐</h4>
+<p><b>方向：</b>客胜 ~42%</p>
+<p><b>比分：</b>首选 1:1(12.5%) / 次选 0:1(10.4%) / 备选 1:0(8.9%)</p>
+<p><b>半场比分：</b>首选 0:0(33.6%)</p>
+<p><b>总进球：</b>2球首选(25.1%) — 小球倾向</p>
+<p><span class="tag tag-a">规则19: 无历史交锋→搏冷建议</span></p></div></div></div>
+<!-- 211 美职 圣何塞地震 vs 洛杉矶银河 -->
+<div class="match-card">
+<div class="match-header">
+<div>
+<span class="title">211 美职</span><br>
+<span class="teams">圣何塞地震 [4] vs 洛杉矶银河 [18]</span>
+</div>
+<div style="text-align:right">
+<div class="time">次日10:30</div>
+<div class="conf mid">★★ 中置信度</div>
+</div>
+</div>
+<div class="body">
+<div class="notes">圣何塞主场强势。洛杉矶银河客场1胜8负极差！</div>
+
+<div class="section-title">赔率与校准 <span class="tag tag-est">外盘均值</span></div>
+<table><tr><th>方法</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>外盘均值</td><td>1.82</td><td>3.97</td><td>3.63</td></tr>
+<tr><td>Shin去水</td><td class="bold">47.6%</td><td class="bold">25.4%</td><td class="bold">27.0%</td></tr></table>
+
+<table><tr><th>让球(-1)</th><th>让胜</th><th>让平</th><th>让负</th></tr>
+<tr><td>估算</td><td>2.5</td><td>12.81</td><td>1.56</td></tr></table>
+
+<div class="section-title">模型概率对比</div>
+<table><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>标准泊松(主)</td><td>50.9%</td><td>24.8%</td><td>24.3%</td></tr>
+<tr><td>DC模型(辅)</td><td>49.7%</td><td>27.2%</td><td>23.1%</td></tr>
+<tr><td>负二项</td><td>49.3%</td><td>24.6%</td><td>26.1%</td></tr>
+<tr><td>Skellam</td><td>50.8%</td><td>24.8%</td><td>24.3%</td></tr>
+<tr><td>蒙特卡洛</td><td>50.4%</td><td>25.0%</td><td>24.6%</td></tr>
+<tr><td class="bold">加权融合</td><td class="bold up">54.1%</td><td class="bold ">22.2%</td><td class="bold ">23.7%</td></tr></table>
+<div class="grid2"><div><div class="section-title">比分TOP10（标准泊松）</div><table class="odds-table"><tr><th>比分</th><th>概率</th><th>方向</th><th>体彩赔率</th></tr><tr><td class="bold">1:1</td><td>11.8%</td><td class="dr">平局</td><td>7.57</td></tr><tr><td class="bold">1:0</td><td>11.4%</td><td class="up">主胜</td><td>7.83</td></tr><tr><td class="bold">2:1</td><td>9.5%</td><td class="up">主胜</td><td>9.4</td></tr><tr><td class="bold">2:0</td><td>9.2%</td><td class="up">主胜</td><td>9.7</td></tr><tr><td class="bold">0:1</td><td>7.3%</td><td class="dn">客胜</td><td>12.23</td></tr><tr><td class="bold">0:0</td><td>7.0%</td><td class="dr">平局</td><td>12.76</td></tr><tr><td class="bold">1:2</td><td>6.1%</td><td class="dn">客胜</td><td>14.64</td></tr><tr><td class="bold">3:1</td><td>5.1%</td><td class="up">主胜</td><td>17.51</td></tr><tr><td class="bold">3:0</td><td>5.0%</td><td class="up">主胜</td><td>17.86</td></tr><tr><td class="bold">2:2</td><td>4.9%</td><td class="dr">平局</td><td>18.22</td></tr></table></div><div><div class="section-title">半场TOP5</div><table class="odds-table"><tr><th>半场比分</th><th>概率</th><th>方向</th></tr><tr><td class="bold">0:0</td><td>32.8%</td><td class="dr">平局</td></tr><tr><td class="bold">1:0</td><td>22.3%</td><td class="up">主胜</td></tr><tr><td class="bold">0:1</td><td>14.3%</td><td class="dn">客胜</td></tr><tr><td class="bold">1:1</td><td>9.7%</td><td class="dr">平局</td></tr><tr><td class="bold">2:0</td><td>7.6%</td><td class="up">主胜</td></tr></table><div class="section-title">半全场（估算赔率）</div><table class="odds-table"><tr><th>组合</th><th>概率</th><th>赔率</th></tr><tr><td>胜胜</td><td>26.6%</td><td>3.35</td></tr><tr><td>胜平</td><td>5.5%</td><td>16.35</td></tr><tr><td>胜负</td><td>1.9%</td><td>45.95</td></tr><tr><td>平胜</td><td>25.2%</td><td>3.54</td></tr><tr><td>平平</td><td>19.4%</td><td>4.6</td></tr><tr><td>平负</td><td>11.0%</td><td>8.08</td></tr><tr><td>负胜</td><td>2.1%</td><td>42.09</td></tr><tr><td>负平</td><td>2.6%</td><td>34.19</td></tr><tr><td>负负</td><td>5.6%</td><td>16.01</td></tr></table><div class="section-title">总进球分布</div><table class="odds-table"><tr><th>进球数</th><th>概率</th><th>体彩赔率</th></tr><tr><td>0球</td><td>7.0%</td><td>12.76</td></tr><tr><td>1球</td><td>18.7%</td><td>4.77</td></tr><tr><td>2球</td><td>24.8%</td><td>3.6</td></tr><tr><td>3球</td><td>21.9%</td><td>4.08</td></tr><tr><td>4球</td><td>14.6%</td><td>6.12</td></tr><tr><td>5球</td><td>7.7%</td><td>11.6</td></tr><tr><td>6球</td><td>3.4%</td><td>26.26</td></tr><tr><td>7+球</td><td>1.3%</td><td>68.68</td></tr></table><p style="font-size:0.8em;color:#aaa;margin-top:4px">大小球2.5: 大球 <b style="color:#f44336)">49.5%</b> / 小球 <b style="color:#4caf50)">50.5%</b></p></div></div>
+<div class="rec">
+<h4>🎯 综合推荐</h4>
+<p><b>方向：</b>主胜 ~54%</p>
+<p><b>比分：</b>首选 1:1(11.8%) / 次选 1:0(11.4%) / 备选 2:1(9.5%)</p>
+<p><b>半场比分：</b>首选 0:0(32.8%)</p>
+<p><b>总进球：</b>2球首选(24.8%) — 小球倾向</p>
+<p><span class="tag tag-d">规则21: 模型>50%→强制冷门检查</span></p></div></div></div>
+<div class="risk">
+⚠️ <b>风险提示</b><br>
+足球比赛存在极大不确定性，任何模型预测均非100%准确。模型基于历史数据，突发因素（红牌、点球、天气等）无法完全预测。<br>
+赔率数据可能随时间变化，请以实时数据为准。体彩官方赔率来源：中国体彩官网(lottery.gov.cn)，更新时间2026-07-24。<br>
+★★★高置信度仅表示模型一致性高，不代表一定命中（已多次出现高置信度翻车）。<br>
+比分模型已从DC改为标准泊松(ρ=0)，减少1:1过度推荐问题。<br>
+<b>理性看待预测，切勿沉迷赌博。</b>
+</div>
+
+<div style="text-align:center;padding:20px;color:#555;font-size:0.75em">
+模型版本: 标准泊松(主) + DC(辅) + NB + Skellam + MC + Shin | 生成时间: 2026-07-25 v2<br>
+数据来源: 体彩官网 / 500彩票网 / FootyStats / 竞彩网<br>
+赔率标注: <span style="color:#4fc3f7">体彩官方</span> = 中国体彩官网 | <span style="color:#ffeb3b">外盘均值</span> = 外盘均值估算
+</div>
+
+</div>
+</body>
+</html>

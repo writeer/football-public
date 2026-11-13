@@ -1,0 +1,106 @@
+{
+  "date": "2026-09-30",
+  "weekday": "周三",
+  "match_count": 2,
+  "league": "亚运会男足（Asian Games Men's Football，U-23+3超龄，2026爱知·名古屋）",
+  "stage": "半决赛",
+  "analysis_report": "reports/analysis/20260930_wednesday_analysis_zhihu.md",
+  "backtest_report": "reports/backtest/20260930_wednesday_backtest_zhihu.md",
+  "prediction_data": "reports/data/20260930_predictions.json",
+  "results": [
+    {
+      "num": "001",
+      "match": "韩国亚运 vs 中国亚运",
+      "league": "亚运男足",
+      "ht": "1-1",
+      "ft": "2-1",
+      "total": 3,
+      "direction": "主胜",
+      "hafu": "平胜",
+      "margin": 1,
+      "handicap": -1,
+      "ball_dir": "让平",
+      "pick": {
+        "had": ["主胜", "平"],
+        "ball": ["让胜", "让平"],
+        "ttg": [2, 3],
+        "hafu": ["胜胜", "平胜", "平平"],
+        "crs": ["2-0", "1-0", "3-0", "2-1", "4-0"]
+      },
+      "hit": {
+        "had": "first",
+        "ball": "second",
+        "ttg": true,
+        "hafu": true,
+        "crs": true
+      },
+      "note": "王钰栋22'破门（中国近40年对韩首球），李英俊33'角球扳平，裴峻浩82'头球反超"
+    },
+    {
+      "num": "002",
+      "match": "乌兹别克斯坦亚运 vs 日本亚运",
+      "league": "亚运男足",
+      "ht": "1-0",
+      "ft": "1-1",
+      "ft_after_et": "1-1",
+      "penalty": "8-9（日本晋级）",
+      "total": 2,
+      "direction": "平",
+      "hafu": "胜平",
+      "margin": 0,
+      "handicap": 1,
+      "ball_dir": "让胜",
+      "pick": {
+        "had": ["客胜", "平"],
+        "ball": ["让胜", "让负"],
+        "ttg": [2, 3],
+        "hafu": ["负负", "平平", "平负"],
+        "crs": ["1-1", "0-1", "0-0", "0-2", "1-2"]
+      },
+      "hit": {
+        "had": "second",
+        "ball": "first",
+        "ttg": true,
+        "hafu": false,
+        "crs": true
+      },
+      "note": "巴赫罗莫夫9'闪击，石桥濑凪88'绝平；加时120分钟1-1，点球10轮日本9-8胜；单关平局上修（规则63）精准兑现",
+      "rule63_applied": true,
+      "distribution_divergence": true
+    }
+  ],
+  "hit_rates": {
+    "had_first_second": { "hit": 2, "total": 2, "rate": 1.0, "grade": "完美" },
+    "had_first_only": { "hit": 1, "total": 2, "rate": 0.5, "grade": "一般" },
+    "handicap_first_second": { "hit": 2, "total": 2, "rate": 1.0, "grade": "完美" },
+    "handicap_first_only": { "hit": 1, "total": 2, "rate": 0.5, "grade": "一般" },
+    "ttg_top2": { "hit": 2, "total": 2, "rate": 1.0, "grade": "完美" },
+    "hafu_top3": { "hit": 1, "total": 2, "rate": 0.5, "grade": "一般" },
+    "crs_top5": { "hit": 2, "total": 2, "rate": 1.0, "grade": "完美" }
+  },
+  "parlays": {
+    "total": { "hit": 1, "count": 16, "rate": 0.063 },
+    "direction": { "hit": 0, "count": 2, "rate": 0.0 },
+    "handicap": { "hit": 0, "count": 2, "rate": 0.0 },
+    "mixed": { "hit": 0, "count": 5, "rate": 0.0 },
+    "entertainment_ttg": { "hit": 1, "count": 2, "rate": 0.5 },
+    "entertainment_hafu": { "hit": 0, "count": 2, "rate": 0.0 },
+    "entertainment_mixed": { "hit": 0, "count": 2, "rate": 0.0 },
+    "entertainment_score": { "hit": 0, "count": 1, "rate": 0.0 }
+  },
+  "key_findings": [
+    "规则63单关平局上修在002场精准兑现：平局概率从24.6%上修至32.6%后，实际赛果恰为1-1平局，比分TOP1直接命中",
+    "亚运淘汰赛半场格局预判偏差：两场半全场命中率仅50%，先进球方均与模型预判相反",
+    "比分TOP5全中但区分度低：001落在第4位(7.7%)、002落在第1位(15.5%)，命中质量差异大",
+    "串关全军覆没（除娱乐总进球串）：两场比赛都落在次选区间，稳健串关全部折戟"
+  ],
+  "improvements": [
+    "淘汰赛半场格局扁平化修正：降低TOP1占比、提升平局和落后方逆袭概率权重",
+    "杯赛淘汰赛让球首选独立校准：λ差大但面对防守强队时，净胜1球概率需上修",
+    "串关容错机制：存在分歧场或次选概率较高场次时，稳健串关应引入容错机制"
+  ],
+  "source_files": [
+    "reports/analysis/20260930_wednesday_analysis_zhihu.md",
+    "reports/data/20260930_predictions.json"
+  ]
+}

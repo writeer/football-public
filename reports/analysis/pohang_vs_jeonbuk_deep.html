@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>浦项制铁 vs 全北现代 | 深度分析</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a1a;color:#e0e0e0;font-family:'Segoe UI',system-ui,sans-serif;line-height:1.6}
+.header{background:linear-gradient(135deg,#1a1a3e,#2d1b4e);padding:28px;text-align:center;border-bottom:3px solid #ff6b35}
+.header h1{font-size:2em;color:#fff;margin-bottom:6px}
+.header p{color:#aaa;font-size:0.95em}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.card{background:#141428;border:1px solid #2a2a4a;border-radius:14px;margin-bottom:20px;overflow:hidden}
+.card-header{background:#1e1e3a;padding:14px 20px;font-size:1.1em;font-weight:700;color:#ff6b35;display:flex;justify-content:space-between;align-items:center}
+.card-body{padding:18px 20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+@media(max-width:768px){.grid2,.grid3{grid-template-columns:1fr}}
+table{width:100%;border-collapse:collapse;font-size:0.88em;margin-bottom:6px}
+th{background:#1e1e3a;color:#aaa;padding:8px 10px;text-align:left;font-weight:500;border-bottom:1px solid #333}
+td{padding:7px 10px;border-bottom:1px solid #1f1f35}
+tr:hover td{background:#181830}
+.up{color:#4caf50;font-weight:600}.dn{color:#f44336;font-weight:600}.dr{color:#ff9800;font-weight:600}
+.bold{font-weight:700;color:#fff}
+.rec{background:#1a1a32;border-radius:10px;padding:14px 16px;margin-top:10px;border-left:3px solid #ff6b35}
+.rec h4{color:#ff6b35;margin-bottom:8px;font-size:0.95em}
+.rec p{font-size:0.87em;color:#ccc;margin-bottom:4px}
+.notes{background:#181830;border-radius:10px;padding:12px 16px;margin-top:10px;font-size:0.86em;color:#bbb}
+.tag{display:inline-block;padding:3px 10px;border-radius:12px;font-size:0.78em;margin:2px}
+.tag-h{background:#2d4a2d;color:#4caf50}.tag-d{background:#4a4a2d;color:#ff9800}.tag-a{background:#4a2d2d;color:#f44336}
+.tag-official{background:#1a3a5a;color:#4fc3f7}.tag-est{background:#3a3a1a;color:#ffeb3b}
+.section-title{color:#ff6b35;font-size:0.95em;font-weight:600;margin:14px 0 8px;padding-bottom:6px;border-bottom:1px solid #333}
+.score-rank{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #1f1f35;font-size:0.9em}
+.score-rank .rank{color:#888;width:28px}.score-rank .score{color:#fff;font-weight:600;width:50px}
+.score-rank .prob{width:70px;text-align:right}.score-rank .dir{width:50px;text-align:right;font-size:0.85em}
+.conf-high{color:#4caf50;font-weight:700}.conf-mid{color:#ff9800;font-weight:700}.conf-low{color:#f44336;font-weight:700}
+.highlight{background:#252545;padding:12px 16px;border-radius:10px;margin:10px 0;font-size:0.9em}
+.odds-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.odds-item{background:#1e1e3a;padding:4px 10px;border-radius:8px;font-size:0.82em;color:#ccc}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>浦项制铁 vs 全北现代汽车</h1>
+  <p>韩K联第20轮 | 2026-07-25 18:30 | 深度分析 v2.0</p>
+</div>
+<div class="container">
+
+<!-- 概览卡 -->
+<div class="card">
+  <div class="card-header">
+    <span>比赛概览 & 核心结论</span>
+    <span class="conf-high">★★★ 高置信度</span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div>
+        <div class="section-title">λ 预期进球</div>
+        <table>
+          <tr><td>浦项制铁 λ</td><td class="bold">0.715</td></tr>
+          <tr><td>全北现代 λ</td><td class="bold">0.714</td></tr>
+          <tr><td>预期总进球</td><td class="bold dr">1.43</td></tr>
+        </table>
+      </div>
+      <div>
+        <div class="section-title">加权融合概率</div>
+        <table>
+          <tr><td>主胜</td><td class="up bold">31.0%</td></tr>
+          <tr><td>平局</td><td class="dr bold">35.8%</td></tr>
+          <tr><td>客胜</td><td class="dn bold">33.2%</td></tr>
+        </table>
+      </div>
+      <div>
+        <div class="section-title">体彩官方赔率</div>
+        <table>
+          <tr><td>主胜</td><td class="up">2.98</td></tr>
+          <tr><td>平局</td><td class="dr">2.82</td></tr>
+          <tr><td>客胜</td><td class="dn">2.28</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="highlight">
+      <strong style="color:#ff6b35">核心结论：</strong>
+      两队λ值几乎相等（0.715 vs 0.714），预期总进球仅1.43球，是一场<strong>典型的低比分胶着战</strong>。
+      模型高度一致指向<strong>平局优先（35.8%）</strong>，0:0概率高达23.96%。
+      全北现代虽然排名更高，但浦项主场防守稳固，且全北伤病严重，客场优势被大幅削弱。
+    </div>
+  </div>
+</div>
+
+<!-- 模型对比卡 -->
+<div class="card">
+  <div class="card-header">多模型概率对比</div>
+  <div class="card-body">
+    <table>
+      <tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th><th>说明</th></tr>
+      <tr><td>标准泊松(主)</td><td class="up">31.1%</td><td class="dr">37.8%</td><td class="dn">31.0%</td><td>比分预测主力模型</td></tr>
+      <tr><td>Dixon-Coles(辅)</td><td class="up">32.1%</td><td class="dr">35.9%</td><td class="dn">32.0%</td><td>ρ=-0.08 低比分修正</td></tr>
+      <tr><td>负二项分布</td><td class="up">30.9%</td><td class="dr">38.3%</td><td class="dn">30.8%</td><td>VMR=1.18 过离散修正</td></tr>
+      <tr><td>Skellam分布</td><td class="up">31.1%</td><td class="dr">37.8%</td><td class="dn">31.0%</td><td>进球差直接建模</td></tr>
+      <tr><td>蒙特卡洛(10k场)</td><td class="up">31.2%</td><td class="dr">37.6%</td><td class="dn">31.1%</td><td>随机模拟验证</td></tr>
+      <tr style="background:#1a1a32"><td class="bold">加权融合</td><td class="up bold">31.0%</td><td class="dr bold">35.8%</td><td class="dn bold">33.2%</td><td class="bold">最终判决</td></tr>
+    </table>
+    <div class="notes">
+      <strong>模型一致性：</strong>五大模型标准差 σ&lt;0.03，高度一致 (+1)。所有模型均指向平局概率最高，主客胜接近对称。
+    </div>
+  </div>
+</div>
+
+<!-- 比分预测卡 -->
+<div class="card">
+  <div class="card-header">精确比分 TOP10 (标准泊松)</div>
+  <div class="card-body">
+    <div class="grid2">
+      <div>
+        <div class="score-rank"><span class="rank">1.</span><span class="score">0:0</span><span class="prob dr">24.0%</span><span class="dir dr">平局</span><span class="odds-item">赔率 10.5</span></div>
+        <div class="score-rank"><span class="rank">2.</span><span class="score">1:0</span><span class="prob up">17.1%</span><span class="dir up">主胜</span><span class="odds-item">赔率 9.5</span></div>
+        <div class="score-rank"><span class="rank">3.</span><span class="score">0:1</span><span class="prob dn">17.1%</span><span class="dir dn">客胜</span><span class="odds-item">赔率 7.5</span></div>
+        <div class="score-rank"><span class="rank">4.</span><span class="score">1:1</span><span class="prob dr">12.2%</span><span class="dir dr">平局</span><span class="odds-item">赔率 5.25</span></div>
+        <div class="score-rank"><span class="rank">5.</span><span class="score">2:0</span><span class="prob up">6.1%</span><span class="dir up">主胜</span><span class="odds-item">赔率 14.0</span></div>
+        <div class="score-rank"><span class="rank">6.</span><span class="score">0:2</span><span class="prob dn">6.1%</span><span class="dir dn">客胜</span><span class="odds-item">赔率 10.5</span></div>
+        <div class="score-rank"><span class="rank">7.</span><span class="score">2:1</span><span class="prob up">4.4%</span><span class="dir up">主胜</span><span class="odds-item">赔率 8.25</span></div>
+        <div class="score-rank"><span class="rank">8.</span><span class="score">1:2</span><span class="prob dn">4.4%</span><span class="dir dn">客胜</span><span class="odds-item">赔率 7.0</span></div>
+        <div class="score-rank"><span class="rank">9.</span><span class="score">2:2</span><span class="prob dr">1.6%</span><span class="dir dr">平局</span><span class="odds-item">赔率 11.5</span></div>
+        <div class="score-rank"><span class="rank">10.</span><span class="score">3:0</span><span class="prob up">1.5%</span><span class="dir up">主胜</span><span class="odds-item">赔率 30.0</span></div>
+      </div>
+      <div>
+        <div class="section-title">半场比分 TOP5</div>
+        <div style="font-size:0.85em;color:#888;margin-bottom:8px">半场λ = 全场 × 0.45 (0.32 vs 0.32)</div>
+        <div class="score-rank"><span class="rank">1.</span><span class="score">0:0</span><span class="prob dr">52.6%</span><span class="dir dr">平局</span></div>
+        <div class="score-rank"><span class="rank">2.</span><span class="score">1:0</span><span class="prob up">16.9%</span><span class="dir up">主胜</span></div>
+        <div class="score-rank"><span class="rank">3.</span><span class="score">0:1</span><span class="prob dn">16.9%</span><span class="dir dn">客胜</span></div>
+        <div class="score-rank"><span class="rank">4.</span><span class="score">1:1</span><span class="prob dr">5.4%</span><span class="dir dr">平局</span></div>
+        <div class="score-rank"><span class="rank">5.</span><span class="score">2:0</span><span class="prob up">2.7%</span><span class="dir up">主胜</span></div>
+      </div>
+    </div>
+    <div class="rec">
+      <h4>比分分析</h4>
+      <p>• 0:0 概率高达 <strong>24.0%</strong>（赔率10.50），是首选比分——两队进攻乏力且防守相对稳固</p>
+      <p>• 1:0 和 0:1 概率对称（各17%），反映两队实力极为接近</p>
+      <p>• 2球以上比分概率仅 <strong>17.3%</strong>，大比分可能性极低</p>
+      <p>• 半场0:0概率 <strong>52.6%</strong>，上半场大概率闷平</p>
+    </div>
+  </div>
+</div>
+
+<!-- 总进球 & 让球 & 半全场 -->
+<div class="card">
+  <div class="card-header">投注项概率与体彩赔率</div>
+  <div class="card-body">
+    <div class="grid3">
+      <div>
+        <div class="section-title">总进球</div>
+        <table>
+          <tr><th>进球</th><th>概率</th><th>体彩赔率</th></tr>
+          <tr><td>0球</td><td>24.0%</td><td>10.5</td></tr>
+          <tr><td>1球</td><td>34.2%</td><td>4.5</td></tr>
+          <tr><td>2球</td><td class="dr bold">24.5%</td><td>3.1</td></tr>
+          <tr><td>3球</td><td>11.7%</td><td>3.65</td></tr>
+          <tr><td>4+球</td><td>5.7%</td><td>--</td></tr>
+        </table>
+        <div style="font-size:0.85em;color:#888;margin-top:6px">
+          大球2.5: <span class="dn">17.3%</span> | 
+          小球2.5: <span class="up">82.7%</span>
+        </div>
+      </div>
+      <div>
+        <div class="section-title">让球胜平负 (+1)</div>
+        <table>
+          <tr><th>结果</th><th>概率</th><th>体彩赔率</th></tr>
+          <tr><td>让胜</td><td class="up bold">69.0%</td><td>1.48</td></tr>
+          <tr><td>让平</td><td class="dr">21.9%</td><td>3.55</td></tr>
+          <tr><td>让负</td><td class="dn">9.2%</td><td>5.8</td></tr>
+        </table>
+        <div class="notes" style="margin-top:8px">
+          浦项+1球后让胜概率高达69%，是本场最稳妥的投注方向。
+        </div>
+      </div>
+      <div>
+        <div class="section-title">半全场</div>
+        <table>
+          <tr><th>组合</th><th>概率</th><th>赔率</th></tr>
+          <tr><td>平平</td><td class="dr bold">35.1%</td><td>4.2</td></tr>
+          <tr><td>平负</td><td>17.4%</td><td>5.1</td></tr>
+          <tr><td>负负</td><td>9.4%</td><td>3.65</td></tr>
+          <tr><td>平胜</td><td>16.2%</td><td>6.75</td></tr>
+          <tr><td>胜胜</td><td>8.8%</td><td>5.25</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 赔率校准 -->
+<div class="card">
+  <div class="card-header">赔率校准 (Shin模型)</div>
+  <div class="card-body">
+    <div class="grid2">
+      <div>
+        <div class="section-title">体彩官方去水</div>
+        <table>
+          <tr><th>结果</th><th>原始隐含</th><th>Shin去水</th></tr>
+          <tr><td>主胜</td><td>33.6%</td><td class="up">31.3%</td></tr>
+          <tr><td>平局</td><td>35.5%</td><td class="dr">32.2%</td></tr>
+          <tr><td>客胜</td><td>43.9%</td><td class="dn">36.5%</td></tr>
+        </table>
+        <div style="font-size:0.85em;color:#888;margin-top:6px">z = 0.1000 (内幕交易者比例估算)</div>
+      </div>
+      <div>
+        <div class="section-title">模型 vs 市场分歧</div>
+        <table>
+          <tr><th>结果</th><th>加权融合</th><th>Shin去水</th><th>差值</th></tr>
+          <tr><td>主胜</td><td>31.0%</td><td>31.3%</td><td class="up">0.3%</td></tr>
+          <tr><td>平局</td><td>35.8%</td><td>32.2%</td><td class="dr">3.6%</td></tr>
+          <tr><td>客胜</td><td>33.2%</td><td>36.5%</td><td class="dr">3.3%</td></tr>
+        </table>
+        <div class="notes" style="margin-top:8px">
+          平局差值仅3.6%，主胜差值仅0.3%，模型与市场<strong>高度对齐</strong>。
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 基本面分析 -->
+<div class="card">
+  <div class="card-header">基本面分析</div>
+  <div class="card-body">
+    <div class="grid2">
+      <div>
+        <div class="section-title">浦项制铁</div>
+        <div class="notes">
+          <p>• 排名：第10位（23分），主场3胜3平4负</p>
+          <p>• 近10场：2胜3平5负，进8球失12球</p>
+          <p>• 主场xG：0.95 | xGA：1.42</p>
+          <p>• 场均进球：0.8 | 场均失球：1.2</p>
+          <p>• <span class="tag tag-a">隐患</span> 中场核心奥格布（11场6球）伤缺，进攻端重创</p>
+          <p>• <span class="tag tag-h">利好</span> 李昊宰、金仁成等主力复出</p>
+        </div>
+      </div>
+      <div>
+        <div class="section-title">全北现代汽车</div>
+        <div class="notes">
+          <p>• 排名：第7位（27分），客场3胜2平4负</p>
+          <p>• 近10场：3胜3平4负，进11球失13球</p>
+          <p>• 客场xG：1.05 | xGA：1.38</p>
+          <p>• 场均进球：1.1 | 场均失球：1.3</p>
+          <p>• <span class="tag tag-a">隐患</span> 伤病潮：宋旻揆、金镇圭、权昌勋、全炳关等6人缺阵</p>
+          <p>• <span class="tag tag-a">隐患</span> 周中多赛一场，体能劣势</p>
+        </div>
+      </div>
+    </div>
+    <div class="rec">
+      <h4>关键对位</h4>
+      <p>• 浦项主场防守 vs 全北残缺进攻：浦项主场场均失1.2球，全北伤病导致进攻效率下降约25%</p>
+      <p>• 中场控制：双方核心中场均缺阵，比赛可能沦为<strong>中场绞杀、长传冲吊</strong>的乱战</p>
+      <p>• 体能因素：全北周中多赛，70分钟后防线可能出现松动，但浦项进攻能力不足难以把握</p>
+    </div>
+  </div>
+</div>
+
+<!-- 推荐 -->
+<div class="card">
+  <div class="card-header">综合推荐</div>
+  <div class="card-body">
+    <div class="rec">
+      <h4>方向推荐</h4>
+      <p><span class="tag tag-d">首选</span> <strong>平局</strong>（35.8%概率）— 0:0 或 1:1</p>
+      <p><span class="tag tag-h">次选</span> <strong>浦项不败</strong>（让球胜平负让胜 69%）</p>
+      <p><span class="tag tag-a">防冷</span> <strong>全北客胜1:0</strong>（17.1%）— 若浦项进攻持续低迷</p>
+    </div>
+    <div class="rec">
+      <h4>比分推荐</h4>
+      <p>1. <strong>0:0</strong> — 24.0%（赔率10.50）</p>
+      <p>2. <strong>1:0</strong> — 17.1%（赔率9.50）</p>
+      <p>3. <strong>0:1</strong> — 17.1%（赔率7.50）</p>
+      <p>4. <strong>1:1</strong> — 12.2%（赔率5.25）</p>
+    </div>
+    <div class="rec">
+      <h4>投注建议</h4>
+      <p>• <strong>稳健型</strong>：让球胜平负 浦项+1胜（1.48赔率，概率69%）</p>
+      <p>• <strong>进攻型</strong>：比分 0:0 + 1:0 + 0:1 组合覆盖（合计58.2%）</p>
+      <p>• <strong>总进球</strong>：0-2球（概率82.7%，小球方向）</p>
+      <p>• <strong>半全场</strong>：平平（35.1%，赔率4.20）</p>
+    </div>
+    <div class="notes" style="margin-top:12px">
+      <strong>风险提示：</strong>
+      高置信度（★★★）仅表示模型一致性强，不代表一定命中。
+      全北伤病严重但底蕴深厚，浦项主场有爆冷可能。
+      建议控制投注金额，理性对待。
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;color:#666;font-size:0.85em;padding:20px">
+  本报告由竞彩智能体生成 | 仅供分析参考，不构成投注建议
+</div>
+
+</div>
+</body>
+</html>

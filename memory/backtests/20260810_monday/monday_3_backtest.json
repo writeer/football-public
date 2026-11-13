@@ -1,0 +1,132 @@
+{
+  "date": "2026-08-10",
+  "day": "monday",
+  "total_matches": 3,
+  "source_files": {
+    "predictions": "memory/predictions/20260810_monday/monday_3_predictions.json",
+    "analysis_report": "reports/html/20260810_monday_analysis_zhihu.md"
+  },
+  "results": [
+    {
+      "id": "001",
+      "home": "天狼星",
+      "away": "布鲁马波卡纳",
+      "league": "瑞超",
+      "actual_score": "2-2",
+      "ht_score": "2-2",
+      "actual_direction": "平",
+      "actual_ttg": 4,
+      "actual_htft": "平平",
+      "predictions": {
+        "direction_first": "主胜",
+        "direction_first_prob": 78.8,
+        "direction_second": "平局",
+        "direction_second_prob": 14.7,
+        "top_scores": [["2-0", 15.6], ["3-0", 13.0], ["1-0", 11.8], ["4-0", 8.1], ["2-1", 7.8]],
+        "ttg_top2": ["2", "3"],
+        "htft_top3": ["胜胜", "平胜", "平平"],
+        "hafu_first": "让(-1)胜",
+        "hafu_second": "让(-1)平",
+        "confidence": "★★★"
+      },
+      "hits": {
+        "direction": "✅次",
+        "ttg": false,
+        "htft": true,
+        "score": false,
+        "hafu": false
+      },
+      "match_notes": "关键信息遗漏：头号射手乌雷(15球)因前往塞维利亚完成转会谈判缺席，天狼星官方赛前已确认。分析报告将其当作必然出战主力，lambda_home维持2.5未修正(修正后应约1.6)，主胜78.8%高估(修正后约57%)，★★★应降为★★。替补永贝里首发，天狼星2-0领先被BP 25分钟赞丹、28分钟奥凯凯3分钟内连追2球。赛后报道指出乌雷缺阵让天狼星缺乏惯常终结锐度。"
+    },
+    {
+      "id": "002",
+      "home": "韦斯特罗斯",
+      "away": "佐加顿斯",
+      "league": "瑞超",
+      "actual_score": "1-0",
+      "ht_score": "1-0",
+      "actual_direction": "主胜",
+      "actual_ttg": 1,
+      "actual_htft": "胜胜",
+      "predictions": {
+        "direction_first": "客胜",
+        "direction_first_prob": 49.7,
+        "direction_second": "平局",
+        "direction_second_prob": 28.5,
+        "top_scores": [["1-1", 13.9], ["0-1", 12.8], ["0-0", 11.3], ["0-2", 9.8], ["1-2", 8.8]],
+        "ttg_top2": ["2", "3"],
+        "htft_top3": ["负负", "平平", "平负"],
+        "hafu_first": "让(+1)胜",
+        "hafu_second": "让(+1)平",
+        "confidence": "★★"
+      },
+      "hits": {
+        "direction": false,
+        "ttg": false,
+        "htft": false,
+        "score": false,
+        "hafu": "✅首"
+      },
+      "match_notes": "上轮0-6惨败后主场1-0复仇成功。基本面因素（复仇+人工草皮+7人黄牌风险+下场德比分心）全部兑现，模型选客胜49.7%方向完全错误。规则28（基本面>模型）再次验证。"
+    },
+    {
+      "id": "003",
+      "home": "圣克拉拉",
+      "away": "葡萄牙国民",
+      "league": "葡超",
+      "actual_score": "2-2",
+      "ht_score": "2-2",
+      "actual_direction": "平",
+      "actual_ttg": 4,
+      "actual_htft": "平平",
+      "predictions": {
+        "direction_first": "主胜",
+        "direction_first_prob": 53.9,
+        "direction_second": "平局",
+        "direction_second_prob": 30.5,
+        "top_scores": [["1-0", 20.4], ["0-0", 17.6], ["2-0", 14.0], ["1-1", 11.8], ["0-1", 7.2]],
+        "ttg_top2": ["2", "1"],
+        "htft_top3": ["胜胜", "平平", "平胜"],
+        "hafu_first": "让(-1)负",
+        "hafu_second": "让(-1)平",
+        "confidence": "★★"
+      },
+      "hits": {
+        "direction": "✅次",
+        "ttg": false,
+        "htft": true,
+        "score": false,
+        "hafu": "✅首"
+      },
+      "match_notes": "圣克拉拉两球领先被追平，与001天狼星如出一辙。新赛季首轮不确定性（规则45）已正确降级为★★。国民虽6-7人伤停但仍能追平，弱队残阵防守反击能力被低估。"
+    }
+  ],
+  "summary": {
+    "direction_both": {"hit": 2, "total": 3, "rate": 66.7, "rating": "良好"},
+    "direction_first_only": {"hit": 0, "total": 3, "rate": 0.0, "rating": "较差"},
+    "ttg": {"hit": 0, "total": 3, "rate": 0.0, "rating": "较差"},
+    "htft": {"hit": 2, "total": 3, "rate": 66.7, "rating": "良好"},
+    "score": {"hit": 0, "total": 3, "rate": 0.0, "rating": "较差"}
+  },
+  "confidence_analysis": {
+    "★★★": {"total": 1, "direction_first_hit": 0, "direction_both_hit": 1, "rate_first": 0.0, "rate_both": 100.0},
+    "★★": {"total": 2, "direction_first_hit": 0, "direction_both_hit": 1, "rate_first": 0.0, "rate_both": 50.0}
+  },
+  "accumulator_results": [
+    {"name": "稳健二串一", "type": "方向串", "matches": ["001主胜", "003主胜"], "results": ["❌", "❌"], "hit": false, "odds": "~2.16"},
+    {"name": "价值二串一", "type": "方向串", "matches": ["002客胜", "003主胜"], "results": ["❌", "❌"], "hit": false, "odds": "~2.84"},
+    {"name": "稳健让球串", "type": "让球串", "matches": ["001让(-1)胜", "002让(+1)胜"], "results": ["❌", "✅"], "hit": false, "odds": "~2.70"},
+    {"name": "价值让球串", "type": "让球串", "matches": ["001让(-1)胜", "003让(-1)负"], "results": ["❌", "✅"], "hit": false, "odds": "~3.96"},
+    {"name": "半全场串A", "type": "混合串", "matches": ["001胜胜", "002负负"], "results": ["❌", "❌"], "hit": false, "odds": "~2.59"},
+    {"name": "半全场串B", "type": "混合串", "matches": ["003胜胜", "001平胜"], "results": ["❌", "❌"], "hit": false, "odds": "~5.42"},
+    {"name": "方向+半全场A", "type": "混合串", "matches": ["001主胜", "003胜胜"], "results": ["❌", "❌"], "hit": false, "odds": "~2.38"},
+    {"name": "方向+半全场B", "type": "混合串", "matches": ["002客胜", "001胜胜"], "results": ["❌", "❌"], "hit": false, "odds": "~1.89"},
+    {"name": "总进球串A", "type": "娱乐串", "matches": ["001 2球", "002 2球"], "results": ["❌", "❌"], "hit": false, "odds": "~6.33"},
+    {"name": "总进球串B", "type": "娱乐串", "matches": ["001 3球", "003 2球"], "results": ["❌", "❌"], "hit": false, "odds": "~6.27"},
+    {"name": "总进球串C", "type": "娱乐串", "matches": ["002 1球", "003 1球"], "results": ["✅", "❌"], "hit": false, "odds": "~10.64"},
+    {"name": "高赔半全场串", "type": "娱乐串", "matches": ["002平负", "003平平"], "results": ["❌", "✅"], "hit": false, "odds": "~9.76"},
+    {"name": "稳健比分串", "type": "娱乐串", "matches": ["001 2-0", "003 1-0"], "results": ["❌", "❌"], "hit": false, "odds": "~12.00"},
+    {"name": "高赔比分串", "type": "娱乐串", "matches": ["001(3-0/4-0)", "002(1-1/0-0)", "003(2-0/0-0)"], "results": ["❌", "❌", "❌"], "hit": false, "odds": "~63-242"}
+  ],
+  "accumulator_summary": {"hit": 0, "total": 14, "rate": 0.0, "rating": "较差"}
+}

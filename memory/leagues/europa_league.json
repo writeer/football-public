@@ -1,0 +1,168 @@
+{
+    "league_info": {
+        "name_cn": "欧洲联赛",
+        "name_en": "UEFA Europa League",
+        "country": "欧洲",
+        "country_code": "EU",
+        "level": "杯赛",
+        "num_teams": 36,
+        "format": "瑞士轮+淘汰赛",
+        "season_period": "9月-次年5月",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.uefa.com/uefaeuropaleague",
+        "governing_body": "欧足联（UEFA）",
+        "competition_tier": 2,
+        "cross_league_level": null,
+        "competition_tier_note": "规则76赛事本身等级（1欧冠精英/2欧联欧协联/3亚冠精英/4解放者杯/5欧国联/6亚运会；None=不适用），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.65,
+        "draw_rate": 0.25,
+        "home_win_rate": 0.43,
+        "away_win_rate": 0.32,
+        "over_2_5_rate": 0.5,
+        "under_2_5_rate": 0.5,
+        "btts_rate": 0.5,
+        "top_scores": [
+            {
+                "score": "2-1",
+                "frequency": 0.082,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.078,
+                "direction": "平局"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.075,
+                "direction": "主胜"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.062,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-1",
+                "frequency": 0.055,
+                "direction": "客胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.058,
+            "1_goal": 0.16,
+            "2_goals": 0.25,
+            "3_goals": 0.23,
+            "4_goals": 0.17,
+            "5_plus_goals": 0.132
+        },
+        "avg_home_goals": 1.45,
+        "avg_away_goals": 1.2,
+        "home_advantage_factor": 1.12,
+        "ht_draw_rate": null,
+        "ht_draw_rate_note": "杯赛/淘汰赛为主或赛制混合（小组赛+淘汰赛），单一'半场平局率'不具代表性，规则66不按单值修正。如需可对小组赛阶段单独统计。2026-09-12标注。",
+        "ht_draw_rate_status": "not_applicable",
+        "ht_draw_rate_updated": "2026-09-12"
+    },
+    "match_style": {
+        "tactical_character": "次级别欧战赛事。2024-25赛季同样改制为36队瑞士轮。出线竞争激烈，淘汰赛不确定性强。中游球队主场表现往往超预期。资格赛次回合具有独特的翻盘动力学——首回合落后方主场往往爆发出远超纸面实力的战斗力。",
+        "tempo": "中",
+        "physicality": "中",
+        "technical_focus": "高",
+        "var_usage": "VAR使用频率高。",
+        "key_trends": [
+            "次级别欧战",
+            "瑞士轮新赛制",
+            "出线竞争激烈",
+            "淘汰赛不确定性强",
+            "资格赛次回合翻盘频发",
+            "跨联赛xG不可直接对比"
+        ],
+        "style_tags": [
+            "次级别",
+            "出线竞争",
+            "不确定性强",
+            "中游主场",
+            "翻盘动力",
+            "后期爆发"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.9,
+        "avg_red_cards": 0.15,
+        "avg_penalties": 0.27,
+        "referee_style": "裁判水平高。",
+        "first_half_stoppage_avg": 2.1,
+        "second_half_stoppage_avg": 5.2,
+        "stoppage_note": "补时严格。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "欧联整体廉洁度极高。"
+            }
+        ],
+        "discipline_features": "红牌停赛1-3场，黄牌累积3张停1场。",
+        "official_rules": "IFAB规则+欧联特别规则。",
+        "integrity_rating": "极高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价欧联'次级别但精彩'，'冷门多'。彩民认为'小组赛冷门多'，'淘汰赛不确定性强'。",
+        "betting_market": {
+            "market_efficiency": "极高",
+            "liquidity": "高",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "高",
+        "jingcai_tips": [
+            "小组赛冷门多需谨慎",
+            "淘汰赛不确定性强",
+            "中游球队主场表现超预期",
+            "出线竞争激烈导致每场都关键",
+            "主客场差异明显",
+            "【资格赛特化】首回合落后方主场翻盘概率远高于联赛——帕福斯0-2落后次回合2-0翻盘(2026-07-31)，翻盘动力因子需额外上修lambda 10-15%",
+            "【资格赛特化】次回合大球概率高于联赛——必须赢球方全力进攻导致对攻格局，5场中3场大球(60%)，总进球期望需上调15-20%",
+            "【资格赛特化】75分钟后进球概率飙升——特温特83'+86'连追2球(2026-07-31)，必须赢球方后期爆发需建模",
+            "【资格赛特化】跨联赛xG不可直接对比——哈马比xG 1.81(瑞超)vs安德莱赫特xG 1.41(比甲)，模型预测客胜但实际主胜3-1(2026-07-31)，不同联赛强度差异导致xG失真",
+            "【资格赛特化】7月资格赛多队联赛未开赛——友谊赛/热身赛数据不可靠，需以欧战表现为主而非联赛xG",
+            "【资格赛特化】加时赛进球集中——帕福斯加时93'+117'再进2球(2026-07-31)，总比分扳平时加时赛lambda需独立计算"
+        ],
+        "common_sayings": [
+            "欧联冷门多",
+            "次级别精彩",
+            "出线竞争"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-31",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com",
+            "https://www.goal.com",
+            "https://www.uefa.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高",
+        "qualification_round_notes": {
+            "last_updated": "2026-07-31",
+            "backtest_source": "memory/backtests/2026-07-31_thursday/thu_backtest_data.json",
+            "matches_analyzed": 5,
+            "direction_hit_rate": "20% (1/5)",
+            "key_findings": [
+                "翻盘动力因子：首回合落后方主场lambda需上修10-15%（帕福斯0-2→2-0翻盘）",
+                "次回合大球倾向：总进球期望需上调15-20%（3/5场大球）",
+                "后期爆发建模：75分钟后必须赢球方进球概率需上修（特温特83'+86'）",
+                "跨联赛xG失真：不同联赛xG不可直接对比（哈马比xG 1.81 vs 安德莱赫特xG 1.41→实际3-1主胜）",
+                "联赛未开赛不确定：7月资格赛多队联赛未开赛，友谊赛数据不可靠"
+            ]
+        }
+    }
+}

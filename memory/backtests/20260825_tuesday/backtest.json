@@ -1,0 +1,272 @@
+{
+  "date": "2026-08-25",
+  "day": "tuesday",
+  "backtest_id": "BT-20260825-TUE",
+  "model_version": "2.6.2",
+  "total_matches": 9,
+  "single_match": ["002", "004", "005"],
+  "source_files": {
+    "prediction_json": "memory/predictions/2026-08-25_tuesday/predictions.json",
+    "analysis_report": "reports/analysis/20260825_tuesday_analysis_zhihu.md",
+    "backtest_report": "reports/backtest/backtest_20260825_tuesday_zhihu.md"
+  },
+  "actual_results_summary": "9场6方向首选命中、7方向(含次选)命中。最大亮点：005林茨5-1逆转凯尔特人(首回合0-3→两回合5-4)、008布伦特福德1-6血洗、稳健让球串3场全中。最大翻车：002济州★★★主胜被浦项客胜、004斯托克平局打穿客胜首选。",
+  "hit_rates": {
+    "direction_first_and_second": { "hits": 7, "total": 9, "rate": 0.778, "rating": "优秀" },
+    "direction_first_only": { "hits": 6, "total": 9, "rate": 0.667, "rating": "良好" },
+    "ttg_top2": { "hits": 6, "total": 9, "rate": 0.667, "rating": "良好" },
+    "htft_top3": { "hits": 5, "total": 9, "rate": 0.556, "rating": "一般" },
+    "crs_top5": { "hits": 4, "total": 9, "rate": 0.444, "rating": "一般" }
+  },
+  "direction_detail": {
+    "first_hits": ["001", "003", "005", "006", "007", "008"],
+    "second_hits": ["009"],
+    "missed": ["002", "004"]
+  },
+  "matches": [
+    {
+      "id": "001",
+      "league": "韩职第25轮",
+      "home": "金泉尚武",
+      "away": "全北现代",
+      "actual_score": "0:0",
+      "actual_ht_score": "0:0",
+      "actual_direction": "平",
+      "actual_ttg": 0,
+      "actual_htft": "平平",
+      "predictions": {
+        "had_first": { "direction": "平", "prob": 0.36 },
+        "had_second": { "direction": "主胜", "prob": 0.33 },
+        "ttg_top2": [2, 3],
+        "htft_top3": ["平平", "平负", "平胜"],
+        "crs_top5": ["1-1", "1-0", "0-0", "1-2", "2-1"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": true },
+      "notes": "方向首选平局+比分(0-0=TOP3)+半全场平平(TOP1)命中。规则65触发(排名差8+积分差11)但裁决平局保留——实际0-0闷平，平局裁决正确，但TTG 0球超出TOP2(2球/3球)仍估高。尚武4连平延续，韩职闷战基调再次验证。"
+    },
+    {
+      "id": "002",
+      "league": "韩职第25轮",
+      "home": "济州SK",
+      "away": "浦项制铁",
+      "single_match": true,
+      "actual_score": "1:2",
+      "actual_ht_score": "0:1",
+      "actual_direction": "客胜",
+      "actual_ttg": 3,
+      "actual_htft": "负负",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.40 },
+        "had_second": { "direction": "平", "prob": 0.30 },
+        "ttg_top2": [2, 3],
+        "htft_top3": ["胜胜", "平平", "平胜"],
+        "crs_top5": ["1-1", "1-0", "2-1", "1-2", "2-0"]
+      },
+      "hits": { "direction": "❌", "ttg": true, "htft": false, "crs": true },
+      "notes": "本轮最大翻车。★★★高置信主胜(济州H2H主场3胜1负+浦项锋线3人缺阵)却被浦项1-2客胜。比分(1-2=TOP4)+TTG(3球次选)命中但方向完全错误。H2H主场交锋论+残阵下修客队lambda过度，浦项重伤锋线仍客场赢球——韩职H2H可靠性被高估(L046)。"
+    },
+    {
+      "id": "003",
+      "league": "沙特职业联赛第3轮",
+      "home": "达曼协定",
+      "away": "利雅得胜利",
+      "actual_score": "2:3",
+      "actual_ht_score": "2:0",
+      "actual_direction": "客胜",
+      "actual_ttg": 5,
+      "actual_htft": "胜负",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.52 },
+        "had_second": { "direction": "平", "prob": 0.26 },
+        "ttg_top2": [3, 4],
+        "htft_top3": ["负负", "平负", "平平"],
+        "crs_top5": ["1-2", "0-2", "1-3", "1-1", "2-1"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": false, "crs": false },
+      "notes": "方向客胜首选命中(规则28基本面裁决正确)。达曼半场2-0领先，马内梅开二度利雅得3-2逆转——沙职大球(5球超TOP1)+强队逆转属性。比分2-3不在TOP5、半全场胜负(半场胜全场负)不在TOP3、TTG 3/4低估至5球。C罗复出带动利雅得攻击端，沙职对攻大球再验(L047)。"
+    },
+    {
+      "id": "004",
+      "league": "英联赛杯第2轮",
+      "home": "斯托克城",
+      "away": "赫尔城",
+      "single_match": true,
+      "actual_score": "1:1(点球4-5)",
+      "actual_ht_score": "1:1",
+      "actual_direction": "平",
+      "actual_ttg": 2,
+      "actual_htft": "平平",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.45 },
+        "had_second": { "direction": "主胜", "prob": 0.30 },
+        "ttg_top2": [2, 3],
+        "htft_top3": ["负负", "平平", "平负"],
+        "crs_top5": ["0-2", "1-1", "1-2", "0-1", "0-3"]
+      },
+      "hits": { "direction": "❌", "ttg": true, "htft": true, "crs": true },
+      "notes": "方向上客胜首选未中(90分钟1-1平局，点球赫尔城4-5晋级)，但比分(1-1=TOP2)+TTG(2球首选)+半全场(平平=TOP2)三维全中。英联赛杯跨级战平局风险被低估(首选客胜45%落空)。竞彩HAD以90分钟为准，点球不影响方向判定。规则63平局豁免使主胜定位，实际打出平局。"
+    },
+    {
+      "id": "005",
+      "league": "欧冠附加赛次回合",
+      "home": "LASK林茨",
+      "away": "凯尔特人",
+      "single_match": true,
+      "actual_score": "5:1(常规4:1含加时)",
+      "actual_ht_score": "1:1",
+      "actual_direction": "主胜",
+      "actual_ttg": 4,
+      "actual_htft": "平胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.40 },
+        "had_second": { "direction": "平", "prob": 0.32 },
+        "ttg_top2": [3, 4],
+        "htft_top3": ["胜胜", "平胜", "平平"],
+        "crs_top5": ["2-1", "1-1", "1-2", "2-0", "1-3"]
+      },
+      "hits": { "direction": "✅首", "ttg": true, "htft": true, "crs": false },
+      "notes": "本轮最大冷门+方向正确。林茨常规4-1(加时5-1)逆转，首回合0-3→两回合5-4晋级。规则65(身价5.2x)+规则34双上修驱动主胜+大球，方向主胜优选+TTG(4球次选)+半全场平胜(TOP2)命中，比分5-1严重低估。落后2球+主场→次回合开放对攻进球爆发(L045)。凯尔特人3-0领先轮换致崩盘，规则63平局上修被证伪。"
+    },
+    {
+      "id": "006",
+      "league": "欧冠附加赛次回合",
+      "home": "博德闪耀",
+      "away": "奈梅亨",
+      "actual_score": "3:0",
+      "actual_ht_score": "2:0",
+      "actual_direction": "主胜",
+      "actual_ttg": 3,
+      "actual_htft": "胜胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.63 },
+        "had_second": { "direction": "平", "prob": 0.19 },
+        "ttg_top2": [3, 4],
+        "htft_top3": ["胜胜", "平胜", "负负"],
+        "crs_top5": ["2-1", "3-1", "2-0", "1-1", "3-2"]
+      },
+      "hits": { "direction": "✅首", "ttg": true, "htft": true, "crs": false },
+      "notes": "本轮最佳博胆全中方向/总进球/半全场三维。博德3-0(奈梅亨第3分钟门将红牌10人)，方向主胜63%首选+TTG(3球首选)+半全场胜胜(TOP1)命中，比分3-0不在TOP5(推演给了3-1/2-0)。规则32奈梅亨后防残阵+门将红牌→大胜方向正确。"
+    },
+    {
+      "id": "007",
+      "league": "英联赛杯第2轮",
+      "home": "诺丁汉森林",
+      "away": "利兹联",
+      "actual_score": "0:2",
+      "actual_ht_score": "0:0",
+      "actual_direction": "客胜",
+      "actual_ttg": 2,
+      "actual_htft": "平负",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.38 },
+        "had_second": { "direction": "平", "prob": 0.28 },
+        "ttg_top2": [2, 3],
+        "htft_top3": ["胜胜", "负负", "平平"],
+        "crs_top5": ["1-1", "0-1", "1-2", "0-0", "2-1"]
+      },
+      "hits": { "direction": "✅首", "ttg": true, "htft": false, "crs": false },
+      "notes": "★低置信场次却方向(客胜首选)+总进球(2球首选)命中。利兹0-2胜(James 50'+Nmecha 75')，诺丁汉轮换+背靠背崩盘。但比分0-2不在TOP5、半全场平负实际(半场0-0)未入TOP3(给了胜胜/负负/平平)。信息不对称场次靠基本面客胜方向正确。"
+    },
+    {
+      "id": "008",
+      "league": "英联赛杯第2轮",
+      "home": "伯明翰",
+      "away": "布伦特福德",
+      "actual_score": "1:6",
+      "actual_ht_score": "1:3",
+      "actual_direction": "客胜",
+      "actual_ttg": 7,
+      "actual_htft": "负负",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.55 },
+        "had_second": { "direction": "平", "prob": 0.25 },
+        "ttg_top2": [3, 4],
+        "htft_top3": ["负负", "平负", "平平"],
+        "crs_top5": ["0-2", "1-1", "1-2", "0-1", "0-3"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": false },
+      "notes": "方向(客胜首选)+半全场(负负TOP1)命中，但TTG 7球严重低估——规则65执行+0.4给3/4球，实际1-6轰出7球。★★★高置信碾压方向对，L041'TTG同步3-4球'仍不够，身价5.9x+布伦特3-0热刺+7-0法兰克福火热状态的攻击力被量级低估(L044)。比分1-6大爆冷。"
+    },
+    {
+      "id": "009",
+      "league": "西甲第2轮",
+      "home": "巴伦西亚",
+      "away": "贝蒂斯",
+      "actual_score": "0:1",
+      "actual_ht_score": "0:0",
+      "actual_direction": "客胜",
+      "actual_ttg": 1,
+      "actual_htft": "平负",
+      "predictions": {
+        "had_first": { "direction": "平", "prob": 0.36 },
+        "had_second": { "direction": "客胜", "prob": 0.33 },
+        "ttg_top2": [2, 1],
+        "htft_top3": ["平平", "胜平", "负平"],
+        "crs_top5": ["1-1", "1-0", "0-1", "0-0", "2-1"]
+      },
+      "hits": { "direction": "✅次", "ttg": true, "htft": false, "crs": true },
+      "notes": "方向次选客胜+比分(0-1=TOP3)+TTG(1球次选)命中，半全场平负(半场0-0全场0-1)未入TOP3(给了平平/胜平/负平)。双方合计13人残阵→贝蒂斯García 83'绝杀。首选平局落空但次选客胜覆盖。低进球1球次选正确，西甲残阵闷战基调符合。"
+    }
+  ],
+  "parlay_results": {
+    "direction": [
+      { "name": "方向串A", "matches": ["002主胜(❌1-2)", "006主胜(✅3-0)", "008客胜(✅1-6)"], "results": [false, true, true], "hit": false, "est_odds": 5.36 },
+      { "name": "方向串B", "matches": ["006主胜(✅3-0)", "008客胜(✅1-6)"], "results": [true, true], "hit": true, "est_odds": 2.40 }
+    ],
+    "handicap": [
+      { "name": "稳健让球串", "matches": ["001让(+1)胜(✅0-0)", "004让(+1)胜(✅1-1)", "007让(+1)负(✅0-2)"], "results": [true, true, true], "hit": true, "est_odds": 3.46 },
+      { "name": "价值让球串", "matches": ["002让(-1)负(✅1-2)", "003让(+1)负(❌2-3)", "009让(-1)负(✅0-1)"], "results": [true, false, true], "hit": false, "est_odds": 21.1 }
+    ],
+    "mixed": [
+      { "name": "半全场串A", "matches": ["006胜胜(✅胜胜)", "008负负(✅负负)"], "results": [true, true], "hit": true, "est_odds": 5.54 },
+      { "name": "半全场串B", "matches": ["001平平(✅平平)", "009平平(❌平负)"], "results": [true, false], "hit": false, "est_odds": 24.4 },
+      { "name": "方向+半全场A", "matches": ["002主胜(❌)", "006胜胜(✅)"], "results": [false, true], "hit": false, "est_odds": 4.59 },
+      { "name": "方向+半全场B", "matches": ["008客胜(✅1-6)", "001平平(✅平平)"], "results": [true, true], "hit": true, "est_odds": 8.84 }
+    ],
+    "entertainment_ttg": [
+      { "name": "总进球串A", "matches": ["003 4球(❌5球)", "005 4球(✅4球)", "008 4球(❌7球)"], "results": [false, true, false], "hit": false, "est_odds": 113 },
+      { "name": "总进球串B", "matches": ["001 3球(❌0球)", "006 4球(❌3球)", "009 1球(✅1球)"], "results": [false, false, true], "hit": false, "est_odds": 66 },
+      { "name": "总进球串C", "matches": ["003 4球(❌5球)", "005 3球(❌4球)", "008 4球(❌7球)"], "results": [false, false, false], "hit": false, "est_odds": 91 }
+    ],
+    "entertainment_htft": [
+      { "name": "高赔半全场串A", "matches": ["001平平(✅)", "009平平(❌平负)", "004平平(✅)"], "results": [true, false, true], "hit": false, "est_odds": 117 },
+      { "name": "高赔半全场串B", "matches": ["005平负(❌平胜)", "007负胜(❌平负)", "003胜平(❌胜负)"], "results": [false, false, false], "hit": false, "est_odds": 2754 },
+      { "name": "高赔半全场串C", "matches": ["001平负(❌平平)", "007负平(❌平负)", "009平负(❌)"], "results": [false, false, false], "hit": false, "est_odds": 574 },
+      { "name": "高赔半全场串D", "matches": ["003胜负(✅)", "004平胜(❌平平)", "008负平(❌负负)"], "results": [true, false, false], "hit": false, "est_odds": 3025 }
+    ],
+    "entertainment_mixed": [
+      { "name": "混合串A", "matches": ["006胜胜(✅)", "003 4球(❌5球)", "008负负(✅)"], "results": [true, false, true], "hit": false, "est_odds": 23.2 },
+      { "name": "混合串B", "matches": ["001平平(✅)", "005 3球(❌4球)", "009 1球(✅)"], "results": [true, false, true], "hit": false, "est_odds": 78.6 },
+      { "name": "混合串C", "matches": ["002平负(❌)", "007 2球(✅)", "008负平(❌负负)"], "results": [false, true, false], "hit": false, "est_odds": 486 },
+      { "name": "混合串D", "matches": ["003胜负(✅)", "006 4球(❌3球)", "004平负(❌平平)"], "results": [true, false, false], "hit": false, "est_odds": 528 }
+    ],
+    "score": [
+      { "name": "稳健比分串", "matches": ["006 2-1(❌3-0)", "008 0-2(❌1-6)", "002 1-1(❌1-2)"], "results": [false, false, false], "hit": false, "est_odds": 375 },
+      { "name": "混合比分串", "matches": ["005 2-1/1-1(❌5-1)", "006 2-1/3-1(❌3-0)", "003 1-2/0-2(❌2-3)"], "results": [false, false, false], "hit": false, "est_odds": "504-743" },
+      { "name": "TOP5比分串", "matches": ["001 1-1/0-0(✅0-0)", "002 1-0/1-1(❌1-2)", "009 1-1/0-0(❌0-1)"], "results": [true, false, false], "hit": false, "est_odds": "219-670" },
+      { "name": "搏冷比分串", "matches": ["003 2-2(❌2-3)", "005 2-2(❌5-1)", "009 0-0(❌0-1)"], "results": [false, false, false], "hit": false, "est_odds": 1521 },
+      { "name": "单挑比分①", "matches": ["006 2-1(❌3-0)"], "results": [false], "hit": false, "est_odds": 7.75 },
+      { "name": "单挑比分②", "matches": ["008 0-2(❌1-6)"], "results": [false], "hit": false, "est_odds": 8.50 }
+    ]
+  },
+  "parlay_summary": {
+    "total_schemes": 25,
+    "total_hits": 4,
+    "hit_rate": 0.16,
+    "hit_schemes": ["方向串B (~2.40)", "稳健让球串 (~3.46)", "半全场串A (~5.54)", "方向+半全场B (~8.84)"],
+    "robust_hit_rate": { "hit": 4, "total": 8, "rate": 0.5 },
+    "entertainment_hit_rate": { "hit": 0, "total": 17, "rate": 0.0 }
+  },
+  "lessons_applied": ["L034", "L035", "L040", "L041", "L043", "L032", "L039", "L038"],
+  "rules_triggered": ["规则65(001/004/005/008/009触发，004/005/008执行)", "规则63(002/004/005单关)", "规则32(006奈梅亨后防残阵)", "规则28(003基本面>市场)", "规则62比分推演", "L041(006/008高置信碾压TTG同步)", "规则12(H2H 002济州)"],
+  "new_lessons": ["L044", "L045", "L046", "L047"],
+  "key_findings": [
+    "方向(含次选)7/9(77.8%)优秀，仅首选6/9(66.7%)——002(★★★主胜翻车)与004(客胜首选落空)拖累首选命中，次选覆盖率仍关键",
+    "大球量级系统性再低估：008布伦特1-6轰7球、003达曼2-3五球、005林茨5-1(常规4球)——规则65执行场次TTG 3/4球档仍偏保守，身价碾压+攻强场次高档位应扩展至5/6/7球",
+    "稳健让球串3场全中(3.46)：受让+1球结构在'碾压但非碾压'场次最稳(001/004让胜=平局当胜+007让负=净负2球)——规则55延续验证",
+    "005林茨5-1超级逆转(首回合0-3→两回合5-4)：规则65+34双上修驱动主胜+大球方向正确，落后2球+主场次回合开放对攻进球爆发，但比分量级低估",
+    "002济州★★★主胜翻车：韩职H2H主场交锋论+浦项锋线残阵下修客队lambda被客胜证伪——重伤锋线仍客场赢球，韩职交锋+残阵双信号可靠性需降级",
+    "半全场TOP3命中仅5/9(55.6%)一般：实际打出多个平负/胜负/平胜逆转路径(负负→平平、胜负半场领先后崩)未被覆盖",
+    "娱乐串0/17全灭：比分串大球场次全落空(005/006/008比分严重低估)，总进球串高档位与实际量级不匹配"
+  ]
+}

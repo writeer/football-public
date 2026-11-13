@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>韩职3场深度分析 - 2026年8月1日</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif; background: #0f1117; color: #e8e8e8; line-height: 1.6; }
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+.header { background: linear-gradient(135deg, #1a1a2e, #16213e); padding: 30px; border-radius: 12px; margin-bottom: 20px; border: 1px solid #30475e; }
+.header h1 { color: #fff; font-size: 24px; margin-bottom: 8px; }
+.header .subtitle { color: #8899aa; font-size: 14px; }
+.header .meta { display: flex; gap: 15px; margin-top: 15px; flex-wrap: wrap; }
+.header .meta span { background: #1e2a3a; padding: 4px 12px; border-radius: 4px; font-size: 13px; color: #6ab0f3; }
+
+.match-card { background: #1a1a2e; border-radius: 12px; margin-bottom: 25px; overflow: hidden; border: 1px solid #30475e; }
+.match-header { padding: 20px; background: linear-gradient(135deg, #16213e, #0f3460); }
+.match-header .match-id { color: #6ab0f3; font-size: 12px; margin-bottom: 5px; }
+.match-header .teams { display: flex; align-items: center; justify-content: space-between; margin: 10px 0; }
+.match-header .team { flex: 1; text-align: center; }
+.match-header .team-name { font-size: 20px; font-weight: bold; color: #fff; }
+.match-header .team-rank { font-size: 12px; color: #8899aa; margin-top: 3px; }
+.match-header .vs { font-size: 14px; color: #6ab0f3; padding: 0 15px; }
+.match-header .odds { display: flex; justify-content: center; gap: 20px; margin-top: 10px; }
+.match-header .odd { text-align: center; }
+.match-header .odd-label { font-size: 11px; color: #8899aa; }
+.match-header .odd-value { font-size: 16px; font-weight: bold; color: #e8e8e8; }
+
+.section { padding: 20px; border-top: 1px solid #30475e; }
+.section-title { color: #6ab0f3; font-size: 15px; font-weight: bold; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #30475e; }
+
+.info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.info-item { background: #16213e; padding: 10px; border-radius: 8px; }
+.info-label { font-size: 12px; color: #8899aa; margin-bottom: 4px; }
+.info-value { font-size: 13px; color: #e8e8e8; }
+
+.prob-bar { display: flex; height: 30px; border-radius: 6px; overflow: hidden; margin: 10px 0; }
+.prob-segment { display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; color: #fff; transition: width 0.3s; }
+
+.score-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+.score-table th { background: #16213e; color: #8899aa; padding: 8px; font-size: 12px; text-align: left; }
+.score-table td { padding: 8px; border-bottom: 1px solid #30475e; font-size: 13px; }
+.score-table .score { font-weight: bold; color: #6ab0f3; }
+.score-table .prob { color: #e8e8e8; }
+.score-table .direction-tag { font-size: 11px; padding: 2px 6px; border-radius: 3px; }
+.tag-home { background: #2d4a3e; color: #4caf50; }
+.tag-draw { background: #3d3d2a; color: #ff9800; }
+.tag-away { background: #4a2d2d; color: #f44336; }
+
+.warning { background: #2a1a1a; border-left: 3px solid #e74c3c; padding: 10px 15px; margin: 10px 0; border-radius: 4px; font-size: 13px; }
+.warning strong { color: #e74c3c; }
+.info-box { background: #1a2a1a; border-left: 3px solid #4caf50; padding: 10px 15px; margin: 10px 0; border-radius: 4px; font-size: 13px; }
+.contradiction { background: #2a2010; border-left: 3px solid #ff9800; padding: 10px 15px; margin: 10px 0; border-radius: 4px; font-size: 13px; }
+
+.soft-factor { background: #16213e; padding: 12px; border-radius: 8px; margin-bottom: 10px; }
+.soft-factor-title { color: #6ab0f3; font-size: 13px; font-weight: bold; margin-bottom: 6px; }
+.soft-factor-content { font-size: 12px; color: #b0b0b0; }
+
+.checklist { list-style: none; padding: 0; }
+.checklist li { padding: 4px 0; font-size: 12px; color: #b0b0b0; }
+.checklist li::before { content: attr(data-check); margin-right: 8px; }
+
+.model-comparison { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; }
+.model-card { background: #16213e; padding: 10px; border-radius: 8px; text-align: center; }
+.model-name { font-size: 11px; color: #8899aa; margin-bottom: 5px; }
+.model-probs { display: flex; justify-content: center; gap: 8px; }
+.model-prob { font-size: 13px; font-weight: bold; }
+
+.recommendation { background: linear-gradient(135deg, #1a1a2e, #0f3460); padding: 15px; border-radius: 8px; margin-top: 10px; border: 1px solid #6ab0f3; }
+.rec-label { color: #6ab0f3; font-size: 12px; margin-bottom: 5px; }
+.rec-value { color: #fff; font-size: 14px; font-weight: bold; }
+
+.summary-card { background: #1a1a2e; border-radius: 12px; padding: 20px; margin-bottom: 20px; border: 1px solid #30475e; }
+.summary-table { width: 100%; border-collapse: collapse; }
+.summary-table th { color: #6ab0f3; font-size: 12px; padding: 8px; text-align: center; border-bottom: 2px solid #30475e; }
+.summary-table td { padding: 8px; text-align: center; font-size: 13px; border-bottom: 1px solid #30475e; }
+.summary-table .team-cell { text-align: left; color: #e8e8e8; }
+
+.footer { text-align: center; padding: 20px; color: #555; font-size: 12px; }
+
+.heat-warning { display: inline-block; background: #4a2d2d; color: #ff6b6b; padding: 2px 8px; border-radius: 4px; font-size: 11px; margin-left: 5px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>⚽ 韩职3场深度分析报告</h1>
+    <div class="subtitle">2026年8月1日（周六）K League 1 第21轮 | 模型版本 v1.7.0-deep</div>
+    <div class="meta">
+        <span>📅 2026-08-01 18:30 KST</span>
+        <span>🏟️ 春川/全州/浦项</span>
+        <span>🌡️ 32-35°C 高温预警</span>
+        <span>📋 规则22/24/25/26/27/28/29</span>
+    </div>
+</div>
+
+<div class="summary-card">
+    <div class="section-title">📊 三场预测总览</div>
+    <table class="summary-table">
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>对阵</th>
+                <th>体彩赔率</th>
+                <th>融合方向概率</th>
+                <th>置信度</th>
+                <th>比分首选</th>
+                <th>大小球</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>韩职深度01</td>
+                <td class="team-cell">江原FC vs 富川FC</td>
+                <td>1.5/3.92/6.86</td>
+                <td>主胜59.9%</td>
+                <td>中★★</td>
+                <td>1:0(14.6%)</td>
+                <td>小58.2%</td>
+            </tr>
+            <tr>
+                <td>韩职深度02</td>
+                <td class="team-cell">全北现代 vs 首尔FC</td>
+                <td>2.63/3.0/2.79</td>
+                <td>主胜45.1%</td>
+                <td>中高★★★</td>
+                <td>1:1(12.0%)</td>
+                <td>大55.2%</td>
+            </tr>
+            <tr>
+                <td>韩职深度03</td>
+                <td class="team-cell">浦项制铁 vs 金泉尚武</td>
+                <td>2.06/3.34/3.54</td>
+                <td>客胜35.8%</td>
+                <td>中★★</td>
+                <td>0:0(19.8%)</td>
+                <td>小74.5%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="match-card">
+    <div class="match-header">
+        <div class="match-id">韩职深度01 | 韩职 第21轮 | 2026-08-01 18:30</div>
+        <div class="teams">
+            <div class="team">
+                <div class="team-name">江原FC</div>
+                <div class="team-rank">联赛第3位</div>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team">
+                <div class="team-name">富川FC</div>
+                <div class="team-rank">联赛第11位</div>
+            </div>
+        </div>
+        <div class="odds">
+            <div class="odd"><div class="odd-label">主胜</div><div class="odd-value">1.5</div></div>
+            <div class="odd"><div class="odd-label">平局</div><div class="odd-value">3.92</div></div>
+            <div class="odd"><div class="odd-label">客胜</div><div class="odd-value">6.86</div></div>
+        </div>
+    </div>
+    
+    <!-- 融合概率 -->
+    <div class="section">
+        <div class="section-title">🎯 融合方向概率 (v1.7.0权重: 模型85% + 基本面15% + Shin 8%)</div>
+        <div class="prob-bar">
+            <div class="prob-segment" style="width: 59.949898383889696%; background: #e74c3c;">主胜 59.9%</div>
+            <div class="prob-segment" style="width: 24.015105734561633%; background: #27ae60;">平 24.0%</div>
+            <div class="prob-segment" style="width: 16.034995881548667%; background: #95a5a6;">客胜 16.0%</div>
+        </div>
+        <div class="model-comparison">
+            <div class="model-card">
+                <div class="model-name">DC模型</div>
+                <div class="model-probs">
+                    <span style="color:#e74c3c">56.6%</span>/
+                    <span style="color:#27ae60">23.6%</span>/
+                    <span style="color:#95a5a6">19.8%</span>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="model-name">蒙特卡洛10000场</div>
+                <div class="model-probs">
+                    <span style="color:#e74c3c">55.2%</span>/
+                    <span style="color:#27ae60">26.2%</span>/
+                    <span style="color:#95a5a6">18.6%</span>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="model-name">Shin校准(参考)</div>
+                <div class="model-probs">
+                    <span style="color:#e74c3c">73.4%</span>/
+                    <span style="color:#95a5a6">19.1%</span>/
+                    <span style="color:#95a5a6">7.5%</span>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="model-name">模型标准差</div>
+                <div class="model-probs">
+                    <span style="color:#6ab0f3;">σ=8.43</span>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top:8px; font-size:12px; color:#8899aa;">方向排名: 主胜 59.9% > 平局 24.0% > 客胜 16.0% | 一致性: 高度一致</div>
+        <div class="recommendation">
+            <div class="rec-label">📋 推荐方向</div>
+            <div class="rec-value">主胜 59.9% (置信度: 中★★)</div>
+        </div>
+    </div>
+    
+    <!-- 比分预测 -->
+    <div class="section">
+        <div class="section-title">⚽ 全场比分TOP10 (Dixon-Coles + MC10000)</div>
+        <table class="score-table">
+            <tr><th>排名</th><th>比分</th><th>概率</th><th>方向</th></tr>
+            <tr><td>1</td><td class="score">1:0</td><td class="prob">14.6%</td><td><span class="direction-tag tag-home">主胜</span></td></tr>
+            <tr><td>2</td><td class="score">1:1</td><td class="prob">12.5%</td><td><span class="direction-tag tag-draw">平局</span></td></tr>
+            <tr><td>3</td><td class="score">2:0</td><td class="prob">11.7%</td><td><span class="direction-tag tag-home">主胜</span></td></tr>
+            <tr><td>4</td><td class="score">0:0</td><td class="prob">10.2%</td><td><span class="direction-tag tag-draw">平局</span></td></tr>
+            <tr><td>5</td><td class="score">2:1</td><td class="prob">9.2%</td><td><span class="direction-tag tag-home">主胜</span></td></tr>
+            <tr><td>6</td><td class="score">0:1</td><td class="prob">7.1%</td><td><span class="direction-tag tag-away">客胜</span></td></tr>
+            <tr><td>7</td><td class="score">3:0</td><td class="prob">5.8%</td><td><span class="direction-tag tag-home">主胜</span></td></tr>
+            <tr><td>8</td><td class="score">3:1</td><td class="prob">5.2%</td><td><span class="direction-tag tag-home">主胜</span></td></tr>
+            <tr><td>9</td><td class="score">1:2</td><td class="prob">4.5%</td><td><span class="direction-tag tag-away">客胜</span></td></tr>
+            <tr><td>10</td><td class="score">2:2</td><td class="prob">4.1%</td><td><span class="direction-tag tag-draw">平局</span></td></tr>
+        </table>
+    </div>
+    
+    <!-- 半场比分 -->
+    <div class="section">
+        <div class="section-title">⏱️ 半场比分TOP5 (HTFTModel: λ×0.45)</div>
+        <table class="score-table">
+            <tr><th>排名</th><th>半场比分</th><th>概率</th></tr>
+            <tr><td>1</td><td class="score">0:0</td><td class="prob">35.4%</td></tr>
+            <tr><td>2</td><td class="score">1:0</td><td class="prob">24.0%</td></tr>
+            <tr><td>3</td><td class="score">0:1</td><td class="prob">11.9%</td></tr>
+            <tr><td>4</td><td class="score">2:0</td><td class="prob">9.0%</td></tr>
+            <tr><td>5</td><td class="score">1:1</td><td class="prob">8.4%</td></tr>
+        </table>
+        <div style="margin-top:8px; font-size:12px; color:#8899aa;">
+            半全场TOP3: 平胜 24.3% | 胜胜 22.2% | 平平 11.6%
+        </div>
+    </div>
+    
+    <!-- 大小球 -->
+    <div class="section">
+        <div class="section-title">📊 总进球分布 & 大小球</div>
+        <div class="prob-bar" style="height: 25px; margin-bottom: 10px;">
+            <div class="prob-segment" style="width: 58.19%; background: #27ae60;">小2.5 58.2%</div>
+            <div class="prob-segment" style="width: 41.81%; background: #e74c3c;">大2.5 41.8%</div>
+        </div>
+        <div style="font-size:12px; color:#8899aa;">
+            进球分布: 0球 9.7% | 1球 21.7% | 2球 26.7% | 3球 20.4% | 4球 12.8% | 5+球 8.6%
+        </div>
+    </div>
+    
+    <!-- 场地天气 (规则26A/B) -->
+    <div class="section">
+        <div class="section-title">🏟️ 场地与天气 (规则26A/B)</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">比赛场地</div>
+                <div class="info-value">春川松岩乐透城体育场<br>春川 | 天然草皮 | 容量约15,000人</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">天气情况 <span class="heat-warning">高温</span></div>
+                <div class="info-value">34°C (最高), 开球约30°C<br>晴间多云 | 降雨10-16% | WSW微风, 阵风最高20mph</div>
+            </div>
+        </div>
+        <div class="warning" style="margin-top:8px;"><strong>天气影响:</strong> 极端高温34°C可能影响球员体能,下半场60分钟后体能下滑明显。部分中文源提小雨但英文权威源显示低降雨概率。</div>
+        <div style="font-size:11px; color:#666; margin-top:4px;">来源: Weather Underground + Met Office</div>
+    </div>
+    
+    <!-- 球队近期新闻 (规则26C) -->
+    <div class="section">
+        <div class="section-title">📰 球队近期新闻 (规则26C)</div>
+        <div class="info-item" style="margin-bottom:8px;">
+            <div class="info-label">主队动态</div>
+            <div class="info-value">江原一度连续9场不败(7月4日-7月21日),上轮客场1-2不敌安养被打断。头号射手Halaihal 6球。主场争冠战意极高(排名第3,32分,距榜首10分)。Goal.com确认无伤停。</div>
+        </div>
+        <div class="info-item" style="margin-bottom:8px;">
+            <div class="info-label">客队动态</div>
+            <div class="info-value">富川是升班马,联赛连续4轮不胜。7/29韩国杯3-0胜Paju Frontier晋级(低级别对手)。客场表现优于主场(3胜4平3负,不败率70%)。Goal.com确认无伤停。</div>
+        </div>
+    </div>
+    
+    <!-- 伤停详情 (规则26D) -->
+    <div class="section">
+        <div class="section-title">🏥 伤停详情 (规则26D/25 信源验证)</div>
+        <table class="score-table">
+            <tr><th>球队</th><th>球员</th><th>位置</th><th>类型</th><th>来源</th><th>矛盾标注</th></tr>
+            <tr>
+                <td>主队</td>
+                <td style="color:#6ab0f3;">无确认伤停</td>
+                <td>-</td>
+                <td>-</td>
+                <td style="font-size:11px;">Goal.com (Level 1)</td>
+                <td style="font-size:11px; color:#ff9800;">中文网易称图奇Tuci黄牌停赛,未验证</td>
+            </tr>
+            <tr>
+                <td>客队</td>
+                <td style="color:#6ab0f3;">无确认伤停</td>
+                <td>-</td>
+                <td>-</td>
+                <td style="font-size:11px;">Goal.com (Level 1)</td>
+                <td style="font-size:11px; color:#ff9800;">无</td>
+            </tr>
+        </table>
+        <div class="contradiction" style="margin-top:8px;"><strong>⚠️ 信源矛盾汇总 (规则25):</strong> ⚠️ 规则25矛盾: Goal.com显示无伤停,网易称图奇停赛。TNT Sports显示图奇近期首发出场。需赛前1小时用实际首发核实。</div>
+        <div class="info-box" style="margin-top:8px;"><strong>📋 实际首发 (规则26E):</strong> 开球前1小时确认 (待更新)</div>
+    </div>
+    
+    <!-- 战意心理与体能分析 (规则27) -->
+    <div class="section">
+        <div class="section-title">🧠 战意心理与体能分析 (规则27)</div>
+        
+        <div class="soft-factor">
+            <div class="soft-factor-title">⚔️ 战意不对称</div>
+            <div class="soft-factor-content">
+                <strong>主队:</strong> 联赛第3位(32分),争冠战意高。主场急需赢球找回状态(上轮输球打断9场不败)。战意评分8/10<br>
+                <strong>客队:</strong> 联赛第11位(20分),保级战意高但客场保守。升班马抢分需求强烈。战意评分7/10<br>
+                <strong>不对称等级:</strong> 轻度不对称 (战意差1项, 争冠vs保级但双方都有抢分需求)<br>
+                <strong>lambda修正:</strong> 主队λ×1.03 (争冠主场), 客队λ×0.97 (保守反击)
+            </div>
+        </div>
+        
+        <div class="soft-factor">
+            <div class="soft-factor-title">💪 体能与休息</div>
+            <div class="soft-factor-content">
+                <strong>主队:</strong> 上场比赛7/26(距今天6天),7天内1场比赛。体能充沛。 (体能指数: 0.98 (休息6天+无旅行+赛季中段))<br>
+                <strong>客队:</strong> 上场比赛7/29韩国杯(距今天3天),7天内2场比赛。轻度疲劳。 (体能指数: 0.92 (休息3天+国内旅行+赛季中段))<br>
+                <strong>lambda修正:</strong> 主队不修正, 客队λ×0.95
+            </div>
+        </div>
+        
+        <div class="soft-factor">
+            <div class="soft-factor-title">🎭 心理因素</div>
+            <div class="soft-factor-content">
+                江原: 9场不败被打断后主场求胜欲强,但可能急躁。富川: 首回合0-0平局给予客场信心,大巴战术有心理优势。高温34°C可能导致比赛节奏放慢。<br>
+                <strong>lambda修正:</strong> 平局概率+3% (双方试探+高温减速)
+            </div>
+        </div>
+        
+        <div class="soft-factor">
+            <div class="soft-factor-title">📅 赛程牵制</div>
+            <div class="soft-factor-content">
+                <strong>主队:</strong> 后续7天无重要赛事牵制,全神贯注 → λ×1.02<br>
+                <strong>客队:</strong> 后续7天无重要赛事牵制,但保级压力持续 → 不修正<br>
+                <strong>牵制等级:</strong> 低牵制
+            </div>
+        </div>
+        
+        <div class="soft-factor" style="border: 1px solid #6ab0f3;">
+            <div class="soft-factor-title">📊 综合软因素修正</div>
+            <div class="soft-factor-content">
+                <strong>主队综合系数:</strong> 1.03 × 1.00 × 1.02 = 1.05<br>
+                <strong>客队综合系数:</strong> 0.97 × 0.95 × 1.00 = 0.92<br>
+                <strong>修正后Lambda:</strong> home=1.559, away=0.788<br>
+                <em>但需考虑高温对双方均等影响,实际差距略缩窄</em>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 韩职特化规则检查 (规则22) -->
+    <div class="section">
+        <div class="section-title">🔍 韩职特化规则检查 (规则22/24)</div>
+        
+        <div class="info-grid" style="margin-bottom: 10px;">
+            <div class="info-item">
+                <div class="info-label">22A 主场加成</div>
+                <div class="info-value" style="font-size:12px;">韩职主场加成1.20 (已计入lambda基准)</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">22B 战意分析</div>
+                <div class="info-value" style="font-size:12px;">江原排名第3(争冠),富川排名第11(保级≥9)但为客队。保级队主场规则不适用(富川是客队)。争冠客队规则不适用(富川非争冠客队)。</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">22C 市场热度</div>
+                <div class="info-value" style="font-size:12px;">⚠️ 市场隐含主胜66.7%,接近70%阈值! 触发冷门检查: 平局+5%, 客胜+3%</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">22D 平局权重</div>
+                <div class="info-value" style="font-size:12px;">富川平局率8/20=40%, 未超45%阈值。江原平局率8/20=40%, 同样未超。但韩职整体平局率30%→比分矩阵0:0/1:1/2:2各+5%</div>
+            </div>
+        </div>
+        
+        <div class="info-item" style="margin-bottom: 10px;">
+            <div class="info-label">22E 冷门检测清单</div>
+            <ul class="checklist">
+                <li data-check="☑">☑ 主场队争冠战意? → 是, λ上修</li>
+                <li data-check="☐">⚠️ 市场支持率接近70%? → 66.7%, 触发冷门检查</li>
+                <li data-check="☑">☑ 客队客场不败率70%? → 是, 需警惕</li>
+                <li data-check="☑">☑ 主场队平局率>45%? → 否(40%)</li>
+                <li data-check="☐">☐ 军旅球队主场? → 否</li>
+                <li data-check="☑">☑ H2H首回合0-0? → 是, 平局参考</li>
+            </ul>
+        </div>
+        <div class="info-box"><strong>22F 分析优先级:</strong> 数据面(进球/失球/xG) > 新闻面(战意) > 主场优势 > 历史交锋 > 市场热度(仅反向参考)</div>
+    </div>
+    
+    <!-- 基本面分析 (规则28) -->
+    <div class="section">
+        <div class="section-title">📋 基本面决定论分析 (规则28)</div>
+        <div class="recommendation">
+            <div class="rec-label">基本面方向判断</div>
+            <div class="rec-value">主胜 (基本面支持主胜但幅度有限)</div>
+        </div>
+        <div class="info-item" style="margin-top:8px;">
+            <div class="info-label">推理过程</div>
+            <div class="info-value">1.江原主场防守联赛最佳(9场仅6球) 2.争冠战意+主场 3.富川联赛4轮不胜 4.但富川客场不败率70%+大巴战术 5.首回合0-0 6.高温可能拖慢节奏 7.市场接近70%触发冷门检查</div>
+        </div>
+        <div class="info-item" style="margin-top:8px;">
+            <div class="info-label">基本面 vs 市场赔率</div>
+            <div class="info-value">基本面方向与市场一致(主胜),但市场过度看好(66.7%)。冷门检查后平局概率应上修。</div>
+        </div>
+    </div>
+    
+    <!-- 赛季数据 -->
+    <div class="section">
+        <div class="section-title">📈 赛季数据 & 历史交锋 (规则29 数据源: Goal.com)</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">主队赛季战绩</div>
+                <div class="info-value">8W 8D 4L (25:14) - 联赛防守第二好(20场仅失14球)<br>主场: 4W 4D 1L (14:6) - 主场仅1负,9场丢6球<br>近5场: L D W D W (近5场: 负平胜平胜)</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">客队赛季战绩</div>
+                <div class="info-value">4W 8D 8L (18:25) - 升班马,保级组<br>客场: 3W 4D 3L (9:11) - 客场不败率70%<br>近5场: D L L D D (近5场: 平负负平平,联赛4轮不胜)</div>
+            </div>
+        </div>
+        <div class="info-item" style="margin-top:8px;">
+            <div class="info-label">历史交锋</div>
+            <div class="info-value">近5场: 江原2胜1平2负,本赛季首回合0-0平。历史全部交锋富川略占优(6胜3平5负)</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="match-card">
+    <div class="match-header">
+        <div class="match-id">韩职深度02 | 韩职 第21轮 | 2026-08-01 19:30</div>
+        <div class="teams">
+            <div class="team">
+                <div class="team-name">全北现代</div>
+                <div class="team-rank">联赛第2位</div>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team">
+                <div class="team-name">首尔FC</div>
+                <div class="team-rank">联赛第1位</div>
+            </div>
+        </div>
+        <div class="odds">
+            <div class="odd"><div class="odd-label">主胜</div><div class="odd-value">2.63</div></div>
+            <div class="odd"><div class="odd-label">平局</div><div class="odd-value">3.0</div></div>
+            <div class="odd"><div class="odd-label">客胜</div><div class="odd-value">2.79</div></div>
+        </div>
+    </div>
+    
+    <!-- 融合概率 -->
+    <div class="section">
+        <div class="section-title">🎯 融合方向概率 (v1.7.0权重: 模型85% + 基本面15% + Shin 8%)</div>
+        <div class="prob-bar">
+            <div class="prob-segment" style="width: 45.118372817688936%; background: #e67e22;">主胜 45.1%</div>
+            <div class="prob-segment" style="width: 26.23241652624592%; background: #27ae60;">平 26.2%</div>
+            <div class="prob-segment" style="width: 28.649210656065144%; background: #27ae60;">客胜 28.6%</div>
+        </div>
+        <div class="model-comparison">
+            <div class="model-card">
+                <div class="model-name">DC模型</div>
+                <div class="model-probs">
+                    <span style="color:#e67e22">47.6%</span>/
+                    <span style="color:#27ae60">22.5%</span>/
+                    <span style="color:#27ae60">29.9%</span>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="model-name">蒙特卡洛10000场</div>
+                <div class="model-probs">
+                    <span style="color:#e67e22">46.4%</span>/
+                    <span style="color:#27ae60">24.6%</span>/
+                    <span style="color:#27ae60">29.0%</span>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="model-name">Shin校准(参考)</div>
+                <div class="model-probs">
+                    <span style="color:#f39c12">36.4%</span>/
+                    <span style="color:#f39c12">30.1%</span>/
+                    <span style="color:#f39c12">33.5%</span>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="model-name">模型标准差</div>
+                <div class="model-probs">
+                    <span style="color:#6ab0f3;">σ=5.28</span>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top:8px; font-size:12px; color:#8899aa;">方向排名: 主胜 45.1% > 客胜 28.6% > 平局 26.2% | 一致性: 中度一致</div>
+        <div class="recommendation">
+            <div class="rec-label">📋 推荐方向</div>
+            <div class="rec-value">主胜 45.1% (置信度: 中高★★★)</div>
+        </div>
+    </div>
+    
+    <!-- 比分预测 -->
+    <div class="section">
+        <div class="section-title">⚽ 全场比分TOP10 (Dixon-Coles + MC10000)</div>
+        <table class="score-table">
+            <tr><th>排名</th><th>比分</th><th>概率</th><th>方向</th></tr>
+            <tr><td>1</td><td class="score">1:1</td><td class="prob">12.0%</td><td><span class="direction-tag tag-draw">平局</span></td></tr>
+            <tr><td>2</td><td class="score">2:1</td><td class="prob">9.0%</td><td><span class="direction-tag tag-home">主胜</span></td></tr>
+            <tr><td>3</td><td class="score">1:0</td><td class="prob">8.8%</td><td><span class="direction-tag tag-home">主胜</span></td></tr>
+            <tr><td>4</td><td class="score">2:0</td><td class="prob">7.7%</td><td><span class="direction-tag tag-home">主胜</span></td></tr>
+            <tr><td>5</td><td class="score">1:2</td><td class="prob">7.2%</td><td><span class="direction-tag tag-away">客胜</span></td></tr>
+            <tr><td>6</td><td class="score">0:1</td><td class="prob">6.6%</td><td><span class="direction-tag tag-away">客胜</span></td></tr>
+            <tr><td>7</td><td class="score">2:2</td><td class="prob">6.2%</td><td><span class="direction-tag tag-draw">平局</span></td></tr>
+            <tr><td>8</td><td class="score">0:0</td><td class="prob">6.1%</td><td><span class="direction-tag tag-draw">平局</span></td></tr>
+            <tr><td>9</td><td class="score">3:1</td><td class="prob">5.2%</td><td><span class="direction-tag tag-home">主胜</span></td></tr>
+            <tr><td>10</td><td class="score">0:2</td><td class="prob">4.5%</td><td><span class="direction-tag tag-away">客胜</span></td></tr>
+        </table>
+    </div>
+    
+    <!-- 半场比分 -->
+    <div class="section">
+        <div class="section-title">⏱️ 半场比分TOP5 (HTFTModel: λ×0.45)</div>
+        <table class="score-table">
+            <tr><th>排名</th><th>半场比分</th><th>概率</th></tr>
+            <tr><td>1</td><td class="score">0:0</td><td class="prob">27.6%</td></tr>
+            <tr><td>2</td><td class="score">1:0</td><td class="prob">20.4%</td></tr>
+            <tr><td>3</td><td class="score">0:1</td><td class="prob">15.2%</td></tr>
+            <tr><td>4</td><td class="score">1:1</td><td class="prob">11.0%</td></tr>
+            <tr><td>5</td><td class="score">2:0</td><td class="prob">7.7%</td></tr>
+        </table>
+        <div style="margin-top:8px; font-size:12px; color:#8899aa;">
+            半全场TOP3: 平胜 18.5% | 胜胜 16.7% | 平负 11.5%
+        </div>
+    </div>
+    
+    <!-- 大小球 -->
+    <div class="section">
+        <div class="section-title">📊 总进球分布 & 大小球</div>
+        <div class="prob-bar" style="height: 25px; margin-bottom: 10px;">
+            <div class="prob-segment" style="width: 44.84%; background: #27ae60;">小2.5 44.8%</div>
+            <div class="prob-segment" style="width: 55.16%; background: #e74c3c;">大2.5 55.2%</div>
+        </div>
+        <div style="font-size:12px; color:#8899aa;">
+            进球分布: 0球 5.8% | 1球 15.4% | 2球 23.6% | 3球 21.7% | 4球 16.3% | 5+球 17.1%
+        </div>
+    </div>
+    
+    <!-- 场地天气 (规则26A/B) -->
+    <div class="section">
+        <div class="section-title">🏟️ 场地与天气 (规则26A/B)</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">比赛场地</div>
+                <div class="info-value">全州世界杯体育场 (全州城)<br>全州 | 天然草皮 | 容量42,477人</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">天气情况 <span class="heat-warning">高温</span></div>
+                <div class="info-value">日间35°C, 开球25-28°C(日落后降温)<br>多云, 高湿度闷热 | 降雨8月1日无降雨(8月2日转小雨) | 微风(<3级)</div>
+            </div>
+        </div>
+        <div class="warning" style="margin-top:8px;"><strong>天气影响:</strong> 韩国气象厅发布高温预警。高湿度加速体能消耗,65分钟后跑动能力明显下降。首尔7天3赛体能危机更严重。</div>
+        <div style="font-size:11px; color:#666; margin-top:4px;">来源: newsis + IP.cn</div>
+    </div>
+    
+    <!-- 球队近期新闻 (规则26C) -->
+    <div class="section">
+        <div class="section-title">📰 球队近期新闻 (规则26C)</div>
+        <div class="info-item" style="margin-bottom:8px;">
+            <div class="info-label">主队动态</div>
+            <div class="info-value">K联赛第95次传说对决。全北复仇战(首回合0-1补时绝杀败北)。上轮2-0客胜浦项止跌,基蒂斯(Gittis)打入K联赛处子球。一整周休息备战,体能优势巨大。团长李道贤称'决定争冠方向的关键比赛'。预计20000+球迷到场,全州设水炮降温。</div>
+        </div>
+        <div class="info-item" style="margin-bottom:8px;">
+            <div class="info-label">客队动态</div>
+            <div class="info-value">联赛榜首42分(9分领先)。但7天3赛体能严重透支:7/26联赛1-3蔚山,7/29韩国杯0-2釜山(两连败)。两连败均上半场早早丢球(5分钟/13分钟/7分钟)。韩国杯轮换但下半场仍派主力。客场战绩出色(8胜1平1负)但本场体能堪忧。</div>
+        </div>
+    </div>
+    
+    <!-- 伤停详情 (规则26D) -->
+    <div class="section">
+        <div class="section-title">🏥 伤停详情 (规则26D/25 信源验证)</div>
+        <table class="score-table">
+            <tr><th>球队</th><th>球员</th><th>位置</th><th>类型</th><th>来源</th><th>矛盾标注</th></tr>
+            <tr>
+                <td>主队</td>
+                <td style="color:#6ab0f3;">金永彬</td>
+                <td>中场/前锋</td>
+                <td>面部伤(缝合)</td>
+                <td style="font-size:11px;">OSEN/韩国日报 (Level 1)</td>
+                <td style="font-size:11px; color:#ff9800;">无</td>
+            </tr>
+            <tr>
+                <td>主队</td>
+                <td style="color:#6ab0f3;">李东俊</td>
+                <td>边锋</td>
+                <td>肋骨挫伤</td>
+                <td style="font-size:11px;">OSEN/韩国日报 (Level 1)</td>
+                <td style="font-size:11px; color:#ff9800;">无</td>
+            </tr>
+            <tr>
+                <td>客队</td>
+                <td style="color:#6ab0f3;">李相珉</td>
+                <td>中后卫</td>
+                <td>长期伤停</td>
+                <td style="font-size:11px;">中文平台 (Level 4)</td>
+                <td style="font-size:11px; color:#ff9800;">Goal.com未显示</td>
+            </tr>
+        </table>
+        <div class="contradiction" style="margin-top:8px;"><strong>⚠️ 信源矛盾汇总 (规则25):</strong> ⚠️ 规则25: 韩国官方确认金永彬+李东俊伤情。中文平台额外提及孔帕尼奥/朴主英伤缺但未在韩国信源证实。赛前1小时需用实际首发核实。</div>
+        <div class="info-box" style="margin-top:8px;"><strong>📋 实际首发 (规则26E):</strong> 开球前1小时确认 (待更新)。预计全北4-2-3-1, 首尔4-3-3</div>
+    </div>
+    
+    <!-- 战意心理与体能分析 (规则27) -->
+    <div class="section">
+        <div class="section-title">🧠 战意心理与体能分析 (规则27)</div>
+        
+        <div class="soft-factor">
+            <div class="soft-factor-title">⚔️ 战意不对称</div>
+            <div class="soft-factor-content">
+                <strong>主队:</strong> 联赛第2(33分),距榜首9分。必须赢球缩小差距至6分重燃争冠希望。输球差距12分基本无望。战意评分10/10(生死战)<br>
+                <strong>客队:</strong> 联赛第1(42分),9分领先。平局即可接受,战略上不需冒险。战意评分7/10(保守)<br>
+                <strong>不对称等级:</strong> 严重不对称 (全北必须赢 vs 首尔可保平)<br>
+                <strong>lambda修正:</strong> 主队λ×1.08 (必须赢全力进攻), 客队λ×0.95 (保平可深度防守)
+            </div>
+        </div>
+        
+        <div class="soft-factor">
+            <div class="soft-factor-title">💪 体能与休息</div>
+            <div class="soft-factor-content">
+                <strong>主队:</strong> 上场比赛7/25(距今天7天),7天内1场比赛。体能满分。 (体能指数: 1.00 (休息7天+无旅行+赛季中段))<br>
+                <strong>客队:</strong> 上场比赛7/29韩国杯(距今天3天),7天内3场比赛! 体能严重透支。 (体能指数: 0.80 (休息3天+7天3赛+国内旅行+赛季中段))<br>
+                <strong>lambda修正:</strong> 主队不修正, 客队λ×0.90 (体能透支)
+            </div>
+        </div>
+        
+        <div class="soft-factor">
+            <div class="soft-factor-title">🎭 心理因素</div>
+            <div class="soft-factor-content">
+                全北: 复仇战意极强(首回合补时被绝杀),主场魔鬼氛围(20000+球迷),上轮赢球士气回暖。但可能过度兴奋导致急躁。首尔: 两连败士气受挫,但9分领先心理优势。客场战绩出色给予信心。'保平即可'心理陷阱: 过度保守可能被偷袭。<br>
+                <strong>lambda修正:</strong> 主队λ×1.03 (复仇+主场氛围), 平局概率+5% (首尔保守策略)
+            </div>
+        </div>
+        
+        <div class="soft-factor">
+            <div class="soft-factor-title">📅 赛程牵制</div>
+            <div class="soft-factor-content">
+                <strong>主队:</strong> 因AFC赛事直接晋级韩国杯16强,无需踢周中杯赛。全神贯注 → λ×1.05<br>
+                <strong>客队:</strong> 7天3赛第3场,后续仍有联赛。体能预支严重 → λ×0.92<br>
+                <strong>牵制等级:</strong> 高牵制 (首尔)
+            </div>
+        </div>
+        
+        <div class="soft-factor" style="border: 1px solid #6ab0f3;">
+            <div class="soft-factor-title">📊 综合软因素修正</div>
+            <div class="soft-factor-content">
+                <strong>主队综合系数:</strong> 1.08 × 1.00 × 1.03 × 1.05 = 1.166<br>
+                <strong>客队综合系数:</strong> 0.95 × 0.90 × 1.00 × 0.92 = 0.787<br>
+                <strong>修正后Lambda:</strong> home=1.639, away=1.242<br>
+                <em>全北综合优势巨大(体能+战意+主场+复仇),但需扣除伤停影响(金永彬/李东俊)</em>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 韩职特化规则检查 (规则22) -->
+    <div class="section">
+        <div class="section-title">🔍 韩职特化规则检查 (规则22/24)</div>
+        
+        <div class="info-grid" style="margin-bottom: 10px;">
+            <div class="info-item">
+                <div class="info-label">22A 主场加成</div>
+                <div class="info-value" style="font-size:12px;">韩职主场加成1.20 (已计入)</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">22B 战意分析</div>
+                <div class="info-value" style="font-size:12px;">全北排名第2(争冠),首尔排名第1(争冠客队)。首尔客场8胜1平1负,近3客均胜,不触发'近3客不胜→客胜-10%'。但全北必须赢,首尔可保平→战意严重不对称。</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">22C 市场热度</div>
+                <div class="info-value" style="font-size:12px;">市场隐含主胜35.1%,未超70%。但赔率接近(2.63/3.00/2.79),三方均衡,不触发冷门检查。</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">22D 平局权重</div>
+                <div class="info-value" style="font-size:12px;">全北平局率6/20=30%,首尔3/20=15%。均未超45%。但韩职整体平局率30%→比分矩阵0:0/1:1/2:2各+5%。首尔'保平即可'心理→平局+3-5%。</div>
+            </div>
+        </div>
+        
+        <div class="info-item" style="margin-bottom: 10px;">
+            <div class="info-label">22E 冷门检测清单</div>
+            <ul class="checklist">
+                <li data-check="☑">☑ 主场队争冠战意? → 是(必须赢), λ上修</li>
+                <li data-check="☐">☐ 市场支持率>70%? → 否(35.1%)</li>
+                <li data-check="☑">☑ 客队近期客场状态? → 8胜1平1负, 极佳, 不下修</li>
+                <li data-check="☑">☑ 主场队平局率>45%? → 否(30%)</li>
+                <li data-check="☐">☐ 军旅球队主场? → 否</li>
+                <li data-check="☑">☑ 首回合被绝杀? → 是, 复仇心理</li>
+            </ul>
+        </div>
+        <div class="info-box"><strong>22F 分析优先级:</strong> 数据面 > 新闻面(战意) > 主场优势 > 历史交锋 > 市场热度</div>
+    </div>
+    
+    <!-- 基本面分析 (规则28) -->
+    <div class="section">
+        <div class="section-title">📋 基本面决定论分析 (规则28)</div>
+        <div class="recommendation">
+            <div class="rec-label">基本面方向判断</div>
+            <div class="rec-value">主胜 (基本面强力支持全北)</div>
+        </div>
+        <div class="info-item" style="margin-top:8px;">
+            <div class="info-label">推理过程</div>
+            <div class="info-value">1.全北一整周休息vs首尔7天3赛体能透支 2.复仇战意极强 3.主场魔鬼氛围20000+球迷 4.争冠生死战(必须赢) 5.首尔两连败士气低 6.但首尔客场最强(8胜1平1负) 7.全北2名主力伤停成疑 8.首尔保平策略可能拖入平局</div>
+        </div>
+        <div class="info-item" style="margin-top:8px;">
+            <div class="info-label">基本面 vs 市场赔率</div>
+            <div class="info-value">基本面方向与模型一致(微弱主胜)。市场赔率三方接近反映不确定性。基本面分析认为全北优势被低估(体能+战意+主场三重叠加)。</div>
+        </div>
+    </div>
+    
+    <!-- 赛季数据 -->
+    <div class="section">
+        <div class="section-title">📈 赛季数据 & 历史交锋 (规则29 数据源: Goal.com)</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">主队赛季战绩</div>
+                <div class="info-value">9W 6D 5L (27:16) - 去年同期42分冠军领跑,今年33分<br>主场: 5W 1D 3L (16:10) - 主场56%胜率<br>近5场: W D L W L (近5场: 2胜1平2负, 但上轮赢球止跌)</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">客队赛季战绩</div>
+                <div class="info-value">13W 3D 4L (35:17) - 联赛最强,客场8胜1平1负<br>客场: 8W 1D 1L (19:9) - 联赛最强客场<br>近5场: L L W W D (近5场: 3胜2负, 但最近两连败)</div>
+            </div>
+        </div>
+        <div class="info-item" style="margin-top:8px;">
+            <div class="info-label">历史交锋</div>
+            <div class="info-value">全北39胜26平29负历史占优。近5场: 全北2胜2平1负。本赛季首回合首尔1-0补时绝杀。</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="match-card">
+    <div class="match-header">
+        <div class="match-id">韩职深度03 | 韩职 第21轮 | 2026-08-01 18:30</div>
+        <div class="teams">
+            <div class="team">
+                <div class="team-name">浦项制铁</div>
+                <div class="team-rank">联赛第7位</div>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team">
+                <div class="team-name">金泉尚武</div>
+                <div class="team-rank">联赛第10位</div>
+            </div>
+        </div>
+        <div class="odds">
+            <div class="odd"><div class="odd-label">主胜</div><div class="odd-value">2.06</div></div>
+            <div class="odd"><div class="odd-label">平局</div><div class="odd-value">3.34</div></div>
+            <div class="odd"><div class="odd-label">客胜</div><div class="odd-value">3.54</div></div>
+        </div>
+    </div>
+    
+    <!-- 融合概率 -->
+    <div class="section">
+        <div class="section-title">🎯 融合方向概率 (v1.7.0权重: 模型85% + 基本面15% + Shin 8%)</div>
+        <div class="prob-bar">
+            <div class="prob-segment" style="width: 31.93261847244719%; background: #f39c12;">主胜 31.9%</div>
+            <div class="prob-segment" style="width: 32.27304940676684%; background: #f39c12;">平 32.3%</div>
+            <div class="prob-segment" style="width: 35.794332120785974%; background: #f39c12;">客胜 35.8%</div>
+        </div>
+        <div class="model-comparison">
+            <div class="model-card">
+                <div class="model-name">DC模型</div>
+                <div class="model-probs">
+                    <span style="color:#27ae60">27.9%</span>/
+                    <span style="color:#f39c12">30.5%</span>/
+                    <span style="color:#e67e22">41.6%</span>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="model-name">蒙特卡洛10000场</div>
+                <div class="model-probs">
+                    <span style="color:#27ae60">26.0%</span>/
+                    <span style="color:#f39c12">34.4%</span>/
+                    <span style="color:#f39c12">39.6%</span>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="model-name">Shin校准(参考)</div>
+                <div class="model-probs">
+                    <span style="color:#e74c3c">50.9%</span>/
+                    <span style="color:#27ae60">25.6%</span>/
+                    <span style="color:#27ae60">23.5%</span>
+                </div>
+            </div>
+            <div class="model-card">
+                <div class="model-name">模型标准差</div>
+                <div class="model-probs">
+                    <span style="color:#6ab0f3;">σ=11.72</span>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top:8px; font-size:12px; color:#8899aa;">方向排名: 客胜 35.8% > 平局 32.3% > 主胜 31.9% | 一致性: 中度一致</div>
+        <div class="recommendation">
+            <div class="rec-label">📋 推荐方向</div>
+            <div class="rec-value">客胜 35.8% (置信度: 中★★)</div>
+        </div>
+    </div>
+    
+    <!-- 比分预测 -->
+    <div class="section">
+        <div class="section-title">⚽ 全场比分TOP10 (Dixon-Coles + MC10000)</div>
+        <table class="score-table">
+            <tr><th>排名</th><th>比分</th><th>概率</th><th>方向</th></tr>
+            <tr><td>1</td><td class="score">0:0</td><td class="prob">19.8%</td><td><span class="direction-tag tag-draw">平局</span></td></tr>
+            <tr><td>2</td><td class="score">0:1</td><td class="prob">16.9%</td><td><span class="direction-tag tag-away">客胜</span></td></tr>
+            <tr><td>3</td><td class="score">1:1</td><td class="prob">14.6%</td><td><span class="direction-tag tag-draw">平局</span></td></tr>
+            <tr><td>4</td><td class="score">1:0</td><td class="prob">12.2%</td><td><span class="direction-tag tag-home">主胜</span></td></tr>
+            <tr><td>5</td><td class="score">0:2</td><td class="prob">8.8%</td><td><span class="direction-tag tag-away">客胜</span></td></tr>
+            <tr><td>6</td><td class="score">1:2</td><td class="prob">6.3%</td><td><span class="direction-tag tag-away">客胜</span></td></tr>
+            <tr><td>7</td><td class="score">2:1</td><td class="prob">5.0%</td><td><span class="direction-tag tag-home">主胜</span></td></tr>
+            <tr><td>8</td><td class="score">2:0</td><td class="prob">4.7%</td><td><span class="direction-tag tag-home">主胜</span></td></tr>
+            <tr><td>9</td><td class="score">0:3</td><td class="prob">2.8%</td><td><span class="direction-tag tag-away">客胜</span></td></tr>
+            <tr><td>10</td><td class="score">2:2</td><td class="prob">2.6%</td><td><span class="direction-tag tag-draw">平局</span></td></tr>
+        </table>
+    </div>
+    
+    <!-- 半场比分 -->
+    <div class="section">
+        <div class="section-title">⏱️ 半场比分TOP5 (HTFTModel: λ×0.45)</div>
+        <table class="score-table">
+            <tr><th>排名</th><th>半场比分</th><th>概率</th></tr>
+            <tr><td>1</td><td class="score">0:0</td><td class="prob">45.9%</td></tr>
+            <tr><td>2</td><td class="score">0:1</td><td class="prob">20.7%</td></tr>
+            <tr><td>3</td><td class="score">1:0</td><td class="prob">15.2%</td></tr>
+            <tr><td>4</td><td class="score">1:1</td><td class="prob">7.0%</td></tr>
+            <tr><td>5</td><td class="score">0:2</td><td class="prob">4.2%</td></tr>
+        </table>
+        <div style="margin-top:8px; font-size:12px; color:#8899aa;">
+            半全场TOP3: 平负 21.2% | 平平 18.4% | 平胜 13.6%
+        </div>
+    </div>
+    
+    <!-- 大小球 -->
+    <div class="section">
+        <div class="section-title">📊 总进球分布 & 大小球</div>
+        <div class="prob-bar" style="height: 25px; margin-bottom: 10px;">
+            <div class="prob-segment" style="width: 74.46000000000001%; background: #27ae60;">小2.5 74.5%</div>
+            <div class="prob-segment" style="width: 25.540000000000003%; background: #e74c3c;">大2.5 25.5%</div>
+        </div>
+        <div style="font-size:12px; color:#8899aa;">
+            进球分布: 0球 18.3% | 1球 29.1% | 2球 27.1% | 3球 15.6% | 4球 6.7% | 5+球 3.2%
+        </div>
+    </div>
+    
+    <!-- 场地天气 (规则26A/B) -->
+    <div class="section">
+        <div class="section-title">🏟️ 场地与天气 (规则26A/B)</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">比赛场地</div>
+                <div class="info-value">浦项钢园球场 (Steelyard Stadium)<br>浦项 | 天然草皮 (2026年全新更换,13年来首次!) | 容量15,546人</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">天气情况 <span class="heat-warning">高温</span></div>
+                <div class="info-value">32-33°C, 湿度偏高闷热<br>晴到多云 | 降雨4-9%, 基本无雨 | 西北风, 微风转和风(7-20km/h), 阵风40km/h</div>
+            </div>
+        </div>
+        <div class="warning" style="margin-top:8px;"><strong>天气影响:</strong> 高温对双方体能消耗大。金泉军事化训练耐力占优。下半场65分钟后易出现注意力下滑和防线漏洞。</div>
+        <div style="font-size:11px; color:#666; margin-top:4px;">来源: Wunderground + Meteoblue</div>
+        <div class="warning" style="margin-top:8px;"><strong>场地特殊:</strong> 4月22日后因换草皮连续10个客场,7月25日才回主场但3连败。新草皮尚未适应,传中落点不稳,出球发涩。</div>
+    </div>
+    
+    <!-- 球队近期新闻 (规则26C) -->
+    <div class="section">
+        <div class="section-title">📰 球队近期新闻 (规则26C)</div>
+        <div class="info-item" style="margin-bottom:8px;">
+            <div class="info-label">主队动态</div>
+            <div class="info-value">⚠️ 重大新闻: 头号射手李昊宰(Lee Ho-jae, 8球占全队42%)已转会德乙达姆施塔特98! 7/30紧急签下30岁前锋元基钟(Won Ki-jong)替代,本场可能首秀。浦项三连败(0-2全北/1-3首尔/1-2济州),3场仅进2球失7球。主场9场仅4球(场均0.44)联赛最差。新草皮13年首次更换,尚未适应。</div>
+        </div>
+        <div class="info-item" style="margin-bottom:8px;">
+            <div class="info-label">客队动态</div>
+            <div class="info-value">金泉周中韩国杯2-1胜水原FC晋级,士气提升。近5场2胜1平2负(含杯赛)。军旅球队无外援,5-4-1防守大巴阵型。赛季平局率55%(11平/20场)全联盟第一。客场不败率70%(2胜5平3负)。队内第一射手高在贤仅4球。</div>
+        </div>
+    </div>
+    
+    <!-- 伤停详情 (规则26D) -->
+    <div class="section">
+        <div class="section-title">🏥 伤停详情 (规则26D/25 信源验证)</div>
+        <table class="score-table">
+            <tr><th>球队</th><th>球员</th><th>位置</th><th>类型</th><th>来源</th><th>矛盾标注</th></tr>
+            <tr>
+                <td>主队</td>
+                <td style="color:#6ab0f3;">李昊宰</td>
+                <td>前锋(头号射手8球)</td>
+                <td>已转会(达姆施塔特98)</td>
+                <td style="font-size:11px;">SV 98官方+朝鲜日报 (Level 1)</td>
+                <td style="font-size:11px; color:#ff9800;">无,转会已确认</td>
+            </tr>
+            <tr>
+                <td>主队</td>
+                <td style="color:#6ab0f3;">元基钟</td>
+                <td>前锋(新签约替代)</td>
+                <td>新加盟</td>
+                <td style="font-size:11px;">SBS+朝鲜日报 (Level 1)</td>
+                <td style="font-size:11px; color:#ff9800;">无</td>
+            </tr>
+            <tr>
+                <td>主队</td>
+                <td style="color:#6ab0f3;">赵成旭</td>
+                <td>主力中卫</td>
+                <td>膝伤(中文平台)</td>
+                <td style="font-size:11px;">球迷屋/网易 (Level 4-5)</td>
+                <td style="font-size:11px; color:#ff9800;">Goal.com显示无伤停</td>
+            </tr>
+            <tr>
+                <td>主队</td>
+                <td style="color:#6ab0f3;">申光勋</td>
+                <td>右后卫</td>
+                <td>红牌停赛(中文平台)</td>
+                <td style="font-size:11px;">网易 (Level 5)</td>
+                <td style="font-size:11px; color:#ff9800;">Goal.com无伤停,头条列入首发</td>
+            </tr>
+            <tr>
+                <td>客队</td>
+                <td style="color:#6ab0f3;">李秀彬</td>
+                <td>中场节拍器</td>
+                <td>红牌停赛(中文平台)</td>
+                <td style="font-size:11px;">网易 (Level 5)</td>
+                <td style="font-size:11px; color:#ff9800;">Goal.com显示无伤停</td>
+            </tr>
+            <tr>
+                <td>客队</td>
+                <td style="color:#6ab0f3;">李建喜</td>
+                <td>中场</td>
+                <td>停赛(本地数据)→疑为错误</td>
+                <td style="font-size:11px;">本地预测 (未验证)</td>
+                <td style="font-size:11px; color:#ff9800;">Goal.com无伤停,头条列入首发</td>
+            </tr>
+            <tr>
+                <td>客队</td>
+                <td style="color:#6ab0f3;">李政宅</td>
+                <td>主力</td>
+                <td>黄牌停赛满→解禁归队</td>
+                <td style="font-size:11px;">网易 (Level 5)</td>
+                <td style="font-size:11px; color:#ff9800;">无</td>
+            </tr>
+        </table>
+        <div class="contradiction" style="margin-top:8px;"><strong>⚠️ 信源矛盾汇总 (规则25):</strong> ⚠️⚠️ 规则25严重矛盾: Goal.com显示两队均无伤停球员,但中文平台列出多个伤停/停赛。赛前1小时必须用实际首发核实全部伤停信息。最关键: 李昊宰转会已确认(非伤停),对浦项攻击力影响巨大。</div>
+        <div class="info-box" style="margin-top:8px;"><strong>📋 实际首发 (规则26E):</strong> 开球前1小时确认 (待更新)。预计浦项4-3-3, 金泉5-4-1防守大巴</div>
+    </div>
+    
+    <!-- 战意心理与体能分析 (规则27) -->
+    <div class="section">
+        <div class="section-title">🧠 战意心理与体能分析 (规则27)</div>
+        
+        <div class="soft-factor">
+            <div class="soft-factor-title">⚔️ 战意不对称</div>
+            <div class="soft-factor-content">
+                <strong>主队:</strong> 联赛第7(28分),中游无争冠/保级压力。但三连败+主场球迷压力,急需止跌。战意评分6/10<br>
+                <strong>客队:</strong> 联赛第10(20分),保级组但非垫底。军旅球队纪律性强,每场必拼。平局即可接受(55%平局率)。战意评分7/10<br>
+                <strong>不对称等级:</strong> 轻度不对称 (金泉战意略高于浦项,浦项中游无压力)<br>
+                <strong>lambda修正:</strong> 主队λ×0.98 (无强烈战意), 客队λ×1.02 (军旅纪律+保级)
+            </div>
+        </div>
+        
+        <div class="soft-factor">
+            <div class="soft-factor-title">💪 体能与休息</div>
+            <div class="soft-factor-content">
+                <strong>主队:</strong> 上场比赛7/25(距今天7天),7天内1场比赛。体能充沛但状态低迷。 (体能指数: 0.98 (休息7天+无旅行+赛季中段))<br>
+                <strong>客队:</strong> 上场比赛7/29韩国杯(距今天3天),7天内2场比赛。轻度疲劳但军事化训练耐力强。 (体能指数: 0.93 (休息3天+国内旅行+赛季中段,但军旅耐力+0.03))<br>
+                <strong>lambda修正:</strong> 主队不修正, 客队λ×0.97
+            </div>
+        </div>
+        
+        <div class="soft-factor">
+            <div class="soft-factor-title">🎭 心理因素</div>
+            <div class="soft-factor-content">
+                浦项: 三连败士气低落,头号射手离队雪上加霜,新草皮不适应,主场球迷可能施压。金泉: 韩国杯胜利提振士气,5-4-1大巴战术心理优势(首回合1-1),军旅纪律性强不惧客场。'保平即可'心理: 金泉55%平局率本身就是这种心态的体现。<br>
+                <strong>lambda修正:</strong> 主队λ×0.93 (三连败+射手离队士气低), 平局概率+5% (金泉保守+浦项攻坚乏力)
+            </div>
+        </div>
+        
+        <div class="soft-factor">
+            <div class="soft-factor-title">📅 赛程牵制</div>
+            <div class="soft-factor-content">
+                <strong>主队:</strong> 后续7天无重要赛事,但中游无压力 → 不修正<br>
+                <strong>客队:</strong> 后续7天有联赛,但军旅球队轮换有限 → λ×0.97<br>
+                <strong>牵制等级:</strong> 低牵制
+            </div>
+        </div>
+        
+        <div class="soft-factor" style="border: 1px solid #6ab0f3;">
+            <div class="soft-factor-title">📊 综合软因素修正</div>
+            <div class="soft-factor-content">
+                <strong>主队综合系数:</strong> 0.98 × 1.00 × 0.93 × 1.00 = 0.911<br>
+                <strong>客队综合系数:</strong> 1.02 × 0.97 × 1.00 × 0.97 = 0.960<br>
+                <strong>修正后Lambda:</strong> home=0.748, away=0.997<br>
+                <em>⚠️ 额外重大修正: 李昊宰转会→浦项攻击lambda额外×0.75(失去42%进球)。新草皮不适应→浦项主场lambda×0.95。</em>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 韩职特化规则检查 (规则22) -->
+    <div class="section">
+        <div class="section-title">🔍 韩职特化规则检查 (规则22/24)</div>
+        
+        <div class="info-grid" style="margin-bottom: 10px;">
+            <div class="info-item">
+                <div class="info-label">22A 主场加成</div>
+                <div class="info-value" style="font-size:12px;">韩职主场加成1.20 (已计入),但浦项主场表现差(3胜2平4负)→实际主场优势打折</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">22B 战意分析</div>
+                <div class="info-value" style="font-size:12px;">浦项排名第7(中游),金泉排名第10(保级≥9)但为客队。保级队主场规则不适用。军旅球队特化:金泉客场无额外加成(规则22A军旅加成仅限主场)。</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">22C 市场热度</div>
+                <div class="info-value" style="font-size:12px;">市场隐含主胜43.2%,未超70%,不触发冷门检查。</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">22D 平局权重</div>
+                <div class="info-value" style="font-size:12px;">⚠️⚠️ 金泉平局率55%>>45%阈值! 触发规则16(+10%)和规则22D(+10%强化)。综合平局上修+15%。比分矩阵0:0/1:1/2:2各+5%。</div>
+            </div>
+        </div>
+        
+        <div class="info-item" style="margin-bottom: 10px;">
+            <div class="info-label">22E 冷门检测清单</div>
+            <ul class="checklist">
+                <li data-check="☐">☐ 主场队保级/争冠战意? → 否(第7中游)</li>
+                <li data-check="☐">☐ 市场支持率>70%? → 否(43.2%)</li>
+                <li data-check="☑">☑ 客队客场不败率70%? → 是, 需警惕</li>
+                <li data-check="☐">⚠️ 金泉平局率55%>45%? → 是! 平局+15%</li>
+                <li data-check="☐">☐ 军旅球队主场? → 否(金泉是客队)</li>
+                <li data-check="☑">☑ H2H金泉占优? → 是(近5场3胜1平1负)</li>
+            </ul>
+        </div>
+        <div class="info-box"><strong>22F 分析优先级:</strong> 数据面(浦项主场4球/金泉55%平局) > 新闻面(李昊宰转会) > 主场优势(打折) > 历史交锋(金泉占优) > 市场热度</div>
+    </div>
+    
+    <!-- 基本面分析 (规则28) -->
+    <div class="section">
+        <div class="section-title">📋 基本面决定论分析 (规则28)</div>
+        <div class="recommendation">
+            <div class="rec-label">基本面方向判断</div>
+            <div class="rec-value">平局/客胜 (基本面支持金泉不败)</div>
+        </div>
+        <div class="info-item" style="margin-top:8px;">
+            <div class="info-label">推理过程</div>
+            <div class="info-value">1.⚠️李昊宰转会→浦项失去42%进球,攻击力雪崩 2.浦项主场9场仅4球(联赛最差)且现在更差 3.浦项三连败士气低 4.金泉55%平局率全联盟第一 5.金泉5-4-1大巴极难攻破 6.金泉韩国杯胜利士气高 7.新草皮不适应 8.H2H金泉占优 9.但金泉客场攻击力也弱(10场10球)</div>
+        </div>
+        <div class="info-item" style="margin-top:8px;">
+            <div class="info-label">基本面 vs 市场赔率</div>
+            <div class="info-value">基本面方向(平局/金泉不败)与模型方向(客胜37.2%)基本一致。但平局概率被严重低估(模型29.5%→应上修至40%+)。市场赔率2.06/3.34/3.54暗示主胜43.2%与基本面矛盾(浦项攻击力崩塌)。</div>
+        </div>
+    </div>
+    
+    <!-- 赛季数据 -->
+    <div class="section">
+        <div class="section-title">📈 赛季数据 & 历史交锋 (规则29 数据源: Goal.com)</div>
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">主队赛季战绩</div>
+                <div class="info-value">8W 4D 8L (20:21) - 中游第7<br>主场: 3W 2D 4L (4:5) - ⚠️ 主场攻击力联赛最差(9场仅4球,场均0.44)<br>近5场: L L L W W (近5场: 三连败! 0-2/1-3/1-2, 3场进2球失7球)</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">客队赛季战绩</div>
+                <div class="info-value">3W 11D 6L (21:28) - 平局率55%全联盟第一<br>客场: 2W 5D 3L (10:11) - 不败率70%<br>近5场: W D L D D (近5场: 含杯赛2胜1平2负)</div>
+            </div>
+        </div>
+        <div class="info-item" style="margin-top:8px;">
+            <div class="info-label">历史交锋</div>
+            <div class="info-value">近5场: 浦项1胜1平3负,金泉占优。本赛季首回合1-1平。交锋特点: 小球居多,多为一球分差或平局。</div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="warning" style="margin-bottom: 20px;">
+    <strong>⚠️ 风险提示:</strong>
+    <br>1. 所有伤停信息赛前1小时必须用实际首发名单复核 (规则25/26E)
+    <br>2. 高温34-35°C可能影响比赛节奏和球员体能 (规则27B)
+    <br>3. 韩职平局率30%需在比分矩阵中上修平局概率 (规则22D)
+    <br>4. 市场赔率仅作参考,不作为决策依据 (规则28)
+    <br>5. 足球比赛存在极大不确定性,任何模型预测均非100%准确
+</div>
+
+<div class="footer">
+    <p>Football Lottery Agent v1.7.0-deep | 韩职3场深度分析 | 生成时间: 2026-08-01 10:36:11</p>
+    <p>规则应用: 22(韩职特化) / 24(联赛加载) / 25(信源验证) / 26(场地天气) / 27(战意体能) / 28(基本面决定论) / 29(数据源优先级)</p>
+</div>
+
+</div>
+</body>
+</html>

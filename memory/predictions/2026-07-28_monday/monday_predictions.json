@@ -1,0 +1,95 @@
+{
+  "prediction_id": "monday_20260728",
+  "match_date": "2026-07-28",
+  "match_day": "monday",
+  "model_version": "v1.4.0",
+  "analysis_time": "2026-07-27",
+  "total_matches": 2,
+  "source_files": {
+    "html_report": "reports/html/monday_20260727_analysis.html",
+    "model_script": "monday_models.py",
+    "model_results": "model_results.json"
+  },
+  "matches": [
+    {
+      "match_id": "monday_001",
+      "league": "瑞典超",
+      "league_json": "memory/leagues/allsvenskan_se.json",
+      "home_team": "赫根 BK Hacken",
+      "away_team": "AIK索尔纳",
+      "home_rank": 4,
+      "away_rank": 7,
+      "odds_home": 1.83,
+      "odds_draw": 3.97,
+      "odds_away": 3.60,
+      "odds_source": "外盘参考",
+      "lambda_home": 3.058,
+      "lambda_away": 1.951,
+      "vmr": 1.321,
+      "home_advantage_factor": 1.20,
+      "models": {
+        "dc": {"home": 59.5, "draw": 17.5, "away": 23.0},
+        "nb": {"home": 57.4, "draw": 16.2, "away": 26.5},
+        "skellam": {"home": 60.4, "draw": 16.4, "away": 23.2},
+        "mc": {"home": 60.9, "draw": 15.8, "away": 23.3},
+        "shin": {"home": 47.4, "draw": 25.4, "away": 27.2},
+        "fused": {"home": 51.4, "draw": 21.2, "away": 27.4}
+      },
+      "prediction": {
+        "direction": "主胜",
+        "direction_prob": 51.4,
+        "confidence": "中 ★★",
+        "top5_scores": ["2:1(6.1%)", "2:2(6.0%)", "3:1(6.0%)", "3:2(5.8%)", "4:1(4.7%)"],
+        "half_top5": ["1:0(14.5%)", "1:1(12.7%)", "0:0(10.6%)", "2:0(9.9%)", "0:1(8.9%)"],
+        "over25": 87.9,
+        "btts": 81.6
+      },
+      "key_risks": [
+        "赫根近期3连败且每场失3+球",
+        "模型主胜51%但AIK近期4胜1负状态正佳",
+        "模型与Shin市场在平局概率上有分歧（21% vs 25%）",
+        "伤停信息存在矛盾（中文平台vs Goal.com）"
+      ]
+    },
+    {
+      "match_id": "monday_002",
+      "league": "挪威超",
+      "league_json": "memory/leagues/eliteserien_no.json",
+      "home_team": "罗森博格 Rosenborg",
+      "away_team": "腓特烈斯塔 Fredrikstad",
+      "home_rank": 3,
+      "away_rank": 11,
+      "odds_home": 1.45,
+      "odds_draw": 4.20,
+      "odds_away": 6.00,
+      "odds_source": "外盘参考",
+      "lambda_home": 2.391,
+      "lambda_away": 0.955,
+      "vmr": 1.418,
+      "home_advantage_factor": 1.18,
+      "models": {
+        "dc": {"home": 68.4, "draw": 18.9, "away": 12.7},
+        "nb": {"home": 65.7, "draw": 18.4, "away": 15.9},
+        "skellam": {"home": 69.2, "draw": 17.5, "away": 13.3},
+        "mc": {"home": 68.9, "draw": 17.8, "away": 13.3},
+        "shin": {"home": 50.8, "draw": 25.9, "away": 23.3},
+        "fused": {"home": 60.3, "draw": 22.4, "away": 17.2}
+      },
+      "prediction": {
+        "direction": "主胜",
+        "direction_prob": 60.3,
+        "confidence": "低 ★",
+        "top5_scores": ["2:1(10.0%)", "2:0(9.8%)", "3:0(8.3%)", "1:0(8.2%)", "1:1(7.9%)"],
+        "half_top5": ["1:0(23.8%)", "0:0(22.9%)", "2:0(12.7%)", "1:1(9.8%)", "0:1(9.2%)"],
+        "over25": 65.3,
+        "btts": 55.6
+      },
+      "key_risks": [
+        "模型vs市场分歧9.5%接近15%警戒线",
+        "罗森博格近期2平1负状态波动",
+        "平局系统性漏判风险（上周末22场9场平局全部漏判）",
+        "规则21反热门偏误校正：平局上修+5%至~23.5%"
+      ]
+    }
+  ]
+}

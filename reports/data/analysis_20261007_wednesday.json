@@ -1,0 +1,867 @@
+[
+  {
+    "match_num": "周三001",
+    "league": "芬超",
+    "home_team": "赫尔辛基火花",
+    "away_team": "国际图尔库",
+    "home_rank": "芬超第4",
+    "away_rank": "芬超第2",
+    "match_time": "2026-10-08 00:00",
+    "is_single": false,
+    "stadium_status": "正常",
+    "note": "主队受让1球，客队国际图尔库排名更高",
+    "lambda_home": 1.087,
+    "lambda_away": 1.587,
+    "market_probs": {
+      "home": 0.2271,
+      "draw": 0.2394,
+      "away": 0.5335
+    },
+    "fused_probs": {
+      "home": 0.2515,
+      "draw": 0.2583,
+      "away": 0.4902
+    },
+    "final_probs": {
+      "home": 0.2515,
+      "draw": 0.2583,
+      "away": 0.4902
+    },
+    "primary": "away",
+    "secondary": "draw",
+    "primary_prob": 0.4902,
+    "secondary_prob": 0.2583,
+    "hhad_line": 1,
+    "hhad_probs": {
+      "home": 0.5108,
+      "draw": 0.2352,
+      "away": 0.254
+    },
+    "hhad_primary": "home",
+    "hhad_primary_prob": 0.5108,
+    "ttg_probs": {
+      "0": 0.0844,
+      "1": 0.1535,
+      "2": 0.2621,
+      "3": 0.2199,
+      "4": 0.147,
+      "5": 0.0786,
+      "6": 0.035,
+      "7+": 0.0134
+    },
+    "ttg_sorted": [
+      [
+        "2",
+        0.2621
+      ],
+      [
+        "3",
+        0.2199
+      ],
+      [
+        "1",
+        0.1535
+      ],
+      [
+        "4",
+        0.147
+      ],
+      [
+        "0",
+        0.0844
+      ],
+      [
+        "5",
+        0.0786
+      ],
+      [
+        "6",
+        0.035
+      ],
+      [
+        "7+",
+        0.0134
+      ]
+    ],
+    "top5_scores": [
+      [
+        1,
+        2,
+        0.0944
+      ],
+      [
+        0,
+        1,
+        0.094
+      ],
+      [
+        0,
+        2,
+        0.0868
+      ],
+      [
+        1,
+        3,
+        0.05
+      ],
+      [
+        0,
+        3,
+        0.0459
+      ]
+    ],
+    "top3_htft": [
+      [
+        "客-客",
+        0.2717
+      ],
+      [
+        "平-客",
+        0.1859
+      ],
+      [
+        "平-平",
+        0.1621
+      ]
+    ],
+    "k_dist": 0,
+    "k_dist_prob": 0.2813,
+    "k_rec": -1,
+    "k_rec_prob": 0.2198,
+    "k_consistent": false,
+    "confidence": "高",
+    "confidence_score": 3,
+    "single_adjust_note": "",
+    "odds": {
+      "home": 3.9,
+      "draw": 3.7,
+      "away": 1.66
+    },
+    "hhad_odds": {
+      "home": 1.94,
+      "draw": 3.37,
+      "away": 3.15,
+      "goal_line": 1
+    }
+  },
+  {
+    "match_num": "周三002",
+    "league": "巴甲",
+    "home_team": "巴西国际",
+    "away_team": "科林蒂安",
+    "home_rank": "巴甲第18",
+    "away_rank": "巴甲第14",
+    "match_time": "2026-10-08 06:30",
+    "is_single": true,
+    "stadium_status": "正常",
+    "note": "巴西国际排名低但主场让1球，主场优势明显",
+    "lambda_home": 1.397,
+    "lambda_away": 0.969,
+    "market_probs": {
+      "home": 0.4157,
+      "draw": 0.3085,
+      "away": 0.2758
+    },
+    "fused_probs": {
+      "home": 0.4454,
+      "draw": 0.2924,
+      "away": 0.2622
+    },
+    "final_probs": {
+      "home": 0.3761,
+      "draw": 0.4024,
+      "away": 0.2214
+    },
+    "primary": "draw",
+    "secondary": "home",
+    "primary_prob": 0.4024,
+    "secondary_prob": 0.3761,
+    "hhad_line": -1,
+    "hhad_probs": {
+      "home": 0.2259,
+      "draw": 0.2423,
+      "away": 0.5318
+    },
+    "hhad_primary": "away",
+    "hhad_primary_prob": 0.5318,
+    "ttg_probs": {
+      "0": 0.1104,
+      "1": 0.189,
+      "2": 0.2792,
+      "3": 0.2072,
+      "4": 0.1226,
+      "5": 0.058,
+      "6": 0.0229,
+      "7+": 0.0077
+    },
+    "ttg_sorted": [
+      [
+        "2",
+        0.2792
+      ],
+      [
+        "3",
+        0.2072
+      ],
+      [
+        "1",
+        0.189
+      ],
+      [
+        "4",
+        0.1226
+      ],
+      [
+        "0",
+        0.1104
+      ],
+      [
+        "5",
+        0.058
+      ],
+      [
+        "6",
+        0.0229
+      ],
+      [
+        "7+",
+        0.0077
+      ]
+    ],
+    "top5_scores": [
+      [
+        1,
+        1,
+        0.1436
+      ],
+      [
+        0,
+        0,
+        0.1104
+      ],
+      [
+        2,
+        2,
+        0.043
+      ],
+      [
+        3,
+        3,
+        0.0065
+      ]
+    ],
+    "top3_htft": [
+      [
+        "主-主",
+        0.2556
+      ],
+      [
+        "平-主",
+        0.1867
+      ],
+      [
+        "平-平",
+        0.1864
+      ]
+    ],
+    "k_dist": 0,
+    "k_dist_prob": 0.304,
+    "k_rec": 0,
+    "k_rec_prob": 0.304,
+    "k_consistent": true,
+    "confidence": "低",
+    "confidence_score": 1,
+    "single_adjust_note": "单关平局上修+11.0%（差距15.3pp→档位11%）",
+    "odds": {
+      "home": 2.13,
+      "draw": 2.87,
+      "away": 3.21
+    },
+    "hhad_odds": {
+      "home": 4.9,
+      "draw": 3.57,
+      "away": 1.55,
+      "goal_line": -1
+    }
+  },
+  {
+    "match_num": "周三003",
+    "league": "巴甲",
+    "home_team": "瑞模贝雷",
+    "away_team": "格雷米奥",
+    "home_rank": "巴甲第19",
+    "away_rank": "巴甲第17",
+    "match_time": "2026-10-08 06:30",
+    "is_single": false,
+    "stadium_status": "正常",
+    "note": "降级区对决，瑞模贝雷排名更低但主场让球",
+    "lambda_home": 1.452,
+    "lambda_away": 0.989,
+    "market_probs": {
+      "home": 0.4361,
+      "draw": 0.2828,
+      "away": 0.281
+    },
+    "fused_probs": {
+      "home": 0.4575,
+      "draw": 0.2812,
+      "away": 0.2613
+    },
+    "final_probs": {
+      "home": 0.4575,
+      "draw": 0.2812,
+      "away": 0.2613
+    },
+    "primary": "home",
+    "secondary": "draw",
+    "primary_prob": 0.4575,
+    "secondary_prob": 0.2812,
+    "hhad_line": -1,
+    "hhad_probs": {
+      "home": 0.2363,
+      "draw": 0.2417,
+      "away": 0.5221
+    },
+    "hhad_primary": "away",
+    "hhad_primary_prob": 0.5221,
+    "ttg_probs": {
+      "0": 0.1033,
+      "1": 0.18,
+      "2": 0.2757,
+      "3": 0.2111,
+      "4": 0.1289,
+      "5": 0.0629,
+      "6": 0.0256,
+      "7+": 0.0089
+    },
+    "ttg_sorted": [
+      [
+        "2",
+        0.2757
+      ],
+      [
+        "3",
+        0.2111
+      ],
+      [
+        "1",
+        0.18
+      ],
+      [
+        "4",
+        0.1289
+      ],
+      [
+        "0",
+        0.1033
+      ],
+      [
+        "5",
+        0.0629
+      ],
+      [
+        "6",
+        0.0256
+      ],
+      [
+        "7+",
+        0.0089
+      ]
+    ],
+    "top5_scores": [
+      [
+        1,
+        0,
+        0.1101
+      ],
+      [
+        2,
+        0,
+        0.0918
+      ],
+      [
+        2,
+        1,
+        0.0908
+      ],
+      [
+        3,
+        0,
+        0.0444
+      ],
+      [
+        3,
+        1,
+        0.044
+      ]
+    ],
+    "top3_htft": [
+      [
+        "主-主",
+        0.2626
+      ],
+      [
+        "平-主",
+        0.188
+      ],
+      [
+        "平-平",
+        0.1796
+      ]
+    ],
+    "k_dist": 0,
+    "k_dist_prob": 0.2974,
+    "k_rec": 1,
+    "k_rec_prob": 0.2255,
+    "k_consistent": false,
+    "confidence": "高",
+    "confidence_score": 3,
+    "single_adjust_note": "",
+    "odds": {
+      "home": 2.03,
+      "draw": 3.13,
+      "away": 3.15
+    },
+    "hhad_odds": {
+      "home": 4.42,
+      "draw": 3.65,
+      "away": 1.59,
+      "goal_line": -1
+    }
+  },
+  {
+    "match_num": "周三004",
+    "league": "巴甲",
+    "home_team": "布拉干蒂诺RB",
+    "away_team": "米拉索尔",
+    "home_rank": "巴甲第11",
+    "away_rank": "巴甲第15",
+    "match_time": "2026-10-08 06:30",
+    "is_single": false,
+    "stadium_status": "正常",
+    "note": "布拉干蒂诺RB主场优势明显",
+    "lambda_home": 1.705,
+    "lambda_away": 0.844,
+    "market_probs": {
+      "home": 0.5469,
+      "draw": 0.2461,
+      "away": 0.207
+    },
+    "fused_probs": {
+      "home": 0.5562,
+      "draw": 0.2531,
+      "away": 0.1907
+    },
+    "final_probs": {
+      "home": 0.5562,
+      "draw": 0.2531,
+      "away": 0.1907
+    },
+    "primary": "home",
+    "secondary": "draw",
+    "primary_prob": 0.5562,
+    "secondary_prob": 0.2531,
+    "hhad_line": -1,
+    "hhad_probs": {
+      "home": 0.3229,
+      "draw": 0.2551,
+      "away": 0.422
+    },
+    "hhad_primary": "away",
+    "hhad_primary_prob": 0.422,
+    "ttg_probs": {
+      "0": 0.0928,
+      "1": 0.17,
+      "2": 0.2686,
+      "3": 0.2159,
+      "4": 0.1376,
+      "5": 0.0702,
+      "6": 0.0298,
+      "7+": 0.0109
+    },
+    "ttg_sorted": [
+      [
+        "2",
+        0.2686
+      ],
+      [
+        "3",
+        0.2159
+      ],
+      [
+        "1",
+        0.17
+      ],
+      [
+        "4",
+        0.1376
+      ],
+      [
+        "0",
+        0.0928
+      ],
+      [
+        "5",
+        0.0702
+      ],
+      [
+        "6",
+        0.0298
+      ],
+      [
+        "7+",
+        0.0109
+      ]
+    ],
+    "top5_scores": [
+      [
+        1,
+        0,
+        0.1186
+      ],
+      [
+        2,
+        0,
+        0.1136
+      ],
+      [
+        2,
+        1,
+        0.0959
+      ],
+      [
+        3,
+        0,
+        0.0646
+      ],
+      [
+        3,
+        1,
+        0.0545
+      ]
+    ],
+    "top3_htft": [
+      [
+        "主-主",
+        0.3314
+      ],
+      [
+        "平-主",
+        0.2146
+      ],
+      [
+        "平-平",
+        0.1614
+      ]
+    ],
+    "k_dist": 0,
+    "k_dist_prob": 0.2675,
+    "k_rec": 1,
+    "k_rec_prob": 0.2406,
+    "k_consistent": false,
+    "confidence": "高",
+    "confidence_score": 4,
+    "single_adjust_note": "",
+    "odds": {
+      "home": 1.62,
+      "draw": 3.6,
+      "away": 4.28
+    },
+    "hhad_odds": {
+      "home": 3.08,
+      "draw": 3.25,
+      "away": 2.01,
+      "goal_line": -1
+    }
+  },
+  {
+    "match_num": "周三005",
+    "league": "巴甲",
+    "home_team": "维多利亚",
+    "away_team": "沙佩科恩斯",
+    "home_rank": "巴甲第13",
+    "away_rank": "巴甲第20",
+    "match_time": "2026-10-08 07:00",
+    "is_single": false,
+    "stadium_status": "正常",
+    "note": "维多利亚主场迎战副班长沙佩科恩斯",
+    "lambda_home": 1.882,
+    "lambda_away": 0.74,
+    "market_probs": {
+      "home": 0.6191,
+      "draw": 0.2213,
+      "away": 0.1595
+    },
+    "fused_probs": {
+      "home": 0.6215,
+      "draw": 0.2308,
+      "away": 0.1477
+    },
+    "final_probs": {
+      "home": 0.6215,
+      "draw": 0.2308,
+      "away": 0.1477
+    },
+    "primary": "home",
+    "secondary": "draw",
+    "primary_prob": 0.6215,
+    "secondary_prob": 0.2308,
+    "hhad_line": -1,
+    "hhad_probs": {
+      "home": 0.3882,
+      "draw": 0.2568,
+      "away": 0.3551
+    },
+    "hhad_primary": "home",
+    "hhad_primary_prob": 0.3882,
+    "ttg_probs": {
+      "0": 0.0858,
+      "1": 0.1643,
+      "2": 0.2631,
+      "3": 0.2185,
+      "4": 0.1432,
+      "5": 0.0751,
+      "6": 0.0328,
+      "7+": 0.0123
+    },
+    "ttg_sorted": [
+      [
+        "2",
+        0.2631
+      ],
+      [
+        "3",
+        0.2185
+      ],
+      [
+        "1",
+        0.1643
+      ],
+      [
+        "4",
+        0.1432
+      ],
+      [
+        "0",
+        0.0858
+      ],
+      [
+        "5",
+        0.0751
+      ],
+      [
+        "6",
+        0.0328
+      ],
+      [
+        "7+",
+        0.0123
+      ]
+    ],
+    "top5_scores": [
+      [
+        2,
+        0,
+        0.1288
+      ],
+      [
+        1,
+        0,
+        0.1237
+      ],
+      [
+        2,
+        1,
+        0.0953
+      ],
+      [
+        3,
+        0,
+        0.0808
+      ],
+      [
+        3,
+        1,
+        0.0598
+      ]
+    ],
+    "top3_htft": [
+      [
+        "主-主",
+        0.3807
+      ],
+      [
+        "平-主",
+        0.2295
+      ],
+      [
+        "平-平",
+        0.1469
+      ]
+    ],
+    "k_dist": 1,
+    "k_dist_prob": 0.2438,
+    "k_rec": 1,
+    "k_rec_prob": 0.2438,
+    "k_consistent": true,
+    "confidence": "高",
+    "confidence_score": 4,
+    "single_adjust_note": "",
+    "odds": {
+      "home": 1.43,
+      "draw": 4.0,
+      "away": 5.55
+    },
+    "hhad_odds": {
+      "home": 2.64,
+      "draw": 3.08,
+      "away": 2.35,
+      "goal_line": -1
+    }
+  },
+  {
+    "match_num": "周三006",
+    "league": "巴甲",
+    "home_team": "博塔弗戈",
+    "away_team": "瓦斯科达伽马",
+    "home_rank": "巴甲第12",
+    "away_rank": "巴甲第16",
+    "match_time": "2026-10-08 07:30",
+    "is_single": false,
+    "stadium_status": "正常",
+    "note": "里约德比，博塔弗戈主场受让1球",
+    "lambda_home": 1.224,
+    "lambda_away": 1.271,
+    "market_probs": {
+      "home": 0.3198,
+      "draw": 0.2644,
+      "away": 0.4158
+    },
+    "fused_probs": {
+      "home": 0.3402,
+      "draw": 0.2797,
+      "away": 0.3801
+    },
+    "final_probs": {
+      "home": 0.3402,
+      "draw": 0.2797,
+      "away": 0.3801
+    },
+    "primary": "away",
+    "secondary": "home",
+    "primary_prob": 0.3801,
+    "secondary_prob": 0.3402,
+    "hhad_line": 1,
+    "hhad_probs": {
+      "home": 0.6239,
+      "draw": 0.2105,
+      "away": 0.1656
+    },
+    "hhad_primary": "home",
+    "hhad_primary_prob": 0.6239,
+    "ttg_probs": {
+      "0": 0.0991,
+      "1": 0.1724,
+      "2": 0.2734,
+      "3": 0.2136,
+      "4": 0.1333,
+      "5": 0.0665,
+      "6": 0.0277,
+      "7+": 0.0099
+    },
+    "ttg_sorted": [
+      [
+        "2",
+        0.2734
+      ],
+      [
+        "3",
+        0.2136
+      ],
+      [
+        "1",
+        0.1724
+      ],
+      [
+        "4",
+        0.1333
+      ],
+      [
+        "0",
+        0.0991
+      ],
+      [
+        "5",
+        0.0665
+      ],
+      [
+        "6",
+        0.0277
+      ],
+      [
+        "7+",
+        0.0099
+      ]
+    ],
+    "top5_scores": [
+      [
+        0,
+        1,
+        0.0881
+      ],
+      [
+        1,
+        2,
+        0.0816
+      ],
+      [
+        0,
+        2,
+        0.0666
+      ],
+      [
+        1,
+        3,
+        0.0346
+      ],
+      [
+        0,
+        3,
+        0.0282
+      ]
+    ],
+    "top3_htft": [
+      [
+        "客-客",
+        0.1986
+      ],
+      [
+        "主-主",
+        0.185
+      ],
+      [
+        "平-平",
+        0.1797
+      ]
+    ],
+    "k_dist": 0,
+    "k_dist_prob": 0.3036,
+    "k_rec": -1,
+    "k_rec_prob": 0.1938,
+    "k_consistent": false,
+    "confidence": "低",
+    "confidence_score": 1,
+    "single_adjust_note": "",
+    "odds": {
+      "home": 2.77,
+      "draw": 3.35,
+      "away": 2.13
+    },
+    "hhad_odds": {
+      "home": 1.53,
+      "draw": 3.95,
+      "away": 4.5,
+      "goal_line": 1
+    }
+  }
+]

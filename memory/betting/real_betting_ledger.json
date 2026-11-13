@@ -1,0 +1,32 @@
+{
+  "ledger": "真实投注台账（现金口径）",
+  "caliber": "real_money_only",
+  "currency": "CNY",
+  "established": "2026-11-07",
+  "updated": "2026-11-08",
+  "separated_from": {
+    "model_trial": "memory/trials/score_parlay_trial.md",
+    "model_backtest": "memory/backtests/, reports/backtest/ (单位制模拟 ROI)"
+  },
+  "records": [
+    {
+      "date": "2026-11-07",
+      "weekday": "周六",
+      "type": "daily_net",
+      "stake": null,
+      "return": null,
+      "net": -40,
+      "detail": "用户未提供明细（无单场金额、赔率、中奖场次）",
+      "source": "用户口头告知当日净额"
+    }
+  ],
+  "cumulative": {
+    "records_count": 1,
+    "total_stake": null,
+    "total_return": null,
+    "total_net": -40,
+    "week_2026-11-02_to_2026-11-08_net": -40,
+    "month_2026-11_net": -40,
+    "note": "仅净额可靠；投入/回收因缺单场明细为未知，禁止推算或编造"
+  }
+}

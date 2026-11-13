@@ -1,0 +1,246 @@
+{
+    "league_info": {
+        "name_cn": "亚足联冠军联赛精英赛",
+        "name_en": "AFC Champions League Elite",
+        "country": "亚洲",
+        "country_code": "AS",
+        "level": "洲际杯赛",
+        "num_teams": 24,
+        "format": "联赛阶段(瑞士轮式东西亚分区)+淘汰赛",
+        "season_period": "9月-次年4月",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.the-afc.com/en/national/afc_champions_league_elite.html",
+        "governing_body": "亚足联（AFC）",
+        "competition_tier": 3,
+        "cross_league_level": null,
+        "competition_tier_note": "规则76赛事本身等级（1欧冠精英/2欧联欧协联/3亚冠精英/4解放者杯/5欧国联/6亚运会；None=不适用），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2025-2026",
+        "total_matches": 117,
+        "avg_goals_per_match": 2.66,
+        "draw_rate": 0.25,
+        "home_win_rate": 0.48,
+        "away_win_rate": 0.25,
+        "over_1_5_rate": 0.7,
+        "over_2_5_rate": 0.49,
+        "under_2_5_rate": 0.51,
+        "over_3_5_rate": 0.29,
+        "btts_rate": 0.5,
+        "avg_home_goals": 1.25,
+        "avg_away_goals": 0.97,
+        "home_advantage_factor": 1.15,
+        "ht_0_0_rate": 0.36,
+        "ht_draw_rate": null,
+        "ht_draw_rate_note": "杯赛赛制混合（联赛阶段+淘汰赛），0-0半场比率为36%（prematcher统计117场）。淘汰赛与联赛阶段半场模式不同，不设单一ht_draw_rate。2026-09-16标注。",
+        "ht_draw_rate_status": "not_applicable",
+        "ht_draw_rate_updated": "2026-09-16",
+        "top_scores": [
+            {
+                "score": "0-0",
+                "frequency": 0.1282,
+                "direction": "平局"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.1197,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.094,
+                "direction": "平局"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.094,
+                "direction": "主胜"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.0598,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-2",
+                "frequency": 0.0598,
+                "direction": "客胜"
+            },
+            {
+                "score": "0-2",
+                "frequency": 0.0598,
+                "direction": "客胜"
+            },
+            {
+                "score": "0-1",
+                "frequency": 0.0513,
+                "direction": "客胜"
+            },
+            {
+                "score": "3-1",
+                "frequency": 0.0513,
+                "direction": "主胜"
+            },
+            {
+                "score": "2-2",
+                "frequency": 0.0427,
+                "direction": "平局"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.128,
+            "1_goal": 0.171,
+            "2_goals": 0.214,
+            "3_goals": 0.188,
+            "4_goals": 0.128,
+            "5_plus_goals": 0.171
+        },
+        "cards": {
+            "avg_yellow_cards": 3.58,
+            "avg_red_cards": 0.21
+        },
+        "player_age_avg": 28.26
+    },
+    "match_style": {
+        "tactical_character": "亚洲最高水平俱乐部赛事。2025-26赛季改制为24队联赛阶段（东西亚各12队，每队8场），前8晋级淘汰赛。沙特球队重金引援后实力碾压（吉达联合22球最强攻击、利雅得新月17球），东亚日本球队战术纪律强（町田泽维亚17分领跑东亚区）。中超球队明显弱势（上海海港2球最差攻击、上海申花4分垫底）。",
+        "tempo": "中快",
+        "physicality": "中高",
+        "technical_focus": "中高",
+        "var_usage": "VAR全面使用",
+        "key_trends": [
+            "沙特球队金元足球碾压",
+            "东西亚实力分化明显",
+            "中超球队竞争力弱",
+            "日本球队战术纪律突出",
+            "0-0比率高(12.82%)防守导向",
+            "淘汰赛西亚区改单场赛会制"
+        ],
+        "style_tags": [
+            "亚洲顶级",
+            "东西亚分化",
+            "沙特金元",
+            "防守导向",
+            "0-0高频"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.58,
+        "avg_red_cards": 0.21,
+        "avg_penalties": null,
+        "referee_style": "亚足联裁判水平参差，西亚裁判身体对抗判罚偏松，东亚裁判偏严。VAR使用频繁但判罚标准不统一。",
+        "first_half_stoppage_avg": 2.5,
+        "second_half_stoppage_avg": 5.5,
+        "stoppage_note": "下半场补时普遍5-7分钟，淘汰赛加时赛常见。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "亚冠整体廉洁度较高，但部分东南亚联赛关联俱乐部曾有争议。"
+            }
+        ],
+        "discipline_features": "红牌停赛1-3场，黄牌累积2张停1场。淘汰赛阶段纪律处罚更严。",
+        "official_rules": "IFAB规则+AFC赛事特别规则。",
+        "integrity_rating": "高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价亚冠'沙特队碾压'、'中超队没戏'。彩民认为'亚冠冷门少，强队通吃'，但0-0比率高需防小球。东亚日本队客场表现被低估。",
+        "betting_market": {
+            "market_efficiency": "中高",
+            "liquidity": "中高",
+            "line_movement_frequency": "中频",
+            "sharp_money": "西亚资金为主"
+        },
+        "upset_frequency": "中低",
+        "jingcai_tips": [
+            "0-0比率高达12.82%需防小球",
+            "沙特球队主场碾压趋势明显",
+            "中超球队竞争力弱不宜高估",
+            "东西亚分区赛制下跨区数据可比性差",
+            "淘汰赛西亚区单场赛会制增加不确定性"
+        ],
+        "common_sayings": [
+            "沙特金元碾压",
+            "亚冠看西亚",
+            "0-0多"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-09-16",
+        "sources": [
+            {
+                "name": "footballdatabase.eu",
+                "url": "https://www.footballdatabase.eu/en/competition/overall/22398-afc_champions_league_elite/2025-2026",
+                "data_points": [
+                    "117场311球2.66/场",
+                    "主胜49%平25%客胜24%",
+                    "黄牌419红牌24",
+                    "球员均龄28.26"
+                ]
+            },
+            {
+                "name": "7m.com.cn",
+                "url": "https://data.7m.com.cn/history_matches_data/2025-2026/139/gb/index.shtml",
+                "data_points": [
+                    "主胜47.92%平25%客胜27.08%",
+                    "主场场均1.25球客场0.97球",
+                    "最常见赛果TOP23",
+                    "波胆分布",
+                    "半全场统计"
+                ]
+            },
+            {
+                "name": "prematcher.com",
+                "url": "https://prematcher.com/index.php?page=league&season=2025&slug=afc-champions-league-elite-world&tab=results",
+                "data_points": [
+                    "大1.5球70%大2.5球49%大3.5球29%",
+                    "双方进球50%",
+                    "半场0-0达36%"
+                ]
+            },
+            {
+                "name": "zerozero.pt",
+                "url": "https://www.zerozero.pt/edicao/afc-champions-league-elite-2025-26/202251/estatisticas",
+                "data_points": [
+                    "117场311球2.66/场(交叉验证)",
+                    "主胜50%平25%客胜26%",
+                    "≥3球49%",
+                    "常见比分1-0(17场)"
+                ]
+            }
+        ],
+        "data_season": "2025-2026",
+        "confidence_level": "高",
+        "discrepancy_note": "7m总进球260(2.22/场)与footballdatabase/zerozero的311(2.66/场)存在差异，3源对1源，采用311为主值。7m的比分频率数据完整覆盖117场，可用于比分分布参考。"
+    },
+    "ttg_analysis_rules": {
+        "rule_id": null,
+        "rule_name": "亚冠精英赛总进球修正——2.66场均偏高但0-0频发",
+        "added_date": "2026-09-16",
+        "source": "2025-26赛季117场统计 + 4源交叉验证",
+        "core_logic": "亚冠精英赛场均2.66球看似不低，但0-0占比12.82%异常高（高于欧冠5%），说明存在大量'防守僵局'与'大球碾压'并存的分化。比分分布双峰：低比分(0-0/1-0/1-1)占33%，3+球占49%。总进球推荐应同时覆盖2球和3球。",
+        "ttg_rules": {
+            "default_top2": "2球/3球",
+            "cold_protection": "防0-0(0-0比率异常高)",
+            "lambda_total_range": "2.4-2.8",
+            "note": "沙特队比赛lambda偏高(2.8+)，东亚内战lambda偏低(2.2-2.4)"
+        },
+        "score_special": {
+            "zero_zero_warning": "0-0频率12.82%远高于其他联赛，比分推荐需纳入0-0作为备选",
+            "home_advantage": "主场优势系数1.15，高于欧冠1.10",
+            "east_west_gap": "西亚沙特球队(吉达联合22球/利雅得新月17球)vs东亚中超球队(上海海港2球)，实力差距巨大"
+        }
+    },
+    "competition_format": {
+        "league_phase": "24队分东西亚各12队，每队8场比赛(4主4客)，东西亚区各前8晋级16强",
+        "round_of_16": "主客场两回合（西亚区因安全原因改为单场赛会制）",
+        "quarter_finals": "主客场两回合（同上）",
+        "semi_finals": "在沙特阿拉伯集中进行单场淘汰",
+        "final": "在沙特阿拉伯单场决胜",
+        "prize_money": "冠军最高1200万美元",
+        "regional_separation": "东西亚分区抽签，联赛阶段不跨区，淘汰赛混抽",
+        "note": "2025-26赛季西亚区淘汰赛改为单场赛会制在吉达进行"
+    }
+}

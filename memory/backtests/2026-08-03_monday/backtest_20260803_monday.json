@@ -1,0 +1,336 @@
+{
+  "backtest_id": "bt_20260803_monday",
+  "match_date": "2026-08-03",
+  "model_version": "v1.9.1",
+  "rules_applied": [
+    "规则0",
+    "规则8",
+    "规则15",
+    "规则26",
+    "规则27",
+    "规则28",
+    "规则31",
+    "规则32"
+  ],
+  "summary": {
+    "total_matches": 4,
+    "direction_hit": 4,
+    "direction_rate": "100%",
+    "score_top5_hit": 2,
+    "score_top5_rate": "50%",
+    "score_top10_hit": 2,
+    "score_top10_rate": "50%",
+    "ht_score_top5_hit": 3,
+    "ht_score_top5_rate": "75%",
+    "htft_direction_top3_hit": 3,
+    "htft_direction_top3_rate": "75%",
+    "over_under_hit": 3,
+    "over_under_rate": "75%",
+    "handicap_hit": 2,
+    "handicap_rate": "50%",
+    "ttg_hit": 4,
+    "ttg_rate": "100%",
+    "avg_confidence": "★低/★低(强制)/★★中/★低(残阵)",
+    "best_dimension": "方向+总进球(100%)",
+    "worst_dimension": "让球(50%)"
+  },
+  "matches": [
+    {
+      "match_id": "001",
+      "league": "芬超",
+      "home_team": "塞伊奈(SJK)",
+      "away_team": "赫尔辛基(HJK)",
+      "prediction": {
+        "direction": "主胜38.1%",
+        "top1_score": "1:1(13.1%)",
+        "ht_top1": "0:0(27.1%)",
+        "htft_top3": [
+          "0:0/1:1(4.9%)",
+          "0:0/2:1(3.5%)",
+          "1:0/1:1(2.9%)"
+        ],
+        "over_under": "大2.5球58.9%",
+        "handicap_dir": "+1→主65.7%",
+        "ttg_top": "3球21.8%",
+        "confidence": "★ 低"
+      },
+      "actual": {
+        "ft_score": "3:0",
+        "ht_score": "0:0",
+        "direction": "主胜",
+        "total_goals": 3,
+        "over_under": "大2.5球",
+        "htft_direction": "平胜(0:0/3:0)",
+        "handicap_result": "+1→4:0主胜",
+        "scorers": "Streng 45', Nascimento 56', Streng 61'",
+        "key_events": "下半场3球爆发，HJK客场0射正"
+      },
+      "hit_check": {
+        "direction": true,
+        "score_top5": false,
+        "score_top10": false,
+        "ht_score_top5": true,
+        "htft_direction_top3": true,
+        "over_under": true,
+        "handicap": true,
+        "ttg": true,
+        "htft_exact_top3": false
+      },
+      "analysis": {
+        "model_vs_market": "模型主胜38.1% vs 市场客胜45.2% → 模型正确，市场错误",
+        "rule28_validation": "✅ 基本面分析(战意+体能+伤停)正确预测保级队主场爆冷",
+        "rule32_validation": "✅ HJK核心Ezeh伤停→lambda_a×0.90正确折算",
+        "miss_reason": "比分3:0不在TOP10，大球修正不足。保级队主场3:0是常见爆冷比分但模型低估",
+        "lesson": "保级队主场vs争冠队客场+客队伤停+客队体能劣势=保级队大比分爆冷模式"
+      },
+      "odds_payout": {
+        "had_home": 3.18,
+        "hafu_home": 1.78,
+        "crs_3_0": 42.0,
+        "htft_draw_win": 7.6,
+        "ttg_3": 3.4
+      }
+    },
+    {
+      "match_id": "002",
+      "league": "瑞超",
+      "home_team": "哈尔姆斯(Halmstads)",
+      "away_team": "天狼星(Sirius)",
+      "prediction": {
+        "direction": "客胜67.1%",
+        "top1_score": "1:2(9.4%)",
+        "ht_top1": "0:0(22.2%)",
+        "htft_top3": [
+          "0:0/1:2(2.9%)",
+          "0:0/1:1(2.9%)",
+          "0:1/1:2(2.9%)"
+        ],
+        "over_under": "大2.5球67.0%",
+        "handicap_dir": "+1→客45.9%",
+        "ttg_top": "3球21.9%",
+        "confidence": "★ 低(规则32强制降级)"
+      },
+      "actual": {
+        "ft_score": "0:2",
+        "ht_score": "0:2",
+        "direction": "客胜",
+        "total_goals": 2,
+        "over_under": "小2.5球",
+        "htft_direction": "负负(0:2/0:2)",
+        "handicap_result": "+1→0:1客胜",
+        "scorers": "Anker 14', Bjerkebo 16'(pen)",
+        "key_events": "开场16分钟2球，下半场无进球"
+      },
+      "hit_check": {
+        "direction": true,
+        "score_top5": true,
+        "score_top10": true,
+        "ht_score_top5": true,
+        "htft_direction_top3": true,
+        "over_under": false,
+        "handicap": true,
+        "ttg": true,
+        "htft_exact_top3": false
+      },
+      "analysis": {
+        "model_vs_market": "模型客67.1% vs 市场客70.8% → 两者一致，均正确",
+        "rule32_validation": "✅ 天狼星5+人伤停强制降级，但核心阵容完整→规则18非线性折算正确(lambda_a×0.93而非×0.80)",
+        "miss_reason": "大小球预测大球67%实际小球。天狼星16分钟进2球后收力，下半场0球",
+        "lesson": "强队客场快速领先后可能收力，大球预测需考虑'领先后保守'场景"
+      },
+      "odds_payout": {
+        "had_away": 1.25,
+        "hafu_away": 1.79,
+        "crs_0_2": 7.0,
+        "htft_lose_lose": 1.7,
+        "ttg_2": 4.7
+      }
+    },
+    {
+      "match_id": "003",
+      "league": "瑞超",
+      "home_team": "佐加顿斯(Djurgården)",
+      "away_team": "韦斯特罗(Västerås SK)",
+      "prediction": {
+        "direction": "主胜56.7%",
+        "top1_score": "2:1(10.4%)",
+        "ht_top1": "0:0(21.3%)",
+        "htft_top3": [
+          "0:0/2:1(3.2%)",
+          "0:0/1:1(3.0%)",
+          "1:0/2:1(2.7%)"
+        ],
+        "over_under": "大2.5球69.1%",
+        "handicap_dir": "-1→客43.3%",
+        "ttg_top": "5+球28.5%",
+        "confidence": "★★ 中(从★★★下调)"
+      },
+      "actual": {
+        "ft_score": "6:0",
+        "ht_score": "3:0",
+        "direction": "主胜",
+        "total_goals": 6,
+        "over_under": "大2.5球",
+        "htft_direction": "胜胜(3:0/6:0)",
+        "handicap_result": "-1→5:0主胜",
+        "scorers": "Åslund 5', Lien 12', Ståhl 28', Lien 53', Lien 55', Tenho 60'",
+        "key_events": "Lien帽子戏法，135周年纪念大胜"
+      },
+      "hit_check": {
+        "direction": true,
+        "score_top5": false,
+        "score_top10": false,
+        "ht_score_top5": false,
+        "htft_direction_top3": true,
+        "over_under": true,
+        "handicap": false,
+        "ttg": true,
+        "htft_exact_top3": false
+      },
+      "analysis": {
+        "model_vs_market": "模型主56.7% vs 市场主64.2% → 两者一致，均正确方向。但市场更激进且正确",
+        "rule28_validation": "⚠️ 基本面分析认为赔率过热(对手偏弱)，实际结果6:0证明市场低估了主队优势。基本面分析方向对但幅度判断错误",
+        "rule31_validation": "❌ 大球修正严重不足。6:0不在TOP10，联赛大球率53%的修正系数×1.08-1.15远不够。需要更强的极端比分修正",
+        "miss_reason": "Lien帽子戏法属于个体球员不可预测因素。但3:0半场比分也不在TOP5，说明模型对主场碾压式大胜的概率评估不足",
+        "lesson": "135周年纪念+争冠战意+主场优势=极端大胜概率被低估。规则31大球修正系数需从1.15升至1.25-1.30(已在上期回测提出但未应用)"
+      },
+      "odds_payout": {
+        "had_home": 1.4,
+        "hafu_home": "❌让球-1预测客",
+        "crs_win_other": 18.0,
+        "htft_win_win": 1.92,
+        "ttg_6": 10.5
+      }
+    },
+    {
+      "match_id": "004",
+      "league": "巴西杯",
+      "home_team": "巴竞技(Athletico PR)",
+      "away_team": "维多利亚(Vitória)",
+      "prediction": {
+        "direction": "主胜41.7%",
+        "top1_score": "1:1(15.8%)",
+        "ht_top1": "0:0(36.6%)",
+        "htft_top3": [
+          "0:0/1:1(7.9%)",
+          "0:0/0:0(6.2%)",
+          "0:0/1:0(5.9%)"
+        ],
+        "over_under": "小2.5球59.9%",
+        "handicap_dir": "-1→客57.3%",
+        "ttg_top": "2球29.0%",
+        "confidence": "★ 低(严重残阵)"
+      },
+      "actual": {
+        "ft_score": "2:0",
+        "ht_score": "1:0",
+        "direction": "主胜",
+        "total_goals": 2,
+        "over_under": "小2.5球",
+        "htft_direction": "胜胜(1:0/2:0)",
+        "handicap_result": "-1→1:0主胜",
+        "scorers": "João Cruz (1st half), Dudu (2nd half)",
+        "key_events": "维多利亚有球员被红牌罚下，Athletico利用人数优势进球"
+      },
+      "hit_check": {
+        "direction": true,
+        "score_top5": true,
+        "score_top10": true,
+        "ht_score_top5": true,
+        "htft_direction_top3": false,
+        "over_under": true,
+        "handicap": false,
+        "ttg": true,
+        "htft_exact_top3": false
+      },
+      "analysis": {
+        "model_vs_market": "模型主41.7% vs 市场主59.8% → 两者一致主胜，市场更激进且正确",
+        "rule32_validation": "✅ 维多利亚8人严重残阵正确识别，lambda_a×0.85正确折算",
+        "cup_first_leg_validation": "❌ 杯赛首回合平局上修+15-20%错误。实际是主胜2:0而非平局。但方向(主胜41.7%)是TOP1所以不影响方向判断",
+        "miss_reason": "让球-1预测客57.3%实际主胜。维多利亚残阵虽严重但Cacá/Luan Cândido可出战，后防线有替代者。模型低估了残阵下后防线实际崩溃的风险",
+        "lesson": "杯赛首回合平局上修不应一刀切。当一方严重残阵时，平局上修应取消，改为强队主胜上修"
+      },
+      "odds_payout": {
+        "had_home": 1.46,
+        "hafu_home": "❌让球-1预测客",
+        "crs_2_0": 6.0,
+        "htft_win_win": 2.1,
+        "ttg_2": 3.25
+      }
+    }
+  ],
+  "key_findings": [
+    {
+      "id": "KF1",
+      "title": "方向命中率100%——历史最佳",
+      "detail": "4场方向全部命中。规则28(基本面>模型>市场)验证成功：001 SJK保级主场爆冷，模型看主胜38.1%而市场看客胜45.2%，模型正确",
+      "action": "继续坚持基本面优先的分析框架"
+    },
+    {
+      "id": "KF2",
+      "title": "总进球数命中率100%——新维度表现优秀",
+      "detail": "4场总进球数区间全部命中(3球/2球/5+球/2球)。TTG维度的泊松分布建模有效",
+      "action": "TTG可作为稳定推荐维度"
+    },
+    {
+      "id": "KF3",
+      "title": "大球修正严重不足——6:0和3:0都不在TOP10",
+      "detail": "003 Djurgården 6:0和001 SJK 3:0都不在比分TOP10。规则31大球修正系数1.08-1.15远不够。连续两期回测(08-02/08-03)都出现极端大比分不在TOP10",
+      "action": "规则31B大球修正系数从1.15升至1.25-1.30，3球+比分概率×1.25(大球率>55%联赛)，历史交锋强队主场净胜≥2球时3:0/4:0概率×1.30"
+    },
+    {
+      "id": "KF4",
+      "title": "规则32强制降级不影响方向判断",
+      "detail": "002天狼星5+人伤停强制降级为低★，但方向(客胜67.1%)仍正确。004维多利亚8人残阵降级，方向(主胜41.7%)仍正确。规则32影响的是置信度表达而非方向准确性",
+      "action": "规则32设计正确——降级不等于方向错误，而是降低表达自信度"
+    },
+    {
+      "id": "KF5",
+      "title": "杯赛首回合平局上修需条件触发",
+      "detail": "004巴西杯首回合预测平局上修+15-20%，实际主胜2:0。当一方严重残阵时，平局上修反而错误——残阵方更可能输而非平",
+      "action": "杯赛首回合平局上修增加触发条件：当一方≥5人伤停时，取消平局上修，改为强队主胜上修+10%"
+    },
+    {
+      "id": "KF6",
+      "title": "让球-1预测系统性偏差",
+      "detail": "2场让-1的比赛(003/004)均预测客胜，实际均为让1后主胜。模型对强队让球后仍赢的概率低估",
+      "action": "让球-1场景需增加'强队让球后仍胜'修正：当主队排名前4且让1球时，让球主胜概率上修+10%"
+    },
+    {
+      "id": "KF7",
+      "title": "规则28基本面分析方向正确但幅度判断需改进",
+      "detail": "003佐加顿斯：基本面分析认为赔率1.40过热(对手偏弱)，实际6:0大胜证明市场反而低估了。基本面分析方向(主胜)正确但幅度判断(过热)错误",
+      "action": "基本面分析不应仅看对手排名，还需考虑战意因素(135周年纪念)对极端大胜概率的提升"
+    },
+    {
+      "id": "KF8",
+      "title": "半场比分TOP5持续优秀(75%)",
+      "detail": "4场中3场半场比分命中TOP5(001的0:0 TOP1/002的0:2 TOP3/004的1:0 TOP2)。半场泊松模型(λ×0.45)持续有效",
+      "action": "半场比分推荐继续作为稳定输出维度"
+    }
+  ],
+  "improvements_applied": [
+    "规则0/32：8项伤停核查清单首次执行，4场全部完成官方信源搜索",
+    "规则15：首次收集全部5类赔率(216个选项)",
+    "规则27：首次独立输出战意心理与体能分析章节",
+    "规则28：首次按基本面>模型>赔率优先级排序分析",
+    "规则31：比分矩阵应用联赛大球率修正(但系数不足需升级)"
+  ],
+  "improvements_needed": [
+    "规则31B大球修正系数从1.15升至1.25-1.30(连续两期极端大比分不在TOP10)",
+    "杯赛首回合平局上修增加条件触发(一方≥5人伤停时取消平局上修)",
+    "让球-1场景增加'强队让球后仍胜'修正(主队前4+让1→主胜+10%)",
+    "基本面分析幅度判断需改进(不仅看对手排名，还看战意对极端结果的影响)"
+  ],
+  "source_files": {
+    "prediction_json": "memory/predictions/2026-08-03_monday/monday_predictions.json",
+    "analysis_html": "reports/html/monday_20260803_analysis/monday_20260803_analysis.html",
+    "agents_md": "AGENTS.md",
+    "result_sources": [
+      "https://www.lvscore.com/football/match/sjk-seinajoki-vs-hjk-helsinki/dCrqaUmLmLj_dCqdC/",
+      "https://www.sportsmole.co.uk/football/allsvenskan/halmstads-bk-vs-sirius_game_253025.html",
+      "https://www.fifa.com/en/match-centre/match/2000000029/b99u9gpztyjs5u1i88z6qvg9g/b9u8f79u3ih5xzdk2meic0g7o/5a6py4ufwh7m5wz8wrpgn11qs",
+      "https://onefootball.com/en/news/ficha-do-jogo-athletico-pr-20-vitoria-43226059"
+    ]
+  }
+}

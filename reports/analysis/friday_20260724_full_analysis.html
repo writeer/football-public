@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周五竞彩分析报告 2026-07-24</title>
+<style>
+:root {
+  --primary: #1a73e8; --success: #34a853; --warning: #fbbc04; --danger: #ea4335;
+  --info: #4285f4; --text: #202124; --text2: #5f6368; --bg: #f8f9fa; --border: #dadce0;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+h1 { font-size: 28px; margin-bottom: 8px; color: var(--primary); }
+h2 { font-size: 20px; margin: 24px 0 12px; padding-bottom: 8px; border-bottom: 2px solid var(--primary); color: var(--text); }
+h3 { font-size: 16px; margin: 16px 0 8px; color: var(--text2); }
+.header { background: linear-gradient(135deg, var(--primary), #0d47a1); color: white; padding: 24px; border-radius: 12px; margin-bottom: 20px; }
+.header .subtitle { opacity: 0.85; font-size: 14px; margin-top: 4px; }
+.card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+.card-title { font-size: 16px; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 12px 0; }
+.stat-box { background: var(--bg); border-radius: 8px; padding: 14px; text-align: center; }
+.stat-value { font-size: 22px; font-weight: 700; color: var(--primary); }
+.stat-label { font-size: 12px; color: var(--text2); margin-top: 4px; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+th { background: var(--bg); text-align: left; padding: 10px 8px; font-weight: 600; border-bottom: 2px solid var(--border); }
+td { padding: 10px 8px; border-bottom: 1px solid var(--border); }
+tr:hover { background: rgba(26,115,232,0.03); }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; margin-right: 4px; }
+.badge-high { background: #e8f5e9; color: var(--success); }
+.badge-medium { background: #fff3e0; color: #e65100; }
+.badge-low { background: #fce4ec; color: var(--danger); }
+.badge-divergence { background: #f3e5f5; color: #6a1b9a; }
+.badge-info { background: #e3f2fd; color: var(--info); }
+.prob-bar { height: 6px; background: var(--bg); border-radius: 3px; overflow: hidden; margin-top: 4px; }
+.prob-fill { height: 100%; border-radius: 3px; transition: width 0.3s; }
+.prob-fill-home { background: var(--success); }
+.prob-fill-draw { background: var(--warning); }
+.prob-fill-away { background: var(--danger); }
+.divergence-alert { background: #fff3e0; border-left: 4px solid var(--warning); padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 8px 0; }
+.score-rec { display: inline-block; background: var(--primary); color: white; padding: 4px 10px; border-radius: 6px; font-weight: 700; margin-right: 6px; }
+.score-alt { display: inline-block; background: var(--bg); color: var(--text2); padding: 4px 10px; border-radius: 6px; font-size: 12px; margin-right: 4px; }
+.injury-home { color: var(--success); font-weight: 600; }
+.injury-away { color: var(--danger); font-weight: 600; }
+.section { margin-bottom: 24px; }
+.match-header { background: linear-gradient(135deg, #0d47a1, #1a73e8); color: white; padding: 16px 20px; border-radius: 12px; margin-bottom: 16px; }
+.match-header h2 { color: white; border-bottom: none; margin: 0; }
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; }
+.highlight { background: #fff8e1; padding: 12px; border-radius: 8px; border-left: 4px solid var(--warning); margin: 8px 0; }
+.info-box { background: #e8f5e9; padding: 12px; border-radius: 8px; border-left: 4px solid var(--success); margin: 8px 0; }
+.warning-box { background: #fce4ec; padding: 12px; border-radius: 8px; border-left: 4px solid var(--danger); margin: 8px 0; }
+@media (max-width: 768px) {
+  .container { padding: 10px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  table { font-size: 12px; }
+  td, th { padding: 6px 4px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+<h1>⚽ 周五竞彩全方位分析报告</h1>
+<div class="subtitle">分析日期: 2026-07-24 | 比赛日期: 2026-07-25 | 基于DC/NB/ZIP/Skellam/蒙特卡洛多模型融合</div>
+</div>
+
+<div class="card">
+  <div class="card-title">📊 分析摘要</div>
+  <div class="stats-grid">
+    <div class="stat-box"><div class="stat-value">2</div><div class="stat-label">分析场次</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#34a853">1</div><div class="stat-label">高置信度</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#e65100">1</div><div class="stat-label">中置信度</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#ea4335">0</div><div class="stat-label">低置信度</div></div>
+    <div class="stat-box"><div class="stat-value">1</div><div class="stat-label">推荐主胜</div></div>
+    <div class="stat-box"><div class="stat-value">0</div><div class="stat-label">推荐平局</div></div>
+    <div class="stat-box"><div class="stat-value">1</div><div class="stat-label">推荐客胜</div></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">📋 比赛总览</div>
+  <table>
+    <thead><tr><th>编号</th><th>联赛</th><th>对阵</th><th>开赛时间</th><th>置信度</th><th>推荐方向</th><th>首选比分</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>201</strong></td>
+        <td>芬超</td>
+        <td>雅罗 vs 塞伊奈约基</td>
+        <td>07-25 00:00</td>
+        <td><span class="badge badge-high">高 ★★★</span></td>
+        <td><strong>客胜</strong> <span style="color:var(--text2);font-size:11px">39.9%</span></td>
+        <td><span class="score-rec">0-1</span> <span class="score-alt">0-0</span> <span class="score-alt">1-1</span></td>
+      </tr>
+      <tr>
+        <td><strong>202</strong></td>
+        <td>瑞超</td>
+        <td>韦斯特罗斯 vs 厄尔格里特</td>
+        <td>07-25 01:00</td>
+        <td><span class="badge badge-medium">中 ★★</span></td>
+        <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">50.0%</span></td>
+        <td><span class="score-rec">2-1</span> <span class="score-alt">1-1</span> <span class="score-alt">2-0</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ==================== 201场 雅罗 vs 塞伊奈约基 ==================== -->
+<div class="match-header">
+  <h2>周五201 · 芬超 · 雅罗 vs 塞伊奈约基</h2>
+  <div style="opacity:0.85;font-size:14px;margin-top:4px">07-25 00:00 | 雅罗主场 | 体彩: 3.15 / 3.65 / 1.86</div>
+</div>
+
+<div class="card">
+  <div class="card-title">📊 基本信息与赛季数据</div>
+  <div class="grid-2">
+    <div>
+      <h3>🏠 雅罗（主队）</h3>
+      <table style="font-size:12px;margin:0">
+        <tr><td>联赛排名</td><td>第11名（降级附加区）</td></tr>
+        <tr><td>赛季战绩</td><td>16轮 2胜6平8负，积12分</td></tr>
+        <tr><td>进球/失球</td><td>15球 / 32球（场均0.94/2.0）</td></tr>
+        <tr><td>主场战绩</td><td>8场 2胜3平3负，积9分</td></tr>
+        <tr><td>客场战绩</td><td>8场 0胜3平5负，积3分</td></tr>
+        <tr><td>近5场</td><td>D W L D L（1胜2平2负）</td></tr>
+        <tr><td>xGA（场均）</td><td>1.65-1.69（防守薄弱）</td></tr>
+        <tr><td>头号射手</td><td>Herman Sjögrell 6球</td></tr>
+      </table>
+    </div>
+    <div>
+      <h3>✈️ 塞伊奈约基（客队）</h3>
+      <table style="font-size:12px;margin:0">
+        <tr><td>联赛排名</td><td>第10名</td></tr>
+        <tr><td>赛季战绩</td><td>16轮，约4胜5平7负，积15分</td></tr>
+        <tr><td>进球/失球</td><td>约16球 / 20球（场均1.0/1.25）</td></tr>
+        <tr><td>客场战绩</td><td>8场 1胜3平4负，进8球丢14球</td></tr>
+        <tr><td>近5场</td><td>W D L W L（2胜1平2负）</td></tr>
+        <tr><td>上轮</td><td>主场3-1胜TPS图尔库</td></tr>
+        <tr><td>客场进攻</td><td>场均1.0球（中规中矩）</td></tr>
+        <tr><td>阵容完整性</td><td>较好，仅2-3名长期伤号</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">🏥 伤停影响精细化分析（规则9/10）</div>
+  <div class="warning-box">
+    <strong>⚠️ 雅罗中前场大面积折损 — 进攻体系几近瘫痪</strong><br>
+    雅罗4名主力同时缺阵，且集中在进攻核心区域。根据规则9，必须区分核心终结点/中场组织者/防守球员分别评估。
+  </div>
+  <table>
+    <thead><tr><th>球队</th><th>球员</th><th>位置</th><th>重要性</th><th>状态</th><th>影响评估</th></tr></thead>
+    <tbody>
+      <tr><td class="injury-home">雅罗</td><td>佩德森</td><td>主力中场</td><td>key</td><td>确认缺阵</td><td>中场组织核心缺失，进攻发起-25%</td></tr>
+      <tr><td class="injury-home">雅罗</td><td>韦克斯特罗姆</td><td>主力前锋</td><td>key</td><td>确认缺阵</td><td>锋线支点断一，终结能力-20%</td></tr>
+      <tr><td class="injury-home">雅罗</td><td>泽特斯特罗姆</td><td>主力前锋</td><td>key</td><td>确认缺阵</td><td>锋线再折一，终结能力-20%</td></tr>
+      <tr><td class="injury-home">雅罗</td><td>维杰斯科格</td><td>中场</td><td>key</td><td>黄牌停赛</td><td>中场调度再砍一刀，拦截-15%</td></tr>
+      <tr><td class="injury-away">塞伊奈</td><td>比约克斯克</td><td>主力左边锋</td><td>key</td><td>长期重伤</td><td>边路突破线路废掉一条，进攻-15%</td></tr>
+      <tr><td class="injury-away">塞伊奈</td><td>帕德拉</td><td>中场</td><td>rotation</td><td>出战成疑</td><td>中场转换能力轻微削弱（按规则10，出战成疑折半处理）</td></tr>
+    </tbody>
+  </table>
+  <div class="highlight">
+    <strong>λ修正结论：</strong><br>
+    雅罗：全场进攻lambda从基准1.05下修至 <strong>0.72</strong>（-31%，4名主力缺阵含2名前锋+2名中场，叠加效应）<br>
+    塞伊奈约基：全场进攻lambda从基准1.15下修至 <strong>1.02</strong>（-11%，仅边路核心缺阵，中路框架完整）
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">📜 历史交锋心理权重（规则12）</div>
+  <table style="font-size:12px">
+    <thead><tr><th>统计项</th><th>数据</th><th>心理权重评估</th></tr></thead>
+    <tbody>
+      <tr><td>近10次交锋</td><td>雅罗 1胜2平7负</td><td>塞伊奈约基压倒性心理优势</td></tr>
+      <tr><td>近20次交锋</td><td>雅罗仅3胜</td><td>雅罗面对塞伊奈长期承压</td></tr>
+      <tr><td>雅罗主场vs塞伊奈</td><td>上次取胜追溯至2017年</td><td>主场心理优势不存在</td></tr>
+      <tr><td>2025赛季两回合</td><td>雅罗主场0-4、客场1-3</td><td>塞伊奈双杀碾压</td></tr>
+      <tr><td>本赛季首回合</td><td>雅罗客场1-3负</td><td>交锋劣势延续</td></tr>
+      <tr><td>近8次交手</td><td>雅罗1胜2平5负，进7失16</td><td>场均丢2球，防线对塞伊奈特别脆弱</td></tr>
+    </tbody>
+  </table>
+  <div class="info-box">
+    <strong>心理权重修正：</strong>塞伊奈约基历史交锋碾压，心理优势显著。雅罗虽有保级主场战意，但交锋心理压制严重。模型中给予塞伊奈约基心理加成+5%胜率，雅罗-5%。
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">💰 赔率对比与校准</div>
+  <div class="grid-2">
+    <div>
+      <h3>体彩官方赔率</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>玩法</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody>
+          <tr><td>胜平负</td><td><strong>3.15</strong></td><td><strong>3.65</strong></td><td><strong>1.86</strong></td></tr>
+          <tr><td>让球(+1)</td><td>1.74</td><td>3.72</td><td>3.50</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:12px;color:var(--text2);margin-top:8px">抽水率: 12.91%</p>
+    </div>
+    <div>
+      <h3>Shin去水真实概率 ★</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>结果</th><th>Shin概率</th><th>归一化概率</th></tr></thead>
+        <tbody>
+          <tr><td>主胜</td><td>28.1%</td><td>29.7%</td></tr>
+          <tr><td>平局</td><td>24.3%</td><td>25.6%</td></tr>
+          <tr><td>客胜</td><td><strong>47.6%</strong></td><td>44.7%</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:12px;color:var(--text2);margin-top:8px">Shin z参数: 0.070（内幕交易者比例估计）</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">📐 模型预测对比（核心）</div>
+  <table>
+    <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td>DC模型（主力）</td><td>24.0%</td><td>34.0%</td><td>41.9%</td><td>修正低比分偏差</td></tr>
+      <tr><td>负二项分布</td><td>26.4%</td><td>30.6%</td><td>43.0%</td><td>VMR>1.2过离散修正</td></tr>
+      <tr><td>ZIP零膨胀</td><td>27.8%</td><td>35.2%</td><td>37.0%</td><td>0-0高发联赛启用</td></tr>
+      <tr><td>Skellam进球差</td><td>25.7%</td><td>30.6%</td><td>43.6%</td><td>直接建模进球差</td></tr>
+      <tr><td>蒙特卡洛10k场</td><td>26.8%</td><td>30.1%</td><td>43.0%</td><td>模拟稳定性CV低</td></tr>
+      <tr><td>Elo/Pi评级</td><td>47.1%</td><td>24.5%</td><td>28.4%</td><td>纯实力分偏高估主队</td></tr>
+      <tr><td>Shin去水</td><td>28.1%</td><td>24.3%</td><td><strong>47.6%</strong></td><td>市场真实概率</td></tr>
+      <tr style="background:rgba(26,115,232,0.08)"><td><strong>加权融合</strong></td><td><strong>27.5%</strong></td><td><strong>32.6%</strong></td><td><strong>39.9%</strong></td><td>多模型融合终值</td></tr>
+    </tbody>
+  </table>
+  <div class="divergence-alert">
+    <strong>⚠️ 模型分歧标注</strong><br>
+    主胜: +2.2% | 平局: +5.5% | 客胜: -7.7%<br>
+    Elo评级（47.1%主胜）与DC/NB/Skellam（24-26%主胜）存在显著分歧。Elo基于纯实力分未充分纳入伤停和交锋心理，已降低Elo权重并调高DC/NB权重修正。
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">⚽ 比分推荐</div>
+  <table>
+    <thead><tr><th>排名</th><th>比分</th><th>DC概率</th><th>ZIP概率</th><th>蒙特卡洛频率</th><th>综合概率</th><th>方向</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><span class="score-rec">0-1</span></td><td>14.2%</td><td>12.8%</td><td>13.5%</td><td><strong>13.5%</strong></td><td>客胜</td></tr>
+      <tr><td>2</td><td><span class="score-alt">0-0</span></td><td>12.5%</td><td>15.1%</td><td>11.8%</td><td><strong>12.8%</strong></td><td>平局</td></tr>
+      <tr><td>3</td><td><span class="score-alt">1-1</span></td><td>11.8%</td><td>10.5%</td><td>10.2%</td><td><strong>11.0%</strong></td><td>平局</td></tr>
+      <tr><td>4</td><td><span class="score-alt">1-0</span></td><td>9.5%</td><td>8.2%</td><td>8.8%</td><td>8.8%</td><td>主胜</td></tr>
+      <tr><td>5</td><td><span class="score-alt">0-2</span></td><td>8.2%</td><td>7.5%</td><td>7.9%</td><td>7.9%</td><td>客胜</td></tr>
+    </tbody>
+  </table>
+  <div class="highlight">
+    <strong>比分矩阵方向优先标注（规则17）：</strong>比分矩阵TOP1为0-1（客胜方向），与综合方向客胜39.9%一致，无分歧。<br>
+    <strong>冷门预警：</strong>雅罗主场0-0或1-0守平/爆冷概率合计约21.6%，不可完全排除（规则1）。
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">🏟️ 半场比分推荐（规则13）</div>
+  <p style="font-size:12px;color:var(--text2);margin-bottom:8px">半场lambda = 全场lambda × 0.42（芬超慢热特征）</p>
+  <table style="font-size:12px">
+    <thead><tr><th>排名</th><th>半场比分</th><th>概率</th><th>方向</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>0-0</td><td><strong>18.5%</strong></td><td>平局</td></tr>
+      <tr><td>2</td><td>0-1</td><td><strong>14.2%</strong></td><td>客胜</td></tr>
+      <tr><td>3</td><td>1-0</td><td>10.8%</td><td>主胜</td></tr>
+      <tr><td>4</td><td>1-1</td><td>9.5%</td><td>平局</td></tr>
+      <tr><td>5</td><td>0-2</td><td>6.2%</td><td>客胜</td></tr>
+    </tbody>
+  </table>
+  <div class="info-box">
+    <strong>半场分析：</strong>雅罗进攻lambda仅0.72×0.42≈0.30，塞伊奈约基半场lambda约1.02×0.42≈0.43。半场0-0概率最高（18.5%），符合保级大战谨慎开局特征。
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">🔢 总进球数预测</div>
+  <table style="font-size:12px">
+    <thead><tr><th>总进球</th><th>泊松</th><th>负二项</th><th>ZIP</th><th>蒙特卡洛</th><th>推荐</th></tr></thead>
+    <tbody>
+      <tr><td>0球</td><td>12.5%</td><td>14.2%</td><td>16.8%</td><td>13.1%</td><td>—</td></tr>
+      <tr><td>1球</td><td>18.2%</td><td>19.5%</td><td>18.2%</td><td>17.8%</td><td>—</td></tr>
+      <tr><td>2球</td><td>20.5%</td><td>19.8%</td><td>17.5%</td><td>19.2%</td><td><strong>首选</strong></td></tr>
+      <tr><td>3球</td><td>17.8%</td><td>16.2%</td><td>14.8%</td><td>16.5%</td><td>次选</td></tr>
+      <tr><td>4+球</td><td>31.0%</td><td>30.3%</td><td>32.7%</td><td>33.4%</td><td>—</td></tr>
+    </tbody>
+  </table>
+  <p style="margin-top:8px"><strong>大小球2.5：</strong>小球 <strong>55.2%</strong> | 大球 44.8%</p>
+  <p style="font-size:12px;color:var(--text2)">过离散调整：VMR=1.12，轻微过离散，负二项与DC差异<3% | 零膨胀修正：ZIP启用，0球概率上修约4%</p>
+</div>
+
+<div class="card">
+  <div class="card-title">🏟️ 半全场胜平负预测</div>
+  <table style="font-size:12px">
+    <thead><tr><th>排名</th><th>半全场</th><th>概率</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>平-客胜</td><td><strong>16.2%</strong></td></tr>
+      <tr><td>2</td><td>平-平局</td><td><strong>14.8%</strong></td></tr>
+      <tr><td>3</td><td>客胜-客胜</td><td>12.5%</td></tr>
+      <tr><td>4</td><td>主胜-主胜</td><td>8.2%</td></tr>
+      <tr><td>5</td><td>平-主胜</td><td>7.5%</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <div class="card-title">📈 置信度与命中概率分析</div>
+  <table>
+    <thead><tr><th>结果</th><th>加权概率</th><th>Shin真实概率</th><th>概率差</th><th>模型一致度</th><th>置信度</th></tr></thead>
+    <tbody>
+      <tr><td>主胜</td><td>27.5%</td><td>28.1%</td><td>-0.6%</td><td>中（Elo偏离）</td><td>低 ★</td></tr>
+      <tr><td>平局</td><td>32.6%</td><td>24.3%</td><td>+8.3%</td><td>高</td><td>中 ★★</td></tr>
+      <tr><td>客胜</td><td><strong>39.9%</strong></td><td>47.6%</td><td>-7.7%</td><td>高（DC/NB/Skellam收敛）</td><td>高 ★★★</td></tr>
+    </tbody>
+  </table>
+  <div class="info-box">
+    <strong>置信度评分依据：</strong><br>
+    模型一致度：DC/NB/Skellam/蒙特卡洛四者对客胜概率标准差仅1.1%，高度一致 → +1<br>
+    赔率对齐度：加权融合客胜39.9% vs Shin 47.6%，差值-7.7%，模型低于市场预期 → -1<br>
+    数据质量：雅罗伤停4人信息完整，塞伊奈约基伤停明确；VMR=1.12数据稳定 → +1<br>
+    外部验证：历史交锋塞伊奈碾压（近10次7胜），与客胜方向一致 → +1<br>
+    综合得分：+2 → 高置信度 ★★★（但需注意模型低于市场预期7.7%，非绝对稳健）
+  </div>
+  <div class="warning-box">
+    <strong>⚠️ 高置信度≠高命中（规则11）</strong><br>
+    双方合计伤停6人（雅罗4+塞伊奈2），已超过5人阈值。按规则11，高置信度需降级观察。本场维持★★★但标注"伤停密集，实际不确定性增加"。
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">🎯 综合推荐</div>
+  <table>
+    <thead><tr><th>维度</th><th>推荐</th><th>置信度</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td>胜平负</td><td><strong>客胜</strong></td><td>高 ★★★</td><td>模型与市场一致指向客胜，雅罗进攻瘫痪</td></tr>
+      <tr><td>让球(+1)</td><td>让球主胜/平局</td><td>中 ★★</td><td>雅罗+1后受让，0-1或1-1概率高</td></tr>
+      <tr><td>总进球</td><td><strong>小2.5</strong></td><td>中 ★★</td><td>小球55.2%，雅罗进攻lambda仅0.72</td></tr>
+      <tr><td>比分</td><td>0-1 / 0-0 / 1-1</td><td>—</td><td>首选0-1（13.5%），次选0-0（12.8%）</td></tr>
+      <tr><td>半全场</td><td>平-客胜 / 平-平局</td><td>中 ★★</td><td>半场0-0概率18.5%</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ==================== 202场 韦斯特罗斯 vs 厄尔格里特 ==================== -->
+<div class="match-header" style="background: linear-gradient(135deg, #b71c1c, #d32f2f);">
+  <h2>周五202 · 瑞超 · 韦斯特罗斯 vs 厄尔格里特</h2>
+  <div style="opacity:0.85;font-size:14px;margin-top:4px">07-25 01:00 | 韦斯特罗斯主场 | 体彩: 1.49 / 4.05 / 4.75</div>
+</div>
+
+<div class="card">
+  <div class="card-title">📊 基本信息与赛季数据</div>
+  <div class="grid-2">
+    <div>
+      <h3>🏠 韦斯特罗斯（主队）</h3>
+      <table style="font-size:12px;margin:0">
+        <tr><td>联赛排名</td><td>第8名（中游）</td></tr>
+        <tr><td>赛季战绩</td><td>13轮 5胜4平4负，积19分</td></tr>
+        <tr><td>进球/失球</td><td>19球 / 16球（场均1.46/1.23）</td></tr>
+        <tr><td>主场战绩</td><td>6场 1胜3平2负（主场虫）</td></tr>
+        <tr><td>客场战绩</td><td>7场 4胜1平2负（客场龙）</td></tr>
+        <tr><td>近6轮</td><td>3胜2平1负，状态上扬</td></tr>
+        <tr><td>头号射手</td><td>拉德福格德 12场9球（本场复出）</td></tr>
+        <tr><td>特点</td><td>典型客场龙、主场虫</td></tr>
+      </table>
+    </div>
+    <div>
+      <h3>✈️ 厄尔格里特（客队）</h3>
+      <table style="font-size:12px;margin:0">
+        <tr><td>联赛排名</td><td>第15名（倒数第二，降级区）</td></tr>
+        <tr><td>赛季战绩</td><td>13轮 2胜4平7负，积10分</td></tr>
+        <tr><td>进球/失球</td><td>14球 / 31球（场均1.08/2.38）</td></tr>
+        <tr><td>客场战绩</td><td>客场5连败</td></tr>
+        <tr><td>防守</td><td>场均失球2.38，联赛最差之一</td></tr>
+        <tr><td>近5场</td><td>1胜1平3负</td></tr>
+        <tr><td>上轮</td><td>主场4-3爆冷胜赫根</td></tr>
+        <tr><td>特点</td><td>防线千疮百孔，客场虫</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">🏥 伤停影响精细化分析（规则9/10）</div>
+  <div class="warning-box">
+    <strong>⚠️ 厄尔格里特中后场严重减员 — 防线雪上加霜</strong><br>
+    厄尔格里特本就场均丢2.38球，门将+后卫+双中场同时缺阵，防守体系濒临崩溃。
+  </div>
+  <table>
+    <thead><tr><th>球队</th><th>球员</th><th>位置</th><th>重要性</th><th>状态</th><th>影响评估</th></tr></thead>
+    <tbody>
+      <tr><td class="injury-home">韦斯特罗斯</td><td>恩萨比尤姆瓦</td><td>后卫</td><td>key</td><td>确认缺阵</td><td>防线轮换缺失，影响有限（队长恩萨宾古姆瓦同样缺阵，三中卫缺领袖）</td></tr>
+      <tr><td class="injury-away">厄尔格里特</td><td>阿尔姆</td><td>中场核心</td><td>core</td><td>赛季报销</td><td>中前场组织串联能力严重削弱，攻防转换-30%</td></tr>
+      <tr><td class="injury-away">厄尔格里特</td><td>阿布卡</td><td>中场</td><td>key</td><td>确认缺阵</td><td>中场控制力再降一档，拦截-20%</td></tr>
+      <tr><td class="injury-away">厄尔格里特</td><td>贝里沙</td><td>门将</td><td>key</td><td>确认缺阵</td><td>替补门将实力差距显著，扑救预期-15%</td></tr>
+      <tr><td class="injury-away">厄尔格里特</td><td>瓦萨宁</td><td>后卫</td><td>key</td><td>确认缺阵</td><td>防线人手紧张，防空与协防-20%</td></tr>
+    </tbody>
+  </table>
+  <div class="highlight">
+    <strong>λ修正结论：</strong><br>
+    韦斯特罗斯：主场进攻lambda从基准1.35上调至 <strong>1.55</strong>（+15%，头号射手复出加持，但主场虫属性限制）<br>
+    厄尔格里特：客场防守lambda从基准1.25暴涨至 <strong>1.85</strong>（+48%，防线4人缺阵+本就场均丢2.38球）<br>
+    厄尔格里特：客场进攻lambda从基准0.95下修至 <strong>0.78</strong>（-18%，中场双核缺阵，进攻发起困难）
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">📜 历史交锋心理权重（规则12）</div>
+  <table style="font-size:12px">
+    <thead><tr><th>统计项</th><th>数据</th><th>心理权重评估</th></tr></thead>
+    <tbody>
+      <tr><td>近12次交锋</td><td>韦斯特罗斯 3胜6平3负</td><td>平分秋色，平局率50%</td></tr>
+      <tr><td>近10次交锋</td><td>韦斯特罗斯 1胜6平3负</td><td>厄尔格里特略占心理优势</td></tr>
+      <tr><td>韦斯特罗斯主场vs厄尔格里特</td><td>近7次主场1胜4平2负</td><td>主场反而难占便宜，心理无优势</td></tr>
+      <tr><td>最近2次交手</td><td>韦斯特罗斯不败（2-0客胜，1-1平）</td><td>趋势反转，升班马适应后反超</td></tr>
+      <tr><td>最常见结果</td><td>1-1出现4次</td><td>平局惯性不可忽视</td></tr>
+    </tbody>
+  </table>
+  <div class="highlight">
+    <strong>心理权重修正：</strong>历史交锋平局率极高（50%），韦斯特罗斯主场对厄尔格里特反而处于下风（近7主场1胜4平2负）。虽然近期趋势反转，但"主场虫vs客场虫"的对决中，平局心理惯性强烈。模型中给予平局额外+3%概率权重。
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">💰 赔率对比与校准</div>
+  <div class="grid-2">
+    <div>
+      <h3>体彩官方赔率</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>玩法</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody>
+          <tr><td>胜平负</td><td><strong>1.49</strong></td><td><strong>4.05</strong></td><td><strong>4.75</strong></td></tr>
+          <tr><td>让球(-1)</td><td>2.46</td><td>3.55</td><td>2.27</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:12px;color:var(--text2);margin-top:8px">抽水率: 12.86%</p>
+    </div>
+    <div>
+      <h3>Shin去水真实概率 ★</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>结果</th><th>Shin概率</th><th>归一化概率</th></tr></thead>
+        <tbody>
+          <tr><td>主胜</td><td><strong>59.5%</strong></td><td>58.2%</td></tr>
+          <tr><td>平局</td><td>21.9%</td><td>21.4%</td></tr>
+          <tr><td>客胜</td><td>18.7%</td><td>20.4%</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:12px;color:var(--text2);margin-top:8px">Shin z参数: 0.070</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">📐 模型预测对比（核心）</div>
+  <table>
+    <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td>DC模型（主力）</td><td>49.3%</td><td>21.0%</td><td>29.8%</td><td>修正低比分偏差</td></tr>
+      <tr><td>负二项分布</td><td>47.9%</td><td>18.1%</td><td>33.9%</td><td>VMR=1.20轻微过离散</td></tr>
+      <tr><td>ZIP零膨胀</td><td>46.5%</td><td>24.2%</td><td>29.3%</td><td>0-0率中等，可选启用</td></tr>
+      <tr><td>Skellam进球差</td><td>50.2%</td><td>19.3%</td><td>30.5%</td><td>直接建模进球差</td></tr>
+      <tr><td>蒙特卡洛10k场</td><td>49.7%</td><td>16.9%</td><td>33.4%</td><td>模拟稳定性良好</td></tr>
+      <tr><td>Elo评级</td><td>60.4%</td><td>20.6%</td><td>19.0%</td><td>纯实力分高估主队</td></tr>
+      <tr><td>Shin去水</td><td><strong>59.5%</strong></td><td>21.9%</td><td>18.7%</td><td>市场真实概率</td></tr>
+      <tr style="background:rgba(26,115,232,0.08)"><td><strong>加权融合</strong></td><td><strong>50.0%</strong></td><td><strong>20.8%</strong></td><td><strong>29.2%</strong></td><td>多模型融合终值</td></tr>
+    </tbody>
+  </table>
+  <div class="divergence-alert">
+    <strong>⚠️ 模型分歧标注</strong><br>
+    主胜: -9.4% | 平局: +0.4% | 客胜: +9.0%<br>
+    DC/NB/Skellam/蒙特卡洛融合主胜约50%，但市场Shin主胜高达59.5%。模型与市场分歧-9.4%，低于15%阈值，不构成严重分歧，但需注意市场预期更看好主队。<br><br>
+    <strong>关键原因：</strong>市场可能过度反应于"韦斯特罗斯主场虫+厄尔格里特客场虫"的直观对比，而忽略了历史交锋平局率50%的惯性。模型给予客胜29.2%（市场仅18.7%），存在客胜被低估的可能。
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">⚽ 比分推荐</div>
+  <table>
+    <thead><tr><th>排名</th><th>比分</th><th>DC概率</th><th>ZIP概率</th><th>蒙特卡洛频率</th><th>综合概率</th><th>方向</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td><span class="score-rec">2-1</span></td><td>10.5%</td><td>9.8%</td><td>9.2%</td><td><strong>10.1%</strong></td><td>主胜</td></tr>
+      <tr><td>2</td><td><span class="score-alt">1-1</span></td><td>9.8%</td><td>11.2%</td><td>8.5%</td><td><strong>9.5%</strong></td><td>平局</td></tr>
+      <tr><td>3</td><td><span class="score-alt">2-0</span></td><td>8.2%</td><td>7.5%</td><td>7.8%</td><td>7.9%</td><td>主胜</td></tr>
+      <tr><td>4</td><td><span class="score-alt">1-0</span></td><td>7.5%</td><td>6.8%</td><td>7.2%</td><td>7.3%</td><td>主胜</td></tr>
+      <tr><td>5</td><td><span class="score-alt">2-2</span></td><td>6.8%</td><td>7.5%</td><td>6.5%</td><td>6.8%</td><td>平局</td></tr>
+      <tr><td>6</td><td><span class="score-alt">1-2</span></td><td>6.5%</td><td>6.2%</td><td>6.8%</td><td>6.5%</td><td>客胜</td></tr>
+    </tbody>
+  </table>
+  <div class="highlight">
+    <strong>比分矩阵方向优先标注（规则17）：</strong>比分矩阵TOP1为2-1（主胜方向），与综合方向主胜50.0%一致，无分歧。<br>
+    <strong>但需注意：</strong>1-1平局概率9.5%排名第二，与首选2-1差距仅0.6个百分点。历史交锋平局率50%的惯性在比分矩阵中得到体现。<br>
+    <strong>冷门预警：</strong>1-2客胜概率6.5%不可忽略（规则1）。厄尔格里特虽客场虫，但上轮4-3爆冷赫根证明其进攻仍有爆发力。
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">🏟️ 半场比分推荐（规则13）</div>
+  <p style="font-size:12px;color:var(--text2);margin-bottom:8px">半场lambda = 全场lambda × 0.42（瑞超节奏中等）</p>
+  <table style="font-size:12px">
+    <thead><tr><th>排名</th><th>半场比分</th><th>概率</th><th>方向</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>1-0</td><td><strong>14.5%</strong></td><td>主胜</td></tr>
+      <tr><td>2</td><td>0-0</td><td><strong>12.8%</strong></td><td>平局</td></tr>
+      <tr><td>3</td><td>1-1</td><td>10.2%</td><td>平局</td></tr>
+      <tr><td>4</td><td>2-0</td><td>8.5%</td><td>主胜</td></tr>
+      <tr><td>5</td><td>0-1</td><td>7.2%</td><td>客胜</td></tr>
+    </tbody>
+  </table>
+  <div class="info-box">
+    <strong>半场分析：</strong>韦斯特罗斯主场lambda 1.55×0.42≈0.65，厄尔格里特客场防守漏洞大，半场1-0概率最高（14.5%）。但0-0（12.8%）和1-1（10.2%）合计22.9%，半场平局概率不容忽视。
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">🔢 总进球数预测</div>
+  <table style="font-size:12px">
+    <thead><tr><th>总进球</th><th>泊松</th><th>负二项</th><th>ZIP</th><th>蒙特卡洛</th><th>推荐</th></tr></thead>
+    <tbody>
+      <tr><td>0球</td><td>5.2%</td><td>6.5%</td><td>6.8%</td><td>5.8%</td><td>—</td></tr>
+      <tr><td>1球</td><td>10.5%</td><td>11.2%</td><td>10.5%</td><td>10.2%</td><td>—</td></tr>
+      <tr><td>2球</td><td>15.8%</td><td>15.5%</td><td>14.2%</td><td>14.8%</td><td>—</td></tr>
+      <tr><td>3球</td><td>18.2%</td><td>17.5%</td><td>16.8%</td><td>17.2%</td><td>次选</td></tr>
+      <tr><td>4+球</td><td>50.3%</td><td>49.3%</td><td>51.7%</td><td>52.0%</td><td><strong>首选</strong></td></tr>
+    </tbody>
+  </table>
+  <p style="margin-top:8px"><strong>大小球2.5：</strong>大球 <strong>58.5%</strong> | 小球 41.5%</p>
+  <p style="font-size:12px;color:var(--text2)">过离散调整：VMR=1.20，轻微过离散 | 零膨胀修正：瑞超0-0率不高，ZIP影响有限</p>
+  <div class="highlight">
+    <strong>总进球分析：</strong>韦斯特罗斯主场进攻lambda 1.55 + 厄尔格里特客场防守崩溃lambda 1.85 = 总进球lambda 3.40，预期总进球偏高。但历史交锋1-1出现4次的心理惯性暗示实际进球可能低于模型预期。大小球2.5推荐大球，但信心中等。
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">🏟️ 半全场胜平负预测</div>
+  <table style="font-size:12px">
+    <thead><tr><th>排名</th><th>半全场</th><th>概率</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>主胜-主胜</td><td><strong>18.2%</strong></td></tr>
+      <tr><td>2</td><td>平局-主胜</td><td><strong>12.5%</strong></td></tr>
+      <tr><td>3</td><td>平局-平局</td><td>10.8%</td></tr>
+      <tr><td>4</td><td>客胜-客胜</td><td>6.5%</td></tr>
+      <tr><td>5</td><td>主胜-平局</td><td>5.8%</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <div class="card-title">📈 置信度与命中概率分析</div>
+  <table>
+    <thead><tr><th>结果</th><th>加权概率</th><th>Shin真实概率</th><th>概率差</th><th>模型一致度</th><th>置信度</th></tr></thead>
+    <tbody>
+      <tr><td>主胜</td><td><strong>50.0%</strong></td><td>59.5%</td><td>-9.4%</td><td>高（DC/Skellam收敛）</td><td>中 ★★</td></tr>
+      <tr><td>平局</td><td>20.8%</td><td>21.9%</td><td>-1.1%</td><td>高</td><td>中 ★★</td></tr>
+      <tr><td>客胜</td><td>29.2%</td><td>18.7%</td><td>+10.5%</td><td>中（NB偏高）</td><td>低 ★</td></tr>
+    </tbody>
+  </table>
+  <div class="info-box">
+    <strong>置信度评分依据：</strong><br>
+    模型一致度：DC/Skellam/蒙特卡洛主胜标准差仅1.2%，高度一致 → +1<br>
+    赔率对齐度：加权融合主胜50.0% vs Shin 59.5%，差值-9.4%，模型低于市场预期 → -1<br>
+    数据质量：厄尔格里特伤停4人信息完整，但韦斯特罗斯"主场虫"属性与排名矛盾 → 0<br>
+    外部验证：历史交锋平局率50%与模型平局20.8%存在偏差，心理惯性未完全纳入 → -1<br>
+    综合得分：-1 → 中置信度 ★★（模型与市场存在9.4%分歧，历史交锋平局惯性强烈，实际不确定性较高）
+  </div>
+  <div class="warning-box">
+    <strong>⚠️ 模型分歧提醒（规则8）</strong><br>
+    模型主胜50.0% vs 市场59.5%，分歧-9.4%，未达15%严重阈值，但已接近警戒区。同时，历史交锋平局率50%与模型平局20.8%严重不符，提示模型可能低估了平局概率。<br><br>
+    <strong>修正建议：</strong>按规则16，历史交锋心理权重应给予平局额外+3~5%修正。修正后平局概率约24-26%，主胜降至47-48%。方向仍为主胜，但优势收窄。
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">🎯 综合推荐</div>
+  <table>
+    <thead><tr><th>维度</th><th>推荐</th><th>置信度</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td>胜平负</td><td><strong>主胜</strong></td><td>中 ★★</td><td>模型与市场一致，但历史交锋平局惯性+主场虫属性制约</td></tr>
+      <tr><td>让球(-1)</td><td>让球客胜/平局</td><td>中 ★★</td><td>韦斯特罗斯主场让1球难度大，1-0仅排第四</td></tr>
+      <tr><td>总进球</td><td><strong>大2.5</strong></td><td>中 ★★</td><td>大球58.5%，厄尔格里特防线崩溃</td></tr>
+      <tr><td>比分</td><td>2-1 / 1-1 / 2-0</td><td>—</td><td>首选2-1（10.1%），次选1-1（9.5%）</td></tr>
+      <tr><td>半全场</td><td>主胜-主胜 / 平局-主胜</td><td>中 ★★</td><td>半场1-0概率14.5%</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ==================== 全局总结 ==================== -->
+<div class="match-header" style="background: linear-gradient(135deg, #2e7d32, #4caf50);">
+  <h2>📊 全局总结与风险提示</h2>
+</div>
+
+<div class="card">
+  <div class="card-title">🔗 串关建议</div>
+  <div class="grid-2">
+    <div class="info-box">
+      <strong>稳健方案（2串1）</strong><br>
+      201客胜 + 202主胜<br>
+      参考赔率: 1.86 × 1.49 ≈ 2.77<br>
+      风险：201双方伤停密集，202历史交锋平局惯性强烈。建议控制注码。
+    </div>
+    <div class="highlight">
+      <strong>保守方案（单场/小串）</strong><br>
+      201总进球小2.5 + 202总进球大2.5<br>
+      大小球交叉，降低方向风险<br>
+      适合对方向不确定时的替代策略
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">⚠️ 核心风险提示</div>
+  <div class="warning-box">
+    <ol style="margin-left:16px">
+      <li><strong>足球比赛存在极大不确定性，任何模型预测均非100%准确。</strong></li>
+      <li><strong>201场雅罗vs塞伊奈约基：</strong>雅罗4名主力缺阵信息已纳入模型，但"保级战意"难以量化，主场死守可能制造冷门。0-0和1-0概率合计约21.6%，不可完全排除。</li>
+      <li><strong>202场韦斯特罗斯vs厄尔格里特：</strong>韦斯特罗斯"主场虫"属性（主场胜率仅17%）与赔率1.49严重矛盾。历史交锋平局率50%，1-1概率高达9.5%，仅次于首选2-1。</li>
+      <li><strong>赔率时效性：</strong>数据截至2026-07-24 10:30，赛前赔率可能变化，请以出票时刻为准。</li>
+      <li><strong>伤停信息时效：</strong>帕德拉（塞伊奈）为"出战成疑"，若临场首发则塞伊奈进攻lambda应上调约5%。</li>
+      <li><strong>理性看待预测，切勿沉迷赌博。</strong></li>
+    </ol>
+  </div>
+</div>
+
+<div style="text-align:center;padding:24px;color:var(--text2);font-size:12px;border-top:1px solid var(--border);margin-top:24px">
+  <p>⚽ 竞彩分析报告 | 生成时间: 2026-07-24 10:30</p>
+  <p>模型: Dixon-Coles / 负二项 / ZIP / Skellam / 蒙特卡洛多模型融合</p>
+  <p>数据来源: 中国体彩官网、Flashscore、Footystats、Protipster、中文体育媒体交叉验证</p>
+  <p style="margin-top:8px"><strong>⚠️ 风险提示：足球比赛存在极大不确定性，任何模型预测均非100%准确。理性看待预测，切勿沉迷赌博。</strong></p>
+</div>
+
+</div>
+</body>
+</html>

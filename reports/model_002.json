@@ -1,0 +1,133 @@
+﻿{
+ "label": "002东京FC",
+ "lambda": {
+  "home": 1.85,
+  "away": 1.0
+ },
+ "dc": {
+  "home": 55.9,
+  "draw": 25.4,
+  "away": 18.8
+ },
+ "skellam": {
+  "home": 57.3,
+  "draw": 22.6,
+  "away": 20.1
+ },
+ "fused": {
+  "home": 56.3,
+  "draw": 24.5,
+  "away": 19.2
+ },
+ "score_top10": [
+  {
+   "score": "1-1",
+   "prob": 12.1
+  },
+  {
+   "score": "2-0",
+   "prob": 9.9
+  },
+  {
+   "score": "2-1",
+   "prob": 9.9
+  },
+  {
+   "score": "1-0",
+   "prob": 9.3
+  },
+  {
+   "score": "0-0",
+   "prob": 7.2
+  },
+  {
+   "score": "3-0",
+   "prob": 6.1
+  },
+  {
+   "score": "3-1",
+   "prob": 6.1
+  },
+  {
+   "score": "1-2",
+   "prob": 5.4
+  },
+  {
+   "score": "2-2",
+   "prob": 5.0
+  },
+  {
+   "score": "0-1",
+   "prob": 4.4
+  }
+ ],
+ "ttg_top5": [
+  {
+   "goals": 2,
+   "prob": 24.9
+  },
+  {
+   "goals": 3,
+   "prob": 22.3
+  },
+  {
+   "goals": 4,
+   "prob": 15.9
+  },
+  {
+   "goals": 1,
+   "prob": 13.7
+  },
+  {
+   "goals": 5,
+   "prob": 9.1
+  }
+ ],
+ "htft_top5": [
+  {
+   "htft": "主-主",
+   "prob": 33.0
+  },
+  {
+   "htft": "平-主",
+   "prob": 20.5
+  },
+  {
+   "htft": "平-平",
+   "prob": 14.4
+  },
+  {
+   "htft": "客-客",
+   "prob": 9.9
+  },
+  {
+   "htft": "平-客",
+   "prob": 8.6
+  }
+ ],
+ "ht_score_top3": [
+  {
+   "score": "0-0",
+   "prob": 31.5
+  },
+  {
+   "score": "1-0",
+   "prob": 22.2
+  },
+  {
+   "score": "0-1",
+   "prob": 11.4
+  }
+ ],
+ "hcap_m1": {
+  "home_win": 28.1,
+  "draw": 35.7,
+  "away_win": 36.2
+ },
+ "hcap": {
+  "line": -1.0,
+  "home_win": 33.1,
+  "draw": 22.8,
+  "away_win": 44.1
+ }
+}

@@ -1,0 +1,414 @@
+{
+  "date": "2026-08-06",
+  "day": "wednesday",
+  "source": "wednesday_analysis.py + HTML报告",
+  "html_report": "reports/html/wednesday_20260806_analysis.html",
+  "matches": [
+    {
+      "match_id": "002",
+      "home_team": "AGF Aarhus",
+      "home_team_cn": "奥胡斯",
+      "away_team": "Sabah FK",
+      "away_team_cn": "萨巴赫",
+      "competition": "欧冠资格赛Q3首回合",
+      "kickoff": "2026-08-06 01:00",
+      "stadium": "Randers FC Stadium (借用场地)",
+      "city": "兰德斯, 丹麦",
+      "weather": "17-18°C 晴朗 无降雨",
+      "referee": "信息缺失",
+      "lambda_home": 1.35,
+      "lambda_away": 0.85,
+      "lambda_total": 2.20,
+      "lambda_home_note": "借用场地→主场加成从1.16降至~1.05; 中场Justsen伤缺→×0.90",
+      "lambda_away_note": "阿塞拜疆联赛水平低→防守数据打折; 场均xG~1.0",
+      "model_results": {
+        "dixon_coles": {
+          "home_win": 0.5012,
+          "draw": 0.2464,
+          "away_win": 0.2524,
+          "hafu_home_win": 0.2312,
+          "hafu_draw": 0.2700,
+          "hafu_away_win": 0.4988
+        },
+        "poisson": {
+          "home_win": 0.4847,
+          "draw": 0.2794,
+          "away_win": 0.2359
+        },
+        "skellam": {
+          "home_win": 0.4847,
+          "draw": 0.2794,
+          "away_win": 0.2359
+        },
+        "monte_carlo": {
+          "home_win": 0.4759,
+          "draw": 0.2860,
+          "away_win": 0.2381,
+          "ttg": {
+            "0": 0.1124,
+            "1": 0.2374,
+            "2": 0.2715,
+            "3": 0.1990,
+            "4": 0.1105,
+            "5": 0.0455,
+            "6": 0.0160,
+            "7+": 0.0077
+          },
+          "htft": {
+            "胜胜": 0.2681,
+            "平平": 0.1958,
+            "平胜": 0.1826,
+            "负负": 0.1211,
+            "平负": 0.1049,
+            "胜平": 0.0469,
+            "负平": 0.0433,
+            "负胜": 0.0252,
+            "胜负": 0.0121
+          }
+        },
+        "model_std": {
+          "home_win": 0.013,
+          "draw": 0.020,
+          "away_win": 0.008
+        },
+        "consistency": "高度一致"
+      },
+      "top_scores_dc": [
+        {"score": "1:0", "prob": 0.1661},
+        {"score": "0:1", "prob": 0.1107},
+        {"score": "1:1", "prob": 0.1106},
+        {"score": "2:0", "prob": 0.1010},
+        {"score": "0:0", "prob": 0.0943},
+        {"score": "2:1", "prob": 0.0858},
+        {"score": "1:2", "prob": 0.0540},
+        {"score": "3:0", "prob": 0.0454},
+        {"score": "0:2", "prob": 0.0400},
+        {"score": "3:1", "prob": 0.0386}
+      ],
+      "top_scores_mc": [
+        {"score": "1:0", "prob": 0.1424},
+        {"score": "1:1", "prob": 0.1330},
+        {"score": "0:0", "prob": 0.1124},
+        {"score": "2:0", "prob": 0.0974},
+        {"score": "0:1", "prob": 0.0950},
+        {"score": "2:1", "prob": 0.0893},
+        {"score": "1:2", "prob": 0.0543},
+        {"score": "3:0", "prob": 0.0440},
+        {"score": "0:2", "prob": 0.0411},
+        {"score": "3:1", "prob": 0.0391}
+      ],
+      "half_scores_top3": [
+        {"score": "0:0", "prob": 0.386},
+        {"score": "1:0", "prob": 0.236},
+        {"score": "0:1", "prob": 0.152}
+      ],
+      "odds_had": {
+        "home_win": 1.57,
+        "draw": 3.65,
+        "away_win": 4.60
+      },
+      "odds_hafu": {
+        "handicap": -1,
+        "home_win": 2.80,
+        "draw": 3.40,
+        "away_win": 2.09
+      },
+      "odds_crs": {
+        "1:0": 6.50,
+        "2:1": 7.50,
+        "1:1": 7.00,
+        "2:0": 7.50,
+        "0:0": 9.50,
+        "0:1": 12.00,
+        "3:0": 11.00,
+        "3:1": 13.00,
+        "0:2": 23.00,
+        "1:2": 15.00
+      },
+      "odds_htft": {
+        "胜胜": 2.48,
+        "胜平": 15.00,
+        "胜负": 34.00,
+        "平胜": 4.35,
+        "平平": 6.50,
+        "平负": 11.00,
+        "负胜": 26.00,
+        "负平": 15.00,
+        "负负": 12.00
+      },
+      "odds_ttg": {
+        "0球": 9.50,
+        "1球": 5.50,
+        "2球": 3.60,
+        "3球": 3.55,
+        "4球": 5.50,
+        "5球": 9.50,
+        "6球": 17.00,
+        "7+球": 24.00
+      },
+      "injuries_home": [
+        {"player": "Mads Justsen", "position": "中场", "status": "伤缺", "source": "Sportsmole", "impact": "主力中场缺阵"}
+      ],
+      "injuries_away": [],
+      "injuries_note": "萨巴赫伤停信息未找到官方来源, 以赛前首发名单为准",
+      "support_rate": {
+        "home_win": 0.62,
+        "draw": 0.18,
+        "away_win": 0.20
+      },
+      "hafu_support_rate": {
+        "home_win": 0.29,
+        "draw": 0.26,
+        "away_win": 0.45
+      },
+      "fundamental_adjusted_prob": {
+        "home_win": 0.75,
+        "draw": 0.15,
+        "away_win": 0.10
+      },
+      "recommendation": {
+        "had": {"primary": "主胜/平 75%", "secondary": "客胜 25%"},
+        "hafu": {"primary": "让负 49.9% (2.09)", "secondary": "让平 27.0% (3.40)"},
+        "crs": {"primary": "1:0 (16.6%)", "secondary": "1:1 (11.1%)", "alternative": "2:1", "cold": "0:1"},
+        "ttg": {"primary": "2球 (3.60, 27.2%)", "secondary": "3球 (3.55, 19.9%)", "alternative": "1球 (5.50)"},
+        "htft": {"primary": "胜胜 (2.48, 28.4%)", "secondary": "平胜 (4.35, 18.0%)", "alternative": "平平 (6.50, 18.3%)"},
+        "half_score": {"primary": "0:0 (38.6%)", "secondary": "1:0 (23.6%)", "alternative": "0:1 (15.2%)"}
+      },
+      "confidence": "★★ 中",
+      "confidence_reason": "模型一致度高(σ=0.013)但基本面与市场存在分歧(概率差-7.8%)，萨巴赫防守数据来自低级别对手需打折",
+      "rule34_applied": true,
+      "rule34_note": "欧冠TTG首选2球/3球(非1球/2球)"
+    },
+    {
+      "match_id": "003",
+      "home_team": "Fenerbahçe",
+      "home_team_cn": "费内巴切",
+      "away_team": "Sturm Graz",
+      "away_team_cn": "格拉茨风暴",
+      "competition": "欧冠资格赛Q3首回合",
+      "kickoff": "2026-08-06 02:00",
+      "stadium": "Şükrü Saracoğlu Stadium",
+      "city": "伊斯坦布尔, 土耳其",
+      "weather": "29-30°C 晴朗 无降雨",
+      "referee": "Chris Kavanagh (英格兰)",
+      "lambda_home": 1.75,
+      "lambda_away": 0.85,
+      "lambda_total": 2.60,
+      "lambda_home_note": "xG 1.91 + 土超主场优势1.22 + 体能/战意上修×1.05",
+      "lambda_away_note": "xG~1.3 × Kiteishvili伤缺0.75 × 体能/联赛分心×0.95",
+      "model_results": {
+        "dixon_coles": {
+          "home_win": 0.6010,
+          "draw": 0.2050,
+          "away_win": 0.1940,
+          "hafu_home_win": 0.3330,
+          "hafu_draw": 0.2680,
+          "hafu_away_win": 0.3990
+        },
+        "poisson": {
+          "home_win": 0.5870,
+          "draw": 0.2330,
+          "away_win": 0.1800
+        },
+        "skellam": {
+          "home_win": 0.5870,
+          "draw": 0.2330,
+          "away_win": 0.1800
+        },
+        "monte_carlo": {
+          "home_win": 0.5900,
+          "draw": 0.2330,
+          "away_win": 0.1760,
+          "ttg": {
+            "0": 0.072,
+            "1": 0.195,
+            "2": 0.255,
+            "3": 0.217,
+            "4": 0.156,
+            "5": 0.065,
+            "6": 0.022,
+            "7+": 0.018
+          },
+          "htft": {
+            "胜胜": 0.357,
+            "平胜": 0.206,
+            "平平": 0.147,
+            "负负": 0.099,
+            "平负": 0.072,
+            "胜平": 0.042,
+            "负平": 0.030,
+            "负胜": 0.025,
+            "胜负": 0.022
+          }
+        },
+        "model_std": {
+          "home_win": 0.008,
+          "draw": 0.017,
+          "away_win": 0.009
+        },
+        "consistency": "高度一致",
+        "market_normalized": {
+          "home_win": 0.727,
+          "draw": 0.172,
+          "away_win": 0.101
+        },
+        "prob_diff_vs_market": {
+          "home_win": -0.134,
+          "draw": 0.052,
+          "away_win": 0.082
+        }
+      },
+      "top_scores_dc": [
+        {"score": "1:0", "prob": 0.144},
+        {"score": "2:0", "prob": 0.114},
+        {"score": "2:1", "prob": 0.097},
+        {"score": "1:1", "prob": 0.096},
+        {"score": "0:1", "prob": 0.077},
+        {"score": "3:0", "prob": 0.052},
+        {"score": "0:0", "prob": 0.048},
+        {"score": "3:1", "prob": 0.041},
+        {"score": "1:2", "prob": 0.033},
+        {"score": "2:2", "prob": 0.025}
+      ],
+      "half_scores_top3": [
+        {"score": "0:0", "prob": 0.324},
+        {"score": "1:0", "prob": 0.258},
+        {"score": "0:1", "prob": 0.131}
+      ],
+      "odds_had": {
+        "home_win": 1.22,
+        "draw": 5.15,
+        "away_win": 8.75
+      },
+      "odds_hafu": {
+        "handicap": -1,
+        "home_win": 1.77,
+        "draw": 3.70,
+        "away_win": 3.40
+      },
+      "odds_crs": {
+        "1:0": 7.50,
+        "2:0": 6.50,
+        "2:1": 7.50,
+        "1:1": 8.75,
+        "3:0": 8.00,
+        "3:1": 9.00,
+        "0:0": 19.00,
+        "0:1": 23.00,
+        "1:2": 23.00,
+        "2:2": 15.50
+      },
+      "odds_htft": {
+        "胜胜": 1.74,
+        "胜平": 22.00,
+        "胜负": 75.00,
+        "平胜": 4.00,
+        "平平": 8.75,
+        "平负": 19.00,
+        "负胜": 23.00,
+        "负平": 22.00,
+        "负负": 15.50
+      },
+      "odds_ttg": {
+        "0球": 19.00,
+        "1球": 6.40,
+        "2球": 4.10,
+        "3球": 3.65,
+        "4球": 4.70,
+        "5球": 7.80,
+        "6球": 13.00,
+        "7+球": 17.00
+      },
+      "injuries_home": [
+        {"player": "Talisca", "position": "前锋/前腰", "status": "伤势评估中(大概率出战)", "source": "Sportsmole", "impact": "核心(2场2球)"},
+        {"player": "Nelson Semedo", "position": "右后卫", "status": "伤势评估中", "source": "Sportsmole", "impact": "主力"},
+        {"player": "Vedat Muriqi", "position": "前锋", "status": "肌肉伤(存疑)", "source": "Sportsmole", "impact": "主力"},
+        {"player": "Marco Asensio", "position": "前腰", "status": "左膝旧伤隐患", "source": "Sportsmole", "impact": "主力"}
+      ],
+      "injuries_away": [
+        {"player": "Otar Kiteishvili", "position": "前腰", "status": "伤缺", "source": "Sportsmole", "impact": "头号射手(15球)"},
+        {"player": "Amady Camara", "position": "中场", "status": "大腿伤缺", "source": "Sportsmole", "impact": "主力"},
+        {"player": "Luca Weinhandl", "position": "中场", "status": "伤缺", "source": "Sportsmole", "impact": "主力"},
+        {"player": "Nelson Weiper", "position": "前锋", "status": "伤缺", "source": "Sportsmole", "impact": "轮换"}
+      ],
+      "injuries_note": "格拉茨风暴4人伤缺含头号射手Kiteishvili→lambda_away×0.75; 费内巴切Talisca大概率出战; 双方合计约6人伤停集中中前场→lambda_total额外下修5%",
+      "support_rate": {
+        "home_win": 0.54,
+        "draw": 0.16,
+        "away_win": 0.30
+      },
+      "hafu_support_rate": {
+        "home_win": 0.51,
+        "draw": 0.21,
+        "away_win": 0.28
+      },
+      "fundamental_adjusted_prob": {
+        "home_win": 0.62,
+        "draw": 0.22,
+        "away_win": 0.16
+      },
+      "recommendation": {
+        "had": {"primary": "主胜 62% (1.22)", "secondary": "平 22% (5.15)"},
+        "hafu": {"primary": "让负 39.9% (3.40)", "secondary": "让胜 33.3% (1.77)"},
+        "crs": {"primary": "1:0 (14.4%)", "secondary": "2:0 (11.4%)", "alternative": "2:1", "cold": "1:1"},
+        "ttg": {"primary": "2球 (4.10, 25.5%)", "secondary": "3球 (3.65, 21.7%)", "alternative": "4球 (4.70)"},
+        "htft": {"primary": "胜胜 (1.74, 36.4%)", "secondary": "平胜 (4.00, 19.4%)", "alternative": "平平 (8.75, 14.1%)"},
+        "half_score": {"primary": "0:0 (32.4%)", "secondary": "1:0 (25.8%)", "alternative": "0:1 (13.1%)"}
+      },
+      "confidence": "★★ 中",
+      "confidence_reason": "模型一致度极高(σ=0.008)，但模型与市场严重分歧(概率差-13.4%接近15%阈值)。规则8触发：不可包装为博胆",
+      "rule8_triggered": true,
+      "rule8_note": "模型与市场概率差接近15%阈值，不得包装为博胆推荐",
+      "rule21_checked": true,
+      "rule21_note": "反热门检查：新援磨合+格拉茨欧冠正赛经验+历史1-1平局",
+      "rule34_applied": true,
+      "rule34_note": "欧冠TTG首选2球/3球(非1球/2球)"
+    }
+  ],
+  "parlay_suggestions": {
+    "2串1_aggressive": "002让负(2.09) × 003让负(3.40) = 7.11",
+    "2串1_stable": "002主胜/平(1.57或3.65) × 003主胜(1.22) = 1.92~4.46",
+    "2串1_cold": "002平(3.65) × 003让负(3.40) = 12.41"
+  },
+  "rules_applied": [
+    "规则5: 补时进球场景分析",
+    "规则8: 模型与市场严重分歧处理(003触发)",
+    "规则9: 伤停折算精细化(Kiteishvili×0.75)",
+    "规则12: 历史交锋心理权重",
+    "规则13: 半场比分推荐输出",
+    "规则21: 反热门偏误校正(003)",
+    "规则24: 加载联赛特点数据",
+    "规则25: 中文平台信息禁用于lambda修正",
+    "规则26: 场地天气新闻必须包含",
+    "规则27: 战意心理与体能赛程分析",
+    "规则28: 基本面>模型>市场",
+    "规则32: 强制5步伤停核查流程",
+    "规则33: 6维度推荐输出",
+    "规则34: 欧冠总进球修正(2球/3球)"
+  ],
+  "data_sources": [
+    "Sportsmole (伤停/前瞻)",
+    "头条创作者 (网友意见, 仅参考)",
+    "Sportskeeda (预测参考)",
+    "tips.gg / LionTips (外网预测)",
+    "中国体彩官方 (赔率)",
+    "FBref/WhoScored (xG/统计数据)",
+    "UEFA官网 (欧冠赛制)",
+    "联赛JSON知识库 (丹麦超/土超/奥超/欧冠)"
+  ],
+  "checklist_32": {
+    "step1_official_injury_search": true,
+    "step2_fotmob_sportsmole_verify": true,
+    "step3_chinese_platform_auxiliary": true,
+    "step4_injury_impact_assessment": true,
+    "step5_injuries_field_filled": true,
+    "check1_team_official_checked": true,
+    "check2_cross_verified": true,
+    "check3_chinese_filtered": true,
+    "check4_lambda_adjusted": true,
+    "check5_injuries_not_empty": true,
+    "check6_confidence_adjusted": true,
+    "check7_rule34_applied": true,
+    "check8_6dim_output": true
+  }
+}

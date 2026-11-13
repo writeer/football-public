@@ -1,0 +1,203 @@
+{
+    "league_info": {
+        "name_cn": "法国甲级联赛",
+        "name_en": "Ligue 1",
+        "country": "法国",
+        "country_code": "FR",
+        "level": "顶级",
+        "num_teams": 20,
+        "format": "双循环，38轮",
+        "season_period": "8月-次年5月（跨年）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.ligue1.com",
+        "governing_body": "法国职业足球联盟（LFP）",
+        "cross_league_level": "L1",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.68,
+        "draw_rate": 0.273,
+        "home_win_rate": 0.412,
+        "away_win_rate": 0.315,
+        "over_2_5_rate": 0.52,
+        "under_2_5_rate": 0.48,
+        "btts_rate": 0.5,
+        "top_scores": [
+            {
+                "score": "2-1",
+                "frequency": 0.098,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.088,
+                "direction": "平局"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.078,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-0",
+                "frequency": 0.062,
+                "direction": "平局"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.06,
+                "direction": "主胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.062,
+            "1_goal": 0.14,
+            "2_goals": 0.26,
+            "3_goals": 0.24,
+            "4_goals": 0.18,
+            "5_plus_goals": 0.118
+        },
+        "avg_home_goals": 1.48,
+        "avg_away_goals": 1.2,
+        "home_advantage_factor": 1.15,
+        "ht_draw_rate": 0.393,
+        "ht_draw_rate_note": "法甲半场平局率。2026-09-12核算：football-data.co.uk官方逐场半场比分，5季合并1678场→0.3933；单季2025/26=0.3954。thefishy.uk(2025/26)得0.3954，验证一致。属中高半场平局档(0.35-0.40)，lambda_ht系数0.42。",
+        "ht_draw_rate_source": [
+            "https://www.football-data.co.uk/mmz4281/2526/F1.csv",
+            "https://www.thefishy.uk/leaguetable.php?table=34&season=23"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "中高(0.35-0.40)",
+        "ht_draw_rate_confidence": "高(官方逐场半场比分/交叉验证一致)",
+        "internal_sample": {
+            "source": "memory/backtests 历史归档去重统计（reports/data/league_result_distribution.json）",
+            "as_of": "2026-09-13",
+            "matches": 13,
+            "home_win": 5,
+            "draw": 4,
+            "away_win": 4,
+            "home_win_rate": 0.385,
+            "draw_rate": 0.308,
+            "away_win_rate": 0.308,
+            "note": "样本偏小（13场）；公开口径法甲平局率通常25-28%，非全球最高；每轮回测须更新，若回落至26%以下须重评上行幅度"
+        }
+    },
+    "match_style": {
+        "tactical_character": "高强度对抗、快节奏转换。注重身体对抗和整体性，年轻球员培养体系出色（姆巴佩等出自法甲青训）。近年大巴黎垄断格局被打破，竞争性提升。",
+        "tempo": "中快",
+        "physicality": "高",
+        "technical_focus": "高",
+        "var_usage": "2018-19赛季引入VAR，使用频率适中，争议较少。",
+        "key_trends": [
+            "大巴黎垄断格局近年被打破",
+            "年轻球员外流严重但青训持续输出",
+            "防守反击+定位球是中下游主要武器",
+            "非洲球员占比高，对抗激烈"
+        ],
+        "style_tags": [
+            "身体对抗",
+            "年轻化",
+            "反击",
+            "非洲元素"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 4.2,
+        "avg_red_cards": 0.2,
+        "avg_penalties": 0.26,
+        "referee_style": "法甲裁判尺度中等，对犯规出牌积极。因对抗激烈，红牌率五大联赛偏高。",
+        "first_half_stoppage_avg": 2.3,
+        "second_half_stoppage_avg": 5.5,
+        "stoppage_note": "补时中等偏长，因对抗激烈导致治疗时间多。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大联赛级别假赛",
+                "year": "-",
+                "description": "法甲整体廉洁度较高。"
+            }
+        ],
+        "discipline_features": "红牌停赛1-3场，黄牌累积5张停1场。",
+        "official_rules": "IFAB规则+法甲特别规则。DNCG对俱乐部财务有严格审查。",
+        "integrity_rating": "高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价法甲'水平不如五大联赛其他四个'，但'近年竞争性提升'。彩民认为'法甲大小球适中'，'客场冷门多'，'法甲无强队、除巴黎外谁都能赢谁'（用户观察，2026-09-13沉淀为规则69）。",
+        "betting_market": {
+            "market_efficiency": "高",
+            "liquidity": "高",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "高",
+        "upset_rule": {
+            "rule_name": "规则22-L1法甲冷门修正",
+            "added_date": "2026-09-09",
+            "description": "法甲冷门多，除非大巴黎主场，否则都有爆冷可能",
+            "confidence_downgrade": "除PSG主场外，置信度下降一级（★★★→★★、★★→★）",
+            "report_marking": "法甲联赛场次标明[法甲]；跨联赛赛事有法甲球队参与时，球队名称后标明(法甲)",
+            "psg_home_exception": true,
+            "draw_uplift_added": "2026-09-13：新增规则69——非PSG场次平局上修（中游vs中游+8~10%、中上游vs中下游+6~8%、传统强队vs中下游+5~7%）"
+        },
+        "jingcai_tips": [
+            "法甲除大巴黎外平局上修：中游vs中游+8~10%、中上游vs中下游+6~8%、传统强队vs中下游+5~7%（规则69）",
+            "法甲无强队（除PSG）：PSG以外集团水平接近，平局与爆冷同时偏高",
+            "法甲冷门多，除大巴黎主场外均有爆冷可能（规则22-L1）",
+            "除PSG主场外，置信度下降一级",
+            "法甲客场冷门频率偏高",
+            "大巴黎客场偶有翻车",
+            "里昂马赛德比进球偏多",
+            "保级队主场爆冷能力强",
+            "赛季初球队状态不稳定"
+        ],
+        "common_sayings": [
+            "法甲看巴黎",
+            "法甲冷门多",
+            "客场冷门多",
+            "法甲差一档"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-09-13",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    },
+    "rule_69": {
+        "rule_name": "规则69 法甲非大巴黎场次平局上修",
+        "added_date": "2026-09-13",
+        "trigger_observation": "法甲无强队，除了大巴黎，水平都差不多，平局最多；法甲除大巴黎外平局还需要上修",
+        "draw_uplift": {
+            "mid_vs_mid": {
+                "rank_gap_max": 6,
+                "uplift": "+8~10%"
+            },
+            "upper_mid_vs_lower_mid": {
+                "uplift": "+6~8%"
+            },
+            "traditional_strong_vs_lower_mid": {
+                "teams": [
+                    "摩纳哥",
+                    "里昂",
+                    "马赛",
+                    "里尔"
+                ],
+                "uplift": "+5~7%"
+            },
+            "involving_psg": {
+                "uplift": "0（不上修，实力断层）"
+            }
+        },
+        "stacking": "与规则63单关上修可叠加，累计上限+18%；与规则57不叠加（法甲为甲级联赛）；与规则66可共存（全场vs半场维度不同）",
+        "post_check": "上修后须复核平局是否进入次选位（联动L096：次选位不得默认给客胜）",
+        "enforced_by": "总控强制走查\"是否涉及PSG\"，非PSG场次强制执行（规则64职责清单）",
+        "honesty_note": "上行幅度来自用户长期观察+13场内部样本，属方向性证据级别，非公开统计定论"
+    }
+}

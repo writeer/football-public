@@ -1,0 +1,150 @@
+{
+    "league_info": {
+        "name_cn": "日本职业足球联赛",
+        "name_en": "J1 League",
+        "country": "日本",
+        "country_code": "JP",
+        "level": "顶级",
+        "num_teams": 20,
+        "format": "双循环，38轮",
+        "season_period": "2月-12月（不跨年）",
+        "is_cross_year": false,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.jleague.co",
+        "governing_body": "日本职业足球联盟（JLeague）",
+        "cross_league_level": "L3",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.52,
+        "draw_rate": 0.26,
+        "home_win_rate": 0.42,
+        "away_win_rate": 0.32,
+        "over_2_5_rate": 0.46,
+        "under_2_5_rate": 0.54,
+        "btts_rate": 0.48,
+        "top_scores": [
+            {
+                "score": "1-1",
+                "frequency": 0.088,
+                "direction": "平局"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.082,
+                "direction": "主胜"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.075,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-0",
+                "frequency": 0.068,
+                "direction": "平局"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.058,
+                "direction": "主胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.068,
+            "1_goal": 0.17,
+            "2_goals": 0.27,
+            "3_goals": 0.23,
+            "4_goals": 0.16,
+            "5_plus_goals": 0.102
+        },
+        "avg_home_goals": 1.38,
+        "avg_away_goals": 1.14,
+        "home_advantage_factor": 1.25,
+        "ht_draw_rate": 0.534,
+        "ht_home_win_rate": 0.35,
+        "ht_away_win_rate": 0.275,
+        "ht_note": "日职半场平局率较高（约35-40%），高于英超/英冠。战术纪律强、上半场偏谨慎，下半场节奏加快。半全场'平胜'/'平平'概率高于欧洲联赛。",
+        "ht_draw_rate_note": "日职半场平局率。2026-09-12核算：thefishy.uk '1st Half'半场表(2025 J1, table=71)，ΣD=406/ΣP=760 → 0.5342（380场，20队；Machida 38场18平%D=47自洽）。独立佐证：FootyStats各队'Draw % 1st Half'取值为40%-65%（均值≈53%）。**修正原值0.375（明显偏低）**：日职实为高半场平局档(≥0.40)，lambda_ht系数0.38，半全场首选应含'平'。",
+        "ht_draw_rate_source": [
+            "https://www.thefishy.uk/leaguetable.php?table=71&season=23",
+            "https://footystats.org/japan/yokohama-fc-vs-kashima-antlers-h2h-stats"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "高(≥0.40)",
+        "ht_draw_rate_confidence": "高(半场积分表,与官方6联赛完全一致验证)"
+    },
+    "match_style": {
+        "tactical_character": "战术纪律极强，身体对抗中等。川崎前锋、横滨水手、鹿岛鹿角是传统强队。球迷文化浓厚，球场氛围好。注重整体配合和位置感，比赛节奏中等。",
+        "tempo": "中",
+        "physicality": "中",
+        "technical_focus": "高",
+        "var_usage": "2019赛季引入VAR。",
+        "key_trends": [
+            "战术纪律极强",
+            "川崎/横滨/鹿岛传统强队",
+            "球迷文化浓厚",
+            "近年竞争格局更加开放"
+        ],
+        "style_tags": [
+            "战术纪律",
+            "均衡",
+            "球迷文化",
+            "位置感"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.95,
+        "avg_red_cards": 0.15,
+        "avg_penalties": 0.24,
+        "referee_style": "裁判尺度中等偏严，注重比赛纪律。",
+        "first_half_stoppage_avg": 2.1,
+        "second_half_stoppage_avg": 5.2,
+        "stoppage_note": "补时中等。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "J联赛整体廉洁度极高。"
+            }
+        ],
+        "discipline_features": "黄牌累积5张停1场。",
+        "official_rules": "IFAB规则+J联赛特别规则。",
+        "integrity_rating": "极高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价J联赛'战术素养高'，'小球多'。彩民认为'客队不轻易放弃'，'平局需关注'。",
+        "betting_market": {
+            "market_efficiency": "高",
+            "liquidity": "高",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "高",
+        "jingcai_tips": [
+            "J联赛小球多，UNDER 2.5是常规选择",
+            "客队不放弃导致客胜率不低",
+            "平局率偏高需关注",
+            "川崎/横滨等传统强队主场强势",
+            "赛季初球队状态不稳定"
+        ],
+        "common_sayings": [
+            "J联赛小球",
+            "客队不放弃",
+            "平局多"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    }
+}

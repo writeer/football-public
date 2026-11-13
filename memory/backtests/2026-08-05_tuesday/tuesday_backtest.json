@@ -1,0 +1,239 @@
+{
+  "backtest_date": "2026-08-05",
+  "backtest_day": "tuesday",
+  "total_matches": 5,
+  "source_files": {
+    "predictions": "memory/predictions/2026-08-05_tuesday/tuesday_predictions.json",
+    "html_report": "reports/html/2026-08-05_tuesday_report.html"
+  },
+  "actual_results": {
+    "001": {
+      "match": "里莫 vs 桑托斯",
+      "league": "巴西杯",
+      "venue": "Estádio Evandro Almeida (Mangueirão), Belém",
+      "kickoff_beijing": "08-05 01:30",
+      "ht_score": "0:0",
+      "ft_score": "0:1",
+      "total_goals": 1,
+      "direction": "客胜",
+      "htft": "平负",
+      "htft_code": "DA",
+      "goal_scorers": [
+        {"minute": "74", "player": "Rony", "team": "away"}
+      ],
+      "source": "soccerzz.com, footmercato.net, thefishy.net"
+    },
+    "002": {
+      "match": "米亚尔比 vs 布拉迪斯拉发",
+      "league": "欧冠Q3",
+      "venue": "Strandvallen, Mjällby",
+      "kickoff_beijing": "08-05 00:00",
+      "ht_score": "0:0",
+      "ft_score": "1:2",
+      "total_goals": 3,
+      "direction": "客胜",
+      "htft": "平负",
+      "htft_code": "DA",
+      "goal_scorers": [
+        {"minute": "61", "player": "E. Stroud (pen)", "team": "home"},
+        {"minute": "78", "player": "S. Camara", "team": "away"},
+        {"minute": "90+4", "player": "M. Kianga", "team": "away"}
+      ],
+      "source": "goal.com, 24live.com, aiscore.com"
+    },
+    "003": {
+      "match": "奥林匹亚科斯 vs 奈梅亨",
+      "league": "欧冠Q3",
+      "venue": "Karaiskakis Stadium, Piraeus",
+      "kickoff_beijing": "08-05 02:00",
+      "ht_score": "0:0",
+      "ft_score": "0:0",
+      "total_goals": 0,
+      "direction": "平局",
+      "htft": "平平",
+      "htft_code": "DD",
+      "goal_scorers": [],
+      "source": "dongqiudi.com, goal.com, 24live.com"
+    },
+    "004": {
+      "match": "圣吉罗斯联合 vs 博德闪耀",
+      "league": "欧冠Q3",
+      "venue": "Joseph Marien Stadium, Brussels",
+      "kickoff_beijing": "08-05 03:00",
+      "ht_score": "2:2",
+      "ft_score": "3:3",
+      "total_goals": 6,
+      "direction": "平局",
+      "htft": "平平",
+      "htft_code": "DD",
+      "goal_scorers": [
+        {"minute": "20", "player": "P. Berg", "team": "away"},
+        {"minute": "25", "player": "R. Florucz (pen)", "team": "home"},
+        {"minute": "29", "player": "O. Blomberg", "team": "away"},
+        {"minute": "32", "player": "A. Khalaili", "team": "home"},
+        {"minute": "72", "player": "P. David", "team": "home"},
+        {"minute": "88", "player": "P. Berg", "team": "away"},
+        {"minute": "90+1", "player": "O. Bjoertuft", "team": "away"}
+      ],
+      "source": "goal.com, sabcsport.com, dongqiudi.com, uefa.com",
+      "ht_score_note": "两个来源(sabcsport, playerstats)确认半场2:2"
+    },
+    "005": {
+      "match": "布拉格斯巴达 vs 里昂",
+      "league": "欧冠Q3",
+      "venue": "epet Arena, Prague",
+      "kickoff_beijing": "08-05 02:00",
+      "ht_score": "0:1",
+      "ft_score": "2:1",
+      "total_goals": 3,
+      "direction": "主胜",
+      "htft": "负胜",
+      "htft_code": "AH",
+      "goal_scorers": [
+        {"minute": "45", "player": "M. Suchomel (og)", "team": "away"},
+        {"minute": "63", "player": "M. Rynes", "team": "home"},
+        {"minute": "75+", "player": "J. Mercado", "team": "home"}
+      ],
+      "source": "dongqiudi.com, beinsports.com, footby.one, tribalfootball.com",
+      "key_event": "Tolisso射失点球，布拉格下半场逆转"
+    }
+  },
+  "backtest_analysis": {
+    "001": {
+      "predicted_direction": "主胜/平 69.8%",
+      "actual_direction": "客胜",
+      "direction_hit": false,
+      "predicted_ttg_top2": ["2球(24.9%)", "3球(21.9%)"],
+      "actual_ttg": 1,
+      "ttg_hit": false,
+      "rule34_applies": false,
+      "predicted_htft_top3": ["平胜(18.0%)", "平负(14.9%)", "平平(13.7%)"],
+      "actual_htft": "平负",
+      "htft_hit": true,
+      "predicted_score_top5": ["1:1(14.0%)", "0:0(8.8%)", "2:1(8.6%)", "1:0(8.4%)", "1:2(7.7%)"],
+      "actual_score": "0:1",
+      "score_hit": false,
+      "confidence": "极低 ☆",
+      "note": "桑托斯客场Rony 74分钟绝杀。里莫主场未能取胜，控球率仅26%。"
+    },
+    "002": {
+      "predicted_direction": "主胜/平 79.2%",
+      "actual_direction": "客胜",
+      "direction_hit": false,
+      "predicted_ttg_top2": ["2球(27.0%)", "1球(25.9%)"],
+      "actual_ttg": 3,
+      "ttg_hit": false,
+      "rule34_applies": true,
+      "rule34_ttg_top2": ["2球(27.0%)", "3球(18.8%)"],
+      "rule34_ttg_hit": true,
+      "predicted_htft_top3": ["平胜(25.1%)", "平平(16.2%)", "胜胜(16.1%)"],
+      "actual_htft": "平负",
+      "htft_hit": false,
+      "predicted_score_top5": ["1:0(14.9%)", "1:1(14.1%)", "0:0(14.0%)", "2:0(11.1%)", "2:1(8.3%)"],
+      "actual_score": "1:2",
+      "score_hit": false,
+      "confidence": "中 ★★",
+      "note": "半场0:0后下半场3球爆发。布拉迪斯拉发78分钟和90+4分钟连入两球逆转。规则34验证：3球命中（原始TOP2无3球）。"
+    },
+    "003": {
+      "predicted_direction": "主胜/平 79.7%",
+      "actual_direction": "平局",
+      "direction_hit": true,
+      "predicted_ttg_top2": ["1球(30.5%)", "2球(26.6%)"],
+      "actual_ttg": 0,
+      "ttg_hit": false,
+      "rule34_applies": true,
+      "rule34_ttg_top2": ["2球(26.6%)", "3球(15.5%)"],
+      "rule34_ttg_hit": false,
+      "predicted_htft_top3": ["平胜(24.6%)", "平平(19.9%)", "平负(11.4%)"],
+      "actual_htft": "平平",
+      "htft_hit": true,
+      "predicted_score_top5": ["0:0(19.1%)", "1:0(17.4%)", "1:1(14.1%)", "2:0(10.3%)", "0:1(9.9%)"],
+      "actual_score": "0:0",
+      "score_hit": true,
+      "confidence": "低 ★",
+      "note": "双方13人伤停导致0:0。0:0在DC模型TOP1(19.1%)。严重残阵场景0球比1球更可能。"
+    },
+    "004": {
+      "predicted_direction": "主胜/平 72.6%",
+      "actual_direction": "平局",
+      "direction_hit": true,
+      "predicted_ttg_top2": ["2球(26.8%)", "1球(24.2%)"],
+      "actual_ttg": 6,
+      "ttg_hit": false,
+      "rule34_applies": true,
+      "rule34_ttg_top2": ["2球(26.8%)", "3球(19.8%)"],
+      "rule34_ttg_hit": false,
+      "predicted_htft_top3": ["平胜(19.5%)", "平平(16.3%)", "平负(14.7%)"],
+      "actual_htft": "平平",
+      "htft_hit": true,
+      "predicted_score_top5": ["1:1(15.0%)", "0:0(12.6%)", "1:0(11.4%)", "0:1(9.3%)", "2:1(8.0%)"],
+      "actual_score": "3:3",
+      "score_hit": false,
+      "confidence": "中 ★★",
+      "note": "半场2:2已4球，全场3:3共6球。Florucz梅开二度。极端大比分不在任何预测范围。"
+    },
+    "005": {
+      "predicted_direction": "客胜/平 75.2%",
+      "actual_direction": "主胜",
+      "direction_hit": false,
+      "predicted_ttg_top2": ["1球(29.6%)", "2球(26.8%)"],
+      "actual_ttg": 3,
+      "ttg_hit": false,
+      "rule34_applies": true,
+      "rule34_ttg_top2": ["2球(26.8%)", "3球(16.2%)"],
+      "rule34_ttg_hit": true,
+      "predicted_htft_top3": ["平负(21.2%)", "平平(19.8%)", "负负(9.9%)"],
+      "actual_htft": "负胜",
+      "htft_hit": false,
+      "predicted_score_top5": ["0:0(18.0%)", "0:1(15.0%)", "1:1(14.9%)", "1:0(11.2%)", "0:2(8.5%)"],
+      "actual_score": "2:1",
+      "score_hit": false,
+      "confidence": "低 ★",
+      "note": "里昂半场0:1领先（Suchomel乌龙），布拉格Rynes 63分钟扳平+Tolisso射失点球+Mercado绝杀逆转。负胜路径仅6.7%但实际发生。规则34验证：3球命中。"
+    }
+  },
+  "hit_rates": {
+    "direction": {"hit": 2, "total": 5, "rate": 0.40, "rating": "较差"},
+    "ttg_original": {"hit": 0, "total": 5, "rate": 0.0, "rating": "较差"},
+    "ttg_rule34": {"hit": 2, "total": 5, "rate": 0.40, "rating": "较差", "ucl_only": {"hit": 2, "total": 4, "rate": 0.50}},
+    "htft_top3": {"hit": 3, "total": 5, "rate": 0.60, "rating": "良好"},
+    "score_top5": {"hit": 1, "total": 5, "rate": 0.20, "rating": "较差"}
+  },
+  "key_findings": [
+    {
+      "title": "规则34首次验证成功",
+      "detail": "原始TTG 0%命中，规则34修正后40%命中（4场欧冠中2场3球命中）。002和005实际都是3球，原始TOP2选1球/2球全部miss，规则34调整为2球/3球后命中。欧冠Q3首回合4场实际场均3.0球，再次验证3球是众数。"
+    },
+    {
+      "title": "方向命中率骤降至40%",
+      "detail": "上期100%，本期仅40%。3场方向错误(001/002/005)均为反方向赢。002米亚尔比模型看主胜79.2%但实际客胜，005布拉格模型看客胜75.2%但实际主胜。欧冠Q3资格赛冷门率高，模型对客队实力评估不足。"
+    },
+    {
+      "title": "003严重残阵0:0唯一全维度命中",
+      "detail": "双方合计13人伤停，0:0在DC模型TOP1(19.1%)。半全场平平在TOP2命中。严重残阵场景0球比1球更可能，规则34的1球条件需增加0球上修。"
+    },
+    {
+      "title": "004圣吉罗斯3:3极端大比分",
+      "detail": "半场2:2已4球，全场3:3共6球。Florucz梅开二度+7个进球完全不在预测范围。欧冠Q3首回合极端大比分并不罕见，需提高大球修正系数。"
+    }
+  ],
+  "improvements": [
+    "方向预测过度看好热门——欧冠Q3资格赛冷门率高，3场反方向赢。需提高客队爆冷权重和主场逆转权重。",
+    "极端大比分修正不足——004的3:3(6球)不在任何TTG预测范围。欧冠Q3大球修正系数需进一步提升。",
+    "负胜(AH)路径被低估——005布拉格逆转的负胜路径仅6.7%，Tolisso射失点球是关键转折。需提高欧冠逆转场景AH概率权重。",
+    "严重残阵0球场景——003双方13人伤停时0球比1球更可能，规则34的1球条件应增加0球上修。"
+  ],
+  "ucl_q3_goals_analysis": {
+    "matches": 4,
+    "actual_goals": [3, 0, 6, 3],
+    "total_goals": 12,
+    "avg_goals": 3.0,
+    "distribution": {
+      "0_goals": {"count": 1, "rate": 0.25, "scenario": "双方严重残阵(13人伤停)"},
+      "3_goals": {"count": 2, "rate": 0.50, "scenario": "众数！验证规则34"},
+      "6_goals": {"count": 1, "rate": 0.25, "scenario": "极端大比分"}
+    },
+    "rule34_validation": "3球占50%，再次验证规则34核心洞察。原始TTG 0/4命中→规则34修正后2/4命中。"
+  }
+}

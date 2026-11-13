@@ -1,0 +1,312 @@
+{
+  "date": "2026-08-25",
+  "day": "周二",
+  "match_count": 9,
+  "single_match": ["002", "004", "005"],
+  "rule65_triggered": ["001", "004", "005", "008", "009"],
+  "rule65_executed": ["004", "005", "008"],
+  "matches": [
+    {
+      "matchNum": "001",
+      "league": "韩职第25轮",
+      "time": "18:30",
+      "home": {"name": "金泉尚武", "rank": 11, "points": 26, "value_m eur": 9.6},
+      "away": {"name": "全北现代", "rank": 3, "points": 37, "value_m eur": 13.2},
+      "venue": "金泉综合运动场，金泉市",
+      "weather": "多云 28-32°C 微风",
+      "injuries": {
+        "home": [],
+        "away": [{"name": "李胜珸", "pos": "FW", "type": "肩部脱臼", "status": "待医检确认"}]
+      },
+      "lambda": {"home": 1.67, "away": 1.26, "total": 2.93},
+      "probabilities": {"home_win": 0.33, "draw": 0.36, "away_win": 0.31},
+      "market_shin": {"home_win": 0.375, "draw": 0.209, "away_win": 0.416},
+      "confidence": "★★",
+      "recommendations": {
+        "had": {"first": "平(36%)", "second": "主胜(33%)"},
+        "hafu": {"first": "让(+1)胜(57%)", "second": "让(+1)平(23%)"},
+        "crs_top5": ["1-1(12%)", "1-0(10%)", "0-0(8%)", "1-2(8%)", "2-1(7%)"],
+        "ttg": {"first": "2球(25%)", "second": "3球(22%)"},
+        "htft_top3": ["平平(16%)", "平负(15%)", "平胜(13%)"],
+        "ht_score_top3": ["0-0(26%)", "1-0(12%)", "0-1(10%)"]
+      },
+      "rule65": {"triggered": true, "conditions": ["排名差8位", "积分差11分"], "tier": "Tier3", "executed": false, "reason": "进攻信号不明确→平局保留"},
+      "rule12_h2h": "尚武同主客对全北4次3胜1负(含4-0大胜)",
+      "key_factors": ["韩职30%平局率", "尚武主场军旅韧性", "H2H尚武占优"]
+    },
+    {
+      "matchNum": "002",
+      "league": "韩职第25轮",
+      "time": "18:30",
+      "single_match": true,
+      "home": {"name": "济州SK", "rank": 5, "points": 35, "value_m eur": 7.1},
+      "away": {"name": "浦项制铁", "rank": 7, "points": 31, "value_m eur": 9.6},
+      "venue": "济州世界杯球场，济州市",
+      "weather": "多云 27-30°C 微风",
+      "injuries": {
+        "home": [{"name": "Figueiredo", "pos": "DF", "status": "待验证"}, {"name": "李昌敏", "pos": "MF", "status": "待验证"}],
+        "away": [{"name": "佐治斯特斯", "pos": "FW"}, {"name": "祖连奴洛查", "pos": "FW/MF", "type": "足踝伤"}, {"name": "西矢健人", "pos": "DM/MF", "type": "停赛2场"}]
+      },
+      "lambda": {"home": 1.45, "away": 1.15, "total": 2.60},
+      "probabilities": {"home_win": 0.40, "draw": 0.30, "away_win": 0.30},
+      "market_shin": {"home_win": 0.395, "draw": 0.297, "away_win": 0.308},
+      "confidence": "★★★",
+      "recommendations": {
+        "had": {"first": "主胜(40%)", "second": "平(30%)"},
+        "hafu": {"first": "让(-1)平(24%)", "second": "让(-1)负(60%)"},
+        "crs_top5": ["1-1(13%)", "1-0(10%)", "2-1(9%)", "1-2(9%)", "2-0(8%)"],
+        "ttg": {"first": "2球(26%)", "second": "3球(22%)"},
+        "htft_top3": ["胜胜(21%)", "平平(19%)", "平胜(15%)"],
+        "ht_score_top3": ["0-0(20%)", "1-0(18%)", "0-1(10%)"]
+      },
+      "rule63": {"single_match": true, "executed": false, "reason": "L032触发豁免：济州主场H2H 3胜1负(75%)+浦项3人缺阵"},
+      "rule12_h2h": "济州主场对浦项4次3胜1负(2-1/2-0/2-1/0-2)",
+      "key_factors": ["济州主场H2H 75%胜率", "浦项3人缺阵含2前锋", "济州近期主场不败"]
+    },
+    {
+      "matchNum": "003",
+      "league": "沙特职业联赛第3轮",
+      "time": "02:00",
+      "home": {"name": "达曼协定(伊蒂哈德)", "rank": 6, "points": 7, "value_m eur": 149},
+      "away": {"name": "利雅得胜利", "rank": 2, "points": 6, "value_m eur": 131},
+      "venue": "阿卜杜拉国王体育城球场，吉达",
+      "weather": "炎热 33-37°C 微风",
+      "injuries": {
+        "home": [{"name": "Dion Lopy", "pos": "DM", "type": "停赛"}, {"name": "Hamed Al-Ghamdi", "pos": "MF", "type": "ACL长期"}, {"name": "Ahmed Sharahili", "pos": "DF", "type": "踝伤"}],
+        "away": [{"name": "Sultan Al-Ghannam", "pos": "DF", "type": "ACL长期"}, {"name": "Nawaf Al-Aqidi", "pos": "GK", "type": "肩伤"}, {"name": "Mohammed Marran", "pos": "FW"}, {"name": "Saad Al-Nasser", "pos": "DF"}]
+      },
+      "lambda": {"home": 1.30, "away": 1.95, "total": 3.25},
+      "probabilities": {"home_win": 0.22, "draw": 0.26, "away_win": 0.52},
+      "market_shin": {"home_win": 0.097, "draw": 0.134, "away_win": 0.769},
+      "confidence": "★★",
+      "recommendations": {
+        "had": {"first": "客胜(52%)", "second": "平(26%)"},
+        "hafu": {"first": "让(+1)负(36%)", "second": "让(+1)平(16%)"},
+        "crs_top5": ["1-2(10%)", "0-2(9%)", "1-3(8%)", "1-1(8%)", "2-1(7%)"],
+        "ttg": {"first": "3球(20%)", "second": "4球(20%)"},
+        "htft_top3": ["负负(22%)", "平负(19%)", "平平(7%)"],
+        "ht_score_top3": ["0-1(15%)", "0-0(14%)", "1-1(10%)"]
+      },
+      "rule28": "基本面vs市场分歧：H2H伊蒂哈德占优 vs 利雅得实力质变→客胜首选但H2H风险标注",
+      "rule12_h2h": "伊蒂哈德主场对利雅得3战全胜(2-1/1-0/3-0)，但发生在引援前",
+      "key_factors": ["C罗复出", "利雅得15球/5场", "H2H伊蒂哈德主场全胜(已过时)"]
+    },
+    {
+      "matchNum": "004",
+      "league": "英联赛杯第2轮",
+      "time": "02:45",
+      "single_match": true,
+      "home": {"name": "斯托克城", "rank": "英冠", "value_m eur": 48.7},
+      "away": {"name": "赫尔城", "rank": "英超升班马", "value_m eur": 144},
+      "venue": "Bet365球场，特伦特河畔斯托克",
+      "weather": "多云 16-20°C 微风",
+      "injuries": {
+        "home": [{"name": "Tchamadeu", "pos": "DF"}, {"name": "Cissé", "pos": "FW/DF"}, {"name": "Cresswell", "pos": "DF"}, {"name": "Lawal", "pos": "DF/MF"}, {"name": "Ampah", "pos": "MF", "type": "长期"}, {"name": "Ingelsson", "pos": "MF", "type": "停赛"}],
+        "away": [{"name": "Butland", "pos": "GK", "type": "手臂伤长期"}, {"name": "Gelhardt", "pos": "FW"}, {"name": "Zambrano", "pos": "MF"}, {"name": "Hughes", "pos": "MF"}, {"name": "Gyabi", "pos": "MF"}, {"name": "Matazo", "pos": "MF"}]
+      },
+      "lambda": {"home": 1.15, "away": 1.85, "total": 3.00},
+      "probabilities": {"home_win": 0.30, "draw": 0.25, "away_win": 0.45},
+      "market_shin": {"home_win": 0.279, "draw": 0.295, "away_win": 0.369},
+      "confidence": "★★",
+      "recommendations": {
+        "had": {"first": "客胜(45%)", "second": "主胜(30%)"},
+        "hafu": {"first": "让(+1)负(31%)", "second": "让(+1)平(14%)"},
+        "crs_top5": ["0-2(15%)", "1-1(12%)", "1-2(9%)", "0-1(9%)", "0-3(7%)"],
+        "ttg": {"first": "2球(26%)", "second": "3球(22%)"},
+        "htft_top3": ["负负(20%)", "平平(17%)", "平负(15%)"],
+        "ht_score_top3": ["0-1(15%)", "0-0(14%)", "1-1(10%)"]
+      },
+      "rule65": {"triggered": true, "conditions": ["身价差3倍"], "tier": "Tier3", "executed": true, "lambda_bonus": 0.4},
+      "rule63": {"single_match": true, "executed": false, "reason": "L032触发豁免：斯托克城主场H2H 2胜0负+赫尔城6人缺阵"},
+      "rule12_h2h": "斯托克城主场对赫尔城2战全胜(2-1/1-0)",
+      "key_factors": ["身价3倍碾压", "赫尔城4胜1平含胜曼联", "斯托克主场H2H全胜"]
+    },
+    {
+      "matchNum": "005",
+      "league": "欧冠附加赛次回合",
+      "time": "03:00",
+      "single_match": true,
+      "first_leg": "凯尔特人 3-0 LASK林茨",
+      "home": {"name": "LASK林茨", "value_m eur": 26.2},
+      "away": {"name": "凯尔特人", "value_m eur": 137},
+      "venue": "Raiffeisen竞技场，林茨",
+      "weather": "多云 18-22°C 微风",
+      "injuries": {
+        "home": [{"name": "Harakaté", "pos": "FW", "type": "ACL长期"}],
+        "away": [{"name": "Jota", "pos": "FW", "type": "ACL"}, {"name": "Oxlade-Chamberlain", "pos": "MF", "type": "停赛"}]
+      },
+      "lambda": {"home": 1.85, "away": 1.40, "total": 3.25},
+      "probabilities": {"home_win": 0.40, "draw": 0.32, "away_win": 0.28},
+      "market_shin": {"home_win": 0.481, "draw": 0.239, "away_win": 0.280},
+      "confidence": "★★",
+      "recommendations": {
+        "had": {"first": "主胜(40%)", "second": "平(32%)"},
+        "hafu": {"first": "让(-1)平(24%)", "second": "让(-1)负(51%)"},
+        "crs_top5": ["2-1(10%)", "1-1(9%)", "1-2(7%)", "2-0(6%)", "1-3(7%)"],
+        "ttg": {"first": "3球(23%)", "second": "4球(18%)"},
+        "htft_top3": ["胜胜(30%)", "平胜(16%)", "平平(12%)"],
+        "ht_score_top3": ["1-0(15%)", "0-0(14%)", "1-1(10%)"]
+      },
+      "rule65": {"triggered": true, "conditions": ["身价差5.2倍", "λ差约1.0"], "tier": "Tier3", "executed": true, "lambda_bonus": 0.4},
+      "rule63": {"single_match": true, "executed": true, "adjustment": "+8%平局上修(差距≥20pp档)", "note": "L032不触发；凯尔特人3-0可能轮换"},
+      "rule34": "欧冠TTG修正：3球众数",
+      "key_factors": ["首回合3-0", "身价5.2倍碾压", "凯尔特人可能轮换"]
+    },
+    {
+      "matchNum": "006",
+      "league": "欧冠附加赛次回合",
+      "time": "03:00",
+      "first_leg": "博德闪耀 3-1 奈梅亨",
+      "home": {"name": "博德闪耀", "value_m eur": 53.4},
+      "away": {"name": "奈梅亨", "value_m eur": 42.2},
+      "venue": "Aspmyra体育场，博德",
+      "weather": "偏凉 10-14°C 可能小雨 中等风力",
+      "injuries": {
+        "home": [{"name": "Evjen", "pos": "MF", "type": "膝伤9月初"}],
+        "away": [{"name": "Sandler", "pos": "DF"}, {"name": "Kaplan", "pos": "DF"}, {"name": "Schuurs", "pos": "DF", "type": "长期"}, {"name": "Ouaissa", "pos": "MF", "status": "存疑"}, {"name": "Ogawa", "pos": "FW", "status": "存疑"}]
+      },
+      "lambda": {"home": 2.15, "away": 0.95, "total": 3.10},
+      "probabilities": {"home_win": 0.63, "draw": 0.19, "away_win": 0.18},
+      "market_shin": {"home_win": 0.628, "draw": 0.193, "away_win": 0.179},
+      "confidence": "★★★",
+      "recommendations": {
+        "had": {"first": "主胜(63%)", "second": "平(19%)"},
+        "hafu": {"first": "让(-1)胜(49%)", "second": "让(-1)平(14%)"},
+        "crs_top5": ["2-1(10%)", "3-1(8%)", "2-0(6%)", "1-1(7%)", "3-2(5%)"],
+        "ttg": {"first": "3球(21%)", "second": "4球(20%)"},
+        "htft_top3": ["胜胜(41%)", "平胜(17%)", "负负(10%)"],
+        "ht_score_top3": ["1-0(18%)", "0-0(12%)", "2-0(10%)"]
+      },
+      "rule32": "奈梅亨后防≥3人缺阵→lambda_away上修+博德攻击lambda+0.2",
+      "rule34": "欧冠TTG修正：3球众数",
+      "rule_L041": "★★★高置信碾压→TTG同步3-4球档",
+      "key_factors": ["博德主场4战全胜场均2.75球", "奈梅亨后防3名后卫缺阵", "Bassi/Mikkelsen/Saltnes复出"]
+    },
+    {
+      "matchNum": "007",
+      "league": "英联赛杯第2轮",
+      "time": "03:00",
+      "home": {"name": "诺丁汉森林", "value_m eur": 578},
+      "away": {"name": "利兹联", "value_m eur": null},
+      "venue": "City Ground球场，诺丁汉",
+      "weather": "多云 16-20°C",
+      "injuries": {
+        "home": [{"name": "Gibbs-White", "pos": "MF", "type": "膝伤"}, {"name": "Savona", "pos": "DF", "type": "膝伤"}, {"name": "Yates", "pos": "MF"}],
+        "away": [{"name": "Joseph", "pos": "FW", "type": "ACL长期"}, {"name": "Gudmundsson", "pos": "MF"}, {"name": "Gnonto", "pos": "FW", "status": "存疑"}, {"name": "Gruev", "pos": "MF", "status": "存疑"}]
+      },
+      "lambda": {"home": 1.30, "away": 1.40, "total": 2.70},
+      "probabilities": {"home_win": 0.34, "draw": 0.28, "away_win": 0.38},
+      "market_shin": {"home_win": 0.227, "draw": 0.209, "away_win": 0.564},
+      "confidence": "★",
+      "recommendations": {
+        "had": {"first": "客胜(38%)", "second": "平(28%)"},
+        "hafu": {"first": "让(+1)负(56%)", "second": "让(+1)平(23%)"},
+        "crs_top5": ["1-1(11%)", "0-1(9%)", "1-2(8%)", "0-0(8%)", "2-1(7%)"],
+        "ttg": {"first": "2球(24%)", "second": "3球(22%)"},
+        "htft_top3": ["胜胜(23%)", "负负(16%)", "平平(16%)"],
+        "ht_score_top3": ["0-0(20%)", "0-1(12%)", "1-0(10%)"]
+      },
+      "key_factors": ["杯赛轮换", "背靠背2天前刚交手", "信息不对称", "利兹身价缺失"]
+    },
+    {
+      "matchNum": "008",
+      "league": "英联赛杯第2轮",
+      "time": "03:00",
+      "home": {"name": "伯明翰", "value_m eur": 95.6},
+      "away": {"name": "布伦特福德", "value_m eur": 562},
+      "venue": "St Andrew's球场，伯明翰",
+      "weather": "多云 16-20°C",
+      "injuries": {
+        "home": [{"name": "Bird", "pos": "MF"}, {"name": "Leonard", "pos": "MF"}],
+        "away": [{"name": "van den Berg", "pos": "DF", "type": "腹股沟"}, {"name": "Milambo", "pos": "DF", "type": "ACL"}]
+      },
+      "lambda": {"home": 1.10, "away": 1.95, "total": 3.05},
+      "probabilities": {"home_win": 0.20, "draw": 0.25, "away_win": 0.55},
+      "market_shin": {"home_win": 0.167, "draw": 0.312, "away_win": 0.521},
+      "confidence": "★★★",
+      "recommendations": {
+        "had": {"first": "客胜(55%)", "second": "平(25%)"},
+        "hafu": {"first": "让(+1)负(39%)", "second": "让(+1)平(16%)"},
+        "crs_top5": ["0-2(15%)", "1-1(11%)", "1-2(9%)", "0-1(9%)", "0-3(8%)"],
+        "ttg": {"first": "3球(23%)", "second": "4球(16%)"},
+        "htft_top3": ["负负(19%)", "平负(17%)", "平平(14%)"],
+        "ht_score_top3": ["0-1(15%)", "0-0(14%)", "1-0(8%)"]
+      },
+      "rule65": {"triggered": true, "conditions": ["身价差5.9倍", "λ差约1.2"], "tier": "Tier3", "executed": true, "lambda_bonus": 0.4},
+      "rule_L041": "★★★高置信碾压→TTG同步3-4球档",
+      "key_factors": ["身价5.9倍碾压", "布伦特3-0热刺+7-0法兰克福", "英联赛杯客场胜率48.5%"]
+    },
+    {
+      "matchNum": "009",
+      "league": "西甲第2轮",
+      "time": "03:00",
+      "home": {"name": "巴伦西亚", "rank": 12, "value_m eur": 125},
+      "away": {"name": "贝蒂斯", "rank": 7, "value_m eur": 260},
+      "venue": "Mestalla球场，瓦伦西亚",
+      "weather": "晴 24-28°C 微风",
+      "injuries": {
+        "home": [{"name": "Canós", "pos": "MF", "type": "ACL"}, {"name": "López", "pos": "DF", "type": "ACL"}, {"name": "Copete", "pos": "MF", "type": "半月板"}, {"name": "Marí", "pos": "MF", "type": "腿筋"}, {"name": "Rioja", "pos": "MF", "status": "存疑"}, {"name": "Foulquier", "pos": "DF", "status": "存疑"}, {"name": "De Haas", "pos": "DF", "type": "脚踝"}],
+        "away": [{"name": "Lo Celso", "pos": "MF"}, {"name": "Ezzalzouli", "pos": "FW"}, {"name": "Aitor Ruibal", "pos": "MF"}, {"name": "Barea", "pos": "MF", "type": "ACL"}, {"name": "Petit", "pos": "MF"}, {"name": "Conde", "pos": "DF"}, {"name": "Morante", "pos": "MF"}]
+      },
+      "lambda": {"home": 1.10, "away": 0.95, "total": 2.05},
+      "probabilities": {"home_win": 0.31, "draw": 0.36, "away_win": 0.33},
+      "market_shin": {"home_win": 0.301, "draw": 0.337, "away_win": 0.362},
+      "confidence": "★★",
+      "recommendations": {
+        "had": {"first": "平(36%)", "second": "客胜(33%)"},
+        "hafu": {"first": "让(-1)平(22%)", "second": "让(-1)负(63%)"},
+        "crs_top5": ["1-1(12%)", "1-0(8%)", "0-1(8%)", "0-0(7%)", "2-1(7%)"],
+        "ttg": {"first": "2球(26%)", "second": "1球(17%)"},
+        "htft_top3": ["平平(18%)", "胜平(15%)", "负平(15%)"],
+        "ht_score_top3": ["0-0(26%)", "1-0(10%)", "0-1(10%)"]
+      },
+      "rule65": {"triggered": true, "conditions": ["身价差2.1倍"], "tier": "Tier1", "executed": false, "reason": "双方残阵抵消+进攻信号不明确→平局优先"},
+      "rule22_LL": "西甲平局基准+4%",
+      "rule35": "新赛季第2轮lambda+0.5-0.8",
+      "rule9": "双方合计≥12人缺阵→lambda下修0.3-0.5",
+      "conflict_resolution": "规则65(+0.1-0.2)+规则35(+0.5-0.8)-残阵(-0.3~-0.5)→净约+0.3，平局优先",
+      "key_factors": ["双方合计13人缺阵", "西甲平局率28.5%+4%", "新赛季第2轮"]
+    }
+  ],
+  "parlays": {
+    "direction": [
+      {"name": "方向串A", "matches": "002主胜(2.24) + 006主胜(1.41) + 008客胜(1.70)", "odds": "~5.36", "risk": "中"},
+      {"name": "方向串B", "matches": "006主胜(1.41) + 008客胜(1.70)", "odds": "~2.40", "risk": "低"}
+    ],
+    "handicap": [
+      {"name": "稳健让球串", "matches": "001让(+1)胜(1.55) + 004让(+1)胜(1.42) + 007让(+1)负(1.57)", "odds": "~3.46", "risk": "中"},
+      {"name": "价值让球串", "matches": "002让(-1)负(1.49) + 003让(+1)负(2.47) + 009让(-1)负(5.75)", "odds": "~21.1", "risk": "中高"}
+    ],
+    "mixed": [
+      {"name": "半全场串A", "matches": "006胜胜(2.05) + 008负负(2.70)", "odds": "~5.54", "risk": "高"},
+      {"name": "半全场串B", "matches": "001平平(5.20) + 009平平(4.70)", "odds": "~24.4", "risk": "高"},
+      {"name": "方向+半全场A", "matches": "002主胜(2.24) + 006胜胜(2.05)", "odds": "~4.59", "risk": "中高"},
+      {"name": "方向+半全场B", "matches": "008客胜(1.70) + 001平平(5.20)", "odds": "~8.84", "risk": "中高"}
+    ],
+    "entertainment": {
+      "ttg": [
+        {"name": "总进球串A", "matches": "003 4球(4.2) + 005 4球(4.6) + 008 4球(6.0)", "odds": "~116", "risk": "极高"},
+        {"name": "总进球串B", "matches": "001 3球(3.7) + 006 4球(4.25) + 009 1球(4.2)", "odds": "~66", "risk": "极高"},
+        {"name": "总进球串C", "matches": "003 3球(4.1) + 005 3球(3.6) + 008 3球(3.6)", "odds": "~53", "risk": "极高"}
+      ],
+      "htft": [
+        {"name": "高赔半全场串A", "matches": "001平平(5.2) + 009平平(4.7) + 004平平(4.8)", "odds": "~117", "risk": "极高"},
+        {"name": "高赔半全场串B", "matches": "005平负(8.5) + 007负胜(18) + 003胜平(18)", "odds": "~2754", "risk": "极高"},
+        {"name": "高赔半全场串C", "matches": "001平负(5.5) + 007负平(18) + 009平负(5.8)", "odds": "~574", "risk": "极高"},
+        {"name": "高赔半全场串D", "matches": "003胜负(22) + 004平胜(6.25) + 008负平(22)", "odds": "~3025", "risk": "极高"}
+      ],
+      "mixed": [
+        {"name": "混合串A", "matches": "006胜胜(2.05) + 003 4球(4.2) + 008负负(2.70)", "odds": "~23.2", "risk": "极高"},
+        {"name": "混合串B", "matches": "001平平(5.2) + 005 3球(3.6) + 009 1球(4.2)", "odds": "~78.6", "risk": "极高"},
+        {"name": "混合串C", "matches": "002平负(6.5) + 007 2球(3.4) + 008负平(22)", "odds": "~486", "risk": "极高"},
+        {"name": "混合串D", "matches": "003胜负(22) + 006 4球(4.25) + 004平负(5.65)", "odds": "~528", "risk": "极高"}
+      ],
+      "crs": [
+        {"name": "稳健比分串", "matches": "006 2-1(7.75) + 008 0-2(8.5) + 002 1-1(5.7)", "odds": "~375", "risk": "高"},
+        {"name": "混合比分串", "matches": "005 2-1/1-1 + 006 2-1/3-1 + 003 1-2/0-2", "odds": "最高~743 最低~504(8注)", "risk": "高"},
+        {"name": "TOP5比分串", "matches": "001 1-1/0-0 + 002 1-0/1-1 + 009 1-1/0-0", "odds": "最高~670 最低~219(8注)", "risk": "极高"},
+        {"name": "搏冷比分串", "matches": "003 2-2(13) + 005 2-2(13) + 009 0-0(9)", "odds": "~1521", "risk": "极高"}
+      ]
+    }
+  }
+}

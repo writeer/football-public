@@ -1,0 +1,400 @@
+{
+  "date": "2026-09-10",
+  "weekday": "周四",
+  "matchCount": 7,
+  "singleMatches": ["周四001", "周四002", "周四004"],
+  "matches": [
+    {
+      "matchNumStr": "周四001",
+      "league": "欧洲冠军联赛",
+      "homeTeam": "费内巴切",
+      "awayTeam": "罗马",
+      "matchTime": "00:45:00",
+      "stadium": "萨拉科格鲁球场",
+      "city": "伊斯坦布尔",
+      "weather": "晴，28°C",
+      "homeValue": 282700000,
+      "awayValue": 484600000,
+      "valueRatio": 1.71,
+      "singleMatch": true,
+      "confidence": "★★",
+      "had": {
+        "home": 0.31,
+        "draw": 0.27,
+        "away": 0.42,
+        "first": "away",
+        "second": "home"
+      },
+      "hhad": {
+        "handicap": 1,
+        "home": 0.27,
+        "draw": 0.38,
+        "away": 0.35,
+        "first": "draw",
+        "second": "away"
+      },
+      "ttg": {
+        "first": 2,
+        "second": 3,
+        "firstProb": 0.27,
+        "secondProb": 0.25
+      },
+      "hafu": {
+        "top3": ["负负", "平负", "平平"],
+        "top3Probs": [0.24, 0.18, 0.14]
+      },
+      "scoreTop5": [
+        {"score": "1-2", "prob": 0.13},
+        {"score": "1-1", "prob": 0.11},
+        {"score": "0-1", "prob": 0.09},
+        {"score": "1-0", "prob": 0.08},
+        {"score": "2-2", "prob": 0.07}
+      ],
+      "htScoreTop3": [
+        {"score": "0-1", "prob": 0.22},
+        {"score": "0-0", "prob": 0.21},
+        {"score": "1-0", "prob": 0.16}
+      ],
+      "lambdaHome": 1.35,
+      "lambdaAway": 1.55,
+      "lambdaTotal": 2.90,
+      "rulesTriggered": ["规则65未触发(身价比1.71<2)", "规则63单关过滤未启用(欧冠赛季初+进攻端完整)", "L080"]
+    },
+    {
+      "matchNumStr": "周四002",
+      "league": "欧洲冠军联赛",
+      "homeTeam": "科莫",
+      "awayTeam": "RB莱比锡",
+      "matchTime": "03:00:00",
+      "stadium": "朱塞佩·西尼加利亚球场",
+      "city": "科莫",
+      "weather": "晴，22°C",
+      "homeValue": 535150000,
+      "awayValue": 487950000,
+      "valueRatio": 1.10,
+      "singleMatch": true,
+      "confidence": "★★",
+      "had": {
+        "home": 0.45,
+        "draw": 0.28,
+        "away": 0.27,
+        "first": "home",
+        "second": "draw"
+      },
+      "hhad": {
+        "handicap": -1,
+        "home": 0.28,
+        "draw": 0.30,
+        "away": 0.42,
+        "first": "away",
+        "second": "draw"
+      },
+      "ttg": {
+        "first": 2,
+        "second": 3,
+        "firstProb": 0.28,
+        "secondProb": 0.24
+      },
+      "hafu": {
+        "top3": ["胜胜", "平胜", "平平"],
+        "top3Probs": [0.28, 0.20, 0.16]
+      },
+      "scoreTop5": [
+        {"score": "1-0", "prob": 0.12},
+        {"score": "1-1", "prob": 0.11},
+        {"score": "2-0", "prob": 0.09},
+        {"score": "2-1", "prob": 0.08},
+        {"score": "0-1", "prob": 0.07}
+      ],
+      "htScoreTop3": [
+        {"score": "1-0", "prob": 0.23},
+        {"score": "0-0", "prob": 0.21},
+        {"score": "0-1", "prob": 0.15}
+      ],
+      "lambdaHome": 1.65,
+      "lambdaAway": 1.25,
+      "lambdaTotal": 2.90,
+      "rulesTriggered": ["规则65未触发(身价接近)", "规则63单关过滤未启用(欧冠赛季初+非防守残阵)", "L080"]
+    },
+    {
+      "matchNumStr": "周四003",
+      "league": "欧洲冠军联赛",
+      "homeTeam": "拜仁慕尼黑",
+      "awayTeam": "博德闪耀",
+      "matchTime": "03:00:00",
+      "stadium": "安联球场",
+      "city": "慕尼黑",
+      "weather": "阴，19°C",
+      "homeValue": 1040000000,
+      "awayValue": 74480000,
+      "valueRatio": 13.96,
+      "singleMatch": false,
+      "confidence": "★★★",
+      "had": {
+        "home": 0.78,
+        "draw": 0.13,
+        "away": 0.09,
+        "first": "home",
+        "second": "draw"
+      },
+      "hhad": {
+        "handicap": -3,
+        "home": 0.42,
+        "draw": 0.30,
+        "away": 0.28,
+        "first": "home",
+        "second": "draw"
+      },
+      "ttg": {
+        "first": 4,
+        "second": 5,
+        "firstProb": 0.24,
+        "secondProb": 0.21
+      },
+      "hafu": {
+        "top3": ["胜胜", "平胜", "胜负"],
+        "top3Probs": [0.52, 0.18, 0.07]
+      },
+      "scoreTop5": [
+        {"score": "3-0", "prob": 0.14},
+        {"score": "4-0", "prob": 0.12},
+        {"score": "3-1", "prob": 0.10},
+        {"score": "4-1", "prob": 0.09},
+        {"score": "2-0", "prob": 0.08}
+      ],
+      "htScoreTop3": [
+        {"score": "2-0", "prob": 0.26},
+        {"score": "1-0", "prob": 0.22},
+        {"score": "3-0", "prob": 0.15}
+      ],
+      "lambdaHome": 2.85,
+      "lambdaAway": 0.75,
+      "lambdaTotal": 3.60,
+      "rulesTriggered": ["规则65触发(身价14倍+让3球)", "L077欧冠赛季初+0.4-0.5", "L084碾压场TTG 5/6球档", "L055碾压场半全场胜胜"]
+    },
+    {
+      "matchNumStr": "周四004",
+      "league": "欧洲冠军联赛",
+      "homeTeam": "布拉格斯拉维亚",
+      "awayTeam": "朗斯(法甲)",
+      "matchTime": "03:00:00",
+      "stadium": "埃佩特竞技场",
+      "city": "布拉格",
+      "weather": "阴转小雨，19°C",
+      "homeValue": 83150000,
+      "awayValue": 203200000,
+      "valueRatio": 2.44,
+      "singleMatch": true,
+      "confidence": "★",
+      "had": {
+        "home": 0.36,
+        "draw": 0.30,
+        "away": 0.34,
+        "first": "home",
+        "second": "away"
+      },
+      "hhad": {
+        "handicap": 1,
+        "home": 0.46,
+        "draw": 0.30,
+        "away": 0.24,
+        "first": "home",
+        "second": "draw"
+      },
+      "ttg": {
+        "first": 2,
+        "second": 3,
+        "firstProb": 0.28,
+        "secondProb": 0.25
+      },
+      "hafu": {
+        "top3": ["平平", "平负", "平胜"],
+        "top3Probs": [0.21, 0.17, 0.15]
+      },
+      "scoreTop5": [
+        {"score": "1-1", "prob": 0.12},
+        {"score": "1-2", "prob": 0.10},
+        {"score": "2-1", "prob": 0.09},
+        {"score": "0-1", "prob": 0.08},
+        {"score": "2-2", "prob": 0.07}
+      ],
+      "htScoreTop3": [
+        {"score": "0-0", "prob": 0.25},
+        {"score": "1-0", "prob": 0.18},
+        {"score": "0-1", "prob": 0.17}
+      ],
+      "lambdaHome": 1.30,
+      "lambdaAway": 1.25,
+      "lambdaTotal": 2.55,
+      "rulesTriggered": ["规则65触发(身价2.44倍+Tier1轻度+0.1-0.2)", "规则22-L1法甲特化(置信度降一级)", "规则63单关过滤未启用(双方防线残缺+非平局高发)", "L080", "法甲冷门预警"]
+    },
+    {
+      "matchNumStr": "周四005",
+      "league": "欧洲冠军联赛",
+      "homeTeam": "曼彻斯特联",
+      "awayTeam": "萨巴赫",
+      "matchTime": "03:00:00",
+      "stadium": "老特拉福德球场",
+      "city": "曼彻斯特",
+      "weather": "局部有雨，14°C",
+      "homeValue": 924300000,
+      "awayValue": 19000000,
+      "valueRatio": 48.65,
+      "singleMatch": false,
+      "confidence": "★★★",
+      "had": {
+        "home": 0.80,
+        "draw": 0.12,
+        "away": 0.08,
+        "first": "home",
+        "second": "draw"
+      },
+      "hhad": {
+        "handicap": -2,
+        "home": 0.44,
+        "draw": 0.29,
+        "away": 0.27,
+        "first": "home",
+        "second": "draw"
+      },
+      "ttg": {
+        "first": 4,
+        "second": 5,
+        "firstProb": 0.25,
+        "secondProb": 0.20
+      },
+      "hafu": {
+        "top3": ["胜胜", "平胜", "胜负"],
+        "top3Probs": [0.55, 0.16, 0.06]
+      },
+      "scoreTop5": [
+        {"score": "3-0", "prob": 0.13},
+        {"score": "4-0", "prob": 0.11},
+        {"score": "3-1", "prob": 0.10},
+        {"score": "2-0", "prob": 0.09},
+        {"score": "4-1", "prob": 0.08}
+      ],
+      "htScoreTop3": [
+        {"score": "2-0", "prob": 0.27},
+        {"score": "1-0", "prob": 0.23},
+        {"score": "3-0", "prob": 0.14}
+      ],
+      "lambdaHome": 2.95,
+      "lambdaAway": 0.65,
+      "lambdaTotal": 3.60,
+      "rulesTriggered": ["规则65触发(身价49倍+让2球)", "L077欧冠赛季初+0.4-0.5", "L084碾压场TTG 5/6球档", "L055碾压场半全场胜胜"]
+    },
+    {
+      "matchNumStr": "周四006",
+      "league": "葡萄牙超级联赛",
+      "homeTeam": "阿马多拉之星",
+      "awayTeam": "布拉加",
+      "matchTime": "03:15:00",
+      "stadium": "若热·戈麦斯球场",
+      "city": "阿马多拉",
+      "weather": "晴，31°C",
+      "homeValue": 26980000,
+      "awayValue": 150300000,
+      "valueRatio": 5.57,
+      "singleMatch": false,
+      "confidence": "★★",
+      "had": {
+        "home": 0.22,
+        "draw": 0.27,
+        "away": 0.51,
+        "first": "away",
+        "second": "draw"
+      },
+      "hhad": {
+        "handicap": 1,
+        "home": 0.32,
+        "draw": 0.35,
+        "away": 0.33,
+        "first": "draw",
+        "second": "away"
+      },
+      "ttg": {
+        "first": 2,
+        "second": 3,
+        "firstProb": 0.29,
+        "secondProb": 0.24
+      },
+      "hafu": {
+        "top3": ["平负", "平平", "负负"],
+        "top3Probs": [0.23, 0.22, 0.18]
+      },
+      "scoreTop5": [
+        {"score": "0-1", "prob": 0.12},
+        {"score": "1-1", "prob": 0.11},
+        {"score": "0-2", "prob": 0.09},
+        {"score": "1-2", "prob": 0.08},
+        {"score": "2-1", "prob": 0.07}
+      ],
+      "htScoreTop3": [
+        {"score": "0-0", "prob": 0.26},
+        {"score": "0-1", "prob": 0.20},
+        {"score": "1-0", "prob": 0.16}
+      ],
+      "lambdaHome": 1.05,
+      "lambdaAway": 1.55,
+      "lambdaTotal": 2.60,
+      "rulesTriggered": ["规则65触发(身价5.6倍+Tier2甲级+0.3)", "规则22-POR葡超三强客场稳定", "交锋近7场4平3负平局率高"]
+    },
+    {
+      "matchNumStr": "周四007",
+      "league": "南美解放者杯",
+      "homeTeam": "德尔瓦耶独立",
+      "awayTeam": "弗拉门戈",
+      "matchTime": "08:30:00",
+      "stadium": "阿塔瓦尔帕奥林匹克体育场",
+      "city": "基多（海拔2850米）",
+      "weather": "小雨，15°C",
+      "homeValue": 29230000,
+      "awayValue": 216000000,
+      "valueRatio": 7.39,
+      "singleMatch": false,
+      "confidence": "★★",
+      "had": {
+        "home": 0.38,
+        "draw": 0.30,
+        "away": 0.32,
+        "first": "home",
+        "second": "draw"
+      },
+      "hhad": {
+        "handicap": -1,
+        "home": 0.16,
+        "draw": 0.28,
+        "away": 0.56,
+        "first": "away",
+        "second": "draw"
+      },
+      "ttg": {
+        "first": 2,
+        "second": 1,
+        "firstProb": 0.28,
+        "secondProb": 0.25
+      },
+      "hafu": {
+        "top3": ["胜胜", "平平", "平胜"],
+        "top3Probs": [0.26, 0.23, 0.18]
+      },
+      "scoreTop5": [
+        {"score": "1-0", "prob": 0.11},
+        {"score": "1-1", "prob": 0.10},
+        {"score": "2-0", "prob": 0.09},
+        {"score": "2-1", "prob": 0.08},
+        {"score": "0-1", "prob": 0.07}
+      ],
+      "htScoreTop3": [
+        {"score": "1-0", "prob": 0.24},
+        {"score": "0-0", "prob": 0.23},
+        {"score": "0-1", "prob": 0.15}
+      ],
+      "lambdaHome": 1.35,
+      "lambdaAway": 1.10,
+      "lambdaTotal": 2.45,
+      "rulesTriggered": ["规则65触发(身价7.4倍)但解放者杯小球特征权衡", "规则12交锋主场2胜1平(2020年5-0大胜)", "高原主场优势(2850米)", "杯赛首回合保守"]
+    }
+  ]
+}

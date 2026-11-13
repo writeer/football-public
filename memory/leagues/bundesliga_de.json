@@ -1,0 +1,158 @@
+{
+    "league_info": {
+        "name_cn": "德国甲级联赛",
+        "name_en": "Bundesliga",
+        "country": "德国",
+        "country_code": "DE",
+        "level": "顶级",
+        "num_teams": 18,
+        "format": "双循环，34轮",
+        "season_period": "8月-次年5月（跨年）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.bundesliga.com",
+        "governing_body": "德国足球联赛协会（DFL）",
+        "cross_league_level": "L1",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 3.21,
+        "draw_rate": 0.243,
+        "home_win_rate": 0.435,
+        "away_win_rate": 0.322,
+        "over_2_5_rate": 0.65,
+        "under_2_5_rate": 0.35,
+        "btts_rate": 0.62,
+        "top_scores": [
+            {
+                "score": "2-1",
+                "frequency": 0.092,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.082,
+                "direction": "平局"
+            },
+            {
+                "score": "3-1",
+                "frequency": 0.071,
+                "direction": "主胜"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.068,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.058,
+                "direction": "主胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.022,
+            "1_goal": 0.08,
+            "2_goals": 0.18,
+            "3_goals": 0.25,
+            "4_goals": 0.22,
+            "5_plus_goals": 0.248
+        },
+        "avg_home_goals": 1.72,
+        "avg_away_goals": 1.49,
+        "home_advantage_factor": 1.12,
+        "ht_draw_rate": 0.359,
+        "ht_draw_rate_note": "德甲半场平局率。2026-09-12核算：football-data.co.uk官方逐场半场比分，5季合并1529场→0.3591；单季2025/26=0.3660。thefishy.uk(2025/26)得0.3660，验证一致。属中高半场平局档(0.35-0.40)，lambda_ht系数0.42。",
+        "ht_draw_rate_source": [
+            "https://www.football-data.co.uk/mmz4281/2526/D1.csv",
+            "https://www.thefishy.uk/leaguetable.php?table=32&season=23"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "中高(0.35-0.40)",
+        "ht_draw_rate_confidence": "高(官方逐场半场比分/交叉验证一致)"
+    },
+    "match_style": {
+        "tactical_character": "进攻足球代表联赛，场均进球五大联赛最高。强调高位逼抢和快速转换， Gegenpressing（反抢）发源地。注重青训和年轻球员培养，节奏快、对抗强。",
+        "tempo": "极快",
+        "physicality": "高",
+        "technical_focus": "高",
+        "var_usage": "2017-18赛季引入VAR。使用频率高，争议较少。德甲VAR技术成熟度较高。",
+        "key_trends": [
+            "Gegenpressing高位逼抢成为标配",
+            "进攻节奏极快，转换瞬间致命",
+            "年轻球员培养体系世界领先",
+            "拜仁垄断近年勒沃库森打破（2023-24赛季不败夺冠）"
+        ],
+        "style_tags": [
+            "进攻",
+            "快节奏",
+            "高位逼抢",
+            "年轻化"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.42,
+        "avg_red_cards": 0.14,
+        "avg_penalties": 0.24,
+        "referee_style": "德甲裁判判罚尺度较宽松，鼓励身体对抗和比赛流畅性。出牌率五大联赛最低。Bibiana Steinhaus为德甲首位女性主裁判（已退役）。",
+        "first_half_stoppage_avg": 2.0,
+        "second_half_stoppage_avg": 5.5,
+        "stoppage_note": "德甲比赛流畅度高，倒地少，补时相对较短。2023-24赛季起跟随严格补时趋势。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "Robert Hoyzer假赛丑闻",
+                "year": "2005",
+                "description": "德甲历史上最严重假赛丑闻。裁判Robert Hoyzer涉嫌操纵多场德国杯比赛（涉及德甲球队）。Hoyzer被终身禁赛，多名参与者被起诉。此事件促使德国足球建立更严格的廉洁监管体系。"
+            },
+            {
+                "event": "无重大德甲联赛假赛",
+                "year": "-",
+                "description": "Hoyzer案后德甲廉洁度大幅提升，未再发生联赛级别的假赛丑闻。德国足球廉洁性评价五大联赛最高。"
+            }
+        ],
+        "discipline_features": "DFB（德国足协）纪律委员会独立运作。黄牌累积5张停1场。红牌自动停赛。德国纪律处罚体系严格且透明。",
+        "official_rules": "IFAB规则+德甲特别规则。德甲'50+1'规则限制外部资本控股，保护俱乐部会员制传统。财务监管严格，俱乐部经营稳健。",
+        "integrity_rating": "极高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价德甲'进球最多最精彩'，'适合看大球'。但'拜仁垄断无聊'（2023-24赛季被勒沃库森打破）。彩民认为'德甲大球多，走地追大球'，'主场优势明显但近年下降'。",
+        "betting_market": {
+            "market_efficiency": "高",
+            "liquidity": "高",
+            "mainstream_bookmakers": [
+                "Bet365",
+                "Bwin",
+                "Tipico"
+            ],
+            "line_movement_frequency": "中高频",
+            "sharp_money": "德国本土资金+亚洲资金"
+        },
+        "upset_frequency": "中",
+        "jingcai_tips": [
+            "德甲大球率极高，OVER 2.5是常规选择",
+            "拜仁主场强势，但客场偶有冷门",
+            "中游球队对攻型打法多，进球数偏高",
+            "德甲裁判哨松，比赛流畅，适合大球",
+            "升班马经常打攻势足球，失球也多"
+        ],
+        "common_sayings": [
+            "德甲大球联赛",
+            "拜仁夺冠没悬念（已被打破）",
+            "进球数看德甲"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.bundesliga.com",
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://understat.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "高"
+    }
+}

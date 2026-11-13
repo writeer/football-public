@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>体彩第26101期 任选9场 分析报告</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --card: #1a1d28;
+  --card-hover: #20242f;
+  --border: #2a2e3a;
+  --text: #e8e8e8;
+  --text-dim: #8a8d96;
+  --accent: #4a9eff;
+  --green: #2ecc71;
+  --red: #e74c3c;
+  --yellow: #f1c40f;
+  --orange: #e67e22;
+  --purple: #9b59b6;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:'Segoe UI','Noto Sans CJK SC',sans-serif; line-height:1.6; padding:20px; max-width:1200px; margin:0 auto; }
+h1 { font-size:24px; text-align:center; margin-bottom:5px; background:linear-gradient(135deg,#4a9eff,#9b59b6); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.subtitle { text-align:center; color:var(--text-dim); font-size:13px; margin-bottom:20px; }
+.section-title { font-size:18px; margin:25px 0 12px; padding-left:10px; border-left:3px solid var(--accent); }
+.overview-table { width:100%; border-collapse:collapse; font-size:13px; margin-bottom:20px; }
+.overview-table th { background:var(--card); padding:10px 8px; text-align:center; border-bottom:2px solid var(--border); font-weight:600; color:var(--accent); }
+.overview-table td { padding:8px; text-align:center; border-bottom:1px solid var(--border); }
+.overview-table tr:hover { background:var(--card-hover); }
+.tag { display:inline-block; padding:2px 8px; border-radius:10px; font-size:11px; font-weight:600; }
+.tag-ucl { background:#1a3a5c; color:#4a9eff; }
+.tag-ere { background:#1a4c33; color:#2ecc71; }
+.tag-pri { background:#4c1a33; color:#e91e63; }
+.tag-all { background:#4c3a1a; color:#f1c40f; }
+.tag-eli { background:#1a3c4c; color:#00bcd4; }
+.tag-vei { background:#3c1a4c; color:#9b59b6; }
+.tag-cup { background:#4c2a1a; color:#e67e22; }
+.conf-high { color:var(--green); font-weight:600; }
+.conf-mid { color:var(--yellow); font-weight:600; }
+.conf-low { color:var(--orange); font-weight:600; }
+.pick-3 { color:var(--green); font-weight:bold; }
+.pick-1 { color:var(--yellow); font-weight:bold; }
+.pick-0 { color:var(--red); font-weight:bold; }
+.match-card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px; margin-bottom:15px; transition:border-color 0.2s; }
+.match-card:hover { border-color:var(--accent); }
+.match-card.selected { border-left:3px solid var(--green); }
+.match-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+.match-no { font-size:14px; font-weight:700; color:var(--accent); }
+.match-teams { font-size:16px; font-weight:600; }
+.match-league { font-size:11px; color:var(--text-dim); }
+.prob-row { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:10px; }
+.prob-box { text-align:center; padding:8px; border-radius:6px; background:var(--card-hover); }
+.prob-box.win { border-bottom:2px solid var(--green); }
+.prob-box.draw { border-bottom:2px solid var(--yellow); }
+.prob-box.lose { border-bottom:2px solid var(--red); }
+.prob-label { font-size:11px; color:var(--text-dim); }
+.prob-value { font-size:18px; font-weight:700; }
+.detail-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; font-size:12px; }
+.detail-item { background:var(--card-hover); padding:8px 10px; border-radius:6px; }
+.detail-label { color:var(--text-dim); font-size:11px; }
+.detail-value { font-size:13px; font-weight:500; }
+.injury-badge { display:inline-block; background:#3a1a1a; color:var(--red); padding:1px 6px; border-radius:4px; font-size:10px; margin:1px; }
+.recommendation-bar { background:linear-gradient(135deg,#1a2d1a,#0d1f0d); border:1px solid var(--green); border-radius:8px; padding:12px 16px; margin:8px 0; }
+.rec-label { font-size:12px; color:var(--text-dim); }
+.rec-value { font-size:16px; font-weight:700; color:var(--green); }
+.notes { font-size:12px; color:var(--text-dim); margin-top:8px; padding:8px; background:rgba(255,255,255,0.03); border-radius:6px; border-left:2px solid var(--accent); }
+.summary-card { background:linear-gradient(135deg,#1a1d28,#1a2d1a); border:2px solid var(--green); border-radius:12px; padding:20px; margin:20px 0; }
+.summary-title { font-size:20px; text-align:center; margin-bottom:15px; color:var(--green); }
+.summary-grid { display:grid; grid-template-columns:repeat(9,1fr); gap:6px; margin-bottom:15px; }
+.summary-item { text-align:center; padding:8px 4px; background:var(--card-hover); border-radius:6px; }
+.summary-no { font-size:11px; color:var(--text-dim); }
+.summary-pick { font-size:20px; font-weight:700; }
+.summary-pick.double { font-size:14px; }
+.warning { background:#2a1a1a; border:1px solid var(--red); border-radius:8px; padding:12px; margin:15px 0; font-size:12px; color:#e8a0a0; }
+.warning-title { color:var(--red); font-weight:600; margin-bottom:5px; }
+.stat-row { display:flex; gap:15px; margin-bottom:10px; flex-wrap:wrap; }
+.stat-item { background:var(--card-hover); padding:6px 12px; border-radius:6px; font-size:12px; }
+.stat-label { color:var(--text-dim); }
+.stat-value { font-weight:600; }
+@media(max-width:768px) {
+  .detail-grid { grid-template-columns:1fr; }
+  .summary-grid { grid-template-columns:repeat(5,1fr); }
+  .prob-row { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<h1>体彩第26101期 任选9场 分析报告</h1>
+<p class="subtitle">开售: 2026-08-05 20:00 | 停售: 2026-08-08 21:30 | 开奖: 2026-08-09 | 分析日期: 2026-08-05</p>
+
+<div class="warning">
+  <div class="warning-title">风险提示</div>
+  足球比赛存在极大不确定性，任何模型预测均非100%准确。模型基于历史数据，突发因素（红牌、点球、天气等）无法完全预测。赔率数据可能随时间变化，请以实时数据为准。理性看待预测，切勿沉迷赌博。18岁以下禁止购买彩票。
+</div>
+
+<h2 class="section-title">14场总览</h2>
+<table class="overview-table">
+  <thead>
+    <tr>
+      <th>场</th><th>联赛</th><th>对阵</th><th>日期</th><th>主胜%</th><th>平%</th><th>客胜%</th><th>推荐</th><th>次选</th><th>置信度</th><th>任9</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>01</td><td><span class="tag tag-cup">英联赛杯</span></td><td>斯旺西 vs 伯明翰</td><td>08-08</td><td>46.2</td><td>22.0</td><td>31.8</td><td class="pick-3">3</td><td class="pick-0">0</td><td class="conf-mid">★★</td><td></td></tr>
+    <tr><td>02</td><td><span class="tag tag-cup">英联赛杯</span></td><td>西汉姆联 vs 朴茨茅斯</td><td>08-08</td><td>66.9</td><td>20.3</td><td>12.8</td><td class="pick-3">3</td><td class="pick-1">1</td><td class="conf-high">★★★</td><td>✅</td></tr>
+    <tr><td>03</td><td><span class="tag tag-cup">英联赛杯</span></td><td>德比郡 vs 林肯城</td><td>08-08</td><td>38.1</td><td>23.0</td><td>38.8</td><td class="pick-0">0</td><td class="pick-3">3</td><td class="conf-low">★</td><td></td></tr>
+    <tr><td>04</td><td><span class="tag tag-ere">荷甲</span></td><td>奈梅亨 vs 特尔斯达</td><td>08-08</td><td>57.4</td><td>19.9</td><td>22.7</td><td class="pick-3">3</td><td class="pick-0">0</td><td class="conf-mid">★★</td><td>✅</td></tr>
+    <tr><td>05</td><td><span class="tag tag-ere">荷甲</span></td><td>前进之鹰 vs 威廉二世</td><td>08-09</td><td>49.3</td><td>20.1</td><td>30.6</td><td class="pick-3">3</td><td class="pick-0">0</td><td class="conf-mid">★★</td><td>✅</td></tr>
+    <tr><td>06</td><td><span class="tag tag-ere">荷甲</span></td><td>PSV埃因霍温 vs 福图纳锡塔德</td><td>08-09</td><td>82.6</td><td>14.1</td><td>3.4</td><td class="pick-3">3</td><td class="pick-1">1</td><td class="conf-high">★★★</td><td>✅</td></tr>
+    <tr><td>07</td><td><span class="tag tag-ere">荷甲</span></td><td>阿尔克马尔 vs 海牙</td><td>08-09</td><td>74.8</td><td>16.2</td><td>9.0</td><td class="pick-3">3</td><td class="pick-1">1</td><td class="conf-high">★★★</td><td>✅</td></tr>
+    <tr><td>08</td><td><span class="tag tag-pri">葡超</span></td><td>马里迪莫 vs 卡萨皮亚</td><td>08-08</td><td>38.7</td><td>24.4</td><td>36.9</td><td class="pick-3">3</td><td class="pick-0">0</td><td class="conf-low">★</td><td></td></tr>
+    <tr><td>09</td><td><span class="tag tag-pri">葡超</span></td><td>吉马良斯 vs 阿罗卡</td><td>08-09</td><td>45.9</td><td>24.9</td><td>29.2</td><td class="pick-3">3</td><td class="pick-0">0</td><td class="conf-mid">★★</td><td></td></tr>
+    <tr><td>10</td><td><span class="tag tag-pri">葡超</span></td><td>阿马多拉 vs 里斯本竞技</td><td>08-09</td><td>18.6</td><td>22.4</td><td>59.0</td><td class="pick-0">0</td><td class="pick-1">1</td><td class="conf-mid">★★</td><td>✅</td></tr>
+    <tr><td>11</td><td><span class="tag tag-all">瑞超</span></td><td>米亚尔比 vs 埃尔夫斯堡</td><td>08-08</td><td>52.4</td><td>23.1</td><td>24.5</td><td class="pick-3">3</td><td class="pick-0">0</td><td class="conf-mid">★★</td><td>✅</td></tr>
+    <tr><td>12</td><td><span class="tag tag-eli">挪超</span></td><td>维京 vs 萨尔普斯堡</td><td>08-08</td><td>51.5</td><td>20.9</td><td>27.5</td><td class="pick-3">3</td><td class="pick-0">0</td><td class="conf-mid">★★</td><td>✅</td></tr>
+    <tr><td>13</td><td><span class="tag tag-eli">挪超</span></td><td>斯达 vs 腓特烈斯塔</td><td>08-09</td><td>38.2</td><td>25.0</td><td>36.8</td><td class="pick-3">3</td><td class="pick-0">0</td><td class="conf-low">★</td><td></td></tr>
+    <tr><td>14</td><td><span class="tag tag-vei">芬超</span></td><td>雅罗 vs 瓦萨</td><td>08-09</td><td>48.7</td><td>24.7</td><td>26.6</td><td class="pick-3">3</td><td class="pick-0">0</td><td class="conf-mid">★★</td><td>✅</td></tr>
+  </tbody>
+</table>
+
+<h2 class="section-title">任选9场推荐方案</h2>
+<div class="summary-card">
+  <div class="summary-title">第26101期 任选9场 推荐方案</div>
+  <div class="summary-grid">
+    <div class="summary-item"><div class="summary-no">02 西汉姆联</div><div class="summary-pick pick-3">3</div><div class="summary-no">vs 朴茨茅斯</div></div>
+    <div class="summary-item"><div class="summary-no">04 奈梅亨</div><div class="summary-pick pick-3">3</div><div class="summary-no">vs 特尔斯达</div></div>
+    <div class="summary-item"><div class="summary-no">05 前进之鹰</div><div class="summary-pick pick-3">3</div><div class="summary-no">vs 威廉二世</div></div>
+    <div class="summary-item"><div class="summary-no">06 PSV</div><div class="summary-pick pick-3">3</div><div class="summary-no">vs 福图纳</div></div>
+    <div class="summary-item"><div class="summary-no">07 阿尔克马尔</div><div class="summary-pick pick-3">3</div><div class="summary-no">vs 海牙</div></div>
+    <div class="summary-item"><div class="summary-no">10 阿马多拉</div><div class="summary-pick pick-0">0</div><div class="summary-no">vs 竞技</div></div>
+    <div class="summary-item"><div class="summary-no">11 米亚尔比</div><div class="summary-pick pick-3">3</div><div class="summary-no">vs 埃尔夫</div></div>
+    <div class="summary-item"><div class="summary-no">12 维京</div><div class="summary-pick pick-3">3</div><div class="summary-no">vs 萨普斯</div></div>
+    <div class="summary-item"><div class="summary-no">14 雅罗</div><div class="summary-pick pick-3">3</div><div class="summary-no">vs 瓦萨</div></div>
+  </div>
+  <div style="text-align:center; margin-top:10px;">
+    <div class="rec-label">方案代码（单选9场）</div>
+    <div class="rec-value" style="font-size:22px; letter-spacing:4px;">3 3 3 3 3 0 3 3 3</div>
+    <div style="font-size:11px; color:var(--text-dim); margin-top:4px;">对应场次: 02 04 05 06 07 10 11 12 14</div>
+  </div>
+  <div style="margin-top:12px; padding:10px; background:rgba(255,255,255,0.03); border-radius:6px; font-size:12px;">
+    <strong>复式推荐（防爆冷）：</strong>对置信度★★的6场比赛各加一个次选，形成2注复式。<br>
+    方案：06场<span class="pick-3">3</span>+07场<span class="pick-3">3</span>+02场<span class="pick-3">3</span>+10场<span class="pick-0">0</span>+04场<span class="pick-3">3</span>/<span class="pick-0">0</span>+11场<span class="pick-3">3</span>/<span class="pick-0">0</span>+12场<span class="pick-3">3</span>/<span class="pick-0">0</span>+05场<span class="pick-3">3</span>/<span class="pick-0">0</span>+14场<span class="pick-3">3</span>/<span class="pick-0">0</span>
+    <br><span style="color:var(--text-dim);">共 2^5 = 32注，每注2元，合计64元</span>
+  </div>
+</div>
+
+<h2 class="section-title">逐场详细分析</h2>
+
+<!-- Match 1 -->
+<div class="match-card">
+  <div class="match-header">
+    <div><span class="match-no">第01场</span> <span class="match-teams">斯旺西 vs 伯明翰</span></div>
+    <div><span class="tag tag-cup">英联赛杯</span> <span class="match-league">08-08</span></div>
+  </div>
+  <div class="prob-row">
+    <div class="prob-box win"><div class="prob-label">主胜</div><div class="prob-value">46.2%</div></div>
+    <div class="prob-box draw"><div class="prob-label">平局</div><div class="prob-value">22.0%</div></div>
+    <div class="prob-box lose"><div class="prob-label">客胜</div><div class="prob-value">31.8%</div></div>
+  </div>
+  <div class="detail-grid">
+    <div class="detail-item"><span class="detail-label">λ值</span> <span class="detail-value">主1.73 / 客1.39</span></div>
+    <div class="detail-item"><span class="detail-label">近期状态</span> <span class="detail-value">斯旺西 WDLWW / 伯明翰 WWWWW</span></div>
+    <div class="detail-item"><span class="detail-label">交锋(近5)</span> <span class="detail-value">0胜3平2负（伯明翰占优）</span></div>
+    <div class="detail-item"><span class="detail-label">比分TOP3</span> <span class="detail-value">1-1(9.3%) 2-1(9.2%) 1-0(9.0%)</span></div>
+    <div class="detail-item"><span class="detail-label">总进球推荐</span> <span class="detail-value">3球(22.4%) / 2球(20.1%)</span></div>
+    <div class="detail-item"><span class="detail-label">半全场TOP3</span> <span class="detail-value">胜胜(17.3%) 平胜(16.4%) 负胜(13.1%)</span></div>
+  </div>
+  <div class="recommendation-bar">
+    <span class="rec-label">推荐：</span><span class="rec-value">3 + 0</span>
+    <span class="rec-label" style="margin-left:15px;">置信度：</span><span class="conf-mid">★★ 中</span>
+  </div>
+  <div class="notes">伯明翰季前赛5连胜含2-2平巴萨，状态出色。斯旺西主场有优势但交锋0胜3平2负处于劣势。英联赛杯冷门率高，建议防客胜。未入选任9。</div>
+</div>
+
+<!-- Match 2 -->
+<div class="match-card selected">
+  <div class="match-header">
+    <div><span class="match-no">第02场 ✅</span> <span class="match-teams">西汉姆联 vs 朴茨茅斯</span></div>
+    <div><span class="tag tag-cup">英联赛杯</span> <span class="match-league">08-08</span></div>
+  </div>
+  <div class="prob-row">
+    <div class="prob-box win"><div class="prob-label">主胜</div><div class="prob-value">66.9%</div></div>
+    <div class="prob-box draw"><div class="prob-label">平局</div><div class="prob-value">20.3%</div></div>
+    <div class="prob-box lose"><div class="prob-label">客胜</div><div class="prob-value">12.8%</div></div>
+  </div>
+  <div class="detail-grid">
+    <div class="detail-item"><span class="detail-label">λ值</span> <span class="detail-value">主1.98 / 客0.86</span></div>
+    <div class="detail-item"><span class="detail-label">近期状态</span> <span class="detail-value">西汉姆 WDWDL / 朴茨茅斯 DLWDL</span></div>
+    <div class="detail-item"><span class="detail-label">交锋(近5)</span> <span class="detail-value">4胜1平0负（西汉姆碾压）</span></div>
+    <div class="detail-item"><span class="detail-label">比分TOP3</span> <span class="detail-value">1-0(12.8%) 2-0(11.5%) 2-1(9.8%)</span></div>
+    <div class="detail-item"><span class="detail-label">总进球推荐</span> <span class="detail-value">2球(22.3%) / 3球(22.3%)</span></div>
+    <div class="detail-item"><span class="detail-label">半全场TOP3</span> <span class="detail-value">胜胜(30.9%) 平胜(23.2%) 负胜(10.8%)</span></div>
+  </div>
+  <div class="recommendation-bar">
+    <span class="rec-label">推荐：</span><span class="rec-value">3 + 1</span>
+    <span class="rec-label" style="margin-left:15px;">置信度：</span><span class="conf-high">★★★ 高（稳胆）</span>
+  </div>
+  <div class="notes">西汉姆英超球队 vs 英甲朴茨茅斯，跨两级联赛实力差距明显。西汉姆季前赛5-0大胜斯蒂夫尼奇，交锋4胜1平碾压。联赛杯英超队对低级别队稳胆首选。防平局即可。</div>
+</div>
+
+<!-- Match 3 -->
+<div class="match-card">
+  <div class="match-header">
+    <div><span class="match-no">第03场</span> <span class="match-teams">德比郡 vs 林肯城</span></div>
+    <div><span class="tag tag-cup">英联赛杯</span> <span class="match-league">08-08</span></div>
+  </div>
+  <div class="prob-row">
+    <div class="prob-box win"><div class="prob-label">主胜</div><div class="prob-value">38.1%</div></div>
+    <div class="prob-box draw"><div class="prob-label">平局</div><div class="prob-value">23.0%</div></div>
+    <div class="prob-box lose"><div class="prob-label">客胜</div><div class="prob-value">38.8%</div></div>
+  </div>
+  <div class="detail-grid">
+    <div class="detail-item"><span class="detail-label">λ值</span> <span class="detail-value">主1.39 / 客1.41</span></div>
+    <div class="detail-item"><span class="detail-label">近期状态</span> <span class="detail-value">德比郡 LWLDL / 林肯城 WWWDW</span></div>
+    <div class="detail-item"><span class="detail-label">交锋(近5)</span> <span class="detail-value">2胜2平1负（德比郡略优）</span></div>
+    <div class="detail-item"><span class="detail-label">比分TOP3</span> <span class="detail-value">1-1(10.4%) 0-1(10.1%) 1-0(10.0%)</span></div>
+    <div class="detail-item"><span class="detail-label">总进球推荐</span> <span class="detail-value">2球(22.3%) / 3球(22.3%)</span></div>
+    <div class="detail-item"><span class="detail-label">半全场TOP3</span> <span class="detail-value">平负(14.9%) 平胜(14.6%) 负负(12.3%)</span></div>
+  </div>
+  <div class="recommendation-bar">
+    <span class="rec-label">推荐：</span><span class="rec-value" style="color:var(--red);">0 + 3</span>
+    <span class="rec-label" style="margin-left:15px;">置信度：</span><span class="conf-low">★ 低</span>
+  </div>
+  <div class="notes">德比郡季前赛1胜1平3负状态差，林肯城上赛季末4胜1平状态出色。但英联赛杯冷门率极高，林肯城英甲球队客胜英冠球队并非稳事。方向过于接近（38% vs 39%），不适合任9。排除。</div>
+</div>
+
+<!-- Match 4 -->
+<div class="match-card selected">
+  <div class="match-header">
+    <div><span class="match-no">第04场 ✅</span> <span class="match-teams">奈梅亨 vs 特尔斯达</span></div>
+    <div><span class="tag tag-ere">荷甲</span> <span class="match-league">08-08</span></div>
+  </div>
+  <div class="prob-row">
+    <div class="prob-box win"><div class="prob-label">主胜</div><div class="prob-value">57.4%</div></div>
+    <div class="prob-box draw"><div class="prob-label">平局</div><div class="prob-value">19.9%</div></div>
+    <div class="prob-box lose"><div class="prob-label">客胜</div><div class="prob-value">22.7%</div></div>
+  </div>
+  <div class="detail-grid">
+    <div class="detail-item"><span class="detail-label">λ值</span> <span class="detail-value">主1.95 / 客1.13</span></div>
+    <div class="detail-item"><span class="detail-label">近期状态</span> <span class="detail-value">NEC LWLDW / 特尔斯达 LDLDW</span></div>
+    <div class="detail-item"><span class="detail-label">交锋(近5)</span> <span class="detail-value">1胜3平1负（旗鼓相当）</span></div>
+    <div class="detail-item"><span class="detail-label">比分TOP3</span> <span class="detail-value">1-0(10.3%) 2-1(9.9%) 1-1(8.8%)</span></div>
+    <div class="detail-item"><span class="detail-label">伤停</span> <span class="detail-value">主：Ouaissa(M) Nuytinck(D) / 客：Rossen(D) Noslin(F)</span></div>
+    <div class="detail-item"><span class="detail-label">半全场TOP3</span> <span class="detail-value">胜胜(25.3%) 平胜(20.0%) 负胜(12.5%)</span></div>
+  </div>
+  <div class="recommendation-bar">
+    <span class="rec-label">推荐：</span><span class="rec-value">3 + 0</span>
+    <span class="rec-label" style="margin-left:15px;">置信度：</span><span class="conf-mid">★★ 中</span>
+  </div>
+  <div class="notes">NEC荷甲老牌球队，主场优势+经验丰富。特尔斯达升班马，客场伤停4人含前锋Noslin。NEC主场曾7-1大胜特尔斯达。但上赛季两次交锋均平局，需防冷。荷甲大球联赛，总进球看3球。</div>
+</div>
+
+<!-- Match 5 -->
+<div class="match-card selected">
+  <div class="match-header">
+    <div><span class="match-no">第05场 ✅</span> <span class="match-teams">前进之鹰 vs 威廉二世</span></div>
+    <div><span class="tag tag-ere">荷甲</span> <span class="match-league">08-09</span></div>
+  </div>
+  <div class="prob-row">
+    <div class="prob-box win"><div class="prob-label">主胜</div><div class="prob-value">49.3%</div></div>
+    <div class="prob-box draw"><div class="prob-label">平局</div><div class="prob-value">20.1%</div></div>
+    <div class="prob-box lose"><div class="prob-label">客胜</div><div class="prob-value">30.6%</div></div>
+  </div>
+  <div class="detail-grid">
+    <div class="detail-item"><span class="detail-label">λ值</span> <span class="detail-value">主1.95 / 客1.50</span></div>
+    <div class="detail-item"><span class="detail-label">近期状态</span> <span class="detail-value">前进之鹰 WLWLW / 威廉二世 WDWLW</span></div>
+    <div class="detail-item"><span class="detail-label">交锋(近5)</span> <span class="detail-value">3胜0平2负（前进之鹰略优）</span></div>
+    <div class="detail-item"><span class="detail-label">比分TOP3</span> <span class="detail-value">2-1(9.1%) 1-1(8.1%) 1-0(7.4%)</span></div>
+    <div class="detail-item"><span class="detail-label">总进球推荐</span> <span class="detail-value">3球(21.7%) / 5+球(26.4%)</span></div>
+    <div class="detail-item"><span class="detail-label">半全场TOP3</span> <span class="detail-value">胜胜(19.7%) 平胜(16.1%) 负胜(13.8%)</span></div>
+  </div>
+  <div class="recommendation-bar">
+    <span class="rec-label">推荐：</span><span class="rec-value">3 + 0</span>
+    <span class="rec-label" style="margin-left:15px;">置信度：</span><span class="conf-mid">★★ 中</span>
+  </div>
+  <div class="notes">威廉二世季前赛进15球失4球攻防俱佳，bet365客胜赔1.67偏低。但前进之鹰主场交锋3胜0平2负占优。荷甲赛季揭幕战主场优势明显。模型给主胜49.3%但市场看客胜，模型与市场分歧需注意。</div>
+</div>
+
+<!-- Match 6 -->
+<div class="match-card selected">
+  <div class="match-header">
+    <div><span class="match-no">第06场 ✅</span> <span class="match-teams">PSV埃因霍温 vs 福图纳锡塔德</span></div>
+    <div><span class="tag tag-ere">荷甲</span> <span class="match-league">08-09</span></div>
+  </div>
+  <div class="prob-row">
+    <div class="prob-box win"><div class="prob-label">主胜</div><div class="prob-value">82.6%</div></div>
+    <div class="prob-box draw"><div class="prob-label">平局</div><div class="prob-value">14.1%</div></div>
+    <div class="prob-box lose"><div class="prob-label">客胜</div><div class="prob-value">3.4%</div></div>
+  </div>
+  <div class="detail-grid">
+    <div class="detail-item"><span class="detail-label">λ值</span> <span class="detail-value">主2.91 / 客0.79</span></div>
+    <div class="detail-item"><span class="detail-label">近期状态</span> <span class="detail-value">PSV WDWWW / 福图纳 LDLDL</span></div>
+    <div class="detail-item"><span class="detail-label">交锋(近5)</span> <span class="detail-value">5胜0平0负（PSV全胜碾压）</span></div>
+    <div class="detail-item"><span class="detail-label">比分TOP3</span> <span class="detail-value">2-0(10.6%) 3-0(10.2%) 2-1(8.3%)</span></div>
+    <div class="detail-item"><span class="detail-label">总进球推荐</span> <span class="detail-value">3球(21.0%) / 5+球(31.0%)</span></div>
+    <div class="detail-item"><span class="detail-label">半全场TOP3</span> <span class="detail-value">胜胜(50.6%) 平胜(21.5%) 负胜(9.0%)</span></div>
+  </div>
+  <div class="recommendation-bar">
+    <span class="rec-label">推荐：</span><span class="rec-value">3 + 1</span>
+    <span class="rec-label" style="margin-left:15px;">置信度：</span><span class="conf-high">★★★ 高（本期第一稳胆）</span>
+  </div>
+  <div class="notes">PSV荷甲豪门，历史交锋5战全胜。福图纳锡塔德保级球队客场战斗力极弱。赛季揭幕战主场作战，PSV战意充足。82.6%主胜概率为本期最高。半全场胜胜50.6%极具参考价值。</div>
+</div>
+
+<!-- Match 7 -->
+<div class="match-card selected">
+  <div class="match-header">
+    <div><span class="match-no">第07场 ✅</span> <span class="match-teams">阿尔克马尔 vs 海牙</span></div>
+    <div><span class="tag tag-ere">荷甲</span> <span class="match-league">08-09</span></div>
+  </div>
+  <div class="prob-row">
+    <div class="prob-box win"><div class="prob-label">主胜</div><div class="prob-value">74.8%</div></div>
+    <div class="prob-box draw"><div class="prob-label">平局</div><div class="prob-value">16.2%</div></div>
+    <div class="prob-box lose"><div class="prob-label">客胜</div><div class="prob-value">9.0%</div></div>
+  </div>
+  <div class="detail-grid">
+    <div class="detail-item"><span class="detail-label">λ值</span> <span class="detail-value">主2.66 / 客1.03</span></div>
+    <div class="detail-item"><span class="detail-label">近期状态</span> <span class="detail-value">AZ WDWWW / 海牙 LDWDL</span></div>
+    <div class="detail-item"><span class="detail-label">交锋(近5)</span> <span class="detail-value">4胜1平0负（AZ全胜优势）</span></div>
+    <div class="detail-item"><span class="detail-label">比分TOP3</span> <span class="detail-value">2-1(9.1%) 2-0(8.9%) 3-1(8.1%)</span></div>
+    <div class="detail-item"><span class="detail-label">总进球推荐</span> <span class="detail-value">3球(20.9%) / 5+球(31.0%)</span></div>
+    <div class="detail-item"><span class="detail-label">半全场TOP3</span> <span class="detail-value">胜胜(40.9%) 平胜(20.7%) 负胜(11.4%)</span></div>
+  </div>
+  <div class="recommendation-bar">
+    <span class="rec-label">推荐：</span><span class="rec-value">3 + 1</span>
+    <span class="rec-label" style="margin-left:15px;">置信度：</span><span class="conf-high">★★★ 高（稳胆）</span>
+  </div>
+  <div class="notes">阿尔克马尔荷甲上游球队，海牙刚从荷乙升回。实力差距大。AZ主场强势，交锋4胜1平不败。74.8%主胜概率高置信度。荷甲大球联赛，AZ进攻火力强。</div>
+</div>
+
+<!-- Match 8 -->
+<div class="match-card">
+  <div class="match-header">
+    <div><span class="match-no">第08场</span> <span class="match-teams">马里迪莫 vs 卡萨皮亚</span></div>
+    <div><span class="tag tag-pri">葡超</span> <span class="match-league">08-08</span></div>
+  </div>
+  <div class="prob-row">
+    <div class="prob-box win"><div class="prob-label">主胜</div><div class="prob-value">38.7%</div></div>
+    <div class="prob-box draw"><div class="prob-label">平局</div><div class="prob-value">24.4%</div></div>
+    <div class="prob-box lose"><div class="prob-label">客胜</div><div class="prob-value">36.9%</div></div>
+  </div>
+  <div class="detail-grid">
+    <div class="detail-item"><span class="detail-label">λ值</span> <span class="detail-value">主1.34 / 客1.18</span></div>
+    <div class="detail-item"><span class="detail-label">近期状态</span> <span class="detail-value">马里迪莫 LDLDW / 卡萨皮亚 LDWDW</span></div>
+    <div class="detail-item"><span class="detail-label">交锋(近3)</span> <span class="detail-value">0胜1平2负（卡萨皮亚占优）</span></div>
+    <div class="detail-item"><span class="detail-label">比分TOP3</span> <span class="detail-value">1-0(12.5%) 0-1(11.1%) 1-1(11.1%)</span></div>
+    <div class="detail-item"><span class="detail-label">总进球推荐</span> <span class="detail-value">2球(23.9%) / 1球(23.6%)</span></div>
+    <div class="detail-item"><span class="detail-label">半全场TOP3</span> <span class="detail-value">平胜(17.1%) 平负(14.0%) 胜胜(13.5%)</span></div>
+  </div>
+  <div class="recommendation-bar">
+    <span class="rec-label">推荐：</span><span class="rec-value" style="color:var(--yellow);">3/0（双选）</span>
+    <span class="rec-label" style="margin-left:15px;">置信度：</span><span class="conf-low">★ 低</span>
+  </div>
+  <div class="notes">马里迪莫刚从葡乙升回，卡萨皮亚已有葡超经验。交锋卡萨皮亚2胜1平占优。葡超小球联赛，双方进攻力弱。方向过于接近（39% vs 37%），不适合任9。排除。</div>
+</div>
+
+<!-- Match 9 -->
+<div class="match-card">
+  <div class="match-header">
+    <div><span class="match-no">第09场</span> <span class="match-teams">吉马良斯 vs 阿罗卡</span></div>
+    <div><span class="tag tag-pri">葡超</span> <span class="match-league">08-09</span></div>
+  </div>
+  <div class="prob-row">
+    <div class="prob-box win"><div class="prob-label">主胜</div><div class="prob-value">45.9%</div></div>
+    <div class="prob-box draw"><div class="prob-label">平局</div><div class="prob-value">24.9%</div></div>
+    <div class="prob-box lose"><div class="prob-label">客胜</div><div class="prob-value">29.2%</div></div>
+  </div>
+  <div class="detail-grid">
+    <div class="detail-item"><span class="detail-label">λ值</span> <span class="detail-value">主1.34 / 客1.00</span></div>
+    <div class="detail-item"><span class="detail-label">近期状态</span> <span class="detail-value">吉马良斯 LDLDL / 阿罗卡 LDWDD</span></div>
+    <div class="detail-item"><span class="detail-label">交锋(近5)</span> <span class="detail-value">2胜2平1负（吉马良斯略优）</span></div>
+    <div class="detail-item"><span class="detail-label">比分TOP3</span> <span class="detail-value">1-0(14.6%) 0-1(11.3%) 1-1(11.2%)</span></div>
+    <div class="detail-item"><span class="detail-label">总进球推荐</span> <span class="detail-value">2球(24.7%) / 1球(25.8%)</span></div>
+    <div class="detail-item"><span class="detail-label">半全场TOP3</span> <span class="detail-value">平胜(19.7%) 胜胜(15.6%) 平负(12.6%)</span></div>
+  </div>
+  <div class="recommendation-bar">
+    <span class="rec-label">推荐：</span><span class="rec-value">3 + 0</span>
+    <span class="rec-label" style="margin-left:15px;">置信度：</span><span class="conf-mid">★★ 中</span>
+  </div>
+  <div class="notes">吉马良斯上赛季末3连败，阿罗卡防守出色近5场仅失5球。SportsMole预测2-2平局。葡超平局率高(26.5%)，吉马良斯虽实力略优但状态低迷。未入选任9（平局风险偏高）。</div>
+</div>
+
+<!-- Match 10 -->
+<div class="match-card selected">
+  <div class="match-header">
+    <div><span class="match-no">第10场 ✅</span> <span class="match-teams">阿马多拉 vs 里斯本竞技</span></div>
+    <div><span class="tag tag-pri">葡超</span> <span class="match-league">08-09</span></div>
+  </div>
+  <div class="prob-row">
+    <div class="prob-box win"><div class="prob-label">主胜</div><div class="prob-value">18.6%</div></div>
+    <div class="prob-box draw"><div class="prob-label">平局</div><div class="prob-value">22.4%</div></div>
+    <div class="prob-box lose"><div class="prob-label">客胜</div><div class="prob-value">59.0%</div></div>
+  </div>
+  <div class="detail-grid">
+    <div class="detail-item"><span class="detail-label">λ值</span> <span class="detail-value">主0.98 / 客1.74</span></div>
+    <div class="detail-item"><span class="detail-label">近期状态</span> <span class="detail-value">阿马多拉 DLWDW / 竞技 WWWWW</span></div>
+    <div class="detail-item"><span class="detail-label">交锋(近5)</span> <span class="detail-value">0胜0平5负（竞技全胜碾压）</span></div>
+    <div class="detail-item"><span class="detail-label">比分TOP3</span> <span class="detail-value">0-1(12.9%) 0-2(10.0%) 1-2(9.8%)</span></div>
+    <div class="detail-item"><span class="detail-label">伤停</span> <span class="detail-value">主：Lekovic(D) / 客：Blopa(M)</span></div>
+    <div class="detail-item"><span class="detail-label">半全场TOP3</span> <span class="detail-value">负负(23.9%) 平负(21.5%) 胜负(11.5%)</span></div>
+  </div>
+  <div class="recommendation-bar">
+    <span class="rec-label">推荐：</span><span class="rec-value" style="color:var(--red);">0 + 1</span>
+    <span class="rec-label" style="margin-left:15px;">置信度：</span><span class="conf-mid">★★ 中</span>
+  </div>
+  <div class="notes">里斯本竞技季前赛4连胜进18球（含7-0斯特拉斯堡），交锋5战全胜进15球失2球。阿马多拉葡超中下游，实力差距巨大。59%客胜概率有保障。葡超主场优势需防平局，建议0+1双选。</div>
+</div>
+
+<!-- Match 11 -->
+<div class="match-card selected">
+  <div class="match-header">
+    <div><span class="match-no">第11场 ✅</span> <span class="match-teams">米亚尔比 vs 埃尔夫斯堡</span></div>
+    <div><span class="tag tag-all">瑞超</span> <span class="match-league">08-08</span></div>
+  </div>
+  <div class="prob-row">
+    <div class="prob-box win"><div class="prob-label">主胜</div><div class="prob-value">52.4%</div></div>
+    <div class="prob-box draw"><div class="prob-label">平局</div><div class="prob-value">23.1%</div></div>
+    <div class="prob-box lose"><div class="prob-label">客胜</div><div class="prob-value">24.5%</div></div>
+  </div>
+  <div class="detail-grid">
+    <div class="detail-item"><span class="detail-label">λ值</span> <span class="detail-value">主1.55 / 客1.08</span></div>
+    <div class="detail-item"><span class="detail-label">近期状态</span> <span class="detail-value">米亚尔比 DLWDD / 埃尔夫斯堡 WDLDL</span></div>
+    <div class="detail-item"><span class="detail-label">交锋(近5)</span> <span class="detail-value">2胜3平0负（米亚尔比不败）</span></div>
+    <div class="detail-item"><span class="detail-label">比分TOP3</span> <span class="detail-value">1-0(12.8%) 1-1(10.5%) 2-1(9.4%)</span></div>
+    <div class="detail-item"><span class="detail-label">总进球推荐</span> <span class="detail-value">2球(23.4%) / 3球(21.8%)</span></div>
+    <div class="detail-item"><span class="detail-label">半全场TOP3</span> <span class="detail-value">平胜(19.6%) 胜胜(18.5%) 负胜(11.8%)</span></div>
+  </div>
+  <div class="recommendation-bar">
+    <span class="rec-label">推荐：</span><span class="rec-value">3 + 0</span>
+    <span class="rec-label" style="margin-left:15px;">置信度：</span><span class="conf-mid">★★ 中</span>
+  </div>
+  <div class="notes">米亚尔比联赛排名低(11)但交锋2胜3平不败占优。埃尔夫斯堡上轮客胜马尔默但整体状态不稳。瑞超主场优势系数1.20（高于五大联赛），米亚尔比主场可信赖。双方进攻力弱，小球概率高。</div>
+</div>
+
+<!-- Match 12 -->
+<div class="match-card selected">
+  <div class="match-header">
+    <div><span class="match-no">第12场 ✅</span> <span class="match-teams">维京 vs 萨尔普斯堡</span></div>
+    <div><span class="tag tag-eli">挪超</span> <span class="match-league">08-08</span></div>
+  </div>
+  <div class="prob-row">
+    <div class="prob-box win"><div class="prob-label">主胜</div><div class="prob-value">51.5%</div></div>
+    <div class="prob-box draw"><div class="prob-label">平局</div><div class="prob-value">20.9%</div></div>
+    <div class="prob-box lose"><div class="prob-label">客胜</div><div class="prob-value">27.5%</div></div>
+  </div>
+  <div class="detail-grid">
+    <div class="detail-item"><span class="detail-label">λ值</span> <span class="detail-value">主1.85 / 客1.42</span></div>
+    <div class="detail-item"><span class="detail-label">近期状态</span> <span class="detail-value">维京 WDWWW / 萨普斯堡 WWWDW</span></div>
+    <div class="detail-item"><span class="detail-label">交锋(近5)</span> <span class="detail-value">1胜2平2负（萨普斯堡略优）</span></div>
+    <div class="detail-item"><span class="detail-label">比分TOP3</span> <span class="detail-value">2-1(9.2%) 1-1(8.7%) 1-0(8.3%)</span></div>
+    <div class="detail-item"><span class="detail-label">伤停</span> <span class="detail-value">主：Falchener(D) Roseth(M) Berisha(F) / 客：Reinhardsen(D)</span></div>
+    <div class="detail-item"><span class="detail-label">半全场TOP3</span> <span class="detail-value">胜胜(19.0%) 平胜(16.5%) 负胜(13.4%)</span></div>
+  </div>
+  <div class="recommendation-bar">
+    <span class="rec-label">推荐：</span><span class="rec-value">3 + 0</span>
+    <span class="rec-label" style="margin-left:15px;">置信度：</span><span class="conf-mid">★★ 中（伤停需关注）</span>
+  </div>
+  <div class="notes">维京挪超第2(12胜1平2负)争冠球队，但3人伤停含前锋Berisha(核心射手)，进攻力受损。萨普斯堡近5场不败防守极稳(仅失2球)。上次交手萨普斯堡1-0胜。维京主场复仇战意强，但伤停影响大，建议防客胜。</div>
+</div>
+
+<!-- Match 13 -->
+<div class="match-card">
+  <div class="match-header">
+    <div><span class="match-no">第13场</span> <span class="match-teams">斯达 vs 腓特烈斯塔</span></div>
+    <div><span class="tag tag-eli">挪超</span> <span class="match-league">08-09</span></div>
+  </div>
+  <div class="prob-row">
+    <div class="prob-box win"><div class="prob-label">主胜</div><div class="prob-value">38.2%</div></div>
+    <div class="prob-box draw"><div class="prob-label">平局</div><div class="prob-value">25.0%</div></div>
+    <div class="prob-box lose"><div class="prob-label">客胜</div><div class="prob-value">36.8%</div></div>
+  </div>
+  <div class="detail-grid">
+    <div class="detail-item"><span class="detail-label">λ值</span> <span class="detail-value">主1.04 / 客1.13</span></div>
+    <div class="detail-item"><span class="detail-label">近期状态</span> <span class="detail-value">斯达 LWLLL / 腓特烈斯塔 WLLLL</span></div>
+    <div class="detail-item"><span class="detail-label">交锋(近5)</span> <span class="detail-value">1胜1平3负（腓特烈斯塔占优）</span></div>
+    <div class="detail-item"><span class="detail-label">比分TOP3</span> <span class="detail-value">0-1(14.6%) 1-0(13.6%) 1-1(11.7%)</span></div>
+    <div class="detail-item"><span class="detail-label">伤停</span> <span class="detail-value">主：Toennessen(D) Lien(M) Torkildsen(F) / 客：Kvile(D) Soerloekk(M)</span></div>
+    <div class="detail-item"><span class="detail-label">半全场TOP3</span> <span class="detail-value">平负(17.6%) 平胜(15.6%) 平平(11.6%)</span></div>
+  </div>
+  <div class="recommendation-bar">
+    <span class="rec-label">推荐：</span><span class="rec-value" style="color:var(--yellow);">3/1/0（全包）</span>
+    <span class="rec-label" style="margin-left:15px;">置信度：</span><span class="conf-low">★ 低</span>
+  </div>
+  <div class="notes">斯达垫底(2胜4平10负进16失37)，腓特烈斯塔客场极差(胜率13%)。双方近期均低谷，斯达3人伤停含各线1人。挪超"菜鸡互啄"型比赛，方向无法判断（38% vs 25% vs 37%）。强烈排除。</div>
+</div>
+
+<!-- Match 14 -->
+<div class="match-card selected">
+  <div class="match-header">
+    <div><span class="match-no">第14场 ✅</span> <span class="match-teams">雅罗 vs 瓦萨</span></div>
+    <div><span class="tag tag-vei">芬超</span> <span class="match-league">08-09</span></div>
+  </div>
+  <div class="prob-row">
+    <div class="prob-box win"><div class="prob-label">主胜</div><div class="prob-value">48.7%</div></div>
+    <div class="prob-box draw"><div class="prob-label">平局</div><div class="prob-value">24.7%</div></div>
+    <div class="prob-box lose"><div class="prob-label">客胜</div><div class="prob-value">26.6%</div></div>
+  </div>
+  <div class="detail-grid">
+    <div class="detail-item"><span class="detail-label">λ值</span> <span class="detail-value">主1.42 / 客1.08</span></div>
+    <div class="detail-item"><span class="detail-label">近期状态</span> <span class="detail-value">雅罗 LWDWL / 瓦萨 LDLDW</span></div>
+    <div class="detail-item"><span class="detail-label">交锋(近5)</span> <span class="detail-value">3胜2平0负（雅罗不败）</span></div>
+    <div class="detail-item"><span class="detail-label">比分TOP3</span> <span class="detail-value">1-0(13.3%) 1-1(11.0%) 0-1(10.5%)</span></div>
+    <div class="detail-item"><span class="detail-label">总进球推荐</span> <span class="detail-value">2球(24.0%) / 1球(23.8%)</span></div>
+    <div class="detail-item"><span class="detail-label">半全场TOP3</span> <span class="detail-value">平胜(18.9%) 胜胜(16.1%) 平负(12.4%)</span></div>
+  </div>
+  <div class="recommendation-bar">
+    <span class="rec-label">推荐：</span><span class="rec-value">3 + 0</span>
+    <span class="rec-label" style="margin-left:15px;">置信度：</span><span class="conf-mid">★★ 中</span>
+  </div>
+  <div class="notes">雅罗排名低(10)但交锋3胜2平不败占优。VPS排名高(5)但近期两连败状态下滑。芬超主场优势系数1.22（本期最高），雅罗主场可信赖。芬超小球联赛，总进球看2球。</div>
+</div>
+
+<h2 class="section-title">排除场次分析</h2>
+<div style="background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px; margin-bottom:15px; font-size:13px;">
+  <p style="margin-bottom:8px;"><strong>第01场 斯旺西 vs 伯明翰</strong> — 英联赛杯冷门率高，伯明翰季前赛5连胜含2-2平巴萨。方向46% vs 32%不够清晰，交锋劣势。</p>
+  <p style="margin-bottom:8px;"><strong>第03场 德比郡 vs 林肯城</strong> — 38% vs 39%几乎对开，无法判断方向。英联赛杯+跨级别对阵，不确定性极高。</p>
+  <p style="margin-bottom:8px;"><strong>第08场 马里迪莫 vs 卡萨皮亚</strong> — 39% vs 37%方向不清，马里迪莫升班马状态差，葡超平局率高达26.5%。</p>
+  <p style="margin-bottom:8px;"><strong>第09场 吉马良斯 vs 阿罗卡</strong> — 吉马良斯3连败状态低迷，阿罗卡防守出色。SportsMole预测平局。平局风险偏高(25%)。</p>
+  <p><strong>第13场 斯达 vs 腓特烈斯塔</strong> — 垫底队vs客场虫，38% vs 25% vs 37%三向接近。双方伤停严重+状态极差，纯赌博型比赛。</p>
+</div>
+
+<h2 class="section-title">模型说明</h2>
+<div style="background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px; font-size:12px; color:var(--text-dim);">
+  <p style="margin-bottom:8px;"><strong>核心模型：</strong>Dixon-Coles修正泊松（ρ=-0.13低比分修正）+ 蒙特卡洛模拟 + Skellam进球差</p>
+  <p style="margin-bottom:8px;"><strong>特征修正：</strong>Elo实力评级 → λ基准 → 近期状态修正(±5%) → 伤停修正(F:×0.85/M:×0.90/D:对手×1.10) → 联赛平局率修正 → 交锋心理修正(±3%) → 小联赛主场优势修正(+3%)</p>
+  <p style="margin-bottom:8px;"><strong>联赛参数：</strong>荷甲(avg 3.18球/home_adv 1.14) | 葡超(2.52/1.18) | 瑞超(2.65/1.20) | 挪超(2.82/1.18) | 芬超(2.55/1.22) | 英联赛杯(2.70/1.12)</p>
+  <p style="margin-bottom:8px;"><strong>数据来源：</strong>球队近期数据来自Goal.com/SportsMole/FootyStats；联赛参数来自项目联赛知识库(memory/leagues/)；伤停信息来自Goal.com预览页面</p>
+  <p><strong>免责声明：</strong>以上分析基于公开数据和历史统计模型，不构成投注建议。足球比赛结果受众多不可控因素影响，请理性购彩。</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "football-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "足球相关 MCP 服务统一配置与直调接口（零依赖）",
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "servers": "node bin/football-mcp.mjs servers",
+    "config": "node bin/football-mcp.mjs print-config",
+    "config:vscode": "node bin/football-mcp.mjs print-config --vscode",
+    "config:resolve": "node bin/football-mcp.mjs print-config --resolve",
+    "ping": "node bin/football-mcp.mjs ping",
+    "tools": "node bin/football-mcp.mjs tools",
+    "call": "node bin/football-mcp.mjs call",
+    "self-test": "node bin/football-mcp.mjs self-test"
+  }
+}

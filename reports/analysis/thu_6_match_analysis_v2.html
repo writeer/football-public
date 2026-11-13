@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>竞彩分析报告 #周四6场 - 2026-07-30</title>
+<style>
+:root { --primary: #1a73e8; --success: #34a853; --warning: #fbbc04; --danger: #ea4335; --text: #202124; --text2: #5f6368; --bg: #f8f9fa; --border: #dadce0; --purple: #7c3aed; --info: #4285f4; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+.header { background: linear-gradient(135deg, var(--primary), #0d47a1); color: white; padding: 24px; border-radius: 12px; margin-bottom: 20px; }
+.header h1 { font-size: 28px; margin-bottom: 4px; }
+.header .subtitle { opacity: 0.85; font-size: 14px; }
+.header .rule-tag { display: inline-block; background: rgba(255,255,255,0.2); padding: 2px 10px; border-radius: 12px; font-size: 11px; margin-top: 8px; margin-right: 6px; }
+.card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+.card-title { font-size: 16px; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin: 12px 0; }
+.stat-box { background: var(--bg); border-radius: 8px; padding: 14px; text-align: center; }
+.stat-value { font-size: 24px; font-weight: 700; color: var(--primary); }
+.stat-label { font-size: 12px; color: var(--text2); margin-top: 4px; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+th { background: var(--bg); text-align: left; padding: 10px 8px; font-weight: 600; border-bottom: 2px solid var(--border); }
+td { padding: 10px 8px; border-bottom: 1px solid var(--border); }
+tr:hover { background: rgba(26,115,232,0.03); }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.badge-high { background: #e8f5e9; color: #2e7d32; }
+.badge-medium { background: #fff3e0; color: #e65100; }
+.badge-low { background: #fce4ec; color: #c62828; }
+.badge-very_low { background: #f3e5f5; color: #6a1b9a; }
+.badge-divergence { background: #f3e5f5; color: #7c3aed; }
+.prob-bar { height: 8px; background: var(--bg); border-radius: 4px; overflow: hidden; margin-top: 4px; }
+.prob-fill { height: 100%; border-radius: 4px; }
+.prob-fill-home { background: var(--success); }
+.prob-fill-draw { background: var(--warning); }
+.prob-fill-away { background: var(--danger); }
+.match-card { border-left: 4px solid var(--primary); padding-left: 16px; margin: 16px 0; }
+.match-card.home-rec { border-color: var(--success); }
+.match-card.draw-rec { border-color: var(--warning); }
+.match-card.away-rec { border-color: var(--danger); }
+.score-rec { display: inline-block; background: var(--primary); color: white; padding: 3px 8px; border-radius: 6px; font-weight: 700; margin-right: 4px; font-size: 13px; }
+.score-alt { display: inline-block; background: var(--bg); color: var(--text2); padding: 3px 8px; border-radius: 6px; font-size: 12px; margin-right: 4px; }
+.divergence-alert { background: #fff3e0; border-left: 4px solid var(--warning); padding: 10px 14px; border-radius: 0 8px 8px 0; margin: 8px 0; font-size: 13px; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+.info-section { background: #f0f7ff; border-radius: 8px; padding: 12px; margin: 8px 0; font-size: 13px; }
+.info-section h4 { font-size: 13px; font-weight: 600; margin-bottom: 6px; color: var(--primary); }
+.soft-factor { font-size: 12px; line-height: 1.7; }
+.soft-factor strong { color: var(--text); }
+.rec-box { display: inline-block; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 15px; margin: 4px 0; }
+.rec-box.home { background: #e8f5e9; color: #2e7d32; }
+.rec-box.draw { background: #fff3e0; color: #e65100; }
+.rec-box.away { background: #fce4ec; color: #c62828; }
+@media (max-width: 768px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } .container { padding: 10px; } }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>竞彩分析报告 #周四6场</h1>
+<div class="subtitle">生成时间: 2026-07-30 | 基于Dixon-Coles/负二项/Skellam/蒙特卡洛多模型融合 | v1.6.0方法论</div>
+<div><span class="rule-tag">规则27: 战意心理与体能分析</span><span class="rule-tag">规则28: 基本面决定论</span><span class="rule-tag">规则24: 联赛特点数据</span><span class="rule-tag">规则25: 中文平台信息禁用</span></div>
+</div>
+
+<div class="card">
+  <div class="card-title">分析摘要</div>
+  <div class="stats-grid">
+    <div class="stat-box"><div class="stat-value">6</div><div class="stat-label">分析场次</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#2e7d32">5</div><div class="stat-label">高置信度</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#e65100">1</div><div class="stat-label">中置信度</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#c62828">0</div><div class="stat-label">低/极低置信度</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#2e7d32">5</div><div class="stat-label">推荐主胜</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#e65100">0</div><div class="stat-label">推荐平局</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#c62828">1</div><div class="stat-label">推荐客胜</div></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">比赛总览</div>
+  <table>
+    <thead><tr><th>编号</th><th>联赛</th><th>对阵</th><th>首回合</th><th>置信度</th><th>推荐</th><th>首选比分</th></tr></thead>
+    <tbody>
+<tr>
+  <td><strong>周四001</strong></td>
+  <td>欧罗巴资格赛</td>
+  <td>中日德兰 <span style="color:var(--text2)">vs</span> 贝西克塔斯</td>
+  <td style="font-size:12px">贝西克塔斯 1-0 中日德兰</td>
+  <td><span class="badge badge-high">高 ★★★</span></td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">46.1%</span></td>
+  <td><span class="score-rec">1:0</span></td>
+</tr>
+<tr>
+  <td><strong>周四002</strong></td>
+  <td>欧罗巴资格赛</td>
+  <td>帕福斯FC <span style="color:var(--text2)">vs</span> 斯普利特海杜克</td>
+  <td style="font-size:12px">海杜克 2-0 帕福斯</td>
+  <td><span class="badge badge-high">高 ★★★</span> <span class="badge badge-divergence">分歧</span></td>
+  <td><strong>客胜</strong> <span style="color:var(--text2);font-size:11px">36.2%</span></td>
+  <td><span class="score-rec">0:1</span></td>
+</tr>
+<tr>
+  <td><strong>周四003</strong></td>
+  <td>欧罗巴资格赛</td>
+  <td>安德莱赫特 <span style="color:var(--text2)">vs</span> 哈马比</td>
+  <td style="font-size:12px">哈马比 1-1 安德莱赫特</td>
+  <td><span class="badge badge-high">高 ★★★</span></td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">37.0%</span></td>
+  <td><span class="score-rec">0:1</span></td>
+</tr>
+<tr>
+  <td><strong>周四004</strong></td>
+  <td>欧罗巴资格赛</td>
+  <td>费伦茨瓦罗斯 <span style="color:var(--text2)">vs</span> 特温特</td>
+  <td style="font-size:12px">特温特 1-2 费伦茨瓦罗斯</td>
+  <td><span class="badge badge-medium">中 ★★</span></td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">38.7%</span></td>
+  <td><span class="score-rec">1:0</span></td>
+</tr>
+<tr>
+  <td><strong>周四005</strong></td>
+  <td>欧罗巴资格赛</td>
+  <td>本菲卡 <span style="color:var(--text2)">vs</span> 圣加仑</td>
+  <td style="font-size:12px">圣加仑 2-1 本菲卡</td>
+  <td><span class="badge badge-high">高 ★★★</span></td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">60.8%</span></td>
+  <td><span class="score-rec">1:0</span></td>
+</tr>
+<tr>
+  <td><strong>周四006</strong></td>
+  <td>巴甲</td>
+  <td>科林蒂安 <span style="color:var(--text2)">vs</span> 巴拉纳竞技</td>
+  <td style="font-size:12px">-</td>
+  <td><span class="badge badge-high">高 ★★★</span></td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">44.1%</span></td>
+  <td><span class="score-rec">1:0</span></td>
+</tr>
+</tbody></table></div><div class="card">
+  <div class="card-title">逐场详细分析</div>
+
+<div class="match-card home-rec">
+  <h3 style="margin-bottom:4px">周四001 欧罗巴资格赛</h3>
+  <div style="font-size:18px;font-weight:700;margin-bottom:2px">中日德兰 <span style="color:var(--text2);font-weight:400">vs</span> 贝西克塔斯</div>
+  <div style="font-size:12px;color:var(--text2);margin-bottom:8px">首回合: 贝西克塔斯 1-0 中日德兰 | 总比分: 贝西克塔斯 1-0 领先 | MCH Arena (容量12,152)</div>
+  
+  <div style="display:flex;gap:4px;align-items:center;margin:6px 0">
+    <span style="width:40px;font-size:12px">主胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">46.1%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">平局</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:61%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">28.2%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">客胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:56%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">25.7%</span>
+  </div>
+  
+  
+  
+  <div class="rec-box home">主胜 | 融合概率 46.1% | 置信度 高 ★★★</div>
+  
+  <div class="grid-2" style="margin-top:10px">
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">比分TOP5</div>
+      <div><span class="score-rec">1:0</span><span style="font-size:11px;color:var(--text2)">19.9%</span> <span class="score-rec">0:0</span><span style="font-size:11px;color:var(--text2)">15.1%</span> <span class="score-rec">0:1</span><span style="font-size:11px;color:var(--text2)">13.3%</span> <span class="score-rec">1:1</span><span style="font-size:11px;color:var(--text2)">11.1%</span> <span class="score-rec">2:0</span><span style="font-size:11px;color:var(--text2)">9.9%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">半场TOP3</div>
+      <div><span class="score-alt">0:0</span><span style="font-size:11px;color:var(--text2)">43.8%</span> <span class="score-alt">1:0</span><span style="font-size:11px;color:var(--text2)">22.8%</span> <span class="score-alt">0:1</span><span style="font-size:11px;color:var(--text2)">15.0%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">大小球 / 让球</div>
+      <div style="font-size:12px">大球(2.5): 26.6% | 小球(2.5): 73.4%</div>
+      <div style="font-size:12px;margin-top:4px"><span class="score-alt">主让-1球</span><span style="font-size:11px;color:var(--text2)">93.4%</span> <span class="score-alt">平手盘</span><span style="font-size:11px;color:var(--text2)">75.0%</span> <span class="score-alt">主让1球</span><span style="font-size:11px;color:var(--text2)">46.2%</span> </div>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">赔率(体彩)</div>
+      <div style="font-size:14px;margin-bottom:8px">1.85 / 3.55 / 3.65</div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">模型参数</div>
+      <table style="font-size:12px;margin:0">
+        <tr><td>λ主/客</td><td>1.089 / 0.698</td></tr>
+        <tr><td>DC主/平/客</td><td>46.2% / 28.8% / 25.0%</td></tr>
+        <tr><td>Skellam主/平/客</td><td>44.6% / 32.1% / 23.3%</td></tr>
+        <tr><td>MC主/平/客</td><td>44.7% / 31.7% / 23.6%</td></tr>
+        <tr><td>模型标准差</td><td>2.1%</td></tr>
+        <tr><td>软因素修正</td><td>主队×1.058 / 客队×0.95</td></tr>
+      </table>
+    </div>
+  </div>
+  
+  <!-- 场地天气新闻 -->
+  <div class="grid-2" style="margin-top:10px">
+    <div class="info-section">
+      <h4>比赛场地与天气</h4>
+      <div class="soft-factor">MCH Arena (容量12,152)<br>丹麦7月夜间约15-18°C，多云</div>
+    </div>
+    <div class="info-section">
+      <h4>伤停信息</h4>
+      <div class="soft-factor">体彩官伤停暂无数据（信息缺失，需赛前1小时确认首发）</div>
+    </div>
+  </div>
+  
+  <!-- 战意心理与体能分析（规则27） -->
+  <div class="info-section">
+    <h4>战意心理与体能分析（规则27）</h4>
+    <div class="grid-2 soft-factor">
+      <div><strong>战意不对称：</strong>轻度不对称<br>
+      中日德兰：翻盘战意强(需赢球)，丹超刚开赛可全力投入<br>
+      贝西克塔斯：保平即可，联赛未开始专注欧战</div>
+      <div><strong>体能与休息：</strong><br>
+      中日德兰：丹超首轮3-2，上场比赛距今6天，体能充沛<br>
+      贝西克塔斯：6天前首回合，无联赛牵制，体能充沛</div>
+    </div>
+    <div class="grid-2 soft-factor" style="margin-top:6px">
+      <div><strong>心理因素：</strong><br>
+      中日德兰：首回合10人应战只输1球，士气受影响但非崩盘<br>
+      贝西克塔斯：主场赢球占先机，心态放松</div>
+      <div><strong>赛程牵制：</strong><br>
+      中日德兰：无后续赛程牵制<br>
+      贝西克塔斯：无后续赛程牵制</div>
+    </div>
+    <div class="soft-factor" style="margin-top:6px"><strong>综合软因素修正：</strong>主队λ×1.058 / 客队λ×0.95</div>
+  </div>
+  
+  <!-- 近期战绩与历史交锋 -->
+  <div style="margin-top:10px">
+    <div style="font-size:13px;font-weight:600;margin-bottom:6px">近期战绩与历史交锋</div>
+    <div class="grid-2">
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--success)">中日德兰 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-26</td><td>桑德捷斯基 2:3 中日德兰</td><td>胜</td><td>丹超</td></tr><tr><td>2026-07-24</td><td>贝西克塔斯 1:0 中日德兰</td><td>负</td><td>欧罗巴</td></tr><tr><td>2026-07-17</td><td>中日德兰 4:1 欧登塞</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-07-11</td><td>加的夫城 0:6 中日德兰</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-07-04</td><td>中日德兰 4:2 锡尔克堡</td><td>胜</td><td>俱乐部赛</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--danger)">贝西克塔斯 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-24</td><td>贝西克塔斯 1:0 中日德兰</td><td>胜</td><td>欧罗巴</td></tr><tr><td>2026-07-14</td><td>特斯巴达 3:2 贝西克塔斯</td><td>负</td><td>俱乐部赛</td></tr><tr><td>2026-07-05</td><td>莫索马伊洛瓦里 0:0 贝西克塔斯</td><td>平</td><td>俱乐部赛</td></tr><tr><td>2026-07-02</td><td>贝西克塔斯 2:1 贾伊米奥特</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-05-16</td><td>里泽 2:2 贝西克塔斯</td><td>平</td><td>土超</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="margin-top:8px">
+      <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--primary)">历史交锋</div>
+      <table style="font-size:11px;margin:0">
+        <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+        <tbody>
+          <tr><td>2026-07-24</td><td>贝西克塔斯 1:0 中日德兰</td><td>贝西克塔斯胜</td><td>欧罗巴</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="font-size:12px;color:var(--text2);margin-top:8px">中日德兰首回合15分钟红牌，10人应战只输1球。近10场6胜2平2负进23失11，丹超首轮3-2胜桑德捷斯基状态回升。贝西克塔斯近10场4胜3平3负进13失9，状态一般。体彩官方伤停暂无数据，需赛前确认。</div>
+</div>
+
+<div class="match-card away-rec">
+  <h3 style="margin-bottom:4px">周四002 欧罗巴资格赛</h3>
+  <div style="font-size:18px;font-weight:700;margin-bottom:2px">帕福斯FC <span style="color:var(--text2);font-weight:400">vs</span> 斯普利特海杜克</div>
+  <div style="font-size:12px;color:var(--text2);margin-bottom:8px">首回合: 海杜克 2-0 帕福斯 | 总比分: 海杜克 2-0 领先 | Stelios Kyriakides Stadium (容量9,394)</div>
+  
+  <div style="display:flex;gap:4px;align-items:center;margin:6px 0">
+    <span style="width:40px;font-size:12px">主胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:96%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">34.7%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">平局</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:81%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">29.2%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">客胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:100%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">36.2%</span>
+  </div>
+  
+  <div class="divergence-alert">⚠️ 模型与市场分歧（客胜模型方向 vs 市场方向）</div>
+  
+  <div class="rec-box away">客胜 | 融合概率 36.2% | 置信度 高 ★★★</div>
+  
+  <div class="grid-2" style="margin-top:10px">
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">比分TOP5</div>
+      <div><span class="score-rec">0:1</span><span style="font-size:11px;color:var(--text2)">18.1%</span> <span class="score-rec">0:0</span><span style="font-size:11px;color:var(--text2)">16.4%</span> <span class="score-rec">1:0</span><span style="font-size:11px;color:var(--text2)">16.3%</span> <span class="score-rec">1:1</span><span style="font-size:11px;color:var(--text2)">11.5%</span> <span class="score-rec">0:2</span><span style="font-size:11px;color:var(--text2)">7.4%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">半场TOP3</div>
+      <div><span class="score-alt">0:0</span><span style="font-size:11px;color:var(--text2)">45.5%</span> <span class="score-alt">0:1</span><span style="font-size:11px;color:var(--text2)">19.7%</span> <span class="score-alt">1:0</span><span style="font-size:11px;color:var(--text2)">17.7%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">大小球 / 让球</div>
+      <div style="font-size:12px">大球(2.5): 24.4% | 小球(2.5): 75.6%</div>
+      <div style="font-size:12px;margin-top:4px"><span class="score-alt">主让-1球</span><span style="font-size:11px;color:var(--text2)">87.3%</span> <span class="score-alt">平手盘</span><span style="font-size:11px;color:var(--text2)">62.5%</span> <span class="score-alt">主让1球</span><span style="font-size:11px;color:var(--text2)">32.1%</span> </div>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">赔率(体彩)</div>
+      <div style="font-size:14px;margin-bottom:8px">1.8 / 3.55 / 3.8</div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">模型参数</div>
+      <table style="font-size:12px;margin:0">
+        <tr><td>λ主/客</td><td>0.805 / 0.902</td></tr>
+        <tr><td>DC主/平/客</td><td>32.1% / 30.5% / 37.5%</td></tr>
+        <tr><td>Skellam主/平/客</td><td>30.3% / 33.9% / 35.7%</td></tr>
+        <tr><td>MC主/平/客</td><td>30.7% / 33.0% / 36.3%</td></tr>
+        <tr><td>模型标准差</td><td>3.3%</td></tr>
+        <tr><td>软因素修正</td><td>主队×0.969 / 客队×0.948</td></tr>
+      </table>
+    </div>
+  </div>
+  
+  <!-- 场地天气新闻 -->
+  <div class="grid-2" style="margin-top:10px">
+    <div class="info-section">
+      <h4>比赛场地与天气</h4>
+      <div class="soft-factor">Stelios Kyriakides Stadium (容量9,394)<br>塞浦路斯7月夜间约25-28°C，晴</div>
+    </div>
+    <div class="info-section">
+      <h4>伤停信息</h4>
+      <div class="soft-factor">体彩官方伤停暂无数据（信息缺失）</div>
+    </div>
+  </div>
+  
+  <!-- 战意心理与体能分析（规则27） -->
+  <div class="info-section">
+    <h4>战意心理与体能分析（规则27）</h4>
+    <div class="grid-2 soft-factor">
+      <div><strong>战意不对称：</strong>严重不对称<br>
+      帕福斯FC：需翻盘3球，基本无望，战意可能低落<br>
+      斯普利特海杜克：2球优势，可控球消耗</div>
+      <div><strong>体能与休息：</strong><br>
+      帕福斯FC：塞浦路斯联赛未开始，体能充沛<br>
+      斯普利特海杜克：克罗地亚联赛未开始，体能充沛</div>
+    </div>
+    <div class="grid-2 soft-factor" style="margin-top:6px">
+      <div><strong>心理因素：</strong><br>
+      帕福斯FC：首回合0射正，信心受挫<br>
+      斯普利特海杜克：2-0完胜，信心充足</div>
+      <div><strong>赛程牵制：</strong><br>
+      帕福斯FC：无后续赛程牵制<br>
+      斯普利特海杜克：无后续赛程牵制</div>
+    </div>
+    <div class="soft-factor" style="margin-top:6px"><strong>综合软因素修正：</strong>主队λ×0.969 / 客队λ×0.948</div>
+  </div>
+  
+  <!-- 近期战绩与历史交锋 -->
+  <div style="margin-top:10px">
+    <div style="font-size:13px;font-weight:600;margin-bottom:6px">近期战绩与历史交锋</div>
+    <div class="grid-2">
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--success)">帕福斯FC 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-24</td><td>海杜克 2:0 帕福斯</td><td>负</td><td>欧罗巴</td></tr><tr><td>2026-07-17</td><td>布拉迪斯 3:2 帕福斯</td><td>负</td><td>俱乐部赛</td></tr><tr><td>2026-07-12</td><td>帕福斯 0:1 比亚韦</td><td>负</td><td>俱乐部赛</td></tr><tr><td>2026-07-09</td><td>亚布洛 0:0 帕福斯</td><td>平</td><td>俱乐部赛</td></tr><tr><td>2026-07-03</td><td>帕福斯 2:1 克拉科维亚</td><td>胜</td><td>俱乐部赛</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--danger)">斯普利特海杜克 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-24</td><td>海杜克 2:0 帕福斯</td><td>胜</td><td>欧罗巴</td></tr><tr><td>2026-07-17</td><td>日利纳 2:1 海杜克</td><td>负</td><td>欧罗巴</td></tr><tr><td>2026-07-10</td><td>海杜克 2:0 日利纳</td><td>胜</td><td>欧罗巴</td></tr><tr><td>2026-07-02</td><td>采列 0:1 海杜克</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-06-28</td><td>LNZ Cherkasy 0:1 海杜克</td><td>胜</td><td>俱乐部赛</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="margin-top:8px">
+      <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--primary)">历史交锋</div>
+      <table style="font-size:11px;margin:0">
+        <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+        <tbody>
+          <tr><td>2026-07-24</td><td>海杜克 2:0 帕福斯</td><td>海杜克胜</td><td>欧罗巴</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="font-size:12px;color:var(--text2);margin-top:8px">帕福斯需翻盘3球，难度极大。帕福斯近10场4胜2平4负进12失11，状态平平。海杜克近10场7胜1平2负进21失9，状态极佳。首回合海杜克56'64'进球，帕福斯0射正。海杜克欧罗巴近3场2胜1负。</div>
+</div>
+
+<div class="match-card home-rec">
+  <h3 style="margin-bottom:4px">周四003 欧罗巴资格赛</h3>
+  <div style="font-size:18px;font-weight:700;margin-bottom:2px">安德莱赫特 <span style="color:var(--text2);font-weight:400">vs</span> 哈马比</div>
+  <div style="font-size:12px;color:var(--text2);margin-bottom:8px">首回合: 哈马比 1-1 安德莱赫特 | 总比分: 1-1 平局 | Lotto Park (容量21,500)</div>
+  
+  <div style="display:flex;gap:4px;align-items:center;margin:6px 0">
+    <span style="width:40px;font-size:12px">主胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">37.0%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">平局</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:81%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">29.8%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">客胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:90%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">33.2%</span>
+  </div>
+  
+  
+  
+  <div class="rec-box home">主胜 | 融合概率 37.0% | 置信度 高 ★★★</div>
+  
+  <div class="grid-2" style="margin-top:10px">
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">比分TOP5</div>
+      <div><span class="score-rec">0:1</span><span style="font-size:11px;color:var(--text2)">16.7%</span> <span class="score-rec">1:0</span><span style="font-size:11px;color:var(--text2)">16.0%</span> <span class="score-rec">0:0</span><span style="font-size:11px;color:var(--text2)">14.1%</span> <span class="score-rec">1:1</span><span style="font-size:11px;color:var(--text2)">11.7%</span> <span class="score-rec">0:2</span><span style="font-size:11px;color:var(--text2)">7.1%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">半场TOP3</div>
+      <div><span class="score-alt">0:0</span><span style="font-size:11px;color:var(--text2)">42.7%</span> <span class="score-alt">0:1</span><span style="font-size:11px;color:var(--text2)">19.5%</span> <span class="score-alt">1:0</span><span style="font-size:11px;color:var(--text2)">18.6%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">大小球 / 让球</div>
+      <div style="font-size:12px">大球(2.5): 28.0% | 小球(2.5): 72.0%</div>
+      <div style="font-size:12px;margin-top:4px"><span class="score-alt">主让-1球</span><span style="font-size:11px;color:var(--text2)">87.2%</span> <span class="score-alt">平手盘</span><span style="font-size:11px;color:var(--text2)">63.2%</span> <span class="score-alt">主让1球</span><span style="font-size:11px;color:var(--text2)">34.2%</span> </div>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">赔率(体彩)</div>
+      <div style="font-size:14px;margin-bottom:8px">2.1 / 3.35 / 3.1</div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">模型参数</div>
+      <table style="font-size:12px;margin:0">
+        <tr><td>λ主/客</td><td>0.896 / 0.944</td></tr>
+        <tr><td>DC主/平/客</td><td>34.2% / 29.0% / 36.8%</td></tr>
+        <tr><td>Skellam主/平/客</td><td>32.5% / 32.4% / 35.1%</td></tr>
+        <tr><td>MC主/平/客</td><td>32.9% / 31.3% / 35.8%</td></tr>
+        <tr><td>模型标准差</td><td>3.4%</td></tr>
+        <tr><td>软因素修正</td><td>主队×0.949 / 客队×1.048</td></tr>
+      </table>
+    </div>
+  </div>
+  
+  <!-- 场地天气新闻 -->
+  <div class="grid-2" style="margin-top:10px">
+    <div class="info-section">
+      <h4>比赛场地与天气</h4>
+      <div class="soft-factor">Lotto Park (容量21,500)<br>比利时7月夜间约16-20°C，多云</div>
+    </div>
+    <div class="info-section">
+      <h4>伤停信息</h4>
+      <div class="soft-factor">体彩官方伤停暂无数据（信息缺失）</div>
+    </div>
+  </div>
+  
+  <!-- 战意心理与体能分析（规则27） -->
+  <div class="info-section">
+    <h4>战意心理与体能分析（规则27）</h4>
+    <div class="grid-2 soft-factor">
+      <div><strong>战意不对称：</strong>轻度不对称<br>
+      安德莱赫特：主场0-0即可晋级，战意明确<br>
+      哈马比：必须进球才能晋级，需主动进攻</div>
+      <div><strong>体能与休息：</strong><br>
+      安德莱赫特：比甲7月底开赛，体能状态一般<br>
+      哈马比：瑞超进行中(15轮)，比赛节奏好</div>
+    </div>
+    <div class="grid-2 soft-factor" style="margin-top:6px">
+      <div><strong>心理因素：</strong><br>
+      安德莱赫特：首回合领先被绝平+少一人，心理受挫，新帅首胜压力大<br>
+      哈马比：89分钟绝平，士气高涨</div>
+      <div><strong>赛程牵制：</strong><br>
+      安德莱赫特：比甲新赛季刚开，无后续欧战牵制<br>
+      哈马比：瑞超15轮后排名第2，可能分心联赛</div>
+    </div>
+    <div class="soft-factor" style="margin-top:6px"><strong>综合软因素修正：</strong>主队λ×0.949 / 客队λ×1.048</div>
+  </div>
+  
+  <!-- 近期战绩与历史交锋 -->
+  <div style="margin-top:10px">
+    <div style="font-size:13px;font-weight:600;margin-bottom:6px">近期战绩与历史交锋</div>
+    <div class="grid-2">
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--success)">安德莱赫特 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-24</td><td>哈马比 1:1 安德莱赫特</td><td>平</td><td>欧罗巴</td></tr><tr><td>2026-07-16</td><td>阿尔克马 0:1 安德莱赫特</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-07-11</td><td>安德莱赫特 3:2 奈梅亨</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-07-04</td><td>安德莱赫特 0:0 布洛涅</td><td>平</td><td>俱乐部赛</td></tr><tr><td>2026-05-25</td><td>圣吉联合 5:1 安德莱赫特</td><td>负</td><td>比甲</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--danger)">哈马比 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-26</td><td>布鲁马波卡纳 1:1 哈马比</td><td>平</td><td>瑞超</td></tr><tr><td>2026-07-24</td><td>哈马比 1:1 安德莱赫特</td><td>平</td><td>欧罗巴</td></tr><tr><td>2026-07-19</td><td>哈马比 4:0 代格福什</td><td>胜</td><td>瑞超</td></tr><tr><td>2026-07-12</td><td>哈马比 2:0 卡尔马</td><td>胜</td><td>瑞超</td></tr><tr><td>2026-07-05</td><td>埃夫斯堡 1:2 哈马比</td><td>胜</td><td>瑞超</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="margin-top:8px">
+      <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--primary)">历史交锋</div>
+      <table style="font-size:11px;margin:0">
+        <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+        <tbody>
+          <tr><td>2026-07-24</td><td>哈马比 1:1 安德莱赫特</td><td>平局</td><td>欧罗巴</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="font-size:12px;color:var(--text2);margin-top:8px">安德莱赫特首回合6分钟领先，Saliba两黄变一红被罚下，89分钟被绝平。近10场3胜5平2负进14失16，平局率50%。哈马比近10场5胜2平3负进21失12，瑞超第2名状态好。安德莱赫特主场0-0即可晋级。哈马比客场一般(近10客4胜2平4负)。</div>
+</div>
+
+<div class="match-card home-rec">
+  <h3 style="margin-bottom:4px">周四004 欧罗巴资格赛</h3>
+  <div style="font-size:18px;font-weight:700;margin-bottom:2px">费伦茨瓦罗斯 <span style="color:var(--text2);font-weight:400">vs</span> 特温特</div>
+  <div style="font-size:12px;color:var(--text2);margin-bottom:8px">首回合: 特温特 1-2 费伦茨瓦罗斯 | 总比分: 费伦茨瓦罗斯 2-1 领先 | Groupama Arena (容量22,000)</div>
+  
+  <div style="display:flex;gap:4px;align-items:center;margin:6px 0">
+    <span style="width:40px;font-size:12px">主胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">38.7%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">平局</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:69%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">26.8%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">客胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:89%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">34.5%</span>
+  </div>
+  
+  
+  
+  <div class="rec-box home">主胜 | 融合概率 38.7% | 置信度 中 ★★</div>
+  
+  <div class="grid-2" style="margin-top:10px">
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">比分TOP5</div>
+      <div><span class="score-rec">1:0</span><span style="font-size:11px;color:var(--text2)">15.6%</span> <span class="score-rec">0:1</span><span style="font-size:11px;color:var(--text2)">12.7%</span> <span class="score-rec">1:1</span><span style="font-size:11px;color:var(--text2)">11.5%</span> <span class="score-rec">0:0</span><span style="font-size:11px;color:var(--text2)">9.7%</span> <span class="score-rec">2:0</span><span style="font-size:11px;color:var(--text2)">8.4%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">半场TOP3</div>
+      <div><span class="score-alt">0:0</span><span style="font-size:11px;color:var(--text2)">36.6%</span> <span class="score-alt">1:0</span><span style="font-size:11px;color:var(--text2)">21.7%</span> <span class="score-alt">0:1</span><span style="font-size:11px;color:var(--text2)">17.4%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">大小球 / 让球</div>
+      <div style="font-size:12px">大球(2.5): 36.8% | 小球(2.5): 63.2%</div>
+      <div style="font-size:12px;margin-top:4px"><span class="score-alt">主让-1球</span><span style="font-size:11px;color:var(--text2)">89.6%</span> <span class="score-alt">平手盘</span><span style="font-size:11px;color:var(--text2)">69.3%</span> <span class="score-alt">主让1球</span><span style="font-size:11px;color:var(--text2)">43.7%</span> </div>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">赔率(体彩)</div>
+      <div style="font-size:14px;margin-bottom:8px">2.7 / 3.45 / 2.3</div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">模型参数</div>
+      <table style="font-size:12px;margin:0">
+        <tr><td>λ主/客</td><td>1.212 / 0.955</td></tr>
+        <tr><td>DC主/平/客</td><td>43.7% / 25.6% / 30.7%</td></tr>
+        <tr><td>Skellam主/平/客</td><td>41.9% / 29.1% / 29.0%</td></tr>
+        <tr><td>MC主/平/客</td><td>41.9% / 29.0% / 29.1%</td></tr>
+        <tr><td>模型标准差</td><td>5.2%</td></tr>
+        <tr><td>软因素修正</td><td>主队×1.027 / 客队×0.995</td></tr>
+      </table>
+    </div>
+  </div>
+  
+  <!-- 场地天气新闻 -->
+  <div class="grid-2" style="margin-top:10px">
+    <div class="info-section">
+      <h4>比赛场地与天气</h4>
+      <div class="soft-factor">Groupama Arena (容量22,000)<br>匈牙利7月夜间约20-23°C，晴</div>
+    </div>
+    <div class="info-section">
+      <h4>伤停信息</h4>
+      <div class="soft-factor">特温特: Lars Unnerstall(主力门将)腹部受伤出战成疑(体彩数据缺失，来自外媒)</div>
+    </div>
+  </div>
+  
+  <!-- 战意心理与体能分析（规则27） -->
+  <div class="info-section">
+    <h4>战意心理与体能分析（规则27）</h4>
+    <div class="grid-2 soft-factor">
+      <div><strong>战意不对称：</strong>严重不对称<br>
+      费伦茨瓦罗斯：主场保平即可晋级，可防守反击<br>
+      特温特：必须赢球才能翻盘，需全力进攻</div>
+      <div><strong>体能与休息：</strong><br>
+      费伦茨瓦罗斯：匈牙利联赛已开赛，比赛状态好<br>
+      特温特：荷甲7月底开赛，体能状态一般</div>
+    </div>
+    <div class="grid-2 soft-factor" style="margin-top:6px">
+      <div><strong>心理因素：</strong><br>
+      费伦茨瓦罗斯：首回合客场2-1逆转，士气高涨<br>
+      特温特：主场领先被逆转，心理受挫</div>
+      <div><strong>赛程牵制：</strong><br>
+      费伦茨瓦罗斯：无后续欧战牵制<br>
+      特温特：荷甲新赛季刚开始，牵制低</div>
+    </div>
+    <div class="soft-factor" style="margin-top:6px"><strong>综合软因素修正：</strong>主队λ×1.027 / 客队λ×0.995</div>
+  </div>
+  
+  <!-- 近期战绩与历史交锋 -->
+  <div style="margin-top:10px">
+    <div style="font-size:13px;font-weight:600;margin-bottom:6px">近期战绩与历史交锋</div>
+    <div class="grid-2">
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--success)">费伦茨瓦罗斯 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-27</td><td>保克什 4:2 费伦茨瓦罗斯</td><td>负</td><td>匈甲</td></tr><tr><td>2026-07-24</td><td>特温特 1:2 费伦茨瓦罗斯</td><td>胜</td><td>欧罗巴</td></tr><tr><td>2026-07-17</td><td>费伦茨瓦罗斯 3:0 伏伊伏丁</td><td>胜</td><td>欧罗巴</td></tr><tr><td>2026-07-10</td><td>伏伊伏丁 1:2 费伦茨瓦罗斯</td><td>胜</td><td>欧罗巴</td></tr><tr><td>2026-07-01</td><td>费伦茨瓦罗斯 1:0 卡拉巴赫</td><td>胜</td><td>俱乐部赛</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--danger)">特温特 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-25</td><td>埃门 0:3 特温特</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-07-24</td><td>特温特 1:2 费伦茨瓦罗斯</td><td>负</td><td>欧罗巴</td></tr><tr><td>2026-07-18</td><td>特温特 0:2 根特</td><td>负</td><td>俱乐部赛</td></tr><tr><td>2026-07-18</td><td>特温特 2:2 根特</td><td>平</td><td>俱乐部赛</td></tr><tr><td>2026-07-11</td><td>塞萨洛 2:3 特温特</td><td>胜</td><td>俱乐部赛</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="margin-top:8px">
+      <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--primary)">历史交锋</div>
+      <table style="font-size:11px;margin:0">
+        <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+        <tbody>
+          <tr><td>2026-07-24</td><td>特温特 1:2 费伦茨瓦罗斯</td><td>费伦茨胜</td><td>欧罗巴</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="font-size:12px;color:var(--text2);margin-top:8px">费伦茨客场2-1逆转，近10场7胜2平1负进22失8，主场10场8胜2平0负主场极强！特温特近10场5胜2平3负进20失16，客场表现一般。费伦茨保平即可晋级，特温特必须赢球翻盘。</div>
+</div>
+
+<div class="match-card home-rec">
+  <h3 style="margin-bottom:4px">周四005 欧罗巴资格赛</h3>
+  <div style="font-size:18px;font-weight:700;margin-bottom:2px">本菲卡 <span style="color:var(--text2);font-weight:400">vs</span> 圣加仑</div>
+  <div style="font-size:12px;color:var(--text2);margin-bottom:8px">首回合: 圣加仑 2-1 本菲卡 | 总比分: 圣加仑 2-1 领先 | Estádio da Luz (容量64,642)</div>
+  
+  <div style="display:flex;gap:4px;align-items:center;margin:6px 0">
+    <span style="width:40px;font-size:12px">主胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">60.8%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">平局</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:37%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">22.6%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">客胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:27%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">16.6%</span>
+  </div>
+  
+  
+  
+  <div class="rec-box home">主胜 | 融合概率 60.8% | 置信度 高 ★★★</div>
+  
+  <div class="grid-2" style="margin-top:10px">
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">比分TOP5</div>
+      <div><span class="score-rec">1:0</span><span style="font-size:11px;color:var(--text2)">18.2%</span> <span class="score-rec">2:0</span><span style="font-size:11px;color:var(--text2)">13.5%</span> <span class="score-rec">1:1</span><span style="font-size:11px;color:var(--text2)">9.5%</span> <span class="score-rec">0:0</span><span style="font-size:11px;color:var(--text2)">9.0%</span> <span class="score-rec">2:1</span><span style="font-size:11px;color:var(--text2)">8.8%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">半场TOP3</div>
+      <div><span class="score-alt">0:0</span><span style="font-size:11px;color:var(--text2)">35.2%</span> <span class="score-alt">1:0</span><span style="font-size:11px;color:var(--text2)">27.2%</span> <span class="score-alt">0:1</span><span style="font-size:11px;color:var(--text2)">11.6%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">大小球 / 让球</div>
+      <div style="font-size:12px">大球(2.5): 39.2% | 小球(2.5): 60.8%</div>
+      <div style="font-size:12px;margin-top:4px"><span class="score-alt">主让-1球</span><span style="font-size:11px;color:var(--text2)">96.2%</span> <span class="score-alt">平手盘</span><span style="font-size:11px;color:var(--text2)">83.8%</span> <span class="score-alt">主让1球</span><span style="font-size:11px;color:var(--text2)">62.1%</span> </div>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">赔率(体彩)</div>
+      <div style="font-size:14px;margin-bottom:8px">1.19 / 6.3 / 12.0</div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">模型参数</div>
+      <table style="font-size:12px;margin:0">
+        <tr><td>λ主/客</td><td>1.611 / 0.648</td></tr>
+        <tr><td>DC主/平/客</td><td>62.1% / 21.7% / 16.2%</td></tr>
+        <tr><td>Skellam主/平/客</td><td>60.6% / 24.6% / 14.8%</td></tr>
+        <tr><td>MC主/平/客</td><td>59.8% / 25.4% / 14.8%</td></tr>
+        <tr><td>模型标准差</td><td>3.2%</td></tr>
+        <tr><td>软因素修正</td><td>主队×1.071 / 客队×0.966</td></tr>
+      </table>
+    </div>
+  </div>
+  
+  <!-- 场地天气新闻 -->
+  <div class="grid-2" style="margin-top:10px">
+    <div class="info-section">
+      <h4>比赛场地与天气</h4>
+      <div class="soft-factor">Estádio da Luz (容量64,642)<br>葡萄牙7月夜间约22-25°C，晴</div>
+    </div>
+    <div class="info-section">
+      <h4>伤停信息</h4>
+      <div class="soft-factor">体彩官方伤停暂无数据（信息缺失，首回合本菲卡阵容不整，需赛前确认首发）</div>
+    </div>
+  </div>
+  
+  <!-- 战意心理与体能分析（规则27） -->
+  <div class="info-section">
+    <h4>战意心理与体能分析（规则27）</h4>
+    <div class="grid-2 soft-factor">
+      <div><strong>战意不对称：</strong>轻度不对称<br>
+      本菲卡：葡超豪门主场翻盘，超强战意<br>
+      圣加仑：客场摆大巴保晋级，战意明确</div>
+      <div><strong>体能与休息：</strong><br>
+      本菲卡：葡超7月底开赛，体能状态一般<br>
+      圣加仑：瑞士超7月底开赛，体能状态一般</div>
+    </div>
+    <div class="grid-2 soft-factor" style="margin-top:6px">
+      <div><strong>心理因素：</strong><br>
+      本菲卡：首回合客场爆冷输球，急于证明自己<br>
+      圣加仑：首回合爆冷赢球，信心爆棚</div>
+      <div><strong>赛程牵制：</strong><br>
+      本菲卡：无后续欧战牵制<br>
+      圣加仑：无后续欧战牵制</div>
+    </div>
+    <div class="soft-factor" style="margin-top:6px"><strong>综合软因素修正：</strong>主队λ×1.071 / 客队λ×0.966</div>
+  </div>
+  
+  <!-- 近期战绩与历史交锋 -->
+  <div style="margin-top:10px">
+    <div style="font-size:13px;font-weight:600;margin-bottom:6px">近期战绩与历史交锋</div>
+    <div class="grid-2">
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--success)">本菲卡 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-25</td><td>本菲卡 5:1 CF Os Belenenses</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-07-24</td><td>圣加仑 2:1 本菲卡</td><td>负</td><td>欧罗巴</td></tr><tr><td>2026-07-18</td><td>本菲卡 2:0 比利亚雷</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-07-12</td><td>本菲卡 1:2 弗拉门戈</td><td>负</td><td>俱乐部赛</td></tr><tr><td>2026-07-04</td><td>本菲卡 2:2 卡尔达什</td><td>平</td><td>俱乐部赛</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--danger)">圣加仑 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-26</td><td>圣加仑 2:1 苏黎世</td><td>胜</td><td>瑞士超</td></tr><tr><td>2026-07-24</td><td>圣加仑 2:1 本菲卡</td><td>胜</td><td>欧罗巴</td></tr><tr><td>2026-07-18</td><td>圣加仑 0:3 诺维奇</td><td>负</td><td>俱乐部赛</td></tr><tr><td>2026-07-11</td><td>里昂 6:3 圣加仑</td><td>负</td><td>俱乐部赛</td></tr><tr><td>2026-07-02</td><td>温特图尔 0:1 圣加仑</td><td>胜</td><td>俱乐部赛</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="margin-top:8px">
+      <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--primary)">历史交锋</div>
+      <table style="font-size:11px;margin:0">
+        <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+        <tbody>
+          <tr><td>2026-07-24</td><td>圣加仑 2:1 本菲卡</td><td>圣加仑胜</td><td>欧罗巴</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="font-size:12px;color:var(--text2);margin-top:8px">本菲卡主场翻盘战意极强。近10场5胜3平2负进24失14，主场10场6胜3平1负，主场强势。圣加仑近10场7胜1平2负，但含6场热身赛含金量有限。首回合圣加仑爆冷2-1，但本菲卡阵容不整。本菲卡实力碾压，但残阵需关注赛前首发。</div>
+</div>
+
+<div class="match-card home-rec">
+  <h3 style="margin-bottom:4px">周四006 巴甲</h3>
+  <div style="font-size:18px;font-weight:700;margin-bottom:2px">科林蒂安 <span style="color:var(--text2);font-weight:400">vs</span> 巴拉纳竞技</div>
+  <div style="font-size:12px;color:var(--text2);margin-bottom:8px">首回合: - | 总比分: 巴甲第21轮 | Neo Química Arena (容量49,205)</div>
+  
+  <div style="display:flex;gap:4px;align-items:center;margin:6px 0">
+    <span style="width:40px;font-size:12px">主胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">44.1%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">平局</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:68%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">30.2%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">客胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:59%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">25.8%</span>
+  </div>
+  
+  
+  
+  <div class="rec-box home">主胜 | 融合概率 44.1% | 置信度 高 ★★★</div>
+  
+  <div class="grid-2" style="margin-top:10px">
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">比分TOP5</div>
+      <div><span class="score-rec">1:0</span><span style="font-size:11px;color:var(--text2)">20.3%</span> <span class="score-rec">0:0</span><span style="font-size:11px;color:var(--text2)">16.0%</span> <span class="score-rec">0:1</span><span style="font-size:11px;color:var(--text2)">13.6%</span> <span class="score-rec">1:1</span><span style="font-size:11px;color:var(--text2)">11.0%</span> <span class="score-rec">2:0</span><span style="font-size:11px;color:var(--text2)">9.9%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">半场TOP3</div>
+      <div><span class="score-alt">0:0</span><span style="font-size:11px;color:var(--text2)">45.0%</span> <span class="score-alt">1:0</span><span style="font-size:11px;color:var(--text2)">22.7%</span> <span class="score-alt">0:1</span><span style="font-size:11px;color:var(--text2)">14.8%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">大小球 / 让球</div>
+      <div style="font-size:12px">大球(2.5): 25.2% | 小球(2.5): 74.8%</div>
+      <div style="font-size:12px;margin-top:4px"><span class="score-alt">主让-1球</span><span style="font-size:11px;color:var(--text2)">93.6%</span> <span class="score-alt">平手盘</span><span style="font-size:11px;color:var(--text2)">75.2%</span> <span class="score-alt">主让1球</span><span style="font-size:11px;color:var(--text2)">45.7%</span> </div>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">赔率(体彩)</div>
+      <div style="font-size:14px;margin-bottom:8px">1.91 / 3.2 / 4.1</div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">模型参数</div>
+      <table style="font-size:12px;margin:0">
+        <tr><td>λ主/客</td><td>1.057 / 0.678</td></tr>
+        <tr><td>DC主/平/客</td><td>45.7% / 29.5% / 24.8%</td></tr>
+        <tr><td>Skellam主/平/客</td><td>44.1% / 32.7% / 23.2%</td></tr>
+        <tr><td>MC主/平/客</td><td>44.3% / 32.2% / 23.5%</td></tr>
+        <tr><td>模型标准差</td><td>2.1%</td></tr>
+        <tr><td>软因素修正</td><td>主队×0.941 / 客队×0.921</td></tr>
+      </table>
+    </div>
+  </div>
+  
+  <!-- 场地天气新闻 -->
+  <div class="grid-2" style="margin-top:10px">
+    <div class="info-section">
+      <h4>比赛场地与天气</h4>
+      <div class="soft-factor">Neo Química Arena (容量49,205)<br>巴西7月冬季约15-20°C，晴</div>
+    </div>
+    <div class="info-section">
+      <h4>伤停信息</h4>
+      <div class="soft-factor">科林蒂安: F·安吉利厄里(后卫)停赛(体彩官方); 巴拉纳竞技: 体彩官方伤停暂无数据</div>
+    </div>
+  </div>
+  
+  <!-- 战意心理与体能分析（规则27） -->
+  <div class="info-section">
+    <h4>战意心理与体能分析（规则27）</h4>
+    <div class="grid-2 soft-factor">
+      <div><strong>战意不对称：</strong>对称<br>
+      科林蒂安：巴甲主场抢分，排名第8需追分<br>
+      巴拉纳竞技：排名第3，客场至少拿1分即可</div>
+      <div><strong>体能与休息：</strong><br>
+      科林蒂安：上一场7/27，休息3天，赛程密集<br>
+      巴拉纳竞技：上一场7/26，休息4天，但长途旅行</div>
+    </div>
+    <div class="grid-2 soft-factor" style="margin-top:6px">
+      <div><strong>心理因素：</strong><br>
+      科林蒂安：主场球迷支持，但多名伤缺影响<br>
+      巴拉纳竞技：客场战绩一般，但排名实力占优</div>
+      <div><strong>赛程牵制：</strong><br>
+      科林蒂安：巴甲进行中，一周双赛<br>
+      巴拉纳竞技：巴甲进行中，一周双赛</div>
+    </div>
+    <div class="soft-factor" style="margin-top:6px"><strong>综合软因素修正：</strong>主队λ×0.941 / 客队λ×0.921</div>
+  </div>
+  
+  <!-- 近期战绩与历史交锋 -->
+  <div style="margin-top:10px">
+    <div style="font-size:13px;font-weight:600;margin-bottom:6px">近期战绩与历史交锋</div>
+    <div class="grid-2">
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--success)">科林蒂安 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-27</td><td>巴伊亚 1:1 科林蒂安</td><td>平</td><td>巴甲</td></tr><tr><td>2026-07-24</td><td>科林蒂安 3:0 里莫</td><td>胜</td><td>巴甲</td></tr><tr><td>2026-07-13</td><td>Cascavel 1:1 科林蒂安</td><td>平</td><td>俱乐部赛</td></tr><tr><td>2026-05-31</td><td>格雷米奥 1:3 科林蒂安</td><td>胜</td><td>巴甲</td></tr><tr><td>2026-05-28</td><td>科林蒂安 0:2 普拉滕斯</td><td>负</td><td>解放者杯</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--danger)">巴拉纳竞技 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-26</td><td>巴拉纳竞技 2:0 巴西国际</td><td>胜</td><td>巴甲</td></tr><tr><td>2026-07-23</td><td>圣保罗 1:2 巴拉纳竞技</td><td>胜</td><td>巴甲</td></tr><tr><td>2026-07-09</td><td>博卡 1:0 巴拉纳竞技</td><td>负</td><td>俱乐部赛</td></tr><tr><td>2026-05-31</td><td>巴拉纳竞技 1:0 米拉索尔</td><td>胜</td><td>巴甲</td></tr><tr><td>2026-05-25</td><td>里莫 1:2 巴拉纳竞技</td><td>胜</td><td>巴甲</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="margin-top:8px">
+      <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--primary)">历史交锋</div>
+      <table style="font-size:11px;margin:0">
+        <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+        <tbody>
+          <tr><td>2026-02-20</td><td>巴拉纳竞技 0:1 科林蒂安</td><td>科林蒂安胜</td><td>巴甲</td></tr><tr><td>2025-09-11</td><td>科林蒂安 2:0 巴拉纳竞技</td><td>科林蒂安胜</td><td>巴西杯</td></tr><tr><td>2025-08-28</td><td>巴拉纳竞技 0:1 科林蒂安</td><td>科林蒂安胜</td><td>巴西杯</td></tr><tr><td>2024-10-18</td><td>科林蒂安 5:2 巴拉纳竞技</td><td>科林蒂安胜</td><td>巴甲</td></tr><tr><td>2024-06-24</td><td>巴拉纳竞技 1:1 科林蒂安</td><td>平局</td><td>巴甲</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="font-size:12px;color:var(--text2);margin-top:8px">科林蒂安排名第9(28分)主场5胜2平3负，近10场5胜3平2负状态回升。近10次交锋科林蒂安7胜2平1负绝对占优！巴拉纳竞技排名第3(36分)客场3胜1平5负，客场能力一般。科林蒂安上轮3-0大胜里莫士气正旺。巴甲主场优势明显。</div>
+</div>
+</div>
+<div class="card">
+  <div class="card-title">模型说明</div>
+  <div style="font-size:13px;color:var(--text2);line-height:1.8">
+    <p><strong>方法论 v1.6.0</strong>：基于规则28基本面决定论，分析优先级为：<strong>基本面（新闻/战意/状态/体能/伤停）> 数学模型 > 市场赔率 > 公众意见</strong>。</p>
+    <p><strong>加权融合权重</strong>：Dixon-Coles修正泊松(35%) + Skellam进球差(15%) + Elo实力评级(15%) + 基本面因素(15%) + Shin校准赔率(8%) + 公众意见(7%) + 有序逻辑回归(3%) + 外部AI(2%)。</p>
+    <p><strong>规则27</strong>：每场均包含战意不对称分析、体能与休息评估、心理因素分析、赛程牵制分析，软因素综合修正参与lambda计算。</p>
+    <p><strong>规则24</strong>：联赛特点数据（主场优势系数、平局率、场均进球等）已加载并用于模型修正。</p>
+    <p><strong>风险提示</strong>：足球比赛存在极大不确定性，任何模型预测均非100%准确。理性看待预测，切勿沉迷赌博。</p>
+  </div>
+</div>
+</div>
+</body>
+</html>

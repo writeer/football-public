@@ -1,0 +1,506 @@
+[
+  {
+    "match_id": "周四001",
+    "league": "欧罗巴资格赛",
+    "home": "中日德兰",
+    "away": "贝西克塔斯",
+    "first_leg": "贝西克塔斯 1-0 中日德兰",
+    "agg": "贝西克塔斯 1-0 领先",
+    "lambda_home": 1.089,
+    "lambda_away": 0.698,
+    "dc_probs": {
+      "home": 46.2,
+      "draw": 28.8,
+      "away": 25.0
+    },
+    "skellam_probs": {
+      "home": 44.6,
+      "draw": 32.1,
+      "away": 23.3
+    },
+    "mc_probs": {
+      "home": 44.7,
+      "draw": 31.7,
+      "away": 23.6,
+      "over_2_5": 26.7,
+      "under_2_5": 73.3
+    },
+    "fused_probs": {
+      "home": 46.1,
+      "draw": 28.2,
+      "away": 25.7
+    },
+    "direction": "主胜",
+    "confidence": "高 ★★★",
+    "top5_scores": [
+      {
+        "score": "1:0",
+        "prob": 19.9,
+        "direction": "主胜"
+      },
+      {
+        "score": "0:0",
+        "prob": 15.1,
+        "direction": "平局"
+      },
+      {
+        "score": "0:1",
+        "prob": 13.3,
+        "direction": "客胜"
+      },
+      {
+        "score": "1:1",
+        "prob": 11.1,
+        "direction": "平局"
+      },
+      {
+        "score": "2:0",
+        "prob": 9.9,
+        "direction": "主胜"
+      }
+    ],
+    "half_top3": [
+      {
+        "score": "0:0",
+        "prob": 43.8,
+        "direction": "平局"
+      },
+      {
+        "score": "1:0",
+        "prob": 22.8,
+        "direction": "主胜"
+      },
+      {
+        "score": "0:1",
+        "prob": 15.0,
+        "direction": "客胜"
+      }
+    ],
+    "over_2_5": 26.6,
+    "under_2_5": 73.4,
+    "model_std": 2.1,
+    "divergence": "",
+    "soft_home": 1.058,
+    "soft_away": 0.95
+  },
+  {
+    "match_id": "周四002",
+    "league": "欧罗巴资格赛",
+    "home": "帕福斯FC",
+    "away": "斯普利特海杜克",
+    "first_leg": "海杜克 2-0 帕福斯",
+    "agg": "海杜克 2-0 领先",
+    "lambda_home": 0.805,
+    "lambda_away": 0.902,
+    "dc_probs": {
+      "home": 32.1,
+      "draw": 30.5,
+      "away": 37.5
+    },
+    "skellam_probs": {
+      "home": 30.3,
+      "draw": 33.9,
+      "away": 35.7
+    },
+    "mc_probs": {
+      "home": 30.7,
+      "draw": 33.0,
+      "away": 36.3,
+      "over_2_5": 24.6,
+      "under_2_5": 75.4
+    },
+    "fused_probs": {
+      "home": 34.7,
+      "draw": 29.2,
+      "away": 36.2
+    },
+    "direction": "客胜",
+    "confidence": "高 ★★★",
+    "top5_scores": [
+      {
+        "score": "0:1",
+        "prob": 18.1,
+        "direction": "客胜"
+      },
+      {
+        "score": "0:0",
+        "prob": 16.4,
+        "direction": "平局"
+      },
+      {
+        "score": "1:0",
+        "prob": 16.3,
+        "direction": "主胜"
+      },
+      {
+        "score": "1:1",
+        "prob": 11.5,
+        "direction": "平局"
+      },
+      {
+        "score": "0:2",
+        "prob": 7.4,
+        "direction": "客胜"
+      }
+    ],
+    "half_top3": [
+      {
+        "score": "0:0",
+        "prob": 45.5,
+        "direction": "平局"
+      },
+      {
+        "score": "0:1",
+        "prob": 19.7,
+        "direction": "客胜"
+      },
+      {
+        "score": "1:0",
+        "prob": 17.7,
+        "direction": "主胜"
+      }
+    ],
+    "over_2_5": 24.4,
+    "under_2_5": 75.6,
+    "model_std": 3.3,
+    "divergence": "模型与市场分歧（客胜模型方向 vs 市场方向）",
+    "soft_home": 0.969,
+    "soft_away": 0.948
+  },
+  {
+    "match_id": "周四003",
+    "league": "欧罗巴资格赛",
+    "home": "安德莱赫特",
+    "away": "哈马比",
+    "first_leg": "哈马比 1-1 安德莱赫特",
+    "agg": "1-1 平局",
+    "lambda_home": 0.896,
+    "lambda_away": 0.944,
+    "dc_probs": {
+      "home": 34.2,
+      "draw": 29.0,
+      "away": 36.8
+    },
+    "skellam_probs": {
+      "home": 32.5,
+      "draw": 32.4,
+      "away": 35.1
+    },
+    "mc_probs": {
+      "home": 32.9,
+      "draw": 31.3,
+      "away": 35.8,
+      "over_2_5": 28.6,
+      "under_2_5": 71.4
+    },
+    "fused_probs": {
+      "home": 37.0,
+      "draw": 29.8,
+      "away": 33.2
+    },
+    "direction": "主胜",
+    "confidence": "高 ★★★",
+    "top5_scores": [
+      {
+        "score": "0:1",
+        "prob": 16.7,
+        "direction": "客胜"
+      },
+      {
+        "score": "1:0",
+        "prob": 16.0,
+        "direction": "主胜"
+      },
+      {
+        "score": "0:0",
+        "prob": 14.1,
+        "direction": "平局"
+      },
+      {
+        "score": "1:1",
+        "prob": 11.7,
+        "direction": "平局"
+      },
+      {
+        "score": "0:2",
+        "prob": 7.1,
+        "direction": "客胜"
+      }
+    ],
+    "half_top3": [
+      {
+        "score": "0:0",
+        "prob": 42.7,
+        "direction": "平局"
+      },
+      {
+        "score": "0:1",
+        "prob": 19.5,
+        "direction": "客胜"
+      },
+      {
+        "score": "1:0",
+        "prob": 18.6,
+        "direction": "主胜"
+      }
+    ],
+    "over_2_5": 28.0,
+    "under_2_5": 72.0,
+    "model_std": 3.4,
+    "divergence": "",
+    "soft_home": 0.949,
+    "soft_away": 1.048
+  },
+  {
+    "match_id": "周四004",
+    "league": "欧罗巴资格赛",
+    "home": "费伦茨瓦罗斯",
+    "away": "特温特",
+    "first_leg": "特温特 1-2 费伦茨瓦罗斯",
+    "agg": "费伦茨瓦罗斯 2-1 领先",
+    "lambda_home": 1.212,
+    "lambda_away": 0.955,
+    "dc_probs": {
+      "home": 43.7,
+      "draw": 25.6,
+      "away": 30.7
+    },
+    "skellam_probs": {
+      "home": 41.9,
+      "draw": 29.1,
+      "away": 29.0
+    },
+    "mc_probs": {
+      "home": 41.9,
+      "draw": 29.0,
+      "away": 29.1,
+      "over_2_5": 37.1,
+      "under_2_5": 62.8
+    },
+    "fused_probs": {
+      "home": 38.7,
+      "draw": 26.8,
+      "away": 34.5
+    },
+    "direction": "主胜",
+    "confidence": "中 ★★",
+    "top5_scores": [
+      {
+        "score": "1:0",
+        "prob": 15.6,
+        "direction": "主胜"
+      },
+      {
+        "score": "0:1",
+        "prob": 12.7,
+        "direction": "客胜"
+      },
+      {
+        "score": "1:1",
+        "prob": 11.5,
+        "direction": "平局"
+      },
+      {
+        "score": "0:0",
+        "prob": 9.7,
+        "direction": "平局"
+      },
+      {
+        "score": "2:0",
+        "prob": 8.4,
+        "direction": "主胜"
+      }
+    ],
+    "half_top3": [
+      {
+        "score": "0:0",
+        "prob": 36.6,
+        "direction": "平局"
+      },
+      {
+        "score": "1:0",
+        "prob": 21.7,
+        "direction": "主胜"
+      },
+      {
+        "score": "0:1",
+        "prob": 17.4,
+        "direction": "客胜"
+      }
+    ],
+    "over_2_5": 36.8,
+    "under_2_5": 63.2,
+    "model_std": 5.2,
+    "divergence": "",
+    "soft_home": 1.027,
+    "soft_away": 0.995
+  },
+  {
+    "match_id": "周四005",
+    "league": "欧罗巴资格赛",
+    "home": "本菲卡",
+    "away": "圣加仑",
+    "first_leg": "圣加仑 2-1 本菲卡",
+    "agg": "圣加仑 2-1 领先",
+    "lambda_home": 1.611,
+    "lambda_away": 0.648,
+    "dc_probs": {
+      "home": 62.1,
+      "draw": 21.7,
+      "away": 16.2
+    },
+    "skellam_probs": {
+      "home": 60.6,
+      "draw": 24.6,
+      "away": 14.8
+    },
+    "mc_probs": {
+      "home": 59.8,
+      "draw": 25.4,
+      "away": 14.8,
+      "over_2_5": 39.4,
+      "under_2_5": 60.6
+    },
+    "fused_probs": {
+      "home": 60.8,
+      "draw": 22.6,
+      "away": 16.6
+    },
+    "direction": "主胜",
+    "confidence": "高 ★★★",
+    "top5_scores": [
+      {
+        "score": "1:0",
+        "prob": 18.2,
+        "direction": "主胜"
+      },
+      {
+        "score": "2:0",
+        "prob": 13.5,
+        "direction": "主胜"
+      },
+      {
+        "score": "1:1",
+        "prob": 9.5,
+        "direction": "平局"
+      },
+      {
+        "score": "0:0",
+        "prob": 9.0,
+        "direction": "平局"
+      },
+      {
+        "score": "2:1",
+        "prob": 8.8,
+        "direction": "主胜"
+      }
+    ],
+    "half_top3": [
+      {
+        "score": "0:0",
+        "prob": 35.2,
+        "direction": "平局"
+      },
+      {
+        "score": "1:0",
+        "prob": 27.2,
+        "direction": "主胜"
+      },
+      {
+        "score": "0:1",
+        "prob": 11.6,
+        "direction": "客胜"
+      }
+    ],
+    "over_2_5": 39.2,
+    "under_2_5": 60.8,
+    "model_std": 3.2,
+    "divergence": "",
+    "soft_home": 1.071,
+    "soft_away": 0.966
+  },
+  {
+    "match_id": "周四006",
+    "league": "巴甲",
+    "home": "科林蒂安",
+    "away": "巴拉纳竞技",
+    "first_leg": "-",
+    "agg": "巴甲第21轮",
+    "lambda_home": 1.057,
+    "lambda_away": 0.678,
+    "dc_probs": {
+      "home": 45.7,
+      "draw": 29.5,
+      "away": 24.8
+    },
+    "skellam_probs": {
+      "home": 44.1,
+      "draw": 32.7,
+      "away": 23.2
+    },
+    "mc_probs": {
+      "home": 44.3,
+      "draw": 32.2,
+      "away": 23.5,
+      "over_2_5": 25.4,
+      "under_2_5": 74.7
+    },
+    "fused_probs": {
+      "home": 44.1,
+      "draw": 30.2,
+      "away": 25.8
+    },
+    "direction": "主胜",
+    "confidence": "高 ★★★",
+    "top5_scores": [
+      {
+        "score": "1:0",
+        "prob": 20.3,
+        "direction": "主胜"
+      },
+      {
+        "score": "0:0",
+        "prob": 16.0,
+        "direction": "平局"
+      },
+      {
+        "score": "0:1",
+        "prob": 13.6,
+        "direction": "客胜"
+      },
+      {
+        "score": "1:1",
+        "prob": 11.0,
+        "direction": "平局"
+      },
+      {
+        "score": "2:0",
+        "prob": 9.9,
+        "direction": "主胜"
+      }
+    ],
+    "half_top3": [
+      {
+        "score": "0:0",
+        "prob": 45.0,
+        "direction": "平局"
+      },
+      {
+        "score": "1:0",
+        "prob": 22.7,
+        "direction": "主胜"
+      },
+      {
+        "score": "0:1",
+        "prob": 14.8,
+        "direction": "客胜"
+      }
+    ],
+    "over_2_5": 25.2,
+    "under_2_5": 74.8,
+    "model_std": 2.1,
+    "divergence": "",
+    "soft_home": 0.941,
+    "soft_away": 0.921
+  }
+]

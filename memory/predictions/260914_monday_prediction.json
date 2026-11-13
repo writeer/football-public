@@ -1,0 +1,1869 @@
+{
+  "date": "2026-09-14",
+  "weekday": "周一",
+  "matchCount": 12,
+  "singleMatches": [
+    "周一004",
+    "周一010",
+    "周一011"
+  ],
+  "oddsUpdatedAt": "2026-09-14 13:43:43",
+  "matches": [
+    {
+      "matchNumStr": "周一002",
+      "league": "芬兰超级联赛",
+      "homeTeam": "国际图尔库",
+      "awayTeam": "瓦萨",
+      "matchTime": "23:00:00",
+      "stadium": "Veritas Stadion",
+      "city": "图尔库",
+      "weather": "阴，11°C",
+      "homeValue": 8000000,
+      "awayValue": 5000000,
+      "valueRatio": 1.6,
+      "singleMatch": false,
+      "confidence": "★★",
+      "had": {
+        "home": 0.57,
+        "draw": 0.25,
+        "away": 0.18,
+        "first": "home",
+        "second": "draw"
+      },
+      "hhad": {
+        "handicap": -1,
+        "home": 0.304,
+        "draw": 0.266,
+        "away": 0.43,
+        "first": "draw",
+        "second": "away"
+      },
+      "ttg": {
+        "first": 2,
+        "second": 3,
+        "firstProb": 0.26,
+        "secondProb": 0.21
+      },
+      "hafu": {
+        "top3": [
+          "平胜",
+          "胜胜",
+          "平平"
+        ],
+        "top3Probs": [
+          0.22,
+          0.18,
+          0.15
+        ]
+      },
+      "scoreTop5": [
+        {
+          "score": "1-0",
+          "prob": 0.15
+        },
+        {
+          "score": "2-1",
+          "prob": 0.12
+        },
+        {
+          "score": "2-0",
+          "prob": 0.1
+        },
+        {
+          "score": "1-1",
+          "prob": 0.08
+        },
+        {
+          "score": "3-1",
+          "prob": 0.07
+        }
+      ],
+      "htScoreTop3": [
+        {
+          "score": "0-0",
+          "prob": 0.2
+        },
+        {
+          "score": "1-0",
+          "prob": 0.15
+        },
+        {
+          "score": "0-1",
+          "prob": 0.08
+        }
+      ],
+      "lambdaHome": 1.6,
+      "lambdaAway": 0.9,
+      "lambdaTotal": 2.5,
+      "rulesTriggered": [
+        "规则66半场平局率修正(芬超0.418高档)",
+        "规则52a让球无条件净胜球众数=1球"
+      ],
+      "odds_had": {
+        "h": 1.54,
+        "d": 3.52,
+        "a": 5.1
+      },
+      "odds_hhad": {
+        "h": 2.83,
+        "d": 3.18,
+        "a": 2.17
+      },
+      "odds_hhad_goalLine": -1,
+      "odds_hafu": {
+        "hh": 2.4,
+        "hd": 17,
+        "ha": 40,
+        "dh": 4.3,
+        "dd": 5.8,
+        "da": 11.5,
+        "ah": 24,
+        "ad": 17,
+        "aa": 9
+      },
+      "odds_ttg": {
+        "s0": 10.5,
+        "s1": 4.7,
+        "s2": 3.4,
+        "s3": 3.6,
+        "s4": 5.9,
+        "s5": 11,
+        "s6": 25,
+        "s7": 42
+      },
+      "odds_crs": {
+        "s01s00": 7.25,
+        "s02s00": 7.5,
+        "s02s01": 7,
+        "s03s00": 13,
+        "s03s01": 12,
+        "s03s02": 23,
+        "s04s00": 31,
+        "s04s01": 30,
+        "s04s02": 55,
+        "s05s00": 70,
+        "s05s01": 75,
+        "s05s02": 120,
+        "s1sh": 50,
+        "s00s00": 10.5,
+        "s01s01": 7.5,
+        "s02s02": 15.5,
+        "s03s03": 70,
+        "s1sd": 400,
+        "s00s01": 13,
+        "s00s02": 25,
+        "s01s02": 15,
+        "s00s03": 80,
+        "s01s03": 40,
+        "s02s03": 45,
+        "s00s04": 300,
+        "s01s04": 120,
+        "s02s04": 175,
+        "s00s05": 650,
+        "s01s05": 550,
+        "s02s05": 550,
+        "s1sa": 175
+      }
+    },
+    {
+      "matchNumStr": "周一003",
+      "league": "意大利甲级联赛",
+      "homeTeam": "科莫",
+      "awayTeam": "帕尔马",
+      "matchTime": "00:30:00",
+      "stadium": "Stadio Giuseppe Sinigaglia",
+      "city": "科莫",
+      "weather": "局部多云，21°C",
+      "homeValue": 180000000,
+      "awayValue": 80000000,
+      "valueRatio": 2.25,
+      "singleMatch": false,
+      "confidence": "★★★",
+      "had": {
+        "home": 0.85,
+        "draw": 0.09,
+        "away": 0.06,
+        "first": "home",
+        "second": "draw"
+      },
+      "hhad": {
+        "handicap": -2,
+        "home": 0.429,
+        "draw": 0.226,
+        "away": 0.345,
+        "first": "home",
+        "second": "away"
+      },
+      "ttg": {
+        "first": 3,
+        "second": 2,
+        "firstProb": 0.22,
+        "secondProb": 0.2
+      },
+      "hafu": {
+        "top3": [
+          "胜胜",
+          "平胜",
+          "胜平"
+        ],
+        "top3Probs": [
+          0.3,
+          0.15,
+          0.08
+        ]
+      },
+      "scoreTop5": [
+        {
+          "score": "3-0",
+          "prob": 0.15
+        },
+        {
+          "score": "2-0",
+          "prob": 0.12
+        },
+        {
+          "score": "3-1",
+          "prob": 0.1
+        },
+        {
+          "score": "2-1",
+          "prob": 0.08
+        },
+        {
+          "score": "4-0",
+          "prob": 0.06
+        }
+      ],
+      "htScoreTop3": [
+        {
+          "score": "1-0",
+          "prob": 0.2
+        },
+        {
+          "score": "2-0",
+          "prob": 0.12
+        },
+        {
+          "score": "0-0",
+          "prob": 0.1
+        }
+      ],
+      "lambdaHome": 2.8,
+      "lambdaAway": 0.5,
+      "lambdaTotal": 3.3,
+      "rulesTriggered": [
+        "规则65大球上修(身价2.25倍+排名差10位)",
+        "规则52a让球无条件净胜球众数=3球"
+      ],
+      "odds_had": {
+        "h": 1.13,
+        "d": 5.9,
+        "a": 13.5
+      },
+      "odds_hhad": {
+        "h": 2.65,
+        "d": 3.9,
+        "a": 2.02
+      },
+      "odds_hhad_goalLine": -2,
+      "odds_hafu": {
+        "hh": 1.6,
+        "hd": 27,
+        "ha": 100,
+        "dh": 3.75,
+        "dd": 8.5,
+        "da": 28,
+        "ah": 30,
+        "ad": 27,
+        "aa": 24
+      },
+      "odds_ttg": {
+        "s0": 16,
+        "s1": 5.5,
+        "s2": 3.9,
+        "s3": 3.7,
+        "s4": 5,
+        "s5": 8.5,
+        "s6": 15,
+        "s7": 21
+      },
+      "odds_crs": {
+        "s01s00": 6.7,
+        "s02s00": 5.7,
+        "s02s01": 8.25,
+        "s03s00": 6.75,
+        "s03s01": 11,
+        "s03s02": 30,
+        "s04s00": 11,
+        "s04s01": 18,
+        "s04s02": 60,
+        "s05s00": 21,
+        "s05s01": 35,
+        "s05s02": 100,
+        "s1sh": 20,
+        "s00s00": 16,
+        "s01s01": 10.5,
+        "s02s02": 28,
+        "s03s03": 175,
+        "s1sd": 800,
+        "s00s01": 23,
+        "s00s02": 75,
+        "s01s02": 30,
+        "s00s03": 350,
+        "s01s03": 175,
+        "s02s03": 100,
+        "s00s04": 900,
+        "s01s04": 600,
+        "s02s04": 600,
+        "s00s05": 1000,
+        "s01s05": 1000,
+        "s02s05": 1000,
+        "s1sa": 600
+      }
+    },
+    {
+      "matchNumStr": "周一004",
+      "league": "意大利甲级联赛",
+      "homeTeam": "都灵",
+      "awayTeam": "罗马",
+      "matchTime": "00:30:00",
+      "stadium": "Stadio Olimpico Grande Torino",
+      "city": "都灵",
+      "weather": "晴转少云，21°C",
+      "homeValue": 120000000,
+      "awayValue": 350000000,
+      "valueRatio": 2.9,
+      "singleMatch": true,
+      "confidence": "★★",
+      "had": {
+        "home": 0.15,
+        "draw": 0.31,
+        "away": 0.54,
+        "first": "away",
+        "second": "draw"
+      },
+      "hhad": {
+        "handicap": 1,
+        "home": 0.46,
+        "draw": 0.186,
+        "away": 0.354,
+        "first": "home",
+        "second": "away"
+      },
+      "ttg": {
+        "first": 3,
+        "second": 2,
+        "firstProb": 0.22,
+        "secondProb": 0.22
+      },
+      "hafu": {
+        "top3": [
+          "平负",
+          "负负",
+          "平平"
+        ],
+        "top3Probs": [
+          0.2,
+          0.15,
+          0.12
+        ]
+      },
+      "scoreTop5": [
+        {
+          "score": "0-1",
+          "prob": 0.15
+        },
+        {
+          "score": "1-2",
+          "prob": 0.12
+        },
+        {
+          "score": "0-2",
+          "prob": 0.1
+        },
+        {
+          "score": "1-1",
+          "prob": 0.08
+        },
+        {
+          "score": "0-3",
+          "prob": 0.06
+        }
+      ],
+      "htScoreTop3": [
+        {
+          "score": "0-0",
+          "prob": 0.18
+        },
+        {
+          "score": "0-1",
+          "prob": 0.15
+        },
+        {
+          "score": "1-0",
+          "prob": 0.08
+        }
+      ],
+      "lambdaHome": 0.8,
+      "lambdaAway": 2.2,
+      "lambdaTotal": 3.0,
+      "rulesTriggered": [
+        "规则63单关平局上修(差距40pp→+8%)",
+        "规则52a让球无条件净胜球众数=平局"
+      ],
+      "odds_had": {
+        "h": 5.6,
+        "d": 4.05,
+        "a": 1.42
+      },
+      "odds_hhad": {
+        "h": 2.45,
+        "d": 3.32,
+        "a": 2.38
+      },
+      "odds_hhad_goalLine": 1,
+      "odds_hafu": {
+        "hh": 9.75,
+        "hd": 18,
+        "ha": 24,
+        "dh": 13,
+        "dd": 7,
+        "da": 4.2,
+        "ah": 50,
+        "ad": 18,
+        "aa": 2.12
+      },
+      "odds_ttg": {
+        "s0": 14,
+        "s1": 5.2,
+        "s2": 3.7,
+        "s3": 3.7,
+        "s4": 5.4,
+        "s5": 9,
+        "s6": 16,
+        "s7": 24
+      },
+      "odds_crs": {
+        "s01s00": 14,
+        "s02s00": 29,
+        "s02s01": 15,
+        "s03s00": 90,
+        "s03s01": 50,
+        "s03s02": 50,
+        "s04s00": 350,
+        "s04s01": 250,
+        "s04s02": 250,
+        "s05s00": 800,
+        "s05s01": 600,
+        "s05s02": 600,
+        "s1sh": 200,
+        "s00s00": 14,
+        "s01s01": 7.5,
+        "s02s02": 16,
+        "s03s03": 75,
+        "s1sd": 500,
+        "s00s01": 7.25,
+        "s00s02": 7.5,
+        "s01s02": 7,
+        "s00s03": 11.5,
+        "s01s03": 11.5,
+        "s02s03": 22,
+        "s00s04": 21,
+        "s01s04": 23,
+        "s02s04": 50,
+        "s00s05": 60,
+        "s01s05": 60,
+        "s02s05": 150,
+        "s1sa": 35
+      }
+    },
+    {
+      "matchNumStr": "周一005",
+      "league": "瑞典超级联赛",
+      "homeTeam": "佐加顿斯",
+      "awayTeam": "哥德堡盖斯",
+      "matchTime": "01:00:00",
+      "stadium": "3Arena",
+      "city": "斯德哥尔摩",
+      "weather": "阴，14°C",
+      "homeValue": 12000000,
+      "awayValue": 6000000,
+      "valueRatio": 2.0,
+      "singleMatch": false,
+      "confidence": "★★★",
+      "had": {
+        "home": 0.68,
+        "draw": 0.17,
+        "away": 0.15,
+        "first": "home",
+        "second": "draw"
+      },
+      "hhad": {
+        "handicap": -1,
+        "home": 0.484,
+        "draw": 0.196,
+        "away": 0.32,
+        "first": "home",
+        "second": "away"
+      },
+      "ttg": {
+        "first": 3,
+        "second": 2,
+        "firstProb": 0.22,
+        "secondProb": 0.21
+      },
+      "hafu": {
+        "top3": [
+          "胜胜",
+          "平胜",
+          "胜平"
+        ],
+        "top3Probs": [
+          0.25,
+          0.15,
+          0.08
+        ]
+      },
+      "scoreTop5": [
+        {
+          "score": "3-0",
+          "prob": 0.15
+        },
+        {
+          "score": "2-0",
+          "prob": 0.12
+        },
+        {
+          "score": "3-1",
+          "prob": 0.1
+        },
+        {
+          "score": "2-1",
+          "prob": 0.08
+        },
+        {
+          "score": "4-0",
+          "prob": 0.06
+        }
+      ],
+      "htScoreTop3": [
+        {
+          "score": "1-0",
+          "prob": 0.2
+        },
+        {
+          "score": "2-0",
+          "prob": 0.12
+        },
+        {
+          "score": "0-0",
+          "prob": 0.1
+        }
+      ],
+      "lambdaHome": 2.5,
+      "lambdaAway": 0.7,
+      "lambdaTotal": 3.2,
+      "rulesTriggered": [
+        "规则65大球上修(身价2倍+客队7人缺阵)",
+        "规则52a让球无条件净胜球众数=3球"
+      ],
+      "odds_had": {
+        "h": 1.39,
+        "d": 4.3,
+        "a": 5.65
+      },
+      "odds_hhad": {
+        "h": 2.22,
+        "d": 3.6,
+        "a": 2.5
+      },
+      "odds_hhad_goalLine": -1,
+      "odds_hafu": {
+        "hh": 2.15,
+        "hd": 17,
+        "ha": 40,
+        "dh": 4.3,
+        "dd": 7.2,
+        "da": 13,
+        "ah": 22,
+        "ad": 17,
+        "aa": 9.75
+      },
+      "odds_ttg": {
+        "s0": 18,
+        "s1": 6.25,
+        "s2": 4,
+        "s3": 3.6,
+        "s4": 4.9,
+        "s5": 8,
+        "s6": 13,
+        "s7": 18
+      },
+      "odds_crs": {
+        "s01s00": 8.5,
+        "s02s00": 8.25,
+        "s02s01": 7,
+        "s03s00": 11.5,
+        "s03s01": 10.5,
+        "s03s02": 20,
+        "s04s00": 21,
+        "s04s01": 21,
+        "s04s02": 38,
+        "s05s00": 45,
+        "s05s01": 45,
+        "s05s02": 80,
+        "s1sh": 25,
+        "s00s00": 18,
+        "s01s01": 8,
+        "s02s02": 14,
+        "s03s03": 60,
+        "s1sd": 250,
+        "s00s01": 19,
+        "s00s02": 35,
+        "s01s02": 17,
+        "s00s03": 80,
+        "s01s03": 50,
+        "s02s03": 35,
+        "s00s04": 300,
+        "s01s04": 120,
+        "s02s04": 120,
+        "s00s05": 600,
+        "s01s05": 400,
+        "s02s05": 400,
+        "s1sa": 150
+      }
+    },
+    {
+      "matchNumStr": "周一006",
+      "league": "挪威超级联赛",
+      "homeTeam": "博德闪耀",
+      "awayTeam": "桑纳菲尤尔",
+      "matchTime": "01:00:00",
+      "stadium": "Aspmyra Stadion",
+      "city": "博德",
+      "weather": "阴，8°C",
+      "homeValue": 25000000,
+      "awayValue": 6000000,
+      "valueRatio": 4.2,
+      "singleMatch": false,
+      "confidence": "★★★",
+      "had": {
+        "home": 0.75,
+        "draw": 0.12,
+        "away": 0.13,
+        "first": "home",
+        "second": "away"
+      },
+      "hhad": {
+        "handicap": -2,
+        "home": 0.4,
+        "draw": 0.19,
+        "away": 0.41,
+        "first": "home",
+        "second": "away"
+      },
+      "ttg": {
+        "first": 3,
+        "second": 4,
+        "firstProb": 0.21,
+        "secondProb": 0.19
+      },
+      "hafu": {
+        "top3": [
+          "胜胜",
+          "平胜",
+          "胜平"
+        ],
+        "top3Probs": [
+          0.28,
+          0.12,
+          0.06
+        ]
+      },
+      "scoreTop5": [
+        {
+          "score": "3-0",
+          "prob": 0.18
+        },
+        {
+          "score": "2-0",
+          "prob": 0.12
+        },
+        {
+          "score": "4-0",
+          "prob": 0.08
+        },
+        {
+          "score": "3-1",
+          "prob": 0.08
+        },
+        {
+          "score": "2-1",
+          "prob": 0.06
+        }
+      ],
+      "htScoreTop3": [
+        {
+          "score": "2-0",
+          "prob": 0.15
+        },
+        {
+          "score": "1-0",
+          "prob": 0.12
+        },
+        {
+          "score": "3-0",
+          "prob": 0.08
+        }
+      ],
+      "lambdaHome": 3.0,
+      "lambdaAway": 0.6,
+      "lambdaTotal": 3.6,
+      "rulesTriggered": [
+        "体彩未开胜平负(仅让球/总进球/比分/半全场)",
+        "规则65大球上修(身价4.2倍+排名差11位)",
+        "规则52a让球无条件净胜球众数=3球"
+      ],
+      "odds_had": "未开售",
+      "odds_hhad": {
+        "h": 1.89,
+        "d": 4.2,
+        "a": 2.76
+      },
+      "odds_hhad_goalLine": -2,
+      "odds_hafu": {
+        "hh": 1.37,
+        "hd": 29,
+        "ha": 90,
+        "dh": 4.5,
+        "dd": 15,
+        "da": 38,
+        "ah": 23,
+        "ad": 29,
+        "aa": 28
+      },
+      "odds_ttg": {
+        "s0": 45,
+        "s1": 12.5,
+        "s2": 6,
+        "s3": 4.3,
+        "s4": 4.15,
+        "s5": 5.35,
+        "s6": 7.5,
+        "s7": 7.1
+      },
+      "odds_crs": {
+        "s01s00": 13,
+        "s02s00": 8.25,
+        "s02s01": 9,
+        "s03s00": 7.5,
+        "s03s01": 9,
+        "s03s02": 21,
+        "s04s00": 9.5,
+        "s04s01": 12.5,
+        "s04s02": 27,
+        "s05s00": 14,
+        "s05s01": 18,
+        "s05s02": 50,
+        "s1sh": 6.75,
+        "s00s00": 45,
+        "s01s01": 17,
+        "s02s02": 24,
+        "s03s03": 75,
+        "s1sd": 350,
+        "s00s01": 65,
+        "s00s02": 120,
+        "s01s02": 40,
+        "s00s03": 400,
+        "s01s03": 150,
+        "s02s03": 80,
+        "s00s04": 850,
+        "s01s04": 500,
+        "s02s04": 400,
+        "s00s05": 1000,
+        "s01s05": 1000,
+        "s02s05": 1000,
+        "s1sa": 350
+      }
+    },
+    {
+      "matchNumStr": "周一007",
+      "league": "亚洲冠军精英联赛",
+      "homeTeam": "吉达国民",
+      "awayTeam": "棉农",
+      "matchTime": "02:15:00",
+      "stadium": "King Abdullah Sports City",
+      "city": "吉达",
+      "weather": "晴，31°C",
+      "homeValue": 80000000,
+      "awayValue": 15000000,
+      "valueRatio": 5.3,
+      "singleMatch": false,
+      "confidence": "★★",
+      "had": {
+        "home": 0.55,
+        "draw": 0.25,
+        "away": 0.2,
+        "first": "home",
+        "second": "draw"
+      },
+      "hhad": {
+        "handicap": -2,
+        "home": 0.187,
+        "draw": 0.165,
+        "away": 0.647,
+        "first": "away",
+        "second": "home"
+      },
+      "ttg": {
+        "first": 3,
+        "second": 2,
+        "firstProb": 0.22,
+        "secondProb": 0.21
+      },
+      "hafu": {
+        "top3": [
+          "胜胜",
+          "平胜",
+          "平平"
+        ],
+        "top3Probs": [
+          0.2,
+          0.15,
+          0.12
+        ]
+      },
+      "scoreTop5": [
+        {
+          "score": "2-1",
+          "prob": 0.15
+        },
+        {
+          "score": "1-0",
+          "prob": 0.12
+        },
+        {
+          "score": "2-0",
+          "prob": 0.1
+        },
+        {
+          "score": "1-1",
+          "prob": 0.08
+        },
+        {
+          "score": "3-1",
+          "prob": 0.06
+        }
+      ],
+      "htScoreTop3": [
+        {
+          "score": "1-0",
+          "prob": 0.15
+        },
+        {
+          "score": "0-0",
+          "prob": 0.12
+        },
+        {
+          "score": "2-0",
+          "prob": 0.08
+        }
+      ],
+      "lambdaHome": 2.2,
+      "lambdaAway": 1.0,
+      "lambdaTotal": 3.2,
+      "rulesTriggered": [
+        "体彩未开胜平负(仅让球/总进球/比分/半全场)",
+        "模型-市场分歧(市场让胜38.7% vs 模型19%)",
+        "规则52a让球无条件净胜球众数=平局"
+      ],
+      "odds_had": "未开售",
+      "odds_hhad": {
+        "h": 2.29,
+        "d": 3.9,
+        "a": 2.29
+      },
+      "odds_hhad_goalLine": -2,
+      "odds_hafu": {
+        "hh": 1.45,
+        "hd": 30,
+        "ha": 90,
+        "dh": 4.15,
+        "dd": 12.25,
+        "da": 31,
+        "ah": 24,
+        "ad": 30,
+        "aa": 25
+      },
+      "odds_ttg": {
+        "s0": 29,
+        "s1": 8.2,
+        "s2": 5,
+        "s3": 3.8,
+        "s4": 4.4,
+        "s5": 6.25,
+        "s6": 9.75,
+        "s7": 10.5
+      },
+      "odds_crs": {
+        "s01s00": 9.75,
+        "s02s00": 6.25,
+        "s02s01": 8.75,
+        "s03s00": 7.25,
+        "s03s01": 9.25,
+        "s03s02": 26,
+        "s04s00": 10,
+        "s04s01": 15,
+        "s04s02": 35,
+        "s05s00": 17,
+        "s05s01": 25,
+        "s05s02": 60,
+        "s1sh": 10,
+        "s00s00": 29,
+        "s01s01": 14,
+        "s02s02": 25,
+        "s03s03": 90,
+        "s1sd": 450,
+        "s00s01": 35,
+        "s00s02": 90,
+        "s01s02": 33,
+        "s00s03": 300,
+        "s01s03": 100,
+        "s02s03": 80,
+        "s00s04": 800,
+        "s01s04": 450,
+        "s02s04": 350,
+        "s00s05": 1000,
+        "s01s05": 1000,
+        "s02s05": 1000,
+        "s1sa": 300
+      }
+    },
+    {
+      "matchNumStr": "周一008",
+      "league": "意大利甲级联赛",
+      "homeTeam": "国际米兰",
+      "awayTeam": "乌迪内斯",
+      "matchTime": "02:45:00",
+      "stadium": "Stadio Giuseppe Meazza",
+      "city": "米兰",
+      "weather": "晴间少云，21°C",
+      "homeValue": 600000000,
+      "awayValue": 120000000,
+      "valueRatio": 5.0,
+      "singleMatch": false,
+      "confidence": "★★★",
+      "had": {
+        "home": 0.85,
+        "draw": 0.08,
+        "away": 0.07,
+        "first": "home",
+        "second": "draw"
+      },
+      "hhad": {
+        "handicap": -2,
+        "home": 0.438,
+        "draw": 0.224,
+        "away": 0.338,
+        "first": "home",
+        "second": "away"
+      },
+      "ttg": {
+        "first": 3,
+        "second": 2,
+        "firstProb": 0.22,
+        "secondProb": 0.21
+      },
+      "hafu": {
+        "top3": [
+          "胜胜",
+          "平胜",
+          "胜平"
+        ],
+        "top3Probs": [
+          0.28,
+          0.15,
+          0.06
+        ]
+      },
+      "scoreTop5": [
+        {
+          "score": "3-0",
+          "prob": 0.15
+        },
+        {
+          "score": "2-0",
+          "prob": 0.12
+        },
+        {
+          "score": "3-1",
+          "prob": 0.1
+        },
+        {
+          "score": "2-1",
+          "prob": 0.08
+        },
+        {
+          "score": "4-0",
+          "prob": 0.06
+        }
+      ],
+      "htScoreTop3": [
+        {
+          "score": "1-0",
+          "prob": 0.2
+        },
+        {
+          "score": "2-0",
+          "prob": 0.12
+        },
+        {
+          "score": "0-0",
+          "prob": 0.1
+        }
+      ],
+      "lambdaHome": 2.8,
+      "lambdaAway": 0.4,
+      "lambdaTotal": 3.2,
+      "rulesTriggered": [
+        "规则65大球上修(身价5倍+排名差10位)",
+        "规则52a让球无条件净胜球众数=3球"
+      ],
+      "odds_had": {
+        "h": 1.14,
+        "d": 6.15,
+        "a": 11.2
+      },
+      "odds_hhad": {
+        "h": 2.62,
+        "d": 3.85,
+        "a": 2.05
+      },
+      "odds_hhad_goalLine": -2,
+      "odds_hafu": {
+        "hh": 1.6,
+        "hd": 25,
+        "ha": 90,
+        "dh": 3.9,
+        "dd": 9.5,
+        "da": 25,
+        "ah": 26,
+        "ad": 25,
+        "aa": 21
+      },
+      "odds_ttg": {
+        "s0": 22,
+        "s1": 7,
+        "s2": 4.25,
+        "s3": 3.7,
+        "s4": 4.5,
+        "s5": 7,
+        "s6": 12.5,
+        "s7": 15.5
+      },
+      "odds_crs": {
+        "s01s00": 8,
+        "s02s00": 6.5,
+        "s02s01": 8,
+        "s03s00": 7.25,
+        "s03s01": 9.5,
+        "s03s02": 24,
+        "s04s00": 11,
+        "s04s01": 16,
+        "s04s02": 50,
+        "s05s00": 21,
+        "s05s01": 29,
+        "s05s02": 75,
+        "s1sh": 15,
+        "s00s00": 22,
+        "s01s01": 11.5,
+        "s02s02": 22,
+        "s03s03": 100,
+        "s1sd": 500,
+        "s00s01": 26,
+        "s00s02": 75,
+        "s01s02": 26,
+        "s00s03": 300,
+        "s01s03": 100,
+        "s02s03": 90,
+        "s00s04": 700,
+        "s01s04": 500,
+        "s02s04": 500,
+        "s00s05": 1000,
+        "s01s05": 1000,
+        "s02s05": 1000,
+        "s1sa": 500
+      }
+    },
+    {
+      "matchNumStr": "周一009",
+      "league": "法国乙级联赛",
+      "homeTeam": "圣旺红星",
+      "awayTeam": "梅斯",
+      "matchTime": "02:45:00",
+      "stadium": "Stade Bauer",
+      "city": "圣旺",
+      "weather": "晴，22°C",
+      "homeValue": 8000000,
+      "awayValue": 12000000,
+      "valueRatio": 1.5,
+      "singleMatch": false,
+      "confidence": "★",
+      "had": {
+        "home": 0.3,
+        "draw": 0.35,
+        "away": 0.35,
+        "first": "draw",
+        "second": "away"
+      },
+      "hhad": {
+        "handicap": -1,
+        "home": 0.119,
+        "draw": 0.181,
+        "away": 0.7,
+        "first": "away",
+        "second": "draw"
+      },
+      "ttg": {
+        "first": 2,
+        "second": 1,
+        "firstProb": 0.27,
+        "secondProb": 0.23
+      },
+      "hafu": {
+        "top3": [
+          "平平",
+          "平负",
+          "平胜"
+        ],
+        "top3Probs": [
+          0.18,
+          0.12,
+          0.1
+        ]
+      },
+      "scoreTop5": [
+        {
+          "score": "1-1",
+          "prob": 0.15
+        },
+        {
+          "score": "0-1",
+          "prob": 0.12
+        },
+        {
+          "score": "0-0",
+          "prob": 0.1
+        },
+        {
+          "score": "1-2",
+          "prob": 0.08
+        },
+        {
+          "score": "1-0",
+          "prob": 0.07
+        }
+      ],
+      "htScoreTop3": [
+        {
+          "score": "0-0",
+          "prob": 0.22
+        },
+        {
+          "score": "0-1",
+          "prob": 0.1
+        },
+        {
+          "score": "1-0",
+          "prob": 0.08
+        }
+      ],
+      "lambdaHome": 1.1,
+      "lambdaAway": 1.2,
+      "lambdaTotal": 2.3,
+      "rulesTriggered": [
+        "规则57乙级联赛平局上修+置信度降级",
+        "规则22-L2法乙主场权重",
+        "规则52a让球无条件净胜球众数=平局"
+      ],
+      "odds_had": {
+        "h": 2.3,
+        "d": 2.95,
+        "a": 2.82
+      },
+      "odds_hhad": {
+        "h": 5.2,
+        "d": 4,
+        "a": 1.46
+      },
+      "odds_hhad_goalLine": -1,
+      "odds_hafu": {
+        "hh": 4.2,
+        "hd": 14,
+        "ha": 31,
+        "dh": 5.6,
+        "dd": 5,
+        "da": 6.2,
+        "ah": 30,
+        "ad": 14,
+        "aa": 4.6
+      },
+      "odds_ttg": {
+        "s0": 10,
+        "s1": 4.5,
+        "s2": 3.1,
+        "s3": 3.7,
+        "s4": 6.5,
+        "s5": 13,
+        "s6": 28,
+        "s7": 44
+      },
+      "odds_crs": {
+        "s01s00": 8.25,
+        "s02s00": 12,
+        "s02s01": 8.25,
+        "s03s00": 26,
+        "s03s01": 18,
+        "s03s02": 26,
+        "s04s00": 80,
+        "s04s01": 50,
+        "s04s02": 80,
+        "s05s00": 300,
+        "s05s01": 200,
+        "s05s02": 300,
+        "s1sh": 90,
+        "s00s00": 10,
+        "s01s01": 6,
+        "s02s02": 12.5,
+        "s03s03": 60,
+        "s1sd": 300,
+        "s00s01": 9,
+        "s00s02": 13,
+        "s01s02": 9.25,
+        "s00s03": 35,
+        "s01s03": 26,
+        "s02s03": 35,
+        "s00s04": 90,
+        "s01s04": 70,
+        "s02s04": 100,
+        "s00s05": 350,
+        "s01s05": 250,
+        "s02s05": 350,
+        "s1sa": 100
+      }
+    },
+    {
+      "matchNumStr": "周一010",
+      "league": "英格兰超级联赛",
+      "homeTeam": "利兹联",
+      "awayTeam": "纽卡斯尔联",
+      "matchTime": "03:00:00",
+      "stadium": "Elland Road",
+      "city": "利兹",
+      "weather": "阴转小雨，18°C",
+      "homeValue": 350000000,
+      "awayValue": 500000000,
+      "valueRatio": 1.4,
+      "singleMatch": true,
+      "confidence": "★",
+      "had": {
+        "home": 0.35,
+        "draw": 0.38,
+        "away": 0.27,
+        "first": "draw",
+        "second": "away"
+      },
+      "hhad": {
+        "handicap": -1,
+        "home": 0.17,
+        "draw": 0.18,
+        "away": 0.65,
+        "first": "away",
+        "second": "draw"
+      },
+      "ttg": {
+        "first": 2,
+        "second": 3,
+        "firstProb": 0.23,
+        "secondProb": 0.22
+      },
+      "hafu": {
+        "top3": [
+          "平平",
+          "平负",
+          "平胜"
+        ],
+        "top3Probs": [
+          0.18,
+          0.12,
+          0.1
+        ]
+      },
+      "scoreTop5": [
+        {
+          "score": "1-1",
+          "prob": 0.15
+        },
+        {
+          "score": "2-2",
+          "prob": 0.1
+        },
+        {
+          "score": "1-2",
+          "prob": 0.08
+        },
+        {
+          "score": "0-0",
+          "prob": 0.08
+        },
+        {
+          "score": "2-1",
+          "prob": 0.07
+        }
+      ],
+      "htScoreTop3": [
+        {
+          "score": "0-0",
+          "prob": 0.2
+        },
+        {
+          "score": "1-1",
+          "prob": 0.1
+        },
+        {
+          "score": "0-1",
+          "prob": 0.08
+        }
+      ],
+      "lambdaHome": 1.5,
+      "lambdaAway": 1.4,
+      "lambdaTotal": 2.9,
+      "rulesTriggered": [
+        "规则68英超主场加成低(系数1.10-1.13)",
+        "规则63单关平局上修",
+        "规则52a让球无条件净胜球众数=平局"
+      ],
+      "odds_had": {
+        "h": 2.17,
+        "d": 3.25,
+        "a": 2.77
+      },
+      "odds_hhad": {
+        "h": 4.55,
+        "d": 4,
+        "a": 1.52
+      },
+      "odds_hhad_goalLine": -1,
+      "odds_hafu": {
+        "hh": 3.7,
+        "hd": 14,
+        "ha": 27,
+        "dh": 5.5,
+        "dd": 5.7,
+        "da": 7,
+        "ah": 23,
+        "ad": 14,
+        "aa": 4.8
+      },
+      "odds_ttg": {
+        "s0": 14,
+        "s1": 5.5,
+        "s2": 3.75,
+        "s3": 3.65,
+        "s4": 5.1,
+        "s5": 9,
+        "s6": 16,
+        "s7": 25
+      },
+      "odds_crs": {
+        "s01s00": 9.5,
+        "s02s00": 12,
+        "s02s01": 7.5,
+        "s03s00": 22,
+        "s03s01": 16,
+        "s03s02": 21,
+        "s04s00": 55,
+        "s04s01": 41,
+        "s04s02": 60,
+        "s05s00": 175,
+        "s05s01": 100,
+        "s05s02": 175,
+        "s1sh": 65,
+        "s00s00": 14,
+        "s01s01": 6.75,
+        "s02s02": 11.5,
+        "s03s03": 50,
+        "s1sd": 350,
+        "s00s01": 12,
+        "s00s02": 17,
+        "s01s02": 9,
+        "s00s03": 33,
+        "s01s03": 20,
+        "s02s03": 25,
+        "s00s04": 100,
+        "s01s04": 65,
+        "s02s04": 80,
+        "s00s05": 400,
+        "s01s05": 250,
+        "s02s05": 350,
+        "s1sa": 80
+      }
+    },
+    {
+      "matchNumStr": "周一011",
+      "league": "西班牙甲级联赛",
+      "homeTeam": "比利亚雷亚尔",
+      "awayTeam": "皇家贝蒂斯",
+      "matchTime": "03:00:00",
+      "stadium": "Estadio de la Ceramica",
+      "city": "比利亚雷亚尔",
+      "weather": "晴，19°C",
+      "homeValue": 350000000,
+      "awayValue": 250000000,
+      "valueRatio": 1.4,
+      "singleMatch": true,
+      "confidence": "★★",
+      "had": {
+        "home": 0.44,
+        "draw": 0.32,
+        "away": 0.24,
+        "first": "home",
+        "second": "draw"
+      },
+      "hhad": {
+        "handicap": -1,
+        "home": 0.234,
+        "draw": 0.206,
+        "away": 0.56,
+        "first": "away",
+        "second": "home"
+      },
+      "ttg": {
+        "first": 3,
+        "second": 2,
+        "firstProb": 0.22,
+        "secondProb": 0.22
+      },
+      "hafu": {
+        "top3": [
+          "平胜",
+          "平平",
+          "平负"
+        ],
+        "top3Probs": [
+          0.15,
+          0.14,
+          0.1
+        ]
+      },
+      "scoreTop5": [
+        {
+          "score": "2-1",
+          "prob": 0.12
+        },
+        {
+          "score": "1-1",
+          "prob": 0.12
+        },
+        {
+          "score": "1-0",
+          "prob": 0.1
+        },
+        {
+          "score": "2-2",
+          "prob": 0.08
+        },
+        {
+          "score": "0-1",
+          "prob": 0.07
+        }
+      ],
+      "htScoreTop3": [
+        {
+          "score": "0-0",
+          "prob": 0.18
+        },
+        {
+          "score": "1-0",
+          "prob": 0.12
+        },
+        {
+          "score": "0-1",
+          "prob": 0.08
+        }
+      ],
+      "lambdaHome": 1.7,
+      "lambdaAway": 1.3,
+      "lambdaTotal": 3.0,
+      "rulesTriggered": [
+        "规则63单关平局上修(差距23pp→+8%)",
+        "规则22-LL西甲平局基准+4%",
+        "规则52a让球无条件净胜球众数=平局"
+      ],
+      "odds_had": {
+        "h": 1.86,
+        "d": 3.62,
+        "a": 3.17
+      },
+      "odds_hhad": {
+        "h": 3.45,
+        "d": 3.87,
+        "a": 1.72
+      },
+      "odds_hhad_goalLine": -1,
+      "odds_hafu": {
+        "hh": 2.95,
+        "hd": 15,
+        "ha": 30,
+        "dh": 5.15,
+        "dd": 6.05,
+        "da": 8.5,
+        "ah": 21,
+        "ad": 15,
+        "aa": 5.75
+      },
+      "odds_ttg": {
+        "s0": 20,
+        "s1": 6.75,
+        "s2": 4.1,
+        "s3": 3.5,
+        "s4": 4.55,
+        "s5": 7.8,
+        "s6": 14,
+        "s7": 17.5
+      },
+      "odds_crs": {
+        "s01s00": 9.5,
+        "s02s00": 10.5,
+        "s02s01": 7.5,
+        "s03s00": 17,
+        "s03s01": 12.5,
+        "s03s02": 18,
+        "s04s00": 30,
+        "s04s01": 27,
+        "s04s02": 50,
+        "s05s00": 90,
+        "s05s01": 75,
+        "s05s02": 100,
+        "s1sh": 30,
+        "s00s00": 20,
+        "s01s01": 7.5,
+        "s02s02": 11,
+        "s03s03": 40,
+        "s1sd": 150,
+        "s00s01": 15,
+        "s00s02": 22,
+        "s01s02": 11.5,
+        "s00s03": 50,
+        "s01s03": 25,
+        "s02s03": 30,
+        "s00s04": 150,
+        "s01s04": 70,
+        "s02s04": 85,
+        "s00s05": 400,
+        "s01s05": 300,
+        "s02s05": 300,
+        "s1sa": 75
+      }
+    },
+    {
+      "matchNumStr": "周一012",
+      "league": "葡萄牙超级联赛",
+      "homeTeam": "布拉加",
+      "awayTeam": "埃斯托里尔",
+      "matchTime": "03:45:00",
+      "stadium": "Estadio Municipal de Braga",
+      "city": "布拉加",
+      "weather": "晴转晴间多云，19°C",
+      "homeValue": 120000000,
+      "awayValue": 40000000,
+      "valueRatio": 3.0,
+      "singleMatch": false,
+      "confidence": "★★★",
+      "had": {
+        "home": 0.7,
+        "draw": 0.18,
+        "away": 0.12,
+        "first": "home",
+        "second": "draw"
+      },
+      "hhad": {
+        "handicap": -1,
+        "home": 0.47,
+        "draw": 0.23,
+        "away": 0.3,
+        "first": "home",
+        "second": "away"
+      },
+      "ttg": {
+        "first": 2,
+        "second": 3,
+        "firstProb": 0.24,
+        "secondProb": 0.22
+      },
+      "hafu": {
+        "top3": [
+          "胜胜",
+          "平胜",
+          "平平"
+        ],
+        "top3Probs": [
+          0.25,
+          0.15,
+          0.12
+        ]
+      },
+      "scoreTop5": [
+        {
+          "score": "2-0",
+          "prob": 0.15
+        },
+        {
+          "score": "1-0",
+          "prob": 0.12
+        },
+        {
+          "score": "3-0",
+          "prob": 0.08
+        },
+        {
+          "score": "2-1",
+          "prob": 0.07
+        },
+        {
+          "score": "1-1",
+          "prob": 0.06
+        }
+      ],
+      "htScoreTop3": [
+        {
+          "score": "1-0",
+          "prob": 0.18
+        },
+        {
+          "score": "0-0",
+          "prob": 0.12
+        },
+        {
+          "score": "2-0",
+          "prob": 0.08
+        }
+      ],
+      "lambdaHome": 2.2,
+      "lambdaAway": 0.6,
+      "lambdaTotal": 2.8,
+      "rulesTriggered": [
+        "规则65大球上修(身价3倍+排名差9位)",
+        "规则52a让球无条件净胜球众数=3球"
+      ],
+      "odds_had": {
+        "h": 1.32,
+        "d": 4.35,
+        "a": 7.05
+      },
+      "odds_hhad": {
+        "h": 2.09,
+        "d": 3.43,
+        "a": 2.78
+      },
+      "odds_hhad_goalLine": -1,
+      "odds_hafu": {
+        "hh": 1.95,
+        "hd": 19,
+        "ha": 55,
+        "dh": 4,
+        "dd": 7.3,
+        "da": 16,
+        "ah": 24,
+        "ad": 19,
+        "aa": 13
+      },
+      "odds_ttg": {
+        "s0": 16,
+        "s1": 5.8,
+        "s2": 3.9,
+        "s3": 3.6,
+        "s4": 5.05,
+        "s5": 8.5,
+        "s6": 14,
+        "s7": 21
+      },
+      "odds_crs": {
+        "s01s00": 7.5,
+        "s02s00": 7,
+        "s02s01": 7,
+        "s03s00": 10,
+        "s03s01": 10.5,
+        "s03s02": 21,
+        "s04s00": 19,
+        "s04s01": 21,
+        "s04s02": 50,
+        "s05s00": 40,
+        "s05s01": 50,
+        "s05s02": 100,
+        "s1sh": 27,
+        "s00s00": 16,
+        "s01s01": 8,
+        "s02s02": 17,
+        "s03s03": 70,
+        "s1sd": 500,
+        "s00s01": 18,
+        "s00s02": 40,
+        "s01s02": 18,
+        "s00s03": 100,
+        "s01s03": 60,
+        "s02s03": 50,
+        "s00s04": 500,
+        "s01s04": 250,
+        "s02s04": 250,
+        "s00s05": 1000,
+        "s01s05": 600,
+        "s02s05": 600,
+        "s1sa": 200
+      }
+    },
+    {
+      "matchNumStr": "周一014",
+      "league": "亚运会女足",
+      "homeTeam": "中国女足",
+      "awayTeam": "中国香港女足",
+      "matchTime": "18:00:00",
+      "stadium": "岐阜长良川竞技场",
+      "city": "岐阜",
+      "weather": "大雨转中雨，24°C",
+      "homeValue": null,
+      "awayValue": null,
+      "valueRatio": null,
+      "singleMatch": false,
+      "confidence": "★★",
+      "had": {
+        "home": 0.95,
+        "draw": 0.03,
+        "away": 0.02,
+        "first": "home",
+        "second": "draw"
+      },
+      "hhad": {
+        "handicap": -4,
+        "home": 0.49,
+        "draw": 0.167,
+        "away": 0.343,
+        "first": "home",
+        "second": "away"
+      },
+      "ttg": {
+        "first": 5,
+        "second": 6,
+        "firstProb": 0.17,
+        "secondProb": 0.16
+      },
+      "hafu": {
+        "top3": [
+          "胜胜",
+          "平胜",
+          "胜平"
+        ],
+        "top3Probs": [
+          0.45,
+          0.12,
+          0.07
+        ]
+      },
+      "scoreTop5": [
+        {
+          "score": "5-0",
+          "prob": 0.13
+        },
+        {
+          "score": "4-0",
+          "prob": 0.12
+        },
+        {
+          "score": "3-0",
+          "prob": 0.1
+        },
+        {
+          "score": "6-0",
+          "prob": 0.09
+        },
+        {
+          "score": "5-1",
+          "prob": 0.07
+        }
+      ],
+      "htScoreTop3": [
+        {
+          "score": "2-0",
+          "prob": 0.15
+        },
+        {
+          "score": "3-0",
+          "prob": 0.12
+        },
+        {
+          "score": "1-0",
+          "prob": 0.11
+        }
+      ],
+      "lambdaHome": 5.2,
+      "lambdaAway": 0.6,
+      "lambdaTotal": 5.8,
+      "rulesTriggered": [
+        "体彩未开胜平负与半全场(仅让球/总进球/比分)",
+        "FIFA排名差66位(第16 vs 第82)",
+        "规则52a让球无条件净胜球众数=4球"
+      ],
+      "odds_had": "未开售",
+      "odds_hhad": {
+        "h": 1.67,
+        "d": 5.3,
+        "a": 2.93
+      },
+      "odds_hhad_goalLine": -4,
+      "odds_hafu": "未开售",
+      "odds_ttg": {
+        "s0": 150,
+        "s1": 35,
+        "s2": 13.5,
+        "s3": 7.5,
+        "s4": 5.7,
+        "s5": 4.9,
+        "s6": 5.35,
+        "s7": 2.53
+      },
+      "odds_crs": {
+        "s01s00": 36,
+        "s02s00": 14,
+        "s02s01": 40,
+        "s03s00": 7.9,
+        "s03s01": 23,
+        "s03s02": 150,
+        "s04s00": 6.4,
+        "s04s01": 21,
+        "s04s02": 120,
+        "s05s00": 5.65,
+        "s05s01": 21,
+        "s05s02": 150,
+        "s1sh": 1.79,
+        "s00s00": 150,
+        "s01s01": 100,
+        "s02s02": 300,
+        "s03s03": 800,
+        "s1sd": 800,
+        "s00s01": 800,
+        "s00s02": 1000,
+        "s01s02": 850,
+        "s00s03": 1000,
+        "s01s03": 1000,
+        "s02s03": 1000,
+        "s00s04": 1000,
+        "s01s04": 1000,
+        "s02s04": 1000,
+        "s00s05": 1000,
+        "s01s05": 1000,
+        "s02s05": 1000,
+        "s1sa": 1000
+      }
+    }
+  ]
+}

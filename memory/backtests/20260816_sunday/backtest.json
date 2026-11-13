@@ -1,0 +1,99 @@
+{
+  "date": "2026-08-16",
+  "day": "sunday",
+  "matchCount": 27,
+  "analyzedMatches": 26,
+  "postponed": ["027"],
+  "mlsMatch": "028",
+  "source_files": {
+    "predictions": "memory/predictions/20260816_sunday/predictions.json",
+    "analysis_report": "reports/html/20260816_sunday_analysis_zhihu.md",
+    "backtest_report": "reports/html/backtest_20260816_sunday_zhihu.md"
+  },
+  "hit_rates": {
+    "direction_total": {"hits": 20, "total": 27, "rate": "74.1%", "rating": "良好"},
+    "direction_first": {"hits": 12, "total": 27, "rate": "44.4%", "rating": "一般"},
+    "ttg": {"hits": 12, "total": 27, "rate": "44.4%", "rating": "一般"},
+    "htft": {"hits": 13, "total": 27, "rate": "48.1%", "rating": "一般"},
+    "score": {"hits": 6, "total": 27, "rate": "22.2%", "rating": "较差"},
+    "parlay": {"hits": 1, "total": 20, "rate": "5.0%"}
+  },
+  "miss_list": ["003", "007", "010", "018", "021", "025", "026"],
+  "score_hit_list": ["001", "004", "005", "008", "021", "024"],
+  "four_dim_hits": ["004", "008"],
+  "actual_results": {
+    "001": {"score": "0:0", "ht_score": "0:0", "direction": "D", "htft": "平平", "ttg": 0},
+    "002": {"score": "1:4", "ht_score": "0:3", "direction": "A", "htft": "负负", "ttg": 5},
+    "003": {"score": "3:2", "ht_score": "2:0", "direction": "H", "htft": "胜胜", "ttg": 5},
+    "004": {"score": "1:1", "ht_score": "0:0", "direction": "D", "htft": "平平", "ttg": 2},
+    "005": {"score": "3:1", "ht_score": "1:0", "direction": "H", "htft": "胜胜", "ttg": 4},
+    "006": {"score": "3:0", "ht_score": "3:0", "direction": "H", "htft": "胜胜", "ttg": 3},
+    "007": {"score": "1:3", "ht_score": "0:3", "direction": "A", "htft": "负负", "ttg": 4},
+    "008": {"score": "3:1", "ht_score": "1:1", "direction": "H", "htft": "平胜", "ttg": 4},
+    "009": {"score": "2:2", "ht_score": "2:0", "direction": "D", "htft": "胜平", "ttg": 4},
+    "010": {"score": "5:5", "ht_score": "4:2", "direction": "D", "htft": "胜平", "ttg": 7, "note": "平其他"},
+    "011": {"score": "3:0", "ht_score": "2:0", "direction": "H", "htft": "胜胜", "ttg": 3},
+    "012": {"score": "2:3", "ht_score": "2:0", "direction": "A", "htft": "胜负", "ttg": 5},
+    "013": {"score": "2:0", "ht_score": "0:0", "direction": "H", "htft": "平胜", "ttg": 2},
+    "014": {"score": "0:4", "ht_score": "0:1", "direction": "A", "htft": "负负", "ttg": 4},
+    "015": {"score": "0:1", "ht_score": "0:0", "direction": "A", "htft": "平负", "ttg": 1},
+    "016": {"score": "2:2", "ht_score": "2:1", "direction": "D", "htft": "胜平", "ttg": 4},
+    "017": {"score": "2:2", "ht_score": "0:1", "direction": "D", "htft": "负平", "ttg": 4},
+    "018": {"score": "2:2", "ht_score": "2:2", "direction": "D", "htft": "平平", "ttg": 4},
+    "019": {"score": "3:2", "ht_score": "1:0", "direction": "H", "htft": "胜胜", "ttg": 5},
+    "020": {"score": "3:0", "ht_score": "1:0", "direction": "H", "htft": "胜胜", "ttg": 3},
+    "021": {"score": "1:2", "ht_score": "1:1", "direction": "A", "htft": "平负", "ttg": 3},
+    "022": {"score": "3:0", "ht_score": "2:0", "direction": "H", "htft": "胜胜", "ttg": 3},
+    "023": {"score": "4:0", "ht_score": "3:0", "direction": "H", "htft": "胜胜", "ttg": 4},
+    "024": {"score": "1:0", "ht_score": "1:0", "direction": "H", "htft": "胜胜", "ttg": 1},
+    "025": {"score": "0:3", "ht_score": "0:0", "direction": "A", "htft": "平负", "ttg": 3},
+    "026": {"score": "1:2", "ht_score": "1:1", "direction": "A", "htft": "平负", "ttg": 3},
+    "028": {"score": "2:3", "ht_score": "2:0", "direction": "A", "htft": "胜负", "ttg": 5}
+  },
+  "parlay_results": [
+    {"name": "稳健方向串", "type": "方向串", "matches": ["014", "026"], "results": ["✅", "❌"], "hit": false, "odds": "~2.51"},
+    {"name": "价值方向串", "type": "方向串", "matches": ["006", "018"], "results": ["❌", "❌"], "hit": false, "odds": "~4.33"},
+    {"name": "平局串", "type": "方向串", "matches": ["011", "013"], "results": ["❌", "❌"], "hit": false, "odds": "~10.24"},
+    {"name": "稳健让球串", "type": "让球串", "matches": ["021", "025"], "results": ["✅", "✅"], "hit": true, "odds": "~3.55"},
+    {"name": "价值让球串", "type": "让球串", "matches": ["008", "019"], "results": ["❌", "❌"], "hit": false, "odds": "~3.45"},
+    {"name": "半全场串A", "type": "混合串", "matches": ["007", "020"], "results": ["❌", "✅"], "hit": false, "odds": "~4.24"},
+    {"name": "半全场串B", "type": "混合串", "matches": ["016", "026"], "results": ["❌", "❌"], "hit": false, "odds": "~4.80"},
+    {"name": "方向+半全场A", "type": "混合串", "matches": ["014", "008"], "results": ["✅", "❌"], "hit": false, "odds": "~2.45"},
+    {"name": "方向+半全场B", "type": "混合串", "matches": ["026", "020"], "results": ["❌", "✅"], "hit": false, "odds": "~3.34"},
+    {"name": "总进球串A", "type": "娱乐串", "matches": ["008", "009", "020"], "results": ["✅", "✅", "❌"], "hit": false, "odds": "~85.14"},
+    {"name": "总进球串B", "type": "娱乐串", "matches": ["011", "022", "025"], "results": ["❌", "❌", "❌"], "hit": false, "odds": "~38.58"},
+    {"name": "总进球串C", "type": "娱乐串", "matches": ["002", "016", "028"], "results": ["❌", "❌", "❌"], "hit": false, "odds": "~51.25"},
+    {"name": "高赔半全场串A", "type": "娱乐串", "matches": ["011", "013", "022"], "results": ["❌", "❌", "❌"], "hit": false, "odds": "~141.24"},
+    {"name": "高赔半全场串B", "type": "娱乐串", "matches": ["019", "015", "006"], "results": ["❌", "❌", "❌"], "hit": false, "odds": "~99.28"},
+    {"name": "高赔半全场串C", "type": "娱乐串", "matches": ["017", "018", "010"], "results": ["❌", "❌", "❌"], "hit": false, "odds": "~182.33"},
+    {"name": "高赔半全场串D", "type": "娱乐串", "matches": ["004", "005", "024"], "results": ["✅", "❌", "❌"], "hit": false, "odds": "~128.31"},
+    {"name": "稳健比分串", "type": "娱乐串", "matches": ["026", "008"], "results": ["❌", "❌"], "hit": false, "odds": "~46.88"},
+    {"name": "搏冷比分串", "type": "娱乐串", "matches": ["019", "020", "011"], "results": ["❌", "❌", "❌"], "hit": false, "odds": "~1345.50"},
+    {"name": "单挑比分①", "type": "娱乐串", "matches": ["009"], "results": ["❌"], "hit": false, "odds": "9.50"},
+    {"name": "单挑比分②", "type": "娱乐串", "matches": ["007"], "results": ["❌"], "hit": false, "odds": "9.50"}
+  ],
+  "key_findings": [
+    "残阵战意反弹分化明显：020布兰7人伤停→3:0大胜(主场+争冠)，007 AIK 10人缺阵→1:3惨败(客场+无战意)。规则9a需增加主场/客场和战意维度",
+    "大球井喷：7场≥5球(002/003/010/012/019/028)，含1场10球(010奥勒松5:5)。新赛季lambda+0.3上修远不足",
+    "平局高发：7场平局(001/004/009/010/016/017/018)，次选平局命中4场(004/009/016/017)",
+    "稳健让球串唯一命中(021+025让负~3.55倍)，规则55让球串优先原则再次验证"
+  ],
+  "lessons": [
+    {"id": "L020", "title": "残阵战意反弹需区分主客场+战意维度", "tags": ["残阵", "规则9a", "挪超", "瑞超", "美职"], "detail": "020布兰(主场+争冠+7人伤停)→3:0大胜；019莫尔德(主场+争冠+6人伤停)→3:2赢球；但007 AIK(客场+无战意+10人缺阵)→1:3惨败；028纽约城(主场+无保级压力+9人缺阵)→半场2:0→2:3被逆转。规则9a需细化：主场+强战意残阵lambda下修减半，客场+无战意残阵lambda下修不减。"},
+    {"id": "L021", "title": "新赛季lambda上修+0.3仍严重不足", "tags": ["新赛季", "规则35", "荷甲", "韩职", "挪超", "西甲", "TTG"], "detail": "本轮7场≥5球(25.9%)，其中002荷甲5球/003韩职5球/010挪超10球/012芬超5球/019挪超5球/028美职5球。规则35+0.3上修后仍低估大球。建议新赛季前2轮lambda_total额外+0.5-0.7(原+0.3-0.5)，防线残缺场次额外+0.2。"},
+    {"id": "L022", "title": "半场领先→全场被追平/逆转路径需纳入半全场TOP3", "tags": ["半全场", "荷甲", "美职", "芬超"], "detail": "009费耶诺德(半场2:0→2:2胜平)、016阿贾克斯(半场2:1→2:2胜平)、012奥卢(半场2:0→2:3胜负)、028纽约城(半场2:0→2:3胜负)——4场半场领先被追平/逆转，胜平/胜负路径不在TOP3中。荷甲/美职/芬超下半场防线崩溃是系统性模式。"},
+    {"id": "L023", "title": "让球串容错性验证(规则55连续3轮验证)", "tags": ["串关", "规则55", "让球串"], "detail": "稳健让球串(021+025让负~3.55倍)为唯一命中串关方案。方向串全灭(3/3)、混合串全灭(4/4)、娱乐串全灭(12/12)。让负=平局或客胜均命中，在平局/冷门高发轮次容错性远优于纯方向串。规则55让球串优先原则连续3轮(8/14/8/16)验证有效。"}
+  ],
+  "rules_triggered": {
+    "rule35_newseason": ["001","002","008","009","013","016","017","018","022","023","026"],
+    "rule46_no_high_confidence": ["001","002","007","008","009","013","016","017","018","019","020","028"],
+    "rule9_injury_correction": ["002","007","008","009","019","020","028"],
+    "rule9a_residual_fightback": ["007","019","020","028"],
+    "rule57_second_league": ["001"],
+    "rule53_ttg_score_check": "auto-triggered"
+  },
+  "new_rule_suggestions": [
+    {"rule": "规则35修正", "description": "新赛季前2轮lambda_total额外+0.5-0.7(原+0.3-0.5)，防线残缺场次(双方合计≥5人伤停)额外+0.2"},
+    {"rule": "规则9a细化", "description": "增加主场/客场维度：主场+强战意(保级/争冠)残阵lambda下修减半→1/4下修；客场+无战意残阵lambda下修不减。客场残阵需额外-0.1~0.2"}
+  ]
+}

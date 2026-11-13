@@ -1,0 +1,1387 @@
+{
+ "date": "2026-11-06",
+ "day": "周五",
+ "n": 14,
+ "settled_n": 14,
+ "pending": [],
+ "rows": [
+  {
+   "num": "周五001",
+   "match": "悉尼FC vs 中央海岸水手",
+   "conf": "★★★",
+   "league": "澳超",
+   "is_single": false,
+   "single_api": 0,
+   "score": "4-1",
+   "ht": "2-0",
+   "goals": 5,
+   "actual": {
+    "had": "home",
+    "hc": "win",
+    "hafu": "胜胜",
+    "score": "4-1",
+    "ht": "2-0",
+    "goals": 5,
+    "ou": "大",
+    "single_api": 0,
+    "line": -1,
+    "band": "大球(4-5球)"
+   },
+   "pred": {
+    "had_first": "home",
+    "had_second": "draw",
+    "had_first_prob": 60.5,
+    "had_second_prob": 25.0,
+    "hc_first": "win",
+    "hc_second": "push",
+    "hc_first_prob": 36.8,
+    "structure_leg": "lose",
+    "structure_prob": 38.6,
+    "ttg_first": "2",
+    "ttg_second": "3",
+    "tier": "常规正常球(2-3球)",
+    "hafu": [
+     "胜胜",
+     "平胜",
+     "负胜"
+    ],
+    "cr": [
+     "1-0",
+     "2-0",
+     "1-1",
+     "2-1",
+     "0-0"
+    ],
+    "ht": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "ou": "小",
+    "ou_p_under": 50.6,
+    "override": null
+   },
+   "had_primary": true,
+   "had_combined": true,
+   "hc_primary": true,
+   "hc_combined": true,
+   "hc_structure_hit": false,
+   "cr_top5": false,
+   "cr_top1": false,
+   "ttg_top2": false,
+   "ttg_top1": false,
+   "hafu_top3": true,
+   "hafu_top1": true,
+   "ht_top3": false,
+   "ht_top1": false,
+   "tier_hit": false,
+   "ou_hit": false,
+   "band": "大球(4-5球)"
+  },
+  {
+   "num": "周五002",
+   "match": "不伦瑞克 vs 科特布斯",
+   "conf": "★★",
+   "league": "德乙",
+   "is_single": false,
+   "single_api": 0,
+   "score": "0-0",
+   "ht": "0-0",
+   "goals": 0,
+   "actual": {
+    "had": "draw",
+    "hc": "lose",
+    "hafu": "平平",
+    "score": "0-0",
+    "ht": "0-0",
+    "goals": 0,
+    "ou": "小",
+    "single_api": 0,
+    "line": -1,
+    "band": "闷战超小球(0-1球)"
+   },
+   "pred": {
+    "had_first": "home",
+    "had_second": "draw",
+    "had_first_prob": 48.3,
+    "had_second_prob": 28.2,
+    "hc_first": "win",
+    "hc_second": "lose",
+    "hc_first_prob": 26.3,
+    "structure_leg": "lose",
+    "structure_prob": 50.8,
+    "ttg_first": "2",
+    "ttg_second": "3",
+    "tier": "常规正常球(2-3球)",
+    "hafu": [
+     "胜胜",
+     "平胜",
+     "负胜"
+    ],
+    "cr": [
+     "1-1",
+     "1-0",
+     "2-1",
+     "2-0",
+     "0-0"
+    ],
+    "ht": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "ou": "小",
+    "ou_p_under": 50.6,
+    "override": null
+   },
+   "had_primary": false,
+   "had_combined": true,
+   "hc_primary": false,
+   "hc_combined": true,
+   "hc_structure_hit": true,
+   "cr_top5": true,
+   "cr_top1": false,
+   "ttg_top2": false,
+   "ttg_top1": false,
+   "hafu_top3": false,
+   "hafu_top1": false,
+   "ht_top3": true,
+   "ht_top1": true,
+   "tier_hit": false,
+   "ou_hit": true,
+   "band": "闷战超小球(0-1球)"
+  },
+  {
+   "num": "周五003",
+   "match": "哈马比 vs 埃夫斯堡",
+   "conf": "★★★",
+   "league": "瑞超",
+   "is_single": false,
+   "single_api": 0,
+   "score": "4-1",
+   "ht": "1-0",
+   "goals": 5,
+   "actual": {
+    "had": "home",
+    "hc": "win",
+    "hafu": "胜胜",
+    "score": "4-1",
+    "ht": "1-0",
+    "goals": 5,
+    "ou": "大",
+    "single_api": 0,
+    "line": -1,
+    "band": "大球(4-5球)"
+   },
+   "pred": {
+    "had_first": "home",
+    "had_second": "draw",
+    "had_first_prob": 66.6,
+    "had_second_prob": 21.1,
+    "hc_first": "win",
+    "hc_second": "push",
+    "hc_first_prob": 44.4,
+    "structure_leg": "lose",
+    "structure_prob": 32.6,
+    "ttg_first": "2",
+    "ttg_second": "3",
+    "tier": "常规正常球(2-3球)",
+    "hafu": [
+     "胜胜",
+     "平胜",
+     "负胜"
+    ],
+    "cr": [
+     "2-0",
+     "2-1",
+     "1-0",
+     "1-1",
+     "3-0"
+    ],
+    "ht": [
+     "0-0",
+     "1-0",
+     "2-0"
+    ],
+    "ou": "大",
+    "ou_p_under": 41.2,
+    "override": null
+   },
+   "had_primary": true,
+   "had_combined": true,
+   "hc_primary": true,
+   "hc_combined": true,
+   "hc_structure_hit": false,
+   "cr_top5": false,
+   "cr_top1": false,
+   "ttg_top2": false,
+   "ttg_top1": false,
+   "hafu_top3": true,
+   "hafu_top1": true,
+   "ht_top3": true,
+   "ht_top1": false,
+   "tier_hit": false,
+   "ou_hit": true,
+   "band": "大球(4-5球)"
+  },
+  {
+   "num": "周五004",
+   "match": "蒙彼利埃 vs 梅斯",
+   "conf": "★★",
+   "league": "法乙",
+   "is_single": false,
+   "single_api": 0,
+   "score": "2-3",
+   "ht": "0-2",
+   "goals": 5,
+   "actual": {
+    "had": "away",
+    "hc": "lose",
+    "hafu": "负负",
+    "score": "2-3",
+    "ht": "0-2",
+    "goals": 5,
+    "ou": "大",
+    "single_api": 0,
+    "line": -1,
+    "band": "大球(4-5球)"
+   },
+   "pred": {
+    "had_first": "home",
+    "had_second": "draw",
+    "had_first_prob": 49.2,
+    "had_second_prob": 30.2,
+    "hc_first": "win",
+    "hc_second": "push",
+    "hc_first_prob": 25.7,
+    "structure_leg": "lose",
+    "structure_prob": 49.8,
+    "ttg_first": "2",
+    "ttg_second": "1",
+    "tier": "小球(1-2球)",
+    "hafu": [
+     "胜胜",
+     "平胜",
+     "负胜"
+    ],
+    "cr": [
+     "1-0",
+     "1-1",
+     "0-0",
+     "2-0",
+     "2-1"
+    ],
+    "ht": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "ou": "小",
+    "ou_p_under": 59.6,
+    "override": null
+   },
+   "had_primary": false,
+   "had_combined": false,
+   "hc_primary": false,
+   "hc_combined": false,
+   "hc_structure_hit": true,
+   "cr_top5": false,
+   "cr_top1": false,
+   "ttg_top2": false,
+   "ttg_top1": false,
+   "hafu_top3": false,
+   "hafu_top1": false,
+   "ht_top3": false,
+   "ht_top1": false,
+   "tier_hit": false,
+   "ou_hit": false,
+   "band": "大球(4-5球)"
+  },
+  {
+   "num": "周五005",
+   "match": "威廉二世 vs 兹沃勒",
+   "conf": "★",
+   "league": "荷甲",
+   "is_single": false,
+   "single_api": 0,
+   "score": "1-1",
+   "ht": "1-1",
+   "goals": 2,
+   "actual": {
+    "had": "draw",
+    "hc": "win",
+    "hafu": "平平",
+    "score": "1-1",
+    "ht": "1-1",
+    "goals": 2,
+    "ou": "小",
+    "single_api": 0,
+    "line": 1,
+    "band": "小球(1-2球)"
+   },
+   "pred": {
+    "had_first": "away",
+    "had_second": "draw",
+    "had_first_prob": 43.5,
+    "had_second_prob": 29.0,
+    "hc_first": "lose",
+    "hc_second": "win",
+    "hc_first_prob": 22.5,
+    "structure_leg": "win",
+    "structure_prob": 55.7,
+    "ttg_first": "2",
+    "ttg_second": "3",
+    "tier": "常规正常球(2-3球)",
+    "hafu": [
+     "负负",
+     "平负",
+     "胜负"
+    ],
+    "cr": [
+     "1-1",
+     "0-1",
+     "1-2",
+     "0-0",
+     "0-2"
+    ],
+    "ht": [
+     "0-0",
+     "0-1",
+     "1-0"
+    ],
+    "ou": "小",
+    "ou_p_under": 50.6,
+    "override": null
+   },
+   "had_primary": false,
+   "had_combined": true,
+   "hc_primary": false,
+   "hc_combined": true,
+   "hc_structure_hit": true,
+   "cr_top5": true,
+   "cr_top1": true,
+   "ttg_top2": true,
+   "ttg_top1": true,
+   "hafu_top3": false,
+   "hafu_top1": false,
+   "ht_top3": false,
+   "ht_top1": false,
+   "tier_hit": true,
+   "ou_hit": true,
+   "band": "小球(1-2球)"
+  },
+  {
+   "num": "周五006",
+   "match": "奥斯 vs 瓦尔韦克",
+   "conf": "★★",
+   "league": "荷乙",
+   "is_single": false,
+   "single_api": 0,
+   "score": "1-1",
+   "ht": "1-0",
+   "goals": 2,
+   "actual": {
+    "had": "draw",
+    "hc": "win",
+    "hafu": "胜平",
+    "score": "1-1",
+    "ht": "1-0",
+    "goals": 2,
+    "ou": "小",
+    "single_api": 0,
+    "line": 1,
+    "band": "小球(1-2球)"
+   },
+   "pred": {
+    "had_first": "away",
+    "had_second": "draw",
+    "had_first_prob": 52.0,
+    "had_second_prob": 25.6,
+    "hc_first": "lose",
+    "hc_second": "push",
+    "hc_first_prob": 30.6,
+    "structure_leg": "win",
+    "structure_prob": 47.1,
+    "ttg_first": "2",
+    "ttg_second": "3",
+    "tier": "常规正常球(2-3球)",
+    "hafu": [
+     "负负",
+     "平负",
+     "胜负"
+    ],
+    "cr": [
+     "1-1",
+     "1-2",
+     "0-2",
+     "0-1",
+     "2-1"
+    ],
+    "ht": [
+     "0-0",
+     "0-1",
+     "1-0"
+    ],
+    "ou": "大",
+    "ou_p_under": 42.3,
+    "override": null
+   },
+   "had_primary": false,
+   "had_combined": true,
+   "hc_primary": false,
+   "hc_combined": false,
+   "hc_structure_hit": true,
+   "cr_top5": true,
+   "cr_top1": true,
+   "ttg_top2": true,
+   "ttg_top1": true,
+   "hafu_top3": false,
+   "hafu_top1": false,
+   "ht_top3": true,
+   "ht_top1": false,
+   "tier_hit": true,
+   "ou_hit": false,
+   "band": "小球(1-2球)"
+  },
+  {
+   "num": "周五007",
+   "match": "汉堡 vs 门兴格拉德巴赫",
+   "conf": "★★",
+   "league": "德甲",
+   "is_single": true,
+   "single_api": 1,
+   "score": "3-1",
+   "ht": "1-1",
+   "goals": 4,
+   "actual": {
+    "had": "home",
+    "hc": "win",
+    "hafu": "平胜",
+    "score": "3-1",
+    "ht": "1-1",
+    "goals": 4,
+    "ou": "大",
+    "single_api": 1,
+    "line": -1,
+    "band": "大球(4-5球)"
+   },
+   "pred": {
+    "had_first": "home",
+    "had_second": "draw",
+    "had_first_prob": 43.2,
+    "had_second_prob": 31.3,
+    "hc_first": "win",
+    "hc_second": "lose",
+    "hc_first_prob": 23.2,
+    "structure_leg": "lose",
+    "structure_prob": 54.6,
+    "ttg_first": "2",
+    "ttg_second": "3",
+    "tier": "常规正常球(2-3球)",
+    "hafu": [
+     "胜胜",
+     "平胜",
+     "负胜"
+    ],
+    "cr": [
+     "1-1",
+     "1-0",
+     "2-1",
+     "0-0",
+     "2-0"
+    ],
+    "ht": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "ou": "小",
+    "ou_p_under": 51.8,
+    "override": null
+   },
+   "had_primary": true,
+   "had_combined": true,
+   "hc_primary": true,
+   "hc_combined": true,
+   "hc_structure_hit": false,
+   "cr_top5": false,
+   "cr_top1": false,
+   "ttg_top2": false,
+   "ttg_top1": false,
+   "hafu_top3": true,
+   "hafu_top1": false,
+   "ht_top3": false,
+   "ht_top1": false,
+   "tier_hit": false,
+   "ou_hit": false,
+   "band": "大球(4-5球)"
+  },
+  {
+   "num": "周五008",
+   "match": "威尼斯 vs 乌迪内斯",
+   "conf": "★",
+   "league": "意甲",
+   "is_single": false,
+   "single_api": 0,
+   "score": "2-1",
+   "ht": "0-0",
+   "goals": 3,
+   "actual": {
+    "had": "home",
+    "hc": "push",
+    "hafu": "平胜",
+    "score": "2-1",
+    "ht": "0-0",
+    "goals": 3,
+    "ou": "大",
+    "single_api": 0,
+    "line": -1,
+    "band": "常规正常球(2-3球)"
+   },
+   "pred": {
+    "had_first": "home",
+    "had_second": "draw",
+    "had_first_prob": 37.5,
+    "had_second_prob": 32.3,
+    "hc_first": "push",
+    "hc_second": "lose",
+    "hc_first_prob": 21.4,
+    "structure_leg": "lose",
+    "structure_prob": 61.6,
+    "ttg_first": "2",
+    "ttg_second": "1",
+    "tier": "小球(1-2球)",
+    "hafu": [
+     "胜胜",
+     "平胜",
+     "负胜"
+    ],
+    "cr": [
+     "1-1",
+     "0-0",
+     "1-0",
+     "0-1",
+     "2-1"
+    ],
+    "ht": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "ou": "小",
+    "ou_p_under": 60.9,
+    "override": null
+   },
+   "had_primary": true,
+   "had_combined": true,
+   "hc_primary": true,
+   "hc_combined": true,
+   "hc_structure_hit": false,
+   "cr_top5": true,
+   "cr_top1": false,
+   "ttg_top2": false,
+   "ttg_top1": false,
+   "hafu_top3": true,
+   "hafu_top1": false,
+   "ht_top3": true,
+   "ht_top1": true,
+   "tier_hit": false,
+   "ou_hit": false,
+   "band": "常规正常球(2-3球)"
+  },
+  {
+   "num": "周五009",
+   "match": "图卢兹 vs 斯特拉斯堡",
+   "conf": "★★",
+   "league": "法甲",
+   "is_single": false,
+   "single_api": 0,
+   "score": "3-1",
+   "ht": "1-0",
+   "goals": 4,
+   "actual": {
+    "had": "home",
+    "hc": "win",
+    "hafu": "胜胜",
+    "score": "3-1",
+    "ht": "1-0",
+    "goals": 4,
+    "ou": "大",
+    "single_api": 0,
+    "line": -1,
+    "band": "大球(4-5球)"
+   },
+   "pred": {
+    "had_first": "home",
+    "had_second": "draw",
+    "had_first_prob": 44.6,
+    "had_second_prob": 29.1,
+    "hc_first": "win",
+    "hc_second": "lose",
+    "hc_first_prob": 23.2,
+    "structure_leg": "lose",
+    "structure_prob": 54.6,
+    "ttg_first": "2",
+    "ttg_second": "3",
+    "tier": "常规正常球(2-3球)",
+    "hafu": [
+     "胜胜",
+     "平胜",
+     "负胜"
+    ],
+    "cr": [
+     "1-1",
+     "1-0",
+     "2-1",
+     "0-0",
+     "2-0"
+    ],
+    "ht": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "ou": "小",
+    "ou_p_under": 51.8,
+    "override": null
+   },
+   "had_primary": true,
+   "had_combined": true,
+   "hc_primary": true,
+   "hc_combined": true,
+   "hc_structure_hit": false,
+   "cr_top5": false,
+   "cr_top1": false,
+   "ttg_top2": false,
+   "ttg_top1": false,
+   "hafu_top3": true,
+   "hafu_top1": true,
+   "ht_top3": true,
+   "ht_top1": false,
+   "tier_hit": false,
+   "ou_hit": false,
+   "band": "大球(4-5球)"
+  },
+  {
+   "num": "周五010",
+   "match": "埃弗顿 vs 考文垂",
+   "conf": "★★",
+   "league": "英超",
+   "is_single": false,
+   "single_api": 0,
+   "score": "3-1",
+   "ht": "0-0",
+   "goals": 4,
+   "actual": {
+    "had": "home",
+    "hc": "win",
+    "hafu": "平胜",
+    "score": "3-1",
+    "ht": "0-0",
+    "goals": 4,
+    "ou": "大",
+    "single_api": 0,
+    "line": -1,
+    "band": "大球(4-5球)"
+   },
+   "pred": {
+    "had_first": "home",
+    "had_second": "draw",
+    "had_first_prob": 59.1,
+    "had_second_prob": 24.7,
+    "hc_first": "win",
+    "hc_second": "push",
+    "hc_first_prob": 36.2,
+    "structure_leg": "lose",
+    "structure_prob": 40.0,
+    "ttg_first": "2",
+    "ttg_second": "3",
+    "tier": "常规正常球(2-3球)",
+    "hafu": [
+     "胜胜",
+     "平胜",
+     "负胜"
+    ],
+    "cr": [
+     "1-1",
+     "2-0",
+     "1-0",
+     "2-1",
+     "3-0"
+    ],
+    "ht": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "ou": "大",
+    "ou_p_under": 46.9,
+    "override": null
+   },
+   "had_primary": true,
+   "had_combined": true,
+   "hc_primary": true,
+   "hc_combined": true,
+   "hc_structure_hit": false,
+   "cr_top5": false,
+   "cr_top1": false,
+   "ttg_top2": false,
+   "ttg_top1": false,
+   "hafu_top3": true,
+   "hafu_top1": false,
+   "ht_top3": true,
+   "ht_top1": true,
+   "tier_hit": false,
+   "ou_hit": true,
+   "band": "大球(4-5球)"
+  },
+  {
+   "num": "周五011",
+   "match": "德比郡 vs 博尔顿",
+   "conf": "★",
+   "league": "英冠",
+   "is_single": false,
+   "single_api": 0,
+   "score": "3-1",
+   "ht": "0-1",
+   "goals": 4,
+   "actual": {
+    "had": "home",
+    "hc": "win",
+    "hafu": "负胜",
+    "score": "3-1",
+    "ht": "0-1",
+    "goals": 4,
+    "ou": "大",
+    "single_api": 0,
+    "line": -1,
+    "band": "大球(4-5球)"
+   },
+   "pred": {
+    "had_first": "away",
+    "had_second": "draw",
+    "had_first_prob": 32.8,
+    "had_second_prob": 29.8,
+    "hc_first": "push",
+    "hc_second": "lose",
+    "hc_first_prob": 20.2,
+    "structure_leg": "lose",
+    "structure_prob": 61.8,
+    "ttg_first": "2",
+    "ttg_second": "3",
+    "tier": "常规正常球(2-3球)",
+    "hafu": [
+     "负负",
+     "平负",
+     "胜负"
+    ],
+    "cr": [
+     "1-1",
+     "1-0",
+     "2-1",
+     "0-0",
+     "0-1"
+    ],
+    "ht": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "ou": "小",
+    "ou_p_under": 51.8,
+    "override": "L282 残阵降级：德比郡约10人缺阵，主胜37.4%仅领先4.6pp（<5pp），改判客胜"
+   },
+   "had_primary": false,
+   "had_combined": false,
+   "hc_primary": false,
+   "hc_combined": false,
+   "hc_structure_hit": false,
+   "cr_top5": false,
+   "cr_top1": false,
+   "ttg_top2": false,
+   "ttg_top1": false,
+   "hafu_top3": false,
+   "hafu_top1": false,
+   "ht_top3": true,
+   "ht_top1": false,
+   "tier_hit": false,
+   "ou_hit": false,
+   "band": "大球(4-5球)"
+  },
+  {
+   "num": "周五012",
+   "match": "塞维利亚 vs 阿拉维斯",
+   "conf": "★★",
+   "league": "西甲",
+   "is_single": false,
+   "single_api": 0,
+   "score": "0-0",
+   "ht": "0-0",
+   "goals": 0,
+   "actual": {
+    "had": "draw",
+    "hc": "lose",
+    "hafu": "平平",
+    "score": "0-0",
+    "ht": "0-0",
+    "goals": 0,
+    "ou": "小",
+    "single_api": 0,
+    "line": -1,
+    "band": "闷战超小球(0-1球)"
+   },
+   "pred": {
+    "had_first": "home",
+    "had_second": "draw",
+    "had_first_prob": 49.5,
+    "had_second_prob": 28.2,
+    "hc_first": "win",
+    "hc_second": "push",
+    "hc_first_prob": 27.1,
+    "structure_leg": "lose",
+    "structure_prob": 49.6,
+    "ttg_first": "2",
+    "ttg_second": "3",
+    "tier": "常规正常球(2-3球)",
+    "hafu": [
+     "胜胜",
+     "平胜",
+     "负胜"
+    ],
+    "cr": [
+     "1-1",
+     "1-0",
+     "2-0",
+     "2-1",
+     "0-0"
+    ],
+    "ht": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "ou": "小",
+    "ou_p_under": 51.8,
+    "override": null
+   },
+   "had_primary": false,
+   "had_combined": true,
+   "hc_primary": false,
+   "hc_combined": false,
+   "hc_structure_hit": true,
+   "cr_top5": true,
+   "cr_top1": false,
+   "ttg_top2": false,
+   "ttg_top1": false,
+   "hafu_top3": false,
+   "hafu_top1": false,
+   "ht_top3": true,
+   "ht_top1": true,
+   "tier_hit": false,
+   "ou_hit": true,
+   "band": "闷战超小球(0-1球)"
+  },
+  {
+   "num": "周五013",
+   "match": "法马利康 vs 阿罗卡",
+   "conf": "★",
+   "league": "葡超",
+   "is_single": false,
+   "single_api": 0,
+   "score": "1-0",
+   "ht": "0-0",
+   "goals": 1,
+   "actual": {
+    "had": "home",
+    "hc": "push",
+    "hafu": "平胜",
+    "score": "1-0",
+    "ht": "0-0",
+    "goals": 1,
+    "ou": "小",
+    "single_api": 0,
+    "line": -1,
+    "band": "闷战超小球(0-1球)"
+   },
+   "pred": {
+    "had_first": "home",
+    "had_second": "draw",
+    "had_first_prob": 40.8,
+    "had_second_prob": 29.9,
+    "hc_first": "push",
+    "hc_second": "lose",
+    "hc_first_prob": 21.4,
+    "structure_leg": "lose",
+    "structure_prob": 58.3,
+    "ttg_first": "2",
+    "ttg_second": "3",
+    "tier": "常规正常球(2-3球)",
+    "hafu": [
+     "胜胜",
+     "平胜",
+     "负胜"
+    ],
+    "cr": [
+     "1-1",
+     "1-0",
+     "0-0",
+     "2-1",
+     "0-1"
+    ],
+    "ht": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "ou": "小",
+    "ou_p_under": 53.1,
+    "override": null
+   },
+   "had_primary": true,
+   "had_combined": true,
+   "hc_primary": true,
+   "hc_combined": true,
+   "hc_structure_hit": false,
+   "cr_top5": true,
+   "cr_top1": false,
+   "ttg_top2": false,
+   "ttg_top1": false,
+   "hafu_top3": true,
+   "hafu_top1": false,
+   "ht_top3": true,
+   "ht_top1": true,
+   "tier_hit": false,
+   "ou_hit": true,
+   "band": "闷战超小球(0-1球)"
+  },
+  {
+   "num": "周五014",
+   "match": "维多利亚 vs 弗鲁米嫩塞",
+   "conf": "★",
+   "league": "巴甲",
+   "is_single": false,
+   "single_api": 0,
+   "score": "0-3",
+   "ht": "0-2",
+   "goals": 3,
+   "actual": {
+    "had": "away",
+    "hc": "lose",
+    "hafu": "负负",
+    "score": "0-3",
+    "ht": "0-2",
+    "goals": 3,
+    "ou": "大",
+    "single_api": 0,
+    "line": 1,
+    "band": "常规正常球(2-3球)"
+   },
+   "pred": {
+    "had_first": "away",
+    "had_second": "home",
+    "had_first_prob": 39.8,
+    "had_second_prob": 30.6,
+    "hc_first": "push",
+    "hc_second": "win",
+    "hc_first_prob": 21.0,
+    "structure_leg": "win",
+    "structure_prob": 59.4,
+    "ttg_first": "2",
+    "ttg_second": "3",
+    "tier": "常规正常球(2-3球)",
+    "hafu": [
+     "负负",
+     "平负",
+     "胜负"
+    ],
+    "cr": [
+     "1-1",
+     "0-1",
+     "1-2",
+     "0-0",
+     "1-0"
+    ],
+    "ht": [
+     "0-0",
+     "0-1",
+     "1-0"
+    ],
+    "ou": "小",
+    "ou_p_under": 51.8,
+    "override": null
+   },
+   "had_primary": true,
+   "had_combined": true,
+   "hc_primary": false,
+   "hc_combined": false,
+   "hc_structure_hit": false,
+   "cr_top5": false,
+   "cr_top1": false,
+   "ttg_top2": true,
+   "ttg_top1": false,
+   "hafu_top3": true,
+   "hafu_top1": true,
+   "ht_top3": false,
+   "ht_top1": false,
+   "tier_hit": true,
+   "ou_hit": false,
+   "band": "常规正常球(2-3球)"
+  }
+ ],
+ "summary": {
+  "had_primary": {
+   "hit": 8,
+   "n": 14,
+   "pct": 57.1
+  },
+  "had_combined": {
+   "hit": 12,
+   "n": 14,
+   "pct": 85.7
+  },
+  "hc_primary": {
+   "hit": 7,
+   "n": 14,
+   "pct": 50.0
+  },
+  "hc_combined": {
+   "hit": 9,
+   "n": 14,
+   "pct": 64.3
+  },
+  "cr_top5": {
+   "hit": 6,
+   "n": 14,
+   "pct": 42.9
+  },
+  "cr_top1": {
+   "hit": 2,
+   "n": 14,
+   "pct": 14.3
+  },
+  "ttg_top2": {
+   "hit": 3,
+   "n": 14,
+   "pct": 21.4
+  },
+  "ttg_top1": {
+   "hit": 2,
+   "n": 14,
+   "pct": 14.3
+  },
+  "hafu_top3": {
+   "hit": 8,
+   "n": 14,
+   "pct": 57.1
+  },
+  "hafu_top1": {
+   "hit": 4,
+   "n": 14,
+   "pct": 28.6
+  },
+  "ht_top3": {
+   "hit": 9,
+   "n": 14,
+   "pct": 64.3
+  },
+  "ht_top1": {
+   "hit": 5,
+   "n": 14,
+   "pct": 35.7
+  },
+  "tier_hit": {
+   "hit": 3,
+   "n": 14,
+   "pct": 21.4
+  },
+  "ou_hit": {
+   "hit": 6,
+   "n": 14,
+   "pct": 42.9
+  }
+ },
+ "buckets": {
+  "★★★": {
+   "n": 2,
+   "had_primary": [
+    2,
+    2,
+    100.0
+   ],
+   "had_combined": [
+    2,
+    2,
+    100.0
+   ],
+   "hc_primary": [
+    2,
+    2,
+    100.0
+   ],
+   "hc_combined": [
+    2,
+    2,
+    100.0
+   ],
+   "hafu_top3": [
+    2,
+    2,
+    100.0
+   ],
+   "cr_top5": [
+    0,
+    2,
+    0.0
+   ],
+   "ttg_top2": [
+    0,
+    2,
+    0.0
+   ],
+   "ht_top3": [
+    1,
+    2,
+    50.0
+   ],
+   "tier": [
+    0,
+    2,
+    0.0
+   ],
+   "ou": [
+    1,
+    2,
+    50.0
+   ]
+  },
+  "★★": {
+   "n": 7,
+   "had_primary": [
+    3,
+    7,
+    42.9
+   ],
+   "had_combined": [
+    6,
+    7,
+    85.7
+   ],
+   "hc_primary": [
+    3,
+    7,
+    42.9
+   ],
+   "hc_combined": [
+    4,
+    7,
+    57.1
+   ],
+   "hafu_top3": [
+    3,
+    7,
+    42.9
+   ],
+   "cr_top5": [
+    3,
+    7,
+    42.9
+   ],
+   "ttg_top2": [
+    1,
+    7,
+    14.3
+   ],
+   "ht_top3": [
+    5,
+    7,
+    71.4
+   ],
+   "tier": [
+    1,
+    7,
+    14.3
+   ],
+   "ou": [
+    3,
+    7,
+    42.9
+   ]
+  },
+  "★": {
+   "n": 5,
+   "had_primary": [
+    3,
+    5,
+    60.0
+   ],
+   "had_combined": [
+    4,
+    5,
+    80.0
+   ],
+   "hc_primary": [
+    2,
+    5,
+    40.0
+   ],
+   "hc_combined": [
+    3,
+    5,
+    60.0
+   ],
+   "hafu_top3": [
+    3,
+    5,
+    60.0
+   ],
+   "cr_top5": [
+    3,
+    5,
+    60.0
+   ],
+   "ttg_top2": [
+    2,
+    5,
+    40.0
+   ],
+   "ht_top3": [
+    3,
+    5,
+    60.0
+   ],
+   "tier": [
+    2,
+    5,
+    40.0
+   ],
+   "ou": [
+    2,
+    5,
+    40.0
+   ]
+  }
+ },
+ "parlays": [
+  {
+   "label": "#1 方向2串1（005客×014客）",
+   "odds": 4.7,
+   "legs": [
+    "周五005 had away",
+    "周五014 had away"
+   ],
+   "leg_hits": [
+    false,
+    true
+   ],
+   "hit": false,
+   "failed_leg": "周五005 had away"
+  },
+  {
+   "label": "#2 方向2串1（011客×013客）",
+   "odds": 8.11,
+   "legs": [
+    "周五011 had away",
+    "周五013 had away"
+   ],
+   "leg_hits": [
+    false,
+    false
+   ],
+   "hit": false,
+   "failed_leg": "周五011 had away"
+  },
+  {
+   "label": "#3 方向2串1（005客×008平）",
+   "odds": 6.9,
+   "legs": [
+    "周五005 had away",
+    "周五008 had draw"
+   ],
+   "leg_hits": [
+    false,
+    false
+   ],
+   "hit": false,
+   "failed_leg": "周五005 had away"
+  },
+  {
+   "label": "#4 方向2串1（014客×011客）",
+   "odds": 5.85,
+   "legs": [
+    "周五014 had away",
+    "周五011 had away"
+   ],
+   "leg_hits": [
+    true,
+    false
+   ],
+   "hit": false,
+   "failed_leg": "周五011 had away"
+  },
+  {
+   "label": "#5 方向2串1（013客×008平）",
+   "odds": 10.3,
+   "legs": [
+    "周五013 had away",
+    "周五008 had draw"
+   ],
+   "leg_hits": [
+    false,
+    false
+   ],
+   "hit": false,
+   "failed_leg": "周五013 had away"
+  },
+  {
+   "label": "#6 半全场连续串①（001-002）",
+   "odds": 9.69,
+   "legs": [
+    "周五001 hafu 胜胜",
+    "周五002 hafu 平胜"
+   ],
+   "leg_hits": [
+    true,
+    false
+   ],
+   "hit": false,
+   "failed_leg": "周五002 hafu 平胜"
+  },
+  {
+   "label": "#7 半全场连续串②（003-004）",
+   "odds": 8.01,
+   "legs": [
+    "周五003 hafu 胜胜",
+    "周五004 hafu 平胜"
+   ],
+   "leg_hits": [
+    true,
+    false
+   ],
+   "hit": false,
+   "failed_leg": "周五004 hafu 平胜"
+  },
+  {
+   "label": "#8 半全场连续串③（012-013）",
+   "odds": 15.68,
+   "legs": [
+    "周五012 hafu 胜胜",
+    "周五013 hafu 平胜"
+   ],
+   "leg_hits": [
+    false,
+    true
+   ],
+   "hit": false,
+   "failed_leg": "周五012 hafu 胜胜"
+  }
+ ],
+ "parlay_summary": {
+  "n": 8,
+  "hit": 0,
+  "stake": 8,
+  "return": 0,
+  "profit": -8,
+  "roi_pct": -100.0
+ },
+ "source": "体彩官方 getUniformMatchResultV1（matchBeginDate=2026-11-06~2026-11-07，matchNumStr 含「周五」）；sectionsNo999=全场、sectionsNo1=半场；14场全部开奖，无待结算"
+}

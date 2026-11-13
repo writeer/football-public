@@ -1,0 +1,147 @@
+{
+    "league_info": {
+        "name_cn": "丹麦超级联赛",
+        "name_en": "Danish Superliga",
+        "country": "丹麦",
+        "country_code": "DK",
+        "level": "顶级",
+        "num_teams": 12,
+        "format": "常规赛+争冠/保级组",
+        "season_period": "7月-次年5月（跨年）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.superliga.dk",
+        "governing_body": "丹麦足球协会（DBU）",
+        "cross_league_level": "L3",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.72,
+        "draw_rate": 0.24,
+        "home_win_rate": 0.43,
+        "away_win_rate": 0.33,
+        "over_2_5_rate": 0.52,
+        "under_2_5_rate": 0.48,
+        "btts_rate": 0.51,
+        "top_scores": [
+            {
+                "score": "2-1",
+                "frequency": 0.088,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.082,
+                "direction": "平局"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.075,
+                "direction": "主胜"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.065,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-1",
+                "frequency": 0.06,
+                "direction": "客胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.058,
+            "1_goal": 0.15,
+            "2_goals": 0.25,
+            "3_goals": 0.24,
+            "4_goals": 0.18,
+            "5_plus_goals": 0.122
+        },
+        "avg_home_goals": 1.45,
+        "avg_away_goals": 1.27,
+        "home_advantage_factor": 1.16,
+        "ht_draw_rate": 0.37,
+        "ht_draw_rate_note": "丹超半场平局率。2026-09-12核算：BetExplorer 联赛HT/FT(半全场)逐队统计表，按全赛季所有阶段合并，半场平局场次/总场次=0.37（192场）。源为二级聚合站(BetExplorer)，经内部一致性校验(半场领先=半场落后、各队9项计数之和=MP)，但本环境无法独立复核原始逐场半场比分，**标记待复核**；使用时按中高/高档参考，勿作高置信依据。",
+        "ht_draw_rate_source": [
+            "https://www.betexplorer.com/football/"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "中高(0.35-0.40)",
+        "ht_draw_rate_confidence": "中(二级聚合源BetExplorer，未独立复核)",
+        "ht_draw_rate_status": "pending_verification"
+    },
+    "match_style": {
+        "tactical_character": "北欧最高水平联赛。哥本哈根、中日德兰、布隆德比三强竞争。战术纪律性强，注重整体配合和位置感。青训体系出色（霍伊伦德等）。",
+        "tempo": "中",
+        "physicality": "中高",
+        "technical_focus": "高",
+        "var_usage": "2019-20赛季引入VAR。",
+        "key_trends": [
+            "北欧最高水平联赛",
+            "哥本哈根/中日德兰/布隆德比三强",
+            "战术纪律性强",
+            "青训体系出色"
+        ],
+        "style_tags": [
+            "战术纪律",
+            "青训",
+            "三强竞争",
+            "北欧最高水平"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.95,
+        "avg_red_cards": 0.15,
+        "avg_penalties": 0.25,
+        "referee_style": "裁判尺度中等偏严，注重比赛纪律。",
+        "first_half_stoppage_avg": 2.1,
+        "second_half_stoppage_avg": 5.2,
+        "stoppage_note": "补时中等。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "丹麦超整体廉洁度较高。"
+            }
+        ],
+        "discipline_features": "黄牌累积5张停1场。",
+        "official_rules": "IFAB规则+丹麦超特别规则。",
+        "integrity_rating": "极高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价丹麦超'北欧最值得看'，'战术含量高'。彩民认为'三强客胜稳定'，'冷门少'。",
+        "betting_market": {
+            "market_efficiency": "高",
+            "liquidity": "中",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "高",
+        "jingcai_tips": [
+            "三强客胜稳定",
+            "战术纪律强导致冷门少",
+            "哥本哈根主场极强势",
+            "中日德兰近年崛起",
+            "大球率适中"
+        ],
+        "common_sayings": [
+            "丹麦超最稳",
+            "北欧看丹麦",
+            "三强客胜"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    }
+}

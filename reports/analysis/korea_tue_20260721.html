@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>竞彩分析报告 #26094</title>
+<style>
+:root {
+  --primary: #1a73e8;
+  --success: #34a853;
+  --warning: #fbbc04;
+  --danger: #ea4335;
+  --info: #4285f4;
+  --text: #202124;
+  --text2: #5f6368;
+  --bg: #f8f9fa;
+  --border: #dadce0;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+h1 { font-size: 28px; margin-bottom: 8px; color: var(--primary); }
+h2 { font-size: 20px; margin: 24px 0 12px; padding-bottom: 8px; border-bottom: 2px solid var(--primary); color: var(--text); }
+h3 { font-size: 16px; margin: 16px 0 8px; color: var(--text2); }
+.header { background: linear-gradient(135deg, var(--primary), #0d47a1); color: white; padding: 24px; border-radius: 12px; margin-bottom: 20px; }
+.header .subtitle { opacity: 0.85; font-size: 14px; margin-top: 4px; }
+
+/* 卡片 */
+.card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+.card-title { font-size: 16px; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+
+/* 统计网格 */
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 12px 0; }
+.stat-box { background: var(--bg); border-radius: 8px; padding: 14px; text-align: center; }
+.stat-value { font-size: 24px; font-weight: 700; color: var(--primary); }
+.stat-label { font-size: 12px; color: var(--text2); margin-top: 4px; }
+
+/* 表格 */
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+th { background: var(--bg); text-align: left; padding: 10px 8px; font-weight: 600; border-bottom: 2px solid var(--border); }
+td { padding: 10px 8px; border-bottom: 1px solid var(--border); }
+tr:hover { background: rgba(26,115,232,0.03); }
+
+/* 标签 */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.badge-high { background: #e8f5e9; color: var(--success); }
+.badge-medium { background: #fff3e0; color: #e65100; }
+.badge-low { background: #fce4ec; color: var(--danger); }
+.badge-divergence { background: #f3e5f5; color: #6a1b9a; }
+
+/* 概率条 */
+.prob-bar { height: 6px; background: var(--bg); border-radius: 3px; overflow: hidden; margin-top: 4px; }
+.prob-fill { height: 100%; border-radius: 3px; transition: width 0.3s; }
+.prob-fill-home { background: var(--success); }
+.prob-fill-draw { background: var(--warning); }
+.prob-fill-away { background: var(--danger); }
+
+/* 串关卡片 */
+.parlay-card { border-left: 4px solid var(--primary); padding-left: 16px; margin: 12px 0; }
+.parlay-card.conservative { border-color: var(--success); }
+.parlay-card.balanced { border-color: var(--warning); }
+.parlay-card.aggressive { border-color: var(--danger); }
+
+/* 分歧警告 */
+.divergence-alert { background: #fff3e0; border-left: 4px solid var(--warning); padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 8px 0; }
+
+/* 比分推荐 */
+.score-rec { display: inline-block; background: var(--primary); color: white; padding: 4px 10px; border-radius: 6px; font-weight: 700; margin-right: 6px; }
+.score-alt { display: inline-block; background: var(--bg); color: var(--text2); padding: 4px 10px; border-radius: 6px; font-size: 12px; margin-right: 4px; }
+
+/* 折叠详情 */
+.details-toggle { cursor: pointer; color: var(--primary); font-size: 13px; }
+.match-details { display: none; margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--border); }
+.match-details.active { display: block; }
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .container { padding: 10px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  table { font-size: 12px; }
+  td, th { padding: 6px 4px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>⚽ 竞彩分析报告 #26094</h1>
+<div class="subtitle">生成时间: 2026-07-21 17:31 | 基于Dixon-Coles / 负二项 / Skellam / 蒙特卡洛多模型融合</div>
+</div>
+
+<div class="card">
+  <div class="card-title">📊 分析摘要</div>
+  <div class="stats-grid">
+    <div class="stat-box"><div class="stat-value">3</div><div class="stat-label">分析场次</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#34a853">1</div><div class="stat-label">高置信度</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#e65100">1</div><div class="stat-label">中置信度</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#ea4335">1</div><div class="stat-label">低置信度</div></div>
+    <div class="stat-box"><div class="stat-value">2</div><div class="stat-label">推荐主胜</div></div>
+    <div class="stat-box"><div class="stat-value">0</div><div class="stat-label">推荐平局</div></div>
+    <div class="stat-box"><div class="stat-value">1</div><div class="stat-label">推荐客胜</div></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">📋 比赛总览</div>
+  <table>
+    <thead><tr><th>编号</th><th>联赛</th><th>对阵</th><th>置信度</th><th>推荐</th><th>首选比分</th><th>概率分布</th></tr></thead>
+    <tbody>
+<tr>
+  <td><strong>201</strong></td>
+  <td>韩K</td>
+  <td>济州SK <span style="color:var(--text2)">vs</span> 江原FC</td>
+  <td><span class="badge badge-medium">中 ★★</span> </td>
+  <td><strong>客胜</strong> <span style="color:var(--text2);font-size:11px">45.7%</span></td>
+  <td><span class="score-rec">2-3</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:73%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:46%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:100%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>202</strong></td>
+  <td>韩K</td>
+  <td>全北现代 <span style="color:var(--text2)">vs</span> 大田市民</td>
+  <td><span class="badge badge-high">高 ★★★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">53.6%</span></td>
+  <td><span class="score-rec">2-1</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:40%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:46%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>203</strong></td>
+  <td>韩K</td>
+  <td>蔚山现代 <span style="color:var(--text2)">vs</span> 仁川联</td>
+  <td><span class="badge badge-very_low">极低 ☆</span> <span class="badge badge-divergence">分歧</span></td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">65.0%</span></td>
+  <td><span class="score-rec">4-1</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:27%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:27%"></div></div>
+    </div>
+  </td>
+</tr></tbody>
+  </table>
+</div>
+
+<div class="card" id="match-1">
+  <div class="card-title">
+    <span>#201</span>
+    <strong>济州SK vs 江原FC</strong>
+    <span style="color:var(--text2);font-size:12px">韩K</span>
+    <span class="badge badge-medium">★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>客胜</strong> (45.7%)</p>
+      <p>比分: <span class="score-rec">2-3</span> <span class="score-alt">3-3</span> <span class="score-alt">2-4</span></p>
+      <p>总进球: 大2.5</p>
+      <p>半全场: 客-客</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>32.1%</td><td>16.0%</td><td>51.9%</td></tr><tr><td>负二项</td><td>39.1%</td><td>14.2%</td><td>46.7%</td></tr><tr><td>Skellam</td><td>31.8%</td><td>14.8%</td><td>53.4%</td></tr><tr><td>Elo评级</td><td>42.2%</td><td>21.9%</td><td>35.9%</td></tr><tr><td>蒙特卡洛</td><td>37.9%</td><td>12.0%</td><td>50.1%</td></tr><tr><td>Shin去水</td><td>22.2%</td><td>29.1%</td><td>48.7%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.08 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.35</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 4.00 / 3.05 / 1.82</p>
+      <p>抽水: 12.73%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +11.2%</span> | <span style="color:var(--danger)">平局: -8.2%</span> | <span style="color:var(--danger)">客胜: -3.0%</span></p>
+    <p>🏔️ 高山验证: 韩K样本不足(<20场)，高山验证跳过</p>
+  </div>
+</div>
+
+<div class="card" id="match-2">
+  <div class="card-title">
+    <span>#202</span>
+    <strong>全北现代 vs 大田市民</strong>
+    <span style="color:var(--text2);font-size:12px">韩K</span>
+    <span class="badge badge-high">★★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (53.6%)</p>
+      <p>比分: <span class="score-rec">2-1</span> <span class="score-alt">3-1</span> <span class="score-alt">1-1</span></p>
+      <p>总进球: 大2.5</p>
+      <p>半全场: 主-主</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>61.2%</td><td>18.1%</td><td>20.7%</td></tr><tr><td>负二项</td><td>55.5%</td><td>16.9%</td><td>27.6%</td></tr><tr><td>Skellam</td><td>62.2%</td><td>16.6%</td><td>21.1%</td></tr><tr><td>Elo评级</td><td>59.2%</td><td>21.2%</td><td>19.6%</td></tr><tr><td>蒙特卡洛</td><td>56.9%</td><td>16.0%</td><td>27.1%</td></tr><tr><td>Shin去水</td><td>45.4%</td><td>27.3%</td><td>27.2%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.08 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.35</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 1.95 / 3.24 / 3.25</p>
+      <p>抽水: 12.92%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +8.2%</span> | <span style="color:var(--danger)">平局: -5.7%</span> | <span style="color:var(--danger)">客胜: -2.5%</span></p>
+    <p>🏔️ 高山验证: 韩K样本不足(<20场)，高山验证跳过</p>
+  </div>
+</div>
+
+<div class="card" id="match-3">
+  <div class="card-title">
+    <span>#203</span>
+    <strong>蔚山现代 vs 仁川联</strong>
+    <span style="color:var(--text2);font-size:12px">韩K</span>
+    <span class="badge badge-very_low">☆</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (65.0%)</p>
+      <p>比分: <span class="score-rec">4-1</span> <span class="score-alt">5-1</span> <span class="score-alt">3-1</span></p>
+      <p>总进球: 大2.5</p>
+      <p>半全场: 主-主</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>86.4%</td><td>7.8%</td><td>5.8%</td></tr><tr><td>负二项</td><td>66.5%</td><td>13.9%</td><td>19.6%</td></tr><tr><td>Skellam</td><td>88.3%</td><td>6.5%</td><td>5.2%</td></tr><tr><td>Elo评级</td><td>55.3%</td><td>23.2%</td><td>21.4%</td></tr><tr><td>蒙特卡洛</td><td>73.8%</td><td>10.6%</td><td>15.6%</td></tr><tr><td>Shin去水</td><td>47.2%</td><td>28.2%</td><td>24.6%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.08 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.35</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 1.88 / 3.15 / 3.60</p>
+      <p>抽水: 12.72%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +17.8%</span> | <span style="color:var(--danger)">平局: -10.5%</span> | <span style="color:var(--danger)">客胜: -7.3%</span></p>
+    <p>🏔️ 高山验证: 韩K样本不足(<20场)，高山验证跳过</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">🔗 串关建议</div>
+  
+<div class="parlay-card balanced">
+  <strong>平衡型 2串1（高概率+分歧）</strong>
+  <span class="badge badge-balanced" style="margin-left:8px">中风险</span>
+  <div style="margin:8px 0;font-size:13px">• 202 全北现代 vs 大田市民 → <strong>主胜</strong> (53.6%, 赔1.95)<br>• 203 蔚山现代 vs 仁川联 → <strong>主胜</strong> (65.0%, 赔1.88)</div>
+  <p>组合概率: <strong>34.8%</strong> | 组合赔率: <strong>3.67</strong></p>
+  <p style="color:var(--text2);font-size:12px;margin-top:4px">蔚山现代 vs 仁川联 模型与市场分歧 17.8%</p>
+</div>
+</div>
+
+<div class="card">
+  <div class="card-title">⚠️ 模型与市场严重分歧预警</div>
+  
+<div class="divergence-alert">
+  <strong>203</strong> 蔚山现代 vs 仁川联 — 主胜<br>
+  模型概率: 65.0% vs 市场概率(Shin): 47.2%<br>
+  分歧幅度: <strong style="color:var(--danger)">+17.8%</strong>
+</div>
+  <p style="font-size:12px;color:var(--text2);margin-top:8px">当模型与市场概率差&gt;15%时，该方向不确定性极高，仅适合极小注娱乐。</p>
+</div>
+
+<div class="card">
+  <div class="card-title">🏔️ 高山流水参考源统计</div>
+  <p style="font-size:13px;color:var(--text2);margin-bottom:12px">
+    总样本: 2240场 | 
+    有方向预测: 1581场 | 
+    整体方向命中率: 46.7%
+  </p>
+  <table style="font-size:12px">
+    <thead><tr><th>联赛</th><th>样本量</th><th>方向命中率</th></tr></thead>
+    <tbody><tr><td>欧罗巴奥林匹亚科斯vs博德闪耀</td><td>1</td><td>100.0%</td></tr><tr><td>瑞超哈尔姆斯塔德vs厄斯特什</td><td>1</td><td>100.0%</td></tr><tr><td>非洲</td><td>1</td><td>100.0%</td></tr><tr><td>西超杯</td><td>1</td><td>100.0%</td></tr><tr><td>5欧罗巴</td><td>1</td><td>100.0%</td></tr></tbody>
+  </table>
+</div>
+
+<div style="text-align:center;padding:24px;color:var(--text2);font-size:12px;border-top:1px solid var(--border);margin-top:24px">
+  <p>⚠️ 风险提示：足球比赛存在极大不确定性，任何模型预测均非100%准确</p>
+  <p>模型基于历史数据，突发因素（红牌、点球、天气等）无法完全预测</p>
+  <p>理性看待预测，切勿沉迷赌博</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周三体彩竞彩分析报告 | 2026-09-23 亚运会男足</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --card-bg: #1a1d2e;
+  --card-border: #2a2d3e;
+  --text: #e8e8f0;
+  --text-dim: #8b8fa3;
+  --accent: #4fc3f7;
+  --accent-dim: #2a6f9e;
+  --green: #66bb6a;
+  --red: #ef5350;
+  --yellow: #ffa726;
+  --purple: #ab47bc;
+  --table-bg: #15182a;
+  --table-hover: #1f2236;
+  --tag-bg: #2a2d3e;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px solid var(--card-border);
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  color: var(--accent);
+  letter-spacing: 1px;
+}
+
+.header .meta {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+.match-section {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.match-header {
+  background: linear-gradient(135deg, #1e2236, #252a40);
+  padding: 20px 25px;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.match-header .league-tag {
+  display: inline-block;
+  background: var(--accent-dim);
+  color: var(--accent);
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.match-header h2 {
+  font-size: 1.4rem;
+  margin: 5px 0;
+}
+
+.match-header .match-info {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+.match-header .match-info span {
+  margin-right: 15px;
+}
+
+.match-body {
+  padding: 20px 25px;
+}
+
+.dim-section {
+  margin-bottom: 22px;
+}
+
+.dim-section h3 {
+  color: var(--accent);
+  font-size: 1rem;
+  border-left: 3px solid var(--accent);
+  padding-left: 10px;
+  margin-bottom: 12px;
+}
+
+.dim-section h3 .num {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-left: 8px;
+}
+
+.dim-content {
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.8;
+}
+
+.dim-content p {
+  margin-bottom: 8px;
+}
+
+.dim-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.dim-content ul li {
+  padding: 3px 0;
+  padding-left: 16px;
+  position: relative;
+}
+
+.dim-content ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent-dim);
+}
+
+/* Standings table */
+.standings {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin: 8px 0;
+}
+
+.standings th {
+  background: var(--table-bg);
+  padding: 8px;
+  text-align: center;
+  color: var(--text-dim);
+  font-weight: 600;
+  border-bottom: 2px solid var(--card-border);
+}
+
+.standings td {
+  padding: 7px 8px;
+  text-align: center;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.standings tr:hover {
+  background: var(--table-hover);
+}
+
+.standings .team-highlight {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Odds table */
+.odds-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin: 10px 0;
+}
+
+.odds-table th {
+  background: var(--table-bg);
+  padding: 8px;
+  text-align: center;
+  color: var(--text-dim);
+  font-weight: 600;
+}
+
+.odds-table td {
+  padding: 7px;
+  text-align: center;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.odds-table tr:hover {
+  background: var(--table-hover);
+}
+
+.odds-table .odds-value {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.odds-table .prob-value {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+
+.odds-table .top-pick {
+  background: rgba(79, 195, 247, 0.08);
+}
+
+/* Model table */
+.model-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin: 10px 0;
+}
+
+.model-table th {
+  background: var(--table-bg);
+  padding: 8px;
+  text-align: center;
+  color: var(--text-dim);
+}
+
+.model-table td {
+  padding: 7px;
+  text-align: center;
+  border-bottom: 1px solid var(--card-border);
+}
+
+/* Recommendation box */
+.rec-box {
+  background: linear-gradient(135deg, #1e2236, #1a1d2e);
+  border: 1px solid var(--accent-dim);
+  border-radius: 10px;
+  padding: 18px;
+  margin: 15px 0;
+}
+
+.rec-box h4 {
+  color: var(--accent);
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.rec-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  font-size: 0.85rem;
+}
+
+.rec-item {
+  background: var(--table-bg);
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+.rec-item .label {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  margin-bottom: 4px;
+}
+
+.rec-item .value {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.rec-item .value .odds {
+  color: var(--accent);
+  margin-left: 8px;
+}
+
+.confidence {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.conf-high { background: rgba(102, 187, 106, 0.2); color: var(--green); }
+.conf-mid { background: rgba(255, 167, 38, 0.2); color: var(--yellow); }
+.conf-low { background: rgba(239, 83, 80, 0.2); color: var(--red); }
+
+/* Tag */
+.tag {
+  display: inline-block;
+  background: var(--tag-bg);
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.tag-hot { background: rgba(239, 83, 80, 0.15); color: var(--red); }
+.tag-value { background: rgba(102, 187, 106, 0.15); color: var(--green); }
+.tag-warn { background: rgba(255, 167, 38, 0.15); color: var(--yellow); }
+
+/* Disclaimer */
+.disclaimer {
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  padding: 20px;
+  border-top: 1px solid var(--card-border);
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container { padding: 10px; }
+  .header h1 { font-size: 1.3rem; }
+  .match-header h2 { font-size: 1.1rem; }
+  .rec-grid { grid-template-columns: 1fr; }
+  .standings, .odds-table, .model-table { font-size: 0.78rem; }
+}
+
+.score-matrix {
+  display: grid;
+  grid-template-columns: auto repeat(6, 1fr);
+  gap: 2px;
+  font-size: 0.75rem;
+  margin: 10px 0;
+  max-width: 500px;
+}
+
+.score-matrix .cell {
+  text-align: center;
+  padding: 4px 2px;
+  background: var(--table-bg);
+  border-radius: 3px;
+}
+
+.score-matrix .header-cell {
+  background: var(--card-border);
+  color: var(--text-dim);
+  font-weight: 600;
+}
+
+.score-matrix .hot { background: rgba(79, 195, 247, 0.15); color: var(--accent); }
+.score-matrix .warm { background: rgba(79, 195, 247, 0.08); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <h1>周三体彩竞彩足球分析报告</h1>
+  <div class="meta">2026年9月23日（周三） | 爱知·名古屋亚运会男足小组赛第3轮 | 数据更新：2026-09-22 12:07</div>
+</div>
+
+<!-- ========== 比赛总览 ========== -->
+<div class="match-section">
+  <div class="match-header">
+    <span class="league-tag">亚运男足</span>
+    <h2>本周三体彩共开出 2 场比赛</h2>
+    <div class="match-info">
+      <span>周三001：中国亚运 vs 阿联酋亚运 13:30</span>
+      <span>周三002：日本亚足 vs 泰国亚运 18:30</span>
+    </div>
+  </div>
+  <div class="match-body">
+    <div class="dim-content">
+      <p><span class="tag tag-warn">赛事背景</span>2026年第20届亚运会（爱知·名古屋）男足比赛，赛制为U23（2003.1.1后出生），每队最多3名超龄球员。15队分4组（A/B/C组各4队，D组3队），每组前两名晋级八强后单场淘汰。比赛在爱知、岐阜、静冈、大阪7个场馆进行。</p>
+      <p><span class="tag tag-warn">注意</span>两场比赛均无单关选项（bettingSingle: false），仅支持串关投注。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ========== 周三001 ========== -->
+<div class="match-section">
+  <div class="match-header">
+    <span class="league-tag">周三001 · 亚运男足 B组第3轮</span>
+    <h2>中国亚运男足 <span style="color:var(--text-dim)">vs</span> 阿联酋亚运男足</h2>
+    <div class="match-info">
+      <span>日期：2026-09-23 13:30</span>
+      <span>场地：丰田体育场（爱知县丰田市，天然草皮，容量40,000）</span>
+      <span>天气：多云 22-27°C 湿度66% 降水概率30%</span>
+    </div>
+  </div>
+  <div class="match-body">
+
+    <!-- B组积分榜 -->
+    <div class="dim-section">
+      <h3>B组积分榜（第2轮后）</h3>
+      <table class="standings">
+        <tr><th>排名</th><th>球队</th><th>赛</th><th>胜</th><th>平</th><th>负</th><th>进</th><th>失</th><th>净</th><th>分</th></tr>
+        <tr><td>1</td><td class="team-highlight">伊朗亚</td><td>2</td><td>1</td><td>1</td><td>0</td><td>3</td><td>1</td><td>+2</td><td>4</td></tr>
+        <tr><td>2</td><td class="team-highlight">中国亚</td><td>2</td><td>1</td><td>1</td><td>0</td><td>2</td><td>1</td><td>+1</td><td>4</td></tr>
+        <tr><td>3</td><td>朝鲜亚</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>2</td><td>-1</td><td>1</td></tr>
+        <tr><td>4</td><td class="team-highlight">阿联酋亚</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td><td>3</td><td>-2</td><td>1</td></tr>
+      </table>
+      <div class="dim-content" style="font-size:0.82rem; color:var(--text-dim); margin-top:5px;">
+        第3轮对阵：中国 vs 阿联酋 | 伊朗 vs 朝鲜<br>
+        出线形势：中国打平即出线；阿联酋必须赢球且需逆转2个净胜球差距才有理论出线可能（实则基本出局）
+      </div>
+    </div>
+
+    <!-- 维度1：纸面实力 -->
+    <div class="dim-section">
+      <h3>一、纸面实力对比 <span class="num">8维度分析</span></h3>
+      <div class="dim-content">
+        <table class="standings">
+          <tr><th>维度</th><th>中国亚运</th><th>阿联酋亚运</th></tr>
+          <tr><td>基础班底</td><td>U23亚洲杯亚军阵容</td><td>U23亚洲杯8强阵容</td></tr>
+          <tr><td>超龄球员</td><td>3人（吴曦、张玉宁、朱辰杰）</td><td>3人（阿齐兹、亨特、加萨尼）</td></tr>
+          <tr><td>海外球员</td><td>0人</td><td>11人有成年国家队履历</td></tr>
+          <tr><td>球员身价</td><td>约350万欧</td><td>约200万欧</td></tr>
+          <tr><td>FIFA排名(成年队)</td><td>第88位</td><td>第67位</td></tr>
+        </table>
+        <p><span class="tag tag-value">中国优势</span>纸面实力中国略占优，以U23亚洲杯亚军为班底+3名中超主力超龄球员，整体框架成熟。阿联酋虽有11名成年国家队球员但多为替补，超龄球员含归化球员。中国中前场张玉宁+吴曦组合经验丰富。</p>
+      </div>
+    </div>
+
+    <!-- 维度2：战术风格 -->
+    <div class="dim-section">
+      <h3>二、战术风格</h3>
+      <div class="dim-content">
+        <p><span class="tag">中国</span><b>5-3-2防守反击</b>。两轮小组赛均使用相同首发，控球率仅32-40%，主打防守反击。张玉宁支点作用突出（1球1助），吴曦后插上远射（1球）。防守端组织有序，但朱辰杰、胡荷韬第2轮受伤离场，后防稳定性存疑。</p>
+        <p><span class="tag">阿联酋</span><b>4-4-2平行站位</b>。4名归化球员进入首发，进攻端依赖边路传中。两轮仅进1球，进攻效率低下。防守端丢了3球（含1个乌龙球），主力中卫曼苏里累计黄牌停赛，后防核心缺失。</p>
+      </div>
+    </div>
+
+    <!-- 维度3：赛季/赛事表现 -->
+    <div class="dim-section">
+      <h3>三、赛事表现</h3>
+      <div class="dim-content">
+        <table class="standings">
+          <tr><th>轮次</th><th>中国</th><th>比分</th><th>阿联酋</th><th>比分</th></tr>
+          <tr><td>第1轮</td><td>vs 朝鲜</td><td><b style="color:var(--green)">2:1 胜</b></td><td>vs 伊朗</td><td><b style="color:var(--red)">1:3 负</b></td></tr>
+          <tr><td>第2轮</td><td>vs 伊朗</td><td><b style="color:var(--yellow)">0:0 平</b></td><td>vs 朝鲜</td><td><b style="color:var(--yellow)">0:0 平</b></td></tr>
+        </table>
+        <p><b>中国详细战报：</b>第1轮vs朝鲜：朝鲜27分钟先破门，张玉宁44分钟头球扳平，吴曦68分钟反超。控球率<40%，10射5正。第2轮vs伊朗：0-0闷平，中国控球仅32%，6射1正，吴曦中框，朱辰杰、胡荷韬伤退。</p>
+        <p><b>阿联酋详细战报：</b>第1轮vs伊朗：49分钟被头球破门，53分钟乌龙，57分钟曼苏尔扳回1球，88分钟再丢1球。第2轮vs朝鲜：0-0闷平，朝鲜吃到2张红牌，阿联酋11打9仍无法破门，末段自己也吃到红牌。</p>
+      </div>
+    </div>
+
+    <!-- 维度4-7: 泊松模型 & 6维度推荐 -->
+    <div class="dim-section">
+      <h3>四、泊松模型 & 6维度推荐 <span class="num">核心</span></h3>
+      <div class="dim-content">
+        <p style="margin-bottom:12px;">
+          <b>模型参数：</b>λ(中国) = 1.10 | λ(阿联酋) = 0.55 | 总期望进球 ≈ 1.65<br>
+          <span style="color:var(--text-dim); font-size:0.82rem;">修正依据：中国进攻效率偏低(2场2球)但阿联酋防守弱(3场失3球)+主力中卫停赛；阿联酋进攻极弱(2场1球)且中国防守稳固(2场失1球)；中国仅需平局，战意偏保守；阿联酋必须赢但实力不济。</span>
+        </p>
+
+        <!-- 比分矩阵 TOP10 -->
+        <table class="model-table">
+          <tr><th>排名</th><th>比分</th><th>模型概率</th><th>体彩赔率</th><th>市场noVig</th></tr>
+          <tr class="top-pick"><td>1</td><td><b>1:0</b></td><td>21.1%</td><td>6.50</td><td>11.5%</td></tr>
+          <tr class="top-pick"><td>2</td><td><b>0:0</b></td><td>19.2%</td><td>7.50</td><td>10.0%</td></tr>
+          <tr class="top-pick"><td>3</td><td><b>1:1</b></td><td>11.6%</td><td>5.50</td><td>13.6%</td></tr>
+          <tr class="top-pick"><td>4</td><td><b>2:0</b></td><td>11.6%</td><td>9.20</td><td>8.1%</td></tr>
+          <tr><td>5</td><td>0:1</td><td>10.6%</td><td>8.75</td><td>8.5%</td></tr>
+          <tr><td>6</td><td>2:1</td><td>6.4%</td><td>8.00</td><td>9.4%</td></tr>
+          <tr><td>7</td><td>3:0</td><td>4.3%</td><td>22.00</td><td>3.4%</td></tr>
+          <tr><td>8</td><td>1:2</td><td>3.2%</td><td>11.00</td><td>6.8%</td></tr>
+          <tr><td>9</td><td>0:2</td><td>2.9%</td><td>17.00</td><td>4.4%</td></tr>
+          <tr><td>10</td><td>3:1</td><td>2.3%</td><td>22.00</td><td>3.4%</td></tr>
+        </table>
+
+        <h4 style="margin: 15px 0 8px; color: var(--accent); font-size: 0.9rem;">半场比分模型 (HT λ_China=0.495, λ_UAE=0.248)</h4>
+        <table class="model-table">
+          <tr><th>排名</th><th>半场比分</th><th>模型概率</th></tr>
+          <tr class="top-pick"><td>1</td><td><b>0:0</b></td><td>47.6%</td></tr>
+          <tr class="top-pick"><td>2</td><td><b>1:0</b></td><td>23.6%</td></tr>
+          <tr class="top-pick"><td>3</td><td><b>0:1</b></td><td>11.8%</td></tr>
+        </table>
+      </div>
+
+      <!-- 6维度推荐 -->
+      <div class="rec-box">
+        <h4>最终推荐方案 <span class="confidence conf-mid">★★ 中置信度</span></h4>
+        <div class="rec-grid">
+          <div class="rec-item">
+            <div class="label">① 胜平负 (HAD)</div>
+            <div class="value">主胜 <span class="odds">2.07</span> <span style="color:var(--text-dim);font-size:0.8rem;">模型48%</span></div>
+          </div>
+          <div class="rec-item">
+            <div class="label">② 让球胜平负 (HHAD, -1)</div>
+            <div class="value">平 <span class="odds">3.55</span> <span style="color:var(--text-dim);font-size:0.8rem;">模型25%</span></div>
+          </div>
+          <div class="rec-item">
+            <div class="label">③ 比分 (CRS) 首选</div>
+            <div class="value">1:0 <span class="odds">6.50</span> <span style="color:var(--text-dim);font-size:0.8rem;">21.1%</span></div>
+          </div>
+          <div class="rec-item">
+            <div class="label">③ 比分 (CRS) 次选</div>
+            <div class="value">0:0 <span class="odds">7.50</span> <span style="color:var(--text-dim);font-size:0.8rem;">19.2%</span></div>
+          </div>
+          <div class="rec-item">
+            <div class="label">③ 比分 (CRS) 备选</div>
+            <div class="value">1:1 <span class="odds">5.50</span> <span style="color:var(--text-dim);font-size:0.8rem;">11.6%</span></div>
+          </div>
+          <div class="rec-item">
+            <div class="label">④ 总进球 (TTG) 首选</div>
+            <div class="value">1球 <span class="odds">3.90</span> <span style="color:var(--text-dim);font-size:0.8rem;">31.7%</span></div>
+          </div>
+          <div class="rec-item">
+            <div class="label">④ 总进球 (TTG) 次选</div>
+            <div class="value">2球 <span class="odds">3.20</span> <span style="color:var(--text-dim);font-size:0.8rem;">26.1%</span></div>
+          </div>
+          <div class="rec-item">
+            <div class="label">⑤ 半全场 (HTFT) TOP3</div>
+            <div class="value">
+              ①平/胜 <span class="odds">4.85</span> <span style="color:var(--text-dim);font-size:0.8rem;">17.1%</span><br>
+              ②平/平 <span class="odds">4.35</span> <span style="color:var(--text-dim);font-size:0.8rem;">19.1%</span><br>
+              ③胜/胜 <span class="odds">3.45</span> <span style="color:var(--text-dim);font-size:0.8rem;">24.1%</span>
+            </div>
+          </div>
+          <div class="rec-item">
+            <div class="label">⑥ 半场比分 TOP3</div>
+            <div class="value">
+              ①0:0 <span style="color:var(--text-dim);font-size:0.8rem;">47.6%</span><br>
+              ②1:0 <span style="color:var(--text-dim);font-size:0.8rem;">23.6%</span><br>
+              ③0:1 <span style="color:var(--text-dim);font-size:0.8rem;">11.8%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dim-content" style="margin-top:10px; font-size:0.85rem;">
+        <p><span class="tag tag-warn">分析说明</span>模型与市场存在分歧：模型主胜概率48%高于市场noVig 42.9%，但考虑到中国仅需平局+朱辰杰伤情不明+阿联酋主力中卫停赛，方向判定为<b>中国不败</b>。让球盘(-1)选择"平"（即中国刚好赢1球）赔率3.55性价比较高。比分首选1:0（中国1球小胜）+次选0:0（闷平互交白卷），均符合保守战术预期。</p>
+      </div>
+    </div>
+
+    <!-- 维度5：半场结果已在上方 -->
+    <!-- 维度6：具体情况 -->
+    <div class="dim-section">
+      <h3>五、具体情况 <span class="num">场地/天气/新闻/伤停/首发</span></h3>
+      <div class="dim-content">
+        <p><b>场地：</b>丰田体育场（Toyota Stadium），爱知县丰田市，天然草皮，容量40,000人。该场地同时承办A组日本vs泰国（18:30），中国vs阿联酋为日场。</p>
+        <p><b>天气：</b>多云，气温22-27°C，湿度66%，降水概率约30%，风力微风。天气条件适宜比赛，不影响技战术发挥。</p>
+        <p><b>中国近况：</b>两轮小组赛使用完全相同首发11人，5-3-2阵型。朱辰杰、胡荷韬在第2轮vs伊朗时受伤被换下，伤情需赛前确认。吴曦时隔两年八个月重返国家队表现出色（1球1助）。张玉宁支点作用突出。</p>
+        <p><b>阿联酋近况：</b>主力中卫曼苏里累计两张黄牌<b>停赛</b>，后防核心缺失。亨特、阿卜杜拉阿齐兹、朱马均身背黄牌，再吃牌将影响后续。首战对伊朗吃到黄牌的恩迪亚耶若再吃牌也将停赛。阿联酋进攻端2场仅1球，11打9仍无法破门。</p>
+        <p><b>伤停详情：</b></p>
+        <table class="standings" style="font-size:0.82rem;">
+          <tr><th>球队</th><th>球员</th><th>位置</th><th>状态</th><th>来源</th></tr>
+          <tr><td>中国</td><td>朱辰杰</td><td>中卫</td><td><span class="tag tag-warn">出战成疑</span></td><td>第2轮伤退</td></tr>
+          <tr><td>中国</td><td>胡荷韬</td><td>右后卫</td><td><span class="tag tag-warn">出战成疑</span></td><td>第2轮伤退</td></tr>
+          <tr><td>阿联酋</td><td>曼苏里</td><td>中卫</td><td><span class="tag tag-hot">确认停赛</span></td><td>累计黄牌</td></tr>
+        </table>
+        <p style="font-size:0.8rem; color:var(--text-dim);">注：亚运会赛事首发阵容需赛前1小时确认，以上信息基于第2轮比赛报告。朱辰杰、胡荷韬伤情待赛前官方确认。</p>
+      </div>
+    </div>
+
+    <!-- 维度7：总进球已在推荐中 -->
+
+    <!-- 维度8：网友意见 -->
+    <div class="dim-section">
+      <h3>六、网友意见 <span class="num">体育论坛/知乎</span></h3>
+      <div class="dim-content">
+        <p><span class="tag tag-value">虎扑社区</span>主流意见<b>看好中国取胜</b>，预测比分以<b>1-0、2-0</b>居多。核心分歧在于"小胜稳妥出线" vs "大胜争净胜球抢小组第一"。</p>
+        <p><b>关键讨论点：</b></p>
+        <ul>
+          <li>多数球迷认为必须争小组第一（避开淘汰赛可能遇到日本），因此末轮不能保守</li>
+          <li>部分球迷担心阿联酋"死磕"态度（必须赢球才有理论出线可能）</li>
+          <li>有球迷建议"蹲坑1-0干掉阿联酋就够了"</li>
+          <li>朱辰杰伤退后后防稳定性是热议焦点</li>
+          <li>阿联酋归化球员被提及为潜在威胁</li>
+        </ul>
+        <p style="font-size:0.82rem; color:var(--text-dim);">来源：虎扑社区亚运会讨论帖</p>
+      </div>
+    </div>
+
+    <!-- 战意心理与体能分析 -->
+    <div class="dim-section">
+      <h3>七、战意心理与体能分析 <span class="num">Rule 27</span></h3>
+      <div class="dim-content">
+        <p><b>战意不对称：</b>中国打平即出线（4分，+1 GD），阿联酋1分基本出局（需赢球+逆转2个净胜球）。表面看阿联酋战意更强，但实际上阿联酋出线仅存理论可能，球员心态可能已松懈。中国虽只需平局，但争小组第一（避免淘汰赛碰日本）的战意明确，不会消极应战。</p>
+        <p><b>体能与休息：</b>两队第2轮均在9月20日完赛，休息3天，体能基本对等。中国第2轮控球仅32%跑动距离可能更大，但5-3-2阵型节省体能。阿联酋11打9未能破门，可能影响士气。</p>
+        <p><b>心理因素：</b>中国历史交锋11次5胜5平1负占绝对优势（进16球失6球），心理上不惧阿联酋。吴曦、张玉宁超龄球员的大赛经验是关键心理优势。阿联酋2场1球进攻乏力，信心不足。</p>
+        <p><b>赛程牵制：</b>出线后八强赛对手取决于小组排名。B1大概率碰C2或D2，B2可能碰A1（日本）或C1。因此中国有争B1的赛程动力。</p>
+        <p><b>综合软因素修正：</b>中国战意+心理+H2H全面占优，但保守战术+伤停隐患限制了进攻上限。λ_China维持1.10（不上修），λ_UAE维持0.55（不下修，因必须赢球会冒险进攻）。</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ========== 周三002 ========== -->
+<div class="match-section">
+  <div class="match-header">
+    <span class="league-tag">周三002 · 亚运男足 A组第3轮</span>
+    <h2>日本亚足 <span style="color:var(--text-dim)">vs</span> 泰国亚运男足</h2>
+    <div class="match-info">
+      <span>日期：2026-09-23 18:30</span>
+      <span>场地：丰田体育场（爱知县丰田市，天然草皮，容量40,000）</span>
+      <span>天气：多云转晴 20-25°C 湿度66%</span>
+    </div>
+  </div>
+  <div class="match-body">
+
+    <!-- A组积分榜 -->
+    <div class="dim-section">
+      <h3>A组积分榜（第2轮后）</h3>
+      <table class="standings">
+        <tr><th>排名</th><th>球队</th><th>赛</th><th>胜</th><th>平</th><th>负</th><th>进</th><th>失</th><th>净</th><th>分</th></tr>
+        <tr><td>1</td><td class="team-highlight">日本亚</td><td>2</td><td>2</td><td>0</td><td>0</td><td>9</td><td>0</td><td>+9</td><td>6</td></tr>
+        <tr><td>2</td><td class="team-highlight">泰国亚</td><td>2</td><td>2</td><td>0</td><td>0</td><td>8</td><td>3</td><td>+5</td><td>6</td></tr>
+        <tr><td>3</td><td>吉尔吉斯斯坦</td><td>2</td><td>0</td><td>0</td><td>2</td><td>2</td><td>10</td><td>-8</td><td>0</td></tr>
+        <tr><td>4</td><td>中国香港</td><td>2</td><td>0</td><td>0</td><td>2</td><td>1</td><td>10</td><td>-9</td><td>0</td></tr>
+      </table>
+      <div class="dim-content" style="font-size:0.82rem; color:var(--text-dim); margin-top:5px;">
+        两队均已提前晋级八强。日本净胜球+9领先泰国+5，日本打平即锁定小组第一；泰国必须取胜才能争夺头名。
+      </div>
+    </div>
+
+    <!-- 维度1：纸面实力 -->
+    <div class="dim-section">
+      <h3>一、纸面实力对比 <span class="num">8维度分析</span></h3>
+      <div class="dim-content">
+        <table class="standings">
+          <tr><th>维度</th><th>日本亚运</th><th>泰国亚运</th></tr>
+          <tr><td>基础班底</td><td>U21国家队（比U23小一岁）</td><td>U23国家队</td></tr>
+          <tr><td>超龄球员</td><td>0人（全U21）</td><td>0人（全U23）</td></tr>
+          <tr><td>海外球员</td><td>4人（荷甲/德甲/比甲/丹麦超）</td><td>0人</td></tr>
+          <tr><td>主教练</td><td>大岩刚</td><td>塔瓦猜</td></tr>
+          <tr><td>FIFA排名(成年队)</td><td>第18位</td><td>第100位</td></tr>
+        </table>
+        <p><span class="tag tag-value">日本碾压级优势</span>日本虽为U21（比对手小2岁），但4名留洋欧洲主流联赛球员坐镇，技术能力和战术素养远超泰国。日本成年队FIFA排名18 vs 泰国100，实力差距悬殊。日本作为东道主还有主场之利。</p>
+      </div>
+    </div>
+
+    <!-- 维度2：战术风格 -->
+    <div class="dim-section">
+      <h3>二、战术风格</h3>
+      <div class="dim-content">
+        <p><span class="tag">日本</span><b>4-3-3控球进攻</b>。两轮轰入9球0失球。石井久继（2球）、横山梦树、石桥濑凪等多点开花。中场古谷柊介、大关友翔控制力强。后防线两场零封。日本传控流畅、高位压迫、快速转换的日式足球DNA展现无遗。7-0血洗吉尔吉斯斯坦展示恐怖火力。</p>
+        <p><span class="tag">泰国</span><b>4-2-3-1快速反击</b>。两场进8球但失3球，进攻端翁萨（2球）、马玛（2球）状态出色。但防守端漏洞明显，对吉尔吉斯斯坦失2球、对香港失1球。泰国擅长利用边路速度打反击，但面对技术流球队时中场控制力不足。</p>
+      </div>
+    </div>
+
+    <!-- 维度3：赛事表现 -->
+    <div class="dim-section">
+      <h3>三、赛事表现</h3>
+      <div class="dim-content">
+        <table class="standings">
+          <tr><th>轮次</th><th>日本</th><th>比分</th><th>泰国</th><th>比分</th></tr>
+          <tr><td>第1轮</td><td>vs 中国香港</td><td><b style="color:var(--green)">2:0 胜</b></td><td>vs 吉尔吉斯斯坦</td><td><b style="color:var(--green)">3:2 胜</b></td></tr>
+          <tr><td>第2轮</td><td>vs 吉尔吉斯斯坦</td><td><b style="color:var(--green)">7:0 胜</b></td><td>vs 中国香港</td><td><b style="color:var(--green)">5:1 胜</b></td></tr>
+        </table>
+        <p><b>日本详细战报：</b>第1轮vs香港：39分钟石井久继破门，89分钟永野修都锁定胜局。第2轮vs吉尔吉斯斯坦：28分钟横山梦树、36分钟石桥濑凪、39分钟大关友翔，上半场3-0。下半场中岛洋太朗点球、石井久继、嶋本悠大各入1球，7-0血洗。日本28分钟内连入5球。</p>
+        <p><b>泰国详细战报：</b>第1轮vs吉尔吉斯斯坦：半场0-2落后，下半场56分钟马玛头球、69分钟翁萨远射扳平、73分钟翁萨反超，惊天大逆转。第2轮vs香港：14分钟先失球，39分钟差特木昂扳平，下半场53分钟翁萨反超、56分钟对手乌龙、76分钟马玛、84分钟诺伊斯里，5-1大胜。</p>
+        <p style="color:var(--text-dim); font-size:0.82rem;">注意：两队数据均对弱旅刷出，实际含金量需打折。日本0失球含金量较高（对手弱但防守组织确实好）；泰国失3球面对的是小组最弱两个对手，防守隐患大。</p>
+      </div>
+    </div>
+
+    <!-- 维度4-7: 泊松模型 & 6维度推荐 -->
+    <div class="dim-section">
+      <h3>四、泊松模型 & 6维度推荐 <span class="num">核心</span></h3>
+      <div class="dim-content">
+        <p style="margin-bottom:12px;">
+          <b>模型参数：</b>λ(日本) = 2.85 | λ(泰国) = 0.70 | 总期望进球 ≈ 3.55<br>
+          <span style="color:var(--text-dim); font-size:0.82rem;">修正依据：日本2场9球但对手极弱，对泰国实力差距仍大但进球率需下调；泰国2场8球同样含水分，面对日本0失球防线进攻效率大幅下降；日本已出线可能轮换但东道主不会放弃争胜；泰国必须赢但实力差距悬殊。日本主场+4名留洋球员=碾压级优势。</span>
+        </p>
+
+        <!-- 比分矩阵 TOP10 -->
+        <table class="model-table">
+          <tr><th>排名</th><th>比分</th><th>模型概率</th><th>体彩赔率</th><th>市场noVig</th></tr>
+          <tr class="top-pick"><td>1</td><td><b>2:0</b></td><td>11.7%</td><td>6.20</td><td>12.0%</td></tr>
+          <tr class="top-pick"><td>2</td><td><b>3:0</b></td><td>11.1%</td><td>6.30</td><td>11.9%</td></tr>
+          <tr class="top-pick"><td>3</td><td><b>1:0</b></td><td>8.2%</td><td>9.00</td><td>8.3%</td></tr>
+          <tr class="top-pick"><td>4</td><td><b>2:1</b></td><td>8.2%</td><td>9.00</td><td>8.3%</td></tr>
+          <tr class="top-pick"><td>5</td><td><b>4:0</b></td><td>7.9%</td><td>8.20</td><td>9.1%</td></tr>
+          <tr><td>6</td><td>3:1</td><td>7.8%</td><td>11.00</td><td>6.8%</td></tr>
+          <tr><td>7</td><td>4:1</td><td>5.5%</td><td>15.00</td><td>5.0%</td></tr>
+          <tr><td>8</td><td>1:1</td><td>5.7%</td><td>16.00</td><td>4.7%</td></tr>
+          <tr><td>9</td><td>5:0</td><td>4.5%</td><td>14.00</td><td>5.3%</td></tr>
+          <tr><td>10</td><td>5:1</td><td>3.2%</td><td>24.00</td><td>3.1%</td></tr>
+        </table>
+
+        <h4 style="margin: 15px 0 8px; color: var(--accent); font-size: 0.9rem;">半场比分模型 (HT λ_JPN=1.28, λ_THA=0.315)</h4>
+        <table class="model-table">
+          <tr><th>排名</th><th>半场比分</th><th>模型概率</th></tr>
+          <tr class="top-pick"><td>1</td><td><b>1:0</b></td><td>26.0%</td></tr>
+          <tr class="top-pick"><td>2</td><td><b>0:0</b></td><td>20.3%</td></tr>
+          <tr class="top-pick"><td>3</td><td><b>2:0</b></td><td>16.6%</td></tr>
+        </table>
+      </div>
+
+      <!-- 6维度推荐 -->
+      <div class="rec-box">
+        <h4>最终推荐方案 <span class="confidence conf-mid">★★ 中置信度</span></h4>
+        <div class="rec-grid">
+          <div class="rec-item">
+            <div class="label">① 让球胜平负 (HHAD, -2)</div>
+            <div class="value">主胜(赢3+球) <span class="odds">1.80</span> <span style="color:var(--text-dim);font-size:0.8rem;">模型37%</span></div>
+          </div>
+          <div class="rec-item">
+            <div class="label">② 让球平 (赢恰好2球)</div>
+            <div class="value">平 <span class="odds">4.15</span> <span style="color:var(--text-dim);font-size:0.8rem;">模型22%</span></div>
+          </div>
+          <div class="rec-item">
+            <div class="label">③ 比分 (CRS) 首选</div>
+            <div class="value">2:0 <span class="odds">6.20</span> <span style="color:var(--text-dim);font-size:0.8rem;">11.7%</span></div>
+          </div>
+          <div class="rec-item">
+            <div class="label">③ 比分 (CRS) 次选</div>
+            <div class="value">3:0 <span class="odds">6.30</span> <span style="color:var(--text-dim);font-size:0.8rem;">11.1%</span></div>
+          </div>
+          <div class="rec-item">
+            <div class="label">③ 比分 (CRS) 备选</div>
+            <div class="value">4:0 <span class="odds">8.20</span> <span style="color:var(--text-dim);font-size:0.8rem;">7.9%</span></div>
+          </div>
+          <div class="rec-item">
+            <div class="label">④ 总进球 (TTG) 首选</div>
+            <div class="value">3球 <span class="odds">4.00</span> <span style="color:var(--text-dim);font-size:0.8rem;">21.5%</span></div>
+          </div>
+          <div class="rec-item">
+            <div class="label">④ 总进球 (TTG) 次选</div>
+            <div class="value">4球 <span class="odds">4.40</span> <span style="color:var(--text-dim);font-size:0.8rem;">19.2%</span></div>
+          </div>
+          <div class="rec-item">
+            <div class="label">⑤ 半全场 (HTFT) TOP3</div>
+            <div class="value">
+              ①胜/胜 <span class="odds">1.32</span> <span style="color:var(--text-dim);font-size:0.8rem;">62.9%</span><br>
+              ②平/胜 <span class="odds">4.20</span> <span style="color:var(--text-dim);font-size:0.8rem;">19.8%</span><br>
+              ③平/平 <span class="odds">15.00</span> <span style="color:var(--text-dim);font-size:0.8rem;">5.5%</span>
+            </div>
+          </div>
+          <div class="rec-item">
+            <div class="label">⑥ 半场比分 TOP3</div>
+            <div class="value">
+              ①1:0 <span style="color:var(--text-dim);font-size:0.8rem;">26.0%</span><br>
+              ②0:0 <span style="color:var(--text-dim);font-size:0.8rem;">20.3%</span><br>
+              ③2:0 <span style="color:var(--text-dim);font-size:0.8rem;">16.6%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dim-content" style="margin-top:10px; font-size:0.85rem;">
+        <p><span class="tag tag-warn">分析说明</span><b>注意：本场仅开出让球盘(-2)，无胜平负基础盘。</b>模型与市场在让球方向存在分歧：模型给出日本赢3+球概率37% vs 市场49.2%，差距12%。这主要因模型考虑了日本已出线可能轮换+泰国进攻能力不弱(8球)的因素。但日本主场+留洋球员+7-0血洗的势头，大胜仍是高概率方向。比分首选2:0和3:0（赢2-3球区间），备选4:0（大胜）。让球盘选择<b>主胜(赢3+球)</b>赔率1.80偏低但概率尚可，或选择<b>平(赢恰好2球)</b>赔率4.15性价比更高。</p>
+        <p><span class="tag tag-warn">风险提示</span>双方均已出线，存在轮换可能。日本只需平局锁定头名，可能收缩阵容。泰国必须赢球争头名，可能拼尽全力。若日本大幅轮换，大胜概率将降低。建议关注赛前首发名单。</p>
+      </div>
+    </div>
+
+    <!-- 维度6：具体情况 -->
+    <div class="dim-section">
+      <h3>五、具体情况 <span class="num">场地/天气/新闻/伤停/首发</span></h3>
+      <div class="dim-content">
+        <p><b>场地：</b>丰田体育场，同日第二场比赛（前一场为中国vs阿联酋13:30）。日本作为东道主在主场作战，球迷支持为主。</p>
+        <p><b>天气：</b>多云转晴，气温20-25°C，湿度66%。日场比赛气温略降，条件适宜。</p>
+        <p><b>日本近况：</b>全员U21阵容参赛（比U23小2岁），未使用超龄名额。4名留洋球员：市原吏音(荷甲)、小关直太(德甲)、石泽宽(比甲)、Nwadike(丹麦超)。教练大岩刚。两场零失球，攻防两端统治力强。已提前出线，本轮可能轮换部分主力。</p>
+        <p><b>泰国近况：</b>全U23阵容，无超龄球员，无海外球员。教练塔瓦猜。翁萨(2球)、马玛(2球)进攻状态出色。但防守端3场失3球，面对强队时防守是隐患。已提前出线，必须赢球争小组第一。</p>
+        <p><b>伤停详情：</b></p>
+        <table class="standings" style="font-size:0.82rem;">
+          <tr><th>球队</th><th>球员</th><th>位置</th><th>状态</th><th>来源</th></tr>
+          <tr><td>日本</td><td>无重大伤停</td><td>-</td><td><span class="tag tag-value">健康</span></td><td>官方</td></tr>
+          <tr><td>泰国</td><td>无重大伤停</td><td>-</td><td><span class="tag tag-value">健康</span></td><td>官方</td></tr>
+        </table>
+        <p style="font-size:0.8rem; color:var(--text-dim);">双方均无重大伤停或停赛报告。但两队已出线，首发轮换可能性大，需关注赛前1小时官方首发名单。</p>
+      </div>
+    </div>
+
+    <!-- 维度8：网友意见 -->
+    <div class="dim-section">
+      <h3>六、网友意见 <span class="num">体育论坛/知乎</span></h3>
+      <div class="dim-content">
+        <p><span class="tag tag-warn">信息缺失</span>中文体育社区（虎扑/知乎/贴吧/微博）暂未检索到日本vs泰国男足的专项讨论帖。可能因日本和泰国均非中国队，中文社区关注度较低。</p>
+        <p><b>参考方向：</b>基于两国球迷社区的一般认知：</p>
+        <ul>
+          <li>日本作为东道主+技术流球队，普遍被看好大胜</li>
+          <li>泰国虽进攻出色但防守漏洞明显，难以抵挡日本</li>
+          <li>关注点在于日本是否轮换及赢球幅度</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 战意心理与体能分析 -->
+    <div class="dim-section">
+      <h3>七、战意心理与体能分析 <span class="num">Rule 27</span></h3>
+      <div class="dim-content">
+        <p><b>战意不对称：</b>日本打平即锁定A1（+9 GD vs 泰国+5 GD），战意相对中性。泰国必须赢球才能争A1，战意更强。但日本作为东道主+全场球迷，不会消极比赛。若日本选择轮换，战意进一步降低。泰国争A1有赛程动力（A1淘汰赛对手更弱）。</p>
+        <p><b>体能与休息：</b>两队第2轮均在9月20日完赛，休息3天。日本7-0大胜消耗可能小于泰国5-1（泰国经历了先落后再逆转的体能消耗）。日本U21体能恢复能力强。</p>
+        <p><b>心理因素：</b>日本7-0血洗的恐怖状态+东道主气势+留洋球员自信心，心理层面碾压。泰国虽进攻端有逆转信心（第1轮0-2落后翻盘3-2），但面对实力差距如此悬殊的对手，心理上可能倾向于"保平争胜"而非死磕。U23层面前4次日本3胜1负，最近2017年友谊赛泰国2-1胜日本（但已时隔9年，参考价值极低）。</p>
+        <p><b>赛程牵制：</b>A1淘汰赛对手为B2/D2（可能是中国或阿联酋），A2对手为B1/C1（可能是伊朗或越南）。泰国争A1在赛程上有动力。</p>
+        <p><b>综合软因素修正：</b>日本战意存疑（已出线+只需平局），但实力碾压+主场气势弥补了战意不足。泰国战意强但实力差距过大。λ_JPN维持2.85（不上修因可能轮换），λ_THA维持0.70（不上修因日本防线稳固）。</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ========== 娱乐串推荐 ========== -->
+<div class="match-section">
+  <div class="match-header">
+    <span class="league-tag">娱乐串</span>
+    <h2>比分串 & 娱乐组合推荐</h2>
+  </div>
+  <div class="match-body">
+    <div class="dim-section">
+      <div class="dim-content">
+        <p style="margin-bottom:12px;">基于基本面（战意/状态/交锋）和网友意见，选出高赔率比分组合，以娱乐性和概率为优先，不追求覆盖方向。</p>
+
+        <div class="rec-box">
+          <h4>比分高赔串 <span class="confidence conf-low">★ 低置信度（娱乐）</span></h4>
+          <table class="standings" style="font-size:0.88rem;">
+            <tr><th>编号</th><th>场次</th><th>比分</th><th>赔率</th><th>模型概率</th><th>逻辑</th></tr>
+            <tr class="top-pick"><td>①</td><td>周三001 中国vs阿联酋</td><td><b>2:0</b></td><td>9.20</td><td>11.6%</td><td>中国争净胜球+阿联酋主力中卫停赛</td></tr>
+            <tr class="top-pick"><td>②</td><td>周三001 中国vs阿联酋</td><td><b>2:1</b></td><td>8.00</td><td>6.4%</td><td>阿联酋死磕进1球但中国逆转</td></tr>
+            <tr class="top-pick"><td>③</td><td>周三002 日本vs泰国</td><td><b>3:1</b></td><td>11.00</td><td>7.8%</td><td>日本赢3球但泰国反击偷1球</td></tr>
+            <tr class="top-pick"><td>④</td><td>周三002 日本vs泰国</td><td><b>4:0</b></td><td>8.20</td><td>7.9%</td><td>日本大胜延续+泰国防线崩溃</td></tr>
+          </table>
+          <p style="margin-top:8px; font-size:0.82rem; color:var(--text-dim);">两场串关组合示例：①③ = 9.20×11.00 = 101.2倍 | ①④ = 9.20×8.20 = 75.4倍 | ②③ = 8.00×11.00 = 88.0倍</p>
+        </div>
+
+        <div class="rec-box">
+          <h4>总进球串 <span class="confidence conf-mid">★★ 中置信度</span></h4>
+          <table class="standings" style="font-size:0.88rem;">
+            <tr><th>编号</th><th>场次</th><th>总进球</th><th>赔率</th><th>模型概率</th></tr>
+            <tr class="top-pick"><td>⑤</td><td>周三001 中国vs阿联酋</td><td><b>1球</b></td><td>3.90</td><td>31.7%</td></tr>
+            <tr class="top-pick"><td>⑥</td><td>周三001 中国vs阿联酋</td><td><b>2球</b></td><td>3.20</td><td>26.1%</td></tr>
+            <tr class="top-pick"><td>⑦</td><td>周三002 日本vs泰国</td><td><b>3球</b></td><td>4.00</td><td>21.5%</td></tr>
+            <tr class="top-pick"><td>⑧</td><td>周三002 日本vs泰国</td><td><b>4球</b></td><td>4.40</td><td>19.2%</td></tr>
+          </table>
+          <p style="margin-top:8px; font-size:0.82rem; color:var(--text-dim);">串关组合：⑤⑦ = 3.90×4.00 = 15.6倍 | ⑥⑦ = 3.20×4.00 = 12.8倍 | ⑤⑧ = 3.90×4.40 = 17.2倍</p>
+        </div>
+
+        <div class="rec-box">
+          <h4>半全场串 <span class="confidence conf-low">★ 低置信度（娱乐）</span></h4>
+          <table class="standings" style="font-size:0.88rem;">
+            <tr><th>编号</th><th>场次</th><th>半全场</th><th>赔率</th><th>市场概率</th></tr>
+            <tr class="top-pick"><td>⑨</td><td>周三001 中国vs阿联酋</td><td><b>平/胜</b></td><td>4.85</td><td>17.1%</td></tr>
+            <tr class="top-pick"><td>⑩</td><td>周三001 中国vs阿联酋</td><td><b>平/平</b></td><td>4.35</td><td>19.1%</td></tr>
+            <tr class="top-pick"><td>⑪</td><td>周三002 日本vs泰国</td><td><b>平/胜</b></td><td>4.20</td><td>19.8%</td></tr>
+            <tr class="top-pick"><td>⑫</td><td>周三002 日本vs泰国</td><td><b>胜/胜</b></td><td>1.32</td><td>62.9%</td></tr>
+          </table>
+          <p style="margin-top:8px; font-size:0.82rem; color:var(--text-dim);">串关组合：⑨⑪ = 4.85×4.20 = 20.4倍 | ⑩⑪ = 4.35×4.20 = 18.3倍</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== 总结 ========== -->
+<div class="match-section">
+  <div class="match-header">
+    <span class="league-tag">总结</span>
+    <h2>整体分析思路与风险提示</h2>
+  </div>
+  <div class="match-body">
+    <div class="dim-content">
+      <p><b>基本面决定论（Rule 28）：</b>两场比赛均以基本面为分析核心。中国vs阿联酋，中国实力占优+H2H碾压+阿联酋主力停赛，方向明确（中国不败），但保守战术限制了进球上限。日本vs泰国，日本实力碾压+主场之利，大胜概率高，但已出线可能轮换是最大变数。</p>
+      <p><b>模型与市场分歧：</b>周三001模型主胜48% vs 市场42.9%，中国被市场略微低估；周三002模型赢3+球37% vs 市场49.2%，日本大胜被市场略微高估。分歧均在15%以内，未达到严重对立阈值。</p>
+      <p><b>关键风险点：</b></p>
+      <ul>
+        <li>朱辰杰、胡荷韬伤情不明 → 若两人缺阵，中国后防稳定性下降，可能影响赛果</li>
+        <li>日本可能轮换 → 若大幅轮换，大胜概率降低，让球盘(-2)风险增大</li>
+        <li>阿联酋已基本出局 → 球员心态可能松懈，比赛强度存疑</li>
+        <li>亚运会赛事经验 → U21/U23年轻球员心态波动大，不可预测性高于成年队</li>
+        <li>两场均无单关 → 仅能串关投注，风险集中</li>
+      </ul>
+      <p><b>赔率以体彩官方为准，外盘赔率仅用于模型分析和市场情绪参考（Rule: 体彩官方赔率优先）。</b></p>
+    </div>
+  </div>
+</div>
+
+<div class="disclaimer">
+  本报告基于公开数据和模型分析，仅供参考娱乐，不构成任何投注建议。请理性购彩，量力而行。<br>
+  数据来源：中国体彩官方赔率（2026-09-22 12:07更新）| 新华网 | 虎扑社区 | AFC官方 | Bangkok Post | CNN Indonesia | AiScore<br>
+  模型：标准泊松分布 | 半场λ = 全场λ × 0.45 | 置信度评级基于模型一致性+基本面匹配度
+</div>
+
+</div>
+</body>
+</html>

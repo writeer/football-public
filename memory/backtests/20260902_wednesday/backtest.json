@@ -1,0 +1,1097 @@
+{
+  "date": "2026-09-02",
+  "day": "wednesday",
+  "total_matches": 13,
+  "completed_matches": 13,
+  "pending_matches": [],
+  "source_files": {
+    "predictions": "memory/predictions/260902_wednesday/predictions.json",
+    "analysis_report": "reports/analysis/260902_wednesday_analysis_zhihu.md",
+    "raw_data": "reports/data/260902_wednesday_matches_raw.json"
+  },
+  "results": [
+    {
+      "match_num": "001",
+      "home_team": "八户南源",
+      "away_team": "枥木城",
+      "league": "日联赛杯",
+      "ht_score": "0-1",
+      "ft_score": "0-2",
+      "direction": "客胜",
+      "goals": 2,
+      "hafu": "负负",
+      "handicap": "+1",
+      "handicap_result": "让(+1)负",
+      "predictions": {
+        "had_first": "客胜",
+        "had_first_prob": 0.41,
+        "had_second": "平",
+        "had_second_prob": 0.28,
+        "hhad_first": "让(+1)平",
+        "hhad_first_prob": 0.35,
+        "hhad_second": "让(+1)胜",
+        "hhad_second_prob": 0.3,
+        "ttg_first": 2,
+        "ttg_first_prob": 0.28,
+        "ttg_second": 3,
+        "ttg_second_prob": 0.22,
+        "crs_top5": [
+          "0-1",
+          "1-1",
+          "1-2",
+          "0-0",
+          "1-0"
+        ],
+        "hafu_top3": [
+          "平平",
+          "平负",
+          "负负"
+        ],
+        "ht_top3": [
+          "0-0",
+          "0-1",
+          "1-0"
+        ]
+      },
+      "hits": {
+        "had": "✅首",
+        "hhad": "❌",
+        "ttg": "✅首",
+        "hafu": "✅(3rd)",
+        "crs": "❌",
+        "ht": "✅(2nd)"
+      }
+    },
+    {
+      "match_num": "002",
+      "home_team": "大阪樱花",
+      "away_team": "柏太阳神",
+      "league": "日职(J1)",
+      "ht_score": "1-0",
+      "ft_score": "2-0",
+      "direction": "主胜",
+      "goals": 2,
+      "hafu": "胜胜",
+      "handicap": "+1",
+      "handicap_result": "让(+1)胜",
+      "predictions": {
+        "had_first": "客胜",
+        "had_first_prob": 0.5,
+        "had_second": "平",
+        "had_second_prob": 0.27,
+        "hhad_first": "让(+1)负",
+        "hhad_first_prob": 0.45,
+        "hhad_second": "让(+1)平",
+        "hhad_second_prob": 0.28,
+        "ttg_first": 2,
+        "ttg_first_prob": 0.28,
+        "ttg_second": 3,
+        "ttg_second_prob": 0.25,
+        "crs_top5": [
+          "0-1",
+          "1-2",
+          "0-2",
+          "1-1",
+          "1-3"
+        ],
+        "hafu_top3": [
+          "负负",
+          "平负",
+          "平平"
+        ],
+        "ht_top3": [
+          "0-1",
+          "0-0",
+          "0-2"
+        ]
+      },
+      "hits": {
+        "had": "❌",
+        "hhad": "❌",
+        "ttg": "✅首",
+        "hafu": "❌",
+        "crs": "❌",
+        "ht": "❌"
+      },
+      "note": "残阵反弹：大阪6人伤停含门将，预测客胜50%但实际2-0主胜"
+    },
+    {
+      "match_num": "003",
+      "home_team": "水户蜀葵",
+      "away_team": "鹿岛鹿角",
+      "league": "日职(J1)",
+      "ht_score": "2-0",
+      "ft_score": "4-2",
+      "direction": "主胜",
+      "goals": 6,
+      "hafu": "胜胜",
+      "handicap": "+1",
+      "handicap_result": "让(+1)胜",
+      "predictions": {
+        "had_first": "客胜",
+        "had_first_prob": 0.46,
+        "had_second": "平",
+        "had_second_prob": 0.35,
+        "hhad_first": "让(+1)负",
+        "hhad_first_prob": 0.42,
+        "hhad_second": "让(+1)平",
+        "hhad_second_prob": 0.3,
+        "ttg_first": 3,
+        "ttg_first_prob": 0.28,
+        "ttg_second": 4,
+        "ttg_second_prob": 0.2,
+        "crs_top5": [
+          "0-2",
+          "1-2",
+          "0-3",
+          "0-1",
+          "1-3"
+        ],
+        "hafu_top3": [
+          "负负",
+          "平负",
+          "平平"
+        ],
+        "ht_top3": [
+          "0-1",
+          "0-2",
+          "0-0"
+        ]
+      },
+      "hits": {
+        "had": "❌",
+        "hhad": "❌",
+        "ttg": "❌",
+        "hafu": "❌",
+        "crs": "❌",
+        "ht": "❌"
+      },
+      "note": "最大翻车：水户后防4人+2门将全伤(6人)，预测客胜46%但实际4-2主胜，残阵极端反弹+大球(6球)双重低估"
+    },
+    {
+      "match_num": "004",
+      "home_team": "町田泽维",
+      "away_team": "川崎前锋",
+      "league": "日职(J1)",
+      "ht_score": "0-0",
+      "ft_score": "2-1",
+      "direction": "主胜",
+      "goals": 3,
+      "hafu": "平胜",
+      "handicap": "-1",
+      "handicap_result": "让(-1)平",
+      "predictions": {
+        "had_first": "主胜",
+        "had_first_prob": 0.55,
+        "had_second": "平",
+        "had_second_prob": 0.24,
+        "hhad_first": "让(-1)平",
+        "hhad_first_prob": 0.3,
+        "hhad_second": "让(-1)胜",
+        "hhad_second_prob": 0.28,
+        "ttg_first": 3,
+        "ttg_first_prob": 0.28,
+        "ttg_second": 4,
+        "ttg_second_prob": 0.2,
+        "crs_top5": [
+          "2-1",
+          "3-1",
+          "2-2",
+          "1-1",
+          "3-2"
+        ],
+        "hafu_top3": [
+          "胜胜",
+          "平胜",
+          "平平"
+        ],
+        "ht_top3": [
+          "1-0",
+          "1-1",
+          "0-0"
+        ]
+      },
+      "hits": {
+        "had": "✅首",
+        "hhad": "✅首",
+        "ttg": "✅首",
+        "hafu": "✅(2nd)",
+        "crs": "✅(1st)",
+        "ht": "✅(3rd)"
+      },
+      "note": "最佳预测：6维度全中"
+    },
+    {
+      "match_num": "005",
+      "home_team": "萨索洛",
+      "away_team": "弗洛西诺内",
+      "league": "意大利杯",
+      "ht_score": "1-1",
+      "ft_score": "1-1",
+      "direction": "平",
+      "goals": 2,
+      "hafu": "平平",
+      "handicap": "-1",
+      "handicap_result": "让(-1)负",
+      "predictions": {
+        "had_first": "主胜",
+        "had_first_prob": 0.42,
+        "had_second": "平",
+        "had_second_prob": 0.37,
+        "hhad_first": "让(-1)平",
+        "hhad_first_prob": 0.35,
+        "hhad_second": "让(-1)负",
+        "hhad_second_prob": 0.28,
+        "ttg_first": 2,
+        "ttg_first_prob": 0.28,
+        "ttg_second": 3,
+        "ttg_second_prob": 0.22,
+        "crs_top5": [
+          "1-1",
+          "2-1",
+          "1-0",
+          "0-0",
+          "2-0"
+        ],
+        "hafu_top3": [
+          "平平",
+          "平胜",
+          "胜胜"
+        ],
+        "ht_top3": [
+          "0-0",
+          "1-0",
+          "0-1"
+        ]
+      },
+      "hits": {
+        "had": "✅次",
+        "hhad": "✅次",
+        "ttg": "✅首",
+        "hafu": "✅首",
+        "crs": "✅首",
+        "ht": "❌"
+      },
+      "note": "规则63单关平局上修验证：平局37%次选命中，1-1比分首选命中"
+    },
+    {
+      "match_num": "006",
+      "home_team": "乌迪内斯",
+      "away_team": "威尼斯",
+      "league": "意大利杯",
+      "ht_score": "1-1",
+      "ft_score": "2-1",
+      "direction": "主胜",
+      "goals": 3,
+      "hafu": "平胜",
+      "handicap": "-1",
+      "handicap_result": "让(-1)平",
+      "predictions": {
+        "had_first": "主胜",
+        "had_first_prob": 0.44,
+        "had_second": "平",
+        "had_second_prob": 0.31,
+        "hhad_first": "让(-1)平",
+        "hhad_first_prob": 0.32,
+        "hhad_second": "让(-1)负",
+        "hhad_second_prob": 0.28,
+        "ttg_first": 2,
+        "ttg_first_prob": 0.3,
+        "ttg_second": 3,
+        "ttg_second_prob": 0.2,
+        "crs_top5": [
+          "1-0",
+          "1-1",
+          "0-0",
+          "2-1",
+          "2-0"
+        ],
+        "hafu_top3": [
+          "平平",
+          "平胜",
+          "胜胜"
+        ],
+        "ht_top3": [
+          "0-0",
+          "1-0",
+          "0-1"
+        ]
+      },
+      "hits": {
+        "had": "✅首",
+        "hhad": "✅首",
+        "ttg": "✅次",
+        "hafu": "✅(2nd)",
+        "crs": "✅(4th)",
+        "ht": "❌"
+      }
+    },
+    {
+      "match_num": "007",
+      "home_team": "米尔沃尔",
+      "away_team": "雷克斯",
+      "league": "英冠",
+      "ht_score": "0-1",
+      "ft_score": "0-3",
+      "direction": "客胜",
+      "goals": 3,
+      "hafu": "负负",
+      "handicap": "-1",
+      "handicap_result": "让(-1)负",
+      "predictions": {
+        "had_first": "主胜",
+        "had_first_prob": 0.37,
+        "had_second": "平",
+        "had_second_prob": 0.36,
+        "hhad_first": "让(-1)负",
+        "hhad_first_prob": 0.38,
+        "hhad_second": "让(-1)平",
+        "hhad_second_prob": 0.3,
+        "ttg_first": 2,
+        "ttg_first_prob": 0.28,
+        "ttg_second": 3,
+        "ttg_second_prob": 0.22,
+        "crs_top5": [
+          "1-1",
+          "2-1",
+          "1-0",
+          "0-0",
+          "0-1"
+        ],
+        "hafu_top3": [
+          "平平",
+          "平胜",
+          "胜胜"
+        ],
+        "ht_top3": [
+          "0-0",
+          "1-0",
+          "0-1"
+        ]
+      },
+      "hits": {
+        "had": "❌",
+        "hhad": "✅首",
+        "ttg": "✅次",
+        "hafu": "❌",
+        "crs": "❌",
+        "ht": "✅(3rd)"
+      },
+      "note": "让球首选命中但方向翻车：预测主胜37%实际0-3客胜"
+    },
+    {
+      "match_num": "008",
+      "home_team": "西布罗姆",
+      "away_team": "查尔顿",
+      "league": "英冠",
+      "ht_score": "0-0",
+      "ft_score": "1-1",
+      "direction": "平",
+      "goals": 2,
+      "hafu": "平平",
+      "handicap": "-1",
+      "handicap_result": "让(-1)负",
+      "predictions": {
+        "had_first": "主胜",
+        "had_first_prob": 0.46,
+        "had_second": "平",
+        "had_second_prob": 0.35,
+        "hhad_first": "让(-1)负",
+        "hhad_first_prob": 0.35,
+        "hhad_second": "让(-1)平",
+        "hhad_second_prob": 0.3,
+        "ttg_first": 2,
+        "ttg_first_prob": 0.28,
+        "ttg_second": 3,
+        "ttg_second_prob": 0.22,
+        "crs_top5": [
+          "1-1",
+          "2-1",
+          "1-0",
+          "0-0",
+          "2-0"
+        ],
+        "hafu_top3": [
+          "平平",
+          "平胜",
+          "胜胜"
+        ],
+        "ht_top3": [
+          "0-0",
+          "1-0",
+          "0-1"
+        ]
+      },
+      "hits": {
+        "had": "✅次",
+        "hhad": "✅首",
+        "ttg": "✅首",
+        "hafu": "✅首",
+        "crs": "✅首",
+        "ht": "✅首"
+      },
+      "note": "6维度全中：规则57英冠平局上修+H2H主场3连平验证"
+    },
+    {
+      "match_num": "009",
+      "home_team": "女王巡游",
+      "away_team": "加的夫城",
+      "league": "英冠",
+      "ht_score": "1-0",
+      "ft_score": "2-1",
+      "direction": "主胜",
+      "goals": 3,
+      "hafu": "胜胜",
+      "handicap": "-1",
+      "handicap_result": "让(-1)平",
+      "predictions": {
+        "had_first": "主胜",
+        "had_first_prob": 0.44,
+        "had_second": "平",
+        "had_second_prob": 0.33,
+        "hhad_first": "让(-1)胜",
+        "hhad_first_prob": 0.32,
+        "hhad_second": "让(-1)平",
+        "hhad_second_prob": 0.28,
+        "ttg_first": 3,
+        "ttg_first_prob": 0.25,
+        "ttg_second": 2,
+        "ttg_second_prob": 0.24,
+        "crs_top5": [
+          "2-0",
+          "2-1",
+          "1-0",
+          "1-1",
+          "3-1"
+        ],
+        "hafu_top3": [
+          "胜胜",
+          "平胜",
+          "平平"
+        ],
+        "ht_top3": [
+          "1-0",
+          "0-0",
+          "1-1"
+        ]
+      },
+      "hits": {
+        "had": "✅首",
+        "hhad": "✅次",
+        "ttg": "✅首",
+        "hafu": "✅首",
+        "crs": "✅(2nd)",
+        "ht": "✅首"
+      },
+      "note": "让球推荐错误(让胜首选应为让负)但让平次选命中；HAD/TTG/HAFU/HT全首选命中"
+    },
+    {
+      "match_num": "010",
+      "home_team": "奥斯纳",
+      "away_team": "拜仁",
+      "league": "德国杯",
+      "ht_score": "1-2",
+      "ft_score": "1-4",
+      "direction": "客胜",
+      "goals": 5,
+      "hafu": "负负",
+      "handicap": "+3",
+      "handicap_result": "让(+3)平",
+      "predictions": {
+        "had_first": null,
+        "hhad_first": "让(+3)负",
+        "hhad_first_prob": 0.55,
+        "hhad_second": "让(+3)平",
+        "hhad_second_prob": 0.25,
+        "ttg_first": 4,
+        "ttg_first_prob": 0.22,
+        "ttg_second": 5,
+        "ttg_second_prob": 0.18,
+        "crs_top5": [
+          "0-3",
+          "0-4",
+          "0-5",
+          "0-2",
+          "1-4"
+        ],
+        "hafu_top3": [
+          "负负",
+          "平负",
+          "负平"
+        ],
+        "ht_top3": [
+          "0-1",
+          "0-2",
+          "0-0"
+        ]
+      },
+      "hits": {
+        "had": "N/A",
+        "hhad": "✅次",
+        "ttg": "✅次",
+        "hafu": "✅首",
+        "crs": "✅(5th)",
+        "ht": "❌"
+      },
+      "note": "用户串关010让(+3)胜未中(actual让平)；拜仁1-4赢3球恰好让平"
+    },
+    {
+      "match_num": "011",
+      "home_team": "伯恩利",
+      "away_team": "米堡",
+      "league": "英冠",
+      "ht_score": "0-1",
+      "ft_score": "1-1",
+      "direction": "平",
+      "goals": 2,
+      "hafu": "负平",
+      "handicap": "+1",
+      "handicap_result": "让(+1)胜",
+      "predictions": {
+        "had_first": "平",
+        "had_first_prob": 0.38,
+        "had_second": "客胜",
+        "had_second_prob": 0.34,
+        "hhad_first": "让(+1)胜",
+        "hhad_first_prob": 0.38,
+        "hhad_second": "让(+1)平",
+        "hhad_second_prob": 0.28,
+        "ttg_first": 2,
+        "ttg_first_prob": 0.3,
+        "ttg_second": 3,
+        "ttg_second_prob": 0.2,
+        "crs_top5": [
+          "1-1",
+          "0-1",
+          "0-0",
+          "1-2",
+          "0-2"
+        ],
+        "hafu_top3": [
+          "平平",
+          "平负",
+          "负负"
+        ],
+        "ht_top3": [
+          "0-0",
+          "0-1",
+          "1-0"
+        ]
+      },
+      "hits": {
+        "had": "✅首",
+        "hhad": "✅首",
+        "ttg": "✅首",
+        "hafu": "❌",
+        "crs": "✅首",
+        "ht": "✅(2nd)"
+      },
+      "note": "规则63+57平局首选命中！8人残阵H2H不败锚点验证；但用户选客胜未中"
+    },
+    {
+      "match_num": "012",
+      "home_team": "弗拉门戈",
+      "away_team": "米拉索尔",
+      "league": "巴甲",
+      "ht_score": "2-0",
+      "ft_score": "2-0",
+      "direction": "主胜",
+      "goals": 2,
+      "hafu": "胜胜",
+      "handicap": "-1",
+      "handicap_result": "让(-1)胜",
+      "predictions": {
+        "had_first": "主胜",
+        "had_first_prob": 0.8,
+        "had_second": "平",
+        "had_second_prob": 0.13,
+        "hhad_first": "让(-1)胜",
+        "hhad_first_prob": 0.55,
+        "hhad_second": "让(-1)平",
+        "hhad_second_prob": 0.2,
+        "ttg_first": 3,
+        "ttg_first_prob": 0.28,
+        "ttg_second": 4,
+        "ttg_second_prob": 0.22,
+        "crs_top5": [
+          "2-0",
+          "3-0",
+          "3-1",
+          "2-1",
+          "4-0"
+        ],
+        "hafu_top3": [
+          "胜胜",
+          "平胜",
+          "胜平"
+        ],
+        "ht_top3": [
+          "1-0",
+          "2-0",
+          "1-1"
+        ]
+      },
+      "hits": {
+        "had": "✅首",
+        "hhad": "✅首",
+        "ttg": "❌",
+        "hafu": "✅首",
+        "crs": "✅首",
+        "ht": "✅次"
+      },
+      "note": "碾压场6维度5中！方向/让球/半全场/比分首选全中，仅TTG低估(预测3球实际2球)；半全场胜胜首选命中"
+    },
+    {
+      "match_num": "013",
+      "home_team": "桑托斯",
+      "away_team": "帕梅拉斯",
+      "league": "巴西杯",
+      "ht_score": "0-0",
+      "ft_score": "0-0",
+      "direction": "平",
+      "goals": 0,
+      "hafu": "平平",
+      "handicap": "+1",
+      "handicap_result": "让(+1)胜",
+      "predictions": {
+        "had_first": "平",
+        "had_first_prob": 0.35,
+        "had_second": "客胜",
+        "had_second_prob": 0.35,
+        "hhad_first": "让(+1)平",
+        "hhad_first_prob": 0.32,
+        "hhad_second": "让(+1)负",
+        "hhad_second_prob": 0.28,
+        "ttg_first": 2,
+        "ttg_first_prob": 0.28,
+        "ttg_second": 3,
+        "ttg_second_prob": 0.22,
+        "crs_top5": [
+          "1-1",
+          "0-1",
+          "0-0",
+          "1-2",
+          "1-0"
+        ],
+        "hafu_top3": [
+          "平平",
+          "平负",
+          "负负"
+        ],
+        "ht_top3": [
+          "0-0",
+          "0-1",
+          "1-0"
+        ]
+      },
+      "hits": {
+        "had": "✅首",
+        "hhad": "❌",
+        "ttg": "❌",
+        "hafu": "✅首",
+        "crs": "✅(3rd)",
+        "ht": "✅首"
+      },
+      "note": "巴西杯次回合0-0闷平！帕梅拉斯首回合3-0领先保守轮换；方向平局首选命中+半全场平平首选命中+半场0-0首选命中，但TTG/让球全错(0球vs预测2球)"
+    }
+  ],
+  "hit_rates": {
+    "had_first": {
+      "hits": 7,
+      "total": 12,
+      "rate": 0.583,
+      "rating": "一般"
+    },
+    "had_first_plus_second": {
+      "hits": 9,
+      "total": 12,
+      "rate": 0.75,
+      "rating": "良好"
+    },
+    "hhad_first": {
+      "hits": 6,
+      "total": 13,
+      "rate": 0.462,
+      "rating": "一般"
+    },
+    "hhad_first_plus_second": {
+      "hits": 9,
+      "total": 13,
+      "rate": 0.692,
+      "rating": "良好"
+    },
+    "ttg_top2": {
+      "hits": 10,
+      "total": 13,
+      "rate": 0.769,
+      "rating": "良好"
+    },
+    "hafu_top3": {
+      "hits": 9,
+      "total": 13,
+      "rate": 0.692,
+      "rating": "良好"
+    },
+    "crs_top5": {
+      "hits": 9,
+      "total": 13,
+      "rate": 0.692,
+      "rating": "良好"
+    },
+    "ht_top3": {
+      "hits": 8,
+      "total": 13,
+      "rate": 0.615,
+      "rating": "良好"
+    }
+  },
+  "user_parlay": {
+    "matches": [
+      "009主胜",
+      "011客胜",
+      "010让(+3)胜"
+    ],
+    "results": [
+      "009主胜✅(2-1)",
+      "011客胜❌(1-1平)",
+      "010让(+3)胜❌(1-4让平)"
+    ],
+    "hit": false,
+    "note": "011和010两腿未中"
+  },
+  "key_lessons": [
+    {
+      "id": "L072",
+      "tags": [
+        "残阵反弹",
+        "日职",
+        "规则9a",
+        "lambda过修",
+        "后防全伤"
+      ],
+      "lesson": "水户6人伤停(后防4人+2门将)预测客胜46%但实际4-2主胜——残阵lambda×0.75过修，后防全伤反而激发铁桶+反击战术，lambda应从×0.75上调至×0.85",
+      "action": "规则9a再强化：后防全伤场次lambda下修幅度从×0.75改为×0.82-0.85，并标注'铁桶反弹'风险"
+    },
+    {
+      "id": "L073",
+      "tags": [
+        "大球",
+        "TTG",
+        "规则65",
+        "残阵+对攻",
+        "系统性低估"
+      ],
+      "lesson": "003水户4-2(6球)和010奥斯纳1-4(5球)两场大球全未覆盖——规则65 Tier2给4球档仍不够，残阵场失球多+对攻场进球多大球再+0.2-0.3",
+      "action": "规则65进阶：残阵防线(失球多)+对攻场再+0.2~0.3，≥5球档纳入高阶碾压/失球多防线场"
+    },
+    {
+      "id": "L074",
+      "tags": [
+        "让球推荐",
+        "HAD不一致",
+        "规则FMT-8",
+        "基本面优先"
+      ],
+      "lesson": "009让(-1)胜做首选但HAD主胜仅44%——让球与HAD不自洽，主胜<50%推让胜=追热门，应从基本面出发让负/让平优先",
+      "action": "让球推荐规则：HAD主胜<50%场次，让球首选默认让负/让平，除非碾压级基本面支撑"
+    },
+    {
+      "id": "L075",
+      "tags": [
+        "规则63",
+        "单关",
+        "平局上修",
+        "验证"
+      ],
+      "lesson": "011伯恩利8人残阵+单关+英冠，规则63/57叠加+18%平局首选38%命中1-1——规则63平局上修验证成功",
+      "action": "规则63继续执行，但注意残阵场H2H不败锚点应降权(L029例外不再适用时)"
+    },
+    {
+      "id": "L076",
+      "tags": [
+        "碾压场",
+        "巴甲",
+        "L055验证",
+        "半全场胜胜",
+        "高命中"
+      ],
+      "lesson": "012弗拉门戈vs米拉索尔身价5倍碾压，6维度5中(方向/让球/半全场/比分首选全中)——L055碾压场半全场胜胜首选验证成功，碾压场预测准确率高",
+      "action": "碾压场继续作为串关底仓，L055碾压场半全场TOP1直接给胜胜规则验证有效"
+    },
+    {
+      "id": "L077",
+      "tags": [
+        "巴西杯",
+        "次回合保守",
+        "0球",
+        "TTG低估",
+        "杯赛轮换"
+      ],
+      "lesson": "013桑托斯vs帕梅拉斯巴西杯次回合0-0——帕梅拉斯首回合3-0领先保守轮换导致0球闷平，方向/半全场/半场比分首选全中但TTG预测2球严重高估",
+      "action": "杯赛次回合大比分领先方保守轮换→TTG应大幅下修(×0.5-0.6)，0球档纳入TOP2；方向平局+半全场平平在保守场景下为强锚点"
+    },
+    {
+      "id": "L078",
+      "tags": [
+        "日职",
+        "主场优势",
+        "残阵主胜",
+        "主场加成",
+        "系数上调"
+      ],
+      "lesson": "002大阪6人残阵2-0主胜、003水户6人残阵4-2主胜、004町田2-1主胜——3场日职全部主胜，2场残阵主队爆冷。主场优势系数1.18过低，残阵+客场预测客胜仍被主场覆盖",
+      "action": "日职J1主场优势系数从1.18上调至1.25；日职场次模型预测客胜>45%时需额外走查主场加成，残阵主队不轻易看衰"
+    }
+  ],
+  "parlays": [
+    {
+      "name": "碾压底仓串",
+      "type": "方向串",
+      "matches": ["012主胜", "010客胜/让负"],
+      "results": ["012主胜✅(2-0)", "010让(+3)负❌(实际让平)"],
+      "hit": false,
+      "odds_est": "~2.00",
+      "note": "010让负首选但实际让平，拜仁赢恰好3球"
+    },
+    {
+      "name": "稳健方向串",
+      "type": "方向串",
+      "matches": ["012主胜", "002客胜"],
+      "results": ["012主胜✅(2-0)", "002客胜❌(实际主胜2-0)"],
+      "hit": false,
+      "odds_est": "~2.27",
+      "note": "大阪6人残阵反弹2-0主胜，客胜方向翻车"
+    },
+    {
+      "name": "价值方向串",
+      "type": "方向串",
+      "matches": ["004主胜", "009主胜"],
+      "results": ["004主胜✅(2-1)", "009主胜✅(2-1)"],
+      "hit": true,
+      "odds_est": "~3.07",
+      "note": "两场主胜双双命中"
+    },
+    {
+      "name": "稳健让球串",
+      "type": "让球串",
+      "matches": ["012让(-1)胜", "009让(-1)胜"],
+      "results": ["012让(-1)胜✅(2-0)", "009让(-1)胜❌(实际让平)"],
+      "hit": false,
+      "odds_est": "~3.86",
+      "note": "009主胜2-1净胜1球=让平，让胜未中"
+    },
+    {
+      "name": "价值让球串",
+      "type": "让球串",
+      "matches": ["004让(-1)平", "011让(+1)胜"],
+      "results": ["004让(-1)平✅(2-1)", "011让(+1)胜✅(1-1)"],
+      "hit": true,
+      "odds_est": "~9.67",
+      "note": "004净胜1球=让平，011净胜0球=让胜，双双命中"
+    },
+    {
+      "name": "碾压让球串",
+      "type": "让球串",
+      "matches": ["012让(-1)胜", "010让(+3)负"],
+      "results": ["012让(-1)胜✅(2-0)", "010让(+3)负❌(实际让平)"],
+      "hit": false,
+      "odds_est": "~2.82",
+      "note": "010拜仁赢3球恰好让平，让负未中"
+    },
+    {
+      "name": "半全场串A",
+      "type": "混合串",
+      "matches": ["012胜胜", "010负负"],
+      "results": ["012胜胜✅(2-0)", "010负负✅(1-4)"],
+      "hit": true,
+      "odds_est": "~1.80",
+      "note": "两场碾压场半全场双双命中"
+    },
+    {
+      "name": "半全场串B",
+      "type": "混合串",
+      "matches": ["004胜胜", "002负负"],
+      "results": ["004胜胜❌(实际平胜)", "002负负❌(实际胜胜)"],
+      "hit": false,
+      "odds_est": "~8.84",
+      "note": "两场方向均反，大阪残阵反弹胜胜"
+    },
+    {
+      "name": "方向+半全场A",
+      "type": "混合串",
+      "matches": ["012主胜", "004胜胜"],
+      "results": ["012主胜✅(2-0)", "004胜胜❌(实际平胜)"],
+      "hit": false,
+      "odds_est": "~3.15",
+      "note": "012命中但004半场0-0→平胜非胜胜"
+    },
+    {
+      "name": "方向+半全场B",
+      "type": "混合串",
+      "matches": ["002客胜", "012胜胜"],
+      "results": ["002客胜❌(实际主胜2-0)", "012胜胜✅(2-0)"],
+      "hit": false,
+      "odds_est": "~3.16",
+      "note": "大阪残阵反弹主胜，002客胜方向翻车"
+    },
+    {
+      "name": "总进球串A",
+      "type": "总进球串",
+      "matches": ["010 5球", "003 4球", "012 4球"],
+      "results": ["010 5球✅(次选)", "003 4球❌(实际6球)", "012 4球❌(实际2球)"],
+      "hit": false,
+      "odds_est": "~149.7",
+      "note": "003水户4-2六球大球未覆盖，012碾压后放缓仅2球"
+    },
+    {
+      "name": "总进球串B",
+      "type": "总进球串",
+      "matches": ["004 4球", "002 3球", "009 3球"],
+      "results": ["004 4球❌(实际3球)", "002 3球❌(实际2球)", "009 3球✅"],
+      "hit": false,
+      "odds_est": "~67.7",
+      "note": "仅009命中，004/002均少1球"
+    },
+    {
+      "name": "总进球串C",
+      "type": "总进球串",
+      "matches": ["011 2球", "005 2球", "007 2球"],
+      "results": ["011 2球✅", "005 2球✅", "007 2球❌(实际3球)"],
+      "hit": false,
+      "odds_est": "~47.1",
+      "note": "007米尔沃尔0-3客胜3球超出预期2球"
+    },
+    {
+      "name": "半全场串A",
+      "type": "高赔半全场串",
+      "matches": ["012胜胜", "002负负", "004胜胜"],
+      "results": ["012胜胜✅", "002负负❌(实际胜胜)", "004胜胜❌(实际平胜)"],
+      "hit": false,
+      "odds_est": "~14.2",
+      "note": "仅012命中，002/004方向均反"
+    },
+    {
+      "name": "半全场串B",
+      "type": "高赔半全场串",
+      "matches": ["011平平", "005平平", "007平平"],
+      "results": ["011平平❌(实际负平)", "005平平✅", "007平平❌(实际负负)"],
+      "hit": false,
+      "odds_est": "~161.3",
+      "note": "仅005命中，011半场0-1→负平，007客场负负"
+    },
+    {
+      "name": "半全场串C",
+      "type": "高赔半全场串",
+      "matches": ["008平胜", "013平负", "006平胜"],
+      "results": ["008平胜❌(实际平平)", "013平负❌(实际平平)", "006平胜✅"],
+      "hit": false,
+      "odds_est": "~132.0",
+      "note": "仅006命中，008全场平平，013帕梅轮换0-0"
+    },
+    {
+      "name": "半全场串D(连续编号)",
+      "type": "高赔半全场串",
+      "matches": ["007平平", "008平胜", "009平胜"],
+      "results": ["007平平❌(实际负负)", "008平胜❌(实际平平)", "009平胜❌(实际胜胜)"],
+      "hit": false,
+      "odds_est": "~118.1",
+      "note": "三场英冠半全场全猜反"
+    },
+    {
+      "name": "混合串A",
+      "type": "半全场混合",
+      "matches": ["012胜胜", "003 4球"],
+      "results": ["012胜胜✅", "003 4球❌(实际6球)"],
+      "hit": false,
+      "odds_est": "~10.5",
+      "note": "003水户4-2六球超预测4球"
+    },
+    {
+      "name": "混合串B",
+      "type": "半全场混合",
+      "matches": ["011平平", "010 5球"],
+      "results": ["011平平❌(实际负平)", "010 5球✅(次选)"],
+      "hit": false,
+      "odds_est": "~25.7",
+      "note": "011半场0-1负平而非平平"
+    },
+    {
+      "name": "混合串C",
+      "type": "半全场混合",
+      "matches": ["002负负", "004 4球"],
+      "results": ["002负负❌(实际胜胜)", "004 4球❌(实际3球)"],
+      "hit": false,
+      "odds_est": "~17.2",
+      "note": "大阪残阵反弹胜胜，004仅3球"
+    },
+    {
+      "name": "混合串D",
+      "type": "半全场混合",
+      "matches": ["013平负", "009 3球"],
+      "results": ["013平负❌(实际平平)", "009 3球✅"],
+      "hit": false,
+      "odds_est": "~20.7",
+      "note": "013帕梅轮换0-0平平而非平负"
+    },
+    {
+      "name": "稳健比分串",
+      "type": "比分串",
+      "matches": ["012 2-0", "010 0-3"],
+      "results": ["012 2-0✅", "010 0-3❌(实际1-4)"],
+      "hit": false,
+      "odds_est": "~43.5",
+      "note": "012比分命中但010奥斯纳进1球非0球"
+    },
+    {
+      "name": "混合比分串",
+      "type": "比分串",
+      "matches": ["012 TOP2(2-0/3-0)", "010 TOP2(0-3/0-4)", "003 TOP2(0-2/1-2)"],
+      "results": ["012 2-0✅", "010 0-3/0-4❌(实际1-4)", "003 0-2/1-2❌(实际4-2)"],
+      "hit": false,
+      "odds_est": "~85-315",
+      "note": "仅012比分命中，010/003均不在TOP2"
+    },
+    {
+      "name": "搏冷比分串",
+      "type": "比分串",
+      "matches": ["011 1-1", "008 1-1", "013 1-1"],
+      "results": ["011 1-1✅", "008 1-1✅", "013 1-1❌(实际0-0)"],
+      "hit": false,
+      "odds_est": "~261.3",
+      "note": "013帕梅保守轮换0-0非1-1，差一场"
+    },
+    {
+      "name": "单挑比分①",
+      "type": "比分串",
+      "matches": ["012 2-0"],
+      "results": ["012 2-0✅"],
+      "hit": true,
+      "odds_est": "~6.00",
+      "note": "012弗拉门戈首选比分2-0命中"
+    },
+    {
+      "name": "单挑比分②",
+      "type": "比分串",
+      "matches": ["010 0-3"],
+      "results": ["010 0-3❌(实际1-4)"],
+      "hit": false,
+      "odds_est": "~7.25",
+      "note": "奥斯纳进1球，实际1-4非0-3"
+    }
+  ],
+  "parlay_stats": {
+    "total": 26,
+    "hit": 4,
+    "miss": 22,
+    "rate": 0.154,
+    "by_type": {
+      "方向串": {"total": 3, "hit": 1},
+      "让球串": {"total": 3, "hit": 1},
+      "混合串": {"total": 4, "hit": 1},
+      "总进球串": {"total": 3, "hit": 0},
+      "高赔半全场串": {"total": 4, "hit": 0},
+      "半全场混合": {"total": 4, "hit": 0},
+      "比分串": {"total": 5, "hit": 1}
+    }
+  }
+}

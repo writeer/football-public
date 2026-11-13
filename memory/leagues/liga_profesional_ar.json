@@ -1,0 +1,144 @@
+{
+    "league_info": {
+        "name_cn": "阿根廷职业联赛",
+        "name_en": "Liga Profesional",
+        "country": "阿根廷",
+        "country_code": "AR",
+        "level": "顶级",
+        "num_teams": 28,
+        "format": "单循环，27轮",
+        "season_period": "1月-12月（不跨年）",
+        "is_cross_year": false,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.afa.org.ar",
+        "governing_body": "阿根廷足球协会（AFA）",
+        "cross_league_level": "L3",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.35,
+        "draw_rate": 0.3,
+        "home_win_rate": 0.4,
+        "away_win_rate": 0.3,
+        "over_2_5_rate": 0.42,
+        "under_2_5_rate": 0.58,
+        "btts_rate": 0.45,
+        "top_scores": [
+            {
+                "score": "1-0",
+                "frequency": 0.092,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.088,
+                "direction": "平局"
+            },
+            {
+                "score": "0-0",
+                "frequency": 0.075,
+                "direction": "平局"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.065,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-1",
+                "frequency": 0.058,
+                "direction": "客胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.075,
+            "1_goal": 0.19,
+            "2_goals": 0.28,
+            "3_goals": 0.22,
+            "4_goals": 0.14,
+            "5_plus_goals": 0.095
+        },
+        "avg_home_goals": 1.28,
+        "avg_away_goals": 1.07,
+        "home_advantage_factor": 1.18,
+        "ht_draw_rate": null,
+        "ht_draw_rate_note": "2026-09-12尝试补录：本环境无法取得该联赛'最近完整赛季'的第一手半场数据——thefishy.uk无该联赛半场表、football-data.co.uk扩展文件仅含全场比分(无半场)、Transfermarkt/worldfootball/FootyStats/soccerstats/BetExplorer 均被反爬拦截。按诚实原则置 null，不用估算值。使用时按缺失字段处理（规则66默认中低档0.45系数）。待可访问一手源时补录。",
+        "ht_draw_rate_source": [],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_confidence": "无",
+        "ht_draw_rate_status": "unavailable"
+    },
+    "match_style": {
+        "tactical_character": "防守导向小球联赛。河床和博卡青年的超级德比是世界最激烈的德比之一。经济危机影响俱乐部投入。球迷文化极端热情，比赛情绪化程度高。",
+        "tempo": "中",
+        "physicality": "高",
+        "technical_focus": "中",
+        "var_usage": "VAR使用有限。",
+        "key_trends": [
+            "防守导向小球多",
+            "河床/博卡超级德比",
+            "经济危机影响投入",
+            "球迷极端热情"
+        ],
+        "style_tags": [
+            "防守",
+            "小球",
+            "超级德比",
+            "经济危机"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 4.65,
+        "avg_red_cards": 0.22,
+        "avg_penalties": 0.23,
+        "referee_style": "裁判尺度中等，因比赛情绪化出牌率偏高。",
+        "first_half_stoppage_avg": 2.3,
+        "second_half_stoppage_avg": 5.5,
+        "stoppage_note": "补时偏长，因比赛情绪化。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "2015年低级别假赛案",
+                "year": "2015",
+                "description": "涉及阿根廷低级别联赛的假赛案件，未波及阿超。"
+            }
+        ],
+        "discipline_features": "黄牌累积5张停1场。",
+        "official_rules": "IFAB规则+阿超特别规则。",
+        "integrity_rating": "中"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价阿超'小球多'，'河床博卡德比必看'。彩民认为'小球为主'，'经济危机影响投入'。",
+        "betting_market": {
+            "market_efficiency": "中",
+            "liquidity": "低",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "低",
+        "jingcai_tips": [
+            "小球为主，UNDER 2.5是常规选择",
+            "河床/博卡德比特殊处理",
+            "经济危机影响投入",
+            "平局率偏高",
+            "球迷情绪化导致比赛波动大"
+        ],
+        "common_sayings": [
+            "阿超小球",
+            "河床博卡德比",
+            "经济影响"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    }
+}

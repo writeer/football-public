@@ -1,0 +1,1758 @@
+{
+ "backtest_id": "20260918_friday",
+ "match_date": "2026-09-18",
+ "match_day": "周五",
+ "model_version": "v2.14.0+双轨制",
+ "total_matches": 14,
+ "summary": {
+  "match_count": 14,
+  "total_goals": 44,
+  "goals_per_match": 3.14,
+  "lam_pred_total": 43.8,
+  "lam_pred_per_match": 3.13,
+  "half_time_draws": 5,
+  "half_time_draw_rate": 35.7
+ },
+ "results": [
+  {
+   "num": "周五001",
+   "league": "亚运男足",
+   "home": "沙特阿拉伯亚足",
+   "away": "卡塔尔亚足",
+   "kickoff": "2026-09-18 18:30:00",
+   "gl": -1,
+   "ht": "1-0",
+   "ft": "2-0",
+   "total": 2,
+   "result": "主胜",
+   "odds_had": {
+    "home": 1.42,
+    "draw": 3.95,
+    "away": 5.8
+   },
+   "odds_hhad": {
+    "home": 2.37,
+    "draw": 3.4,
+    "away": 2.42
+   },
+   "had_first": "主胜",
+   "had_first_p": 62.9,
+   "had_second": "平",
+   "had_second_p": 23.3,
+   "had_hit": "✅首",
+   "hhad_first": "让(-1)平",
+   "hhad_second": "让(-1)胜",
+   "hhad_actual": "让胜",
+   "hhad_hit": "✅次",
+   "hhad_best_model": "让胜",
+   "hhad_best_hit": "✅",
+   "ttg_top2": [
+    "2球",
+    "3球"
+   ],
+   "ttg_actual": "2球",
+   "ttg_hit": "✅",
+   "htft_top3": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "htft_actual": "胜胜",
+   "htft_hit": "✅",
+   "score_top5": [
+    "1-0",
+    "2-0",
+    "1-1",
+    "2-1",
+    "3-0"
+   ],
+   "score_actual": "2-0",
+   "score_hit": "✅",
+   "k_dist": 1,
+   "k_rec": 1,
+   "band_consistent": true,
+   "confidence": "★★",
+   "lam": {
+    "home": 1.85,
+    "away": 0.7,
+    "total": 2.55
+   }
+  },
+  {
+   "num": "周五002",
+   "league": "芬超",
+   "home": "赫尔辛基火花",
+   "away": "赫尔辛基",
+   "kickoff": "2026-09-19 00:00:00",
+   "gl": 1,
+   "ht": "1-1",
+   "ft": "1-1",
+   "total": 2,
+   "result": "平",
+   "odds_had": {
+    "home": 3.8,
+    "draw": 3.8,
+    "away": 1.67
+   },
+   "odds_hhad": {
+    "home": 1.92,
+    "draw": 3.65,
+    "away": 2.99
+   },
+   "had_first": "客胜",
+   "had_first_p": 53.6,
+   "had_second": "平",
+   "had_second_p": 24.8,
+   "had_hit": "✅次",
+   "hhad_first": "让(+1)胜",
+   "hhad_second": "让(+1)平",
+   "hhad_actual": "让胜",
+   "hhad_hit": "✅首",
+   "hhad_best_model": "让胜",
+   "hhad_best_hit": "✅",
+   "ttg_top2": [
+    "2球",
+    "3球"
+   ],
+   "ttg_actual": "2球",
+   "ttg_hit": "✅",
+   "htft_top3": [
+    "负负",
+    "平负",
+    "平平"
+   ],
+   "htft_actual": "平平",
+   "htft_hit": "✅",
+   "score_top5": [
+    "1-1",
+    "0-1",
+    "0-2",
+    "1-2",
+    "1-0"
+   ],
+   "score_actual": "1-1",
+   "score_hit": "✅",
+   "k_dist": 0,
+   "k_rec": -1,
+   "band_consistent": false,
+   "confidence": "★★",
+   "lam": {
+    "home": 1.0,
+    "away": 1.75,
+    "total": 2.75
+   }
+  },
+  {
+   "num": "周五003",
+   "league": "德乙",
+   "home": "沃尔夫斯堡",
+   "away": "达姆施塔特",
+   "kickoff": "2026-09-19 00:30:00",
+   "gl": -1,
+   "ht": "2-1",
+   "ft": "5-1",
+   "total": 6,
+   "result": "主胜",
+   "odds_had": {
+    "home": 1.46,
+    "draw": 4.3,
+    "away": 4.72
+   },
+   "odds_hhad": {
+    "home": 2.35,
+    "draw": 3.65,
+    "away": 2.33
+   },
+   "had_first": "主胜",
+   "had_first_p": 67.4,
+   "had_second": "平",
+   "had_second_p": 19.0,
+   "had_hit": "✅首",
+   "hhad_first": "让(-1)平",
+   "hhad_second": "让(-1)胜",
+   "hhad_actual": "让胜",
+   "hhad_hit": "✅次",
+   "hhad_best_model": "让胜",
+   "hhad_best_hit": "✅",
+   "ttg_top2": [
+    "3球",
+    "4球"
+   ],
+   "ttg_actual": "6球",
+   "ttg_hit": "❌",
+   "htft_top3": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "htft_actual": "胜胜",
+   "htft_hit": "✅",
+   "score_top5": [
+    "2-0",
+    "1-0",
+    "2-1",
+    "1-1",
+    "3-0"
+   ],
+   "score_actual": "5-1",
+   "score_hit": "❌",
+   "k_dist": 1,
+   "k_rec": 1,
+   "band_consistent": true,
+   "confidence": "★★",
+   "lam": {
+    "home": 2.35,
+    "away": 0.9,
+    "total": 3.25
+   }
+  },
+  {
+   "num": "周五004",
+   "league": "挪超",
+   "home": "萨尔普斯堡",
+   "away": "奥斯陆KFUM",
+   "kickoff": "2026-09-19 01:00:00",
+   "gl": -1,
+   "ht": "1-2",
+   "ft": "1-3",
+   "total": 4,
+   "result": "客胜",
+   "odds_had": {
+    "home": 1.43,
+    "draw": 4.35,
+    "away": 5
+   },
+   "odds_hhad": {
+    "home": 2.3,
+    "draw": 3.65,
+    "away": 2.38
+   },
+   "had_first": "主胜",
+   "had_first_p": 64.9,
+   "had_second": "平",
+   "had_second_p": 20.4,
+   "had_hit": "❌",
+   "hhad_first": "让(-1)平",
+   "hhad_second": "让(-1)胜",
+   "hhad_actual": "让负",
+   "hhad_hit": "❌",
+   "hhad_best_model": "让胜",
+   "hhad_best_hit": "❌",
+   "ttg_top2": [
+    "2球",
+    "3球"
+   ],
+   "ttg_actual": "4球",
+   "ttg_hit": "❌",
+   "htft_top3": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "htft_actual": "负负",
+   "htft_hit": "❌",
+   "score_top5": [
+    "2-0",
+    "1-0",
+    "1-1",
+    "2-1",
+    "3-0"
+   ],
+   "score_actual": "1-3",
+   "score_hit": "❌",
+   "k_dist": 1,
+   "k_rec": 1,
+   "band_consistent": true,
+   "confidence": "★★",
+   "lam": {
+    "home": 2.2,
+    "away": 0.9,
+    "total": 3.1
+   }
+  },
+  {
+   "num": "周五005",
+   "league": "法乙",
+   "home": "兰斯",
+   "away": "蒙彼利埃",
+   "kickoff": "2026-09-19 02:00:00",
+   "gl": -1,
+   "ht": "1-1",
+   "ft": "1-1",
+   "total": 2,
+   "result": "平",
+   "odds_had": {
+    "home": 1.73,
+    "draw": 3.45,
+    "away": 3.85
+   },
+   "odds_hhad": {
+    "home": 3.3,
+    "draw": 3.55,
+    "away": 1.84
+   },
+   "had_first": "主胜",
+   "had_first_p": 53.6,
+   "had_second": "平",
+   "had_second_p": 25.9,
+   "had_hit": "✅次",
+   "hhad_first": "让(-1)负",
+   "hhad_second": "让(-1)平",
+   "hhad_actual": "让负",
+   "hhad_hit": "✅首",
+   "hhad_best_model": "让负",
+   "hhad_best_hit": "✅",
+   "ttg_top2": [
+    "2球",
+    "3球"
+   ],
+   "ttg_actual": "2球",
+   "ttg_hit": "✅",
+   "htft_top3": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "htft_actual": "平平",
+   "htft_hit": "✅",
+   "score_top5": [
+    "1-0",
+    "1-1",
+    "2-0",
+    "0-0",
+    "0-1"
+   ],
+   "score_actual": "1-1",
+   "score_hit": "✅",
+   "k_dist": 0,
+   "k_rec": 1,
+   "band_consistent": false,
+   "confidence": "★★",
+   "lam": {
+    "home": 1.65,
+    "away": 0.9,
+    "total": 2.55
+   }
+  },
+  {
+   "num": "周五006",
+   "league": "荷甲",
+   "home": "格罗宁根",
+   "away": "兹沃勒",
+   "kickoff": "2026-09-19 02:00:00",
+   "gl": -1,
+   "ht": "2-0",
+   "ft": "3-0",
+   "total": 3,
+   "result": "主胜",
+   "odds_had": {
+    "home": 1.44,
+    "draw": 4.3,
+    "away": 4.95
+   },
+   "odds_hhad": {
+    "home": 2.3,
+    "draw": 3.75,
+    "away": 2.34
+   },
+   "had_first": "主胜",
+   "had_first_p": 60.3,
+   "had_second": "平",
+   "had_second_p": 20.5,
+   "had_hit": "✅首",
+   "hhad_first": "让(-1)平",
+   "hhad_second": "让(-1)负",
+   "hhad_actual": "让胜",
+   "hhad_hit": "❌",
+   "hhad_best_model": "让负",
+   "hhad_best_hit": "❌",
+   "ttg_top2": [
+    "3球",
+    "2球"
+   ],
+   "ttg_actual": "3球",
+   "ttg_hit": "✅",
+   "htft_top3": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "htft_actual": "胜胜",
+   "htft_hit": "✅",
+   "score_top5": [
+    "2-1",
+    "1-1",
+    "2-0",
+    "1-0",
+    "1-2"
+   ],
+   "score_actual": "3-0",
+   "score_hit": "❌",
+   "k_dist": 1,
+   "k_rec": 1,
+   "band_consistent": true,
+   "confidence": "★★★",
+   "lam": {
+    "home": 2.25,
+    "away": 1.15,
+    "total": 3.4
+   }
+  },
+  {
+   "num": "周五007",
+   "league": "荷乙",
+   "home": "登博思",
+   "away": "海尔蒙特",
+   "kickoff": "2026-09-19 02:00:00",
+   "gl": -1,
+   "ht": "2-1",
+   "ft": "2-1",
+   "total": 3,
+   "result": "主胜",
+   "odds_had": {
+    "home": 1.62,
+    "draw": 4.25,
+    "away": 3.62
+   },
+   "odds_hhad": {
+    "home": 2.65,
+    "draw": 3.9,
+    "away": 2.02
+   },
+   "had_first": "主胜",
+   "had_first_p": 54.2,
+   "had_second": "客胜",
+   "had_second_p": 25.4,
+   "had_hit": "✅首",
+   "hhad_first": "让(-1)负",
+   "hhad_second": "让(-1)平",
+   "hhad_actual": "让平",
+   "hhad_hit": "✅次",
+   "hhad_best_model": "让负",
+   "hhad_best_hit": "❌",
+   "ttg_top2": [
+    "3球",
+    "4球"
+   ],
+   "ttg_actual": "3球",
+   "ttg_hit": "✅",
+   "htft_top3": [
+    "胜胜",
+    "平胜",
+    "负负"
+   ],
+   "htft_actual": "胜胜",
+   "htft_hit": "✅",
+   "score_top5": [
+    "2-1",
+    "1-1",
+    "3-1",
+    "2-2",
+    "1-2"
+   ],
+   "score_actual": "2-1",
+   "score_hit": "✅",
+   "k_dist": 0,
+   "k_rec": 1,
+   "band_consistent": false,
+   "confidence": "★",
+   "lam": {
+    "home": 2.3,
+    "away": 1.5,
+    "total": 3.8
+   }
+  },
+  {
+   "num": "周五008",
+   "league": "德甲",
+   "home": "拜仁慕尼黑",
+   "away": "柏林联合",
+   "kickoff": "2026-09-19 02:30:00",
+   "gl": -3,
+   "ht": "3-0",
+   "ft": "7-0",
+   "total": 7,
+   "result": "主胜",
+   "odds_had": null,
+   "odds_hhad": {
+    "home": 1.88,
+    "draw": 5.05,
+    "away": 2.5
+   },
+   "had_first": "主胜",
+   "had_first_p": 86.2,
+   "had_second": "平",
+   "had_second_p": 7.3,
+   "had_hit": "✅首",
+   "hhad_first": "让(-3)平",
+   "hhad_second": "让(-3)胜",
+   "hhad_actual": "让胜",
+   "hhad_hit": "✅次",
+   "hhad_best_model": "让胜",
+   "hhad_best_hit": "✅",
+   "ttg_top2": [
+    "5球",
+    "6球"
+   ],
+   "ttg_actual": "7球",
+   "ttg_hit": "❌",
+   "htft_top3": [
+    "胜胜",
+    "平胜",
+    "负胜"
+   ],
+   "htft_actual": "胜胜",
+   "htft_hit": "✅",
+   "score_top5": [
+    "4-1",
+    "5-1",
+    "4-0",
+    "5-0",
+    "3-0"
+   ],
+   "score_actual": "7-0",
+   "score_hit": "❌",
+   "k_dist": 3,
+   "k_rec": 3,
+   "band_consistent": true,
+   "confidence": "★★",
+   "lam": {
+    "home": 4.9,
+    "away": 1.2,
+    "total": 6.1
+   }
+  },
+  {
+   "num": "周五009",
+   "league": "意甲",
+   "home": "蒙扎",
+   "away": "萨索洛",
+   "kickoff": "2026-09-19 02:45:00",
+   "gl": 1,
+   "ht": "0-0",
+   "ft": "2-1",
+   "total": 3,
+   "result": "主胜",
+   "odds_had": {
+    "home": 2.75,
+    "draw": 3.22,
+    "away": 2.2
+   },
+   "odds_hhad": {
+    "home": 1.5,
+    "draw": 3.9,
+    "away": 4.85
+   },
+   "had_first": "客胜",
+   "had_first_p": 46.4,
+   "had_second": "平",
+   "had_second_p": 27.8,
+   "had_hit": "❌",
+   "hhad_first": "让(+1)胜",
+   "hhad_second": "让(+1)平",
+   "hhad_actual": "让胜",
+   "hhad_hit": "✅首",
+   "hhad_best_model": "让胜",
+   "hhad_best_hit": "✅",
+   "ttg_top2": [
+    "2球",
+    "3球"
+   ],
+   "ttg_actual": "3球",
+   "ttg_hit": "✅",
+   "htft_top3": [
+    "负负",
+    "平负",
+    "平平"
+   ],
+   "htft_actual": "平胜",
+   "htft_hit": "❌",
+   "score_top5": [
+    "1-1",
+    "0-1",
+    "0-0",
+    "0-2",
+    "1-0"
+   ],
+   "score_actual": "2-1",
+   "score_hit": "❌",
+   "k_dist": 0,
+   "k_rec": -1,
+   "band_consistent": false,
+   "confidence": "★",
+   "lam": {
+    "home": 1.0,
+    "away": 1.45,
+    "total": 2.45
+   }
+  },
+  {
+   "num": "周五010",
+   "league": "法甲",
+   "home": "摩纳哥",
+   "away": "朗斯",
+   "kickoff": "2026-09-19 02:45:00",
+   "gl": -1,
+   "ht": "1-0",
+   "ft": "2-1",
+   "total": 3,
+   "result": "主胜",
+   "odds_had": {
+    "home": 1.89,
+    "draw": 3.57,
+    "away": 3.12
+   },
+   "odds_hhad": {
+    "home": 3.47,
+    "draw": 3.85,
+    "away": 1.72
+   },
+   "had_first": "主胜",
+   "had_first_p": 41.5,
+   "had_second": "平",
+   "had_second_p": 37.7,
+   "had_hit": "✅首",
+   "hhad_first": "让(-1)负",
+   "hhad_second": "让(-1)平",
+   "hhad_actual": "让平",
+   "hhad_hit": "✅次",
+   "hhad_best_model": "让负",
+   "hhad_best_hit": "❌",
+   "ttg_top2": [
+    "2球",
+    "3球"
+   ],
+   "ttg_actual": "3球",
+   "ttg_hit": "✅",
+   "htft_top3": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "htft_actual": "胜胜",
+   "htft_hit": "✅",
+   "score_top5": [
+    "1-1",
+    "1-0",
+    "2-1",
+    "2-0",
+    "0-1"
+   ],
+   "score_actual": "2-1",
+   "score_hit": "✅",
+   "k_dist": 0,
+   "k_rec": 1,
+   "band_consistent": false,
+   "confidence": "★",
+   "lam": {
+    "home": 1.75,
+    "away": 1.15,
+    "total": 2.9
+   }
+  },
+  {
+   "num": "周五011",
+   "league": "英超",
+   "home": "布伦特福德",
+   "away": "切尔西",
+   "kickoff": "2026-09-19 03:00:00",
+   "gl": 1,
+   "ht": "0-0",
+   "ft": "3-0",
+   "total": 3,
+   "result": "主胜",
+   "odds_had": {
+    "home": 2.65,
+    "draw": 3.58,
+    "away": 2.12
+   },
+   "odds_hhad": {
+    "home": 1.54,
+    "draw": 4.05,
+    "away": 4.28
+   },
+   "had_first": "客胜",
+   "had_first_p": 39.9,
+   "had_second": "平",
+   "had_second_p": 35.6,
+   "had_hit": "❌",
+   "hhad_first": "让(+1)胜",
+   "hhad_second": "让(+1)平",
+   "hhad_actual": "让胜",
+   "hhad_hit": "✅首",
+   "hhad_best_model": "让胜",
+   "hhad_best_hit": "✅",
+   "ttg_top2": [
+    "2球",
+    "3球"
+   ],
+   "ttg_actual": "3球",
+   "ttg_hit": "✅",
+   "htft_top3": [
+    "负负",
+    "胜胜",
+    "平负"
+   ],
+   "htft_actual": "平胜",
+   "htft_hit": "❌",
+   "score_top5": [
+    "1-1",
+    "1-2",
+    "0-1",
+    "2-1",
+    "1-0"
+   ],
+   "score_actual": "3-0",
+   "score_hit": "❌",
+   "k_dist": 0,
+   "k_rec": -1,
+   "band_consistent": false,
+   "confidence": "★",
+   "lam": {
+    "home": 1.35,
+    "away": 1.55,
+    "total": 2.9
+   }
+  },
+  {
+   "num": "周五012",
+   "league": "英冠",
+   "home": "布里斯托尔城",
+   "away": "沃特福德",
+   "kickoff": "2026-09-19 03:00:00",
+   "gl": -1,
+   "ht": "1-0",
+   "ft": "1-0",
+   "total": 1,
+   "result": "主胜",
+   "odds_had": {
+    "home": 1.74,
+    "draw": 3.46,
+    "away": 3.76
+   },
+   "odds_hhad": {
+    "home": 3.25,
+    "draw": 3.55,
+    "away": 1.85
+   },
+   "had_first": "主胜",
+   "had_first_p": 51.2,
+   "had_second": "平",
+   "had_second_p": 27.0,
+   "had_hit": "✅首",
+   "hhad_first": "让(-1)负",
+   "hhad_second": "让(-1)平",
+   "hhad_actual": "让平",
+   "hhad_hit": "✅次",
+   "hhad_best_model": "让负",
+   "hhad_best_hit": "❌",
+   "ttg_top2": [
+    "2球",
+    "3球"
+   ],
+   "ttg_actual": "1球",
+   "ttg_hit": "❌",
+   "htft_top3": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "htft_actual": "胜胜",
+   "htft_hit": "✅",
+   "score_top5": [
+    "1-0",
+    "1-1",
+    "0-0",
+    "2-0",
+    "0-1"
+   ],
+   "score_actual": "1-0",
+   "score_hit": "✅",
+   "k_dist": 0,
+   "k_rec": 1,
+   "band_consistent": false,
+   "confidence": "★",
+   "lam": {
+    "home": 1.55,
+    "away": 0.9,
+    "total": 2.45
+   }
+  },
+  {
+   "num": "周五013",
+   "league": "西甲",
+   "home": "西班牙人",
+   "away": "埃尔切",
+   "kickoff": "2026-09-19 03:00:00",
+   "gl": -1,
+   "ht": "0-2",
+   "ft": "1-3",
+   "total": 4,
+   "result": "客胜",
+   "odds_had": {
+    "home": 1.62,
+    "draw": 3.55,
+    "away": 4.35
+   },
+   "odds_hhad": {
+    "home": 3,
+    "draw": 3.43,
+    "away": 1.98
+   },
+   "had_first": "主胜",
+   "had_first_p": 58.3,
+   "had_second": "平",
+   "had_second_p": 24.7,
+   "had_hit": "❌",
+   "hhad_first": "让(-1)负",
+   "hhad_second": "让(-1)平",
+   "hhad_actual": "让负",
+   "hhad_hit": "✅首",
+   "hhad_best_model": "让负",
+   "hhad_best_hit": "✅",
+   "ttg_top2": [
+    "2球",
+    "3球"
+   ],
+   "ttg_actual": "4球",
+   "ttg_hit": "❌",
+   "htft_top3": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "htft_actual": "负负",
+   "htft_hit": "❌",
+   "score_top5": [
+    "1-0",
+    "2-0",
+    "1-1",
+    "0-0",
+    "0-1"
+   ],
+   "score_actual": "1-3",
+   "score_hit": "❌",
+   "k_dist": 0,
+   "k_rec": 1,
+   "band_consistent": false,
+   "confidence": "★★",
+   "lam": {
+    "home": 1.75,
+    "away": 0.8,
+    "total": 2.55
+   }
+  },
+  {
+   "num": "周五014",
+   "league": "美职",
+   "home": "纽约城",
+   "away": "纽约红牛",
+   "kickoff": "2026-09-19 07:30:00",
+   "gl": -1,
+   "ht": "0-0",
+   "ft": "0-1",
+   "total": 1,
+   "result": "客胜",
+   "odds_had": {
+    "home": 1.72,
+    "draw": 3.78,
+    "away": 3.53
+   },
+   "odds_hhad": {
+    "home": 3.02,
+    "draw": 3.75,
+    "away": 1.88
+   },
+   "had_first": "主胜",
+   "had_first_p": 51.3,
+   "had_second": "客胜",
+   "had_second_p": 24.9,
+   "had_hit": "✅次",
+   "hhad_first": "让(-1)负",
+   "hhad_second": "让(-1)平",
+   "hhad_actual": "让负",
+   "hhad_hit": "✅首",
+   "hhad_best_model": "让负",
+   "hhad_best_hit": "✅",
+   "ttg_top2": [
+    "2球",
+    "3球"
+   ],
+   "ttg_actual": "1球",
+   "ttg_hit": "❌",
+   "htft_top3": [
+    "胜胜",
+    "平胜",
+    "负负"
+   ],
+   "htft_actual": "平负",
+   "htft_hit": "❌",
+   "score_top5": [
+    "1-1",
+    "2-1",
+    "1-0",
+    "2-0",
+    "1-2"
+   ],
+   "score_actual": "0-1",
+   "score_hit": "❌",
+   "k_dist": 0,
+   "k_rec": 1,
+   "band_consistent": false,
+   "confidence": "★★",
+   "lam": {
+    "home": 1.85,
+    "away": 1.2,
+    "total": 3.05
+   }
+  }
+ ],
+ "hit_rates": {
+  "direction_any": [
+   10,
+   71.4
+  ],
+  "direction_first": [
+   7,
+   50.0
+  ],
+  "hhandicap_any": [
+   12,
+   85.7
+  ],
+  "hhandicap_first": [
+   6,
+   42.9
+  ],
+  "hhandicap_best_model": [
+   9,
+   64.3
+  ],
+  "ttg_top2": [
+   8,
+   57.1
+  ],
+  "htft_top3": [
+   9,
+   64.3
+  ],
+  "score_top5": [
+   6,
+   42.9
+  ]
+ },
+ "parlays": [
+  {
+   "name": "方向串A（低赔三串一）",
+   "type": "方向串",
+   "odds_est": 4.06,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五006",
+     "play": "主胜",
+     "pred": "主胜",
+     "actual": "主胜",
+     "ok": true
+    },
+    {
+     "num": "周五013",
+     "play": "主胜",
+     "pred": "主胜",
+     "actual": "客胜",
+     "ok": false
+    },
+    {
+     "num": "周五012",
+     "play": "主胜",
+     "pred": "主胜",
+     "actual": "主胜",
+     "ok": true
+    }
+   ],
+   "note": "",
+   "results": "周五006主胜(✅主胜) + 周五013主胜(❌客胜) + 周五012主胜(✅主胜)"
+  },
+  {
+   "name": "方向串B（稳健二串一）",
+   "type": "方向串",
+   "odds_est": 2.46,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五004",
+     "play": "主胜",
+     "pred": "主胜",
+     "actual": "客胜",
+     "ok": false
+    },
+    {
+     "num": "周五014",
+     "play": "主胜",
+     "pred": "主胜",
+     "actual": "客胜",
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五004主胜(❌客胜) + 周五014主胜(❌客胜)"
+  },
+  {
+   "name": "方向串C（价值三串一）",
+   "type": "方向串",
+   "odds_est": 5.06,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五001",
+     "play": "主胜",
+     "pred": "主胜",
+     "actual": "主胜",
+     "ok": true
+    },
+    {
+     "num": "周五007",
+     "play": "主胜",
+     "pred": "主胜",
+     "actual": "主胜",
+     "ok": true
+    },
+    {
+     "num": "周五009",
+     "play": "客胜",
+     "pred": "客胜",
+     "actual": "主胜",
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五001主胜(✅主胜) + 周五007主胜(✅主胜) + 周五009客胜(❌主胜)"
+  },
+  {
+   "name": "稳健让球串",
+   "type": "让球串",
+   "odds_est": 2.31,
+   "hit": true,
+   "matches": [
+    {
+     "num": "周五011",
+     "play": "让(+1)胜",
+     "pred": "让(+1)胜",
+     "actual": "让胜",
+     "ok": true
+    },
+    {
+     "num": "周五009",
+     "play": "让(+1)胜",
+     "pred": "让(+1)胜",
+     "actual": "让胜",
+     "ok": true
+    }
+   ],
+   "note": "",
+   "results": "周五011让(+1)胜(✅让胜) + 周五009让(+1)胜(✅让胜)"
+  },
+  {
+   "name": "价值让球串",
+   "type": "让球串",
+   "odds_est": 8.51,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五010",
+     "play": "让(-1)负",
+     "pred": "让(-1)负",
+     "actual": "让平",
+     "ok": false
+    },
+    {
+     "num": "周五013",
+     "play": "让(-1)负",
+     "pred": "让(-1)负",
+     "actual": "让负",
+     "ok": true
+    },
+    {
+     "num": "周五008",
+     "play": "让(-3)负",
+     "pred": "让(-3)负",
+     "actual": "让胜",
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五010让(-1)负(❌让平) + 周五013让(-1)负(✅让负) + 周五008让(-3)负(❌让胜)"
+  },
+  {
+   "name": "半全场串A",
+   "type": "混合串",
+   "odds_est": 51.7,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五001",
+     "play": "胜胜",
+     "pred": "胜胜",
+     "actual": "胜胜",
+     "ok": true
+    },
+    {
+     "num": "周五002",
+     "play": "平负",
+     "pred": "平负",
+     "actual": "平平",
+     "ok": false
+    },
+    {
+     "num": "周五004",
+     "play": "平胜",
+     "pred": "平胜",
+     "actual": "负负",
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五001胜胜(✅胜胜) + 周五002平负(❌平平) + 周五004平胜(❌负负)"
+  },
+  {
+   "name": "半全场串B",
+   "type": "混合串",
+   "odds_est": 60.83,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五003",
+     "play": "胜胜",
+     "pred": "胜胜",
+     "actual": "胜胜",
+     "ok": true
+    },
+    {
+     "num": "周五007",
+     "play": "平胜",
+     "pred": "平胜",
+     "actual": "胜胜",
+     "ok": false
+    },
+    {
+     "num": "周五012",
+     "play": "平平",
+     "pred": "平平",
+     "actual": "胜胜",
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五003胜胜(✅胜胜) + 周五007平胜(❌胜胜) + 周五012平平(❌胜胜)"
+  },
+  {
+   "name": "方向+半全场A",
+   "type": "混合串",
+   "odds_est": 5.72,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五011",
+     "play": "客胜",
+     "pred": "客胜",
+     "actual": "主胜",
+     "ok": false
+    },
+    {
+     "num": "周五013",
+     "play": "胜胜",
+     "pred": "胜胜",
+     "actual": "负负",
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五011客胜(❌主胜) + 周五013胜胜(❌负负)"
+  },
+  {
+   "name": "方向+半全场B",
+   "type": "混合串",
+   "odds_est": 5.61,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五001",
+     "play": "主胜",
+     "pred": "主胜",
+     "actual": "主胜",
+     "ok": true
+    },
+    {
+     "num": "周五009",
+     "play": "负负",
+     "pred": "负负",
+     "actual": "平胜",
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五001主胜(✅主胜) + 周五009负负(❌平胜)"
+  },
+  {
+   "name": "连续编号混合串A",
+   "type": "混合串",
+   "odds_est": 18.92,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五001",
+     "play": "平胜",
+     "pred": "平胜",
+     "actual": "胜胜",
+     "ok": false
+    },
+    {
+     "num": "周五002",
+     "play": "总进球2球",
+     "pred": "2球",
+     "actual": 2,
+     "ok": true
+    }
+   ],
+   "note": "",
+   "results": "周五001平胜(❌胜胜) + 周五0022球(✅2)"
+  },
+  {
+   "name": "连续编号混合串B",
+   "type": "混合串",
+   "odds_est": 7.77,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五003",
+     "play": "总进球3球",
+     "pred": "3球",
+     "actual": 6,
+     "ok": false
+    },
+    {
+     "num": "周五004",
+     "play": "胜胜",
+     "pred": "胜胜",
+     "actual": "负负",
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五0033球(❌6) + 周五004胜胜(❌负负)"
+  },
+  {
+   "name": "总进球串A",
+   "type": "总进球串",
+   "odds_est": 51.15,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五001",
+     "play": "2球",
+     "pred": "2球",
+     "actual": 2,
+     "ok": true
+    },
+    {
+     "num": "周五006",
+     "play": "3球",
+     "pred": "3球",
+     "actual": 3,
+     "ok": true
+    },
+    {
+     "num": "周五013",
+     "play": "2球",
+     "pred": "2球",
+     "actual": 4,
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五0012球(✅2) + 周五0063球(✅3) + 周五0132球(❌4)"
+  },
+  {
+   "name": "总进球串B",
+   "type": "总进球串",
+   "odds_est": 58.87,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五003",
+     "play": "3球",
+     "pred": "3球",
+     "actual": 6,
+     "ok": false
+    },
+    {
+     "num": "周五007",
+     "play": "4球",
+     "pred": "4球",
+     "actual": 3,
+     "ok": false
+    },
+    {
+     "num": "周五014",
+     "play": "3球",
+     "pred": "3球",
+     "actual": 1,
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五0033球(❌6) + 周五0074球(❌3) + 周五0143球(❌1)"
+  },
+  {
+   "name": "连续编号总进球串①",
+   "type": "总进球串",
+   "odds_est": 13.51,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五001",
+     "play": "2球",
+     "pred": "2球",
+     "actual": 2,
+     "ok": true
+    },
+    {
+     "num": "周五002",
+     "play": "3球",
+     "pred": "3球",
+     "actual": 2,
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五0012球(✅2) + 周五0023球(❌2)"
+  },
+  {
+   "name": "连续编号总进球串②",
+   "type": "总进球串",
+   "odds_est": 12.78,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五004",
+     "play": "3球",
+     "pred": "3球",
+     "actual": 4,
+     "ok": false
+    },
+    {
+     "num": "周五005",
+     "play": "2球",
+     "pred": "2球",
+     "actual": 2,
+     "ok": true
+    }
+   ],
+   "note": "",
+   "results": "周五0043球(❌4) + 周五0052球(✅2)"
+  },
+  {
+   "name": "高赔半全场串A",
+   "type": "高赔半全场串",
+   "odds_est": 67.76,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五005",
+     "play": "平胜",
+     "pred": "平胜",
+     "actual": "平平",
+     "ok": false
+    },
+    {
+     "num": "周五009",
+     "play": "平负",
+     "pred": "平负",
+     "actual": "平胜",
+     "ok": false
+    },
+    {
+     "num": "周五012",
+     "play": "胜胜",
+     "pred": "胜胜",
+     "actual": "胜胜",
+     "ok": true
+    }
+   ],
+   "note": "",
+   "results": "周五005平胜(❌平平) + 周五009平负(❌平胜) + 周五012胜胜(✅胜胜)"
+  },
+  {
+   "name": "高赔半全场串B",
+   "type": "高赔半全场串",
+   "odds_est": 65.8,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五002",
+     "play": "平负",
+     "pred": "平负",
+     "actual": "平平",
+     "ok": false
+    },
+    {
+     "num": "周五006",
+     "play": "平胜",
+     "pred": "平胜",
+     "actual": "胜胜",
+     "ok": false
+    },
+    {
+     "num": "周五014",
+     "play": "胜胜",
+     "pred": "胜胜",
+     "actual": "平负",
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五002平负(❌平平) + 周五006平胜(❌胜胜) + 周五014胜胜(❌平负)"
+  },
+  {
+   "name": "连续编号高赔半全场串①",
+   "type": "高赔半全场串",
+   "odds_est": 9.24,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五005",
+     "play": "平胜",
+     "pred": "平胜",
+     "actual": "平平",
+     "ok": false
+    },
+    {
+     "num": "周五006",
+     "play": "胜胜",
+     "pred": "胜胜",
+     "actual": "胜胜",
+     "ok": true
+    }
+   ],
+   "note": "",
+   "results": "周五005平胜(❌平平) + 周五006胜胜(✅胜胜)"
+  },
+  {
+   "name": "连续编号高赔半全场串②",
+   "type": "高赔半全场串",
+   "odds_est": 5.87,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五007",
+     "play": "平胜",
+     "pred": "平胜",
+     "actual": "胜胜",
+     "ok": false
+    },
+    {
+     "num": "周五008",
+     "play": "胜胜",
+     "pred": "胜胜",
+     "actual": "胜胜",
+     "ok": true
+    }
+   ],
+   "note": "",
+   "results": "周五007平胜(❌胜胜) + 周五008胜胜(✅胜胜)"
+  },
+  {
+   "name": "混合串A",
+   "type": "半全场混合",
+   "odds_est": 19.58,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五005",
+     "play": "平胜",
+     "pred": "平胜",
+     "actual": "平平",
+     "ok": false
+    },
+    {
+     "num": "周五011",
+     "play": "总进球2球",
+     "pred": "2球",
+     "actual": 3,
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五005平胜(❌平平) + 周五0112球(❌3)"
+  },
+  {
+   "name": "混合串B",
+   "type": "半全场混合",
+   "odds_est": 17.78,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五009",
+     "play": "负负",
+     "pred": "负负",
+     "actual": "平胜",
+     "ok": false
+    },
+    {
+     "num": "周五014",
+     "play": "总进球2球",
+     "pred": "2球",
+     "actual": 1,
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五009负负(❌平胜) + 周五0142球(❌1)"
+  },
+  {
+   "name": "连续编号混合总进球串①",
+   "type": "半全场混合",
+   "odds_est": 21.6,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五011",
+     "play": "平负",
+     "pred": "平负",
+     "actual": "平胜",
+     "ok": false
+    },
+    {
+     "num": "周五012",
+     "play": "总进球2球",
+     "pred": "2球",
+     "actual": 1,
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五011平负(❌平胜) + 周五0122球(❌1)"
+  },
+  {
+   "name": "连续编号混合总进球串②",
+   "type": "半全场混合",
+   "odds_est": 20.48,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五013",
+     "play": "平胜",
+     "pred": "平胜",
+     "actual": "负负",
+     "ok": false
+    },
+    {
+     "num": "周五014",
+     "play": "总进球2球",
+     "pred": "2球",
+     "actual": 1,
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五013平胜(❌负负) + 周五0142球(❌1)"
+  },
+  {
+   "name": "稳健比分串",
+   "type": "比分串",
+   "odds_est": 825.0,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五001",
+     "play": "1-0",
+     "pred": "1-0",
+     "actual": "2-0",
+     "ok": false
+    },
+    {
+     "num": "周五003",
+     "play": "1-0",
+     "pred": "1-0",
+     "actual": "5-1",
+     "ok": false
+    },
+    {
+     "num": "周五004",
+     "play": "1-0",
+     "pred": "1-0",
+     "actual": "1-3",
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五0011-0(❌2-0) + 周五0031-0(❌5-1) + 周五0041-0(❌1-3)"
+  },
+  {
+   "name": "搏冷比分串（反向推理·4注）",
+   "type": "比分串",
+   "odds_est": 182.0,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五009",
+     "play": "蒙扎主胜2-1/2-0",
+     "pred": "2-1/2-0",
+     "actual": "2-1",
+     "ok": false
+    },
+    {
+     "num": "周五012",
+     "play": "沃特福德客胜1-2/0-1",
+     "pred": "1-2/0-1",
+     "actual": "1-0",
+     "ok": false
+    }
+   ],
+   "note": "009 的 2-1 命中，但 012 两注（1-2/0-1）均未中，4 注全灭",
+   "results": "周五0092-1/2-0(❌2-1) + 周五0121-2/0-1(❌1-0)"
+  },
+  {
+   "name": "连续编号比分串①",
+   "type": "比分串",
+   "odds_est": 110.0,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五003",
+     "play": "1-0",
+     "pred": "1-0",
+     "actual": "5-1",
+     "ok": false
+    },
+    {
+     "num": "周五004",
+     "play": "1-0",
+     "pred": "1-0",
+     "actual": "1-3",
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五0031-0(❌5-1) + 周五0041-0(❌1-3)"
+  },
+  {
+   "name": "连续编号比分串②",
+   "type": "比分串",
+   "odds_est": 82.5,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五006",
+     "play": "2-1",
+     "pred": "2-1",
+     "actual": "3-0",
+     "ok": false
+    },
+    {
+     "num": "周五008",
+     "play": "4-1",
+     "pred": "4-1",
+     "actual": "7-0",
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五0062-1(❌3-0) + 周五0084-1(❌7-0)"
+  },
+  {
+   "name": "单挑比分①",
+   "type": "比分串",
+   "odds_est": 11.0,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五003",
+     "play": "沃尔夫斯堡1-0",
+     "pred": "1-0",
+     "actual": "5-1",
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五0031-0(❌5-1)"
+  },
+  {
+   "name": "单挑比分②",
+   "type": "比分串",
+   "odds_est": 10.0,
+   "hit": false,
+   "matches": [
+    {
+     "num": "周五004",
+     "play": "萨尔普斯堡1-0",
+     "pred": "1-0",
+     "actual": "1-3",
+     "ok": false
+    }
+   ],
+   "note": "",
+   "results": "周五0041-0(❌1-3)"
+  }
+ ],
+ "parlay_stats": {
+  "total": 29,
+  "hit": 1,
+  "rate": 3.4,
+  "stable_total": 11,
+  "stable_hit": 1,
+  "stable_rate": 9.1,
+  "ent_total": 18,
+  "ent_hit": 0,
+  "ent_rate": 0.0,
+  "by_type": {
+   "方向串": {
+    "hit": 0,
+    "total": 3,
+    "rate": 0.0
+   },
+   "让球串": {
+    "hit": 1,
+    "total": 2,
+    "rate": 50.0
+   },
+   "混合串": {
+    "hit": 0,
+    "total": 6,
+    "rate": 0.0
+   },
+   "总进球串": {
+    "hit": 0,
+    "total": 4,
+    "rate": 0.0
+   },
+   "高赔半全场串": {
+    "hit": 0,
+    "total": 4,
+    "rate": 0.0
+   },
+   "半全场混合": {
+    "hit": 0,
+    "total": 4,
+    "rate": 0.0
+   },
+   "比分串": {
+    "hit": 0,
+    "total": 6,
+    "rate": 0.0
+   }
+  }
+ },
+ "key_lessons": [
+  "L134：让球「让平首选」连续第四轮被证伪——首选0/5（001/003/004/006/008），让平进入次选且实际开出让平的3场（007/010/012）3/3全中；改取「让球盘概率最高方向」本轮首选可达9/14=64.3%（vs 现行6/14=42.9%）",
+  "L135：规则68在英超只执行了一半致011翻车——只执行「主场系数下调（主胜-4pp）」、未执行「弱队状态好→攻击λ上修10~20%」，叠加单关平局上修后主胜被压至第三位，实际布伦特福德3-0切尔西",
+  "L136：残阵战意反弹（规则9a）未执行——009蒙扎中轴5人伤停却被单向下修攻击λ 0.15，实际2-1取胜；伤停修正须对「保级/帅位压力下的主场残阵」增设分支判断",
+  "L137：碾压场上修幅度不足＋净胜球锚点单一化——003（λ 3.25→实际6球）、006（锚点+1→实际+3）、008（λ 6.10→实际7球）三场比分TOP5全失，规则67对碾压场应允许跨带扩展",
+  "L138：娱乐串连续第五轮全灭（累计0/76）——建议方案数由18减半至9而非整体取消",
+  "L139：半场路径是半全场玩法瓶颈——实际半场平局率35.7%（5/14），建议半场λ系数下调一档并对「平X路径」加权"
+ ],
+ "source_files": [
+  "e:\\VibeCoding\\football\\reports\\data\\20260918_friday_predictions.json",
+  "e:\\VibeCoding\\football\\reports\\analysis\\20260918_friday_analysis_zhihu.md"
+ ]
+}

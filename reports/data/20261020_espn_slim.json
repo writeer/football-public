@@ -1,0 +1,14 @@
+﻿{
+  "success": true,
+  "server": "mcp-sports-hub",
+  "tool": "espn_get_scoreboard",
+  "args": {
+    "sport": "soccer",
+    "league": "uefa.champions",
+    "dates": "20261020",
+    "limit": 40,
+    "fields": "events.id,events.date,events.name,events.competitions.competitors.team.displayName,events.competitions.status.type.detail"
+  },
+  "ms": 3959,
+  "data": "No field matched [\"events.id\",\"events.date\",\"events.name\",\"events.competitions.competitors.team.displayName\",\"events.competitions.status.type.detail\"] in the espn_get_scoreboard response. Top-level keys available: leagues, events, provider. Re-run without \"fields\" to inspect the shape, then narrow."
+}

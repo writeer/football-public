@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周三体彩10场 足球全方位分析 | 2026-07-22</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif; background: #0f1923; color: #e8eaed; line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+/* Header */
+.header { text-align: center; padding: 30px 0; border-bottom: 2px solid #1e3a5f; margin-bottom: 30px; }
+.header h1 { font-size: 2em; color: #00d4ff; text-shadow: 0 0 20px rgba(0,212,255,0.3); }
+.header .subtitle { color: #8899aa; margin-top: 8px; font-size: 1em; }
+.header .timestamp { color: #556677; font-size: 0.85em; margin-top: 5px; }
+
+/* Summary Cards */
+.summary-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; margin-bottom: 30px; }
+.summary-card { background: linear-gradient(135deg, #1a2a3a, #1e3a5f); border-radius: 12px; padding: 18px; border-left: 4px solid #00d4ff; cursor: pointer; transition: all 0.3s; }
+.summary-card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,212,255,0.15); border-left-color: #ff6b6b; }
+.summary-card .match-id { color: #ff6b6b; font-weight: bold; font-size: 0.85em; }
+.summary-card .match-title { font-size: 1.1em; font-weight: bold; margin: 5px 0; }
+.summary-card .match-meta { color: #8899aa; font-size: 0.85em; }
+.summary-card .recommendation { margin-top: 10px; padding: 8px 12px; background: rgba(0,0,0,0.3); border-radius: 8px; font-weight: bold; }
+.summary-card .recommendation.high { color: #ff6b6b; border: 1px solid rgba(255,107,107,0.3); }
+.summary-card .recommendation.medium { color: #f39c12; border: 1px solid rgba(243,156,18,0.3); }
+.summary-card .recommendation.low { color: #3498db; border: 1px solid rgba(52,152,219,0.3); }
+
+/* Match Detail */
+.match-detail { background: #1a2a3a; border-radius: 16px; padding: 25px; margin-bottom: 25px; border: 1px solid #2a3a4a; }
+.match-detail h2 { font-size: 1.5em; color: #00d4ff; border-bottom: 1px solid #2a3a4a; padding-bottom: 10px; margin-bottom: 20px; }
+.match-detail h3 { font-size: 1.15em; color: #f39c12; margin: 18px 0 10px; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; margin: 10px 0 18px 0; font-size: 0.9em; }
+th { background: #0d1b2a; color: #00d4ff; padding: 10px 12px; text-align: center; font-weight: 600; }
+td { padding: 8px 12px; text-align: center; border-bottom: 1px solid #2a3a4a; }
+tr:hover td { background: rgba(0,212,255,0.05); }
+
+/* Badges */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 0.8em; font-weight: bold; }
+.badge-high { background: rgba(231,76,60,0.2); color: #e74c3c; border: 1px solid rgba(231,76,60,0.4); }
+.badge-medium { background: rgba(243,156,18,0.2); color: #f39c12; border: 1px solid rgba(243,156,18,0.4); }
+.badge-low { background: rgba(52,152,219,0.2); color: #3498db; border: 1px solid rgba(52,152,219,0.4); }
+.badge-verylow { background: rgba(149,165,166,0.2); color: #95a5a6; border: 1px solid rgba(149,165,166,0.4); }
+
+/* Info boxes */
+.info-box { background: rgba(0,0,0,0.2); border-radius: 10px; padding: 15px; margin: 10px 0; border-left: 3px solid #f39c12; }
+.info-box.warning { border-left-color: #e74c3c; }
+.info-box.success { border-left-color: #2ecc71; }
+
+/* Score bars */
+.score-bar { display: flex; align-items: center; margin: 4px 0; }
+.score-label { width: 50px; font-weight: bold; font-size: 0.9em; }
+.score-bar-track { flex: 1; background: #0d1b2a; border-radius: 5px; height: 20px; overflow: hidden; }
+.score-bar-fill { height: 100%; border-radius: 5px; transition: width 0.3s; }
+.score-bar-fill.high { background: linear-gradient(90deg, #e74c3c, #ff6b6b); }
+.score-bar-fill.medium { background: linear-gradient(90deg, #f39c12, #ffc107); }
+.score-bar-fill.low { background: linear-gradient(90deg, #3498db, #00d4ff); }
+.score-val { width: 60px; text-align: right; font-size: 0.85em; color: #8899aa; }
+
+/* Risk */
+.risk-warning { background: linear-gradient(135deg, #2c1810, #1a0d05); border: 1px solid #e74c3c; border-radius: 12px; padding: 20px; margin-top: 40px; }
+.risk-warning h3 { color: #e74c3c; }
+
+/* Navigation */
+.nav-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; position: sticky; top: 0; z-index: 100; background: #0f1923; padding: 10px 0; }
+.nav-pill { padding: 6px 14px; border-radius: 20px; background: #1a2a3a; color: #8899aa; text-decoration: none; font-size: 0.85em; border: 1px solid #2a3a4a; transition: all 0.2s; }
+.nav-pill:hover, .nav-pill.active { background: #00d4ff; color: #0f1923; border-color: #00d4ff; font-weight: bold; }
+
+/* Two column layout */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+
+/* Goal dist */
+.goal-row { display: flex; align-items: center; margin: 3px 0; }
+.goal-label { width: 40px; text-align: right; margin-right: 10px; font-size: 0.9em; }
+.goal-track { flex: 1; background: #0d1b2a; height: 16px; border-radius: 8px; overflow: hidden; }
+.goal-fill { height: 100%; border-radius: 8px; background: linear-gradient(90deg, #00d4ff, #3498db); }
+.goal-pct { width: 50px; margin-left: 10px; font-size: 0.85em; color: #8899aa; }
+
+.footer { text-align: center; padding: 30px 0; color: #556677; font-size: 0.85em; border-top: 1px solid #2a3a4a; margin-top: 40px; }
+
+/* Injury tags */
+.injury-tag { display: inline-block; padding: 2px 8px; border-radius: 6px; margin: 2px; font-size: 0.8em; }
+.injury-confirmed { background: rgba(231,76,60,0.15); color: #e74c3c; border: 1px solid rgba(231,76,60,0.3); }
+.injury-doubtful { background: rgba(243,156,18,0.15); color: #f39c12; border: 1px solid rgba(243,156,18,0.3); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+<h1>周三体彩10场 全方位数学模型分析</h1>
+<div class="subtitle">Dixon-Coles | 负二项 | ZIP | Skellam | Shin校准 | 蒙特卡洛10000场</div>
+<div class="timestamp">分析时间：2026-07-22 | 数据来源：竞彩官方 / Transfermarkt / 多平台交叉验证</div>
+</div>
+
+<div class="nav-pills">
+<a href="#match_201" class="nav-pill">201 韩K联</a><a href="#match_202" class="nav-pill">202 韩K联</a><a href="#match_203" class="nav-pill">203 韩K联</a><a href="#match_204" class="nav-pill">204 挪超</a><a href="#match_205" class="nav-pill">205 挪超</a><a href="#match_206" class="nav-pill">206 美职联</a><a href="#match_207" class="nav-pill">207 巴甲</a><a href="#match_208" class="nav-pill">208 巴甲</a><a href="#match_209" class="nav-pill">209 美职联</a><a href="#match_210" class="nav-pill">210 欧冠资格赛</a></div><h2 style="color:#00d4ff;margin-bottom:15px;">快速总览 — 10场推荐一览</h2><div class="summary-grid">
+<div class="summary-card" onclick="document.getElementById('match_201').scrollIntoView({behavior:'smooth'})">
+<div class="match-id">201 韩K联</div>
+<div class="match-title">首尔FC vs 浦项制铁</div>
+<div class="match-meta">07-22 18:30 | 首尔世界杯体育场</div>
+<div class="recommendation high">
+主胜 45.1% | ★★中置信度<br>
+比分: 1:1 / 1:0 / 2:1
+</div>
+</div>
+<div class="summary-card" onclick="document.getElementById('match_202').scrollIntoView({behavior:'smooth'})">
+<div class="match-id">202 韩K联</div>
+<div class="match-title">富川FC vs 安养FC</div>
+<div class="match-meta">07-22 18:30 | 富川综合运动场</div>
+<div class="recommendation medium">
+主胜 45.4% | ★低置信度<br>
+比分: 1:1 / 1:0 / 2:1
+</div>
+</div>
+<div class="summary-card" onclick="document.getElementById('match_203').scrollIntoView({behavior:'smooth'})">
+<div class="match-id">203 韩K联</div>
+<div class="match-title">光州FC vs 金泉尚武</div>
+<div class="match-meta">07-22 18:30 | 光州足球场</div>
+<div class="recommendation medium">
+主胜 43.6% | ★低置信度<br>
+比分: 1:1 / 2:1 / 2:0
+</div>
+</div>
+<div class="summary-card" onclick="document.getElementById('match_204').scrollIntoView({behavior:'smooth'})">
+<div class="match-id">204 挪超</div>
+<div class="match-title">博德闪耀 vs 汉坎</div>
+<div class="match-meta">07-23 01:00 | 阿斯普米拉球场</div>
+<div class="recommendation medium">
+主胜 59.5% | ★低置信度<br>
+比分: 1:1 / 2:0 / 2:1
+</div>
+</div>
+<div class="summary-card" onclick="document.getElementById('match_205').scrollIntoView({behavior:'smooth'})">
+<div class="match-id">205 挪超</div>
+<div class="match-title">利勒斯特罗姆 vs 维京</div>
+<div class="match-meta">07-23 01:00 | Åråsen球场</div>
+<div class="recommendation high">
+主胜 44.4% | ★★中置信度<br>
+比分: 1:1 / 2:1 / 1:0
+</div>
+</div>
+<div class="summary-card" onclick="document.getElementById('match_206').scrollIntoView({behavior:'smooth'})">
+<div class="match-id">206 美职联</div>
+<div class="match-title">迈阿密国际 vs 芝加哥火焰</div>
+<div class="match-meta">07-23 07:30 | Chase Stadium</div>
+<div class="recommendation medium">
+主胜 39.4% | ★低置信度<br>
+比分: 1:1 / 0:0 / 1:0
+</div>
+</div>
+<div class="summary-card" onclick="document.getElementById('match_207').scrollIntoView({behavior:'smooth'})">
+<div class="match-id">207 巴甲</div>
+<div class="match-title">沙佩科恩斯 vs 弗拉门戈</div>
+<div class="match-meta">07-23 08:30 | 康大竞技场</div>
+<div class="recommendation low">
+客胜 39.4% | ☆极低置信度<br>
+比分: 1:1 / 2:1 / 1:2
+</div>
+</div>
+<div class="summary-card" onclick="document.getElementById('match_208').scrollIntoView({behavior:'smooth'})">
+<div class="match-id">208 巴甲</div>
+<div class="match-title">圣保罗 vs 巴拉纳竞技</div>
+<div class="match-meta">07-23 08:30 | 莫隆比球场</div>
+<div class="recommendation medium">
+主胜 41.0% | ★低置信度<br>
+比分: 1:1 / 0:0 / 1:0
+</div>
+</div>
+<div class="summary-card" onclick="document.getElementById('match_209').scrollIntoView({behavior:'smooth'})">
+<div class="match-id">209 美职联</div>
+<div class="match-title">洛杉矶FC vs 皇家盐湖城</div>
+<div class="match-meta">07-23 10:30 | BMO体育场</div>
+<div class="recommendation high">
+主胜 45.9% | ★★中置信度<br>
+比分: 1:0 / 0:0 / 1:1
+</div>
+</div>
+<div class="summary-card" onclick="document.getElementById('match_210').scrollIntoView({behavior:'smooth'})">
+<div class="match-id">210 欧冠资格赛</div>
+<div class="match-title">奥莫尼亚 vs 阿拉木图凯拉特</div>
+<div class="match-meta">07-23 01:00 | GSP体育场</div>
+<div class="recommendation high">
+主胜 46.9% | ★★中置信度<br>
+比分: 1:1 / 1:0 / 0:0
+</div>
+</div></div>
+<div class="match-detail" id="match_201">
+<h2>201 韩K联 — 首尔FC vs 浦项制铁</h2>
+
+<div class="info-box">
+<strong>基本信息</strong> | 时间: 07-22 18:30 | 场地: 首尔世界杯体育场 | 让球: 首尔FC -1 | 大小球: 2.5
+</div>
+
+<h3>赔率对比</h3>
+<table>
+<tr><th>类型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>竞彩官方</td><td>1.7</td><td>3.15</td><td>4.46</td></tr>
+<tr><td>归一化去水</td><td>52.1%</td><td>28.1%</td><td>19.8%</td></tr>
+<tr><td>Shin去水 ★</td><td>42.7%</td><td>30.3%</td><td>27.0%</td></tr>
+<tr><td>Power去水</td><td>44.4%</td><td>30.7%</td><td>24.9%</td></tr>
+</table>
+
+<h3>联赛诊断</h3>
+<div class="info-box">
+VMR=1.25，轻微过离散 | 0-0率8%，ZIP可选<br>
+推荐分布族: <strong>DC+NB对比</strong> | Platt校准: 平局+3%，大球-5%<br>
+DC ρ参数: -0.08 | Shin z参数: 0.1300
+</div>
+
+<h3>球队实力评级</h3>
+<div class="two-col">
+<div>
+<strong>首尔FC</strong>（主队）<br>
+排名: 1 | 12胜3平3负 积39分<br>
+进球31/失球13 | xG 1.55 / xGA 0.85<br>
+Elo: 1580 | 身价: 18.5M €<br>
+近5场: WWWWW
+</div><div>
+<strong>浦项制铁</strong>（客队）<br>
+排名: 5 | 8胜4平6负 积28分<br>
+进球19/失球16 | xG 1.1 / xGA 0.95<br>
+Elo: 1500 | 身价: 12.3M €<br>
+近5场: LWLWL
+</div></div>
+<h3>xG校准分析</h3>
+<div class="info-box">
+首尔FC xG近10场: 1.55，实际场均: 1.72，偏离幅度: 0.90x<br>
+浦项制铁 xG近10场: 1.1，实际场均: 1.06，偏离幅度: 1.04x<br>
+λ校准前: 主队 1.467 / 客队 —<br>
+<strong>λ校准后: 主队 1.467 / 客队 1.077</strong>（含伤停修正系数: 1.0）
+</div>
+<h3>模型预测对比</h3>
+<table>
+<tr><th>模型</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th></tr>
+<tr><td>DC模型（主力）</td><td>45.1%</td><td>28.1%</td><td>26.8%</td></tr>
+<tr><td>负二项分布</td><td>45.5%</td><td>25.7%</td><td>28.8%</td></tr>
+<tr><td>ZIP/ZINB</td><td>45.3%</td><td>26.5%</td><td>28.2%</td></tr>
+<tr><td>Skellam进球差</td><td>46.0%</td><td>26.2%</td><td>27.8%</td></tr>
+<tr><td>蒙特卡洛10000场</td><td>47.0%</td><td>25.2%</td><td>27.8%</td></tr>
+<tr style="font-weight:bold;background:rgba(0,212,255,0.1)"><td>加权融合</td><td>45.1%</td><td>27.4%</td><td>27.5%</td></tr>
+</table>
+
+<h3>置信度评估</h3>
+<table>
+<tr><th>结果</th><th>融合概率</th><th>Shin真实概率</th><th>概率差</th><th>置信度</th></tr><tr><td>主胜</td><td>45.1%</td><td>42.7%</td><td>+2.5%</td><td><span class="badge badge-中">★★中置信度</span></td></tr><tr><td>平局</td><td>27.4%</td><td>30.3%</td><td>-2.9%</td><td></td></tr><tr><td>客胜</td><td>27.5%</td><td>27.0%</td><td>+0.4%</td><td></td></tr>
+</table>
+<div class="info-box success">
+<strong>置信度综合评级: ★★中置信度</strong><br>
+模型间标准差: 0.0288 | 总伤停人数: 0人<br>
+历史交锋: 首尔近5次主场vs浦项: 3胜1平1负
+</div><h3>最可能比分 Top 10</h3><div class="score-bar"><span class="score-label">1:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:40.2%"></div></div><span class="score-val">13.4%</span></div><div class="score-bar"><span class="score-label">1:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:31.590000000000003%"></div></div><span class="score-val">10.5%</span></div><div class="score-bar"><span class="score-label">2:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:27.299999999999997%"></div></div><span class="score-val">9.1%</span></div><div class="score-bar"><span class="score-label">0:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:26.549999999999997%"></div></div><span class="score-val">8.8%</span></div><div class="score-bar"><span class="score-label">2:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:25.35%"></div></div><span class="score-val">8.5%</span></div><div class="score-bar"><span class="score-label">0:1</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:22.410000000000004%"></div></div><span class="score-val">7.5%</span></div><div class="score-bar"><span class="score-label">1:2</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:20.04%"></div></div><span class="score-val">6.7%</span></div><div class="score-bar"><span class="score-label">2:2</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:14.700000000000001%"></div></div><span class="score-val">4.9%</span></div><div class="score-bar"><span class="score-label">0:2</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:13.680000000000001%"></div></div><span class="score-val">4.6%</span></div><div class="score-bar"><span class="score-label">3:1</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:13.350000000000001%"></div></div><span class="score-val">4.5%</span></div><h3>总进球数预测</h3><div class="goal-row"><span class="goal-label">0球</span><div class="goal-track"><div class="goal-fill" style="width:35.4%"></div></div><span class="goal-pct">8.8%</span></div><div class="goal-row"><span class="goal-label">1球</span><div class="goal-track"><div class="goal-fill" style="width:71.96000000000001%"></div></div><span class="goal-pct">18.0%</span></div><div class="goal-row"><span class="goal-label">2球</span><div class="goal-track"><div class="goal-fill" style="width:100%"></div></div><span class="goal-pct">26.4%</span></div><div class="goal-row"><span class="goal-label">3球</span><div class="goal-track"><div class="goal-fill" style="width:86.24000000000001%"></div></div><span class="goal-pct">21.6%</span></div><div class="goal-row"><span class="goal-label">4球</span><div class="goal-track"><div class="goal-fill" style="width:54.84%"></div></div><span class="goal-pct">13.7%</span></div><div class="goal-row"><span class="goal-label">5球</span><div class="goal-track"><div class="goal-fill" style="width:27.92%"></div></div><span class="goal-pct">7.0%</span></div><div class="goal-row"><span class="goal-label">6球</span><div class="goal-track"><div class="goal-fill" style="width:11.84%"></div></div><span class="goal-pct">3.0%</span></div><div class="goal-row"><span class="goal-label">7球</span><div class="goal-track"><div class="goal-fill" style="width:4.2%"></div></div><span class="goal-pct">1.1%</span></div><div class="goal-row"><span class="goal-label">4+球</span><div class="goal-track"><div class="goal-fill" style="width:100%"></div></div><span class="goal-pct">25.1%</span></div><div class="info-box">大小球 2.5：大球 46.8% / 小球 53.2%</div><h3>半全场预测 Top 3</h3><div class="info-box">平局-主胜: 20.4%</div><div class="info-box">主胜-主胜: 14.7%</div><div class="info-box">平局-平局: 12.8%</div>
+<h3>综合推荐</h3>
+<div class="info-box success">
+<strong>胜平负: 主胜 (45.1%) | ★★中置信度</strong><br>
+备选: 客胜 (27.5%)<br>
+比分首选: 1:1 | 次选: 1:0 | 备选: 2:1<br>
+总进球: 小2.5球 (53.2%)<br>
+半全场: 平局-主胜
+</div>
+
+<div class="info-box warning">
+首尔榜首+8分，主场7胜1平0负不败
+</div>
+
+</div>
+<div class="match-detail" id="match_202">
+<h2>202 韩K联 — 富川FC vs 安养FC</h2>
+
+<div class="info-box">
+<strong>基本信息</strong> | 时间: 07-22 18:30 | 场地: 富川综合运动场 | 让球: 富川FC +1 | 大小球: 2.5
+</div>
+
+<h3>赔率对比</h3>
+<table>
+<tr><th>类型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>竞彩官方</td><td>2.86</td><td>2.9</td><td>2.3</td></tr>
+<tr><td>归一化去水</td><td>31.0%</td><td>30.5%</td><td>38.5%</td></tr>
+<tr><td>Shin去水 ★</td><td>32.1%</td><td>31.9%</td><td>35.9%</td></tr>
+<tr><td>Power去水</td><td>31.9%</td><td>31.7%</td><td>36.4%</td></tr>
+</table>
+
+<h3>联赛诊断</h3>
+<div class="info-box">
+VMR=1.25，轻微过离散 | 0-0率8%，ZIP可选<br>
+推荐分布族: <strong>DC+NB对比</strong> | Platt校准: 平局+3%，大球-5%<br>
+DC ρ参数: -0.08 | Shin z参数: 0.1300
+</div>
+
+<h3>球队实力评级</h3>
+<div class="two-col">
+<div>
+<strong>富川FC</strong>（主队）<br>
+排名: 10 | 4胜7平7负 积19分<br>
+进球15/失球21 | xG 0.95 / xGA 1.15<br>
+Elo: 1440 | 身价: 7.8M €<br>
+近5场: DLWDW
+</div><div>
+<strong>安养FC</strong>（客队）<br>
+排名: 6 | 5胜9平4负 积24分<br>
+进球23/失球20 | xG 1.2 / xGA 1.1<br>
+Elo: 1460 | 身价: 8.5M €<br>
+近5场: DDWDD
+</div></div>
+<h3>xG校准分析</h3>
+<div class="info-box">
+富川FC xG近10场: 0.95，实际场均: 0.83，偏离幅度: 1.14x<br>
+安养FC xG近10场: 1.2，实际场均: 1.28，偏离幅度: 0.94x<br>
+λ校准前: 主队 1.644 / 客队 —<br>
+<strong>λ校准后: 主队 1.644 / 客队 1.103</strong>（含伤停修正系数: 1.0）
+</div>
+<h3>模型预测对比</h3>
+<table>
+<tr><th>模型</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th></tr>
+<tr><td>DC模型（主力）</td><td>49.0%</td><td>26.4%</td><td>24.6%</td></tr>
+<tr><td>负二项分布</td><td>49.1%</td><td>24.1%</td><td>26.9%</td></tr>
+<tr><td>ZIP/ZINB</td><td>48.9%</td><td>24.9%</td><td>26.2%</td></tr>
+<tr><td>Skellam进球差</td><td>49.9%</td><td>24.6%</td><td>25.6%</td></tr>
+<tr><td>蒙特卡洛10000场</td><td>49.5%</td><td>24.4%</td><td>26.1%</td></tr>
+<tr style="font-weight:bold;background:rgba(0,212,255,0.1)"><td>加权融合</td><td>45.4%</td><td>26.7%</td><td>28.0%</td></tr>
+</table>
+
+<h3>置信度评估</h3>
+<table>
+<tr><th>结果</th><th>融合概率</th><th>Shin真实概率</th><th>概率差</th><th>置信度</th></tr><tr><td>主胜</td><td>45.4%</td><td>32.1%</td><td>+13.2%</td><td><span class="badge badge-低">★低置信度</span></td></tr><tr><td>平局</td><td>26.7%</td><td>31.9%</td><td>-5.3%</td><td></td></tr><tr><td>客胜</td><td>28.0%</td><td>35.9%</td><td>-7.9%</td><td></td></tr>
+</table>
+<div class="info-box warning">
+<strong>置信度综合评级: ★低置信度</strong><br>
+模型间标准差: 0.0233 | 总伤停人数: 0人<br>
+历史交锋: 近3次交锋: 富川1平2负，安养客场2-5大胜
+</div><h3>最可能比分 Top 10</h3><div class="score-bar"><span class="score-label">1:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:37.67999999999999%"></div></div><span class="score-val">12.6%</span></div><div class="score-bar"><span class="score-label">1:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:28.830000000000005%"></div></div><span class="score-val">9.6%</span></div><div class="score-bar"><span class="score-label">2:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:28.68%"></div></div><span class="score-val">9.6%</span></div><div class="score-bar"><span class="score-label">2:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:26.009999999999998%"></div></div><span class="score-val">8.7%</span></div><div class="score-bar"><span class="score-label">0:0</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:22.020000000000003%"></div></div><span class="score-val">7.3%</span></div><div class="score-bar"><span class="score-label">1:2</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:19.23%"></div></div><span class="score-val">6.4%</span></div><div class="score-bar"><span class="score-label">0:1</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:18.42%"></div></div><span class="score-val">6.1%</span></div><div class="score-bar"><span class="score-label">2:2</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:15.809999999999999%"></div></div><span class="score-val">5.3%</span></div><div class="score-bar"><span class="score-label">3:1</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:15.72%"></div></div><span class="score-val">5.2%</span></div><div class="score-bar"><span class="score-label">3:0</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:14.25%"></div></div><span class="score-val">4.8%</span></div><h3>总进球数预测</h3><div class="goal-row"><span class="goal-label">0球</span><div class="goal-track"><div class="goal-fill" style="width:29.360000000000003%"></div></div><span class="goal-pct">7.3%</span></div><div class="goal-row"><span class="goal-label">1球</span><div class="goal-track"><div class="goal-fill" style="width:63.0%"></div></div><span class="goal-pct">15.8%</span></div><div class="goal-row"><span class="goal-label">2球</span><div class="goal-track"><div class="goal-fill" style="width:100%"></div></div><span class="goal-pct">25.1%</span></div><div class="goal-row"><span class="goal-label">3球</span><div class="goal-track"><div class="goal-fill" style="width:88.6%"></div></div><span class="goal-pct">22.1%</span></div><div class="goal-row"><span class="goal-label">4球</span><div class="goal-track"><div class="goal-fill" style="width:60.84%"></div></div><span class="goal-pct">15.2%</span></div><div class="goal-row"><span class="goal-label">5球</span><div class="goal-track"><div class="goal-fill" style="width:33.44%"></div></div><span class="goal-pct">8.4%</span></div><div class="goal-row"><span class="goal-label">6球</span><div class="goal-track"><div class="goal-fill" style="width:15.32%"></div></div><span class="goal-pct">3.8%</span></div><div class="goal-row"><span class="goal-label">7球</span><div class="goal-track"><div class="goal-fill" style="width:5.84%"></div></div><span class="goal-pct">1.5%</span></div><div class="goal-row"><span class="goal-label">4+球</span><div class="goal-track"><div class="goal-fill" style="width:100%"></div></div><span class="goal-pct">29.5%</span></div><div class="info-box">大小球 2.5：大球 51.8% / 小球 48.2%</div><h3>半全场预测 Top 3</h3><div class="info-box">平局-主胜: 21.2%</div><div class="info-box">主胜-主胜: 17.5%</div><div class="info-box">平局-平局: 11.4%</div>
+<h3>综合推荐</h3>
+<div class="info-box success">
+<strong>胜平负: 主胜 (45.4%) | ★低置信度</strong><br>
+备选: 客胜 (28.0%)<br>
+比分首选: 1:1 | 次选: 1:0 | 备选: 2:1<br>
+总进球: 大2.5球 (51.8%)<br>
+半全场: 平局-主胜
+</div>
+
+<div class="info-box warning">
+安养平局率50%联赛最高，两队进攻均弱
+</div>
+
+</div>
+<div class="match-detail" id="match_203">
+<h2>203 韩K联 — 光州FC vs 金泉尚武</h2>
+
+<div class="info-box">
+<strong>基本信息</strong> | 时间: 07-22 18:30 | 场地: 光州足球场 | 让球: 光州FC +1 | 大小球: 2.5
+</div>
+
+<h3>赔率对比</h3>
+<table>
+<tr><th>类型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>竞彩官方</td><td>3.75</td><td>3.26</td><td>1.8</td></tr>
+<tr><td>归一化去水</td><td>23.6%</td><td>27.2%</td><td>49.2%</td></tr>
+<tr><td>Shin去水 ★</td><td>28.6%</td><td>30.1%</td><td>41.3%</td></tr>
+<tr><td>Power去水</td><td>27.5%</td><td>29.9%</td><td>42.7%</td></tr>
+</table>
+
+<h3>联赛诊断</h3>
+<div class="info-box">
+VMR=1.25，轻微过离散 | 0-0率8%，ZIP可选<br>
+推荐分布族: <strong>DC+NB对比</strong> | Platt校准: 平局+3%，大球-5%<br>
+DC ρ参数: -0.08 | Shin z参数: 0.1300
+</div>
+
+<h3>球队实力评级</h3>
+<div class="two-col">
+<div>
+<strong>光州FC</strong>（主队）<br>
+排名: 12 | 1胜6平11负 积9分<br>
+进球9/失球42 | xG 0.85 / xGA 2.1<br>
+Elo: 1380 | 身价: 6.2M €<br>
+近5场: DDLLL
+</div><div>
+<strong>金泉尚武</strong>（客队）<br>
+排名: 11 | 2胜10平6负 积16分<br>
+进球17/失球25 | xG 1.05 / xGA 1.25<br>
+Elo: 1420 | 身价: 5.0M €<br>
+近5场: DDWDD
+</div></div>
+<h3>xG校准分析</h3>
+<div class="info-box">
+光州FC xG近10场: 0.85，实际场均: 0.5，偏离幅度: 1.30x<br>
+金泉尚武 xG近10场: 1.05，实际场均: 0.94，偏离幅度: 1.12x<br>
+λ校准前: 主队 1.822 / 客队 —<br>
+<strong>λ校准后: 主队 1.822 / 客队 1.347</strong>（含伤停修正系数: 1.0）
+</div>
+<h3>模型预测对比</h3>
+<table>
+<tr><th>模型</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th></tr>
+<tr><td>DC模型（主力）</td><td>47.7%</td><td>24.6%</td><td>27.7%</td></tr>
+<tr><td>负二项分布</td><td>48.0%</td><td>22.2%</td><td>29.8%</td></tr>
+<tr><td>ZIP/ZINB</td><td>47.8%</td><td>23.0%</td><td>29.2%</td></tr>
+<tr><td>Skellam进球差</td><td>48.5%</td><td>23.0%</td><td>28.5%</td></tr>
+<tr><td>蒙特卡洛10000场</td><td>48.6%</td><td>23.0%</td><td>28.4%</td></tr>
+<tr style="font-weight:bold;background:rgba(0,212,255,0.1)"><td>加权融合</td><td>43.6%</td><td>25.0%</td><td>31.4%</td></tr>
+</table>
+
+<h3>置信度评估</h3>
+<table>
+<tr><th>结果</th><th>融合概率</th><th>Shin真实概率</th><th>概率差</th><th>置信度</th></tr><tr><td>主胜</td><td>43.6%</td><td>28.6%</td><td>+15.0%</td><td><span class="badge badge-低">★低置信度</span></td></tr><tr><td>平局</td><td>25.0%</td><td>30.1%</td><td>-5.1%</td><td></td></tr><tr><td>客胜</td><td>31.4%</td><td>41.3%</td><td>-10.0%</td><td></td></tr>
+</table>
+<div class="info-box warning">
+<strong>置信度综合评级: ★低置信度</strong><br>
+模型间标准差: 0.0238 | 总伤停人数: 0人<br>
+历史交锋: 近5次: 光州1胜2平2负，近5次交锋小球率80%
+</div><h3>最可能比分 Top 10</h3><div class="score-bar"><span class="score-label">1:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:33.45%"></div></div><span class="score-val">11.2%</span></div><div class="score-bar"><span class="score-label">2:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:28.200000000000003%"></div></div><span class="score-val">9.4%</span></div><div class="score-bar"><span class="score-label">2:0</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:20.94%"></div></div><span class="score-val">7.0%</span></div><div class="score-bar"><span class="score-label">1:2</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:20.85%"></div></div><span class="score-val">7.0%</span></div><div class="score-bar"><span class="score-label">1:0</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:20.490000000000002%"></div></div><span class="score-val">6.8%</span></div><div class="score-bar"><span class="score-label">2:2</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:18.99%"></div></div><span class="score-val">6.3%</span></div><div class="score-bar"><span class="score-label">3:1</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:17.13%"></div></div><span class="score-val">5.7%</span></div><div class="score-bar"><span class="score-label">0:0</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:15.089999999999998%"></div></div><span class="score-val">5.0%</span></div><div class="score-bar"><span class="score-label">0:1</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:14.52%"></div></div><span class="score-val">4.8%</span></div><div class="score-bar"><span class="score-label">3:0</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:12.72%"></div></div><span class="score-val">4.2%</span></div><h3>总进球数预测</h3><div class="goal-row"><span class="goal-label">0球</span><div class="goal-track"><div class="goal-fill" style="width:20.119999999999997%"></div></div><span class="goal-pct">5.0%</span></div><div class="goal-row"><span class="goal-label">1球</span><div class="goal-track"><div class="goal-fill" style="width:46.68%"></div></div><span class="goal-pct">11.7%</span></div><div class="goal-row"><span class="goal-label">2球</span><div class="goal-track"><div class="goal-fill" style="width:87.76%"></div></div><span class="goal-pct">21.9%</span></div><div class="goal-row"><span class="goal-label">3球</span><div class="goal-track"><div class="goal-fill" style="width:89.2%"></div></div><span class="goal-pct">22.3%</span></div><div class="goal-row"><span class="goal-label">4球</span><div class="goal-track"><div class="goal-fill" style="width:70.67999999999999%"></div></div><span class="goal-pct">17.7%</span></div><div class="goal-row"><span class="goal-label">5球</span><div class="goal-track"><div class="goal-fill" style="width:44.800000000000004%"></div></div><span class="goal-pct">11.2%</span></div><div class="goal-row"><span class="goal-label">6球</span><div class="goal-track"><div class="goal-fill" style="width:23.64%"></div></div><span class="goal-pct">5.9%</span></div><div class="goal-row"><span class="goal-label">7球</span><div class="goal-track"><div class="goal-fill" style="width:10.440000000000001%"></div></div><span class="goal-pct">2.6%</span></div><div class="goal-row"><span class="goal-label">4+球</span><div class="goal-track"><div class="goal-fill" style="width:100%"></div></div><span class="goal-pct">38.7%</span></div><div class="info-box">大小球 2.5：大球 61.4% / 小球 38.6%</div><h3>半全场预测 Top 3</h3><div class="info-box">平局-主胜: 19.1%</div><div class="info-box">主胜-主胜: 17.2%</div><div class="info-box">客胜-主胜: 11.4%</div>
+<h3>综合推荐</h3>
+<div class="info-box success">
+<strong>胜平负: 主胜 (43.6%) | ★低置信度</strong><br>
+备选: 客胜 (31.4%)<br>
+比分首选: 1:1 | 次选: 2:1 | 备选: 2:0<br>
+总进球: 大2.5球 (61.4%)<br>
+半全场: 平局-主胜
+</div>
+
+<div class="info-box warning">
+金泉尚武平局率56%，光州攻防联赛最差
+</div>
+
+</div>
+<div class="match-detail" id="match_204">
+<h2>204 挪超 — 博德闪耀 vs 汉坎</h2>
+
+<div class="info-box">
+<strong>基本信息</strong> | 时间: 07-23 01:00 | 场地: 阿斯普米拉球场 | 让球: 博德闪耀 -2.5 | 大小球: 3.5
+</div>
+
+<h3>赔率对比</h3>
+<table>
+<tr><th>类型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>竞彩官方</td><td>1.12</td><td>6.5</td><td>15.0</td></tr>
+<tr><td>归一化去水</td><td>80.2%</td><td>13.8%</td><td>6.0%</td></tr>
+<tr><td>Shin去水 ★</td><td>54.7%</td><td>23.3%</td><td>22.0%</td></tr>
+<tr><td>Power去水</td><td>64.1%</td><td>22.3%</td><td>13.5%</td></tr>
+</table>
+
+<h3>联赛诊断</h3>
+<div class="info-box">
+VMR=1.45，过离散显著 | 0-0率6%，ZIP可不启用<br>
+推荐分布族: <strong>NB主力+DC对比</strong> | Platt校准: 大球-8%，平局+2%<br>
+DC ρ参数: -0.05 | Shin z参数: 0.1300
+</div>
+
+<h3>球队实力评级</h3>
+<div class="two-col">
+<div>
+<strong>博德闪耀</strong>（主队）<br>
+排名: 3 | 9胜2平2负 积29分<br>
+进球31/失球11 | xG 2.15 / xGA 0.9<br>
+Elo: 1620 | 身价: 32.0M €<br>
+近5场: WWWWL
+</div><div>
+<strong>汉坎</strong>（客队）<br>
+排名: 7 | 5胜3平5负 积18分<br>
+进球20/失球22 | xG 1.3 / xGA 1.75<br>
+Elo: 1470 | 身价: 8.5M €<br>
+近5场: LWLWL
+<br>伤停: <span class="injury-tag injury-doubtful">出战成疑</span> </div></div>
+<h3>xG校准分析</h3>
+<div class="info-box">
+博德闪耀 xG近10场: 2.15，实际场均: 2.38，偏离幅度: 0.90x<br>
+汉坎 xG近10场: 1.3，实际场均: 1.54，偏离幅度: 0.84x<br>
+λ校准前: 主队 2.037 / 客队 —<br>
+<strong>λ校准后: 主队 2.037 / 客队 0.978</strong>（含伤停修正系数: 1.0）
+</div>
+<h3>模型预测对比</h3>
+<table>
+<tr><th>模型</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th></tr>
+<tr><td>DC模型（主力）</td><td>61.2%</td><td>21.9%</td><td>17.0%</td></tr>
+<tr><td>负二项分布</td><td>58.5%</td><td>21.2%</td><td>20.3%</td></tr>
+<tr><td>ZIP/ZINB</td><td>60.3%</td><td>21.3%</td><td>18.4%</td></tr>
+<tr><td>Skellam进球差</td><td>61.5%</td><td>20.9%</td><td>17.5%</td></tr>
+<tr><td>蒙特卡洛10000场</td><td>61.6%</td><td>20.5%</td><td>17.9%</td></tr>
+<tr style="font-weight:bold;background:rgba(0,212,255,0.1)"><td>加权融合</td><td>59.5%</td><td>21.7%</td><td>18.8%</td></tr>
+</table>
+
+<h3>置信度评估</h3>
+<table>
+<tr><th>结果</th><th>融合概率</th><th>Shin真实概率</th><th>概率差</th><th>置信度</th></tr><tr><td>主胜</td><td>59.5%</td><td>54.7%</td><td>+4.8%</td><td><span class="badge badge-低">★低置信度</span></td></tr><tr><td>平局</td><td>21.7%</td><td>23.3%</td><td>-1.6%</td><td></td></tr><tr><td>客胜</td><td>18.8%</td><td>22.0%</td><td>-3.2%</td><td></td></tr>
+</table>
+<div class="info-box warning">
+<strong>置信度综合评级: ★低置信度</strong><br>
+模型间标准差: 0.0335 | 总伤停人数: 1人<br>
+历史交锋: 博德闪耀主场对汉坎历史碾压
+</div><h3>最可能比分 Top 10</h3><div class="score-bar"><span class="score-label">1:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:30.78%"></div></div><span class="score-val">10.3%</span></div><div class="score-bar"><span class="score-label">2:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:30.509999999999998%"></div></div><span class="score-val">10.2%</span></div><div class="score-bar"><span class="score-label">2:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:29.85%"></div></div><span class="score-val">10.0%</span></div><div class="score-bar"><span class="score-label">1:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:28.5%"></div></div><span class="score-val">9.5%</span></div><div class="score-bar"><span class="score-label">3:0</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:20.729999999999997%"></div></div><span class="score-val">6.9%</span></div><div class="score-bar"><span class="score-label">3:1</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:20.28%"></div></div><span class="score-val">6.8%</span></div><div class="score-bar"><span class="score-label">0:0</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:16.17%"></div></div><span class="score-val">5.4%</span></div><div class="score-bar"><span class="score-label">2:2</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:14.61%"></div></div><span class="score-val">4.9%</span></div><div class="score-bar"><span class="score-label">1:2</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:14.34%"></div></div><span class="score-val">4.8%</span></div><div class="score-bar"><span class="score-label">0:1</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:12.93%"></div></div><span class="score-val">4.3%</span></div><h3>总进球数预测</h3><div class="goal-row"><span class="goal-label">0球</span><div class="goal-track"><div class="goal-fill" style="width:21.560000000000002%"></div></div><span class="goal-pct">5.4%</span></div><div class="goal-row"><span class="goal-label">1球</span><div class="goal-track"><div class="goal-fill" style="width:55.2%"></div></div><span class="goal-pct">13.8%</span></div><div class="goal-row"><span class="goal-label">2球</span><div class="goal-track"><div class="goal-fill" style="width:91.12%"></div></div><span class="goal-pct">22.8%</span></div><div class="goal-row"><span class="goal-label">3球</span><div class="goal-track"><div class="goal-fill" style="width:89.60000000000001%"></div></div><span class="goal-pct">22.4%</span></div><div class="goal-row"><span class="goal-label">4球</span><div class="goal-track"><div class="goal-fill" style="width:67.56%"></div></div><span class="goal-pct">16.9%</span></div><div class="goal-row"><span class="goal-label">5球</span><div class="goal-track"><div class="goal-fill" style="width:40.760000000000005%"></div></div><span class="goal-pct">10.2%</span></div><div class="goal-row"><span class="goal-label">6球</span><div class="goal-track"><div class="goal-fill" style="width:20.48%"></div></div><span class="goal-pct">5.1%</span></div><div class="goal-row"><span class="goal-label">7球</span><div class="goal-track"><div class="goal-fill" style="width:8.24%"></div></div><span class="goal-pct">2.1%</span></div><div class="goal-row"><span class="goal-label">4+球</span><div class="goal-track"><div class="goal-fill" style="width:100%"></div></div><span class="goal-pct">35.1%</span></div><div class="info-box">大小球 3.5：大球 35.6% / 小球 64.4%</div><h3>半全场预测 Top 3</h3><div class="info-box">主胜-主胜: 26.9%</div><div class="info-box">平局-主胜: 24.2%</div><div class="info-box">客胜-主胜: 10.1%</div>
+<h3>综合推荐</h3>
+<div class="info-box success">
+<strong>胜平负: 主胜 (59.5%) | ★低置信度</strong><br>
+备选: 平局 (21.7%)<br>
+比分首选: 1:1 | 次选: 2:0 | 备选: 2:1<br>
+总进球: 小3.5球 (64.4%)<br>
+半全场: 主胜-主胜
+</div>
+
+<div class="info-box warning">
+博德主场场均2.83球，汉坎上轮1-4惨败
+</div>
+
+</div>
+<div class="match-detail" id="match_205">
+<h2>205 挪超 — 利勒斯特罗姆 vs 维京</h2>
+
+<div class="info-box">
+<strong>基本信息</strong> | 时间: 07-23 01:00 | 场地: Åråsen球场 | 让球: 利勒斯特罗姆 +0/0.5 | 大小球: 2.75
+</div>
+
+<h3>赔率对比</h3>
+<table>
+<tr><th>类型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>竞彩官方</td><td>2.3</td><td>3.4</td><td>2.75</td></tr>
+<tr><td>归一化去水</td><td>39.8%</td><td>26.9%</td><td>33.3%</td></tr>
+<tr><td>Shin去水 ★</td><td>36.4%</td><td>30.4%</td><td>33.2%</td></tr>
+<tr><td>Power去水</td><td>37.2%</td><td>29.4%</td><td>33.4%</td></tr>
+</table>
+
+<h3>联赛诊断</h3>
+<div class="info-box">
+VMR=1.45，过离散显著 | 0-0率6%，ZIP可不启用<br>
+推荐分布族: <strong>NB主力+DC对比</strong> | Platt校准: 大球-8%，平局+2%<br>
+DC ρ参数: -0.05 | Shin z参数: 0.1300
+</div>
+
+<h3>球队实力评级</h3>
+<div class="two-col">
+<div>
+<strong>利勒斯特罗姆</strong>（主队）<br>
+排名: 4 | 8胜1平4负 积25分<br>
+进球21/失球12 | xG 1.5 / xGA 0.95<br>
+Elo: 1555 | 身价: 22.0M €<br>
+近5场: WWLWW
+</div><div>
+<strong>维京</strong>（客队）<br>
+排名: 2 | 10胜0平2负 积30分<br>
+进球31/失球12 | xG 2.2 / xGA 0.95<br>
+Elo: 1575 | 身价: 28.0M €<br>
+近5场: WWLWW
+</div></div>
+<h3>xG校准分析</h3>
+<div class="info-box">
+利勒斯特罗姆 xG近10场: 1.5，实际场均: 1.62，偏离幅度: 0.93x<br>
+维京 xG近10场: 2.2，实际场均: 2.58，偏离幅度: 0.85x<br>
+λ校准前: 主队 1.688 / 客队 —<br>
+<strong>λ校准后: 主队 1.688 / 客队 1.273</strong>（含伤停修正系数: 1.0）
+</div>
+<h3>模型预测对比</h3>
+<table>
+<tr><th>模型</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th></tr>
+<tr><td>DC模型（主力）</td><td>46.5%</td><td>25.1%</td><td>28.4%</td></tr>
+<tr><td>负二项分布</td><td>46.1%</td><td>23.3%</td><td>30.6%</td></tr>
+<tr><td>ZIP/ZINB</td><td>46.6%</td><td>24.0%</td><td>29.4%</td></tr>
+<tr><td>Skellam进球差</td><td>47.0%</td><td>24.0%</td><td>29.0%</td></tr>
+<tr><td>蒙特卡洛10000场</td><td>47.1%</td><td>23.6%</td><td>29.3%</td></tr>
+<tr style="font-weight:bold;background:rgba(0,212,255,0.1)"><td>加权融合</td><td>44.4%</td><td>25.6%</td><td>30.0%</td></tr>
+</table>
+
+<h3>置信度评估</h3>
+<table>
+<tr><th>结果</th><th>融合概率</th><th>Shin真实概率</th><th>概率差</th><th>置信度</th></tr><tr><td>主胜</td><td>44.4%</td><td>36.4%</td><td>+7.9%</td><td><span class="badge badge-中">★★中置信度</span></td></tr><tr><td>平局</td><td>25.6%</td><td>30.4%</td><td>-4.8%</td><td></td></tr><tr><td>客胜</td><td>30.0%</td><td>33.2%</td><td>-3.2%</td><td></td></tr>
+</table>
+<div class="info-box success">
+<strong>置信度综合评级: ★★中置信度</strong><br>
+模型间标准差: 0.0225 | 总伤停人数: 0人<br>
+历史交锋: 近10次: 维京7胜2平1负，2024两次各4-1客胜
+</div><h3>最可能比分 Top 10</h3><div class="score-bar"><span class="score-label">1:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:35.04%"></div></div><span class="score-val">11.7%</span></div><div class="score-bar"><span class="score-label">2:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:28.17%"></div></div><span class="score-val">9.4%</span></div><div class="score-bar"><span class="score-label">1:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:24.54%"></div></div><span class="score-val">8.2%</span></div><div class="score-bar"><span class="score-label">2:0</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:22.14%"></div></div><span class="score-val">7.4%</span></div><div class="score-bar"><span class="score-label">1:2</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:21.240000000000002%"></div></div><span class="score-val">7.1%</span></div><div class="score-bar"><span class="score-label">0:1</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:18.09%"></div></div><span class="score-val">6.0%</span></div><div class="score-bar"><span class="score-label">2:2</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:17.939999999999998%"></div></div><span class="score-val">6.0%</span></div><div class="score-bar"><span class="score-label">0:0</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:17.189999999999998%"></div></div><span class="score-val">5.7%</span></div><div class="score-bar"><span class="score-label">3:1</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:15.84%"></div></div><span class="score-val">5.3%</span></div><div class="score-bar"><span class="score-label">0:2</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:12.57%"></div></div><span class="score-val">4.2%</span></div><h3>总进球数预测</h3><div class="goal-row"><span class="goal-label">0球</span><div class="goal-track"><div class="goal-fill" style="width:22.919999999999998%"></div></div><span class="goal-pct">5.7%</span></div><div class="goal-row"><span class="goal-label">1球</span><div class="goal-track"><div class="goal-fill" style="width:56.84%"></div></div><span class="goal-pct">14.2%</span></div><div class="goal-row"><span class="goal-label">2球</span><div class="goal-track"><div class="goal-fill" style="width:93.0%"></div></div><span class="goal-pct">23.2%</span></div><div class="goal-row"><span class="goal-label">3球</span><div class="goal-track"><div class="goal-fill" style="width:89.60000000000001%"></div></div><span class="goal-pct">22.4%</span></div><div class="goal-row"><span class="goal-label">4球</span><div class="goal-track"><div class="goal-fill" style="width:66.32000000000001%"></div></div><span class="goal-pct">16.6%</span></div><div class="goal-row"><span class="goal-label">5球</span><div class="goal-track"><div class="goal-fill" style="width:39.28%"></div></div><span class="goal-pct">9.8%</span></div><div class="goal-row"><span class="goal-label">6球</span><div class="goal-track"><div class="goal-fill" style="width:19.400000000000002%"></div></div><span class="goal-pct">4.9%</span></div><div class="goal-row"><span class="goal-label">7球</span><div class="goal-track"><div class="goal-fill" style="width:8.04%"></div></div><span class="goal-pct">2.0%</span></div><div class="goal-row"><span class="goal-label">4+球</span><div class="goal-track"><div class="goal-fill" style="width:100%"></div></div><span class="goal-pct">34.2%</span></div><div class="info-box">大小球 2.75：大球 89.9% / 小球 10.1%</div><h3>半全场预测 Top 3</h3><div class="info-box">平局-主胜: 19.3%</div><div class="info-box">主胜-主胜: 16.2%</div><div class="info-box">平局-客胜: 11.8%</div>
+<h3>综合推荐</h3>
+<div class="info-box success">
+<strong>胜平负: 主胜 (44.4%) | ★★中置信度</strong><br>
+备选: 客胜 (30.0%)<br>
+比分首选: 1:1 | 次选: 2:1 | 备选: 1:0<br>
+总进球: 大2.75球 (89.9%)<br>
+半全场: 平局-主胜
+</div>
+
+<div class="info-box warning">
+维京零平局！10胜0平2负；世界杯国脚回归
+</div>
+
+</div>
+<div class="match-detail" id="match_206">
+<h2>206 美职联 — 迈阿密国际 vs 芝加哥火焰</h2>
+
+<div class="info-box">
+<strong>基本信息</strong> | 时间: 07-23 07:30 | 场地: Chase Stadium | 让球: 迈阿密国际 -1 | 大小球: 3.0
+</div>
+
+<h3>赔率对比</h3>
+<table>
+<tr><th>类型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>竞彩官方</td><td>1.55</td><td>4.0</td><td>5.0</td></tr>
+<tr><td>归一化去水</td><td>58.9%</td><td>22.8%</td><td>18.3%</td></tr>
+<tr><td>Shin去水 ★</td><td>45.7%</td><td>27.9%</td><td>26.4%</td></tr>
+<tr><td>Power去水</td><td>48.5%</td><td>27.5%</td><td>24.0%</td></tr>
+</table>
+
+<h3>联赛诊断</h3>
+<div class="info-box">
+VMR=1.20，标准DC适用 | 0-0率7%<br>
+推荐分布族: <strong>DC主力</strong> | Platt校准: 大球-5%，平局+3%<br>
+DC ρ参数: -0.1 | Shin z参数: 0.1300
+</div>
+
+<h3>球队实力评级</h3>
+<div class="two-col">
+<div>
+<strong>迈阿密国际</strong>（主队）<br>
+排名: 东部第2 | 9胜4平2负 积31分<br>
+进球39/失球28 | xG 2.1 / xGA 1.5<br>
+Elo: 1560 | 身价: 48.0M €<br>
+近5场: WWWWW
+<br>伤停: <span class="injury-tag injury-doubtful">出战成疑</span> <span class="injury-tag injury-doubtful">出战成疑</span> </div><div>
+<strong>芝加哥火焰</strong>（客队）<br>
+排名: 东部第3 | 8胜2平4负 积26分<br>
+进球28/失球16 | xG 1.8 / xGA 0.95<br>
+Elo: 1530 | 身价: 35.0M €<br>
+近5场: WWLWW
+<br>伤停: <span class="injury-tag injury-doubtful">出战成疑</span> </div></div>
+<h3>xG校准分析</h3>
+<div class="info-box">
+迈阿密国际 xG近10场: 2.1，实际场均: 2.6，偏离幅度: 0.81x<br>
+芝加哥火焰 xG近10场: 1.8，实际场均: 2.0，偏离幅度: 0.90x<br>
+λ校准前: 主队 1.473 / 客队 —<br>
+<strong>λ校准后: 主队 1.259 / 客队 1.186</strong>（含伤停修正系数: 0.85）
+</div>
+<h3>模型预测对比</h3>
+<table>
+<tr><th>模型</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th></tr>
+<tr><td>DC模型（主力）</td><td>36.8%</td><td>29.9%</td><td>33.3%</td></tr>
+<tr><td>负二项分布</td><td>38.2%</td><td>26.9%</td><td>34.9%</td></tr>
+<tr><td>ZIP/ZINB</td><td>37.8%</td><td>27.7%</td><td>34.5%</td></tr>
+<tr><td>Skellam进球差</td><td>38.1%</td><td>27.4%</td><td>34.6%</td></tr>
+<tr><td>蒙特卡洛10000场</td><td>37.8%</td><td>27.5%</td><td>34.7%</td></tr>
+<tr style="font-weight:bold;background:rgba(0,212,255,0.1)"><td>加权融合</td><td>39.4%</td><td>28.2%</td><td>32.4%</td></tr>
+</table>
+
+<h3>置信度评估</h3>
+<table>
+<tr><th>结果</th><th>融合概率</th><th>Shin真实概率</th><th>概率差</th><th>置信度</th></tr><tr><td>主胜</td><td>39.4%</td><td>45.7%</td><td>-6.3%</td><td><span class="badge badge-低">★低置信度</span></td></tr><tr><td>平局</td><td>28.2%</td><td>27.9%</td><td>+0.3%</td><td></td></tr><tr><td>客胜</td><td>32.4%</td><td>26.4%</td><td>+6.0%</td><td></td></tr>
+</table>
+<div class="info-box warning">
+<strong>置信度综合评级: ★低置信度</strong><br>
+模型间标准差: 0.0310 | 总伤停人数: 3人<br>
+历史交锋: 芝加哥上次客场5-3大胜迈阿密
+</div><h3>最可能比分 Top 10</h3><div class="score-bar"><span class="score-label">1:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:42.72%"></div></div><span class="score-val">14.2%</span></div><div class="score-bar"><span class="score-label">0:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:29.909999999999997%"></div></div><span class="score-val">10.0%</span></div><div class="score-bar"><span class="score-label">1:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:28.889999999999997%"></div></div><span class="score-val">9.6%</span></div><div class="score-bar"><span class="score-label">0:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:26.97%"></div></div><span class="score-val">9.0%</span></div><div class="score-bar"><span class="score-label">2:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:24.450000000000003%"></div></div><span class="score-val">8.2%</span></div><div class="score-bar"><span class="score-label">1:2</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:23.04%"></div></div><span class="score-val">7.7%</span></div><div class="score-bar"><span class="score-label">2:0</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:20.64%"></div></div><span class="score-val">6.9%</span></div><div class="score-bar"><span class="score-label">0:2</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:18.299999999999997%"></div></div><span class="score-val">6.1%</span></div><div class="score-bar"><span class="score-label">2:2</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:14.49%"></div></div><span class="score-val">4.8%</span></div><div class="score-bar"><span class="score-label">3:1</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:10.26%"></div></div><span class="score-val">3.4%</span></div><h3>总进球数预测</h3><div class="goal-row"><span class="goal-label">0球</span><div class="goal-track"><div class="goal-fill" style="width:39.879999999999995%"></div></div><span class="goal-pct">10.0%</span></div><div class="goal-row"><span class="goal-label">1球</span><div class="goal-track"><div class="goal-fill" style="width:74.44%"></div></div><span class="goal-pct">18.6%</span></div><div class="goal-row"><span class="goal-label">2球</span><div class="goal-track"><div class="goal-fill" style="width:100%"></div></div><span class="goal-pct">27.2%</span></div><div class="goal-row"><span class="goal-label">3球</span><div class="goal-track"><div class="goal-fill" style="width:84.52%"></div></div><span class="goal-pct">21.1%</span></div><div class="goal-row"><span class="goal-label">4球</span><div class="goal-track"><div class="goal-fill" style="width:51.64%"></div></div><span class="goal-pct">12.9%</span></div><div class="goal-row"><span class="goal-label">5球</span><div class="goal-track"><div class="goal-fill" style="width:25.28%"></div></div><span class="goal-pct">6.3%</span></div><div class="goal-row"><span class="goal-label">6球</span><div class="goal-track"><div class="goal-fill" style="width:10.280000000000001%"></div></div><span class="goal-pct">2.6%</span></div><div class="goal-row"><span class="goal-label">7球</span><div class="goal-track"><div class="goal-fill" style="width:3.52%"></div></div><span class="goal-pct">0.9%</span></div><div class="goal-row"><span class="goal-label">4+球</span><div class="goal-track"><div class="goal-fill" style="width:92.08%"></div></div><span class="goal-pct">23.0%</span></div><div class="info-box">大小球 3.0：大球 23.1% / 小球 76.9%</div><h3>半全场预测 Top 3</h3><div class="info-box">平局-主胜: 17.2%</div><div class="info-box">平局-客胜: 15.6%</div><div class="info-box">平局-平局: 14.0%</div>
+<h3>综合推荐</h3>
+<div class="info-box success">
+<strong>胜平负: 主胜 (39.4%) | ★低置信度</strong><br>
+备选: 客胜 (32.4%)<br>
+比分首选: 1:1 | 次选: 0:0 | 备选: 1:0<br>
+总进球: 小3.0球 (76.9%)<br>
+半全场: 平局-主胜
+</div>
+
+<div class="info-box warning">
+梅西+德保罗缺阵影响巨大；莱万首秀传闻
+</div>
+
+</div>
+<div class="match-detail" id="match_207">
+<h2>207 巴甲 — 沙佩科恩斯 vs 弗拉门戈</h2>
+
+<div class="info-box">
+<strong>基本信息</strong> | 时间: 07-23 08:30 | 场地: 康大竞技场 | 让球: 弗拉门戈 -1/1.5 | 大小球: 2.5
+</div>
+
+<h3>赔率对比</h3>
+<table>
+<tr><th>类型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>竞彩官方</td><td>5.5</td><td>4.2</td><td>1.44</td></tr>
+<tr><td>归一化去水</td><td>16.3%</td><td>21.4%</td><td>62.3%</td></tr>
+<tr><td>Shin去水 ★</td><td>25.4%</td><td>27.1%</td><td>47.5%</td></tr>
+<tr><td>Power去水</td><td>22.7%</td><td>26.7%</td><td>50.7%</td></tr>
+</table>
+
+<h3>联赛诊断</h3>
+<div class="info-box">
+VMR=1.30，轻度过离散 | 0-0率12%，推荐ZIP<br>
+推荐分布族: <strong>ZIP+DC对比</strong> | Platt校准: 大球-5%，平局+5%<br>
+DC ρ参数: -0.12 | Shin z参数: 0.1300
+</div>
+
+<h3>球队实力评级</h3>
+<div class="two-col">
+<div>
+<strong>沙佩科恩斯</strong>（主队）<br>
+排名: 20 | 1胜6平11负 积9分<br>
+进球10/失球32 | xG 0.8 / xGA 1.7<br>
+Elo: 1370 | 身价: 3.5M €<br>
+近5场: LDLLL
+</div><div>
+<strong>弗拉门戈</strong>（客队）<br>
+排名: 2 | 10胜4平3负 积34分<br>
+进球31/失球16 | xG 1.7 / xGA 0.85<br>
+Elo: 1600 | 身价: 55.0M €<br>
+近5场: WDWWD
+</div></div>
+<h3>xG校准分析</h3>
+<div class="info-box">
+沙佩科恩斯 xG近10场: 0.8，实际场均: 0.56，偏离幅度: 1.30x<br>
+弗拉门戈 xG近10场: 1.7，实际场均: 1.82，偏离幅度: 0.93x<br>
+λ校准前: 主队 1.492 / 客队 —<br>
+<strong>λ校准后: 主队 1.492 / 客队 1.483</strong>（含伤停修正系数: 1.0）
+</div>
+<h3>模型预测对比</h3>
+<table>
+<tr><th>模型</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th></tr>
+<tr><td>DC模型（主力）</td><td>36.6%</td><td>27.2%</td><td>36.2%</td></tr>
+<tr><td>负二项分布</td><td>38.4%</td><td>23.6%</td><td>38.0%</td></tr>
+<tr><td>ZIP/ZINB</td><td>37.9%</td><td>24.6%</td><td>37.5%</td></tr>
+<tr><td>Skellam进球差</td><td>37.9%</td><td>24.5%</td><td>37.6%</td></tr>
+<tr><td>蒙特卡洛10000场</td><td>38.9%</td><td>24.1%</td><td>37.0%</td></tr>
+<tr style="font-weight:bold;background:rgba(0,212,255,0.1)"><td>加权融合</td><td>34.9%</td><td>25.6%</td><td>39.4%</td></tr>
+</table>
+
+<h3>置信度评估</h3>
+<table>
+<tr><th>结果</th><th>融合概率</th><th>Shin真实概率</th><th>概率差</th><th>置信度</th></tr><tr><td>主胜</td><td>34.9%</td><td>25.4%</td><td>+9.5%</td><td></td></tr><tr><td>平局</td><td>25.6%</td><td>27.1%</td><td>-1.4%</td><td></td></tr><tr><td>客胜</td><td>39.4%</td><td>47.5%</td><td>-8.1%</td><td><span class="badge badge-verylow">☆极低置信度</span></td></tr>
+</table>
+<div class="info-box warning">
+<strong>置信度综合评级: ☆极低置信度</strong><br>
+模型间标准差: 0.0361 | 总伤停人数: 0人<br>
+历史交锋: 弗拉门戈近6次交锋5胜1平
+</div><h3>最可能比分 Top 10</h3><div class="score-bar"><span class="score-label">1:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:37.95%"></div></div><span class="score-val">12.7%</span></div><div class="score-bar"><span class="score-label">2:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:25.259999999999998%"></div></div><span class="score-val">8.4%</span></div><div class="score-bar"><span class="score-label">1:2</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:25.14%"></div></div><span class="score-val">8.4%</span></div><div class="score-bar"><span class="score-label">0:0</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:19.380000000000003%"></div></div><span class="score-val">6.5%</span></div><div class="score-bar"><span class="score-label">1:0</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:18.78%"></div></div><span class="score-val">6.3%</span></div><div class="score-bar"><span class="score-label">2:2</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:18.75%"></div></div><span class="score-val">6.2%</span></div><div class="score-bar"><span class="score-label">0:1</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:18.66%"></div></div><span class="score-val">6.2%</span></div><div class="score-bar"><span class="score-label">2:0</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:17.040000000000003%"></div></div><span class="score-val">5.7%</span></div><div class="score-bar"><span class="score-label">0:2</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:16.86%"></div></div><span class="score-val">5.6%</span></div><div class="score-bar"><span class="score-label">3:1</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:12.57%"></div></div><span class="score-val">4.2%</span></div><h3>总进球数预测</h3><div class="goal-row"><span class="goal-label">0球</span><div class="goal-track"><div class="goal-fill" style="width:25.840000000000003%"></div></div><span class="goal-pct">6.5%</span></div><div class="goal-row"><span class="goal-label">1球</span><div class="goal-track"><div class="goal-fill" style="width:49.88%"></div></div><span class="goal-pct">12.5%</span></div><div class="goal-row"><span class="goal-label">2球</span><div class="goal-track"><div class="goal-fill" style="width:95.76%"></div></div><span class="goal-pct">23.9%</span></div><div class="goal-row"><span class="goal-label">3球</span><div class="goal-track"><div class="goal-fill" style="width:89.60000000000001%"></div></div><span class="goal-pct">22.4%</span></div><div class="goal-row"><span class="goal-label">4球</span><div class="goal-track"><div class="goal-fill" style="width:66.64%"></div></div><span class="goal-pct">16.7%</span></div><div class="goal-row"><span class="goal-label">5球</span><div class="goal-track"><div class="goal-fill" style="width:39.68%"></div></div><span class="goal-pct">9.9%</span></div><div class="goal-row"><span class="goal-label">6球</span><div class="goal-track"><div class="goal-fill" style="width:19.68%"></div></div><span class="goal-pct">4.9%</span></div><div class="goal-row"><span class="goal-label">7球</span><div class="goal-track"><div class="goal-fill" style="width:8.24%"></div></div><span class="goal-pct">2.1%</span></div><div class="goal-row"><span class="goal-label">4+球</span><div class="goal-track"><div class="goal-fill" style="width:100%"></div></div><span class="goal-pct">34.5%</span></div><div class="info-box">大小球 2.5：大球 57.1% / 小球 42.9%</div><h3>半全场预测 Top 3</h3><div class="info-box">平局-主胜: 15.5%</div><div class="info-box">平局-客胜: 15.3%</div><div class="info-box">平局-平局: 11.5%</div>
+<h3>综合推荐</h3>
+<div class="info-box success">
+<strong>胜平负: 客胜 (39.4%) | ☆极低置信度</strong><br>
+备选: 主胜 (34.9%)<br>
+比分首选: 1:1 | 次选: 2:1 | 备选: 1:2<br>
+总进球: 大2.5球 (57.1%)<br>
+半全场: 平局-主胜
+</div>
+
+<div class="info-box warning">
+实力差距极大，沙佩科基本锁定降级
+</div>
+
+</div>
+<div class="match-detail" id="match_208">
+<h2>208 巴甲 — 圣保罗 vs 巴拉纳竞技</h2>
+
+<div class="info-box">
+<strong>基本信息</strong> | 时间: 07-23 08:30 | 场地: 莫隆比球场 | 让球: 圣保罗 -0/0.5 | 大小球: 2.25
+</div>
+
+<h3>赔率对比</h3>
+<table>
+<tr><th>类型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>竞彩官方</td><td>2.15</td><td>3.2</td><td>3.25</td></tr>
+<tr><td>归一化去水</td><td>42.9%</td><td>28.8%</td><td>28.3%</td></tr>
+<tr><td>Shin去水 ★</td><td>37.9%</td><td>31.1%</td><td>30.9%</td></tr>
+<tr><td>Power去水</td><td>38.9%</td><td>30.7%</td><td>30.4%</td></tr>
+</table>
+
+<h3>联赛诊断</h3>
+<div class="info-box">
+VMR=1.30，轻度过离散 | 0-0率12%，推荐ZIP<br>
+推荐分布族: <strong>ZIP+DC对比</strong> | Platt校准: 大球-5%，平局+5%<br>
+DC ρ参数: -0.12 | Shin z参数: 0.1300
+</div>
+
+<h3>球队实力评级</h3>
+<div class="two-col">
+<div>
+<strong>圣保罗</strong>（主队）<br>
+排名: 8 | 7胜4平7负 积25分<br>
+进球18/失球20 | xG 1.1 / xGA 1.05<br>
+Elo: 1505 | 身价: 28.0M €<br>
+近5场: LLDDL
+<br>伤停: <span class="injury-tag injury-confirmed">确认缺阵</span> <span class="injury-tag injury-confirmed">确认缺阵</span> </div><div>
+<strong>巴拉纳竞技</strong>（客队）<br>
+排名: 5 | 9胜3平6负 积30分<br>
+进球22/失球18 | xG 1.25 / xGA 0.9<br>
+Elo: 1515 | 身价: 22.0M €<br>
+近5场: WWLWL
+<br>伤停: <span class="injury-tag injury-confirmed">确认缺阵</span> <span class="injury-tag injury-confirmed">确认缺阵</span> </div></div>
+<h3>xG校准分析</h3>
+<div class="info-box">
+圣保罗 xG近10场: 1.1，实际场均: 1.0，偏离幅度: 1.10x<br>
+巴拉纳竞技 xG近10场: 1.25，实际场均: 1.22，偏离幅度: 1.02x<br>
+λ校准前: 主队 1.662 / 客队 —<br>
+<strong>λ校准后: 主队 1.3 / 客队 1.046</strong>（含伤停修正系数: 0.78）
+</div>
+<h3>模型预测对比</h3>
+<table>
+<tr><th>模型</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th></tr>
+<tr><td>DC模型（主力）</td><td>40.7%</td><td>30.9%</td><td>28.4%</td></tr>
+<tr><td>负二项分布</td><td>41.9%</td><td>27.4%</td><td>30.7%</td></tr>
+<tr><td>ZIP/ZINB</td><td>41.3%</td><td>28.6%</td><td>30.1%</td></tr>
+<tr><td>Skellam进球差</td><td>42.3%</td><td>27.8%</td><td>29.9%</td></tr>
+<tr><td>蒙特卡洛10000场</td><td>43.3%</td><td>27.0%</td><td>29.7%</td></tr>
+<tr style="font-weight:bold;background:rgba(0,212,255,0.1)"><td>加权融合</td><td>41.0%</td><td>29.2%</td><td>29.8%</td></tr>
+</table>
+
+<h3>置信度评估</h3>
+<table>
+<tr><th>结果</th><th>融合概率</th><th>Shin真实概率</th><th>概率差</th><th>置信度</th></tr><tr><td>主胜</td><td>41.0%</td><td>37.9%</td><td>+3.1%</td><td><span class="badge badge-低">★低置信度</span></td></tr><tr><td>平局</td><td>29.2%</td><td>31.1%</td><td>-1.9%</td><td></td></tr><tr><td>客胜</td><td>29.8%</td><td>30.9%</td><td>-1.2%</td><td></td></tr>
+</table>
+<div class="info-box warning">
+<strong>置信度综合评级: ★低置信度</strong><br>
+模型间标准差: 0.0390 | 总伤停人数: 4人<br>
+历史交锋: 圣保罗主场近5次vs巴竞技4胜1平，主场3连胜且最近3场均2-1
+</div><h3>最可能比分 Top 10</h3><div class="score-bar"><span class="score-label">1:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:43.74000000000001%"></div></div><span class="score-val">14.6%</span></div><div class="score-bar"><span class="score-label">0:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:33.42%"></div></div><span class="score-val">11.1%</span></div><div class="score-bar"><span class="score-label">1:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:32.64%"></div></div><span class="score-val">10.9%</span></div><div class="score-bar"><span class="score-label">2:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:25.379999999999995%"></div></div><span class="score-val">8.5%</span></div><div class="score-bar"><span class="score-label">0:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:25.379999999999995%"></div></div><span class="score-val">8.5%</span></div><div class="score-bar"><span class="score-label">2:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:24.27%"></div></div><span class="score-val">8.1%</span></div><div class="score-bar"><span class="score-label">1:2</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:20.43%"></div></div><span class="score-val">6.8%</span></div><div class="score-bar"><span class="score-label">0:2</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:15.72%"></div></div><span class="score-val">5.2%</span></div><div class="score-bar"><span class="score-label">2:2</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:13.29%"></div></div><span class="score-val">4.4%</span></div><div class="score-bar"><span class="score-label">3:1</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:11.010000000000002%"></div></div><span class="score-val">3.7%</span></div><h3>总进球数预测</h3><div class="goal-row"><span class="goal-label">0球</span><div class="goal-track"><div class="goal-fill" style="width:44.56%"></div></div><span class="goal-pct">11.1%</span></div><div class="goal-row"><span class="goal-label">1球</span><div class="goal-track"><div class="goal-fill" style="width:77.36%"></div></div><span class="goal-pct">19.3%</span></div><div class="goal-row"><span class="goal-label">2球</span><div class="goal-track"><div class="goal-fill" style="width:100%"></div></div><span class="goal-pct">27.9%</span></div><div class="goal-row"><span class="goal-label">3球</span><div class="goal-track"><div class="goal-fill" style="width:82.39999999999999%"></div></div><span class="goal-pct">20.6%</span></div><div class="goal-row"><span class="goal-label">4球</span><div class="goal-track"><div class="goal-fill" style="width:48.32%"></div></div><span class="goal-pct">12.1%</span></div><div class="goal-row"><span class="goal-label">5球</span><div class="goal-track"><div class="goal-fill" style="width:22.68%"></div></div><span class="goal-pct">5.7%</span></div><div class="goal-row"><span class="goal-label">6球</span><div class="goal-track"><div class="goal-fill" style="width:8.88%"></div></div><span class="goal-pct">2.2%</span></div><div class="goal-row"><span class="goal-label">7球</span><div class="goal-track"><div class="goal-fill" style="width:2.92%"></div></div><span class="goal-pct">0.7%</span></div><div class="goal-row"><span class="goal-label">4+球</span><div class="goal-track"><div class="goal-fill" style="width:83.8%"></div></div><span class="goal-pct">20.9%</span></div><div class="info-box">大小球 2.25：大球 48.6% / 小球 51.4%</div><h3>半全场预测 Top 3</h3><div class="info-box">平局-主胜: 19.5%</div><div class="info-box">平局-平局: 14.8%</div><div class="info-box">平局-客胜: 13.6%</div>
+<h3>综合推荐</h3>
+<div class="info-box success">
+<strong>胜平负: 主胜 (41.0%) | ★低置信度</strong><br>
+备选: 客胜 (29.8%)<br>
+比分首选: 1:1 | 次选: 0:0 | 备选: 1:0<br>
+总进球: 小2.25球 (51.4%)<br>
+半全场: 平局-主胜
+</div>
+
+<div class="info-box warning">
+圣保罗伤病潮但主场交锋碾压；巴竞技客场虫
+</div>
+
+</div>
+<div class="match-detail" id="match_209">
+<h2>209 美职联 — 洛杉矶FC vs 皇家盐湖城</h2>
+
+<div class="info-box">
+<strong>基本信息</strong> | 时间: 07-23 10:30 | 场地: BMO体育场 | 让球: 洛杉矶FC -0.5/1 | 大小球: 2.75
+</div>
+
+<h3>赔率对比</h3>
+<table>
+<tr><th>类型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>竞彩官方</td><td>1.6</td><td>3.9</td><td>4.8</td></tr>
+<tr><td>归一化去水</td><td>57.4%</td><td>23.5%</td><td>19.1%</td></tr>
+<tr><td>Shin去水 ★</td><td>44.9%</td><td>28.3%</td><td>26.8%</td></tr>
+<tr><td>Power去水</td><td>47.5%</td><td>27.9%</td><td>24.6%</td></tr>
+</table>
+
+<h3>联赛诊断</h3>
+<div class="info-box">
+VMR=1.20，标准DC适用 | 0-0率7%<br>
+推荐分布族: <strong>DC主力</strong> | Platt校准: 大球-5%，平局+3%<br>
+DC ρ参数: -0.1 | Shin z参数: 0.1300
+</div>
+
+<h3>球队实力评级</h3>
+<div class="two-col">
+<div>
+<strong>洛杉矶FC</strong>（主队）<br>
+排名: 西部第3 | 8胜3平4负 积27分<br>
+进球28/失球18 | xG 1.75 / xGA 1.0<br>
+Elo: 1570 | 身价: 42.0M €<br>
+近5场: WWLWW
+<br>伤停: <span class="injury-tag injury-confirmed">确认缺阵</span> <span class="injury-tag injury-confirmed">确认缺阵</span> <span class="injury-tag injury-confirmed">确认缺阵</span> </div><div>
+<strong>皇家盐湖城</strong>（客队）<br>
+排名: 西部第5 | 8胜2平4负 积26分<br>
+进球25/失球16 | xG 1.6 / xGA 1.1<br>
+Elo: 1545 | 身价: 25.0M €<br>
+近5场: WLWWW
+<br>伤停: <span class="injury-tag injury-confirmed">确认缺阵</span> <span class="injury-tag injury-confirmed">确认缺阵</span> <span class="injury-tag injury-confirmed">确认缺阵</span> <span class="injury-tag injury-confirmed">确认缺阵</span> <span class="injury-tag injury-confirmed">确认缺阵</span> </div></div>
+<h3>xG校准分析</h3>
+<div class="info-box">
+洛杉矶FC xG近10场: 1.75，实际场均: 1.87，偏离幅度: 0.94x<br>
+皇家盐湖城 xG近10场: 1.6，实际场均: 1.79，偏离幅度: 0.89x<br>
+λ校准前: 主队 1.696 / 客队 —<br>
+<strong>λ校准后: 主队 1.22 / 客队 0.781</strong>（含伤停修正系数: 0.72）
+</div>
+<h3>模型预测对比</h3>
+<table>
+<tr><th>模型</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th></tr>
+<tr><td>DC模型（主力）</td><td>45.2%</td><td>32.4%</td><td>22.4%</td></tr>
+<tr><td>负二项分布</td><td>45.7%</td><td>29.9%</td><td>24.5%</td></tr>
+<tr><td>ZIP/ZINB</td><td>45.5%</td><td>30.6%</td><td>23.9%</td></tr>
+<tr><td>Skellam进球差</td><td>46.4%</td><td>29.8%</td><td>23.7%</td></tr>
+<tr><td>蒙特卡洛10000场</td><td>47.3%</td><td>29.3%</td><td>23.4%</td></tr>
+<tr style="font-weight:bold;background:rgba(0,212,255,0.1)"><td>加权融合</td><td>45.9%</td><td>30.1%</td><td>24.1%</td></tr>
+</table>
+
+<h3>置信度评估</h3>
+<table>
+<tr><th>结果</th><th>融合概率</th><th>Shin真实概率</th><th>概率差</th><th>置信度</th></tr><tr><td>主胜</td><td>45.9%</td><td>44.9%</td><td>+0.9%</td><td><span class="badge badge-中">★★中置信度</span></td></tr><tr><td>平局</td><td>30.1%</td><td>28.3%</td><td>+1.8%</td><td></td></tr><tr><td>客胜</td><td>24.1%</td><td>26.8%</td><td>-2.7%</td><td></td></tr>
+</table>
+<div class="info-box success">
+<strong>置信度综合评级: ★★中置信度</strong><br>
+模型间标准差: 0.0314 | 总伤停人数: 8人<br>
+历史交锋: LAFC历史交锋15胜4平1负，上赛季两回合均4-1
+</div><h3>最可能比分 Top 10</h3><div class="score-bar"><span class="score-label">1:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:45.63%"></div></div><span class="score-val">15.2%</span></div><div class="score-bar"><span class="score-label">0:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:44.43%"></div></div><span class="score-val">14.8%</span></div><div class="score-bar"><span class="score-label">1:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:42.51%"></div></div><span class="score-val">14.2%</span></div><div class="score-bar"><span class="score-label">2:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:30.179999999999996%"></div></div><span class="score-val">10.1%</span></div><div class="score-bar"><span class="score-label">0:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:27.81%"></div></div><span class="score-val">9.3%</span></div><div class="score-bar"><span class="score-label">2:1</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:23.580000000000002%"></div></div><span class="score-val">7.9%</span></div><div class="score-bar"><span class="score-label">1:2</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:15.089999999999998%"></div></div><span class="score-val">5.0%</span></div><div class="score-bar"><span class="score-label">0:2</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:12.36%"></div></div><span class="score-val">4.1%</span></div><div class="score-bar"><span class="score-label">3:0</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:12.27%"></div></div><span class="score-val">4.1%</span></div><div class="score-bar"><span class="score-label">3:1</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:9.600000000000001%"></div></div><span class="score-val">3.2%</span></div><h3>总进球数预测</h3><div class="goal-row"><span class="goal-label">0球</span><div class="goal-track"><div class="goal-fill" style="width:59.24%"></div></div><span class="goal-pct">14.8%</span></div><div class="goal-row"><span class="goal-label">1球</span><div class="goal-track"><div class="goal-fill" style="width:97.92%"></div></div><span class="goal-pct">24.5%</span></div><div class="goal-row"><span class="goal-label">2球</span><div class="goal-track"><div class="goal-fill" style="width:100%"></div></div><span class="goal-pct">28.4%</span></div><div class="goal-row"><span class="goal-label">3球</span><div class="goal-track"><div class="goal-fill" style="width:72.2%"></div></div><span class="goal-pct">18.1%</span></div><div class="goal-row"><span class="goal-label">4球</span><div class="goal-track"><div class="goal-fill" style="width:36.120000000000005%"></div></div><span class="goal-pct">9.0%</span></div><div class="goal-row"><span class="goal-label">5球</span><div class="goal-track"><div class="goal-fill" style="width:14.44%"></div></div><span class="goal-pct">3.6%</span></div><div class="goal-row"><span class="goal-label">6球</span><div class="goal-track"><div class="goal-fill" style="width:4.84%"></div></div><span class="goal-pct">1.2%</span></div><div class="goal-row"><span class="goal-label">7球</span><div class="goal-track"><div class="goal-fill" style="width:1.32%"></div></div><span class="goal-pct">0.3%</span></div><div class="goal-row"><span class="goal-label">4+球</span><div class="goal-track"><div class="goal-fill" style="width:57.120000000000005%"></div></div><span class="goal-pct">14.3%</span></div><div class="info-box">大小球 2.75：大球 46.5% / 小球 53.5%</div><h3>半全场预测 Top 3</h3><div class="info-box">平局-主胜: 23.2%</div><div class="info-box">平局-平局: 16.7%</div><div class="info-box">主胜-主胜: 13.9%</div>
+<h3>综合推荐</h3>
+<div class="info-box success">
+<strong>胜平负: 主胜 (45.9%) | ★★中置信度</strong><br>
+备选: 平局 (30.1%)<br>
+比分首选: 1:0 | 次选: 0:0 | 备选: 1:1<br>
+总进球: 小2.75球 (53.5%)<br>
+半全场: 平局-主胜
+</div>
+
+<div class="info-box warning">
+LAFC近2场零封；盐湖城客场仅1胜+5人伤停
+</div>
+
+</div>
+<div class="match-detail" id="match_210">
+<h2>210 欧冠资格赛 — 奥莫尼亚 vs 阿拉木图凯拉特</h2>
+
+<div class="info-box">
+<strong>基本信息</strong> | 时间: 07-23 01:00 | 场地: GSP体育场 | 让球: 奥莫尼亚 -1 | 大小球: 2.5
+</div>
+
+<h3>赔率对比</h3>
+<table>
+<tr><th>类型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>竞彩官方</td><td>1.56</td><td>3.6</td><td>4.75</td></tr>
+<tr><td>归一化去水</td><td>56.8%</td><td>24.6%</td><td>18.6%</td></tr>
+<tr><td>Shin去水 ★</td><td>45.0%</td><td>28.6%</td><td>26.4%</td></tr>
+<tr><td>Power去水</td><td>47.2%</td><td>28.6%</td><td>24.2%</td></tr>
+</table>
+
+<h3>联赛诊断</h3>
+<div class="info-box">
+VMR=1.35，杯赛特性 | 0-0率10%，ZIP推荐<br>
+推荐分布族: <strong>ZIP+DC</strong> | Platt校准: 大球-8%，平局+5%<br>
+DC ρ参数: -0.15 | Shin z参数: 0.1300
+</div>
+
+<h3>球队实力评级</h3>
+<div class="two-col">
+<div>
+<strong>奥莫尼亚</strong>（主队）<br>
+排名: 塞浦路斯冠军 | 20胜5平4负 积65分<br>
+进球55/失球22 | xG 1.7 / xGA 0.8<br>
+Elo: 1480 | 身价: 15.0M €<br>
+近5场: WWWDW
+</div><div>
+<strong>阿拉木图凯拉特</strong>（客队）<br>
+排名: 哈萨克冠军 | 12胜3平5负 积39分<br>
+进球35/失球18 | xG 1.55 / xGA 0.9<br>
+Elo: 1430 | 身价: 10.0M €<br>
+近5场: WWWWW
+</div></div>
+<h3>xG校准分析</h3>
+<div class="info-box">
+奥莫尼亚 xG近10场: 1.7，实际场均: 1.9，偏离幅度: 0.89x<br>
+阿拉木图凯拉特 xG近10场: 1.55，实际场均: 1.75，偏离幅度: 0.89x<br>
+λ校准前: 主队 1.511 / 客队 —<br>
+<strong>λ校准后: 主队 1.511 / 客队 1.028</strong>（含伤停修正系数: 1.0）
+</div>
+<h3>模型预测对比</h3>
+<table>
+<tr><th>模型</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th></tr>
+<tr><td>DC模型（主力）</td><td>46.5%</td><td>29.5%</td><td>23.9%</td></tr>
+<tr><td>负二项分布</td><td>47.2%</td><td>25.6%</td><td>27.2%</td></tr>
+<tr><td>ZIP/ZINB</td><td>47.1%</td><td>26.5%</td><td>26.4%</td></tr>
+<tr><td>Skellam进球差</td><td>48.3%</td><td>25.9%</td><td>25.8%</td></tr>
+<tr><td>蒙特卡洛10000场</td><td>48.1%</td><td>26.3%</td><td>25.6%</td></tr>
+<tr style="font-weight:bold;background:rgba(0,212,255,0.1)"><td>加权融合</td><td>46.9%</td><td>27.6%</td><td>25.6%</td></tr>
+</table>
+
+<h3>置信度评估</h3>
+<table>
+<tr><th>结果</th><th>融合概率</th><th>Shin真实概率</th><th>概率差</th><th>置信度</th></tr><tr><td>主胜</td><td>46.9%</td><td>45.0%</td><td>+1.9%</td><td><span class="badge badge-中">★★中置信度</span></td></tr><tr><td>平局</td><td>27.6%</td><td>28.6%</td><td>-1.0%</td><td></td></tr><tr><td>客胜</td><td>25.6%</td><td>26.4%</td><td>-0.9%</td><td></td></tr>
+</table>
+<div class="info-box success">
+<strong>置信度综合评级: ★★中置信度</strong><br>
+模型间标准差: 0.0399 | 总伤停人数: 0人<br>
+历史交锋: 21/22欧协联小组赛两场0-0
+</div><h3>最可能比分 Top 10</h3><div class="score-bar"><span class="score-label">1:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:42.3%"></div></div><span class="score-val">14.1%</span></div><div class="score-bar"><span class="score-label">1:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:30.27%"></div></div><span class="score-val">10.1%</span></div><div class="score-bar"><span class="score-label">0:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:29.19%"></div></div><span class="score-val">9.7%</span></div><div class="score-bar"><span class="score-label">2:1</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:27.78%"></div></div><span class="score-val">9.3%</span></div><div class="score-bar"><span class="score-label">2:0</span><div class="score-bar-track"><div class="score-bar-fill high" style="width:27.03%"></div></div><span class="score-val">9.0%</span></div><div class="score-bar"><span class="score-label">1:2</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:18.9%"></div></div><span class="score-val">6.3%</span></div><div class="score-bar"><span class="score-label">0:1</span><div class="score-bar-track"><div class="score-bar-fill medium" style="width:18.839999999999996%"></div></div><span class="score-val">6.3%</span></div><div class="score-bar"><span class="score-label">2:2</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:14.280000000000001%"></div></div><span class="score-val">4.8%</span></div><div class="score-bar"><span class="score-label">3:1</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:14.01%"></div></div><span class="score-val">4.7%</span></div><div class="score-bar"><span class="score-label">3:0</span><div class="score-bar-track"><div class="score-bar-fill low" style="width:13.620000000000001%"></div></div><span class="score-val">4.5%</span></div><h3>总进球数预测</h3><div class="goal-row"><span class="goal-label">0球</span><div class="goal-track"><div class="goal-fill" style="width:38.92%"></div></div><span class="goal-pct">9.7%</span></div><div class="goal-row"><span class="goal-label">1球</span><div class="goal-track"><div class="goal-fill" style="width:65.48%"></div></div><span class="goal-pct">16.4%</span></div><div class="goal-row"><span class="goal-label">2球</span><div class="goal-track"><div class="goal-fill" style="width:100%"></div></div><span class="goal-pct">27.3%</span></div><div class="goal-row"><span class="goal-label">3球</span><div class="goal-track"><div class="goal-fill" style="width:86.16%"></div></div><span class="goal-pct">21.5%</span></div><div class="goal-row"><span class="goal-label">4球</span><div class="goal-track"><div class="goal-fill" style="width:54.67999999999999%"></div></div><span class="goal-pct">13.7%</span></div><div class="goal-row"><span class="goal-label">5球</span><div class="goal-track"><div class="goal-fill" style="width:27.76%"></div></div><span class="goal-pct">6.9%</span></div><div class="goal-row"><span class="goal-label">6球</span><div class="goal-track"><div class="goal-fill" style="width:11.76%"></div></div><span class="goal-pct">2.9%</span></div><div class="goal-row"><span class="goal-label">7球</span><div class="goal-track"><div class="goal-fill" style="width:4.16%"></div></div><span class="goal-pct">1.0%</span></div><div class="goal-row"><span class="goal-label">4+球</span><div class="goal-track"><div class="goal-fill" style="width:99.88%"></div></div><span class="goal-pct">25.0%</span></div><div class="info-box">大小球 2.5：大球 46.6% / 小球 53.4%</div><h3>半全场预测 Top 3</h3><div class="info-box">平局-主胜: 21.4%</div><div class="info-box">主胜-主胜: 15.7%</div><div class="info-box">平局-平局: 13.6%</div>
+<h3>综合推荐</h3>
+<div class="info-box success">
+<strong>胜平负: 主胜 (46.9%) | ★★中置信度</strong><br>
+备选: 平局 (27.6%)<br>
+比分首选: 1:1 | 次选: 1:0 | 备选: 0:0<br>
+总进球: 小2.5球 (53.4%)<br>
+半全场: 平局-主胜
+</div>
+
+<div class="info-box warning">
+阿拉木图7连胜+欧冠首轮4-1晋级
+</div>
+
+</div>
+<div class="risk-warning">
+<h3>风险提示</h3>
+<ul style="margin-left:20px;margin-top:10px;color:#cc9999;">
+<li>足球比赛存在极大不确定性，任何模型预测均非100%准确</li>
+<li>模型基于历史数据，突发因素（红牌、点球、天气等）无法完全预测</li>
+<li>赔率数据可能随时间变化，请以实时数据为准</li>
+<li>DC模型虽优于标准泊松，仍假设进球事件独立</li>
+<li>蒙特卡洛模拟受输入参数质量影响</li>
+<li>置信度评级仅供预测可靠性参考，不代表实际结果保证（规则11：高置信度≠高命中）</li>
+<li>历史回测不代表未来表现</li>
+<li>伤停信息分为"确认缺阵"和"出战成疑"两级，赛前1小时首发名单为唯一可靠信源（规则10）</li>
+<li><strong>理性看待预测，切勿沉迷赌博</strong></li>
+</ul>
+</div>
+
+<div class="footer">
+<p>竞彩足球全方位分析报告 | 2026-07-22 周三 | 10场比赛</p>
+<p>基于Dixon-Coles / 负二项 / ZIP / Skellam / Shin / 蒙特卡洛 等数学模型</p>
+<p>本报告仅供学习参考，不构成任何投注建议</p>
+</div>
+
+</div>
+<script>
+// Smooth scroll for nav pills
+document.querySelectorAll('.nav-pill').forEach(pill => {
+pill.addEventListener('click', function(e) {
+document.querySelectorAll('.nav-pill').forEach(p => p.classList.remove('active'));
+this.classList.add('active');
+});
+});
+</script>
+</body></html>

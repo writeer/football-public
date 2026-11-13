@@ -1,0 +1,573 @@
+{
+    "league_info": {
+        "name_cn": "国际赛（国家队国际比赛）",
+        "name_en": "International Matches (National Team)",
+        "also_known_as": [
+            "国际友谊赛 / 国际赛",
+            "International Friendlies",
+            "FIFA International Match Window",
+            "世界杯亚洲区预选赛",
+            "亚洲杯（AFC Asian Cup）"
+        ],
+        "country": "国际（多国/跨大洲）",
+        "country_code": "INT",
+        "level": "国家队国际赛事（国际友谊赛 + 世界杯亚洲区预选赛 + 亚洲杯正赛）",
+        "tier": "Tier-1（footballdatabase 对友谊赛/亚洲区预选均标注 Tier: 1；属成年国家队最高级别赛事统称）",
+        "match_tier_system": {
+            "note": "竞彩'国际赛'是一类统称，需按'战意等级'二次分层，三类赛事统计口径不同：",
+            "friendly": "热身/演练级（Tier低战意）——轮换最多、战意最低、结果最不可预测",
+            "world_cup_qualifier": "正式资格赛级（Tier高战意）——亚洲区含第1/2/3/4轮小组赛+附加赛，战意最高",
+            "asian_cup": "洲际正赛级（Tier高战意）——赛会制，中立场或东道主主场为主"
+        },
+        "num_teams": 0,
+        "format": "友谊赛（单场或小型赛会制）+ 世界杯亚洲区预选（多轮主客场小组赛+附加赛）+ 亚洲杯（小组赛+淘汰赛），各赛事赛制独立",
+        "season_period": "全年；国际友谊赛集中在FIFA国际比赛窗口（3月、6月、9月、10月、11月）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.the-afc.com ; https://www.fifa.com ; https://www.theifab.com/laws",
+        "governing_body": "FIFA（国际足联）/ AFC（亚足联）",
+        "competition_tier": null,
+        "cross_league_level": null,
+        "competition_tier_note": "规则76赛事本身等级（1欧冠精英/2欧联欧协联/3亚冠精英/4解放者杯/5欧国联/6亚运会；None=不适用），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024/25 - 2026/27（跨赛季汇总）",
+        "primary_scope": "主口径＝成年国家队国际友谊赛（竞彩'国际赛'绝大多数场次）；世界杯亚洲区预选与亚洲杯见统计子块 competitions",
+        "avg_goals_per_match": 2.7,
+        "avg_goals_per_match_note": "成年国家队友谊赛两源：footballdatabase 2025年285场=2.66；ponturifotbal 2026/27赛季506场=2.75。取中值2.70。另有聚合库nowscore/球探'国际友谊'(2026,1343场,含U系列与女足)场均3.02，因含大量青年队悬殊比分(11-0/10-0等)而偏高，仅作上限参考、不作主口径。",
+        "avg_goals_per_match_range": [
+            2.66,
+            2.75
+        ],
+        "avg_goals_per_match_source": [
+            "https://www.footballdatabase.eu/en/competition/overall/21907-rencontres_amicales/2025/365252-intercontinental",
+            "https://ponturifotbal.ai/meciuri-amicale-internationale-ponturi-pariuri/scor-exact",
+            "https://info.nowscore.com/cn/CNormal/1366.html"
+        ],
+        "draw_rate": 0.23,
+        "draw_rate_note": "两源一致：footballdatabase 2025年友谊赛=23%；ponturifotbal 2026/27=23%。交叉参考：nowscore聚合库(1343场)全场平局率21.6%。",
+        "draw_rate_source": [
+            "https://www.footballdatabase.eu/en/competition/overall/21907-rencontres_amicales/2025/365252-intercontinental",
+            "https://ponturifotbal.ai/meciuri-amicale-internationale-ponturi-pariuri/scor-exact"
+        ],
+        "home_win_rate": 0.49,
+        "home_win_rate_note": "ponturifotbal 2026/27友谊赛主胜49%。注意：成人友谊赛多为东道主主场或约战主场，名义主场优势明显；但跨国热身常在中立场进行，footballdatabase 2025样本主场优势不显著（详见 competitions 子块）。",
+        "away_win_rate": 0.28,
+        "away_win_rate_note": "ponturifotbal 2026/27友谊赛客胜28%（主胜49%+平23%+客胜28%=100%）。",
+        "home_advantage_factor": 1.3,
+        "home_advantage_factor_note": "以 ponturifotbal 主胜49%/客胜28% 折算的粗略系数≈1.3；仅适用于'主场作战'的友谊赛，中立场约战不适用。单一来源推算，置信度低。",
+        "over_2_5_rate": 0.52,
+        "over_2_5_rate_note": "ponturifotbal 2026/27：大2.5=52%（大1.5=75%、大3.5=30%）。nowscore聚合库(1343场)大2.5=56.96%（含各级国家队，偏高）。",
+        "under_2_5_rate": 0.48,
+        "btts_rate": 0.48,
+        "btts_rate_note": "ponturifotbal 2026/27双方进球(BTTS)=48%（Da 48% / Nu 52%）。单一来源。",
+        "top_scores": [
+            {
+                "score": "1-1",
+                "frequency": 0.094,
+                "direction": "平局",
+                "cross_check": "nowscore 9.38%(126/1343) / ponturifotbal 10%"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.084,
+                "direction": "主胜",
+                "cross_check": "nowscore 8.41%(113/1343) / ponturifotbal 10%"
+            },
+            {
+                "score": "0-1",
+                "frequency": 0.072,
+                "direction": "客胜",
+                "cross_check": "nowscore 7.22%(97/1343) / ponturifotbal 8%"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.072,
+                "direction": "主胜",
+                "cross_check": "nowscore 7.22%(97/1343) / ponturifotbal 9%"
+            },
+            {
+                "score": "1-2",
+                "frequency": 0.072,
+                "direction": "客胜",
+                "cross_check": "nowscore 7.22%(97/1343)；ponturifotbal未入前五"
+            }
+        ],
+        "top_scores_note": "频率口径为nowscore/球探'国际友谊'2026年1343场（含各级国家队）。相邻常见比分：0-0 6.40%、2-0 6.40%、3-0 5.73%（nowscore）。ponturifotbal(506场)前五为1-1(10%)/1-0(10%)/2-1(9%)/0-1(8%)/0-0(8%)，两源在1-1、1-0、0-1、2-1上一致，第五名分歧(1-2 vs 0-0)。",
+        "top_scores_source": [
+            "https://info.nowscore.com/cn/CNormal/1366.html",
+            "https://info.titan007.com/big/CNormal/1366.html",
+            "https://ponturifotbal.ai/meciuri-amicale-internationale-ponturi-pariuri/scor-exact"
+        ],
+        "goals_distribution": {
+            "scope": "nowscore/球探'国际友谊'2026年1343场（含各级国家队）",
+            "0_goals": 0.064,
+            "1_goal": 0.156,
+            "2_goals": 0.21,
+            "3_goals": 0.22,
+            "4_goals": 0.156,
+            "5_plus_goals": 0.193,
+            "note": "由该库逐档比分频次汇总计算：0球86场、1球210场、2球282场、3球296场、4球210场、5+球259场，合计1343场。5+球占比19.3%显著高于俱乐部联赛(约10-15%)，源于弱旅/青年队被打爆场次。"
+        },
+        "ht_draw_rate": 0.38,
+        "ht_draw_rate_note": "国际友谊赛半场平局率。ponturifotbal 2026/27赛季半场分布：主队领先36% / 平局38% / 客队落后22% → 半场平局率≈0.38。参照源：betmath HT/FT计算器通用半场平局42.9%（非国际赛专项）；天门日报引用2010-2022五届世界杯320场半场平局约42%。三源区间0.38-0.43，取0.38为国际友谊赛口径。",
+        "ht_draw_rate_range": [
+            0.38,
+            0.43
+        ],
+        "ht_draw_rate_source": [
+            "https://ponturifotbal.ai/meciuri-amicale-internationale-ponturi-pariuri/scor-exact",
+            "https://betmath.online/htft",
+            "https://tmrb.tmwcn.com/tmrb/20260616/news/content_202606169266747.htm"
+        ],
+        "ht_draw_rate_tier": "中(0.38-0.43)",
+        "ht_draw_rate_confidence": "中低（仅1个国际友谊赛专项源+2个通用/世界杯参照源，无同一总体的双源一致性验证）",
+        "ht_draw_rate_status": "estimated",
+        "ht_draw_rate_updated": "2026-09-23",
+        "competitions": {
+            "international_friendlies": {
+                "matches_analyzed": 791,
+                "sources_breakdown": {
+                    "footballdatabase_2025": {
+                        "matches": 285,
+                        "goals": 759,
+                        "avg_goals_per_match": 2.66,
+                        "draw_rate": 0.23,
+                        "yellow_cards": 635,
+                        "red_cards": 28,
+                        "url": "https://www.footballdatabase.eu/en/competition/overall/21907-rencontres_amicales/2025/365252-intercontinental"
+                    },
+                    "ponturifotbal_2026_27": {
+                        "matches_played": 506,
+                        "matches_scheduled": 605,
+                        "avg_goals_per_match": 2.75,
+                        "home_win_rate": 0.49,
+                        "draw_rate": 0.23,
+                        "away_win_rate": 0.28,
+                        "over_1_5": 0.75,
+                        "over_2_5": 0.52,
+                        "over_3_5": 0.3,
+                        "btts": 0.48,
+                        "ht_home": 0.36,
+                        "ht_draw": 0.38,
+                        "ht_away": 0.22,
+                        "url": "https://ponturifotbal.ai/meciuri-amicale-internationale-ponturi-pariuri/scor-exact"
+                    },
+                    "nowscore_all_levels_2026": {
+                        "matches": 1343,
+                        "goals": 4056,
+                        "avg_goals_per_match": 3.02,
+                        "over_2_5": 0.5696,
+                        "over_3_5": 0.3492,
+                        "draw_rate": 0.2159,
+                        "zero_zero_rate": 0.064,
+                        "note": "含U17/U19/U20/U21/U23与女足国家队，故场均偏高",
+                        "url": "https://info.nowscore.com/cn/CNormal/1366.html"
+                    }
+                },
+                "collapsed_estimate": {
+                    "avg_goals_per_match": 2.7,
+                    "draw_rate": 0.23,
+                    "home_win_rate": 0.49,
+                    "away_win_rate": 0.28,
+                    "over_2_5_rate": 0.52,
+                    "under_2_5_rate": 0.48,
+                    "btts_rate": 0.48
+                }
+            },
+            "world_cup_qualifying_afc": {
+                "competition": "2026 FIFA World Cup Qualification – AFC（亚洲区，第1/2/3/4轮+附加赛）",
+                "matches_analyzed": 226,
+                "avg_goals_per_match": 2.8,
+                "avg_goals_per_match_source": [
+                    "https://www.footballdatabase.eu/en/competition/overall/18892-eliminatoires_coupe_du_monde__zone_asie/2026/312002-journee_2",
+                    "https://sbancobet.net/stats/league/world-cup-qualification-asia/Da/"
+                ],
+                "avg_goals_per_match_note": "footballdatabase：226场633球=2.8；sbancobet：225场630球=2.80。两源一致(约2.8)。",
+                "draw_rate": 0.25,
+                "draw_rate_source": [
+                    "https://www.footballdatabase.eu/en/competition/overall/18892-eliminatoires_coupe_du_monde__zone_asie/2026/312002-journee_2",
+                    "https://scores.sir.sportradar.com/en/sport/1/tournament/308?seasonId=108589"
+                ],
+                "draw_rate_note": "footballdatabase=25%；sportradar AFC Asian Qualifiers=25%。两源一致。",
+                "home_win_rate": 0.38,
+                "away_win_rate": 0.38,
+                "home_away_note": "footballdatabase(226场)：主胜38% / 平25% / 客胜38%（名义主客场几乎对称）。单一来源；反差参考：2015-2017周期 sportradar 为 主约51%/平17%/客约31%。2026周期'客胜=主胜'，反映大量球队在中立场地作主(如巴勒斯坦、伊拉克、叙利亚、朝鲜等)且强队客场多胜。",
+                "home_away_source": [
+                    "https://www.footballdatabase.eu/en/competition/overall/18892-eliminatoires_coupe_du_monde__zone_asie/2026/312002-journee_2",
+                    "https://scores.sir.sportradar.com/en/sport/1/tournament/308/statistics?seasonId=10060"
+                ],
+                "over_2_5_rate": 0.5111,
+                "under_2_5_rate": 0.4889,
+                "over_2_5_rate_note": "sbancobet 2026/27：大2.5=51.11%、小2.5=48.89%（大1.5=72.00%、大3.5=35.11%、大4.5=18.22%、大5.5=8.00%）。参照：2015-2017周期 sportradar 大2.5=52%。",
+                "over_2_5_rate_source": [
+                    "https://sbancobet.net/stats/league/world-cup-qualification-asia/Da/",
+                    "https://scores.sir.sportradar.com/en/sport/1/tournament/308/statistics?seasonId=10060"
+                ],
+                "btts_rate": 0.3822,
+                "btts_rate_note": "sbancobet：双方进球=38.22%，双方进球且平局=15.56%。单一来源。",
+                "top_scores": [
+                    {
+                        "score": "1-0",
+                        "frequency": 0.1156,
+                        "direction": "主胜"
+                    },
+                    {
+                        "score": "1-1",
+                        "frequency": 0.1067,
+                        "direction": "平局"
+                    },
+                    {
+                        "score": "0-0",
+                        "frequency": 0.0933,
+                        "direction": "平局"
+                    },
+                    {
+                        "score": "0-1",
+                        "frequency": 0.0711,
+                        "direction": "客胜"
+                    },
+                    {
+                        "score": "0-2",
+                        "frequency": 0.0711,
+                        "direction": "客胜"
+                    }
+                ],
+                "top_scores_note": "来源sbancobet(2026/27, 225场)精确比分频次：1-0(26)、1-1(24)、0-0(21)、0-1(16)、0-2(16)、2-2(11)、0-3(10)、3-0(10)、2-1(9)。单一来源，置信度中。",
+                "top_scores_source": [
+                    "https://sbancobet.net/stats/league/world-cup-qualification-asia/Da/"
+                ],
+                "cards": {
+                    "yellow_cards_total": 766,
+                    "yellow_per_match": 3.39,
+                    "red_cards_total": 35,
+                    "red_per_match": 0.155,
+                    "source": "https://www.footballdatabase.eu/en/competition/overall/18892-eliminatoires_coupe_du_monde__zone_asie/2026/312002-journee_2"
+                },
+                "corners_note": "sbancobet：全场角球大2.5=67.41%、大4.5=63.84%、大9.5=28.13%。单一来源。",
+                "trend": "场均约2.8球，显著高于亚洲俱乐部联赛；强弱悬殊（日本/韩国/伊朗/澳大利亚碾压弱旅）与中立场增多共同作用。"
+            },
+            "afc_asian_cup": {
+                "competition": "AFC Asian Cup Qatar 2023（2024年1-2月举行，亚洲杯正赛）",
+                "matches": 51,
+                "teams": 24,
+                "goals": 132,
+                "avg_goals_per_match": 2.59,
+                "avg_goals_per_match_note": "51场132球=2.588，为亚洲杯历史最高进球数（官方口径）。多源一致。",
+                "avg_goals_per_match_source": [
+                    "https://assets.the-afc.com/Corporate_Page/Technical/Post-Tournament-Report/AFC-Asian-Cup-Qatar-2023%E2%84%A2-Post-Tournament-Report.pdf",
+                    "https://www.revistaretos.org/index.php/retos/article/download/118720/84862",
+                    "https://pulse.astroawani.com/piala-asia-qatar-2023"
+                ],
+                "discipline": {
+                    "yellow_cards": 164,
+                    "yellow_per_match": 3.22,
+                    "red_cards": 12,
+                    "red_per_match": 0.235,
+                    "penalties": 20,
+                    "penalties_per_match": 0.392,
+                    "fouls": 1233,
+                    "corners": 488,
+                    "source": "https://pulse.astroawani.com/piala-asia-qatar-2023"
+                },
+                "attendance_note": "总观众逾150万，场均约2.96万（AFC官方）。",
+                "draw_rate": null,
+                "draw_rate_note": "本轮未取得亚洲杯2023可交叉验证的平局率/大小球比例来源，置null。",
+                "venue_note": "赛会制，卡塔尔多哈9座球场；名义主客场基本为中立场。"
+            }
+        },
+        "historical_reference": {
+            "wcq_afc_2015_2017": {
+                "matches": 182,
+                "goals": 527,
+                "avg_goals_per_match": 2.9,
+                "home_win_rate": 0.51,
+                "draw_rate": 0.17,
+                "away_win_rate": 0.31,
+                "over_2_5_rate": 0.52,
+                "btts_rate": 0.32,
+                "yellow_cards": 591,
+                "red_cards": 21,
+                "source": "https://scores.sir.sportradar.com/en/sport/1/tournament/308/statistics?seasonId=10060",
+                "note": "2015-2017周期亚洲区预选（46队）。主胜(51%)明显高于平局(17%)，与2026周期(38/25/38)差异大，可用于观察'主客场结构演变'。"
+            }
+        }
+    },
+    "match_style": {
+        "tactical_character": "国际友谊赛的核心特征是'结果不确定性极高'：主要由轮换规模、球员个人动机与教练实验目标决定，而非实力对比。教练以备战、考察与体能储备为目标，首发与战术意图常与盘口预期偏离。轮换是常态而非例外，主力球员常被限制在45-60分钟，约小时(60分钟)前后大面积换人可彻底改变比赛走向。世界杯亚洲区预选与亚洲杯则回归'高战意'，强弱分层清晰、战术纪律明显提升。",
+        "tempo": "中（友谊赛节奏偏慢、试探性强；预选/正赛偏快）",
+        "physicality": "低-中（友谊赛以热身与保护性对抗为主；正式赛提升至中-高）",
+        "technical_focus": "中（视参赛队档次差异极大，强旅演练新阵型、弱旅以防守反击为主）",
+        "var_usage": "FIFA/AFC正式赛（世预赛、亚洲杯）启用VAR；普通国际友谊赛多数不设VAR或仅部分赛事启用。",
+        "key_trends": [
+            "轮换是常态：主力常限时45-60分钟，60分钟前后大幅换人",
+            "战意非二值化：可战术演练/体能/考察新人，动机凌驾于比分之上",
+            "换人文化差异：友谊赛半场可做多次调整（不同于正式赛3次换人窗口）",
+            "冷门高发：阵容与战意不确定性使盘口参考价值下降",
+            "预选赛/正赛战意回升、强弱分层明显（亚洲区常见强队碾压弱旅）",
+            "赛会制（亚洲杯）名义主客场≈中立场，无实质主场优势"
+        ],
+        "style_tags": [
+            "轮换制",
+            "战意不齐",
+            "冷门高发",
+            "实验性",
+            "强队碾压弱旅",
+            "中立场常见"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 2.23,
+        "avg_yellow_cards_note": "国际友谊赛口径：footballdatabase 2025年285场635黄=2.23/场。对比：世预赛亚洲区 3.39/场（766/226）、亚洲杯2023 3.22/场（164/51）。友谊赛判罚偏松、黄牌明显更少。",
+        "avg_red_cards": 0.098,
+        "avg_red_cards_note": "国际友谊赛：28红/285场=0.098/场。对比：世预赛亚洲区 0.155/场、亚洲杯2023 0.235/场。",
+        "avg_penalties": null,
+        "avg_penalties_note": "友谊赛点球率无可靠双源，置null。可参考：亚洲杯2023 20点球/51场=0.392/场。",
+        "referee_style": "国际友谊赛多指派中立国裁判，尺度偏松、以保护球员与保证比赛连续性为主，对抗激烈度低于正式赛；世预赛/亚洲杯判罚趋严，黄牌与点球均显著上升。",
+        "first_half_stoppage_avg": null,
+        "second_half_stoppage_avg": null,
+        "stoppage_note": "本轮未检索到国际赛可交叉验证的半场补时时长来源，置null。",
+        "source": [
+            "https://www.footballdatabase.eu/en/competition/overall/21907-rencontres_amicales/2025/365252-intercontinental",
+            "https://www.footballdatabase.eu/en/competition/overall/18892-eliminatoires_coupe_du_monde__zone_asie/2026/312002-journee_2",
+            "https://pulse.astroawani.com/piala-asia-qatar-2023"
+        ]
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": null,
+        "match_fixing_note": "本轮未检索到可交叉验证的'国际赛/国际友谊赛'假赛案例与官方处罚来源，按规则置null，不做推测。",
+        "discipline_features": "国际赛统一适用IFAB《足球竞赛规则》；纪律处罚（停赛、罚则）依据FIFA纪律准则(DCB)及AFC相关规程，具体黄牌累积与停赛执行以FIFA/AFC公告为准（本轮未取得可交叉验证的具体条款文本，故不列数值）。",
+        "official_rules": "IFAB Laws of the Game（全部国际赛适用）+ FIFA Disciplinary Code + AFC Competition Regulations。",
+        "official_rules_source": [
+            "https://www.theifab.com/laws",
+            "https://www.fifa.com",
+            "https://www.the-afc.com"
+        ],
+        "integrity_rating": null,
+        "integrity_rating_note": "无可靠双源支撑，置null。定性提示：友谊赛因关注度低、阵容与战意不透明，历史上属博彩操纵的相对高风险类别，但本轮未获可引用证据，不予量化。"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "博彩/分析类媒体普遍将国际友谊赛描述为'实验与强度混杂'的比赛：教练测试体系、球员争夺位置，导致状态与盘口参考意义被削弱；轮换是规则而非例外，60分钟前后换人常改变比赛走势。球迷与彩民普遍认为'友谊赛看战意、正式赛看实力'，对预选赛/正赛认可度与关注度更高（尤其中国球迷关注国足的世预赛与亚洲杯）。",
+        "public_evaluation_source": [
+            "https://bwb-solutions.com/international-friendlies-worth-a-punt-or-not/",
+            "https://sports-analytics.pro/football-betting-strategy-for-friendly-matches-between-national-teams/",
+            "https://www.transfermarkt.us/online-betting/picks/azerbaijan-vs-tajikistan-picks-23-09-2026/"
+        ],
+        "betting_market": {
+            "market_efficiency": "低-中（友谊赛：信息不对称大、阵容透明度低、盘口效率最低；预选/正赛：中等）",
+            "liquidity": "中（友谊赛低于洲际正赛）",
+            "line_movement_frequency": "高频（友谊赛临场首发公布前后波动大）",
+            "sharp_money": "有限；友谊赛盘口更易受消息面（首发、教练表态）驱动",
+            "note": "上述为博彩指南/媒体的定性描述，非量化统计。"
+        },
+        "upset_frequency": "高",
+        "upset_note": "友谊赛冷门频率定性为'高'：轮换规模、球员动机、战术实验目标构成的系统不确定性，使强弱盘口频繁失效（来源：BWB、sports-analytics、parier-sport 博彩指南）。本轮未取得可引用的量化'冷门率'数据，故不列数值。亚洲杯2023出现多场强弱倒挂与黑马晋级（赛会制增加冷门）。",
+        "upset_frequency_source": [
+            "https://bwb-solutions.com/betting-traps-in-international-friendlies/",
+            "https://parier-sport.com/pronostics-matchs-amicaux/",
+            "https://sports-analytics.pro/football-betting-strategy-for-friendly-matches-between-national-teams/"
+        ],
+        "jingcai_tips": [
+            "友谊赛优先看首发与'预计出场时间'，而非排名或历史交锋",
+            "轮换幅度大时避免深盘让球，倾向走小/半场市场或BTTS",
+            "60分钟前后是换人高峰与走势转折点，走地需紧盯换人",
+            "区分战意等级：世界杯世预赛/亚洲杯战意高、可参考实力；普通热身赛战意不可预测",
+            "亚洲区预选常见强旅碾压弱旅（场均约2.8球、强队大胜多），可关注大球与让球",
+            "亚洲杯为赛会制中立场，名义主客场无实质优势"
+        ],
+        "common_sayings": [
+            "友谊赛看战意",
+            "热身赛防冷",
+            "国际赛轮换多，盘口当参考"
+        ],
+        "common_sayings_note": "为社区/博彩指南常见说法的编辑性归纳，非定量来源；对应的原始表述见 public_evaluation_source。"
+    },
+    "data_sources": {
+        "last_updated": "2026-09-23",
+        "sources": [
+            {
+                "name": "ponturifotbal.ai — International Friendlies 2026/27",
+                "url": "https://ponturifotbal.ai/meciuri-amicale-internationale-ponturi-pariuri/scor-exact",
+                "data_points": [
+                    "506/605场，场均2.75球",
+                    "主胜49%/平23%/客胜28%",
+                    "大1.5=75%、大2.5=52%、大3.5=30%",
+                    "双方进球48%",
+                    "半场：主36%/平38%/客22%",
+                    "最常见比分 1-1 10%、1-0 10%、2-1 9%、0-1 8%、0-0 8%"
+                ]
+            },
+            {
+                "name": "footballdatabase.eu — Friendlies 2025",
+                "url": "https://www.footballdatabase.eu/en/competition/overall/21907-rencontres_amicales/2025/365252-intercontinental",
+                "data_points": [
+                    "285场759球=2.66球/场",
+                    "平局23%",
+                    "黄牌635、红牌28",
+                    "Tier: 1"
+                ]
+            },
+            {
+                "name": "footballdatabase.eu — World Cup Qualifying Asia Zone 2026",
+                "url": "https://www.footballdatabase.eu/en/competition/overall/18892-eliminatoires_coupe_du_monde__zone_asie/2026/312002-journee_2",
+                "data_points": [
+                    "226场633球=2.8球/场",
+                    "主胜38%/平25%/客胜38%",
+                    "黄牌766、红牌35",
+                    "Tier: 1"
+                ]
+            },
+            {
+                "name": "sbancobet.net — World Cup Qualification Asia 2026/2027",
+                "url": "https://sbancobet.net/stats/league/world-cup-qualification-asia/Da/",
+                "data_points": [
+                    "225场630球=2.80球/场",
+                    "大2.5=51.11%、小2.5=48.89%、大3.5=35.11%",
+                    "双方进球38.22%、双方进球且平局15.56%",
+                    "精确比分：1-0 11.56%、1-1 10.67%、0-0 9.33%、0-1 7.11%、0-2 7.11%",
+                    "角球大2.5=67.41%"
+                ]
+            },
+            {
+                "name": "捷报比分网 info.nowscore.com — 2026赛季国际友谊 最常见赛果",
+                "url": "https://info.nowscore.com/cn/CNormal/1366.html",
+                "data_points": [
+                    "1343场完整比分分布",
+                    "1:1 9.38%、1:0 8.41%、0:1 7.22%、1:2 7.22%、2:1 7.22%",
+                    "经逐档汇总：场均3.02球、大2.5=56.96%、平局21.6%、0-0=6.40%",
+                    "含U系列与女足，故场均偏高"
+                ]
+            },
+            {
+                "name": "球探体育 titan007 — 2026赛季国际友谊 最常见赛果",
+                "url": "https://info.titan007.com/big/CNormal/1366.html",
+                "data_points": [
+                    "同类聚合库，1:1 9.62%(123/1279)、1:0 8.60%(110/1279)",
+                    "与nowscore互为镜像/交叉验证"
+                ]
+            },
+            {
+                "name": "sportradar (scores.sir) — AFC Asian Qualifiers 统计",
+                "url": "https://scores.sir.sportradar.com/en/sport/1/tournament/308/statistics?seasonId=10060",
+                "data_points": [
+                    "2015-2017周期亚洲区预选：182场527球=2.9球/场",
+                    "主胜约51%/平17%/客胜约31%",
+                    "大2.5=52%、双方进球32%",
+                    "黄牌591、红牌21"
+                ]
+            },
+            {
+                "name": "sportradar (scores.sir) — AFC Asian Qualifiers 2026 概览",
+                "url": "https://scores.sir.sportradar.com/en/sport/1/tournament/308?seasonId=108589",
+                "data_points": [
+                    "2026周期平局25%",
+                    "场均2.8球"
+                ]
+            },
+            {
+                "name": "AFC官方 — AFC Asian Cup Qatar 2023 Post-Tournament Report",
+                "url": "https://assets.the-afc.com/Corporate_Page/Technical/Post-Tournament-Report/AFC-Asian-Cup-Qatar-2023%E2%84%A2-Post-Tournament-Report.pdf",
+                "data_points": [
+                    "51场132球（亚洲杯历史最高）",
+                    "9座球场、总观众逾150万、容量使用率73%"
+                ]
+            },
+            {
+                "name": "Retos (学术期刊) — Goal-scoring mechanisms in the 2023 AFC Asian Cup",
+                "url": "https://www.revistaretos.org/index.php/retos/article/download/118720/84862",
+                "data_points": [
+                    "24队、132球（独立交叉验证）"
+                ]
+            },
+            {
+                "name": "Astro Awani — Piala Asia Qatar 2023 统计",
+                "url": "https://pulse.astroawani.com/piala-asia-qatar-2023",
+                "data_points": [
+                    "51场132球24队",
+                    "488角球、20点球、1233犯规、164黄、12红",
+                    "总观众151万"
+                ]
+            },
+            {
+                "name": "BWB Solutions — International Friendlies: Worth a Punt or Not?",
+                "url": "https://bwb-solutions.com/international-friendlies-worth-a-punt-or-not/",
+                "data_points": [
+                    "轮换是规则而非例外",
+                    "主力常限时45-60分钟",
+                    "60分钟前后大面积换人改变比赛走势"
+                ]
+            },
+            {
+                "name": "BWB Solutions — Betting Traps in International Friendlies",
+                "url": "https://bwb-solutions.com/betting-traps-in-international-friendlies/",
+                "data_points": [
+                    "友谊赛动机非二值化",
+                    "战术/体能/考察新人目标可凌驾比分"
+                ]
+            },
+            {
+                "name": "sports-analytics.pro — Betting strategy for national team friendlies",
+                "url": "https://sports-analytics.pro/football-betting-strategy-for-friendly-matches-between-national-teams/",
+                "data_points": [
+                    "首发与战术意图常与盘口预期偏离",
+                    "半场多次换人的换人文化"
+                ]
+            },
+            {
+                "name": "parier-sport.com — Pronostics matchs amicaux",
+                "url": "https://parier-sport.com/pronostics-matchs-amicaux/",
+                "data_points": [
+                    "大规模轮换、战术目标、动机波动制造意外赛果"
+                ]
+            },
+            {
+                "name": "Transfermarkt — International Friendlies Picks",
+                "url": "https://www.transfermarkt.us/online-betting/picks/azerbaijan-vs-tajikistan-picks-23-09-2026/",
+                "data_points": [
+                    "友谊赛'实验与强度混杂'",
+                    "无积分榜、常指派中立场裁判"
+                ]
+            },
+            {
+                "name": "betmath.online — Half-Time / Full-Time Calculator",
+                "url": "https://betmath.online/htft",
+                "data_points": [
+                    "通用半场平局率42.9%（非国际赛专项，仅作参照）"
+                ]
+            },
+            {
+                "name": "天门日报(数字报) — 2026世界杯半场比分统计",
+                "url": "https://tmrb.tmwcn.com/tmrb/20260616/news/content_202606169266747.htm",
+                "data_points": [
+                    "2010-2022五届世界杯320场半场平局约42%",
+                    "半场最常见比分 0-0 28%、1-0 18%、1-1 12%"
+                ]
+            }
+        ],
+        "data_season": "2024/25-2026/27",
+        "confidence_level": "中",
+        "note": "核心统计（场均进球、平局率、大2.5率、最常見比分）均有≥2独立来源并且多数数值高度一致；主客场胜率部分子项、半场平局率、点球率、补时、假赛记录因缺少可交叉验证来源已置null或加注。所有数值均可回溯至上表URL，未做任何推算填充。"
+    },
+    "ttg_analysis_rules": {
+        "rule_id": null,
+        "rule_name": "国际赛总进球修正——按'战意分级'切换基准",
+        "added_date": "2026-09-23",
+        "source": "本文件 statistics.competitions 三源统计",
+        "core_logic": "国际赛必须区分赛事战意等级：国际友谊赛波动最大、场均进球介于2.6-2.8且冷门多；世界杯亚洲区预选赛场均约2.8球、强旅碾压弱旅常见；亚洲杯正赛场均2.59球、赛会制中立场。总进球推荐需先判等级再定基准。",
+        "ttg_rules": {
+            "friendly_top2": "2球/3球",
+            "friendly_lambda_total_range": "2.4-3.0",
+            "wcq_afc_top2": "3球/2球",
+            "wcq_afc_lambda_total_range": "2.5-3.2",
+            "asian_cup_top2": "2球/3球",
+            "asian_cup_lambda_total_range": "2.2-2.9",
+            "cold_protection": "友谊赛冷门高发，防0-0(约6.4%)与1-1(约9.4%)；避免深盘让球",
+            "blowout_warning": "亚洲区预选强vs弱档lambda可显著抬升（含青年/低级别样本可见11-0等极端比分）"
+        },
+        "score_special": {
+            "friendly_common": "1-1 / 1-0 / 0-1 / 2-1 / 1-2",
+            "wcq_afc_common": "1-0 / 1-1 / 0-0 / 0-1 / 0-2",
+            "asian_cup_note": "132球/51场（2.59/场），赛会制比分为主胜/平局主导"
+        }
+    }
+}

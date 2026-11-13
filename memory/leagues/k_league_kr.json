@@ -1,0 +1,152 @@
+{
+    "league_info": {
+        "name_cn": "韩国职业足球联赛",
+        "name_en": "K League 1",
+        "country": "韩国",
+        "country_code": "KR",
+        "level": "顶级",
+        "num_teams": 12,
+        "format": "常规赛+季后赛",
+        "season_period": "3月-11月（不跨年）",
+        "is_cross_year": false,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.kleague.com",
+        "governing_body": "韩国职业足球联盟",
+        "cross_league_level": "L3",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.48,
+        "draw_rate": 0.3,
+        "home_win_rate": 0.4,
+        "away_win_rate": 0.3,
+        "over_2_5_rate": 0.44,
+        "under_2_5_rate": 0.56,
+        "btts_rate": 0.46,
+        "top_scores": [
+            {
+                "score": "1-1",
+                "frequency": 0.095,
+                "direction": "平局"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.082,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-0",
+                "frequency": 0.075,
+                "direction": "平局"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.068,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-1",
+                "frequency": 0.06,
+                "direction": "客胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.075,
+            "1_goal": 0.18,
+            "2_goals": 0.28,
+            "3_goals": 0.22,
+            "4_goals": 0.15,
+            "5_plus_goals": 0.095
+        },
+        "avg_home_goals": 1.3,
+        "avg_away_goals": 1.18,
+        "home_advantage_factor": 1.2,
+        "ht_draw_rate": 0.512,
+        "ht_draw_rate_note": "韩职半场平局率（规则66）。2026-09-12复核：本环境未取得该联赛可靠一手半场数据（thefishy.uk无韩国联赛表、football-data.co.uk无K联赛半场比分、Transfermarkt/worldfootball/soccerstats/BetExplorer均被反爬拦截），故沿用既有值0.512不作改动。方向性与日职(0.534, thefishy实测)一致，属高半场平局档(≥0.40)，lambda_ht系数0.38，半全场首选应含'平'。**标记：未经2026-09-12复核，可信度中。**",
+        "ht_draw_rate_source": [],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "高(≥0.40)",
+        "ht_draw_rate_confidence": "中(沿用旧值，本次未取得一手源复核)",
+        "ht_draw_rate_status": "legacy_unverified",
+        "ht_home_win_rate": 0.26,
+        "ht_away_win_rate": 0.228,
+        "ht_note": "韩职半场平局率极高（约51.2%），为竞彩开售联赛中最高。上半场节奏偏慢、试探性强，双方谨慎试探后下半场才加速。半全场'平平'概率显著高于其他联赛。"
+    },
+    "match_style": {
+        "tactical_character": "【韩职特化】平局率极高（约30%）是该联赛最大特征。主场优势1.20高于五大联赛。金泉尚武是军旅球队，主场韧性极强（主场lambda额外+0.10）。保级队（排名>=9）主场lambda额外+0.15。全北现代/蔚山现代传统强队。分析优先级：数据面>新闻面(战意)>主场优势>历史交锋>市场热度（市场热度仅作反向参考）。市场支持率>70%时触发冷门检查，平局+5%反向+3%。",
+        "tempo": "中",
+        "physicality": "中高",
+        "technical_focus": "中",
+        "var_usage": "2019赛季引入VAR。",
+        "key_trends": [
+            "平局率极高是最大特征",
+            "金泉尚武军旅球队主场lambda+0.10",
+            "保级队主场lambda+0.15",
+            "全北现代/蔚山现代传统强队",
+            "市场热度不代表实际战力"
+        ],
+        "style_tags": [
+            "平局多",
+            "主场优势高",
+            "军旅球队",
+            "战意重要",
+            "市场反向参考"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.85,
+        "avg_red_cards": 0.16,
+        "avg_penalties": 0.23,
+        "referee_style": "裁判尺度中等。韩职出牌率不高，比赛相对干净。",
+        "first_half_stoppage_avg": 2.1,
+        "second_half_stoppage_avg": 5.2,
+        "stoppage_note": "补时中等。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "K联赛整体廉洁度较高。2013年有裁判涉嫌操纵的个别案件，未波及联赛整体。"
+            }
+        ],
+        "discipline_features": "黄牌累积5张停1场。",
+        "official_rules": "IFAB规则+K联赛特别规则。",
+        "integrity_rating": "高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价韩职'平局多'，'主场强'。彩民认为'韩职不以市场热度为准，以数据面为准'。",
+        "betting_market": {
+            "market_efficiency": "中",
+            "liquidity": "中",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "中",
+        "jingcai_tips": [
+            "韩职平局率约30%必须上修平局概率",
+            "市场支持率>70%触发冷门检查",
+            "保级队主场平局+8%/主胜+5%",
+            "金泉尚武主场主胜+3%",
+            "军旅球队主场韧性极强",
+            "分析优先级：数据面>新闻面>主场优势>历史交锋>市场热度"
+        ],
+        "common_sayings": [
+            "韩职平局多",
+            "主场龙",
+            "金泉尚武主场",
+            "不看市场热度"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    }
+}

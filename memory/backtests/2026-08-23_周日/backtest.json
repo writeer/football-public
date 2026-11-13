@@ -1,0 +1,1354 @@
+{
+ "backtest_id": "BT-2026-08-23-周日",
+ "match_date": "2026-08-23",
+ "day": "周日",
+ "model_version": "v2.5.0",
+ "summary": {
+  "total": 27,
+  "dir_first_second": "23/27",
+  "dir_first_only": "19/27",
+  "dir_first_second_pct": 85.2,
+  "dir_first_only_pct": 70.4,
+  "ttg": "5/27",
+  "ttg_pct": 18.5,
+  "htft": "17/27",
+  "htft_pct": 63.0,
+  "score": "16/27",
+  "score_pct": 59.3,
+  "miss_list": [
+   "003",
+   "006",
+   "019",
+   "026"
+  ]
+ },
+ "matches": [
+  {
+   "match_id": "001",
+   "home": "前进之鹰",
+   "away": "海牙",
+   "league": "荷甲",
+   "confidence": "★",
+   "pred_first": "主64.0%",
+   "pred_second": "平18.3%",
+   "actual_dir": "主",
+   "dir_hit": "首",
+   "pred_ttg": 3,
+   "actual_ttg": 4,
+   "ttg_hit": false,
+   "pred_htft": [
+    "胜胜",
+    "平胜",
+    "负负"
+   ],
+   "actual_htft": "胜胜",
+   "htft_hit": true,
+   "pred_score5": [
+    "2-1",
+    "1-1",
+    "2-0",
+    "3-1",
+    "1-0"
+   ],
+   "actual_score": "3-1",
+   "score_hit": true,
+   "ht": "1-0",
+   "ft": "3-1"
+  },
+  {
+   "match_id": "002",
+   "home": "町田泽维",
+   "away": "浦和红钻",
+   "league": "日职",
+   "confidence": "★★",
+   "pred_first": "主63.1%",
+   "pred_second": "平21.8%",
+   "actual_dir": "主",
+   "dir_hit": "首",
+   "pred_ttg": 2,
+   "actual_ttg": 4,
+   "ttg_hit": false,
+   "pred_htft": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "actual_htft": "平胜",
+   "htft_hit": true,
+   "pred_score5": [
+    "1-0",
+    "2-0",
+    "1-1",
+    "2-1",
+    "3-0"
+   ],
+   "actual_score": "3-1",
+   "score_hit": false,
+   "ht": "1-1",
+   "ft": "3-1"
+  },
+  {
+   "match_id": "003",
+   "home": "大田市民",
+   "away": "江原FC",
+   "league": "韩职",
+   "confidence": "★",
+   "pred_first": "客32.9%",
+   "pred_second": "平27.5%",
+   "actual_dir": "主",
+   "dir_hit": "×",
+   "pred_ttg": 2,
+   "actual_ttg": 3,
+   "ttg_hit": false,
+   "pred_htft": [
+    "胜胜",
+    "负负",
+    "平平"
+   ],
+   "actual_htft": "平胜",
+   "htft_hit": false,
+   "pred_score5": [
+    "1-1",
+    "1-0",
+    "0-1",
+    "0-0",
+    "2-1"
+   ],
+   "actual_score": "3-0",
+   "score_hit": false,
+   "ht": "0-0",
+   "ft": "3-0"
+  },
+  {
+   "match_id": "004",
+   "home": "西布罗姆",
+   "away": "伯恩利",
+   "league": "英冠",
+   "confidence": "★",
+   "pred_first": "主45.6%",
+   "pred_second": "平24.1%",
+   "actual_dir": "主",
+   "dir_hit": "首",
+   "pred_ttg": 2,
+   "actual_ttg": 4,
+   "ttg_hit": false,
+   "pred_htft": [
+    "胜胜",
+    "负负",
+    "平胜"
+   ],
+   "actual_htft": "平胜",
+   "htft_hit": true,
+   "pred_score5": [
+    "1-1",
+    "2-1",
+    "1-0",
+    "1-2",
+    "2-0"
+   ],
+   "actual_score": "3-1",
+   "score_hit": false,
+   "ht": "1-1",
+   "ft": "3-1"
+  },
+  {
+   "match_id": "005",
+   "home": "菲尔特",
+   "away": "波鸿",
+   "league": "德国杯",
+   "confidence": "★★",
+   "pred_first": "客51.3%",
+   "pred_second": "主27.4%",
+   "actual_dir": "客",
+   "dir_hit": "首",
+   "pred_ttg": 3,
+   "actual_ttg": 3,
+   "ttg_hit": true,
+   "pred_htft": [
+    "负负",
+    "胜胜",
+    "平负"
+   ],
+   "actual_htft": "负负",
+   "htft_hit": true,
+   "pred_score5": [
+    "1-2",
+    "1-1",
+    "2-2",
+    "2-1",
+    "0-2"
+   ],
+   "actual_score": "1-2",
+   "score_hit": true,
+   "ht": "0-1",
+   "ft": "1-2"
+  },
+  {
+   "match_id": "006",
+   "home": "哥德堡",
+   "away": "埃夫斯堡",
+   "league": "瑞超",
+   "confidence": "★★",
+   "pred_first": "客46.7%",
+   "pred_second": "主29.7%",
+   "actual_dir": "平",
+   "dir_hit": "×",
+   "pred_ttg": 3,
+   "actual_ttg": 2,
+   "ttg_hit": false,
+   "pred_htft": [
+    "负负",
+    "胜胜",
+    "平负"
+   ],
+   "actual_htft": "平平",
+   "htft_hit": false,
+   "pred_score5": [
+    "1-1",
+    "1-2",
+    "0-1",
+    "2-1",
+    "0-2"
+   ],
+   "actual_score": "1-1",
+   "score_hit": true,
+   "ht": "0-0",
+   "ft": "1-1"
+  },
+  {
+   "match_id": "007",
+   "home": "赫尔辛基",
+   "away": "赫尔火花",
+   "league": "芬超",
+   "confidence": "★",
+   "pred_first": "主51.9%",
+   "pred_second": "客26.6%",
+   "actual_dir": "客",
+   "dir_hit": "次",
+   "pred_ttg": 3,
+   "actual_ttg": 5,
+   "ttg_hit": false,
+   "pred_htft": [
+    "胜胜",
+    "负负",
+    "平胜"
+   ],
+   "actual_htft": "胜负",
+   "htft_hit": false,
+   "pred_score5": [
+    "2-1",
+    "1-1",
+    "2-0",
+    "1-0",
+    "2-2"
+   ],
+   "actual_score": "2-3",
+   "score_hit": false,
+   "ht": "2-0",
+   "ft": "2-3"
+  },
+  {
+   "match_id": "008",
+   "home": "埃因霍温",
+   "away": "格罗宁根",
+   "league": "荷甲",
+   "confidence": "★★",
+   "pred_first": "主75.6%",
+   "pred_second": "平13.0%",
+   "actual_dir": "主",
+   "dir_hit": "首",
+   "pred_ttg": 4,
+   "actual_ttg": 6,
+   "ttg_hit": false,
+   "pred_htft": [
+    "胜胜",
+    "平胜",
+    "负负"
+   ],
+   "actual_htft": "胜胜",
+   "htft_hit": true,
+   "pred_score5": [
+    "3-1",
+    "2-1",
+    "4-1",
+    "3-0",
+    "2-0"
+   ],
+   "actual_score": "5-1",
+   "score_hit": false,
+   "ht": "3-1",
+   "ft": "5-1"
+  },
+  {
+   "match_id": "009",
+   "home": "曼城",
+   "away": "伯恩茅斯",
+   "league": "英超",
+   "confidence": "★★",
+   "pred_first": "主70.0%",
+   "pred_second": "平15.4%",
+   "actual_dir": "主",
+   "dir_hit": "首",
+   "pred_ttg": 4,
+   "actual_ttg": 3,
+   "ttg_hit": false,
+   "pred_htft": [
+    "胜胜",
+    "平胜",
+    "负负"
+   ],
+   "actual_htft": "负胜",
+   "htft_hit": false,
+   "pred_score5": [
+    "2-1",
+    "3-1",
+    "2-0",
+    "3-0",
+    "4-1"
+   ],
+   "actual_score": "2-1",
+   "score_hit": true,
+   "ht": "0-1",
+   "ft": "2-1"
+  },
+  {
+   "match_id": "010",
+   "home": "昂热",
+   "away": "里尔",
+   "league": "法甲",
+   "confidence": "★★",
+   "pred_first": "客55.4%",
+   "pred_second": "平24.5%",
+   "actual_dir": "客",
+   "dir_hit": "首",
+   "pred_ttg": 2,
+   "actual_ttg": 2,
+   "ttg_hit": true,
+   "pred_htft": [
+    "负负",
+    "平负",
+    "平平"
+   ],
+   "actual_htft": "负负",
+   "htft_hit": true,
+   "pred_score5": [
+    "0-1",
+    "1-1",
+    "0-2",
+    "1-2",
+    "0-0"
+   ],
+   "actual_score": "0-2",
+   "score_hit": true,
+   "ht": "0-2",
+   "ft": "0-2"
+  },
+  {
+   "match_id": "011",
+   "home": "不伦瑞克",
+   "away": "柏林联合",
+   "league": "德国杯",
+   "confidence": "★",
+   "pred_first": "客57.1%",
+   "pred_second": "主23.4%",
+   "actual_dir": "客",
+   "dir_hit": "首",
+   "pred_ttg": 3,
+   "actual_ttg": 6,
+   "ttg_hit": false,
+   "pred_htft": [
+    "负负",
+    "平负",
+    "胜胜"
+   ],
+   "actual_htft": "平负",
+   "htft_hit": true,
+   "pred_score5": [
+    "1-2",
+    "1-1",
+    "1-3",
+    "2-2",
+    "0-2"
+   ],
+   "actual_score": "2-4",
+   "score_hit": false,
+   "ht": "1-1",
+   "ft": "2-4"
+  },
+  {
+   "match_id": "012",
+   "home": "吉马良斯",
+   "away": "葡国民",
+   "league": "葡超",
+   "confidence": "★",
+   "pred_first": "主57.8%",
+   "pred_second": "平21.3%",
+   "actual_dir": "主",
+   "dir_hit": "首",
+   "pred_ttg": 3,
+   "actual_ttg": 1,
+   "ttg_hit": false,
+   "pred_htft": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "actual_htft": "胜胜",
+   "htft_hit": true,
+   "pred_score5": [
+    "2-1",
+    "1-1",
+    "2-0",
+    "1-0",
+    "3-1"
+   ],
+   "actual_score": "1-0",
+   "score_hit": true,
+   "ht": "1-0",
+   "ft": "1-0"
+  },
+  {
+   "match_id": "013",
+   "home": "哈马比",
+   "away": "盖斯",
+   "league": "瑞超",
+   "confidence": "★",
+   "pred_first": "主76.2%",
+   "pred_second": "平15.0%",
+   "actual_dir": "主",
+   "dir_hit": "首",
+   "pred_ttg": 3,
+   "actual_ttg": 2,
+   "ttg_hit": false,
+   "pred_htft": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "actual_htft": "胜胜",
+   "htft_hit": true,
+   "pred_score5": [
+    "2-0",
+    "3-0",
+    "1-0",
+    "2-1",
+    "3-1"
+   ],
+   "actual_score": "2-0",
+   "score_hit": true,
+   "ht": "2-0",
+   "ft": "2-0"
+  },
+  {
+   "match_id": "014",
+   "home": "坎布尔",
+   "away": "费耶诺德",
+   "league": "荷甲",
+   "confidence": "★★",
+   "pred_first": "客88.4%",
+   "pred_second": "平8.0%",
+   "actual_dir": "客",
+   "dir_hit": "首",
+   "pred_ttg": 4,
+   "actual_ttg": 7,
+   "ttg_hit": false,
+   "pred_htft": [
+    "负负",
+    "平负",
+    "平平"
+   ],
+   "actual_htft": "负负",
+   "htft_hit": true,
+   "pred_score5": [
+    "0-3",
+    "0-4",
+    "0-2",
+    "1-3",
+    "0-5"
+   ],
+   "actual_score": "2-5",
+   "score_hit": false,
+   "ht": "0-4",
+   "ft": "2-5"
+  },
+  {
+   "match_id": "015",
+   "home": "马竞",
+   "away": "比利亚雷",
+   "league": "西甲",
+   "confidence": "★★",
+   "pred_first": "主60.6%",
+   "pred_second": "平19.8%",
+   "actual_dir": "平",
+   "dir_hit": "次",
+   "pred_ttg": 3,
+   "actual_ttg": 4,
+   "ttg_hit": false,
+   "pred_htft": [
+    "胜胜",
+    "平胜",
+    "负负"
+   ],
+   "actual_htft": "平平",
+   "htft_hit": false,
+   "pred_score5": [
+    "2-1",
+    "1-1",
+    "2-0",
+    "1-0",
+    "3-1"
+   ],
+   "actual_score": "2-2",
+   "score_hit": false,
+   "ht": "0-0",
+   "ft": "2-2"
+  },
+  {
+   "match_id": "016",
+   "home": "勒阿弗尔",
+   "away": "摩纳哥",
+   "league": "法甲",
+   "confidence": "★★",
+   "pred_first": "客46.8%",
+   "pred_second": "主29.7%",
+   "actual_dir": "客",
+   "dir_hit": "首",
+   "pred_ttg": 3,
+   "actual_ttg": 1,
+   "ttg_hit": false,
+   "pred_htft": [
+    "负负",
+    "胜胜",
+    "平负"
+   ],
+   "actual_htft": "负负",
+   "htft_hit": true,
+   "pred_score5": [
+    "1-1",
+    "1-2",
+    "0-1",
+    "2-1",
+    "0-2"
+   ],
+   "actual_score": "0-1",
+   "score_hit": true,
+   "ht": "0-1",
+   "ft": "0-1"
+  },
+  {
+   "match_id": "017",
+   "home": "纽卡斯尔",
+   "away": "利物浦",
+   "league": "英超",
+   "confidence": "★★",
+   "pred_first": "客66.2%",
+   "pred_second": "平17.7%",
+   "actual_dir": "平",
+   "dir_hit": "次",
+   "pred_ttg": 3,
+   "actual_ttg": 4,
+   "ttg_hit": false,
+   "pred_htft": [
+    "负负",
+    "平负",
+    "平平"
+   ],
+   "actual_htft": "胜平",
+   "htft_hit": false,
+   "pred_score5": [
+    "1-2",
+    "0-2",
+    "1-3",
+    "1-1",
+    "0-3"
+   ],
+   "actual_score": "2-2",
+   "score_hit": false,
+   "ht": "1-0",
+   "ft": "2-2"
+  },
+  {
+   "match_id": "018",
+   "home": "弗洛西诺",
+   "away": "尤文图斯",
+   "league": "意甲",
+   "confidence": "★★",
+   "pred_first": "客79.0%",
+   "pred_second": "平13.7%",
+   "actual_dir": "客",
+   "dir_hit": "首",
+   "pred_ttg": 3,
+   "actual_ttg": 1,
+   "ttg_hit": false,
+   "pred_htft": [
+    "负负",
+    "平负",
+    "平平"
+   ],
+   "actual_htft": "负负",
+   "htft_hit": true,
+   "pred_score5": [
+    "0-2",
+    "0-3",
+    "0-1",
+    "1-2",
+    "1-3"
+   ],
+   "actual_score": "0-1",
+   "score_hit": true,
+   "ht": "0-1",
+   "ft": "0-1"
+  },
+  {
+   "match_id": "019",
+   "home": "威尼斯",
+   "away": "莱切",
+   "league": "意甲",
+   "confidence": "★",
+   "pred_first": "平23.3%",
+   "pred_second": "主49.4%",
+   "actual_dir": "客",
+   "dir_hit": "×",
+   "pred_ttg": 3,
+   "actual_ttg": 2,
+   "ttg_hit": false,
+   "pred_htft": [
+    "胜胜",
+    "平胜",
+    "负负"
+   ],
+   "actual_htft": "平负",
+   "htft_hit": false,
+   "pred_score5": [
+    "1-1",
+    "2-1",
+    "1-0",
+    "2-0",
+    "1-2"
+   ],
+   "actual_score": "0-2",
+   "score_hit": false,
+   "ht": "0-0",
+   "ft": "0-2"
+  },
+  {
+   "match_id": "020",
+   "home": "圣克拉拉",
+   "away": "法马利康",
+   "league": "葡超",
+   "confidence": "★",
+   "pred_first": "主40.5%",
+   "pred_second": "客32.7%",
+   "actual_dir": "主",
+   "dir_hit": "首",
+   "pred_ttg": 2,
+   "actual_ttg": 1,
+   "ttg_hit": false,
+   "pred_htft": [
+    "胜胜",
+    "负负",
+    "平平"
+   ],
+   "actual_htft": "胜胜",
+   "htft_hit": true,
+   "pred_score5": [
+    "1-1",
+    "1-0",
+    "0-1",
+    "2-1",
+    "0-0"
+   ],
+   "actual_score": "1-0",
+   "score_hit": true,
+   "ht": "1-0",
+   "ft": "1-0"
+  },
+  {
+   "match_id": "021",
+   "home": "赫塔费",
+   "away": "桑坦德",
+   "league": "西甲",
+   "confidence": "★",
+   "pred_first": "主44.2%",
+   "pred_second": "平25.9%",
+   "actual_dir": "主",
+   "dir_hit": "首",
+   "pred_ttg": 2,
+   "actual_ttg": 1,
+   "ttg_hit": false,
+   "pred_htft": [
+    "胜胜",
+    "负负",
+    "平平"
+   ],
+   "actual_htft": "平胜",
+   "htft_hit": false,
+   "pred_score5": [
+    "1-1",
+    "1-0",
+    "2-1",
+    "0-1",
+    "2-0"
+   ],
+   "actual_score": "1-0",
+   "score_hit": true,
+   "ht": "0-0",
+   "ft": "1-0"
+  },
+  {
+   "match_id": "022",
+   "home": "都灵",
+   "away": "AC米兰",
+   "league": "意甲",
+   "confidence": "★★",
+   "pred_first": "客58.5%",
+   "pred_second": "主20.8%",
+   "actual_dir": "客",
+   "dir_hit": "首",
+   "pred_ttg": 3,
+   "actual_ttg": 3,
+   "ttg_hit": true,
+   "pred_htft": [
+    "负负",
+    "平负",
+    "胜胜"
+   ],
+   "actual_htft": "平负",
+   "htft_hit": true,
+   "pred_score5": [
+    "1-2",
+    "1-1",
+    "0-2",
+    "0-1",
+    "1-3"
+   ],
+   "actual_score": "1-2",
+   "score_hit": true,
+   "ht": "0-0",
+   "ft": "1-2"
+  },
+  {
+   "match_id": "023",
+   "home": "亚特兰大",
+   "away": "萨索洛",
+   "league": "意甲",
+   "confidence": "★★",
+   "pred_first": "主61.0%",
+   "pred_second": "平19.8%",
+   "actual_dir": "主",
+   "dir_hit": "首",
+   "pred_ttg": 3,
+   "actual_ttg": 3,
+   "ttg_hit": true,
+   "pred_htft": [
+    "胜胜",
+    "平胜",
+    "负负"
+   ],
+   "actual_htft": "胜胜",
+   "htft_hit": true,
+   "pred_score5": [
+    "2-1",
+    "1-1",
+    "2-0",
+    "1-0",
+    "3-1"
+   ],
+   "actual_score": "2-1",
+   "score_hit": true,
+   "ht": "1-0",
+   "ft": "2-1"
+  },
+  {
+   "match_id": "024",
+   "home": "埃尔切",
+   "away": "巴萨",
+   "league": "西甲",
+   "confidence": "★",
+   "pred_first": "客85.3%",
+   "pred_second": "平9.8%",
+   "actual_dir": "客",
+   "dir_hit": "首",
+   "pred_ttg": 3,
+   "actual_ttg": 5,
+   "ttg_hit": false,
+   "pred_htft": [
+    "负负",
+    "平负",
+    "平平"
+   ],
+   "actual_htft": "负负",
+   "htft_hit": true,
+   "pred_score5": [
+    "0-3",
+    "0-2",
+    "0-4",
+    "1-3",
+    "1-2"
+   ],
+   "actual_score": "0-5",
+   "score_hit": false,
+   "ht": "0-2",
+   "ft": "0-5"
+  },
+  {
+   "match_id": "025",
+   "home": "波尔图",
+   "away": "阿罗卡",
+   "league": "葡超",
+   "confidence": "★★",
+   "pred_first": "主84.8%",
+   "pred_second": "平10.6%",
+   "actual_dir": "主",
+   "dir_hit": "首",
+   "pred_ttg": 3,
+   "actual_ttg": 2,
+   "ttg_hit": false,
+   "pred_htft": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "actual_htft": "平胜",
+   "htft_hit": true,
+   "pred_score5": [
+    "2-0",
+    "3-0",
+    "4-0",
+    "1-0",
+    "2-1"
+   ],
+   "actual_score": "2-0",
+   "score_hit": true,
+   "ht": "0-0",
+   "ft": "2-0"
+  },
+  {
+   "match_id": "026",
+   "home": "新英格兰",
+   "away": "纽约城",
+   "league": "美职",
+   "confidence": "★",
+   "pred_first": "主47.8%",
+   "pred_second": "客28.8%",
+   "actual_dir": "平",
+   "dir_hit": "×",
+   "pred_ttg": 3,
+   "actual_ttg": 2,
+   "ttg_hit": false,
+   "pred_htft": [
+    "胜胜",
+    "负负",
+    "平胜"
+   ],
+   "actual_htft": "平平",
+   "htft_hit": false,
+   "pred_score5": [
+    "1-1",
+    "2-1",
+    "1-0",
+    "2-0",
+    "1-2"
+   ],
+   "actual_score": "1-1",
+   "score_hit": true,
+   "ht": "1-1",
+   "ft": "1-1"
+  },
+  {
+   "match_id": "027",
+   "home": "桑托斯",
+   "away": "米拉索尔",
+   "league": "巴甲",
+   "confidence": "★★",
+   "pred_first": "主64.8%",
+   "pred_second": "平20.6%",
+   "actual_dir": "平",
+   "dir_hit": "次",
+   "pred_ttg": 2,
+   "actual_ttg": 2,
+   "ttg_hit": true,
+   "pred_htft": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "actual_htft": "负平",
+   "htft_hit": false,
+   "pred_score5": [
+    "1-0",
+    "2-0",
+    "1-1",
+    "2-1",
+    "3-0"
+   ],
+   "actual_score": "1-1",
+   "score_hit": true,
+   "ht": "0-1",
+   "ft": "1-1"
+  }
+ ],
+ "parlays": [
+  {
+   "name": "方向串A",
+   "type": "方向串",
+   "legs": [
+    {
+     "match": "014 费耶诺德客胜",
+     "hit": true
+    },
+    {
+     "match": "025 波尔图主胜",
+     "hit": true
+    },
+    {
+     "match": "024 巴萨客胜",
+     "hit": true
+    }
+   ],
+   "hit": true,
+   "odds": 1.59
+  },
+  {
+   "name": "方向串B",
+   "type": "方向串",
+   "legs": [
+    {
+     "match": "008 埃因霍温主胜",
+     "hit": true
+    },
+    {
+     "match": "018 尤文客胜",
+     "hit": true
+    },
+    {
+     "match": "009 曼城主胜",
+     "hit": true
+    }
+   ],
+   "hit": true,
+   "odds": 2.16
+  },
+  {
+   "name": "方向串C",
+   "type": "方向串",
+   "legs": [
+    {
+     "match": "014 费耶诺德客胜",
+     "hit": true
+    },
+    {
+     "match": "027 桑托斯主胜",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds": 1.93
+  },
+  {
+   "name": "稳健让球串",
+   "type": "让球串",
+   "legs": [
+    {
+     "match": "004 西布朗受让+1不败",
+     "hit": true
+    },
+    {
+     "match": "003 江原受让+1不败",
+     "hit": false
+    },
+    {
+     "match": "020 法马利康受让+1不败",
+     "hit": true
+    }
+   ],
+   "hit": false,
+   "odds": 2.82
+  },
+  {
+   "name": "价值让球串",
+   "type": "让球串",
+   "legs": [
+    {
+     "match": "008 埃因霍温让-1胜",
+     "hit": true
+    },
+    {
+     "match": "025 波尔图让-2胜",
+     "hit": true
+    }
+   ],
+   "hit": true,
+   "odds": 4.74
+  },
+  {
+   "name": "半全场串A",
+   "type": "混合串",
+   "legs": [
+    {
+     "match": "008 埃因霍温胜胜",
+     "hit": true
+    },
+    {
+     "match": "018 尤文负负",
+     "hit": true
+    },
+    {
+     "match": "024 巴萨负负",
+     "hit": true
+    }
+   ],
+   "hit": true,
+   "odds": 5.7
+  },
+  {
+   "name": "半全场串B",
+   "type": "混合串",
+   "legs": [
+    {
+     "match": "009 曼城胜胜",
+     "hit": false
+    },
+    {
+     "match": "014 费耶诺德负负",
+     "hit": true
+    },
+    {
+     "match": "025 波尔图胜胜",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds": 4.96
+  },
+  {
+   "name": "方向+半全场A",
+   "type": "混合串",
+   "legs": [
+    {
+     "match": "014 费耶诺德客胜",
+     "hit": true
+    },
+    {
+     "match": "008 埃因霍温胜胜",
+     "hit": true
+    }
+   ],
+   "hit": true,
+   "odds": 1.96
+  },
+  {
+   "name": "方向+半全场B",
+   "type": "混合串",
+   "legs": [
+    {
+     "match": "025 波尔图主胜",
+     "hit": true
+    },
+    {
+     "match": "018 尤文负负",
+     "hit": true
+    }
+   ],
+   "hit": true,
+   "odds": 2.22
+  },
+  {
+   "name": "总进球串A",
+   "type": "娱乐串",
+   "legs": [
+    {
+     "match": "008 埃因霍温3球",
+     "hit": false
+    },
+    {
+     "match": "014 费耶诺德3球",
+     "hit": false
+    },
+    {
+     "match": "017 纽卡vs利物浦3球",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds": 60.04
+  },
+  {
+   "name": "总进球串B",
+   "type": "娱乐串",
+   "legs": [
+    {
+     "match": "009 曼城3球",
+     "hit": true
+    },
+    {
+     "match": "008 埃因霍温4球",
+     "hit": false
+    },
+    {
+     "match": "001 前进之鹰3球",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds": 58.86
+  },
+  {
+   "name": "总进球串C",
+   "type": "娱乐串",
+   "legs": [
+    {
+     "match": "017 纽卡vs利物浦4球",
+     "hit": true
+    },
+    {
+     "match": "013 哈马比3球",
+     "hit": false
+    },
+    {
+     "match": "024 巴萨3球",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds": 59.64
+  },
+  {
+   "name": "高赔半全场串A",
+   "type": "娱乐串",
+   "legs": [
+    {
+     "match": "016 勒阿弗尔平平",
+     "hit": false
+    },
+    {
+     "match": "019 威尼斯平平",
+     "hit": false
+    },
+    {
+     "match": "021 赫塔费平平",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds": 121.28
+  },
+  {
+   "name": "高赔半全场串B",
+   "type": "娱乐串",
+   "legs": [
+    {
+     "match": "001 海牙负负",
+     "hit": false
+    },
+    {
+     "match": "008 格罗宁根负负",
+     "hit": false
+    },
+    {
+     "match": "027 米拉索尔负负",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds": 529.2
+  },
+  {
+   "name": "高赔半全场串C",
+   "type": "娱乐串",
+   "legs": [
+    {
+     "match": "017 利物浦胜负",
+     "hit": false
+    },
+    {
+     "match": "005 波鸿胜负",
+     "hit": false
+    },
+    {
+     "match": "022 都灵负平",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds": 8100.0
+  },
+  {
+   "name": "高赔半全场串D",
+   "type": "娱乐串",
+   "legs": [
+    {
+     "match": "007 HJK平胜",
+     "hit": false
+    },
+    {
+     "match": "013 哈马比平胜",
+     "hit": false
+    },
+    {
+     "match": "015 马竞胜胜",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds": 51.98
+  },
+  {
+   "name": "混合串A",
+   "type": "娱乐串",
+   "legs": [
+    {
+     "match": "008 埃因霍温胜胜",
+     "hit": true
+    },
+    {
+     "match": "014 费耶诺德3球",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds": 6.79
+  },
+  {
+   "name": "混合串B",
+   "type": "娱乐串",
+   "legs": [
+    {
+     "match": "024 巴萨负负",
+     "hit": true
+    },
+    {
+     "match": "017 纽卡vs利物浦3球",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds": 6.46
+  },
+  {
+   "name": "混合串C",
+   "type": "娱乐串",
+   "legs": [
+    {
+     "match": "017 利物浦胜负",
+     "hit": false
+    },
+    {
+     "match": "009 曼城4球",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds": 81.0
+  },
+  {
+   "name": "混合串D",
+   "type": "娱乐串",
+   "legs": [
+    {
+     "match": "016 勒阿弗尔平平",
+     "hit": false
+    },
+    {
+     "match": "020 圣克拉拉1球",
+     "hit": true
+    }
+   ],
+   "hit": false,
+   "odds": 21.75
+  },
+  {
+   "name": "稳健比分串",
+   "type": "娱乐串",
+   "legs": [
+    {
+     "match": "025 波尔图2-0",
+     "hit": false
+    },
+    {
+     "match": "014 费耶诺德0-2",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds": 48.0
+  },
+  {
+   "name": "混合比分串",
+   "type": "娱乐串",
+   "legs": [
+    {
+     "match": "008 埃因霍温2-1",
+     "hit": false
+    },
+    {
+     "match": "009 曼城2-1",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds": 54.25
+  },
+  {
+   "name": "TOP5比分串",
+   "type": "娱乐串",
+   "legs": [
+    {
+     "match": "008 埃因霍温3-1",
+     "hit": false
+    },
+    {
+     "match": "009 曼城3-1",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds": 85.5
+  },
+  {
+   "name": "搏冷比分串",
+   "type": "娱乐串",
+   "legs": [
+    {
+     "match": "016 勒阿弗尔2-2",
+     "hit": false
+    },
+    {
+     "match": "021 赫塔费0-0",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds": 84.0
+  }
+ ],
+ "parlay_summary": {
+  "hit": 6,
+  "total": 24,
+  "pct": 25.0
+ },
+ "singles": [
+  {
+   "match": "025 波尔图2-0",
+   "hit": true,
+   "odds": 6.0
+  },
+  {
+   "match": "014 费耶诺德0-2",
+   "hit": false,
+   "odds": 8.0
+  }
+ ],
+ "key_findings": [
+  "方向(首选+次选)命中23/27(85.2%)，仅首选命中19/27(70.4%)",
+  "总进球命中仅5/27(18.5%)——新赛季开局大球频发，规则35上修仍不足",
+  "半全场TOP3命中17/27(63.0%)，比分TOP5命中16/27(59.3%)",
+  "串关6/24命中：方向串2/3、价值让球串命中、半全场串A(008/018/024)全中；娱乐串13方案全灭",
+  "身价碾压+交锋碾压场次(014/025/024/008/018)方向全命中",
+  "残阵信号007赫尔辛基6人停赛主场2-3爆冷——残阵未反弹，规则9a需区分残阵程度"
+ ],
+ "source_files": [
+  "memory/predictions/2026-08-23_周日/predictions.json",
+  "reports/analysis/2026-08-23_周日_analysis_zhihu.md"
+ ]
+}

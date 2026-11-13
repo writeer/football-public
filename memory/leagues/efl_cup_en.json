@@ -1,0 +1,171 @@
+{
+    "league_info": {
+        "name_cn": "英格兰联赛杯",
+        "name_en": "EFL Cup (Carabao Cup)",
+        "country": "英格兰",
+        "country_code": "EN",
+        "level": "杯赛",
+        "competition_type": "淘汰赛",
+        "num_teams": 92,
+        "format": "单场淘汰制，半决赛为两回合制。90分钟平局直接点球（半决赛除外），无重赛。",
+        "season_period": "8月-次年3月（跨年）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.efl.com",
+        "governing_body": "英格兰足球联赛（EFL）",
+        "established_year": 1960,
+        "venue_final": "温布利球场（Wembley Stadium）",
+        "participation_structure": "预赛轮→第一轮（英冠/英甲/英乙，分南北区）→第二轮（11支非欧战英超球队加入）→第三轮（9支欧战英超球队加入）→第四轮→四分之一决赛→半决赛（两回合）→决赛",
+        "var_usage_scope": "半决赛起使用VAR",
+        "most_successful_club": "利物浦（10次夺冠）",
+        "recent_champion_2025_26": "曼城（第9次夺冠）",
+        "recent_champion_2024_25": "纽卡斯尔联（自1968-69赛季以来首个重大奖杯）",
+        "competition_tier": null,
+        "cross_league_level": null,
+        "competition_tier_note": "规则76赛事本身等级（1欧冠精英/2欧联欧协联/3亚冠精英/4解放者杯/5欧国联/6亚运会；None=不适用），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2025-2026",
+        "sample_matches": 33,
+        "sample_range": "第3轮至决赛（含英超球队参赛后的比赛）",
+        "avg_goals_per_match": 2.94,
+        "draw_rate": 0.121,
+        "home_win_rate": 0.394,
+        "away_win_rate": 0.485,
+        "over_2_5_rate": 0.485,
+        "under_2_5_rate": 0.515,
+        "btts_rate": 0.394,
+        "top_scores": [
+            {
+                "score": "0-2",
+                "frequency": 0.152,
+                "direction": "客胜"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.152,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.121,
+                "direction": "平局"
+            },
+            {
+                "score": "1-2",
+                "frequency": 0.091,
+                "direction": "客胜"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.061,
+                "direction": "主胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.0,
+            "1_goal": 0.091,
+            "2_goals": 0.424,
+            "3_goals": 0.212,
+            "4_goals": 0.091,
+            "5_plus_goals": 0.182
+        },
+        "avg_home_goals": 1.3,
+        "avg_away_goals": 1.64,
+        "home_advantage_factor": 0.8,
+        "key_finding": "客场胜率（48.5%）显著高于主场胜率（39.4%），这是联赛杯的独特特征。原因：英超强队经常客场对阵低级别球队，即使轮换阵容仍能获胜。",
+        "penalty_shootout_frequency": "平局直接点球，点球决胜频繁",
+        "ht_draw_rate": null,
+        "ht_draw_rate_note": "杯赛/淘汰赛为主或赛制混合（小组赛+淘汰赛），单一'半场平局率'不具代表性，规则66不按单值修正。如需可对小组赛阶段单独统计。2026-09-12标注。",
+        "ht_draw_rate_status": "not_applicable",
+        "ht_draw_rate_updated": "2026-09-12"
+    },
+    "match_style": {
+        "tactical_character": "英超球队大规模轮换阵容是联赛杯最显著特征。2025-26赛季中，利物浦在第4轮对阵水晶宫时轮换10人（萨拉赫、范戴克未进大名单），阿森纳在四分之一决赛轮换8人。低级别球队战意极强，经常创造冷门（如英乙球队Grimsby Town连续淘汰曼联和谢周三）。比赛节奏快，身体对抗强，但技战术水平因轮换而参差不齐。",
+        "tempo": "快",
+        "physicality": "高",
+        "technical_focus": "中（因轮换导致波动大）",
+        "var_usage": "半决赛起使用VAR。早期轮次不使用VAR（部分场次可能使用门线技术）。2025-26赛季半决赛中，曼城对阵纽卡斯尔的比赛VAR耗时近6分钟判定Semenyo进球无效，引发瓜迪奥拉强烈不满。",
+        "key_trends": [
+            "英超球队大规模轮换阵容",
+            "低级别球队战意极强，冷门频发",
+            "客场胜率反超主场胜率（独特现象）",
+            "平局率低（淘汰赛机制+实力差距）",
+            "单场淘汰制增加不确定性",
+            "点球决胜频繁（90分钟平局直接点球）",
+            "大比分常见（实力悬殊时英超球队常大胜，如Brighton 6-0 Barnsley）",
+            "半决赛是分水岭：VAR启用+两回合制+球队开始重视"
+        ],
+        "style_tags": [
+            "冷门杯",
+            "大规模轮换",
+            "单场淘汰",
+            "低级别战意强",
+            "客场优势反常",
+            "点球决胜"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.5,
+        "avg_red_cards": 0.15,
+        "avg_penalties": 0.2,
+        "referee_style": "与英超裁判体系一致，鼓励身体对抗。半决赛级别使用英超顶级裁判。早期轮次可能使用低级别裁判。",
+        "first_half_stoppage_avg": 2.0,
+        "second_half_stoppage_avg": 5.5,
+        "stoppage_note": "英格兰赛事统一执行严格补时政策。VAR介入（半决赛起）可能导致额外补时。2025-26赛季半决赛因VAR审查耗时近6分钟，下半场补时达9分钟。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "联赛杯无重大假赛丑闻。英格兰足球整体廉洁度较高。联赛杯因有英超球队参与，关注度较高，假赛风险低。"
+            }
+        ],
+        "discipline_features": "FA纪律委员会独立运作。红牌自动停赛3场（直红）或1场（两黄）。联赛杯黄牌累积规则：2张黄牌停赛1场（比英超联赛的5张更严格）。",
+        "official_rules": "IFAB足球规则+EFL特别规则。淘汰赛单场制（半决赛除外），90分钟平局直接点球。无重赛制度（2018年起取消重赛）。",
+        "integrity_rating": "高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "联赛杯被普遍视为冷门杯和轮换杯。球迷认为英超豪门不重视，经常派二线阵容出战。低级别球队视为赛季最重要比赛之一。媒体常称其为爆冷温床。2025-26赛季Grimsby Town（英乙）连续淘汰曼联和谢周三引发广泛关注。",
+        "betting_market": {
+            "market_efficiency": "中高",
+            "liquidity": "中高",
+            "line_movement_frequency": "中频",
+            "sharp_money": "大资金主要关注半决赛和决赛。早期轮次因信息不对称（阵容轮换不确定）可能存在价值投注机会。"
+        },
+        "upset_frequency": "极高",
+        "jingcai_tips": [
+            "关注阵容轮换：英超球队是否全主力出战是预测关键",
+            "低级别球队主场有加成：战意强+主场氛围",
+            "客场胜率反常偏高：英超球队即使客场轮换仍常获胜",
+            "平局率低：淘汰赛机制+实力差距，平局直接点球",
+            "大比分常见：实力悬殊时英超球队常大胜",
+            "半决赛是分水岭：VAR启用+两回合制+球队开始重视",
+            "决赛在温布利：氛围加成，可能影响表现",
+            "早期轮次信息不对称严重，盘口波动大"
+        ],
+        "common_sayings": [
+            "冷门杯",
+            "豪门不重视",
+            "低级别球队拼了",
+            "轮换阵容看不准",
+            "爆冷温床",
+            "半决赛才认真"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-08-06",
+        "sources": [
+            "https://www.skysports.com/carabao-cup",
+            "https://www.skysports.com/football/news/11938/13550702/carabao-cup-2026-27-first-round-draw-championship-league-one-and-league-two-teams-discover-opponents",
+            "https://www.skysports.com/football/arsenal-vs-manchester-city/report/553923",
+            "https://www.skysports.com/football/liverpool-vs-crystal-palace/report/549165",
+            "https://www.skysports.com/football/chelsea-vs-arsenal/report/551322",
+            "https://www.skysports.com/football/news/11095/13494010/pep-guardiola-vents-his-var-grievances-amid-man-city-carabao-cup-controversy-over-antoine-semenyo-disallowed-goal"
+        ],
+        "data_season": "2025-2026（第3轮至决赛33场比赛）",
+        "confidence_level": "中高",
+        "notes": "统计数据基于2025-26赛季第3轮至决赛33场实际比赛比分计算，不含第1、2轮（约50+场低级别球队间比赛）。裁判数据为基于英格兰赛事一般水平的估算值。客场胜率异常高是联赛杯独特现象。"
+    }
+}

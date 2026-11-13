@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周六竞彩27场分析报告 (2026-08-29)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f2f4f7; color: #1f2329; line-height: 1.55; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 24px 16px 60px; }
+header { background: linear-gradient(135deg, #0f2a43, #1a4d80); color: #fff; border-radius: 16px; padding: 28px 28px 24px; margin-bottom: 20px; }
+header h1 { font-size: 24px; font-weight: 700; }
+header .sub { margin-top: 8px; font-size: 14px; opacity: .9; }
+.meta-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.pill { background: rgba(255,255,255,.14); border-radius: 20px; padding: 4px 12px; font-size: 12.5px; }
+.section-title { font-size: 17px; font-weight: 700; margin: 26px 0 12px; padding-left: 10px; border-left: 4px solid #1a4d80; }
+.notes-box { background:#fff; border-radius:12px; padding:16px 18px; margin-bottom:8px; border:1px solid #e4e8ee; }
+.notes-box p { font-size:13.5px; color:#4a5560; margin:4px 0; }
+.notes-box b { color:#0f2a43; }
+.card { background:#fff; border-radius:14px; border:1px solid #e4e8ee; margin-bottom:14px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,.04); }
+.card-head { display:flex; align-items:center; gap:10px; padding:12px 16px; background:#fafbfc; border-bottom:1px solid #eef1f5; flex-wrap:wrap; }
+.num { font-weight:700; color:#1a4d80; font-size:14px; }
+.lg { font-size:12px; background:#eef3fb; color:#1a4d80; border-radius:4px; padding:2px 8px; }
+.teams { font-size:15px; font-weight:600; }
+.teams b { color:#bbb; font-weight:400; margin:0 2px; }
+.time { font-size:12px; color:#8892a0; }
+.badge { font-size:11px; border-radius:4px; padding:2px 7px; font-weight:600; }
+.badge.single { background:#e8f6ef; color:#0a7d33; }
+.card-body { padding:14px 16px; }
+.probs { display:flex; gap:10px; margin-bottom:12px; flex-wrap:wrap; }
+.pcell { flex:1; min-width:80px; text-align:center; border-radius:10px; padding:8px 4px; }
+.pcell.home { background:#eaf2fc; } .pcell.draw { background:#f3f0e6; } .pcell.away { background:#fdeef0; } .pcell.lam { background:#f0f0f0; }
+.pl { display:block; font-size:12px; color:#6a7480; margin-bottom:2px; }
+.pv { display:block; font-size:17px; font-weight:700; }
+.pts { list-style:none; margin:0 0 12px; }
+.pts li { font-size:13px; color:#3c4756; padding:3px 0 3px 14px; position:relative; }
+.pts li:before { content:''; position:absolute; left:2px; top:11px; width:6px; height:6px; border-radius:50%; background:#c0cad6; }
+.rec { border-top:1px dashed #e6ebf1; padding-top:10px; }
+.rec-item { display:flex; font-size:13.5px; margin:4px 0; }
+.rec-item .k { width:52px; color:#8892a0; flex-shrink:0; }
+.rec-item .v { font-weight:500; }
+.first { color:#0a7d33; }
+.cold { color:#c0392b; }
+.card-foot { display:flex; align-items:center; gap:12px; padding:9px 16px; background:#fafbfc; border-top:1px solid #eef1f5; flex-wrap:wrap; }
+.conf { font-weight:700; font-size:13px; }
+.notes { font-size:11.5px; color:#9aa3af; }
+.footer { margin-top:28px; padding:16px; background:#fff; border-radius:12px; border:1px solid #e4e8ee; font-size:12.5px; color:#6a7480; }
+.footer h3 { color:#0f2a43; font-size:14px; margin-bottom:8px; }
+.footer p { margin:4px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>周六竞彩足球分析报告</h1>
+  <div class="sub">2026-08-29（周六） · 共 27 场 · 已剔除德乙005、英冠007</div>
+  <div class="meta-row">
+    <span class="pill">单关场次：002/004/006/009/015/017/019/022/028（9场，平局上修）</span>
+    <span class="pill">仅保留日乙，其余乙级联赛剔除</span>
+    <span class="pill">规则63单关 · 规则65大球上修 · 规则22联赛特化 · 规则57乙级</span>
+  </div>
+</header>
+
+<div class="notes-box">
+  <p><b>分析口径说明：</b>本报告方向/比分/总进球/半全场由基本面推演 + 模型校核综合得出（规则62-F）；概率为 Dixon-Coles / Skellam / Shin去水 / 蒙特卡洛 加权融合值；不显示赔率数值（规则60）。</p>
+  <p><b>核心提示：</b>① 身价差多数场次未取得 Transfermarkt 精确倍数，规则65"身价≥2倍"触发以排名差/让球深度/λ差为准；② 2026-27赛季刚开打，近况含少量季前/热身数据；③ 伤停多为媒体口径，临场以官方为准。</p>
+</div>
+
+<h2 class="section-title">逐场分析（27场）</h2>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六001</span>
+        <span class="lg">日职</span>
+        <span class="teams">水户蜀葵 <b>vs</b> 町田泽维</span>
+        <span class="time">17:00</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">22.1%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">25.6%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">52.2%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.09/1.77</span></div>
+        </div>
+        <ul class="pts"><li>町田泽维亚冲击4连胜、实力明显更强</li><li>水户门将+中卫+后腰大面积伤停</li><li>水户近6主场0胜1平5负</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">客胜</b> 首选 · 平局 次选 · <span class="cold">主胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">0-1 / 1-2 / 0-2</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">2-3球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">平负/负负</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#b8860b">★★ 中置信</span><span class="notes">规则65触发(让球1球)Tier2+0.3</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六002</span>
+        <span class="lg">日职</span>
+        <span class="teams">清水鼓动 <b>vs</b> 柏太阳神</span>
+        <span class="time">17:30</span>
+        <span class="badge single">单关</span>
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">24.4%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">27.7%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">47.9%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.23/1.79</span></div>
+        </div>
+        <ul class="pts"><li>柏太阳神近5次交锋1平4负且清水0进球(全面压制)</li><li>上赛季柏主客双杀清水</li><li>柏4名中场伤停、清水有停赛</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">客胜</b> 首选 · 平局 次选 · <span class="cold">主胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">0-1 / 1-1 / 1-2</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">2-3球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">平负/负负</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#b8860b">★★ 中置信</span><span class="notes">规则65触发(让球1球/排名差13)Tier2+0.3 | 规则63单关平局+8%</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六003</span>
+        <span class="lg">日乙</span>
+        <span class="teams">大宫松鼠 <b>vs</b> 湘南海洋</span>
+        <span class="time">18:00</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">45.7%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">28.5%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">25.8%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.66/1.19</span></div>
+        </div>
+        <ul class="pts"><li>大宫松鼠交锋碾压湘南(近10次9胜1平0负、近十年湘南从未胜)</li><li>大宫攻击联赛第一(3场8球)、湘南防守第一</li><li>乙级联赛平局率偏高、谨慎</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">1-0 / 2-1 / 1-1</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">2-3球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">平胜/胜胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#b8860b">★★ 中置信</span><span class="notes">规则57乙级平局+10%</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六004</span>
+        <span class="lg">韩职</span>
+        <span class="teams">蔚山现代 <b>vs</b> 金泉尚武</span>
+        <span class="time">18:30</span>
+        <span class="badge single">单关</span>
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">43.0%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">28.2%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">28.8%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.77/1.43</span></div>
+        </div>
+        <ul class="pts"><li>蔚山主场对金泉自2018年保持不败(6胜4平)</li><li>金泉客场不败率90%(近10客场3胜6平1负)、防守稳</li><li>双方无伤停</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">1-0 / 2-1 / 1-1</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">2-3球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">平胜/胜胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#b8860b">★★ 中置信</span><span class="notes">规则65触发(排名差8)Tier3+0.4 | 规则63单关平局+11%</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六006</span>
+        <span class="lg">英超</span>
+        <span class="teams">利物浦 <b>vs</b> 诺丁汉</span>
+        <span class="time">19:30</span>
+        <span class="badge single">单关</span>
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">63.7%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">21.5%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">14.8%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">2.38/1.09</span></div>
+        </div>
+        <ul class="pts"><li>利物浦纸面强+主场+森林核心吉布斯-怀特缺阵</li><li>利物浦伤停较多(戈麦斯/布拉德利/基耶萨等)</li><li>冷门预警:森林近2次做客安菲尔德全胜(苦主)</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">2-1 / 2-0 / 1-0</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">2-3球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">胜胜/平胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#b8860b">★★ 中置信</span><span class="notes">规则35新赛季+0.1 | 规则65英超例外不上修 | 规则65触发(λ差1.29)Tier1+0.0 | 规则63单关平局+8%</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六008</span>
+        <span class="lg">瑞超</span>
+        <span class="teams">埃夫斯堡 <b>vs</b> 代格福什</span>
+        <span class="time">21:00</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">60.7%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">22.4%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">17.0%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">2.09/1.04</span></div>
+        </div>
+        <ul class="pts"><li>埃夫斯堡明显强(第5 vs 第14、差12分)</li><li>代格福什近10场1胜2平7负</li><li>埃堡门将停赛+前锋伤(轻微折损)</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">2-0 / 2-1 / 3-1</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">3-4球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">胜胜/平胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#0a7d33">★★★ 高置信</span><span class="notes">规则65触发(排名差9/λ差1.04)Tier2+0.3</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六009</span>
+        <span class="lg">德甲</span>
+        <span class="teams">埃沃斯堡 <b>vs</b> 勒沃库森</span>
+        <span class="time">21:30</span>
+        <span class="badge single">单关</span>
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">18.8%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">22.3%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">58.9%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.35/2.44</span></div>
+        </div>
+        <ul class="pts"><li>勒沃库森实力明显更强</li><li>但勒沃库森多主力流失+前锋群受损</li><li>埃沃斯堡升班马主场、状态不差</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">客胜</b> 首选 · 平局 次选 · <span class="cold">主胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">1-2 / 0-2 / 1-1</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">3-4球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">负负/平负</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#b8860b">★★ 中置信</span><span class="notes">规则35新赛季+0.1 | 规则65触发(让球1球/λ差1.08)Tier1+0.15 | 规则63单关平局+8%</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六010</span>
+        <span class="lg">德甲</span>
+        <span class="teams">莱红牛 <b>vs</b> 门兴</span>
+        <span class="time">21:30</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">61.1%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">20.0%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">19.0%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">2.46/1.35</span></div>
+        </div>
+        <ul class="pts"><li>莱比锡纸面强+主场</li><li>但新帅首秀+多达7人伤缺</li><li>门兴6连胜状态火热(冷门预警)</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">2-1 / 1-1 / 2-0</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">3球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">平胜/胜胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#b8860b">★★ 中置信</span><span class="notes">规则35新赛季+0.1 | 规则65触发(排名差9/λ差1.11)Tier1+0.15</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六011</span>
+        <span class="lg">德甲</span>
+        <span class="teams">柏林联合 <b>vs</b> 法兰克福</span>
+        <span class="time">21:30</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">37.5%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">24.6%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">38.0%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.73/1.74</span></div>
+        </div>
+        <ul class="pts"><li>柏林联合交锋克制法兰克福(六连不胜)</li><li>两队实力接近、势均力敌</li><li>双方伤停均较多</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">1-1 / 2-1 / 1-0</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">2-3球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">平平/平胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#b8860b">★★ 中置信</span><span class="notes">规则35新赛季+0.1 | 规则65触发(排名差10)Tier1+0.15</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六012</span>
+        <span class="lg">德甲</span>
+        <span class="teams">科隆 <b>vs</b> 霍芬海姆</span>
+        <span class="time">21:30</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">33.1%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">23.6%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">43.3%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.68/1.94</span></div>
+        </div>
+        <ul class="pts"><li>霍芬海姆上季第5、实力更强</li><li>但核心克拉马里奇伤缺</li><li>科隆主场热身状态不错</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">客胜</b> 首选 · 平局 次选 · <span class="cold">主胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">1-2 / 1-1 / 0-2</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">3球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">平负/负负</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#b8860b">★★ 中置信</span><span class="notes">规则35新赛季+0.1 | 规则65触发(让球1球)Tier1+0.15</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六013</span>
+        <span class="lg">德甲</span>
+        <span class="teams">美因茨 <b>vs</b> 帕德博恩</span>
+        <span class="time">21:30</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">60.8%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">21.0%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">18.2%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">2.31/1.23</span></div>
+        </div>
+        <ul class="pts"><li>美因茨近10场9胜1平状态火热</li><li>6次交锋美因茨4胜2平不败</li><li>帕德博恩升班马、实力有限</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">2-0 / 2-1 / 3-1</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">3球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">胜胜/平胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#0a7d33">★★★ 高置信</span><span class="notes">规则35新赛季+0.1 | 规则65触发(λ差1.08)Tier1+0.15</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六014</span>
+        <span class="lg">英超</span>
+        <span class="teams">考文垂 <b>vs</b> 赫尔城</span>
+        <span class="time">22:00</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">54.2%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">24.6%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">21.2%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.88/1.11</span></div>
+        </div>
+        <ul class="pts"><li>同为升班马、市场看好考文垂(让1球)</li><li>冷门预警:赫尔城首轮爆冷2-0曼联</li><li>考文垂首轮0-3负阿森纳</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">1-0 / 2-1 / 1-1</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">2-3球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">平胜/胜胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#c0392b">★ 低置信</span><span class="notes">规则35新赛季+0.1 | 规则65英超例外不上修 | 规则65触发(排名差11)Tier1+0.0</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六015</span>
+        <span class="lg">英超</span>
+        <span class="teams">伯恩茅斯 <b>vs</b> 埃弗顿</span>
+        <span class="time">22:00</span>
+        <span class="badge single">单关</span>
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">46.2%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">27.3%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">26.5%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.79/1.31</span></div>
+        </div>
+        <ul class="pts"><li>伯恩茅斯双中场核心缺阵(亚当斯+阿德利)</li><li>埃弗顿开季2连胜零封、状态佳</li><li>伯恩茅斯近12次交锋占优</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">1-1 / 1-0 / 1-2</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">2-3球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">平平/平胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#c0392b">★ 低置信</span><span class="notes">规则35新赛季+0.1 | 规则65英超例外不上修 | 规则65触发(排名差8)Tier1+0.0 | 规则63单关平局+8%</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六016</span>
+        <span class="lg">西甲</span>
+        <span class="teams">莱万特 <b>vs</b> 贝蒂斯</span>
+        <span class="time">23:00</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">29.1%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">26.9%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">44.0%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.38/1.73</span></div>
+        </div>
+        <ul class="pts"><li>贝蒂斯明显强(第5 vs 第17)</li><li>贝蒂斯核心洛塞尔索伤缺</li><li>西甲小球倾向、莱万特主场铁桶</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">客胜</b> 首选 · 平局 次选 · <span class="cold">主胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">0-1 / 1-1 / 0-2</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">2球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">平负/负负</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#b8860b">★★ 中置信</span><span class="notes">规则35新赛季+0.1 | 规则65触发(让球1球/排名差12)Tier1+0.15</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六017</span>
+        <span class="lg">法甲</span>
+        <span class="teams">斯特拉斯 <b>vs</b> 朗斯</span>
+        <span class="time">23:15</span>
+        <span class="badge single">单关</span>
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">26.8%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">25.9%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">47.3%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.45/1.96</span></div>
+        </div>
+        <ul class="pts"><li>朗斯状态火爆(法超杯1-0巴黎、2场不败进6球)</li><li>斯特拉斯堡近5场1平4负状态差</li><li>法甲防守联赛、2-3球为主</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">客胜</b> 首选 · 平局 次选 · <span class="cold">主胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">0-2 / 1-2 / 0-1</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">2-3球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">负负/平负</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#0a7d33">★★★ 高置信</span><span class="notes">规则35新赛季+0.1 | 规则65触发(让球1球/排名差15)Tier1+0.15 | 规则63单关平局+8%</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六018</span>
+        <span class="lg">挪超</span>
+        <span class="teams">维京 <b>vs</b> 奥勒松</span>
+        <span class="time">23:00</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">75.0%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">14.4%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">10.5%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">3.02/1.12</span></div>
+        </div>
+        <ul class="pts"><li>维京卫冕冠军、争冠主场</li><li>奥勒松中游、上轮5-5</li><li>挪超大球联赛、维京攻强</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">3-1 / 2-0 / 3-0</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">3-4球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">胜胜/平胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#0a7d33">★★★ 高置信</span><span class="notes">规则65触发(排名差13/λ差1.90)Tier2+0.3</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六019</span>
+        <span class="lg">英超</span>
+        <span class="teams">热刺 <b>vs</b> 纽卡斯尔</span>
+        <span class="time">00:30</span>
+        <span class="badge single">单关</span>
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">41.7%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">27.2%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">31.1%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.81/1.55</span></div>
+        </div>
+        <ul class="pts"><li>热刺今夏大投入+主场</li><li>但大面积伤停(西蒙斯/库卢/库杜斯/麦迪逊)</li><li>纽卡硬实力不俗(冷门预警)</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">1-1 / 2-1 / 1-2</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">3球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">平平/平胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#c0392b">★ 低置信</span><span class="notes">规则35新赛季+0.1 | 规则63单关平局+11%</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六020</span>
+        <span class="lg">德甲</span>
+        <span class="teams">多特蒙德 <b>vs</b> 汉堡</span>
+        <span class="time">00:30</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">69.4%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">17.7%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">12.9%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">2.62/1.10</span></div>
+        </div>
+        <ul class="pts"><li>多特明显强(第2 vs 第13)+主场</li><li>汉堡伤停4人</li><li>多特核心中卫施洛特贝克缺阵(防线有缺口)</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">3-1 / 2-0 / 3-0</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">3-4球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">胜胜/平胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#0a7d33">★★★ 高置信</span><span class="notes">规则35新赛季+0.1 | 规则65触发(λ差1.52)Tier1+0.15</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六021</span>
+        <span class="lg">意甲</span>
+        <span class="teams">蒙扎 <b>vs</b> 乌迪内斯</span>
+        <span class="time">00:30</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">32.4%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">28.7%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">38.9%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.36/1.50</span></div>
+        </div>
+        <ul class="pts"><li>乌迪内斯略强(中游 vs 升班马)</li><li>蒙扎中场危机(佩西纳等4人伤缺)</li><li>意甲平局率高、小球倾向</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">客胜</b> 首选 · 平局 次选 · <span class="cold">主胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">0-1 / 1-1 / 0-2</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">2球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">平负/负负</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#b8860b">★★ 中置信</span><span class="notes">规则35新赛季+0.1 | 规则65触发(让球1球)Tier1+0.15</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六022</span>
+        <span class="lg">意甲</span>
+        <span class="teams">佛罗伦萨 <b>vs</b> 弗洛西诺</span>
+        <span class="time">00:30</span>
+        <span class="badge single">单关</span>
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">56.0%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">25.5%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">18.5%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">2.08/1.14</span></div>
+        </div>
+        <ul class="pts"><li>佛罗伦萨身价约3倍碾压弗罗西诺内</li><li>但首轮0-4惨负罗马(状态存疑)</li><li>弗罗西诺内升班马、攻击弱</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">2-0 / 2-1 / 1-0</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">2-3球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">胜胜/平胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#b8860b">★★ 中置信</span><span class="notes">规则35新赛季+0.1 | 规则65触发(λ差0.94)Tier1+0.15 | 规则63单关平局+8%</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六023</span>
+        <span class="lg">意甲</span>
+        <span class="teams">萨索洛 <b>vs</b> 都灵</span>
+        <span class="time">00:30</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">42.6%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">27.9%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">29.4%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.59/1.29</span></div>
+        </div>
+        <ul class="pts"><li>势均力敌、双方首轮均负</li><li>都灵交锋占优(近10次萨索洛1胜4平5负)</li><li>萨索洛贝拉尔迪+伊泽斯复出</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">1-1 / 1-0 / 0-1</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">2球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">平平/平胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#c0392b">★ 低置信</span><span class="notes">规则35新赛季+0.1</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六024</span>
+        <span class="lg">荷甲</span>
+        <span class="teams">阿尔克马 <b>vs</b> 前进之鹰</span>
+        <span class="time">00:45</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">68.7%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">17.0%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">14.4%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">2.84/1.31</span></div>
+        </div>
+        <ul class="pts"><li>阿尔克马尔荷甲开局3连胜仅失1球(碾压)</li><li>历史交锋阿尔克马尔11胜1负绝对占优</li><li>荷甲大球联赛</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">3-0 / 3-1 / 2-0</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">3-4球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">胜胜/平胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#0a7d33">★★★ 高置信</span><span class="notes">规则35新赛季+0.1 | 规则65触发(λ差1.53)Tier2+0.3</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六025</span>
+        <span class="lg">西甲</span>
+        <span class="teams">皇家社会 <b>vs</b> 西班牙人</span>
+        <span class="time">01:00</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">47.9%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">26.5%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">25.6%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.80/1.28</span></div>
+        </div>
+        <ul class="pts"><li>皇家社会近10场0胜5平5负状态极差</li><li>皇社阵容略强但状态崩盘</li><li>西班牙人卡布雷拉停赛+双将伤</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">1-1 / 1-0 / 0-1</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">2球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">平平/平胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#c0392b">★ 低置信</span><span class="notes">规则35新赛季+0.1 | 规则65触发(排名差10)Tier1+0.15</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六026</span>
+        <span class="lg">葡超</span>
+        <span class="teams">维塞乌 <b>vs</b> 波尔图</span>
+        <span class="time">01:00</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">10.9%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">17.5%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">71.6%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">0.96/2.56</span></div>
+        </div>
+        <ul class="pts"><li>波尔图碾压(卫冕冠军 vs 升班马)</li><li>近5次交锋波尔图全胜进14失1</li><li>维塞乌升班马、攻击弱</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">客胜</b> 首选 · 平局 次选 · <span class="cold">主胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">0-2 / 0-3 / 1-3</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">3-4球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">负负/平负</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#0a7d33">★★★ 高置信</span><span class="notes">规则35新赛季+0.1 | 规则65触发(让球1球/排名差10/λ差1.59)Tier2+0.3</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六027</span>
+        <span class="lg">意甲</span>
+        <span class="teams">尤文图斯 <b>vs</b> 帕尔马</span>
+        <span class="time">02:45</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">75.8%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">16.1%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">8.1%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">2.65/0.81</span></div>
+        </div>
+        <ul class="pts"><li>尤文碾压帕尔马(近2次4-1/2-0)</li><li>尤文主场对帕尔马近5季不败</li><li>尤文核心伊尔迪兹骨折缺3个月(攻击折损)</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">主胜</b> 首选 · 平局 次选 · <span class="cold">客胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">2-0 / 3-0 / 2-1</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">3球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">胜胜/平胜</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#0a7d33">★★★ 高置信</span><span class="notes">规则35新赛季+0.1 | 规则65触发(排名差8/λ差1.84)Tier1+0.15</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六028</span>
+        <span class="lg">西甲</span>
+        <span class="teams">塞维利亚 <b>vs</b> 马竞</span>
+        <span class="time">03:30</span>
+        <span class="badge single">单关</span>
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">25.2%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">28.8%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">46.0%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.24/1.73</span></div>
+        </div>
+        <ul class="pts"><li>马竞纸面+交锋占优(近10次7胜2平1负)</li><li>但马竞双中锋同时缺阵(锋线真空)</li><li>塞维利亚开局2连胜状态好(冷门预警)</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">客胜</b> 首选 · 平局 次选 · <span class="cold">主胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">0-1 / 1-1 / 0-0</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">2球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">平负/负负</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#b8860b">★★ 中置信</span><span class="notes">规则35新赛季+0.1 | 规则65触发(让球1球)Tier1+0.15 | 规则63单关平局+8%</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <span class="num">周六029</span>
+        <span class="lg">美职</span>
+        <span class="teams">华盛顿 <b>vs</b> 洛杉矶FC</span>
+        <span class="time">07:30</span>
+        
+      </div>
+      <div class="card-body">
+        <div class="probs">
+          <div class="pcell home"><span class="pl">主胜</span><span class="pv">27.4%</span></div>
+          <div class="pcell draw"><span class="pl">平局</span><span class="pv">24.2%</span></div>
+          <div class="pcell away"><span class="pl">客胜</span><span class="pv">48.4%</span></div>
+          <div class="pcell lam"><span class="pl">λ主/客</span><span class="pv">1.43/1.94</span></div>
+        </div>
+        <ul class="pts"><li>洛杉矶FC更强(西区第3 vs 东区第11)</li><li>华盛顿近8场仅1胜</li><li>交锋洛杉矶FC 2胜1平</li></ul>
+        <div class="rec">
+          <div class="rec-item"><span class="k">方向</span><span class="v"><b class="first">客胜</b> 首选 · 平局 次选 · <span class="cold">主胜 冷门</span></span></div>
+          <div class="rec-item"><span class="k">比分</span><span class="v">1-2 / 0-2 / 1-1</span></div>
+          <div class="rec-item"><span class="k">总进球</span><span class="v">3球</span></div>
+          <div class="rec-item"><span class="k">半全场</span><span class="v">平负/负负</span></div>
+        </div>
+      </div>
+      <div class="card-foot"><span class="conf" style="color:#b8860b">★★ 中置信</span><span class="notes">规则65触发(让球1球/排名差8)Tier2+0.3</span></div>
+    </div>
+
+<h2 class="section-title">串关思路</h2>
+<div class="notes-box">
+  <p><b>稳健方向串（2串1/3串1）：</b>017 朗斯客胜 · 026 波尔图客胜 · 027 尤文主胜（三场均身价/交锋/状态三重碾压，★★★）</p>
+  <p><b>让球串（谨慎）：</b>013 美因茨让(-1) · 024 阿尔克马尔让(-1)（让球串需独立评估净胜球，碾压场让球深度回归交锋中位数）</p>
+  <p><b>混合娱乐串：</b>半全场 026 波尔图「负/负」 + 总进球 008 埃夫斯堡「3球/4球」（规则61混合串为主）</p>
+  <p><b>比分娱乐串（基本面优先）：</b>013 美因茨 2-0 · 027 尤文 2-0 · 024 阿尔克马尔 3-1（规则62推演首选比分，非堆赔率）</p>
+</div>
+
+<div class="footer">
+  <h3>风险提示</h3>
+  <p>足球比赛存在极大不确定性，任何模型预测均非100%准确；突发因素（红牌、点球、天气、轮换）无法完全预测。</p>
+  <p>模型基于历史与赔率数据，身价差/伤停为媒体口径、部分场次数据不完整，置信度仅供预测可靠性参考。</p>
+  <p>单关平局上修（规则63）在"主场交锋占优+对手残阵"场景可能负价值（L031/L032），本报告已按场次区分处理。</p>
+  <p><b>理性看待预测，切勿沉迷赌博。</b></p>
+</div>
+</div>
+</body>
+</html>

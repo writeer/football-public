@@ -1,0 +1,151 @@
+{
+    "league_info": {
+        "name_cn": "希腊超级联赛",
+        "name_en": "Super League Greece",
+        "country": "希腊",
+        "country_code": "GR",
+        "level": "顶级",
+        "num_teams": 14,
+        "format": "常规赛+季后赛",
+        "season_period": "9月-次年5月（跨年）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.superleaguegreece.gr",
+        "governing_body": "希腊超级联赛联盟",
+        "cross_league_level": "L3",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.35,
+        "draw_rate": 0.298,
+        "home_win_rate": 0.415,
+        "away_win_rate": 0.287,
+        "over_2_5_rate": 0.44,
+        "under_2_5_rate": 0.56,
+        "btts_rate": 0.46,
+        "top_scores": [
+            {
+                "score": "1-0",
+                "frequency": 0.095,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.092,
+                "direction": "平局"
+            },
+            {
+                "score": "0-0",
+                "frequency": 0.08,
+                "direction": "平局"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.068,
+                "direction": "主胜"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.062,
+                "direction": "主胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.08,
+            "1_goal": 0.19,
+            "2_goals": 0.28,
+            "3_goals": 0.22,
+            "4_goals": 0.14,
+            "5_plus_goals": 0.09
+        },
+        "avg_home_goals": 1.32,
+        "avg_away_goals": 1.03,
+        "home_advantage_factor": 1.2,
+        "ht_draw_rate": 0.409,
+        "ht_draw_rate_note": "希腊超半场平局率。2026-09-12核算：football-data.co.uk官方逐场半场比分，5季合并1188场→0.4091；单季2025/26=0.3814。属高半场平局档(≥0.40)，lambda_ht系数0.38。",
+        "ht_draw_rate_source": [
+            "https://www.football-data.co.uk/mmz4281/2526/G1.csv"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "高(≥0.40)",
+        "ht_draw_rate_confidence": "高(官方逐场半场比分/交叉验证一致)"
+    },
+    "match_style": {
+        "tactical_character": "防守导向联赛，进球数偏低。奥林匹亚科斯、帕纳辛奈科斯和PAOK三强格局。注重战术纪律和防守组织，比赛节奏偏慢。近年经济危机影响俱乐部投入。",
+        "tempo": "慢",
+        "physicality": "中高",
+        "technical_focus": "中",
+        "var_usage": "2019-20赛季引入VAR，但使用频率和技术水平有限。",
+        "key_trends": [
+            "三强垄断明显",
+            "防守导向，小球多",
+            "主场优势较高",
+            "近年经济危机影响俱乐部投入"
+        ],
+        "style_tags": [
+            "防守",
+            "小球",
+            "三强垄断",
+            "主场优势"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 4.5,
+        "avg_red_cards": 0.22,
+        "avg_penalties": 0.28,
+        "referee_style": "裁判尺度偏严，出牌率较高。因比赛情绪化程度高，冲突和抗议较多。",
+        "first_half_stoppage_avg": 2.4,
+        "second_half_stoppage_avg": 5.6,
+        "stoppage_note": "因抗议和冲突多，补时偏长。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "Koriopolis丑闻",
+                "year": "2011",
+                "description": "希腊足球最大假赛丑闻，涉及多场假赛和裁判操纵。奥林匹亚科斯主席被起诉，多名裁判和官员涉案。欧足联曾威胁将希腊球队逐出欧战。"
+            },
+            {
+                "event": "持续监控",
+                "year": "2015-2025",
+                "description": "欧足联持续将希腊列为假赛高风险国家。近年无重大新案件，但假赛风险评级仍为欧洲最高之一。"
+            }
+        ],
+        "discipline_features": "纪律体系受政治干预严重。处罚执行不透明。",
+        "official_rules": "IFAB规则+希腊超特别规则。",
+        "integrity_rating": "极低"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价希腊超'假赛多'，'不值得关注'。彩民认为'小球为主'，'假赛风险高需极谨慎'。",
+        "betting_market": {
+            "market_efficiency": "低",
+            "liquidity": "低",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "低",
+        "jingcai_tips": [
+            "假赛风险极高，低关注度比赛尤其需谨慎",
+            "小球为主，UNDER 2.5是常规选择",
+            "三强客胜率不如预期",
+            "主场优势偏高",
+            "建议仅关注三强之间的关键比赛"
+        ],
+        "common_sayings": [
+            "希腊超假赛多",
+            "小球联赛",
+            "不值得买"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    }
+}

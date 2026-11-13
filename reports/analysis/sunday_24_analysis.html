@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>竞彩分析报告 #260809</title>
+<style>
+:root {
+  --primary: #1a73e8;
+  --success: #34a853;
+  --warning: #fbbc04;
+  --danger: #ea4335;
+  --info: #4285f4;
+  --text: #202124;
+  --text2: #5f6368;
+  --bg: #f8f9fa;
+  --border: #dadce0;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+h1 { font-size: 28px; margin-bottom: 8px; color: var(--primary); }
+h2 { font-size: 20px; margin: 24px 0 12px; padding-bottom: 8px; border-bottom: 2px solid var(--primary); color: var(--text); }
+h3 { font-size: 16px; margin: 16px 0 8px; color: var(--text2); }
+.header { background: linear-gradient(135deg, var(--primary), #0d47a1); color: white; padding: 24px; border-radius: 12px; margin-bottom: 20px; }
+.header .subtitle { opacity: 0.85; font-size: 14px; margin-top: 4px; }
+
+/* 卡片 */
+.card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+.card-title { font-size: 16px; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+
+/* 统计网格 */
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 12px 0; }
+.stat-box { background: var(--bg); border-radius: 8px; padding: 14px; text-align: center; }
+.stat-value { font-size: 24px; font-weight: 700; color: var(--primary); }
+.stat-label { font-size: 12px; color: var(--text2); margin-top: 4px; }
+
+/* 表格 */
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+th { background: var(--bg); text-align: left; padding: 10px 8px; font-weight: 600; border-bottom: 2px solid var(--border); }
+td { padding: 10px 8px; border-bottom: 1px solid var(--border); }
+tr:hover { background: rgba(26,115,232,0.03); }
+
+/* 标签 */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.badge-high { background: #e8f5e9; color: var(--success); }
+.badge-medium { background: #fff3e0; color: #e65100; }
+.badge-low { background: #fce4ec; color: var(--danger); }
+.badge-divergence { background: #f3e5f5; color: #6a1b9a; }
+
+/* 概率条 */
+.prob-bar { height: 6px; background: var(--bg); border-radius: 3px; overflow: hidden; margin-top: 4px; }
+.prob-fill { height: 100%; border-radius: 3px; transition: width 0.3s; }
+.prob-fill-home { background: var(--success); }
+.prob-fill-draw { background: var(--warning); }
+.prob-fill-away { background: var(--danger); }
+
+/* 串关卡片 */
+.parlay-card { border-left: 4px solid var(--primary); padding-left: 16px; margin: 12px 0; }
+.parlay-card.conservative { border-color: var(--success); }
+.parlay-card.balanced { border-color: var(--warning); }
+.parlay-card.aggressive { border-color: var(--danger); }
+
+/* 分歧警告 */
+.divergence-alert { background: #fff3e0; border-left: 4px solid var(--warning); padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 8px 0; }
+
+/* 比分推荐 */
+.score-rec { display: inline-block; background: var(--primary); color: white; padding: 4px 10px; border-radius: 6px; font-weight: 700; margin-right: 6px; }
+.score-alt { display: inline-block; background: var(--bg); color: var(--text2); padding: 4px 10px; border-radius: 6px; font-size: 12px; margin-right: 4px; }
+
+/* 折叠详情 */
+.details-toggle { cursor: pointer; color: var(--primary); font-size: 13px; }
+.match-details { display: none; margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--border); }
+.match-details.active { display: block; }
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .container { padding: 10px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  table { font-size: 12px; }
+  td, th { padding: 6px 4px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>⚽ 竞彩分析报告 #260809</h1>
+<div class="subtitle">生成时间: 2026-08-09 10:17 | 基于Dixon-Coles / 负二项 / Skellam / 蒙特卡洛多模型融合</div>
+</div>
+
+<div class="card">
+  <div class="card-title">📊 分析摘要</div>
+  <div class="stats-grid">
+    <div class="stat-box"><div class="stat-value">24</div><div class="stat-label">分析场次</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#34a853">11</div><div class="stat-label">高置信度</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#e65100">9</div><div class="stat-label">中置信度</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#ea4335">4</div><div class="stat-label">低置信度</div></div>
+    <div class="stat-box"><div class="stat-value">18</div><div class="stat-label">推荐主胜</div></div>
+    <div class="stat-box"><div class="stat-value">0</div><div class="stat-label">推荐平局</div></div>
+    <div class="stat-box"><div class="stat-value">6</div><div class="stat-label">推荐客胜</div></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">📋 比赛总览</div>
+  <table>
+    <thead><tr><th>编号</th><th>联赛</th><th>对阵</th><th>身价对比</th><th>置信度</th><th>推荐</th><th>首选比分</th><th>概率分布</th></tr></thead>
+    <tbody>
+<tr>
+  <td><strong>周日001</strong></td>
+  <td>日职</td>
+  <td>东京绿茵 <span style="color:var(--text2)">vs</span> 川崎前锋</td>
+  <td>约1200万欧元<span style="color:var(--text2)"> vs </span>约2800万欧元（客队是主队的2.3倍 <span style="color:var(--danger)">碾压</span>）</td>
+  <td><span class="badge badge-high">高 ★★★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">37.6%</span></td>
+  <td><span class="score-rec">1-1</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:76%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:90%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日002</strong></td>
+  <td>日职</td>
+  <td>长崎航海 <span style="color:var(--text2)">vs</span> 京都不死鸟</td>
+  <td>约1000万欧元<span style="color:var(--text2)"> vs </span>约2200万欧元（客队是主队的2.2倍 <span style="color:var(--danger)">碾压</span>）</td>
+  <td><span class="badge badge-high">高 ★★★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">41.0%</span></td>
+  <td><span class="score-rec">1-1</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:65%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:79%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日003</strong></td>
+  <td>日职</td>
+  <td>山形山神 <span style="color:var(--text2)">vs</span> 枥木FC</td>
+  <td>约800万欧元<span style="color:var(--text2)"> vs </span>约600万欧元（主队是客队的1.3倍）</td>
+  <td><span class="badge badge-high">高 ★★★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">46.9%</span></td>
+  <td><span class="score-rec">1-1</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:57%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:56%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日004</strong></td>
+  <td>荷甲</td>
+  <td>鹿特丹斯巴达 <span style="color:var(--text2)">vs</span> 费耶诺德</td>
+  <td>约3500万欧元<span style="color:var(--text2)"> vs </span>约1.80亿欧元（客队是主队的5.1倍 <span style="color:var(--danger)">碾压</span>）</td>
+  <td><span class="badge badge-medium">中 ★★</span> <span class="badge badge-divergence">分歧</span></td>
+  <td><strong>客胜</strong> <span style="color:var(--text2);font-size:11px">42.1%</span></td>
+  <td><span class="score-rec">1-1</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:74%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:63%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:100%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日005</strong></td>
+  <td>德乙</td>
+  <td>圣保利 <span style="color:var(--text2)">vs</span> 菲尔特</td>
+  <td>约8000万欧元<span style="color:var(--text2)"> vs </span>约5000万欧元（主队是客队的1.6倍）</td>
+  <td><span class="badge badge-low">低 ★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">63.1%</span></td>
+  <td><span class="score-rec">2-0</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:32%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:27%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日006</strong></td>
+  <td>德乙</td>
+  <td>纽伦堡 <span style="color:var(--text2)">vs</span> 德累斯顿</td>
+  <td>约6000万欧元<span style="color:var(--text2)"> vs </span>约4000万欧元（主队是客队的1.5倍）</td>
+  <td><span class="badge badge-medium">中 ★★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">57.3%</span></td>
+  <td><span class="score-rec">2-0</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:40%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:35%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日007</strong></td>
+  <td>瑞超</td>
+  <td>哈马比 <span style="color:var(--text2)">vs</span> 赫根</td>
+  <td>约4500万欧元<span style="color:var(--text2)"> vs </span>约3500万欧元（主队是客队的1.3倍）</td>
+  <td><span class="badge badge-very_low">极低 ☆</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">70.1%</span></td>
+  <td><span class="score-rec">3-0</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:24%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:19%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日008</strong></td>
+  <td>芬超</td>
+  <td>库奥皮奥 <span style="color:var(--text2)">vs</span> TPS图尔库</td>
+  <td>约3000万欧元<span style="color:var(--text2)"> vs </span>约1500万欧元（主队是客队的2.0倍 <span style="color:var(--danger)">碾压</span>）</td>
+  <td><span class="badge badge-low">低 ★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">73.2%</span></td>
+  <td><span class="score-rec">3-0</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:21%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:16%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日009</strong></td>
+  <td>荷甲</td>
+  <td>兹沃勒 <span style="color:var(--text2)">vs</span> 阿贾克斯</td>
+  <td>约1828万欧元<span style="color:var(--text2)"> vs </span>约2.33亿欧元（客队是主队的12.7倍 <span style="color:var(--danger)">碾压</span>）</td>
+  <td><span class="badge badge-medium">中 ★★</span> </td>
+  <td><strong>客胜</strong> <span style="color:var(--text2);font-size:11px">58.7%</span></td>
+  <td><span class="score-rec">0-2</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:33%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:37%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:100%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日010</strong></td>
+  <td>荷甲</td>
+  <td>格罗宁根 <span style="color:var(--text2)">vs</span> 乌德勒支</td>
+  <td>约5000万欧元<span style="color:var(--text2)"> vs </span>约8000万欧元（客队是主队的1.6倍）</td>
+  <td><span class="badge badge-high">高 ★★★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">48.5%</span></td>
+  <td><span class="score-rec">1-0</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:57%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:49%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日011</strong></td>
+  <td>挪超</td>
+  <td>利勒斯特罗姆 <span style="color:var(--text2)">vs</span> 罗森博格</td>
+  <td>约2500万欧元<span style="color:var(--text2)"> vs </span>约5000万欧元（客队是主队的2.0倍 <span style="color:var(--danger)">碾压</span>）</td>
+  <td><span class="badge badge-high">高 ★★★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">40.7%</span></td>
+  <td><span class="score-rec">1-1</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:68%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:78%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日012</strong></td>
+  <td>芬超</td>
+  <td>国际图尔库 <span style="color:var(--text2)">vs</span> 拉赫蒂</td>
+  <td>约3500万欧元<span style="color:var(--text2)"> vs </span>约1200万欧元（主队是客队的2.9倍 <span style="color:var(--danger)">碾压</span>）</td>
+  <td><span class="badge badge-very_low">极低 ☆</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">69.5%</span></td>
+  <td><span class="score-rec">3-0</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:25%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:19%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日013</strong></td>
+  <td>瑞超</td>
+  <td>哈尔姆斯塔德 <span style="color:var(--text2)">vs</span> 哥德堡盖斯</td>
+  <td>约2000万欧元<span style="color:var(--text2)"> vs </span>约4000万欧元（客队是主队的2.0倍 <span style="color:var(--danger)">碾压</span>）</td>
+  <td><span class="badge badge-medium">中 ★★</span> <span class="badge badge-divergence">分歧</span></td>
+  <td><strong>客胜</strong> <span style="color:var(--text2);font-size:11px">44.8%</span></td>
+  <td><span class="score-rec">1-1</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:61%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:62%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:100%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日014</strong></td>
+  <td>瑞超</td>
+  <td>哥德堡 <span style="color:var(--text2)">vs</span> 卡尔马</td>
+  <td>约3500万欧元<span style="color:var(--text2)"> vs </span>约3000万欧元（主队是客队的1.2倍）</td>
+  <td><span class="badge badge-medium">中 ★★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">53.2%</span></td>
+  <td><span class="score-rec">1-1</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:45%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:43%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日015</strong></td>
+  <td>荷甲</td>
+  <td>海伦芬 <span style="color:var(--text2)">vs</span> 特温特</td>
+  <td>约4500万欧元<span style="color:var(--text2)"> vs </span>约7000万欧元（客队是主队的1.6倍）</td>
+  <td><span class="badge badge-high">高 ★★★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">35.8%</span></td>
+  <td><span class="score-rec">1-1</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:80%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:99%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日016</strong></td>
+  <td>挪超</td>
+  <td>汉坎 <span style="color:var(--text2)">vs</span> 奥勒松</td>
+  <td>约2500万欧元<span style="color:var(--text2)"> vs </span>约1800万欧元（主队是客队的1.4倍）</td>
+  <td><span class="badge badge-medium">中 ★★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">60.2%</span></td>
+  <td><span class="score-rec">2-0</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:36%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:30%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日017</strong></td>
+  <td>芬超</td>
+  <td>AC奥卢 <span style="color:var(--text2)">vs</span> 赫尔辛基</td>
+  <td>约1500万欧元<span style="color:var(--text2)"> vs </span>约5000万欧元（客队是主队的3.3倍 <span style="color:var(--danger)">碾压</span>）</td>
+  <td><span class="badge badge-high">高 ★★★</span> </td>
+  <td><strong>客胜</strong> <span style="color:var(--text2);font-size:11px">46.0%</span></td>
+  <td><span class="score-rec">1-1</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:63%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:54%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:100%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日018</strong></td>
+  <td>葡超</td>
+  <td>波尔图 <span style="color:var(--text2)">vs</span> 阿尔维卡</td>
+  <td>约1.50亿欧元<span style="color:var(--text2)"> vs </span>约800万欧元（主队是客队的18.8倍 <span style="color:var(--danger)">碾压</span>）</td>
+  <td><span class="badge badge-high">高 ★★★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">72.1%</span></td>
+  <td><span class="score-rec">2-0</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:23%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:15%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日019</strong></td>
+  <td>挪超</td>
+  <td>克里斯蒂安松 <span style="color:var(--text2)">vs</span> 莫尔德</td>
+  <td>约2000万欧元<span style="color:var(--text2)"> vs </span>约4500万欧元（客队是主队的2.2倍 <span style="color:var(--danger)">碾压</span>）</td>
+  <td><span class="badge badge-medium">中 ★★</span> </td>
+  <td><strong>客胜</strong> <span style="color:var(--text2);font-size:11px">52.2%</span></td>
+  <td><span class="score-rec">1-1</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:46%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:46%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:100%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日020</strong></td>
+  <td>葡超</td>
+  <td>本菲卡 <span style="color:var(--text2)">vs</span> 维塞乌</td>
+  <td>约2.50亿欧元<span style="color:var(--text2)"> vs </span>约1200万欧元（主队是客队的20.8倍 <span style="color:var(--danger)">碾压</span>）</td>
+  <td><span class="badge badge-high">高 ★★★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">74.9%</span></td>
+  <td><span class="score-rec">3-0</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:20%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:14%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日021</strong></td>
+  <td>葡超</td>
+  <td>吉维森特 <span style="color:var(--text2)">vs</span> 里奥阿维</td>
+  <td>约3000万欧元<span style="color:var(--text2)"> vs </span>约2500万欧元（主队是客队的1.2倍）</td>
+  <td><span class="badge badge-medium">中 ★★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">60.7%</span></td>
+  <td><span class="score-rec">2-0</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:36%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:29%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日022</strong></td>
+  <td>葡超</td>
+  <td>摩雷伦斯 <span style="color:var(--text2)">vs</span> 布拉加</td>
+  <td>约2500万欧元<span style="color:var(--text2)"> vs </span>约6000万欧元（客队是主队的2.4倍 <span style="color:var(--danger)">碾压</span>）</td>
+  <td><span class="badge badge-medium">中 ★★</span> </td>
+  <td><strong>客胜</strong> <span style="color:var(--text2);font-size:11px">45.0%</span></td>
+  <td><span class="score-rec">1-1</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:66%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:56%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:100%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日023</strong></td>
+  <td>巴甲</td>
+  <td>桑托斯 <span style="color:var(--text2)">vs</span> 巴拉纳竞技</td>
+  <td>约3000万欧元<span style="color:var(--text2)"> vs </span>约5000万欧元（客队是主队的1.7倍）</td>
+  <td><span class="badge badge-high">高 ★★★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">40.7%</span></td>
+  <td><span class="score-rec">1-1</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:72%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:74%"></div></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><strong>周日024</strong></td>
+  <td>巴甲</td>
+  <td>弗拉门戈 <span style="color:var(--text2)">vs</span> 维多利亚</td>
+  <td>约1.50亿欧元<span style="color:var(--text2)"> vs </span>约2000万欧元（主队是客队的7.5倍 <span style="color:var(--danger)">碾压</span>）</td>
+  <td><span class="badge badge-high">高 ★★★</span> </td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">76.4%</span></td>
+  <td><span class="score-rec">3-0</span></td>
+  <td>
+    <div style="display:flex;gap:4px;align-items:center;font-size:11px">
+      <span style="width:24px">主</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+      <span style="width:24px">平</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:18%"></div></div>
+      <span style="width:24px">客</span><div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:13%"></div></div>
+    </div>
+  </td>
+</tr></tbody>
+  </table>
+</div>
+
+<div class="card" id="match-1">
+  <div class="card-title">
+    <span>#周日001</span>
+    <strong>东京绿茵 vs 川崎前锋</strong>
+    <span style="color:var(--text2);font-size:12px">日职</span>
+    <span class="badge badge-high">★★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (37.6%)</p>
+      <p>比分: <span class="score-rec">1-1</span> <span class="score-alt">1-0</span> <span class="score-alt">0-0</span></p>
+      <p>总进球: 小2.5</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约1200万欧元<span style="color:var(--text2)"> vs </span>约2800万欧元（客队是主队的2.3倍 <span style="color:var(--danger)">碾压</span>）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>36.5%</td><td>30.7%</td><td>32.8%</td></tr><tr><td>负二项</td><td>38.2%</td><td>26.9%</td><td>34.9%</td></tr><tr><td>Skellam</td><td>38.2%</td><td>27.3%</td><td>34.5%</td></tr><tr><td>Elo评级</td><td>46.8%</td><td>24.4%</td><td>28.8%</td></tr><tr><td>蒙特卡洛</td><td>39.4%</td><td>25.8%</td><td>34.8%</td></tr><tr><td>Shin去水</td><td>32.1%</td><td>29.0%</td><td>38.9%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.10 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.45</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 2.76 / 3.05 / 2.28</p>
+      <p>抽水: 12.88%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +5.5%</span> | <span style="color:var(--danger)">平局: -0.6%</span> | <span style="color:var(--danger)">客胜: -4.9%</span></p>
+    <p>🏔️ 高山验证: 日职高山方向命中率55.2%，略高于随机，保持模型原判断</p>
+  </div>
+</div>
+
+<div class="card" id="match-2">
+  <div class="card-title">
+    <span>#周日002</span>
+    <strong>长崎航海 vs 京都不死鸟</strong>
+    <span style="color:var(--text2);font-size:12px">日职</span>
+    <span class="badge badge-high">★★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (41.0%)</p>
+      <p>比分: <span class="score-rec">1-1</span> <span class="score-alt">2-1</span> <span class="score-alt">1-0</span></p>
+      <p>总进球: 大2.5</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约1000万欧元<span style="color:var(--text2)"> vs </span>约2200万欧元（客队是主队的2.2倍 <span style="color:var(--danger)">碾压</span>）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>43.0%</td><td>27.0%</td><td>29.9%</td></tr><tr><td>负二项</td><td>43.9%</td><td>23.4%</td><td>32.7%</td></tr><tr><td>Skellam</td><td>44.5%</td><td>24.1%</td><td>31.4%</td></tr><tr><td>Elo评级</td><td>48.0%</td><td>25.0%</td><td>27.1%</td></tr><tr><td>蒙特卡洛</td><td>44.5%</td><td>23.8%</td><td>31.7%</td></tr><tr><td>Shin去水</td><td>31.1%</td><td>28.1%</td><td>40.8%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.10 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.45</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 2.85 / 3.15 / 2.17</p>
+      <p>抽水: 12.92%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +9.9%</span> | <span style="color:var(--danger)">平局: -1.6%</span> | <span style="color:var(--danger)">客胜: -8.3%</span></p>
+    <p>🏔️ 高山验证: 日职高山方向命中率55.2%，略高于随机，保持模型原判断</p>
+  </div>
+</div>
+
+<div class="card" id="match-3">
+  <div class="card-title">
+    <span>#周日003</span>
+    <strong>山形山神 vs 枥木FC</strong>
+    <span style="color:var(--text2);font-size:12px">日职</span>
+    <span class="badge badge-high">★★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (46.9%)</p>
+      <p>比分: <span class="score-rec">1-1</span> <span class="score-alt">1-0</span> <span class="score-alt">2-0</span></p>
+      <p>总进球: 2-3球</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约800万欧元<span style="color:var(--text2)"> vs </span>约600万欧元（主队是客队的1.3倍）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>51.4%</td><td>27.2%</td><td>21.4%</td></tr><tr><td>负二项</td><td>51.0%</td><td>24.2%</td><td>24.7%</td></tr><tr><td>Skellam</td><td>52.9%</td><td>24.2%</td><td>22.9%</td></tr><tr><td>Elo评级</td><td>51.3%</td><td>25.3%</td><td>23.4%</td></tr><tr><td>蒙特卡洛</td><td>51.4%</td><td>23.5%</td><td>25.1%</td></tr><tr><td>Shin去水</td><td>38.2%</td><td>27.2%</td><td>34.6%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.10 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.45</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 2.32 / 3.25 / 2.56</p>
+      <p>抽水: 12.94%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +8.7%</span> | <span style="color:var(--danger)">平局: -0.6%</span> | <span style="color:var(--danger)">客胜: -8.1%</span></p>
+    <p>🏔️ 高山验证: 日职高山方向命中率55.2%，略高于随机，保持模型原判断</p>
+  </div>
+</div>
+
+<div class="card" id="match-4">
+  <div class="card-title">
+    <span>#周日004</span>
+    <strong>鹿特丹斯巴达 vs 费耶诺德</strong>
+    <span style="color:var(--text2);font-size:12px">荷甲</span>
+    <span class="badge badge-medium">★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>客胜</strong> (42.1%)</p>
+      <p>比分: <span class="score-rec">1-1</span> <span class="score-alt">0-1</span> <span class="score-alt">0-0</span></p>
+      <p>总进球: 2-3球</p>
+      <p>半全场: 客-客</p>
+      <p>💰 身价对比: 约3500万欧元<span style="color:var(--text2)"> vs </span>约1.80亿欧元（客队是主队的5.1倍 <span style="color:var(--danger)">碾压</span>）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>29.5%</td><td>28.8%</td><td>41.7%</td></tr><tr><td>负二项</td><td>32.1%</td><td>25.1%</td><td>42.8%</td></tr><tr><td>Skellam</td><td>31.1%</td><td>25.6%</td><td>43.3%</td></tr><tr><td>Elo评级</td><td>42.9%</td><td>22.3%</td><td>34.8%</td></tr><tr><td>蒙特卡洛</td><td>32.9%</td><td>24.9%</td><td>42.2%</td></tr><tr><td>Shin去水</td><td>20.4%</td><td>22.4%</td><td>57.2%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.45 — 明显过离散，负二项必备</p>
+      <p>主力模型: NB</p>
+      <p>零膨胀: ZIP可选</p>
+      <p>场均进球: 3.10</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 4.35 / 3.95 / 1.55</p>
+      <p>抽水: 12.82%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +10.9%</span> | <span style="color:var(--success)">平局: +4.1%</span> | <span style="color:var(--danger)">客胜: -15.1%</span></p>
+    <p>🏔️ 高山验证: 荷甲高山方向命中率48.6%，接近随机，模型判断独立使用</p>
+  </div>
+</div>
+
+<div class="card" id="match-5">
+  <div class="card-title">
+    <span>#周日005</span>
+    <strong>圣保利 vs 菲尔特</strong>
+    <span style="color:var(--text2);font-size:12px">德乙</span>
+    <span class="badge badge-low">★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (63.1%)</p>
+      <p>比分: <span class="score-rec">2-0</span> <span class="score-alt">3-0</span> <span class="score-alt">2-1</span></p>
+      <p>总进球: 大2.5</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约8000万欧元<span style="color:var(--text2)"> vs </span>约5000万欧元（主队是客队的1.6倍）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>78.5%</td><td>14.1%</td><td>7.4%</td></tr><tr><td>负二项</td><td>70.4%</td><td>16.4%</td><td>13.2%</td></tr><tr><td>Skellam</td><td>79.5%</td><td>12.5%</td><td>8.0%</td></tr><tr><td>Elo评级</td><td>54.2%</td><td>23.8%</td><td>22.0%</td></tr><tr><td>蒙特卡洛</td><td>72.5%</td><td>15.5%</td><td>12.0%</td></tr><tr><td>Shin去水</td><td>53.7%</td><td>23.9%</td><td>22.4%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.12 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.50</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 1.65 / 3.70 / 3.95</p>
+      <p>抽水: 12.95%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +9.4%</span> | <span style="color:var(--danger)">平局: -4.0%</span> | <span style="color:var(--danger)">客胜: -5.5%</span></p>
+    <p>🏔️ 高山验证: 德乙高山方向命中率36.6%，接近随机，模型判断独立使用</p>
+  </div>
+</div>
+
+<div class="card" id="match-6">
+  <div class="card-title">
+    <span>#周日006</span>
+    <strong>纽伦堡 vs 德累斯顿</strong>
+    <span style="color:var(--text2);font-size:12px">德乙</span>
+    <span class="badge badge-medium">★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (57.3%)</p>
+      <p>比分: <span class="score-rec">2-0</span> <span class="score-alt">1-0</span> <span class="score-alt">2-1</span></p>
+      <p>总进球: 大2.5</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约6000万欧元<span style="color:var(--text2)"> vs </span>约4000万欧元（主队是客队的1.5倍）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>70.2%</td><td>19.0%</td><td>10.7%</td></tr><tr><td>负二项</td><td>65.5%</td><td>19.1%</td><td>15.4%</td></tr><tr><td>Skellam</td><td>71.4%</td><td>16.9%</td><td>11.7%</td></tr><tr><td>Elo评级</td><td>51.4%</td><td>25.3%</td><td>23.3%</td></tr><tr><td>蒙特卡洛</td><td>66.7%</td><td>18.0%</td><td>15.2%</td></tr><tr><td>Shin去水</td><td>44.3%</td><td>26.2%</td><td>29.5%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.12 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.50</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 2.00 / 3.38 / 3.00</p>
+      <p>抽水: 12.92%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +13.0%</span> | <span style="color:var(--danger)">平局: -3.5%</span> | <span style="color:var(--danger)">客胜: -9.6%</span></p>
+    <p>🏔️ 高山验证: 德乙高山方向命中率36.6%，接近随机，模型判断独立使用</p>
+  </div>
+</div>
+
+<div class="card" id="match-7">
+  <div class="card-title">
+    <span>#周日007</span>
+    <strong>哈马比 vs 赫根</strong>
+    <span style="color:var(--text2);font-size:12px">瑞超</span>
+    <span class="badge badge-very_low">☆</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (70.1%)</p>
+      <p>比分: <span class="score-rec">3-0</span> <span class="score-alt">2-0</span> <span class="score-alt">4-0</span></p>
+      <p>总进球: 大2.5</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约4500万欧元<span style="color:var(--text2)"> vs </span>约3500万欧元（主队是客队的1.3倍）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>88.8%</td><td>8.3%</td><td>2.9%</td></tr><tr><td>负二项</td><td>77.8%</td><td>14.0%</td><td>8.2%</td></tr><tr><td>Skellam</td><td>89.6%</td><td>7.2%</td><td>3.2%</td></tr><tr><td>Elo评级</td><td>56.9%</td><td>22.4%</td><td>20.7%</td></tr><tr><td>蒙特卡洛</td><td>80.5%</td><td>12.0%</td><td>7.5%</td></tr><tr><td>Shin去水</td><td>60.6%</td><td>20.3%</td><td>19.0%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.20 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: ZIP可选</p>
+      <p>场均进球: 2.60</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 1.46 / 4.35 / 4.65</p>
+      <p>抽水: 12.99%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +9.5%</span> | <span style="color:var(--danger)">平局: -3.8%</span> | <span style="color:var(--danger)">客胜: -5.7%</span></p>
+    <p>🏔️ 高山验证: 瑞超高山方向命中率34.5%，接近随机，模型判断独立使用</p>
+  </div>
+</div>
+
+<div class="card" id="match-8">
+  <div class="card-title">
+    <span>#周日008</span>
+    <strong>库奥皮奥 vs TPS图尔库</strong>
+    <span style="color:var(--text2);font-size:12px">芬超</span>
+    <span class="badge badge-low">★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (73.2%)</p>
+      <p>比分: <span class="score-rec">3-0</span> <span class="score-alt">2-0</span> <span class="score-alt">4-0</span></p>
+      <p>总进球: 大2.5</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约3000万欧元<span style="color:var(--text2)"> vs </span>约1500万欧元（主队是客队的2.0倍 <span style="color:var(--danger)">碾压</span>）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>93.0%</td><td>5.8%</td><td>1.2%</td></tr><tr><td>负二项</td><td>82.6%</td><td>12.8%</td><td>4.6%</td></tr><tr><td>Skellam</td><td>93.6%</td><td>5.0%</td><td>1.4%</td></tr><tr><td>Elo评级</td><td>60.1%</td><td>20.8%</td><td>19.2%</td></tr><tr><td>蒙特卡洛</td><td>84.9%</td><td>11.4%</td><td>3.7%</td></tr><tr><td>Shin去水</td><td>66.1%</td><td>19.5%</td><td>14.4%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.15 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.55</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 1.34 / 4.55 / 6.15</p>
+      <p>抽水: 12.87%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +7.1%</span> | <span style="color:var(--danger)">平局: -4.1%</span> | <span style="color:var(--danger)">客胜: -3.0%</span></p>
+    <p>🏔️ 高山验证: 芬超样本不足(<20场)，高山验证跳过</p>
+  </div>
+</div>
+
+<div class="card" id="match-9">
+  <div class="card-title">
+    <span>#周日009</span>
+    <strong>兹沃勒 vs 阿贾克斯</strong>
+    <span style="color:var(--text2);font-size:12px">荷甲</span>
+    <span class="badge badge-medium">★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>客胜</strong> (58.7%)</p>
+      <p>比分: <span class="score-rec">0-2</span> <span class="score-alt">0-1</span> <span class="score-alt">1-1</span></p>
+      <p>总进球: 2-3球</p>
+      <p>半全场: 客-客</p>
+      <p>💰 身价对比: 约1828万欧元<span style="color:var(--text2)"> vs </span>约2.33亿欧元（客队是主队的12.7倍 <span style="color:var(--danger)">碾压</span>）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>9.4%</td><td>20.3%</td><td>70.3%</td></tr><tr><td>负二项</td><td>13.3%</td><td>20.3%</td><td>66.4%</td></tr><tr><td>Skellam</td><td>10.5%</td><td>18.1%</td><td>71.4%</td></tr><tr><td>Elo评级</td><td>40.3%</td><td>20.9%</td><td>38.8%</td></tr><tr><td>蒙特卡洛</td><td>14.1%</td><td>21.3%</td><td>64.5%</td></tr><tr><td>Shin去水</td><td>16.0%</td><td>19.9%</td><td>64.2%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.45 — 明显过离散，负二项必备</p>
+      <p>主力模型: NB</p>
+      <p>零膨胀: ZIP可选</p>
+      <p>场均进球: 3.10</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 5.55 / 4.45 / 1.38</p>
+      <p>抽水: 12.95%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +3.3%</span> | <span style="color:var(--success)">平局: +2.1%</span> | <span style="color:var(--danger)">客胜: -5.4%</span></p>
+    <p>🏔️ 高山验证: 荷甲高山方向命中率48.6%，接近随机，模型判断独立使用</p>
+  </div>
+</div>
+
+<div class="card" id="match-10">
+  <div class="card-title">
+    <span>#周日010</span>
+    <strong>格罗宁根 vs 乌德勒支</strong>
+    <span style="color:var(--text2);font-size:12px">荷甲</span>
+    <span class="badge badge-high">★★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (48.5%)</p>
+      <p>比分: <span class="score-rec">1-0</span> <span class="score-alt">1-1</span> <span class="score-alt">0-0</span></p>
+      <p>总进球: 小2.5</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约5000万欧元<span style="color:var(--text2)"> vs </span>约8000万欧元（客队是主队的1.6倍）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>54.2%</td><td>28.3%</td><td>17.4%</td></tr><tr><td>负二项</td><td>53.7%</td><td>25.8%</td><td>20.5%</td></tr><tr><td>Skellam</td><td>55.8%</td><td>25.3%</td><td>19.0%</td></tr><tr><td>Elo评级</td><td>50.1%</td><td>26.0%</td><td>24.0%</td></tr><tr><td>蒙特卡洛</td><td>53.5%</td><td>25.8%</td><td>20.7%</td></tr><tr><td>Shin去水</td><td>39.9%</td><td>27.3%</td><td>32.8%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.45 — 明显过离散，负二项必备</p>
+      <p>主力模型: NB</p>
+      <p>零膨胀: ZIP可选</p>
+      <p>场均进球: 3.10</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 2.22 / 3.25 / 2.70</p>
+      <p>抽水: 12.85%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +8.6%</span> | <span style="color:var(--success)">平局: +0.5%</span> | <span style="color:var(--danger)">客胜: -9.1%</span></p>
+    <p>🏔️ 高山验证: 荷甲高山方向命中率48.6%，接近随机，模型判断独立使用</p>
+  </div>
+</div>
+
+<div class="card" id="match-11">
+  <div class="card-title">
+    <span>#周日011</span>
+    <strong>利勒斯特罗姆 vs 罗森博格</strong>
+    <span style="color:var(--text2);font-size:12px">挪超</span>
+    <span class="badge badge-high">★★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (40.7%)</p>
+      <p>比分: <span class="score-rec">1-1</span> <span class="score-alt">1-0</span> <span class="score-alt">0-0</span></p>
+      <p>总进球: 2-3球</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约2500万欧元<span style="color:var(--text2)"> vs </span>约5000万欧元（客队是主队的2.0倍 <span style="color:var(--danger)">碾压</span>）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>39.8%</td><td>29.6%</td><td>30.6%</td></tr><tr><td>负二项</td><td>41.2%</td><td>25.8%</td><td>33.0%</td></tr><tr><td>Skellam</td><td>41.5%</td><td>26.3%</td><td>32.2%</td></tr><tr><td>Elo评级</td><td>47.8%</td><td>24.8%</td><td>27.4%</td></tr><tr><td>蒙特卡洛</td><td>41.7%</td><td>25.1%</td><td>33.2%</td></tr><tr><td>Shin去水</td><td>41.2%</td><td>24.9%</td><td>33.9%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.30 — 明显过离散，负二项必备</p>
+      <p>主力模型: NB</p>
+      <p>零膨胀: ZIP可选</p>
+      <p>场均进球: 2.80</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 2.15 / 3.55 / 2.61</p>
+      <p>抽水: 12.99%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.12</span> | <span style="color:var(--danger)">平局: -0.12</span> | <span style="color:var(--danger)">客胜: -0.12</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--danger)">主胜: -0.5%</span> | <span style="color:var(--success)">平局: +2.8%</span> | <span style="color:var(--danger)">客胜: -2.3%</span></p>
+    <p>🏔️ 高山验证: 挪超高山方向命中率56.5%，略高于随机，保持模型原判断</p>
+  </div>
+</div>
+
+<div class="card" id="match-12">
+  <div class="card-title">
+    <span>#周日012</span>
+    <strong>国际图尔库 vs 拉赫蒂</strong>
+    <span style="color:var(--text2);font-size:12px">芬超</span>
+    <span class="badge badge-very_low">☆</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (69.5%)</p>
+      <p>比分: <span class="score-rec">3-0</span> <span class="score-alt">2-0</span> <span class="score-alt">4-0</span></p>
+      <p>总进球: 大2.5</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约3500万欧元<span style="color:var(--text2)"> vs </span>约1200万欧元（主队是客队的2.9倍 <span style="color:var(--danger)">碾压</span>）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>90.1%</td><td>7.4%</td><td>2.5%</td></tr><tr><td>负二项</td><td>78.3%</td><td>13.7%</td><td>8.0%</td></tr><tr><td>Skellam</td><td>90.9%</td><td>6.4%</td><td>2.8%</td></tr><tr><td>Elo评级</td><td>57.4%</td><td>22.1%</td><td>20.4%</td></tr><tr><td>蒙特卡洛</td><td>80.8%</td><td>11.9%</td><td>7.2%</td></tr><tr><td>Shin去水</td><td>55.4%</td><td>25.3%</td><td>19.3%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.15 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.55</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 1.60 / 3.50 / 4.60</p>
+      <p>抽水: 12.81%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +14.1%</span> | <span style="color:var(--danger)">平局: -8.3%</span> | <span style="color:var(--danger)">客胜: -5.8%</span></p>
+    <p>🏔️ 高山验证: 芬超样本不足(<20场)，高山验证跳过</p>
+  </div>
+</div>
+
+<div class="card" id="match-13">
+  <div class="card-title">
+    <span>#周日013</span>
+    <strong>哈尔姆斯塔德 vs 哥德堡盖斯</strong>
+    <span style="color:var(--text2);font-size:12px">瑞超</span>
+    <span class="badge badge-medium">★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>客胜</strong> (44.8%)</p>
+      <p>比分: <span class="score-rec">1-1</span> <span class="score-alt">0-1</span> <span class="score-alt">0-0</span></p>
+      <p>总进球: 小2.5</p>
+      <p>半全场: 客-客</p>
+      <p>💰 身价对比: 约2000万欧元<span style="color:var(--text2)"> vs </span>约4000万欧元（客队是主队的2.0倍 <span style="color:var(--danger)">碾压</span>）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>23.4%</td><td>30.9%</td><td>45.7%</td></tr><tr><td>负二项</td><td>26.1%</td><td>27.6%</td><td>46.3%</td></tr><tr><td>Skellam</td><td>25.1%</td><td>27.6%</td><td>47.3%</td></tr><tr><td>Elo评级</td><td>42.6%</td><td>22.1%</td><td>35.3%</td></tr><tr><td>蒙特卡洛</td><td>26.3%</td><td>27.7%</td><td>46.0%</td></tr><tr><td>Shin去水</td><td>17.0%</td><td>22.7%</td><td>60.3%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.20 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: ZIP可选</p>
+      <p>场均进球: 2.60</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 5.20 / 3.90 / 1.47</p>
+      <p>抽水: 12.90%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +10.4%</span> | <span style="color:var(--success)">平局: +5.1%</span> | <span style="color:var(--danger)">客胜: -15.5%</span></p>
+    <p>🏔️ 高山验证: 瑞超高山方向命中率34.5%，接近随机，模型判断独立使用</p>
+  </div>
+</div>
+
+<div class="card" id="match-14">
+  <div class="card-title">
+    <span>#周日014</span>
+    <strong>哥德堡 vs 卡尔马</strong>
+    <span style="color:var(--text2);font-size:12px">瑞超</span>
+    <span class="badge badge-medium">★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (53.2%)</p>
+      <p>比分: <span class="score-rec">1-1</span> <span class="score-alt">2-0</span> <span class="score-alt">2-1</span></p>
+      <p>总进球: 大2.5</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约3500万欧元<span style="color:var(--text2)"> vs </span>约3000万欧元（主队是客队的1.2倍）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>63.6%</td><td>21.5%</td><td>14.8%</td></tr><tr><td>负二项</td><td>60.3%</td><td>20.3%</td><td>19.4%</td></tr><tr><td>Skellam</td><td>64.9%</td><td>19.2%</td><td>16.0%</td></tr><tr><td>Elo评级</td><td>51.0%</td><td>25.5%</td><td>23.5%</td></tr><tr><td>蒙特卡洛</td><td>60.2%</td><td>20.4%</td><td>19.4%</td></tr><tr><td>Shin去水</td><td>38.8%</td><td>26.0%</td><td>35.1%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.20 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: ZIP可选</p>
+      <p>场均进球: 2.60</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 2.28 / 3.40 / 2.52</p>
+      <p>抽水: 12.95%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +14.4%</span> | <span style="color:var(--danger)">平局: -2.0%</span> | <span style="color:var(--danger)">客胜: -12.4%</span></p>
+    <p>🏔️ 高山验证: 瑞超高山方向命中率34.5%，接近随机，模型判断独立使用</p>
+  </div>
+</div>
+
+<div class="card" id="match-15">
+  <div class="card-title">
+    <span>#周日015</span>
+    <strong>海伦芬 vs 特温特</strong>
+    <span style="color:var(--text2);font-size:12px">荷甲</span>
+    <span class="badge badge-high">★★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (35.8%)</p>
+      <p>比分: <span class="score-rec">1-1</span> <span class="score-alt">0-0</span> <span class="score-alt">0-1</span></p>
+      <p>总进球: 小2.5</p>
+      <p>半全场: 客-客</p>
+      <p>💰 身价对比: 约4500万欧元<span style="color:var(--text2)"> vs </span>约7000万欧元（客队是主队的1.6倍）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>33.1%</td><td>31.3%</td><td>35.6%</td></tr><tr><td>负二项</td><td>35.2%</td><td>27.5%</td><td>37.4%</td></tr><tr><td>Skellam</td><td>34.8%</td><td>27.9%</td><td>37.3%</td></tr><tr><td>Elo评级</td><td>47.6%</td><td>24.7%</td><td>27.7%</td></tr><tr><td>蒙特卡洛</td><td>35.3%</td><td>27.9%</td><td>36.8%</td></tr><tr><td>Shin去水</td><td>32.8%</td><td>25.0%</td><td>42.2%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.45 — 明显过离散，负二项必备</p>
+      <p>主力模型: NB</p>
+      <p>零膨胀: ZIP可选</p>
+      <p>场均进球: 3.10</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 2.70 / 3.55 / 2.10</p>
+      <p>抽水: 12.83%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +3.0%</span> | <span style="color:var(--success)">平局: +3.7%</span> | <span style="color:var(--danger)">客胜: -6.7%</span></p>
+    <p>🏔️ 高山验证: 历史交锋高山方向'平'与模型'胜'矛盾，联赛命中率48.6%</p>
+  </div>
+</div>
+
+<div class="card" id="match-16">
+  <div class="card-title">
+    <span>#周日016</span>
+    <strong>汉坎 vs 奥勒松</strong>
+    <span style="color:var(--text2);font-size:12px">挪超</span>
+    <span class="badge badge-medium">★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (60.2%)</p>
+      <p>比分: <span class="score-rec">2-0</span> <span class="score-alt">1-0</span> <span class="score-alt">3-0</span></p>
+      <p>总进球: 大2.5</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约2500万欧元<span style="color:var(--text2)"> vs </span>约1800万欧元（主队是客队的1.4倍）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>74.1%</td><td>17.6%</td><td>8.3%</td></tr><tr><td>负二项</td><td>68.8%</td><td>18.5%</td><td>12.7%</td></tr><tr><td>Skellam</td><td>75.2%</td><td>15.6%</td><td>9.2%</td></tr><tr><td>Elo评级</td><td>53.8%</td><td>24.0%</td><td>22.2%</td></tr><tr><td>蒙特卡洛</td><td>66.9%</td><td>19.5%</td><td>13.6%</td></tr><tr><td>Shin去水</td><td>45.9%</td><td>24.6%</td><td>29.5%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.30 — 明显过离散，负二项必备</p>
+      <p>主力模型: NB</p>
+      <p>零膨胀: ZIP可选</p>
+      <p>场均进球: 2.80</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 1.93 / 3.60 / 3.00</p>
+      <p>抽水: 12.92%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +14.3%</span> | <span style="color:var(--danger)">平局: -2.8%</span> | <span style="color:var(--danger)">客胜: -11.5%</span></p>
+    <p>🏔️ 高山验证: 挪超高山方向命中率56.5%，略高于随机，保持模型原判断</p>
+  </div>
+</div>
+
+<div class="card" id="match-17">
+  <div class="card-title">
+    <span>#周日017</span>
+    <strong>AC奥卢 vs 赫尔辛基</strong>
+    <span style="color:var(--text2);font-size:12px">芬超</span>
+    <span class="badge badge-high">★★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>客胜</strong> (46.0%)</p>
+      <p>比分: <span class="score-rec">1-1</span> <span class="score-alt">1-2</span> <span class="score-alt">0-1</span></p>
+      <p>总进球: 大2.5</p>
+      <p>半全场: 客-客</p>
+      <p>💰 身价对比: 约1500万欧元<span style="color:var(--text2)"> vs </span>约5000万欧元（客队是主队的3.3倍 <span style="color:var(--danger)">碾压</span>）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>22.5%</td><td>25.5%</td><td>52.0%</td></tr><tr><td>负二项</td><td>26.2%</td><td>22.6%</td><td>51.3%</td></tr><tr><td>Skellam</td><td>23.9%</td><td>22.7%</td><td>53.4%</td></tr><tr><td>Elo评级</td><td>43.3%</td><td>22.5%</td><td>34.1%</td></tr><tr><td>蒙特卡洛</td><td>26.5%</td><td>22.6%</td><td>50.9%</td></tr><tr><td>Shin去水</td><td>26.8%</td><td>25.3%</td><td>47.9%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.15 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.55</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 3.30 / 3.50 / 1.85</p>
+      <p>抽水: 12.93%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +2.1%</span> | <span style="color:var(--danger)">平局: -0.2%</span> | <span style="color:var(--danger)">客胜: -1.8%</span></p>
+    <p>🏔️ 高山验证: 芬超样本不足(<20场)，高山验证跳过</p>
+  </div>
+</div>
+
+<div class="card" id="match-18">
+  <div class="card-title">
+    <span>#周日018</span>
+    <strong>波尔图 vs 阿尔维卡</strong>
+    <span style="color:var(--text2);font-size:12px">葡超</span>
+    <span class="badge badge-high">★★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (72.1%)</p>
+      <p>比分: <span class="score-rec">2-0</span> <span class="score-alt">3-0</span> <span class="score-alt">1-0</span></p>
+      <p>总进球: 2-3球</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约1.50亿欧元<span style="color:var(--text2)"> vs </span>约800万欧元（主队是客队的18.8倍 <span style="color:var(--danger)">碾压</span>）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>86.5%</td><td>11.1%</td><td>2.3%</td></tr><tr><td>负二项</td><td>79.3%</td><td>15.5%</td><td>5.2%</td></tr><tr><td>Skellam</td><td>87.2%</td><td>9.9%</td><td>2.9%</td></tr><tr><td>Elo评级</td><td>63.1%</td><td>19.2%</td><td>17.7%</td></tr><tr><td>蒙特卡洛</td><td>80.2%</td><td>15.1%</td><td>4.8%</td></tr><tr><td>Shin去水</td><td>75.7%</td><td>15.4%</td><td>8.9%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.12 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.45</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 1.18 / 5.80 / 10.00</p>
+      <p>抽水: 11.99%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--danger)">主胜: -3.6%</span> | <span style="color:var(--success)">平局: +1.5%</span> | <span style="color:var(--success)">客胜: +2.0%</span></p>
+    <p>🏔️ 高山验证: 葡超高山方向命中率51.1%，略高于随机，保持模型原判断</p>
+  </div>
+</div>
+
+<div class="card" id="match-19">
+  <div class="card-title">
+    <span>#周日019</span>
+    <strong>克里斯蒂安松 vs 莫尔德</strong>
+    <span style="color:var(--text2);font-size:12px">挪超</span>
+    <span class="badge badge-medium">★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>客胜</strong> (52.2%)</p>
+      <p>比分: <span class="score-rec">1-1</span> <span class="score-alt">0-1</span> <span class="score-alt">0-2</span></p>
+      <p>总进球: 2-3球</p>
+      <p>半全场: 客-客</p>
+      <p>💰 身价对比: 约2000万欧元<span style="color:var(--text2)"> vs </span>约4500万欧元（客队是主队的2.2倍 <span style="color:var(--danger)">碾压</span>）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>15.8%</td><td>23.6%</td><td>60.6%</td></tr><tr><td>负二项</td><td>19.9%</td><td>21.8%</td><td>58.4%</td></tr><tr><td>Skellam</td><td>17.1%</td><td>21.0%</td><td>61.9%</td></tr><tr><td>Elo评级</td><td>41.5%</td><td>21.6%</td><td>37.0%</td></tr><tr><td>蒙特卡洛</td><td>21.1%</td><td>21.4%</td><td>57.5%</td></tr><tr><td>Shin去水</td><td>22.1%</td><td>21.9%</td><td>56.0%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.30 — 明显过离散，负二项必备</p>
+      <p>主力模型: NB</p>
+      <p>零膨胀: ZIP可选</p>
+      <p>场均进球: 2.80</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 4.00 / 4.05 / 1.58</p>
+      <p>抽水: 12.98%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +1.8%</span> | <span style="color:var(--success)">平局: +2.0%</span> | <span style="color:var(--danger)">客胜: -3.8%</span></p>
+    <p>🏔️ 高山验证: 挪超高山方向命中率56.5%，略高于随机，保持模型原判断</p>
+  </div>
+</div>
+
+<div class="card" id="match-20">
+  <div class="card-title">
+    <span>#周日020</span>
+    <strong>本菲卡 vs 维塞乌</strong>
+    <span style="color:var(--text2);font-size:12px">葡超</span>
+    <span class="badge badge-high">★★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (74.9%)</p>
+      <p>比分: <span class="score-rec">3-0</span> <span class="score-alt">2-0</span> <span class="score-alt">4-0</span></p>
+      <p>总进球: 大2.5</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约2.50亿欧元<span style="color:var(--text2)"> vs </span>约1200万欧元（主队是客队的20.8倍 <span style="color:var(--danger)">碾压</span>）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>93.3%</td><td>5.6%</td><td>1.0%</td></tr><tr><td>负二项</td><td>83.1%</td><td>12.7%</td><td>4.2%</td></tr><tr><td>Skellam</td><td>93.9%</td><td>4.8%</td><td>1.3%</td></tr><tr><td>Elo评级</td><td>63.3%</td><td>19.1%</td><td>17.6%</td></tr><tr><td>蒙特卡洛</td><td>85.2%</td><td>11.3%</td><td>3.5%</td></tr><tr><td>Shin去水</td><td>72.6%</td><td>17.0%</td><td>10.4%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.12 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.45</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 1.22 / 5.20 / 8.50</p>
+      <p>抽水: 12.96%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +2.3%</span> | <span style="color:var(--danger)">平局: -2.3%</span> | <span style="color:var(--success)">客胜: +0.0%</span></p>
+    <p>🏔️ 高山验证: 葡超高山方向命中率51.1%，略高于随机，保持模型原判断</p>
+  </div>
+</div>
+
+<div class="card" id="match-21">
+  <div class="card-title">
+    <span>#周日021</span>
+    <strong>吉维森特 vs 里奥阿维</strong>
+    <span style="color:var(--text2);font-size:12px">葡超</span>
+    <span class="badge badge-medium">★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (60.7%)</p>
+      <p>比分: <span class="score-rec">2-0</span> <span class="score-alt">1-0</span> <span class="score-alt">3-0</span></p>
+      <p>总进球: 大2.5</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约3000万欧元<span style="color:var(--text2)"> vs </span>约2500万欧元（主队是客队的1.2倍）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>74.2%</td><td>17.0%</td><td>8.8%</td></tr><tr><td>负二项</td><td>68.3%</td><td>18.0%</td><td>13.8%</td></tr><tr><td>Skellam</td><td>75.2%</td><td>15.1%</td><td>9.7%</td></tr><tr><td>Elo评级</td><td>53.1%</td><td>24.4%</td><td>22.5%</td></tr><tr><td>蒙特卡洛</td><td>69.6%</td><td>17.0%</td><td>13.5%</td></tr><tr><td>Shin去水</td><td>52.1%</td><td>26.8%</td><td>21.1%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.12 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.45</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 1.70 / 3.30 / 4.20</p>
+      <p>抽水: 12.94%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +8.6%</span> | <span style="color:var(--danger)">平局: -5.0%</span> | <span style="color:var(--danger)">客胜: -3.6%</span></p>
+    <p>🏔️ 高山验证: 葡超高山方向命中率51.1%，略高于随机，保持模型原判断</p>
+  </div>
+</div>
+
+<div class="card" id="match-22">
+  <div class="card-title">
+    <span>#周日022</span>
+    <strong>摩雷伦斯 vs 布拉加</strong>
+    <span style="color:var(--text2);font-size:12px">葡超</span>
+    <span class="badge badge-medium">★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>客胜</strong> (45.0%)</p>
+      <p>比分: <span class="score-rec">1-1</span> <span class="score-alt">1-2</span> <span class="score-alt">0-1</span></p>
+      <p>总进球: 大2.5</p>
+      <p>半全场: 客-客</p>
+      <p>💰 身价对比: 约2500万欧元<span style="color:var(--text2)"> vs </span>约6000万欧元（客队是主队的2.4倍 <span style="color:var(--danger)">碾压</span>）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>26.4%</td><td>25.9%</td><td>47.7%</td></tr><tr><td>负二项</td><td>29.7%</td><td>22.6%</td><td>47.7%</td></tr><tr><td>Skellam</td><td>27.8%</td><td>23.2%</td><td>49.1%</td></tr><tr><td>Elo评级</td><td>43.7%</td><td>22.7%</td><td>33.6%</td></tr><tr><td>蒙特卡洛</td><td>29.9%</td><td>22.8%</td><td>47.3%</td></tr><tr><td>Shin去水</td><td>18.6%</td><td>25.3%</td><td>56.1%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.12 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.45</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 4.75 / 3.50 / 1.58</p>
+      <p>抽水: 12.92%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +11.1%</span> | <span style="color:var(--danger)">平局: -0.1%</span> | <span style="color:var(--danger)">客胜: -11.1%</span></p>
+    <p>🏔️ 高山验证: 葡超高山方向命中率51.1%，略高于随机，保持模型原判断</p>
+  </div>
+</div>
+
+<div class="card" id="match-23">
+  <div class="card-title">
+    <span>#周日023</span>
+    <strong>桑托斯 vs 巴拉纳竞技</strong>
+    <span style="color:var(--text2);font-size:12px">巴甲</span>
+    <span class="badge badge-high">★★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (40.7%)</p>
+      <p>比分: <span class="score-rec">1-1</span> <span class="score-alt">1-0</span> <span class="score-alt">0-0</span></p>
+      <p>总进球: 小2.5</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约3000万欧元<span style="color:var(--text2)"> vs </span>约5000万欧元（客队是主队的1.7倍）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>39.7%</td><td>32.0%</td><td>28.3%</td></tr><tr><td>负二项</td><td>41.0%</td><td>28.4%</td><td>30.6%</td></tr><tr><td>Skellam</td><td>41.4%</td><td>28.6%</td><td>30.0%</td></tr><tr><td>Elo评级</td><td>48.5%</td><td>25.2%</td><td>26.3%</td></tr><tr><td>蒙特卡洛</td><td>41.7%</td><td>27.8%</td><td>30.5%</td></tr><tr><td>Shin去水</td><td>39.8%</td><td>28.3%</td><td>31.9%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.10 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.45</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 2.20 / 3.10 / 2.75</p>
+      <p>抽水: 14.08%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.12</span> | <span style="color:var(--danger)">平局: -0.12</span> | <span style="color:var(--danger)">客胜: -0.12</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--success)">主胜: +0.8%</span> | <span style="color:var(--success)">平局: +1.0%</span> | <span style="color:var(--danger)">客胜: -1.8%</span></p>
+    <p>🏔️ 高山验证: 巴甲样本不足(<20场)，高山验证跳过</p>
+  </div>
+</div>
+
+<div class="card" id="match-24">
+  <div class="card-title">
+    <span>#周日024</span>
+    <strong>弗拉门戈 vs 维多利亚</strong>
+    <span style="color:var(--text2);font-size:12px">巴甲</span>
+    <span class="badge badge-high">★★★</span>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px">
+    <div>
+      <h3>🎯 综合推荐</h3>
+      <p>方向: <strong>主胜</strong> (76.4%)</p>
+      <p>比分: <span class="score-rec">3-0</span> <span class="score-alt">4-0</span> <span class="score-alt">2-0</span></p>
+      <p>总进球: 大2.5</p>
+      <p>半全场: 主-主</p>
+      <p>💰 身价对比: 约1.50亿欧元<span style="color:var(--text2)"> vs </span>约2000万欧元（主队是客队的7.5倍 <span style="color:var(--danger)">碾压</span>）</p>
+    </div>
+    <div>
+      <h3>📈 模型对比</h3>
+      <table style="font-size:12px;margin:0">
+        <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+        <tbody><tr><td>DC模型</td><td>95.3%</td><td>4.1%</td><td>0.5%</td></tr><tr><td>负二项</td><td>85.1%</td><td>12.0%</td><td>2.9%</td></tr><tr><td>Skellam</td><td>95.7%</td><td>3.6%</td><td>0.7%</td></tr><tr><td>Elo评级</td><td>62.3%</td><td>19.6%</td><td>18.1%</td></tr><tr><td>蒙特卡洛</td><td>87.2%</td><td>10.2%</td><td>2.7%</td></tr><tr><td>Shin去水</td><td>77.0%</td><td>15.3%</td><td>7.7%</td></tr></tbody>
+      </table>
+    </div>
+    <div>
+      <h3>📐 联赛诊断</h3>
+      <p>VMR: 1.10 — 轻微过离散，DC模型优先</p>
+      <p>主力模型: DC</p>
+      <p>零膨胀: 推荐启用ZIP</p>
+      <p>场均进球: 2.45</p>
+    </div>
+    <div>
+      <h3>💰 赔率与EV</h3>
+      <p>原始: 1.15 / 5.80 / 11.50</p>
+      <p>抽水: 12.89%</p>
+      <p>Shin z: 0.070</p>
+      <p>EV: <span style="color:var(--danger)">主胜: -0.11</span> | <span style="color:var(--danger)">平局: -0.11</span> | <span style="color:var(--danger)">客胜: -0.11</span></p>
+    </div>
+  </div>
+  <div style="margin-top:12px;font-size:12px;color:var(--text2)">
+    <p>🔄 模型分歧: <span style="color:var(--danger)">主胜: -0.6%</span> | <span style="color:var(--danger)">平局: -1.4%</span> | <span style="color:var(--success)">客胜: +2.0%</span></p>
+    <p>🏔️ 高山验证: 巴甲样本不足(<20场)，高山验证跳过</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">🔗 串关建议</div>
+  
+<div class="parlay-card conservative">
+  <strong>稳健型 2串1</strong>
+  <span class="badge badge-conservative" style="margin-left:8px">低风险</span>
+  <div style="margin:8px 0;font-size:13px">• 周日024 弗拉门戈 vs 维多利亚 → <strong>主胜</strong> (76.4%, 赔1.15)<br>• 周日020 本菲卡 vs 维塞乌 → <strong>主胜</strong> (74.9%, 赔1.22)</div>
+  <p>组合概率: <strong>57.2%</strong> | 组合赔率: <strong>1.40</strong></p>
+  
+</div>
+<div class="parlay-card conservative">
+  <strong>稳健型 3串1</strong>
+  <span class="badge badge-conservative" style="margin-left:8px">中风险</span>
+  <div style="margin:8px 0;font-size:13px">• 周日024 弗拉门戈 vs 维多利亚 → <strong>主胜</strong> (76.4%, 赔1.15)<br>• 周日020 本菲卡 vs 维塞乌 → <strong>主胜</strong> (74.9%, 赔1.22)<br>• 周日018 波尔图 vs 阿尔维卡 → <strong>主胜</strong> (72.1%, 赔1.18)</div>
+  <p>组合概率: <strong>41.2%</strong> | 组合赔率: <strong>1.66</strong></p>
+  
+</div>
+<div class="parlay-card balanced">
+  <strong>平衡型 2串1（高概率+分歧）</strong>
+  <span class="badge badge-balanced" style="margin-left:8px">中风险</span>
+  <div style="margin:8px 0;font-size:13px">• 周日024 弗拉门戈 vs 维多利亚 → <strong>主胜</strong> (76.4%, 赔1.15)<br>• 周日013 哈尔姆斯塔德 vs 哥德堡盖斯 → <strong>客胜</strong> (44.8%, 赔1.47)</div>
+  <p>组合概率: <strong>34.2%</strong> | 组合赔率: <strong>1.69</strong></p>
+  <p style="color:var(--text2);font-size:12px;margin-top:4px">哈尔姆斯塔德 vs 哥德堡盖斯 模型与市场分歧 15.5%</p>
+</div>
+<div class="parlay-card aggressive">
+  <strong>激进型 2串1（双冷门）</strong>
+  <span class="badge badge-aggressive" style="margin-left:8px">高风险</span>
+  <div style="margin:8px 0;font-size:13px">• 周日001 东京绿茵 vs 川崎前锋 → <strong>客胜</strong> (33.9%, 赔2.28)<br>• 周日002 长崎航海 vs 京都不死鸟 → <strong>客胜</strong> (32.5%, 赔2.17)</div>
+  <p>组合概率: <strong>11.0%</strong> | 组合赔率: <strong>4.95</strong></p>
+  
+</div>
+</div>
+
+<div class="card">
+  <div class="card-title">⚠️ 模型与市场严重分歧预警</div>
+  
+<div class="divergence-alert">
+  <strong>周日004</strong> 鹿特丹斯巴达 vs 费耶诺德 — 客胜<br>
+  模型概率: 42.1% vs 市场概率(Shin): 57.2%<br>
+  分歧幅度: <strong style="color:var(--danger)">-15.1%</strong>
+</div>
+<div class="divergence-alert">
+  <strong>周日013</strong> 哈尔姆斯塔德 vs 哥德堡盖斯 — 客胜<br>
+  模型概率: 44.8% vs 市场概率(Shin): 60.3%<br>
+  分歧幅度: <strong style="color:var(--danger)">-15.5%</strong>
+</div>
+  <p style="font-size:12px;color:var(--text2);margin-top:8px">当模型与市场概率差&gt;15%时，该方向不确定性极高，仅适合极小注娱乐。</p>
+</div>
+
+<div class="card">
+  <div class="card-title">🏔️ 高山流水参考源统计</div>
+  <p style="font-size:13px;color:var(--text2);margin-bottom:12px">
+    总样本: 2240场 | 
+    有方向预测: 1581场 | 
+    整体方向命中率: 46.7%
+  </p>
+  <table style="font-size:12px">
+    <thead><tr><th>联赛</th><th>样本量</th><th>方向命中率</th></tr></thead>
+    <tbody><tr><td>欧罗巴奥林匹亚科斯vs博德闪耀</td><td>1</td><td>100.0%</td></tr><tr><td>瑞超哈尔姆斯塔德vs厄斯特什</td><td>1</td><td>100.0%</td></tr><tr><td>非洲</td><td>1</td><td>100.0%</td></tr><tr><td>西超杯</td><td>1</td><td>100.0%</td></tr><tr><td>5欧罗巴</td><td>1</td><td>100.0%</td></tr></tbody>
+  </table>
+</div>
+
+<div style="text-align:center;padding:24px;color:var(--text2);font-size:12px;border-top:1px solid var(--border);margin-top:24px">
+  <p>⚠️ 风险提示：足球比赛存在极大不确定性，任何模型预测均非100%准确</p>
+  <p>模型基于历史数据，突发因素（红牌、点球、天气等）无法完全预测</p>
+  <p>理性看待预测，切勿沉迷赌博</p>
+</div>
+</div>
+</body>
+</html>

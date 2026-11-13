@@ -1,0 +1,145 @@
+{
+    "league_info": {
+        "name_cn": "沙特职业联赛",
+        "name_en": "Saudi Pro League",
+        "country": "沙特",
+        "country_code": "SA",
+        "level": "顶级",
+        "num_teams": 18,
+        "format": "双循环，34轮",
+        "season_period": "8月-次年5月（跨年）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.spl.com.sa",
+        "governing_body": "沙特足球协会（SAFF）",
+        "cross_league_level": "L3",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.88,
+        "draw_rate": 0.22,
+        "home_win_rate": 0.46,
+        "away_win_rate": 0.32,
+        "over_2_5_rate": 0.56,
+        "under_2_5_rate": 0.44,
+        "btts_rate": 0.53,
+        "top_scores": [
+            {
+                "score": "2-1",
+                "frequency": 0.088,
+                "direction": "主胜"
+            },
+            {
+                "score": "3-1",
+                "frequency": 0.075,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.072,
+                "direction": "平局"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.065,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.062,
+                "direction": "主胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.042,
+            "1_goal": 0.13,
+            "2_goals": 0.22,
+            "3_goals": 0.24,
+            "4_goals": 0.19,
+            "5_plus_goals": 0.178
+        },
+        "avg_home_goals": 1.62,
+        "avg_away_goals": 1.26,
+        "home_advantage_factor": 1.2,
+        "ht_draw_rate": null,
+        "ht_draw_rate_note": "2026-09-12尝试补录：本环境无法取得该联赛'最近完整赛季'的第一手半场数据——thefishy.uk无该联赛半场表、football-data.co.uk扩展文件仅含全场比分(无半场)、Transfermarkt/worldfootball/FootyStats/soccerstats/BetExplorer 均被反爬拦截。按诚实原则置 null，不用估算值。使用时按缺失字段处理（规则66默认中低档0.45系数）。待可访问一手源时补录。",
+        "ht_draw_rate_source": [],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_confidence": "无",
+        "ht_draw_rate_status": "unavailable"
+    },
+    "match_style": {
+        "tactical_character": "近年C罗、本泽马、内马尔等巨星加盟，联赛水平快速提升。利雅得胜利、新月、吉达联合三强。两极分化严重，强队大胜概率高。主场优势极高。",
+        "tempo": "中",
+        "physicality": "高",
+        "technical_focus": "高",
+        "var_usage": "2023-24赛季引入VAR。",
+        "key_trends": [
+            "C罗/本泽马等球星加盟",
+            "两极分化严重",
+            "利雅得胜利/新月/吉达联合三强",
+            "主场优势极高",
+            "联赛水平快速提升"
+        ],
+        "style_tags": [
+            "球星加盟",
+            "两极分化",
+            "主场龙",
+            "三强竞争"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 4.1,
+        "avg_red_cards": 0.18,
+        "avg_penalties": 0.28,
+        "referee_style": "裁判尺度中等偏松，对巨星保护较多。",
+        "first_half_stoppage_avg": 2.2,
+        "second_half_stoppage_avg": 5.5,
+        "stoppage_note": "补时偏长。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "沙特联整体廉洁度中高，但关注度低的小比赛需警惕。"
+            }
+        ],
+        "discipline_features": "黄牌累积5张停1场。",
+        "official_rules": "IFAB规则+沙特联特别规则。",
+        "integrity_rating": "中高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价沙特联'球星多'，'强队碾压'。彩民认为'强队大胜概率高'，'弱队主场偶尔爆冷'。",
+        "betting_market": {
+            "market_efficiency": "中",
+            "liquidity": "中",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "中高",
+        "jingcai_tips": [
+            "强队大胜概率高",
+            "弱队主场偶尔爆冷",
+            "主场优势极高",
+            "利雅得德比进球偏多",
+            "注意球星伤病对实力的巨大影响"
+        ],
+        "common_sayings": [
+            "沙特联看球星",
+            "强队碾压",
+            "主场龙"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    }
+}

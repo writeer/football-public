@@ -1,0 +1,1894 @@
+[
+ {
+  "num": "周四001",
+  "league": "亚冠乙",
+  "home": "上海申花",
+  "away": "町田泽维亚",
+  "kickoff": "20:15:00",
+  "is_single": true,
+  "rule63": "单关平局上修 8%（原平21.8%→23.6%，距首选32.3pp）",
+  "value_eur": {
+   "home": 14150000,
+   "away": 17300000,
+   "ratio": 1.22
+  },
+  "injuries": {
+   "home_count": 4,
+   "away_count": 0,
+   "detail": {
+    "home": [
+     "朱辰杰（中卫/右侧上颌骨骨折/确认缺阵，俱乐部预计4-6周，10-24起算）",
+     "吴曦（中场/队长，大腿后侧肌肉拉伤/确认缺阵，上轮联赛13分钟下场）",
+     "陈晋一（左后卫/脚踝伤/出战成疑，是否首发待定）",
+     "阿苏埃（前锋/眉骨伤/出战成疑，亚冠次轮受伤）"
+    ],
+    "away": []
+   }
+  },
+  "venue": {
+   "name": "上海体育场",
+   "city": "中国上海市徐汇区",
+   "pitch": "天然草",
+   "capacity": 70381,
+   "status": "正常",
+   "status_note": "无空场/部分关闭/中立场公告，官网正常售票"
+  },
+  "weather": {
+   "temp": "16~24℃",
+   "desc": "多云，降水概率10%",
+   "wind": "东北风约14km/h",
+   "impact": "轻微"
+  },
+  "h2h": {
+   "summary": "唯一有记录交锋：2026-02-10 亚冠 上海申花主场0-2负町田泽维亚（町田两球均在下半场）",
+   "rhythm": "样本仅1场且为半年前，町田以三中卫+高位压迫限制申花出球，申花两次丢球都在自己压上之后",
+   "lam_shift": [
+    0.0,
+    0.0
+   ]
+  },
+  "stadium": {
+   "factor": 1.35,
+   "override_applied": false,
+   "crush_allowed": true,
+   "note": "正常开放观众，按联赛基准"
+  },
+  "odds_had": {
+   "home": 4.67,
+   "draw": 3.8,
+   "away": 1.51
+  },
+  "odds_hhad": {
+   "home": 2.12,
+   "draw": 3.4,
+   "away": 2.68,
+   "handicap": 1
+  },
+  "odds_crs": {
+   "1:0": 12.5,
+   "2:0": 25,
+   "2:1": 13,
+   "3:0": 55,
+   "3:1": 32,
+   "3:2": 32,
+   "4:0": 125,
+   "4:1": 80,
+   "4:2": 80,
+   "5:0": 400,
+   "5:1": 250,
+   "5:2": 300,
+   "win-other": 90,
+   "0:0": 16,
+   "1:1": 7,
+   "2:2": 12.5,
+   "3:3": 45,
+   "draw-other": 250,
+   "0:1": 8,
+   "0:2": 8.5,
+   "1:2": 6.75,
+   "0:3": 14,
+   "1:3": 11.5,
+   "2:3": 20,
+   "0:4": 30,
+   "1:4": 26,
+   "2:4": 42,
+   "0:5": 70,
+   "1:5": 60,
+   "2:5": 80,
+   "loss-other": 36
+  },
+  "odds_ttg": {
+   "0": 16,
+   "1": 5.5,
+   "2": 3.7,
+   "3": 3.4,
+   "4": 4.8,
+   "5": 8.3,
+   "6": 14.5,
+   "7+": 21
+  },
+  "odds_hafu": {
+   "HH": 8.25,
+   "HD": 14.5,
+   "HA": 21,
+   "DH": 9,
+   "DD": 5.75,
+   "DA": 4.15,
+   "AH": 34,
+   "AD": 14.5,
+   "AA": 2.55
+  },
+  "model": {
+   "home": 0.2358,
+   "draw": 0.2355,
+   "away": 0.5286,
+   "lambda_home": 1.286,
+   "lambda_away": 2.087,
+   "lambda_base": [
+    1.257,
+    1.729
+   ],
+   "market": {
+    "home": 0.1879,
+    "draw": 0.2309,
+    "away": 0.5812
+   },
+   "shin": [
+    0.1879,
+    0.2309,
+    0.5812
+   ],
+   "rule65": "Tier3 +0.40球；触发项：让球盘1球；按身价份额分配（主45%/客55%）",
+   "h2h_shift": [
+    0.0,
+    0.0
+   ],
+   "table_missing": [
+    "上海申花"
+   ]
+  },
+  "recommendation": {
+   "had_primary": "away",
+   "had_primary_prob": 0.5286,
+   "had_secondary": "home",
+   "had_secondary_prob": 0.2358,
+   "hc_primary": "home",
+   "hc_secondary": "draw",
+   "hc_line": 1,
+   "ttg_top2": [
+    3,
+    2
+   ],
+   "tier": "常规正常球(2-3球)",
+   "over_under": "大",
+   "htft_top3": [
+    [
+     "负负",
+     0.3072
+    ],
+    [
+     "平负",
+     0.2035
+    ],
+    [
+     "平平",
+     0.122
+    ]
+   ],
+   "cr_top5": [
+    {
+     "score": "1-1",
+     "prob": 0.104,
+     "odds": 7
+    },
+    {
+     "score": "1-2",
+     "prob": 0.096,
+     "odds": 6.75
+    },
+    {
+     "score": "0-2",
+     "prob": 0.0747,
+     "odds": 8.5
+    },
+    {
+     "score": "1-3",
+     "prob": 0.0668,
+     "odds": 11.5
+    },
+    {
+     "score": "2-1",
+     "prob": 0.0592,
+     "odds": 13
+    }
+   ],
+   "ht_score": [
+    {
+     "score": "0-0",
+     "prob": 0.2916
+    },
+    {
+     "score": "0-1",
+     "prob": 0.2062
+    },
+    {
+     "score": "1-0",
+     "prob": 0.1216
+    }
+   ]
+  },
+  "k_dist": 0,
+  "k_dist_prob": 0.2338,
+  "k_rec": -1,
+  "k_rec_prob": 0.2096,
+  "k_consistent": false,
+  "conf": "★★",
+  "conf_model": "★★",
+  "diverge": 0.0525,
+  "crs": [
+   {
+    "score": "1-1",
+    "prob": 0.104,
+    "odds": 7
+   },
+   {
+    "score": "1-2",
+    "prob": 0.096,
+    "odds": 6.75
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0747,
+    "odds": 8.5
+   },
+   {
+    "score": "1-3",
+    "prob": 0.0668,
+    "odds": 11.5
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0592,
+    "odds": 13
+   }
+  ],
+  "ht_score": [
+   {
+    "score": "0-0",
+    "prob": 0.2916
+   },
+   {
+    "score": "0-1",
+    "prob": 0.2062
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1216
+   }
+  ]
+ },
+ {
+  "num": "周四002",
+  "league": "芬超",
+  "home": "国际图尔库",
+  "away": "赫尔辛基",
+  "kickoff": "00:00:00",
+  "is_single": false,
+  "rule63": null,
+  "value_eur": {
+   "home": 5480000,
+   "away": 6450000,
+   "ratio": 1.18
+  },
+  "injuries": {
+   "home_count": 2,
+   "away_count": 2,
+   "detail": {
+    "home": [
+     "Bismark Ampofo（前锋/外伤/出战成疑）",
+     "Vincent Ulundu（中场/肌肉伤/出战成疑）"
+    ],
+    "away": [
+     "Amara Nallo（后卫/伤/缺阵）",
+     "David Ezeh（前锋/髋骨骨折/长期缺阵）"
+    ]
+   }
+  },
+  "venue": {
+   "name": "Veritas Stadion",
+   "city": "芬兰图尔库",
+   "pitch": "天然草",
+   "capacity": 9372,
+   "status": "正常",
+   "status_note": "无空场/中立场公告"
+  },
+  "weather": {
+   "temp": "5~10℃",
+   "desc": "阴，降水概率23%",
+   "wind": "约17km/h",
+   "impact": "轻微"
+  },
+  "h2h": {
+   "summary": "2026赛季已交手3次：4-30图尔库主场1-1、5-16图尔库主场2-2、6-17赫尔辛基主场3-3，三战全平且总进球逐次走高",
+   "rhythm": "本赛季三次交锋全部战平，双方互相极为熟悉；HJK火力更强但图尔库主场防守极稳（本赛季主场失球极少）",
+   "lam_shift": [
+    0.0,
+    0.0
+   ]
+  },
+  "stadium": {
+   "factor": 1.4,
+   "override_applied": false,
+   "crush_allowed": true,
+   "note": "正常开放观众，按联赛基准"
+  },
+  "odds_had": {
+   "home": 2.06,
+   "draw": 3.3,
+   "away": 2.85
+  },
+  "odds_hhad": {
+   "home": 4.26,
+   "draw": 3.85,
+   "away": 1.55,
+   "handicap": -1
+  },
+  "odds_crs": {
+   "1:0": 9,
+   "2:0": 11,
+   "2:1": 7.25,
+   "3:0": 21,
+   "3:1": 15,
+   "3:2": 22,
+   "4:0": 42,
+   "4:1": 33,
+   "4:2": 50,
+   "5:0": 120,
+   "5:1": 80,
+   "5:2": 120,
+   "win-other": 50,
+   "0:0": 14,
+   "1:1": 6.5,
+   "2:2": 12,
+   "3:3": 42,
+   "draw-other": 250,
+   "0:1": 11,
+   "0:2": 17,
+   "1:2": 9.25,
+   "0:3": 32,
+   "1:3": 22,
+   "2:3": 23,
+   "0:4": 80,
+   "1:4": 60,
+   "2:4": 70,
+   "0:5": 250,
+   "1:5": 150,
+   "2:5": 250,
+   "loss-other": 70
+  },
+  "odds_ttg": {
+   "0": 14,
+   "1": 5.3,
+   "2": 3.65,
+   "3": 3.45,
+   "4": 5,
+   "5": 8.5,
+   "6": 15,
+   "7+": 22
+  },
+  "odds_hafu": {
+   "HH": 3.4,
+   "HD": 13,
+   "HA": 28,
+   "DH": 5.3,
+   "DD": 5.45,
+   "DA": 6.95,
+   "AH": 24,
+   "AD": 13,
+   "AA": 4.7
+  },
+  "model": {
+   "home": 0.448,
+   "draw": 0.2716,
+   "away": 0.2804,
+   "lambda_home": 1.459,
+   "lambda_away": 1.084,
+   "lambda_base": [
+    1.321,
+    0.922
+   ],
+   "market": {
+    "home": 0.4261,
+    "draw": 0.266,
+    "away": 0.308
+   },
+   "shin": [
+    0.4261,
+    0.266,
+    0.308
+   ],
+   "rule65": "Tier2 +0.30球；触发项：让球盘1球；按身价份额分配（主46%/客54%）",
+   "h2h_shift": [
+    0.0,
+    0.0
+   ],
+   "table_missing": []
+  },
+  "recommendation": {
+   "had_primary": "home",
+   "had_primary_prob": 0.448,
+   "had_secondary": "away",
+   "had_secondary_prob": 0.2804,
+   "hc_primary": "away",
+   "hc_secondary": "draw",
+   "hc_line": -1,
+   "ttg_top2": [
+    2,
+    3
+   ],
+   "tier": "常规正常球(2-3球)",
+   "over_under": "小",
+   "htft_top3": [
+    [
+     "胜胜",
+     0.2359
+    ],
+    [
+     "平胜",
+     0.193
+    ],
+    [
+     "平平",
+     0.1746
+    ]
+   ],
+   "cr_top5": [
+    {
+     "score": "1-1",
+     "prob": 0.1405,
+     "odds": 6.5
+    },
+    {
+     "score": "1-0",
+     "prob": 0.0985,
+     "odds": 9
+    },
+    {
+     "score": "0-0",
+     "prob": 0.0948,
+     "odds": 14
+    },
+    {
+     "score": "2-1",
+     "prob": 0.0907,
+     "odds": 7.25
+    },
+    {
+     "score": "0-1",
+     "prob": 0.0691,
+     "odds": 11
+    }
+   ],
+   "ht_score": [
+    {
+     "score": "0-0",
+     "prob": 0.3917
+    },
+    {
+     "score": "1-0",
+     "prob": 0.1996
+    },
+    {
+     "score": "0-1",
+     "prob": 0.1454
+    }
+   ]
+  },
+  "k_dist": 0,
+  "k_dist_prob": 0.294,
+  "k_rec": 1,
+  "k_rec_prob": 0.2166,
+  "k_consistent": false,
+  "conf": "★★",
+  "conf_model": "★★",
+  "diverge": 0.0276,
+  "crs": [
+   {
+    "score": "1-1",
+    "prob": 0.1405,
+    "odds": 6.5
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0985,
+    "odds": 9
+   },
+   {
+    "score": "0-0",
+    "prob": 0.0948,
+    "odds": 14
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0907,
+    "odds": 7.25
+   },
+   {
+    "score": "0-1",
+    "prob": 0.0691,
+    "odds": 11
+   }
+  ],
+  "ht_score": [
+   {
+    "score": "0-0",
+    "prob": 0.3917
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1996
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1454
+   }
+  ]
+ },
+ {
+  "num": "周四003",
+  "league": "意甲",
+  "home": "弗洛西诺内",
+  "away": "莱切",
+  "kickoff": "01:30:00",
+  "is_single": false,
+  "rule63": null,
+  "value_eur": {
+   "home": 113550000,
+   "away": 82500000,
+   "ratio": 1.38
+  },
+  "injuries": {
+   "home_count": 1,
+   "away_count": 6,
+   "detail": {
+    "home": [
+     "Florian Grillitsch（中场/直肠-内收肌手术后恢复/出战成疑，DAZN标注'可用性待确认'）"
+    ],
+    "away": [
+     "Kialonda Gaspar（中卫/上轮红牌/停赛）",
+     "Ivan Ilić（中场/伤/缺阵）",
+     "Tiago Gabriel（中卫/伤/缺阵）",
+     "Lassana Coulibaly（中场/右大腿股二头肌拉伤/缺阵）",
+     "Medon Berisha（中场/伤/缺阵）",
+     "Santiago Pierotti（前锋/伤/缺阵）"
+    ]
+   }
+  },
+  "venue": {
+   "name": "Stadio Benito Stirpe",
+   "city": "意大利弗罗西诺内",
+   "pitch": "天然草",
+   "capacity": 16227,
+   "status": "正常",
+   "status_note": "无空场/部分关闭公告"
+  },
+  "weather": {
+   "temp": "6~20℃",
+   "desc": "晴，降水概率1%",
+   "wind": "约8km/h",
+   "impact": "轻微"
+  },
+  "h2h": {
+   "summary": "近2次交锋莱切1胜1平保持不败：2024-03-03 弗洛西诺内主场1-1、2023-12-16 莱切主场取胜；更早4次交锋弗洛西诺内3胜",
+   "rhythm": "近年莱切对弗洛西诺内形成压制，但历史总账弗洛西诺内占优，属'近期反转'型对话",
+   "lam_shift": [
+    0.0,
+    0.0
+   ]
+  },
+  "stadium": {
+   "factor": 1.4,
+   "override_applied": false,
+   "crush_allowed": true,
+   "note": "正常开放观众，按联赛基准"
+  },
+  "odds_had": {
+   "home": 1.5,
+   "draw": 4.25,
+   "away": 4.21
+  },
+  "odds_hhad": {
+   "home": 2.48,
+   "draw": 3.6,
+   "away": 2.18,
+   "handicap": -1
+  },
+  "odds_crs": {
+   "1:0": 10.5,
+   "2:0": 10,
+   "2:1": 7,
+   "3:0": 14,
+   "3:1": 11.5,
+   "3:2": 15,
+   "4:0": 26,
+   "4:1": 21,
+   "4:2": 30,
+   "5:0": 60,
+   "5:1": 50,
+   "5:2": 75,
+   "win-other": 21,
+   "0:0": 24,
+   "1:1": 8,
+   "2:2": 11.5,
+   "3:3": 35,
+   "draw-other": 175,
+   "0:1": 17,
+   "0:2": 25,
+   "1:2": 11,
+   "0:3": 60,
+   "1:3": 28,
+   "2:3": 24,
+   "0:4": 175,
+   "1:4": 90,
+   "2:4": 75,
+   "0:5": 400,
+   "1:5": 250,
+   "2:5": 250,
+   "loss-other": 60
+  },
+  "odds_ttg": {
+   "0": 24,
+   "1": 7.6,
+   "2": 4.5,
+   "3": 3.55,
+   "4": 4.3,
+   "5": 6.2,
+   "6": 10,
+   "7+": 12
+  },
+  "odds_hafu": {
+   "HH": 2.25,
+   "HD": 15,
+   "HA": 30,
+   "DH": 4.9,
+   "DD": 7.25,
+   "DA": 10.5,
+   "AH": 19,
+   "AD": 15,
+   "AA": 6.5
+  },
+  "model": {
+   "home": 0.6414,
+   "draw": 0.1956,
+   "away": 0.163,
+   "lambda_home": 2.345,
+   "lambda_away": 1.025,
+   "lambda_base": [
+    2.13,
+    1.069
+   ],
+   "market": {
+    "home": 0.5851,
+    "draw": 0.2065,
+    "away": 0.2085
+   },
+   "shin": [
+    0.5851,
+    0.2065,
+    0.2085
+   ],
+   "rule65": "Tier1 +0.15球；触发项：λ差1.30、让球盘1球、排名差8位；按身价份额分配（主58%/客42%）",
+   "h2h_shift": [
+    0.0,
+    0.0
+   ],
+   "table_missing": []
+  },
+  "recommendation": {
+   "had_primary": "home",
+   "had_primary_prob": 0.6414,
+   "had_secondary": "draw",
+   "had_secondary_prob": 0.1956,
+   "hc_primary": "draw",
+   "hc_secondary": "home",
+   "hc_line": -1,
+   "ttg_top2": [
+    3,
+    2
+   ],
+   "tier": "常规正常球(2-3球)",
+   "over_under": "大",
+   "htft_top3": [
+    [
+     "胜胜",
+     0.3838
+    ],
+    [
+     "平胜",
+     0.2311
+    ],
+    [
+     "平平",
+     0.1091
+    ]
+   ],
+   "cr_top5": [
+    {
+     "score": "2-1",
+     "prob": 0.0969,
+     "odds": 7
+    },
+    {
+     "score": "2-0",
+     "prob": 0.0946,
+     "odds": 10
+    },
+    {
+     "score": "1-1",
+     "prob": 0.0934,
+     "odds": 8
+    },
+    {
+     "score": "3-1",
+     "prob": 0.0758,
+     "odds": 11.5
+    },
+    {
+     "score": "1-2",
+     "prob": 0.0424,
+     "odds": 11
+    }
+   ],
+   "ht_score": [
+    {
+     "score": "0-0",
+     "prob": 0.2904
+    },
+    {
+     "score": "1-0",
+     "prob": 0.2351
+    },
+    {
+     "score": "2-0",
+     "prob": 0.1103
+    }
+   ]
+  },
+  "k_dist": 1,
+  "k_dist_prob": 0.2144,
+  "k_rec": 1,
+  "k_rec_prob": 0.2144,
+  "k_consistent": true,
+  "conf": "★★★",
+  "conf_model": "★★★",
+  "diverge": 0.0563,
+  "crs": [
+   {
+    "score": "2-1",
+    "prob": 0.0969,
+    "odds": 7
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0946,
+    "odds": 10
+   },
+   {
+    "score": "1-1",
+    "prob": 0.0934,
+    "odds": 8
+   },
+   {
+    "score": "3-1",
+    "prob": 0.0758,
+    "odds": 11.5
+   },
+   {
+    "score": "1-2",
+    "prob": 0.0424,
+    "odds": 11
+   }
+  ],
+  "ht_score": [
+   {
+    "score": "0-0",
+    "prob": 0.2904
+   },
+   {
+    "score": "1-0",
+    "prob": 0.2351
+   },
+   {
+    "score": "2-0",
+    "prob": 0.1103
+   }
+  ]
+ },
+ {
+  "num": "周四004",
+  "league": "瑞超",
+  "home": "哈马比",
+  "away": "天狼星",
+  "kickoff": "01:30:00",
+  "is_single": false,
+  "rule63": null,
+  "value_eur": {
+   "home": 33750000,
+   "away": 23550000,
+   "ratio": 1.43
+  },
+  "injuries": {
+   "home_count": 2,
+   "away_count": 2,
+   "detail": {
+    "home": [
+     "Amin Boudri（中场/伤/缺阵）",
+     "Oliver Hagen（后卫/伤/缺阵）"
+    ],
+    "away": [
+     "Otso Liimatta（中场/伤/缺阵）",
+     "Jesper Uneken（前锋/伤/缺阵）"
+    ]
+   }
+  },
+  "venue": {
+   "name": "Tele2 Arena（3Arena）",
+   "city": "瑞典斯德哥尔摩",
+   "pitch": "人造草",
+   "capacity": 30000,
+   "status": "正常",
+   "status_note": "无空场/中立场公告"
+  },
+  "weather": {
+   "temp": "5~11℃",
+   "desc": "阴，降水概率22%",
+   "wind": "约13km/h",
+   "impact": "轻微"
+  },
+  "h2h": {
+   "summary": "2026-04-13 天狼星主场2-0哈马比；2025-08-24 哈马比主场取胜；近年哈马比主场对天狼星保持不败（近3次主场2胜1平）",
+   "rhythm": "天狼星本季客场战绩极强（客场运气值+11.12），哈马比主场失球极少，属'最强矛 vs 最硬盾'",
+   "lam_shift": [
+    0.0,
+    0.0
+   ]
+  },
+  "stadium": {
+   "factor": 1.35,
+   "override_applied": false,
+   "crush_allowed": true,
+   "note": "正常开放观众，按联赛基准"
+  },
+  "odds_had": {
+   "home": 1.33,
+   "draw": 4.65,
+   "away": 5.8
+  },
+  "odds_hhad": {
+   "home": 2.06,
+   "draw": 3.61,
+   "away": 2.65,
+   "handicap": -1
+  },
+  "odds_crs": {
+   "1:0": 8.25,
+   "2:0": 7.5,
+   "2:1": 7,
+   "3:0": 10,
+   "3:1": 9.5,
+   "3:2": 18,
+   "4:0": 17,
+   "4:1": 17,
+   "4:2": 35,
+   "5:0": 35,
+   "5:1": 35,
+   "5:2": 75,
+   "win-other": 19,
+   "0:0": 22,
+   "1:1": 8.5,
+   "2:2": 14,
+   "3:3": 50,
+   "draw-other": 250,
+   "0:1": 20,
+   "0:2": 35,
+   "1:2": 16,
+   "0:3": 100,
+   "1:3": 50,
+   "2:3": 40,
+   "0:4": 350,
+   "1:4": 200,
+   "2:4": 175,
+   "0:5": 600,
+   "1:5": 500,
+   "2:5": 450,
+   "loss-other": 150
+  },
+  "odds_ttg": {
+   "0": 22,
+   "1": 6.8,
+   "2": 4.2,
+   "3": 3.45,
+   "4": 4.5,
+   "5": 6.5,
+   "6": 11,
+   "7+": 15
+  },
+  "odds_hafu": {
+   "HH": 1.85,
+   "HD": 17,
+   "HA": 45,
+   "DH": 4.2,
+   "DD": 7.8,
+   "DA": 15,
+   "AH": 22,
+   "AD": 17,
+   "AA": 10.5
+  },
+  "model": {
+   "home": 0.5874,
+   "draw": 0.2023,
+   "away": 0.2104,
+   "lambda_home": 2.304,
+   "lambda_away": 1.256,
+   "lambda_base": [
+    2.026,
+    1.168
+   ],
+   "market": {
+    "home": 0.6599,
+    "draw": 0.1888,
+    "away": 0.1513
+   },
+   "shin": [
+    0.6599,
+    0.1888,
+    0.1513
+   ],
+   "rule65": "Tier2 +0.30球；触发项：λ差0.99、让球盘1球；按身价份额分配（主59%/客41%）",
+   "h2h_shift": [
+    0.0,
+    0.0
+   ],
+   "table_missing": []
+  },
+  "recommendation": {
+   "had_primary": "home",
+   "had_primary_prob": 0.5874,
+   "had_secondary": "away",
+   "had_secondary_prob": 0.2104,
+   "hc_primary": "away",
+   "hc_secondary": "draw",
+   "hc_line": -1,
+   "ttg_top2": [
+    3,
+    2
+   ],
+   "tier": "常规正常球(2-3球)",
+   "over_under": "大",
+   "htft_top3": [
+    [
+     "胜胜",
+     0.3421
+    ],
+    [
+     "平胜",
+     0.2118
+    ],
+    [
+     "平平",
+     0.1101
+    ]
+   ],
+   "cr_top5": [
+    {
+     "score": "2-1",
+     "prob": 0.0948,
+     "odds": 7
+    },
+    {
+     "score": "1-1",
+     "prob": 0.093,
+     "odds": 8.5
+    },
+    {
+     "score": "2-0",
+     "prob": 0.0755,
+     "odds": 7.5
+    },
+    {
+     "score": "3-1",
+     "prob": 0.0728,
+     "odds": 9.5
+    },
+    {
+     "score": "1-2",
+     "prob": 0.0517,
+     "odds": 16
+    }
+   ],
+   "ht_score": [
+    {
+     "score": "0-0",
+     "prob": 0.2726
+    },
+    {
+     "score": "1-0",
+     "prob": 0.2123
+    },
+    {
+     "score": "1-1",
+     "prob": 0.1221
+    }
+   ]
+  },
+  "k_dist": 0,
+  "k_dist_prob": 0.2147,
+  "k_rec": 1,
+  "k_rec_prob": 0.2081,
+  "k_consistent": false,
+  "conf": "★★",
+  "conf_model": "★★",
+  "diverge": 0.0726,
+  "crs": [
+   {
+    "score": "2-1",
+    "prob": 0.0948,
+    "odds": 7
+   },
+   {
+    "score": "1-1",
+    "prob": 0.093,
+    "odds": 8.5
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0755,
+    "odds": 7.5
+   },
+   {
+    "score": "3-1",
+    "prob": 0.0728,
+    "odds": 9.5
+   },
+   {
+    "score": "1-2",
+    "prob": 0.0517,
+    "odds": 16
+   }
+  ],
+  "ht_score": [
+   {
+    "score": "0-0",
+    "prob": 0.2726
+   },
+   {
+    "score": "1-0",
+    "prob": 0.2123
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1221
+   }
+  ]
+ },
+ {
+  "num": "周四005",
+  "league": "英联赛杯",
+  "home": "埃弗顿",
+  "away": "纽卡斯尔联",
+  "kickoff": "03:45:00",
+  "is_single": false,
+  "rule63": null,
+  "value_eur": {
+   "home": 415000000,
+   "away": 712000000,
+   "ratio": 1.72
+  },
+  "injuries": {
+   "home_count": 3,
+   "away_count": 4,
+   "detail": {
+    "home": [
+     "Jarrad Branthwaite（中卫/脑震荡保护协议/出战成疑，10-24缺阵阿森纳一役）",
+     "Jack Grealish（边锋/疾病/出战成疑，10-24缺阵）",
+     "Vitalii Mykolenko（左后卫/伤/出战成疑，对阿森纳下半场被换下）"
+    ],
+    "away": [
+     "Tino Livramento（右后卫/膝伤/缺阵）",
+     "Ewen Jaouen（门将/大腿伤/缺阵）",
+     "Matias Fernandez-Pardo（边锋/疾病/出战成疑）",
+     "Lewis Miley（中场/轻伤/出战成疑）"
+    ]
+   }
+  },
+  "venue": {
+   "name": "Hill Dickinson Stadium（布拉姆利-摩尔码头）",
+   "city": "英国利物浦",
+   "pitch": "天然草",
+   "capacity": 52888,
+   "status": "正常",
+   "status_note": "无空场/部分关闭公告"
+  },
+  "weather": {
+   "temp": "9~14℃",
+   "desc": "阴，降水概率25%",
+   "wind": "约20km/h",
+   "impact": "轻微"
+  },
+  "h2h": {
+   "summary": "2026-08-12 友谊赛埃弗顿3-1纽卡；2026-02-28 联赛纽卡主场2-3埃弗顿；2025-11-29 联赛埃弗顿主场1-4纽卡；联赛杯历史上仅2002年交手一次（3-3，埃弗顿点球晋级）",
+   "rhythm": "近年交锋比分偏高（近3次总进球4/5/5），双方对攻属性明显；埃弗顿主场对纽卡近两次1胜1负",
+   "lam_shift": [
+    0.0,
+    0.0
+   ]
+  },
+  "stadium": {
+   "factor": 1.35,
+   "override_applied": false,
+   "crush_allowed": true,
+   "note": "正常开放观众，按联赛基准"
+  },
+  "odds_had": {
+   "home": 2.04,
+   "draw": 3.3,
+   "away": 2.9
+  },
+  "odds_hhad": {
+   "home": 4.2,
+   "draw": 3.8,
+   "away": 1.57,
+   "handicap": -1
+  },
+  "odds_crs": {
+   "1:0": 8.5,
+   "2:0": 11,
+   "2:1": 6.75,
+   "3:0": 20,
+   "3:1": 14,
+   "3:2": 20,
+   "4:0": 50,
+   "4:1": 36,
+   "4:2": 55,
+   "5:0": 150,
+   "5:1": 100,
+   "5:2": 150,
+   "win-other": 60,
+   "0:0": 14,
+   "1:1": 6.25,
+   "2:2": 10.5,
+   "3:3": 45,
+   "draw-other": 300,
+   "0:1": 11.5,
+   "0:2": 17,
+   "1:2": 9,
+   "0:3": 36,
+   "1:3": 22,
+   "2:3": 27,
+   "0:4": 100,
+   "1:4": 75,
+   "2:4": 90,
+   "0:5": 400,
+   "1:5": 250,
+   "2:5": 300,
+   "loss-other": 90
+  },
+  "odds_ttg": {
+   "0": 14,
+   "1": 5.6,
+   "2": 3.6,
+   "3": 3.4,
+   "4": 4.8,
+   "5": 8.5,
+   "6": 16,
+   "7+": 23
+  },
+  "odds_hafu": {
+   "HH": 3.3,
+   "HD": 13.5,
+   "HA": 24,
+   "DH": 5.1,
+   "DD": 5.6,
+   "DA": 7,
+   "AH": 21,
+   "AD": 13.5,
+   "AA": 5.1
+  },
+  "model": {
+   "home": 0.5075,
+   "draw": 0.2627,
+   "away": 0.2298,
+   "lambda_home": 1.593,
+   "lambda_away": 0.964,
+   "lambda_base": [
+    1.775,
+    1.02
+   ],
+   "market": {
+    "home": 0.4307,
+    "draw": 0.2663,
+    "away": 0.303
+   },
+   "shin": [
+    0.4307,
+    0.2663,
+    0.303
+   ],
+   "rule65": "触发（让球盘1球）但英超系按规则65例外不上修",
+   "h2h_shift": [
+    0.0,
+    0.0
+   ],
+   "table_missing": []
+  },
+  "recommendation": {
+   "had_primary": "home",
+   "had_primary_prob": 0.5075,
+   "had_secondary": "draw",
+   "had_secondary_prob": 0.2627,
+   "hc_primary": "away",
+   "hc_secondary": "draw",
+   "hc_line": -1,
+   "ttg_top2": [
+    2,
+    3
+   ],
+   "tier": "常规正常球(2-3球)",
+   "over_under": "小",
+   "htft_top3": [
+    [
+     "胜胜",
+     0.2918
+    ],
+    [
+     "平胜",
+     0.1981
+    ],
+    [
+     "平平",
+     0.1674
+    ]
+   ],
+   "cr_top5": [
+    {
+     "score": "1-1",
+     "prob": 0.1345,
+     "odds": 6.25
+    },
+    {
+     "score": "1-0",
+     "prob": 0.1081,
+     "odds": 8.5
+    },
+    {
+     "score": "2-0",
+     "prob": 0.0984,
+     "odds": 11
+    },
+    {
+     "score": "2-1",
+     "prob": 0.0948,
+     "odds": 6.75
+    },
+    {
+     "score": "0-1",
+     "prob": 0.0593,
+     "odds": 11.5
+    }
+   ],
+   "ht_score": [
+    {
+     "score": "0-0",
+     "prob": 0.3537
+    },
+    {
+     "score": "1-0",
+     "prob": 0.2166
+    },
+    {
+     "score": "0-1",
+     "prob": 0.1263
+    }
+   ]
+  },
+  "k_dist": 0,
+  "k_dist_prob": 0.2819,
+  "k_rec": 1,
+  "k_rec_prob": 0.2305,
+  "k_consistent": false,
+  "conf": "★",
+  "conf_model": "★★",
+  "diverge": 0.0767,
+  "crs": [
+   {
+    "score": "1-1",
+    "prob": 0.1345,
+    "odds": 6.25
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1081,
+    "odds": 8.5
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0984,
+    "odds": 11
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0948,
+    "odds": 6.75
+   },
+   {
+    "score": "0-1",
+    "prob": 0.0593,
+    "odds": 11.5
+   }
+  ],
+  "ht_score": [
+   {
+    "score": "0-0",
+    "prob": 0.3537
+   },
+   {
+    "score": "1-0",
+    "prob": 0.2166
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1263
+   }
+  ]
+ },
+ {
+  "num": "周四006",
+  "league": "意甲",
+  "home": "佛罗伦萨",
+  "away": "亚特兰大",
+  "kickoff": "03:45:00",
+  "is_single": false,
+  "rule63": null,
+  "value_eur": {
+   "home": 322750000,
+   "away": 448900000,
+   "ratio": 1.39
+  },
+  "injuries": {
+   "home_count": 4,
+   "away_count": 7,
+   "detail": {
+    "home": [
+     "Luca Ranieri（中卫/伤/缺阵）",
+     "Marin Pongračić（中卫/右腿股二头肌筋膜拉伤/缺阵，10-27官方确认，数周后复查）",
+     "Arthur Atta（中场/伤/缺阵）",
+     "Fabiano Parisi（左后卫/伤/缺阵）"
+    ],
+    "away": [
+     "Gianluca Scamacca（中锋/伤/缺阵）",
+     "Giorgio Scalvini（中卫/伤/缺阵）",
+     "Isak Hien（中卫/伤/缺阵）",
+     "Odilon Kossounou（中卫/伤/缺阵）",
+     "Sead Kolašinac（中卫/伤/缺阵）",
+     "Thomas Pompei（中场/伤/缺阵）",
+     "Marco Palestra/贝拉诺瓦（边卫/伤/缺阵）"
+    ]
+   }
+  },
+  "venue": {
+   "name": "Stadio Artemio Franchi",
+   "city": "意大利佛罗伦萨",
+   "pitch": "天然草",
+   "capacity": 43147,
+   "status": "正常",
+   "status_note": "无空场/部分关闭公告"
+  },
+  "weather": {
+   "temp": "10~18℃",
+   "desc": "晴转多云，降水概率3%",
+   "wind": "约18km/h",
+   "impact": "轻微"
+  },
+  "h2h": {
+   "summary": "意甲历史交锋：18次平局、亚特兰大10胜；最近一次2025/26赛季1-1；佛罗伦萨主场对亚特兰大已连续12场取得进球（合计19球）",
+   "rhythm": "典型'平局制造机'对话，佛罗伦萨主场从不被零封但赢球也难；亚特兰大近年略占上风",
+   "lam_shift": [
+    0.05,
+    0.0
+   ]
+  },
+  "stadium": {
+   "factor": 1.4,
+   "override_applied": false,
+   "crush_allowed": true,
+   "note": "正常开放观众，按联赛基准"
+  },
+  "odds_had": {
+   "home": 2.12,
+   "draw": 3.4,
+   "away": 2.68
+  },
+  "odds_hhad": {
+   "home": 4.4,
+   "draw": 3.95,
+   "away": 1.52,
+   "handicap": -1
+  },
+  "odds_crs": {
+   "1:0": 10,
+   "2:0": 12,
+   "2:1": 7.5,
+   "3:0": 21,
+   "3:1": 15,
+   "3:2": 19,
+   "4:0": 50,
+   "4:1": 35,
+   "4:2": 50,
+   "5:0": 150,
+   "5:1": 100,
+   "5:2": 150,
+   "win-other": 50,
+   "0:0": 16,
+   "1:1": 6.75,
+   "2:2": 11,
+   "3:3": 40,
+   "draw-other": 200,
+   "0:1": 11,
+   "0:2": 15,
+   "1:2": 8.75,
+   "0:3": 30,
+   "1:3": 20,
+   "2:3": 21,
+   "0:4": 90,
+   "1:4": 50,
+   "2:4": 60,
+   "0:5": 300,
+   "1:5": 175,
+   "2:5": 200,
+   "loss-other": 60
+  },
+  "odds_ttg": {
+   "0": 16,
+   "1": 6,
+   "2": 3.9,
+   "3": 3.45,
+   "4": 4.7,
+   "5": 7.5,
+   "6": 13,
+   "7+": 18
+  },
+  "odds_hafu": {
+   "HH": 3.45,
+   "HD": 14,
+   "HA": 25,
+   "DH": 5.75,
+   "DD": 5.75,
+   "DA": 6.5,
+   "AH": 23,
+   "AD": 14,
+   "AA": 4.25
+  },
+  "model": {
+   "home": 0.4261,
+   "draw": 0.2295,
+   "away": 0.3444,
+   "lambda_home": 1.8,
+   "lambda_away": 1.587,
+   "lambda_base": [
+    1.563,
+    1.63
+   ],
+   "market": {
+    "home": 0.4142,
+    "draw": 0.2582,
+    "away": 0.3276
+   },
+   "shin": [
+    0.4142,
+    0.2582,
+    0.3276
+   ],
+   "rule65": "Tier1 +0.15球；触发项：让球盘1球；按身价份额分配（主42%/客58%）",
+   "h2h_shift": [
+    0.05,
+    0.0
+   ],
+   "table_missing": []
+  },
+  "recommendation": {
+   "had_primary": "home",
+   "had_primary_prob": 0.4261,
+   "had_secondary": "away",
+   "had_secondary_prob": 0.3444,
+   "hc_primary": "away",
+   "hc_secondary": "draw",
+   "hc_line": -1,
+   "ttg_top2": [
+    3,
+    2
+   ],
+   "tier": "常规正常球(2-3球)",
+   "over_under": "大",
+   "htft_top3": [
+    [
+     "胜胜",
+     0.2263
+    ],
+    [
+     "负负",
+     0.1734
+    ],
+    [
+     "平胜",
+     0.1657
+    ]
+   ],
+   "cr_top5": [
+    {
+     "score": "1-1",
+     "prob": 0.1091,
+     "odds": 6.75
+    },
+    {
+     "score": "2-1",
+     "prob": 0.0869,
+     "odds": 7.5
+    },
+    {
+     "score": "1-2",
+     "prob": 0.0766,
+     "odds": 8.75
+    },
+    {
+     "score": "2-2",
+     "prob": 0.069,
+     "odds": 11
+    },
+    {
+     "score": "2-0",
+     "prob": 0.0548,
+     "odds": 12
+    }
+   ],
+   "ht_score": [
+    {
+     "score": "0-0",
+     "prob": 0.2909
+    },
+    {
+     "score": "1-0",
+     "prob": 0.1741
+    },
+    {
+     "score": "0-1",
+     "prob": 0.1516
+    }
+   ]
+  },
+  "k_dist": 0,
+  "k_dist_prob": 0.2508,
+  "k_rec": 1,
+  "k_rec_prob": 0.1881,
+  "k_consistent": false,
+  "conf": "★",
+  "conf_model": "★",
+  "diverge": 0.0287,
+  "crs": [
+   {
+    "score": "1-1",
+    "prob": 0.1091,
+    "odds": 6.75
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0869,
+    "odds": 7.5
+   },
+   {
+    "score": "1-2",
+    "prob": 0.0766,
+    "odds": 8.75
+   },
+   {
+    "score": "2-2",
+    "prob": 0.069,
+    "odds": 11
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0548,
+    "odds": 12
+   }
+  ],
+  "ht_score": [
+   {
+    "score": "0-0",
+    "prob": 0.2909
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1741
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1516
+   }
+  ]
+ },
+ {
+  "num": "周四007",
+  "league": "巴甲",
+  "home": "格雷米奥",
+  "away": "巴拉纳竞技",
+  "kickoff": "08:30:00",
+  "is_single": false,
+  "rule63": null,
+  "value_eur": {
+   "home": 95950000,
+   "away": 68980000,
+   "ratio": 1.39
+  },
+  "injuries": {
+   "home_count": 6,
+   "away_count": 7,
+   "detail": {
+    "home": [
+     "Danilo（中场/伤/缺阵）",
+     "Juan Nardoni（中场/伤/缺阵）",
+     "Matheus Nascimento（前锋/伤/缺阵）",
+     "Jovane Cabral（边锋/伤/缺阵）",
+     "Gustavo Martins（后卫/累计黄牌/停赛，来源冲突待核实）",
+     "Erick Noriega（中场/累计黄牌/停赛，来源冲突待核实）"
+    ],
+    "away": [
+     "Jádson（中场/停赛）",
+     "Gilberto（后卫/停赛）",
+     "Arthur Dias（后卫/伤/缺阵）",
+     "Claudinho（边锋/伤/缺阵）",
+     "Kerwin Vargas（边锋/伤/缺阵）",
+     "Dantas（中场/伤/缺阵）",
+     "Gastón Benavídez（后卫/伤/缺阵）"
+    ]
+   }
+  },
+  "venue": {
+   "name": "Arena do Grêmio",
+   "city": "巴西阿雷格里港",
+   "pitch": "天然草",
+   "capacity": 55662,
+   "status": "正常",
+   "status_note": "无空场/中立场公告"
+  },
+  "weather": {
+   "temp": "16~22℃",
+   "desc": "阴转局部小雨，降水概率20%",
+   "wind": "约14km/h",
+   "impact": "轻微"
+  },
+  "h2h": {
+   "summary": "2026-05-02 巴甲第14轮 巴拉纳竞技主场0-0格雷米奥；2025赛季格雷米奥主场2-1、客场1-1",
+   "rhythm": "近年交锋比分偏低（0-0、1-1、2-1），格雷米奥主场对巴拉纳竞技保持不败",
+   "lam_shift": [
+    0.0,
+    0.0
+   ]
+  },
+  "stadium": {
+   "factor": 1.35,
+   "override_applied": false,
+   "crush_allowed": true,
+   "note": "正常开放观众，按联赛基准"
+  },
+  "odds_had": {
+   "home": 2.5,
+   "draw": 3.1,
+   "away": 2.4
+  },
+  "odds_hhad": {
+   "home": 1.4,
+   "draw": 4.2,
+   "away": 5.4,
+   "handicap": 1
+  },
+  "odds_crs": {
+   "1:0": 9,
+   "2:0": 13,
+   "2:1": 8,
+   "3:0": 27,
+   "3:1": 20,
+   "3:2": 24,
+   "4:0": 65,
+   "4:1": 50,
+   "4:2": 65,
+   "5:0": 250,
+   "5:1": 175,
+   "5:2": 250,
+   "win-other": 75,
+   "0:0": 12,
+   "1:1": 7,
+   "2:2": 12,
+   "3:3": 41,
+   "draw-other": 300,
+   "0:1": 8.75,
+   "0:2": 12.5,
+   "1:2": 7.75,
+   "0:3": 25,
+   "1:3": 18,
+   "2:3": 23,
+   "0:4": 60,
+   "1:4": 45,
+   "2:4": 60,
+   "0:5": 150,
+   "1:5": 120,
+   "2:5": 200,
+   "loss-other": 70
+  },
+  "odds_ttg": {
+   "0": 12,
+   "1": 5.1,
+   "2": 3.45,
+   "3": 3.4,
+   "4": 5.1,
+   "5": 9.5,
+   "6": 18,
+   "7+": 29
+  },
+  "odds_hafu": {
+   "HH": 4.1,
+   "HD": 14,
+   "HA": 25,
+   "DH": 6,
+   "DD": 5.35,
+   "DA": 5.8,
+   "AH": 26,
+   "AD": 14,
+   "AA": 3.8
+  },
+  "model": {
+   "home": 0.3685,
+   "draw": 0.2735,
+   "away": 0.3581,
+   "lambda_home": 1.303,
+   "lambda_away": 1.284,
+   "lambda_base": [
+    1.152,
+    1.287
+   ],
+   "market": {
+    "home": 0.3511,
+    "draw": 0.2832,
+    "away": 0.3657
+   },
+   "shin": [
+    0.3511,
+    0.2832,
+    0.3657
+   ],
+   "rule65": "Tier2 +0.30球；触发项：让球盘1球、排名差13位；按身价份额分配（主58%/客42%）",
+   "h2h_shift": [
+    0.0,
+    0.0
+   ],
+   "table_missing": []
+  },
+  "recommendation": {
+   "had_primary": "home",
+   "had_primary_prob": 0.3685,
+   "had_secondary": "away",
+   "had_secondary_prob": 0.3581,
+   "hc_primary": "home",
+   "hc_secondary": "draw",
+   "hc_line": 1,
+   "ttg_top2": [
+    2,
+    3
+   ],
+   "tier": "常规正常球(2-3球)",
+   "over_under": "小",
+   "htft_top3": [
+    [
+     "胜胜",
+     0.1856
+    ],
+    [
+     "负负",
+     0.1804
+    ],
+    [
+     "平平",
+     0.1741
+    ]
+   ],
+   "cr_top5": [
+    {
+     "score": "1-1",
+     "prob": 0.1422,
+     "odds": 7
+    },
+    {
+     "score": "0-0",
+     "prob": 0.0916,
+     "odds": 12
+    },
+    {
+     "score": "2-1",
+     "prob": 0.082,
+     "odds": 8
+    },
+    {
+     "score": "1-0",
+     "prob": 0.0817,
+     "odds": 9
+    },
+    {
+     "score": "1-2",
+     "prob": 0.0808,
+     "odds": 7.75
+    }
+   ],
+   "ht_score": [
+    {
+     "score": "0-0",
+     "prob": 0.3858
+    },
+    {
+     "score": "1-0",
+     "prob": 0.1735
+    },
+    {
+     "score": "0-1",
+     "prob": 0.1708
+    }
+   ]
+  },
+  "k_dist": 0,
+  "k_dist_prob": 0.2974,
+  "k_rec": 1,
+  "k_rec_prob": 0.19,
+  "k_consistent": false,
+  "conf": "★",
+  "conf_model": "★",
+  "diverge": 0.0173,
+  "crs": [
+   {
+    "score": "1-1",
+    "prob": 0.1422,
+    "odds": 7
+   },
+   {
+    "score": "0-0",
+    "prob": 0.0916,
+    "odds": 12
+   },
+   {
+    "score": "2-1",
+    "prob": 0.082,
+    "odds": 8
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0817,
+    "odds": 9
+   },
+   {
+    "score": "1-2",
+    "prob": 0.0808,
+    "odds": 7.75
+   }
+  ],
+  "ht_score": [
+   {
+    "score": "0-0",
+    "prob": 0.3858
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1735
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1708
+   }
+  ]
+ }
+]

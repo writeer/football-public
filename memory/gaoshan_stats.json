@@ -1,0 +1,640 @@
+{
+  "total_matches": 2240,
+  "matches_with_saiguo": 1972,
+  "matches_with_sport": 1581,
+  "matches_with_gaoshan": 1407,
+  "matches_with_both": 1157,
+  "sport_direction_correct": 738,
+  "gaoshan_direction_correct": 655,
+  "sport_score_correct": 139,
+  "gaoshan_score_correct": 128,
+  "sport_by_actual": {
+    "负": {
+      "total": 514,
+      "correct": 248
+    },
+    "平": {
+      "total": 364,
+      "correct": 105
+    },
+    "胜": {
+      "total": 703,
+      "correct": 385
+    }
+  },
+  "gaoshan_by_actual": {
+    "胜": {
+      "total": 630,
+      "correct": 385
+    },
+    "平": {
+      "total": 327,
+      "correct": 77
+    },
+    "负": {
+      "total": 450,
+      "correct": 193
+    }
+  },
+  "sport_by_league": {
+    "英超": {
+      "total": 131,
+      "dir_correct": 59,
+      "score_correct": 9
+    },
+    "英冠": {
+      "total": 103,
+      "dir_correct": 47,
+      "score_correct": 13
+    },
+    "西甲": {
+      "total": 116,
+      "dir_correct": 57,
+      "score_correct": 10
+    },
+    "意甲": {
+      "total": 151,
+      "dir_correct": 70,
+      "score_correct": 8
+    },
+    "德甲": {
+      "total": 96,
+      "dir_correct": 46,
+      "score_correct": 8
+    },
+    "亚冠精英": {
+      "total": 6,
+      "dir_correct": 1,
+      "score_correct": 0
+    },
+    "欧冠": {
+      "total": 126,
+      "dir_correct": 64,
+      "score_correct": 11
+    },
+    "法乙": {
+      "total": 34,
+      "dir_correct": 14,
+      "score_correct": 5
+    },
+    "荷乙": {
+      "total": 26,
+      "dir_correct": 11,
+      "score_correct": 2
+    },
+    "世预赛": {
+      "total": 78,
+      "dir_correct": 53,
+      "score_correct": 15
+    },
+    "5世预赛": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "美职足": {
+      "total": 34,
+      "dir_correct": 16,
+      "score_correct": 3
+    },
+    "荷兰杯": {
+      "total": 6,
+      "dir_correct": 3,
+      "score_correct": 1
+    },
+    "巴甲": {
+      "total": 8,
+      "dir_correct": 3,
+      "score_correct": 0
+    },
+    "英甲": {
+      "total": 29,
+      "dir_correct": 15,
+      "score_correct": 2
+    },
+    "澳超": {
+      "total": 45,
+      "dir_correct": 11,
+      "score_correct": 1
+    },
+    "德乙": {
+      "total": 41,
+      "dir_correct": 15,
+      "score_correct": 1
+    },
+    "法甲": {
+      "total": 89,
+      "dir_correct": 37,
+      "score_correct": 8
+    },
+    "荷甲": {
+      "total": 72,
+      "dir_correct": 35,
+      "score_correct": 4
+    },
+    "沙职": {
+      "total": 43,
+      "dir_correct": 21,
+      "score_correct": 5
+    },
+    "非洲杯": {
+      "total": 21,
+      "dir_correct": 10,
+      "score_correct": 1
+    },
+    "瑞超": {
+      "total": 29,
+      "dir_correct": 10,
+      "score_correct": 4
+    },
+    "挪超": {
+      "total": 23,
+      "dir_correct": 13,
+      "score_correct": 0
+    },
+    "欧罗巴": {
+      "total": 55,
+      "dir_correct": 25,
+      "score_correct": 5
+    },
+    "英联赛杯": {
+      "total": 6,
+      "dir_correct": 2,
+      "score_correct": 1
+    },
+    "德国杯": {
+      "total": 16,
+      "dir_correct": 7,
+      "score_correct": 1
+    },
+    "日职": {
+      "total": 29,
+      "dir_correct": 16,
+      "score_correct": 3
+    },
+    "欧国联": {
+      "total": 17,
+      "dir_correct": 6,
+      "score_correct": 2
+    },
+    "葡超": {
+      "total": 47,
+      "dir_correct": 24,
+      "score_correct": 2
+    },
+    "韩职": {
+      "total": 14,
+      "dir_correct": 6,
+      "score_correct": 3
+    },
+    "意大利杯": {
+      "total": 2,
+      "dir_correct": 1,
+      "score_correct": 0
+    },
+    "西国王杯": {
+      "total": 2,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "欧罗巴奥林匹亚科斯vs博德闪耀": {
+      "total": 1,
+      "dir_correct": 1,
+      "score_correct": 0
+    },
+    "欧协联": {
+      "total": 25,
+      "dir_correct": 14,
+      "score_correct": 2
+    },
+    "亚冠乙": {
+      "total": 16,
+      "dir_correct": 8,
+      "score_correct": 3
+    },
+    "亚冠": {
+      "total": 7,
+      "dir_correct": 3,
+      "score_correct": 0
+    },
+    "法国杯": {
+      "total": 4,
+      "dir_correct": 2,
+      "score_correct": 0
+    },
+    "日乙": {
+      "total": 16,
+      "dir_correct": 7,
+      "score_correct": 3
+    },
+    "瑞超哈尔姆斯塔德vs厄斯特什": {
+      "total": 1,
+      "dir_correct": 1,
+      "score_correct": 1
+    },
+    "世俱杯": {
+      "total": 3,
+      "dir_correct": 1,
+      "score_correct": 1
+    },
+    "非洲": {
+      "total": 1,
+      "dir_correct": 1,
+      "score_correct": 0
+    },
+    "国王杯": {
+      "total": 2,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "3德乙": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "5法乙": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "西国王杯阿拉维斯vs巴列卡诺": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "世预赛摩尔多瓦vs爱沙尼亚2025-03-2601:00": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "西超杯": {
+      "total": 1,
+      "dir_correct": 1,
+      "score_correct": 0
+    },
+    "澳超纽卡斯尔喷气机vs悉尼FC2025-12-2014:00": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "英社区盾": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "5欧罗巴": {
+      "total": 1,
+      "dir_correct": 1,
+      "score_correct": 1
+    },
+    "7挪超": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    }
+  },
+  "gaoshan_by_league": {
+    "韩职": {
+      "total": 49,
+      "dir_correct": 15,
+      "score_correct": 5
+    },
+    "澳超": {
+      "total": 49,
+      "dir_correct": 16,
+      "score_correct": 1
+    },
+    "英超": {
+      "total": 121,
+      "dir_correct": 44,
+      "score_correct": 6
+    },
+    "英冠": {
+      "total": 98,
+      "dir_correct": 43,
+      "score_correct": 12
+    },
+    "西甲": {
+      "total": 113,
+      "dir_correct": 57,
+      "score_correct": 14
+    },
+    "意甲": {
+      "total": 135,
+      "dir_correct": 60,
+      "score_correct": 17
+    },
+    "德甲": {
+      "total": 95,
+      "dir_correct": 43,
+      "score_correct": 5
+    },
+    "亚冠精英纳萨夫vs阿布扎比联2025-11-0321:45": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "瑞超": {
+      "total": 46,
+      "dir_correct": 20,
+      "score_correct": 5
+    },
+    "荷乙": {
+      "total": 21,
+      "dir_correct": 7,
+      "score_correct": 2
+    },
+    "欧冠": {
+      "total": 112,
+      "dir_correct": 54,
+      "score_correct": 4
+    },
+    "世预赛": {
+      "total": 36,
+      "dir_correct": 21,
+      "score_correct": 5
+    },
+    "日乙": {
+      "total": 29,
+      "dir_correct": 15,
+      "score_correct": 4
+    },
+    "荷兰杯": {
+      "total": 7,
+      "dir_correct": 5,
+      "score_correct": 2
+    },
+    "日联赛杯广岛三箭vs湘南海洋2025-09-0717:30": {
+      "total": 1,
+      "dir_correct": 1,
+      "score_correct": 0
+    },
+    "日联赛杯柏太阳神vs横滨水手2025-09-0718:00": {
+      "total": 1,
+      "dir_correct": 1,
+      "score_correct": 0
+    },
+    "日联赛杯川崎前锋vs浦和红钻2025-09-0718:00": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "日联赛杯": {
+      "total": 3,
+      "dir_correct": 2,
+      "score_correct": 0
+    },
+    "巴甲": {
+      "total": 6,
+      "dir_correct": 2,
+      "score_correct": 0
+    },
+    "法甲": {
+      "total": 80,
+      "dir_correct": 33,
+      "score_correct": 4
+    },
+    "荷甲": {
+      "total": 67,
+      "dir_correct": 37,
+      "score_correct": 8
+    },
+    "非洲杯": {
+      "total": 19,
+      "dir_correct": 12,
+      "score_correct": 2
+    },
+    "英甲": {
+      "total": 23,
+      "dir_correct": 16,
+      "score_correct": 4
+    },
+    "挪超": {
+      "total": 33,
+      "dir_correct": 19,
+      "score_correct": 3
+    },
+    "四强赛": {
+      "total": 5,
+      "dir_correct": 4,
+      "score_correct": 0
+    },
+    "英联赛杯": {
+      "total": 6,
+      "dir_correct": 3,
+      "score_correct": 0
+    },
+    "德国杯": {
+      "total": 16,
+      "dir_correct": 8,
+      "score_correct": 2
+    },
+    "日职": {
+      "total": 34,
+      "dir_correct": 18,
+      "score_correct": 3
+    },
+    "金杯赛": {
+      "total": 4,
+      "dir_correct": 2,
+      "score_correct": 1
+    },
+    "欧国联": {
+      "total": 13,
+      "dir_correct": 2,
+      "score_correct": 0
+    },
+    "葡超": {
+      "total": 41,
+      "dir_correct": 21,
+      "score_correct": 5
+    },
+    "沙职": {
+      "total": 10,
+      "dir_correct": 5,
+      "score_correct": 0
+    },
+    "国际赛": {
+      "total": 7,
+      "dir_correct": 6,
+      "score_correct": 0
+    },
+    "德乙": {
+      "total": 8,
+      "dir_correct": 3,
+      "score_correct": 1
+    },
+    "世青赛": {
+      "total": 8,
+      "dir_correct": 5,
+      "score_correct": 0
+    },
+    "女四强赛": {
+      "total": 2,
+      "dir_correct": 2,
+      "score_correct": 0
+    },
+    "天皇杯": {
+      "total": 5,
+      "dir_correct": 1,
+      "score_correct": 0
+    },
+    "意大利杯": {
+      "total": 2,
+      "dir_correct": 1,
+      "score_correct": 0
+    },
+    "西国王杯": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "亚冠": {
+      "total": 11,
+      "dir_correct": 9,
+      "score_correct": 1
+    },
+    "欧罗巴奥林匹亚科斯vs博德闪耀": {
+      "total": 1,
+      "dir_correct": 1,
+      "score_correct": 1
+    },
+    "欧罗巴": {
+      "total": 26,
+      "dir_correct": 10,
+      "score_correct": 3
+    },
+    "欧协联": {
+      "total": 22,
+      "dir_correct": 11,
+      "score_correct": 3
+    },
+    "亚冠乙": {
+      "total": 1,
+      "dir_correct": 1,
+      "score_correct": 0
+    },
+    "法国杯": {
+      "total": 2,
+      "dir_correct": 1,
+      "score_correct": 0
+    },
+    "法乙": {
+      "total": 3,
+      "dir_correct": 1,
+      "score_correct": 1
+    },
+    "瑞超哈尔姆斯塔德vs厄斯特什": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "亚冠精英": {
+      "total": 15,
+      "dir_correct": 8,
+      "score_correct": 0
+    },
+    "4亚冠精英": {
+      "total": 1,
+      "dir_correct": 1,
+      "score_correct": 0
+    },
+    "亚冠精英 利雅新月vs多哈萨德2025-10-2202:15": {
+      "total": 1,
+      "dir_correct": 1,
+      "score_correct": 1
+    },
+    "亚冠精英蔚山现代vs成都蓉城": {
+      "total": 1,
+      "dir_correct": 1,
+      "score_correct": 1
+    },
+    "韩足总杯": {
+      "total": 3,
+      "dir_correct": 2,
+      "score_correct": 0
+    },
+    "亚冠精英町田泽维vs墨尔本城2025-11-0418:00": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "亚冠精英多哈萨德vs吉达国民2025-11-0500:00": {
+      "total": 1,
+      "dir_correct": 1,
+      "score_correct": 1
+    },
+    "非洲": {
+      "total": 1,
+      "dir_correct": 1,
+      "score_correct": 0
+    },
+    "国王杯": {
+      "total": 2,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "欧青赛": {
+      "total": 1,
+      "dir_correct": 1,
+      "score_correct": 1
+    },
+    "世俱杯": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "3德乙": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "亚冠精英多哈杜海勒vs吉达联合2025-11-2500:00": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    },
+    "西超杯": {
+      "total": 1,
+      "dir_correct": 1,
+      "score_correct": 0
+    },
+    "英社区盾": {
+      "total": 1,
+      "dir_correct": 0,
+      "score_correct": 0
+    }
+  },
+  "sport_home_win_pred": {
+    "total": 690,
+    "correct": 385
+  },
+  "sport_draw_pred": {
+    "total": 396,
+    "correct": 105
+  },
+  "sport_away_win_pred": {
+    "total": 495,
+    "correct": 248
+  },
+  "gaoshan_home_win_pred": {
+    "total": 686,
+    "correct": 385
+  },
+  "gaoshan_draw_pred": {
+    "total": 316,
+    "correct": 77
+  },
+  "gaoshan_away_win_pred": {
+    "total": 405,
+    "correct": 193
+  },
+  "total_images": 470,
+  "images_with_saiguo": 180,
+  "images_pre_match": 290,
+  "both_agree_total": 744,
+  "both_agree_correct": 388,
+  "both_disagree_total": 413,
+  "both_disagree_sport_correct": 148,
+  "both_disagree_gaoshan_correct": 137
+}

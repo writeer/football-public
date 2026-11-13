@@ -1,0 +1,585 @@
+{
+  "backtest_id": "bt_20260729_wednesday",
+  "match_date": "2026-07-29",
+  "model_version": "v1.6.0 (v2预测, 基本面决定论)",
+  "backtest_time": "2026-07-30",
+  "source_files": {
+    "predictions": "memory/predictions/2026-07-29_wednesday/wednesday_predictions_v2.json",
+    "html_report": "reports/html/wednesday_20260729_analysis_v2.html"
+  },
+  "summary": {
+    "total_matches": 6,
+    "direction_hit_rate": "3/6 = 50.0%",
+    "score_top1_hit_rate": "2/6 = 33.3%",
+    "score_top5_hit_rate": "4/6 = 66.7%",
+    "ht_score_top5_hit_rate": "5/6 = 83.3%",
+    "over_under_hit_rate": "4/6 = 66.7%",
+    "actual_draws": 2,
+    "predicted_draws": 0,
+    "draw_missed": 2
+  },
+  "matches": [
+    {
+      "match_id": "周三001",
+      "league": "欧冠资格赛Q2次回合",
+      "time": "07-29 23:00",
+      "home": "阿拉木图凯拉特",
+      "away": "奥莫尼亚",
+      "pred_direction": "主胜",
+      "pred_probs": {
+        "home": 0.5493,
+        "draw": 0.2595,
+        "away": 0.1912
+      },
+      "actual_score": "1:0",
+      "actual_direction": "主胜",
+      "actual_ht_score": "1:0",
+      "actual_total_goals": 1,
+      "direction_hit": true,
+      "score_top1_hit": true,
+      "score_top5_hit": true,
+      "ht_score_top5_hit": true,
+      "over_under_hit": true,
+      "pred_top_scores": [
+        {
+          "score": "1:0",
+          "prob": 0.1411
+        },
+        {
+          "score": "2:0",
+          "prob": 0.1327
+        },
+        {
+          "score": "1:1",
+          "prob": 0.1243
+        },
+        {
+          "score": "2:1",
+          "prob": 0.1049
+        },
+        {
+          "score": "0:0",
+          "prob": 0.0836
+        }
+      ],
+      "pred_ht_top5": [
+        {
+          "score": "0:0",
+          "prob": 0.3375
+        },
+        {
+          "score": "1:0",
+          "prob": 0.2508
+        },
+        {
+          "score": "2:0",
+          "prob": 0.1021
+        },
+        {
+          "score": "0:1",
+          "prob": 0.0982
+        },
+        {
+          "score": "1:1",
+          "prob": 0.0924
+        }
+      ],
+      "pred_over25": 0.4541,
+      "goalscorers": [
+        {
+          "minute": 24,
+          "scorer": "Juikkola Oiva",
+          "team": "home"
+        }
+      ],
+      "source": "telefootball.net",
+      "analysis": {
+        "why_right": "模型预测主胜54.93%为最高方向，实际1:0主胜。比分首选1:0直接命中(TOP1)！半场1:0也命中(TOP5第2位)。凯拉特主场进攻能力(lambda=1.75)得到验证，24分钟即取得进球。",
+        "key_factor": "凯拉特必须翻盘的战意驱动进攻，主场lambda=1.75准确反映了进攻能力。0:0并未打出，验证了'必须进球的球队不会甘心0:0'的判断。",
+        "lesson": "战意驱动型比赛(必须赢才能翻盘)，主场进攻lambda不应下修。0:0概率虽高(8.36%)但未打出，战意压制了低进球路径。"
+      }
+    },
+    {
+      "match_id": "周三002",
+      "league": "欧冠资格赛Q2次回合",
+      "time": "07-30 01:00",
+      "home": "波兹南莱赫",
+      "away": "奥胡斯",
+      "pred_direction": "主胜",
+      "pred_probs": {
+        "home": 0.5753,
+        "draw": 0.2366,
+        "away": 0.1881
+      },
+      "actual_score": "0:3",
+      "actual_direction": "客胜",
+      "actual_ht_score": "0:1",
+      "actual_total_goals": 3,
+      "direction_hit": false,
+      "score_top1_hit": false,
+      "score_top5_hit": false,
+      "ht_score_top5_hit": true,
+      "over_under_hit": true,
+      "pred_top_scores": [
+        {
+          "score": "2:0",
+          "prob": 0.1141
+        },
+        {
+          "score": "1:1",
+          "prob": 0.1136
+        },
+        {
+          "score": "2:1",
+          "prob": 0.1098
+        },
+        {
+          "score": "1:0",
+          "prob": 0.1077
+        },
+        {
+          "score": "3:1",
+          "prob": 0.0759
+        }
+      ],
+      "pred_ht_top5": [
+        {
+          "score": "0:0",
+          "prob": 0.2752
+        },
+        {
+          "score": "1:0",
+          "prob": 0.2348
+        },
+        {
+          "score": "2:0",
+          "prob": 0.1129
+        },
+        {
+          "score": "1:1",
+          "prob": 0.109
+        },
+        {
+          "score": "0:1",
+          "prob": 0.0975
+        }
+      ],
+      "pred_over25": 0.5572,
+      "goalscorers": [
+        {
+          "minute": 32,
+          "scorer": "Tobias Bech",
+          "team": "away"
+        },
+        {
+          "minute": 55,
+          "scorer": "Kristian Arnstad (pen)",
+          "team": "away"
+        },
+        {
+          "minute": 75,
+          "scorer": "Frederik Tingager",
+          "team": "away"
+        }
+      ],
+      "extra_time": "加时赛后1:4，点球3:4奥胡斯晋级",
+      "source": "skysports.com / qiumiwu.com",
+      "analysis": {
+        "why_wrong": "模型预测波兹南主胜57.53%(★★★高置信度)，但实际0:3惨败。波兹南首回合4:1领先却被逆转，是严重翻车。模型过度高估了波兹南主场lambda(2.05)且严重低估了奥胡斯客场能力。",
+        "key_factor": "奥胡斯门将停赛+多名后卫伤缺的信息可能被错误解读——奥胡斯残阵反而打出了超水平表现。波兹南3球领先的总比分优势可能导致了心理松懈。",
+        "lesson": "首回合大比分领先不代表次回合稳赢——领先方可能心理松懈，落后方背水一战反而爆发。高置信度(★★★)再次翻车，验证规则11'高置信度不等于高命中'。"
+      }
+    },
+    {
+      "match_id": "周三003",
+      "league": "巴甲第21轮",
+      "time": "07-30 06:30",
+      "home": "米拉索尔",
+      "away": "雷莫",
+      "pred_direction": "主胜",
+      "pred_probs": {
+        "home": 0.4711,
+        "draw": 0.2982,
+        "away": 0.2307
+      },
+      "actual_score": "2:1",
+      "actual_direction": "主胜",
+      "actual_ht_score": "1:1",
+      "actual_total_goals": 3,
+      "direction_hit": true,
+      "score_top1_hit": false,
+      "score_top5_hit": true,
+      "ht_score_top5_hit": true,
+      "over_under_hit": false,
+      "pred_top_scores": [
+        {
+          "score": "1:0",
+          "prob": 0.1632
+        },
+        {
+          "score": "1:1",
+          "prob": 0.1372
+        },
+        {
+          "score": "0:0",
+          "prob": 0.1334
+        },
+        {
+          "score": "2:0",
+          "prob": 0.1145
+        },
+        {
+          "score": "2:1",
+          "prob": 0.0915
+        }
+      ],
+      "pred_ht_top5": [
+        {
+          "score": "0:0",
+          "prob": 0.3967
+        },
+        {
+          "score": "1:0",
+          "prob": 0.2282
+        },
+        {
+          "score": "0:1",
+          "prob": 0.1232
+        },
+        {
+          "score": "1:1",
+          "prob": 0.0877
+        },
+        {
+          "score": "2:0",
+          "prob": 0.0717
+        }
+      ],
+      "pred_over25": 0.3469,
+      "goalscorers": [
+        {
+          "minute": 31,
+          "scorer": "Marllon (乌龙)",
+          "team": "home"
+        },
+        {
+          "minute": 45,
+          "scorer": "Leonel Picco",
+          "team": "away"
+        },
+        {
+          "minute": 53,
+          "scorer": "João Victor",
+          "team": "home"
+        }
+      ],
+      "source": "zerozero.pt / ogol.com.br",
+      "analysis": {
+        "why_right": "模型预测主胜47.11%为最高方向，实际2:1主胜。比分2:1在TOP5(第5位)命中。半场1:1也命中TOP5(第4位)。",
+        "over_under_miss": "模型预测UNDER 2.5概率65.31%，但实际3球OVER。米拉索尔主场lambda=1.35略低估，雷莫客场lambda=0.75也低估了反击能力。",
+        "key_factor": "乌龙球(31')打开了局面，半场1:1平局合理。下半场53分钟João Victor制胜球，符合巴甲主场优势。",
+        "lesson": "巴甲主场优势继续验证，但大小球预测偏小球的问题持续——lambda总和2.1对应3球略偏高。"
+      }
+    },
+    {
+      "match_id": "周三004",
+      "league": "巴甲第21轮",
+      "time": "07-30 06:30",
+      "home": "巴西国际",
+      "away": "弗拉门戈",
+      "pred_direction": "客胜",
+      "pred_probs": {
+        "home": 0.2442,
+        "draw": 0.2734,
+        "away": 0.4824
+      },
+      "actual_score": "1:1",
+      "actual_direction": "平局",
+      "actual_ht_score": "1:0",
+      "actual_total_goals": 2,
+      "direction_hit": false,
+      "score_top1_hit": true,
+      "score_top5_hit": true,
+      "ht_score_top5_hit": true,
+      "over_under_hit": true,
+      "pred_top_scores": [
+        {
+          "score": "1:1",
+          "prob": 0.1355
+        },
+        {
+          "score": "0:1",
+          "prob": 0.1011
+        },
+        {
+          "score": "0:0",
+          "prob": 0.0942
+        },
+        {
+          "score": "1:0",
+          "prob": 0.087
+        },
+        {
+          "score": "1:2",
+          "prob": 0.0825
+        }
+      ],
+      "pred_ht_top5": [
+        {
+          "score": "0:0",
+          "prob": 0.3274
+        },
+        {
+          "score": "0:1",
+          "prob": 0.2115
+        },
+        {
+          "score": "1:0",
+          "prob": 0.1329
+        },
+        {
+          "score": "1:1",
+          "prob": 0.1096
+        },
+        {
+          "score": "0:2",
+          "prob": 0.0772
+        }
+      ],
+      "pred_over25": 0.4506,
+      "goalscorers": [
+        {
+          "minute": null,
+          "scorer": "Vitinho",
+          "team": "home",
+          "half": "上半场"
+        },
+        {
+          "minute": null,
+          "scorer": "Samuel Lino",
+          "team": "away",
+          "half": "下半场"
+        }
+      ],
+      "source": "cnnbrasil.com.br / band.com.br",
+      "analysis": {
+        "why_wrong": "模型预测客胜48.24%(弗拉门戈)，但实际1:1平局。巴西国际4连败后主场死守拿分，弗拉门戈核心Paquetá缺阵影响进攻组织。",
+        "score_top1_hit": "比分首选1:1(13.55%)直接命中TOP1！模型对平局比分的概率计算准确，但方向判决仍选客胜而非平局。",
+        "key_factor": "巴西国际保级压力下采取防守反击策略，Vitinho上半场意外先破门。弗拉门戈下半场由Samuel Lino扳平。巴甲平局率高的特点再次体现。",
+        "lesson": "巴甲平局系统性问题持续——模型预测平局27.34%但实际打出平局。当主客胜率差>15%(48% vs 24%)时仍可能平局。比分矩阵首选1:1比方向判决更准。"
+      }
+    },
+    {
+      "match_id": "周三005",
+      "league": "巴甲第21轮",
+      "time": "07-30 08:30",
+      "home": "弗鲁米嫩塞",
+      "away": "巴伊亚",
+      "pred_direction": "主胜",
+      "pred_probs": {
+        "home": 0.5037,
+        "draw": 0.273,
+        "away": 0.2233
+      },
+      "actual_score": "1:1",
+      "actual_direction": "平局",
+      "actual_ht_score": "1:0",
+      "actual_total_goals": 2,
+      "direction_hit": false,
+      "score_top1_hit": false,
+      "score_top5_hit": true,
+      "ht_score_top5_hit": true,
+      "over_under_hit": true,
+      "pred_top_scores": [
+        {
+          "score": "1:0",
+          "prob": 0.1444
+        },
+        {
+          "score": "1:1",
+          "prob": 0.1347
+        },
+        {
+          "score": "0:0",
+          "prob": 0.11
+        },
+        {
+          "score": "2:0",
+          "prob": 0.109
+        },
+        {
+          "score": "2:1",
+          "prob": 0.0985
+        }
+      ],
+      "pred_ht_top5": [
+        {
+          "score": "0:0",
+          "prob": 0.3563
+        },
+        {
+          "score": "1:0",
+          "prob": 0.2255
+        },
+        {
+          "score": "0:1",
+          "prob": 0.1239
+        },
+        {
+          "score": "1:1",
+          "prob": 0.0986
+        },
+        {
+          "score": "2:0",
+          "prob": 0.0791
+        }
+      ],
+      "pred_over25": 0.4061,
+      "goalscorers": [
+        {
+          "minute": 20,
+          "scorer": "John Kennedy",
+          "team": "home"
+        },
+        {
+          "minute": 69,
+          "scorer": "Cristian Olivera",
+          "team": "away"
+        }
+      ],
+      "source": "soccermag.com",
+      "analysis": {
+        "why_wrong": "模型预测主胜50.37%，但实际1:1平局。弗鲁米嫩塞头号射手Kennedy停赛信息可能有误——Kennedy实际首发并在20分钟进球！",
+        "score_top5_hit": "比分1:1在TOP5(第2位)命中。半场1:0也命中TOP5(第2位)。",
+        "key_factor": "弗鲁米嫩塞20分钟由Kennedy进球领先，但巴伊亚69分钟由替补Cristian Olivera扳平。巴伊亚2名主力后卫停赛但防线依然顽强。",
+        "lesson": "平局再次漏判——模型预测平局27.3%但实际打出。巴甲平局率高的特点继续验证。Kennedy停赛信息错误再次说明中文平台信息不可靠(规则25)。"
+      }
+    },
+    {
+      "match_id": "周三006",
+      "league": "巴甲第21轮",
+      "time": "07-30 08:30",
+      "home": "维多利亚",
+      "away": "帕尔梅拉斯",
+      "pred_direction": "客胜",
+      "pred_probs": {
+        "home": 0.2273,
+        "draw": 0.2617,
+        "away": 0.511
+      },
+      "actual_score": "1:5",
+      "actual_direction": "客胜",
+      "actual_ht_score": "0:3",
+      "actual_total_goals": 6,
+      "direction_hit": true,
+      "score_top1_hit": false,
+      "score_top5_hit": false,
+      "ht_score_top5_hit": false,
+      "over_under_hit": false,
+      "pred_top_scores": [
+        {
+          "score": "1:1",
+          "prob": 0.1302
+        },
+        {
+          "score": "0:1",
+          "prob": 0.1067
+        },
+        {
+          "score": "0:0",
+          "prob": 0.0916
+        },
+        {
+          "score": "0:2",
+          "prob": 0.0909
+        },
+        {
+          "score": "1:2",
+          "prob": 0.085
+        }
+      ],
+      "pred_ht_top5": [
+        {
+          "score": "0:0",
+          "prob": 0.3243
+        },
+        {
+          "score": "0:1",
+          "prob": 0.2239
+        },
+        {
+          "score": "1:0",
+          "prob": 0.1206
+        },
+        {
+          "score": "1:1",
+          "prob": 0.1064
+        },
+        {
+          "score": "0:2",
+          "prob": 0.0867
+        }
+      ],
+      "pred_over25": 0.4573,
+      "goalscorers": [
+        {
+          "minute": 24,
+          "scorer": "Murilo (头球)",
+          "team": "away"
+        },
+        {
+          "minute": 28,
+          "scorer": "Gustavo Gómez",
+          "team": "away"
+        },
+        {
+          "minute": 45,
+          "scorer": "Mauricio",
+          "team": "away"
+        },
+        {
+          "minute": 56,
+          "scorer": "Dudu",
+          "team": "home"
+        },
+        {
+          "minute": 63,
+          "scorer": "Allan",
+          "team": "away"
+        },
+        {
+          "minute": 80,
+          "scorer": "Ramón Sosa",
+          "team": "away"
+        }
+      ],
+      "source": "soccermag.com",
+      "analysis": {
+        "why_right": "模型预测客胜51.10%，实际1:5客胜。方向命中但比分严重偏离——模型完全低估了帕尔梅拉斯的进攻爆发力。",
+        "why_score_wrong": "实际1:5惨案，模型预测首选1:1(13.02%)完全错误。帕尔梅拉斯半场就0:3领先，4分钟内连进2球(24'和28')，彻底碾压。",
+        "key_factor": "帕尔梅拉斯4名停赛球员回归后实力大增，维多利亚多名后卫伤缺的防线彻底崩盘。模型lambda_away=1.65严重低估——实际打进5球。",
+        "over_under_miss": "模型预测UNDER 54.27%，但实际6球大球。帕尔梅拉斯进攻火力远超模型预期。",
+        "lesson": "停赛球员回归对战力的提升是非线性的——4名主力同时回归等于半个首发阵容补强，lambda应大幅上修而非维持原水平。维多利亚防线崩盘(lambda_home=0.92高估)导致大比分惨案。"
+      }
+    }
+  ],
+  "key_findings": [
+    "方向命中率3/6=50%，较上期36.4%有所回升",
+    "比分TOP5命中率4/6=66.7%，较上期59.1%提升",
+    "半场比分TOP5命中率5/6=83.3%，表现最佳",
+    "大小球命中率4/6=66.7%，偏小球问题持续",
+    "平局漏判2场(004巴西国际1:1, 005弗鲁米嫩塞1:1)，巴甲平局系统性问题未解决",
+    "高置信度(★★★)翻车1场：002波兹南57.53%主胜→0:3惨败",
+    "比分首选(TOP1)命中2场：001凯拉特1:0, 004巴西国际1:1",
+    "002波兹南3球领先被逆转是本期最大冷门——首回合4:1次回合0:3",
+    "006维多利亚1:5惨案：帕尔梅拉斯4名停赛球员回归，lambda严重低估",
+    "005弗鲁米嫩塞Kennedy停赛信息有误——实际首发并进球(规则25验证)"
+  ],
+  "improvements_needed": [
+    "平局先验修正仍需加强：巴甲主客胜率差>20%时仍可能平局(004场48% vs 24%却打出1:1)",
+    "停赛球员回归的lambda上修：多名主力同时回归时lambda应额外+0.3-0.5(006场帕尔梅拉斯)",
+    "首回合大比分领先的心理松懈效应：领先方lambda应下修-0.2~-0.3(002场波兹南)",
+    "大小球偏小球问题：巴甲lambda总和应额外+0.2校准(003和006场均大球)",
+    "比分矩阵TOP1比方向判决更准：004场比分首选1:1命中但方向选客胜未中"
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "meta": {
+    "date": "2026-10-14",
+    "day": "周三",
+    "sales_day": "261014",
+    "pipeline_step": "第3步 联赛分析",
+    "output_type": "structured_output_only",
+    "final_judgment_by": "总控",
+    "leagues_covered": ["ACL Elite(含AC2)", "JLC", "UCL", "EFL Championship", "Copa Libertadores", "MLS"],
+    "data_sources": [
+      "memory/leagues/acl_elite.json",
+      "memory/leagues/j_league_jp.json",
+      "memory/leagues/k_league_kr.json",
+      "memory/leagues/champions_league.json",
+      "memory/leagues/efl_championship_en.json",
+      "memory/leagues/copa_libertadores.json",
+      "memory/leagues/mls_us.json"
+    ],
+    "lessons_referenced": ["L194", "L195", "L196", "L197", "L198"]
+  },
+  "leagues": [
+    {
+      "competition": "亚冠精英赛(ACL Elite) + 亚冠乙(AC2)",
+      "matches": ["001", "002", "003"],
+      "stats": {
+        "avg_goals": 2.66,
+        "over_2_5_rate": 0.49,
+        "draw_rate": 0.25,
+        "home_win_rate": 0.48,
+        "away_win_rate": 0.25,
+        "ht_draw_rate": null,
+        "ht_draw_rate_tier": "不适用(杯赛混合)",
+        "ht_0_0_rate_note": "实测半场0-0=36%，偏高作软提示",
+        "home_advantage_factor": 1.15
+      },
+      "style": "双峰分布：防守僵局(0-0占12.82%)与沙特金元碾压大球并存；节奏中快",
+      "tier65": "Tier3(洲际杯赛)，框架+0.4；但分场执行：沙特碾压场上修，东亚内战不强行上修",
+      "rule22_migration": "韩职球队(首尔FC/全北现代)：杯赛主场系数取1.15不套韩职1.20，平局/防守纪律基因软迁移；日职球队(神户/柏)：上半场谨慎软迁移",
+      "size_ball_dimension_rule74": "常规2-3球为众数；东亚对决偏小球(1-2)甚至闷战超小(0-1)；西亚碾压偏大球(4-5)",
+      "top_scores": ["0-0 12.82%", "1-0 11.97%", "1-1 9.40%", "2-1 9.40%", "2-0 5.98%"],
+      "rule35_new_season": "2026-27赛季9月开赛，第4-5轮，已过前2轮窗口，不上修",
+      "ht_correction_rule66": "杯赛不按单值；lambda_ht=0.40，半全场首选建议含平"
+    },
+    {
+      "competition": "日联赛杯(JLC)",
+      "matches": ["004"],
+      "note": "横滨水手vs清水鼓动；无独立JSON，参考日职",
+      "stats": {
+        "avg_goals": 2.52,
+        "over_2_5_rate": 0.46,
+        "draw_rate": 0.26,
+        "ht_draw_rate": 0.534,
+        "ht_draw_rate_tier": "高(>=0.40)",
+        "home_advantage_factor": 1.25
+      },
+      "style": "战术纪律强、上半场谨慎下半场加速；小球联赛；杯赛轮换lambda下修风险",
+      "tier65": "Tier3框架，但日职小球特化让位，不主动上修",
+      "rule22_migration": "无日韩编号特化；按日职基准",
+      "size_ball_dimension_rule74": "小球(1-2)/常规(2-3)；轮换场偏小球",
+      "top_scores": ["1-1 8.8%", "1-0 8.2%", "2-1 7.5%", "0-0 6.8%", "2-0 5.8%"],
+      "rule35_new_season": "日职赛季中后段，不触发",
+      "ht_correction_rule66": "高：lambda_ht=x0.38，平平+8~12%，半全场首选必须含平"
+    },
+    {
+      "competition": "欧冠(UCL)",
+      "matches": ["005", "006", "007", "008", "009", "010", "011", "012"],
+      "stats": {
+        "avg_goals": 2.82,
+        "over_2_5_rate": 0.54,
+        "draw_rate": 0.23,
+        "home_win_rate": 0.45,
+        "away_win_rate": 0.32,
+        "ht_draw_rate": null,
+        "ht_draw_rate_tier": "不适用(杯赛混合)",
+        "home_advantage_factor": 1.10
+      },
+      "style": "最高水平；强强对话小球、淘汰赛防守导向、小组赛冷门频发；主场优势低于联赛",
+      "tier65": "Tier3 +0.4，叠加规则34(TTG TOP2=2/3球,防3球,lambda 2.2-2.6)；叠加L198：对攻/碾压场上修半档",
+      "rule22_migration": "英超球队(利物浦/曼城/维拉等)踢欧冠：①客场不额外下修②非Big6状态好攻击λ+10~20%③Big6近3轮<=1胜触发爆冷预警、次选必含平、置信度降一级",
+      "size_ball_dimension_rule74": "常规2-3球为基(规则34:3球众数)；对攻/碾压场上修半档到大球4-5；闷战局才落小球",
+      "top_scores": ["2-1 8.5%", "1-1 8.0%", "1-0 7.5%", "2-0 6.5%", "3-1 6.0%"],
+      "rule35_new_season": "2026-27赛季第3-4轮，已过前2轮，不上修",
+      "ht_correction_rule66": "杯赛不按单值；lambda_ht=0.45(英超对阵0.42)，防半场0-0"
+    },
+    {
+      "competition": "英冠(EFL Championship)",
+      "matches": ["007"],
+      "stats": {
+        "avg_goals": 2.45,
+        "over_2_5_rate": 0.447,
+        "draw_rate": 0.28,
+        "home_win_rate": 0.456,
+        "away_win_rate": 0.264,
+        "ht_draw_rate": 0.425,
+        "ht_draw_rate_tier": "高(>=0.40)",
+        "home_advantage_factor": 1.40,
+        "var": false
+      },
+      "style": "欧洲最身体化次级联赛；1-0占21.2%极端集中；小球(UNDER 55.3%)；定位球占25-30%；冷门多",
+      "tier65": "Tier3框架+0.4，但英冠小球特化让位，默认不主动上修",
+      "rule22_migration": "规则57乙级风险：赛季第10-12轮已过前5轮窗口，不强制；无VAR+冷门多仍作风险标注",
+      "size_ball_dimension_rule74": "小球(1-2)为默认，重点防1球",
+      "top_scores": ["1-0 21.2%", "2-1 18.1%", "1-1 13.8%", "2-0 12.4%", "0-0 7.9%"],
+      "rule35_new_season": "2026-27赛季第10-12轮，不触发",
+      "ht_correction_rule66": "高：lambda_ht=x0.38，平平+8~12%，半全场首选必须含平"
+    },
+    {
+      "competition": "解放者杯(Copa Libertadores)",
+      "matches": ["013"],
+      "stats": {
+        "avg_goals": 1.78,
+        "over_2_5_rate": 0.38,
+        "draw_rate": 0.27,
+        "home_win_rate": 0.48,
+        "away_win_rate": 0.25,
+        "ht_draw_rate": null,
+        "ht_draw_rate_tier": "不适用(杯赛混合)"
+      },
+      "style": "南美技术流节奏慢；淘汰赛客队保守、主场优势显著；1/8起取消加时直接点球",
+      "tier65": "杯赛归T3框架，但场均1.78极低+小球62%，大球上修不覆盖；lambda 1.6-2.0低区间禁止上修",
+      "rule22_migration": "客场旅行疲劳软迁移：客λx0.92",
+      "size_ball_dimension_rule74": "闷战超小(0-1)/小球(1-2)；TTG TOP2=1/2球，防0-0(9.03%)",
+      "top_scores": ["1-0 16.67%", "1-1 13.49%", "0-0 9.03%", "2-1 8.73%", "2-0 7.94%"],
+      "rule35_new_season": "年度赛制淘汰赛阶段，无新赛季概念",
+      "ht_correction_rule66": "杯赛不按单值；lambda_ht=0.40，半场0-0/0-1概率高，半全场首选建议含平"
+    },
+    {
+      "competition": "美职(MLS)",
+      "matches": ["014"],
+      "stats": {
+        "avg_goals": 2.68,
+        "over_2_5_rate": 0.50,
+        "draw_rate": 0.24,
+        "home_win_rate": 0.43,
+        "away_win_rate": 0.33,
+        "ht_draw_rate": 0.366,
+        "ht_draw_rate_tier": "中高(0.35-0.40)",
+        "home_advantage_factor": 1.12
+      },
+      "style": "东西部均衡无垄断、冷门多；10月常规赛末段季后赛卡位，战意分化极大",
+      "tier65": "Tier2(甲级)，实力差距大lambda+0.3，TTG TOP2给3/4球",
+      "rule22_migration": "注意跨区长途客场旅行因素",
+      "size_ball_dimension_rule74": "常规2-3球；悬殊场3-4球",
+      "top_scores": ["2-1 8.5%", "1-1 7.8%", "1-0 7.2%", "2-0 6.5%", "0-1 5.8%"],
+      "rule35_new_season": "年度赛制常规赛末段，不触发",
+      "ht_correction_rule66": "中高：lambda_ht=x0.42，平平+5~8%，半全场首选建议含平"
+    }
+  ],
+  "lessons_execution": [
+    {
+      "id": "L194",
+      "rule": "规则46新增第6条件",
+      "executable": "市场支持率>75%场次★★★强制降★★；不改首选方向；禁止进入方向串锚腿；今日欧冠8场逐场走查"
+    },
+    {
+      "id": "L195",
+      "rule": "极端客λ校验",
+      "executable": "欧冠豪门客场λ_away>=3.5且触发任一(人工草/极端天气/轮换>=4人)→客λx0.85重算；此类场★★★上限★★"
+    },
+    {
+      "id": "L196",
+      "rule": "搏冷双腿制",
+      "executable": "搏冷必须给2条腿：平局+1变体方向(残阵崩盘→主胜/残阵爆发→客胜)按概率排布；单关平局上修后平局仍非首选则搏冷降级"
+    },
+    {
+      "id": "L197",
+      "rule": "让球三方向结构",
+      "executable": "让球推荐改胜/负/平三方向按概率取TOP2；模型让平概率>=20%必须保留让平；规则52a深盘让平首选仅作参考标注"
+    },
+    {
+      "id": "L198",
+      "rule": "欧冠大球夜TTG外扩",
+      "executable": "λ_total>=4.5场次TTG始终含4球或5球其一，TOP2外备注6+球合计概率；欧冠对攻/碾压场默认上修半档"
+    }
+  ],
+  "boundary_note": "本文件为联赛分析器结构化输出，所有上修/降级均为候选参数；最终触发判定与冲突裁决由总控逐场走查后裁定。"
+}

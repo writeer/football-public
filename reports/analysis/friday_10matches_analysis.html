@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周五10场深度分析报告 | 2026-08-07</title>
+<style>
+:root {
+  --bg: #0f1117; --card: #1a1d29; --card2: #222639;
+  --border: #2d3148; --text: #e4e6ef; --text2: #9298b8;
+  --accent: #f87132; --accent2: #4ade80; --accent3: #60a5fa;
+  --red: #ef4444; --green: #22c55e; --yellow: #eab308;
+  --purple: #a78bfa; --orange: #fb923c;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: 'Microsoft YaHei', sans-serif; line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+.header { text-align: center; padding: 30px 0; border-bottom: 2px solid var(--accent); margin-bottom: 30px; }
+.header h1 { font-size: 28px; color: var(--accent); margin-bottom: 8px; }
+.header .subtitle { color: var(--text2); font-size: 14px; }
+.risk-warning { background: rgba(239,68,68,0.1); border: 1px solid var(--red); border-radius: 8px; padding: 12px 20px; margin-bottom: 20px; text-align: center; font-size: 13px; color: var(--red); }
+.summary-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; background: var(--card); border-radius: 8px; overflow: hidden; }
+.summary-table th { background: var(--card2); padding: 12px 8px; text-align: center; font-size: 13px; color: var(--accent3); border-bottom: 2px solid var(--border); }
+.summary-table td { padding: 10px 8px; text-align: center; font-size: 13px; border-bottom: 1px solid var(--border); }
+.summary-table tr:hover { background: var(--card2); }
+.match-card { background: var(--card); border-radius: 12px; padding: 24px; margin-bottom: 24px; border: 1px solid var(--border); }
+.match-card:hover { border-color: var(--accent); }
+.match-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+.match-id { background: var(--accent); color: white; padding: 4px 12px; border-radius: 4px; font-size: 13px; font-weight: bold; }
+.match-title { font-size: 20px; font-weight: bold; }
+.match-time { color: var(--text2); font-size: 13px; }
+.venue-weather { font-size: 13px; color: var(--text2); margin-bottom: 12px; padding: 8px 12px; background: var(--card2); border-radius: 6px; }
+.section-title { font-size: 15px; color: var(--accent3); margin: 16px 0 8px; font-weight: bold; }
+.info-text { font-size: 13px; color: var(--text); line-height: 1.8; margin-bottom: 8px; }
+.injury-list { font-size: 12px; color: var(--text2); }
+.injury-list span { display: inline-block; margin: 2px 6px; padding: 2px 8px; background: rgba(239,68,68,0.15); border-radius: 4px; color: var(--red); }
+.lambda-display { display: flex; gap: 20px; margin: 12px 0; }
+.lambda-box { flex: 1; background: var(--card2); padding: 12px; border-radius: 8px; text-align: center; }
+.lambda-label { font-size: 12px; color: var(--text2); margin-bottom: 4px; }
+.lambda-value { font-size: 24px; font-weight: bold; color: var(--accent2); }
+.reco-table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+.reco-table th { background: var(--card2); padding: 8px; font-size: 12px; color: var(--accent3); text-align: center; }
+.reco-table td { padding: 8px; font-size: 13px; text-align: center; border: 1px solid var(--border); }
+.reco-table .highlight { color: var(--accent); font-weight: bold; }
+.reco-table .green { color: var(--green); }
+.reco-table .red { color: var(--red); }
+.confidence-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+.conf-high { background: rgba(34,197,94,0.2); color: var(--green); }
+.conf-mid { background: rgba(234,179,8,0.2); color: var(--yellow); }
+.conf-low { background: rgba(239,68,68,0.2); color: var(--red); }
+.parlay-section { background: var(--card); border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.parlay-item { padding: 12px; margin: 8px 0; background: var(--card2); border-radius: 8px; border-left: 3px solid var(--accent); }
+.footer { text-align: center; padding: 30px 0; color: var(--text2); font-size: 12px; border-top: 1px solid var(--border); }
+.prob-bar { display: inline-block; width: 60px; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; vertical-align: middle; margin: 0 4px; }
+.prob-fill { height: 100%; background: var(--accent); }
+.h2h-box { background: var(--card2); padding: 10px 14px; border-radius: 6px; font-size: 13px; margin: 8px 0; border-left: 3px solid var(--purple); }
+.fundamental-box { background: rgba(96,165,250,0.08); padding: 10px 14px; border-radius: 6px; font-size: 13px; margin: 8px 0; border-left: 3px solid var(--accent3); }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>周五10场深度分析报告</h1>
+<div class="subtitle">2026-08-07（周五）| J联赛揭幕 + 欧洲新赛季开锣 | 分析时间: 2026-08-07</div>
+</div>
+<div class="risk-warning">
+⚠️ 风险提示：本分析基于公开数据整理，仅供参考交流，不构成任何投注建议。体彩官方赔率尚未开售，赔率为预估值，待开售后需更新。足球赛事存在临场变数，请理性观赛。
+</div>
+
+<h2 style="color: var(--accent3); margin-bottom: 16px;">📊 总览表</h2>
+<table class="summary-table">
+<tr>
+<th>编号</th><th>联赛</th><th>对阵</th><th>方向(模型概率)</th><th>置信度</th><th>比分首选</th><th>总进球</th>
+</tr>
+
+<tr>
+<td>周五001</td>
+<td>日职</td>
+<td>横滨水手 vs 鹿岛鹿角</td>
+<td class="green">主胜/平 34.5%</td>
+<td><span class="confidence-badge conf-low">★</span></td>
+<td>1-1 (14.8%)</td>
+<td>2球 (27.9%)</td>
+</tr>
+
+<tr>
+<td>周五002</td>
+<td>日职</td>
+<td>大阪钢巴 vs 浦和红钻</td>
+<td class="red">客胜/平 65.6%</td>
+<td><span class="confidence-badge conf-high">★★★</span></td>
+<td>0-2 (13.6%)</td>
+<td>2球 (26.3%)</td>
+</tr>
+
+<tr>
+<td>周五003</td>
+<td>芬超</td>
+<td>塞伊奈约基 vs 赫尔辛基火花</td>
+<td class="green">主胜/平 36.8%</td>
+<td><span class="confidence-badge conf-low">★</span></td>
+<td>1-1 (14.7%)</td>
+<td>2球 (27.7%)</td>
+</tr>
+
+<tr>
+<td>周五004</td>
+<td>挪超</td>
+<td>桑纳菲尤尔 vs 奥斯陆KFUM</td>
+<td class="green">主胜/平 41.6%</td>
+<td><span class="confidence-badge conf-low">★</span></td>
+<td>1-1 (14.5%)</td>
+<td>2球 (27.7%)</td>
+</tr>
+
+<tr>
+<td>周五005</td>
+<td>荷甲</td>
+<td>坎布尔 vs SBV精英</td>
+<td class="red">客胜/平 80.5%</td>
+<td><span class="confidence-badge conf-high">★★★</span></td>
+<td>0-2 (12.8%)</td>
+<td>3球 (21.9%)</td>
+</tr>
+
+<tr>
+<td>周五006</td>
+<td>荷乙</td>
+<td>奥斯 vs 布雷达</td>
+<td class="red">客胜/平 64.8%</td>
+<td><span class="confidence-badge conf-high">★★★</span></td>
+<td>0-2 (11.5%)</td>
+<td>2球 (24.0%)</td>
+</tr>
+
+<tr>
+<td>周五007</td>
+<td>荷乙</td>
+<td>埃门 vs 罗达JC</td>
+<td class="red">客胜/平 64.2%</td>
+<td><span class="confidence-badge conf-high">★★★</span></td>
+<td>0-2 (11.2%)</td>
+<td>2球 (23.8%)</td>
+</tr>
+
+<tr>
+<td>周五008</td>
+<td>德乙</td>
+<td>波鸿 vs 柏林赫塔</td>
+<td class="green">主胜/平 43.4%</td>
+<td><span class="confidence-badge conf-low">★</span></td>
+<td>1-1 (13.7%)</td>
+<td>2球 (26.3%)</td>
+</tr>
+
+<tr>
+<td>周五009</td>
+<td>英联赛杯</td>
+<td>米德尔斯堡 vs 雷克斯汉姆</td>
+<td class="red">客胜/平 36.0%</td>
+<td><span class="confidence-badge conf-low">★</span></td>
+<td>0-0 (16.4%)</td>
+<td>2球 (28.8%)</td>
+</tr>
+
+<tr>
+<td>周五010</td>
+<td>葡超</td>
+<td>埃斯托里尔 vs 法马利康</td>
+<td class="red">客胜/平 65.1%</td>
+<td><span class="confidence-badge conf-high">★★★</span></td>
+<td>0-2 (14.1%)</td>
+<td>2球 (26.9%)</td>
+</tr>
+</table><h2 style="color: var(--accent3); margin-bottom: 16px;">🏟️ 逐场深度分析</h2>
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">周五001</span>
+<span class="match-title">横滨水手 <span style="color:var(--text2)">VS</span> 鹿岛鹿角</span>
+<span class="match-time">2026-08-07 18:25</span>
+</div>
+<div class="venue-weather">🏟️ 东京国立竞技场（中立场地） ｜ ☀️ 晴 31°C</div>
+
+<div class="section-title">📋 基本面</div>
+<div class="info-text">J联赛改制跨年制后首赛季揭幕战；横滨城市集团退出控股进入重建，新帅科里卡；鹿岛卫冕冠军；中立场地主场优势打折</div>
+<div class="info-text"><b>横滨水手</b>：近10场4胜4平2负</div>
+<div class="info-text"><b>鹿岛鹿角</b>：近10场6胜2平2负</div>
+
+<div class="h2h-box">⚔️ 交锋记录：近10次: 横滨6胜1平3负（横滨占优）</div>
+<div class="section-title">🏥 伤停信息</div><div class="injury-list"><b>横滨水手：</b><span>远野大弥(中场) 跟腱伤</span><span>山根陆(后卫) 伤</span><span>铃木冬一(中场) 膝伤</span></div><div class="injury-list"><b>鹿岛鹿角：</b><span>无主力伤停(-) -</span></div>
+<div class="section-title">🔬 模型参数</div>
+<div class="lambda-display">
+<div class="lambda-box"><div class="lambda-label">横滨水手 λ_home</div><div class="lambda-value">1.19</div></div>
+<div class="lambda-box"><div class="lambda-label">鹿岛鹿角 λ_away</div><div class="lambda-value">1.19</div></div>
+<div class="lambda-box"><div class="lambda-label">总λ</div><div class="lambda-value">2.38</div></div>
+</div>
+
+<div class="fundamental-box">
+📊 模型概率：主胜 34.5% ｜ 平 31.2% ｜ 客胜 34.3%
+<br>📉 让球(-1)概率：让胜 15.3% ｜ 让平 19.2% ｜ 让负 65.5%
+<br>💰 预估赔率：2.55 / 3.3 / 2.6
+</div>
+<div class="section-title">🎯 6维度推荐</div><table class="reco-table"><tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th></tr><tr><td><b>胜平负</b></td><td class="highlight">主胜 34.5%</td><td>客胜 34.3%</td><td>平局 31.2%</td></tr><tr><td><b>让球(-1)</b></td><td class="highlight">让负 65.5%</td><td>让平 19.2%</td><td>让胜 15.3%</td></tr><tr><td><b>比分TOP5</b></td><td class="highlight">1-1 14.8%</td><td>0-0 10.9%</td><td>1-0 9.3%</td></tr><tr><td></td><td>0-1 9.3%</td><td>2-1 7.8%</td><td>1-2 7.8%</td></tr><tr><td><b>总进球</b></td><td class="highlight">2球 27.9%</td><td>3球 20.8%</td><td>1球 18.6%</td></tr><tr><td><b>半全场</b></td><td class="highlight">半平全平 24.4%</td><td>半胜全胜 15.1%</td><td>半平全胜 15.0%</td></tr><tr><td><b>半场比分</b></td><td class="highlight">0-0 35.5%</td><td>1-0 17.1%</td><td>0-1 17.0%</td></tr></table><div style="margin-top:12px;">置信度：<span class="confidence-badge conf-low">★</span></div></div>
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">周五002</span>
+<span class="match-title">大阪钢巴 <span style="color:var(--text2)">VS</span> 浦和红钻</span>
+<span class="match-time">2026-08-07 18:30</span>
+</div>
+<div class="venue-weather">🏟️ 松下吹田球场（大阪） ｜ ☀️ 晴 32°C</div>
+
+<div class="section-title">📋 基本面</div>
+<div class="info-text">大阪钢巴攻防两端均遭重创（主力门将+核心前锋+停赛）；浦和交锋优势大但客场疲软；大概率低比分</div>
+<div class="info-text"><b>大阪钢巴</b>：近10场3胜6平1负，连续8轮不胜</div>
+<div class="info-text"><b>浦和红钻</b>：近10场5胜1平4负，客场近7场输6场</div>
+
+<div class="h2h-box">⚔️ 交锋记录：近6次正赛: 浦和5胜，近5次4场1-0小比分</div>
+<div class="section-title">🏥 伤停信息</div><div class="injury-list"><b>大阪钢巴：</b><span>一森纯(门将) 伤</span><span>宇佐美贵史(前锋) 伤</span><span>帕特里克(前锋) 红牌停赛</span></div><div class="injury-list"><b>浦和红钻：</b><span>无主力伤停(-) -</span><span>古斯塔夫(后卫) 伤</span></div>
+<div class="section-title">🔬 模型参数</div>
+<div class="lambda-display">
+<div class="lambda-box"><div class="lambda-label">大阪钢巴 λ_home</div><div class="lambda-value">0.69</div></div>
+<div class="lambda-box"><div class="lambda-label">浦和红钻 λ_away</div><div class="lambda-value">1.93</div></div>
+<div class="lambda-box"><div class="lambda-label">总λ</div><div class="lambda-value">2.61</div></div>
+</div>
+
+<div class="fundamental-box">
+📊 模型概率：主胜 11.2% ｜ 平 23.3% ｜ 客胜 65.6%
+<br>📉 让球(-1)概率：让胜 3.3% ｜ 让平 7.9% ｜ 让负 88.8%
+<br>💰 预估赔率：3.2 / 3.1 / 2.15
+</div>
+<div class="section-title">🎯 6维度推荐</div><table class="reco-table"><tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th></tr><tr><td><b>胜平负</b></td><td class="highlight">客胜 65.6%</td><td>平局 23.3%</td><td>主胜 11.2%</td></tr><tr><td><b>让球(-1)</b></td><td class="highlight">让负 88.8%</td><td>让平 7.9%</td><td>让胜 3.3%</td></tr><tr><td><b>比分TOP5</b></td><td class="highlight">0-2 13.6%</td><td>0-1 12.9%</td><td>1-1 11.0%</td></tr><tr><td></td><td>1-2 9.3%</td><td>0-3 8.7%</td><td>0-0 8.6%</td></tr><tr><td><b>总进球</b></td><td class="highlight">2球 26.3%</td><td>3球 21.8%</td><td>1球 16.6%</td></tr><tr><td><b>半全场</b></td><td class="highlight">半负全负 45.8%</td><td>半平全负 22.8%</td><td>半平全平 14.6%</td></tr><tr><td><b>半场比分</b></td><td class="highlight">0-0 31.9%</td><td>0-1 25.7%</td><td>0-2 11.6%</td></tr></table><div style="margin-top:12px;">置信度：<span class="confidence-badge conf-high">★★★</span></div></div>
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">周五003</span>
+<span class="match-title">塞伊奈约基 <span style="color:var(--text2)">VS</span> 赫尔辛基火花</span>
+<span class="match-time">2026-08-08 00:00</span>
+</div>
+<div class="venue-weather">🏟️ 塞伊奈约基主场（人工草皮） ｜ ☀️ 晴 18°C</div>
+
+<div class="section-title">📋 基本面</div>
+<div class="info-text">赫尔辛基7-8人伤停+停赛，主力门将+双后卫停赛防线崩塌；三天后欧协联关键战将大面积轮换；塞伊奈约基刚3-0大胜信心爆棚；芬超主场优势1.22</div>
+<div class="info-text"><b>塞伊奈约基</b>：17轮3胜5平9负降级区，上轮3-0爆冷胜赫尔辛基</div>
+<div class="info-text"><b>赫尔辛基火花</b>：排名第4，近5场4胜1负，欧协联5-0大胜</div>
+
+<div class="h2h-box">⚔️ 交锋记录：上轮塞伊奈约基3-0爆冷胜赫尔辛基火花</div>
+<div class="section-title">🏥 伤停信息</div><div class="injury-list"><b>塞伊奈约基：</b><span>阵容齐整(-) -</span></div><div class="injury-list"><b>赫尔辛基火花：</b><span>安特祖拉斯(后卫) 停赛</span><span>奥肖内西(后卫) 停赛</span><span>马尔科维奇(门将) 停赛</span><span>托伊沃宁(中场) 伤</span><span>艾泽克(前锋) 伤</span></div>
+<div class="section-title">🔬 模型参数</div>
+<div class="lambda-display">
+<div class="lambda-box"><div class="lambda-label">塞伊奈约基 λ_home</div><div class="lambda-value">1.26</div></div>
+<div class="lambda-box"><div class="lambda-label">赫尔辛基火花 λ_away</div><div class="lambda-value">1.16</div></div>
+<div class="lambda-box"><div class="lambda-label">总λ</div><div class="lambda-value">2.42</div></div>
+</div>
+
+<div class="fundamental-box">
+📊 模型概率：主胜 36.8% ｜ 平 30.9% ｜ 客胜 32.3%
+<br>📉 让球(-1)概率：让胜 16.9% ｜ 让平 19.9% ｜ 让负 63.2%
+<br>💰 预估赔率：2.2 / 3.25 / 2.9
+</div>
+<div class="section-title">🎯 6维度推荐</div><table class="reco-table"><tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th></tr><tr><td><b>胜平负</b></td><td class="highlight">主胜 36.8%</td><td>客胜 32.3%</td><td>平局 30.9%</td></tr><tr><td><b>让球(-1)</b></td><td class="highlight">让负 63.2%</td><td>让平 19.9%</td><td>让胜 16.9%</td></tr><tr><td><b>比分TOP5</b></td><td class="highlight">1-1 14.7%</td><td>0-0 10.6%</td><td>1-0 9.5%</td></tr><tr><td></td><td>0-1 8.7%</td><td>2-1 8.2%</td><td>1-2 7.6%</td></tr><tr><td><b>总进球</b></td><td class="highlight">2球 27.7%</td><td>3球 21.0%</td><td>1球 18.1%</td></tr><tr><td><b>半全场</b></td><td class="highlight">半平全平 23.9%</td><td>半胜全胜 16.9%</td><td>半平全胜 15.9%</td></tr><tr><td><b>半场比分</b></td><td class="highlight">0-0 35.0%</td><td>1-0 17.7%</td><td>0-1 16.3%</td></tr></table><div style="margin-top:12px;">置信度：<span class="confidence-badge conf-low">★</span></div></div>
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">周五004</span>
+<span class="match-title">桑纳菲尤尔 <span style="color:var(--text2)">VS</span> 奥斯陆KFUM</span>
+<span class="match-time">2026-08-08 01:00</span>
+</div>
+<div class="venue-weather">🏟️ 桑纳菲尤尔主场 ｜ ☁️ 多云 16°C</div>
+
+<div class="section-title">📋 基本面</div>
+<div class="info-text">两队同分保级对手；KFUM客场极差(0胜2平4负)；桑纳菲尤尔主场尚可(2胜3平2负)；首回合交锋心理优势</div>
+<div class="info-text"><b>桑纳菲尤尔</b>：15轮4胜3平8负，近6场1平4负，进13球联赛倒数</div>
+<div class="info-text"><b>奥斯陆KFUM</b>：同积15分，客场6场0胜2平4负仅2分</div>
+
+<div class="h2h-box">⚔️ 交锋记录：首回合桑纳菲尤尔客场2-1击败KFUM</div>
+<div class="section-title">🏥 伤停信息</div><div class="injury-list"><b>桑纳菲尤尔：</b><span>无重大伤停(-) -</span></div><div class="injury-list"><b>奥斯陆KFUM：</b><span>无重大伤停(-) -</span></div>
+<div class="section-title">🔬 模型参数</div>
+<div class="lambda-display">
+<div class="lambda-box"><div class="lambda-label">桑纳菲尤尔 λ_home</div><div class="lambda-value">1.35</div></div>
+<div class="lambda-box"><div class="lambda-label">奥斯陆KFUM λ_away</div><div class="lambda-value">1.07</div></div>
+<div class="lambda-box"><div class="lambda-label">总λ</div><div class="lambda-value">2.42</div></div>
+</div>
+
+<div class="fundamental-box">
+📊 模型概率：主胜 41.6% ｜ 平 30.5% ｜ 客胜 27.9%
+<br>📉 让球(-1)概率：让胜 20.2% ｜ 让平 21.4% ｜ 让负 58.4%
+<br>💰 预估赔率：2.15 / 3.3 / 3.1
+</div>
+<div class="section-title">🎯 6维度推荐</div><table class="reco-table"><tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th></tr><tr><td><b>胜平负</b></td><td class="highlight">主胜 41.6%</td><td>平局 30.5%</td><td>客胜 27.9%</td></tr><tr><td><b>让球(-1)</b></td><td class="highlight">让负 58.4%</td><td>让平 21.4%</td><td>让胜 20.2%</td></tr><tr><td><b>比分TOP5</b></td><td class="highlight">1-1 14.5%</td><td>0-0 10.5%</td><td>1-0 10.3%</td></tr><tr><td></td><td>2-1 8.7%</td><td>2-0 8.1%</td><td>0-1 7.8%</td></tr><tr><td><b>总进球</b></td><td class="highlight">2球 27.7%</td><td>3球 21.0%</td><td>1球 18.2%</td></tr><tr><td><b>半全场</b></td><td class="highlight">半平全平 23.4%</td><td>半胜全胜 21.1%</td><td>半平全胜 17.8%</td></tr><tr><td><b>半场比分</b></td><td class="highlight">0-0 34.9%</td><td>1-0 19.2%</td><td>0-1 14.9%</td></tr></table><div style="margin-top:12px;">置信度：<span class="confidence-badge conf-low">★</span></div></div>
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">周五005</span>
+<span class="match-title">坎布尔 <span style="color:var(--text2)">VS</span> SBV精英</span>
+<span class="match-time">2026-08-08 02:00</span>
+</div>
+<div class="venue-weather">🏟️ 科伊球场（吕伐登） ｜ ☁️ 多云 15°C</div>
+
+<div class="section-title">📋 基本面</div>
+<div class="info-text">荷甲揭幕战+70周年纪念赛季；坎布尔主力射手(22球)离队+中场核心伤缺；SBV精英热身5连胜状态火热；荷甲大球联赛avg 3.18</div>
+<div class="info-text"><b>坎布尔</b>：升班马，季前3场热身全败，7场仅1零封</div>
+<div class="info-text"><b>SBV精英</b>：升班马，季前5场热身全胜，含3-2胜坎布尔</div>
+
+<div class="h2h-box">⚔️ 交锋记录：季前热身赛SBV精英3-2击败坎布尔</div>
+<div class="section-title">🏥 伤停信息</div><div class="injury-list"><b>坎布尔：</b><span>维瑟(中场核心) 膝伤</span><span>费拉(前锋) 离队</span><span>肖斯特兰德(前锋) 离队</span></div><div class="injury-list"><b>SBV精英：</b><span>无主力伤停(-) -</span></div>
+<div class="section-title">🔬 模型参数</div>
+<div class="lambda-display">
+<div class="lambda-box"><div class="lambda-label">坎布尔 λ_home</div><div class="lambda-value">0.64</div></div>
+<div class="lambda-box"><div class="lambda-label">SBV精英 λ_away</div><div class="lambda-value">2.74</div></div>
+<div class="lambda-box"><div class="lambda-label">总λ</div><div class="lambda-value">3.39</div></div>
+</div>
+
+<div class="fundamental-box">
+📊 模型概率：主胜 5.4% ｜ 平 14.1% ｜ 客胜 80.5%
+<br>📉 让球(-1)概率：让胜 1.5% ｜ 让平 4.0% ｜ 让负 94.6%
+<br>💰 预估赔率：2.75 / 3.4 / 2.35
+</div>
+<div class="section-title">🎯 6维度推荐</div><table class="reco-table"><tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th></tr><tr><td><b>胜平负</b></td><td class="highlight">客胜 80.5%</td><td>平局 14.1%</td><td>主胜 5.4%</td></tr><tr><td><b>让球(-1)</b></td><td class="highlight">让负 94.6%</td><td>让平 4.0%</td><td>让胜 1.5%</td></tr><tr><td><b>比分TOP5</b></td><td class="highlight">0-2 12.8%</td><td>0-3 11.7%</td><td>0-1 8.5%</td></tr><tr><td></td><td>1-2 8.2%</td><td>0-4 8.0%</td><td>1-3 7.5%</td></tr><tr><td><b>总进球</b></td><td class="highlight">3球 21.9%</td><td>2球 20.2%</td><td>4球 18.6%</td></tr><tr><td><b>半全场</b></td><td class="highlight">半负全负 65.4%</td><td>半平全负 19.5%</td><td>半平全平 6.2%</td></tr><tr><td><b>半场比分</b></td><td class="highlight">0-1 25.9%</td><td>0-0 22.8%</td><td>0-2 16.6%</td></tr></table><div style="margin-top:12px;">置信度：<span class="confidence-badge conf-high">★★★</span></div></div>
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">周五006</span>
+<span class="match-title">奥斯 <span style="color:var(--text2)">VS</span> 布雷达</span>
+<span class="match-time">2026-08-08 02:00</span>
+</div>
+<div class="venue-weather">🏟️ 奥斯主场 ｜ ☁️ 多云 15°C</div>
+
+<div class="section-title">📋 基本面</div>
+<div class="info-text">奥斯18次交手从未赢过布雷达；布雷达降班马战意极强回荷甲；荷乙主场优势1.29；大球联赛avg 3.02</div>
+<div class="info-text"><b>奥斯</b>：近5场热身2胜3负，防守反击型</div>
+<div class="info-text"><b>布雷达</b>：降班马保留大量主力，热身3胜2负含击败英冠队</div>
+
+<div class="h2h-box">⚔️ 交锋记录：18次交手: 奥斯0胜7平11负，近6次0胜2平4负</div>
+<div class="section-title">🏥 伤停信息</div><div class="injury-list"><b>奥斯：</b><span>无重大伤停(-) -</span></div><div class="injury-list"><b>布雷达：</b><span>无重大伤停(-) -</span></div>
+<div class="section-title">🔬 模型参数</div>
+<div class="lambda-display">
+<div class="lambda-box"><div class="lambda-label">奥斯 λ_home</div><div class="lambda-value">0.86</div></div>
+<div class="lambda-box"><div class="lambda-label">布雷达 λ_away</div><div class="lambda-value">2.10</div></div>
+<div class="lambda-box"><div class="lambda-label">总λ</div><div class="lambda-value">2.96</div></div>
+</div>
+
+<div class="fundamental-box">
+📊 模型概率：主胜 13.0% ｜ 平 22.1% ｜ 客胜 64.8%
+<br>📉 让球(-1)概率：让胜 4.4% ｜ 让平 8.6% ｜ 让负 87.0%
+<br>💰 预估赔率：3.3 / 3.3 / 2.0
+</div>
+<div class="section-title">🎯 6维度推荐</div><table class="reco-table"><tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th></tr><tr><td><b>胜平负</b></td><td class="highlight">客胜 64.8%</td><td>平局 22.1%</td><td>主胜 13.0%</td></tr><tr><td><b>让球(-1)</b></td><td class="highlight">让负 87.0%</td><td>让平 8.6%</td><td>让胜 4.4%</td></tr><tr><td><b>比分TOP5</b></td><td class="highlight">0-2 11.5%</td><td>1-1 10.6%</td><td>1-2 9.8%</td></tr><tr><td></td><td>0-1 9.7%</td><td>0-3 8.0%</td><td>1-3 6.9%</td></tr><tr><td><b>总进球</b></td><td class="highlight">2球 24.0%</td><td>3球 22.4%</td><td>4球 16.6%</td></tr><tr><td><b>半全场</b></td><td class="highlight">半负全负 46.3%</td><td>半平全负 21.6%</td><td>半平全平 13.3%</td></tr><tr><td><b>半场比分</b></td><td class="highlight">0-0 27.7%</td><td>0-1 23.7%</td><td>0-2 11.8%</td></tr></table><div style="margin-top:12px;">置信度：<span class="confidence-badge conf-high">★★★</span></div></div>
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">周五007</span>
+<span class="match-title">埃门 <span style="color:var(--text2)">VS</span> 罗达JC</span>
+<span class="match-time">2026-08-08 02:00</span>
+</div>
+<div class="venue-weather">🏟️ 德奥德梅尔迪克球场 ｜ ☁️ 多云 15°C</div>
+
+<div class="section-title">📋 基本面</div>
+<div class="info-text">埃门中后场4名主力缺阵防线拼凑；罗达JC降班马硬实力更强+交锋压制；荷乙大球联赛；两队都偏开放</div>
+<div class="info-text"><b>埃门</b>：热身收官4-0大胜，攻强守弱型</div>
+<div class="info-text"><b>罗达JC</b>：降班马阵容厚实，仅2名轮换伤缺</div>
+
+<div class="h2h-box">⚔️ 交锋记录：罗达JC交锋史对埃门保持绝对压制</div>
+<div class="section-title">🏥 伤停信息</div><div class="injury-list"><b>埃门：</b><span>中后场4名主力(后卫/中场) 停赛+伤缺</span></div><div class="injury-list"><b>罗达JC：</b><span>2名轮换球员(替补) 伤</span></div>
+<div class="section-title">🔬 模型参数</div>
+<div class="lambda-display">
+<div class="lambda-box"><div class="lambda-label">埃门 λ_home</div><div class="lambda-value">0.88</div></div>
+<div class="lambda-box"><div class="lambda-label">罗达JC λ_away</div><div class="lambda-value">2.09</div></div>
+<div class="lambda-box"><div class="lambda-label">总λ</div><div class="lambda-value">2.97</div></div>
+</div>
+
+<div class="fundamental-box">
+📊 模型概率：主胜 13.5% ｜ 平 22.3% ｜ 客胜 64.2%
+<br>📉 让球(-1)概率：让胜 4.6% ｜ 让平 8.9% ｜ 让负 86.5%
+<br>💰 预估赔率：2.55 / 3.4 / 2.5
+</div>
+<div class="section-title">🎯 6维度推荐</div><table class="reco-table"><tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th></tr><tr><td><b>胜平负</b></td><td class="highlight">客胜 64.2%</td><td>平局 22.3%</td><td>主胜 13.5%</td></tr><tr><td><b>让球(-1)</b></td><td class="highlight">让负 86.5%</td><td>让平 8.9%</td><td>让胜 4.6%</td></tr><tr><td><b>比分TOP5</b></td><td class="highlight">0-2 11.2%</td><td>1-1 10.6%</td><td>1-2 9.9%</td></tr><tr><td></td><td>0-1 9.5%</td><td>0-3 7.8%</td><td>1-3 6.9%</td></tr><tr><td><b>总进球</b></td><td class="highlight">2球 23.8%</td><td>3球 22.4%</td><td>4球 16.7%</td></tr><tr><td><b>半全场</b></td><td class="highlight">半负全负 45.6%</td><td>半平全负 21.5%</td><td>半平全平 13.4%</td></tr><tr><td><b>半场比分</b></td><td class="highlight">0-0 27.5%</td><td>0-1 23.5%</td><td>0-2 11.6%</td></tr></table><div style="margin-top:12px;">置信度：<span class="confidence-badge conf-high">★★★</span></div></div>
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">周五008</span>
+<span class="match-title">波鸿 <span style="color:var(--text2)">VS</span> 柏林赫塔</span>
+<span class="match-time">2026-08-08 02:30</span>
+</div>
+<div class="venue-weather">🏟️ 鲁尔球场（波鸿） ｜ ☁️ 多云 18°C</div>
+
+<div class="section-title">📋 基本面</div>
+<div class="info-text">德乙揭幕战；波鸿主场强势+交锋5场不败；赫塔大清洗13人离队纸面减弱但热身不败；波鸿边后卫伤停边路有漏洞</div>
+<div class="info-text"><b>波鸿</b>：上赛季第9，热身2-0斯旺西/1-1阿贾克斯/0-0谢菲联，主场近11场仅输1次</div>
+<div class="info-text"><b>柏林赫塔</b>：13人离队含助攻王里泽，热身5场不败(9-0/3-1/3-2/1-1/2-2)</div>
+
+<div class="h2h-box">⚔️ 交锋记录：近5次交锋波鸿2胜3平不败，上赛季主场3-2险胜</div>
+<div class="section-title">🏥 伤停信息</div><div class="injury-list"><b>波鸿：</b><span>拉克内伯格(左后卫) 半月板伤</span><span>霍尔特曼(后卫) 术后恢复</span></div><div class="injury-list"><b>柏林赫塔：</b><span>克里斯滕森(-) 伤</span><span>其余全员健康(-) -</span></div>
+<div class="section-title">🔬 模型参数</div>
+<div class="lambda-display">
+<div class="lambda-box"><div class="lambda-label">波鸿 λ_home</div><div class="lambda-value">1.50</div></div>
+<div class="lambda-box"><div class="lambda-label">柏林赫塔 λ_away</div><div class="lambda-value">1.17</div></div>
+<div class="lambda-box"><div class="lambda-label">总λ</div><div class="lambda-value">2.67</div></div>
+</div>
+
+<div class="fundamental-box">
+📊 模型概率：主胜 43.4% ｜ 平 28.7% ｜ 客胜 27.9%
+<br>📉 让球(-1)概率：让胜 22.3% ｜ 让平 21.1% ｜ 让负 56.6%
+<br>💰 预估赔率：2.15 / 3.3 / 3.1
+</div>
+<div class="section-title">🎯 6维度推荐</div><table class="reco-table"><tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th></tr><tr><td><b>胜平负</b></td><td class="highlight">主胜 43.4%</td><td>平局 28.7%</td><td>客胜 27.9%</td></tr><tr><td><b>让球(-1)</b></td><td class="highlight">让负 56.6%</td><td>让胜 22.3%</td><td>让平 21.1%</td></tr><tr><td><b>比分TOP5</b></td><td class="highlight">1-1 13.7%</td><td>2-1 9.1%</td><td>1-0 8.8%</td></tr><tr><td></td><td>0-0 8.5%</td><td>2-0 7.8%</td><td>1-2 7.1%</td></tr><tr><td><b>总进球</b></td><td class="highlight">2球 26.3%</td><td>3球 22.0%</td><td>1球 15.3%</td></tr><tr><td><b>半全场</b></td><td class="highlight">半胜全胜 23.3%</td><td>半平全平 21.1%</td><td>半平全胜 17.7%</td></tr><tr><td><b>半场比分</b></td><td class="highlight">0-0 31.5%</td><td>1-0 18.9%</td><td>0-1 14.4%</td></tr></table><div style="margin-top:12px;">置信度：<span class="confidence-badge conf-low">★</span></div></div>
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">周五009</span>
+<span class="match-title">米德尔斯堡 <span style="color:var(--text2)">VS</span> 雷克斯汉姆</span>
+<span class="match-time">2026-08-08 03:00</span>
+</div>
+<div class="venue-weather">🏟️ 河畔球场（米德尔斯堡） ｜ ☁️ 多云 14°C</div>
+
+<div class="section-title">📋 基本面</div>
+<div class="info-text">联赛杯冷门杯特征：客场胜率反超主场；两队英冠级别；米堡5人伤缺季前赛全缺阵；雷克斯汉姆热身曾胜曼联；上赛季两次平局；杯赛战意不确定</div>
+<div class="info-text"><b>米德尔斯堡</b>：英冠第5冲超失败，新帅黑尔伯格首秀，热身3平1负</div>
+<div class="info-text"><b>雷克斯汉姆</b>：英冠第7创队史最佳，热身1-0胜曼联/3-2利兹联，但最近连负利物浦桑德兰</div>
+
+<div class="h2h-box">⚔️ 交锋记录：上赛季英冠两次交手全部打平(1-1/2-2)</div>
+<div class="section-title">🏥 伤停信息</div><div class="injury-list"><b>米德尔斯堡：</b><span>班古拉(-) 伤</span><span>琼斯(-) 伤</span><span>麦格里(-) 伤</span><span>康威(-) 伤</span><span>约瑟夫(-) 伤</span></div><div class="injury-list"><b>雷克斯汉姆：</b><span>哈迪(前锋) 大腿伤</span><span>李(-) 伤</span><span>温达斯(-) 伤</span></div>
+<div class="section-title">🔬 模型参数</div>
+<div class="lambda-display">
+<div class="lambda-box"><div class="lambda-label">米德尔斯堡 λ_home</div><div class="lambda-value">0.90</div></div>
+<div class="lambda-box"><div class="lambda-label">雷克斯汉姆 λ_away</div><div class="lambda-value">1.03</div></div>
+<div class="lambda-box"><div class="lambda-label">总λ</div><div class="lambda-value">1.92</div></div>
+</div>
+
+<div class="fundamental-box">
+📊 模型概率：主胜 29.0% ｜ 平 35.0% ｜ 客胜 36.0%
+<br>📉 让球(-1)概率：让胜 10.6% ｜ 让平 18.4% ｜ 让负 71.0%
+<br>💰 预估赔率：2.25 / 3.25 / 2.85
+</div>
+<div class="section-title">🎯 6维度推荐</div><table class="reco-table"><tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th></tr><tr><td><b>胜平负</b></td><td class="highlight">客胜 36.0%</td><td>平局 35.0%</td><td>主胜 29.0%</td></tr><tr><td><b>让球(-1)</b></td><td class="highlight">让负 71.0%</td><td>让平 18.4%</td><td>让胜 10.6%</td></tr><tr><td><b>比分TOP5</b></td><td class="highlight">0-0 16.4%</td><td>1-1 15.2%</td><td>0-1 13.3%</td></tr><tr><td></td><td>1-0 11.3%</td><td>0-2 7.7%</td><td>1-2 6.9%</td></tr><tr><td><b>总进球</b></td><td class="highlight">2球 28.8%</td><td>1球 24.6%</td><td>3球 17.3%</td></tr><tr><td><b>半全场</b></td><td class="highlight">半平全平 29.7%</td><td>半平全负 17.0%</td><td>半负全负 15.1%</td></tr><tr><td><b>半场比分</b></td><td class="highlight">0-0 43.1%</td><td>0-1 18.4%</td><td>1-0 15.9%</td></tr></table><div style="margin-top:12px;">置信度：<span class="confidence-badge conf-low">★</span></div></div>
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">周五010</span>
+<span class="match-title">埃斯托里尔 <span style="color:var(--text2)">VS</span> 法马利康</span>
+<span class="match-time">2026-08-08 03:15</span>
+</div>
+<div class="venue-weather">🏟️ 埃斯托里尔主场 ｜ ☀️ 晴 22°C</div>
+
+<div class="section-title">📋 基本面</div>
+<div class="info-text">葡超揭幕战；埃斯托里尔新帅7月才上任磨合不足+中卫伤缺；法马利康防守联赛顶尖(35失球)+交锋绝对压制；贝格拉维(20球)留队是主队利好</div>
+<div class="info-text"><b>埃斯托里尔</b>：上赛季第10，最后14轮仅2胜8场不胜，热身1胜2平1负</div>
+<div class="info-text"><b>法马利康</b>：上赛季第5创队史最佳，最后12轮6胜6平不败，热身8场4胜</div>
+
+<div class="h2h-box">⚔️ 交锋记录：近5次: 法马利康4胜1负，上赛季双杀(0-1/0-4)，近3次埃斯托里尔一球未进丢7球</div>
+<div class="section-title">🏥 伤停信息</div><div class="injury-list"><b>埃斯托里尔：</b><span>博马(中卫) 伤</span></div><div class="injury-list"><b>法马利康：</b><span>无主力伤停(-) -</span></div>
+<div class="section-title">🔬 模型参数</div>
+<div class="lambda-display">
+<div class="lambda-box"><div class="lambda-label">埃斯托里尔 λ_home</div><div class="lambda-value">0.65</div></div>
+<div class="lambda-box"><div class="lambda-label">法马利康 λ_away</div><div class="lambda-value">1.86</div></div>
+<div class="lambda-box"><div class="lambda-label">总λ</div><div class="lambda-value">2.51</div></div>
+</div>
+
+<div class="fundamental-box">
+📊 模型概率：主胜 11.0% ｜ 平 23.9% ｜ 客胜 65.1%
+<br>📉 让球(-1)概率：让胜 3.1% ｜ 让平 7.9% ｜ 让负 89.0%
+<br>💰 预估赔率：2.75 / 3.15 / 2.45
+</div>
+<div class="section-title">🎯 6维度推荐</div><table class="reco-table"><tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th></tr><tr><td><b>胜平负</b></td><td class="highlight">客胜 65.1%</td><td>平局 23.9%</td><td>主胜 11.0%</td></tr><tr><td><b>让球(-1)</b></td><td class="highlight">让负 89.0%</td><td>让平 7.9%</td><td>让胜 3.1%</td></tr><tr><td><b>比分TOP5</b></td><td class="highlight">0-2 14.1%</td><td>0-1 13.8%</td><td>1-1 11.1%</td></tr><tr><td></td><td>0-0 9.4%</td><td>1-2 9.1%</td><td>0-3 8.7%</td></tr><tr><td><b>总进球</b></td><td class="highlight">2球 26.9%</td><td>3球 21.4%</td><td>1球 17.8%</td></tr><tr><td><b>半全场</b></td><td class="highlight">半负全负 44.9%</td><td>半平全负 23.2%</td><td>半平全平 15.3%</td></tr><tr><td><b>半场比分</b></td><td class="highlight">0-0 33.3%</td><td>0-1 26.0%</td><td>0-2 11.3%</td></tr></table><div style="margin-top:12px;">置信度：<span class="confidence-badge conf-high">★★★</span></div></div>
+<div class="parlay-section">
+<h2 style="color: var(--accent3); margin-bottom: 16px;">🔗 串关思路</h2>
+<div class="parlay-item">
+<b>稳健2串1：</b>003 塞伊奈约基主胜/平 + 005 SBV精英客胜/平
+<br><span style="color:var(--text2);font-size:12px;">赫尔辛基7-8人伤停+轮换，塞伊奈约基刚3-0大胜；SBV精英热身5连胜，坎布尔主力射手离队+核心伤缺</span>
+</div>
+<div class="parlay-item">
+<b>价值3串1：</b>008 波鸿主胜/平 + 010 法马利康客胜/平 + 001 鹿岛客胜/平
+<br><span style="color:var(--text2);font-size:12px;">波鸿主场强势+交锋5场不败；法马利康交锋绝对压制+防守顶尖；鹿岛卫冕冠军整体实力占优</span>
+</div>
+<div class="parlay-item">
+<b>博冷2串1：</b>001 横滨水手主胜/平 + 009 米德尔斯堡主胜/平
+<br><span style="color:var(--text2);font-size:12px;">横滨交锋记录实际占优(6胜1平3负)被市场低估；米堡主场+新帅首秀战意</span>
+</div>
+</div>
+
+<div class="parlay-section">
+<h2 style="color: var(--accent3); margin-bottom: 16px;">📌 本轮四大规律</h2>
+<div class="info-text"><b>1. 赛季揭幕战不确定性高：</b>001/002日职、005荷甲、006/007荷乙、008德乙、010葡超均为新赛季揭幕战/首轮。热身赛状态参考性有限，lambda已统一×0.95修正。</div>
+<div class="info-text"><b>2. 中文平台信息可信度低：</b>头条文章声称"鹿岛近9次交手赢8场"，但体彩官方数据显示横滨水手近10次交锋6胜1平3负占优。规则25再次验证：中文平台伤停/交锋信息禁止直接引用。</div>
+<div class="info-text"><b>3. 伤停是第一生命线：</b>003赫尔辛基7-8人缺阵（门将+双后卫停赛）、002大阪钢巴门将+双前锋缺阵、005坎布尔主力射手离队+核心伤缺，均对lambda产生重大影响（×0.62~0.75）。</div>
+<div class="info-text"><b>4. 联赛杯主场优势反常：</b>009英联赛杯主场优势系数0.80（客场胜率48.5%>主场39.4%），与其他联赛完全相反，已做特殊修正。</div>
+</div>
+
+<div class="footer">
+<p>分析时间：2026-08-07 | 数据来源：体彩官方sporttery.cn + 公开信息整理 | 模型：Dixon-Coles泊松分布</p>
+<p>⚠️ 本分析仅供交流参考，不构成投注建议。请理性观赛，量力而行。</p>
+</div>
+</div>
+</body>
+</html>

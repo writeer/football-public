@@ -1,0 +1,2241 @@
+{
+ "backtest_id": "20260919_saturday",
+ "match_date": "2026-09-19",
+ "weekday": "周六",
+ "model_version": "v2.14.0（含65/66/67/68/69/63口径）",
+ "total_matches": 30,
+ "leagues": [
+  "日职",
+  "日乙",
+  "韩职",
+  "英超",
+  "英冠",
+  "西甲",
+  "意甲",
+  "德甲",
+  "法甲",
+  "瑞超",
+  "挪超",
+  "荷甲",
+  "葡超",
+  "巴甲"
+ ],
+ "summary": {
+  "方向_首选加次选": "20/30 = 66.7%",
+  "方向_仅首选": "15/30 = 50.0%",
+  "让球_首选加次选": "21/30 = 70.0%",
+  "让球_仅首选": "13/30 = 43.3%",
+  "总进球TOP2": "18/30 = 60.0%",
+  "半全场TOP3": "16/30 = 53.3%",
+  "比分TOP5": "18/30 = 60.0%",
+  "串关": "3/29 = 10.3%（稳健类1/11=9.1%，娱乐串2/18=11.1%）",
+  "净胜球众数": "k_dist 8/30=26.7%，k_rec 8/30=26.7%，带内候选TOP3 7/30=23.3%",
+  "最大亮点": "028塞维利亚1-3巴萨：方向/让球/总进球/半全场/比分五项全中且均首选",
+  "最大翻车": "021森林0-1考文垂：本轮唯一★★★场次，五项全失"
+ },
+ "results": [
+  {
+   "num": "周六001",
+   "home": "长崎航海",
+   "away": "大阪樱花",
+   "league": "日职",
+   "score": "1-1",
+   "ht": "1-0",
+   "tot": 2,
+   "d_act": "平局",
+   "d_act_cn": "d",
+   "pick": "客胜",
+   "second": "主胜",
+   "hit_dir": "❌",
+   "line": 1.0,
+   "hh_first": "让胜",
+   "hh_second": "让负",
+   "line_act": "让胜",
+   "hit_hh": "✅首",
+   "hit_hh_any": true,
+   "ttg_top": [
+    2,
+    3
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "平负",
+    "负负",
+    "平平"
+   ],
+   "htft": "胜平",
+   "hit_h": false,
+   "crs_top5": [
+    "1-1",
+    "1-2",
+    "0-1",
+    "2-1",
+    "0-2"
+   ],
+   "hit_s": true,
+   "k_dist": 0,
+   "k_rec": -1,
+   "consistent": false,
+   "net": 0,
+   "hit_kd": true,
+   "hit_kr": false,
+   "band": [
+    "1-2",
+    "0-1",
+    "2-3"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六002",
+   "home": "藤枝MYFC",
+   "away": "大宫松鼠",
+   "league": "日乙",
+   "score": "1-1",
+   "ht": "1-0",
+   "tot": 2,
+   "d_act": "平局",
+   "d_act_cn": "d",
+   "pick": "客胜",
+   "second": "主胜",
+   "hit_dir": "❌",
+   "line": 1.0,
+   "hh_first": "让胜",
+   "hh_second": "让负",
+   "line_act": "让胜",
+   "hit_hh": "✅首",
+   "hit_hh_any": true,
+   "ttg_top": [
+    3,
+    2
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "负负",
+    "胜胜",
+    "平负"
+   ],
+   "htft": "胜平",
+   "hit_h": false,
+   "crs_top5": [
+    "1-1",
+    "1-2",
+    "2-1",
+    "2-2",
+    "0-2"
+   ],
+   "hit_s": true,
+   "k_dist": 0,
+   "k_rec": -1,
+   "consistent": false,
+   "net": 0,
+   "hit_kd": true,
+   "hit_kr": false,
+   "band": [
+    "1-2",
+    "0-1",
+    "2-3"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六003",
+   "home": "安养FC",
+   "away": "蔚山现代",
+   "league": "韩职",
+   "score": "2-1",
+   "ht": "1-0",
+   "tot": 3,
+   "d_act": "主胜",
+   "d_act_cn": "h",
+   "pick": "客胜",
+   "second": "平局",
+   "hit_dir": "❌",
+   "line": 1.0,
+   "hh_first": "让胜",
+   "hh_second": "让负",
+   "line_act": "让胜",
+   "hit_hh": "✅首",
+   "hit_hh_any": true,
+   "ttg_top": [
+    3,
+    2
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "平负",
+    "负负",
+    "平平"
+   ],
+   "htft": "胜胜",
+   "hit_h": false,
+   "crs_top5": [
+    "1-1",
+    "1-2",
+    "0-1",
+    "0-2",
+    "2-1"
+   ],
+   "hit_s": true,
+   "k_dist": 0,
+   "k_rec": -1,
+   "consistent": false,
+   "net": 1,
+   "hit_kd": false,
+   "hit_kr": false,
+   "band": [
+    "1-2",
+    "0-1",
+    "2-3"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六004",
+   "home": "横滨水手",
+   "away": "水户蜀葵",
+   "league": "日职",
+   "score": "2-0",
+   "ht": "1-0",
+   "tot": 2,
+   "d_act": "主胜",
+   "d_act_cn": "h",
+   "pick": "主胜",
+   "second": "平局",
+   "hit_dir": "✅首",
+   "line": -1.0,
+   "hh_first": "让负",
+   "hh_second": "让胜",
+   "line_act": "让胜",
+   "hit_hh": "✅次",
+   "hit_hh_any": true,
+   "ttg_top": [
+    2,
+    3
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "平胜",
+    "胜胜",
+    "平平"
+   ],
+   "htft": "胜胜",
+   "hit_h": true,
+   "crs_top5": [
+    "1-1",
+    "1-0",
+    "2-1",
+    "2-0",
+    "1-2"
+   ],
+   "hit_s": true,
+   "k_dist": 0,
+   "k_rec": 1,
+   "consistent": false,
+   "net": 2,
+   "hit_kd": false,
+   "hit_kr": false,
+   "band": [
+    "1-0",
+    "2-1",
+    "3-2"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六005",
+   "home": "热刺",
+   "away": "维拉",
+   "league": "英超",
+   "score": "2-3",
+   "ht": "0-1",
+   "tot": 5,
+   "d_act": "客胜",
+   "d_act_cn": "a",
+   "pick": "主胜",
+   "second": "平局",
+   "hit_dir": "❌",
+   "line": -1.0,
+   "hh_first": "让负",
+   "hh_second": "让胜",
+   "line_act": "让负",
+   "hit_hh": "✅首",
+   "hit_hh_any": true,
+   "ttg_top": [
+    2,
+    3
+   ],
+   "hit_t": false,
+   "hafu_top3": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "htft": "负负",
+   "hit_h": false,
+   "crs_top5": [
+    "1-1",
+    "2-1",
+    "1-0",
+    "2-0",
+    "1-2"
+   ],
+   "hit_s": false,
+   "k_dist": 0,
+   "k_rec": 1,
+   "consistent": false,
+   "net": -1,
+   "hit_kd": false,
+   "hit_kr": false,
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六006",
+   "home": "斯托克城",
+   "away": "谢菲联",
+   "league": "英冠",
+   "score": "2-1",
+   "ht": "0-0",
+   "tot": 3,
+   "d_act": "主胜",
+   "d_act_cn": "h",
+   "pick": "主胜",
+   "second": "客胜",
+   "hit_dir": "✅首",
+   "line": -1.0,
+   "hh_first": "让负",
+   "hh_second": "让平",
+   "line_act": "让平",
+   "hit_hh": "✅次",
+   "hit_hh_any": true,
+   "ttg_top": [
+    2,
+    3
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "平平",
+    "胜胜",
+    "负负"
+   ],
+   "htft": "平胜",
+   "hit_h": false,
+   "crs_top5": [
+    "1-1",
+    "1-0",
+    "2-1",
+    "1-2",
+    "0-1"
+   ],
+   "hit_s": true,
+   "k_dist": 0,
+   "k_rec": 1,
+   "consistent": false,
+   "net": 1,
+   "hit_kd": false,
+   "hit_kr": true,
+   "band": [
+    "1-0",
+    "2-1",
+    "3-2"
+   ],
+   "hit_band": true,
+   "conf": "高"
+  },
+  {
+   "num": "周六007",
+   "home": "奥萨苏纳",
+   "away": "巴列卡诺",
+   "league": "西甲",
+   "score": "1-1",
+   "ht": "1-0",
+   "tot": 2,
+   "d_act": "平局",
+   "d_act_cn": "d",
+   "pick": "主胜",
+   "second": "客胜",
+   "hit_dir": "❌",
+   "line": -1.0,
+   "hh_first": "让负",
+   "hh_second": "让平",
+   "line_act": "让负",
+   "hit_hh": "✅首",
+   "hit_hh_any": true,
+   "ttg_top": [
+    2,
+    3
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "平胜",
+    "胜胜",
+    "平平"
+   ],
+   "htft": "胜平",
+   "hit_h": false,
+   "crs_top5": [
+    "1-1",
+    "1-0",
+    "2-1",
+    "0-1",
+    "1-2"
+   ],
+   "hit_s": true,
+   "k_dist": 0,
+   "k_rec": 1,
+   "consistent": false,
+   "net": 0,
+   "hit_kd": true,
+   "hit_kr": false,
+   "band": [
+    "1-0",
+    "2-1",
+    "3-2"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六008",
+   "home": "乌迪内斯",
+   "away": "卡利亚里",
+   "league": "意甲",
+   "score": "0-1",
+   "ht": "0-0",
+   "tot": 1,
+   "d_act": "客胜",
+   "d_act_cn": "a",
+   "pick": "主胜",
+   "second": "平局",
+   "hit_dir": "❌",
+   "line": -1.0,
+   "hh_first": "让负",
+   "hh_second": "让胜",
+   "line_act": "让负",
+   "hit_hh": "✅首",
+   "hit_hh_any": true,
+   "ttg_top": [
+    2,
+    3
+   ],
+   "hit_t": false,
+   "hafu_top3": [
+    "平胜",
+    "胜胜",
+    "平平"
+   ],
+   "htft": "平负",
+   "hit_h": false,
+   "crs_top5": [
+    "1-1",
+    "2-1",
+    "1-0",
+    "0-0",
+    "2-0"
+   ],
+   "hit_s": false,
+   "k_dist": 0,
+   "k_rec": 1,
+   "consistent": false,
+   "net": -1,
+   "hit_kd": false,
+   "hit_kr": false,
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六009",
+   "home": "博洛尼亚",
+   "away": "都灵",
+   "league": "意甲",
+   "score": "1-1",
+   "ht": "1-0",
+   "tot": 2,
+   "d_act": "平局",
+   "d_act_cn": "d",
+   "pick": "主胜",
+   "second": "平局",
+   "hit_dir": "✅次",
+   "line": -1.0,
+   "hh_first": "让负",
+   "hh_second": "让胜",
+   "line_act": "让负",
+   "hit_hh": "✅首",
+   "hit_hh_any": true,
+   "ttg_top": [
+    2,
+    3
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "平胜",
+    "胜胜",
+    "平平"
+   ],
+   "htft": "胜平",
+   "hit_h": false,
+   "crs_top5": [
+    "1-1",
+    "1-0",
+    "2-1",
+    "2-0",
+    "0-0"
+   ],
+   "hit_s": true,
+   "k_dist": 0,
+   "k_rec": 1,
+   "consistent": false,
+   "net": 0,
+   "hit_kd": true,
+   "hit_kr": false,
+   "band": [
+    "1-0",
+    "2-1",
+    "3-2"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六010",
+   "home": "韦斯特罗",
+   "away": "马尔默",
+   "league": "瑞超",
+   "score": "2-0",
+   "ht": "1-0",
+   "tot": 2,
+   "d_act": "主胜",
+   "d_act_cn": "h",
+   "pick": "客胜",
+   "second": "主胜",
+   "hit_dir": "✅次",
+   "line": 1.0,
+   "hh_first": "让胜",
+   "hh_second": "让负",
+   "line_act": "让胜",
+   "hit_hh": "✅首",
+   "hit_hh_any": true,
+   "ttg_top": [
+    3,
+    2
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "平负",
+    "负负",
+    "胜胜"
+   ],
+   "htft": "胜胜",
+   "hit_h": true,
+   "crs_top5": [
+    "1-1",
+    "1-2",
+    "0-2",
+    "0-1",
+    "2-1"
+   ],
+   "hit_s": false,
+   "k_dist": 0,
+   "k_rec": -1,
+   "consistent": false,
+   "net": 2,
+   "hit_kd": false,
+   "hit_kr": false,
+   "band": [
+    "1-2",
+    "0-1",
+    "2-3"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六011",
+   "home": "法兰克福",
+   "away": "弗赖堡",
+   "league": "德甲",
+   "score": "2-2",
+   "ht": "2-1",
+   "tot": 4,
+   "d_act": "平局",
+   "d_act_cn": "d",
+   "pick": "主胜",
+   "second": "客胜",
+   "hit_dir": "❌",
+   "line": -1.0,
+   "hh_first": "让负",
+   "hh_second": "让胜",
+   "line_act": "让负",
+   "hit_hh": "✅首",
+   "hit_hh_any": true,
+   "ttg_top": [
+    3,
+    2
+   ],
+   "hit_t": false,
+   "hafu_top3": [
+    "胜胜",
+    "负负",
+    "平胜"
+   ],
+   "htft": "胜平",
+   "hit_h": false,
+   "crs_top5": [
+    "1-1",
+    "2-1",
+    "1-2",
+    "2-2",
+    "1-0"
+   ],
+   "hit_s": true,
+   "k_dist": 0,
+   "k_rec": 1,
+   "consistent": false,
+   "net": 0,
+   "hit_kd": true,
+   "hit_kr": false,
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六012",
+   "home": "汉堡",
+   "away": "科隆",
+   "league": "德甲",
+   "score": "2-1",
+   "ht": "1-0",
+   "tot": 3,
+   "d_act": "主胜",
+   "d_act_cn": "h",
+   "pick": "主胜",
+   "second": "客胜",
+   "hit_dir": "✅首",
+   "line": -1.0,
+   "hh_first": "让负",
+   "hh_second": "让胜",
+   "line_act": "让平",
+   "hit_hh": "❌",
+   "hit_hh_any": false,
+   "ttg_top": [
+    3,
+    2
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "负负",
+    "胜胜",
+    "平平"
+   ],
+   "htft": "胜胜",
+   "hit_h": true,
+   "crs_top5": [
+    "1-1",
+    "1-2",
+    "2-1",
+    "2-2",
+    "0-1"
+   ],
+   "hit_s": true,
+   "k_dist": 0,
+   "k_rec": 1,
+   "consistent": false,
+   "net": 1,
+   "hit_kd": false,
+   "hit_kr": true,
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ],
+   "hit_band": true,
+   "conf": "高"
+  },
+  {
+   "num": "周六013",
+   "home": "门兴",
+   "away": "美因茨",
+   "league": "德甲",
+   "score": "3-4",
+   "ht": "1-2",
+   "tot": 7,
+   "d_act": "客胜",
+   "d_act_cn": "a",
+   "pick": "客胜",
+   "second": "主胜",
+   "hit_dir": "✅首",
+   "line": 1.0,
+   "hh_first": "让胜",
+   "hh_second": "让负",
+   "line_act": "让平",
+   "hit_hh": "❌",
+   "hit_hh_any": false,
+   "ttg_top": [
+    3,
+    4
+   ],
+   "hit_t": false,
+   "hafu_top3": [
+    "负负",
+    "胜胜",
+    "平负"
+   ],
+   "htft": "负负",
+   "hit_h": true,
+   "crs_top5": [
+    "1-1",
+    "1-2",
+    "2-1",
+    "2-2",
+    "1-3"
+   ],
+   "hit_s": false,
+   "k_dist": 0,
+   "k_rec": -1,
+   "consistent": false,
+   "net": -1,
+   "hit_kd": false,
+   "hit_kr": true,
+   "band": [
+    "1-2",
+    "0-1",
+    "2-3"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六014",
+   "home": "不来梅",
+   "away": "奥格斯堡",
+   "league": "德甲",
+   "score": "3-2",
+   "ht": "0-1",
+   "tot": 5,
+   "d_act": "主胜",
+   "d_act_cn": "h",
+   "pick": "主胜",
+   "second": "客胜",
+   "hit_dir": "✅首",
+   "line": -1.0,
+   "hh_first": "让负",
+   "hh_second": "让胜",
+   "line_act": "让平",
+   "hit_hh": "❌",
+   "hit_hh_any": false,
+   "ttg_top": [
+    3,
+    4
+   ],
+   "hit_t": false,
+   "hafu_top3": [
+    "胜胜",
+    "负负",
+    "平胜"
+   ],
+   "htft": "负胜",
+   "hit_h": false,
+   "crs_top5": [
+    "1-1",
+    "2-1",
+    "1-2",
+    "2-2",
+    "3-1"
+   ],
+   "hit_s": false,
+   "k_dist": 0,
+   "k_rec": 1,
+   "consistent": false,
+   "net": 1,
+   "hit_kd": false,
+   "hit_kr": true,
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ],
+   "hit_band": true,
+   "conf": "高"
+  },
+  {
+   "num": "周六015",
+   "home": "埃弗顿",
+   "away": "伊普斯",
+   "league": "英超",
+   "score": "1-0",
+   "ht": "1-0",
+   "tot": 1,
+   "d_act": "主胜",
+   "d_act_cn": "h",
+   "pick": "主胜",
+   "second": "平局",
+   "hit_dir": "✅首",
+   "line": -1.0,
+   "hh_first": "让负",
+   "hh_second": "让胜",
+   "line_act": "让平",
+   "hit_hh": "❌",
+   "hit_hh_any": false,
+   "ttg_top": [
+    2,
+    3
+   ],
+   "hit_t": false,
+   "hafu_top3": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "htft": "胜胜",
+   "hit_h": true,
+   "crs_top5": [
+    "1-1",
+    "2-1",
+    "1-0",
+    "2-0",
+    "3-1"
+   ],
+   "hit_s": true,
+   "k_dist": 0,
+   "k_rec": 1,
+   "consistent": false,
+   "net": 1,
+   "hit_kd": false,
+   "hit_kr": true,
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ],
+   "hit_band": true,
+   "conf": "高"
+  },
+  {
+   "num": "周六016",
+   "home": "纽卡斯尔",
+   "away": "赫尔城",
+   "league": "英超",
+   "score": "2-1",
+   "ht": "2-0",
+   "tot": 3,
+   "d_act": "主胜",
+   "d_act_cn": "h",
+   "pick": "主胜",
+   "second": "平局",
+   "hit_dir": "✅首",
+   "line": -1.0,
+   "hh_first": "让平",
+   "hh_second": "让胜",
+   "line_act": "让平",
+   "hit_hh": "✅首",
+   "hit_hh_any": true,
+   "ttg_top": [
+    3,
+    2
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "htft": "胜胜",
+   "hit_h": true,
+   "crs_top5": [
+    "2-0",
+    "2-1",
+    "1-1",
+    "1-0",
+    "3-0"
+   ],
+   "hit_s": true,
+   "k_dist": 1,
+   "k_rec": 1,
+   "consistent": true,
+   "net": 1,
+   "hit_kd": true,
+   "hit_kr": true,
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ],
+   "hit_band": true,
+   "conf": "高"
+  },
+  {
+   "num": "周六017",
+   "home": "克里斯蒂",
+   "away": "罗森博格",
+   "league": "挪超",
+   "score": "1-3",
+   "ht": "1-1",
+   "tot": 4,
+   "d_act": "客胜",
+   "d_act_cn": "a",
+   "pick": "客胜",
+   "second": "平局",
+   "hit_dir": "✅首",
+   "line": 1.0,
+   "hh_first": "让平",
+   "hh_second": "让负",
+   "line_act": "让负",
+   "hit_hh": "✅次",
+   "hit_hh_any": true,
+   "ttg_top": [
+    3,
+    4
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "负负",
+    "平负",
+    "胜胜"
+   ],
+   "htft": "平负",
+   "hit_h": true,
+   "crs_top5": [
+    "1-2",
+    "1-3",
+    "0-2",
+    "1-1",
+    "0-3"
+   ],
+   "hit_s": true,
+   "k_dist": -1,
+   "k_rec": -1,
+   "consistent": true,
+   "net": -2,
+   "hit_kd": false,
+   "hit_kr": false,
+   "band": [
+    "1-2",
+    "0-1",
+    "2-3"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六018",
+   "home": "毕尔巴鄂",
+   "away": "阿拉维斯",
+   "league": "西甲",
+   "score": "0-0",
+   "ht": "0-0",
+   "tot": 0,
+   "d_act": "平局",
+   "d_act_cn": "d",
+   "pick": "主胜",
+   "second": "平局",
+   "hit_dir": "✅次",
+   "line": -1.0,
+   "hh_first": "让平",
+   "hh_second": "让胜",
+   "line_act": "让负",
+   "hit_hh": "❌",
+   "hit_hh_any": false,
+   "ttg_top": [
+    2,
+    3
+   ],
+   "hit_t": false,
+   "hafu_top3": [
+    "平胜",
+    "胜胜",
+    "平平"
+   ],
+   "htft": "平平",
+   "hit_h": true,
+   "crs_top5": [
+    "2-0",
+    "1-1",
+    "1-0",
+    "2-1",
+    "3-0"
+   ],
+   "hit_s": false,
+   "k_dist": 1,
+   "k_rec": 1,
+   "consistent": true,
+   "net": 0,
+   "hit_kd": false,
+   "hit_kr": false,
+   "band": [
+    "1-0",
+    "2-1",
+    "3-2"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六019",
+   "home": "巴黎FC",
+   "away": "斯特拉斯",
+   "league": "法甲",
+   "score": "2-1",
+   "ht": "1-0",
+   "tot": 3,
+   "d_act": "主胜",
+   "d_act_cn": "h",
+   "pick": "主胜",
+   "second": "平局",
+   "hit_dir": "✅首",
+   "line": -1.0,
+   "hh_first": "让负",
+   "hh_second": "让胜",
+   "line_act": "让平",
+   "hit_hh": "❌",
+   "hit_hh_any": false,
+   "ttg_top": [
+    3,
+    2
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "胜胜",
+    "平胜",
+    "负负"
+   ],
+   "htft": "胜胜",
+   "hit_h": true,
+   "crs_top5": [
+    "1-1",
+    "2-1",
+    "1-0",
+    "2-0",
+    "1-2"
+   ],
+   "hit_s": true,
+   "k_dist": 0,
+   "k_rec": 1,
+   "consistent": false,
+   "net": 1,
+   "hit_kd": false,
+   "hit_kr": true,
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ],
+   "hit_band": true,
+   "conf": "高"
+  },
+  {
+   "num": "周六020",
+   "home": "罗马",
+   "away": "国际米兰",
+   "league": "意甲",
+   "score": "2-2",
+   "ht": "2-0",
+   "tot": 4,
+   "d_act": "平局",
+   "d_act_cn": "d",
+   "pick": "客胜",
+   "second": "主胜",
+   "hit_dir": "❌",
+   "line": -1.0,
+   "hh_first": "让负",
+   "hh_second": "让平",
+   "line_act": "让负",
+   "hit_hh": "✅首",
+   "hit_hh_any": true,
+   "ttg_top": [
+    3,
+    2
+   ],
+   "hit_t": false,
+   "hafu_top3": [
+    "平负",
+    "负负",
+    "胜胜"
+   ],
+   "htft": "胜平",
+   "hit_h": false,
+   "crs_top5": [
+    "1-1",
+    "1-2",
+    "2-1",
+    "2-2",
+    "0-1"
+   ],
+   "hit_s": true,
+   "k_dist": 0,
+   "k_rec": -1,
+   "consistent": false,
+   "net": 0,
+   "hit_kd": true,
+   "hit_kr": false,
+   "band": [
+    "1-2",
+    "0-1",
+    "2-3"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六021",
+   "home": "诺丁汉",
+   "away": "考文垂",
+   "league": "英超",
+   "score": "0-1",
+   "ht": "0-0",
+   "tot": 1,
+   "d_act": "客胜",
+   "d_act_cn": "a",
+   "pick": "主胜",
+   "second": "平局",
+   "hit_dir": "❌",
+   "line": -1.0,
+   "hh_first": "让平",
+   "hh_second": "让负",
+   "line_act": "让负",
+   "hit_hh": "✅次",
+   "hit_hh_any": true,
+   "ttg_top": [
+    2,
+    3
+   ],
+   "hit_t": false,
+   "hafu_top3": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "htft": "平负",
+   "hit_h": false,
+   "crs_top5": [
+    "1-0",
+    "2-0",
+    "1-1",
+    "2-1",
+    "3-0"
+   ],
+   "hit_s": false,
+   "k_dist": 1,
+   "k_rec": 1,
+   "consistent": true,
+   "net": -1,
+   "hit_kd": false,
+   "hit_kr": false,
+   "band": [
+    "1-0",
+    "2-1",
+    "3-2"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六022",
+   "home": "斯图加特",
+   "away": "多特蒙德",
+   "league": "德甲",
+   "score": "0-1",
+   "ht": "0-0",
+   "tot": 1,
+   "d_act": "客胜",
+   "d_act_cn": "a",
+   "pick": "主胜",
+   "second": "客胜",
+   "hit_dir": "✅次",
+   "line": -1.0,
+   "hh_first": "让负",
+   "hh_second": "让胜",
+   "line_act": "让负",
+   "hit_hh": "✅首",
+   "hit_hh_any": true,
+   "ttg_top": [
+    3,
+    4
+   ],
+   "hit_t": false,
+   "hafu_top3": [
+    "胜胜",
+    "负负",
+    "平胜"
+   ],
+   "htft": "平负",
+   "hit_h": false,
+   "crs_top5": [
+    "1-1",
+    "2-1",
+    "1-2",
+    "2-2",
+    "3-1"
+   ],
+   "hit_s": false,
+   "k_dist": 0,
+   "k_rec": 1,
+   "consistent": false,
+   "net": -1,
+   "hit_kd": false,
+   "hit_kr": false,
+   "band": [
+    "2-1",
+    "3-2",
+    "1-0"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六023",
+   "home": "塞尔塔",
+   "away": "桑坦德",
+   "league": "西甲",
+   "score": "5-0",
+   "ht": "2-0",
+   "tot": 5,
+   "d_act": "主胜",
+   "d_act_cn": "h",
+   "pick": "主胜",
+   "second": "平局",
+   "hit_dir": "✅首",
+   "line": -1.0,
+   "hh_first": "让平",
+   "hh_second": "让负",
+   "line_act": "让胜",
+   "hit_hh": "❌",
+   "hit_hh_any": false,
+   "ttg_top": [
+    3,
+    2
+   ],
+   "hit_t": false,
+   "hafu_top3": [
+    "平胜",
+    "胜胜",
+    "平平"
+   ],
+   "htft": "胜胜",
+   "hit_h": true,
+   "crs_top5": [
+    "1-1",
+    "2-1",
+    "2-0",
+    "1-0",
+    "3-1"
+   ],
+   "hit_s": false,
+   "k_dist": 1,
+   "k_rec": 1,
+   "consistent": true,
+   "net": 5,
+   "hit_kd": false,
+   "hit_kr": false,
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六024",
+   "home": "阿贾克斯",
+   "away": "SBV精英",
+   "league": "荷甲",
+   "score": "2-2",
+   "ht": "1-1",
+   "tot": 4,
+   "d_act": "平局",
+   "d_act_cn": "d",
+   "pick": "主胜",
+   "second": "客胜",
+   "hit_dir": "❌",
+   "line": -2.0,
+   "hh_first": "让平",
+   "hh_second": "让胜",
+   "line_act": "让负",
+   "hit_hh": "❌",
+   "hit_hh_any": false,
+   "ttg_top": [
+    4,
+    3
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "htft": "平平",
+   "hit_h": true,
+   "crs_top5": [
+    "3-1",
+    "3-0",
+    "2-1",
+    "4-1",
+    "2-0"
+   ],
+   "hit_s": false,
+   "k_dist": 2,
+   "k_rec": 2,
+   "consistent": true,
+   "net": 0,
+   "hit_kd": false,
+   "hit_kr": false,
+   "band": [
+    "3-1",
+    "2-0",
+    "4-2"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六025",
+   "home": "威尼斯",
+   "away": "拉齐奥",
+   "league": "意甲",
+   "score": "0-2",
+   "ht": "0-0",
+   "tot": 2,
+   "d_act": "客胜",
+   "d_act_cn": "a",
+   "pick": "客胜",
+   "second": "平局",
+   "hit_dir": "✅首",
+   "line": 1.0,
+   "hh_first": "让胜",
+   "hh_second": "让负",
+   "line_act": "让负",
+   "hit_hh": "✅次",
+   "hit_hh_any": true,
+   "ttg_top": [
+    3,
+    2
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "平负",
+    "负负",
+    "平平"
+   ],
+   "htft": "平负",
+   "hit_h": true,
+   "crs_top5": [
+    "1-1",
+    "1-2",
+    "0-1",
+    "0-2",
+    "2-1"
+   ],
+   "hit_s": true,
+   "k_dist": 0,
+   "k_rec": -1,
+   "consistent": false,
+   "net": -2,
+   "hit_kd": false,
+   "hit_kr": false,
+   "band": [
+    "1-2",
+    "0-1",
+    "2-3"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六026",
+   "home": "昂热",
+   "away": "特鲁瓦",
+   "league": "法甲",
+   "score": "2-0",
+   "ht": "1-0",
+   "tot": 2,
+   "d_act": "主胜",
+   "d_act_cn": "h",
+   "pick": "主胜",
+   "second": "平局",
+   "hit_dir": "✅首",
+   "line": -1.0,
+   "hh_first": "让负",
+   "hh_second": "让胜",
+   "line_act": "让胜",
+   "hit_hh": "✅次",
+   "hit_hh_any": true,
+   "ttg_top": [
+    2,
+    3
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "胜胜",
+    "平胜",
+    "平平"
+   ],
+   "htft": "胜胜",
+   "hit_h": true,
+   "crs_top5": [
+    "1-1",
+    "1-0",
+    "2-1",
+    "2-0",
+    "1-2"
+   ],
+   "hit_s": true,
+   "k_dist": 0,
+   "k_rec": 1,
+   "consistent": false,
+   "net": 2,
+   "hit_kd": false,
+   "hit_kr": false,
+   "band": [
+    "1-0",
+    "2-1",
+    "3-2"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六027",
+   "home": "里昂",
+   "away": "雷恩",
+   "league": "法甲",
+   "score": "4-0",
+   "ht": "2-0",
+   "tot": 4,
+   "d_act": "主胜",
+   "d_act_cn": "h",
+   "pick": "主胜",
+   "second": "平局",
+   "hit_dir": "✅首",
+   "line": -1.0,
+   "hh_first": "让负",
+   "hh_second": "让胜",
+   "line_act": "让胜",
+   "hit_hh": "✅次",
+   "hit_hh_any": true,
+   "ttg_top": [
+    3,
+    2
+   ],
+   "hit_t": false,
+   "hafu_top3": [
+    "胜胜",
+    "负负",
+    "平胜"
+   ],
+   "htft": "胜胜",
+   "hit_h": true,
+   "crs_top5": [
+    "1-1",
+    "2-1",
+    "1-2",
+    "1-0",
+    "2-2"
+   ],
+   "hit_s": false,
+   "k_dist": 0,
+   "k_rec": 1,
+   "consistent": false,
+   "net": 4,
+   "hit_kd": false,
+   "hit_kr": false,
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六028",
+   "home": "塞维利亚",
+   "away": "巴萨",
+   "league": "西甲",
+   "score": "1-3",
+   "ht": "1-1",
+   "tot": 4,
+   "d_act": "客胜",
+   "d_act_cn": "a",
+   "pick": "客胜",
+   "second": "主胜",
+   "hit_dir": "✅首",
+   "line": 2.0,
+   "hh_first": "让平",
+   "hh_second": "让负",
+   "line_act": "让平",
+   "hit_hh": "✅首",
+   "hit_hh_any": true,
+   "ttg_top": [
+    4,
+    3
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "平负",
+    "负负",
+    "平平"
+   ],
+   "htft": "平负",
+   "hit_h": true,
+   "crs_top5": [
+    "1-3",
+    "0-3",
+    "1-2",
+    "0-2",
+    "1-4"
+   ],
+   "hit_s": true,
+   "k_dist": -2,
+   "k_rec": -2,
+   "consistent": true,
+   "net": -2,
+   "hit_kd": true,
+   "hit_kr": true,
+   "band": [
+    "1-3",
+    "0-2",
+    "2-4"
+   ],
+   "hit_band": true,
+   "conf": "高"
+  },
+  {
+   "num": "周六029",
+   "home": "里斯本",
+   "away": "阿罗卡",
+   "league": "葡超",
+   "score": "2-2",
+   "ht": "2-0",
+   "tot": 4,
+   "d_act": "平局",
+   "d_act_cn": "d",
+   "pick": "主胜",
+   "second": "平局",
+   "hit_dir": "✅次",
+   "line": -2.0,
+   "hh_first": "让平",
+   "hh_second": "让胜",
+   "line_act": "让负",
+   "hit_hh": "❌",
+   "hit_hh_any": false,
+   "ttg_top": [
+    3,
+    4
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "平胜",
+    "胜胜",
+    "平平"
+   ],
+   "htft": "胜平",
+   "hit_h": false,
+   "crs_top5": [
+    "3-0",
+    "2-0",
+    "3-1",
+    "2-1",
+    "4-0"
+   ],
+   "hit_s": false,
+   "k_dist": 2,
+   "k_rec": 2,
+   "consistent": true,
+   "net": 0,
+   "hit_kd": false,
+   "hit_kr": false,
+   "band": [
+    "2-0",
+    "3-1",
+    "4-2"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  },
+  {
+   "num": "周六030",
+   "home": "米拉索尔",
+   "away": "博塔弗戈",
+   "league": "巴甲",
+   "score": "2-0",
+   "ht": "2-0",
+   "tot": 2,
+   "d_act": "主胜",
+   "d_act_cn": "h",
+   "pick": "主胜",
+   "second": "客胜",
+   "hit_dir": "✅首",
+   "line": -1.0,
+   "hh_first": "让负",
+   "hh_second": "让胜",
+   "line_act": "让胜",
+   "hit_hh": "✅次",
+   "hit_hh_any": true,
+   "ttg_top": [
+    3,
+    2
+   ],
+   "hit_t": true,
+   "hafu_top3": [
+    "胜胜",
+    "负负",
+    "平胜"
+   ],
+   "htft": "胜胜",
+   "hit_h": true,
+   "crs_top5": [
+    "1-1",
+    "2-1",
+    "1-0",
+    "2-0",
+    "1-2"
+   ],
+   "hit_s": true,
+   "k_dist": 0,
+   "k_rec": 1,
+   "consistent": false,
+   "net": 2,
+   "hit_kd": false,
+   "hit_kr": false,
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ],
+   "hit_band": false,
+   "conf": "高"
+  }
+ ],
+ "hit_rates": {
+  "方向_首选加次选": {
+   "hit": 20,
+   "total": 30,
+   "rate": 0.6667
+  },
+  "方向_仅首选": {
+   "hit": 15,
+   "total": 30,
+   "rate": 0.5
+  },
+  "让球_首选加次选": {
+   "hit": 21,
+   "total": 30,
+   "rate": 0.7
+  },
+  "让球_仅首选": {
+   "hit": 13,
+   "total": 30,
+   "rate": 0.4333
+  },
+  "总进球TOP2": {
+   "hit": 18,
+   "total": 30,
+   "rate": 0.6
+  },
+  "半全场TOP3": {
+   "hit": 16,
+   "total": 30,
+   "rate": 0.5333
+  },
+  "比分TOP5": {
+   "hit": 18,
+   "total": 30,
+   "rate": 0.6
+  },
+  "净胜球众数k_dist": {
+   "hit": 8,
+   "total": 30,
+   "rate": 0.2667
+  },
+  "净胜球众数k_rec": {
+   "hit": 8,
+   "total": 30,
+   "rate": 0.2667
+  },
+  "带内候选TOP3": {
+   "hit": 7,
+   "total": 30,
+   "rate": 0.2333
+  },
+  "让平作让球首选": {
+   "hit": 2,
+   "total": 8,
+   "rate": 0.25
+  },
+  "非让平作让球首选": {
+   "hit": 11,
+   "total": 22,
+   "rate": 0.5
+  },
+  "让球_执行防对冲规则后": {
+   "hit": 21,
+   "total": 30,
+   "rate": 0.7,
+   "note": "合规修正口径：19场首选/次选为让胜vs让负对立，次选应自动改让平。实测 +5(012/013/014/015/019) −5(004/025/026/027/030) = 净0，与实发70.0%持平（本报告初版误写86.7%已更正）"
+  }
+ },
+ "parlays": [
+  {
+   "name": "方向串A",
+   "type": "方向串",
+   "matches": [
+    "周六015 森林主胜",
+    "周六017 森林主胜",
+    "周六021 森林主胜"
+   ],
+   "results": [
+    "周六015埃弗顿主胜(✅1-0)",
+    "周六017罗森博格客胜(✅1-3)",
+    "周六021森林主胜(❌0-1)"
+   ],
+   "hit": false,
+   "odds_est": 3.28,
+   "note": "低赔三串一"
+  },
+  {
+   "name": "方向串B",
+   "type": "方向串",
+   "matches": [
+    "周六009 拉齐奥客胜",
+    "周六025 拉齐奥客胜"
+   ],
+   "results": [
+    "周六009博洛尼亚主胜(❌1-1)",
+    "周六025拉齐奥客胜(✅0-2)"
+   ],
+   "hit": false,
+   "odds_est": 2.96,
+   "note": "稳健二串一"
+  },
+  {
+   "name": "方向串C",
+   "type": "方向串",
+   "matches": [
+    "周六010 塞尔塔主胜",
+    "周六013 塞尔塔主胜",
+    "周六023 塞尔塔主胜"
+   ],
+   "results": [
+    "周六010马尔默客胜(❌2-0)",
+    "周六013美因茨客胜(✅3-4)",
+    "周六023塞尔塔主胜(✅5-0)"
+   ],
+   "hit": false,
+   "odds_est": 5.94,
+   "note": "价值三串一"
+  },
+  {
+   "name": "稳健让球串",
+   "type": "让球串",
+   "matches": [
+    "周六013 威尼斯让(+1)胜",
+    "周六025 威尼斯让(+1)胜"
+   ],
+   "results": [
+    "周六013门兴让(+1)胜(❌3-4)",
+    "周六025威尼斯让(+1)胜(❌0-2)"
+   ],
+   "hit": false,
+   "odds_est": 3.08,
+   "note": "受让+1让胜结构"
+  },
+  {
+   "name": "价值让球串",
+   "type": "让球串",
+   "matches": [
+    "周六016 阿贾克斯让(-2)负",
+    "周六023 阿贾克斯让(-2)负",
+    "周六024 阿贾克斯让(-2)负"
+   ],
+   "results": [
+    "周六016纽卡让(-1)负(❌2-1)",
+    "周六023塞尔塔让(-1)负(❌5-0)",
+    "周六024阿贾克斯让(-2)负(✅2-2)"
+   ],
+   "hit": false,
+   "odds_est": 11.28,
+   "note": "让负结构高赔"
+  },
+  {
+   "name": "半全场串A",
+   "type": "混合串",
+   "matches": [
+    "周六009 埃弗顿胜胜",
+    "周六014 埃弗顿胜胜",
+    "周六015 埃弗顿胜胜"
+   ],
+   "results": [
+    "周六009博洛尼亚平胜(❌1-1)",
+    "周六014不来梅负负(❌3-2)",
+    "周六015埃弗顿胜胜(✅1-0)"
+   ],
+   "hit": false,
+   "odds_est": 51.2,
+   "note": "纯半全场"
+  },
+  {
+   "name": "半全场串B",
+   "type": "混合串",
+   "matches": [
+    "周六011 威尼斯负负",
+    "周六016 威尼斯负负",
+    "周六025 威尼斯负负"
+   ],
+   "results": [
+    "周六011法兰克福平平(❌2-2)",
+    "周六016纽卡胜胜(✅2-1)",
+    "周六025威尼斯负负(❌0-2)"
+   ],
+   "hit": false,
+   "odds_est": 41.32,
+   "note": "纯半全场"
+  },
+  {
+   "name": "方向+半全场A",
+   "type": "混合串",
+   "matches": [
+    "周六021 埃弗顿胜胜",
+    "周六015 埃弗顿胜胜"
+   ],
+   "results": [
+    "周六021森林主胜(❌0-1)",
+    "周六015埃弗顿胜胜(✅1-0)"
+   ],
+   "hit": false,
+   "odds_est": 3.9,
+   "note": "同向叠加"
+  },
+  {
+   "name": "方向+半全场B",
+   "type": "混合串",
+   "matches": [
+    "周六017 门兴负负",
+    "周六013 门兴负负"
+   ],
+   "results": [
+    "周六017罗森博格客胜(✅1-3)",
+    "周六013门兴负负(✅3-4)"
+   ],
+   "hit": true,
+   "odds_est": 4.62,
+   "note": "跨场分散"
+  },
+  {
+   "name": "连续编号混合串A",
+   "type": "混合串",
+   "matches": [
+    "周六014 埃弗顿总进球2球",
+    "周六015 埃弗顿总进球2球"
+   ],
+   "results": [
+    "周六014不来梅负负(❌3-2)",
+    "周六015埃弗顿总进球2球(❌1-0)"
+   ],
+   "hit": false,
+   "odds_est": 15.96,
+   "note": "014+015段"
+  },
+  {
+   "name": "连续编号混合串B",
+   "type": "混合串",
+   "matches": [
+    "周六028 里斯本总进球3球",
+    "周六029 里斯本总进球3球"
+   ],
+   "results": [
+    "周六028塞维利亚平负(✅1-3)",
+    "周六029里斯本总进球3球(❌2-2)"
+   ],
+   "hit": false,
+   "odds_est": 16.61,
+   "note": "028+029段"
+  },
+  {
+   "name": "总进球串A",
+   "type": "总进球串",
+   "matches": [
+    "周六011 斯图加特4球",
+    "周六015 斯图加特4球",
+    "周六022 斯图加特4球"
+   ],
+   "results": [
+    "周六011法兰克福3球(❌2-2)",
+    "周六015埃弗顿2球(❌1-0)",
+    "周六022斯图加特4球(❌0-1)"
+   ],
+   "hit": false,
+   "odds_est": 59.75,
+   "note": "高赔总进球"
+  },
+  {
+   "name": "总进球串B",
+   "type": "总进球串",
+   "matches": [
+    "周六012 塞维利亚4球",
+    "周六018 塞维利亚4球",
+    "周六028 塞维利亚4球"
+   ],
+   "results": [
+    "周六012汉堡3球(✅2-1)",
+    "周六018毕尔巴鄂2球(❌0-0)",
+    "周六028塞维利亚4球(✅1-3)"
+   ],
+   "hit": false,
+   "odds_est": 55.44,
+   "note": "高赔总进球"
+  },
+  {
+   "name": "连续编号总进球串①",
+   "type": "总进球串",
+   "matches": [
+    "周六001 藤枝3球",
+    "周六002 藤枝3球"
+   ],
+   "results": [
+    "周六001长崎2球(✅1-1)",
+    "周六002藤枝3球(❌1-1)"
+   ],
+   "hit": false,
+   "odds_est": 12.43,
+   "note": "001+002段"
+  },
+  {
+   "name": "连续编号总进球串②",
+   "type": "总进球串",
+   "matches": [
+    "周六003 横滨2球",
+    "周六004 横滨2球"
+   ],
+   "results": [
+    "周六003安养3球(✅2-1)",
+    "周六004横滨2球(✅2-0)"
+   ],
+   "hit": true,
+   "odds_est": 12.95,
+   "note": "003+004段"
+  },
+  {
+   "name": "高赔半全场串A",
+   "type": "高赔半全场串",
+   "matches": [
+    "周六009 埃弗顿胜胜",
+    "周六014 埃弗顿胜胜",
+    "周六015 埃弗顿胜胜"
+   ],
+   "results": [
+    "周六009博洛尼亚平胜(❌1-1)",
+    "周六014不来梅负负(❌3-2)",
+    "周六015埃弗顿胜胜(✅1-0)"
+   ],
+   "hit": false,
+   "odds_est": 51.2,
+   "note": "路径差异化"
+  },
+  {
+   "name": "高赔半全场串B",
+   "type": "高赔半全场串",
+   "matches": [
+    "周六011 威尼斯负负",
+    "周六016 威尼斯负负",
+    "周六025 威尼斯负负"
+   ],
+   "results": [
+    "周六011法兰克福平平(❌2-2)",
+    "周六016纽卡胜胜(✅2-1)",
+    "周六025威尼斯负负(❌0-2)"
+   ],
+   "hit": false,
+   "odds_est": 41.32,
+   "note": "路径差异化"
+  },
+  {
+   "name": "连续编号高赔半全场串①",
+   "type": "高赔半全场串",
+   "matches": [
+    "周六005 斯托克平平",
+    "周六006 斯托克平平"
+   ],
+   "results": [
+    "周六005热刺胜胜(❌2-3)",
+    "周六006斯托克平平(❌2-1)"
+   ],
+   "hit": false,
+   "odds_est": 15.0,
+   "note": "005+006段"
+  },
+  {
+   "name": "连续编号高赔半全场串②",
+   "type": "高赔半全场串",
+   "matches": [
+    "周六007 乌迪内斯胜胜",
+    "周六008 乌迪内斯胜胜"
+   ],
+   "results": [
+    "周六007奥萨苏纳平胜(❌1-1)",
+    "周六008乌迪内斯胜胜(❌0-1)"
+   ],
+   "hit": false,
+   "odds_est": 20.79,
+   "note": "007+008段"
+  },
+  {
+   "name": "混合串A",
+   "type": "半全场混合",
+   "matches": [
+    "周六013 塞维利亚4球",
+    "周六028 塞维利亚4球"
+   ],
+   "results": [
+    "周六013门兴负负(✅3-4)",
+    "周六028塞维利亚4球(✅1-3)"
+   ],
+   "hit": true,
+   "odds_est": 14.96,
+   "note": "半全场+总进球"
+  },
+  {
+   "name": "混合串B",
+   "type": "半全场混合",
+   "matches": [
+    "周六020 法兰克福3球",
+    "周六011 法兰克福3球"
+   ],
+   "results": [
+    "周六020罗马平负(❌2-2)",
+    "周六011法兰克福3球(❌2-2)"
+   ],
+   "hit": false,
+   "odds_est": 21.83,
+   "note": "半全场+总进球"
+  },
+  {
+   "name": "连续编号混合总进球串①",
+   "type": "半全场混合",
+   "matches": [
+    "周六009 韦斯特罗3球",
+    "周六010 韦斯特罗3球"
+   ],
+   "results": [
+    "周六009博洛尼亚平胜(❌1-1)",
+    "周六010韦斯特罗3球(❌2-0)"
+   ],
+   "hit": false,
+   "odds_est": 16.56,
+   "note": "009+010段"
+  },
+  {
+   "name": "连续编号混合总进球串②",
+   "type": "半全场混合",
+   "matches": [
+    "周六020 森林2球",
+    "周六021 森林2球"
+   ],
+   "results": [
+    "周六020罗马平负(❌2-2)",
+    "周六021森林2球(❌0-1)"
+   ],
+   "hit": false,
+   "odds_est": 20.65,
+   "note": "020+021段"
+  },
+  {
+   "name": "稳健比分串",
+   "type": "比分串",
+   "matches": [
+    "周六021 里斯本2-0",
+    "周六029 里斯本2-0"
+   ],
+   "results": [
+    "周六021森林1-0(❌0-1)",
+    "周六029里斯本2-0(❌2-2)"
+   ],
+   "hit": false,
+   "odds_est": 47.25,
+   "note": "众数一致场次"
+  },
+  {
+   "name": "搏冷比分串",
+   "type": "比分串",
+   "matches": [
+    "周六016 罗马1-0/2-1(反向)",
+    "周六020 罗马1-0/2-1(反向)"
+   ],
+   "results": [
+    "周六016纽卡1-2/0-1(反向)(❌2-1)",
+    "周六020罗马1-0/2-1(反向)(❌2-2)"
+   ],
+   "hit": false,
+   "odds_est": 218.5,
+   "note": "4注，反向推理"
+  },
+  {
+   "name": "连续编号比分串①",
+   "type": "比分串",
+   "matches": [
+    "周六016 克里斯蒂安松1-2",
+    "周六017 克里斯蒂安松1-2"
+   ],
+   "results": [
+    "周六016纽卡2-1(✅2-1)",
+    "周六017克里斯蒂安松1-2(❌1-3)"
+   ],
+   "hit": false,
+   "odds_est": 45.5,
+   "note": "016+017段"
+  },
+  {
+   "name": "连续编号比分串②",
+   "type": "比分串",
+   "matches": [
+    "周六023 阿贾克斯3-1",
+    "周六024 阿贾克斯3-1"
+   ],
+   "results": [
+    "周六023塞尔塔2-1(❌5-0)",
+    "周六024阿贾克斯3-1(❌2-2)"
+   ],
+   "hit": false,
+   "odds_est": 64.4,
+   "note": "023+024段"
+  },
+  {
+   "name": "单挑比分①",
+   "type": "比分串",
+   "matches": [
+    "周六016 纽卡1-0"
+   ],
+   "results": [
+    "周六016纽卡1-0(❌2-1)"
+   ],
+   "hit": false,
+   "odds_est": 8.0,
+   "note": "单挑不串关"
+  },
+  {
+   "name": "单挑比分②",
+   "type": "比分串",
+   "matches": [
+    "周六028 塞维利亚0-2"
+   ],
+   "results": [
+    "周六028塞维利亚0-2(❌1-3)"
+   ],
+   "hit": false,
+   "odds_est": 9.0,
+   "note": "单挑不串关"
+  }
+ ],
+ "parlay_stats": {
+  "total": 29,
+  "hit": 3,
+  "miss": 26,
+  "rate": 0.1034,
+  "by_type": {
+   "方向串": {
+    "total": 3,
+    "hit": 0,
+    "rate": 0.0
+   },
+   "让球串": {
+    "total": 2,
+    "hit": 0,
+    "rate": 0.0
+   },
+   "混合串": {
+    "total": 6,
+    "hit": 1,
+    "rate": 0.1667
+   },
+   "总进球串": {
+    "total": 4,
+    "hit": 1,
+    "rate": 0.25
+   },
+   "高赔半全场串": {
+    "total": 4,
+    "hit": 0,
+    "rate": 0.0
+   },
+   "半全场混合": {
+    "total": 4,
+    "hit": 1,
+    "rate": 0.25
+   },
+   "比分串": {
+    "total": 6,
+    "hit": 0,
+    "rate": 0.0
+   }
+  },
+  "stable": {
+   "total": 11,
+   "hit": 1,
+   "rate": 0.0909
+  },
+  "entertainment": {
+   "total": 18,
+   "hit": 2,
+   "rate": 0.1111
+  }
+ },
+ "user_parlay": null,
+ "key_lessons": [
+  {
+   "id": "L140",
+   "title": "平局次选机制（最高优先级）",
+   "detail": "实际平局9/30(30%)高于市场24%与模型27%，但仅3场被首选+次选覆盖；6场漏掉平局的场次中002/020/024的次选方向概率与平局概率差<3pp。建议：平局概率与当前次选方向概率差<3pp时，次选强制改为平局。回溯本轮可补回3场，方向命中率66.7%→76.7%。"
+  },
+  {
+   "id": "L141",
+   "title": "让球端双层修正：首选取最高概率 + 次选执行防对冲规则（合规修正，净收益0）",
+   "detail": "首选层：让平作首选8场2中(25%) vs 非让平22场11中(50%)，应停止让平作首选。次选层：19场首选/次选为让胜vs让负对立，违反防对冲规则。**实测修正 +5/−5=净0，命中率仍70.0%（初版误写86.7%，漏计004/025/026/027/030五场失守）**。修正方案：让平只进次选、首选取方向内最高概率；次选强制执行防对冲规则。"
+  },
+  {
+   "id": "L142",
+   "title": "λ总向下校准 + 大球上修改止损型",
+   "detail": "模型场均λ总3.24 vs 实际2.90，高估10.5%；上修生效13场实际场均2.92球 vs 未上修17场2.88球，差0.04球，上修未产生正向贡献。建议λ总施加-0.2~-0.3保守校准，上修仅在身价差≥3倍或对手客场场均失球≥2.5球时启用。"
+  },
+  {
+   "id": "L143",
+   "title": "双轨制定位重整",
+   "detail": "「众数一致」8场众数命中率25.0%，「分布-方向分歧」22场27.3%——一致组反而略低；带内候选一致组25.0% vs 全样本23.3%。双轨制的价值是「一致性约束」而非命中率信号，应停止把「一致」当作更高胜率的隐含假设，比分串准入改回「方向概率≥50%＋带内候选≥3个」。"
+  },
+  {
+   "id": "L144",
+   "title": "高置信度场次双保险表达",
+   "detail": "本轮唯一★★★场次021五项全失（0-1负垫底队，86分钟进球被VAR吹掉）。分层单调性成立（★★80% > ★66.7% > ☆50%），但最高层单点失效。建议★★★场次在报告中标注「方向可行，建议首选+次选双保险表达」，不作为单场重注依据。"
+  },
+  {
+   "id": "L145",
+   "title": "深盘场：方向可用、让球谨慎",
+   "detail": "3场±2深盘的方向判断3/3全对（70%+的概率兑现），但净胜球数量级仅1/3正确，深盘让平首选1/3，且2场出现「主队未能净胜2球以上」。深盘的价值在方向不在让球，让球端应优先「让平+让负」双选而非单选让平。"
+  }
+ ],
+ "source_files": [
+  "reports/analysis/20260919_saturday_analysis_zhihu.md",
+  "reports/data/20260919_saturday_predictions.json",
+  "reports/data/20260919_saturday_caliber.json",
+  "memory/predictions/20260919_saturday/20260919_saturday_odds_raw.json",
+  "memory/trials/score_parlay_trial.md",
+  "memory/trials/score_parlay_trial.json"
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "_meta": {
+  "date": "2026-10-27",
+  "collector": "第1步信息收集 + 第2步信息审核",
+  "value_source": "Transfermarkt（2026/27赛季口径）",
+  "verified_at": "2026-10-27",
+  "notes": "所有身价均为欧元具体数值；伤停以 Sportradar/FotMob/俱乐部官网/新浪伤停表交叉核对；场地状态均为正常（未检索到空场/部分关闭/中立场处罚）"
+ },
+ "周二001": {
+  "value": {"home": 14.40e6, "away": 7.30e6, "home_url": "transfermarkt.com/kyoto-sanga", "away_url": "transfermarkt.com/newcastle-united-jets"},
+  "injury": {
+   "home": ["斋藤未月（后腰/十字韧带/赛季报销，确定缺阵）", "酒井滉生（10-14受伤，出战存疑）"],
+   "away": ["弗莱尔（膝伤）", "纳西普（停赛）", "巴多拉托（十字韧带长期伤后刚复出，未随队）"],
+   "home_count": 2, "away_count": 3,
+   "note": "Sportradar 该场页显示双方无缺阵，与俱乐部/媒体口径冲突，按媒体口径取"
+  },
+  "venue": {"name": "Sanga Stadium by KYOCERA（京瓷桑加体育场）", "city": "京都府龟冈市", "pitch": "天然草", "capacity": 21600, "status": "正常", "status_note": ""},
+  "weather": {"temp": "17°C（日间20°C）", "desc": "夜间降水概率20%", "wind": "西北风14km/h", "impact": "轻微"},
+  "h2h": {"summary": "双方无历史正式交锋，本场为首次碰面（交锋空白）", "rhythm": "无参照", "lam_shift": [0.0, 0.0]}
+ },
+ "周二002": {
+  "value": {"home": 13.35e6, "away": 17.35e6, "home_url": "transfermarkt.com/daejeon-hana-citizen", "away_url": "transfermarkt.com/vissel-kobe"},
+  "injury": {
+   "home": ["李正泽（后卫/上轮伤退，出战成疑）", "迪奥戈（前锋/伤，出战成疑）", "河昌来（中卫/伤未痊愈，大概率替补）", "严元相（中场/伤）"],
+   "away": ["大迫勇也（前锋/轻伤落选大名单）", "佐佐木大树（缺阵）", "扇原贵宏（缺阵）"],
+   "home_count": 4, "away_count": 3,
+   "note": "双方均有多名主力缺阵，客队锋线核心落选"
+  },
+  "venue": {"name": "大田世界杯体育场（Daejeon World Cup Stadium）", "city": "韩国大田广域市", "pitch": "天然草", "capacity": 40535, "status": "正常", "status_note": ""},
+  "weather": {"temp": "13-15°C（日间10-17°C）", "desc": "晴到多云", "wind": "全国性强风预报", "impact": "中等"},
+  "h2h": {"summary": "双方正式比赛从未交手，本场为首次对阵（交锋空白）", "rhythm": "无参照", "lam_shift": [0.0, 0.0]}
+ },
+ "周二003": {
+  "value": {"home": 11.53e6, "away": 16.63e6, "home_url": "transfermarkt.com/beijing-sinobo-guoan", "away_url": "transfermarkt.com/全北现代"},
+  "injury": {
+   "home": ["法比奥（主力前锋/队长，赛季报销返欧）", "吴少聪（后卫/伤）", "何宇鹏（后卫/长期缺席）", "杨立瑜（前锋/停赛）", "曹永竞（前锋/停赛）"],
+   "away": ["朴主英（前锋/伤）"],
+   "home_count": 5, "away_count": 1,
+   "note": "国安锋线损失严重：队长法比奥报销＋两名前锋停赛"
+  },
+  "venue": {"name": "北京工人体育场（Workers' Stadium）", "city": "北京市朝阳区", "pitch": "天然草", "capacity": 68000, "status": "正常", "status_note": ""},
+  "weather": {"temp": "1-7°C", "desc": "晴", "wind": "偏南风1-2级", "impact": "轻微"},
+  "h2h": {"summary": "亚冠交手4次，国安1平3负不胜（2015客场1-1／主场0-1；2019客场1-3／主场0-1）；同主客国安主场两战全负", "rhythm": "低球＋客队专克", "lam_shift": [-0.06, 0.06]}
+ },
+ "周二004": {
+  "value": {"home": 144.70e6, "away": 288.15e6, "home_url": "transfermarkt.com/hamburger-sv", "away_url": "transfermarkt.com/eintracht-frankfurt"},
+  "injury": {
+   "home": ["武什科维奇（停赛）", "波尔森（伤）", "卡帕尔多（伤）", "纳迪尔（肌肉）", "维埃拉（大腿，至11月中）", "伦贝格（十字韧带，长期）", "达卡（大腿，出战成疑）"],
+   "away": ["恩甘卡姆（伤）", "皮姆蓬（伤）"],
+   "home_count": 7, "away_count": 2,
+   "note": "汉堡7人伤停含1停赛，法兰克福仅2人"
+  },
+  "venue": {"name": "Volksparkstadion（人民公园球场）", "city": "德国汉堡", "pitch": "混合草（99.97%天然草＋0.03%人造纤维）", "capacity": 57000, "status": "正常", "status_note": ""},
+  "weather": {"temp": "8°C", "desc": "小雨", "wind": "风力<3级", "impact": "中等（草皮湿滑）"},
+  "h2h": {"summary": "近8次汉堡1胜3平4负；同主客汉堡主场近5次1-1／1-2／0-3／0-0／0-0，法兰克福不败", "rhythm": "低球闷战为主", "lam_shift": [-0.06, 0.06]}
+ },
+ "周二005": {
+  "value": {"home": 219.10e6, "away": 262.05e6, "home_url": "transfermarkt.com/us-sassuolo", "away_url": "transfermarkt.com/lazio-rom"},
+  "injury": {
+   "home": ["莱森（中卫/十字韧带/赛季报销）", "伊泽斯（中卫/大腿，至11月上旬）", "科内（中场/胫骨骨折，至11月底）", "波洛卡（中场/膝）"],
+   "away": ["古德蒙德松（肩）", "罗维拉（小腿）", "马鲁西奇（肌肉）", "皮纳蒙蒂（流感，出战概率30-35%）"],
+   "home_count": 4, "away_count": 4,
+   "note": "萨索洛中卫线双缺，拉齐奥4人缺阵但以轮换位为主"
+  },
+  "venue": {"name": "Mapei Stadium（马佩伊球场）", "city": "意大利雷焦艾米利亚", "pitch": "信息缺失", "capacity": 21584, "status": "正常", "status_note": "俱乐部仅称获评2025/26意甲最佳草皮，未披露草种"},
+  "weather": {"temp": "7-16°C", "desc": "多云转阴", "wind": "北风<3级", "impact": "轻微"},
+  "h2h": {"summary": "近5次拉齐奥3胜1平1负；同主客萨索洛主场1胜1负（2025-09-14 1-0胜／2023-10-21 0-2负）", "rhythm": "中低球", "lam_shift": [0.0, 0.0]}
+ },
+ "周二006": {
+  "value": {"home": 30.93e6, "away": 14.88e6, "home_url": "transfermarkt.com/aik-solna", "away_url": "transfermarkt.com/if-elfsborg-boras"},
+  "injury": {
+   "home": [], "away": [], "home_count": 0, "away_count": 0,
+   "note": "双方均无缺阵球员（Sportradar 显示 No missing players）"
+  },
+  "venue": {"name": "Strawberry Arena（草莓竞技场）", "city": "瑞典索尔纳（斯德哥尔摩）", "pitch": "天然草", "capacity": 50000, "status": "正常", "status_note": "本地媒体称混合草，Transfermarkt 标天然草"},
+  "weather": {"temp": "9-10°C（全天7.4-12.5°C）", "desc": "毛毛雨", "wind": "最大风速23.4km/h", "impact": "轻微"},
+  "h2h": {"summary": "近5次AIK 3胜1平1负；同主客AIK主场2胜0负（2025-04-27 2-0／2024-10-27 2-1）", "rhythm": "主场强压制", "lam_shift": [0.05, -0.05]}
+ },
+ "周二007": {
+  "value": {"home": 587.90e6, "away": 124.25e6, "home_url": "transfermarkt.com/borussia-dortmund", "away_url": "transfermarkt.com/sv-werder-bremen"},
+  "injury": {
+   "home": ["Lerma（中场/伤）", "Can（中场/伤）", "Konstantelias（中场/伤）", "Karetsas（中场/伤）"],
+   "away": ["Agu（后卫）", "Topp（前锋）", "Stage（中场）", "Njinmah（前锋）", "N'Diaye（后卫）", "Lynen（中场）", "Musah（前锋）", "Alvero（中场）"],
+   "home_count": 4, "away_count": 8,
+   "note": "多特4名中场缺阵（中场轮换吃紧），不来梅8人伤停含4名中前场"
+  },
+  "venue": {"name": "SIGNAL IDUNA PARK（信号伊杜纳公园）", "city": "德国多特蒙德", "pitch": "天然草（配地暖）", "capacity": 81365, "status": "正常", "status_note": ""},
+  "weather": {"temp": "8.8-14°C", "desc": "毛毛雨，降水概率76%", "wind": "最大风速13.7km/h", "impact": "中等"},
+  "h2h": {"summary": "近5次多特3胜2平不败；同主客多特主场2-2／3-0／2-2（1胜2平）", "rhythm": "多特主场稳定不败但常有平", "lam_shift": [0.0, 0.0]}
+ },
+ "周二008": {
+  "value": {"home": 157.70e6, "away": 111.98e6, "home_url": "transfermarkt.com/1-fc-koln", "away_url": "transfermarkt.com/1-fc-union-berlin"},
+  "injury": {
+   "home": ["Hübers（后卫）", "Ache（前锋）", "Dallinga（前锋）", "Skhiri（中场）", "van den Berg（后卫）", "Rondić（前锋）"],
+   "away": ["Nsoki（后卫）", "Juranović（后卫）", "Ilić（前锋）"],
+   "home_count": 6, "away_count": 3,
+   "note": "科隆6人伤停含3名前锋，柏林联合后防2人缺阵"
+  },
+  "venue": {"name": "RheinEnergieSTADION（莱茵能源球场）", "city": "德国科隆", "pitch": "混合草（2026/27赛季起启用Hybridrasen）", "capacity": 50000, "status": "正常", "status_note": ""},
+  "weather": {"temp": "7.4-14.4°C", "desc": "阴，降水概率77%", "wind": "最大风速11.9km/h", "impact": "中等"},
+  "h2h": {"summary": "近5次科隆1胜1平3负；同主客科隆主场1胜1负（2025-12-20 0-1负／2024-05-11 3-2胜）", "rhythm": "对攻偏多", "lam_shift": [0.0, 0.0]}
+ },
+ "周二009": {
+  "value": {"home": 498.40e6, "away": 141.85e6, "home_url": "transfermarkt.com/as-rom", "away_url": "transfermarkt.com/cagliari-calcio"},
+  "injury": {
+   "home": ["Svilar（门将）", "Koné（中场）", "Dybala（前锋）", "Pellegrini（中场）"],
+   "away": ["Idrissi（后卫）", "Felici（前锋）"],
+   "home_count": 4, "away_count": 2,
+   "note": "罗马主力门将＋组织核心＋迪巴拉缺阵，是本场最大不确定项"
+  },
+  "venue": {"name": "Stadio Olimpico（罗马奥林匹克球场）", "city": "意大利罗马", "pitch": "天然草", "capacity": 70634, "status": "正常", "status_note": ""},
+  "weather": {"temp": "9.4-20.5°C", "desc": "多云，降水概率0%", "wind": "最大风速6.5km/h", "impact": "轻微"},
+  "h2h": {"summary": "近5次罗马4胜1负；同主客罗马主场3战全胜（2-0／1-0／4-0）", "rhythm": "罗马主场零封节奏", "lam_shift": [0.06, -0.06]}
+ },
+ "周二010": {
+  "value": {"home": 171.10e6, "away": 568.15e6, "home_url": "transfermarkt.com/torino-fc", "away_url": "transfermarkt.com/como-1907"},
+  "injury": {
+   "home": ["Fortini（后卫）", "İlkhan（中场）", "Rodríguez（后卫）"],
+   "away": ["Diao（前锋）", "Chalobah（后卫）", "J. Rodríguez（前锋）"],
+   "home_count": 3, "away_count": 3,
+   "note": "双方各3人缺阵，均非核心级"
+  },
+  "venue": {"name": "Stadio Olimpico Grande Torino（都灵奥林匹克大球场）", "city": "意大利都灵", "pitch": "天然草", "capacity": 28177, "status": "正常", "status_note": ""},
+  "weather": {"temp": "6.4-17.6°C", "desc": "雾，降水概率3%", "wind": "最大风速5.5km/h", "impact": "轻微（湿度高、能见度略降）"},
+  "h2h": {"summary": "近5次都灵2胜3负；同主客都灵主场1胜1负，但近两次被科莫6-0、5-1打爆", "rhythm": "科莫近期绝对压制", "lam_shift": [-0.08, 0.08]}
+ }
+}

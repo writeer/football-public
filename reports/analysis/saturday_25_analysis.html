@@ -1,0 +1,2019 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周六25场深度分析 | 2026年8月8日</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; background: #0f1117; color: #e0e0e0; line-height: 1.6; }
+.container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+h1 { text-align: center; color: #fff; margin: 20px 0; font-size: 28px; }
+h2 { color: #58a6ff; margin: 25px 0 15px; border-bottom: 1px solid #30363d; padding-bottom: 8px; }
+h3 { color: #f0f6fc; margin: 15px 0 10px; font-size: 18px; }
+.subtitle { text-align: center; color: #8b949e; margin-bottom: 30px; }
+.summary-table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 13px; }
+.summary-table th { background: #161b22; color: #58a6ff; padding: 10px 8px; text-align: center; border: 1px solid #30363d; }
+.summary-table td { padding: 8px; text-align: center; border: 1px solid #21262d; }
+.summary-table tr:hover { background: #161b22; }
+.match-id { color: #58a6ff; font-weight: bold; }
+.team { text-align: left; }
+.direction { color: #3fb950; font-weight: bold; }
+.confidence { font-weight: bold; }
+.confidence.高 { color: #3fb950; }
+.confidence.中 { color: #d29922; }
+.confidence.低 { color: #f85149; }
+.est { color: #8b949e; font-size: 11px; }
+.match-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin: 15px 0; }
+.match-meta { font-size: 13px; color: #8b949e; margin-bottom: 8px; }
+.match-notes { font-size: 13px; color: #d29922; margin-bottom: 10px; padding: 8px; background: #1c1c1c; border-radius: 4px; }
+.odds-bar { display: flex; gap: 15px; margin: 10px 0; flex-wrap: wrap; }
+.odds-item { background: #21262d; padding: 5px 12px; border-radius: 4px; font-size: 13px; }
+.prob-section { margin: 15px 0; }
+.prob-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.prob-table th { background: #21262d; color: #8b949e; padding: 8px; text-align: center; border: 1px solid #30363d; }
+.prob-table td { padding: 8px; text-align: center; border: 1px solid #21262d; }
+.prob-table tr.highlight { background: #1a2332; }
+.prob-table tr.highlight td { color: #58a6ff; font-weight: bold; }
+.lambda-info { font-size: 12px; color: #8b949e; margin: 8px 0; padding: 5px; background: #0d1117; border-radius: 4px; }
+.injury-bar { font-size: 13px; color: #f85149; margin: 5px 0; }
+.divergence-bar { font-size: 13px; margin: 5px 0; }
+.alert { color: #f85149; font-weight: bold; }
+.rec-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 10px 0; }
+.rec-table th { background: #21262d; color: #58a6ff; padding: 8px; text-align: left; border: 1px solid #30363d; }
+.rec-table td { padding: 8px; border: 1px solid #21262d; }
+.tables-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin: 15px 0; }
+.mini-table { background: #0d1117; border-radius: 6px; padding: 10px; }
+.mini-table h4 { color: #58a6ff; font-size: 14px; margin-bottom: 8px; }
+.mini-table table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.mini-table th { color: #8b949e; padding: 4px; text-align: center; border: 1px solid #21262d; }
+.mini-table td { padding: 4px; text-align: center; border: 1px solid #21262d; }
+.score { font-weight: bold; color: #3fb950; }
+.conf-badge { font-size: 12px; padding: 2px 8px; border-radius: 10px; margin-left: 8px; }
+.conf-badge.高 { background: #1a3a1a; color: #3fb950; }
+.conf-badge.中 { background: #3a3a1a; color: #d29922; }
+.conf-badge.低 { background: #3a1a1a; color: #f85149; }
+.parlay-section { margin: 15px 0; }
+.parlay-card { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 12px; margin: 8px 0; }
+.disclaimer { text-align: center; color: #8b949e; font-size: 12px; margin: 30px 0; padding: 15px; background: #161b22; border-radius: 8px; }
+.ttg-note { font-size: 12px; color: #8b949e; margin: 5px 0; padding: 5px; background: #0d1117; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>周六25场深度分析 | 2026年8月8日</h1>
+<p class="subtitle">模型: DC修正泊松 + 负二项 + Skellam + 蒙特卡洛10000次 + Shin去水 + Elo评级 | 含联赛特定TTG修正(规则35)</p>
+
+<h2>总览表</h2>
+<table class="summary-table">
+<tr><th>编号</th><th>联赛</th><th>对阵</th><th>开赛</th><th>赔率(胜/平/负)</th><th>方向(首选)</th><th>置信度</th><th>次选</th><th>比分首选</th><th>TTG首选</th></tr>
+
+    <tr>
+        <td class="match-id">001</td>
+        <td>日职</td>
+        <td class="team">大阪樱花 vs 冈山绿雉</td>
+        <td>18:00</td>
+        <td>1.81/3.35/3.6</td>
+        <td class="direction">主胜 53.1%</td>
+        <td class="confidence 低">★</td>
+        <td>平局 28.1%</td>
+        <td>1:0</td>
+        <td>2球</td>
+    </tr>
+    <tr>
+        <td class="match-id">002</td>
+        <td>日职</td>
+        <td class="team">大宫松鼠 vs 新潟天鹅</td>
+        <td>18:00</td>
+        <td>1.81/3.5/3.45</td>
+        <td class="direction">主胜 57.0%</td>
+        <td class="confidence 高">★★★</td>
+        <td>平局 22.5%</td>
+        <td>2:0</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">003</td>
+        <td>韩K</td>
+        <td class="team">安养FC vs 大田市民</td>
+        <td>19:00</td>
+        <td>2.72/3.15/2.25</td>
+        <td class="direction">客胜 38.0%</td>
+        <td class="confidence 高">★★★</td>
+        <td>主胜 33.4%</td>
+        <td>1:1</td>
+        <td>2球</td>
+    </tr>
+    <tr>
+        <td class="match-id">004</td>
+        <td>韩K</td>
+        <td class="team">全北现代 vs 济州SK</td>
+        <td>19:00</td>
+        <td>1.6/3.45/4.65</td>
+        <td class="direction">主胜 65.5%</td>
+        <td class="confidence 中">★★</td>
+        <td>平局 20.5%</td>
+        <td>2:0</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">005</td>
+        <td>韩K</td>
+        <td class="team">金泉尚武 vs 首尔FC</td>
+        <td>19:00</td>
+        <td>3.6/3.45/1.78</td>
+        <td class="direction">客胜 39.3%</td>
+        <td class="confidence 高">★★★</td>
+        <td>主胜 34.4%</td>
+        <td>1:1</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">006</td>
+        <td>挪超</td>
+        <td class="team">瓦勒伦加 vs 博德闪耀</td>
+        <td>20:00</td>
+        <td>3.8/3.6/1.75</td>
+        <td class="direction">客胜 48.9%</td>
+        <td class="confidence 高">★★★</td>
+        <td>主胜 26.8%</td>
+        <td>1:1</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">007</td>
+        <td>英冠</td>
+        <td class="team">女王公园巡游者 vs 米尔沃尔</td>
+        <td>21:00</td>
+        <td>2.55/3.1/2.65</td>
+        <td class="direction">主胜 48.7%</td>
+        <td class="confidence 中">★★</td>
+        <td>平局 25.8%</td>
+        <td>1:1</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">008</td>
+        <td>瑞超</td>
+        <td class="team">厄格里特 vs 索尔纳</td>
+        <td>21:00</td>
+        <td>3.5/3.1/2.05</td>
+        <td class="direction">客胜 48.6%</td>
+        <td class="confidence 中">★★</td>
+        <td>平局 28.6%</td>
+        <td>0:1</td>
+        <td>2球</td>
+    </tr>
+    <tr>
+        <td class="match-id">009</td>
+        <td>英超</td>
+        <td class="team">西汉姆联 vs 朴次茅斯</td>
+        <td>22:00</td>
+        <td>1.5/3.8/5.5</td>
+        <td class="direction">主胜 60.2%</td>
+        <td class="confidence 高">★★★</td>
+        <td>平局 21.3%</td>
+        <td>2:1</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">010</td>
+        <td>英冠</td>
+        <td class="team">斯旺西 vs 伯明翰</td>
+        <td>22:00</td>
+        <td>2.4/3.1/2.8</td>
+        <td class="direction">主胜 52.5%</td>
+        <td class="confidence 中">★★</td>
+        <td>平局 24.2%</td>
+        <td>1:1</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">011</td>
+        <td>挪超</td>
+        <td class="team">维京 vs 萨普斯堡</td>
+        <td>23:00</td>
+        <td>1.55/3.8/4.8</td>
+        <td class="direction">主胜 67.8%</td>
+        <td class="confidence 低">★</td>
+        <td>平局 17.9%</td>
+        <td>3:0</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">012</td>
+        <td>荷甲</td>
+        <td class="team">奈梅亨 vs 特尔斯达</td>
+        <td>22:30</td>
+        <td>1.75/3.5/4.0</td>
+        <td class="direction">主胜 55.5%</td>
+        <td class="confidence 高">★★★</td>
+        <td>平局 23.3%</td>
+        <td>2:1</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">013</td>
+        <td>葡超</td>
+        <td class="team">马里迪莫 vs 卡萨皮亚</td>
+        <td>00:15</td>
+        <td>2.2/3.1/3.1</td>
+        <td class="direction">主胜 57.3%</td>
+        <td class="confidence 中">★★</td>
+        <td>平局 22.3%</td>
+        <td>2:0</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">014</td>
+        <td>瑞超</td>
+        <td class="team">米亚尔比 vs 埃夫斯堡</td>
+        <td>23:30</td>
+        <td>2.55/2.9/2.65</td>
+        <td class="direction">主胜 43.6%</td>
+        <td class="confidence 高">★★★</td>
+        <td>平局 30.0%</td>
+        <td>1:0</td>
+        <td>2球</td>
+    </tr>
+    <tr>
+        <td class="match-id">015</td>
+        <td>芬超</td>
+        <td class="team">雅罗 vs 瓦萨</td>
+        <td>00:00</td>
+        <td>2.65/2.95/2.6</td>
+        <td class="direction">主胜 40.6%</td>
+        <td class="confidence 高">★★★</td>
+        <td>平局 32.2%</td>
+        <td>0:0</td>
+        <td>1球</td>
+    </tr>
+    <tr>
+        <td class="match-id">016</td>
+        <td>荷甲</td>
+        <td class="team">前进之鹰 vs 威廉二世</td>
+        <td>00:30</td>
+        <td>1.9/3.4/3.6</td>
+        <td class="direction">主胜 61.6%</td>
+        <td class="confidence 低">★</td>
+        <td>平局 21.2%</td>
+        <td>2:0</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">017</td>
+        <td>葡超</td>
+        <td class="team">吉马良斯 vs 阿罗卡</td>
+        <td>01:00</td>
+        <td>1.85/3.2/4.0</td>
+        <td class="direction">主胜 63.7%</td>
+        <td class="confidence 低">★</td>
+        <td>平局 20.4%</td>
+        <td>2:0</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">018</td>
+        <td>荷甲</td>
+        <td class="team">埃因霍温 vs 福图纳锡塔德</td>
+        <td>01:30</td>
+        <td>1.25/5.0/8.5</td>
+        <td class="direction">主胜 76.2%</td>
+        <td class="confidence 高">★★★</td>
+        <td>平局 13.8%</td>
+        <td>3:0</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">019</td>
+        <td>法乙</td>
+        <td class="team">波城FC vs 阿纳西</td>
+        <td>02:45</td>
+        <td>2.7/2.9/2.65</td>
+        <td class="direction">主胜 41.4%</td>
+        <td class="confidence 高">★★★</td>
+        <td>平局 29.5%</td>
+        <td>1:1</td>
+        <td>2球</td>
+    </tr>
+    <tr>
+        <td class="match-id">020</td>
+        <td>法乙</td>
+        <td class="team">蒙彼利埃 vs 第戎</td>
+        <td>02:45</td>
+        <td>1.7/3.3/4.5</td>
+        <td class="direction">主胜 68.7%</td>
+        <td class="confidence 低">★</td>
+        <td>平局 17.7%</td>
+        <td>3:0</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">021</td>
+        <td>法乙</td>
+        <td class="team">南特 vs 圣旺红星</td>
+        <td>02:45</td>
+        <td>1.6/3.4/5.0</td>
+        <td class="direction">主胜 67.9%</td>
+        <td class="confidence 低">★</td>
+        <td>平局 18.6%</td>
+        <td>2:0</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">022</td>
+        <td>荷甲</td>
+        <td class="team">阿尔克马尔 vs 海牙</td>
+        <td>03:00</td>
+        <td>1.4/4.2/6.5</td>
+        <td class="direction">主胜 72.7%</td>
+        <td class="confidence 低">★</td>
+        <td>平局 15.7%</td>
+        <td>3:0</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">023</td>
+        <td>巴甲</td>
+        <td class="team">格雷米奥 vs 圣保罗</td>
+        <td>03:00</td>
+        <td>2.1/2.95/3.2</td>
+        <td class="direction">主胜 49.8%</td>
+        <td class="confidence 高">★★★</td>
+        <td>平局 26.3%</td>
+        <td>1:1</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">024</td>
+        <td>葡超</td>
+        <td class="team">阿马多拉 vs 里斯本竞技</td>
+        <td>03:00+</td>
+        <td>6.5/4.0/1.4</td>
+        <td class="direction">客胜 64.3%</td>
+        <td class="confidence 高">★★★</td>
+        <td>平局 18.7%</td>
+        <td>0:2</td>
+        <td>4+球</td>
+    </tr>
+    <tr>
+        <td class="match-id">025</td>
+        <td>巴甲</td>
+        <td class="team">博塔弗戈 vs 弗鲁米嫩塞</td>
+        <td>03:00+</td>
+        <td>2.15/2.9/3.15</td>
+        <td class="direction">主胜 52.4%</td>
+        <td class="confidence 中">★★</td>
+        <td>平局 25.5%</td>
+        <td>2:0</td>
+        <td>4+球</td>
+    </tr></table><h2>逐场分析</h2>
+    <div class="match-card" id="match-001">
+        <h3>周六001 日职 | 大阪樱花 vs 冈山绿雉 <span class="conf-badge 低">★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 18:00</span> | <span>📍 洋马长居体育场,大阪</span> | <span>☀️ 33°C 晴</span> | <span>赔率来源: 体彩官方</span>
+        </div>
+        <div class="match-notes">📋 日职揭幕战，新帅马钦首秀，樱花9人伤停残阵但交锋碾压</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 1.81</span>
+            <span class="odds-item">平 3.35</span>
+            <span class="odds-item">负 3.6</span>
+            <span class="odds-item">让球: 胜3.65 平3.45 负1.77</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>53.1%</td><td>28.1%</td><td>18.8%</td></tr>
+                <tr><td>Shin去水</td><td>48.9%</td><td>26.4%</td><td>24.6%</td></tr>
+                <tr><td>DC模型</td><td>61.4%</td><td>29.0%</td><td>9.6%</td></tr>
+                <tr><td>蒙特卡洛</td><td>60.7%</td><td>27.8%</td><td>11.5%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=1.44 | λ(客)=0.43 | λ(总)=1.86 | 大2.5球: 29.3% | 小2.5球: 70.7%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: <span class='alert'>主队8人(核心4) / 客队2人(核心0) ⚠️残阵降级</span></div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 53.1% (赔率1.81) | 次选: 平局 28.1% (赔率3.35)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (3.65) | 次选: 让平 (3.45)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>1:0(21.2%) / 0:0(17.4%) / 2:0(15.3%) / 1:1(9.6%) / 3:0(7.6%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>2球(25.1%) / 1球(24.4%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(35.7%) / 平-主(25.1%) / 平-平(21.5%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>0:0(43.2%) / 1:0(28.0%) / 2:0(9.1%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 均衡联赛(场均2.52,大2.5率46%),修正比:0:0.85, 1:0.84, 2:1.06, 3:1.07, 4+:1.06</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:0</td><td>21.2%</td></tr><tr><td>2</td><td class='score'>0:0</td><td>17.4%</td></tr><tr><td>3</td><td class='score'>2:0</td><td>15.3%</td></tr><tr><td>4</td><td class='score'>1:1</td><td>9.6%</td></tr><tr><td>5</td><td class='score'>3:0</td><td>7.6%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>35.7%</td></tr><tr><td>2</td><td>平-主</td><td>25.1%</td></tr><tr><td>3</td><td>平-平</td><td>21.5%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>2球</td><td>25.1%</td></tr><tr><td>1球</td><td>24.4%</td></tr><tr><td>3球</td><td>15.7%</td></tr><tr><td>0球</td><td>13.1%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>0:0</td><td>43.2%</td></tr><tr><td>2</td><td class='score'>1:0</td><td>28.0%</td></tr><tr><td>3</td><td class='score'>2:0</td><td>9.1%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-002">
+        <h3>周六002 日职 | 大宫松鼠 vs 新潟天鹅 <span class="conf-badge 高">★★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 18:00</span> | <span>📍 NACK5体育场,埼玉</span> | <span>☀️ 35°C 晴</span> | <span>赔率来源: 体彩官方</span>
+        </div>
+        <div class="match-notes">📋 日乙揭幕战，大宫升级热门，新潟降班马，机构方向分歧</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 1.81</span>
+            <span class="odds-item">平 3.5</span>
+            <span class="odds-item">负 3.45</span>
+            <span class="odds-item">让球: 胜3.5 平3.6 负1.77</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>57.0%</td><td>22.5%</td><td>20.5%</td></tr>
+                <tr><td>Shin去水</td><td>49.0%</td><td>25.3%</td><td>25.7%</td></tr>
+                <tr><td>DC模型</td><td>71.7%</td><td>17.2%</td><td>11.1%</td></tr>
+                <tr><td>蒙特卡洛</td><td>65.7%</td><td>17.9%</td><td>16.4%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=2.71 | λ(客)=1.03 | λ(总)=3.73 | 大2.5球: 65.3% | 小2.5球: 34.7%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 57.0% (赔率1.81) | 次选: 平局 22.5% (赔率3.5)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (3.5) | 次选: 让平 (3.6)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>2:0(8.5%) / 2:1(8.1%) / 1:1(7.3%) / 3:0(7.2%) / 3:1(7.1%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(36.5%) / 3球(14.8%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(44.6%) / 平-主(21.2%) / 平-平(8.8%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>1:0(22.7%) / 0:0(18.6%) / 2:0(13.8%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 均衡联赛(场均2.52,大2.5率46%),修正比:0:0.85, 1:0.84, 2:1.06, 3:1.07, 4+:1.06</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>2:0</td><td>8.5%</td></tr><tr><td>2</td><td class='score'>2:1</td><td>8.1%</td></tr><tr><td>3</td><td class='score'>1:1</td><td>7.3%</td></tr><tr><td>4</td><td class='score'>3:0</td><td>7.2%</td></tr><tr><td>5</td><td class='score'>3:1</td><td>7.1%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>44.6%</td></tr><tr><td>2</td><td>平-主</td><td>21.2%</td></tr><tr><td>3</td><td>平-平</td><td>8.8%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>36.5%</td></tr><tr><td>3球</td><td>14.8%</td></tr><tr><td>4球</td><td>13.4%</td></tr><tr><td>2球</td><td>11.8%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:0</td><td>22.7%</td></tr><tr><td>2</td><td class='score'>0:0</td><td>18.6%</td></tr><tr><td>3</td><td class='score'>2:0</td><td>13.8%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-003">
+        <h3>周六003 韩K | 安养FC vs 大田市民 <span class="conf-badge 高">★★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 19:00</span> | <span>📍 安养综合运动场</span> | <span>☀️ 31°C 晴</span> | <span>赔率来源: 体彩官方</span>
+        </div>
+        <div class="match-notes">📋 安养中场核心停赛+3主力伤缺，三家退盘，大田平局大师</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 2.72</span>
+            <span class="odds-item">平 3.15</span>
+            <span class="odds-item">负 2.25</span>
+            <span class="odds-item">让球: 胜1.49 平3.75 负5.22</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>33.4%</td><td>28.6%</td><td>38.0%</td></tr>
+                <tr><td>Shin去水</td><td>32.5%</td><td>28.1%</td><td>39.3%</td></tr>
+                <tr><td>DC模型</td><td>29.1%</td><td>30.0%</td><td>40.9%</td></tr>
+                <tr><td>蒙特卡洛</td><td>31.9%</td><td>26.0%</td><td>42.1%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=1.13 | λ(客)=1.38 | λ(总)=2.52 | 大2.5球: 45.4% | 小2.5球: 54.6%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队4人(核心1) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 客胜 38.0% (赔率2.25) | 次选: 主胜 33.4% (赔率2.72)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让负 (5.22) | 次选: 让平 (3.75)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>1:1(12.5%) / 0:1(10.6%) / 0:0(9.8%) / 1:0(8.9%) / 1:2(8.1%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>2球(21.6%) / 4+球(20.2%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>客-客(22.9%) / 平-平(17.7%) / 平-客(16.9%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>0:0(32.2%) / 0:1(20.0%) / 1:0(16.4%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 均衡联赛(场均2.48,大2.5率44%),修正比:0:0.90, 1:0.87, 2:1.09, 3:1.03, 4+:1.03</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:1</td><td>12.5%</td></tr><tr><td>2</td><td class='score'>0:1</td><td>10.6%</td></tr><tr><td>3</td><td class='score'>0:0</td><td>9.8%</td></tr><tr><td>4</td><td class='score'>1:0</td><td>8.9%</td></tr><tr><td>5</td><td class='score'>1:2</td><td>8.1%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>客-客</td><td>22.9%</td></tr><tr><td>2</td><td>平-平</td><td>17.7%</td></tr><tr><td>3</td><td>平-客</td><td>16.9%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>2球</td><td>21.6%</td></tr><tr><td>4+球</td><td>20.2%</td></tr><tr><td>3球</td><td>17.7%</td></tr><tr><td>1球</td><td>15.5%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>0:0</td><td>32.2%</td></tr><tr><td>2</td><td class='score'>0:1</td><td>20.0%</td></tr><tr><td>3</td><td class='score'>1:0</td><td>16.4%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-004">
+        <h3>周六004 韩K | 全北现代 vs 济州SK <span class="conf-badge 中">★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 19:00</span> | <span>📍 全州世界杯体育场</span> | <span>☀️ 30°C 晴</span> | <span>赔率来源: 体彩官方</span>
+        </div>
+        <div class="match-notes">📋 全北榜首主场碾压，多家升盘力挺，但主场连续两轮0-0</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 1.6</span>
+            <span class="odds-item">平 3.45</span>
+            <span class="odds-item">负 4.65</span>
+            <span class="odds-item">让球: 胜2.99 平3.25 负2.05</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>65.5%</td><td>20.5%</td><td>14.0%</td></tr>
+                <tr><td>Shin去水</td><td>55.3%</td><td>25.7%</td><td>19.0%</td></tr>
+                <tr><td>DC模型</td><td>84.4%</td><td>13.0%</td><td>2.6%</td></tr>
+                <tr><td>蒙特卡洛</td><td>79.1%</td><td>15.9%</td><td>5.0%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=2.51 | λ(客)=0.32 | λ(总)=2.83 | 大2.5球: 50.2% | 小2.5球: 49.8%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队2人(核心1) / 客队2人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 65.5% (赔率1.6) | 次选: 平局 20.5% (赔率3.45)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (2.99) | 次选: 让平 (3.25)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>2:0(17.1%) / 1:0(15.1%) / 3:0(13.9%) / 4:0(9.0%) / 0:0(8.7%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(24.7%) / 2球(19.0%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(55.7%) / 平-主(25.3%) / 平-平(9.0%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>1:0(31.6%) / 0:0(28.0%) / 2:0(17.8%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 均衡联赛(场均2.48,大2.5率44%),修正比:0:0.90, 1:0.87, 2:1.09, 3:1.03, 4+:1.03</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>2:0</td><td>17.1%</td></tr><tr><td>2</td><td class='score'>1:0</td><td>15.1%</td></tr><tr><td>3</td><td class='score'>3:0</td><td>13.9%</td></tr><tr><td>4</td><td class='score'>4:0</td><td>9.0%</td></tr><tr><td>5</td><td class='score'>0:0</td><td>8.7%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>55.7%</td></tr><tr><td>2</td><td>平-主</td><td>25.3%</td></tr><tr><td>3</td><td>平-平</td><td>9.0%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>24.7%</td></tr><tr><td>2球</td><td>19.0%</td></tr><tr><td>3球</td><td>17.5%</td></tr><tr><td>4球</td><td>12.2%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:0</td><td>31.6%</td></tr><tr><td>2</td><td class='score'>0:0</td><td>28.0%</td></tr><tr><td>3</td><td class='score'>2:0</td><td>17.8%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-005">
+        <h3>周六005 韩K | 金泉尚武 vs 首尔FC <span class="conf-badge 高">★★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 19:00</span> | <span>📍 金泉体育场</span> | <span>☀️ 29°C 晴</span> | <span>赔率来源: 体彩官方</span>
+        </div>
+        <div class="match-notes">📋 金泉近3次全胜首尔，客胜赔率分化严重，兵役球队主场平局率60%</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 3.6</span>
+            <span class="odds-item">平 3.45</span>
+            <span class="odds-item">负 1.78</span>
+            <span class="odds-item">让球: 胜1.81 平3.48 负3.45</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>34.4%</td><td>26.3%</td><td>39.3%</td></tr>
+                <tr><td>Shin去水</td><td>24.6%</td><td>25.7%</td><td>49.7%</td></tr>
+                <tr><td>DC模型</td><td>33.9%</td><td>26.3%</td><td>39.8%</td></tr>
+                <tr><td>蒙特卡洛</td><td>36.4%</td><td>22.5%</td><td>41.1%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=1.51 | λ(客)=1.65 | λ(总)=3.16 | 大2.5球: 58.5% | 小2.5球: 41.5%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 客胜 39.3% (赔率1.78) | 次选: 主胜 34.4% (赔率3.6)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让负 (3.45) | 次选: 让平 (3.48)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>1:1(10.5%) / 1:2(7.9%) / 2:1(7.3%) / 0:1(6.9%) / 1:0(6.4%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(29.0%) / 3球(16.7%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>客-客(22.4%) / 主-主(18.8%) / 平-客(15.3%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>0:0(24.2%) / 0:1(17.9%) / 1:0(16.4%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 均衡联赛(场均2.48,大2.5率44%),修正比:0:0.90, 1:0.87, 2:1.09, 3:1.03, 4+:1.03</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:1</td><td>10.5%</td></tr><tr><td>2</td><td class='score'>1:2</td><td>7.9%</td></tr><tr><td>3</td><td class='score'>2:1</td><td>7.3%</td></tr><tr><td>4</td><td class='score'>0:1</td><td>6.9%</td></tr><tr><td>5</td><td class='score'>1:0</td><td>6.4%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>客-客</td><td>22.4%</td></tr><tr><td>2</td><td>主-主</td><td>18.8%</td></tr><tr><td>3</td><td>平-客</td><td>15.3%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>29.0%</td></tr><tr><td>3球</td><td>16.7%</td></tr><tr><td>2球</td><td>16.3%</td></tr><tr><td>4球</td><td>13.0%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>0:0</td><td>24.2%</td></tr><tr><td>2</td><td class='score'>0:1</td><td>17.9%</td></tr><tr><td>3</td><td class='score'>1:0</td><td>16.4%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-006">
+        <h3>周六006 挪超 | 瓦勒伦加 vs 博德闪耀 <span class="conf-badge 高">★★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 20:00</span> | <span>📍 Intility Arena,奥斯陆</span> | <span>☀️ 22°C 晴</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 博德闪耀榜首5连胜，瓦勒伦加双边后卫伤缺，近3次交手博德全胜零封</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 3.8</span>
+            <span class="odds-item">平 3.6</span>
+            <span class="odds-item">负 1.75</span>
+            <span class="odds-item">让球: 胜1.45 平3.8 负5.5</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>26.8%</td><td>24.3%</td><td>48.9%</td></tr>
+                <tr><td>Shin去水</td><td>23.7%</td><td>25.0%</td><td>51.4%</td></tr>
+                <tr><td>DC模型</td><td>20.5%</td><td>21.8%</td><td>57.7%</td></tr>
+                <tr><td>蒙特卡洛</td><td>26.3%</td><td>19.9%</td><td>53.8%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=1.34 | λ(客)=2.29 | λ(总)=3.63 | 大2.5球: 63.5% | 小2.5球: 36.5%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队2人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 客胜 48.9% (赔率1.75) | 次选: 主胜 26.8% (赔率3.8)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让负 (5.5) | 次选: 让平 (3.8)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>1:1(8.7%) / 1:2(8.4%) / 0:2(6.7%) / 1:3(6.3%) / 0:1(5.9%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(36.2%) / 3球(15.2%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>客-客(34.3%) / 平-客(19.0%) / 平-平(10.9%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>0:1(20.2%) / 0:0(19.5%) / 1:1(12.1%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 大球联赛(场均2.82,大2.5率56%),修正比:0:0.81, 1:0.83, 2:0.93, 3:1.08, 4+:1.13</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:1</td><td>8.7%</td></tr><tr><td>2</td><td class='score'>1:2</td><td>8.4%</td></tr><tr><td>3</td><td class='score'>0:2</td><td>6.7%</td></tr><tr><td>4</td><td class='score'>1:3</td><td>6.3%</td></tr><tr><td>5</td><td class='score'>0:1</td><td>5.9%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>客-客</td><td>34.3%</td></tr><tr><td>2</td><td>平-客</td><td>19.0%</td></tr><tr><td>3</td><td>平-平</td><td>10.9%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>36.2%</td></tr><tr><td>3球</td><td>15.2%</td></tr><tr><td>4球</td><td>13.4%</td></tr><tr><td>2球</td><td>11.8%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>0:1</td><td>20.2%</td></tr><tr><td>2</td><td class='score'>0:0</td><td>19.5%</td></tr><tr><td>3</td><td class='score'>1:1</td><td>12.1%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-007">
+        <h3>周六007 英冠 | 女王公园巡游者 vs 米尔沃尔 <span class="conf-badge 中">★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 21:00</span> | <span>📍 Loftus Road,伦敦</span> | <span>☁️ 20°C 多云</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 英联杯首轮，两队大规模轮换80%主力，同城德比低优先级杯赛</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 2.55</span>
+            <span class="odds-item">平 3.1</span>
+            <span class="odds-item">负 2.65</span>
+            <span class="odds-item">让球: 胜1.4 平3.75 负5.8</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>48.7%</td><td>25.8%</td><td>25.6%</td></tr>
+                <tr><td>Shin去水</td><td>35.9%</td><td>29.5%</td><td>34.6%</td></tr>
+                <tr><td>DC模型</td><td>55.9%</td><td>24.5%</td><td>19.6%</td></tr>
+                <tr><td>蒙特卡洛</td><td>55.1%</td><td>21.5%</td><td>23.4%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=1.95 | λ(客)=1.09 | λ(总)=3.04 | 大2.5球: 55.7% | 小2.5球: 44.3%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 48.7% (赔率2.55) | 次选: 平局 25.8% (赔率3.1)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (1.4) | 次选: 让平 (3.75)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>1:1(10.2%) / 1:0(9.1%) / 2:1(8.9%) / 2:0(8.7%) / 0:0(6.5%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(24.7%) / 2球(22.9%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(33.1%) / 平-主(20.0%) / 平-平(13.4%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>0:0(25.5%) / 1:0(22.3%) / 0:1(12.5%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 大球联赛(场均2.94,大2.5率48%),修正比:0:0.50, 1:0.59, 2:1.86, 3:0.95, 4+:0.80</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:1</td><td>10.2%</td></tr><tr><td>2</td><td class='score'>1:0</td><td>9.1%</td></tr><tr><td>3</td><td class='score'>2:1</td><td>8.9%</td></tr><tr><td>4</td><td class='score'>2:0</td><td>8.7%</td></tr><tr><td>5</td><td class='score'>0:0</td><td>6.5%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>33.1%</td></tr><tr><td>2</td><td>平-主</td><td>20.0%</td></tr><tr><td>3</td><td>平-平</td><td>13.4%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>24.7%</td></tr><tr><td>2球</td><td>22.9%</td></tr><tr><td>3球</td><td>16.4%</td></tr><tr><td>4球</td><td>12.7%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>0:0</td><td>25.5%</td></tr><tr><td>2</td><td class='score'>1:0</td><td>22.3%</td></tr><tr><td>3</td><td class='score'>0:1</td><td>12.5%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-008">
+        <h3>周六008 瑞超 | 厄格里特 vs 索尔纳 <span class="conf-badge 中">★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 21:00</span> | <span>📍 Gamla Ullevi,哥德堡</span> | <span>☁️ 19°C 多云</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 厄格里特垫底主场进球倒数第一，索尔纳争欧战，近5次交手3平</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 3.5</span>
+            <span class="odds-item">平 3.1</span>
+            <span class="odds-item">负 2.05</span>
+            <span class="odds-item">让球: 胜1.42 平3.8 负6.0</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>22.8%</td><td>28.6%</td><td>48.6%</td></tr>
+                <tr><td>Shin去水</td><td>26.1%</td><td>29.4%</td><td>44.5%</td></tr>
+                <tr><td>DC模型</td><td>12.3%</td><td>28.9%</td><td>58.8%</td></tr>
+                <tr><td>蒙特卡洛</td><td>15.2%</td><td>27.1%</td><td>57.7%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=0.55 | λ(客)=1.49 | λ(总)=2.04 | 大2.5球: 33.7% | 小2.5球: 66.3%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队1人(核心1) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 客胜 48.6% (赔率2.05) | 次选: 平局 28.6% (赔率3.1)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让负 (6.0) | 次选: 让平 (3.8)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>0:1(18.2%) / 0:0(14.7%) / 0:2(13.7%) / 1:1(11.1%) / 1:2(7.5%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>2球(24.1%) / 1球(22.0%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>客-客(34.2%) / 平-客(23.7%) / 平-平(20.0%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>0:0(39.9%) / 0:1(26.7%) / 1:0(10.0%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 均衡联赛(场均2.65,大2.5率53%),修正比:0:0.78, 1:0.85, 2:1.01, 3:1.05, 4+:1.11</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>0:1</td><td>18.2%</td></tr><tr><td>2</td><td class='score'>0:0</td><td>14.7%</td></tr><tr><td>3</td><td class='score'>0:2</td><td>13.7%</td></tr><tr><td>4</td><td class='score'>1:1</td><td>11.1%</td></tr><tr><td>5</td><td class='score'>1:2</td><td>7.5%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>客-客</td><td>34.2%</td></tr><tr><td>2</td><td>平-客</td><td>23.7%</td></tr><tr><td>3</td><td>平-平</td><td>20.0%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>2球</td><td>24.1%</td></tr><tr><td>1球</td><td>22.0%</td></tr><tr><td>3球</td><td>16.7%</td></tr><tr><td>4+球</td><td>14.0%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>0:0</td><td>39.9%</td></tr><tr><td>2</td><td class='score'>0:1</td><td>26.7%</td></tr><tr><td>3</td><td class='score'>1:0</td><td>10.0%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-009">
+        <h3>周六009 英超 | 西汉姆联 vs 朴次茅斯 <span class="conf-badge 高">★★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 22:00</span> | <span>📍 London Stadium,伦敦</span> | <span>☁️ 20°C 多云</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 跨级别对决，西汉姆英超vs朴次茅斯英甲，铁锤帮轮换但仍碾压</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 1.5</span>
+            <span class="odds-item">平 3.8</span>
+            <span class="odds-item">负 5.5</span>
+            <span class="odds-item">让球: 胜2.5 平3.25 负2.5</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>60.2%</td><td>21.3%</td><td>18.4%</td></tr>
+                <tr><td>Shin去水</td><td>60.0%</td><td>23.7%</td><td>16.4%</td></tr>
+                <tr><td>DC模型</td><td>71.2%</td><td>16.8%</td><td>12.0%</td></tr>
+                <tr><td>蒙特卡洛</td><td>66.0%</td><td>16.6%</td><td>17.4%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=2.83 | λ(客)=1.15 | λ(总)=3.98 | 大2.5球: 68.3% | 小2.5球: 31.7%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 60.2% (赔率1.5) | 次选: 平局 21.3% (赔率3.8)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (2.5) | 次选: 让平 (3.25)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>2:1(8.0%) / 2:0(7.3%) / 3:1(7.1%) / 1:1(7.0%) / 3:0(6.5%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(42.3%) / 3球(13.4%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(43.9%) / 平-主(20.5%) / 平-平(8.2%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>1:0(21.3%) / 0:0(16.7%) / 2:0(13.5%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 大球联赛(场均2.86,大2.5率57%),修正比:0:0.52, 1:0.67, 2:0.85, 3:1.07, 4+:1.31</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>2:1</td><td>8.0%</td></tr><tr><td>2</td><td class='score'>2:0</td><td>7.3%</td></tr><tr><td>3</td><td class='score'>3:1</td><td>7.1%</td></tr><tr><td>4</td><td class='score'>1:1</td><td>7.0%</td></tr><tr><td>5</td><td class='score'>3:0</td><td>6.5%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>43.9%</td></tr><tr><td>2</td><td>平-主</td><td>20.5%</td></tr><tr><td>3</td><td>平-平</td><td>8.2%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>42.3%</td></tr><tr><td>3球</td><td>13.4%</td></tr><tr><td>4球</td><td>12.9%</td></tr><tr><td>5球</td><td>10.3%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:0</td><td>21.3%</td></tr><tr><td>2</td><td class='score'>0:0</td><td>16.7%</td></tr><tr><td>3</td><td class='score'>2:0</td><td>13.5%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-010">
+        <h3>周六010 英冠 | 斯旺西 vs 伯明翰 <span class="conf-badge 中">★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 22:00</span> | <span>📍 Swansea.com Stadium</span> | <span>🌧 18°C 小雨</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 英冠同级球队，英联杯大规模轮换，变数极大</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 2.4</span>
+            <span class="odds-item">平 3.1</span>
+            <span class="odds-item">负 2.8</span>
+            <span class="odds-item">让球: 胜1.38 平3.7 负6.2</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>52.5%</td><td>24.2%</td><td>23.3%</td></tr>
+                <tr><td>Shin去水</td><td>38.0%</td><td>29.4%</td><td>32.6%</td></tr>
+                <tr><td>DC模型</td><td>62.9%</td><td>21.2%</td><td>15.9%</td></tr>
+                <tr><td>蒙特卡洛</td><td>60.1%</td><td>19.6%</td><td>20.3%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=2.29 | λ(客)=1.10 | λ(总)=3.39 | 大2.5球: 61.4% | 小2.5球: 38.6%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 52.5% (赔率2.4) | 次选: 平局 24.2% (赔率3.1)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (1.38) | 次选: 让平 (3.7)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>1:1(8.7%) / 2:1(8.7%) / 2:0(8.5%) / 1:0(7.7%) / 3:1(6.5%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(29.0%) / 2球(19.4%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(38.0%) / 平-主(20.6%) / 平-平(11.1%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>1:0(22.4%) / 0:0(21.7%) / 2:0(11.5%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 大球联赛(场均2.94,大2.5率48%),修正比:0:0.50, 1:0.59, 2:1.86, 3:0.95, 4+:0.80</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:1</td><td>8.7%</td></tr><tr><td>2</td><td class='score'>2:1</td><td>8.7%</td></tr><tr><td>3</td><td class='score'>2:0</td><td>8.5%</td></tr><tr><td>4</td><td class='score'>1:0</td><td>7.7%</td></tr><tr><td>5</td><td class='score'>3:1</td><td>6.5%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>38.0%</td></tr><tr><td>2</td><td>平-主</td><td>20.6%</td></tr><tr><td>3</td><td>平-平</td><td>11.1%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>29.0%</td></tr><tr><td>2球</td><td>19.4%</td></tr><tr><td>3球</td><td>15.4%</td></tr><tr><td>4球</td><td>13.4%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:0</td><td>22.4%</td></tr><tr><td>2</td><td class='score'>0:0</td><td>21.7%</td></tr><tr><td>3</td><td class='score'>2:0</td><td>11.5%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-011">
+        <h3>周六011 挪超 | 维京 vs 萨普斯堡 <span class="conf-badge 低">★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 23:00</span> | <span>📍 SR-Bank Arena,斯塔万格</span> | <span>☀️ 21°C 晴</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 维京主场龙，萨普斯堡客场6连败，近4次维京主场全胜</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 1.55</span>
+            <span class="odds-item">平 3.8</span>
+            <span class="odds-item">负 4.8</span>
+            <span class="odds-item">让球: 胜2.7 平3.3 负2.3</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>67.8%</td><td>17.9%</td><td>14.3%</td></tr>
+                <tr><td>Shin去水</td><td>57.8%</td><td>23.6%</td><td>18.7%</td></tr>
+                <tr><td>DC模型</td><td>89.2%</td><td>8.1%</td><td>2.7%</td></tr>
+                <tr><td>蒙特卡洛</td><td>77.1%</td><td>13.9%</td><td>8.9%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=3.62 | λ(客)=0.62 | λ(总)=4.25 | 大2.5球: 64.0% | 小2.5球: 36.0%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队2人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 67.8% (赔率1.55) | 次选: 平局 17.9% (赔率3.8)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (2.7) | 次选: 让平 (3.3)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>3:0(10.1%) / 2:0(9.6%) / 4:0(8.9%) / 1:0(6.9%) / 5:0(6.6%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(43.0%) / 4球(12.9%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(59.0%) / 平-主(19.8%) / 平-平(4.2%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>1:0(24.1%) / 2:0(19.7%) / 0:0(14.8%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 大球联赛(场均2.82,大2.5率56%),修正比:0:0.81, 1:0.83, 2:0.93, 3:1.08, 4+:1.13</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>3:0</td><td>10.1%</td></tr><tr><td>2</td><td class='score'>2:0</td><td>9.6%</td></tr><tr><td>3</td><td class='score'>4:0</td><td>8.9%</td></tr><tr><td>4</td><td class='score'>1:0</td><td>6.9%</td></tr><tr><td>5</td><td class='score'>5:0</td><td>6.6%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>59.0%</td></tr><tr><td>2</td><td>平-主</td><td>19.8%</td></tr><tr><td>3</td><td>平-平</td><td>4.2%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>43.0%</td></tr><tr><td>4球</td><td>12.9%</td></tr><tr><td>3球</td><td>12.5%</td></tr><tr><td>5球</td><td>10.9%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:0</td><td>24.1%</td></tr><tr><td>2</td><td class='score'>2:0</td><td>19.7%</td></tr><tr><td>3</td><td class='score'>0:0</td><td>14.8%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-012">
+        <h3>周六012 荷甲 | 奈梅亨 vs 特尔斯达 <span class="conf-badge 高">★★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 22:30</span> | <span>📍 Goffertstadion,奈梅亨</span> | <span>☁️ 19°C 多云</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 荷甲新赛季首轮，奈梅亨主场开门红，特尔斯达升班马首征荷甲</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 1.75</span>
+            <span class="odds-item">平 3.5</span>
+            <span class="odds-item">负 4.0</span>
+            <span class="odds-item">让球: 胜3.2 平3.35 负2.0</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>55.5%</td><td>23.3%</td><td>21.2%</td></tr>
+                <tr><td>Shin去水</td><td>51.6%</td><td>25.8%</td><td>22.6%</td></tr>
+                <tr><td>DC模型</td><td>64.0%</td><td>20.3%</td><td>15.6%</td></tr>
+                <tr><td>蒙特卡洛</td><td>59.7%</td><td>18.9%</td><td>21.4%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=2.40 | λ(客)=1.14 | λ(总)=3.55 | 大2.5球: 61.9% | 小2.5球: 38.1%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队2人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 55.5% (赔率1.75) | 次选: 平局 23.3% (赔率3.5)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (3.2) | 次选: 让平 (3.35)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>2:1(8.5%) / 1:1(8.5%) / 2:0(7.9%) / 1:0(6.9%) / 3:1(6.7%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(36.4%) / 3球(15.9%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(38.8%) / 平-主(20.5%) / 平-平(10.4%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>1:0(21.9%) / 0:0(20.3%) / 2:0(11.9%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 大球联赛(场均3.18,大2.5率66%),修正比:0:0.60, 1:0.60, 2:0.81, 3:1.12, 4+:1.21</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>2:1</td><td>8.5%</td></tr><tr><td>2</td><td class='score'>1:1</td><td>8.5%</td></tr><tr><td>3</td><td class='score'>2:0</td><td>7.9%</td></tr><tr><td>4</td><td class='score'>1:0</td><td>6.9%</td></tr><tr><td>5</td><td class='score'>3:1</td><td>6.7%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>38.8%</td></tr><tr><td>2</td><td>平-主</td><td>20.5%</td></tr><tr><td>3</td><td>平-平</td><td>10.4%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>36.4%</td></tr><tr><td>3球</td><td>15.9%</td></tr><tr><td>4球</td><td>13.4%</td></tr><tr><td>2球</td><td>11.6%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:0</td><td>21.9%</td></tr><tr><td>2</td><td class='score'>0:0</td><td>20.3%</td></tr><tr><td>3</td><td class='score'>2:0</td><td>11.9%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-013">
+        <h3>周六013 葡超 | 马里迪莫 vs 卡萨皮亚 <span class="conf-badge 中">★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 00:15</span> | <span>📍 Estádio dos Barreiros,丰沙尔</span> | <span>☀️ 26°C 晴</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 葡超首轮，马里迪莫主场优势，卡萨皮亚新援磨合不足</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 2.2</span>
+            <span class="odds-item">平 3.1</span>
+            <span class="odds-item">负 3.1</span>
+            <span class="odds-item">让球: 胜1.4 平3.7 负6.0</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>57.3%</td><td>22.3%</td><td>20.4%</td></tr>
+                <tr><td>Shin去水</td><td>41.3%</td><td>29.3%</td><td>29.3%</td></tr>
+                <tr><td>DC模型</td><td>71.5%</td><td>17.2%</td><td>11.3%</td></tr>
+                <tr><td>蒙特卡洛</td><td>66.2%</td><td>17.2%</td><td>16.6%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=2.72 | λ(客)=1.05 | λ(总)=3.77 | 大2.5球: 66.4% | 小2.5球: 33.6%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        <div class="divergence-bar"><span class='alert'>⚠️ 模型与市场分歧>15% (模型主胜57.3% vs 市场41.3%)</span></div>
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 57.3% (赔率2.2) | 次选: 平局 22.3% (赔率3.1)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (1.4) | 次选: 让平 (3.7)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>2:0(8.2%) / 2:1(8.1%) / 3:0(7.2%) / 1:1(7.1%) / 3:1(7.0%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(38.2%) / 3球(14.4%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(44.4%) / 平-主(21.1%) / 平-平(8.7%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>1:0(22.5%) / 0:0(18.4%) / 2:0(13.7%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 均衡联赛(场均2.52,大2.5率50%),修正比:0:0.72, 1:0.74, 2:1.06, 3:1.07, 4+:1.18</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>2:0</td><td>8.2%</td></tr><tr><td>2</td><td class='score'>2:1</td><td>8.1%</td></tr><tr><td>3</td><td class='score'>3:0</td><td>7.2%</td></tr><tr><td>4</td><td class='score'>1:1</td><td>7.1%</td></tr><tr><td>5</td><td class='score'>3:1</td><td>7.0%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>44.4%</td></tr><tr><td>2</td><td>平-主</td><td>21.1%</td></tr><tr><td>3</td><td>平-平</td><td>8.7%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>38.2%</td></tr><tr><td>3球</td><td>14.4%</td></tr><tr><td>4球</td><td>13.2%</td></tr><tr><td>2球</td><td>11.4%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:0</td><td>22.5%</td></tr><tr><td>2</td><td class='score'>0:0</td><td>18.4%</td></tr><tr><td>3</td><td class='score'>2:0</td><td>13.7%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-014">
+        <h3>周六014 瑞超 | 米亚尔比 vs 埃夫斯堡 <span class="conf-badge 高">★★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 23:30</span> | <span>📍 Strandvallen,米亚尔比</span> | <span>☁️ 18°C 多云</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 瑞超中游均势，近8次交手6平，平局率75%</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 2.55</span>
+            <span class="odds-item">平 2.9</span>
+            <span class="odds-item">负 2.65</span>
+            <span class="odds-item">让球: 胜1.35 平3.5 负7.0</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>43.6%</td><td>30.0%</td><td>26.4%</td></tr>
+                <tr><td>Shin去水</td><td>35.2%</td><td>30.9%</td><td>33.9%</td></tr>
+                <tr><td>DC模型</td><td>48.7%</td><td>30.7%</td><td>20.6%</td></tr>
+                <tr><td>蒙特卡洛</td><td>49.2%</td><td>27.2%</td><td>23.6%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=1.40 | λ(客)=0.83 | λ(总)=2.22 | 大2.5球: 38.1% | 小2.5球: 61.9%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 43.6% (赔率2.55) | 次选: 平局 30.0% (赔率2.9)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (1.35) | 次选: 让平 (3.5)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>1:0(14.1%) / 1:1(12.8%) / 0:0(12.4%) / 2:0(10.2%) / 0:1(8.4%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>2球(23.0%) / 1球(19.3%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(27.7%) / 平-主(20.2%) / 平-平(19.6%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>0:0(36.8%) / 1:0(23.1%) / 0:1(13.7%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 均衡联赛(场均2.65,大2.5率53%),修正比:0:0.78, 1:0.85, 2:1.01, 3:1.05, 4+:1.11</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:0</td><td>14.1%</td></tr><tr><td>2</td><td class='score'>1:1</td><td>12.8%</td></tr><tr><td>3</td><td class='score'>0:0</td><td>12.4%</td></tr><tr><td>4</td><td class='score'>2:0</td><td>10.2%</td></tr><tr><td>5</td><td class='score'>0:1</td><td>8.4%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>27.7%</td></tr><tr><td>2</td><td>平-主</td><td>20.2%</td></tr><tr><td>3</td><td>平-平</td><td>19.6%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>2球</td><td>23.0%</td></tr><tr><td>1球</td><td>19.3%</td></tr><tr><td>3球</td><td>17.4%</td></tr><tr><td>4+球</td><td>16.7%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>0:0</td><td>36.8%</td></tr><tr><td>2</td><td class='score'>1:0</td><td>23.1%</td></tr><tr><td>3</td><td class='score'>0:1</td><td>13.7%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-015">
+        <h3>周六015 芬超 | 雅罗 vs 瓦萨 <span class="conf-badge 高">★★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 00:00</span> | <span>📍 雅罗体育场</span> | <span>☀️ 20°C 晴</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 芬超弱队对决，场均合计不足1.8球，近5次4平</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 2.65</span>
+            <span class="odds-item">平 2.95</span>
+            <span class="odds-item">负 2.6</span>
+            <span class="odds-item">让球: 胜1.35 平3.5 负7.0</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>40.6%</td><td>32.2%</td><td>27.2%</td></tr>
+                <tr><td>Shin去水</td><td>34.3%</td><td>30.8%</td><td>34.9%</td></tr>
+                <tr><td>DC模型</td><td>43.2%</td><td>35.5%</td><td>21.3%</td></tr>
+                <tr><td>蒙特卡洛</td><td>44.2%</td><td>32.3%</td><td>23.5%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=1.09 | λ(客)=0.69 | λ(总)=1.77 | 大2.5球: 26.3% | 小2.5球: 73.7%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 40.6% (赔率2.65) | 次选: 平局 32.2% (赔率2.95)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (1.35) | 次选: 让平 (3.5)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>0:0(18.7%) / 1:0(17.5%) / 1:1(12.6%) / 0:1(11.2%) / 2:0(9.9%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>1球(26.3%) / 2球(25.4%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>平-平(25.2%) / 主-主(23.7%) / 平-主(19.5%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>0:0(45.1%) / 1:0(22.0%) / 0:1(13.9%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 均衡联赛(场均2.55,大2.5率48%),修正比:0:0.96, 1:0.90, 2:1.10, 3:1.02, 4+:0.97</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>0:0</td><td>18.7%</td></tr><tr><td>2</td><td class='score'>1:0</td><td>17.5%</td></tr><tr><td>3</td><td class='score'>1:1</td><td>12.6%</td></tr><tr><td>4</td><td class='score'>0:1</td><td>11.2%</td></tr><tr><td>5</td><td class='score'>2:0</td><td>9.9%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>平-平</td><td>25.2%</td></tr><tr><td>2</td><td>主-主</td><td>23.7%</td></tr><tr><td>3</td><td>平-主</td><td>19.5%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>1球</td><td>26.3%</td></tr><tr><td>2球</td><td>25.4%</td></tr><tr><td>0球</td><td>15.2%</td></tr><tr><td>3球</td><td>14.5%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>0:0</td><td>45.1%</td></tr><tr><td>2</td><td class='score'>1:0</td><td>22.0%</td></tr><tr><td>3</td><td class='score'>0:1</td><td>13.9%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-016">
+        <h3>周六016 荷甲 | 前进之鹰 vs 威廉二世 <span class="conf-badge 低">★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 00:30</span> | <span>📍 De Adelaarshorst,代芬特尔</span> | <span>☁️ 18°C 多云</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 荷甲首轮，前进之鹰上赛季主场拿70%积分，威廉二世客场起伏大</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 1.9</span>
+            <span class="odds-item">平 3.4</span>
+            <span class="odds-item">负 3.6</span>
+            <span class="odds-item">让球: 胜3.6 平3.4 负1.8</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>61.6%</td><td>21.2%</td><td>17.2%</td></tr>
+                <tr><td>Shin去水</td><td>47.9%</td><td>26.8%</td><td>25.3%</td></tr>
+                <tr><td>DC模型</td><td>76.3%</td><td>15.8%</td><td>8.0%</td></tr>
+                <tr><td>蒙特卡洛</td><td>67.9%</td><td>17.8%</td><td>14.3%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=2.73 | λ(客)=0.83 | λ(总)=3.56 | 大2.5球: 60.1% | 小2.5球: 39.9%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 61.6% (赔率1.9) | 次选: 平局 21.2% (赔率3.4)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (3.6) | 次选: 让平 (3.4)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>2:0(9.9%) / 3:0(8.7%) / 1:0(8.1%) / 2:1(8.0%) / 1:1(7.2%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(36.6%) / 3球(15.8%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(48.4%) / 平-主(22.2%) / 平-平(8.4%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>1:0(24.8%) / 0:0(20.2%) / 2:0(15.2%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 大球联赛(场均3.18,大2.5率66%),修正比:0:0.60, 1:0.60, 2:0.81, 3:1.12, 4+:1.21</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>2:0</td><td>9.9%</td></tr><tr><td>2</td><td class='score'>3:0</td><td>8.7%</td></tr><tr><td>3</td><td class='score'>1:0</td><td>8.1%</td></tr><tr><td>4</td><td class='score'>2:1</td><td>8.0%</td></tr><tr><td>5</td><td class='score'>1:1</td><td>7.2%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>48.4%</td></tr><tr><td>2</td><td>平-主</td><td>22.2%</td></tr><tr><td>3</td><td>平-平</td><td>8.4%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>36.6%</td></tr><tr><td>3球</td><td>15.8%</td></tr><tr><td>4球</td><td>13.4%</td></tr><tr><td>2球</td><td>11.6%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:0</td><td>24.8%</td></tr><tr><td>2</td><td class='score'>0:0</td><td>20.2%</td></tr><tr><td>3</td><td class='score'>2:0</td><td>15.2%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-017">
+        <h3>周六017 葡超 | 吉马良斯 vs 阿罗卡 <span class="conf-badge 低">★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 01:00</span> | <span>📍 D. Afonso Henriques,吉马良斯</span> | <span>☀️ 24°C 晴</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 葡超首轮，吉马良斯主场稳定，阿罗卡客场保守近10客场7平</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 1.85</span>
+            <span class="odds-item">平 3.2</span>
+            <span class="odds-item">负 4.0</span>
+            <span class="odds-item">让球: 胜3.4 平3.3 负1.9</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>63.7%</td><td>20.4%</td><td>15.9%</td></tr>
+                <tr><td>Shin去水</td><td>49.0%</td><td>28.3%</td><td>22.7%</td></tr>
+                <tr><td>DC模型</td><td>80.9%</td><td>13.4%</td><td>5.6%</td></tr>
+                <tr><td>蒙特卡洛</td><td>75.0%</td><td>15.0%</td><td>10.0%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=2.90 | λ(客)=0.71 | λ(总)=3.61 | 大2.5球: 62.7% | 小2.5球: 37.3%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 63.7% (赔率1.85) | 次选: 平局 20.4% (赔率3.2)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (3.4) | 次选: 让平 (3.3)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>2:0(10.8%) / 3:0(9.9%) / 1:0(8.6%) / 2:1(7.5%) / 4:0(7.2%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(36.4%) / 3球(15.1%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(52.4%) / 平-主(22.3%) / 平-平(7.3%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>1:0(25.7%) / 0:0(19.7%) / 2:0(16.8%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 均衡联赛(场均2.52,大2.5率50%),修正比:0:0.72, 1:0.74, 2:1.06, 3:1.07, 4+:1.18</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>2:0</td><td>10.8%</td></tr><tr><td>2</td><td class='score'>3:0</td><td>9.9%</td></tr><tr><td>3</td><td class='score'>1:0</td><td>8.6%</td></tr><tr><td>4</td><td class='score'>2:1</td><td>7.5%</td></tr><tr><td>5</td><td class='score'>4:0</td><td>7.2%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>52.4%</td></tr><tr><td>2</td><td>平-主</td><td>22.3%</td></tr><tr><td>3</td><td>平-平</td><td>7.3%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>36.4%</td></tr><tr><td>3球</td><td>15.1%</td></tr><tr><td>4球</td><td>13.2%</td></tr><tr><td>2球</td><td>12.4%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:0</td><td>25.7%</td></tr><tr><td>2</td><td class='score'>0:0</td><td>19.7%</td></tr><tr><td>3</td><td class='score'>2:0</td><td>16.8%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-018">
+        <h3>周六018 荷甲 | 埃因霍温 vs 福图纳锡塔德 <span class="conf-badge 高">★★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 01:30</span> | <span>📍 Philips Stadion,埃因霍温</span> | <span>☁️ 19°C 多云</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 荷甲豪门vs下游，埃因霍温主场开门红势在必得</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 1.25</span>
+            <span class="odds-item">平 5.0</span>
+            <span class="odds-item">负 8.5</span>
+            <span class="odds-item">让球: 胜1.8 平3.5 负3.8</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>76.2%</td><td>13.8%</td><td>10.0%</td></tr>
+                <tr><td>Shin去水</td><td>71.6%</td><td>17.9%</td><td>10.5%</td></tr>
+                <tr><td>DC模型</td><td>93.6%</td><td>5.2%</td><td>1.2%</td></tr>
+                <tr><td>蒙特卡洛</td><td>79.8%</td><td>14.3%</td><td>5.9%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=4.00 | λ(客)=0.45 | λ(总)=4.45 | 大2.5球: 63.9% | 小2.5球: 36.1%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 76.2% (赔率1.25) | 次选: 平局 13.8% (赔率5.0)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (1.8) | 次选: 让平 (3.5)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>3:0(11.5%) / 4:0(10.9%) / 2:0(10.1%) / 5:0(8.6%) / 1:0(7.1%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(46.2%) / 4球(12.4%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(62.9%) / 平-主(17.8%) / 平-平(2.8%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>1:0(24.3%) / 2:0(21.9%) / 0:0(13.5%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 大球联赛(场均3.18,大2.5率66%),修正比:0:0.60, 1:0.60, 2:0.81, 3:1.12, 4+:1.21</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>3:0</td><td>11.5%</td></tr><tr><td>2</td><td class='score'>4:0</td><td>10.9%</td></tr><tr><td>3</td><td class='score'>2:0</td><td>10.1%</td></tr><tr><td>4</td><td class='score'>5:0</td><td>8.6%</td></tr><tr><td>5</td><td class='score'>1:0</td><td>7.1%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>62.9%</td></tr><tr><td>2</td><td>平-主</td><td>17.8%</td></tr><tr><td>3</td><td>平-平</td><td>2.8%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>46.2%</td></tr><tr><td>4球</td><td>12.4%</td></tr><tr><td>3球</td><td>11.8%</td></tr><tr><td>5球</td><td>11.1%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:0</td><td>24.3%</td></tr><tr><td>2</td><td class='score'>2:0</td><td>21.9%</td></tr><tr><td>3</td><td class='score'>0:0</td><td>13.5%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-019">
+        <h3>周六019 法乙 | 波城FC vs 阿纳西 <span class="conf-badge 高">★★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 02:45</span> | <span>📍 Nouveau Camp de Sébé,波城</span> | <span>☀️ 28°C 晴</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 法乙升级关键战，阿纳西升级区客场抢分，波城主场进攻乏力</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 2.7</span>
+            <span class="odds-item">平 2.9</span>
+            <span class="odds-item">负 2.65</span>
+            <span class="odds-item">让球: 胜1.35 平3.5 负7.0</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>41.4%</td><td>29.5%</td><td>29.1%</td></tr>
+                <tr><td>Shin去水</td><td>33.9%</td><td>31.6%</td><td>34.5%</td></tr>
+                <tr><td>DC模型</td><td>43.1%</td><td>30.9%</td><td>26.0%</td></tr>
+                <tr><td>蒙特卡洛</td><td>44.0%</td><td>27.2%</td><td>28.9%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=1.35 | λ(客)=1.00 | λ(总)=2.34 | 大2.5球: 41.5% | 小2.5球: 58.5%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 41.4% (赔率2.7) | 次选: 平局 29.5% (赔率2.9)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (1.35) | 次选: 让平 (3.5)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>1:1(13.3%) / 1:0(11.9%) / 0:0(11.2%) / 0:1(8.9%) / 2:0(8.5%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>2球(21.1%) / 1球(20.3%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(24.2%) / 平-平(19.0%) / 平-主(18.1%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>0:0(34.9%) / 1:0(21.1%) / 0:1(15.6%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 均衡联赛(场均2.58,大2.5率49%),修正比:0:0.79, 1:1.18, 2:0.91, 3:0.97, 4+:1.04</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:1</td><td>13.3%</td></tr><tr><td>2</td><td class='score'>1:0</td><td>11.9%</td></tr><tr><td>3</td><td class='score'>0:0</td><td>11.2%</td></tr><tr><td>4</td><td class='score'>0:1</td><td>8.9%</td></tr><tr><td>5</td><td class='score'>2:0</td><td>8.5%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>24.2%</td></tr><tr><td>2</td><td>平-平</td><td>19.0%</td></tr><tr><td>3</td><td>平-主</td><td>18.1%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>2球</td><td>21.1%</td></tr><tr><td>1球</td><td>20.3%</td></tr><tr><td>4+球</td><td>17.8%</td></tr><tr><td>3球</td><td>16.9%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>0:0</td><td>34.9%</td></tr><tr><td>2</td><td class='score'>1:0</td><td>21.1%</td></tr><tr><td>3</td><td class='score'>0:1</td><td>15.6%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-020">
+        <h3>周六020 法乙 | 蒙彼利埃 vs 第戎 <span class="conf-badge 低">★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 02:45</span> | <span>📍 Stade de la Mosson,蒙彼利埃</span> | <span>☀️ 27°C 晴</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 蒙彼利埃法甲降班马实力碾压，第戎预算有限，蒙彼利埃升级热门</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 1.7</span>
+            <span class="odds-item">平 3.3</span>
+            <span class="odds-item">负 4.5</span>
+            <span class="odds-item">让球: 胜3.0 平3.3 负2.1</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>68.7%</td><td>17.7%</td><td>13.6%</td></tr>
+                <tr><td>Shin去水</td><td>52.8%</td><td>27.2%</td><td>20.0%</td></tr>
+                <tr><td>DC模型</td><td>88.5%</td><td>8.5%</td><td>3.0%</td></tr>
+                <tr><td>蒙特卡洛</td><td>79.5%</td><td>12.6%</td><td>7.9%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=3.63 | λ(客)=0.67 | λ(总)=4.30 | 大2.5球: 69.2% | 小2.5球: 30.8%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        <div class="divergence-bar"><span class='alert'>⚠️ 模型与市场分歧>15% (模型主胜68.7% vs 市场52.8%)</span></div>
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 68.7% (赔率1.7) | 次选: 平局 17.7% (赔率3.3)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (3.0) | 次选: 让平 (3.3)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>3:0(9.8%) / 2:0(9.2%) / 4:0(8.6%) / 3:1(6.5%) / 5:0(6.4%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(42.7%) / 4球(13.0%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(58.2%) / 平-主(19.8%) / 平-平(4.3%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>1:0(23.5%) / 2:0(19.2%) / 0:0(14.4%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 均衡联赛(场均2.58,大2.5率49%),修正比:0:0.79, 1:1.18, 2:0.91, 3:0.97, 4+:1.04</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>3:0</td><td>9.8%</td></tr><tr><td>2</td><td class='score'>2:0</td><td>9.2%</td></tr><tr><td>3</td><td class='score'>4:0</td><td>8.6%</td></tr><tr><td>4</td><td class='score'>3:1</td><td>6.5%</td></tr><tr><td>5</td><td class='score'>5:0</td><td>6.4%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>58.2%</td></tr><tr><td>2</td><td>平-主</td><td>19.8%</td></tr><tr><td>3</td><td>平-平</td><td>4.3%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>42.7%</td></tr><tr><td>4球</td><td>13.0%</td></tr><tr><td>3球</td><td>11.9%</td></tr><tr><td>5球</td><td>11.2%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:0</td><td>23.5%</td></tr><tr><td>2</td><td class='score'>2:0</td><td>19.2%</td></tr><tr><td>3</td><td class='score'>0:0</td><td>14.4%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-021">
+        <h3>周六021 法乙 | 南特 vs 圣旺红星 <span class="conf-badge 低">★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 02:45</span> | <span>📍 Stade de la Beaujoire,南特</span> | <span>☀️ 26°C 晴</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 南特法甲降班马升级头号热门，圣旺红星攻防平庸</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 1.6</span>
+            <span class="odds-item">平 3.4</span>
+            <span class="odds-item">负 5.0</span>
+            <span class="odds-item">让球: 胜2.75 平3.3 负2.25</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>67.9%</td><td>18.6%</td><td>13.5%</td></tr>
+                <tr><td>Shin去水</td><td>55.8%</td><td>26.3%</td><td>17.9%</td></tr>
+                <tr><td>DC模型</td><td>85.9%</td><td>10.5%</td><td>3.5%</td></tr>
+                <tr><td>蒙特卡洛</td><td>79.0%</td><td>13.8%</td><td>7.2%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=3.17 | λ(客)=0.60 | λ(总)=3.77 | 大2.5球: 64.6% | 小2.5球: 35.4%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 67.9% (赔率1.6) | 次选: 平局 18.6% (赔率3.4)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (2.75) | 次选: 让平 (3.3)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>2:0(11.2%) / 3:0(11.1%) / 4:0(8.6%) / 1:0(8.4%) / 2:1(6.7%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(36.8%) / 3球(14.1%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(56.8%) / 平-主(21.7%) / 平-平(5.8%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>1:0(26.2%) / 2:0(18.7%) / 0:0(18.3%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 均衡联赛(场均2.58,大2.5率49%),修正比:0:0.79, 1:1.18, 2:0.91, 3:0.97, 4+:1.04</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>2:0</td><td>11.2%</td></tr><tr><td>2</td><td class='score'>3:0</td><td>11.1%</td></tr><tr><td>3</td><td class='score'>4:0</td><td>8.6%</td></tr><tr><td>4</td><td class='score'>1:0</td><td>8.4%</td></tr><tr><td>5</td><td class='score'>2:1</td><td>6.7%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>56.8%</td></tr><tr><td>2</td><td>平-主</td><td>21.7%</td></tr><tr><td>3</td><td>平-平</td><td>5.8%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>36.8%</td></tr><tr><td>3球</td><td>14.1%</td></tr><tr><td>4球</td><td>13.5%</td></tr><tr><td>2球</td><td>11.0%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:0</td><td>26.2%</td></tr><tr><td>2</td><td class='score'>2:0</td><td>18.7%</td></tr><tr><td>3</td><td class='score'>0:0</td><td>18.3%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-022">
+        <h3>周六022 荷甲 | 阿尔克马尔 vs 海牙 <span class="conf-badge 低">★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 03:00</span> | <span>📍 AFAS Stadion,阿尔克马尔</span> | <span>☁️ 18°C 多云</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 荷甲强队vs升班马，阿尔克马尔青年军冲击力强，海牙阵容厚度不足</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 1.4</span>
+            <span class="odds-item">平 4.2</span>
+            <span class="odds-item">负 6.5</span>
+            <span class="odds-item">让球: 胜2.2 平3.3 负2.7</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>72.7%</td><td>15.7%</td><td>11.5%</td></tr>
+                <tr><td>Shin去水</td><td>64.6%</td><td>21.5%</td><td>13.9%</td></tr>
+                <tr><td>DC模型</td><td>91.5%</td><td>6.7%</td><td>1.8%</td></tr>
+                <tr><td>蒙特卡洛</td><td>78.9%</td><td>13.8%</td><td>7.2%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=3.73 | λ(客)=0.51 | λ(总)=4.24 | 大2.5球: 63.6% | 小2.5球: 36.4%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 72.7% (赔率1.4) | 次选: 平局 15.7% (赔率4.2)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (2.2) | 次选: 让平 (3.3)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>3:0(11.3%) / 2:0(10.4%) / 4:0(10.0%) / 5:0(7.7%) / 1:0(7.4%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(44.1%) / 4球(12.8%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(61.4%) / 平-主(19.3%) / 平-平(3.6%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>1:0(24.9%) / 2:0(21.0%) / 0:0(14.8%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 大球联赛(场均3.18,大2.5率66%),修正比:0:0.60, 1:0.60, 2:0.81, 3:1.12, 4+:1.21</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>3:0</td><td>11.3%</td></tr><tr><td>2</td><td class='score'>2:0</td><td>10.4%</td></tr><tr><td>3</td><td class='score'>4:0</td><td>10.0%</td></tr><tr><td>4</td><td class='score'>5:0</td><td>7.7%</td></tr><tr><td>5</td><td class='score'>1:0</td><td>7.4%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>61.4%</td></tr><tr><td>2</td><td>平-主</td><td>19.3%</td></tr><tr><td>3</td><td>平-平</td><td>3.6%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>44.1%</td></tr><tr><td>4球</td><td>12.8%</td></tr><tr><td>3球</td><td>12.7%</td></tr><tr><td>5球</td><td>10.8%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:0</td><td>24.9%</td></tr><tr><td>2</td><td class='score'>2:0</td><td>21.0%</td></tr><tr><td>3</td><td class='score'>0:0</td><td>14.8%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-023">
+        <h3>周六023 巴甲 | 格雷米奥 vs 圣保罗 <span class="conf-badge 高">★★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 03:00</span> | <span>📍 Arena do Grêmio,阿雷格里港</span> | <span>🌧 16°C 小雨</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 巴甲同城德比，主场加成强，德比平局占比高，突发意外概率3倍</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 2.1</span>
+            <span class="odds-item">平 2.95</span>
+            <span class="odds-item">负 3.2</span>
+            <span class="odds-item">让球: 胜1.38 平3.6 负6.5</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>49.8%</td><td>26.3%</td><td>23.9%</td></tr>
+                <tr><td>Shin去水</td><td>42.2%</td><td>30.1%</td><td>27.7%</td></tr>
+                <tr><td>DC模型</td><td>59.0%</td><td>24.0%</td><td>17.0%</td></tr>
+                <tr><td>蒙特卡洛</td><td>56.4%</td><td>22.8%</td><td>20.9%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=1.97 | λ(客)=0.99 | λ(总)=2.96 | 大2.5球: 53.6% | 小2.5球: 46.4%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 49.8% (赔率2.1) | 次选: 平局 26.3% (赔率2.95)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (1.38) | 次选: 让平 (3.6)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>1:1(10.3%) / 1:0(9.8%) / 2:0(9.6%) / 2:1(8.9%) / 0:0(7.0%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(26.9%) / 2球(17.8%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(35.2%) / 平-主(21.0%) / 平-平(13.4%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>0:0(26.4%) / 1:0(23.4%) / 0:1(11.7%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 均衡联赛(场均2.45,大2.5率44%),修正比:0:0.83, 1:0.85, 2:1.08, 3:1.04, 4+:1.07</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>1:1</td><td>10.3%</td></tr><tr><td>2</td><td class='score'>1:0</td><td>9.8%</td></tr><tr><td>3</td><td class='score'>2:0</td><td>9.6%</td></tr><tr><td>4</td><td class='score'>2:1</td><td>8.9%</td></tr><tr><td>5</td><td class='score'>0:0</td><td>7.0%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>35.2%</td></tr><tr><td>2</td><td>平-主</td><td>21.0%</td></tr><tr><td>3</td><td>平-平</td><td>13.4%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>26.9%</td></tr><tr><td>2球</td><td>17.8%</td></tr><tr><td>3球</td><td>17.3%</td></tr><tr><td>4球</td><td>12.5%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>0:0</td><td>26.4%</td></tr><tr><td>2</td><td class='score'>1:0</td><td>23.4%</td></tr><tr><td>3</td><td class='score'>0:1</td><td>11.7%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-024">
+        <h3>周六024 葡超 | 阿马多拉 vs 里斯本竞技 <span class="conf-badge 高">★★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 03:00+</span> | <span>📍 Estádio José Gomes,阿马多拉</span> | <span>☀️ 25°C 晴</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 葡超豪门碾压，里斯本竞技可能轮换，长途客场有丢平风险</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 6.5</span>
+            <span class="odds-item">平 4.0</span>
+            <span class="odds-item">负 1.4</span>
+            <span class="odds-item">让球: 胜1.85 平3.5 负3.3</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>17.0%</td><td>18.7%</td><td>64.3%</td></tr>
+                <tr><td>Shin去水</td><td>13.8%</td><td>22.4%</td><td>63.9%</td></tr>
+                <tr><td>DC模型</td><td>7.7%</td><td>14.6%</td><td>77.7%</td></tr>
+                <tr><td>蒙特卡洛</td><td>12.2%</td><td>16.6%</td><td>71.3%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=0.89 | λ(客)=2.93 | λ(总)=3.81 | 大2.5球: 66.3% | 小2.5球: 33.7%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 客胜 64.3% (赔率1.4) | 次选: 平局 18.7% (赔率4.0)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让负 (3.3) | 次选: 让平 (3.5)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>0:2(9.0%) / 0:3(8.4%) / 1:2(7.6%) / 1:3(7.1%) / 0:1(7.0%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(38.7%) / 3球(14.2%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>客-客(49.4%) / 平-客(21.6%) / 平-平(7.5%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>0:1(23.7%) / 0:0(18.0%) / 0:2(15.6%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 均衡联赛(场均2.52,大2.5率50%),修正比:0:0.72, 1:0.74, 2:1.06, 3:1.07, 4+:1.18</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>0:2</td><td>9.0%</td></tr><tr><td>2</td><td class='score'>0:3</td><td>8.4%</td></tr><tr><td>3</td><td class='score'>1:2</td><td>7.6%</td></tr><tr><td>4</td><td class='score'>1:3</td><td>7.1%</td></tr><tr><td>5</td><td class='score'>0:1</td><td>7.0%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>客-客</td><td>49.4%</td></tr><tr><td>2</td><td>平-客</td><td>21.6%</td></tr><tr><td>3</td><td>平-平</td><td>7.5%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>38.7%</td></tr><tr><td>3球</td><td>14.2%</td></tr><tr><td>4球</td><td>13.2%</td></tr><tr><td>2球</td><td>11.1%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>0:1</td><td>23.7%</td></tr><tr><td>2</td><td class='score'>0:0</td><td>18.0%</td></tr><tr><td>3</td><td class='score'>0:2</td><td>15.6%</td></tr></table>
+        </div>
+    </div>
+    <div class="match-card" id="match-025">
+        <h3>周六025 巴甲 | 博塔弗戈 vs 弗鲁米嫩塞 <span class="conf-badge 中">★★</span></h3>
+        <div class="match-meta">
+            <span>⏰ 03:00+</span> | <span>📍 Estádio Nilton Santos,里约热内卢</span> | <span>🌧 22°C 小雨</span> | <span>赔率来源: <span class='est'>估算</span></span>
+        </div>
+        <div class="match-notes">📋 里约德比火药味浓烈，红牌概率极高，赛果不可预判性极强</div>
+
+        <div class="odds-bar">
+            <span class="odds-item">胜 2.15</span>
+            <span class="odds-item">平 2.9</span>
+            <span class="odds-item">负 3.15</span>
+            <span class="odds-item">让球: 胜1.38 平3.6 负6.5</span>
+        </div>
+
+        <div class="prob-section">
+            <table class="prob-table">
+                <tr><th>维度</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr class="highlight"><td>加权融合</td><td>52.4%</td><td>25.5%</td><td>22.1%</td></tr>
+                <tr><td>Shin去水</td><td>41.3%</td><td>30.6%</td><td>28.2%</td></tr>
+                <tr><td>DC模型</td><td>64.4%</td><td>22.0%</td><td>13.6%</td></tr>
+                <tr><td>蒙特卡洛</td><td>61.7%</td><td>20.5%</td><td>17.8%</td></tr>
+            </table>
+        </div>
+
+        <div class="lambda-info">
+            λ(主)=2.13 | λ(客)=0.90 | λ(总)=3.03 | 大2.5球: 55.7% | 小2.5球: 44.3%
+        </div>
+
+        <div class="injury-bar">🏥 伤停: 主队0人(核心0) / 客队0人(核心0)</div>
+        
+
+        <div class="recommendations">
+            <table class="rec-table">
+                <tr><th colspan="2">六维度推荐</th></tr>
+                <tr><td><b>胜平负</b></td><td>首选: 主胜 52.4% (赔率2.15) | 次选: 平局 25.5% (赔率2.9)</td></tr>
+                <tr><td><b>让球胜平负</b></td><td>首选: 让胜 (1.38) | 次选: 让平 (3.6)</td></tr>
+                <tr><td><b>比分TOP5</b></td><td>2:0(10.4%) / 1:0(10.0%) / 1:1(9.4%) / 2:1(8.9%) / 3:0(7.3%)</td></tr>
+                <tr><td><b>总进球TOP2</b></td><td>4+球(27.8%) / 2球(17.2%)</td></tr>
+                <tr><td><b>半全场TOP3</b></td><td>主-主(39.2%) / 平-主(22.0%) / 平-平(12.4%)</td></tr>
+                <tr><td><b>半场比分TOP3</b></td><td>0:0(25.6%) / 1:0(24.5%) / 2:0(11.8%)</td></tr>
+            </table>
+        </div>
+
+        <div class="ttg-note">📊 TTG联赛修正: 均衡联赛(场均2.45,大2.5率44%),修正比:0:0.83, 1:0.85, 2:1.08, 3:1.04, 4+:1.07</div>
+
+        <div class="tables-grid">
+            <div class="mini-table">
+                <h4>比分TOP5</h4>
+                <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>2:0</td><td>10.4%</td></tr><tr><td>2</td><td class='score'>1:0</td><td>10.0%</td></tr><tr><td>3</td><td class='score'>1:1</td><td>9.4%</td></tr><tr><td>4</td><td class='score'>2:1</td><td>8.9%</td></tr><tr><td>5</td><td class='score'>3:0</td><td>7.3%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>半全场TOP3</h4>
+                <table><tr><th>#</th><th>结果</th><th>概率</th></tr><tr><td>1</td><td>主-主</td><td>39.2%</td></tr><tr><td>2</td><td>平-主</td><td>22.0%</td></tr><tr><td>3</td><td>平-平</td><td>12.4%</td></tr></table>
+            </div>
+            <div class="mini-table">
+                <h4>总进球TOP4</h4>
+                <table><tr><th>进球</th><th>概率</th></tr><tr><td>4+球</td><td>27.8%</td></tr><tr><td>2球</td><td>17.2%</td></tr><tr><td>3球</td><td>17.1%</td></tr><tr><td>4球</td><td>12.7%</td></tr></table>
+            </div>
+        </div>
+
+        <div class="mini-table">
+            <h4>半场比分TOP3</h4>
+            <table><tr><th>#</th><th>比分</th><th>概率</th></tr><tr><td>1</td><td class='score'>0:0</td><td>25.6%</td></tr><tr><td>2</td><td class='score'>1:0</td><td>24.5%</td></tr><tr><td>3</td><td class='score'>2:0</td><td>11.8%</td></tr></table>
+        </div>
+    </div>
+<h2>串关思路</h2>
+<div class="parlay-section">
+    <h3>方向串</h3>
+    <div class="parlay-card"><b>稳胆二串一</b>: 选取★★★高置信度场次方向组合</div>
+    <div class="parlay-card"><b>客胜三串一</b>: 003安养FC(客)+005金泉尚武(客)+006博德闪耀(客) — 三场客胜均为★★★</div>
+
+    <h3>让球串</h3>
+    <div class="parlay-card"><b>让球二串一</b>: 选取让球首选概率最高的组合，容错性高于方向盘</div>
+
+    <h3>混合串</h3>
+    <div class="parlay-card"><b>方向+半全场混合</b>: 选取方向★★★+半全场高概率组合</div>
+
+    <h3>娱乐串</h3>
+    <div class="parlay-card"><b>博冷三串一</b>: 选取低概率高赔率场次组合（娱乐性质，小额参与）</div>
+</div>
+<h2>⚠️ 分歧警示场次</h2><div class="parlay-section"><div class="parlay-card">⚠️ <b>013</b> 马里迪莫 vs 卡萨皮亚 — 模型主胜(57.3%) vs 市场41.3%/29.3%/29.3%，分歧>15%</div><div class="parlay-card">⚠️ <b>020</b> 蒙彼利埃 vs 第戎 — 模型主胜(68.7%) vs 市场52.8%/27.2%/20.0%，分歧>15%</div></div><h2>🏥 伤停降级场次</h2><div class="parlay-section"><div class="parlay-card">🏥 <b>001</b> 大阪樱花 vs 冈山绿雉 — 主队8人/客队2人伤停，已强制降级为低★</div></div>
+<div class="disclaimer">
+⚠️ 风险提示：足球比赛存在极大不确定性，任何模型预测均非100%准确。赔率标注"估算"的场次待体彩官方开售后需更新。历史回测不代表未来表现。理性看待预测，切勿沉迷赌博。<br>
+报告生成时间: 2026-08-08 13:04 | 分析模型: DC修正泊松+负二项+Skellam+蒙特卡洛10000次+Shin去水+Elo评级+联赛特定TTG修正(规则35)
+</div>
+
+</div>
+</body>
+</html>

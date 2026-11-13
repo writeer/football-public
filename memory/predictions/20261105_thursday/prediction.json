@@ -1,0 +1,3052 @@
+[
+ {
+  "num": "周四001",
+  "league": "亚冠乙",
+  "home": "町田泽维亚",
+  "away": "上海申花",
+  "kickoff": "18:00:00",
+  "match_date": "2026-11-05（销售日）/ 001 11-05、其余 11-06 北京时间",
+  "is_single": false,
+  "single_note": "官方接口 bettingSingle=false，用户未赛前告知单关",
+  "single_match": null,
+  "confidence": "★★★",
+  "lambda": {
+   "home": 2.05,
+   "away": 0.85,
+   "total": 2.9
+  },
+  "model": {
+   "home": 0.636,
+   "draw": 0.228,
+   "away": 0.136
+  },
+  "market": {
+   "home": 0.713,
+   "draw": 0.17600000000000002,
+   "away": 0.111
+  },
+  "handicap": {
+   "line": -1,
+   "win": 0.408,
+   "push": 0.23600000000000002,
+   "lose": 0.355
+  },
+  "odds_had": {
+   "home": 1.23,
+   "draw": 5,
+   "away": 7.9
+  },
+  "odds_hhad": {
+   "handicap": -1,
+   "home": 1.86,
+   "draw": 3.55,
+   "away": 3.12
+  },
+  "odds_crs": {
+   "1:0": 8,
+   "2:0": 6.5,
+   "2:1": 6.5,
+   "3:0": 10,
+   "3:1": 9.25,
+   "3:2": 19,
+   "4:0": 17.5,
+   "4:1": 16.5,
+   "4:2": 35,
+   "5:0": 40,
+   "5:1": 35,
+   "5:2": 70,
+   "win:other": 23,
+   "0:0": 19,
+   "1:1": 9.25,
+   "2:2": 15,
+   "3:3": 55,
+   "draw:other": 300,
+   "0:1": 20,
+   "0:2": 36,
+   "1:2": 18,
+   "0:3": 90,
+   "1:3": 55,
+   "2:3": 45,
+   "0:4": 350,
+   "1:4": 175,
+   "2:4": 175,
+   "0:5": 850,
+   "1:5": 650,
+   "2:5": 650,
+   "loss:other": 175
+  },
+  "odds_ttg": {
+   "0": 19,
+   "1": 6.25,
+   "2": 4.1,
+   "3": 3.5,
+   "4": 4.4,
+   "5": 7,
+   "6": 12,
+   "7+": 17
+  },
+  "odds_hafu": {
+   "HH": 1.76,
+   "HD": 20,
+   "HA": 60,
+   "DH": 3.85,
+   "DD": 7.5,
+   "DA": 18,
+   "AH": 20,
+   "AD": 20,
+   "AA": 14
+  },
+  "value": {
+   "home": "€17.00M",
+   "away": "€14.15M",
+   "ratio": 1.2
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/machida-zelvia/startseite/verein/23568",
+   "away": "https://www.transfermarkt.com/shanghai-shenhua/startseite/verein/3183",
+   "provider": "Transfermarkt（2026-11-05 采集）"
+  },
+  "stadium": "町田GION体育场（町田，正常）",
+  "weather": "赛时预报未取到一手源（未验证），无极端天气预警",
+  "injuries": {
+   "home": "町田无重要伤停；申花4主力缺阵：陈晋一（左脚第五跖骨应力性骨折，11-05手术，休10-12周赛季报销）、朱辰杰（联赛结束后复出）、盖伊、李可。来源：新浪体育/7M/搜狐（中文媒体，**未验证一手**）。",
+   "source_level": "部分一手（官网/Fotmob）+中文二手（未验证）"
+  },
+  "recent": "町田J1第3（13轮8-4-1，30:10，近5 WWWDD），亚冠乙3战全胜9分、4:0；申花中超第6（29轮14-5-10，63:50，近5 LWWWL），亚冠小组赛前3轮积分未取到官方页（未验证）。",
+  "h2h": "两队亚冠层面首次交锋（小组赛第4轮），无历史样本。",
+  "had": {
+   "first": "home",
+   "second": "draw",
+   "firstProb": 0.636,
+   "secondProb": 0.228
+  },
+  "hhad": {
+   "first": "胜",
+   "second": "平",
+   "firstProb": 0.408,
+   "secondProb": 0.23600000000000002,
+   "structure_leg": "负",
+   "structureProb": 0.355,
+   "note": "L268 结构腿不作首选/不作串关腿，单独记账留次选"
+  },
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "tierNote": "2球23.9%＋3球22.4%＝46.3%为最高band；两端0-1球20.7%、6-7+球7.4%均未达35%，按L266/L270不预留。",
+   "first": 2,
+   "second": 3,
+   "firstProb": 0.239,
+   "secondProb": 0.22399999999999998,
+   "over25": 0.5539999999999999,
+   "under25": 0.446,
+   "bands": {
+    "常规正常球(2-3球)": 0.46299999999999997,
+    "小球(1-2球)": 0.38299999999999995,
+    "大球(4-5球)": 0.256,
+    "闷战超小球(0-1球)": 0.207,
+    "超大球(5-6球)": 0.14,
+    "穿盘可能(6-7+球)": 0.07400000000000001
+   }
+  },
+  "hafu": {
+   "top3": [
+    "胜胜",
+    "平胜",
+    "负胜"
+   ],
+   "top3Probs": [
+    0.42100000000000004,
+    0.201,
+    0.03
+   ],
+   "quota": "L267"
+  },
+  "scoreTop5": [
+   {
+    "score": "2-0",
+    "prob": 0.11599999999999999
+   },
+   {
+    "score": "1-0",
+    "prob": 0.105
+   },
+   {
+    "score": "1-1",
+    "prob": 0.10400000000000001
+   },
+   {
+    "score": "2-1",
+    "prob": 0.098
+   },
+   {
+    "score": "3-0",
+    "prob": 0.079
+   }
+  ],
+  "htScoreTop3": [
+   {
+    "score": "0-0",
+    "prob": 0.27899999999999997
+   },
+   {
+    "score": "1-0",
+    "prob": 0.252
+   },
+   {
+    "score": "2-0",
+    "prob": 0.114
+   }
+  ],
+  "k_dist": {
+   "k": 1,
+   "p": 0.2364727000724576
+  },
+  "k_rec": {
+   "k": 1,
+   "p": 0.2365
+  },
+  "k_consistency": "一致",
+  "marketDivergence_pp": -7.8,
+  "override_reason": null,
+  "risk": "客队4主力伤缺但为客场；模型63.6% vs 市场71.3%（-7.8pp），亚冠样本薄。",
+  "actual": {
+   "score": "2-1",
+   "ht_score": "1-0",
+   "direction": "home",
+   "handicap": "平",
+   "total_goals": 3,
+   "hafu": "胜胜",
+   "ou": "大",
+   "single_api": 0,
+   "settled": true,
+   "source": "体彩官方 getUniformMatchResultV1（sectionsNo999/sectionsNo1）"
+  },
+  "backtest": {
+   "had_primary": true,
+   "had_cover": true,
+   "hc_primary": false,
+   "hc_cover": true,
+   "score_top5": true,
+   "ttg_top2": true,
+   "hafu_top3": true,
+   "ht_top3": true,
+   "tier": true,
+   "ou": true
+  }
+ },
+ {
+  "num": "周四002",
+  "league": "欧罗巴",
+  "home": "水晶宫",
+  "away": "霍芬海姆",
+  "kickoff": "01:45:00",
+  "match_date": "2026-11-05（销售日）/ 001 11-05、其余 11-06 北京时间",
+  "is_single": true,
+  "single_note": "接口 bettingSingle=false 与用户投注端“002为单关”冲突；按 L273 以用户端为准并执行规则63上修",
+  "single_match": {
+   "is_single": true,
+   "source": "用户赛前告知（投注端）",
+   "api_bettingSingle": false,
+   "conflict": "接口 bettingSingle=false 与用户投注端“002为单关”冲突，以用户为准",
+   "gap_pp": 17.0,
+   "tier": "≤20pp",
+   "multiplier": 1.11,
+   "draw_before_pct": 27.91,
+   "draw_after_raw_pct": 30.98,
+   "final": {
+    "home": 43.6,
+    "draw": 30.1,
+    "away": 26.4
+   },
+   "second_after": null
+  },
+  "confidence": "★",
+  "lambda": {
+   "home": 1.6,
+   "away": 1.2,
+   "total": 2.8
+  },
+  "model": {
+   "home": 0.436,
+   "draw": 0.301,
+   "away": 0.264
+  },
+  "market": {
+   "home": 0.499,
+   "draw": 0.24,
+   "away": 0.261
+  },
+  "handicap": {
+   "line": -1,
+   "win": 0.24100000000000002,
+   "push": 0.217,
+   "lose": 0.5429999999999999
+  },
+  "odds_had": {
+   "home": 1.76,
+   "draw": 3.65,
+   "away": 3.36
+  },
+  "odds_hhad": {
+   "handicap": -1,
+   "home": 3.25,
+   "draw": 3.7,
+   "away": 1.78
+  },
+  "odds_crs": {
+   "1:0": 11,
+   "2:0": 12,
+   "2:1": 6.75,
+   "3:0": 19,
+   "3:1": 11.5,
+   "3:2": 16,
+   "4:0": 40,
+   "4:1": 26,
+   "4:2": 36,
+   "5:0": 100,
+   "5:1": 65,
+   "5:2": 90,
+   "win:other": 28,
+   "0:0": 22,
+   "1:1": 8.25,
+   "2:2": 10,
+   "3:3": 30,
+   "draw:other": 150,
+   "0:1": 14,
+   "0:2": 21,
+   "1:2": 10,
+   "0:3": 40,
+   "1:3": 22,
+   "2:3": 23,
+   "0:4": 100,
+   "1:4": 50,
+   "2:4": 60,
+   "0:5": 300,
+   "1:5": 150,
+   "2:5": 150,
+   "loss:other": 55
+  },
+  "odds_ttg": {
+   "0": 22,
+   "1": 6.9,
+   "2": 4.4,
+   "3": 3.35,
+   "4": 4.25,
+   "5": 6.5,
+   "6": 12.5,
+   "7+": 14.5
+  },
+  "odds_hafu": {
+   "HH": 2.9,
+   "HD": 14,
+   "HA": 30,
+   "DH": 5.1,
+   "DD": 6.4,
+   "DA": 8,
+   "AH": 18,
+   "AD": 14,
+   "AA": 5
+  },
+  "value": {
+   "home": "€603M",
+   "away": "€281M",
+   "ratio": 2.15
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/crystal-palace/startseite/verein/873",
+   "away": "https://www.transfermarkt.com/tsg-1899-hoffenheim/startseite/verein/533",
+   "provider": "Transfermarkt（2026-11-05 采集）"
+  },
+  "stadium": "Selhurst Park（伦敦，正常）",
+  "weather": "赛时预报未取到一手源（未验证），无极端天气预警",
+  "injuries": {
+   "home": "水晶宫：萨尔（腹股沟）、富安健洋（小腿）、沙迪·里亚德（膝）缺阵，另有1名主力停赛（中文译名不一致待核），斯特兰德·拉森/廷贝尔存疑；霍芬海姆：赫洛热克（小腿）、赫拉纳奇、孔特缺阵。来源：水晶宫官网/Fotmob（一手）+球迷屋（中文，未验证）。",
+   "source_level": "部分一手（官网/Fotmob）+中文二手（未验证）"
+  },
+  "recent": "水晶宫英超第18（9轮2-1-6，9:21，近5 DWLLL），主场场均1.0球；霍芬海姆德甲第12（8轮3-0-5，14:16，近5 LLWWL），场均1.75/2.00。",
+  "h2h": "两队无正式交锋记录。",
+  "had": {
+   "first": "home",
+   "second": "draw",
+   "firstProb": 0.436,
+   "secondProb": 0.301
+  },
+  "hhad": {
+   "first": "胜",
+   "second": "平",
+   "firstProb": 0.24100000000000002,
+   "secondProb": 0.217,
+   "structure_leg": "负",
+   "structureProb": 0.5429999999999999,
+   "note": "L268 结构腿不作首选/不作串关腿，单独记账留次选"
+  },
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "tierNote": "2球24.8%＋3球22.2%＝47.0%为最高band；两端0-1球22.2%、6-7+球6.5%未达35%，不预留。",
+   "first": 2,
+   "second": 3,
+   "firstProb": 0.248,
+   "secondProb": 0.222,
+   "over25": 0.531,
+   "under25": 0.469,
+   "bands": {
+    "常规正常球(2-3球)": 0.47,
+    "小球(1-2球)": 0.39899999999999997,
+    "大球(4-5球)": 0.243,
+    "闷战超小球(0-1球)": 0.222,
+    "超大球(5-6球)": 0.128,
+    "穿盘可能(6-7+球)": 0.065
+   }
+  },
+  "hafu": {
+   "top3": [
+    "胜胜",
+    "平胜",
+    "负胜"
+   ],
+   "top3Probs": [
+    0.276,
+    0.162,
+    0.027999999999999997
+   ],
+   "quota": "L267"
+  },
+  "scoreTop5": [
+   {
+    "score": "1-1",
+    "prob": 0.126
+   },
+   {
+    "score": "2-1",
+    "prob": 0.09300000000000001
+   },
+   {
+    "score": "1-0",
+    "prob": 0.08800000000000001
+   },
+   {
+    "score": "2-0",
+    "prob": 0.078
+   },
+   {
+    "score": "0-0",
+    "prob": 0.07
+   }
+  ],
+  "htScoreTop3": [
+   {
+    "score": "0-0",
+    "prob": 0.3
+   },
+   {
+    "score": "1-0",
+    "prob": 0.20600000000000002
+   },
+   {
+    "score": "0-1",
+    "prob": 0.155
+   }
+  ],
+  "k_dist": {
+   "k": 0,
+   "p": 0.26579580891480614
+  },
+  "k_rec": {
+   "k": 1,
+   "p": 0.2165
+  },
+  "k_consistency": "分布-方向分歧",
+  "marketDivergence_pp": -6.3,
+  "override_reason": null,
+  "risk": "单关首选43.6%<45%，平局上修后30.1%逼近；水晶宫联赛状态极差。",
+  "actual": {
+   "score": "1-1",
+   "ht_score": "0-1",
+   "direction": "draw",
+   "handicap": "负",
+   "total_goals": 2,
+   "hafu": "负平",
+   "ou": "小",
+   "single_api": 1,
+   "settled": true,
+   "source": "体彩官方 getUniformMatchResultV1（sectionsNo999/sectionsNo1）"
+  },
+  "backtest": {
+   "had_primary": false,
+   "had_cover": true,
+   "hc_primary": false,
+   "hc_cover": false,
+   "score_top5": true,
+   "ttg_top2": true,
+   "hafu_top3": false,
+   "ht_top3": true,
+   "tier": true,
+   "ou": false
+  }
+ },
+ {
+  "num": "周四003",
+  "league": "欧罗巴",
+  "home": "布拉格斯巴达",
+  "away": "伯恩茅斯",
+  "kickoff": "01:45:00",
+  "match_date": "2026-11-05（销售日）/ 001 11-05、其余 11-06 北京时间",
+  "is_single": false,
+  "single_note": "官方接口 bettingSingle=false，用户未赛前告知单关",
+  "single_match": null,
+  "confidence": "★",
+  "lambda": {
+   "home": 0.9,
+   "away": 1.55,
+   "total": 2.45
+  },
+  "model": {
+   "home": 0.205,
+   "draw": 0.289,
+   "away": 0.506
+  },
+  "market": {
+   "home": 0.16,
+   "draw": 0.19,
+   "away": 0.65
+  },
+  "handicap": {
+   "line": 1,
+   "win": 0.484,
+   "push": 0.242,
+   "lose": 0.27399999999999997
+  },
+  "odds_had": {
+   "home": 5.5,
+   "draw": 4.62,
+   "away": 1.35
+  },
+  "odds_hhad": {
+   "handicap": 1,
+   "home": 2.56,
+   "draw": 3.45,
+   "away": 2.18
+  },
+  "odds_crs": {
+   "1:0": 20,
+   "2:0": 33,
+   "2:1": 15,
+   "3:0": 90,
+   "3:1": 40,
+   "3:2": 36,
+   "4:0": 250,
+   "4:1": 150,
+   "4:2": 150,
+   "5:0": 650,
+   "5:1": 450,
+   "5:2": 450,
+   "win:other": 125,
+   "0:0": 21,
+   "1:1": 9,
+   "2:2": 14,
+   "3:3": 40,
+   "draw:other": 250,
+   "0:1": 8.5,
+   "0:2": 7.5,
+   "1:2": 6.5,
+   "0:3": 11,
+   "1:3": 9.5,
+   "2:3": 14,
+   "0:4": 21,
+   "1:4": 20,
+   "2:4": 31,
+   "0:5": 45,
+   "1:5": 42,
+   "2:5": 65,
+   "loss:other": 23
+  },
+  "odds_ttg": {
+   "0": 19,
+   "1": 6,
+   "2": 4,
+   "3": 3.5,
+   "4": 4.5,
+   "5": 6.9,
+   "6": 13,
+   "7+": 18
+  },
+  "odds_hafu": {
+   "HH": 9,
+   "HD": 18,
+   "HA": 19,
+   "DH": 13,
+   "DD": 7.75,
+   "DA": 4.15,
+   "AH": 45,
+   "AD": 18,
+   "AA": 1.96
+  },
+  "value": {
+   "home": "€91.25M",
+   "away": "€624M",
+   "ratio": 0.15
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/ac-sparta-praha/startseite/verein/197",
+   "away": "https://www.transfermarkt.com/afc-bournemouth/startseite/verein/989",
+   "provider": "Transfermarkt（2026-11-05 采集）"
+  },
+  "stadium": "epet ARENA（布拉格，正常）",
+  "weather": "赛时预报未取到一手源（未验证），无极端天气预警",
+  "injuries": {
+   "home": "斯巴达：雷恩斯（左翼卫，2球3助攻）、卡拉贝奇（前腰队长，3球3助攻）缺阵；伯恩茅斯：斯科特（腿筋）、阿劳霍（腿筋）、米洛舍维奇（膝）伤缺，另有福斯特、阿伦斯、胡安卢、杰比森、克鲁皮5人未进入欧联名单。来源：Transfermarkt/球迷屋/腾讯（部分未验证）。",
+   "source_level": "部分一手（官网/Fotmob）+中文二手（未验证）"
+  },
+  "recent": "斯巴达捷甲13轮7-2-4，25:13，23分（第2-3集团）；伯恩茅斯英超第8（9轮3-3-3，14:13，近5 LLWWW），欧联客场曾胜AC米兰。",
+  "h2h": "两队无正式交锋记录。",
+  "had": {
+   "first": "away",
+   "second": "draw",
+   "firstProb": 0.506,
+   "secondProb": 0.289
+  },
+  "hhad": {
+   "first": "负",
+   "second": "平",
+   "firstProb": 0.27399999999999997,
+   "secondProb": 0.242,
+   "structure_leg": "胜",
+   "structureProb": 0.484,
+   "note": "L268 结构腿不作首选/不作串关腿，单独记账留次选"
+  },
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "tierNote": "2球26.9%＋3球21.2%＝48.0%为最高band；0-1球28.8%<35%，不预留低端。",
+   "first": 2,
+   "second": 3,
+   "firstProb": 0.26899999999999996,
+   "secondProb": 0.212,
+   "over25": 0.44299999999999995,
+   "under25": 0.557,
+   "bands": {
+    "常规正常球(2-3球)": 0.48,
+    "小球(1-2球)": 0.461,
+    "闷战超小球(0-1球)": 0.28800000000000003,
+    "大球(4-5球)": 0.193,
+    "超大球(5-6球)": 0.08900000000000001,
+    "穿盘可能(6-7+球)": 0.039
+   }
+  },
+  "hafu": {
+   "top3": [
+    "负负",
+    "平负",
+    "胜负"
+   ],
+   "top3Probs": [
+    0.312,
+    0.18899999999999997,
+    0.024
+   ],
+   "quota": "L267"
+  },
+  "scoreTop5": [
+   {
+    "score": "1-1",
+    "prob": 0.13
+   },
+   {
+    "score": "0-1",
+    "prob": 0.124
+   },
+   {
+    "score": "0-2",
+    "prob": 0.10400000000000001
+   },
+   {
+    "score": "0-0",
+    "prob": 0.096
+   },
+   {
+    "score": "1-2",
+    "prob": 0.09300000000000001
+   }
+  ],
+  "htScoreTop3": [
+   {
+    "score": "0-0",
+    "prob": 0.349
+   },
+   {
+    "score": "0-1",
+    "prob": 0.23199999999999998
+   },
+   {
+    "score": "1-0",
+    "prob": 0.135
+   }
+  ],
+  "k_dist": {
+   "k": 0,
+   "p": 0.27502398659262695
+  },
+  "k_rec": {
+   "k": -1,
+   "p": 0.2418
+  },
+  "k_consistency": "分布-方向分歧",
+  "marketDivergence_pp": -14.4,
+  "override_reason": null,
+  "risk": "伯恩茅斯8人不可用（5人未报名），模型50.6% vs 市场65.0%（-14.4pp），接近分歧阈值。",
+  "actual": {
+   "score": "1-3",
+   "ht_score": "1-0",
+   "direction": "away",
+   "handicap": "负",
+   "total_goals": 4,
+   "hafu": "胜负",
+   "ou": "大",
+   "single_api": 0,
+   "settled": true,
+   "source": "体彩官方 getUniformMatchResultV1（sectionsNo999/sectionsNo1）"
+  },
+  "backtest": {
+   "had_primary": true,
+   "had_cover": true,
+   "hc_primary": true,
+   "hc_cover": true,
+   "score_top5": false,
+   "ttg_top2": false,
+   "hafu_top3": true,
+   "ht_top3": true,
+   "tier": false,
+   "ou": false
+  }
+ },
+ {
+  "num": "周四004",
+  "league": "欧罗巴",
+  "home": "奈梅亨",
+  "away": "奥莫尼亚",
+  "kickoff": "01:45:00",
+  "match_date": "2026-11-05（销售日）/ 001 11-05、其余 11-06 北京时间",
+  "is_single": false,
+  "single_note": "官方接口 bettingSingle=false，用户未赛前告知单关",
+  "single_match": null,
+  "confidence": "★★",
+  "lambda": {
+   "home": 1.65,
+   "away": 1.1,
+   "total": 2.75
+  },
+  "model": {
+   "home": 0.484,
+   "draw": 0.276,
+   "away": 0.24
+  },
+  "market": {
+   "home": 0.529,
+   "draw": 0.24,
+   "away": 0.231
+  },
+  "handicap": {
+   "line": -1,
+   "win": 0.267,
+   "push": 0.226,
+   "lose": 0.507
+  },
+  "odds_had": {
+   "home": 1.66,
+   "draw": 3.65,
+   "away": 3.8
+  },
+  "odds_hhad": {
+   "handicap": -1,
+   "home": 3.08,
+   "draw": 3.43,
+   "away": 1.91
+  },
+  "odds_crs": {
+   "1:0": 9,
+   "2:0": 9,
+   "2:1": 6.5,
+   "3:0": 16,
+   "3:1": 11,
+   "3:2": 18,
+   "4:0": 34,
+   "4:1": 25,
+   "4:2": 40,
+   "5:0": 75,
+   "5:1": 65,
+   "5:2": 90,
+   "win:other": 32,
+   "0:0": 18,
+   "1:1": 8,
+   "2:2": 11,
+   "3:3": 40,
+   "draw:other": 200,
+   "0:1": 13,
+   "0:2": 23,
+   "1:2": 11.5,
+   "0:3": 45,
+   "1:3": 28,
+   "2:3": 26,
+   "0:4": 120,
+   "1:4": 80,
+   "2:4": 90,
+   "0:5": 450,
+   "1:5": 300,
+   "2:5": 300,
+   "loss:other": 80
+  },
+  "odds_ttg": {
+   "0": 18,
+   "1": 6,
+   "2": 3.9,
+   "3": 3.3,
+   "4": 4.65,
+   "5": 7.4,
+   "6": 14,
+   "7+": 20
+  },
+  "odds_hafu": {
+   "HH": 2.6,
+   "HD": 15,
+   "HA": 36,
+   "DH": 4.65,
+   "DD": 6.25,
+   "DA": 9,
+   "AH": 18,
+   "AD": 15,
+   "AA": 6
+  },
+  "value": {
+   "home": "€44.68M",
+   "away": "€21.45M",
+   "ratio": 2.08
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/nec-nijmegen/startseite/verein/467",
+   "away": "https://www.transfermarkt.com/omonia-nikosia/startseite/verein/4177",
+   "provider": "Transfermarkt（2026-11-05 采集）"
+  },
+  "stadium": "Goffertstadion（奈梅亨，正常）",
+  "weather": "赛时预报未取到一手源（未验证），无极端天气预警",
+  "injuries": {
+   "home": "奈梅亨：塔迪奇（前腰核心，3助攻）、桑德勒、努伊丁克（踝）、莫尔（腹股沟）缺阵；奥莫尼亚：巴尔科维奇（左后卫）缺阵。来源：NEC官网/腾讯/球迷屋（未完全验证一手）。",
+   "source_level": "部分一手（官网/Fotmob）+中文二手（未验证）"
+  },
+  "recent": "奈梅亨荷甲第13（11轮2-5-4，17:19，近5 DDDDL）；奥莫尼亚塞浦路斯冠军，欧联3轮6分（胜塞尔塔、采列，负本菲卡），客场3胜1平3负。",
+  "h2h": "两队无正式交锋记录。",
+  "had": {
+   "first": "home",
+   "second": "draw",
+   "firstProb": 0.484,
+   "secondProb": 0.276
+  },
+  "hhad": {
+   "first": "胜",
+   "second": "平",
+   "firstProb": 0.267,
+   "secondProb": 0.226,
+   "structure_leg": "负",
+   "structureProb": 0.507,
+   "note": "L268 结构腿不作首选/不作串关腿，单独记账留次选"
+  },
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "tierNote": "2球25.1%＋3球22.2%＝47.3%为最高band；0-1球23.0%<35%，不预留。",
+   "first": 2,
+   "second": 3,
+   "firstProb": 0.251,
+   "secondProb": 0.222,
+   "over25": 0.519,
+   "under25": 0.48100000000000004,
+   "bands": {
+    "常规正常球(2-3球)": 0.473,
+    "小球(1-2球)": 0.408,
+    "大球(4-5球)": 0.23600000000000002,
+    "闷战超小球(0-1球)": 0.23,
+    "超大球(5-6球)": 0.122,
+    "穿盘可能(6-7+球)": 0.061
+   }
+  },
+  "hafu": {
+   "top3": [
+    "胜胜",
+    "平胜",
+    "负胜"
+   ],
+   "top3Probs": [
+    0.3,
+    0.17300000000000001,
+    0.027999999999999997
+   ],
+   "quota": "L267"
+  },
+  "scoreTop5": [
+   {
+    "score": "1-1",
+    "prob": 0.125
+   },
+   {
+    "score": "1-0",
+    "prob": 0.096
+   },
+   {
+    "score": "2-1",
+    "prob": 0.096
+   },
+   {
+    "score": "2-0",
+    "prob": 0.087
+   },
+   {
+    "score": "0-0",
+    "prob": 0.073
+   }
+  ],
+  "htScoreTop3": [
+   {
+    "score": "0-0",
+    "prob": 0.307
+   },
+   {
+    "score": "1-0",
+    "prob": 0.217
+   },
+   {
+    "score": "0-1",
+    "prob": 0.145
+   }
+  ],
+  "k_dist": {
+   "k": 0,
+   "p": 0.26308394934120183
+  },
+  "k_rec": {
+   "k": 1,
+   "p": 0.2257
+  },
+  "k_consistency": "分布-方向分歧",
+  "marketDivergence_pp": -4.5,
+  "override_reason": null,
+  "risk": "奈梅亨核心塔迪奇缺阵，主胜48.4%<50%。",
+  "actual": {
+   "score": "3-1",
+   "ht_score": "0-1",
+   "direction": "home",
+   "handicap": "胜",
+   "total_goals": 4,
+   "hafu": "负胜",
+   "ou": "大",
+   "single_api": 0,
+   "settled": true,
+   "source": "体彩官方 getUniformMatchResultV1（sectionsNo999/sectionsNo1）"
+  },
+  "backtest": {
+   "had_primary": true,
+   "had_cover": true,
+   "hc_primary": true,
+   "hc_cover": true,
+   "score_top5": false,
+   "ttg_top2": false,
+   "hafu_top3": true,
+   "ht_top3": true,
+   "tier": false,
+   "ou": true
+  }
+ },
+ {
+  "num": "周四005",
+  "league": "欧罗巴",
+  "home": "皇家社会",
+  "away": "里昂",
+  "kickoff": "01:45:00",
+  "match_date": "2026-11-05（销售日）/ 001 11-05、其余 11-06 北京时间",
+  "is_single": false,
+  "single_note": "官方接口 bettingSingle=false，用户未赛前告知单关",
+  "single_match": null,
+  "confidence": "★★",
+  "lambda": {
+   "home": 1.55,
+   "away": 0.95,
+   "total": 2.5
+  },
+  "model": {
+   "home": 0.494,
+   "draw": 0.289,
+   "away": 0.218
+  },
+  "market": {
+   "home": 0.5589999999999999,
+   "draw": 0.21899999999999997,
+   "away": 0.222
+  },
+  "handicap": {
+   "line": -1,
+   "win": 0.266,
+   "push": 0.237,
+   "lose": 0.49700000000000005
+  },
+  "odds_had": {
+   "home": 1.57,
+   "draw": 4,
+   "away": 3.96
+  },
+  "odds_hhad": {
+   "handicap": -1,
+   "home": 2.78,
+   "draw": 3.4,
+   "away": 2.06
+  },
+  "odds_crs": {
+   "1:0": 10,
+   "2:0": 9.5,
+   "2:1": 6.75,
+   "3:0": 15.5,
+   "3:1": 10.5,
+   "3:2": 15,
+   "4:0": 32,
+   "4:1": 22,
+   "4:2": 32,
+   "5:0": 65,
+   "5:1": 55,
+   "5:2": 80,
+   "win:other": 25,
+   "0:0": 22,
+   "1:1": 8.25,
+   "2:2": 11,
+   "3:3": 36,
+   "draw:other": 150,
+   "0:1": 15,
+   "0:2": 25,
+   "1:2": 12,
+   "0:3": 45,
+   "1:3": 28,
+   "2:3": 25,
+   "0:4": 125,
+   "1:4": 85,
+   "2:4": 85,
+   "0:5": 450,
+   "1:5": 300,
+   "2:5": 300,
+   "loss:other": 65
+  },
+  "odds_ttg": {
+   "0": 22,
+   "1": 6.75,
+   "2": 4.5,
+   "3": 3.45,
+   "4": 4.25,
+   "5": 6.25,
+   "6": 11.5,
+   "7+": 15
+  },
+  "odds_hafu": {
+   "HH": 2.3,
+   "HD": 15,
+   "HA": 34,
+   "DH": 4.5,
+   "DD": 7.15,
+   "DA": 10.5,
+   "AH": 18,
+   "AD": 15,
+   "AA": 7
+  },
+  "value": {
+   "home": "€278M",
+   "away": "€259M",
+   "ratio": 1.07
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/real-sociedad-san-sebastian/startseite/verein/681",
+   "away": "https://www.transfermarkt.com/olympique-lyon/startseite/verein/1041",
+   "provider": "Transfermarkt（2026-11-05 采集）"
+  },
+  "stadium": "Reale Arena（圣塞巴斯蒂安，正常）",
+  "weather": "赛时预报未取到一手源（未验证），无极端天气预警",
+  "injuries": {
+   "home": "皇社：奥德里奥索拉、贝蒂亚、扎哈良缺阵；里昂：奥彭达、莫顿（腹股沟）、苏尔茨、坎戈、韦德拉奥戈伤缺，尼亚卡特停赛，努瓦马11-04新增伤情。来源：Fotmob/球迷屋（未完全验证一手）。",
+   "source_level": "部分一手（官网/Fotmob）+中文二手（未验证）"
+  },
+  "recent": "皇社西甲第5（11轮6-1-4，20:20，近5 WWWWL）；里昂法甲第3（9轮5-2-2，15:7，近5 WLWLW），欧战客场5人缺阵。",
+  "h2h": "两队欧战无正式交锋记录（未取到可靠H2H源）。",
+  "had": {
+   "first": "home",
+   "second": "draw",
+   "firstProb": 0.494,
+   "secondProb": 0.289
+  },
+  "hhad": {
+   "first": "胜",
+   "second": "平",
+   "firstProb": 0.266,
+   "secondProb": 0.237,
+   "structure_leg": "负",
+   "structureProb": 0.49700000000000005,
+   "note": "L268 结构腿不作首选/不作串关腿，单独记账留次选"
+  },
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "tierNote": "2球26.6%＋3球21.4%＝48.0%为最高band；0-1球27.8%<35%，不预留。",
+   "first": 2,
+   "second": 3,
+   "firstProb": 0.266,
+   "secondProb": 0.214,
+   "over25": 0.456,
+   "under25": 0.544,
+   "bands": {
+    "常规正常球(2-3球)": 0.48,
+    "小球(1-2球)": 0.452,
+    "闷战超小球(0-1球)": 0.278,
+    "大球(4-5球)": 0.2,
+    "超大球(5-6球)": 0.095,
+    "穿盘可能(6-7+球)": 0.042
+   }
+  },
+  "hafu": {
+   "top3": [
+    "胜胜",
+    "平胜",
+    "负胜"
+   ],
+   "top3Probs": [
+    0.305,
+    0.184,
+    0.025
+   ],
+   "quota": "L267"
+  },
+  "scoreTop5": [
+   {
+    "score": "1-1",
+    "prob": 0.131
+   },
+   {
+    "score": "1-0",
+    "prob": 0.11800000000000001
+   },
+   {
+    "score": "2-0",
+    "prob": 0.099
+   },
+   {
+    "score": "2-1",
+    "prob": 0.094
+   },
+   {
+    "score": "0-0",
+    "prob": 0.092
+   }
+  ],
+  "htScoreTop3": [
+   {
+    "score": "0-0",
+    "prob": 0.341
+   },
+   {
+    "score": "1-0",
+    "prob": 0.22699999999999998
+   },
+   {
+    "score": "0-1",
+    "prob": 0.139
+   }
+  ],
+  "k_dist": {
+   "k": 0,
+   "p": 0.2747809587718976
+  },
+  "k_rec": {
+   "k": 1,
+   "p": 0.2373
+  },
+  "k_consistency": "分布-方向分歧",
+  "marketDivergence_pp": -6.5,
+  "override_reason": null,
+  "risk": "里昂5伤1停但为客场；皇社主场场均失1.82球。",
+  "actual": {
+   "score": "1-1",
+   "ht_score": "1-0",
+   "direction": "draw",
+   "handicap": "负",
+   "total_goals": 2,
+   "hafu": "胜平",
+   "ou": "小",
+   "single_api": 0,
+   "settled": true,
+   "source": "体彩官方 getUniformMatchResultV1（sectionsNo999/sectionsNo1）"
+  },
+  "backtest": {
+   "had_primary": false,
+   "had_cover": true,
+   "hc_primary": false,
+   "hc_cover": false,
+   "score_top5": true,
+   "ttg_top2": true,
+   "hafu_top3": false,
+   "ht_top3": true,
+   "tier": true,
+   "ou": true
+  }
+ },
+ {
+  "num": "周四006",
+  "league": "欧罗巴",
+  "home": "AC米兰",
+  "away": "费伦茨瓦罗斯",
+  "kickoff": "01:45:00",
+  "match_date": "2026-11-05（销售日）/ 001 11-05、其余 11-06 北京时间",
+  "is_single": false,
+  "single_note": "官方接口 bettingSingle=false，用户未赛前告知单关",
+  "single_match": null,
+  "confidence": "★★★",
+  "lambda": {
+   "home": 2.1,
+   "away": 0.72,
+   "total": 2.8200000000000003
+  },
+  "model": {
+   "home": 0.6779999999999999,
+   "draw": 0.215,
+   "away": 0.107
+  },
+  "market": {
+   "home": 0.725,
+   "draw": 0.171,
+   "away": 0.10300000000000001
+  },
+  "handicap": {
+   "line": -1,
+   "win": 0.447,
+   "push": 0.24,
+   "lose": 0.313
+  },
+  "odds_had": {
+   "home": 1.21,
+   "draw": 5.12,
+   "away": 8.5
+  },
+  "odds_hhad": {
+   "handicap": -1,
+   "home": 1.71,
+   "draw": 3.84,
+   "away": 3.4
+  },
+  "odds_crs": {
+   "1:0": 8.75,
+   "2:0": 6.75,
+   "2:1": 6.75,
+   "3:0": 9,
+   "3:1": 8.75,
+   "3:2": 18,
+   "4:0": 15,
+   "4:1": 15,
+   "4:2": 31,
+   "5:0": 30,
+   "5:1": 30,
+   "5:2": 65,
+   "win:other": 16,
+   "0:0": 23,
+   "1:1": 10.5,
+   "2:2": 15,
+   "3:3": 50,
+   "draw:other": 300,
+   "0:1": 24,
+   "0:2": 45,
+   "1:2": 21,
+   "0:3": 120,
+   "1:3": 65,
+   "2:3": 45,
+   "0:4": 450,
+   "1:4": 250,
+   "2:4": 175,
+   "0:5": 1000,
+   "1:5": 650,
+   "2:5": 650,
+   "loss:other": 175
+  },
+  "odds_ttg": {
+   "0": 23,
+   "1": 7.1,
+   "2": 4.5,
+   "3": 3.4,
+   "4": 4.3,
+   "5": 6.25,
+   "6": 11,
+   "7+": 14.5
+  },
+  "odds_hafu": {
+   "HH": 1.68,
+   "HD": 20,
+   "HA": 70,
+   "DH": 4,
+   "DD": 9.25,
+   "DA": 17.5,
+   "AH": 19,
+   "AD": 20,
+   "AA": 13
+  },
+  "value": {
+   "home": "€503M",
+   "away": "€38.25M",
+   "ratio": 13.15
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/ac-mailand/startseite/verein/5",
+   "away": "https://www.transfermarkt.com/ferencvaros-budapest/startseite/verein/279",
+   "provider": "Transfermarkt（2026-11-05 采集）"
+  },
+  "stadium": "San Siro（米兰，正常）",
+  "weather": "赛时预报未取到一手源（未验证），无极端天气预警",
+  "injuries": {
+   "home": "米兰：托莫里（肌肉）、丘库埃泽（髋）伤缺，迈尼昂停赛；费伦茨瓦罗斯：库列诺维奇伤缺。来源：Transfermarkt/球迷屋。",
+   "source_level": "部分一手（官网/Fotmob）+中文二手（未验证）"
+  },
+  "recent": "米兰意甲第5（10轮6-3-1，21:12，近5 DWWLW）；费伦茨匈甲第3（11轮5-5-1，20:10，近5 DDDWW）。",
+  "h2h": "两队无正式交锋记录。",
+  "had": {
+   "first": "home",
+   "second": "draw",
+   "firstProb": 0.6779999999999999,
+   "secondProb": 0.215
+  },
+  "hhad": {
+   "first": "胜",
+   "second": "平",
+   "firstProb": 0.447,
+   "secondProb": 0.24,
+   "structure_leg": "负",
+   "structureProb": 0.313,
+   "note": "L268 结构腿不作首选/不作串关腿，单独记账留次选"
+  },
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "tierNote": "2球24.4%＋3球22.3%＝46.7%为最高band；0-1球22.0%<35%，不预留。",
+   "first": 2,
+   "second": 3,
+   "firstProb": 0.244,
+   "secondProb": 0.223,
+   "over25": 0.535,
+   "under25": 0.465,
+   "bands": {
+    "常规正常球(2-3球)": 0.467,
+    "小球(1-2球)": 0.39799999999999996,
+    "大球(4-5球)": 0.24600000000000002,
+    "闷战超小球(0-1球)": 0.22,
+    "超大球(5-6球)": 0.13,
+    "穿盘可能(6-7+球)": 0.067
+   }
+  },
+  "hafu": {
+   "top3": [
+    "胜胜",
+    "平胜",
+    "负胜"
+   ],
+   "top3Probs": [
+    0.44799999999999995,
+    0.217,
+    0.028999999999999998
+   ],
+   "quota": "L267"
+  },
+  "scoreTop5": [
+   {
+    "score": "2-0",
+    "prob": 0.131
+   },
+   {
+    "score": "1-0",
+    "prob": 0.11800000000000001
+   },
+   {
+    "score": "1-1",
+    "prob": 0.09699999999999999
+   },
+   {
+    "score": "2-1",
+    "prob": 0.095
+   },
+   {
+    "score": "3-0",
+    "prob": 0.092
+   }
+  ],
+  "htScoreTop3": [
+   {
+    "score": "0-0",
+    "prob": 0.297
+   },
+   {
+    "score": "1-0",
+    "prob": 0.26899999999999996
+   },
+   {
+    "score": "2-0",
+    "prob": 0.121
+   }
+  ],
+  "k_dist": {
+   "k": 1,
+   "p": 0.23968664297896897
+  },
+  "k_rec": {
+   "k": 1,
+   "p": 0.2397
+  },
+  "k_consistency": "一致",
+  "marketDivergence_pp": -4.7,
+  "override_reason": null,
+  "risk": "迈尼昂停赛+托莫里伤；费伦茨欧战经验足。",
+  "actual": {
+   "score": "0-2",
+   "ht_score": "0-0",
+   "direction": "away",
+   "handicap": "负",
+   "total_goals": 2,
+   "hafu": "平负",
+   "ou": "小",
+   "single_api": 0,
+   "settled": true,
+   "source": "体彩官方 getUniformMatchResultV1（sectionsNo999/sectionsNo1）"
+  },
+  "backtest": {
+   "had_primary": false,
+   "had_cover": false,
+   "hc_primary": false,
+   "hc_cover": false,
+   "score_top5": false,
+   "ttg_top2": true,
+   "hafu_top3": false,
+   "ht_top3": true,
+   "tier": true,
+   "ou": false
+  }
+ },
+ {
+  "num": "周四007",
+  "league": "欧协联",
+  "home": "特拉布宗体育",
+  "away": "弗赖堡",
+  "kickoff": "01:45:00",
+  "match_date": "2026-11-05（销售日）/ 001 11-05、其余 11-06 北京时间",
+  "is_single": false,
+  "single_note": "官方接口 bettingSingle=false，用户未赛前告知单关",
+  "single_match": null,
+  "confidence": "★",
+  "lambda": {
+   "home": 1.3,
+   "away": 1.2,
+   "total": 2.5
+  },
+  "model": {
+   "home": 0.371,
+   "draw": 0.305,
+   "away": 0.324
+  },
+  "market": {
+   "home": 0.395,
+   "draw": 0.244,
+   "away": 0.361
+  },
+  "handicap": {
+   "line": -1,
+   "win": 0.174,
+   "push": 0.204,
+   "lose": 0.621
+  },
+  "odds_had": {
+   "home": 2.22,
+   "draw": 3.6,
+   "away": 2.43
+  },
+  "odds_hhad": {
+   "handicap": -1,
+   "home": 4.5,
+   "draw": 4.1,
+   "away": 1.49
+  },
+  "odds_crs": {
+   "1:0": 12,
+   "2:0": 14,
+   "2:1": 7.5,
+   "3:0": 25,
+   "3:1": 14.5,
+   "3:2": 17.5,
+   "4:0": 55,
+   "4:1": 35,
+   "4:2": 45,
+   "5:0": 120,
+   "5:1": 90,
+   "5:2": 130,
+   "win:other": 39,
+   "0:0": 21,
+   "1:1": 6.75,
+   "2:2": 10,
+   "3:3": 32,
+   "draw:other": 150,
+   "0:1": 12.5,
+   "0:2": 16,
+   "1:2": 8.75,
+   "0:3": 30,
+   "1:3": 18,
+   "2:3": 19,
+   "0:4": 65,
+   "1:4": 45,
+   "2:4": 50,
+   "0:5": 175,
+   "1:5": 120,
+   "2:5": 140,
+   "loss:other": 45
+  },
+  "odds_ttg": {
+   "0": 21,
+   "1": 7,
+   "2": 4.2,
+   "3": 3.35,
+   "4": 4.4,
+   "5": 6.5,
+   "6": 12,
+   "7+": 16
+  },
+  "odds_hafu": {
+   "HH": 3.6,
+   "HD": 13.5,
+   "HA": 24,
+   "DH": 5.9,
+   "DD": 6.25,
+   "DA": 6.5,
+   "AH": 20,
+   "AD": 13.5,
+   "AA": 3.95
+  },
+  "value": {
+   "home": "€184.30M",
+   "away": "€211M",
+   "ratio": 0.87
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/trabzonspor/startseite/verein/449",
+   "away": "https://www.transfermarkt.com/sc-freiburg/startseite/verein/60",
+   "provider": "Transfermarkt（2026-11-05 采集）"
+  },
+  "stadium": "Papara Park（特拉布宗，正常）",
+  "weather": "赛时预报未取到一手源（未验证），无极端天气预警",
+  "injuries": {
+   "home": "特拉布宗：11人伤病+3人无报名资格（含门将塞维坎、后卫巴塔戈夫、边锋希姆希尔/弗兰库利诺），为全轮最严重残阵；弗赖堡：3人伤缺（奥格布斯等）。来源：球迷屋/Transfermarkt/弗赖堡官网。",
+   "source_level": "部分一手（官网/Fotmob）+中文二手（未验证）"
+  },
+  "recent": "特拉布宗土超第3（10轮7-1-2，24:8，近5 WWWWW），但伤停11人；弗赖堡德甲第3（8轮5-1-2，18:10，近5 DWLLW），欧协联前2轮不败。",
+  "h2h": "两队无正式交锋记录。",
+  "had": {
+   "first": "away",
+   "second": "draw",
+   "firstProb": 0.324,
+   "secondProb": 0.305
+  },
+  "hhad": {
+   "first": "平",
+   "second": "胜",
+   "firstProb": 0.204,
+   "secondProb": 0.174,
+   "structure_leg": "负",
+   "structureProb": 0.621,
+   "note": "L268 结构腿不作首选/不作串关腿，单独记账留次选"
+  },
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "tierNote": "2球26.7%＋3球21.4%＝48.1%为最高band；0-1球27.7%<35%，不预留。",
+   "first": 2,
+   "second": 3,
+   "firstProb": 0.267,
+   "secondProb": 0.214,
+   "over25": 0.456,
+   "under25": 0.544,
+   "bands": {
+    "常规正常球(2-3球)": 0.48100000000000004,
+    "小球(1-2球)": 0.451,
+    "闷战超小球(0-1球)": 0.27699999999999997,
+    "大球(4-5球)": 0.2,
+    "超大球(5-6球)": 0.095,
+    "穿盘可能(6-7+球)": 0.042
+   }
+  },
+  "hafu": {
+   "top3": [
+    "负负",
+    "平负",
+    "胜负"
+   ],
+   "top3Probs": [
+    0.191,
+    0.131,
+    0.019
+   ],
+   "quota": "L267"
+  },
+  "scoreTop5": [
+   {
+    "score": "1-1",
+    "prob": 0.138
+   },
+   {
+    "score": "1-0",
+    "prob": 0.096
+   },
+   {
+    "score": "0-0",
+    "prob": 0.092
+   },
+   {
+    "score": "0-1",
+    "prob": 0.08800000000000001
+   },
+   {
+    "score": "2-1",
+    "prob": 0.083
+   }
+  ],
+  "htScoreTop3": [
+   {
+    "score": "0-0",
+    "prob": 0.341
+   },
+   {
+    "score": "1-0",
+    "prob": 0.191
+   },
+   {
+    "score": "0-1",
+    "prob": 0.17600000000000002
+   }
+  ],
+  "k_dist": {
+   "k": 0,
+   "p": 0.29012195529990426
+  },
+  "k_rec": {
+   "k": -1,
+   "p": 0.1879
+  },
+  "k_consistency": "分布-方向分歧",
+  "marketDivergence_pp": -3.7,
+  "override_reason": "规则32/L253 残阵降级：特拉布宗11人伤病+3人未报名，主胜37.1%不作首选",
+  "risk": "特拉布宗11人伤病残阵，三方概率30.5/32.4/37.1，方向高度不确定（规则32改判客胜首选）。",
+  "actual": {
+   "score": "0-1",
+   "ht_score": "0-1",
+   "direction": "away",
+   "handicap": "负",
+   "total_goals": 1,
+   "hafu": "负负",
+   "ou": "小",
+   "single_api": 0,
+   "settled": true,
+   "source": "体彩官方 getUniformMatchResultV1（sectionsNo999/sectionsNo1）"
+  },
+  "backtest": {
+   "had_primary": true,
+   "had_cover": true,
+   "hc_primary": false,
+   "hc_cover": false,
+   "score_top5": true,
+   "ttg_top2": false,
+   "hafu_top3": true,
+   "ht_top3": true,
+   "tier": false,
+   "ou": true
+  }
+ },
+ {
+  "num": "周四008",
+  "league": "欧罗巴",
+  "home": "桑德兰",
+  "away": "萨格勒布迪纳摩",
+  "kickoff": "04:00:00",
+  "match_date": "2026-11-05（销售日）/ 001 11-05、其余 11-06 北京时间",
+  "is_single": false,
+  "single_note": "官方接口 bettingSingle=false，用户未赛前告知单关",
+  "single_match": null,
+  "confidence": "★★★",
+  "lambda": {
+   "home": 2.0,
+   "away": 0.78,
+   "total": 2.7800000000000002
+  },
+  "model": {
+   "home": 0.643,
+   "draw": 0.23,
+   "away": 0.127
+  },
+  "market": {
+   "home": 0.685,
+   "draw": 0.193,
+   "away": 0.122
+  },
+  "handicap": {
+   "line": -1,
+   "win": 0.41,
+   "push": 0.242,
+   "lose": 0.348
+  },
+  "odds_had": {
+   "home": 1.28,
+   "draw": 4.55,
+   "away": 7.2
+  },
+  "odds_hhad": {
+   "handicap": -1,
+   "home": 2,
+   "draw": 3.45,
+   "away": 2.86
+  },
+  "odds_crs": {
+   "1:0": 7.25,
+   "2:0": 6,
+   "2:1": 6.5,
+   "3:0": 9.5,
+   "3:1": 9.5,
+   "3:2": 21,
+   "4:0": 18,
+   "4:1": 19,
+   "4:2": 45,
+   "5:0": 40,
+   "5:1": 45,
+   "5:2": 90,
+   "win:other": 27,
+   "0:0": 16,
+   "1:1": 8.75,
+   "2:2": 16,
+   "3:3": 60,
+   "draw:other": 350,
+   "0:1": 17,
+   "0:2": 40,
+   "1:2": 18,
+   "0:3": 90,
+   "1:3": 55,
+   "2:3": 50,
+   "0:4": 350,
+   "1:4": 250,
+   "2:4": 250,
+   "0:5": 1000,
+   "1:5": 650,
+   "2:5": 650,
+   "loss:other": 250
+  },
+  "odds_ttg": {
+   "0": 16,
+   "1": 5.6,
+   "2": 3.55,
+   "3": 3.4,
+   "4": 4.8,
+   "5": 8,
+   "6": 16,
+   "7+": 24
+  },
+  "odds_hafu": {
+   "HH": 1.84,
+   "HD": 19,
+   "HA": 60,
+   "DH": 3.9,
+   "DD": 7.5,
+   "DA": 15.5,
+   "AH": 20,
+   "AD": 19,
+   "AA": 12
+  },
+  "value": {
+   "home": "€459M",
+   "away": "€77.95M",
+   "ratio": 5.89
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/afc-sunderland/startseite/verein/289",
+   "away": "https://www.transfermarkt.com/dinamo-zagreb/startseite/verein/419",
+   "provider": "Transfermarkt（2026-11-05 采集）"
+  },
+  "stadium": "Stadium of Light（桑德兰，正常）",
+  "weather": "赛时预报未取到一手源（未验证），无极端天气预警",
+  "injuries": {
+   "home": "桑德兰：迪亚拉（肌肉，约6周）、蒙德尔、巴拉德、穆基莱缺阵；迪纳摩：罗德里格斯、拉德尔吉奇、托皮奇、麦肯纳缺阵。来源：桑德兰官网/Fotmob（一手）。",
+   "source_level": "部分一手（官网/Fotmob）+中文二手（未验证）"
+  },
+  "recent": "桑德兰英超第20（9轮1-2-6，7:17，近5 LLLDL），欧联主场表现优于联赛；迪纳摩克甲第2（10轮22分、净胜+12），近5不败。",
+  "h2h": "两队无正式交锋记录。",
+  "had": {
+   "first": "home",
+   "second": "draw",
+   "firstProb": 0.643,
+   "secondProb": 0.23
+  },
+  "hhad": {
+   "first": "胜",
+   "second": "平",
+   "firstProb": 0.41,
+   "secondProb": 0.242,
+   "structure_leg": "负",
+   "structureProb": 0.348,
+   "note": "L268 结构腿不作首选/不作串关腿，单独记账留次选"
+  },
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "tierNote": "2球24.7%＋3球22.2%＝47.0%为最高band；0-1球22.7%<35%，不预留。",
+   "first": 2,
+   "second": 3,
+   "firstProb": 0.247,
+   "secondProb": 0.222,
+   "over25": 0.526,
+   "under25": 0.474,
+   "bands": {
+    "常规正常球(2-3球)": 0.47,
+    "小球(1-2球)": 0.40399999999999997,
+    "大球(4-5球)": 0.24,
+    "闷战超小球(0-1球)": 0.22699999999999998,
+    "超大球(5-6球)": 0.126,
+    "穿盘可能(6-7+球)": 0.063
+   }
+  },
+  "hafu": {
+   "top3": [
+    "胜胜",
+    "平胜",
+    "负胜"
+   ],
+   "top3Probs": [
+    0.419,
+    0.21100000000000002,
+    0.028999999999999998
+   ],
+   "quota": "L267"
+  },
+  "scoreTop5": [
+   {
+    "score": "2-0",
+    "prob": 0.124
+   },
+   {
+    "score": "1-0",
+    "prob": 0.11599999999999999
+   },
+   {
+    "score": "1-1",
+    "prob": 0.105
+   },
+   {
+    "score": "2-1",
+    "prob": 0.09699999999999999
+   },
+   {
+    "score": "3-0",
+    "prob": 0.083
+   }
+  ],
+  "htScoreTop3": [
+   {
+    "score": "0-0",
+    "prob": 0.303
+   },
+   {
+    "score": "1-0",
+    "prob": 0.26
+   },
+   {
+    "score": "2-0",
+    "prob": 0.11199999999999999
+   }
+  ],
+  "k_dist": {
+   "k": 1,
+   "p": 0.24181960050466153
+  },
+  "k_rec": {
+   "k": 1,
+   "p": 0.2418
+  },
+  "k_consistency": "一致",
+  "marketDivergence_pp": -4.3,
+  "override_reason": null,
+  "risk": "桑德兰英超第20、联赛状态极差；欧联杯赛专注度待验证。",
+  "actual": {
+   "score": "0-2",
+   "ht_score": "0-2",
+   "direction": "away",
+   "handicap": "负",
+   "total_goals": 2,
+   "hafu": "负负",
+   "ou": "小",
+   "single_api": 0,
+   "settled": true,
+   "source": "体彩官方 getUniformMatchResultV1（sectionsNo999/sectionsNo1）"
+  },
+  "backtest": {
+   "had_primary": false,
+   "had_cover": false,
+   "hc_primary": false,
+   "hc_cover": false,
+   "score_top5": false,
+   "ttg_top2": true,
+   "hafu_top3": false,
+   "ht_top3": false,
+   "tier": true,
+   "ou": false
+  }
+ },
+ {
+  "num": "周四009",
+  "league": "欧罗巴",
+  "home": "维戈塞尔塔",
+  "away": "圣吉尔联合",
+  "kickoff": "04:00:00",
+  "match_date": "2026-11-05（销售日）/ 001 11-05、其余 11-06 北京时间",
+  "is_single": false,
+  "single_note": "官方接口 bettingSingle=false，用户未赛前告知单关",
+  "single_match": null,
+  "confidence": "★",
+  "lambda": {
+   "home": 1.0,
+   "away": 1.15,
+   "total": 2.15
+  },
+  "model": {
+   "home": 0.297,
+   "draw": 0.331,
+   "away": 0.371
+  },
+  "market": {
+   "home": 0.457,
+   "draw": 0.262,
+   "away": 0.281
+  },
+  "handicap": {
+   "line": -1,
+   "win": 0.11699999999999999,
+   "push": 0.187,
+   "lose": 0.696
+  },
+  "odds_had": {
+   "home": 1.92,
+   "draw": 3.35,
+   "away": 3.12
+  },
+  "odds_hhad": {
+   "handicap": -1,
+   "home": 3.88,
+   "draw": 3.58,
+   "away": 1.66
+  },
+  "odds_crs": {
+   "1:0": 8,
+   "2:0": 10.5,
+   "2:1": 6.75,
+   "3:0": 19,
+   "3:1": 13.5,
+   "3:2": 20,
+   "4:0": 45,
+   "4:1": 36,
+   "4:2": 55,
+   "5:0": 120,
+   "5:1": 90,
+   "5:2": 120,
+   "win:other": 60,
+   "0:0": 14,
+   "1:1": 6,
+   "2:2": 12,
+   "3:3": 50,
+   "draw:other": 300,
+   "0:1": 11,
+   "0:2": 18,
+   "1:2": 10,
+   "0:3": 40,
+   "1:3": 25,
+   "2:3": 27,
+   "0:4": 90,
+   "1:4": 65,
+   "2:4": 90,
+   "0:5": 350,
+   "1:5": 300,
+   "2:5": 300,
+   "loss:other": 90
+  },
+  "odds_ttg": {
+   "0": 14,
+   "1": 5.1,
+   "2": 3.4,
+   "3": 3.35,
+   "4": 5.1,
+   "5": 9.1,
+   "6": 18,
+   "7+": 30.5
+  },
+  "odds_hafu": {
+   "HH": 3.15,
+   "HD": 14,
+   "HA": 34,
+   "DH": 4.95,
+   "DD": 5.4,
+   "DA": 7.35,
+   "AH": 21,
+   "AD": 14,
+   "AA": 5.15
+  },
+  "value": {
+   "home": "€173M",
+   "away": "€119.35M",
+   "ratio": 1.45
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/real-club-celta-de-vigo/startseite/verein/940",
+   "away": "https://www.transfermarkt.com/royale-union-saint-gilloise/startseite/verein/3948",
+   "provider": "Transfermarkt（2026-11-05 采集）"
+  },
+  "stadium": "Abanca-Balaídos（维戈，正常）",
+  "weather": "赛时预报未取到一手源（未验证），无极端天气预警",
+  "injuries": {
+   "home": "塞尔塔：博尔哈·伊格莱西亚斯（左小腿肌腱断裂）、乌戈·冈萨雷斯、阿卜杜拉维、努内斯（腹股沟）、昆卡伤缺；圣吉罗斯：1人停赛未进大名单。来源：塞尔塔官网/球迷屋。",
+   "source_level": "部分一手（官网/Fotmob）+中文二手（未验证）"
+  },
+  "recent": "塞尔塔西甲第11（11轮2-6-3，10:10，近5 WDWDL），欧联曾0-3负奥莫尼亚；圣吉罗斯比甲第2（10轮8-2-0，29:7，近5 WWDWW），欧联4-0比尔舒华夏普尔、1-1皇社。",
+  "h2h": "两队无正式交锋记录。",
+  "had": {
+   "first": "away",
+   "second": "draw",
+   "firstProb": 0.371,
+   "secondProb": 0.331
+  },
+  "hhad": {
+   "first": "平",
+   "second": "胜",
+   "firstProb": 0.187,
+   "secondProb": 0.11699999999999999,
+   "structure_leg": "负",
+   "structureProb": 0.696,
+   "note": "L268 结构腿不作首选/不作串关腿，单独记账留次选"
+  },
+  "ttg": {
+   "tier": "小球(1-2球)",
+   "tierNote": "1球22.9%＋2球28.0%＝50.9%为最高band；闷战0-1球35.6%≥35%可作次选（L266），但不作首选。",
+   "first": 2,
+   "second": 1,
+   "firstProb": 0.28,
+   "secondProb": 0.22899999999999998,
+   "over25": 0.364,
+   "under25": 0.636,
+   "bands": {
+    "小球(1-2球)": 0.509,
+    "常规正常球(2-3球)": 0.473,
+    "闷战超小球(0-1球)": 0.35600000000000004,
+    "大球(4-5球)": 0.14800000000000002,
+    "超大球(5-6球)": 0.061,
+    "穿盘可能(6-7+球)": 0.023
+   }
+  },
+  "hafu": {
+   "top3": [
+    "负负",
+    "平负",
+    "胜负"
+   ],
+   "top3Probs": [
+    0.218,
+    0.155,
+    0.018000000000000002
+   ],
+   "quota": "L267"
+  },
+  "scoreTop5": [
+   {
+    "score": "1-1",
+    "prob": 0.145
+   },
+   {
+    "score": "0-0",
+    "prob": 0.127
+   },
+   {
+    "score": "0-1",
+    "prob": 0.12300000000000001
+   },
+   {
+    "score": "1-0",
+    "prob": 0.106
+   },
+   {
+    "score": "0-2",
+    "prob": 0.077
+   }
+  ],
+  "htScoreTop3": [
+   {
+    "score": "0-0",
+    "prob": 0.397
+   },
+   {
+    "score": "0-1",
+    "prob": 0.196
+   },
+   {
+    "score": "1-0",
+    "prob": 0.171
+   }
+  ],
+  "k_dist": {
+   "k": 0,
+   "p": 0.3156781691048983
+  },
+  "k_rec": {
+   "k": -1,
+   "p": 0.2165
+  },
+  "k_consistency": "分布-方向分歧",
+  "marketDivergence_pp": 9.0,
+  "override_reason": null,
+  "risk": "模型客胜37.1%与市场主胜45.7%方向相反，平33.1%最高，属高不确定场。",
+  "actual": {
+   "score": "1-2",
+   "ht_score": "1-1",
+   "direction": "away",
+   "handicap": "负",
+   "total_goals": 3,
+   "hafu": "平负",
+   "ou": "大",
+   "single_api": 0,
+   "settled": true,
+   "source": "体彩官方 getUniformMatchResultV1（sectionsNo999/sectionsNo1）"
+  },
+  "backtest": {
+   "had_primary": true,
+   "had_cover": true,
+   "hc_primary": false,
+   "hc_cover": false,
+   "score_top5": false,
+   "ttg_top2": false,
+   "hafu_top3": true,
+   "ht_top3": false,
+   "tier": false,
+   "ou": false
+  }
+ },
+ {
+  "num": "周四010",
+  "league": "欧罗巴",
+  "home": "本菲卡",
+  "away": "波兹南莱赫",
+  "kickoff": "04:00:00",
+  "match_date": "2026-11-05（销售日）/ 001 11-05、其余 11-06 北京时间",
+  "is_single": false,
+  "single_note": "官方接口 bettingSingle=false，用户未赛前告知单关",
+  "single_match": null,
+  "confidence": "★★",
+  "lambda": {
+   "home": 2.2,
+   "away": 0.72,
+   "total": 2.92
+  },
+  "model": {
+   "home": 0.6970000000000001,
+   "draw": 0.203,
+   "away": 0.1
+  },
+  "market": null,
+  "handicap": {
+   "line": -2,
+   "win": 0.257,
+   "push": 0.215,
+   "lose": 0.528
+  },
+  "odds_had": null,
+  "odds_hhad": {
+   "handicap": -2,
+   "home": 2.09,
+   "draw": 4.15,
+   "away": 2.38
+  },
+  "odds_crs": {
+   "1:0": 11,
+   "2:0": 7,
+   "2:1": 8.75,
+   "3:0": 7.35,
+   "3:1": 8.5,
+   "3:2": 20,
+   "4:0": 10.5,
+   "4:1": 11.5,
+   "4:2": 27,
+   "5:0": 17,
+   "5:1": 20,
+   "5:2": 45,
+   "win:other": 8,
+   "0:0": 33,
+   "1:1": 13.5,
+   "2:2": 22,
+   "3:3": 60,
+   "draw:other": 300,
+   "0:1": 40,
+   "0:2": 80,
+   "1:2": 35,
+   "0:3": 300,
+   "1:3": 80,
+   "2:3": 65,
+   "0:4": 650,
+   "1:4": 350,
+   "2:4": 300,
+   "0:5": 1000,
+   "1:5": 1000,
+   "2:5": 750,
+   "loss:other": 250
+  },
+  "odds_ttg": {
+   "0": 33,
+   "1": 9.5,
+   "2": 5.4,
+   "3": 3.8,
+   "4": 4.1,
+   "5": 5.45,
+   "6": 8.5,
+   "7+": 8
+  },
+  "odds_hafu": {
+   "HH": 1.39,
+   "HD": 27,
+   "HA": 100,
+   "DH": 4.1,
+   "DD": 13,
+   "DA": 30,
+   "AH": 19,
+   "AD": 27,
+   "AA": 23
+  },
+  "value": {
+   "home": "€374M",
+   "away": "€54.50M",
+   "ratio": 6.86
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/sl-benfica/startseite/verein/294",
+   "away": "https://www.transfermarkt.com/lech-posen/startseite/verein/1504",
+   "provider": "Transfermarkt（2026-11-05 采集）"
+  },
+  "stadium": "Estádio da Luz（里斯本，正常）",
+  "weather": "赛时预报未取到一手源（未验证），无极端天气预警",
+  "injuries": {
+   "home": "本菲卡：朗格莱（右大腿挫伤）、巴雷罗（右大腿肌肉）缺阵，巴雷内切亚恢复合练；莱赫：戈利扎德（十字韧带）、穆蒂尼奥（脚部骨折）、道格拉斯（踝）、蒙卡、伊沙克、萨亚德马内什缺阵。来源：本菲卡官网/搜狐/球迷屋（部分未验证）。",
+   "source_level": "部分一手（官网/Fotmob）+中文二手（未验证）"
+  },
+  "recent": "本菲卡葡超第2（10轮8-1-1，27:8，近5 WLWWW）；莱赫波甲第1（12轮10-1-1，32:11，近5 WWWWW），欧联客场表现偏弱。",
+  "h2h": "两队欧战无正式交锋记录。",
+  "had": {
+   "first": "home",
+   "second": "draw",
+   "firstProb": 0.6970000000000001,
+   "secondProb": 0.203
+  },
+  "hhad": {
+   "first": "胜",
+   "second": "平",
+   "firstProb": 0.257,
+   "secondProb": 0.215,
+   "structure_leg": "负",
+   "structureProb": 0.528,
+   "note": "L268 结构腿不作首选/不作串关腿，单独记账留次选"
+  },
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "tierNote": "2球23.7%＋3球22.4%＝46.1%为最高band；0-1球20.5%<35%，不预留。",
+   "first": 2,
+   "second": 3,
+   "firstProb": 0.237,
+   "secondProb": 0.22399999999999998,
+   "over25": 0.5589999999999999,
+   "under25": 0.441,
+   "bands": {
+    "常规正常球(2-3球)": 0.461,
+    "小球(1-2球)": 0.381,
+    "大球(4-5球)": 0.259,
+    "闷战超小球(0-1球)": 0.205,
+    "超大球(5-6球)": 0.142,
+    "穿盘可能(6-7+球)": 0.076
+   }
+  },
+  "hafu": {
+   "top3": [
+    "胜胜",
+    "平胜",
+    "负胜"
+   ],
+   "top3Probs": [
+    0.466,
+    0.217,
+    0.03
+   ],
+   "quota": "L267"
+  },
+  "scoreTop5": [
+   {
+    "score": "2-0",
+    "prob": 0.131
+   },
+   {
+    "score": "1-0",
+    "prob": 0.11199999999999999
+   },
+   {
+    "score": "3-0",
+    "prob": 0.096
+   },
+   {
+    "score": "2-1",
+    "prob": 0.094
+   },
+   {
+    "score": "1-1",
+    "prob": 0.092
+   }
+  ],
+  "htScoreTop3": [
+   {
+    "score": "0-0",
+    "prob": 0.285
+   },
+   {
+    "score": "1-0",
+    "prob": 0.27
+   },
+   {
+    "score": "2-0",
+    "prob": 0.127
+   }
+  ],
+  "k_dist": {
+   "k": 1,
+   "p": 0.23415587536800825
+  },
+  "k_rec": {
+   "k": 1,
+   "p": 0.2342
+  },
+  "k_consistency": "一致",
+  "marketDivergence_pp": null,
+  "override_reason": null,
+  "risk": "HAD未开售；让球-2让胜仅25.7%，莱赫6人伤但为波甲榜首。",
+  "actual": {
+   "score": "3-1",
+   "ht_score": "1-0",
+   "direction": "home",
+   "handicap": "平",
+   "total_goals": 4,
+   "hafu": "胜胜",
+   "ou": "大",
+   "single_api": 0,
+   "settled": true,
+   "source": "体彩官方 getUniformMatchResultV1（sectionsNo999/sectionsNo1）"
+  },
+  "backtest": {
+   "had_primary": true,
+   "had_cover": true,
+   "hc_primary": false,
+   "hc_cover": true,
+   "score_top5": false,
+   "ttg_top2": false,
+   "hafu_top3": true,
+   "ht_top3": true,
+   "tier": false,
+   "ou": true
+  }
+ },
+ {
+  "num": "周四011",
+  "league": "欧罗巴",
+  "home": "阿尔克马尔",
+  "away": "尤文图斯",
+  "kickoff": "04:00:00",
+  "match_date": "2026-11-05（销售日）/ 001 11-05、其余 11-06 北京时间",
+  "is_single": false,
+  "single_note": "官方接口 bettingSingle=false，用户未赛前告知单关",
+  "single_match": null,
+  "confidence": "★",
+  "lambda": {
+   "home": 1.2,
+   "away": 1.5,
+   "total": 2.7
+  },
+  "model": {
+   "home": 0.28800000000000003,
+   "draw": 0.28800000000000003,
+   "away": 0.424
+  },
+  "market": {
+   "home": 0.266,
+   "draw": 0.252,
+   "away": 0.48200000000000004
+  },
+  "handicap": {
+   "line": 1,
+   "win": 0.568,
+   "push": 0.214,
+   "lose": 0.218
+  },
+  "odds_had": {
+   "home": 3.3,
+   "draw": 3.48,
+   "away": 1.82
+  },
+  "odds_hhad": {
+   "handicap": 1,
+   "home": 1.75,
+   "draw": 3.5,
+   "away": 3.55
+  },
+  "odds_crs": {
+   "1:0": 12,
+   "2:0": 19,
+   "2:1": 10.5,
+   "3:0": 45,
+   "3:1": 24,
+   "3:2": 26,
+   "4:0": 120,
+   "4:1": 65,
+   "4:2": 80,
+   "5:0": 350,
+   "5:1": 250,
+   "5:2": 300,
+   "win:other": 80,
+   "0:0": 15,
+   "1:1": 7.5,
+   "2:2": 11,
+   "3:3": 40,
+   "draw:other": 250,
+   "0:1": 8.5,
+   "0:2": 10.5,
+   "1:2": 6.75,
+   "0:3": 18,
+   "1:3": 12,
+   "2:3": 20,
+   "0:4": 36,
+   "1:4": 29,
+   "2:4": 40,
+   "0:5": 90,
+   "1:5": 70,
+   "2:5": 120,
+   "loss:other": 40
+  },
+  "odds_ttg": {
+   "0": 15,
+   "1": 5.3,
+   "2": 3.7,
+   "3": 3.4,
+   "4": 4.75,
+   "5": 8.55,
+   "6": 16.5,
+   "7+": 22
+  },
+  "odds_hafu": {
+   "HH": 5.3,
+   "HD": 14.5,
+   "HA": 20,
+   "DH": 7.75,
+   "DD": 5.85,
+   "DA": 4.9,
+   "AH": 34,
+   "AD": 14.5,
+   "AA": 2.9
+  },
+  "value": {
+   "home": "€129.30M",
+   "away": "€614M",
+   "ratio": 0.21
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/az-alkmaar/startseite/verein/1090",
+   "away": "https://www.transfermarkt.com/juventus-turin/startseite/verein/506",
+   "provider": "Transfermarkt（2026-11-05 采集）"
+  },
+  "stadium": "AFAS Stadion（阿尔克马尔，正常）",
+  "weather": "赛时预报未取到一手源（未验证），无极端天气预警",
+  "injuries": {
+   "home": "AZ：霍恩坎普伤缺；尤文：麦肯尼（腹股沟）、伊尔迪兹、洛卡特利、孔塞桑、尼科·冈萨雷斯、切利克、图拉姆、格拉巴拉缺阵，斯帕莱蒂明确轮换（卢库米/洛卡特利休息，3天后联赛）。来源：懂球帝/球迷屋/微博（**未验证一手**）。",
+   "source_level": "部分一手（官网/Fotmob）+中文二手（未验证）"
+  },
+  "recent": "AZ荷甲第5（11轮6-2-3，20:13，近5 WLDLL）；尤文意甲第7（10轮5-2-3，13:10，近5 DLWLW），8人伤+明确轮换。",
+  "h2h": "两队无正式交锋记录。",
+  "had": {
+   "first": "away",
+   "second": "home",
+   "firstProb": 0.424,
+   "secondProb": 0.28800000000000003
+  },
+  "hhad": {
+   "first": "负",
+   "second": "平",
+   "firstProb": 0.218,
+   "secondProb": 0.214,
+   "structure_leg": "胜",
+   "structureProb": 0.568,
+   "note": "L268 结构腿不作首选/不作串关腿，单独记账留次选"
+  },
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "tierNote": "2球25.5%＋3球22.0%＝47.5%为最高band；0-1球23.9%<35%，不预留。",
+   "first": 2,
+   "second": 3,
+   "firstProb": 0.255,
+   "secondProb": 0.22,
+   "over25": 0.506,
+   "under25": 0.494,
+   "bands": {
+    "常规正常球(2-3球)": 0.475,
+    "小球(1-2球)": 0.41700000000000004,
+    "闷战超小球(0-1球)": 0.239,
+    "大球(4-5球)": 0.22899999999999998,
+    "超大球(5-6球)": 0.11699999999999999,
+    "穿盘可能(6-7+球)": 0.057
+   }
+  },
+  "hafu": {
+   "top3": [
+    "负负",
+    "平负",
+    "胜负"
+   ],
+   "top3Probs": [
+    0.258,
+    0.158,
+    0.026000000000000002
+   ],
+   "quota": "L267"
+  },
+  "scoreTop5": [
+   {
+    "score": "1-1",
+    "prob": 0.131
+   },
+   {
+    "score": "0-1",
+    "prob": 0.091
+   },
+   {
+    "score": "1-2",
+    "prob": 0.091
+   },
+   {
+    "score": "0-0",
+    "prob": 0.077
+   },
+   {
+    "score": "0-2",
+    "prob": 0.076
+   }
+  ],
+  "htScoreTop3": [
+   {
+    "score": "0-0",
+    "prob": 0.313
+   },
+   {
+    "score": "0-1",
+    "prob": 0.20199999999999999
+   },
+   {
+    "score": "1-0",
+    "prob": 0.162
+   }
+  ],
+  "k_dist": {
+   "k": 0,
+   "p": 0.2741721335942513
+  },
+  "k_rec": {
+   "k": -1,
+   "p": 0.2135
+  },
+  "k_consistency": "分布-方向分歧",
+  "marketDivergence_pp": -5.8,
+  "override_reason": null,
+  "risk": "尤文8人伤+明确轮换，客胜42.4%<45%。",
+  "actual": {
+   "score": "1-2",
+   "ht_score": "0-2",
+   "direction": "away",
+   "handicap": "平",
+   "total_goals": 3,
+   "hafu": "负负",
+   "ou": "大",
+   "single_api": 0,
+   "settled": true,
+   "source": "体彩官方 getUniformMatchResultV1（sectionsNo999/sectionsNo1）"
+  },
+  "backtest": {
+   "had_primary": true,
+   "had_cover": true,
+   "hc_primary": false,
+   "hc_cover": true,
+   "score_top5": true,
+   "ttg_top2": true,
+   "hafu_top3": true,
+   "ht_top3": false,
+   "tier": true,
+   "ou": true
+  }
+ },
+ {
+  "num": "周四012",
+  "league": "欧罗巴",
+  "home": "勒沃库森",
+  "away": "马赛",
+  "kickoff": "04:00:00",
+  "match_date": "2026-11-05（销售日）/ 001 11-05、其余 11-06 北京时间",
+  "is_single": false,
+  "single_note": "官方接口 bettingSingle=false，用户未赛前告知单关",
+  "single_match": null,
+  "confidence": "★★",
+  "lambda": {
+   "home": 1.8,
+   "away": 0.9,
+   "total": 2.7
+  },
+  "model": {
+   "home": 0.568,
+   "draw": 0.259,
+   "away": 0.17300000000000001
+  },
+  "market": {
+   "home": 0.7190000000000001,
+   "draw": 0.162,
+   "away": 0.11800000000000001
+  },
+  "handicap": {
+   "line": -1,
+   "win": 0.337,
+   "push": 0.24100000000000002,
+   "lose": 0.423
+  },
+  "odds_had": {
+   "home": 1.22,
+   "draw": 5.4,
+   "away": 7.41
+  },
+  "odds_hhad": {
+   "handicap": -1,
+   "home": 1.75,
+   "draw": 3.78,
+   "away": 3.29
+  },
+  "odds_crs": {
+   "1:0": 10,
+   "2:0": 8,
+   "2:1": 7,
+   "3:0": 10.5,
+   "3:1": 8.5,
+   "3:2": 16,
+   "4:0": 16,
+   "4:1": 14,
+   "4:2": 28,
+   "5:0": 33,
+   "5:1": 28,
+   "5:2": 55,
+   "win:other": 15,
+   "0:0": 26,
+   "1:1": 10.5,
+   "2:2": 14.5,
+   "3:3": 40,
+   "draw:other": 200,
+   "0:1": 23,
+   "0:2": 45,
+   "1:2": 19,
+   "0:3": 90,
+   "1:3": 45,
+   "2:3": 36,
+   "0:4": 350,
+   "1:4": 175,
+   "2:4": 120,
+   "0:5": 750,
+   "1:5": 550,
+   "2:5": 450,
+   "loss:other": 90
+  },
+  "odds_ttg": {
+   "0": 26,
+   "1": 8,
+   "2": 4.75,
+   "3": 3.45,
+   "4": 4.25,
+   "5": 5.95,
+   "6": 10,
+   "7+": 11.5
+  },
+  "odds_hafu": {
+   "HH": 1.69,
+   "HD": 18,
+   "HA": 60,
+   "DH": 4.25,
+   "DD": 9,
+   "DA": 18,
+   "AH": 18,
+   "AD": 18,
+   "AA": 13
+  },
+  "value": {
+   "home": "€481M",
+   "away": "€182M",
+   "ratio": 2.64
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/bayer-04-leverkusen/startseite/verein/15",
+   "away": "https://www.transfermarkt.com/olympique-marseille/startseite/verein/244",
+   "provider": "Transfermarkt（2026-11-05 采集）"
+  },
+  "stadium": "BayArena（勒沃库森，正常）",
+  "weather": "赛时预报未取到一手源（未验证），无极端天气预警",
+  "injuries": {
+   "home": "勒沃库森：迪亚比（大腿）、泰里耶、本塞吉尔、科法内、泰拉、巴代、杜埃、艾希霍恩8人伤缺，仅希克一名正印中锋；马赛：埃默森、科内利乌斯伤缺。来源：Fotmob/虎扑/球迷屋。",
+   "source_level": "部分一手（官网/Fotmob）+中文二手（未验证）"
+  },
+  "recent": "勒沃库森德甲第6（8轮4-1-3，18:16，近5 WWWLL），欧联前3轮零失球但联赛两场丢7球；马赛法甲第6（9轮5-0-4，20:13，近5 LWWWW），欧联3连胜。",
+  "h2h": "两队欧战有交锋史，但近年样本不足（未取到可靠H2H，未验证）。",
+  "had": {
+   "first": "home",
+   "second": "draw",
+   "firstProb": 0.568,
+   "secondProb": 0.259
+  },
+  "hhad": {
+   "first": "胜",
+   "second": "平",
+   "firstProb": 0.337,
+   "secondProb": 0.24100000000000002,
+   "structure_leg": "负",
+   "structureProb": 0.423,
+   "note": "L268 结构腿不作首选/不作串关腿，单独记账留次选"
+  },
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "tierNote": "2球25.4%＋3球22.0%＝47.4%为最高band；0-1球24.0%<35%，不预留。",
+   "first": 2,
+   "second": 3,
+   "firstProb": 0.254,
+   "secondProb": 0.22,
+   "over25": 0.506,
+   "under25": 0.494,
+   "bands": {
+    "常规正常球(2-3球)": 0.474,
+    "小球(1-2球)": 0.418,
+    "闷战超小球(0-1球)": 0.24,
+    "大球(4-5球)": 0.22899999999999998,
+    "超大球(5-6球)": 0.11699999999999999,
+    "穿盘可能(6-7+球)": 0.057
+   }
+  },
+  "hafu": {
+   "top3": [
+    "胜胜",
+    "平胜",
+    "负胜"
+   ],
+   "top3Probs": [
+    0.361,
+    0.19699999999999998,
+    0.027999999999999997
+   ],
+   "quota": "L267"
+  },
+  "scoreTop5": [
+   {
+    "score": "1-1",
+    "prob": 0.11800000000000001
+   },
+   {
+    "score": "1-0",
+    "prob": 0.11199999999999999
+   },
+   {
+    "score": "2-0",
+    "prob": 0.109
+   },
+   {
+    "score": "2-1",
+    "prob": 0.098
+   },
+   {
+    "score": "0-0",
+    "prob": 0.076
+   }
+  ],
+  "htScoreTop3": [
+   {
+    "score": "0-0",
+    "prob": 0.313
+   },
+   {
+    "score": "1-0",
+    "prob": 0.242
+   },
+   {
+    "score": "0-1",
+    "prob": 0.121
+   }
+  ],
+  "k_dist": {
+   "k": 0,
+   "p": 0.2463873574688389
+  },
+  "k_rec": {
+   "k": 1,
+   "p": 0.2406
+  },
+  "k_consistency": "分布-方向分歧",
+  "marketDivergence_pp": -15.1,
+  "override_reason": null,
+  "risk": "勒沃库森8人伤（锋线仅希克），模型56.8% vs 市场71.9%，分歧-15.1pp（>15pp红线），不作博胆。",
+  "actual": {
+   "score": "0-1",
+   "ht_score": "0-0",
+   "direction": "away",
+   "handicap": "负",
+   "total_goals": 1,
+   "hafu": "平负",
+   "ou": "小",
+   "single_api": 0,
+   "settled": true,
+   "source": "体彩官方 getUniformMatchResultV1（sectionsNo999/sectionsNo1）"
+  },
+  "backtest": {
+   "had_primary": false,
+   "had_cover": false,
+   "hc_primary": false,
+   "hc_cover": false,
+   "score_top5": false,
+   "ttg_top2": false,
+   "hafu_top3": false,
+   "ht_top3": true,
+   "tier": false,
+   "ou": false
+  }
+ },
+ {
+  "num": "周四013",
+  "league": "巴甲",
+  "home": "帕尔梅拉斯",
+  "away": "里莫",
+  "kickoff": "06:30:00",
+  "match_date": "2026-11-05（销售日）/ 001 11-05、其余 11-06 北京时间",
+  "is_single": false,
+  "single_note": "官方接口 bettingSingle=false，用户未赛前告知单关",
+  "single_match": null,
+  "confidence": "★★★",
+  "lambda": {
+   "home": 2.3,
+   "away": 0.6,
+   "total": 2.9
+  },
+  "model": {
+   "home": 0.7440000000000001,
+   "draw": 0.182,
+   "away": 0.073
+  },
+  "market": {
+   "home": 0.7979999999999999,
+   "draw": 0.142,
+   "away": 0.061
+  },
+  "handicap": {
+   "line": -2,
+   "win": 0.297,
+   "push": 0.225,
+   "lose": 0.478
+  },
+  "odds_had": {
+   "home": 1.1,
+   "draw": 6.2,
+   "away": 14.5
+  },
+  "odds_hhad": {
+   "handicap": -2,
+   "home": 2.58,
+   "draw": 3.6,
+   "away": 2.11
+  },
+  "odds_crs": {
+   "1:0": 7,
+   "2:0": 5,
+   "2:1": 8.25,
+   "3:0": 6.5,
+   "3:1": 9.5,
+   "3:2": 32,
+   "4:0": 10,
+   "4:1": 16,
+   "4:2": 40,
+   "5:0": 20,
+   "5:1": 30,
+   "5:2": 90,
+   "win:other": 15,
+   "0:0": 18,
+   "1:1": 11,
+   "2:2": 26,
+   "3:3": 110,
+   "draw:other": 500,
+   "0:1": 27,
+   "0:2": 90,
+   "1:2": 34,
+   "0:3": 300,
+   "1:3": 120,
+   "2:3": 90,
+   "0:4": 850,
+   "1:4": 550,
+   "2:4": 450,
+   "0:5": 1000,
+   "1:5": 1000,
+   "2:5": 1000,
+   "loss:other": 450
+  },
+  "odds_ttg": {
+   "0": 18,
+   "1": 6,
+   "2": 3.9,
+   "3": 3.4,
+   "4": 4.6,
+   "5": 7.4,
+   "6": 13.5,
+   "7+": 18
+  },
+  "odds_hafu": {
+   "HH": 1.47,
+   "HD": 28,
+   "HA": 125,
+   "DH": 3.65,
+   "DD": 9.1,
+   "DA": 30,
+   "AH": 26,
+   "AD": 28,
+   "AA": 26
+  },
+  "value": {
+   "home": "€218.58M",
+   "away": "€23.00M",
+   "ratio": 9.5
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/sociedade-esportiva-palmeiras/startseite/verein/1023",
+   "away": "https://www.transfermarkt.com/clube-do-remo-pa-/startseite/verein/10997",
+   "provider": "Transfermarkt（2026-11-05 采集）"
+  },
+  "stadium": "Allianz Parque（圣保罗，正常）",
+  "weather": "赛时预报未取到一手源（未验证），无极端天气预警",
+  "injuries": {
+   "home": "帕尔梅拉斯：拉蒙·索萨、保利尼奥、热夫特伤缺；里莫：波韦达、贾德森、马特乌斯·费利佩、若昂·卢卡斯伤缺，另有泽·韦利松、埃德森·费尔南多、贾贾停赛/缺席。来源：Fotmob/新浪（部分未验证）。",
+   "source_level": "部分一手（官网/Fotmob）+中文二手（未验证）"
+  },
+  "recent": "帕尔梅拉斯巴甲第2（30轮18-9-3，52:22，63分，近5 DWDWW），争冠；里莫第19（30轮5-10-15，33:48，25分，近5 LLLDD），保级。",
+  "h2h": "2026-05-11 里莫主场1-1帕尔梅拉斯（FIFA Match Centre），本场为反向主客。",
+  "had": {
+   "first": "home",
+   "second": "draw",
+   "firstProb": 0.7440000000000001,
+   "secondProb": 0.182
+  },
+  "hhad": {
+   "first": "胜",
+   "second": "平",
+   "firstProb": 0.297,
+   "secondProb": 0.225,
+   "structure_leg": "负",
+   "structureProb": 0.478,
+   "note": "L268 结构腿不作首选/不作串关腿，单独记账留次选"
+  },
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "tierNote": "2球23.7%＋3球22.4%＝46.1%为最高band；0-1球20.9%<35%，不预留。",
+   "first": 2,
+   "second": 3,
+   "firstProb": 0.237,
+   "secondProb": 0.22399999999999998,
+   "over25": 0.5539999999999999,
+   "under25": 0.446,
+   "bands": {
+    "常规正常球(2-3球)": 0.461,
+    "小球(1-2球)": 0.385,
+    "大球(4-5球)": 0.256,
+    "闷战超小球(0-1球)": 0.209,
+    "超大球(5-6球)": 0.14,
+    "穿盘可能(6-7+球)": 0.07400000000000001
+   }
+  },
+  "hafu": {
+   "top3": [
+    "胜胜",
+    "平胜",
+    "负胜"
+   ],
+   "top3Probs": [
+    0.519,
+    0.214,
+    0.026000000000000002
+   ],
+   "quota": "L267"
+  },
+  "scoreTop5": [
+   {
+    "score": "2-0",
+    "prob": 0.146
+   },
+   {
+    "score": "1-0",
+    "prob": 0.12
+   },
+   {
+    "score": "3-0",
+    "prob": 0.11199999999999999
+   },
+   {
+    "score": "2-1",
+    "prob": 0.087
+   },
+   {
+    "score": "1-1",
+    "prob": 0.08199999999999999
+   }
+  ],
+  "htScoreTop3": [
+   {
+    "score": "1-0",
+    "prob": 0.281
+   },
+   {
+    "score": "0-0",
+    "prob": 0.271
+   },
+   {
+    "score": "2-0",
+    "prob": 0.145
+   }
+  ],
+  "k_dist": {
+   "k": 1,
+   "p": 0.23036811883175207
+  },
+  "k_rec": {
+   "k": 1,
+   "p": 0.2304
+  },
+  "k_consistency": "一致",
+  "marketDivergence_pp": -5.4,
+  "override_reason": null,
+  "risk": "里莫6+人缺阵但保级拼命；帕尔梅拉斯三线作战体能。",
+  "actual": {
+   "score": "6-1",
+   "ht_score": "4-1",
+   "direction": "home",
+   "handicap": "胜",
+   "total_goals": 7,
+   "hafu": "胜胜",
+   "ou": "大",
+   "single_api": 0,
+   "settled": true,
+   "source": "体彩官方 getUniformMatchResultV1（sectionsNo999/sectionsNo1）"
+  },
+  "backtest": {
+   "had_primary": true,
+   "had_cover": true,
+   "hc_primary": true,
+   "hc_cover": true,
+   "score_top5": false,
+   "ttg_top2": false,
+   "hafu_top3": true,
+   "ht_top3": false,
+   "tier": false,
+   "ou": true
+  }
+ }
+]

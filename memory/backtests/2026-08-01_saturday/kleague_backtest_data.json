@@ -1,0 +1,168 @@
+{
+  "backtest_id": "kleague_20260801_sat",
+  "match_date": "2026-08-01",
+  "day": "周六",
+  "model_version": "v1.8.0",
+  "total_matches": 3,
+  "league": "韩职(K League 1)",
+  "round": "第21轮",
+  "backtest_time": "2026-08-02 10:30",
+  "summary": {
+    "direction_hit": 1,
+    "direction_total": 3,
+    "direction_rate": 33.3,
+    "score_top5_hit": 2,
+    "score_top5_total": 3,
+    "score_top5_rate": 66.7,
+    "score_top10_hit": 2,
+    "score_top10_total": 3,
+    "score_top10_rate": 66.7,
+    "ht_score_top5_hit": 3,
+    "ht_score_top5_total": 3,
+    "ht_score_top5_rate": 100.0,
+    "over_under_hit": 1,
+    "over_under_total": 3,
+    "over_under_rate": 33.3,
+    "hft_top3_hit": 1,
+    "hft_top3_total": 3,
+    "hft_top3_rate": 33.3,
+    "actual_draws": 1,
+    "predicted_draws": 0,
+    "draw_missed": 1,
+    "upset_count": 1
+  },
+  "matches": [
+    {
+      "match_id": "001",
+      "home_team": "江原FC",
+      "away_team": "富川FC",
+      "actual_score": "0:3",
+      "actual_ht_score": "0:1",
+      "actual_direction": "客胜",
+      "actual_total_goals": 3,
+      "actual_over_25": true,
+      "actual_hft": "负负",
+      "prediction": {
+        "original_direction": "主胜",
+        "original_prob": 59.1,
+        "deep_direction": "主胜",
+        "deep_prob": 59.9,
+        "final_direction": "主胜",
+        "final_prob": 58.0,
+        "confidence": "中★★",
+        "score_top5": ["1:0", "2:0", "2:1", "1:1", "0:1"],
+        "ht_score_top5": ["0:0", "1:0", "0:1", "2:0", "1:1"],
+        "over_25": false,
+        "over_25_prob": 48.2,
+        "hft_top3": {"胜胜": 40.3, "平胜": 21.5, "平平": 9.8}
+      },
+      "hit_check": {
+        "direction": false,
+        "score_top5": false,
+        "score_top10": false,
+        "ht_score_top5": true,
+        "over_under": false,
+        "hft_top3": false
+      },
+      "error_analysis": "重大冷门。模型预测主胜58%，实际0:3惨败。富川客场不败率70%已标注但未充分降权主胜概率。加莱戈19分钟世界波破门后江原崩盘，下半场连丢2球。江原主场防守最佳(9场仅6球)的记录被打破。核心问题：①市场隐含66.7%接近70%阈值已触发冷门检查，但仅上修平局+8%而未上修客胜概率；②富川虽联赛排名11但客场韧性极强，客场进球能力被低估；③江原上轮客场1-2负安养已有状态下滑信号但未充分反映",
+      "key_lesson": "当市场隐含概率接近70%阈值时，不仅需上修平局，还应上修客胜概率。富川这类客场不败率70%的保级队，客场胜率不应被压缩到16%"
+    },
+    {
+      "match_id": "002",
+      "home_team": "全北现代",
+      "away_team": "首尔FC",
+      "actual_score": "0:0",
+      "actual_ht_score": "0:0",
+      "actual_direction": "平局",
+      "actual_total_goals": 0,
+      "actual_over_25": false,
+      "actual_hft": "平平",
+      "prediction": {
+        "original_direction": "客胜",
+        "original_prob": 38.8,
+        "deep_direction": "主胜",
+        "deep_prob": 45.1,
+        "final_direction": "主胜",
+        "final_prob": 48.0,
+        "confidence": "中★★★",
+        "score_top5": ["1:1", "2:1", "1:0", "2:0", "0:0"],
+        "ht_score_top5": ["0:0", "0:1", "1:0", "1:1", "0:2"],
+        "over_25": true,
+        "over_25_prob": 55.2,
+        "hft_top3": {"负负": 22.3, "胜胜": 20.3, "平负": 14.0}
+      },
+      "hit_check": {
+        "direction": false,
+        "score_top5": true,
+        "score_top10": true,
+        "ht_score_top5": true,
+        "over_under": false,
+        "hft_top3": false
+      },
+      "error_analysis": "连续第二次全北主场0:0平局。7/21全北vs大田0:0，8/1全北vs首尔0:0。比分矩阵TOP1是1:1(平局方向)，0:0在TOP5中，但综合方向选了主胜。李昇佑首发+Gittis首发后lambda上修至48%主胜，但实际全北进攻端仍然乏力——全北射门仅1次射正(唯彩数据)。首尔2连败+周中消耗确实削弱了客胜概率，但未导致主胜，而是导致双方互交白卷。核心问题：①全北前锋线孔帕尼奥+朴主永缺阵的影响远超lambda下修8%，实际攻击力折损约35-40%(与7/21全北vs大田完全相同的错误)；②比分矩阵TOP1平局方向再次被忽略(规则17第三次验证)；③首尔虽2连败但防守体系仍在，全北攻坚能力不足",
+      "key_lesson": "全北前锋线集体缺阵(孔帕尼奥+朴主永+蒂亚戈)的影响是非线性的，不能简单lambda×0.92。当比分矩阵TOP1是平局方向时，即使综合概率指向主胜，也应将平局作为首选方向(规则17)。全北主场连续2场0:0证明其主场攻坚能力严重不足"
+    },
+    {
+      "match_id": "003",
+      "home_team": "浦项制铁",
+      "away_team": "金泉尚武",
+      "actual_score": "0:1",
+      "actual_ht_score": "0:0",
+      "actual_direction": "客胜",
+      "actual_total_goals": 1,
+      "actual_over_25": false,
+      "actual_hft": "平负",
+      "prediction": {
+        "original_direction": "客胜",
+        "original_prob": 37.2,
+        "deep_direction": "客胜",
+        "deep_prob": 35.8,
+        "final_direction": "平局",
+        "final_prob": 35.0,
+        "confidence": "中★★",
+        "score_top5": ["0:0", "0:1", "1:0", "1:1", "0:2"],
+        "ht_score_top5": ["0:0", "0:1", "1:0", "1:1", "0:2"],
+        "over_25": false,
+        "over_25_prob": 31.0,
+        "hft_top3": {"平负": 18.6, "负负": 18.4, "平平": 17.2}
+      },
+      "hit_check": {
+        "direction": true,
+        "score_top5": true,
+        "score_top10": true,
+        "ht_score_top5": true,
+        "over_under": true,
+        "hft_top3": true
+      },
+      "error_analysis": "方向命中(原始+深度分析客胜)，但赛前1小时修正时将平局提到第一(35%)，客胜降为第二(34%)，实际客胜打出。62分钟浦项西矢健人红牌，66分钟金泉李政宅角球头球破门。0:1在比分TOP2，半场0:0在TOP1，半全场平负在TOP1，大小球命中。赛前1小时修正的问题是：李秀彬停赛+李政宅回归导致过度看好平局，但李政宅实际回归后正好打进制胜球。红牌不可预测但浦项主场攻击力联赛最差已预警",
+      "key_lesson": "原始模型和深度分析的客胜方向是正确的。赛前1小时修正时不应因单一停赛信息就将平局提到第一——金泉客场胜率有其基础概率。半全场平负TOP1命中证明半场泊松模型可靠"
+    }
+  ],
+  "key_findings": [
+    "方向命中率33.3%(1/3)，仅003客胜命中。001重大冷门(0:3)，002平局漏判(0:0)",
+    "比分TOP5命中率66.7%(2/3)，002和003命中。001的0:3不在TOP10——泊松分布尾部再次低估(规则31验证)",
+    "半场比分TOP5命中率100%(3/3)——半场泊松模型(lambda×0.45)持续表现最佳，连续4期100%",
+    "半全场TOP3命中率33.3%(1/3)，仅003平负TOP1命中。001负负不在TOP3，002平平不在TOP3",
+    "大小球命中率33.3%(1/3)，仅003小球命中。001大球(0:3=3球)和002小球(0:0=0球)均与预测相反",
+    "平局漏判1场(002全北0:0首尔)——比分矩阵TOP1是1:1平局方向但综合方向选主胜，规则17第三次验证",
+    "全北前锋线集体缺阵影响非线性——7/21全北0:0大田+8/1全北0:0首尔，连续2场证明lambda×0.92远不够",
+    "001江原0:3富川是重大冷门——市场隐含66.7%接近70%阈值已触发冷门检查但未上修客胜概率"
+  ],
+  "improvements_applied": [
+    "规则17(比分矩阵方向优先标注)已第三次验证——002比分TOP1是1:1平局但方向选主胜，实际0:0平局",
+    "规则22(韩职特化)市场热度反向指标验证——001市场隐含66.7%接近70%但仅上修平局未上修客胜，实际0:3客胜",
+    "规则31(大球联赛修正)验证——001实际0:3(3球)不在TOP10，泊松尾部低估问题持续存在",
+    "全北前锋线缺阵非线性折算需加强——连续2场0:0证明孔帕尼奥+朴主永+蒂亚戈缺阵应lambda×0.65-0.70而非×0.92"
+  ],
+  "source_files": {
+    "prediction_json": "memory/predictions/2026-08-01_saturday/kleague_deep_predictions.json",
+    "sat_predictions": "memory/predictions/2026-08-01_saturday/sat_predictions.json",
+    "html_report": "reports/html/kleague_deep_20260801_analysis.html",
+    "league_data": "memory/leagues/k_league_kr.json"
+  },
+  "actual_results_sources": [
+    "https://m.zhibo8.com/news/web/zuqiu/2026-08-01/match1899481date2026vnative.htm",
+    "https://m.zhibo8.com/news/web/zuqiu/2026-08-01/match1899504date2026vnative.htm",
+    "https://m.zhibo8.com/news/web/zuqiu/2026-08-01/match1899511date2026vnative.htm"
+  ]
+}

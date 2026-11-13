@@ -1,0 +1,742 @@
+[
+ {
+  "name": "方向串A",
+  "cat": "方向串",
+  "legs": [
+   {
+    "num": "周三007",
+    "market": "had",
+    "pick": "home",
+    "label": "皇马主胜",
+    "odds": 1.16,
+    "prob": 0.7122
+   },
+   {
+    "num": "周三013",
+    "market": "had",
+    "pick": "home",
+    "label": "帕尔梅拉斯主胜",
+    "odds": 1.67,
+    "prob": 0.5042
+   }
+  ],
+  "odds": 1.94,
+  "prob": 0.35909,
+  "note": ""
+ },
+ {
+  "name": "方向串B",
+  "cat": "方向串",
+  "legs": [
+   {
+    "num": "周三010",
+    "market": "had",
+    "pick": "home",
+    "label": "拜仁主胜",
+    "odds": 1.89,
+    "prob": 0.5463
+   },
+   {
+    "num": "周三009",
+    "market": "had",
+    "pick": "home",
+    "label": "贝蒂斯主胜",
+    "odds": 1.43,
+    "prob": 0.4277
+   },
+   {
+    "num": "周三005",
+    "market": "had",
+    "pick": "home",
+    "label": "里尔主胜",
+    "odds": 1.9,
+    "prob": 0.4443
+   }
+  ],
+  "odds": 5.14,
+  "prob": 0.10381,
+  "note": ""
+ },
+ {
+  "name": "稳健让球串",
+  "cat": "让球串",
+  "legs": [
+   {
+    "num": "周三008",
+    "market": "hhad",
+    "pick": "away",
+    "label": "维拉让(-2)负",
+    "odds": 2.12,
+    "prob": 0.5868
+   },
+   {
+    "num": "周三013",
+    "market": "hhad",
+    "pick": "away",
+    "label": "帕尔梅拉斯让(-1)负",
+    "odds": 1.92,
+    "prob": 0.4674
+   }
+  ],
+  "odds": 4.07,
+  "prob": 0.27427,
+  "note": ""
+ },
+ {
+  "name": "价值让球串",
+  "cat": "让球串",
+  "legs": [
+   {
+    "num": "周三004",
+    "market": "hhad",
+    "pick": "away",
+    "label": "科莫让(-1)负",
+    "odds": 1.53,
+    "prob": 0.3924
+   },
+   {
+    "num": "周三009",
+    "market": "hhad",
+    "pick": "away",
+    "label": "贝蒂斯让(-1)负",
+    "odds": 2.36,
+    "prob": 0.5693
+   }
+  ],
+  "odds": 3.61,
+  "prob": 0.22339,
+  "note": ""
+ },
+ {
+  "name": "半全场串A",
+  "cat": "混合串",
+  "legs": [
+   {
+    "num": "周三010",
+    "market": "hafu",
+    "pick": "胜胜",
+    "label": "拜仁胜胜",
+    "odds": 2.95,
+    "prob": 0.356
+   },
+   {
+    "num": "周三004",
+    "market": "hafu",
+    "pick": "平胜",
+    "label": "科莫平胜",
+    "odds": 5.5,
+    "prob": 0.1789
+   },
+   {
+    "num": "周三011",
+    "market": "hafu",
+    "pick": "胜胜",
+    "label": "里斯本胜胜",
+    "odds": 1.44,
+    "prob": 0.4163
+   }
+  ],
+  "odds": 23.36,
+  "prob": 0.02651,
+  "note": ""
+ },
+ {
+  "name": "半全场串B",
+  "cat": "混合串",
+  "legs": [
+   {
+    "num": "周三008",
+    "market": "hafu",
+    "pick": "胜胜",
+    "label": "维拉胜胜",
+    "odds": 1.5,
+    "prob": 0.3838
+   },
+   {
+    "num": "周三003",
+    "market": "hafu",
+    "pick": "平胜",
+    "label": "大宫平胜",
+    "odds": 5.7,
+    "prob": 0.2064
+   },
+   {
+    "num": "周三004",
+    "market": "hafu",
+    "pick": "胜胜",
+    "label": "科莫胜胜",
+    "odds": 3.4,
+    "prob": 0.3635
+   }
+  ],
+  "odds": 29.07,
+  "prob": 0.0288,
+  "note": ""
+ },
+ {
+  "name": "方向+半全场A",
+  "cat": "混合串",
+  "legs": [
+   {
+    "num": "周三002",
+    "market": "had",
+    "pick": "home",
+    "label": "川崎主胜",
+    "odds": 2.34,
+    "prob": 0.4095
+   },
+   {
+    "num": "周三003",
+    "market": "hafu",
+    "pick": "平胜",
+    "label": "大宫平胜",
+    "odds": 5.7,
+    "prob": 0.2064
+   }
+  ],
+  "odds": 13.34,
+  "prob": 0.08452,
+  "note": ""
+ },
+ {
+  "name": "方向+半全场B",
+  "cat": "混合串",
+  "legs": [
+   {
+    "num": "周三005",
+    "market": "had",
+    "pick": "home",
+    "label": "里尔主胜",
+    "odds": 1.9,
+    "prob": 0.4443
+   },
+   {
+    "num": "周三009",
+    "market": "hafu",
+    "pick": "胜胜",
+    "label": "贝蒂斯胜胜",
+    "odds": 2.04,
+    "prob": 0.2428
+   }
+  ],
+  "odds": 3.88,
+  "prob": 0.10788,
+  "note": ""
+ },
+ {
+  "name": "连续编号混合串A",
+  "cat": "混合串",
+  "legs": [
+   {
+    "num": "周三006",
+    "market": "hafu",
+    "pick": "平平",
+    "label": "莱万特平平",
+    "odds": 4.75,
+    "prob": 0.2623
+   },
+   {
+    "num": "周三007",
+    "market": "hafu",
+    "pick": "胜胜",
+    "label": "皇马胜胜",
+    "odds": 1.48,
+    "prob": 0.4585
+   }
+  ],
+  "odds": 7.03,
+  "prob": 0.12026,
+  "note": ""
+ },
+ {
+  "name": "连续编号混合串B",
+  "cat": "混合串",
+  "legs": [
+   {
+    "num": "周三012",
+    "market": "hafu",
+    "pick": "胜胜",
+    "label": "布鲁日胜胜",
+    "odds": 2.95,
+    "prob": 0.4774
+   },
+   {
+    "num": "周三013",
+    "market": "hafu",
+    "pick": "平平",
+    "label": "帕尔梅拉斯平平",
+    "odds": 5.1,
+    "prob": 0.2612
+   }
+  ],
+  "odds": 15.04,
+  "prob": 0.1247,
+  "note": ""
+ },
+ {
+  "name": "总进球串A",
+  "cat": "高赔总进球串",
+  "legs": [
+   {
+    "num": "周三007",
+    "market": "ttg",
+    "pick": 4,
+    "label": "皇马4球",
+    "odds": 4.1,
+    "prob": 0.1813
+   },
+   {
+    "num": "周三003",
+    "market": "ttg",
+    "pick": 2,
+    "label": "大宫2球",
+    "odds": 4.2,
+    "prob": 0.267
+   },
+   {
+    "num": "周三005",
+    "market": "ttg",
+    "pick": 3,
+    "label": "里尔3球",
+    "odds": 3.45,
+    "prob": 0.2226
+   }
+  ],
+  "odds": 59.41,
+  "prob": 0.01078,
+  "note": ""
+ },
+ {
+  "name": "总进球串B",
+  "cat": "高赔总进球串",
+  "legs": [
+   {
+    "num": "周三011",
+    "market": "ttg",
+    "pick": 5,
+    "label": "里斯本5球",
+    "odds": 5.2,
+    "prob": 0.175
+   },
+   {
+    "num": "周三002",
+    "market": "ttg",
+    "pick": 2,
+    "label": "川崎2球",
+    "odds": 3.65,
+    "prob": 0.2698
+   },
+   {
+    "num": "周三008",
+    "market": "ttg",
+    "pick": 4,
+    "label": "维拉4球",
+    "odds": 4,
+    "prob": 0.1903
+   }
+  ],
+  "odds": 75.92,
+  "prob": 0.00899,
+  "note": ""
+ },
+ {
+  "name": "连续编号总进球串①",
+  "cat": "高赔总进球串",
+  "legs": [
+   {
+    "num": "周三006",
+    "market": "ttg",
+    "pick": 2,
+    "label": "莱万特2球",
+    "odds": 3.15,
+    "prob": 0.2831
+   },
+   {
+    "num": "周三007",
+    "market": "ttg",
+    "pick": 4,
+    "label": "皇马4球",
+    "odds": 4.1,
+    "prob": 0.1813
+   }
+  ],
+  "odds": 12.91,
+  "prob": 0.05133,
+  "note": ""
+ },
+ {
+  "name": "连续编号总进球串②",
+  "cat": "高赔总进球串",
+  "legs": [
+   {
+    "num": "周三010",
+    "market": "ttg",
+    "pick": 4,
+    "label": "拜仁4球",
+    "odds": 4.35,
+    "prob": 0.1906
+   },
+   {
+    "num": "周三011",
+    "market": "ttg",
+    "pick": 5,
+    "label": "里斯本5球",
+    "odds": 5.2,
+    "prob": 0.175
+   }
+  ],
+  "odds": 22.62,
+  "prob": 0.03335,
+  "note": ""
+ },
+ {
+  "name": "高赔半全场串A",
+  "cat": "高赔半全场串",
+  "legs": [
+   {
+    "num": "周三010",
+    "market": "hafu",
+    "pick": "胜胜",
+    "label": "拜仁胜胜",
+    "odds": 2.95,
+    "prob": 0.356
+   },
+   {
+    "num": "周三009",
+    "market": "hafu",
+    "pick": "胜胜",
+    "label": "贝蒂斯胜胜",
+    "odds": 2.04,
+    "prob": 0.2428
+   },
+   {
+    "num": "周三005",
+    "market": "hafu",
+    "pick": "胜胜",
+    "label": "里尔胜胜",
+    "odds": 2.95,
+    "prob": 0.2583
+   }
+  ],
+  "odds": 17.75,
+  "prob": 0.02233,
+  "note": ""
+ },
+ {
+  "name": "高赔半全场串B",
+  "cat": "高赔半全场串",
+  "legs": [
+   {
+    "num": "周三012",
+    "market": "hafu",
+    "pick": "胜胜",
+    "label": "布鲁日胜胜",
+    "odds": 2.95,
+    "prob": 0.4774
+   },
+   {
+    "num": "周三006",
+    "market": "hafu",
+    "pick": "平平",
+    "label": "莱万特平平",
+    "odds": 4.75,
+    "prob": 0.2623
+   },
+   {
+    "num": "周三001",
+    "market": "hafu",
+    "pick": "平胜",
+    "label": "FC东京平胜",
+    "odds": 5.3,
+    "prob": 0.213
+   }
+  ],
+  "odds": 74.27,
+  "prob": 0.02667,
+  "note": ""
+ },
+ {
+  "name": "连续编号高赔半全场串①",
+  "cat": "高赔半全场串",
+  "legs": [
+   {
+    "num": "周三010",
+    "market": "hafu",
+    "pick": "胜胜",
+    "label": "拜仁胜胜",
+    "odds": 2.95,
+    "prob": 0.356
+   },
+   {
+    "num": "周三011",
+    "market": "hafu",
+    "pick": "平胜",
+    "label": "里斯本平胜",
+    "odds": 4.2,
+    "prob": 0.1727
+   }
+  ],
+  "odds": 12.39,
+  "prob": 0.06148,
+  "note": ""
+ },
+ {
+  "name": "连续编号高赔半全场串②",
+  "cat": "高赔半全场串",
+  "legs": [
+   {
+    "num": "周三003",
+    "market": "hafu",
+    "pick": "平胜",
+    "label": "大宫平胜",
+    "odds": 5.7,
+    "prob": 0.2064
+   },
+   {
+    "num": "周三004",
+    "market": "hafu",
+    "pick": "胜胜",
+    "label": "科莫胜胜",
+    "odds": 3.4,
+    "prob": 0.3635
+   }
+  ],
+  "odds": 19.38,
+  "prob": 0.07503,
+  "note": ""
+ },
+ {
+  "name": "混合串A",
+  "cat": "半全场混合总进球串",
+  "legs": [
+   {
+    "num": "周三007",
+    "market": "hafu",
+    "pick": "胜胜",
+    "label": "皇马胜胜",
+    "odds": 1.48,
+    "prob": 0.4585
+   },
+   {
+    "num": "周三005",
+    "market": "ttg",
+    "pick": 3,
+    "label": "里尔3球",
+    "odds": 3.45,
+    "prob": 0.2226
+   }
+  ],
+  "odds": 5.11,
+  "prob": 0.10206,
+  "note": ""
+ },
+ {
+  "name": "混合串B",
+  "cat": "半全场混合总进球串",
+  "legs": [
+   {
+    "num": "周三013",
+    "market": "hafu",
+    "pick": "平平",
+    "label": "帕尔梅拉斯平平",
+    "odds": 5.1,
+    "prob": 0.2612
+   },
+   {
+    "num": "周三012",
+    "market": "ttg",
+    "pick": 4,
+    "label": "布鲁日4球",
+    "odds": 4.3,
+    "prob": 0.195
+   }
+  ],
+  "odds": 21.93,
+  "prob": 0.05093,
+  "note": ""
+ },
+ {
+  "name": "连续编号混合总进球串①",
+  "cat": "半全场混合总进球串",
+  "legs": [
+   {
+    "num": "周三010",
+    "market": "hafu",
+    "pick": "平胜",
+    "label": "拜仁平胜",
+    "odds": 5.2,
+    "prob": 0.1816
+   },
+   {
+    "num": "周三011",
+    "market": "ttg",
+    "pick": 5,
+    "label": "里斯本5球",
+    "odds": 5.2,
+    "prob": 0.175
+   }
+  ],
+  "odds": 27.04,
+  "prob": 0.03178,
+  "note": ""
+ },
+ {
+  "name": "连续编号混合总进球串②",
+  "cat": "半全场混合总进球串",
+  "legs": [
+   {
+    "num": "周三008",
+    "market": "hafu",
+    "pick": "胜胜",
+    "label": "维拉胜胜",
+    "odds": 1.5,
+    "prob": 0.3838
+   },
+   {
+    "num": "周三009",
+    "market": "ttg",
+    "pick": 4,
+    "label": "费耶诺德4球",
+    "odds": 4.1,
+    "prob": 0.1953
+   }
+  ],
+  "odds": 6.15,
+  "prob": 0.07496,
+  "note": ""
+ },
+ {
+  "name": "稳健比分串",
+  "cat": "比分串",
+  "legs": [
+   {
+    "num": "周三006",
+    "market": "crs",
+    "pick": "0-0",
+    "label": "莱万特0-0",
+    "odds": 10.5,
+    "prob": 0.1921
+   },
+   {
+    "num": "周三012",
+    "market": "crs",
+    "pick": "3-1",
+    "label": "布鲁日3-1",
+    "odds": 11.5,
+    "prob": 0.0821
+   }
+  ],
+  "odds": 120.75,
+  "prob": 0.01577,
+  "note": ""
+ },
+ {
+  "name": "搏冷比分串（反向推理）",
+  "cat": "比分串",
+  "legs": [
+   {
+    "num": "周三001",
+    "market": "crs",
+    "pick": "0-2",
+    "label": "柏太阳神客胜0-2",
+    "odds": 16,
+    "prob": 0.0264
+   },
+   {
+    "num": "周三013",
+    "market": "crs",
+    "pick": "0-2",
+    "label": "弗鲁米嫩客胜0-2",
+    "odds": 22,
+    "prob": 0.0217
+   }
+  ],
+  "odds": 352.0,
+  "prob": 0.00057,
+  "note": "冷门剧本：001柏太阳神0平局高波动+FC东京左侧防线残→客队反击打穿；013弗鲁米嫩必须净胜2球+联赛轮换留力→客场搏命"
+ },
+ {
+  "name": "连续编号比分串①",
+  "cat": "比分串",
+  "legs": [
+   {
+    "num": "周三006",
+    "market": "crs",
+    "pick": "0-0",
+    "label": "莱万特0-0",
+    "odds": 10.5,
+    "prob": 0.1921
+   },
+   {
+    "num": "周三007",
+    "market": "crs",
+    "pick": "3-1",
+    "label": "皇马3-1",
+    "odds": 8,
+    "prob": 0.0754
+   }
+  ],
+  "odds": 84.0,
+  "prob": 0.01448,
+  "note": ""
+ },
+ {
+  "name": "连续编号比分串②",
+  "cat": "比分串",
+  "legs": [
+   {
+    "num": "周三011",
+    "market": "crs",
+    "pick": "3-1",
+    "label": "里斯本3-1",
+    "odds": 8,
+    "prob": 0.0723
+   },
+   {
+    "num": "周三012",
+    "market": "crs",
+    "pick": "3-1",
+    "label": "布鲁日3-1",
+    "odds": 11.5,
+    "prob": 0.0821
+   }
+  ],
+  "odds": 92.0,
+  "prob": 0.00593,
+  "note": ""
+ },
+ {
+  "name": "单挑比分①",
+  "cat": "单挑比分",
+  "legs": [
+   {
+    "num": "周三012",
+    "market": "crs",
+    "pick": "3-1",
+    "label": "布鲁日3-1",
+    "odds": 11.5,
+    "prob": 0.0821
+   }
+  ],
+  "odds": 11.5,
+  "prob": 0.08208,
+  "note": ""
+ },
+ {
+  "name": "单挑比分②",
+  "cat": "单挑比分",
+  "legs": [
+   {
+    "num": "周三006",
+    "market": "crs",
+    "pick": "0-0",
+    "label": "莱万特0-0",
+    "odds": 10.5,
+    "prob": 0.1921
+   }
+  ],
+  "odds": 10.5,
+  "prob": 0.19209,
+  "note": ""
+ }
+]

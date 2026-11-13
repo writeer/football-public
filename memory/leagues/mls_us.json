@@ -1,0 +1,146 @@
+{
+    "league_info": {
+        "name_cn": "美国职业大联盟",
+        "name_en": "Major League Soccer",
+        "country": "美国",
+        "country_code": "US",
+        "level": "顶级",
+        "num_teams": 29,
+        "format": "东西部+季后赛",
+        "season_period": "2月-10月（不跨年）",
+        "is_cross_year": false,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.mlssoccer.com",
+        "governing_body": "美国足球大联盟",
+        "cross_league_level": "L3",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.68,
+        "draw_rate": 0.24,
+        "home_win_rate": 0.43,
+        "away_win_rate": 0.33,
+        "over_2_5_rate": 0.5,
+        "under_2_5_rate": 0.5,
+        "btts_rate": 0.5,
+        "top_scores": [
+            {
+                "score": "2-1",
+                "frequency": 0.085,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.078,
+                "direction": "平局"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.072,
+                "direction": "主胜"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.065,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-1",
+                "frequency": 0.058,
+                "direction": "客胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.055,
+            "1_goal": 0.15,
+            "2_goals": 0.25,
+            "3_goals": 0.23,
+            "4_goals": 0.18,
+            "5_plus_goals": 0.135
+        },
+        "avg_home_goals": 1.45,
+        "avg_away_goals": 1.23,
+        "home_advantage_factor": 1.12,
+        "ht_draw_rate": 0.366,
+        "ht_draw_rate_note": "美职联半场平局率。2026-09-12核算：thefishy.uk '1st Half'半场表(2025 MLS, table=30)，ΣD=374/ΣP=1022 → 0.3659（511场，30队）。属中高半场平局档(0.35-0.40)，lambda_ht系数0.42。",
+        "ht_draw_rate_source": [
+            "https://www.thefishy.uk/leaguetable.php?table=30&season=23"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "中高(0.35-0.40)",
+        "ht_draw_rate_confidence": "高(半场积分表,与官方6联赛完全一致验证)"
+    },
+    "match_style": {
+        "tactical_character": "东西部赛制，均衡性高无明显垄断。对抗强度中等偏上。梅西加盟迈阿密国际大幅提升关注度。季后赛制导致常规赛末段战意分化。",
+        "tempo": "中",
+        "physicality": "中高",
+        "technical_focus": "中",
+        "var_usage": "VAR使用积极，技术水平高。",
+        "key_trends": [
+            "东西部赛制季后赛制",
+            "均衡无垄断",
+            "梅西迈阿密国际提升关注度",
+            "对抗强度中等偏上"
+        ],
+        "style_tags": [
+            "均衡",
+            "季后赛制",
+            "梅西效应",
+            "对抗中等"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.55,
+        "avg_red_cards": 0.12,
+        "avg_penalties": 0.26,
+        "referee_style": "裁判尺度中等，VAR使用积极。",
+        "first_half_stoppage_avg": 2.0,
+        "second_half_stoppage_avg": 5.0,
+        "stoppage_note": "补时较短。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "美职联整体廉洁度极高。"
+            }
+        ],
+        "discipline_features": "黄牌累积5张停1场。",
+        "official_rules": "IFAB规则+MLS特别规则。",
+        "integrity_rating": "极高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价美职联'均衡性强'，'冷门多'。彩民认为'均衡性强冷门多'，'季后赛前战意变化大'。",
+        "betting_market": {
+            "market_efficiency": "高",
+            "liquidity": "高",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "高",
+        "jingcai_tips": [
+            "均衡性强冷门多",
+            "季后赛前战意变化大",
+            "迈阿密国际因梅西关注度极高",
+            "东西部内部竞争激烈",
+            "客场旅行距离影响需关注"
+        ],
+        "common_sayings": [
+            "美职联均衡",
+            "冷门多",
+            "梅西效应"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    }
+}

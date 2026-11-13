@@ -1,0 +1,262 @@
+{
+  "date": "2026-08-29",
+  "day": "friday_backtest",
+  "backtest_id": "BT-20260829-FRI",
+  "model_version": "2.6.2",
+  "total_matches": 14,
+  "completed_matches": 14,
+  "pending_matches": [],
+  "source_files": {
+    "prediction_json": "memory/predictions/20260828_friday/predictions.json",
+    "analysis_report": "reports/analysis/20260828_friday_analysis_zhihu.md",
+    "backtest_report": "reports/backtest/backtest_20260828_friday_zhihu.md"
+  },
+  "actual_results_summary": "14场全完赛。方向(含次选)10/14(71.4%)良好，半全场8/14(57.1%)一般，但总进球TOP2仅1/14(7.1%)、比分TOP5仅1/14(7.1%)双双创历史新低——14场中9场实际≥4球(001八球/008六球/004六球/003五球/006五球/011五球/007四球/010四球/013四球)，大球系统性低估达到极值。碾压场方向全中(004/008/013)与L036一致；最大翻车：002波鸿0-1负升班马奥斯纳、014阿拉维斯1-0爆冷比利亚雷(客胜首选翻车)、005蒙彼利埃0-0被7人残阵布洛涅逼平。",
+  "hit_rates": {
+    "direction_first_and_second": { "hits": 10, "total": 14, "rate": 0.714, "rating": "良好" },
+    "direction_first_only": { "hits": 7, "total": 14, "rate": 0.500, "rating": "一般" },
+    "ttg_top2": { "hits": 1, "total": 14, "rate": 0.071, "rating": "较差" },
+    "htft_top3": { "hits": 8, "total": 14, "rate": 0.571, "rating": "一般" },
+    "crs_top5": { "hits": 1, "total": 14, "rate": 0.071, "rating": "较差" }
+  },
+  "direction_detail": {
+    "first_hits": ["001", "003", "004", "008", "009", "011", "013"],
+    "second_hits": ["005", "007", "010"],
+    "missed": ["002", "006", "012", "014"]
+  },
+  "matches": [
+    {
+      "id": "001", "league": "德乙", "home": "不伦瑞克", "away": "柏林赫塔",
+      "actual_score": "3:5", "actual_ht_score": "2:2", "actual_direction": "客胜",
+      "actual_ttg": 8, "actual_htft": "平负",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.38 }, "had_second": { "direction": "平", "prob": 0.28 },
+        "ttg_top2": ["2球", "3球"], "htft_top3": ["平负", "平平", "平胜"],
+        "crs_top5": ["1:1", "1:2", "0:1", "2:2", "1:0"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": false },
+      "notes": "方向首选客胜命中+半全场平负TOP1命中，但8球大战总进球完全低估(预测2/3球)。柏林赫塔4名核心流失后客场仍5-3逆转，德乙对攻场双方防线漏洞大→lambda_total严重低估。规则32+规则9a'减半下修'在本场反成拖累——双方都有攻击力，残阵反而对攻。"
+    },
+    {
+      "id": "002", "league": "德乙", "home": "波鸿", "away": "奥斯纳",
+      "actual_score": "0:1", "actual_ht_score": "0:1", "actual_direction": "客胜",
+      "actual_ttg": 1, "actual_htft": "负负",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.55 }, "had_second": { "direction": "平", "prob": 0.23 },
+        "ttg_top2": ["3球", "4球"], "htft_top3": ["胜胜", "平胜", "胜平"],
+        "crs_top5": ["2:1", "3:1", "2:0", "3:0", "1:0"]
+      },
+      "hits": { "direction": "❌", "ttg": false, "htft": false, "crs": false },
+      "notes": "本轮最大方向翻车。规则65触发(排名差11位)主胜55%首选，但波鸿自身5人伤停+1胜1平1负近况差，升班马奥斯纳4分钟闪击1-0首胜。排名差11位≠实力差——波鸿刚从德甲降级+残阵+状态差，规则65'排名差≥8'触发条件在乙级联赛被证伪。TTG给3/4球大球档但实际1球，方向与大小球双翻车。"
+    },
+    {
+      "id": "003", "league": "西甲", "home": "桑坦德", "away": "埃尔切",
+      "actual_score": "3:2", "actual_ht_score": "3:0", "actual_direction": "主胜",
+      "actual_ttg": 5, "actual_htft": "胜胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.42 }, "had_second": { "direction": "平", "prob": 0.30 },
+        "ttg_top2": ["2球", "1球"], "htft_top3": ["平胜", "平平", "胜胜"],
+        "crs_top5": ["1:0", "1:1", "2:1", "0:0", "2:0"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": false },
+      "notes": "方向主胜命中+半全场胜胜在TOP3(第3项)命中，但扎比里上半场帽子戏法半场3-0，TTG 5球vs预测2/1球完全低估。西甲新赛季第3轮+桑坦德夏窗9名新援主场爆发——新赛季大球潮(L035)在本场延续，半场3-0说明主队进攻被严重低估。"
+    },
+    {
+      "id": "004", "league": "沙职", "home": "赛哈海湾", "away": "利雅新月",
+      "actual_score": "1:5", "actual_ht_score": "1:5", "actual_direction": "客胜",
+      "actual_ttg": 6, "actual_htft": "负负",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.75 }, "had_second": { "direction": "平", "prob": 0.13 },
+        "ttg_top2": ["3球", "4球"], "htft_top3": ["负负", "平负", "负平"],
+        "crs_top5": ["0:2", "0:3", "1:3", "0:4", "1:2"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": false },
+      "notes": "方向客胜75%命中+半全场负负TOP1命中，但半场即1-5、全场6球，TTG 3/4球仍低估。L044'身价碾压TTG高档位扩展'执行了3/4球但碾压场+攻强火热应直接给5/6球档。比分TOP5最大只给0-4，实际1-5。"
+    },
+    {
+      "id": "005", "league": "法乙", "home": "蒙彼利埃", "away": "布洛涅",
+      "actual_score": "0:0", "actual_ht_score": "0:0", "actual_direction": "平",
+      "actual_ttg": 0, "actual_htft": "平平",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.58 }, "had_second": { "direction": "平", "prob": 0.22 },
+        "ttg_top2": ["2球", "3球"], "htft_top3": ["胜胜", "平胜", "胜平"],
+        "crs_top5": ["1:0", "2:0", "2:1", "3:0", "1:1"]
+      },
+      "hits": { "direction": "✅次", "ttg": false, "htft": false, "crs": false },
+      "notes": "次选平局命中但0-0冷平暴露法乙小球本质。规则65触发(身价差3.23倍+排名差13)给lambda_total+0.4，但法乙52% UNDER 2.5+布洛涅7人残阵铁桶死守→实际0球。规则65上修与法乙小球基准冲突时，法乙联赛特征应优先——残阵客队0进球能力+蒙彼利埃进攻乏力(3场仅2球)→应切0-1球档。"
+    },
+    {
+      "id": "006", "league": "荷甲", "home": "格罗宁根", "away": "福图纳",
+      "actual_score": "2:3", "actual_ht_score": "1:2", "actual_direction": "客胜",
+      "actual_ttg": 5, "actual_htft": "负负",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.55 }, "had_second": { "direction": "平", "prob": 0.22 },
+        "ttg_top2": ["3球", "2球"], "htft_top3": ["胜胜", "平胜", "胜平"],
+        "crs_top5": ["2:1", "2:0", "3:1", "1:0", "1:1"]
+      },
+      "hits": { "direction": "❌", "ttg": false, "htft": false, "crs": false },
+      "notes": "主胜55%首选被福图纳客场2-3翻盘。格罗宁根上轮0-5惨败埃因霍温士气受损+福图纳中后场虽残但反击高效(Ihattaren 12'闪击)。L022'荷甲半场领先被追平'反向适用——本场格罗宁根半场1-2落后。荷甲对攻联赛TTG 5球vs预测3/2球再低估，主场优势被高估。"
+    },
+    {
+      "id": "007", "league": "荷乙", "home": "罗达JC", "away": "布雷达",
+      "actual_score": "2:2", "actual_ht_score": "1:1", "actual_direction": "平",
+      "actual_ttg": 4, "actual_htft": "平平",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.42 }, "had_second": { "direction": "平", "prob": 0.28 },
+        "ttg_top2": ["2球", "3球"], "htft_top3": ["平负", "平平", "负负"],
+        "crs_top5": ["1:2", "1:1", "0:1", "2:2", "0:2"]
+      },
+      "hits": { "direction": "✅次", "ttg": false, "htft": true, "crs": false },
+      "notes": "次选平局命中+半全场平平TOP3命中(第2项)。布雷达交锋双杀心理优势但客场未兑现，2-2对攻平局。荷乙新赛季+排名接近→平局信号正确，但TTG 4球vs预测2/3球，荷乙新赛季大球潮延续。"
+    },
+    {
+      "id": "008", "league": "德甲", "home": "拜仁", "away": "斯图加特",
+      "actual_score": "5:1", "actual_ht_score": "1:0", "actual_direction": "主胜",
+      "actual_ttg": 6, "actual_htft": "胜胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.82 }, "had_second": { "direction": "平", "prob": 0.10 },
+        "ttg_top2": ["3球", "4球"], "htft_top3": ["胜胜", "平胜", "平平"],
+        "crs_top5": ["3:0", "3:1", "2:0", "4:0", "4:1"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": false },
+      "notes": "方向主胜82%命中+半全场胜胜TOP1命中，碾压场五重信号(L036/L055)验证。但TTG 6球vs预测3/4球——L044'碾压场+残阵防线崩溃TTG高档位扩展'仍不足，斯图加特8+人残阵被轰5球，应直接给5/6球档。比分TOP5最大4-1，实际5-1。"
+    },
+    {
+      "id": "009", "league": "意甲", "home": "AC米兰", "away": "威尼斯",
+      "actual_score": "2:0", "actual_ht_score": "0:0", "actual_direction": "主胜",
+      "actual_ttg": 2, "actual_htft": "平胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.72 }, "had_second": { "direction": "平", "prob": 0.16 },
+        "ttg_top2": ["2球", "3球"], "htft_top3": ["胜胜", "平胜", "平平"],
+        "crs_top5": ["2:0", "1:0", "2:1", "3:0", "3:1"]
+      },
+      "hits": { "direction": "✅首", "ttg": true, "htft": true, "crs": true },
+      "notes": "本轮唯一四维全中场次。方向主胜命中、TTG 2球命中、半全场平胜TOP3命中(第2项)、比分2-0 TOP1命中。米兰身价碾压+交锋5连胜零封+威尼斯5+人缺阵→最标准的碾压场正确预测，规则65+规则22-SA全链验证。"
+    },
+    {
+      "id": "010", "league": "法甲", "home": "里尔", "away": "巴黎圣曼",
+      "actual_score": "2:2", "actual_ht_score": "1:0", "actual_direction": "平",
+      "actual_ttg": 4, "actual_htft": "胜平",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.55 }, "had_second": { "direction": "平", "prob": 0.22 },
+        "ttg_top2": ["3球", "2球"], "htft_top3": ["平负", "负负", "平平"],
+        "crs_top5": ["1:2", "0:2", "1:1", "0:1", "1:3"]
+      },
+      "hits": { "direction": "✅次", "ttg": false, "htft": false, "crs": false },
+      "notes": "次选平局命中，但PSG补时4分钟连追2球2-2绝平——'登贝莱+门德斯缺阵削弱进攻'判断正确(PSG 2轮不胜)，但半全场胜平(里尔半场领先被追平)完全不在TOP3。L022'半场领先被追平'路径在法甲同样适用，PSG客场+核心缺阵→补时绝平风险被低估。"
+    },
+    {
+      "id": "011", "league": "英超", "home": "水晶宫", "away": "曼城",
+      "actual_score": "1:4", "actual_ht_score": "0:1", "actual_direction": "客胜",
+      "actual_ttg": 5, "actual_htft": "负负",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.58 }, "had_second": { "direction": "平", "prob": 0.22 },
+        "ttg_top2": ["2球", "3球"], "htft_top3": ["平负", "负负", "平平"],
+        "crs_top5": ["0:2", "1:2", "0:1", "1:1", "0:3"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": false },
+      "notes": "方向客胜命中+半全场负负TOP3命中(第2项)，但TTG 5球vs预测2/3球。规则22-EPL'英超例外不上修'执行正确(方向没受影响)，但曼城换帅适应期仍4-1大胜——哈兰德+谢尔基双响，'英超防守严密'例外不适用于水晶宫(攻防转换开放)。TTG在英超例外场次不应过度保守。"
+    },
+    {
+      "id": "012", "league": "英冠", "home": "雷克斯", "away": "伯明翰",
+      "actual_score": "1:2", "actual_ht_score": "0:1", "actual_direction": "客胜",
+      "actual_ttg": 3, "actual_htft": "负负",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.36 }, "had_second": { "direction": "平", "prob": 0.32 },
+        "ttg_top2": ["2球", "1球"], "htft_top3": ["平平", "平胜", "平负"],
+        "crs_top5": ["1:1", "1:0", "2:1", "0:0", "2:2"]
+      },
+      "hits": { "direction": "❌", "ttg": false, "htft": false, "crs": false },
+      "notes": "主胜/平均未中，实际客胜。规则57'英冠平局+8-12%'误导——双方前2轮均2连平，但伯明翰交锋占优+3人缺阵仍客场2-1拿下。连续平局纪录≠本场平局倾向，规则57的'前5轮平局上修'在本场过拟合，伯明翰Neumann梅开二度打破僵局。"
+    },
+    {
+      "id": "013", "league": "葡超", "home": "里奥阿维", "away": "里斯本",
+      "actual_score": "0:4", "actual_ht_score": "0:4", "actual_direction": "客胜",
+      "actual_ttg": 4, "actual_htft": "负负",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.73 }, "had_second": { "direction": "平", "prob": 0.13 },
+        "ttg_top2": ["3球", "2球"], "htft_top3": ["负负", "平负", "负平"],
+        "crs_top5": ["0:2", "0:3", "1:2", "0:1", "1:3"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": false },
+      "notes": "方向客胜73%命中+半全场负负TOP1命中，里斯本上半场5'/19'/26'/37'轰4球。TTG 4球vs预测3/2球——碾压场+主力门将缺阵(里奥阿维)→L036/L055验证但TTG仍差1档。比分TOP5最大0-3，实际0-4。"
+    },
+    {
+      "id": "014", "league": "西甲", "home": "阿拉维斯", "away": "比利亚雷",
+      "actual_score": "1:0", "actual_ht_score": "1:0", "actual_direction": "主胜",
+      "actual_ttg": 1, "actual_htft": "胜胜",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.40 }, "had_second": { "direction": "平", "prob": 0.30 },
+        "ttg_top2": ["2球", "3球"], "htft_top3": ["平负", "平平", "负负"],
+        "crs_top5": ["1:1", "1:2", "0:1", "2:2", "0:2"]
+      },
+      "hits": { "direction": "❌", "ttg": false, "htft": false, "crs": false },
+      "notes": "本轮最大冷门。比利亚雷4.94倍身价碾压+全员可用，但阿拉维斯前2场零封的5-3-2铁桶防线在2名主力停赛后仍1-0拿下(博耶31')。'身价碾压但主队防守极好+主场+西甲平局高'——规则65 Tier1'中下游对决小球不变'方向判断错误，主场零封防守型球队面对'攻强守弱'客队应给主胜/平，客胜首选被主场铁桶+西甲特征证伪。"
+    }
+  ],
+  "parlay_backtest": {
+    "reference": "reports/analysis/20260828_friday_analysis_zhihu.md",
+    "categories": {
+      "direction": [
+        { "name": "稳健方向串", "odds": "~1.36", "legs": "008拜仁主胜(✅5-1) + 013里斯本客胜(✅0-4)", "hit": true },
+        { "name": "价值方向串", "odds": "~2.29", "legs": "004利雅新月客胜(✅1-5) + 009米兰主胜(✅2-0) + 010巴黎客胜(❌2-2)", "hit": false },
+        { "name": "防守方向串", "odds": "~3.66", "legs": "002波鸿主胜(❌0-1) + 005蒙彼利埃主胜(❌0-0) + 006格罗宁根主胜(❌2-3)", "hit": false }
+      ],
+      "handicap": [
+        { "name": "稳健让球串", "odds": "~3.86", "legs": "001让(+1)胜(❌3-5) + 014让(+1)胜(✅1-0) + 007让(+1)胜(✅2-2)", "hit": false },
+        { "name": "价值让球串", "odds": "~5.36", "legs": "012让(-1)负(✅1-2) + 013让(+1)负(✅0-4) + 008让(-2)胜(✅5-1)", "hit": true }
+      ],
+      "mixed": [
+        { "name": "半全场串A", "odds": "~2.32", "legs": "008拜仁胜胜(✅实际胜胜) + 004利雅新月负负(✅实际负负)", "hit": true },
+        { "name": "半全场串B", "odds": "~3.38", "legs": "013里斯本负负(✅实际负负) + 009米兰胜胜(❌实际平胜)", "hit": false },
+        { "name": "方向+半全场A", "odds": "~1.71", "legs": "004客胜(✅1-5) + 008胜胜(✅实际胜胜)", "hit": true },
+        { "name": "方向+半全场B", "odds": "~2.27", "legs": "013客胜(✅0-4) + 009胜胜(❌实际平胜)", "hit": false }
+      ],
+      "entertainment": [
+        { "name": "总进球串A", "odds": "~59.1", "legs": "004利雅新月3球(❌6球) + 008拜仁4球(❌6球) + 013里斯本3球(❌4球)", "hit": false },
+        { "name": "总进球串B", "odds": "~63.5", "legs": "002波鸿4球(❌1球) + 009米兰2球(✅2球) + 014比利亚雷2球(❌1球)", "hit": false },
+        { "name": "总进球串C", "odds": "~47.4", "legs": "005蒙彼利埃2球(❌0球) + 011曼城2球(❌5球) + 010巴黎3球(❌4球)", "hit": false },
+        { "name": "高赔半全场串A", "odds": "~180.3", "legs": "001平平(❌实际平负) + 012平胜(❌实际负负) + 007平负(❌实际平平)", "hit": false },
+        { "name": "高赔半全场串B", "odds": "~64.4", "legs": "002平胜(❌实际负负) + 005胜胜(❌实际平平) + 014平负(❌实际胜胜)", "hit": false },
+        { "name": "高赔半全场串C", "odds": "~260.4", "legs": "003平负(❌实际胜胜) + 010平负(❌实际胜平) + 014平胜(❌实际胜胜)", "hit": false },
+        { "name": "高赔半全场串D", "odds": "~337.8", "legs": "006胜平(❌实际负负) + 011平负(❌实际负负) + 001平胜(❌实际平负)", "hit": false },
+        { "name": "混合串A", "odds": "~9.99", "legs": "008胜胜(✅) + 013负负(✅) + 004利雅新月3球(❌6球)", "hit": false },
+        { "name": "混合串B", "odds": "~22.3", "legs": "009胜胜(❌实际平胜) + 005蒙彼利埃2球(❌0球) + 010巴黎3球(❌4球)", "hit": false },
+        { "name": "混合串C", "odds": "~76.5", "legs": "001平平(❌实际平负) + 014比利亚雷2球(❌1球) + 007布雷达2球(❌4球)", "hit": false },
+        { "name": "混合串D", "odds": "~117.8", "legs": "003平负(❌实际胜胜) + 006格罗宁根3球(❌5球) + 011曼城2球(❌5球)", "hit": false },
+        { "name": "稳健比分串", "odds": "~448", "legs": "008拜仁3-0(❌5-1) + 013里斯本0-2(❌0-4) + 009米兰2-0(✅2-0)", "hit": false },
+        { "name": "混合比分串", "odds": "最高~655/最低~392(8注)", "legs": "008 2-0/3-1(❌5-1) + 013 0-2/0-3(❌0-4) + 009 1-0/2-0(✅2-0)", "hit": false },
+        { "name": "TOP5比分串", "odds": "最高~1050/最低~578(27注)", "legs": "008 TOP5(❌5-1) + 013 TOP5(❌0-4) + 004 TOP5(❌1-5)", "hit": false },
+        { "name": "搏冷比分串", "odds": "~2166", "legs": "008拜仁2-2(❌5-1) + 013里斯本1-1(❌0-4) + 004利雅新月1-1(❌1-5)", "hit": false },
+        { "name": "单挑比分①", "odds": "8.75", "legs": "008拜仁3-1(❌5-1)", "hit": false },
+        { "name": "单挑比分②", "odds": "8.00", "legs": "001不伦瑞克1-2(❌3-5)", "hit": false }
+      ]
+    },
+    "summary": {
+      "stable_total": 9, "stable_hits": 4, "stable_rate": 0.444,
+      "entertainment_total": 17, "entertainment_hits": 0, "entertainment_rate": 0.0,
+      "overall_total": 26, "overall_hits": 4, "overall_rate": 0.154
+    }
+  },
+  "key_findings": [
+    "大球系统性低估达到历史极值：总进球TOP2仅1/14(7.1%)，14场中9场实际≥4球(001八球/008六球/004六球/003五球/006五球/011五球/007四球/010四球/013四球)。规则65上修+新赛季上修(L035)全部不足，碾压场(004/008/013)实际6/6/4球但预测仅3/4球档；德乙对攻场(001)8球预测2/3球完全失准。",
+    "方向命中率维持71.4%但翻车集中在'主胜/客胜首选'场次：002波鸿0-1负升班马、006格罗宁根2-3、012雷克斯1-2、014阿拉维斯1-0爆冷。碾压场方向全中(004/008/013)与L036一致；主队近况差/防线残阵/主场铁桶型→主胜或客胜首选被证伪。",
+    "半全场TOP3 8/14(57.1%)：碾压场负负/胜胜路径全中(004/008/013/011)，L055验证有效；但010里尔胜平(半场领先被追平)不在TOP3，L022路径需扩展到法甲/西甲。",
+    "比分TOP5仅1/14(7.1%)创历史新低：009米兰2-0是唯一命中。大比分时代(9场≥4球)比分模型完全失效，碾压场实际比分普遍比TOP5大1-2球。",
+    "串关稳健方案4/9(44.4%)：价值让球串(012让负+013让负+008让胜)5.36倍全中+半全场串A(008胜胜+004负负)2.32倍全中——L036/L055碾压场方法论再次验证；但稳健让球串因001不伦瑞克受让+1仍输2球翻车(对攻场让球深度不可测)。娱乐串0/17全灭——大球时代所有低档位/平局路径串全部失效。"
+  ],
+  "rule_triggers": [
+    { "rule": "规则65", "matches": "002/004/005/008/009/010/013/014", "execution": "8场全部触发并上修lambda与TTG", "result": "方向004/008/009/013命中，但TTG 8场全部未中——上修幅度仍不足(002/005反被高估为3/4球)" },
+    { "rule": "规则22-EPL英超例外", "matches": "011", "execution": "满足触发条件但不上修，λ保持2.70", "result": "方向命中但TTG 5球低估——例外不上修影响TTG档位" },
+    { "rule": "规则57英冠平局", "matches": "012", "execution": "平局+8-12%，次选平局32%", "result": "实际客胜——连续平局纪录≠本场平局倾向，过拟合" },
+    { "rule": "L036/L055碾压场", "matches": "004/008/013", "execution": "方向+半全场给负负/胜胜", "result": "方向/半全场全中，验证有效" }
+  ],
+  "new_rule_suggestions": [
+    { "suggested_rule": "规则65-TTG极值上修", "source_lesson": "本轮TTG 1/14(7.1%)历史新低", "summary": "碾压场(身价差≥5x)+对攻场TTG TOP2直接给4/5/6球档，lambda_total额外+0.6-1.0；德乙/荷甲等对攻联赛双方防线漏洞大→TTG 5球档起，不再给2/3球档" },
+    { "suggested_rule": "规则65乙级联赛主队状态修正", "source_lesson": "002波鸿0-1奥斯纳", "summary": "规则65'排名差≥8'触发但主队近况差(残阵/连败/刚降级)→不上修主胜，置信度降级；乙级联赛升班马客场爆冷概率高" },
+    { "suggested_rule": "法乙小球优先于规则65", "source_lesson": "005蒙彼利埃0-0布洛涅", "summary": "法乙/小球联赛规则65上修与联赛小球基准冲突时，法乙特征优先：残阵客队0进球能力→TTG切0-1球档，主胜首选概率上限下调" },
+    { "suggested_rule": "主场铁桶防守型球队方向修正", "source_lesson": "014阿拉维斯1-0比利亚雷", "summary": "主场连续零封+铁桶防线(5-3-2)球队即使身价差≥2倍→首选主胜/平而非客胜，规则65 Tier1中下游对决小球不变并给主胜权重" },
+    { "suggested_rule": "L022半场领先被追平扩展到法甲/西甲", "source_lesson": "010里尔2-2巴黎", "summary": "客队核心缺阵+客队客场慢热+主队主场防守→半全场TOP3必含胜平/负平路径，不限于荷甲" },
+    { "suggested_rule": "规则57连续平局过拟合修正", "source_lesson": "012雷克斯1-2伯明翰", "summary": "双方连续平局(前2轮均2平)→规则57平局上修需结合交锋/实力差，交锋占优+客队攻击点明确→不给平局首选" }
+  ]
+}

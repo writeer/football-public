@@ -1,0 +1,144 @@
+{
+    "league_info": {
+        "name_cn": "澳大利亚甲级联赛",
+        "name_en": "A-League",
+        "country": "澳大利亚",
+        "country_code": "AU",
+        "level": "顶级",
+        "num_teams": 12,
+        "format": "常规赛+季后赛",
+        "season_period": "10月-次年5月（跨年）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.aleague.com.au",
+        "governing_body": "澳大利亚足球协会（FFA）",
+        "cross_league_level": "L3",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.72,
+        "draw_rate": 0.24,
+        "home_win_rate": 0.43,
+        "away_win_rate": 0.33,
+        "over_2_5_rate": 0.52,
+        "under_2_5_rate": 0.48,
+        "btts_rate": 0.51,
+        "top_scores": [
+            {
+                "score": "2-1",
+                "frequency": 0.085,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.08,
+                "direction": "平局"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.072,
+                "direction": "主胜"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.065,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-1",
+                "frequency": 0.058,
+                "direction": "客胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.055,
+            "1_goal": 0.15,
+            "2_goals": 0.25,
+            "3_goals": 0.24,
+            "4_goals": 0.18,
+            "5_plus_goals": 0.125
+        },
+        "avg_home_goals": 1.48,
+        "avg_away_goals": 1.24,
+        "home_advantage_factor": 1.12,
+        "ht_draw_rate": null,
+        "ht_draw_rate_note": "2026-09-12尝试补录：本环境无法取得该联赛'最近完整赛季'的第一手半场数据——thefishy.uk无该联赛半场表、football-data.co.uk扩展文件仅含全场比分(无半场)、Transfermarkt/worldfootball/FootyStats/soccerstats/BetExplorer 均被反爬拦截。按诚实原则置 null，不用估算值。使用时按缺失字段处理（规则66默认中低档0.45系数）。待可访问一手源时补录。",
+        "ht_draw_rate_source": [],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_confidence": "无",
+        "ht_draw_rate_status": "unavailable"
+    },
+    "match_style": {
+        "tactical_character": "南半球赛季与北欧联赛互补。悉尼FC和墨尔本城是传统强队。身体对抗强度较高。VAR使用积极。联赛均衡性强，无明显垄断。",
+        "tempo": "中",
+        "physicality": "中高",
+        "technical_focus": "中",
+        "var_usage": "2019-20赛季引入VAR，使用积极。",
+        "key_trends": [
+            "南半球赛季与北欧互补",
+            "悉尼/墨尔本德比",
+            "身体对抗强",
+            "联赛均衡无垄断"
+        ],
+        "style_tags": [
+            "均衡",
+            "身体对抗",
+            "南半球",
+            "德比"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.8,
+        "avg_red_cards": 0.14,
+        "avg_penalties": 0.25,
+        "referee_style": "裁判尺度中等。VAR使用积极。",
+        "first_half_stoppage_avg": 2.1,
+        "second_half_stoppage_avg": 5.2,
+        "stoppage_note": "补时中等。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "澳超整体廉洁度较高。"
+            }
+        ],
+        "discipline_features": "黄牌累积5张停1场。",
+        "official_rules": "IFAB规则+澳超特别规则。",
+        "integrity_rating": "高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价澳超'均衡性强'，'德比好看'。彩民认为'赛季初状态不稳定'，'德比进球多'。",
+        "betting_market": {
+            "market_efficiency": "中",
+            "liquidity": "中",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "中",
+        "jingcai_tips": [
+            "赛季初球队状态不稳定",
+            "德比进球多",
+            "均衡性强冷门可能增多",
+            "季后赛前战意变化大",
+            "悉尼/墨尔本主场相对稳定"
+        ],
+        "common_sayings": [
+            "澳超均衡",
+            "德比好看",
+            "赛季初谨慎"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    }
+}

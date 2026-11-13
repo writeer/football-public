@@ -1,0 +1,45 @@
+# ===== 依赖目录 =====
+node_modules/
+**/node_modules/
+
+# ===== Python =====
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# ===== 环境与密钥 =====
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ===== 临时与上传缓存 =====
+.uploads/
+.trae-html-share-packages/
+*.log
+logs/
+
+# ===== 系统 =====
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ===== 编辑器 =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== 构建产物 =====
+dist/
+build/
+*.tsbuildinfo

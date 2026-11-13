@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周三欧冠资格赛全方位分析 — 2026年8月6日</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --card: #1a1d27;
+  --card-hover: #232733;
+  --border: #2a2e3c;
+  --text: #e4e6eb;
+  --text-dim: #9ca3af;
+  --accent: #3b82f6;
+  --green: #22c55e;
+  --red: #ef4444;
+  --yellow: #eab308;
+  --orange: #f97316;
+  --purple: #a855f7;
+  --cyan: #06b6d4;
+  --home: #3b82f6;
+  --draw: #eab308;
+  --away: #ef4444;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 { font-size: 1.8rem; margin-bottom: 8px; }
+h2 { font-size: 1.3rem; margin: 24px 0 12px; border-left: 4px solid var(--accent); padding-left: 12px; }
+h3 { font-size: 1.1rem; margin: 16px 0 8px; color: var(--accent); }
+
+.header {
+  text-align: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #1e3a5f 0%, #0f1117 100%);
+  border-radius: 12px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border);
+}
+.header .date { color: var(--text-dim); font-size: 0.95rem; }
+.header .risk { color: var(--yellow); font-size: 0.85rem; margin-top: 8px; }
+
+.overview-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+  background: var(--card);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.overview-table th {
+  background: #2a2e3c;
+  padding: 12px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.overview-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+.match-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+.match-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--border);
+}
+.match-id { font-size: 1.2rem; font-weight: bold; color: var(--accent); }
+.match-title { font-size: 1.4rem; font-weight: bold; }
+.match-time { font-size: 0.9rem; color: var(--text-dim); }
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.info-item {
+  background: rgba(255,255,255,0.03);
+  padding: 10px 14px;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent);
+}
+.info-label { font-size: 0.8rem; color: var(--text-dim); }
+.info-value { font-size: 0.95rem; font-weight: 600; }
+
+.section {
+  margin: 16px 0;
+  padding: 16px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 8px;
+}
+
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+table.data-table th {
+  background: #2a2e3c;
+  padding: 8px;
+  text-align: center;
+}
+table.data-table td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.prob-bar {
+  display: flex;
+  height: 24px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+.prob-bar .home { background: var(--home); }
+.prob-bar .draw { background: var(--draw); }
+.prob-bar .away { background: var(--away); }
+.prob-bar span {
+  color: white;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin: 8px 0;
+}
+.score-item {
+  background: rgba(255,255,255,0.05);
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+}
+.score-item .score { font-size: 1.1rem; font-weight: bold; }
+.score-item .prob { font-size: 0.8rem; color: var(--text-dim); }
+.score-item.top { border: 1px solid var(--green); }
+.score-item.cold { border: 1px solid var(--orange); }
+
+.injury-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.injury-table th { background: #2a2e3c; padding: 6px; text-align: left; }
+.injury-table td { padding: 6px; border-bottom: 1px solid var(--border); }
+
+.recommendation-box {
+  background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(59,130,246,0.02));
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px 0;
+}
+.rec-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.rec-item:last-child { border-bottom: none; }
+.rec-label { font-weight: 600; color: var(--text-dim); }
+.rec-value { font-weight: bold; }
+.rec-value.primary { color: var(--green); }
+.rec-value.secondary { color: var(--cyan); }
+.rec-value.alternative { color: var(--orange); }
+
+.confidence { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; }
+.confidence.high { background: rgba(34,197,94,0.2); color: var(--green); }
+.confidence.medium { background: rgba(234,179,8,0.2); color: var(--yellow); }
+.confidence.low { background: rgba(239,68,68,0.2); color: var(--red); }
+
+.tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; margin: 2px; }
+.tag.home { background: rgba(59,130,246,0.2); color: var(--home); }
+.tag.away { background: rgba(239,68,68,0.2); color: var(--away); }
+.tag.draw { background: rgba(234,179,8,0.2); color: var(--yellow); }
+
+.vs-text { color: var(--text-dim); font-size: 0.9rem; }
+
+.model-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  margin: 8px 0;
+}
+.model-card {
+  background: rgba(255,255,255,0.03);
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+.model-name { font-size: 0.8rem; color: var(--text-dim); margin-bottom: 4px; }
+.model-probs { font-size: 0.85rem; }
+
+.fundamental-box {
+  background: rgba(168,85,247,0.08);
+  border-left: 3px solid var(--purple);
+  padding: 12px;
+  border-radius: 0 8px 8px 0;
+  margin: 8px 0;
+}
+.fundamental-box h4 { color: var(--purple); font-size: 0.95rem; margin-bottom: 6px; }
+
+.disclaimer {
+  background: rgba(234,179,8,0.08);
+  border: 1px solid var(--yellow);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 24px 0;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+.disclaimer strong { color: var(--yellow); }
+
+@media (max-width: 768px) {
+  .score-grid { grid-template-columns: repeat(3, 1fr); }
+  .model-comparison { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>周三欧冠资格赛全方位分析</h1>
+  <div class="date">2026年8月6日 (周三) | 欧冠资格赛第3轮首回合 | 2场竞彩</div>
+  <div class="risk">风险提示：足球比赛存在极大不确定性，任何模型预测均非100%准确。理性看待预测，切勿沉迷赌博。</div>
+</div>
+
+<!-- 总览表 -->
+<h2>赛事总览</h2>
+<table class="overview-table">
+  <thead>
+    <tr>
+      <th>编号</th>
+      <th>联赛</th>
+      <th>对阵</th>
+      <th>开赛时间</th>
+      <th>体彩赔率(胜/平/负)</th>
+      <th>让球(-1)</th>
+      <th>模型方向</th>
+      <th>置信度</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>周三002</td>
+      <td>欧冠</td>
+      <td>奥胡斯 vs 萨巴赫</td>
+      <td>08-06 00:30</td>
+      <td>1.57 / 3.65 / 4.60</td>
+      <td>2.80 / 3.40 / 2.09</td>
+      <td><span class="tag home">主胜 45%</span> <span class="tag draw">平 30%</span></td>
+      <td><span class="confidence medium">★★ 中</span></td>
+    </tr>
+    <tr>
+      <td>周三003</td>
+      <td>欧冠</td>
+      <td>费内巴切 vs 格拉茨风暴</td>
+      <td>08-06 02:00</td>
+      <td>1.22 / 5.15 / 8.75</td>
+      <td>1.77 / 3.70 / 3.40</td>
+      <td><span class="tag home">主胜 62%</span> <span class="tag draw">平 22%</span></td>
+      <td><span class="confidence medium">★★ 中</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ==================== 比赛002 ==================== -->
+<div class="match-card">
+  <div class="match-header">
+    <div>
+      <span class="match-id">周三002</span>
+      <span class="match-title">奥胡斯 vs 萨巴赫</span>
+    </div>
+    <div class="match-time">08-06 00:30 | 欧冠资格赛Q3首回合</div>
+  </div>
+
+  <!-- 基本信息 -->
+  <div class="info-grid">
+    <div class="info-item">
+      <div class="info-label">场地</div>
+      <div class="info-value">Cepheus Park Randers</div>
+    </div>
+    <div class="info-item">
+      <div class="info-label">容量 / 草皮</div>
+      <div class="info-value">10,300人 / 天然草</div>
+    </div>
+    <div class="info-item">
+      <div class="info-label">天气</div>
+      <div class="info-value">18-22°C 多云 降水概率低</div>
+    </div>
+    <div class="info-item">
+      <div class="info-label">主裁判</div>
+      <div class="info-value">R. Obrenović</div>
+    </div>
+  </div>
+
+  <!-- 场地说明 -->
+  <div class="fundamental-box">
+    <h4>场地特殊因素</h4>
+    <p style="font-size:0.9rem;">奥胡斯主场 Ceres Park 正在改建，借用约40公里外的兰德斯FC主场 Cepheus Park Randers。非传统主场，球迷氛围打折，主场加成从1.16降至约1.05，相当于半中立场地，对客队防守反击相对友好。</p>
+  </div>
+
+  <!-- 球队近况 -->
+  <h3>球队近况与晋级之路</h3>
+  <div class="section">
+    <p><strong style="color:var(--home);">奥胡斯 (丹麦冠军)</strong> — 上赛季时隔40年重夺丹超冠军，队史首次参加欧冠资格赛。Q2轮上演史诗级逆转：首回合1-4惨败莱赫波兹南，次回合3-1逆转+点球4-3晋级。核心阿恩斯塔德连续4场正式比赛进球(欧冠2球+丹超2球)，状态火热。新赛季丹超2连平(1-1布隆德比、2-2灵比)。</p>
+    <p style="margin-top:8px;"><strong style="color:var(--away);">萨巴赫 (阿塞拜疆冠军)</strong> — 队史首次征战欧冠资格赛。Q1轮4-1淘汰新圣徒(威尔士)，Q2轮3-0淘汰库奥皮奥(芬兰)，4战全胜仅失1球(3零封)。防守极为稳固，主打4-2-3-1实战切5-4-1铁桶阵+快速反击。前锋西米奇4场3球1助，麦克尔斯2球。阿塞拜疆联赛5月底结束，球队长时间专攻欧战无联赛分心。</p>
+  </div>
+
+  <!-- 伤停信息 -->
+  <h3>伤停详情 (规则32强制核查)</h3>
+  <div class="section">
+    <table class="injury-table">
+      <thead>
+        <tr><th>球队</th><th>球员</th><th>位置</th><th>状态</th><th>影响</th><th>来源</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>奥胡斯</td><td>Kevin Yakob</td><td>中场</td><td>伤缺</td><td>主力</td><td>Sportsmole</td></tr>
+        <tr><td>奥胡斯</td><td>Frederik Tingager</td><td>中卫</td><td>存疑(上轮12min被换下)</td><td>主力</td><td>Sportsmole</td></tr>
+        <tr><td>奥胡斯</td><td>Nicolai Poulsen</td><td>中场</td><td>可能复出</td><td>主力</td><td>Sportsmole</td></tr>
+        <tr><td>奥胡斯</td><td>Markus Solbakken</td><td>中场</td><td>可能复出</td><td>主力</td><td>Sportsmole</td></tr>
+        <tr><td>奥胡斯</td><td>Gift Links</td><td>—</td><td>伤缺</td><td>轮换</td><td>livesoccertv</td></tr>
+        <tr><td>奥胡斯</td><td>Luka Callo</td><td>—</td><td>伤缺</td><td>轮换</td><td>livesoccertv</td></tr>
+        <tr><td>萨巴赫</td><td>Aliyev</td><td>中场</td><td>跟腱断裂长期伤停</td><td>轮换</td><td>中文来源(未交叉验证)</td></tr>
+        <tr><td>萨巴赫</td><td>Malouda</td><td>边路</td><td>转会传闻大概率缺席</td><td>主力</td><td>中文来源(未交叉验证)</td></tr>
+        <tr><td>萨巴赫</td><td>Safranko</td><td>前锋</td><td>养伤</td><td>轮换</td><td>中文来源(未交叉验证)</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.8rem;color:var(--text-dim);margin-top:8px;">注：未能直接获取两队官网官方伤停公告，上述信息来自Sportsmole、livesoccertv等前瞻报道。中文来源伤停信息(标注"未交叉验证")禁止直接用于lambda修正(规则25)。赛前1小时需用实际首发名单复核。</p>
+    <p style="font-size:0.85rem;margin-top:6px;"><strong>伤停影响评估：</strong>奥胡斯中场多人伤缺(Yakob确认缺阵+Poulsen/Solbakken不确定)，中轴线受损，攻坚能力打折；后防Tingager存疑进一步暴露防守隐患(欧冠4场失8球)。萨巴赫主力班底基本完整，防守体系不受影响。<strong>lambda修正：奥胡斯lambda_home ×0.88(中场伤停)</strong></p>
+  </div>
+
+  <!-- xG分析 -->
+  <h3>xG校准分析</h3>
+  <div class="section">
+    <table class="data-table">
+      <thead><tr><th>指标</th><th>奥胡斯</th><th>萨巴赫</th></tr></thead>
+      <tbody>
+        <tr><td>近10场场均进球</td><td>2.4</td><td>1.4</td></tr>
+        <tr><td>欧冠xG/场</td><td>~1.8</td><td>~1.36</td></tr>
+        <tr><td>欧冠xGA/场</td><td>~2.04 (防守差)</td><td>~0.25 (防守极强)</td></tr>
+        <tr><td>xG偏离幅度</td><td>实际>预期(运气偏好)</td><td>实际≈预期(可持续)</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.85rem;margin-top:6px;">奥胡斯进攻xG尚可但防守xGA极差(2.04/场)，说明防线存在系统性问题。萨巴赫xGA仅0.25/场，但面对的是威尔士/芬兰级别球队，数据需打折。校准后 lambda_home=1.35, lambda_away=0.85, lambda_total=2.20。</p>
+  </div>
+
+  <!-- 赔率对比 -->
+  <h3>体彩全玩法赔率</h3>
+  <div class="section">
+    <table class="data-table">
+      <thead><tr><th>玩法</th><th>主胜/让胜</th><th>平/让平</th><th>客胜/让负</th></tr></thead>
+      <tbody>
+        <tr><td>胜平负 (HAD)</td><td>1.57</td><td>3.65</td><td>4.60</td></tr>
+        <tr><td>让球胜平负 (-1)</td><td>2.80</td><td>3.40</td><td>2.09</td></tr>
+      </tbody>
+    </table>
+    <table class="data-table" style="margin-top:8px;">
+      <thead><tr><th>半全场</th><th>胜胜</th><th>胜平</th><th>胜负</th><th>平胜</th><th>平平</th><th>平负</th><th>负胜</th><th>负平</th><th>负负</th></tr></thead>
+      <tbody><tr><td>赔率</td><td>2.48</td><td>16.00</td><td>40.00</td><td>4.35</td><td>6.50</td><td>11.00</td><td>21.00</td><td>16.00</td><td>7.75</td></tr></tbody>
+    </table>
+    <table class="data-table" style="margin-top:8px;">
+      <thead><tr><th>总进球</th><th>0球</th><th>1球</th><th>2球</th><th>3球</th><th>4球</th><th>5球</th><th>6球</th><th>7+球</th></tr></thead>
+      <tbody><tr><td>赔率</td><td>15.00</td><td>5.50</td><td>3.60</td><td>3.55</td><td>5.25</td><td>8.75</td><td>18.50</td><td>27.00</td></tr></tbody>
+    </table>
+    <p style="font-size:0.8rem;color:var(--text-dim);margin-top:6px;">支持率：主胜52% / 平17% / 客胜31% | 让球支持率：让胜29% / 让平26% / 让负45%</p>
+  </div>
+
+  <!-- 模型对比 -->
+  <h3>模型预测对比</h3>
+  <div class="section">
+    <div class="model-comparison">
+      <div class="model-card">
+        <div class="model-name">Dixon-Coles</div>
+        <div class="model-probs"><span style="color:var(--home);">50.1%</span> / <span style="color:var(--draw);">24.6%</span> / <span style="color:var(--away);">25.2%</span></div>
+      </div>
+      <div class="model-card">
+        <div class="model-name">标准泊松</div>
+        <div class="model-probs"><span style="color:var(--home);">48.5%</span> / <span style="color:var(--draw);">27.9%</span> / <span style="color:var(--away);">23.6%</span></div>
+      </div>
+      <div class="model-card">
+        <div class="model-name">Skellam</div>
+        <div class="model-probs"><span style="color:var(--home);">48.5%</span> / <span style="color:var(--draw);">27.9%</span> / <span style="color:var(--away);">23.6%</span></div>
+      </div>
+      <div class="model-card">
+        <div class="model-name">蒙特卡洛</div>
+        <div class="model-probs"><span style="color:var(--home);">47.6%</span> / <span style="color:var(--draw);">28.6%</span> / <span style="color:var(--away);">23.8%</span></div>
+      </div>
+    </div>
+    <div class="model-card" style="background:rgba(59,130,246,0.1);border:1px solid var(--accent);margin-top:8px;">
+      <div class="model-name">模型平均</div>
+      <div class="model-probs" style="font-size:1rem;"><span style="color:var(--home);">48.7%</span> / <span style="color:var(--draw);">27.1%</span> / <span style="color:var(--away);">24.2%</span></div>
+    </div>
+    <div class="model-card" style="background:rgba(234,179,8,0.08);border:1px solid var(--yellow);margin-top:8px;">
+      <div class="model-name">市场归一化概率</div>
+      <div class="model-probs" style="font-size:1rem;"><span style="color:var(--home);">56.5%</span> / <span style="color:var(--draw);">24.3%</span> / <span style="color:var(--away);">19.3%</span></div>
+    </div>
+    <p style="font-size:0.85rem;margin-top:8px;">模型间标准差：σ_主胜=0.013, σ_平=0.021, σ_客胜=0.009 → <strong>高度一致</strong>。概率差(模型-市场)：主胜-7.8%, 平+2.8%, 客胜+4.9%。模型比市场更看好平局和客胜，对主胜持保留态度。</p>
+  </div>
+
+  <!-- 基本面分析 -->
+  <div class="fundamental-box">
+    <h4>战意心理与体能分析 (规则27)</h4>
+    <p style="font-size:0.9rem;"><strong>战意不对称：</strong>双方均为首回合主场，战意对等。奥胡斯借场作战+中场伤缺削弱了"必胜"底气；萨巴赫客场防守反击是舒适区，无压力。<br>
+    <strong>体能与休息：</strong>奥胡斯7月29日打完加时+点球大战，体能消耗巨大，8月2日又踢了丹超联赛(2-2灵比)，休息仅3天。萨巴赫7月28日打完欧冠后无联赛任务，休息8天，体能占优。<br>
+    <strong>心理因素：</strong>奥胡斯逆转波兹南士气高涨但也可能产生"主场必胜"的过度自信；萨巴赫4战全胜3零封信心爆棚，客场毫无畏惧。<br>
+    <strong>赛程牵制：</strong>奥胡斯丹超新赛季已开踢需分心联赛；萨巴赫联赛未开始，100%专注欧冠。<br>
+    <strong>综合软因素修正：</strong>lambda_home ×0.92(体能劣势+借用场地)，lambda_away ×1.05(体能优势+专注度)。</p>
+  </div>
+
+  <!-- 基本面调整后概率 -->
+  <h3>基本面调整后概率 (规则28：基本面>模型>市场)</h3>
+  <div class="section">
+    <div class="prob-bar">
+      <div class="home" style="width:45%">主胜 45%</div>
+      <div class="draw" style="width:30%">平 30%</div>
+      <div class="away" style="width:25%">客胜 25%</div>
+    </div>
+    <p style="font-size:0.85rem;margin-top:6px;">模型主胜48.7% → 基本面下调至45%（借用场地+中场伤病+体能劣势+对手防守极强）。平局从27.1%上调至30%（萨巴赫铁桶阵+首回合保守倾向）。客胜从24.2%微调至25%（奥胡斯防守漏洞）。</p>
+  </div>
+
+  <!-- 比分预测 -->
+  <h3>比分预测 TOP10</h3>
+  <div class="score-grid">
+    <div class="score-item top"><div class="score">1:0</div><div class="prob">16.6%</div></div>
+    <div class="score-item"><div class="score">1:1</div><div class="prob">11.1%</div></div>
+    <div class="score-item"><div class="score">0:1</div><div class="prob">11.1%</div></div>
+    <div class="score-item"><div class="score">2:0</div><div class="prob">10.1%</div></div>
+    <div class="score-item"><div class="score">0:0</div><div class="prob">9.4%</div></div>
+    <div class="score-item"><div class="score">2:1</div><div class="prob">5.8%</div></div>
+    <div class="score-item"><div class="score">3:0</div><div class="prob">3.5%</div></div>
+    <div class="score-item cold"><div class="score">1:2</div><div class="prob">3.2%</div></div>
+    <div class="score-item"><div class="score">3:1</div><div class="prob">2.1%</div></div>
+    <div class="score-item"><div class="score">2:2</div><div class="prob">1.8%</div></div>
+  </div>
+
+  <!-- 总进球预测 -->
+  <h3>总进球数预测 (规则34：欧冠防3球)</h3>
+  <div class="section">
+    <table class="data-table">
+      <thead><tr><th>进球数</th><th>0球</th><th>1球</th><th>2球</th><th>3球</th><th>4+球</th></tr></thead>
+      <tbody>
+        <tr><td>DC概率</td><td>9.4%</td><td>21.8%</td><td>26.5%</td><td>21.5%</td><td>20.8%</td></tr>
+        <tr><td>MC概率</td><td>11.2%</td><td>23.7%</td><td>27.2%</td><td>19.9%</td><td>18.0%</td></tr>
+        <tr><td>体彩赔率</td><td>15.00</td><td>5.50</td><td>3.60</td><td>3.55</td><td>5.25+</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.85rem;margin-top:6px;"><strong>规则34应用：</strong>欧冠Q3 lambda_total=2.20，TTG首选2球/3球(非1球/2球)。1球需满足双方进攻无力条件，奥胡斯有阿恩斯塔德+萨巴赫有西米奇，不满足。防冷防3球而非1球。注意萨巴赫铁桶阵可能压低总进球，2球为最可能。</p>
+  </div>
+
+  <!-- 半全场预测 -->
+  <h3>半全场胜平负预测</h3>
+  <div class="section">
+    <table class="data-table">
+      <thead><tr><th>排名</th><th>半全场</th><th>模型概率</th><th>MC概率</th><th>体彩赔率</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>胜胜</td><td>28.4%</td><td>26.8%</td><td>2.48</td></tr>
+        <tr><td>2</td><td>平平</td><td>18.3%</td><td>19.6%</td><td>6.50</td></tr>
+        <tr><td>3</td><td>平胜</td><td>18.0%</td><td>18.3%</td><td>4.35</td></tr>
+        <tr><td>4</td><td>负负</td><td>12.9%</td><td>—</td><td>7.75</td></tr>
+        <tr><td>5</td><td>平负</td><td>9.7%</td><td>—</td><td>11.00</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.85rem;margin-top:6px;">半场比分TOP3：0:0(38.6%) / 1:0(23.6%) / 0:1(15.2%)</p>
+    <p style="font-size:0.85rem;">规则5关联：资格赛强队vs铁桶半场往往进球偏低(0:0概率38.6%最高)，下半场后段和补时才可能爆发。如半场0:0，下半场奥胡斯压上后防打开，萨巴赫反击有机会。</p>
+  </div>
+
+  <!-- 网友意见 -->
+  <h3>网友意见精华 (已过滤小编/博彩引流内容)</h3>
+  <div class="section">
+    <p style="font-size:0.9rem;"><strong>情绪分布(8个来源)：</strong>主胜小胜50% / 平局37.5% / 客胜12.5%</p>
+    <ul style="margin-top:8px;font-size:0.85rem;list-style:none;">
+      <li>• <strong>主胜派：</strong>Sportsmole预测2-1(阿恩斯塔德状态+逆转士气)，头条多位创作者看好1-0/2-1小胜</li>
+      <li>• <strong>平局派：</strong>搜狐分析文优先1-1/0-0(首回合不会拉开太大)，小林爱聊球看好奥胡斯不败但重点防平</li>
+      <li>• <strong>客胜派：</strong>机智的可乐看好萨巴赫不败1-1/1-2(让球支持率让负45%>让胜29%，机构对主队大胜信心不足)</li>
+    </ul>
+    <p style="font-size:0.8rem;color:var(--text-dim);margin-top:6px;">来源：Sportsmole、头条创作者(琴旁沉醉听歌者/火锅老程/小林爱聊球/机智的可乐)、搜狐分析文。虎扑/知乎/微博未找到专门讨论帖。</p>
+  </div>
+
+  <!-- 6维度推荐 -->
+  <h3>6维度推荐</h3>
+  <div class="recommendation-box">
+    <div class="rec-item">
+      <span class="rec-label">胜平负 (HAD)</span>
+      <span class="rec-value primary">首选 主胜/平 75% (1.57/3.65) | 次选 客胜 25% (4.60)</span>
+    </div>
+    <div class="rec-item">
+      <span class="rec-label">让球胜平负 (-1)</span>
+      <span class="rec-value primary">首选 让负 49.9% (2.09) | 次选 让平 27.0% (3.40)</span>
+    </div>
+    <div class="rec-item">
+      <span class="rec-label">比分 (CRS)</span>
+      <span class="rec-value primary">首选 1:0 (16.6%)</span>
+      <span class="rec-value secondary">次选 1:1 (11.1%)</span>
+      <span class="rec-value alternative">备选 2:1 | 冷门 0:1</span>
+    </div>
+    <div class="rec-item">
+      <span class="rec-label">总进球 (TTG)</span>
+      <span class="rec-value primary">首选 2球 (3.60, 27.2%)</span>
+      <span class="rec-value secondary">次选 3球 (3.55, 19.9%)</span>
+      <span class="rec-value alternative">备选 1球 (5.50)</span>
+    </div>
+    <div class="rec-item">
+      <span class="rec-label">半全场 (HTFT)</span>
+      <span class="rec-value primary">首选 胜胜 (2.48, 28.4%)</span>
+      <span class="rec-value secondary">次选 平胜 (4.35, 18.0%)</span>
+      <span class="rec-value alternative">备选 平平 (6.50, 18.3%)</span>
+    </div>
+    <div class="rec-item">
+      <span class="rec-label">半场比分</span>
+      <span class="rec-value primary">首选 0:0 (38.6%)</span>
+      <span class="rec-value secondary">次选 1:0 (23.6%)</span>
+      <span class="rec-value alternative">备选 0:1 (15.2%)</span>
+    </div>
+  </div>
+  <p style="font-size:0.85rem;"><strong>置信度：★★ 中</strong> — 模型一致度高(σ=0.013)但基本面与市场存在分歧(概率差-7.8%)，萨巴赫防守数据来自低级别对手需打折。借用场地+中场伤缺增加不确定性。</p>
+</div>
+
+<!-- ==================== 比赛003 ==================== -->
+<div class="match-card">
+  <div class="match-header">
+    <div>
+      <span class="match-id">周三003</span>
+      <span class="match-title">费内巴切 vs 格拉茨风暴</span>
+    </div>
+    <div class="match-time">08-06 02:00 | 欧冠资格赛Q3首回合</div>
+  </div>
+
+  <!-- 基本信息 -->
+  <div class="info-grid">
+    <div class="info-item">
+      <div class="info-label">场地</div>
+      <div class="info-value">Şükrü Saracoğlu (伊斯坦布尔)</div>
+    </div>
+    <div class="info-item">
+      <div class="info-label">容量 / 草皮</div>
+      <div class="info-value">50,530人 / 天然草</div>
+    </div>
+    <div class="info-item">
+      <div class="info-label">天气</div>
+      <div class="info-value">29-30°C 晴朗 无降雨</div>
+    </div>
+    <div class="info-item">
+      <div class="info-label">主裁判</div>
+      <div class="info-value">Chris Kavanagh (英格兰)</div>
+    </div>
+  </div>
+
+  <!-- 场地说明 -->
+  <div class="fundamental-box">
+    <h4>场地与天气因素</h4>
+    <p style="font-size:0.9rem;">费内巴切主场 Şükrü Saracoğlu 是土耳其最令客队畏惧的球场之一，50,530人的容量营造极度火爆氛围。土超主场优势系数1.22为所有联赛最高。天气29-30°C高温对客队(奥地利)体能构成考验，费内巴切球员更适应炎热气候。</p>
+  </div>
+
+  <!-- 球队近况 -->
+  <h3>球队近况与晋级之路</h3>
+  <div class="section">
+    <p><strong style="color:var(--home);">费内巴切 (土超亚军)</strong> — 连续5年土超亚军，上次夺冠2013-14赛季。夏窗重磅引援：格林伍德(3900万欧从马赛)、坎特(从吉达联合)、阿克(从曼城)、贡多齐(2800万欧从拉齐奥)。新帅伊斯梅尔·卡尔塔尔6月上任。Q2轮2-1淘汰扎布热矿工(1-0, 1-1)，塔利斯卡2场2球。土超全季仅2负(34场21胜11平2负)，主场8场正式比赛5胜3平0负。</p>
+    <p style="margin-top:8px;"><strong style="color:var(--away);">格拉茨风暴 (奥超亚军)</strong> — 2024-25赛季参加欧冠正赛(联赛阶段8战2胜6负出局)，2025-26赛季参加欧联正赛(联赛阶段出局)。本赛季Q2轮6-0横扫苏超哈茨(4-0, 2-0)，攻防俱佳。新赛季3胜1平不败。奥超首轮1-1平WSG蒂罗尔。头号射手基泰什维利(15球)伤缺是重大打击。</p>
+  </div>
+
+  <!-- 伤停信息 -->
+  <h3>伤停详情 (规则32强制核查)</h3>
+  <div class="section">
+    <table class="injury-table">
+      <thead>
+        <tr><th>球队</th><th>球员</th><th>位置</th><th>状态</th><th>影响</th><th>来源</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>费内巴切</td><td>Talisca</td><td>前锋/前腰</td><td>伤势评估中(大概率出战)</td><td>核心(2场2球)</td><td>Sportsmole</td></tr>
+        <tr><td>费内巴切</td><td>Nelson Semedo</td><td>右后卫</td><td>伤势评估中</td><td>主力</td><td>Sportsmole</td></tr>
+        <tr><td>费内巴切</td><td>Vedat Muriqi</td><td>前锋</td><td>肌肉伤(存疑)</td><td>主力</td><td>Sportsmole</td></tr>
+        <tr><td>费内巴切</td><td>Marco Asensio</td><td>前腰</td><td>左膝旧伤隐患</td><td>主力</td><td>Sportsmole</td></tr>
+        <tr style="background:rgba(239,68,68,0.05);"><td>格拉茨风暴</td><td>Otar Kiteishvili</td><td>前腰</td><td><strong>伤缺</strong></td><td><strong>头号射手(15球)</strong></td><td>Sportsmole</td></tr>
+        <tr><td>格拉茨风暴</td><td>Amady Camara</td><td>中场</td><td>大腿伤缺</td><td>主力</td><td>Sportsmole</td></tr>
+        <tr><td>格拉茨风暴</td><td>Luca Weinhandl</td><td>中场</td><td>伤缺</td><td>主力</td><td>Sportsmole</td></tr>
+        <tr><td>格拉茨风暴</td><td>Nelson Weiper</td><td>前锋</td><td>伤缺</td><td>轮换</td><td>Sportsmole</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.85rem;margin-top:8px;"><strong>伤停影响评估：</strong>格拉茨风暴4人伤缺(含头号射手Kiteishvili 15球)，攻击力损失约25-30%。费内巴切Talisca大概率出战，核心攻击力保持。<strong>规则9精细化折算：Kiteishvili为核心终结点→格拉茨lambda_away ×0.75；费内巴切lambda_home保持不变(Talisca可出战)</strong>。双方合计伤停约6人，集中在中前场→总进球lambda额外下修5%。</p>
+  </div>
+
+  <!-- xG分析 -->
+  <h3>xG校准分析</h3>
+  <div class="section">
+    <table class="data-table">
+      <thead><tr><th>指标</th><th>费内巴切</th><th>格拉茨风暴</th></tr></thead>
+      <tbody>
+        <tr><td>场均xG (联赛)</td><td>1.91 (土超)</td><td>~1.3 (奥超, 估算)</td></tr>
+        <tr><td>场均实际进球</td><td>2.26</td><td>1.59</td></tr>
+        <tr><td>头号射手</td><td>Talisca (19球)</td><td>Kiteishvili (15球, <strong>伤缺</strong>)</td></tr>
+        <tr><td>xG偏离幅度</td><td>实际>预期(+18%, 运气偏好)</td><td>实际≈预期</td></tr>
+        <tr><td>欧冠Q2战绩</td><td>2-1淘汰扎布热(1-0,1-1)</td><td>6-0横扫哈茨(4-0,2-0)</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.85rem;margin-top:6px;">费内巴切xG 1.91远高于格拉茨风暴(~1.3)，但格拉茨6-0横扫哈茨展现攻防两端高质量。关键变量：Kiteishvili伤缺使格拉茨进攻xG下降至~0.9-1.0。校准后 lambda_home=1.75, lambda_away=0.85(已含Kiteishvili伤缺修正), lambda_total=2.60。</p>
+  </div>
+
+  <!-- 赔率对比 -->
+  <h3>体彩全玩法赔率</h3>
+  <div class="section">
+    <table class="data-table">
+      <thead><tr><th>玩法</th><th>主胜/让胜</th><th>平/让平</th><th>客胜/让负</th></tr></thead>
+      <tbody>
+        <tr><td>胜平负 (HAD)</td><td>1.22</td><td>5.15</td><td>8.75</td></tr>
+        <tr><td>让球胜平负 (-1)</td><td>1.77</td><td>3.70</td><td>3.40</td></tr>
+      </tbody>
+    </table>
+    <table class="data-table" style="margin-top:8px;">
+      <thead><tr><th>半全场</th><th>胜胜</th><th>胜平</th><th>胜负</th><th>平胜</th><th>平平</th><th>平负</th><th>负胜</th><th>负平</th><th>负负</th></tr></thead>
+      <tbody><tr><td>赔率</td><td>1.74</td><td>22.00</td><td>75.00</td><td>4.00</td><td>8.75</td><td>19.00</td><td>23.00</td><td>22.00</td><td>15.50</td></tr></tbody>
+    </table>
+    <table class="data-table" style="margin-top:8px;">
+      <thead><tr><th>总进球</th><th>0球</th><th>1球</th><th>2球</th><th>3球</th><th>4球</th><th>5球</th><th>6球</th><th>7+球</th></tr></thead>
+      <tbody><tr><td>赔率</td><td>19.00</td><td>6.40</td><td>4.10</td><td>3.65</td><td>4.70</td><td>7.80</td><td>13.00</td><td>17.00</td></tr></tbody>
+    </table>
+    <p style="font-size:0.8rem;color:var(--text-dim);margin-top:6px;">支持率：主胜54% / 平16% / 客胜30% | 让球支持率：让胜51% / 让平21% / 让负28%</p>
+    <p style="font-size:0.8rem;color:var(--orange);">注意：HAD支持率(主胜54%)与赔率隐含概率(主胜72.7%)严重偏离，可能反映大量资金流向让球客胜(让负3.40)。市场对费内巴切大胜信心不如赔率所示。</p>
+  </div>
+
+  <!-- 模型对比 -->
+  <h3>模型预测对比</h3>
+  <div class="section">
+    <div class="model-comparison">
+      <div class="model-card">
+        <div class="model-name">Dixon-Coles</div>
+        <div class="model-probs"><span style="color:var(--home);">60.1%</span> / <span style="color:var(--draw);">20.5%</span> / <span style="color:var(--away);">19.4%</span></div>
+      </div>
+      <div class="model-card">
+        <div class="model-name">标准泊松</div>
+        <div class="model-probs"><span style="color:var(--home);">58.7%</span> / <span style="color:var(--draw);">23.3%</span> / <span style="color:var(--away);">18.0%</span></div>
+      </div>
+      <div class="model-card">
+        <div class="model-name">Skellam</div>
+        <div class="model-probs"><span style="color:var(--home);">58.7%</span> / <span style="color:var(--draw);">23.3%</span> / <span style="color:var(--away);">18.0%</span></div>
+      </div>
+      <div class="model-card">
+        <div class="model-name">蒙特卡洛</div>
+        <div class="model-probs"><span style="color:var(--home);">59.0%</span> / <span style="color:var(--draw);">23.3%</span> / <span style="color:var(--away);">17.6%</span></div>
+      </div>
+    </div>
+    <div class="model-card" style="background:rgba(59,130,246,0.1);border:1px solid var(--accent);margin-top:8px;">
+      <div class="model-name">模型平均</div>
+      <div class="model-probs" style="font-size:1rem;"><span style="color:var(--home);">59.3%</span> / <span style="color:var(--draw);">22.4%</span> / <span style="color:var(--away);">18.3%</span></div>
+    </div>
+    <div class="model-card" style="background:rgba(234,179,8,0.08);border:1px solid var(--yellow);margin-top:8px;">
+      <div class="model-name">市场归一化概率</div>
+      <div class="model-probs" style="font-size:1rem;"><span style="color:var(--home);">72.7%</span> / <span style="color:var(--draw);">17.2%</span> / <span style="color:var(--away);">10.1%</span></div>
+    </div>
+    <p style="font-size:0.85rem;margin-top:8px;">模型间标准差：σ_主胜=0.008, σ_平=0.017, σ_客胜=0.009 → <strong>高度一致</strong>。概率差(模型-市场)：主胜-13.4%, 平+5.2%, 客胜+8.2%。<strong style="color:var(--orange);">模型与市场严重分歧(差距接近15%阈值)，规则8触发：不得包装为博胆推荐</strong>。模型认为费内巴切主胜概率远低于市场定价，平局和客胜被市场低估。</p>
+  </div>
+
+  <!-- 基本面分析 -->
+  <div class="fundamental-box">
+    <h4>战意心理与体能分析 (规则27)</h4>
+    <p style="font-size:0.9rem;"><strong>战意不对称：</strong>费内巴切连续5年土超亚军+18年欧冠正赛缺席，战意极高；格拉茨风暴3年内从欧联出局到欧冠Q3，也有证明自己的动力。<br>
+    <strong>体能与休息：</strong>费内巴切7月29日打完欧冠Q2后无联赛(土超8月9日才开赛)，休息7天；格拉茨8月1日踢了奥超首轮(1-1蒂罗尔)，休息4天且经历旅行。费内巴切体能占优。<br>
+    <strong>心理因素：</strong>费内巴切主场8场不败(5胜3平)，Şükrü Saracoğlu氛围极恐怖；格拉茨上次做客伊斯坦布尔1-1平(2017年)，不会畏惧。新援Greenwood/Kanté首秀渴望表现。<br>
+    <strong>赛程牵制：</strong>费内巴切无联赛分心；格拉茨奥超已开踢需兼顾联赛。<br>
+    <strong>综合软因素修正：</strong>lambda_home ×1.05(主场+体能+战意)，lambda_away ×0.95(体能劣势+联赛分心)。</p>
+  </div>
+
+  <!-- 基本面调整后概率 -->
+  <h3>基本面调整后概率 (规则28：基本面>模型>市场)</h3>
+  <div class="section">
+    <div class="prob-bar">
+      <div class="home" style="width:62%">主胜 62%</div>
+      <div class="draw" style="width:22%">平 22%</div>
+      <div class="away" style="width:16%">客胜 16%</div>
+    </div>
+    <p style="font-size:0.85rem;margin-top:6px;">模型主胜59.3% → 基本面上调至62%(主场极强+体能优势+格拉茨头号射手伤缺)，但远低于市场72.7%(新援磨合不确定+格拉茨6-0横扫哈茨展现的质量)。平局22%(格拉茨仍有防守能力)，客胜16%(Kiteishvili伤缺压低但仍有可能)。<strong>规则21反热门检查：模型与市场方向一致且概率>50%，已检查冷门因素——新援磨合+格拉茨欧冠正赛经验+历史1-1平局。</strong></p>
+  </div>
+
+  <!-- 历史交锋 -->
+  <h3>历史交锋 (规则12)</h3>
+  <div class="section">
+    <table class="data-table">
+      <thead><tr><th>日期</th><th>赛事</th><th>对阵</th><th>比分</th></tr></thead>
+      <tbody>
+        <tr><td>2017-07-27</td><td>欧联杯Q3首回合</td><td>格拉茨风暴 vs 费内巴切</td><td>1-2 (费内巴切胜)</td></tr>
+        <tr><td>2017-08-03</td><td>欧联杯Q3次回合</td><td>费内巴切 vs 格拉茨风暴</td><td>1-1 (平)</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.85rem;margin-top:6px;">总比分费内巴切3-2晋级。格拉茨风暴上次做客伊斯坦布尔取得1-1平局，有一定心理参照。但8年前的阵容已完全不同。</p>
+  </div>
+
+  <!-- 比分预测 -->
+  <h3>比分预测 TOP10</h3>
+  <div class="score-grid">
+    <div class="score-item top"><div class="score">1:0</div><div class="prob">14.4%</div></div>
+    <div class="score-item top"><div class="score">2:0</div><div class="prob">11.4%</div></div>
+    <div class="score-item"><div class="score">2:1</div><div class="prob">9.7%</div></div>
+    <div class="score-item"><div class="score">1:1</div><div class="prob">9.6%</div></div>
+    <div class="score-item cold"><div class="score">0:1</div><div class="prob">7.7%</div></div>
+    <div class="score-item"><div class="score">3:0</div><div class="prob">5.2%</div></div>
+    <div class="score-item"><div class="score">0:0</div><div class="prob">4.8%</div></div>
+    <div class="score-item"><div class="score">3:1</div><div class="prob">4.1%</div></div>
+    <div class="score-item cold"><div class="score">1:2</div><div class="prob">3.3%</div></div>
+    <div class="score-item"><div class="score">2:2</div><div class="prob">2.5%</div></div>
+  </div>
+
+  <!-- 总进球预测 -->
+  <h3>总进球数预测 (规则34：欧冠防3球)</h3>
+  <div class="section">
+    <table class="data-table">
+      <thead><tr><th>进球数</th><th>0球</th><th>1球</th><th>2球</th><th>3球</th><th>4+球</th></tr></thead>
+      <tbody>
+        <tr><td>DC概率</td><td>4.8%</td><td>15.6%</td><td>25.0%</td><td>24.3%</td><td>30.3%</td></tr>
+        <tr><td>MC概率</td><td>7.2%</td><td>19.5%</td><td>25.5%</td><td>21.7%</td><td>26.1%</td></tr>
+        <tr><td>体彩赔率</td><td>19.00</td><td>6.40</td><td>4.10</td><td>3.65</td><td>4.70+</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.85rem;margin-top:6px;"><strong>规则34应用：</strong>欧冠Q3 lambda_total=2.60，TTG首选2球/3球。费内巴切主场进攻强(xG 1.91)+格拉茨头号射手伤缺但仍有进攻能力。3球赔率3.65最低，机构也认为3球最可能。注意：格拉茨4人伤缺后攻击力下降，如果费内巴切上半场取得领先，可能控制节奏不追求大胜，2球也是合理选项。</p>
+  </div>
+
+  <!-- 半全场预测 -->
+  <h3>半全场胜平负预测</h3>
+  <div class="section">
+    <table class="data-table">
+      <thead><tr><th>排名</th><th>半全场</th><th>模型概率</th><th>MC概率</th><th>体彩赔率</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>胜胜</td><td>36.4%</td><td>35.7%</td><td>1.74</td></tr>
+        <tr><td>2</td><td>平胜</td><td>19.4%</td><td>20.6%</td><td>4.00</td></tr>
+        <tr><td>3</td><td>平平</td><td>14.1%</td><td>14.7%</td><td>8.75</td></tr>
+        <tr><td>4</td><td>负负</td><td>9.9%</td><td>—</td><td>15.50</td></tr>
+        <tr><td>5</td><td>平负</td><td>7.2%</td><td>—</td><td>19.00</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.85rem;margin-top:6px;">半场比分TOP3：0:0(32.4%) / 1:0(25.8%) / 0:1(13.1%)</p>
+    <p style="font-size:0.85rem;">规则5关联：费内巴切主场大概率半场取得领先(1:0概率25.8%)，但新援磨合可能导致上半场效率不高(0:0概率32.4%最高)。下半场体能差距+高温影响，格拉茨防线可能崩盘。</p>
+  </div>
+
+  <!-- 网友意见 -->
+  <h3>网友意见精华 (已过滤小编/博彩引流内容)</h3>
+  <div class="section">
+    <p style="font-size:0.9rem;"><strong>情绪分布(3个来源)：</strong>主胜100% / 平局0%(1个次选提及) / 客胜0%</p>
+    <ul style="margin-top:8px;font-size:0.85rem;list-style:none;">
+      <li>• <strong>主胜派：</strong>Sportsmole预测2-1(主场氛围+经验优势)，Sportskeeda预测2-0，头条创作者看好2-0/3-1</li>
+      <li>• <strong>关注点：</strong>费内巴切夏窗重磅引援(格林伍德/塔利斯卡/什克里尼亚尔)、格拉茨6人伤缺(基泰什维利等)、费内巴切进攻化学反应未完全形成</li>
+      <li>• <strong>外网预测：</strong>tips.gg预测2-1费内巴切胜+双方进球，LionTips推荐亚洲让球(+1.5)格拉茨@1.78(46条预测52.17%胜率)</li>
+    </ul>
+    <p style="font-size:0.8rem;color:var(--text-dim);margin-top:6px;">来源：Sportsmole、头条创作者(琴旁沉醉听歌者/小林爱聊球/晚枫情感屋)、Sportskeeda、tips.gg、LionTips。虎扑/知乎/微博未找到专门讨论帖。</p>
+  </div>
+
+  <!-- 6维度推荐 -->
+  <h3>6维度推荐</h3>
+  <div class="recommendation-box">
+    <div class="rec-item">
+      <span class="rec-label">胜平负 (HAD)</span>
+      <span class="rec-value primary">首选 主胜 62% (1.22) | 次选 平 22% (5.15)</span>
+    </div>
+    <div class="rec-item">
+      <span class="rec-label">让球胜平负 (-1)</span>
+      <span class="rec-value primary">首选 让负 39.9% (3.40) | 次选 让胜 33.3% (1.77)</span>
+    </div>
+    <div class="rec-item">
+      <span class="rec-label">比分 (CRS)</span>
+      <span class="rec-value primary">首选 1:0 (14.4%)</span>
+      <span class="rec-value secondary">次选 2:0 (11.4%)</span>
+      <span class="rec-value alternative">备选 2:1 | 冷门 1:1</span>
+    </div>
+    <div class="rec-item">
+      <span class="rec-label">总进球 (TTG)</span>
+      <span class="rec-value primary">首选 2球 (4.10, 25.5%)</span>
+      <span class="rec-value secondary">次选 3球 (3.65, 21.7%)</span>
+      <span class="rec-value alternative">备选 4球 (4.70)</span>
+    </div>
+    <div class="rec-item">
+      <span class="rec-label">半全场 (HTFT)</span>
+      <span class="rec-value primary">首选 胜胜 (1.74, 36.4%)</span>
+      <span class="rec-value secondary">次选 平胜 (4.00, 19.4%)</span>
+      <span class="rec-value alternative">备选 平平 (8.75, 14.1%)</span>
+    </div>
+    <div class="rec-item">
+      <span class="rec-label">半场比分</span>
+      <span class="rec-value primary">首选 0:0 (32.4%)</span>
+      <span class="rec-value secondary">次选 1:0 (25.8%)</span>
+      <span class="rec-value alternative">备选 0:1 (13.1%)</span>
+    </div>
+  </div>
+  <p style="font-size:0.85rem;"><strong>置信度：★★ 中</strong> — 模型一致度极高(σ=0.008)，但模型与市场严重分歧(概率差-13.4%接近15%阈值)。规则8触发：不可包装为博胆。格拉茨风暴虽4人伤缺但6-0横扫哈茨的质量不可忽视，新援磨合不确定。费内巴切主场极强但欧冠赛场进攻效率待验证。</p>
+</div>
+
+<!-- 综合推荐汇总 -->
+<h2>综合推荐汇总</h2>
+<table class="overview-table">
+  <thead>
+    <tr>
+      <th>编号</th>
+      <th>对阵</th>
+      <th>方向</th>
+      <th>让球(-1)</th>
+      <th>比分首选</th>
+      <th>总进球</th>
+      <th>半全场</th>
+      <th>置信度</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>002</td>
+      <td>奥胡斯 vs 萨巴赫</td>
+      <td>主胜/平 75%</td>
+      <td>让负 49.9%</td>
+      <td>1:0 (16.6%)</td>
+      <td>2球 (3.60)</td>
+      <td>胜胜 (2.48)</td>
+      <td><span class="confidence medium">★★</span></td>
+    </tr>
+    <tr>
+      <td>003</td>
+      <td>费内巴切 vs 格风暴</td>
+      <td>主胜 62%</td>
+      <td>让负 39.9%</td>
+      <td>1:0 (14.4%)</td>
+      <td>2球 (4.10)</td>
+      <td>胜胜 (1.74)</td>
+      <td><span class="confidence medium">★★</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- 串关思路 -->
+<h2>串关思路</h2>
+<div class="section">
+  <p style="font-size:0.9rem;"><strong>2串1方案：</strong>002让负(2.09) × 003让负(3.40) = 7.11<br>
+  逻辑：两场模型都指向让负概率最高(002: 49.9%, 003: 39.9%)。002奥胡斯借用场地+中场伤缺大胜不易；003费内巴切虽强但模型与市场分歧大，让球后客胜概率不低。<br>
+  <strong>稳健方案：</strong>002主胜/平(1.57或3.65) × 003主胜(1.22) = 1.92~4.46<br>
+  <strong>博冷方案：</strong>002平(3.65) × 003让负(3.40) = 12.41</p>
+</div>
+
+<!-- 本轮四大规律 -->
+<h2>本轮四大规律</h2>
+<div class="section">
+  <ul style="font-size:0.9rem;list-style:none;">
+    <li><strong>1. 借用场地≠主场：</strong>奥胡斯借用兰德斯FC球场，主场加成从1.16降至~1.05，模型据此下调主胜概率，市场可能高估了主场优势</li>
+    <li><strong>2. 头号射手伤缺的量化影响：</strong>格拉茨风暴Kiteishvili(15球)伤缺→lambda_away ×0.75，但6-0横扫哈茨证明体系进攻能力仍在，不可过度看衰</li>
+    <li><strong>3. 规则34验证：</strong>两场TTG首选均为2球/3球(非1球/2球)，欧冠Q3双方都有进攻实力，3球是众数。机构TTG赔率也指向2-3球</li>
+    <li><strong>4. 模型vs市场分歧：</strong>003模型主胜59.3% vs 市场72.7%，差距13.4%接近15%阈值。新援磨合+格拉茨质量被市场低估，模型更保守但更合理</li>
+  </ul>
+</div>
+
+<!-- 风险提示 -->
+<div class="disclaimer">
+  <strong>风险提示</strong><br>
+  • 足球比赛存在极大不确定性，任何模型预测均非100%准确<br>
+  • 模型基于历史数据，突发因素(红牌、点球、天气等)无法完全预测<br>
+  • 伤停信息来自第三方前瞻报道，非官方公告，赛前1小时需用实际首发复核<br>
+  • 赔率数据获取时间2026-08-04，可能随时间变化，请以实时数据为准<br>
+  • DC模型虽优于标准泊松，仍假设进球事件独立<br>
+  • 置信度评级仅供预测可靠性参考，不代表实际结果保证<br>
+  • 历史回测不代表未来表现<br>
+  • <strong>理性看待预测，切勿沉迷赌博</strong><br>
+  • <strong>每日更新，关注主页获取最新赛事分析</strong>
+</div>
+
+</body>
+</html>

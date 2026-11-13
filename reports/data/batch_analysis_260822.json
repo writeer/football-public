@@ -1,0 +1,4646 @@
+[
+  {
+    "match_num": "周六001",
+    "match_id": 2040974,
+    "home_team": "鹿岛鹿角",
+    "away_team": "福冈黄蜂",
+    "league": "日本职业联赛",
+    "league_key": "日职",
+    "match_time": "2026-08-22 17:00:00",
+    "home_rank": "[日职4]",
+    "away_rank": "[日职8]",
+    "odds": {
+      "had": {
+        "h": 1.61,
+        "d": 3.35,
+        "a": 4.8
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.823,
+    "lambda_away_raw": 0.627,
+    "lambda_home_adj": 1.823,
+    "lambda_away_adj": 0.627,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.45,
+      "vmr": 1.1,
+      "home_advantage": 1.35,
+      "over_dispersed": false,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 64.87,
+      "draw": 24.27,
+      "away": 10.86
+    },
+    "nb_probs": {
+      "home": 62.61,
+      "draw": 23.31,
+      "away": 14.08
+    },
+    "skellam_probs": {
+      "home": 66.17,
+      "draw": 21.69,
+      "away": 12.14
+    },
+    "mc_probs": {
+      "home": 66.49,
+      "draw": 21.41,
+      "away": 12.1
+    },
+    "shin_probs": {
+      "home": 49.1,
+      "draw": 27.92,
+      "away": 22.98
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 62.41,
+      "draw": 23.95,
+      "away": 13.64
+    },
+    "direction": "主胜",
+    "direction_prob": 62.41,
+    "confidence": {
+      "score": -1,
+      "level": "极低",
+      "stars": "☆",
+      "avg_diff": 0.1051034367079804
+    },
+    "top_scores": [
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 14.46,
+        "nb_prob": 15.39,
+        "combined_prob": 14.83
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 14.35,
+        "nb_prob": 12.45,
+        "combined_prob": 13.59
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 9.92,
+        "nb_prob": 11.25,
+        "combined_prob": 10.45
+      },
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 11.15,
+        "nb_prob": 9.28,
+        "combined_prob": 10.4
+      },
+      {
+        "score": "2:1",
+        "home": 2,
+        "away": 1,
+        "dc_prob": 9.0,
+        "nb_prob": 7.51,
+        "combined_prob": 8.4
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 8.63
+      },
+      {
+        "goals": 1,
+        "prob": 21.14
+      },
+      {
+        "goals": 2,
+        "prob": 25.9
+      },
+      {
+        "goals": 3,
+        "prob": 21.15
+      },
+      {
+        "goals": 4,
+        "prob": 12.95
+      },
+      {
+        "goals": 5,
+        "prob": 6.35
+      },
+      {
+        "goals": 6,
+        "prob": 2.59
+      },
+      {
+        "goals": 7,
+        "prob": 0.91
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "胜/胜",
+        "prob": 49.3
+      },
+      {
+        "hafu": "平/胜",
+        "prob": 42.3
+      },
+      {
+        "hafu": "平/平",
+        "prob": 27.1
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六002",
+    "match_id": 2040975,
+    "home_team": "秋田蓝色闪电",
+    "away_team": "甲府风林",
+    "league": "日本乙级联赛",
+    "league_key": "日乙",
+    "match_time": "2026-08-22 17:00:00",
+    "home_rank": "[日乙19]",
+    "away_rank": "[日乙16]",
+    "odds": {
+      "had": {
+        "h": 2.07,
+        "d": 2.95,
+        "a": 3.25
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.622,
+    "lambda_away_raw": 0.878,
+    "lambda_home_adj": 1.622,
+    "lambda_away_adj": 0.878,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.5,
+      "vmr": 1.12,
+      "home_advantage": 1.35,
+      "over_dispersed": false,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 51.31,
+      "draw": 30.62,
+      "away": 18.07
+    },
+    "nb_probs": {
+      "home": 52.87,
+      "draw": 25.11,
+      "away": 22.02
+    },
+    "skellam_probs": {
+      "home": 54.9,
+      "draw": 24.79,
+      "away": 20.31
+    },
+    "mc_probs": {
+      "home": 55.57,
+      "draw": 24.49,
+      "away": 19.94
+    },
+    "shin_probs": {
+      "home": 40.27,
+      "draw": 30.82,
+      "away": 28.9
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 50.93,
+      "draw": 28.06,
+      "away": 21.01
+    },
+    "direction": "主胜",
+    "direction_prob": 50.93,
+    "confidence": {
+      "score": 1,
+      "level": "中",
+      "stars": "★★",
+      "avg_diff": 0.07357803172545499
+    },
+    "top_scores": [
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 11.79,
+        "nb_prob": 13.08,
+        "combined_prob": 12.31
+      },
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 13.22,
+        "nb_prob": 10.67,
+        "combined_prob": 12.2
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 10.8,
+        "nb_prob": 9.76,
+        "combined_prob": 10.38
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 9.73,
+        "nb_prob": 10.19,
+        "combined_prob": 9.91
+      },
+      {
+        "score": "2:1",
+        "home": 2,
+        "away": 1,
+        "dc_prob": 9.48,
+        "nb_prob": 7.96,
+        "combined_prob": 8.87
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 8.21
+      },
+      {
+        "goals": 1,
+        "prob": 20.52
+      },
+      {
+        "goals": 2,
+        "prob": 25.65
+      },
+      {
+        "goals": 3,
+        "prob": 21.38
+      },
+      {
+        "goals": 4,
+        "prob": 13.36
+      },
+      {
+        "goals": 5,
+        "prob": 6.68
+      },
+      {
+        "goals": 6,
+        "prob": 2.78
+      },
+      {
+        "goals": 7,
+        "prob": 0.99
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/胜",
+        "prob": 35.6
+      },
+      {
+        "hafu": "胜/胜",
+        "prob": 33.9
+      },
+      {
+        "hafu": "平/平",
+        "prob": 32.7
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六003",
+    "match_id": 2040976,
+    "home_team": "大阪樱花",
+    "away_team": "清水鼓动",
+    "league": "日本职业联赛",
+    "league_key": "日职",
+    "match_time": "2026-08-22 18:00:00",
+    "home_rank": "[日职13]",
+    "away_rank": "[日职11]",
+    "odds": {
+      "had": {
+        "h": 2.02,
+        "d": 3.3,
+        "a": 3.02
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.578,
+    "lambda_away_raw": 0.872,
+    "lambda_home_adj": 1.578,
+    "lambda_away_adj": 0.872,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.45,
+      "vmr": 1.1,
+      "home_advantage": 1.35,
+      "over_dispersed": false,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 52.4,
+      "draw": 28.37,
+      "away": 19.23
+    },
+    "nb_probs": {
+      "home": 52.07,
+      "draw": 25.55,
+      "away": 22.37
+    },
+    "skellam_probs": {
+      "home": 53.95,
+      "draw": 25.27,
+      "away": 20.77
+    },
+    "mc_probs": {
+      "home": 54.18,
+      "draw": 25.32,
+      "away": 20.5
+    },
+    "shin_probs": {
+      "home": 41.07,
+      "draw": 28.61,
+      "away": 30.32
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 51.04,
+      "draw": 27.07,
+      "away": 21.88
+    },
+    "direction": "主胜",
+    "direction_prob": 51.04,
+    "confidence": {
+      "score": 1,
+      "level": "中",
+      "stars": "★★",
+      "avg_diff": 0.07552134473242927
+    },
+    "top_scores": [
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 12.07,
+        "nb_prob": 13.34,
+        "combined_prob": 12.58
+      },
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 13.42,
+        "nb_prob": 10.81,
+        "combined_prob": 12.38
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 10.74,
+        "nb_prob": 9.76,
+        "combined_prob": 10.35
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 10.18,
+        "nb_prob": 10.56,
+        "combined_prob": 10.33
+      },
+      {
+        "score": "2:1",
+        "home": 2,
+        "away": 1,
+        "dc_prob": 9.37,
+        "nb_prob": 7.91,
+        "combined_prob": 8.79
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 8.63
+      },
+      {
+        "goals": 1,
+        "prob": 21.14
+      },
+      {
+        "goals": 2,
+        "prob": 25.9
+      },
+      {
+        "goals": 3,
+        "prob": 21.15
+      },
+      {
+        "goals": 4,
+        "prob": 12.95
+      },
+      {
+        "goals": 5,
+        "prob": 6.35
+      },
+      {
+        "goals": 6,
+        "prob": 2.59
+      },
+      {
+        "goals": 7,
+        "prob": 0.91
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/胜",
+        "prob": 36.1
+      },
+      {
+        "hafu": "胜/胜",
+        "prob": 33.3
+      },
+      {
+        "hafu": "平/平",
+        "prob": 32.0
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六004",
+    "match_id": 2040977,
+    "home_team": "磐田喜悦",
+    "away_team": "德岛漩涡",
+    "league": "日本乙级联赛",
+    "league_key": "日乙",
+    "match_time": "2026-08-22 18:00:00",
+    "home_rank": "[日乙15]",
+    "away_rank": "[日乙18]",
+    "odds": {
+      "had": {
+        "h": 2.23,
+        "d": 2.96,
+        "a": 2.91
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.548,
+    "lambda_away_raw": 0.952,
+    "lambda_home_adj": 1.548,
+    "lambda_away_adj": 0.952,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.5,
+      "vmr": 1.12,
+      "home_advantage": 1.35,
+      "over_dispersed": false,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 47.62,
+      "draw": 31.59,
+      "away": 20.79
+    },
+    "nb_probs": {
+      "home": 49.67,
+      "draw": 25.59,
+      "away": 24.74
+    },
+    "skellam_probs": {
+      "home": 51.2,
+      "draw": 25.56,
+      "away": 23.23
+    },
+    "mc_probs": {
+      "home": 51.81,
+      "draw": 25.22,
+      "away": 22.97
+    },
+    "shin_probs": {
+      "home": 38.01,
+      "draw": 30.81,
+      "away": 31.18
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 47.54,
+      "draw": 28.73,
+      "away": 23.72
+    },
+    "direction": "主胜",
+    "direction_prob": 47.54,
+    "confidence": {
+      "score": 1,
+      "level": "中",
+      "stars": "★★",
+      "avg_diff": 0.06923801669162886
+    },
+    "top_scores": [
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 13.67,
+        "nb_prob": 10.95,
+        "combined_prob": 12.59
+      },
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 11.14,
+        "nb_prob": 12.55,
+        "combined_prob": 11.7
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 9.78,
+        "nb_prob": 10.05,
+        "combined_prob": 9.89
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 9.84,
+        "nb_prob": 9.05,
+        "combined_prob": 9.52
+      },
+      {
+        "score": "2:1",
+        "home": 2,
+        "away": 1,
+        "dc_prob": 9.36,
+        "nb_prob": 7.9,
+        "combined_prob": 8.78
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 8.21
+      },
+      {
+        "goals": 1,
+        "prob": 20.52
+      },
+      {
+        "goals": 2,
+        "prob": 25.65
+      },
+      {
+        "goals": 3,
+        "prob": 21.38
+      },
+      {
+        "goals": 4,
+        "prob": 13.36
+      },
+      {
+        "goals": 5,
+        "prob": 6.68
+      },
+      {
+        "goals": 6,
+        "prob": 2.78
+      },
+      {
+        "goals": 7,
+        "prob": 0.99
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/平",
+        "prob": 33.8
+      },
+      {
+        "hafu": "平/胜",
+        "prob": 33.6
+      },
+      {
+        "hafu": "胜/胜",
+        "prob": 29.7
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六005",
+    "match_id": 2040978,
+    "home_team": "全北现代",
+    "away_team": "蔚山现代",
+    "league": "韩国职业联赛",
+    "league_key": "韩K",
+    "match_time": "2026-08-22 18:30:00",
+    "home_rank": "[韩职4]",
+    "away_rank": "[韩职2]",
+    "odds": {
+      "had": {
+        "h": 1.97,
+        "d": 3.35,
+        "a": 3.1
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.546,
+    "lambda_away_raw": 0.804,
+    "lambda_home_adj": 1.546,
+    "lambda_away_adj": 0.804,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.35,
+      "vmr": 1.08,
+      "home_advantage": 1.38,
+      "over_dispersed": false,
+      "defensive": true
+    },
+    "dc_probs": {
+      "home": 53.33,
+      "draw": 28.72,
+      "away": 17.95
+    },
+    "nb_probs": {
+      "home": 52.93,
+      "draw": 26.06,
+      "away": 21.01
+    },
+    "skellam_probs": {
+      "home": 54.88,
+      "draw": 25.63,
+      "away": 19.49
+    },
+    "mc_probs": {
+      "home": 55.34,
+      "draw": 24.92,
+      "away": 19.74
+    },
+    "shin_probs": {
+      "home": 41.9,
+      "draw": 28.32,
+      "away": 29.78
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 51.97,
+      "draw": 27.28,
+      "away": 20.75
+    },
+    "direction": "主胜",
+    "direction_prob": 51.97,
+    "confidence": {
+      "score": 1,
+      "level": "中",
+      "stars": "★★",
+      "avg_diff": 0.07883456326920962
+    },
+    "top_scores": [
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 13.2,
+        "nb_prob": 14.33,
+        "combined_prob": 13.65
+      },
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 13.4,
+        "nb_prob": 10.83,
+        "combined_prob": 12.37
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 11.08,
+        "nb_prob": 11.49,
+        "combined_prob": 11.24
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 11.39,
+        "nb_prob": 10.32,
+        "combined_prob": 10.96
+      },
+      {
+        "score": "2:1",
+        "home": 2,
+        "away": 1,
+        "dc_prob": 9.17,
+        "nb_prob": 7.8,
+        "combined_prob": 8.62
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 9.54
+      },
+      {
+        "goals": 1,
+        "prob": 22.41
+      },
+      {
+        "goals": 2,
+        "prob": 26.33
+      },
+      {
+        "goals": 3,
+        "prob": 20.63
+      },
+      {
+        "goals": 4,
+        "prob": 12.12
+      },
+      {
+        "goals": 5,
+        "prob": 5.7
+      },
+      {
+        "goals": 6,
+        "prob": 2.23
+      },
+      {
+        "goals": 7,
+        "prob": 0.75
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/胜",
+        "prob": 37.4
+      },
+      {
+        "hafu": "胜/胜",
+        "prob": 34.1
+      },
+      {
+        "hafu": "平/平",
+        "prob": 32.8
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六006",
+    "match_id": 2040979,
+    "home_team": "安养FC",
+    "away_team": "首尔FC",
+    "league": "韩国职业联赛",
+    "league_key": "韩K",
+    "match_time": "2026-08-22 18:30:00",
+    "home_rank": "[韩职7]",
+    "away_rank": "[韩职1]",
+    "odds": {
+      "had": {
+        "h": 3.9,
+        "d": 3.45,
+        "a": 1.72
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.017,
+    "lambda_away_raw": 1.333,
+    "lambda_home_adj": 1.017,
+    "lambda_away_adj": 1.333,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.35,
+      "vmr": 1.08,
+      "home_advantage": 1.38,
+      "over_dispersed": false,
+      "defensive": true
+    },
+    "dc_probs": {
+      "home": 26.82,
+      "draw": 30.93,
+      "away": 42.25
+    },
+    "nb_probs": {
+      "home": 29.39,
+      "draw": 27.31,
+      "away": 43.3
+    },
+    "skellam_probs": {
+      "home": 28.5,
+      "draw": 27.56,
+      "away": 43.93
+    },
+    "mc_probs": {
+      "home": 28.55,
+      "draw": 28.03,
+      "away": 43.42
+    },
+    "shin_probs": {
+      "home": 25.7,
+      "draw": 27.61,
+      "away": 46.69
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 27.59,
+      "draw": 28.91,
+      "away": 43.49
+    },
+    "direction": "客胜",
+    "direction_prob": 43.49,
+    "confidence": {
+      "score": 3,
+      "level": "高",
+      "stars": "★★★",
+      "avg_diff": 0.02960017150862367
+    },
+    "top_scores": [
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 14.61,
+        "nb_prob": 11.63,
+        "combined_prob": 13.42
+      },
+      {
+        "score": "0:1",
+        "home": 0,
+        "away": 1,
+        "dc_prob": 11.04,
+        "nb_prob": 12.62,
+        "combined_prob": 11.67
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 11.22,
+        "nb_prob": 11.15,
+        "combined_prob": 11.19
+      },
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 8.02,
+        "nb_prob": 10.27,
+        "combined_prob": 8.92
+      },
+      {
+        "score": "0:2",
+        "home": 0,
+        "away": 2,
+        "dc_prob": 8.48,
+        "nb_prob": 8.09,
+        "combined_prob": 8.32
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 9.54
+      },
+      {
+        "goals": 1,
+        "prob": 22.41
+      },
+      {
+        "goals": 2,
+        "prob": 26.33
+      },
+      {
+        "goals": 3,
+        "prob": 20.63
+      },
+      {
+        "goals": 4,
+        "prob": 12.12
+      },
+      {
+        "goals": 5,
+        "prob": 5.7
+      },
+      {
+        "goals": 6,
+        "prob": 2.23
+      },
+      {
+        "goals": 7,
+        "prob": 0.75
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/平",
+        "prob": 35.5
+      },
+      {
+        "hafu": "平/负",
+        "prob": 32.0
+      },
+      {
+        "hafu": "负/负",
+        "prob": 26.1
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六007",
+    "match_id": 2041039,
+    "home_team": "赫尔城",
+    "away_team": "曼彻斯特联",
+    "league": "英格兰超级联赛",
+    "league_key": "英超",
+    "match_time": "2026-08-22 19:30:00",
+    "home_rank": "[英超10]",
+    "away_rank": "[英超15]",
+    "odds": {
+      "had": {
+        "h": 8.9,
+        "d": 5.1,
+        "a": 1.22
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 0.626,
+    "lambda_away_raw": 2.024,
+    "lambda_home_adj": 0.626,
+    "lambda_away_adj": 2.024,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.65,
+      "vmr": 1.15,
+      "home_advantage": 1.35,
+      "over_dispersed": false,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 9.27,
+      "draw": 21.64,
+      "away": 69.09
+    },
+    "nb_probs": {
+      "home": 12.74,
+      "draw": 21.44,
+      "away": 65.82
+    },
+    "skellam_probs": {
+      "home": 10.42,
+      "draw": 19.29,
+      "away": 70.29
+    },
+    "mc_probs": {
+      "home": 11.06,
+      "draw": 18.55,
+      "away": 70.39
+    },
+    "shin_probs": {
+      "home": 18.14,
+      "draw": 21.43,
+      "away": 60.43
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 11.65,
+      "draw": 20.91,
+      "away": 67.45
+    },
+    "direction": "客胜",
+    "direction_prob": 67.45,
+    "confidence": {
+      "score": 1,
+      "level": "中",
+      "stars": "★★",
+      "avg_diff": 0.059136050926662374
+    },
+    "top_scores": [
+      {
+        "score": "0:2",
+        "home": 0,
+        "away": 2,
+        "dc_prob": 14.48,
+        "nb_prob": 12.38,
+        "combined_prob": 13.64
+      },
+      {
+        "score": "0:1",
+        "home": 0,
+        "away": 1,
+        "dc_prob": 13.15,
+        "nb_prob": 14.35,
+        "combined_prob": 13.63
+      },
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 10.13,
+        "nb_prob": 8.65,
+        "combined_prob": 9.54
+      },
+      {
+        "score": "0:3",
+        "home": 0,
+        "away": 3,
+        "dc_prob": 9.77,
+        "nb_prob": 8.33,
+        "combined_prob": 9.19
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 8.24,
+        "nb_prob": 9.99,
+        "combined_prob": 8.94
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 7.07
+      },
+      {
+        "goals": 1,
+        "prob": 18.72
+      },
+      {
+        "goals": 2,
+        "prob": 24.81
+      },
+      {
+        "goals": 3,
+        "prob": 21.91
+      },
+      {
+        "goals": 4,
+        "prob": 14.52
+      },
+      {
+        "goals": 5,
+        "prob": 7.69
+      },
+      {
+        "goals": 6,
+        "prob": 3.4
+      },
+      {
+        "goals": 7,
+        "prob": 1.29
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "负/负",
+        "prob": 64.0
+      },
+      {
+        "hafu": "平/负",
+        "prob": 43.0
+      },
+      {
+        "hafu": "平/平",
+        "prob": 22.2
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六008",
+    "match_id": 2040980,
+    "home_team": "米尔沃尔",
+    "away_team": "诺维奇",
+    "league": "英格兰冠军联赛",
+    "league_key": "英冠",
+    "match_time": "2026-08-22 19:30:00",
+    "home_rank": "[英冠2]",
+    "away_rank": "[英冠20]",
+    "odds": {
+      "had": {
+        "h": 2.29,
+        "d": 3.18,
+        "a": 2.65
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.521,
+    "lambda_away_raw": 1.029,
+    "lambda_home_adj": 1.521,
+    "lambda_away_adj": 1.029,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.55,
+      "vmr": 1.18,
+      "home_advantage": 1.33,
+      "over_dispersed": false,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 47.03,
+      "draw": 28.91,
+      "away": 24.06
+    },
+    "nb_probs": {
+      "home": 47.42,
+      "draw": 25.55,
+      "away": 27.02
+    },
+    "skellam_probs": {
+      "home": 48.63,
+      "draw": 25.73,
+      "away": 25.64
+    },
+    "mc_probs": {
+      "home": 48.96,
+      "draw": 25.18,
+      "away": 25.86
+    },
+    "shin_probs": {
+      "home": 37.25,
+      "draw": 29.4,
+      "away": 33.35
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 46.07,
+      "draw": 27.46,
+      "away": 26.46
+    },
+    "direction": "主胜",
+    "direction_prob": 46.07,
+    "confidence": {
+      "score": 1,
+      "level": "中",
+      "stars": "★★",
+      "avg_diff": 0.06519039059562824
+    },
+    "top_scores": [
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 13.81,
+        "nb_prob": 11.02,
+        "combined_prob": 12.69
+      },
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 10.29,
+        "nb_prob": 11.84,
+        "combined_prob": 10.91
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 9.4,
+        "nb_prob": 9.58,
+        "combined_prob": 9.47
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 9.03,
+        "nb_prob": 8.42,
+        "combined_prob": 8.79
+      },
+      {
+        "score": "2:1",
+        "home": 2,
+        "away": 1,
+        "dc_prob": 9.29,
+        "nb_prob": 7.84,
+        "combined_prob": 8.71
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 7.81
+      },
+      {
+        "goals": 1,
+        "prob": 19.91
+      },
+      {
+        "goals": 2,
+        "prob": 25.39
+      },
+      {
+        "goals": 3,
+        "prob": 21.58
+      },
+      {
+        "goals": 4,
+        "prob": 13.76
+      },
+      {
+        "goals": 5,
+        "prob": 7.02
+      },
+      {
+        "goals": 6,
+        "prob": 2.98
+      },
+      {
+        "goals": 7,
+        "prob": 1.09
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/胜",
+        "prob": 32.4
+      },
+      {
+        "hafu": "平/平",
+        "prob": 32.2
+      },
+      {
+        "hafu": "胜/胜",
+        "prob": 27.7
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六009",
+    "match_id": 2040981,
+    "home_team": "厄尔格里特",
+    "away_team": "哈尔姆斯塔德",
+    "league": "瑞典超级联赛",
+    "league_key": "瑞超",
+    "match_time": "2026-08-22 21:00:00",
+    "home_rank": "[瑞超15]",
+    "away_rank": "[瑞超16]",
+    "odds": {
+      "had": {
+        "h": 1.83,
+        "d": 3.52,
+        "a": 3.35
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.764,
+    "lambda_away_raw": 0.836,
+    "lambda_home_adj": 1.764,
+    "lambda_away_adj": 0.836,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.6,
+      "vmr": 1.2,
+      "home_advantage": 1.35,
+      "over_dispersed": false,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 57.94,
+      "draw": 26.01,
+      "away": 16.05
+    },
+    "nb_probs": {
+      "home": 56.63,
+      "draw": 23.85,
+      "away": 19.52
+    },
+    "skellam_probs": {
+      "home": 59.39,
+      "draw": 23.15,
+      "away": 17.47
+    },
+    "mc_probs": {
+      "home": 60.48,
+      "draw": 22.19,
+      "away": 17.33
+    },
+    "shin_probs": {
+      "home": 44.42,
+      "draw": 27.37,
+      "away": 28.22
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 56.12,
+      "draw": 24.97,
+      "away": 18.91
+    },
+    "direction": "主胜",
+    "direction_prob": 56.12,
+    "confidence": {
+      "score": -1,
+      "level": "极低",
+      "stars": "☆",
+      "avg_diff": 0.09016823046302556
+    },
+    "top_scores": [
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 11.68,
+        "nb_prob": 12.95,
+        "combined_prob": 12.19
+      },
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 12.38,
+        "nb_prob": 10.12,
+        "combined_prob": 11.48
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 11.56,
+        "nb_prob": 10.25,
+        "combined_prob": 11.04
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 8.86,
+        "nb_prob": 9.63,
+        "combined_prob": 9.16
+      },
+      {
+        "score": "2:1",
+        "home": 2,
+        "away": 1,
+        "dc_prob": 9.67,
+        "nb_prob": 8.01,
+        "combined_prob": 9.0
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 7.43
+      },
+      {
+        "goals": 1,
+        "prob": 19.31
+      },
+      {
+        "goals": 2,
+        "prob": 25.1
+      },
+      {
+        "goals": 3,
+        "prob": 21.76
+      },
+      {
+        "goals": 4,
+        "prob": 14.14
+      },
+      {
+        "goals": 5,
+        "prob": 7.35
+      },
+      {
+        "goals": 6,
+        "prob": 3.19
+      },
+      {
+        "goals": 7,
+        "prob": 1.18
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "胜/胜",
+        "prob": 40.5
+      },
+      {
+        "hafu": "平/胜",
+        "prob": 38.0
+      },
+      {
+        "hafu": "平/平",
+        "prob": 28.2
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六010",
+    "match_id": 2040982,
+    "home_team": "埃弗顿",
+    "away_team": "水晶宫",
+    "league": "英格兰超级联赛",
+    "league_key": "英超",
+    "match_time": "2026-08-22 22:00:00",
+    "home_rank": "[英超8]",
+    "away_rank": "[英超7]",
+    "odds": {
+      "had": {
+        "h": 2.06,
+        "d": 3.1,
+        "a": 3.12
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.708,
+    "lambda_away_raw": 0.942,
+    "lambda_home_adj": 1.708,
+    "lambda_away_adj": 0.942,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.65,
+      "vmr": 1.15,
+      "home_advantage": 1.35,
+      "over_dispersed": false,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 53.9,
+      "draw": 26.88,
+      "away": 19.22
+    },
+    "nb_probs": {
+      "home": 53.19,
+      "draw": 24.18,
+      "away": 22.63
+    },
+    "skellam_probs": {
+      "home": 55.39,
+      "draw": 23.91,
+      "away": 20.69
+    },
+    "mc_probs": {
+      "home": 56.13,
+      "draw": 22.96,
+      "away": 20.91
+    },
+    "shin_probs": {
+      "home": 40.46,
+      "draw": 29.83,
+      "away": 29.7
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 52.19,
+      "draw": 25.95,
+      "away": 21.87
+    },
+    "direction": "主胜",
+    "direction_prob": 52.19,
+    "confidence": {
+      "score": -1,
+      "level": "极低",
+      "stars": "☆",
+      "avg_diff": 0.08955239161585217
+    },
+    "top_scores": [
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 12.85,
+        "nb_prob": 10.39,
+        "combined_prob": 11.87
+      },
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 10.59,
+        "nb_prob": 12.01,
+        "combined_prob": 11.16
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 10.31,
+        "nb_prob": 9.29,
+        "combined_prob": 9.9
+      },
+      {
+        "score": "2:1",
+        "home": 2,
+        "away": 1,
+        "dc_prob": 9.71,
+        "nb_prob": 8.04,
+        "combined_prob": 9.04
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 8.55,
+        "nb_prob": 9.08,
+        "combined_prob": 8.76
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 7.07
+      },
+      {
+        "goals": 1,
+        "prob": 18.72
+      },
+      {
+        "goals": 2,
+        "prob": 24.81
+      },
+      {
+        "goals": 3,
+        "prob": 21.91
+      },
+      {
+        "goals": 4,
+        "prob": 14.52
+      },
+      {
+        "goals": 5,
+        "prob": 7.69
+      },
+      {
+        "goals": 6,
+        "prob": 3.4
+      },
+      {
+        "goals": 7,
+        "prob": 1.29
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "胜/胜",
+        "prob": 35.5
+      },
+      {
+        "hafu": "平/胜",
+        "prob": 35.5
+      },
+      {
+        "hafu": "平/平",
+        "prob": 29.4
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六011",
+    "match_id": 2040983,
+    "home_team": "诺丁汉森林",
+    "away_team": "利兹联",
+    "league": "英格兰超级联赛",
+    "league_key": "英超",
+    "match_time": "2026-08-22 22:00:00",
+    "home_rank": "[英超17]",
+    "away_rank": "[英超12]",
+    "odds": {
+      "had": {
+        "h": 2.09,
+        "d": 3.15,
+        "a": 3
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.686,
+    "lambda_away_raw": 0.964,
+    "lambda_home_adj": 1.686,
+    "lambda_away_adj": 0.964,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.65,
+      "vmr": 1.15,
+      "home_advantage": 1.35,
+      "over_dispersed": false,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 52.81,
+      "draw": 27.15,
+      "away": 20.04
+    },
+    "nb_probs": {
+      "home": 52.28,
+      "draw": 24.32,
+      "away": 23.4
+    },
+    "skellam_probs": {
+      "home": 54.32,
+      "draw": 24.15,
+      "away": 21.52
+    },
+    "mc_probs": {
+      "home": 54.77,
+      "draw": 23.91,
+      "away": 21.32
+    },
+    "shin_probs": {
+      "home": 39.99,
+      "draw": 29.52,
+      "away": 30.49
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 51.21,
+      "draw": 26.16,
+      "away": 22.63
+    },
+    "direction": "主胜",
+    "direction_prob": 51.21,
+    "confidence": {
+      "score": -1,
+      "level": "极低",
+      "stars": "☆",
+      "avg_diff": 0.08551112152705942
+    },
+    "top_scores": [
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 12.98,
+        "nb_prob": 10.47,
+        "combined_prob": 11.98
+      },
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 10.42,
+        "nb_prob": 11.87,
+        "combined_prob": 11.0
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 10.04,
+        "nb_prob": 9.1,
+        "combined_prob": 9.67
+      },
+      {
+        "score": "2:1",
+        "home": 2,
+        "away": 1,
+        "dc_prob": 9.68,
+        "nb_prob": 8.03,
+        "combined_prob": 9.02
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 8.56,
+        "nb_prob": 9.04,
+        "combined_prob": 8.75
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 7.07
+      },
+      {
+        "goals": 1,
+        "prob": 18.72
+      },
+      {
+        "goals": 2,
+        "prob": 24.81
+      },
+      {
+        "goals": 3,
+        "prob": 21.91
+      },
+      {
+        "goals": 4,
+        "prob": 14.52
+      },
+      {
+        "goals": 5,
+        "prob": 7.69
+      },
+      {
+        "goals": 6,
+        "prob": 3.4
+      },
+      {
+        "goals": 7,
+        "prob": 1.29
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/胜",
+        "prob": 34.9
+      },
+      {
+        "hafu": "胜/胜",
+        "prob": 34.2
+      },
+      {
+        "hafu": "平/平",
+        "prob": 29.7
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六012",
+    "match_id": 2040984,
+    "home_team": "伊普斯维奇",
+    "away_team": "桑德兰",
+    "league": "英格兰超级联赛",
+    "league_key": "英超",
+    "match_time": "2026-08-22 22:00:00",
+    "home_rank": "[英超11]",
+    "away_rank": "[英超18]",
+    "odds": {
+      "had": {
+        "h": 2.33,
+        "d": 3.05,
+        "a": 2.7
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.589,
+    "lambda_away_raw": 1.061,
+    "lambda_home_adj": 1.589,
+    "lambda_away_adj": 1.061,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.65,
+      "vmr": 1.15,
+      "home_advantage": 1.35,
+      "over_dispersed": false,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 48.06,
+      "draw": 28.14,
+      "away": 23.79
+    },
+    "nb_probs": {
+      "home": 48.26,
+      "draw": 24.85,
+      "away": 26.89
+    },
+    "skellam_probs": {
+      "home": 49.62,
+      "draw": 25.04,
+      "away": 25.34
+    },
+    "mc_probs": {
+      "home": 50.19,
+      "draw": 24.52,
+      "away": 25.29
+    },
+    "shin_probs": {
+      "home": 36.8,
+      "draw": 30.26,
+      "away": 32.94
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 46.86,
+      "draw": 26.97,
+      "away": 26.17
+    },
+    "direction": "主胜",
+    "direction_prob": 46.86,
+    "confidence": {
+      "score": 1,
+      "level": "中",
+      "stars": "★★",
+      "avg_diff": 0.07509264104868
+    },
+    "top_scores": [
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 13.46,
+        "nb_prob": 10.75,
+        "combined_prob": 12.38
+      },
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 9.68,
+        "nb_prob": 11.28,
+        "combined_prob": 10.32
+      },
+      {
+        "score": "2:1",
+        "home": 2,
+        "away": 1,
+        "dc_prob": 9.47,
+        "nb_prob": 7.91,
+        "combined_prob": 8.84
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 8.62,
+        "nb_prob": 8.89,
+        "combined_prob": 8.72
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 8.93,
+        "nb_prob": 8.29,
+        "combined_prob": 8.67
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 7.07
+      },
+      {
+        "goals": 1,
+        "prob": 18.72
+      },
+      {
+        "goals": 2,
+        "prob": 24.81
+      },
+      {
+        "goals": 3,
+        "prob": 21.91
+      },
+      {
+        "goals": 4,
+        "prob": 14.52
+      },
+      {
+        "goals": 5,
+        "prob": 7.69
+      },
+      {
+        "goals": 6,
+        "prob": 3.4
+      },
+      {
+        "goals": 7,
+        "prob": 1.29
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/胜",
+        "prob": 32.3
+      },
+      {
+        "hafu": "平/平",
+        "prob": 31.0
+      },
+      {
+        "hafu": "胜/胜",
+        "prob": 28.9
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六013",
+    "match_id": 2040985,
+    "home_team": "斯旺西",
+    "away_team": "谢菲尔德联",
+    "league": "英格兰冠军联赛",
+    "league_key": "英冠",
+    "match_time": "2026-08-22 22:00:00",
+    "home_rank": "[英冠3]",
+    "away_rank": "[英冠16]",
+    "odds": {
+      "had": {
+        "h": 2.4,
+        "d": 3.12,
+        "a": 2.55
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.483,
+    "lambda_away_raw": 1.067,
+    "lambda_home_adj": 1.483,
+    "lambda_away_adj": 1.067,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.55,
+      "vmr": 1.18,
+      "home_advantage": 1.33,
+      "over_dispersed": false,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 45.12,
+      "draw": 29.22,
+      "away": 25.66
+    },
+    "nb_probs": {
+      "home": 45.78,
+      "draw": 25.72,
+      "away": 28.5
+    },
+    "skellam_probs": {
+      "home": 46.74,
+      "draw": 26.0,
+      "away": 27.26
+    },
+    "mc_probs": {
+      "home": 47.61,
+      "draw": 25.29,
+      "away": 27.1
+    },
+    "shin_probs": {
+      "home": 35.92,
+      "draw": 29.77,
+      "away": 34.31
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 44.36,
+      "draw": 27.73,
+      "away": 27.91
+    },
+    "direction": "主胜",
+    "direction_prob": 44.36,
+    "confidence": {
+      "score": 1,
+      "level": "中",
+      "stars": "★★",
+      "avg_diff": 0.06133850254261625
+    },
+    "top_scores": [
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 13.97,
+        "nb_prob": 11.11,
+        "combined_prob": 12.82
+      },
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 9.97,
+        "nb_prob": 11.59,
+        "combined_prob": 10.62
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 9.42,
+        "nb_prob": 9.54,
+        "combined_prob": 9.46
+      },
+      {
+        "score": "2:1",
+        "home": 2,
+        "away": 1,
+        "dc_prob": 9.16,
+        "nb_prob": 7.75,
+        "combined_prob": 8.6
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 8.58,
+        "nb_prob": 8.09,
+        "combined_prob": 8.39
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 7.81
+      },
+      {
+        "goals": 1,
+        "prob": 19.91
+      },
+      {
+        "goals": 2,
+        "prob": 25.39
+      },
+      {
+        "goals": 3,
+        "prob": 21.58
+      },
+      {
+        "goals": 4,
+        "prob": 13.76
+      },
+      {
+        "goals": 5,
+        "prob": 7.02
+      },
+      {
+        "goals": 6,
+        "prob": 2.98
+      },
+      {
+        "goals": 7,
+        "prob": 1.09
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/平",
+        "prob": 32.6
+      },
+      {
+        "hafu": "平/胜",
+        "prob": 31.3
+      },
+      {
+        "hafu": "胜/胜",
+        "prob": 25.7
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六014",
+    "match_id": 2040986,
+    "home_team": "福图纳锡塔德",
+    "away_team": "阿尔克马尔",
+    "league": "荷兰甲级联赛",
+    "league_key": "荷甲",
+    "match_time": "2026-08-22 22:30:00",
+    "home_rank": "[荷甲4]",
+    "away_rank": "[荷甲1]",
+    "odds": {
+      "had": {
+        "h": 4.75,
+        "d": 4.2,
+        "a": 1.47
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.082,
+    "lambda_away_raw": 2.018,
+    "lambda_home_adj": 1.082,
+    "lambda_away_adj": 2.018,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 3.1,
+      "vmr": 1.45,
+      "home_advantage": 1.3,
+      "over_dispersed": true,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 18.51,
+      "draw": 23.79,
+      "away": 57.7
+    },
+    "nb_probs": {
+      "home": 23.69,
+      "draw": 21.82,
+      "away": 54.49
+    },
+    "skellam_probs": {
+      "home": 19.77,
+      "draw": 21.21,
+      "away": 59.03
+    },
+    "mc_probs": {
+      "home": 23.36,
+      "draw": 21.65,
+      "away": 54.99
+    },
+    "shin_probs": {
+      "home": 22.9,
+      "draw": 24.31,
+      "away": 52.79
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 20.88,
+      "draw": 22.87,
+      "away": 56.25
+    },
+    "direction": "客胜",
+    "direction_prob": 56.25,
+    "confidence": {
+      "score": 0,
+      "level": "低",
+      "stars": "★",
+      "avg_diff": 0.032721497898963704
+    },
+    "top_scores": [
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 11.13,
+        "nb_prob": 8.94,
+        "combined_prob": 10.25
+      },
+      {
+        "score": "1:2",
+        "home": 1,
+        "away": 2,
+        "dc_prob": 9.94,
+        "nb_prob": 7.33,
+        "combined_prob": 8.9
+      },
+      {
+        "score": "0:2",
+        "home": 0,
+        "away": 2,
+        "dc_prob": 9.19,
+        "nb_prob": 7.93,
+        "combined_prob": 8.68
+      },
+      {
+        "score": "0:1",
+        "home": 0,
+        "away": 1,
+        "dc_prob": 7.82,
+        "nb_prob": 9.67,
+        "combined_prob": 8.56
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 5.79,
+        "nb_prob": 7.63,
+        "combined_prob": 6.52
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 14.36
+      },
+      {
+        "goals": 1,
+        "prob": 18.58
+      },
+      {
+        "goals": 2,
+        "prob": 17.44
+      },
+      {
+        "goals": 3,
+        "prob": 14.3
+      },
+      {
+        "goals": 4,
+        "prob": 10.87
+      },
+      {
+        "goals": 5,
+        "prob": 7.88
+      },
+      {
+        "goals": 6,
+        "prob": 5.53
+      },
+      {
+        "goals": 7,
+        "prob": 3.78
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "负/负",
+        "prob": 46.5
+      },
+      {
+        "hafu": "平/负",
+        "prob": 35.0
+      },
+      {
+        "hafu": "平/平",
+        "prob": 23.7
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六015",
+    "match_id": 2040987,
+    "home_team": "马里迪莫",
+    "away_team": "维塞乌",
+    "league": "葡萄牙超级联赛",
+    "league_key": "葡超",
+    "match_time": "2026-08-22 22:30:00",
+    "home_rank": "[葡超3]",
+    "away_rank": "[葡超14]",
+    "odds": {
+      "had": {
+        "h": 1.8,
+        "d": 3.25,
+        "a": 3.75
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.728,
+    "lambda_away_raw": 0.722,
+    "lambda_home_adj": 1.728,
+    "lambda_away_adj": 0.722,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.45,
+      "vmr": 1.12,
+      "home_advantage": 1.42,
+      "over_dispersed": false,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 60.11,
+      "draw": 26.06,
+      "away": 13.83
+    },
+    "nb_probs": {
+      "home": 58.62,
+      "draw": 24.28,
+      "away": 17.1
+    },
+    "skellam_probs": {
+      "home": 61.53,
+      "draw": 23.25,
+      "away": 15.22
+    },
+    "mc_probs": {
+      "home": 61.97,
+      "draw": 22.62,
+      "away": 15.41
+    },
+    "shin_probs": {
+      "home": 44.97,
+      "draw": 28.71,
+      "away": 26.32
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 57.94,
+      "draw": 25.34,
+      "away": 16.72
+    },
+    "direction": "主胜",
+    "direction_prob": 57.94,
+    "confidence": {
+      "score": -1,
+      "level": "极低",
+      "stars": "☆",
+      "avg_diff": 0.10097690899750274
+    },
+    "top_scores": [
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 13.52,
+        "nb_prob": 14.56,
+        "combined_prob": 13.94
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 12.9,
+        "nb_prob": 11.36,
+        "combined_prob": 12.28
+      },
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 12.17,
+        "nb_prob": 9.98,
+        "combined_prob": 11.29
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 10.03,
+        "nb_prob": 10.94,
+        "combined_prob": 10.39
+      },
+      {
+        "score": "2:1",
+        "home": 2,
+        "away": 1,
+        "dc_prob": 9.3,
+        "nb_prob": 7.79,
+        "combined_prob": 8.7
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 8.63
+      },
+      {
+        "goals": 1,
+        "prob": 21.14
+      },
+      {
+        "goals": 2,
+        "prob": 25.9
+      },
+      {
+        "goals": 3,
+        "prob": 21.15
+      },
+      {
+        "goals": 4,
+        "prob": 12.95
+      },
+      {
+        "goals": 5,
+        "prob": 6.35
+      },
+      {
+        "goals": 6,
+        "prob": 2.59
+      },
+      {
+        "goals": 7,
+        "prob": 0.91
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "胜/胜",
+        "prob": 42.7
+      },
+      {
+        "hafu": "平/胜",
+        "prob": 40.1
+      },
+      {
+        "hafu": "平/平",
+        "prob": 29.2
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六016",
+    "match_id": 2040988,
+    "home_team": "毕尔巴鄂竞技",
+    "away_team": "塞维利亚",
+    "league": "西班牙甲级联赛",
+    "league_key": "西甲",
+    "match_time": "2026-08-22 23:00:00",
+    "home_rank": "[西甲11]",
+    "away_rank": "[西甲4]",
+    "odds": {
+      "had": {
+        "h": 1.6,
+        "d": 3.2,
+        "a": 5.25
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.892,
+    "lambda_away_raw": 0.608,
+    "lambda_home_adj": 1.892,
+    "lambda_away_adj": 0.608,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.5,
+      "vmr": 1.1,
+      "home_advantage": 1.38,
+      "over_dispersed": false,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 66.86,
+      "draw": 23.22,
+      "away": 9.92
+    },
+    "nb_probs": {
+      "home": 64.21,
+      "draw": 22.62,
+      "away": 13.18
+    },
+    "skellam_probs": {
+      "home": 68.11,
+      "draw": 20.75,
+      "away": 11.14
+    },
+    "mc_probs": {
+      "home": 68.5,
+      "draw": 20.48,
+      "away": 11.02
+    },
+    "shin_probs": {
+      "home": 49.26,
+      "draw": 28.68,
+      "away": 22.06
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 64.04,
+      "draw": 23.27,
+      "away": 12.69
+    },
+    "direction": "主胜",
+    "direction_prob": 64.04,
+    "confidence": {
+      "score": -1,
+      "level": "极低",
+      "stars": "☆",
+      "avg_diff": 0.11735191462819135
+    },
+    "top_scores": [
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 14.31,
+        "nb_prob": 15.29,
+        "combined_prob": 14.7
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 14.7,
+        "nb_prob": 12.67,
+        "combined_prob": 13.88
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 9.44,
+        "nb_prob": 10.98,
+        "combined_prob": 10.06
+      },
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 10.68,
+        "nb_prob": 8.97,
+        "combined_prob": 10.0
+      },
+      {
+        "score": "3:0",
+        "home": 3,
+        "away": 0,
+        "dc_prob": 9.27,
+        "nb_prob": 8.11,
+        "combined_prob": 8.8
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 8.21
+      },
+      {
+        "goals": 1,
+        "prob": 20.52
+      },
+      {
+        "goals": 2,
+        "prob": 25.65
+      },
+      {
+        "goals": 3,
+        "prob": 21.38
+      },
+      {
+        "goals": 4,
+        "prob": 13.36
+      },
+      {
+        "goals": 5,
+        "prob": 6.68
+      },
+      {
+        "goals": 6,
+        "prob": 2.78
+      },
+      {
+        "goals": 7,
+        "prob": 0.99
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "胜/胜",
+        "prob": 52.3
+      },
+      {
+        "hafu": "平/胜",
+        "prob": 42.6
+      },
+      {
+        "hafu": "平/平",
+        "prob": 25.8
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六017",
+    "match_id": 2040989,
+    "home_team": "朗斯",
+    "away_team": "欧塞尔",
+    "league": "法国甲级联赛",
+    "league_key": "法甲",
+    "match_time": "2026-08-22 23:15:00",
+    "home_rank": "[法甲7]",
+    "away_rank": "[法甲3]",
+    "odds": {
+      "had": {
+        "h": 1.33,
+        "d": 4.45,
+        "a": 6.55
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.882,
+    "lambda_away_raw": 0.418,
+    "lambda_home_adj": 1.882,
+    "lambda_away_adj": 0.418,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.3,
+      "vmr": 1.08,
+      "home_advantage": 1.38,
+      "over_dispersed": false,
+      "defensive": true
+    },
+    "dc_probs": {
+      "home": 71.97,
+      "draw": 21.68,
+      "away": 6.35
+    },
+    "nb_probs": {
+      "home": 68.76,
+      "draw": 22.3,
+      "away": 8.94
+    },
+    "skellam_probs": {
+      "home": 73.02,
+      "draw": 19.61,
+      "away": 7.37
+    },
+    "mc_probs": {
+      "home": 72.63,
+      "draw": 19.77,
+      "away": 7.6
+    },
+    "shin_probs": {
+      "home": 56.85,
+      "draw": 23.22,
+      "away": 19.93
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 69.28,
+      "draw": 21.53,
+      "away": 9.18
+    },
+    "direction": "主胜",
+    "direction_prob": 69.28,
+    "confidence": {
+      "score": -1,
+      "level": "极低",
+      "stars": "☆",
+      "avg_diff": 0.10084485147836521
+    },
+    "top_scores": [
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 17.85,
+        "nb_prob": 18.42,
+        "combined_prob": 18.08
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 17.77,
+        "nb_prob": 15.21,
+        "combined_prob": 16.74
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 11.06,
+        "nb_prob": 13.26,
+        "combined_prob": 11.94
+      },
+      {
+        "score": "3:0",
+        "home": 3,
+        "away": 0,
+        "dc_prob": 11.14,
+        "nb_prob": 9.7,
+        "combined_prob": 10.56
+      },
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 8.92,
+        "nb_prob": 7.57,
+        "combined_prob": 8.38
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 10.03
+      },
+      {
+        "goals": 1,
+        "prob": 23.06
+      },
+      {
+        "goals": 2,
+        "prob": 26.52
+      },
+      {
+        "goals": 3,
+        "prob": 20.33
+      },
+      {
+        "goals": 4,
+        "prob": 11.69
+      },
+      {
+        "goals": 5,
+        "prob": 5.38
+      },
+      {
+        "goals": 6,
+        "prob": 2.06
+      },
+      {
+        "goals": 7,
+        "prob": 0.68
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "胜/胜",
+        "prob": 59.8
+      },
+      {
+        "hafu": "平/胜",
+        "prob": 46.7
+      },
+      {
+        "hafu": "平/平",
+        "prob": 24.2
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六018",
+    "match_id": 2040990,
+    "home_team": "布伦特福德",
+    "away_team": "托特纳姆热刺",
+    "league": "英格兰超级联赛",
+    "league_key": "英超",
+    "match_time": "2026-08-23 00:30:00",
+    "home_rank": "[英超4]",
+    "away_rank": "[英超19]",
+    "odds": {
+      "had": {
+        "h": 2.2,
+        "d": 3.35,
+        "a": 2.66
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.612,
+    "lambda_away_raw": 1.038,
+    "lambda_home_adj": 1.612,
+    "lambda_away_adj": 1.038,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.65,
+      "vmr": 1.15,
+      "home_advantage": 1.35,
+      "over_dispersed": false,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 49.16,
+      "draw": 27.94,
+      "away": 22.9
+    },
+    "nb_probs": {
+      "home": 49.19,
+      "draw": 24.74,
+      "away": 26.07
+    },
+    "skellam_probs": {
+      "home": 50.71,
+      "draw": 24.86,
+      "away": 24.44
+    },
+    "mc_probs": {
+      "home": 50.76,
+      "draw": 25.07,
+      "away": 24.17
+    },
+    "shin_probs": {
+      "home": 38.4,
+      "draw": 28.39,
+      "away": 33.21
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 47.94,
+      "draw": 26.62,
+      "away": 25.44
+    },
+    "direction": "主胜",
+    "direction_prob": 47.94,
+    "confidence": {
+      "score": 1,
+      "level": "中",
+      "stars": "★★",
+      "avg_diff": 0.07173575786182469
+    },
+    "top_scores": [
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 13.36,
+        "nb_prob": 10.7,
+        "combined_prob": 12.3
+      },
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 9.85,
+        "nb_prob": 11.41,
+        "combined_prob": 10.48
+      },
+      {
+        "score": "2:1",
+        "home": 2,
+        "away": 1,
+        "dc_prob": 9.53,
+        "nb_prob": 7.94,
+        "combined_prob": 8.9
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 9.18,
+        "nb_prob": 8.48,
+        "combined_prob": 8.9
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 8.6,
+        "nb_prob": 8.92,
+        "combined_prob": 8.73
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 7.07
+      },
+      {
+        "goals": 1,
+        "prob": 18.72
+      },
+      {
+        "goals": 2,
+        "prob": 24.81
+      },
+      {
+        "goals": 3,
+        "prob": 21.91
+      },
+      {
+        "goals": 4,
+        "prob": 14.52
+      },
+      {
+        "goals": 5,
+        "prob": 7.69
+      },
+      {
+        "goals": 6,
+        "prob": 3.4
+      },
+      {
+        "goals": 7,
+        "prob": 1.29
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/胜",
+        "prob": 32.9
+      },
+      {
+        "hafu": "平/平",
+        "prob": 30.5
+      },
+      {
+        "hafu": "胜/胜",
+        "prob": 30.1
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六019",
+    "match_id": 2040991,
+    "home_team": "乌迪内斯",
+    "away_team": "科莫",
+    "league": "意大利甲级联赛",
+    "league_key": "意甲",
+    "match_time": "2026-08-23 00:30:00",
+    "home_rank": "[意甲19]",
+    "away_rank": "[意甲5]",
+    "odds": {
+      "had": {
+        "h": 4.65,
+        "d": 3.45,
+        "a": 1.6
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 0.93,
+    "lambda_away_raw": 1.42,
+    "lambda_home_adj": 0.93,
+    "lambda_away_adj": 1.42,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.35,
+      "vmr": 1.05,
+      "home_advantage": 1.4,
+      "over_dispersed": false,
+      "defensive": true
+    },
+    "dc_probs": {
+      "home": 23.01,
+      "draw": 30.23,
+      "away": 46.76
+    },
+    "nb_probs": {
+      "home": 25.83,
+      "draw": 26.91,
+      "away": 47.25
+    },
+    "skellam_probs": {
+      "home": 24.65,
+      "draw": 26.95,
+      "away": 48.4
+    },
+    "mc_probs": {
+      "home": 25.05,
+      "draw": 26.67,
+      "away": 48.28
+    },
+    "shin_probs": {
+      "home": 23.29,
+      "draw": 27.38,
+      "away": 49.32
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 24.07,
+      "draw": 28.29,
+      "away": 47.64
+    },
+    "direction": "客胜",
+    "direction_prob": 47.64,
+    "confidence": {
+      "score": 3,
+      "level": "高",
+      "stars": "★★★",
+      "avg_diff": 0.018956870376594825
+    },
+    "top_scores": [
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 14.23,
+        "nb_prob": 11.38,
+        "combined_prob": 13.09
+      },
+      {
+        "score": "0:1",
+        "home": 0,
+        "away": 1,
+        "dc_prob": 11.91,
+        "nb_prob": 13.3,
+        "combined_prob": 12.46
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 11.18,
+        "nb_prob": 11.25,
+        "combined_prob": 11.21
+      },
+      {
+        "score": "0:2",
+        "home": 0,
+        "away": 2,
+        "dc_prob": 9.62,
+        "nb_prob": 8.97,
+        "combined_prob": 9.36
+      },
+      {
+        "score": "1:2",
+        "home": 1,
+        "away": 2,
+        "dc_prob": 8.94,
+        "nb_prob": 7.68,
+        "combined_prob": 8.44
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 9.54
+      },
+      {
+        "goals": 1,
+        "prob": 22.41
+      },
+      {
+        "goals": 2,
+        "prob": 26.33
+      },
+      {
+        "goals": 3,
+        "prob": 20.63
+      },
+      {
+        "goals": 4,
+        "prob": 12.12
+      },
+      {
+        "goals": 5,
+        "prob": 5.7
+      },
+      {
+        "goals": 6,
+        "prob": 2.23
+      },
+      {
+        "goals": 7,
+        "prob": 0.75
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/负",
+        "prob": 34.8
+      },
+      {
+        "hafu": "平/平",
+        "prob": 34.5
+      },
+      {
+        "hafu": "负/负",
+        "prob": 31.0
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六020",
+    "match_id": 2040992,
+    "home_team": "国际米兰",
+    "away_team": "蒙扎",
+    "league": "意大利甲级联赛",
+    "league_key": "意甲",
+    "match_time": "2026-08-23 00:30:00",
+    "home_rank": "[意甲9]",
+    "away_rank": "[意甲13]",
+    "odds": {
+      "had": {
+        "h": 2.5,
+        "d": 3.2,
+        "a": 2.5
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.371,
+    "lambda_away_raw": 0.979,
+    "lambda_home_adj": 1.371,
+    "lambda_away_adj": 0.979,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.35,
+      "vmr": 1.05,
+      "home_advantage": 1.4,
+      "over_dispersed": false,
+      "defensive": true
+    },
+    "dc_probs": {
+      "home": 44.19,
+      "draw": 30.66,
+      "away": 25.15
+    },
+    "nb_probs": {
+      "home": 45.0,
+      "draw": 27.16,
+      "away": 27.84
+    },
+    "skellam_probs": {
+      "home": 45.85,
+      "draw": 27.33,
+      "away": 26.81
+    },
+    "mc_probs": {
+      "home": 46.95,
+      "draw": 26.59,
+      "away": 26.46
+    },
+    "shin_probs": {
+      "home": 35.2,
+      "draw": 29.6,
+      "away": 35.2
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 43.53,
+      "draw": 28.9,
+      "away": 27.58
+    },
+    "direction": "主胜",
+    "direction_prob": 43.53,
+    "confidence": {
+      "score": 1,
+      "level": "中",
+      "stars": "★★",
+      "avg_diff": 0.06700359961622276
+    },
+    "top_scores": [
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 14.47,
+        "nb_prob": 11.53,
+        "combined_prob": 13.29
+      },
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 11.41,
+        "nb_prob": 12.91,
+        "combined_prob": 12.01
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 11.2,
+        "nb_prob": 11.19,
+        "combined_prob": 11.2
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 8.96,
+        "nb_prob": 8.47,
+        "combined_prob": 8.76
+      },
+      {
+        "score": "0:1",
+        "home": 0,
+        "away": 1,
+        "dc_prob": 7.67,
+        "nb_prob": 9.99,
+        "combined_prob": 8.6
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 9.54
+      },
+      {
+        "goals": 1,
+        "prob": 22.41
+      },
+      {
+        "goals": 2,
+        "prob": 26.33
+      },
+      {
+        "goals": 3,
+        "prob": 20.63
+      },
+      {
+        "goals": 4,
+        "prob": 12.12
+      },
+      {
+        "goals": 5,
+        "prob": 5.7
+      },
+      {
+        "goals": 6,
+        "prob": 2.23
+      },
+      {
+        "goals": 7,
+        "prob": 0.75
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/平",
+        "prob": 35.3
+      },
+      {
+        "hafu": "平/胜",
+        "prob": 31.9
+      },
+      {
+        "hafu": "胜/胜",
+        "prob": 24.4
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六021",
+    "match_id": 2040993,
+    "home_team": "巴伦西亚",
+    "away_team": "维戈塞尔塔",
+    "league": "西班牙甲级联赛",
+    "league_key": "西甲",
+    "match_time": "2026-08-23 01:30:00",
+    "home_rank": "[西甲16]",
+    "away_rank": "[西甲13]",
+    "odds": {
+      "had": {
+        "h": 2.35,
+        "d": 2.95,
+        "a": 2.75
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.516,
+    "lambda_away_raw": 0.984,
+    "lambda_home_adj": 1.516,
+    "lambda_away_adj": 0.984,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.5,
+      "vmr": 1.1,
+      "home_advantage": 1.38,
+      "over_dispersed": false,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 47.99,
+      "draw": 29.04,
+      "away": 22.97
+    },
+    "nb_probs": {
+      "home": 48.26,
+      "draw": 25.77,
+      "away": 25.96
+    },
+    "skellam_probs": {
+      "home": 49.59,
+      "draw": 25.85,
+      "away": 24.56
+    },
+    "mc_probs": {
+      "home": 50.36,
+      "draw": 24.78,
+      "away": 24.86
+    },
+    "shin_probs": {
+      "home": 36.55,
+      "draw": 30.95,
+      "away": 32.51
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 46.8,
+      "draw": 27.77,
+      "away": 25.43
+    },
+    "direction": "主胜",
+    "direction_prob": 46.8,
+    "confidence": {
+      "score": 1,
+      "level": "中",
+      "stars": "★★",
+      "avg_diff": 0.07626097522659654
+    },
+    "top_scores": [
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 13.84,
+        "nb_prob": 11.06,
+        "combined_prob": 12.73
+      },
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 10.85,
+        "nb_prob": 12.33,
+        "combined_prob": 11.44
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 9.8,
+        "nb_prob": 10.0,
+        "combined_prob": 9.88
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 9.43,
+        "nb_prob": 8.75,
+        "combined_prob": 9.16
+      },
+      {
+        "score": "2:1",
+        "home": 2,
+        "away": 1,
+        "dc_prob": 9.28,
+        "nb_prob": 7.85,
+        "combined_prob": 8.71
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 8.21
+      },
+      {
+        "goals": 1,
+        "prob": 20.52
+      },
+      {
+        "goals": 2,
+        "prob": 25.65
+      },
+      {
+        "goals": 3,
+        "prob": 21.38
+      },
+      {
+        "goals": 4,
+        "prob": 13.36
+      },
+      {
+        "goals": 5,
+        "prob": 6.68
+      },
+      {
+        "goals": 6,
+        "prob": 2.78
+      },
+      {
+        "goals": 7,
+        "prob": 0.99
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/胜",
+        "prob": 33.2
+      },
+      {
+        "hafu": "平/平",
+        "prob": 32.8
+      },
+      {
+        "hafu": "胜/胜",
+        "prob": 28.5
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六022",
+    "match_id": 2040994,
+    "home_team": "多特蒙德",
+    "away_team": "拜仁慕尼黑",
+    "league": "德国超级杯",
+    "league_key": "德甲",
+    "match_time": "2026-08-23 02:30:00",
+    "home_rank": "",
+    "away_rank": "",
+    "odds": {
+      "had": {
+        "h": 4.13,
+        "d": 4.28,
+        "a": 1.53
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.085,
+    "lambda_away_raw": 1.765,
+    "lambda_home_adj": 1.085,
+    "lambda_away_adj": 1.765,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.85,
+      "vmr": 1.35,
+      "home_advantage": 1.32,
+      "over_dispersed": true,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 21.84,
+      "draw": 26.34,
+      "away": 51.82
+    },
+    "nb_probs": {
+      "home": 25.73,
+      "draw": 23.42,
+      "away": 50.85
+    },
+    "skellam_probs": {
+      "home": 23.27,
+      "draw": 23.44,
+      "away": 53.28
+    },
+    "mc_probs": {
+      "home": 25.34,
+      "draw": 22.7,
+      "away": 51.96
+    },
+    "shin_probs": {
+      "home": 24.64,
+      "draw": 24.19,
+      "away": 51.17
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 23.6,
+      "draw": 24.63,
+      "away": 51.76
+    },
+    "direction": "客胜",
+    "direction_prob": 51.76,
+    "confidence": {
+      "score": 2,
+      "level": "中",
+      "stars": "★★",
+      "avg_diff": 0.018651913799373022
+    },
+    "top_scores": [
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 12.53,
+        "nb_prob": 9.9,
+        "combined_prob": 11.47
+      },
+      {
+        "score": "0:1",
+        "home": 0,
+        "away": 1,
+        "dc_prob": 8.77,
+        "nb_prob": 10.44,
+        "combined_prob": 9.44
+      },
+      {
+        "score": "1:2",
+        "home": 1,
+        "away": 2,
+        "dc_prob": 9.78,
+        "nb_prob": 7.69,
+        "combined_prob": 8.94
+      },
+      {
+        "score": "0:2",
+        "home": 0,
+        "away": 2,
+        "dc_prob": 9.01,
+        "nb_prob": 8.11,
+        "combined_prob": 8.65
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 7.23,
+        "nb_prob": 8.18,
+        "combined_prob": 7.61
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 13.85
+      },
+      {
+        "goals": 1,
+        "prob": 19.76
+      },
+      {
+        "goals": 2,
+        "prob": 19.03
+      },
+      {
+        "goals": 3,
+        "prob": 15.39
+      },
+      {
+        "goals": 4,
+        "prob": 11.25
+      },
+      {
+        "goals": 5,
+        "prob": 7.71
+      },
+      {
+        "goals": 6,
+        "prob": 5.04
+      },
+      {
+        "goals": 7,
+        "prob": 3.18
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "负/负",
+        "prob": 38.3
+      },
+      {
+        "hafu": "平/负",
+        "prob": 34.1
+      },
+      {
+        "hafu": "平/平",
+        "prob": 27.1
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六023",
+    "match_id": 2040995,
+    "home_team": "热那亚",
+    "away_team": "那不勒斯",
+    "league": "意大利甲级联赛",
+    "league_key": "意甲",
+    "match_time": "2026-08-23 02:45:00",
+    "home_rank": "[意甲8]",
+    "away_rank": "[意甲14]",
+    "odds": {
+      "had": {
+        "h": 4.4,
+        "d": 3.15,
+        "a": 1.71
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 0.989,
+    "lambda_away_raw": 1.361,
+    "lambda_home_adj": 0.989,
+    "lambda_away_adj": 1.361,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.35,
+      "vmr": 1.05,
+      "home_advantage": 1.4,
+      "over_dispersed": false,
+      "defensive": true
+    },
+    "dc_probs": {
+      "home": 25.59,
+      "draw": 30.74,
+      "away": 43.67
+    },
+    "nb_probs": {
+      "home": 28.25,
+      "draw": 27.2,
+      "away": 44.55
+    },
+    "skellam_probs": {
+      "home": 27.26,
+      "draw": 27.4,
+      "away": 45.34
+    },
+    "mc_probs": {
+      "home": 27.63,
+      "draw": 27.33,
+      "away": 45.04
+    },
+    "shin_probs": {
+      "home": 24.05,
+      "draw": 29.17,
+      "away": 46.78
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 26.34,
+      "draw": 28.95,
+      "away": 44.7
+    },
+    "direction": "客胜",
+    "direction_prob": 44.7,
+    "confidence": {
+      "score": 3,
+      "level": "高",
+      "stars": "★★★",
+      "avg_diff": 0.02074275070097878
+    },
+    "top_scores": [
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 14.51,
+        "nb_prob": 11.56,
+        "combined_prob": 13.33
+      },
+      {
+        "score": "0:1",
+        "home": 0,
+        "away": 1,
+        "dc_prob": 11.31,
+        "nb_prob": 12.83,
+        "combined_prob": 11.92
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 11.21,
+        "nb_prob": 11.17,
+        "combined_prob": 11.19
+      },
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 7.76,
+        "nb_prob": 10.07,
+        "combined_prob": 8.69
+      },
+      {
+        "score": "0:2",
+        "home": 0,
+        "away": 2,
+        "dc_prob": 8.83,
+        "nb_prob": 8.37,
+        "combined_prob": 8.65
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 9.54
+      },
+      {
+        "goals": 1,
+        "prob": 22.41
+      },
+      {
+        "goals": 2,
+        "prob": 26.33
+      },
+      {
+        "goals": 3,
+        "prob": 20.63
+      },
+      {
+        "goals": 4,
+        "prob": 12.12
+      },
+      {
+        "goals": 5,
+        "prob": 5.7
+      },
+      {
+        "goals": 6,
+        "prob": 2.23
+      },
+      {
+        "goals": 7,
+        "prob": 0.75
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/平",
+        "prob": 35.4
+      },
+      {
+        "hafu": "平/负",
+        "prob": 32.8
+      },
+      {
+        "hafu": "负/负",
+        "prob": 27.5
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六024",
+    "match_id": 2040996,
+    "home_team": "帕尔马",
+    "away_team": "卡利亚里",
+    "league": "意大利甲级联赛",
+    "league_key": "意甲",
+    "match_time": "2026-08-23 02:45:00",
+    "home_rank": "[意甲15]",
+    "away_rank": "[意甲4]",
+    "odds": {
+      "had": {
+        "h": 2.28,
+        "d": 2.8,
+        "a": 3
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.476,
+    "lambda_away_raw": 0.874,
+    "lambda_home_adj": 1.476,
+    "lambda_away_adj": 0.874,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.35,
+      "vmr": 1.05,
+      "home_advantage": 1.4,
+      "over_dispersed": false,
+      "defensive": true
+    },
+    "dc_probs": {
+      "home": 49.66,
+      "draw": 29.63,
+      "away": 20.71
+    },
+    "nb_probs": {
+      "home": 49.77,
+      "draw": 26.57,
+      "away": 23.65
+    },
+    "skellam_probs": {
+      "home": 51.27,
+      "draw": 26.43,
+      "away": 22.3
+    },
+    "mc_probs": {
+      "home": 52.08,
+      "draw": 25.9,
+      "away": 22.02
+    },
+    "shin_probs": {
+      "home": 37.38,
+      "draw": 32.06,
+      "away": 30.56
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 48.32,
+      "draw": 28.53,
+      "away": 23.15
+    },
+    "direction": "主胜",
+    "direction_prob": 48.32,
+    "confidence": {
+      "score": -1,
+      "level": "极低",
+      "stars": "☆",
+      "avg_diff": 0.0818624156269992
+    },
+    "top_scores": [
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 12.48,
+        "nb_prob": 13.75,
+        "combined_prob": 12.98
+      },
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 13.91,
+        "nb_prob": 11.16,
+        "combined_prob": 12.81
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 11.14,
+        "nb_prob": 11.34,
+        "combined_prob": 11.22
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 10.39,
+        "nb_prob": 9.56,
+        "combined_prob": 10.05
+      },
+      {
+        "score": "2:1",
+        "home": 2,
+        "away": 1,
+        "dc_prob": 9.08,
+        "nb_prob": 7.76,
+        "combined_prob": 8.55
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 9.54
+      },
+      {
+        "goals": 1,
+        "prob": 22.41
+      },
+      {
+        "goals": 2,
+        "prob": 26.33
+      },
+      {
+        "goals": 3,
+        "prob": 20.63
+      },
+      {
+        "goals": 4,
+        "prob": 12.12
+      },
+      {
+        "goals": 5,
+        "prob": 5.7
+      },
+      {
+        "goals": 6,
+        "prob": 2.23
+      },
+      {
+        "goals": 7,
+        "prob": 0.75
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/胜",
+        "prob": 35.1
+      },
+      {
+        "hafu": "平/平",
+        "prob": 34.6
+      },
+      {
+        "hafu": "胜/胜",
+        "prob": 29.8
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六025",
+    "match_id": 2040997,
+    "home_team": "尼斯",
+    "away_team": "洛里昂",
+    "league": "法国甲级联赛",
+    "league_key": "法甲",
+    "match_time": "2026-08-23 02:45:00",
+    "home_rank": "[法甲12]",
+    "away_rank": "[法甲9]",
+    "odds": {
+      "had": {
+        "h": 1.94,
+        "d": 3.25,
+        "a": 3.27
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.536,
+    "lambda_away_raw": 0.764,
+    "lambda_home_adj": 1.536,
+    "lambda_away_adj": 0.764,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.3,
+      "vmr": 1.08,
+      "home_advantage": 1.38,
+      "over_dispersed": false,
+      "defensive": true
+    },
+    "dc_probs": {
+      "home": 54.14,
+      "draw": 28.8,
+      "away": 17.06
+    },
+    "nb_probs": {
+      "home": 53.66,
+      "draw": 26.26,
+      "away": 20.07
+    },
+    "skellam_probs": {
+      "home": 55.68,
+      "draw": 25.73,
+      "away": 18.59
+    },
+    "mc_probs": {
+      "home": 56.15,
+      "draw": 25.87,
+      "away": 17.98
+    },
+    "shin_probs": {
+      "home": 42.41,
+      "draw": 28.85,
+      "away": 28.74
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 52.72,
+      "draw": 27.55,
+      "away": 19.74
+    },
+    "direction": "主胜",
+    "direction_prob": 52.72,
+    "confidence": {
+      "score": 1,
+      "level": "中",
+      "stars": "★★",
+      "avg_diff": 0.07820519864372251
+    },
+    "top_scores": [
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 13.87,
+        "nb_prob": 14.91,
+        "combined_prob": 14.29
+      },
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 13.3,
+        "nb_prob": 10.77,
+        "combined_prob": 12.29
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 11.56,
+        "nb_prob": 12.0,
+        "combined_prob": 11.73
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 11.83,
+        "nb_prob": 10.69,
+        "combined_prob": 11.37
+      },
+      {
+        "score": "2:1",
+        "home": 2,
+        "away": 1,
+        "dc_prob": 9.04,
+        "nb_prob": 7.72,
+        "combined_prob": 8.51
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 10.03
+      },
+      {
+        "goals": 1,
+        "prob": 23.06
+      },
+      {
+        "goals": 2,
+        "prob": 26.52
+      },
+      {
+        "goals": 3,
+        "prob": 20.33
+      },
+      {
+        "goals": 4,
+        "prob": 11.69
+      },
+      {
+        "goals": 5,
+        "prob": 5.38
+      },
+      {
+        "goals": 6,
+        "prob": 2.06
+      },
+      {
+        "goals": 7,
+        "prob": 0.68
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/胜",
+        "prob": 38.3
+      },
+      {
+        "hafu": "胜/胜",
+        "prob": 34.9
+      },
+      {
+        "hafu": "平/平",
+        "prob": 33.3
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六026",
+    "match_id": 2040998,
+    "home_team": "图卢兹",
+    "away_team": "里昂",
+    "league": "法国甲级联赛",
+    "league_key": "法甲",
+    "match_time": "2026-08-23 02:45:00",
+    "home_rank": "[法甲16]",
+    "away_rank": "[法甲10]",
+    "odds": {
+      "had": {
+        "h": 2.58,
+        "d": 3.2,
+        "a": 2.33
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 1.292,
+    "lambda_away_raw": 1.008,
+    "lambda_home_adj": 1.292,
+    "lambda_away_adj": 1.008,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.3,
+      "vmr": 1.08,
+      "home_advantage": 1.38,
+      "over_dispersed": false,
+      "defensive": true
+    },
+    "dc_probs": {
+      "home": 41.29,
+      "draw": 31.4,
+      "away": 27.31
+    },
+    "nb_probs": {
+      "home": 42.45,
+      "draw": 27.75,
+      "away": 29.8
+    },
+    "skellam_probs": {
+      "home": 42.99,
+      "draw": 28.0,
+      "away": 29.01
+    },
+    "mc_probs": {
+      "home": 43.42,
+      "draw": 27.77,
+      "away": 28.81
+    },
+    "shin_probs": {
+      "home": 34.0,
+      "draw": 29.26,
+      "away": 36.74
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 40.9,
+      "draw": 29.48,
+      "away": 29.62
+    },
+    "direction": "主胜",
+    "direction_prob": 40.9,
+    "confidence": {
+      "score": 1,
+      "level": "中",
+      "stars": "★★",
+      "avg_diff": 0.06284971087054748
+    },
+    "top_scores": [
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 14.76,
+        "nb_prob": 11.75,
+        "combined_prob": 13.55
+      },
+      {
+        "score": "1:0",
+        "home": 1,
+        "away": 0,
+        "dc_prob": 11.26,
+        "nb_prob": 12.84,
+        "combined_prob": 11.89
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 11.72,
+        "nb_prob": 11.6,
+        "combined_prob": 11.67
+      },
+      {
+        "score": "0:1",
+        "home": 0,
+        "away": 1,
+        "dc_prob": 8.41,
+        "nb_prob": 10.61,
+        "combined_prob": 9.29
+      },
+      {
+        "score": "2:0",
+        "home": 2,
+        "away": 0,
+        "dc_prob": 8.37,
+        "nb_prob": 8.03,
+        "combined_prob": 8.23
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 10.03
+      },
+      {
+        "goals": 1,
+        "prob": 23.06
+      },
+      {
+        "goals": 2,
+        "prob": 26.52
+      },
+      {
+        "goals": 3,
+        "prob": 20.33
+      },
+      {
+        "goals": 4,
+        "prob": 11.69
+      },
+      {
+        "goals": 5,
+        "prob": 5.38
+      },
+      {
+        "goals": 6,
+        "prob": 2.06
+      },
+      {
+        "goals": 7,
+        "prob": 0.68
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "平/平",
+        "prob": 36.5
+      },
+      {
+        "hafu": "平/胜",
+        "prob": 30.4
+      },
+      {
+        "hafu": "平/负",
+        "prob": 22.0
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  },
+  {
+    "match_num": "周六027",
+    "match_id": 2040999,
+    "home_team": "西班牙人",
+    "away_team": "皇家马德里",
+    "league": "西班牙甲级联赛",
+    "league_key": "西甲",
+    "match_time": "2026-08-23 03:30:00",
+    "home_rank": "[西甲2]",
+    "away_rank": "[西甲15]",
+    "odds": {
+      "had": {
+        "h": 6.55,
+        "d": 4.45,
+        "a": 1.33
+      }
+    },
+    "home_value": 0,
+    "away_value": 0,
+    "value_ratio": 0.0,
+    "lambda_home_raw": 0.743,
+    "lambda_away_raw": 1.757,
+    "lambda_home_adj": 0.743,
+    "lambda_away_adj": 1.757,
+    "injuries": {
+      "h_core": 0,
+      "h_key": 0,
+      "h_rot": 0,
+      "a_core": 0,
+      "a_key": 0,
+      "a_rot": 0
+    },
+    "league_profile": {
+      "avg_goals": 2.5,
+      "vmr": 1.1,
+      "home_advantage": 1.38,
+      "over_dispersed": false,
+      "defensive": false
+    },
+    "dc_probs": {
+      "home": 14.03,
+      "draw": 25.78,
+      "away": 60.2
+    },
+    "nb_probs": {
+      "home": 17.37,
+      "draw": 23.99,
+      "away": 58.63
+    },
+    "skellam_probs": {
+      "home": 15.41,
+      "draw": 22.98,
+      "away": 61.61
+    },
+    "mc_probs": {
+      "home": 15.82,
+      "draw": 22.49,
+      "away": 61.69
+    },
+    "shin_probs": {
+      "home": 19.93,
+      "draw": 23.22,
+      "away": 56.85
+    },
+    "shin_z": 0.05,
+    "final_probs": {
+      "home": 15.97,
+      "draw": 24.29,
+      "away": 59.74
+    },
+    "direction": "客胜",
+    "direction_prob": 59.74,
+    "confidence": {
+      "score": 1,
+      "level": "中",
+      "stars": "★★",
+      "avg_diff": 0.03934385656886331
+    },
+    "top_scores": [
+      {
+        "score": "0:1",
+        "home": 0,
+        "away": 1,
+        "dc_prob": 13.03,
+        "nb_prob": 14.13,
+        "combined_prob": 13.47
+      },
+      {
+        "score": "0:2",
+        "home": 0,
+        "away": 2,
+        "dc_prob": 12.67,
+        "nb_prob": 11.15,
+        "combined_prob": 12.06
+      },
+      {
+        "score": "1:1",
+        "home": 1,
+        "away": 1,
+        "dc_prob": 12.12,
+        "nb_prob": 9.95,
+        "combined_prob": 11.25
+      },
+      {
+        "score": "0:0",
+        "home": 0,
+        "away": 0,
+        "dc_prob": 9.61,
+        "nb_prob": 10.52,
+        "combined_prob": 9.97
+      },
+      {
+        "score": "1:2",
+        "home": 1,
+        "away": 2,
+        "dc_prob": 9.42,
+        "nb_prob": 7.85,
+        "combined_prob": 8.79
+      }
+    ],
+    "ttg_dist": [
+      {
+        "goals": 0,
+        "prob": 8.21
+      },
+      {
+        "goals": 1,
+        "prob": 20.52
+      },
+      {
+        "goals": 2,
+        "prob": 25.65
+      },
+      {
+        "goals": 3,
+        "prob": 21.38
+      },
+      {
+        "goals": 4,
+        "prob": 13.36
+      },
+      {
+        "goals": 5,
+        "prob": 6.68
+      },
+      {
+        "goals": 6,
+        "prob": 2.78
+      },
+      {
+        "goals": 7,
+        "prob": 0.99
+      }
+    ],
+    "hafu_top": [
+      {
+        "hafu": "负/负",
+        "prob": 49.2
+      },
+      {
+        "hafu": "平/负",
+        "prob": 40.9
+      },
+      {
+        "hafu": "平/平",
+        "prob": 27.7
+      }
+    ],
+    "home_recent": [],
+    "away_recent": [],
+    "h2h": []
+  }
+]

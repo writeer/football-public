@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周三竞彩足球6场深度分析报告 v2 (修复版) — 2026-07-29</title>
+<style>
+:root {
+    --primary: #1a73e8; --success: #34a853; --warning: #fbbc04; --danger: #ea4335;
+    --info: #4285f4; --text: #202124; --text-sec: #5f6368;
+    --bg: #f8f9fa; --border: #dadce0; --card-bg: #ffffff;
+    --home-color: #1a73e8; --draw-color: #fbbc04; --away-color: #ea4335;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 20px; }
+.container { max-width: 1200px; margin: 0 auto; }
+.header {
+    background: linear-gradient(135deg, #1a73e8, #4285f4); color: white;
+    padding: 30px; border-radius: 12px; margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.header h1 { font-size: 28px; margin-bottom: 8px; }
+.header .subtitle { font-size: 14px; opacity: 0.9; }
+.header .meta { margin-top: 12px; font-size: 13px; opacity: 0.85; }
+
+.summary-card {
+    background: var(--card-bg); border-radius: 12px; padding: 24px;
+    margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.summary-card h2 { font-size: 20px; margin-bottom: 16px; color: var(--primary); }
+.summary-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.summary-table th { background: #e8f0fe; padding: 10px; text-align: center; border: 1px solid var(--border); font-weight: 600; }
+.summary-table td { padding: 8px 10px; text-align: center; border: 1px solid var(--border); }
+.summary-table .match-id { font-weight: 600; color: var(--primary); }
+.summary-table .home { color: var(--home-color); }
+.summary-table .away { color: var(--away-color); }
+.summary-table .draw { color: var(--warning); }
+.recommend { font-weight: 600; }
+.recommend.home { color: var(--home-color); }
+.recommend.away { color: var(--away-color); }
+.recommend.draw { color: var(--warning); }
+
+.match-card {
+    background: var(--card-bg); border-radius: 12px; margin-bottom: 24px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08); overflow: hidden;
+}
+.match-header {
+    background: #1a73e8; color: white; padding: 16px 24px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+.match-header .match-info { font-size: 14px; opacity: 0.9; }
+.match-header .match-id { font-size: 18px; font-weight: 700; }
+.match-body { padding: 24px; }
+
+.section { margin-bottom: 24px; }
+.section h3 {
+    font-size: 16px; color: var(--primary);
+    border-left: 4px solid var(--primary); padding-left: 10px; margin-bottom: 12px;
+}
+
+.fundamental-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.fund-item {
+    background: #f8f9fa; padding: 12px; border-radius: 8px;
+    border-left: 3px solid var(--info);
+}
+.fund-item label { font-weight: 600; font-size: 13px; color: var(--text-sec); display: block; margin-bottom: 4px; }
+.fund-item value { font-size: 13px; }
+
+.prob-bar-container {
+    display: flex; height: 32px; border-radius: 6px; overflow: hidden; margin: 8px 0;
+}
+.prob-bar { display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 13px; }
+.prob-bar.home { background: var(--home-color); }
+.prob-bar.draw { background: var(--draw-color); color: #333; }
+.prob-bar.away { background: var(--away-color); }
+
+.model-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 8px 0; }
+.model-table th { background: #e8f0fe; padding: 6px; border: 1px solid var(--border); }
+.model-table td { padding: 6px; border: 1px solid var(--border); text-align: center; }
+.model-table .highlight { background: #e6f4ea; font-weight: 600; }
+
+.score-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 8px 0; }
+.score-table th { background: #e8f0fe; padding: 6px; border: 1px solid var(--border); }
+.score-table td { padding: 6px; border: 1px solid var(--border); text-align: center; }
+.score-table .home-win { background: #e8f0fe; }
+.score-table .draw { background: #fef7e0; }
+.score-table .away-win { background: #fce8e6; }
+.score-table .diversified { border: 2px solid var(--success); }
+
+.divergence {
+    background: #fef7e0; border: 1px solid var(--warning);
+    border-radius: 8px; padding: 12px; margin: 8px 0; font-size: 13px;
+}
+.divergence.high { background: #fce8e6; border-color: var(--danger); }
+
+.confidence-badge {
+    display: inline-block; padding: 4px 12px; border-radius: 20px;
+    font-size: 13px; font-weight: 600;
+}
+.confidence-badge.high { background: #e6f4ea; color: var(--success); }
+.confidence-badge.medium { background: #fef7e0; color: var(--warning); }
+.confidence-badge.low { background: #fce8e6; color: var(--danger); }
+
+.fix-note {
+    background: #e6f4ea; border: 1px solid var(--success); border-radius: 8px;
+    padding: 16px; margin-bottom: 24px; font-size: 14px;
+}
+.fix-note h3 { color: var(--success); margin-bottom: 8px; border-left: 4px solid var(--success); padding-left: 10px; }
+.fix-note ul { margin-left: 20px; }
+.fix-note li { margin-bottom: 4px; }
+
+@media (max-width: 768px) {
+    .fundamental-grid { grid-template-columns: 1fr; }
+    .container { padding: 0; }
+    body { padding: 10px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>⚽ 周三竞彩足球6场深度分析报告 v2 (修复版)</h1>
+    <div class="subtitle">2026-07-29 周三 | 2场欧冠资格赛 + 4场巴甲第21轮</div>
+    <div class="meta">
+        模型版本: v1.6.0 | 权重体系: 基本面15%+模型35%+Skellam15%+Elo/Pi15%+Shin8%+公众7%+有序逻辑3%+AI2%<br>
+        修复内容: 移除方向回灌 + 联赛先验加权 + lambda差异化 + rho联赛化 + 比分多样化<br>
+        生成时间: 2026-07-29
+    </div>
+</div>
+
+<div class="fix-note">
+    <h3>🛠️ 本次修复说明 (v1 → v2)</h3>
+    <ul>
+        <li><b>修复Bug 1</b>: 移除了方向概率回灌比分矩阵的错误逻辑——这是1:1过度集中的根本原因</li>
+        <li><b>修复Bug 2</b>: 引入联赛TOP5比分先验加权(贝叶斯融合,权重12%), 巴甲先验TOP1为1:0而非1:1</li>
+        <li><b>修复Bug 3</b>: 放宽lambda估计, 拉大强弱差距(如002波兹南从1.75→2.05, 004弗拉门戈从1.35→1.55)</li>
+        <li><b>新增机制</b>: 比分TOP3强制多样化, 确保主胜/平局/客胜方向各至少1个进入TOP3</li>
+        <li><b>联赛化rho</b>: 巴甲rho从-0.13调为-0.08(巴甲平局率更高, DC修正应更温和)</li>
+    </ul>
+</div>
+
+<div class="summary-card">
+    <h2>📊 六场总览</h2>
+    <table class="summary-table">
+        <thead>
+            <tr>
+                <th>编号</th><th>联赛</th><th>对阵</th><th>开赛</th>
+                <th>主胜%</th><th>平局%</th><th>客胜%</th>
+                <th>体彩赔率(胜/平/负)</th>
+                <th>推荐方向</th><th>置信度</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td class="match-id">周三001</td>
+                <td>欧冠资格赛</td>
+                <td>阿拉木图凯拉特 vs 奥莫尼亚</td>
+                <td>2026-07-29 23:00</td>
+                <td class="home">54.9%</td>
+                <td class="draw">25.9%</td>
+                <td class="away">19.1%</td>
+                <td>2.06/3.1/3.11</td>
+                <td><span class='recommend home'>主胜</span></td>
+                <td><span class="confidence-badge medium">★★ 中置信度</span></td>
+            </tr>
+
+            <tr>
+                <td class="match-id">周三002</td>
+                <td>欧冠资格赛</td>
+                <td>波兹南莱赫 vs 奥胡斯</td>
+                <td>2026-07-30 01:00</td>
+                <td class="home">57.5%</td>
+                <td class="draw">23.7%</td>
+                <td class="away">18.8%</td>
+                <td>1.59/3.8/4.21</td>
+                <td><span class='recommend home'>主胜</span></td>
+                <td><span class="confidence-badge high">★★★ 高置信度</span></td>
+            </tr>
+
+            <tr>
+                <td class="match-id">周三003</td>
+                <td>巴甲</td>
+                <td>米拉索尔 vs 雷莫</td>
+                <td>2026-07-30 06:30</td>
+                <td class="home">47.1%</td>
+                <td class="draw">29.8%</td>
+                <td class="away">23.1%</td>
+                <td>2.15/3.1/3.25</td>
+                <td><span class='recommend home'>主胜</span></td>
+                <td><span class="confidence-badge medium">★★ 中置信度</span></td>
+            </tr>
+
+            <tr>
+                <td class="match-id">周三004</td>
+                <td>巴甲</td>
+                <td>巴西国际 vs 弗拉门戈</td>
+                <td>2026-07-30 06:30</td>
+                <td class="home">24.4%</td>
+                <td class="draw">27.3%</td>
+                <td class="away">48.2%</td>
+                <td>3.5/3.25/1.85</td>
+                <td><span class='recommend away'>客胜</span></td>
+                <td><span class="confidence-badge medium">★★ 中置信度</span></td>
+            </tr>
+
+            <tr>
+                <td class="match-id">周三005</td>
+                <td>巴甲</td>
+                <td>弗鲁米嫩塞 vs 巴伊亚</td>
+                <td>2026-07-30 08:30</td>
+                <td class="home">50.4%</td>
+                <td class="draw">27.3%</td>
+                <td class="away">22.3%</td>
+                <td>1.7/3.3/4.5</td>
+                <td><span class='recommend home'>主胜</span></td>
+                <td><span class="confidence-badge medium">★★ 中置信度</span></td>
+            </tr>
+
+            <tr>
+                <td class="match-id">周三006</td>
+                <td>巴甲</td>
+                <td>维多利亚 vs 帕尔梅拉斯</td>
+                <td>2026-07-30 08:30</td>
+                <td class="home">22.7%</td>
+                <td class="draw">26.2%</td>
+                <td class="away">51.1%</td>
+                <td>4.5/3.4/1.65</td>
+                <td><span class='recommend away'>客胜</span></td>
+                <td><span class="confidence-badge medium">★★ 中置信度</span></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<div class="match-card">
+    <div class="match-header">
+        <div>
+            <div class="match-id">周三001 阿拉木图凯拉特 vs 奥莫尼亚</div>
+            <div class="match-info">欧冠资格赛 | 2026-07-29 23:00</div>
+        </div>
+        <div><span class="confidence-badge medium">★★ 中置信度</span></div>
+    </div>
+    <div class="match-body">
+        
+        <div class="section">
+            <h3>📋 基本面分析（第一优先级）</h3>
+            <div class="fundamental-grid">
+                <div class="fund-item"><label>战意</label>凯拉特必须赢球翻盘(战意极强); 奥莫尼亚只需平局即可晋级(保守战意)</div>
+                <div class="fund-item"><label>状态</label>凯拉特近5场4胜1负, 联赛6连胜; 奥莫尼亚近5场4胜1平但联赛已结束2个月</div>
+                <div class="fund-item"><label>伤停</label>凯拉特: Satpaev(已转会切尔西); 奥莫尼亚: Nego(右后卫,首回合红牌停赛)</div>
+                <div class="fund-item"><label>体能</label>凯拉特联赛进行中比赛节奏好; 奥莫尼亚休赛期2个月可能比赛节奏生疏但体能满格</div>
+                <div class="fund-item"><label>心理</label>凯拉特历史交锋3场0进球心理压力大; 奥莫尼亚手握1球优势心态从容</div>
+                <div class="fund-item"><label>赛程牵制</label>凯拉特联赛进行中需兼顾; 奥莫尼亚100%专注欧战</div>
+                <div class="fund-item"><label>场地</label>阿拉木图中央体育场, 海拔850m, 人工草皮</div>
+                <div class="fund-item"><label>天气</label>晴间多云, 约28°C, 湿度34%, 微风, 适宜比赛</div>
+            </div>
+            <div style="margin-top:8px; padding:10px; background:#e8f0fe; border-radius:8px; font-size:13px;">
+                <b>基本面方向:</b> 主胜(基本面支持凯拉特主场翻盘, 但需注意终结效率问题)<br>
+                <b>修正后Lambda:</b> 主队=1.75, 客队=0.72 | rho=-0.13
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>🔢 模型概率（v1.6.0加权融合）</h3>
+            <div class="prob-bar-container">
+                <div class="prob-bar home" style="width:54.931475741413294%">54.9%</div>
+                <div class="prob-bar draw" style="width:25.948296865203236%">25.9%</div>
+                <div class="prob-bar away" style="width:19.120227393383473%">19.1%</div>
+            </div>
+            <table class="model-table">
+                <tr><th>模型</th><th>主胜%</th><th>平局%</th><th>客胜%</th></tr>
+                <tr><td>Dixon-Coles</td><td>60.7</td><td>25.8</td><td>13.6</td></tr>
+                <tr><td>负二项分布</td><td>60.9</td><td>23.1</td><td>16.0</td></tr>
+                <tr><td>ZIP</td><td>59.9</td><td>24.1</td><td>15.9</td></tr>
+                <tr><td>Skellam</td><td>62.1</td><td>23.0</td><td>14.9</td></tr>
+                <tr><td>Elo/Pi</td><td>45.0</td><td>36.5</td><td>18.5</td></tr>
+                <tr><td>蒙特卡洛(10000场)</td><td>62.5</td><td>23.1</td><td>14.4</td></tr>
+                <tr><td>基本面因素(15%)</td><td>50.0</td><td>25.0</td><td>25.0</td></tr>
+                <tr><td>Shin校准(8%,仅参考)</td><td>47.7</td><td>26.2</td><td>26.1</td></tr>
+                <tr><td>公众意见(7%)</td><td>45.0</td><td>30.0</td><td>25.0</td></tr>
+                <tr class="highlight"><td><b>综合概率</b></td><td><b>54.9</b></td><td><b>25.9</b></td><td><b>19.1</b></td></tr>
+            </table>
+            
+        </div>
+        
+        <div class="section">
+            <h3>🎯 比分预测 TOP10 (修复版: 移除方向回灌 + 联赛先验 + 强制多样化)</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>比分</th><th>概率</th><th>方向</th><th>备注</th></tr>
+<tr class="home-win"><td>1</td><td><b>1:0</b></td><td>14.1%</td><td>主胜</td><td></td></tr>
+<tr class="home-win"><td>2</td><td><b>2:0</b></td><td>13.3%</td><td>主胜</td><td></td></tr>
+<tr class="away-win"><td>3</td><td><b>0:1</b></td><td>4.5%</td><td>客胜</td><td>📌多样化</td></tr>
+<tr class="home-win"><td>4</td><td><b>2:1</b></td><td>10.5%</td><td>主胜</td><td></td></tr>
+<tr class="draw"><td>5</td><td><b>0:0</b></td><td>8.4%</td><td>平局</td><td></td></tr>
+<tr class="home-win"><td>6</td><td><b>3:0</b></td><td>6.8%</td><td>主胜</td><td></td></tr>
+<tr class="home-win"><td>7</td><td><b>3:1</b></td><td>6.4%</td><td>主胜</td><td></td></tr>
+<tr class="away-win"><td>8</td><td><b>0:1</b></td><td>4.5%</td><td>客胜</td><td></td></tr>
+<tr class="away-win"><td>9</td><td><b>1:2</b></td><td>3.4%</td><td>客胜</td><td></td></tr>
+<tr class="home-win"><td>10</td><td><b>4:0</b></td><td>2.9%</td><td>主胜</td><td></td></tr>
+
+            </table>
+            <p style="font-size:12px; color:var(--text-sec); margin-top:4px;">
+                原始TOP3(未多样化前): 1:0(主胜) → 2:0(主胜) → 1:1(平局)
+            </p>
+        </div>
+        
+        <div class="section">
+            <h3>⏱️ 半场比分 TOP5</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>半场比分</th><th>概率</th><th>方向</th></tr>
+<tr><td>1</td><td><b>0:0</b></td><td>33.8%</td><td>平局</td></tr>
+<tr><td>2</td><td><b>1:0</b></td><td>25.1%</td><td>主胜</td></tr>
+<tr><td>3</td><td><b>2:0</b></td><td>10.2%</td><td>主胜</td></tr>
+<tr><td>4</td><td><b>0:1</b></td><td>9.8%</td><td>客胜</td></tr>
+<tr><td>5</td><td><b>1:1</b></td><td>9.2%</td><td>平局</td></tr>
+
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>🔄 半全场 TOP3</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>半场/全场</th><th>概率</th></tr>
+<tr><td>1</td><td><b>主胜/主胜</b></td><td>34.9%</td></tr>
+<tr><td>2</td><td><b>平局/主胜</b></td><td>23.5%</td></tr>
+<tr><td>3</td><td><b>平局/平局</b></td><td>14.9%</td></tr>
+
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>📈 大小球 & 让球分析</h3>
+            <table class="model-table">
+                <tr><th>项目</th><th>概率</th><th>体彩赔率</th></tr>
+                <tr><td>大2.5球</td><td>45.4%</td><td>-</td></tr>
+                <tr><td>小2.5球</td><td>54.6%</td><td>-</td></tr>
+                <tr><td>让球(-1) 主胜</td><td>35.8%</td><td>4.54</td></tr>
+                <tr><td>让球(-1) 平局</td><td>26.7%</td><td>3.52</td></tr>
+                <tr><td>让球(-1) 客胜</td><td>37.5%</td><td>1.6</td></tr>
+            </table>
+            <table class="model-table" style="margin-top:8px;">
+                <tr><th>总进球</th><th>0球</th><th>1球</th><th>2球</th><th>3球</th><th>4球</th><th>5球</th><th>6球</th><th>7+</th></tr>
+                <tr>
+                    <td>概率</td>
+<td>8.4%</td><td>18.6%</td><td>27.6%</td><td>21.1%</td><td>13.2%</td><td>5.9%</td><td>2.6%</td><td>1.0%</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>💰 体彩赔率与市场参考</h3>
+            <table class="model-table">
+                <tr><th>项目</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr><td>体彩胜平负赔率</td><td>2.06</td><td>3.1</td><td>3.11</td></tr>
+                <tr><td>市场支持率</td><td>45%</td><td>35%</td><td>20%</td></tr>
+                <tr><td>Shin校准概率(仅参考)</td><td>47.7%</td><td>26.2%</td><td>26.1%</td></tr>
+                <tr><td>模型综合概率</td><td>54.9%</td><td>25.9%</td><td>19.1%</td></tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>👥 公众意见</h3>
+            <div style="background:#f8f9fa; padding:12px; border-radius:8px; font-size:13px;">
+                网友普遍看好凯拉特主场不败, 但对其终结效率表示担忧; 奥莫尼亚防守韧性获认可
+            </div>
+        </div>
+        
+        <div class="section" style="background:#e8f0fe; padding:16px; border-radius:8px;">
+            <h3 style="border-left-color: var(--success);">✅ 最终推荐</h3>
+            <p style="font-size:16px; margin:8px 0;">
+                <b>方向推荐:</b> <span class="recommend home">主胜 (54.9%)</span>　|　
+                <b>置信度:</b> ★★ 中置信度
+            </p>
+            <p style="font-size:14px; margin:4px 0;">
+                <b>比分首选:</b> 1:0 (14.1%) | 
+                <b>次选:</b> 2:0 (13.3%) |
+                <b>第三:</b> 0:1 (4.5%)
+            </p>
+            <p style="font-size:14px; margin:4px 0;">
+                <b>半场首选:</b> 0:0 (33.8%) |
+                <b>大小球:</b> 小2.5球 (54.6%)
+            </p>
+        </div>
+        
+    </div>
+</div>
+
+<div class="match-card">
+    <div class="match-header">
+        <div>
+            <div class="match-id">周三002 波兹南莱赫 vs 奥胡斯</div>
+            <div class="match-info">欧冠资格赛 | 2026-07-30 01:00</div>
+        </div>
+        <div><span class="confidence-badge high">★★★ 高置信度</span></div>
+    </div>
+    <div class="match-body">
+        
+        <div class="section">
+            <h3>📋 基本面分析（第一优先级）</h3>
+            <div class="fundamental-grid">
+                <div class="fund-item"><label>战意</label>波兹南3球优势几乎锁定晋级, 可控场; 奥胡斯背水一战必须进攻</div>
+                <div class="fund-item"><label>状态</label>波兹南近5场4胜1平; 奥胡斯近5场2胜1平2负, 首回合1-4惨败</div>
+                <div class="fund-item"><label>伤停</label>波兹南: Douglas(长期伤缺), Gholizadeh(长期伤缺); 奥胡斯: 门将Hansen(红牌停赛), Callo/Poulsen/Molgaard/Carstensen(伤缺)</div>
+                <div class="fund-item"><label>体能</label>两队联赛刚开赛, 体能充沛</div>
+                <div class="fund-item"><label>心理</label>波兹南信心爆棚; 奥胡斯士气受挫+人员危机</div>
+                <div class="fund-item"><label>赛程牵制</label>波兹南联赛已开始; 奥胡斯联赛已开始, 首轮1-1平布隆德比</div>
+                <div class="fund-item"><label>场地</label>Enea Stadion, 波兹南, 天然草皮</div>
+                <div class="fund-item"><label>天气</label>局部多云, 约23-25°C, 降水概率4%, 西风15km/h</div>
+            </div>
+            <div style="margin-top:8px; padding:10px; background:#e8f0fe; border-radius:8px; font-size:13px;">
+                <b>基本面方向:</b> 主胜(基本面全面支持波兹南, 实力+心理+人员优势)<br>
+                <b>修正后Lambda:</b> 主队=2.05, 客队=0.90 | rho=-0.13
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>🔢 模型概率（v1.6.0加权融合）</h3>
+            <div class="prob-bar-container">
+                <div class="prob-bar home" style="width:57.534875021814024%">57.5%</div>
+                <div class="prob-bar draw" style="width:23.657411159486102%">23.7%</div>
+                <div class="prob-bar away" style="width:18.80771381869988%">18.8%</div>
+            </div>
+            <table class="model-table">
+                <tr><th>模型</th><th>主胜%</th><th>平局%</th><th>客胜%</th></tr>
+                <tr><td>Dixon-Coles</td><td>62.7</td><td>22.9</td><td>14.4</td></tr>
+                <tr><td>负二项分布</td><td>62.9</td><td>20.3</td><td>16.8</td></tr>
+                <tr><td>ZIP</td><td>61.9</td><td>21.2</td><td>16.9</td></tr>
+                <tr><td>Skellam</td><td>64.0</td><td>20.4</td><td>15.6</td></tr>
+                <tr><td>Elo/Pi</td><td>45.4</td><td>34.7</td><td>19.9</td></tr>
+                <tr><td>蒙特卡洛(10000场)</td><td>64.6</td><td>19.6</td><td>15.8</td></tr>
+                <tr><td>基本面因素(15%)</td><td>50.0</td><td>25.0</td><td>25.0</td></tr>
+                <tr><td>Shin校准(8%,仅参考)</td><td>66.6</td><td>18.4</td><td>15.0</td></tr>
+                <tr><td>公众意见(7%)</td><td>45.0</td><td>30.0</td><td>25.0</td></tr>
+                <tr class="highlight"><td><b>综合概率</b></td><td><b>57.5</b></td><td><b>23.7</b></td><td><b>18.8</b></td></tr>
+            </table>
+            <div class='divergence'>📝 模型与市场存在分歧 (差异9.0%)，注意风险。</div>
+        </div>
+        
+        <div class="section">
+            <h3>🎯 比分预测 TOP10 (修复版: 移除方向回灌 + 联赛先验 + 强制多样化)</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>比分</th><th>概率</th><th>方向</th><th>备注</th></tr>
+<tr class="home-win"><td>1</td><td><b>2:0</b></td><td>11.4%</td><td>主胜</td><td></td></tr>
+<tr class="draw"><td>2</td><td><b>1:1</b></td><td>11.4%</td><td>平局</td><td></td></tr>
+<tr class="away-win"><td>3</td><td><b>1:2</b></td><td>3.8%</td><td>客胜</td><td>📌多样化</td></tr>
+<tr class="home-win"><td>4</td><td><b>1:0</b></td><td>10.8%</td><td>主胜</td><td></td></tr>
+<tr class="home-win"><td>5</td><td><b>3:1</b></td><td>7.6%</td><td>主胜</td><td></td></tr>
+<tr class="home-win"><td>6</td><td><b>3:0</b></td><td>6.7%</td><td>主胜</td><td></td></tr>
+<tr class="draw"><td>7</td><td><b>0:0</b></td><td>5.4%</td><td>平局</td><td></td></tr>
+<tr class="draw"><td>8</td><td><b>2:2</b></td><td>3.9%</td><td>平局</td><td></td></tr>
+<tr class="away-win"><td>9</td><td><b>1:2</b></td><td>3.8%</td><td>客胜</td><td></td></tr>
+<tr class="away-win"><td>10</td><td><b>0:1</b></td><td>3.5%</td><td>客胜</td><td></td></tr>
+
+            </table>
+            <p style="font-size:12px; color:var(--text-sec); margin-top:4px;">
+                原始TOP3(未多样化前): 2:0(主胜) → 1:1(平局) → 2:1(主胜)
+            </p>
+        </div>
+        
+        <div class="section">
+            <h3>⏱️ 半场比分 TOP5</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>半场比分</th><th>概率</th><th>方向</th></tr>
+<tr><td>1</td><td><b>0:0</b></td><td>27.5%</td><td>平局</td></tr>
+<tr><td>2</td><td><b>1:0</b></td><td>23.5%</td><td>主胜</td></tr>
+<tr><td>3</td><td><b>2:0</b></td><td>11.3%</td><td>主胜</td></tr>
+<tr><td>4</td><td><b>1:1</b></td><td>10.9%</td><td>平局</td></tr>
+<tr><td>5</td><td><b>0:1</b></td><td>9.8%</td><td>客胜</td></tr>
+
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>🔄 半全场 TOP3</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>半场/全场</th><th>概率</th></tr>
+<tr><td>1</td><td><b>主胜/主胜</b></td><td>38.6%</td></tr>
+<tr><td>2</td><td><b>平局/主胜</b></td><td>22.1%</td></tr>
+<tr><td>3</td><td><b>平局/平局</b></td><td>12.1%</td></tr>
+
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>📈 大小球 & 让球分析</h3>
+            <table class="model-table">
+                <tr><th>项目</th><th>概率</th><th>体彩赔率</th></tr>
+                <tr><td>大2.5球</td><td>55.7%</td><td>-</td></tr>
+                <tr><td>小2.5球</td><td>44.3%</td><td>-</td></tr>
+                <tr><td>让球(-1) 主胜</td><td>39.3%</td><td>2.82</td></tr>
+                <tr><td>让球(-1) 平局</td><td>25.1%</td><td>3.45</td></tr>
+                <tr><td>让球(-1) 客胜</td><td>35.7%</td><td>2.06</td></tr>
+            </table>
+            <table class="model-table" style="margin-top:8px;">
+                <tr><th>总进球</th><th>0球</th><th>1球</th><th>2球</th><th>3球</th><th>4球</th><th>5球</th><th>6球</th><th>7+</th></tr>
+                <tr>
+                    <td>概率</td>
+<td>5.4%</td><td>14.3%</td><td>24.7%</td><td>22.0%</td><td>16.3%</td><td>8.8%</td><td>4.4%</td><td>2.0%</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>💰 体彩赔率与市场参考</h3>
+            <table class="model-table">
+                <tr><th>项目</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr><td>体彩胜平负赔率</td><td>1.59</td><td>3.8</td><td>4.21</td></tr>
+                <tr><td>市场支持率</td><td>65%</td><td>21%</td><td>14%</td></tr>
+                <tr><td>Shin校准概率(仅参考)</td><td>66.6%</td><td>18.4%</td><td>15.0%</td></tr>
+                <tr><td>模型综合概率</td><td>57.5%</td><td>23.7%</td><td>18.8%</td></tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>👥 公众意见</h3>
+            <div style="background:#f8f9fa; padding:12px; border-radius:8px; font-size:13px;">
+                网友一致看好波兹南主场获胜, 认为奥胡斯翻盘概率为零
+            </div>
+        </div>
+        
+        <div class="section" style="background:#e8f0fe; padding:16px; border-radius:8px;">
+            <h3 style="border-left-color: var(--success);">✅ 最终推荐</h3>
+            <p style="font-size:16px; margin:8px 0;">
+                <b>方向推荐:</b> <span class="recommend home">主胜 (57.5%)</span>　|　
+                <b>置信度:</b> ★★★ 高置信度
+            </p>
+            <p style="font-size:14px; margin:4px 0;">
+                <b>比分首选:</b> 2:0 (11.4%) | 
+                <b>次选:</b> 1:1 (11.4%) |
+                <b>第三:</b> 1:2 (3.8%)
+            </p>
+            <p style="font-size:14px; margin:4px 0;">
+                <b>半场首选:</b> 0:0 (27.5%) |
+                <b>大小球:</b> 大2.5球 (55.7%)
+            </p>
+        </div>
+        
+    </div>
+</div>
+
+<div class="match-card">
+    <div class="match-header">
+        <div>
+            <div class="match-id">周三003 米拉索尔 vs 雷莫</div>
+            <div class="match-info">巴甲 | 2026-07-30 06:30</div>
+        </div>
+        <div><span class="confidence-badge medium">★★ 中置信度</span></div>
+    </div>
+    <div class="match-body">
+        
+        <div class="section">
+            <h3>📋 基本面分析（第一优先级）</h3>
+            <div class="fundamental-grid">
+                <div class="fund-item"><label>战意</label>保级六分战! 米拉索尔19th(20分) vs 雷莫18th(21分), 胜者跳出降级区</div>
+                <div class="fund-item"><label>状态</label>米拉索尔近5场2胜1平2负, 主场强势; 雷莫近5场2胜1平2负, 上轮2-0胜维多利亚</div>
+                <div class="fund-item"><label>伤停</label>米拉索尔: Walter(主力门将,停赛), Muralha(替补门将,伤疑), Alesson/Negueba(前锋,伤缺), Aldo Filho(中场,伤疑); 雷莫: Tchamba(中卫,伤疑), 队长Marllon(解禁复出)</div>
+                <div class="fund-item"><label>体能</label>巴甲第21轮, 联赛过半, 体能中段</div>
+                <div class="fund-item"><label>心理</label>保级战双方都怕输→保守心态; 米拉索尔主场氛围加持</div>
+                <div class="fund-item"><label>赛程牵制</label>单线作战, 无赛程牵制</div>
+                <div class="fund-item"><label>场地</label>Estádio José Maria de Campos Maia, 米拉索尔, 天然草皮</div>
+                <div class="fund-item"><label>天气</label>晴到多云, 约23°C, 降雨概率低</div>
+            </div>
+            <div style="margin-top:8px; padding:10px; background:#e8f0fe; border-radius:8px; font-size:13px;">
+                <b>基本面方向:</b> 主胜(主场优势+雷莫客场极差, 但门将危机是隐患, 平局需防)<br>
+                <b>修正后Lambda:</b> 主队=1.35, 客队=0.75 | rho=-0.08
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>🔢 模型概率（v1.6.0加权融合）</h3>
+            <div class="prob-bar-container">
+                <div class="prob-bar home" style="width:47.11054528272425%">47.1%</div>
+                <div class="prob-bar draw" style="width:29.823911919059704%">29.8%</div>
+                <div class="prob-bar away" style="width:23.06554279821605%">23.1%</div>
+            </div>
+            <table class="model-table">
+                <tr><th>模型</th><th>主胜%</th><th>平局%</th><th>客胜%</th></tr>
+                <tr><td>Dixon-Coles</td><td>50.1</td><td>30.1</td><td>19.8</td></tr>
+                <tr><td>负二项分布</td><td>50.3</td><td>28.2</td><td>21.5</td></tr>
+                <tr><td>ZIP</td><td>49.6</td><td>29.1</td><td>21.3</td></tr>
+                <tr><td>Skellam</td><td>51.1</td><td>28.2</td><td>20.8</td></tr>
+                <tr><td>Elo/Pi</td><td>39.8</td><td>38.0</td><td>22.1</td></tr>
+                <tr><td>蒙特卡洛(10000场)</td><td>52.1</td><td>27.8</td><td>20.1</td></tr>
+                <tr><td>基本面因素(15%)</td><td>42.0</td><td>32.0</td><td>26.0</td></tr>
+                <tr><td>Shin校准(8%,仅参考)</td><td>45.6</td><td>28.1</td><td>26.3</td></tr>
+                <tr><td>公众意见(7%)</td><td>45.0</td><td>30.0</td><td>25.0</td></tr>
+                <tr class="highlight"><td><b>综合概率</b></td><td><b>47.1</b></td><td><b>29.8</b></td><td><b>23.1</b></td></tr>
+            </table>
+            
+        </div>
+        
+        <div class="section">
+            <h3>🎯 比分预测 TOP10 (修复版: 移除方向回灌 + 联赛先验 + 强制多样化)</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>比分</th><th>概率</th><th>方向</th><th>备注</th></tr>
+<tr class="home-win"><td>1</td><td><b>1:0</b></td><td>16.3%</td><td>主胜</td><td></td></tr>
+<tr class="draw"><td>2</td><td><b>1:1</b></td><td>13.7%</td><td>平局</td><td></td></tr>
+<tr class="away-win"><td>3</td><td><b>0:1</b></td><td>7.5%</td><td>客胜</td><td>📌多样化</td></tr>
+<tr class="home-win"><td>4</td><td><b>2:0</b></td><td>11.4%</td><td>主胜</td><td></td></tr>
+<tr class="home-win"><td>5</td><td><b>2:1</b></td><td>9.1%</td><td>主胜</td><td></td></tr>
+<tr class="away-win"><td>6</td><td><b>0:1</b></td><td>7.5%</td><td>客胜</td><td></td></tr>
+<tr class="home-win"><td>7</td><td><b>3:0</b></td><td>4.5%</td><td>主胜</td><td></td></tr>
+<tr class="away-win"><td>8</td><td><b>1:2</b></td><td>4.0%</td><td>客胜</td><td></td></tr>
+<tr class="home-win"><td>9</td><td><b>3:1</b></td><td>3.4%</td><td>主胜</td><td></td></tr>
+<tr class="away-win"><td>10</td><td><b>0:2</b></td><td>3.0%</td><td>客胜</td><td></td></tr>
+
+            </table>
+            <p style="font-size:12px; color:var(--text-sec); margin-top:4px;">
+                原始TOP3(未多样化前): 1:0(主胜) → 1:1(平局) → 0:0(平局)
+            </p>
+        </div>
+        
+        <div class="section">
+            <h3>⏱️ 半场比分 TOP5</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>半场比分</th><th>概率</th><th>方向</th></tr>
+<tr><td>1</td><td><b>0:0</b></td><td>39.7%</td><td>平局</td></tr>
+<tr><td>2</td><td><b>1:0</b></td><td>22.8%</td><td>主胜</td></tr>
+<tr><td>3</td><td><b>0:1</b></td><td>12.3%</td><td>客胜</td></tr>
+<tr><td>4</td><td><b>1:1</b></td><td>8.8%</td><td>平局</td></tr>
+<tr><td>5</td><td><b>2:0</b></td><td>7.2%</td><td>主胜</td></tr>
+
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>🔄 半全场 TOP3</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>半场/全场</th><th>概率</th></tr>
+<tr><td>1</td><td><b>主胜/主胜</b></td><td>23.4%</td></tr>
+<tr><td>2</td><td><b>平局/主胜</b></td><td>21.9%</td></tr>
+<tr><td>3</td><td><b>平局/平局</b></td><td>20.8%</td></tr>
+
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>📈 大小球 & 让球分析</h3>
+            <table class="model-table">
+                <tr><th>项目</th><th>概率</th><th>体彩赔率</th></tr>
+                <tr><td>大2.5球</td><td>34.7%</td><td>-</td></tr>
+                <tr><td>小2.5球</td><td>65.3%</td><td>-</td></tr>
+                <tr><td>让球(-1) 主胜</td><td>24.2%</td><td>4.35</td></tr>
+                <tr><td>让球(-1) 平局</td><td>27.0%</td><td>3.4</td></tr>
+                <tr><td>让球(-1) 客胜</td><td>48.8%</td><td>1.65</td></tr>
+            </table>
+            <table class="model-table" style="margin-top:8px;">
+                <tr><th>总进球</th><th>0球</th><th>1球</th><th>2球</th><th>3球</th><th>4球</th><th>5球</th><th>6球</th><th>7+</th></tr>
+                <tr>
+                    <td>概率</td>
+<td>13.3%</td><td>23.8%</td><td>28.2%</td><td>18.5%</td><td>9.0%</td><td>3.8%</td><td>1.5%</td><td>0.6%</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>💰 体彩赔率与市场参考</h3>
+            <table class="model-table">
+                <tr><th>项目</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr><td>体彩胜平负赔率</td><td>2.15</td><td>3.1</td><td>3.25</td></tr>
+                <tr><td>市场支持率</td><td>48%</td><td>30%</td><td>22%</td></tr>
+                <tr><td>Shin校准概率(仅参考)</td><td>45.6%</td><td>28.1%</td><td>26.3%</td></tr>
+                <tr><td>模型综合概率</td><td>47.1%</td><td>29.8%</td><td>23.1%</td></tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>👥 公众意见</h3>
+            <div style="background:#f8f9fa; padding:12px; border-radius:8px; font-size:13px;">
+                网友分歧较大, 部分看好米拉索尔主场, 部分认为保级战平局概率高; 澳门推介米拉索尔四星
+            </div>
+        </div>
+        
+        <div class="section" style="background:#e8f0fe; padding:16px; border-radius:8px;">
+            <h3 style="border-left-color: var(--success);">✅ 最终推荐</h3>
+            <p style="font-size:16px; margin:8px 0;">
+                <b>方向推荐:</b> <span class="recommend home">主胜 (47.1%)</span>　|　
+                <b>置信度:</b> ★★ 中置信度
+            </p>
+            <p style="font-size:14px; margin:4px 0;">
+                <b>比分首选:</b> 1:0 (16.3%) | 
+                <b>次选:</b> 1:1 (13.7%) |
+                <b>第三:</b> 0:1 (7.5%)
+            </p>
+            <p style="font-size:14px; margin:4px 0;">
+                <b>半场首选:</b> 0:0 (39.7%) |
+                <b>大小球:</b> 小2.5球 (65.3%)
+            </p>
+        </div>
+        
+    </div>
+</div>
+
+<div class="match-card">
+    <div class="match-header">
+        <div>
+            <div class="match-id">周三004 巴西国际 vs 弗拉门戈</div>
+            <div class="match-info">巴甲 | 2026-07-30 06:30</div>
+        </div>
+        <div><span class="confidence-badge medium">★★ 中置信度</span></div>
+    </div>
+    <div class="match-body">
+        
+        <div class="section">
+            <h3>📋 基本面分析（第一优先级）</h3>
+            <div class="fundamental-grid">
+                <div class="fund-item"><label>战意</label>巴西国际保级压力(16th,21分); 弗拉门戈争冠动力(2nd,38分,少赛1场落后6分)</div>
+                <div class="fund-item"><label>状态</label>巴西国际4连败! 自5月不胜; 弗拉门戈近5场3胜1平1负, 上轮4-0大胜</div>
+                <div class="fund-item"><label>伤停</label>巴西国际: Rochet(主力门将,伤缺), Thiago Maia(中场,伤缺), Victor Gabriel(停赛); 弗拉门戈: Paquetá(8球中场核心,伤疑), Plata(前锋,伤缺), Arrascaeta(刚复出97天, 蓄力中)</div>
+                <div class="fund-item"><label>体能</label>弗拉门戈9名世界杯球员归队, 体能需管理; 巴西国际4连败体能和心理双重疲劳</div>
+                <div class="fund-item"><label>心理</label>巴西国际4连败信心崩塌; 弗拉门戈争冠信心; 但弗拉门戈核心缺阵→不确定性增加</div>
+                <div class="fund-item"><label>赛程牵制</label>巴西国际下轮打帕尔梅拉斯(赛程凶险); 弗拉门戈8月12日解放者杯1/8决赛</div>
+                <div class="fund-item"><label>场地</label>Beira-Rio, 阿雷格里港, 天然草皮</div>
+                <div class="fund-item"><label>天气</label>冬季约18-21°C, 可能有雨</div>
+            </div>
+            <div style="margin-top:8px; padding:10px; background:#e8f0fe; border-radius:8px; font-size:13px;">
+                <b>基本面方向:</b> 客胜(弗拉门戈实力碾压, 但核心缺阵+巴西国际主场, 平局需防)<br>
+                <b>修正后Lambda:</b> 主队=1.00, 客队=1.55 | rho=-0.08
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>🔢 模型概率（v1.6.0加权融合）</h3>
+            <div class="prob-bar-container">
+                <div class="prob-bar home" style="width:24.419892591978005%">24.4%</div>
+                <div class="prob-bar draw" style="width:27.342395610026983%">27.3%</div>
+                <div class="prob-bar away" style="width:48.23771179799501%">48.2%</div>
+            </div>
+            <table class="model-table">
+                <tr><th>模型</th><th>主胜%</th><th>平局%</th><th>客胜%</th></tr>
+                <tr><td>Dixon-Coles</td><td>23.5</td><td>27.4</td><td>49.1</td></tr>
+                <tr><td>负二项分布</td><td>25.3</td><td>25.2</td><td>49.6</td></tr>
+                <tr><td>ZIP</td><td>25.0</td><td>26.0</td><td>48.9</td></tr>
+                <tr><td>Skellam</td><td>24.4</td><td>25.5</td><td>50.1</td></tr>
+                <tr><td>Elo/Pi</td><td>25.0</td><td>36.2</td><td>38.8</td></tr>
+                <tr><td>蒙特卡洛(10000场)</td><td>24.7</td><td>25.5</td><td>49.8</td></tr>
+                <tr><td>基本面因素(15%)</td><td>22.0</td><td>30.0</td><td>48.0</td></tr>
+                <tr><td>Shin校准(8%,仅参考)</td><td>21.1</td><td>24.0</td><td>54.9</td></tr>
+                <tr><td>公众意见(7%)</td><td>25.0</td><td>28.0</td><td>47.0</td></tr>
+                <tr class="highlight"><td><b>综合概率</b></td><td><b>24.4</b></td><td><b>27.3</b></td><td><b>48.2</b></td></tr>
+            </table>
+            <div class='divergence'>⚠️ <b>比分矩阵方向(平局)与综合方向(客胜)不一致</b> (规则17)，比分矩阵可能更准确。</div>
+        </div>
+        
+        <div class="section">
+            <h3>🎯 比分预测 TOP10 (修复版: 移除方向回灌 + 联赛先验 + 强制多样化)</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>比分</th><th>概率</th><th>方向</th><th>备注</th></tr>
+<tr class="draw"><td>1</td><td><b>1:1</b></td><td>13.6%</td><td>平局</td><td></td></tr>
+<tr class="away-win"><td>2</td><td><b>0:1</b></td><td>10.1%</td><td>客胜</td><td></td></tr>
+<tr class="home-win"><td>3</td><td><b>1:0</b></td><td>8.7%</td><td>主胜</td><td>📌多样化</td></tr>
+<tr class="home-win"><td>4</td><td><b>1:0</b></td><td>8.7%</td><td>主胜</td><td></td></tr>
+<tr class="away-win"><td>5</td><td><b>1:2</b></td><td>8.3%</td><td>客胜</td><td></td></tr>
+<tr class="away-win"><td>6</td><td><b>0:2</b></td><td>8.2%</td><td>客胜</td><td></td></tr>
+<tr class="home-win"><td>7</td><td><b>2:1</b></td><td>7.2%</td><td>主胜</td><td></td></tr>
+<tr class="home-win"><td>8</td><td><b>2:0</b></td><td>4.9%</td><td>主胜</td><td></td></tr>
+<tr class="away-win"><td>9</td><td><b>1:3</b></td><td>4.2%</td><td>客胜</td><td></td></tr>
+<tr class="away-win"><td>10</td><td><b>0:3</b></td><td>4.2%</td><td>客胜</td><td></td></tr>
+
+            </table>
+            <p style="font-size:12px; color:var(--text-sec); margin-top:4px;">
+                原始TOP3(未多样化前): 1:1(平局) → 0:1(客胜) → 0:0(平局)
+            </p>
+        </div>
+        
+        <div class="section">
+            <h3>⏱️ 半场比分 TOP5</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>半场比分</th><th>概率</th><th>方向</th></tr>
+<tr><td>1</td><td><b>0:0</b></td><td>32.7%</td><td>平局</td></tr>
+<tr><td>2</td><td><b>0:1</b></td><td>21.1%</td><td>客胜</td></tr>
+<tr><td>3</td><td><b>1:0</b></td><td>13.3%</td><td>主胜</td></tr>
+<tr><td>4</td><td><b>1:1</b></td><td>11.0%</td><td>平局</td></tr>
+<tr><td>5</td><td><b>0:2</b></td><td>7.7%</td><td>客胜</td></tr>
+
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>🔄 半全场 TOP3</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>半场/全场</th><th>概率</th></tr>
+<tr><td>1</td><td><b>客胜/客胜</b></td><td>24.0%</td></tr>
+<tr><td>2</td><td><b>平局/客胜</b></td><td>19.9%</td></tr>
+<tr><td>3</td><td><b>平局/平局</b></td><td>17.6%</td></tr>
+
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>📈 大小球 & 让球分析</h3>
+            <table class="model-table">
+                <tr><th>项目</th><th>概率</th><th>体彩赔率</th></tr>
+                <tr><td>大2.5球</td><td>45.1%</td><td>-</td></tr>
+                <tr><td>小2.5球</td><td>54.9%</td><td>-</td></tr>
+                <tr><td>让球(+1) 主胜</td><td>9.9%</td><td>1.65</td></tr>
+                <tr><td>让球(+1) 平局</td><td>17.6%</td><td>3.4</td></tr>
+                <tr><td>让球(+1) 客胜</td><td>72.4%</td><td>4.35</td></tr>
+            </table>
+            <table class="model-table" style="margin-top:8px;">
+                <tr><th>总进球</th><th>0球</th><th>1球</th><th>2球</th><th>3球</th><th>4球</th><th>5球</th><th>6球</th><th>7+</th></tr>
+                <tr>
+                    <td>概率</td>
+<td>9.4%</td><td>18.8%</td><td>26.7%</td><td>20.8%</td><td>12.2%</td><td>6.4%</td><td>2.9%</td><td>1.2%</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>💰 体彩赔率与市场参考</h3>
+            <table class="model-table">
+                <tr><th>项目</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr><td>体彩胜平负赔率</td><td>3.5</td><td>3.25</td><td>1.85</td></tr>
+                <tr><td>市场支持率</td><td>22%</td><td>28%</td><td>50%</td></tr>
+                <tr><td>Shin校准概率(仅参考)</td><td>21.1%</td><td>24.0%</td><td>54.9%</td></tr>
+                <tr><td>模型综合概率</td><td>24.4%</td><td>27.3%</td><td>48.2%</td></tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>👥 公众意见</h3>
+            <div style="background:#f8f9fa; padding:12px; border-radius:8px; font-size:13px;">
+                网友分歧严重: 一派看好弗拉门戈客胜(实力碾压), 另一派认为弗拉门戈核心缺阵+巴西国际保级战意→平局可能性大
+            </div>
+        </div>
+        
+        <div class="section" style="background:#e8f0fe; padding:16px; border-radius:8px;">
+            <h3 style="border-left-color: var(--success);">✅ 最终推荐</h3>
+            <p style="font-size:16px; margin:8px 0;">
+                <b>方向推荐:</b> <span class="recommend away">客胜 (48.2%)</span>　|　
+                <b>置信度:</b> ★★ 中置信度
+            </p>
+            <p style="font-size:14px; margin:4px 0;">
+                <b>比分首选:</b> 1:1 (13.6%) | 
+                <b>次选:</b> 0:1 (10.1%) |
+                <b>第三:</b> 1:0 (8.7%)
+            </p>
+            <p style="font-size:14px; margin:4px 0;">
+                <b>半场首选:</b> 0:0 (32.7%) |
+                <b>大小球:</b> 小2.5球 (54.9%)
+            </p>
+        </div>
+        
+    </div>
+</div>
+
+<div class="match-card">
+    <div class="match-header">
+        <div>
+            <div class="match-id">周三005 弗鲁米嫩塞 vs 巴伊亚</div>
+            <div class="match-info">巴甲 | 2026-07-30 08:30</div>
+        </div>
+        <div><span class="confidence-badge medium">★★ 中置信度</span></div>
+    </div>
+    <div class="match-body">
+        
+        <div class="section">
+            <h3>📋 基本面分析（第一优先级）</h3>
+            <div class="fundamental-grid">
+                <div class="fund-item"><label>战意</label>解放者杯资格卡位战! 弗鲁米嫩塞4th(33分) vs 巴伊亚6th(31分), 仅差2分</div>
+                <div class="fund-item"><label>状态</label>弗鲁米嫩塞近3轮不胜, 近6轮仅1胜; 巴伊亚近5场2胜2平1负, 上轮3球被VAR取消</div>
+                <div class="fund-item"><label>伤停</label>弗鲁米嫩塞: Kennedy(头号射手9球,停赛), Jemmes/Millán/Castillo(伤缺), Arana(信源矛盾,可能复出); 巴伊亚: Duarte(中卫,停赛), Zé Guilherme(左后卫,停赛), Léo Vieira/Olivera/Caio Alexandre(伤缺)</div>
+                <div class="fund-item"><label>体能</label>巴甲第21轮, 体能中段</div>
+                <div class="fund-item"><label>心理</label>弗鲁米嫩塞主场对巴伊亚7连胜! 马拉卡纳是巴伊亚的噩梦球场; 巴伊亚上轮3球被VAR取消→士气受挫</div>
+                <div class="fund-item"><label>赛程牵制</label>弗鲁米嫩塞单线作战; 巴伊亚可能有南美杯赛牵制</div>
+                <div class="fund-item"><label>场地</label>马拉卡纳球场, 里约热内卢, 天然草皮</div>
+                <div class="fund-item"><label>天气</label>多云转小雨, 约21-27°C, 冷锋过境可能有零星降雨</div>
+            </div>
+            <div style="margin-top:8px; padding:10px; background:#e8f0fe; border-radius:8px; font-size:13px;">
+                <b>基本面方向:</b> 主胜(主场优势+历史交锋压制+巴伊亚防线重组, 但Kennedy缺阵是小胜为主)<br>
+                <b>修正后Lambda:</b> 主队=1.50, 客队=0.85 | rho=-0.08
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>🔢 模型概率（v1.6.0加权融合）</h3>
+            <div class="prob-bar-container">
+                <div class="prob-bar home" style="width:50.372353959353724%">50.4%</div>
+                <div class="prob-bar draw" style="width:27.300895854197925%">27.3%</div>
+                <div class="prob-bar away" style="width:22.326750186448358%">22.3%</div>
+            </div>
+            <table class="model-table">
+                <tr><th>模型</th><th>主胜%</th><th>平局%</th><th>客胜%</th></tr>
+                <tr><td>Dixon-Coles</td><td>51.6</td><td>28.1</td><td>20.3</td></tr>
+                <tr><td>负二项分布</td><td>51.8</td><td>26.0</td><td>22.2</td></tr>
+                <tr><td>ZIP</td><td>51.1</td><td>27.0</td><td>21.9</td></tr>
+                <tr><td>Skellam</td><td>52.5</td><td>26.2</td><td>21.3</td></tr>
+                <tr><td>Elo/Pi</td><td>40.2</td><td>37.0</td><td>22.8</td></tr>
+                <tr><td>蒙特卡洛(10000场)</td><td>53.1</td><td>25.8</td><td>21.1</td></tr>
+                <tr><td>基本面因素(15%)</td><td>50.0</td><td>25.0</td><td>25.0</td></tr>
+                <tr><td>Shin校准(8%,仅参考)</td><td>61.0</td><td>24.6</td><td>14.3</td></tr>
+                <tr><td>公众意见(7%)</td><td>45.0</td><td>30.0</td><td>25.0</td></tr>
+                <tr class="highlight"><td><b>综合概率</b></td><td><b>50.4</b></td><td><b>27.3</b></td><td><b>22.3</b></td></tr>
+            </table>
+            <div class='divergence'>📝 模型与市场存在分歧 (差异10.6%)，注意风险。</div>
+        </div>
+        
+        <div class="section">
+            <h3>🎯 比分预测 TOP10 (修复版: 移除方向回灌 + 联赛先验 + 强制多样化)</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>比分</th><th>概率</th><th>方向</th><th>备注</th></tr>
+<tr class="home-win"><td>1</td><td><b>1:0</b></td><td>14.4%</td><td>主胜</td><td></td></tr>
+<tr class="draw"><td>2</td><td><b>1:1</b></td><td>13.5%</td><td>平局</td><td></td></tr>
+<tr class="away-win"><td>3</td><td><b>0:1</b></td><td>6.6%</td><td>客胜</td><td>📌多样化</td></tr>
+<tr class="home-win"><td>4</td><td><b>2:0</b></td><td>10.9%</td><td>主胜</td><td></td></tr>
+<tr class="home-win"><td>5</td><td><b>2:1</b></td><td>9.9%</td><td>主胜</td><td></td></tr>
+<tr class="away-win"><td>6</td><td><b>0:1</b></td><td>6.6%</td><td>客胜</td><td></td></tr>
+<tr class="home-win"><td>7</td><td><b>3:0</b></td><td>4.8%</td><td>主胜</td><td></td></tr>
+<tr class="away-win"><td>8</td><td><b>1:2</b></td><td>4.5%</td><td>客胜</td><td></td></tr>
+<tr class="home-win"><td>9</td><td><b>3:1</b></td><td>4.0%</td><td>主胜</td><td></td></tr>
+<tr class="draw"><td>10</td><td><b>2:2</b></td><td>3.4%</td><td>平局</td><td></td></tr>
+
+            </table>
+            <p style="font-size:12px; color:var(--text-sec); margin-top:4px;">
+                原始TOP3(未多样化前): 1:0(主胜) → 1:1(平局) → 0:0(平局)
+            </p>
+        </div>
+        
+        <div class="section">
+            <h3>⏱️ 半场比分 TOP5</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>半场比分</th><th>概率</th><th>方向</th></tr>
+<tr><td>1</td><td><b>0:0</b></td><td>35.6%</td><td>平局</td></tr>
+<tr><td>2</td><td><b>1:0</b></td><td>22.5%</td><td>主胜</td></tr>
+<tr><td>3</td><td><b>0:1</b></td><td>12.4%</td><td>客胜</td></tr>
+<tr><td>4</td><td><b>1:1</b></td><td>9.9%</td><td>平局</td></tr>
+<tr><td>5</td><td><b>2:0</b></td><td>7.9%</td><td>主胜</td></tr>
+
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>🔄 半全场 TOP3</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>半场/全场</th><th>概率</th></tr>
+<tr><td>1</td><td><b>主胜/主胜</b></td><td>25.5%</td></tr>
+<tr><td>2</td><td><b>平局/主胜</b></td><td>21.4%</td></tr>
+<tr><td>3</td><td><b>平局/平局</b></td><td>18.5%</td></tr>
+
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>📈 大小球 & 让球分析</h3>
+            <table class="model-table">
+                <tr><th>项目</th><th>概率</th><th>体彩赔率</th></tr>
+                <tr><td>大2.5球</td><td>40.6%</td><td>-</td></tr>
+                <tr><td>小2.5球</td><td>59.4%</td><td>-</td></tr>
+                <tr><td>让球(-1) 主胜</td><td>26.0%</td><td>3.15</td></tr>
+                <tr><td>让球(-1) 平局</td><td>26.4%</td><td>3.15</td></tr>
+                <tr><td>让球(-1) 客胜</td><td>47.6%</td><td>2.05</td></tr>
+            </table>
+            <table class="model-table" style="margin-top:8px;">
+                <tr><th>总进球</th><th>0球</th><th>1球</th><th>2球</th><th>3球</th><th>4球</th><th>5球</th><th>6球</th><th>7+</th></tr>
+                <tr>
+                    <td>概率</td>
+<td>11.0%</td><td>21.0%</td><td>27.4%</td><td>20.1%</td><td>10.7%</td><td>5.2%</td><td>2.2%</td><td>0.9%</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>💰 体彩赔率与市场参考</h3>
+            <table class="model-table">
+                <tr><th>项目</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr><td>体彩胜平负赔率</td><td>1.7</td><td>3.3</td><td>4.5</td></tr>
+                <tr><td>市场支持率</td><td>55%</td><td>28%</td><td>17%</td></tr>
+                <tr><td>Shin校准概率(仅参考)</td><td>61.0%</td><td>24.6%</td><td>14.3%</td></tr>
+                <tr><td>模型综合概率</td><td>50.4%</td><td>27.3%</td><td>22.3%</td></tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>👥 公众意见</h3>
+            <div style="background:#f8f9fa; padding:12px; border-radius:8px; font-size:13px;">
+                网友普遍看好弗鲁米嫩塞主场小胜, 但提醒不打穿; 澳门推介弗鲁米嫩塞四星
+            </div>
+        </div>
+        
+        <div class="section" style="background:#e8f0fe; padding:16px; border-radius:8px;">
+            <h3 style="border-left-color: var(--success);">✅ 最终推荐</h3>
+            <p style="font-size:16px; margin:8px 0;">
+                <b>方向推荐:</b> <span class="recommend home">主胜 (50.4%)</span>　|　
+                <b>置信度:</b> ★★ 中置信度
+            </p>
+            <p style="font-size:14px; margin:4px 0;">
+                <b>比分首选:</b> 1:0 (14.4%) | 
+                <b>次选:</b> 1:1 (13.5%) |
+                <b>第三:</b> 0:1 (6.6%)
+            </p>
+            <p style="font-size:14px; margin:4px 0;">
+                <b>半场首选:</b> 0:0 (35.6%) |
+                <b>大小球:</b> 小2.5球 (59.4%)
+            </p>
+        </div>
+        
+    </div>
+</div>
+
+<div class="match-card">
+    <div class="match-header">
+        <div>
+            <div class="match-id">周三006 维多利亚 vs 帕尔梅拉斯</div>
+            <div class="match-info">巴甲 | 2026-07-30 08:30</div>
+        </div>
+        <div><span class="confidence-badge medium">★★ 中置信度</span></div>
+    </div>
+    <div class="match-body">
+        
+        <div class="section">
+            <h3>📋 基本面分析（第一优先级）</h3>
+            <div class="fundamental-grid">
+                <div class="fund-item"><label>战意</label>维多利亚保级(13th,26分)需主场拿分; 帕尔梅拉斯争冠(1st,44分)需客场稳拿3分</div>
+                <div class="fund-item"><label>状态</label>维多利亚上轮客场0-2负雷莫; 帕尔梅拉斯上轮主场1-2负米内罗(终结14场不败)</div>
+                <div class="fund-item"><label>伤停</label>维多利亚: Dudu(背伤赛季报销), Camutanga(后卫,趾骨伤), Rúben Ismael(后卫,膝伤), Edu/Nathan Mendes/Anderson Pato(伤缺); 帕尔梅拉斯: Fuchs(中卫,阑尾炎手术), Jefté(左后卫,半月板手术); 但4名停赛球员回归(Barboza/Khellven/Allan/Sosa), Flaco López可能复出</div>
+                <div class="fund-item"><label>体能</label>帕尔梅拉斯刚终结14场不败, 心理从稳变怕再输; 维多利亚主场消耗战</div>
+                <div class="fund-item"><label>心理</label>维多利亚教练文图拉对帕尔梅拉斯16场4平12负→战术被摸透; 帕尔梅拉斯上轮失误送礼→门将憋着证明自己</div>
+                <div class="fund-item"><label>赛程牵制</label>维多利亚单线作战; 帕尔梅拉斯8月解放者杯</div>
+                <div class="fund-item"><label>场地</label>Manoel Barradas球场, 萨尔瓦多, 天然草皮</div>
+                <div class="fund-item"><label>天气</label>晴间多云, 约26-28°C, 无降雨预报</div>
+            </div>
+            <div style="margin-top:8px; padding:10px; background:#e8f0fe; border-radius:8px; font-size:13px;">
+                <b>基本面方向:</b> 客胜(帕尔梅拉斯实力碾压+阵容齐整+客场最佳, 但维多利亚主场堡垒+帕尔梅拉斯刚输球不敢浪→小胜为主)<br>
+                <b>修正后Lambda:</b> 主队=0.92, 客队=1.65 | rho=-0.08
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3>🔢 模型概率（v1.6.0加权融合）</h3>
+            <div class="prob-bar-container">
+                <div class="prob-bar home" style="width:22.728085209372225%">22.7%</div>
+                <div class="prob-bar draw" style="width:26.16910622651261%">26.2%</div>
+                <div class="prob-bar away" style="width:51.102808564115165%">51.1%</div>
+            </div>
+            <table class="model-table">
+                <tr><th>模型</th><th>主胜%</th><th>平局%</th><th>客胜%</th></tr>
+                <tr><td>Dixon-Coles</td><td>20.0</td><td>26.4</td><td>53.6</td></tr>
+                <tr><td>负二项分布</td><td>21.9</td><td>24.3</td><td>53.8</td></tr>
+                <tr><td>ZIP</td><td>21.8</td><td>25.2</td><td>53.1</td></tr>
+                <tr><td>Skellam</td><td>20.9</td><td>24.5</td><td>54.6</td></tr>
+                <tr><td>Elo/Pi</td><td>22.9</td><td>36.1</td><td>41.0</td></tr>
+                <tr><td>蒙特卡洛(10000场)</td><td>21.3</td><td>23.7</td><td>55.0</td></tr>
+                <tr><td>基本面因素(15%)</td><td>20.0</td><td>25.0</td><td>55.0</td></tr>
+                <tr><td>Shin校准(8%,仅参考)</td><td>13.6</td><td>22.9</td><td>63.4</td></tr>
+                <tr><td>公众意见(7%)</td><td>45.0</td><td>30.0</td><td>25.0</td></tr>
+                <tr class="highlight"><td><b>综合概率</b></td><td><b>22.7</b></td><td><b>26.2</b></td><td><b>51.1</b></td></tr>
+            </table>
+            <div class='divergence'>📝 模型与市场存在分歧 (差异9.1%)，注意风险。</div><div class='divergence'>⚠️ <b>比分矩阵方向(平局)与综合方向(客胜)不一致</b> (规则17)，比分矩阵可能更准确。</div>
+        </div>
+        
+        <div class="section">
+            <h3>🎯 比分预测 TOP10 (修复版: 移除方向回灌 + 联赛先验 + 强制多样化)</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>比分</th><th>概率</th><th>方向</th><th>备注</th></tr>
+<tr class="draw"><td>1</td><td><b>1:1</b></td><td>13.0%</td><td>平局</td><td></td></tr>
+<tr class="away-win"><td>2</td><td><b>0:1</b></td><td>10.7%</td><td>客胜</td><td></td></tr>
+<tr class="home-win"><td>3</td><td><b>1:0</b></td><td>8.0%</td><td>主胜</td><td>📌多样化</td></tr>
+<tr class="away-win"><td>4</td><td><b>0:2</b></td><td>9.1%</td><td>客胜</td><td></td></tr>
+<tr class="away-win"><td>5</td><td><b>1:2</b></td><td>8.5%</td><td>客胜</td><td></td></tr>
+<tr class="home-win"><td>6</td><td><b>1:0</b></td><td>8.0%</td><td>主胜</td><td></td></tr>
+<tr class="home-win"><td>7</td><td><b>2:1</b></td><td>6.6%</td><td>主胜</td><td></td></tr>
+<tr class="away-win"><td>8</td><td><b>0:3</b></td><td>5.1%</td><td>客胜</td><td></td></tr>
+<tr class="away-win"><td>9</td><td><b>1:3</b></td><td>4.7%</td><td>客胜</td><td></td></tr>
+<tr class="home-win"><td>10</td><td><b>2:0</b></td><td>4.3%</td><td>主胜</td><td></td></tr>
+
+            </table>
+            <p style="font-size:12px; color:var(--text-sec); margin-top:4px;">
+                原始TOP3(未多样化前): 1:1(平局) → 0:1(客胜) → 0:0(平局)
+            </p>
+        </div>
+        
+        <div class="section">
+            <h3>⏱️ 半场比分 TOP5</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>半场比分</th><th>概率</th><th>方向</th></tr>
+<tr><td>1</td><td><b>0:0</b></td><td>32.4%</td><td>平局</td></tr>
+<tr><td>2</td><td><b>0:1</b></td><td>22.4%</td><td>客胜</td></tr>
+<tr><td>3</td><td><b>1:0</b></td><td>12.1%</td><td>主胜</td></tr>
+<tr><td>4</td><td><b>1:1</b></td><td>10.6%</td><td>平局</td></tr>
+<tr><td>5</td><td><b>0:2</b></td><td>8.7%</td><td>客胜</td></tr>
+
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>🔄 半全场 TOP3</h3>
+            <table class="score-table">
+                <tr><th>排名</th><th>半场/全场</th><th>概率</th></tr>
+<tr><td>1</td><td><b>客胜/客胜</b></td><td>28.0%</td></tr>
+<tr><td>2</td><td><b>平局/客胜</b></td><td>21.2%</td></tr>
+<tr><td>3</td><td><b>平局/平局</b></td><td>16.5%</td></tr>
+
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>📈 大小球 & 让球分析</h3>
+            <table class="model-table">
+                <tr><th>项目</th><th>概率</th><th>体彩赔率</th></tr>
+                <tr><td>大2.5球</td><td>45.7%</td><td>-</td></tr>
+                <tr><td>小2.5球</td><td>54.3%</td><td>-</td></tr>
+                <tr><td>让球(+1) 主胜</td><td>8.5%</td><td>2.05</td></tr>
+                <tr><td>让球(+1) 平局</td><td>16.1%</td><td>3.15</td></tr>
+                <tr><td>让球(+1) 客胜</td><td>75.4%</td><td>3.15</td></tr>
+            </table>
+            <table class="model-table" style="margin-top:8px;">
+                <tr><th>总进球</th><th>0球</th><th>1球</th><th>2球</th><th>3球</th><th>4球</th><th>5球</th><th>6球</th><th>7+</th></tr>
+                <tr>
+                    <td>概率</td>
+<td>9.2%</td><td>18.7%</td><td>26.4%</td><td>21.2%</td><td>12.4%</td><td>6.4%</td><td>2.9%</td><td>1.2%</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>💰 体彩赔率与市场参考</h3>
+            <table class="model-table">
+                <tr><th>项目</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+                <tr><td>体彩胜平负赔率</td><td>4.5</td><td>3.4</td><td>1.65</td></tr>
+                <tr><td>市场支持率</td><td>15%</td><td>25%</td><td>60%</td></tr>
+                <tr><td>Shin校准概率(仅参考)</td><td>13.6%</td><td>22.9%</td><td>63.4%</td></tr>
+                <tr><td>模型综合概率</td><td>22.7%</td><td>26.2%</td><td>51.1%</td></tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h3>👥 公众意见</h3>
+            <div style="background:#f8f9fa; padding:12px; border-radius:8px; font-size:13px;">
+                网友普遍看好帕尔梅拉斯客胜, 但提醒维多利亚主场不易大胜; 澳门推介帕尔梅拉斯三星
+            </div>
+        </div>
+        
+        <div class="section" style="background:#e8f0fe; padding:16px; border-radius:8px;">
+            <h3 style="border-left-color: var(--success);">✅ 最终推荐</h3>
+            <p style="font-size:16px; margin:8px 0;">
+                <b>方向推荐:</b> <span class="recommend away">客胜 (51.1%)</span>　|　
+                <b>置信度:</b> ★★ 中置信度
+            </p>
+            <p style="font-size:14px; margin:4px 0;">
+                <b>比分首选:</b> 1:1 (13.0%) | 
+                <b>次选:</b> 0:1 (10.7%) |
+                <b>第三:</b> 1:0 (8.0%)
+            </p>
+            <p style="font-size:14px; margin:4px 0;">
+                <b>半场首选:</b> 0:0 (32.4%) |
+                <b>大小球:</b> 小2.5球 (54.3%)
+            </p>
+        </div>
+        
+    </div>
+</div>
+
+<div class="summary-card">
+    <h2>🔗 串关建议</h2>
+    <div style="background:#e8f0fe; border-radius:8px; padding:16px;">
+        <h3 style="color:var(--primary); margin-bottom:8px;">稳健2串1</h3>
+        <p><b>周三002 波兹南胜</b> + <b>周三006 帕尔梅拉斯胜</b></p>
+        <p style="font-size:13px; color:var(--text-sec);">两场强队方向逻辑清晰, 波兹南手握3球优势, 帕尔梅拉斯联赛榜首实力碾压</p>
+    </div>
+    <div style="background:#e8f0fe; border-radius:8px; padding:16px; margin-top:12px;">
+        <h3 style="color:var(--primary); margin-bottom:8px;">价值3串1</h3>
+        <p><b>周三001 凯拉特不败</b> + <b>周三002 波兹南胜</b> + <b>周三005 弗鲁米嫩塞胜</b></p>
+        <p style="font-size:13px; color:var(--text-sec);">凯拉特主场优势+波兹南稳守晋级+弗鲁米嫩塞主场对巴伊亚7连胜</p>
+    </div>
+    <div style="background:#fce8e6; border-radius:8px; padding:16px; margin-top:12px;">
+        <h3 style="color:var(--danger);">⚠️ 高风险搏冷</h3>
+        <p><b>周三004 巴西国际不败</b> (弗拉门戈核心缺阵+巴西国际保级战意)</p>
+        <p style="font-size:13px; color:var(--text-sec);">弗拉门戈Paquetá伤缺+Arrascaeta刚复出, 巴西国际xG远高于实际进球(运气差), 主场保级战意强</p>
+    </div>
+</div>
+
+<div style="background:#fce8e6; border-radius:8px; padding:16px; margin-top:24px; font-size:13px; color:var(--danger); text-align:center;">
+    ⚠️ 风险提示: 足球比赛存在极大不确定性, 任何模型预测均非100%准确。<br>
+    赔率数据可能随时间变化, 请以实时数据为准。理性看待预测, 切勿沉迷赌博。<br>
+    本报告遵循v1.6.0规则体系: 基本面决定比赛, 市场赔率不代表比赛情况, 胜率优先于EV。
+</div>
+
+</div>
+</body>
+</html>

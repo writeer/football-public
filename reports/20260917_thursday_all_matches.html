@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-09-17 周四体彩全赛事分析报告</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --card: #1a1d29;
+  --border: #2a2d3a;
+  --accent: #4a9eff;
+  --accent2: #f5a623;
+  --green: #2ecc71;
+  --red: #e74c3c;
+  --yellow: #f1c40f;
+  --text: #e8eaed;
+  --text-dim: #9ca3af;
+  --single: #ff6b6b;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:'Segoe UI','Microsoft YaHei',sans-serif; line-height:1.6; padding:20px; max-width:1400px; margin:0 auto; }
+h1 { text-align:center; color:var(--accent); font-size:1.8em; margin-bottom:5px; }
+.subtitle { text-align:center; color:var(--text-dim); font-size:0.9em; margin-bottom:20px; }
+.match-card { background:var(--card); border:1px solid var(--border); border-radius:12px; margin-bottom:24px; overflow:hidden; }
+.match-header { padding:14px 20px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--border); }
+.match-header .title { font-size:1.15em; font-weight:bold; }
+.match-header .badge { background:var(--single); color:#fff; padding:2px 10px; border-radius:12px; font-size:0.75em; font-weight:bold; }
+.match-header .badge.normal { background:var(--border); }
+.match-header .league { color:var(--accent2); font-size:0.85em; }
+.match-body { padding:16px 20px; }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.grid3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; }
+.section { margin-bottom:14px; }
+.section-title { color:var(--accent); font-size:0.95em; font-weight:bold; margin-bottom:6px; border-left:3px solid var(--accent); padding-left:8px; }
+.info-table { width:100%; border-collapse:collapse; font-size:0.82em; }
+.info-table td { padding:4px 8px; border-bottom:1px solid var(--border); }
+.info-table td:first-child { color:var(--text-dim); width:30%; }
+.info-table td:last-child { color:var(--text); }
+.odds-table { width:100%; border-collapse:collapse; font-size:0.82em; }
+.odds-table th { background:var(--border); padding:5px; text-align:center; color:var(--text-dim); }
+.odds-table td { padding:5px; text-align:center; border-bottom:1px solid var(--border); }
+.prob-bar { display:inline-block; width:60px; height:8px; background:var(--border); border-radius:4px; overflow:hidden; vertical-align:middle; }
+.prob-fill { height:100%; border-radius:4px; }
+.score-table { width:100%; border-collapse:collapse; font-size:0.82em; }
+.score-table th { background:var(--border); padding:4px; text-align:center; color:var(--text-dim); }
+.score-table td { padding:4px; text-align:center; border-bottom:1px solid var(--border); }
+.recommend-box { background:rgba(74,158,255,0.1); border:1px solid var(--accent); border-radius:8px; padding:12px; margin-top:10px; }
+.recommend-box h4 { color:var(--accent); margin-bottom:8px; font-size:0.95em; }
+.rec-item { display:flex; align-items:center; gap:8px; margin-bottom:4px; font-size:0.85em; }
+.rec-label { color:var(--text-dim); min-width:80px; }
+.rec-value { color:var(--green); font-weight:bold; }
+.rec-value.warning { color:var(--yellow); }
+.rec-value.danger { color:var(--red); }
+.note { font-size:0.8em; color:var(--text-dim); font-style:italic; margin-top:4px; }
+.warning-box { background:rgba(231,76,60,0.1); border:1px solid var(--red); border-radius:8px; padding:8px; margin-top:8px; font-size:0.82em; }
+.warning-box.fr { border-color:var(--yellow); background:rgba(241,196,15,0.1); }
+.conf-high { color:var(--green); }
+.conf-mid { color:var(--yellow); }
+.conf-low { color:var(--red); }
+.tag { display:inline-block; padding:1px 6px; border-radius:4px; font-size:0.75em; margin-right:4px; }
+.tag-single { background:var(--single); color:#fff; }
+.tag-fr { background:var(--yellow); color:#000; }
+.summary-table { width:100%; border-collapse:collapse; font-size:0.82em; margin-bottom:20px; }
+.summary-table th { background:var(--accent); color:#fff; padding:6px; text-align:center; }
+.summary-table td { padding:5px; text-align:center; border-bottom:1px solid var(--border); }
+.summary-table tr:hover { background:rgba(74,158,255,0.05); }
+@media(max-width:768px) { .grid2,.grid3{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<h1>⚽ 2026年9月17日 周四体彩全赛事分析报告</h1>
+<p class="subtitle">数据更新时间：2026-09-17 11:17 | 模型：Dixon-Coles + Poisson + Skellam + Monte Carlo(10000次) | 赔率以中国体彩官方为准</p>
+
+<!-- Summary Table -->
+<h2 style="color:var(--accent2);font-size:1.2em;margin-bottom:10px;">📊 全场总览表</h2>
+<table class="summary-table">
+<tr><th>编号</th><th>联赛</th><th>主队</th><th>客队</th><th>时间</th><th>单关</th><th>融合胜平负</th><th>推荐方向</th><th>置信度</th><th>首选比分</th><th>总进球</th></tr>
+<tr><td>001</td><td>亚运女足</td><td>乌兹别女</td><td>中国女</td><td>13:00</td><td>-</td><td>9.4%/14.5%/76.0%</td><td style="color:var(--green)">客胜</td><td class="conf-low">★</td><td>0:2(15.0%)</td><td>3球</td></tr>
+<tr><td>002</td><td>亚冠乙</td><td>上海申花</td><td>淡滨尼流浪</td><td>20:15</td><td><span class="tag tag-single">单关</span></td><td>72.9%/16.6%/10.6%</td><td style="color:var(--green)">主胜</td><td class="conf-low">★</td><td>2:0(15.2%)</td><td>2球/3球</td></tr>
+<tr><td>003</td><td>欧罗巴</td><td>OFI克里特</td><td>霍芬海姆</td><td>00:45</td><td>-</td><td>16.8%/20.6%/62.6%</td><td style="color:var(--green)">客胜</td><td class="conf-low">★</td><td>0:1(12.7%)</td><td>2球/3球</td></tr>
+<tr><td>004</td><td>西甲</td><td>皇家贝蒂斯</td><td>赫塔费</td><td>01:00</td><td>-</td><td>54.9%/25.3%/19.9%</td><td style="color:var(--green)">主胜</td><td class="conf-low">★</td><td>1:0(15.7%)</td><td>2球</td></tr>
+<tr><td>005</td><td>欧罗巴</td><td>水晶宫</td><td>波兹南莱赫</td><td>03:00</td><td>-</td><td>66.6%/19.8%/13.7%</td><td style="color:var(--green)">主胜</td><td class="conf-low">★</td><td>1:0(15.2%)</td><td>2球/3球</td></tr>
+<tr><td>006</td><td>欧罗巴</td><td>皇家社会</td><td>伯恩茅斯</td><td>03:00</td><td><span class="tag tag-single">单关</span></td><td>36.7%/25.7%/37.7%</td><td style="color:var(--yellow)">客胜/平</td><td class="conf-low">★</td><td>1:1(11.4%)</td><td>2球/3球</td></tr>
+<tr><td>007</td><td>欧罗巴</td><td>尤文图斯</td><td>奈梅亨</td><td>03:00</td><td>-</td><td>73.3%/16.7%/9.9%</td><td style="color:var(--green)">主胜</td><td class="conf-low">★</td><td>2:0(15.5%)</td><td>2球/3球</td></tr>
+<tr><td>008</td><td>欧罗巴</td><td>贝西克塔斯</td><td>马赛(法甲)</td><td>03:00</td><td><span class="tag tag-single">单关</span></td><td>54.2%/23.5%/22.3%</td><td style="color:var(--green)">主胜</td><td class="conf-low">★ <span class="tag tag-fr">法甲降级</span></td><td>1:0(13.3%)</td><td>2球/3球</td></tr>
+<tr><td>009</td><td>欧罗巴</td><td>利勒斯特罗姆</td><td>SCU托雷森斯</td><td>03:00</td><td>-</td><td>63.0%/21.7%/15.3%</td><td style="color:var(--green)">主胜</td><td class="conf-low">★</td><td>1:0(16.3%)</td><td>2球</td></tr>
+<tr><td>010</td><td>西甲</td><td>马拉加</td><td>比利亚雷亚尔</td><td>03:30</td><td><span class="tag tag-single">单关</span></td><td>22.5%/26.1%/51.4%</td><td style="color:var(--green)">客胜</td><td class="conf-low">★</td><td>0:1(18.1%)</td><td>1球/2球</td></tr>
+<tr><td>011</td><td>解放者杯</td><td>弗拉门戈</td><td>德尔瓦耶</td><td>08:30</td><td>-</td><td>62.4%/23.5%/14.1%</td><td style="color:var(--green)">主胜</td><td class="conf-low">★</td><td>1:0(21.5%)</td><td>1球/2球</td></tr>
+</table>
+
+<!-- Match 1 -->
+<div class="match-card">
+<div class="match-header">
+<div><span class="league">亚运女足</span> <span class="title">周四001 乌兹别克斯坦女足 vs 中国女足</span></div>
+<div><span class="badge normal">非单关</span></div>
+</div>
+<div class="match-body">
+<div class="grid2">
+<div>
+<div class="section"><div class="section-title">基本信息</div>
+<table class="info-table">
+<tr><td>比赛时间</td><td>2026-09-17 13:00</td></tr>
+<tr><td>比赛场地</td><td>岐阜长良川竞技场（日本）</td></tr>
+<tr><td>天气</td><td>晴朗 29°C 干燥炎热</td></tr>
+<tr><td>赛事阶段</td><td>亚运会小组赛C组第2轮</td></tr>
+<tr><td>当前排名</td><td>乌兹别克斯坦 C3 | 中国 C1</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">纸面实力</div>
+<table class="info-table">
+<tr><td>中国女足</td><td>亚洲一流，近10场5胜1平3负，进22失8</td></tr>
+<tr><td>乌兹别克女</td><td>亚洲三流，近10场3胜1平6负，进12失19</td></tr>
+<tr><td>历史交锋</td><td>近6次中国全胜，最近3-0（2026.3亚洲杯）</td></tr>
+<tr><td>实力差距</td><td>中国队实力碾压，纸面差距巨大</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">赔率与校准</div>
+<table class="odds-table">
+<tr><th>项目</th><th>主胜(乌兹)</th><th>平</th><th>客胜(中国)</th></tr>
+<tr><td>让球胜平负(-1)</td><td>2.45</td><td>4.52</td><td>2.00</td></tr>
+<tr><td>归一化概率</td><td>14.2%</td><td>19.5%</td><td>66.2%</td></tr>
+<tr><td>Shin概率</td><td>23.5%</td><td>25.3%</td><td>51.2%</td></tr>
+<tr><td>DC模型</td><td>4.0%</td><td>9.4%</td><td>86.5%</td></tr>
+<tr><td>蒙特卡洛</td><td>3.6%</td><td>10.8%</td><td>85.6%</td></tr>
+<tr><td>加权融合</td><td>9.4%</td><td>14.5%</td><td>76.0%</td></tr>
+</table>
+</div>
+<div class="grid2">
+<div class="section"><div class="section-title">比分Top5</div>
+<table class="score-table">
+<tr><th>比分</th><th>概率</th><th>体彩赔率</th></tr>
+<tr><td>0:2</td><td>15.0%</td><td>7.25</td></tr>
+<tr><td>0:3</td><td>14.3%</td><td>5.50</td></tr>
+<tr><td>0:1</td><td>10.9%</td><td>14.00</td></tr>
+<tr><td>0:4</td><td>10.2%</td><td>6.00</td></tr>
+<tr><td>1:2</td><td>6.8%</td><td>14.50</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">总进球/半全场</div>
+<table class="info-table">
+<tr><td>总进球分布</td><td>3球22.2% | 4球18.3% | 2球19.8%</td></tr>
+<tr><td>半全场Top3</td><td>负/负53.7% | 平/负26.8% | 负/平7.1%</td></tr>
+<tr><td>半场比分Top3</td><td>0:1 29.9% | 0:0 25.0% | 0:2 17.9%</td></tr>
+<tr><td>lambda</td><td>主0.45 / 客2.85 / 总3.30</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">战术风格与赛季表现</div>
+<p style="font-size:0.85em">亚运女足U-23赛事，赛会制中立场。中国女足技术能力远超乌兹别克斯坦，首场5-1大胜中国香港展示攻击力。乌兹别克斯坦首场1-1平菲律宾，进攻端依赖埃甘贝尔迪耶娃，防守端面对强队经常崩溃（0-6负韩国）。中国女足战术纪律强，中场控制力碾压。</p>
+</div>
+<div class="section"><div class="section-title">具体情况</div>
+<p style="font-size:0.85em">伤停：双方无重大伤停报告。天气炎热29°C可能影响体能。中国女足战意充足，小组出线关键战。乌兹别克斯坦实力有限，大概率摆铁桶阵防守。</p>
+</div>
+<div class="section"><div class="section-title">网友意见</div>
+<p style="font-size:0.85em">虎扑有赛程讨论帖但深度分析少。球迷屋预测3-0中国胜。中文平台分析较少，主要关注中国女足能否大胜。社区情绪：中国胜为共识，分歧在于能否赢2球以上。</p>
+</div>
+<div class="recommend-box">
+<h4>🎯 6维度推荐</h4>
+<div class="rec-item"><span class="rec-label">胜平负</span><span class="rec-value">周四001 客胜</span></div>
+<div class="rec-item"><span class="rec-label">让球(-1)</span><span class="rec-value">周四001 让球负(中国赢2球+)</span></div>
+<div class="rec-item"><span class="rec-label">比分</span><span class="rec-value">周四001 0:2 / 0:3</span> <span class="rec-value warning">冷门: 1:2</span></div>
+<div class="rec-item"><span class="rec-label">总进球</span><span class="rec-value">周四001 3球(4.75)</span></div>
+<div class="rec-item"><span class="rec-label">半全场</span><span class="rec-value">周四001 负/负(1.15)</span></div>
+<div class="rec-item"><span class="rec-label">半场比分</span><span class="rec-value">周四001 0:1</span></div>
+<p class="note">置信度：★ | 中国女足实力碾压但亚运会赛事波动大，高温影响体能</p>
+</div>
+</div>
+</div>
+
+<!-- Match 2 -->
+<div class="match-card">
+<div class="match-header">
+<div><span class="league">亚冠乙</span> <span class="title">周四002 上海申花 vs 淡滨尼流浪</span></div>
+<div><span class="badge">单关</span></div>
+</div>
+<div class="match-body">
+<div class="grid2">
+<div>
+<div class="section"><div class="section-title">基本信息</div>
+<table class="info-table">
+<tr><td>比赛时间</td><td>2026-09-17 20:15</td></tr>
+<tr><td>比赛场地</td><td>上海体育场</td></tr>
+<tr><td>天气</td><td>多云转阴 22-29°C</td></tr>
+<tr><td>赛事阶段</td><td>亚冠乙联赛阶段G组</td></tr>
+<tr><td>小组排名</td><td>申花G2(1515万欧) | 淡滨尼G4(245万欧)</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">纸面实力</div>
+<table class="info-table">
+<tr><td>上海申花</td><td>中超豪门，近5场2胜3负，近10场5胜5负</td></tr>
+<tr><td>淡滨尼流浪</td><td>新加坡球队，近10场7胜1平2负，客场1胜1平4负</td></tr>
+<tr><td>历史交锋</td><td>无正式交手记录</td></tr>
+<tr><td>实力差距</td><td>身价差距6倍，申花主场</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">赔率与校准</div>
+<table class="odds-table">
+<tr><th>项目</th><th>主胜</th><th>平</th><th>客胜</th></tr>
+<tr><td>胜平负</td><td>1.22</td><td>5.30</td><td>8.30</td></tr>
+<tr><td>让球(-2)</td><td>3.10</td><td>4.08</td><td>1.78</td></tr>
+<tr><td>归一化概率</td><td>72.6%</td><td>16.7%</td><td>10.7%</td></tr>
+<tr><td>Shin概率</td><td>52.0%</td><td>24.7%</td><td>23.3%</td></tr>
+<tr><td>DC模型</td><td>78.3%</td><td>14.1%</td><td>7.5%</td></tr>
+<tr><td>蒙特卡洛</td><td>77.8%</td><td>15.4%</td><td>6.9%</td></tr>
+<tr><td>加权融合</td><td>72.9%</td><td>16.6%</td><td>10.6%</td></tr>
+</table>
+</div>
+<div class="grid2">
+<div class="section"><div class="section-title">比分Top5</div>
+<table class="score-table">
+<tr><th>比分</th><th>概率</th><th>体彩赔率</th></tr>
+<tr><td>2:0</td><td>15.2%</td><td>7.50</td></tr>
+<tr><td>1:0</td><td>13.5%</td><td>9.50</td></tr>
+<tr><td>3:0</td><td>11.9%</td><td>8.50</td></tr>
+<tr><td>2:1</td><td>8.4%</td><td>8.00</td></tr>
+<tr><td>4:0</td><td>7.0%</td><td>14.00</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">总进球/半全场</div>
+<table class="info-table">
+<tr><td>总进球分布</td><td>3球22.4% | 2球22.6% | 4球16.2%</td></tr>
+<tr><td>半全场Top3</td><td>胜/胜42.6% | 平/胜28.8% | 胜/平8.6%</td></tr>
+<tr><td>半场比分Top3</td><td>0:0 29.6% | 1:0 29.2% | 2:0 14.4%</td></tr>
+<tr><td>lambda</td><td>主2.35 / 客0.55 / 总2.90</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">战术风格与赛季表现</div>
+<p style="font-size:0.85em">申花中超传统强队，主场气势强。亚冠乙面对新加坡球队，纸面实力碾压。但申花近5场2胜3负状态不稳，中超联赛排名不理想。淡滨尼流浪新加坡联赛球队，客场战绩差（6场1胜），防守端面对强队容易崩溃。</p>
+</div>
+<div class="section"><div class="section-title">具体情况</div>
+<table class="info-table">
+<tr><td>伤停(申花)</td><td>吴曦(亚运征召)/朱辰杰(亚运征召)/陈晋一(韧带撕裂)/拉唐(红牌停赛)/盖伊(跟腱断裂)/蒋圣龙(肾病)/李可(术后)</td></tr>
+<tr><td>伤停(淡滨尼)</td><td>无伤病报告，阵容完整</td></tr>
+<tr><td>战意</td><td>申花主场必须拿分，小组出线关键</td></tr>
+<tr><td>天气</td><td>多云29°C，适宜比赛</td></tr>
+</table>
+<div class="warning-box">
+<strong>⚠ 申花严重减员：</strong>8名主力缺阵（含中场核心吴曦、后防核心朱辰杰、头号射手拉唐），实力大幅折损。但面对新加坡球队，即使残阵仍有较大优势。
+</div>
+</div>
+<div class="section"><div class="section-title">网友意见</div>
+<p style="font-size:0.85em">虎扑有"申花亚冠2同组对手"讨论帖。球迷屋看好申花2-0或3-1。淡滨尼流浪客场胜率仅17%，布哈吉尔是主要威胁。社区情绪：申花胜为共识，但担忧伤病影响。</p>
+</div>
+<div class="recommend-box">
+<h4>🎯 6维度推荐</h4>
+<div class="rec-item"><span class="rec-label">胜平负</span><span class="rec-value">周四002 主胜(1.22)</span></div>
+<div class="rec-item"><span class="rec-label">让球(-2)</span><span class="rec-value warning">周四002 让球平(4.08) / 让球胜(3.10)</span></div>
+<div class="rec-item"><span class="rec-label">比分</span><span class="rec-value">周四002 2:0(7.50) / 3:0(8.50) / 1:0(9.50)</span></div>
+<div class="rec-item"><span class="rec-label">总进球</span><span class="rec-value">周四002 3球(3.85) / 2球(4.55)</span></div>
+<div class="rec-item"><span class="rec-label">半全场</span><span class="rec-value">周四002 胜/胜(1.67)</span></div>
+<div class="rec-item"><span class="rec-label">半场比分</span><span class="rec-value">周四002 1:0</span></div>
+<p class="note">置信度：★ | 申花8人缺阵是最大隐患，让2球盘风险较大</p>
+</div>
+</div>
+</div>
+
+<!-- Match 3 -->
+<div class="match-card">
+<div class="match-header">
+<div><span class="league">欧罗巴</span> <span class="title">周四003 OFI克里特 vs 霍芬海姆</span></div>
+<div><span class="badge normal">非单关</span></div>
+</div>
+<div class="match-body">
+<div class="grid2">
+<div>
+<div class="section"><div class="section-title">基本信息</div>
+<table class="info-table">
+<tr><td>比赛时间</td><td>2026-09-18 00:45</td></tr>
+<tr><td>比赛场地</td><td>潘克里蒂奥体育场（克里特岛）</td></tr>
+<tr><td>天气</td><td>21-28°C 西北风</td></tr>
+<tr><td>赛事阶段</td><td>欧罗巴联赛阶段第1轮</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">纸面实力</div>
+<table class="info-table">
+<tr><td>OFI克里特</td><td>希腊超，近4场零封，含1-0胜奥林匹亚科斯</td></tr>
+<tr><td>霍芬海姆</td><td>德甲中游，近3场2胜1负，上轮2-1胜斯图加特</td></tr>
+<tr><td>历史交锋</td><td>无交手记录</td></tr>
+<tr><td>xG对比</td><td>OFI主场xG 1.83 vs 霍芬海姆xG 2.07（BETSiE预测）</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">赔率与校准</div>
+<table class="odds-table">
+<tr><th>项目</th><th>主胜</th><th>平</th><th>客胜</th></tr>
+<tr><td>胜平负</td><td>6.40</td><td>4.78</td><td>1.31</td></tr>
+<tr><td>归一化概率</td><td>13.8%</td><td>18.5%</td><td>67.6%</td></tr>
+<tr><td>Shin概率</td><td>24.4%</td><td>25.7%</td><td>50.0%</td></tr>
+<tr><td>DC模型</td><td>16.5%</td><td>19.6%</td><td>64.0%</td></tr>
+<tr><td>蒙特卡洛</td><td>15.4%</td><td>21.7%</td><td>62.8%</td></tr>
+<tr><td>加权融合</td><td>16.8%</td><td>20.6%</td><td>62.6%</td></tr>
+</table>
+</div>
+<div class="grid2">
+<div class="section"><div class="section-title">比分Top5</div>
+<table class="score-table">
+<tr><th>比分</th><th>概率</th><th>体彩赔率</th></tr>
+<tr><td>0:1</td><td>12.7%</td><td>9.00</td></tr>
+<tr><td>0:2</td><td>11.6%</td><td>7.50</td></tr>
+<tr><td>1:2</td><td>9.8%</td><td>7.00</td></tr>
+<tr><td>1:1</td><td>9.3%</td><td>9.75</td></tr>
+<tr><td>0:3</td><td>7.5%</td><td>11.00</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">总进球/半全场</div>
+<table class="info-table">
+<tr><td>总进球分布</td><td>2球23.0% | 3球22.3% | 1球18.6%</td></tr>
+<tr><td>半全场Top3</td><td>负/负27.7% | 平/负25.8% | 负/平9.7%</td></tr>
+<tr><td>半场比分Top3</td><td>0:0 30.9% | 0:1 25.3% | 1:0 11.0%</td></tr>
+<tr><td>lambda</td><td>主0.85 / 客1.95 / 总2.80</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">战术风格与具体情况</div>
+<p style="font-size:0.85em">OFI克里特主场4场零封（含胜奥林匹亚科斯），防守极佳。霍芬海姆德甲中游，攻击力不错但客场欧战经验存疑。伤停：OFI主力中卫Marinakis缺阵，霍芬海姆Prass存疑但Kramaric和Wimmer预计回归。克里特岛客场远征对德甲球队是考验。</p>
+</div>
+<div class="recommend-box">
+<h4>🎯 6维度推荐</h4>
+<div class="rec-item"><span class="rec-label">胜平负</span><span class="rec-value">周四003 客胜(1.31)</span></div>
+<div class="rec-item"><span class="rec-label">让球(+1)</span><span class="rec-value warning">周四003 让球平(3.60) / 让球负(2.00)</span></div>
+<div class="rec-item"><span class="rec-label">比分</span><span class="rec-value">周四003 0:1(9.00) / 0:2(7.50) / 1:2(7.00)</span></div>
+<div class="rec-item"><span class="rec-label">总进球</span><span class="rec-value">周四003 2球(4.35) / 3球(3.60)</span></div>
+<div class="rec-item"><span class="rec-label">半全场</span><span class="rec-value">周四003 负/负(1.94)</span></div>
+<div class="rec-item"><span class="rec-label">半场比分</span><span class="rec-value">周四003 0:0 / 0:1</span></div>
+<p class="note">置信度：★ | OFI主场防守强但实力差距明显，霍芬海姆客场可能小胜</p>
+</div>
+</div>
+</div>
+
+<!-- Match 4 -->
+<div class="match-card">
+<div class="match-header">
+<div><span class="league">西甲</span> <span class="title">周四004 皇家贝蒂斯 vs 赫塔费</span></div>
+<div><span class="badge normal">非单关</span></div>
+</div>
+<div class="match-body">
+<div class="grid2">
+<div>
+<div class="section"><div class="section-title">基本信息</div>
+<table class="info-table">
+<tr><td>比赛时间</td><td>2026-09-18 01:00</td></tr>
+<tr><td>比赛场地</td><td>贝尼托·比利亚马林球场（塞维利亚）60721座</td></tr>
+<tr><td>天气</td><td>29°C</td></tr>
+<tr><td>赛事阶段</td><td>西甲第6轮</td></tr>
+<tr><td>联赛排名</td><td>贝蒂斯第3(12分) | 赫塔费第15(5分)</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">纸面实力</div>
+<table class="info-table">
+<tr><td>贝蒂斯</td><td>前5轮4胜1负，主场3战全胜(胜皇社/胜皇马)</td></tr>
+<tr><td>赫塔费</td><td>前5轮1胜2平2负，客场2战全败0进球</td></tr>
+<tr><td>历史交锋</td><td>贝蒂斯主场近5年胜率60%，上赛季主场4-0</td></tr>
+<tr><td>xG对比</td><td>贝蒂斯xG 1.60 vs 赫塔费xG 1.00</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">赔率与校准</div>
+<table class="odds-table">
+<tr><th>项目</th><th>主胜</th><th>平</th><th>客胜</th></tr>
+<tr><td>胜平负</td><td>1.52</td><td>3.41</td><td>5.60</td></tr>
+<tr><td>让球(-1)</td><td>2.85</td><td>3.17</td><td>2.16</td></tr>
+<tr><td>归一化概率</td><td>58.2%</td><td>26.0%</td><td>15.8%</td></tr>
+<tr><td>Shin概率</td><td>45.6%</td><td>29.0%</td><td>25.4%</td></tr>
+<tr><td>DC模型</td><td>56.1%</td><td>23.7%</td><td>20.3%</td></tr>
+<tr><td>蒙特卡洛</td><td>54.9%</td><td>25.1%</td><td>19.9%</td></tr>
+<tr><td>加权融合</td><td>54.9%</td><td>25.3%</td><td>19.9%</td></tr>
+</table>
+</div>
+<div class="grid2">
+<div class="section"><div class="section-title">比分Top5</div>
+<table class="score-table">
+<tr><th>比分</th><th>概率</th><th>体彩赔率</th></tr>
+<tr><td>1:0</td><td>15.7%</td><td>5.40</td></tr>
+<tr><td>2:0</td><td>11.5%</td><td>6.50</td></tr>
+<tr><td>1:1</td><td>10.9%</td><td>6.40</td></tr>
+<tr><td>2:1</td><td>9.2%</td><td>7.50</td></tr>
+<tr><td>0:0</td><td>8.6%</td><td>8.50</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">总进球/半全场</div>
+<table class="info-table">
+<tr><td>总进球分布</td><td>2球25.4% | 1球24.3% | 3球20.6%</td></tr>
+<tr><td>半全场Top3</td><td>平/胜25.1% | 胜/胜21.1% | 平/平11.4%</td></tr>
+<tr><td>半场比分Top3</td><td>0:0 37.3% | 1:0 24.3% | 0:1 12.5%</td></tr>
+<tr><td>lambda</td><td>主1.55 / 客0.80 / 总2.35</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">战术风格与具体情况</div>
+<p style="font-size:0.85em">贝蒂斯主场极其强势，本赛季主场连胜皇社和皇马。赫塔费客场2战全败0进球，6人伤停（前锋乌切赛季报销、胡安米缺阵至11月、马约拉尔手术、3名后卫伤停）。贝蒂斯一周三赛体能隐患但阵容深度足够。赫塔费主帅博尔达拉斯称贝蒂斯"拥有欧洲最好阵容之一"。</p>
+</div>
+<div class="section"><div class="section-title">网友意见</div>
+<p style="font-size:0.85em">虎扑社区认为贝蒂斯主场强势但一周三赛体能隐患，看好1-0或2-0小胜。赫塔费客场全败0球，进攻选择极其有限。社区共识：贝蒂斯胜。</p>
+</div>
+<div class="recommend-box">
+<h4>🎯 6维度推荐</h4>
+<div class="rec-item"><span class="rec-label">胜平负</span><span class="rec-value">周四004 主胜(1.52)</span></div>
+<div class="rec-item"><span class="rec-label">让球(-1)</span><span class="rec-value warning">周四004 让球胜(2.85) / 让球平(3.17)</span></div>
+<div class="rec-item"><span class="rec-label">比分</span><span class="rec-value">周四004 1:0(5.40) / 2:0(6.50) / 1:1(6.40)</span></div>
+<div class="rec-item"><span class="rec-label">总进球</span><span class="rec-value">周四004 2球(3.15) / 1球(4.00)</span></div>
+<div class="rec-item"><span class="rec-label">半全场</span><span class="rec-value">周四004 平/胜(3.95)</span></div>
+<div class="rec-item"><span class="rec-label">半场比分</span><span class="rec-value">周四004 0:0 / 1:0</span></div>
+<p class="note">置信度：★ | 贝蒂斯主场强势但一周三赛，赫塔费6人伤停防守反击</p>
+</div>
+</div>
+</div>
+
+<!-- Match 5 -->
+<div class="match-card">
+<div class="match-header">
+<div><span class="league">欧罗巴</span> <span class="title">周四005 水晶宫 vs 波兹南莱赫</span></div>
+<div><span class="badge normal">非单关</span></div>
+</div>
+<div class="match-body">
+<div class="grid2">
+<div>
+<div class="section"><div class="section-title">基本信息</div>
+<table class="info-table">
+<tr><td>比赛时间</td><td>2026-09-18 03:00</td></tr>
+<tr><td>比赛场地</td><td>Selhurst Park（伦敦）</td></tr>
+<tr><td>天气</td><td>13-21°C 多云转晴</td></tr>
+<tr><td>赛事阶段</td><td>欧罗巴联赛阶段第1轮</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">纸面实力</div>
+<table class="info-table">
+<tr><td>水晶宫</td><td>英超，近5场2胜3负，进9失11，英超16位</td></tr>
+<tr><td>波兹南莱赫</td><td>波兰冠军，近5场3胜1平1负，进9失7</td></tr>
+<tr><td>历史交锋</td><td>无交手记录</td></tr>
+<tr><td>欧战背景</td><td>水晶宫上赛季欧协联冠军，首次参加欧联</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">赔率与校准</div>
+<table class="odds-table">
+<tr><th>项目</th><th>主胜</th><th>平</th><th>客胜</th></tr>
+<tr><td>胜平负</td><td>1.26</td><td>4.95</td><td>7.55</td></tr>
+<tr><td>归一化概率</td><td>70.4%</td><td>17.9%</td><td>11.7%</td></tr>
+<tr><td>Shin概率</td><td>51.1%</td><td>25.2%</td><td>23.7%</td></tr>
+<tr><td>DC模型</td><td>69.0%</td><td>18.8%</td><td>12.3%</td></tr>
+<tr><td>蒙特卡洛</td><td>68.5%</td><td>20.4%</td><td>11.0%</td></tr>
+<tr><td>加权融合</td><td>66.6%</td><td>19.8%</td><td>13.7%</td></tr>
+</table>
+</div>
+<div class="grid2">
+<div class="section"><div class="section-title">比分Top5</div>
+<table class="score-table">
+<tr><th>比分</th><th>概率</th><th>体彩赔率</th></tr>
+<tr><td>1:0</td><td>15.2%</td><td>8.25</td></tr>
+<tr><td>2:0</td><td>14.1%</td><td>6.50</td></tr>
+<tr><td>2:1</td><td>9.2%</td><td>7.00</td></tr>
+<tr><td>3:0</td><td>9.2%</td><td>9.50</td></tr>
+<tr><td>1:1</td><td>8.7%</td><td>10.50</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">总进球/半全场</div>
+<table class="info-table">
+<tr><td>总进球分布</td><td>2球24.4% | 3球21.8% | 1球20.8%</td></tr>
+<tr><td>半全场Top3</td><td>胜/胜32.9% | 平/胜28.1% | 胜/平9.7%</td></tr>
+<tr><td>半场比分Top3</td><td>0:0 33.6% | 1:0 27.5% | 2:0 11.3%</td></tr>
+<tr><td>lambda</td><td>主1.95 / 客0.65 / 总2.60</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">战术风格与具体情况</div>
+<p style="font-size:0.85em">水晶宫英超球队，上赛季欧协联冠军。但4名主力伤停影响大：头号射手Mateta(腿部伤约3周缺阵)、门将Henderson、边锋Sarr(腹股沟)、后卫Disasi(停赛)。波兹南莱赫波兰冠军，欧联资格赛6-2淘汰图恩。水晶宫英超开局1胜3负状态不佳，防线漏洞大(11球)。</p>
+</div>
+<div class="recommend-box">
+<h4>🎯 6维度推荐</h4>
+<div class="rec-item"><span class="rec-label">胜平负</span><span class="rec-value">周四005 主胜(1.26)</span></div>
+<div class="rec-item"><span class="rec-label">让球(-1)</span><span class="rec-value warning">周四005 让球胜(1.92) / 让球平(3.50)</span></div>
+<div class="rec-item"><span class="rec-label">比分</span><span class="rec-value">周四005 1:0(8.25) / 2:0(6.50) / 2:1(7.00)</span></div>
+<div class="rec-item"><span class="rec-label">总进球</span><span class="rec-value">周四005 2球(4.15) / 3球(3.55)</span></div>
+<div class="rec-item"><span class="rec-label">半全场</span><span class="rec-value">周四005 胜/胜(1.78)</span></div>
+<div class="rec-item"><span class="rec-label">半场比分</span><span class="rec-value">周四005 1:0 / 0:0</span></div>
+<p class="note">置信度：★ | 水晶宫4主力伤停+英超状态差，但纸面实力碾压波兰队</p>
+</div>
+</div>
+</div>
+
+<!-- Match 6 -->
+<div class="match-card">
+<div class="match-header">
+<div><span class="league">欧罗巴</span> <span class="title">周四006 皇家社会 vs 伯恩茅斯</span></div>
+<div><span class="badge">单关</span></div>
+</div>
+<div class="match-body">
+<div class="grid2">
+<div>
+<div class="section"><div class="section-title">基本信息</div>
+<table class="info-table">
+<tr><td>比赛时间</td><td>2026-09-18 03:00</td></tr>
+<tr><td>比赛场地</td><td>Reale Arena（圣塞巴斯蒂安）</td></tr>
+<tr><td>天气</td><td>18°C 多云有降水概率</td></tr>
+<tr><td>赛事阶段</td><td>欧罗巴联赛阶段第1轮</td></tr>
+<tr><td>联赛排名</td><td>皇社西甲13(7分) | 伯恩茅斯英超13(3分)</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">纸面实力</div>
+<table class="info-table">
+<tr><td>皇家社会</td><td>近5场2胜1平2负，西甲进6失11</td></tr>
+<tr><td>伯恩茅斯</td><td>近5场2胜3平不败，英超进6失7</td></tr>
+<tr><td>历史交锋</td><td>无交手记录</td></tr>
+<tr><td>欧战背景</td><td>皇社120场欧战经验 vs 伯恩茅斯队史首场欧战</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">赔率与校准</div>
+<table class="odds-table">
+<tr><th>项目</th><th>主胜</th><th>平</th><th>客胜</th></tr>
+<tr><td>胜平负</td><td>2.66</td><td>3.42</td><td>2.17</td></tr>
+<tr><td>让球(-1)</td><td>1.52</td><td>4.05</td><td>4.45</td></tr>
+<tr><td>归一化概率</td><td>33.3%</td><td>25.9%</td><td>40.8%</td></tr>
+<tr><td>Shin概率</td><td>33.2%</td><td>29.8%</td><td>37.0%</td></tr>
+<tr><td>DC模型</td><td>39.1%</td><td>24.1%</td><td>36.8%</td></tr>
+<tr><td>蒙特卡洛</td><td>38.4%</td><td>25.8%</td><td>35.9%</td></tr>
+<tr><td>加权融合</td><td>36.7%</td><td>25.7%</td><td>37.7%</td></tr>
+</table>
+</div>
+<div class="grid2">
+<div class="section"><div class="section-title">比分Top5</div>
+<table class="score-table">
+<tr><th>比分</th><th>概率</th><th>体彩赔率</th></tr>
+<tr><td>1:1</td><td>11.4%</td><td>6.75</td></tr>
+<tr><td>1:0</td><td>10.5%</td><td>11.50</td></tr>
+<tr><td>0:1</td><td>10.2%</td><td>11.00</td></tr>
+<tr><td>2:1</td><td>8.4%</td><td>8.75</td></tr>
+<tr><td>1:2</td><td>8.1%</td><td>8.00</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">总进球/半全场</div>
+<table class="info-table">
+<tr><td>总进球分布</td><td>2球23.8% | 3球21.9% | 1球20.7%</td></tr>
+<tr><td>半全场Top3</td><td>平/胜16.6% | 平/负16.1% | 平/平11.3%</td></tr>
+<tr><td>半场比分Top3</td><td>0:0 32.9% | 1:0 18.6% | 0:1 17.9%</td></tr>
+<tr><td>lambda</td><td>主1.35 / 客1.30 / 总2.65</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">战术风格与具体情况</div>
+<p style="font-size:0.85em">皇家社会西甲传统强队，欧战常客(120场)，主帅索莱尔目标联赛阶段前8直接晋级。但皇社开局2胜1平3负状态不稳，近6失11球防守糟糕。伯恩茅斯英超2胜3平不败，队史127年首场欧战，战意十足。伤停：皇社Zubeldia+Odriozola缺阵；伯恩茅斯Araujo+Kroupi+Adli缺阵。两队实力接近，赔率也接近，是本场最均衡的对决。</p>
+</div>
+<div class="section"><div class="section-title">网友意见</div>
+<p style="font-size:0.85em">虎扑/知乎讨论较少。搜狐/懂球帝预测皇社2-1主胜，认为主场优势+欧战经验。但伯恩茅斯近5场不败状态更好。社区情绪分歧较大，主胜客胜都有支持者。</p>
+</div>
+<div class="recommend-box">
+<h4>🎯 6维度推荐</h4>
+<div class="rec-item"><span class="rec-label">胜平负</span><span class="rec-value warning">周四006 平(3.42) / 客胜(2.17)</span></div>
+<div class="rec-item"><span class="rec-label">让球(-1)</span><span class="rec-value warning">周四006 让球负(4.45)</span></div>
+<div class="rec-item"><span class="rec-label">比分</span><span class="rec-value">周四006 1:1(6.75) / 0:1(11.00) / 1:0(11.50)</span></div>
+<div class="rec-item"><span class="rec-label">总进球</span><span class="rec-value">周四006 2球(3.95) / 3球(3.50)</span></div>
+<div class="rec-item"><span class="rec-label">半全场</span><span class="rec-value warning">周四006 平/平(6.00) / 平/负(5.90)</span></div>
+<div class="rec-item"><span class="rec-label">半场比分</span><span class="rec-value">周四006 0:0</span></div>
+<p class="note">置信度：★ | 两队实力接近，伯恩茅斯状态更好但缺乏欧战经验，平局概率高</p>
+</div>
+</div>
+</div>
+
+<!-- Match 7 -->
+<div class="match-card">
+<div class="match-header">
+<div><span class="league">欧罗巴</span> <span class="title">周四007 尤文图斯 vs 奈梅亨</span></div>
+<div><span class="badge normal">非单关</span></div>
+</div>
+<div class="match-body">
+<div class="grid2">
+<div>
+<div class="section"><div class="section-title">基本信息</div>
+<table class="info-table">
+<tr><td>比赛时间</td><td>2026-09-18 03:00</td></tr>
+<tr><td>比赛场地</td><td>安联球场（都灵）</td></tr>
+<tr><td>天气</td><td>20°C 干燥</td></tr>
+<tr><td>赛事阶段</td><td>欧罗巴联赛阶段第1轮</td></tr>
+<tr><td>联赛排名</td><td>尤文意甲8(7分) | 奈梅亨荷甲9(7分)</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">纸面实力</div>
+<table class="info-table">
+<tr><td>尤文图斯</td><td>意甲豪门，近5场2胜1平1负，xG 1.86/场</td></tr>
+<tr><td>奈梅亨</td><td>荷甲中游，近5场1胜1平3负，进8失10</td></tr>
+<tr><td>历史交锋</td><td>无交手记录</td></tr>
+<tr><td>欧战背景</td><td>尤文近6场欧战4胜1平1负 vs 奈梅亨自2008后重返欧战</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">赔率与校准</div>
+<table class="odds-table">
+<tr><th>项目</th><th>主胜</th><th>平</th><th>客胜</th></tr>
+<tr><td>胜平负</td><td>1.13</td><td>6.00</td><td>13.00</td></tr>
+<tr><td>让球(-2)</td><td>2.57</td><td>3.78</td><td>2.10</td></tr>
+<tr><td>归一化概率</td><td>78.4%</td><td>14.8%</td><td>6.8%</td></tr>
+<tr><td>Shin概率</td><td>54.2%</td><td>23.6%</td><td>22.1%</td></tr>
+<tr><td>DC模型</td><td>76.0%</td><td>15.6%</td><td>8.4%</td></tr>
+<tr><td>蒙特卡洛</td><td>76.1%</td><td>16.7%</td><td>7.2%</td></tr>
+<tr><td>加权融合</td><td>73.3%</td><td>16.7%</td><td>9.9%</td></tr>
+</table>
+</div>
+<div class="grid2">
+<div class="section"><div class="section-title">比分Top5</div>
+<table class="score-table">
+<tr><th>比分</th><th>概率</th><th>体彩赔率</th></tr>
+<tr><td>2:0</td><td>15.5%</td><td>6.00</td></tr>
+<tr><td>1:0</td><td>14.7%</td><td>8.00</td></tr>
+<tr><td>3:0</td><td>11.4%</td><td>7.50</td></tr>
+<tr><td>2:1</td><td>8.5%</td><td>8.25</td></tr>
+<tr><td>1:1</td><td>7.1%</td><td>11.50</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">总进球/半全场</div>
+<table class="info-table">
+<tr><td>总进球分布</td><td>2球23.6% | 3球22.2% | 1球18.8%</td></tr>
+<tr><td>半全场Top3</td><td>胜/胜40.5% | 平/胜28.7% | 胜/平8.5%</td></tr>
+<tr><td>半场比分Top3</td><td>0:0 31.5% | 1:0 29.1% | 2:0 13.4%</td></tr>
+<tr><td>lambda</td><td>主2.20 / 客0.55 / 总2.75</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">战术风格与具体情况</div>
+<p style="font-size:0.85em">尤文图斯实力碾压，但7名球员伤停（Locatelli半月板手术5-6月、Thuram膝伤4月、Yildiz跖骨骨折、Cabal、Boga等），中前场严重减员。上轮联赛2-3负萨索洛暴露防守问题。奈梅亨荷甲中游，自2008年后重返欧战，经验匮乏。尤文主场安联球场气势强，即使残阵实力仍远超荷甲中游队。</p>
+</div>
+<div class="recommend-box">
+<h4>🎯 6维度推荐</h4>
+<div class="rec-item"><span class="rec-label">胜平负</span><span class="rec-value">周四007 主胜(1.13)</span></div>
+<div class="rec-item"><span class="rec-label">让球(-2)</span><span class="rec-value warning">周四007 让球胜(2.57) / 让球负(2.10)</span></div>
+<div class="rec-item"><span class="rec-label">比分</span><span class="rec-value">周四007 2:0(6.00) / 1:0(8.00) / 3:0(7.50)</span></div>
+<div class="rec-item"><span class="rec-label">总进球</span><span class="rec-value">周四007 2球(4.50) / 3球(3.60)</span></div>
+<div class="rec-item"><span class="rec-label">半全场</span><span class="rec-value">周四007 胜/胜(1.55)</span></div>
+<div class="rec-item"><span class="rec-label">半场比分</span><span class="rec-value">周四007 1:0 / 0:0</span></div>
+<p class="note">置信度：★ | 尤文7人伤停是隐患，但实力差距巨大，主场胜面大</p>
+</div>
+</div>
+</div>
+
+<!-- Match 8 -->
+<div class="match-card">
+<div class="match-header">
+<div><span class="league">欧罗巴</span> <span class="title">周四008 贝西克塔斯 vs 马赛(法甲)</span></div>
+<div><span class="badge">单关</span></div>
+</div>
+<div class="match-body">
+<div class="grid2">
+<div>
+<div class="section"><div class="section-title">基本信息</div>
+<table class="info-table">
+<tr><td>比赛时间</td><td>2026-09-18 03:00</td></tr>
+<tr><td>比赛场地</td><td>Tüpraş体育场（伊斯坦布尔）</td></tr>
+<tr><td>天气</td><td>24°C 干燥</td></tr>
+<tr><td>赛事阶段</td><td>欧罗巴联赛阶段第1轮</td></tr>
+<tr><td>联赛排名</td><td>贝西克塔斯土超2(12分) | 马赛法甲13(4分)</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">纸面实力</div>
+<table class="info-table">
+<tr><td>贝西克塔斯</td><td>近5场4胜1负，进12失4，主场6场5零封</td></tr>
+<tr><td>马赛</td><td>近5场1胜3负1平，进7失7，法甲13位仅多降级1分</td></tr>
+<tr><td>历史交锋</td><td>2007-08欧冠小组赛各赢一场</td></tr>
+<tr><td>欧战背景</td><td>贝西克塔斯淘汰3队晋级 | 马赛曾3入欧战决赛</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">赔率与校准</div>
+<table class="odds-table">
+<tr><th>项目</th><th>主胜</th><th>平</th><th>客胜</th></tr>
+<tr><td>胜平负</td><td>1.70</td><td>3.72</td><td>3.68</td></tr>
+<tr><td>让球(-1)</td><td>3.05</td><td>3.65</td><td>1.90</td></tr>
+<tr><td>归一化概率</td><td>52.1%</td><td>23.8%</td><td>24.1%</td></tr>
+<tr><td>Shin概率</td><td>42.7%</td><td>28.6%</td><td>28.7%</td></tr>
+<tr><td>DC模型</td><td>58.3%</td><td>21.6%</td><td>20.0%</td></tr>
+<tr><td>蒙特卡洛</td><td>57.0%</td><td>23.4%</td><td>19.6%</td></tr>
+<tr><td>加权融合</td><td>54.2%</td><td>23.5%</td><td>22.3%</td></tr>
+</table>
+</div>
+<div class="grid2">
+<div class="section"><div class="section-title">比分Top5</div>
+<table class="score-table">
+<tr><th>比分</th><th>概率</th><th>体彩赔率</th></tr>
+<tr><td>1:0</td><td>13.3%</td><td>10.00</td></tr>
+<tr><td>2:0</td><td>10.8%</td><td>10.50</td></tr>
+<tr><td>1:1</td><td>10.2%</td><td>8.25</td></tr>
+<tr><td>2:1</td><td>9.7%</td><td>7.25</td></tr>
+<tr><td>0:1</td><td>7.2%</td><td>14.00</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">总进球/半全场</div>
+<table class="info-table">
+<tr><td>总进球分布</td><td>2球23.9% | 3球21.9% | 1球20.5%</td></tr>
+<tr><td>半全场Top3</td><td>平/胜24.9% | 胜/胜22.4% | 平/平9.7%</td></tr>
+<tr><td>半场比分Top3</td><td>0:0 32.9% | 1:0 24.2% | 0:1 12.4%</td></tr>
+<tr><td>lambda</td><td>主1.75 / 客0.90 / 总2.65</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">战术风格与具体情况</div>
+<p style="font-size:0.85em">贝西克塔斯主场伊斯坦布尔气氛恐怖，近6个主场正式赛5次零封。马赛法甲开局1胜3负1平极差，近3场全败(0-3摩纳哥、1-0雷恩、2-1巴黎FC)。马赛主帅热内西奥确认调整首发。伤停：贝西克塔斯Ridvan Yilmaz缺阵；马赛Kondogbia+Nnadi缺阵。</p>
+<div class="warning-box fr">
+<strong>⚠ [法甲冷门降级]：</strong>马赛为法甲球队，非PSG主场，按规则22-L1执行置信度降级。马赛近5场1胜3负1平状态极差，客场远征伊斯坦布尔难度极大。但法甲球队爆冷属性需警惕。
+</div>
+</div>
+<div class="section"><div class="section-title">网友意见</div>
+<p style="font-size:0.85em">搜狐/懂球帝预测贝西克塔斯2-0主胜，认为伊斯坦布尔主场氛围对客队不利。Transfermarkt预测模型看好主胜。马赛主帅强调全力踢欧联。社区共识：主胜。</p>
+</div>
+<div class="recommend-box">
+<h4>🎯 6维度推荐</h4>
+<div class="rec-item"><span class="rec-label">胜平负</span><span class="rec-value">周四008 主胜(1.70)</span></div>
+<div class="rec-item"><span class="rec-label">让球(-1)</span><span class="rec-value warning">周四008 让球胜(3.05) / 让球负(1.90)</span></div>
+<div class="rec-item"><span class="rec-label">比分</span><span class="rec-value">周四008 1:0(10.00) / 2:0(10.50) / 1:1(8.25)</span></div>
+<div class="rec-item"><span class="rec-label">总进球</span><span class="rec-value">周四008 2球(4.30) / 3球(3.55)</span></div>
+<div class="rec-item"><span class="rec-label">半全场</span><span class="rec-value warning">周四008 平/胜(5.00) / 胜/胜(2.75)</span></div>
+<div class="rec-item"><span class="rec-label">半场比分</span><span class="rec-value">周四008 0:0 / 1:0</span></div>
+<p class="note">置信度：★ [法甲降级] | 贝西克塔斯主场强势，马赛状态极差但法甲爆冷属性需防</p>
+</div>
+</div>
+</div>
+
+<!-- Match 9 -->
+<div class="match-card">
+<div class="match-header">
+<div><span class="league">欧罗巴</span> <span class="title">周四009 利勒斯特罗姆 vs SCU托雷森斯</span></div>
+<div><span class="badge normal">非单关</span></div>
+</div>
+<div class="match-body">
+<div class="grid2">
+<div>
+<div class="section"><div class="section-title">基本信息</div>
+<table class="info-table">
+<tr><td>比赛时间</td><td>2026-09-18 03:00</td></tr>
+<tr><td>比赛场地</td><td>Åråsen Stadion（挪威，11637座）</td></tr>
+<tr><td>天气</td><td>小雨15°C/9°C 降水76%</td></tr>
+<tr><td>赛事阶段</td><td>欧罗巴联赛阶段第1轮</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">纸面实力</div>
+<table class="info-table">
+<tr><td>利勒斯特罗姆</td><td>挪超5位，近5场3胜1平1负，进9失6</td></tr>
+<tr><td>SCU托雷森斯</td><td>葡乙(葡萄牙第二级别)，近5场1胜3平1负</td></tr>
+<tr><td>历史交锋</td><td>无交手记录，双方均为欧战正赛首秀</td></tr>
+<tr><td>xG对比</td><td>利勒斯特罗姆xG 1.41/场 | 托雷森斯无数据</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">赔率与校准</div>
+<table class="odds-table">
+<tr><th>项目</th><th>主胜</th><th>平</th><th>客胜</th></tr>
+<tr><td>胜平负</td><td>1.35</td><td>4.32</td><td>6.35</td></tr>
+<tr><td>归一化概率</td><td>65.6%</td><td>20.5%</td><td>13.9%</td></tr>
+<tr><td>Shin概率</td><td>49.0%</td><td>26.4%</td><td>24.5%</td></tr>
+<tr><td>DC模型</td><td>65.9%</td><td>20.5%</td><td>13.7%</td></tr>
+<tr><td>蒙特卡洛</td><td>64.4%</td><td>22.5%</td><td>13.2%</td></tr>
+<tr><td>加权融合</td><td>63.0%</td><td>21.7%</td><td>15.3%</td></tr>
+</table>
+</div>
+<div class="grid2">
+<div class="section"><div class="section-title">比分Top5</div>
+<table class="score-table">
+<tr><th>比分</th><th>概率</th><th>体彩赔率</th></tr>
+<tr><td>1:0</td><td>16.3%</td><td>8.00</td></tr>
+<tr><td>2:0</td><td>14.0%</td><td>7.00</td></tr>
+<tr><td>1:1</td><td>9.3%</td><td>9.25</td></tr>
+<tr><td>2:1</td><td>9.1%</td><td>7.00</td></tr>
+<tr><td>3:0</td><td>8.4%</td><td>10.50</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">总进球/半全场</div>
+<table class="info-table">
+<tr><td>总进球分布</td><td>2球25.1% | 1球22.8% | 3球21.2%</td></tr>
+<tr><td>半全场Top3</td><td>胜/胜28.7% | 平/胜27.6% | 平/平10.1%</td></tr>
+<tr><td>半场比分Top3</td><td>0:0 35.7% | 1:0 27.0% | 2:0 10.2%</td></tr>
+<tr><td>lambda</td><td>主1.80 / 客0.65 / 总2.45</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">战术风格与具体情况</div>
+<p style="font-size:0.85em">利勒斯特罗姆挪超中上游，近5场3胜1平1负状态不错，主场作战。SCU托雷森斯来自葡萄牙第二级别联赛，实力明显弱于挪超球队。雨天场地湿滑可能影响技术发挥。利勒斯特罗姆伤停：Alperud/Garnas/Gulbrandsen(停)；托雷森斯：Pozo/Jatta存疑。双方均为欧战正赛首秀，缺乏经验。</p>
+</div>
+<div class="recommend-box">
+<h4>🎯 6维度推荐</h4>
+<div class="rec-item"><span class="rec-label">胜平负</span><span class="rec-value">周四009 主胜(1.35)</span></div>
+<div class="rec-item"><span class="rec-label">让球(-1)</span><span class="rec-value warning">周四009 让球胜(2.17) / 让球平(3.43)</span></div>
+<div class="rec-item"><span class="rec-label">比分</span><span class="rec-value">周四009 1:0(8.00) / 2:0(7.00) / 2:1(7.00)</span></div>
+<div class="rec-item"><span class="rec-label">总进球</span><span class="rec-value">周四009 2球(4.10) / 3球(3.55)</span></div>
+<div class="rec-item"><span class="rec-label">半全场</span><span class="rec-value warning">周四009 胜/胜(1.97) / 平/胜(4.15)</span></div>
+<div class="rec-item"><span class="rec-label">半场比分</span><span class="rec-value">周四009 1:0 / 0:0</span></div>
+<p class="note">置信度：★ | 利勒斯特罗姆实力占优但雨天+双方欧战首秀增加不确定性</p>
+</div>
+</div>
+</div>
+
+<!-- Match 10 -->
+<div class="match-card">
+<div class="match-header">
+<div><span class="league">西甲</span> <span class="title">周四010 马拉加 vs 比利亚雷亚尔</span></div>
+<div><span class="badge">单关</span></div>
+</div>
+<div class="match-body">
+<div class="grid2">
+<div>
+<div class="section"><div class="section-title">基本信息</div>
+<table class="info-table">
+<tr><td>比赛时间</td><td>2026-09-18 03:30</td></tr>
+<tr><td>比赛场地</td><td>La Rosaleda（马拉加）</td></tr>
+<tr><td>天气</td><td>小雨 25°C/20°C</td></tr>
+<tr><td>赛事阶段</td><td>西甲第6轮</td></tr>
+<tr><td>联赛排名</td><td>马拉加18位(3分) | 比利亚雷亚尔19位(2分)</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">纸面实力</div>
+<table class="info-table">
+<tr><td>马拉加</td><td>5场0胜3平2负，进2失8，xG 1.08/场</td></tr>
+<tr><td>比利亚雷亚尔</td><td>5场0胜2平3负，进7失10，5场0胜</td></tr>
+<tr><td>历史交锋</td><td>近33场：马拉加11胜 vs 比利亚雷12胜 12平</td></tr>
+<tr><td>xG对比</td><td>马拉加xG 1.08 vs 比利亚雷xG 1.74(近5场)</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">赔率与校准</div>
+<table class="odds-table">
+<tr><th>项目</th><th>主胜</th><th>平</th><th>客胜</th></tr>
+<tr><td>胜平负</td><td>3.45</td><td>3.60</td><td>1.78</td></tr>
+<tr><td>让球(+1)</td><td>1.80</td><td>3.75</td><td>3.25</td></tr>
+<tr><td>归一化概率</td><td>25.7%</td><td>24.6%</td><td>49.7%</td></tr>
+<tr><td>Shin概率</td><td>29.4%</td><td>29.0%</td><td>41.6%</td></tr>
+<tr><td>DC模型</td><td>19.6%</td><td>25.6%</td><td>54.7%</td></tr>
+<tr><td>蒙特卡洛</td><td>18.7%</td><td>27.5%</td><td>53.9%</td></tr>
+<tr><td>加权融合</td><td>22.5%</td><td>26.1%</td><td>51.4%</td></tr>
+</table>
+</div>
+<div class="grid2">
+<div class="section"><div class="section-title">比分Top5</div>
+<table class="score-table">
+<tr><th>比分</th><th>概率</th><th>体彩赔率</th></tr>
+<tr><td>0:1</td><td>18.1%</td><td>9.50</td></tr>
+<tr><td>0:2</td><td>12.0%</td><td>10.50</td></tr>
+<tr><td>0:0</td><td>11.3%</td><td>18.00</td></tr>
+<tr><td>1:1</td><td>11.0%</td><td>7.25</td></tr>
+<tr><td>1:0</td><td>9.5%</td><td>14.00</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">总进球/半全场</div>
+<table class="info-table">
+<tr><td>总进球分布</td><td>1球27.6% | 2球26.0% | 0球11.3%</td></tr>
+<tr><td>半全场Top3</td><td>平/负26.7% | 负/负18.8% | 平/平13.3%</td></tr>
+<tr><td>半场比分Top3</td><td>0:0 41.4% | 0:1 24.3% | 1:0 12.2%</td></tr>
+<tr><td>lambda</td><td>主0.70 / 客1.40 / 总2.10</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">战术风格与具体情况</div>
+<p style="font-size:0.85em">双方同为西甲下游保级战。马拉加5场仅2球进攻极弱，9人伤停（Lobete十字韧带赛季报销、Murillo十字韧带、Ochoa半月板、Calero肋骨骨折、Cajuste肌肉伤等），几乎是残阵。比利亚雷亚尔5场0胜但进7球攻击力尚可（xG 1.74），伤停Foyth+Partey存疑。雨天对弱队进攻更不利。保级6分战，马拉加主场但残阵难有作为。</p>
+</div>
+<div class="section"><div class="section-title">网友意见</div>
+<p style="font-size:0.85em">虎扑/知乎未检索到讨论。这场西甲保级战关注度低。两队都在降级区附近，状态极差。社区情绪：客胜略被看好，但平局也不能排除。</p>
+</div>
+<div class="recommend-box">
+<h4>🎯 6维度推荐</h4>
+<div class="rec-item"><span class="rec-label">胜平负</span><span class="rec-value">周四010 客胜(1.78) / 平(3.60)</span></div>
+<div class="rec-item"><span class="rec-label">让球(+1)</span><span class="rec-value">周四010 让球胜(1.80)</span></div>
+<div class="rec-item"><span class="rec-label">比分</span><span class="rec-value">周四010 0:1(9.50) / 0:0(18.00) / 0:2(10.50)</span></div>
+<div class="rec-item"><span class="rec-label">总进球</span><span class="rec-value">周四010 1球(6.25) / 2球(4.00)</span></div>
+<div class="rec-item"><span class="rec-label">半全场</span><span class="rec-value warning">周四010 平/负(4.95) / 负/负(2.85)</span></div>
+<div class="rec-item"><span class="rec-label">半场比分</span><span class="rec-value">周四010 0:0 / 0:1</span></div>
+<p class="note">置信度：★ | 马拉加9人伤停进攻极弱，比利亚雷亚尔5场0胜，双方保级战可能低分</p>
+</div>
+</div>
+</div>
+
+<!-- Match 11 -->
+<div class="match-card">
+<div class="match-header">
+<div><span class="league">解放者杯</span> <span class="title">周四011 弗拉门戈 vs 德尔瓦耶独立</span></div>
+<div><span class="badge normal">非单关</span></div>
+</div>
+<div class="match-body">
+<div class="grid2">
+<div>
+<div class="section"><div class="section-title">基本信息</div>
+<table class="info-table">
+<tr><td>比赛时间</td><td>2026-09-18 08:30</td></tr>
+<tr><td>比赛场地</td><td>马拉卡纳体育场（里约热内卢）</td></tr>
+<tr><td>天气</td><td>小雨转阴 26°C/18°C</td></tr>
+<tr><td>赛事阶段</td><td>解放者杯1/4决赛次回合</td></tr>
+<tr><td>首回合比分</td><td>德尔瓦耶 0-2 弗拉门戈（客场）</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">纸面实力</div>
+<table class="info-table">
+<tr><td>弗拉门戈</td><td>巴甲，近5场4胜1负，进9失3，xG 1.75/场</td></tr>
+<tr><td>德尔瓦耶</td><td>厄甲榜首，近5场3胜2平，进13失8</td></tr>
+<tr><td>历史交锋</td><td>德尔瓦耶3次做客马拉卡纳全败0球</td></tr>
+<tr><td>欧战背景</td><td>弗拉门戈解放者杯9场不败仅丢4球</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">赔率与校准</div>
+<table class="odds-table">
+<tr><th>项目</th><th>主胜</th><th>平</th><th>客胜</th></tr>
+<tr><td>胜平负</td><td>1.24</td><td>4.85</td><td>8.55</td></tr>
+<tr><td>让球(-1)</td><td>1.86</td><td>3.50</td><td>3.27</td></tr>
+<tr><td>归一化概率</td><td>71.4%</td><td>18.3%</td><td>10.4%</td></tr>
+<tr><td>Shin概率</td><td>51.5%</td><td>25.2%</td><td>23.3%</td></tr>
+<tr><td>DC模型</td><td>61.6%</td><td>24.9%</td><td>13.5%</td></tr>
+<tr><td>蒙特卡洛</td><td>60.8%</td><td>26.5%</td><td>12.7%</td></tr>
+<tr><td>加权融合</td><td>62.4%</td><td>23.5%</td><td>14.1%</td></tr>
+</table>
+</div>
+<div class="grid2">
+<div class="section"><div class="section-title">比分Top5</div>
+<table class="score-table">
+<tr><th>比分</th><th>概率</th><th>体彩赔率</th></tr>
+<tr><td>1:0</td><td>21.5%</td><td>7.25</td></tr>
+<tr><td>2:0</td><td>15.0%</td><td>6.00</td></tr>
+<tr><td>0:0</td><td>13.4%</td><td>16.00</td></tr>
+<tr><td>1:1</td><td>9.5%</td><td>9.50</td></tr>
+<tr><td>0:1</td><td>7.9%</td><td>22.00</td></tr>
+</table>
+</div>
+<div class="section"><div class="section-title">总进球/半全场</div>
+<table class="info-table">
+<tr><td>总进球分布</td><td>1球29.4% | 2球26.2% | 0球13.4%</td></tr>
+<tr><td>半全场Top3</td><td>平/胜30.5% | 胜/胜23.6% | 平/平13.4%</td></tr>
+<tr><td>半场比分Top3</td><td>0:0 44.1% | 1:0 26.8% | 0:1 9.3%</td></tr>
+<tr><td>lambda</td><td>主1.45 / 客0.50 / 总1.95</td></tr>
+</table>
+</div>
+</div>
+<div class="section"><div class="section-title">战术风格与具体情况</div>
+<p style="font-size:0.85em">解放者杯1/4决赛次回合，弗拉门戈首回合客场2-0取胜（Bruno Henrique 61'，Léo Pereira 75'），两回合领先。次回合主场马拉卡纳，即使输1球仍可晋级。弗拉门戈解放者杯9场不败仅丢4球，主场极强。德尔瓦耶头号射手Carlos Gonzalez首回合伤退确认缺阵，3次做客马拉卡纳全败0球。解放者杯场均1.78球偏低，1:0是众数(16.67%)。弗拉门戈可能采取保守战术保领先优势。</p>
+</div>
+<div class="recommend-box">
+<h4>🎯 6维度推荐</h4>
+<div class="rec-item"><span class="rec-label">胜平负</span><span class="rec-value">周四011 主胜(1.24)</span></div>
+<div class="rec-item"><span class="rec-label">让球(-1)</span><span class="rec-value warning">周四011 让球胜(1.86) / 让球平(3.50)</span></div>
+<div class="rec-item"><span class="rec-label">比分</span><span class="rec-value">周四011 1:0(7.25) / 2:0(6.00) / 0:0(16.00)</span></div>
+<div class="rec-item"><span class="rec-label">总进球</span><span class="rec-value">周四011 1球(5.60) / 2球(3.95)</span></div>
+<div class="rec-item"><span class="rec-label">半全场</span><span class="rec-value warning">周四011 平/胜(3.95) / 胜/胜(1.79)</span></div>
+<div class="rec-item"><span class="rec-label">半场比分</span><span class="rec-value">周四011 0:0 / 1:0</span></div>
+<p class="note">置信度：★ | 弗拉门戈首回合2-0领先可能保守，解放者杯小球概率高(62%)</p>
+</div>
+</div>
+</div>
+
+<!-- 娱乐串推荐 -->
+<h2 style="color:var(--accent2);font-size:1.2em;margin-top:30px;margin-bottom:10px;">🎱 娱乐串推荐</h2>
+<div class="match-card">
+<div class="match-body">
+<div class="section">
+<div class="section-title">连续编号① 高赔比分串</div>
+<p style="font-size:0.85em">周四002 2:0(7.50) × 周四004 1:0(5.40) × 周四010 0:1(9.50)</p>
+<p class="note">2元×1注，理论回报：7.50×5.40×9.50×2 = 769.5元</p>
+</div>
+<div class="section">
+<div class="section-title">连续编号② 稳胆方向串</div>
+<p style="font-size:0.85em">周四002 主胜(1.22) × 周四007 主胜(1.13) × 周四011 主胜(1.24)</p>
+<p class="note">2元×1注，理论回报：1.22×1.13×1.24×2 = 3.42元（低赔稳胆串，适合大倍投）</p>
+</div>
+<div class="section">
+<div class="section-title">连续编号③ 半全场串</div>
+<p style="font-size:0.85em">周四005 胜/胜(1.78) × 周四008 平/胜(5.00) × 周四011 平/胜(3.95)</p>
+<p class="note">2元×1注，理论回报：1.78×5.00×3.95×2 = 70.3元</p>
+</div>
+<div class="section">
+<div class="section-title">连续编号④ 总进球串</div>
+<p style="font-size:0.85em">周四004 2球(3.15) × 周四006 2球(3.95) × 周四010 1球(6.25)</p>
+<p class="note">2元×1注，理论回报：3.15×3.95×6.25×2 = 155.4元</p>
+</div>
+<div class="section">
+<div class="section-title">连续编号⑤ 冷门比分串</div>
+<p style="font-size:0.85em">周四006 1:1(6.75) × 周四010 0:0(18.00) × 周四011 0:0(16.00)</p>
+<p class="note">2元×1注，理论回报：6.75×18.00×16.00×2 = 3888元（极高赔冷门串，纯娱乐）</p>
+</div>
+<div class="section">
+<div class="section-title">连续编号⑥ 单关场比分串</div>
+<p style="font-size:0.85em">周四002 3:0(8.50) × 周四006 1:1(6.75) × 周四008 2:0(10.50) × 周四010 0:1(9.50)</p>
+<p class="note">2元×1注，理论回报：8.50×6.75×10.50×9.50×2 = 11450.4元（4场单关比分串，极高赔）</p>
+</div>
+</div>
+</div>
+
+<!-- Risk Warning -->
+<div style="background:rgba(231,76,60,0.1);border:1px solid var(--red);border-radius:12px;padding:16px;margin-top:24px;">
+<h3 style="color:var(--red);margin-bottom:8px;">⚠ 风险提示</h3>
+<p style="font-size:0.82em;color:var(--text-dim);">
+- 本报告基于数学模型（Dixon-Coles修正泊松/Skellam/蒙特卡洛10000次模拟）和基本面分析，不代表比赛结果保证<br>
+- 所有置信度评级为★（低），因欧罗巴首轮小组赛数据不足、跨联赛xG不可直接对比<br>
+- 马赛(法甲)按规则22-L1执行置信度降级，法甲球队非PSG主场冷门概率高<br>
+- 比分概率仅供参考，任何比分均有可能发生，不排除任何可能性<br>
+- 体彩赔率以官方实时数据为准，本报告赔率采集于2026-09-17 11:17<br>
+- 历史回测不代表未来表现，理性看待预测，切勿沉迷赌博<br>
+- 请以基本面（伤停/战意/状态）为首要决策依据，模型仅作辅助参考
+</p>
+</div>
+
+</body>
+</html>

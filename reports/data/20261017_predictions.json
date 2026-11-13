@@ -1,0 +1,6174 @@
+[
+ {
+  "date": "2026-10-17",
+  "match_num": "周六001",
+  "match_id": 2042019,
+  "league": "澳超",
+  "home": "麦克阿瑟FC",
+  "away": "珀斯光荣",
+  "time": "2026-10-17 14:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "常规正常球",
+  "lambda_home": 1.846,
+  "lambda_away": 1.239,
+  "lambda_total": 3.085,
+  "fused": {
+   "home": 0.5062,
+   "draw": 0.2372,
+   "away": 0.2566
+  },
+  "primary": "home",
+  "secondary": "away",
+  "primary_prob": 0.5062,
+  "secondary_prob": 0.2566,
+  "had_recommend": {
+   "first": "home",
+   "second": "away"
+  },
+  "hhad_line": -1,
+  "hhad_recommend": {
+   "first": "让(-1)负",
+   "second": "让(-1)胜"
+  },
+  "hhad_model": {
+   "home": 0.2906,
+   "draw": 0.2257,
+   "away": 0.4838
+  },
+  "hhad_market": {
+   "home": 0.2768,
+   "draw": 0.2495,
+   "away": 0.4737
+  },
+  "score_top5": [
+   {
+    "score": "2-1",
+    "prob": 0.0965,
+    "odds": 6.75
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1182,
+    "odds": 7.25
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0779,
+    "odds": 9.25
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0708,
+    "odds": 8.25
+   },
+   {
+    "score": "1-2",
+    "prob": 0.0648,
+    "odds": 11
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "3-1",
+   "odds": 11.5
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.3014,
+    "odds": 2.7
+   },
+   {
+    "code": "平胜",
+    "prob": 0.1741,
+    "odds": 4.6
+   },
+   {
+    "code": "平平",
+    "prob": 0.1366,
+    "odds": 6
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 2,
+    "prob": 0.2312,
+    "odds": 3.8
+   },
+   {
+    "goals": 3,
+    "prob": 0.2238,
+    "odds": 3.85
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.2646
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1923
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1306
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.2549
+  },
+  "k_rec": {
+   "value": 1,
+   "prob": 0.2121
+  },
+  "k_consistent": false,
+  "band_top3": [
+   {
+    "score": "2-1",
+    "prob": 0.0965
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0708
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0368
+   }
+  ],
+  "odds_had": {
+   "home": 1.7,
+   "draw": 3.6,
+   "away": 3.8
+  },
+  "odds_hhad": {
+   "home": 3.2,
+   "draw": 3.55,
+   "away": 1.87
+  },
+  "odds_crs": {
+   "1:0": 8.25,
+   "2:0": 9.25,
+   "2:1": 6.75,
+   "3:0": 15,
+   "3:1": 11.5,
+   "3:2": 19,
+   "4:0": 30,
+   "4:1": 26,
+   "4:2": 40,
+   "5:0": 90,
+   "5:1": 70,
+   "5:2": 100,
+   "win-other": 35,
+   "0:0": 16,
+   "1:1": 7.25,
+   "2:2": 11,
+   "3:3": 40,
+   "draw-other": 150,
+   "0:1": 13.5,
+   "0:2": 24,
+   "1:2": 11,
+   "0:3": 60,
+   "1:3": 29,
+   "2:3": 29,
+   "0:4": 150,
+   "1:4": 90,
+   "2:4": 90,
+   "0:5": 400,
+   "1:5": 250,
+   "2:5": 300,
+   "loss-other": 90
+  },
+  "odds_ttg": {
+   "0": 16,
+   "1": 5.75,
+   "2": 3.8,
+   "3": 3.85,
+   "4": 4.7,
+   "5": 7.5,
+   "6": 11.5,
+   "7+": 16
+  },
+  "odds_hafu": {
+   "HH": 2.7,
+   "HD": 14,
+   "HA": 28,
+   "DH": 4.6,
+   "DD": 6,
+   "DA": 9,
+   "AH": 20,
+   "AD": 14,
+   "AA": 6.25
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六002",
+  "match_id": 2042020,
+  "league": "日职",
+  "home": "鹿岛鹿角",
+  "away": "长崎航海",
+  "time": "2026-10-17 14:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "常规正常球",
+  "lambda_home": 2.535,
+  "lambda_away": 1.039,
+  "lambda_total": 3.573,
+  "fused": {
+   "home": 0.6647,
+   "draw": 0.1855,
+   "away": 0.1498
+  },
+  "primary": "home",
+  "secondary": "draw",
+  "primary_prob": 0.6647,
+  "secondary_prob": 0.1855,
+  "had_recommend": {
+   "first": "home",
+   "second": "draw"
+  },
+  "hhad_line": -1,
+  "hhad_recommend": {
+   "first": "让(-1)平",
+   "second": "让(-1)胜"
+  },
+  "hhad_model": {
+   "home": 0.4817,
+   "draw": 0.2162,
+   "away": 0.3021
+  },
+  "hhad_market": {
+   "home": 0.3771,
+   "draw": 0.2685,
+   "away": 0.3544
+  },
+  "score_top5": [
+   {
+    "score": "2-1",
+    "prob": 0.0936,
+    "odds": 6
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0901,
+    "odds": 7.25
+   },
+   {
+    "score": "3-1",
+    "prob": 0.0791,
+    "odds": 10.5
+   },
+   {
+    "score": "3-0",
+    "prob": 0.0761,
+    "odds": 10.5
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0615,
+    "odds": 6.75
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "3-0",
+   "odds": 10.5
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.4068,
+    "odds": 2.08
+   },
+   {
+    "code": "平胜",
+    "prob": 0.2312,
+    "odds": 3.8
+   },
+   {
+    "code": "平平",
+    "prob": 0.0978,
+    "odds": 7
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 3,
+    "prob": 0.2134,
+    "odds": 3.4
+   },
+   {
+    "goals": 4,
+    "prob": 0.1906,
+    "odds": 4.9
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.2699
+   },
+   {
+    "score": "1-0",
+    "prob": 0.235
+   },
+   {
+    "score": "2-0",
+    "prob": 0.1193
+   }
+  ],
+  "k_dist": {
+   "value": 1,
+   "prob": 0.2065
+  },
+  "k_rec": {
+   "value": 1,
+   "prob": 0.2065
+  },
+  "k_consistent": true,
+  "band_top3": [
+   {
+    "score": "2-1",
+    "prob": 0.0936
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0615
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0411
+   }
+  ],
+  "odds_had": {
+   "home": 1.39,
+   "draw": 4.2,
+   "away": 5.8
+  },
+  "odds_hhad": {
+   "home": 2.35,
+   "draw": 3.3,
+   "away": 2.5
+  },
+  "odds_crs": {
+   "1:0": 6.75,
+   "2:0": 7.25,
+   "2:1": 6,
+   "3:0": 10.5,
+   "3:1": 10.5,
+   "3:2": 21,
+   "4:0": 21,
+   "4:1": 21,
+   "4:2": 48,
+   "5:0": 55,
+   "5:1": 55,
+   "5:2": 120,
+   "win-other": 30,
+   "0:0": 14.5,
+   "1:1": 7.5,
+   "2:2": 14.5,
+   "3:3": 70,
+   "draw-other": 450,
+   "0:1": 16.5,
+   "0:2": 33,
+   "1:2": 14,
+   "0:3": 100,
+   "1:3": 50,
+   "2:3": 45,
+   "0:4": 400,
+   "1:4": 200,
+   "2:4": 200,
+   "0:5": 750,
+   "1:5": 600,
+   "2:5": 600,
+   "loss-other": 200
+  },
+  "odds_ttg": {
+   "0": 14.5,
+   "1": 5.5,
+   "2": 3.6,
+   "3": 3.4,
+   "4": 4.9,
+   "5": 8.5,
+   "6": 15,
+   "7+": 23
+  },
+  "odds_hafu": {
+   "HH": 2.08,
+   "HD": 16.5,
+   "HA": 50,
+   "DH": 3.8,
+   "DD": 7,
+   "DA": 13,
+   "AH": 20,
+   "AD": 16.5,
+   "AA": 10
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六003",
+  "match_id": 2042021,
+  "league": "韩职",
+  "home": "蔚山现代",
+  "away": "富川FC",
+  "time": "2026-10-17 15:30:00",
+  "is_single": true,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "常规正常球",
+  "lambda_home": 2.353,
+  "lambda_away": 1.08,
+  "lambda_total": 3.433,
+  "fused": {
+   "home": 0.5515,
+   "draw": 0.3214,
+   "away": 0.127
+  },
+  "primary": "home",
+  "secondary": "draw",
+  "primary_prob": 0.5515,
+  "secondary_prob": 0.3214,
+  "had_recommend": {
+   "first": "home",
+   "second": "draw"
+  },
+  "hhad_line": -1,
+  "hhad_recommend": {
+   "first": "让(-1)平",
+   "second": "让(-1)胜"
+  },
+  "hhad_model": {
+   "home": 0.4336,
+   "draw": 0.2233,
+   "away": 0.3431
+  },
+  "hhad_market": {
+   "home": 0.3316,
+   "draw": 0.2604,
+   "away": 0.408
+  },
+  "score_top5": [
+   {
+    "score": "2-1",
+    "prob": 0.0965,
+    "odds": 6.5
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0894,
+    "odds": 7.5
+   },
+   {
+    "score": "3-1",
+    "prob": 0.0757,
+    "odds": 11
+   },
+   {
+    "score": "3-0",
+    "prob": 0.0701,
+    "odds": 12
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0653,
+    "odds": 7.5
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "3-1",
+   "odds": 11.0
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.3761,
+    "odds": 2.23
+   },
+   {
+    "code": "平胜",
+    "prob": 0.2268,
+    "odds": 4.3
+   },
+   {
+    "code": "平平",
+    "prob": 0.1084,
+    "odds": 6.2
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 3,
+    "prob": 0.2177,
+    "odds": 3.45
+   },
+   {
+    "goals": 2,
+    "prob": 0.2009,
+    "odds": 3.6
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.2842
+   },
+   {
+    "score": "1-0",
+    "prob": 0.2296
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1125
+   }
+  ],
+  "k_dist": {
+   "value": 1,
+   "prob": 0.2126
+  },
+  "k_rec": {
+   "value": 1,
+   "prob": 0.2126
+  },
+  "k_consistent": true,
+  "band_top3": [
+   {
+    "score": "2-1",
+    "prob": 0.0965
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0653
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0409
+   }
+  ],
+  "odds_had": {
+   "home": 1.52,
+   "draw": 3.83,
+   "away": 4.75
+  },
+  "odds_hhad": {
+   "home": 2.67,
+   "draw": 3.4,
+   "away": 2.17
+  },
+  "odds_crs": {
+   "1:0": 7.5,
+   "2:0": 7.5,
+   "2:1": 6.5,
+   "3:0": 12,
+   "3:1": 11,
+   "3:2": 21,
+   "4:0": 24,
+   "4:1": 24,
+   "4:2": 50,
+   "5:0": 60,
+   "5:1": 60,
+   "5:2": 100,
+   "win-other": 35,
+   "0:0": 14,
+   "1:1": 7,
+   "2:2": 13,
+   "3:3": 60,
+   "draw-other": 350,
+   "0:1": 14,
+   "0:2": 28,
+   "1:2": 12,
+   "0:3": 75,
+   "1:3": 45,
+   "2:3": 40,
+   "0:4": 300,
+   "1:4": 150,
+   "2:4": 150,
+   "0:5": 700,
+   "1:5": 500,
+   "2:5": 500,
+   "loss-other": 150
+  },
+  "odds_ttg": {
+   "0": 14,
+   "1": 5.6,
+   "2": 3.6,
+   "3": 3.45,
+   "4": 5,
+   "5": 8,
+   "6": 15,
+   "7+": 22
+  },
+  "odds_hafu": {
+   "HH": 2.23,
+   "HD": 16,
+   "HA": 35,
+   "DH": 4.3,
+   "DD": 6.2,
+   "DA": 11,
+   "AH": 22,
+   "AD": 16,
+   "AA": 8.2
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六004",
+  "match_id": 2042022,
+  "league": "澳超",
+  "home": "中央海岸水手",
+  "away": "纽卡斯尔喷气机",
+  "time": "2026-10-17 16:40:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★低",
+  "size_tier": "常规正常球",
+  "lambda_home": 1.415,
+  "lambda_away": 2.159,
+  "lambda_total": 3.574,
+  "fused": {
+   "home": 0.2556,
+   "draw": 0.213,
+   "away": 0.5314
+  },
+  "primary": "away",
+  "secondary": "home",
+  "primary_prob": 0.5314,
+  "secondary_prob": 0.2556,
+  "had_recommend": {
+   "first": "away",
+   "second": "home"
+  },
+  "hhad_line": 1,
+  "hhad_recommend": {
+   "first": "让(+1)胜",
+   "second": "让(+1)负"
+  },
+  "hhad_model": {
+   "home": 0.4549,
+   "draw": 0.2141,
+   "away": 0.3309
+  },
+  "hhad_market": {
+   "home": 0.4427,
+   "draw": 0.2342,
+   "away": 0.3231
+  },
+  "score_top5": [
+   {
+    "score": "1-2",
+    "prob": 0.0925,
+    "odds": 6.9
+   },
+   {
+    "score": "1-1",
+    "prob": 0.0968,
+    "odds": 8.85
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0654,
+    "odds": 11.5
+   },
+   {
+    "score": "1-3",
+    "prob": 0.0666,
+    "odds": 10
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0606,
+    "odds": 13
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "0-3",
+   "odds": 16.0
+  },
+  "hafu_top3": [
+   {
+    "code": "负负",
+    "prob": 0.3206,
+    "odds": 2.5
+   },
+   {
+    "code": "平负",
+    "prob": 0.1711,
+    "odds": 4.85
+   },
+   {
+    "code": "胜胜",
+    "prob": 0.1316,
+    "odds": 6
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 3,
+    "prob": 0.2134,
+    "odds": 3.9
+   },
+   {
+    "goals": 4,
+    "prob": 0.1907,
+    "odds": 4.15
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.2163
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1784
+   },
+   {
+    "score": "1-1",
+    "prob": 0.14
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.2285
+  },
+  "k_rec": {
+   "value": -1,
+   "prob": 0.203
+  },
+  "k_consistent": false,
+  "band_top3": [
+   {
+    "score": "1-2",
+    "prob": 0.0925
+   },
+   {
+    "score": "0-1",
+    "prob": 0.0494
+   },
+   {
+    "score": "2-3",
+    "prob": 0.0471
+   }
+  ],
+  "odds_had": {
+   "home": 3.65,
+   "draw": 4.13,
+   "away": 1.63
+  },
+  "odds_hhad": {
+   "home": 2,
+   "draw": 3.78,
+   "away": 2.74
+  },
+  "odds_crs": {
+   "1:0": 21,
+   "2:0": 29,
+   "2:1": 13,
+   "3:0": 60,
+   "3:1": 26,
+   "3:2": 22,
+   "4:0": 125,
+   "4:1": 65,
+   "4:2": 75,
+   "5:0": 250,
+   "5:1": 175,
+   "5:2": 175,
+   "win-other": 45,
+   "0:0": 28,
+   "1:1": 8.85,
+   "2:2": 10,
+   "3:3": 29,
+   "draw-other": 90,
+   "0:1": 12,
+   "0:2": 11.5,
+   "1:2": 6.9,
+   "0:3": 16,
+   "1:3": 10,
+   "2:3": 14,
+   "0:4": 31,
+   "1:4": 19,
+   "2:4": 27,
+   "0:5": 70,
+   "1:5": 45,
+   "2:5": 55,
+   "loss-other": 18
+  },
+  "odds_ttg": {
+   "0": 28,
+   "1": 8.5,
+   "2": 4.8,
+   "3": 3.9,
+   "4": 4.15,
+   "5": 5.8,
+   "6": 8.7,
+   "7+": 9.25
+  },
+  "odds_hafu": {
+   "HH": 6,
+   "HD": 13,
+   "HA": 17,
+   "DH": 9.45,
+   "DD": 8,
+   "DA": 4.85,
+   "AH": 26,
+   "AD": 13,
+   "AA": 2.5
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六005",
+  "match_id": 2042023,
+  "league": "日职",
+  "home": "柏太阳神",
+  "away": "名古屋鲸八",
+  "time": "2026-10-17 18:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "常规正常球",
+  "lambda_home": 2.623,
+  "lambda_away": 1.253,
+  "lambda_total": 3.876,
+  "fused": {
+   "home": 0.6353,
+   "draw": 0.1851,
+   "away": 0.1796
+  },
+  "primary": "home",
+  "secondary": "draw",
+  "primary_prob": 0.6353,
+  "secondary_prob": 0.1851,
+  "had_recommend": {
+   "first": "home",
+   "second": "draw"
+  },
+  "hhad_line": -1,
+  "hhad_recommend": {
+   "first": "让(-1)平",
+   "second": "让(-1)胜"
+  },
+  "hhad_model": {
+   "home": 0.4586,
+   "draw": 0.2086,
+   "away": 0.3328
+  },
+  "hhad_market": {
+   "home": 0.3689,
+   "draw": 0.2494,
+   "away": 0.3817
+  },
+  "score_top5": [
+   {
+    "score": "2-1",
+    "prob": 0.0894,
+    "odds": 6
+   },
+   {
+    "score": "3-1",
+    "prob": 0.0781,
+    "odds": 10.5
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0713,
+    "odds": 9
+   },
+   {
+    "score": "3-0",
+    "prob": 0.0624,
+    "odds": 12.5
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0455,
+    "odds": 9
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "4-1",
+   "odds": 20.0
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.3839,
+    "odds": 2.15
+   },
+   {
+    "code": "平胜",
+    "prob": 0.2165,
+    "odds": 4.1
+   },
+   {
+    "code": "平平",
+    "prob": 0.0936,
+    "odds": 7.5
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 3,
+    "prob": 0.2012,
+    "odds": 3.4
+   },
+   {
+    "goals": 4,
+    "prob": 0.195,
+    "odds": 4.4
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.2434
+   },
+   {
+    "score": "1-0",
+    "prob": 0.2143
+   },
+   {
+    "score": "1-1",
+    "prob": 0.123
+   }
+  ],
+  "k_dist": {
+   "value": 1,
+   "prob": 0.1997
+  },
+  "k_rec": {
+   "value": 1,
+   "prob": 0.1997
+  },
+  "k_consistent": true,
+  "band_top3": [
+   {
+    "score": "2-1",
+    "prob": 0.0894
+   },
+   {
+    "score": "3-2",
+    "prob": 0.049
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0455
+   }
+  ],
+  "odds_had": {
+   "home": 1.46,
+   "draw": 4.25,
+   "away": 4.8
+  },
+  "odds_hhad": {
+   "home": 2.4,
+   "draw": 3.55,
+   "away": 2.32
+  },
+  "odds_crs": {
+   "1:0": 9,
+   "2:0": 9,
+   "2:1": 6,
+   "3:0": 12.5,
+   "3:1": 10.5,
+   "3:2": 16.5,
+   "4:0": 24,
+   "4:1": 20,
+   "4:2": 35,
+   "5:0": 60,
+   "5:1": 45,
+   "5:2": 80,
+   "win-other": 22,
+   "0:0": 21,
+   "1:1": 8,
+   "2:2": 11.5,
+   "3:3": 45,
+   "draw-other": 200,
+   "0:1": 19.5,
+   "0:2": 30,
+   "1:2": 12.5,
+   "0:3": 75,
+   "1:3": 34,
+   "2:3": 31,
+   "0:4": 250,
+   "1:4": 100,
+   "2:4": 100,
+   "0:5": 650,
+   "1:5": 400,
+   "2:5": 350,
+   "loss-other": 100
+  },
+  "odds_ttg": {
+   "0": 21,
+   "1": 6.9,
+   "2": 4.1,
+   "3": 3.4,
+   "4": 4.4,
+   "5": 6.75,
+   "6": 12,
+   "7+": 15.5
+  },
+  "odds_hafu": {
+   "HH": 2.15,
+   "HD": 15.5,
+   "HA": 37,
+   "DH": 4.1,
+   "DD": 7.5,
+   "DA": 12,
+   "AH": 18,
+   "AD": 15.5,
+   "AA": 8.5
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六006",
+  "match_id": 2042081,
+  "league": "日乙",
+  "home": "宫崎惊奇牛鸟",
+  "away": "磐田喜悦",
+  "time": "2026-10-17 18:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★低",
+  "size_tier": "常规正常球",
+  "lambda_home": 1.613,
+  "lambda_away": 1.353,
+  "lambda_total": 2.965,
+  "fused": {
+   "home": 0.4216,
+   "draw": 0.2551,
+   "away": 0.3232
+  },
+  "primary": "home",
+  "secondary": "away",
+  "primary_prob": 0.4216,
+  "secondary_prob": 0.3232,
+  "had_recommend": {
+   "first": "home",
+   "second": "away"
+  },
+  "hhad_line": -1,
+  "hhad_recommend": {
+   "first": "让(-1)负",
+   "second": "让(-1)胜"
+  },
+  "hhad_model": {
+   "home": 0.2228,
+   "draw": 0.2135,
+   "away": 0.5638
+  },
+  "hhad_market": {
+   "home": 0.1683,
+   "draw": 0.2213,
+   "away": 0.6104
+  },
+  "score_top5": [
+   {
+    "score": "2-1",
+    "prob": 0.0907,
+    "odds": 8.25
+   },
+   {
+    "score": "1-1",
+    "prob": 0.127,
+    "odds": 5.5
+   },
+   {
+    "score": "1-2",
+    "prob": 0.076,
+    "odds": 9
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0685,
+    "odds": 7.5
+   },
+   {
+    "score": "2-0",
+    "prob": 0.067,
+    "odds": 11
+   }
+  ],
+  "bofen": {
+   "type": "爆冷",
+   "score": "1-2",
+   "odds": 9.0
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.2472,
+    "odds": 3.95
+   },
+   {
+    "code": "负负",
+    "prob": 0.1742,
+    "odds": 4.5
+   },
+   {
+    "code": "平胜",
+    "prob": 0.1551,
+    "odds": 5.3
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 2,
+    "prob": 0.2412,
+    "odds": 3.25
+   },
+   {
+    "goals": 3,
+    "prob": 0.224,
+    "odds": 3.5
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.2784
+   },
+   {
+    "score": "1-0",
+    "prob": 0.176
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1451
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.2716
+  },
+  "k_rec": {
+   "value": 1,
+   "prob": 0.1988
+  },
+  "k_consistent": false,
+  "band_top3": [
+   {
+    "score": "2-1",
+    "prob": 0.0907
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0685
+   },
+   {
+    "score": "3-2",
+    "prob": 0.033
+   }
+  ],
+  "odds_had": {
+   "home": 2.34,
+   "draw": 3.14,
+   "away": 2.61
+  },
+  "odds_hhad": {
+   "home": 5.26,
+   "draw": 4,
+   "away": 1.45
+  },
+  "odds_crs": {
+   "1:0": 7.5,
+   "2:0": 11,
+   "2:1": 8.25,
+   "3:0": 24,
+   "3:1": 17,
+   "3:2": 27,
+   "4:0": 75,
+   "4:1": 55,
+   "4:2": 85,
+   "5:0": 200,
+   "5:1": 200,
+   "5:2": 300,
+   "win-other": 90,
+   "0:0": 11,
+   "1:1": 5.5,
+   "2:2": 12,
+   "3:3": 65,
+   "draw-other": 450,
+   "0:1": 8,
+   "0:2": 13,
+   "1:2": 9,
+   "0:3": 30,
+   "1:3": 20,
+   "2:3": 30,
+   "0:4": 90,
+   "1:4": 70,
+   "2:4": 100,
+   "0:5": 350,
+   "1:5": 300,
+   "2:5": 350,
+   "loss-other": 100
+  },
+  "odds_ttg": {
+   "0": 11,
+   "1": 4.3,
+   "2": 3.25,
+   "3": 3.5,
+   "4": 5.8,
+   "5": 11,
+   "6": 22,
+   "7+": 35
+  },
+  "odds_hafu": {
+   "HH": 3.95,
+   "HD": 14.5,
+   "HA": 27,
+   "DH": 5.3,
+   "DD": 4.7,
+   "DA": 6.25,
+   "AH": 24,
+   "AD": 14.5,
+   "AA": 4.5
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六007",
+  "match_id": 2042024,
+  "league": "英超",
+  "home": "埃弗顿",
+  "away": "切尔西",
+  "time": "2026-10-17 19:30:00",
+  "is_single": true,
+  "stadium_status": "正常",
+  "confidence": "★低",
+  "size_tier": "常规正常球",
+  "lambda_home": 1.315,
+  "lambda_away": 1.659,
+  "lambda_total": 2.974,
+  "fused": {
+   "home": 0.2208,
+   "draw": 0.4097,
+   "away": 0.3695
+  },
+  "primary": "draw",
+  "secondary": "away",
+  "primary_prob": 0.4097,
+  "secondary_prob": 0.3695,
+  "had_recommend": {
+   "first": "draw",
+   "second": "away"
+  },
+  "hhad_line": 1,
+  "hhad_recommend": {
+   "first": "让(+1)胜",
+   "second": "让(+1)负"
+  },
+  "hhad_model": {
+   "home": 0.5445,
+   "draw": 0.2177,
+   "away": 0.2378
+  },
+  "hhad_market": {
+   "home": 0.5306,
+   "draw": 0.2363,
+   "away": 0.2332
+  },
+  "score_top5": [
+   {
+    "score": "1-1",
+    "prob": 0.126,
+    "odds": 6.5
+   },
+   {
+    "score": "1-2",
+    "prob": 0.0925,
+    "odds": 7.5
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0733,
+    "odds": 9
+   },
+   {
+    "score": "0-1",
+    "prob": 0.0703,
+    "odds": 9
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0703,
+    "odds": 10
+   }
+  ],
+  "bofen": {
+   "type": "搏冷",
+   "score": "2-2",
+   "odds": 10.5
+  },
+  "hafu_top3": [
+   {
+    "code": "负负",
+    "prob": 0.2513,
+    "odds": 3.1
+   },
+   {
+    "code": "平负",
+    "prob": 0.1692,
+    "odds": 5.25
+   },
+   {
+    "code": "胜胜",
+    "prob": 0.1579,
+    "odds": 4.8
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 2,
+    "prob": 0.2404,
+    "odds": 3.65
+   },
+   {
+    "goals": 3,
+    "prob": 0.224,
+    "odds": 3.5
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.3011
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1855
+   },
+   {
+    "score": "1-0",
+    "prob": 0.144
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.2693
+  },
+  "k_rec": {
+   "value": 0,
+   "prob": 0.2693
+  },
+  "k_consistent": true,
+  "band_top3": [
+   {
+    "score": "1-1",
+    "prob": 0.126
+   },
+   {
+    "score": "0-0",
+    "prob": 0.0656
+   },
+   {
+    "score": "2-2",
+    "prob": 0.0608
+   }
+  ],
+  "odds_had": {
+   "home": 3.1,
+   "draw": 3.46,
+   "away": 1.93
+  },
+  "odds_hhad": {
+   "home": 1.67,
+   "draw": 3.75,
+   "away": 3.8
+  },
+  "odds_crs": {
+   "1:0": 11.5,
+   "2:0": 17,
+   "2:1": 9,
+   "3:0": 41,
+   "3:1": 23,
+   "3:2": 25,
+   "4:0": 120,
+   "4:1": 70,
+   "4:2": 90,
+   "5:0": 350,
+   "5:1": 250,
+   "5:2": 250,
+   "win-other": 80,
+   "0:0": 15,
+   "1:1": 6.5,
+   "2:2": 10.5,
+   "3:3": 45,
+   "draw-other": 250,
+   "0:1": 9,
+   "0:2": 10,
+   "1:2": 7.5,
+   "0:3": 18,
+   "1:3": 14,
+   "2:3": 19,
+   "0:4": 50,
+   "1:4": 30,
+   "2:4": 45,
+   "0:5": 120,
+   "1:5": 90,
+   "2:5": 150,
+   "loss-other": 50
+  },
+  "odds_ttg": {
+   "0": 15,
+   "1": 5.6,
+   "2": 3.65,
+   "3": 3.5,
+   "4": 4.7,
+   "5": 8,
+   "6": 15,
+   "7+": 22
+  },
+  "odds_hafu": {
+   "HH": 4.8,
+   "HD": 14,
+   "HA": 21,
+   "DH": 7.2,
+   "DD": 6,
+   "DA": 5.25,
+   "AH": 28,
+   "AD": 14,
+   "AA": 3.1
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六008",
+  "match_id": 2042025,
+  "league": "英冠",
+  "home": "米尔沃尔",
+  "away": "林肯城",
+  "time": "2026-10-17 19:30:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "常规正常球",
+  "lambda_home": 2.207,
+  "lambda_away": 0.997,
+  "lambda_total": 3.204,
+  "fused": {
+   "home": 0.6149,
+   "draw": 0.2129,
+   "away": 0.1723
+  },
+  "primary": "home",
+  "secondary": "draw",
+  "primary_prob": 0.6149,
+  "secondary_prob": 0.2129,
+  "had_recommend": {
+   "first": "home",
+   "second": "draw"
+  },
+  "hhad_line": -1,
+  "hhad_recommend": {
+   "first": "让(-1)平",
+   "second": "让(-1)胜"
+  },
+  "hhad_model": {
+   "home": 0.4166,
+   "draw": 0.2317,
+   "away": 0.3516
+  },
+  "hhad_market": {
+   "home": 0.3138,
+   "draw": 0.2565,
+   "away": 0.4296
+  },
+  "score_top5": [
+   {
+    "score": "2-0",
+    "prob": 0.0989,
+    "odds": 7.25
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0986,
+    "odds": 6.75
+   },
+   {
+    "score": "1-0",
+    "prob": 0.078,
+    "odds": 7
+   },
+   {
+    "score": "3-0",
+    "prob": 0.0727,
+    "odds": 12
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1009,
+    "odds": 6.4
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "3-0",
+   "odds": 12.0
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.3688,
+    "odds": 2.4
+   },
+   {
+    "code": "平胜",
+    "prob": 0.2317,
+    "odds": 4.3
+   },
+   {
+    "code": "平平",
+    "prob": 0.1183,
+    "odds": 5.55
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 3,
+    "prob": 0.2226,
+    "odds": 3.5
+   },
+   {
+    "goals": 2,
+    "prob": 0.22,
+    "odds": 3.4
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.3082
+   },
+   {
+    "score": "1-0",
+    "prob": 0.236
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1062
+   }
+  ],
+  "k_dist": {
+   "value": 1,
+   "prob": 0.2201
+  },
+  "k_rec": {
+   "value": 1,
+   "prob": 0.2201
+  },
+  "k_consistent": true,
+  "band_top3": [
+   {
+    "score": "2-1",
+    "prob": 0.0986
+   },
+   {
+    "score": "1-0",
+    "prob": 0.078
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0361
+   }
+  ],
+  "odds_had": {
+   "home": 1.6,
+   "draw": 3.48,
+   "away": 4.6
+  },
+  "odds_hhad": {
+   "home": 2.82,
+   "draw": 3.45,
+   "away": 2.06
+  },
+  "odds_crs": {
+   "1:0": 7,
+   "2:0": 7.25,
+   "2:1": 6.75,
+   "3:0": 12,
+   "3:1": 11.5,
+   "3:2": 23,
+   "4:0": 25,
+   "4:1": 28,
+   "4:2": 60,
+   "5:0": 70,
+   "5:1": 75,
+   "5:2": 150,
+   "win-other": 40,
+   "0:0": 12,
+   "1:1": 6.4,
+   "2:2": 13,
+   "3:3": 70,
+   "draw-other": 400,
+   "0:1": 12,
+   "0:2": 25,
+   "1:2": 12.5,
+   "0:3": 75,
+   "1:3": 50,
+   "2:3": 50,
+   "0:4": 300,
+   "1:4": 175,
+   "2:4": 200,
+   "0:5": 600,
+   "1:5": 500,
+   "2:5": 500,
+   "loss-other": 200
+  },
+  "odds_ttg": {
+   "0": 12,
+   "1": 5.2,
+   "2": 3.4,
+   "3": 3.5,
+   "4": 5.2,
+   "5": 9.6,
+   "6": 16,
+   "7+": 25
+  },
+  "odds_hafu": {
+   "HH": 2.4,
+   "HD": 15,
+   "HA": 38,
+   "DH": 4.3,
+   "DD": 5.55,
+   "DA": 10,
+   "AH": 23,
+   "AD": 15,
+   "AA": 8.25
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六009",
+  "match_id": 2042026,
+  "league": "西甲",
+  "home": "西班牙人",
+  "away": "马德里竞技",
+  "time": "2026-10-17 20:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "常规正常球",
+  "lambda_home": 1.045,
+  "lambda_away": 2.169,
+  "lambda_total": 3.214,
+  "fused": {
+   "home": 0.1829,
+   "draw": 0.2534,
+   "away": 0.5637
+  },
+  "primary": "away",
+  "secondary": "draw",
+  "primary_prob": 0.5637,
+  "secondary_prob": 0.2534,
+  "had_recommend": {
+   "first": "away",
+   "second": "draw"
+  },
+  "hhad_line": 1,
+  "hhad_recommend": {
+   "first": "让(+1)胜",
+   "second": "让(+1)负"
+  },
+  "hhad_model": {
+   "home": 0.3702,
+   "draw": 0.2312,
+   "away": 0.3986
+  },
+  "hhad_market": {
+   "home": 0.4118,
+   "draw": 0.2566,
+   "away": 0.3316
+  },
+  "score_top5": [
+   {
+    "score": "1-2",
+    "prob": 0.0988,
+    "odds": 6.75
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0946,
+    "odds": 7.5
+   },
+   {
+    "score": "0-1",
+    "prob": 0.0753,
+    "odds": 7.5
+   },
+   {
+    "score": "1-3",
+    "prob": 0.0714,
+    "odds": 12
+   },
+   {
+    "score": "1-1",
+    "prob": 0.103,
+    "odds": 6.75
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "0-3",
+   "odds": 12.0
+  },
+  "hafu_top3": [
+   {
+    "code": "负负",
+    "prob": 0.3555,
+    "odds": 2.45
+   },
+   {
+    "code": "平负",
+    "prob": 0.2268,
+    "odds": 4.2
+   },
+   {
+    "code": "平平",
+    "prob": 0.1204,
+    "odds": 5.7
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 3,
+    "prob": 0.2224,
+    "odds": 3.4
+   },
+   {
+    "goals": 2,
+    "prob": 0.2194,
+    "odds": 3.5
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.3073
+   },
+   {
+    "score": "0-1",
+    "prob": 0.2305
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1091
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.2216
+  },
+  "k_rec": {
+   "value": -1,
+   "prob": 0.2194
+  },
+  "k_consistent": false,
+  "band_top3": [
+   {
+    "score": "1-2",
+    "prob": 0.0988
+   },
+   {
+    "score": "0-1",
+    "prob": 0.0753
+   },
+   {
+    "score": "2-3",
+    "prob": 0.0373
+   }
+  ],
+  "odds_had": {
+   "home": 4.7,
+   "draw": 3.8,
+   "away": 1.53
+  },
+  "odds_hhad": {
+   "home": 2.15,
+   "draw": 3.45,
+   "away": 2.67
+  },
+  "odds_crs": {
+   "1:0": 13,
+   "2:0": 24,
+   "2:1": 12,
+   "3:0": 75,
+   "3:1": 40,
+   "3:2": 35,
+   "4:0": 300,
+   "4:1": 150,
+   "4:2": 150,
+   "5:0": 500,
+   "5:1": 400,
+   "5:2": 400,
+   "win-other": 150,
+   "0:0": 14,
+   "1:1": 6.75,
+   "2:2": 12.5,
+   "3:3": 50,
+   "draw-other": 350,
+   "0:1": 7.5,
+   "0:2": 7.5,
+   "1:2": 6.75,
+   "0:3": 12,
+   "1:3": 12,
+   "2:3": 21,
+   "0:4": 25,
+   "1:4": 26,
+   "2:4": 50,
+   "0:5": 75,
+   "1:5": 75,
+   "2:5": 150,
+   "loss-other": 40
+  },
+  "odds_ttg": {
+   "0": 14,
+   "1": 5.4,
+   "2": 3.5,
+   "3": 3.4,
+   "4": 5,
+   "5": 8.75,
+   "6": 16,
+   "7+": 25
+  },
+  "odds_hafu": {
+   "HH": 7.5,
+   "HD": 16,
+   "HA": 22,
+   "DH": 10,
+   "DD": 5.7,
+   "DA": 4.2,
+   "AH": 35,
+   "AD": 16,
+   "AA": 2.45
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六010",
+  "match_id": 2042027,
+  "league": "挪超",
+  "home": "汉坎",
+  "away": "博德闪耀",
+  "time": "2026-10-17 20:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "大球",
+  "lambda_home": 1.084,
+  "lambda_away": 3.101,
+  "lambda_total": 4.185,
+  "fused": {
+   "home": 0.1163,
+   "draw": 0.1462,
+   "away": 0.7376
+  },
+  "primary": "away",
+  "secondary": "draw",
+  "primary_prob": 0.7376,
+  "secondary_prob": 0.1462,
+  "had_recommend": {
+   "first": "away",
+   "second": "draw"
+  },
+  "hhad_line": 2,
+  "hhad_recommend": {
+   "first": "让(+2)平",
+   "second": "让(+2)胜"
+  },
+  "hhad_model": {
+   "home": 0.4133,
+   "draw": 0.1986,
+   "away": 0.3881
+  },
+  "hhad_market": {
+   "home": 0.3936,
+   "draw": 0.2214,
+   "away": 0.385
+  },
+  "score_top5": [
+   {
+    "score": "1-3",
+    "prob": 0.082,
+    "odds": 8.25
+   },
+   {
+    "score": "1-2",
+    "prob": 0.0793,
+    "odds": 7.5
+   },
+   {
+    "score": "0-3",
+    "prob": 0.0757,
+    "odds": 8.5
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0732,
+    "odds": 8
+   },
+   {
+    "score": "0-4",
+    "prob": 0.0587,
+    "odds": 11.5
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "0-4",
+   "odds": 11.5
+  },
+  "hafu_top3": [
+   {
+    "code": "负负",
+    "prob": 0.4847,
+    "odds": 1.47
+   },
+   {
+    "code": "平负",
+    "prob": 0.1916,
+    "odds": 4.1
+   },
+   {
+    "code": "平平",
+    "prob": 0.0696,
+    "odds": 12
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 4,
+    "prob": 0.1946,
+    "odds": 4.2
+   },
+   {
+    "goals": 3,
+    "prob": 0.186,
+    "odds": 3.8
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-1",
+    "prob": 0.1988
+   },
+   {
+    "score": "0-0",
+    "prob": 0.1656
+   },
+   {
+    "score": "0-2",
+    "prob": 0.1481
+   }
+  ],
+  "k_dist": {
+   "value": -2,
+   "prob": 0.1986
+  },
+  "k_rec": {
+   "value": -2,
+   "prob": 0.1986
+  },
+  "k_consistent": true,
+  "band_top3": [
+   {
+    "score": "1-3",
+    "prob": 0.082
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0732
+   },
+   {
+    "score": "2-4",
+    "prob": 0.0344
+   }
+  ],
+  "odds_had": null,
+  "odds_hhad": {
+   "home": 2.25,
+   "draw": 4,
+   "away": 2.3
+  },
+  "odds_crs": {
+   "1:0": 40,
+   "2:0": 90,
+   "2:1": 30,
+   "3:0": 250,
+   "3:1": 90,
+   "3:2": 55,
+   "4:0": 550,
+   "4:1": 300,
+   "4:2": 200,
+   "5:0": 1000,
+   "5:1": 750,
+   "5:2": 650,
+   "win-other": 200,
+   "0:0": 38,
+   "1:1": 12,
+   "2:2": 19,
+   "3:3": 60,
+   "draw-other": 300,
+   "0:1": 11,
+   "0:2": 8,
+   "1:2": 7.5,
+   "0:3": 8.5,
+   "1:3": 8.25,
+   "2:3": 17,
+   "0:4": 11.5,
+   "1:4": 12,
+   "2:4": 25,
+   "0:5": 18,
+   "1:5": 21,
+   "2:5": 50,
+   "loss-other": 8
+  },
+  "odds_ttg": {
+   "0": 38,
+   "1": 10,
+   "2": 5.3,
+   "3": 3.8,
+   "4": 4.2,
+   "5": 5.3,
+   "6": 8,
+   "7+": 8
+  },
+  "odds_hafu": {
+   "HH": 18.5,
+   "HD": 22,
+   "HA": 20,
+   "DH": 26,
+   "DD": 12,
+   "DA": 4.1,
+   "AH": 80,
+   "AD": 22,
+   "AA": 1.47
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六011",
+  "match_id": 2042028,
+  "league": "意甲",
+  "home": "威尼斯",
+  "away": "那不勒斯",
+  "time": "2026-10-17 21:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "常规正常球",
+  "lambda_home": 1.044,
+  "lambda_away": 2.07,
+  "lambda_total": 3.114,
+  "fused": {
+   "home": 0.1917,
+   "draw": 0.2501,
+   "away": 0.5583
+  },
+  "primary": "away",
+  "secondary": "draw",
+  "primary_prob": 0.5583,
+  "secondary_prob": 0.2501,
+  "had_recommend": {
+   "first": "away",
+   "second": "draw"
+  },
+  "hhad_line": 1,
+  "hhad_recommend": {
+   "first": "让(+1)胜",
+   "second": "让(+1)负"
+  },
+  "hhad_model": {
+   "home": 0.3901,
+   "draw": 0.2343,
+   "away": 0.3756
+  },
+  "hhad_market": {
+   "home": 0.4064,
+   "draw": 0.2606,
+   "away": 0.3331
+  },
+  "score_top5": [
+   {
+    "score": "1-2",
+    "prob": 0.0994,
+    "odds": 6.5
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0952,
+    "odds": 8
+   },
+   {
+    "score": "0-1",
+    "prob": 0.0795,
+    "odds": 7.5
+   },
+   {
+    "score": "1-3",
+    "prob": 0.0686,
+    "odds": 10.5
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1085,
+    "odds": 6.9
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "0-3",
+   "odds": 12.5
+  },
+  "hafu_top3": [
+   {
+    "code": "负负",
+    "prob": 0.3408,
+    "odds": 2.32
+   },
+   {
+    "code": "平负",
+    "prob": 0.2246,
+    "odds": 4.25
+   },
+   {
+    "code": "平平",
+    "prob": 0.1273,
+    "odds": 6
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 2,
+    "prob": 0.2279,
+    "odds": 3.65
+   },
+   {
+    "goals": 3,
+    "prob": 0.2236,
+    "odds": 3.5
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.3187
+   },
+   {
+    "score": "0-1",
+    "prob": 0.2285
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1091
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.2316
+  },
+  "k_rec": {
+   "value": -1,
+   "prob": 0.2218
+  },
+  "k_consistent": false,
+  "band_top3": [
+   {
+    "score": "1-2",
+    "prob": 0.0994
+   },
+   {
+    "score": "0-1",
+    "prob": 0.0795
+   },
+   {
+    "score": "2-3",
+    "prob": 0.0358
+   }
+  ],
+  "odds_had": {
+   "home": 4.6,
+   "draw": 3.88,
+   "away": 1.53
+  },
+  "odds_hhad": {
+   "home": 2.18,
+   "draw": 3.4,
+   "away": 2.66
+  },
+  "odds_crs": {
+   "1:0": 14,
+   "2:0": 25,
+   "2:1": 12.5,
+   "3:0": 65,
+   "3:1": 38,
+   "3:2": 35,
+   "4:0": 200,
+   "4:1": 150,
+   "4:2": 150,
+   "5:0": 650,
+   "5:1": 550,
+   "5:2": 550,
+   "win-other": 175,
+   "0:0": 14,
+   "1:1": 6.9,
+   "2:2": 13,
+   "3:3": 60,
+   "draw-other": 350,
+   "0:1": 7.5,
+   "0:2": 8,
+   "1:2": 6.5,
+   "0:3": 12.5,
+   "1:3": 10.5,
+   "2:3": 20,
+   "0:4": 26,
+   "1:4": 24,
+   "2:4": 45,
+   "0:5": 75,
+   "1:5": 75,
+   "2:5": 100,
+   "loss-other": 35
+  },
+  "odds_ttg": {
+   "0": 14,
+   "1": 5.2,
+   "2": 3.65,
+   "3": 3.5,
+   "4": 5,
+   "5": 8.5,
+   "6": 15,
+   "7+": 22
+  },
+  "odds_hafu": {
+   "HH": 7.85,
+   "HD": 15.5,
+   "HA": 20,
+   "DH": 11.5,
+   "DD": 6,
+   "DA": 4.25,
+   "AH": 36,
+   "AD": 15.5,
+   "AA": 2.32
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六012",
+  "match_id": 2042029,
+  "league": "芬超",
+  "home": "赫尔辛基",
+  "away": "赫尔辛基火花",
+  "time": "2026-10-17 21:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "大球",
+  "lambda_home": 2.932,
+  "lambda_away": 1.287,
+  "lambda_total": 4.219,
+  "fused": {
+   "home": 0.6728,
+   "draw": 0.1664,
+   "away": 0.1608
+  },
+  "primary": "home",
+  "secondary": "draw",
+  "primary_prob": 0.6728,
+  "secondary_prob": 0.1664,
+  "had_recommend": {
+   "first": "home",
+   "second": "draw"
+  },
+  "hhad_line": -1,
+  "hhad_recommend": {
+   "first": "让(-1)胜",
+   "second": "让(-1)负"
+  },
+  "hhad_model": {
+   "home": 0.5147,
+   "draw": 0.1953,
+   "away": 0.2901
+  },
+  "hhad_market": {
+   "home": 0.4323,
+   "draw": 0.2382,
+   "away": 0.3295
+  },
+  "score_top5": [
+   {
+    "score": "3-1",
+    "prob": 0.0795,
+    "odds": 10
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0814,
+    "odds": 6.8
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0632,
+    "odds": 9
+   },
+   {
+    "score": "3-0",
+    "prob": 0.0618,
+    "odds": 11
+   },
+   {
+    "score": "4-1",
+    "prob": 0.0583,
+    "odds": 17
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "4-1",
+   "odds": 17.0
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.4138,
+    "odds": 1.86
+   },
+   {
+    "code": "平胜",
+    "prob": 0.215,
+    "odds": 4.2
+   },
+   {
+    "code": "平平",
+    "prob": 0.0797,
+    "odds": 8.5
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 4,
+    "prob": 0.1942,
+    "odds": 4.1
+   },
+   {
+    "goals": 3,
+    "prob": 0.1842,
+    "odds": 3.6
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.2155
+   },
+   {
+    "score": "1-0",
+    "prob": 0.21
+   },
+   {
+    "score": "2-0",
+    "prob": 0.1249
+   }
+  ],
+  "k_dist": {
+   "value": 2,
+   "prob": 0.1914
+  },
+  "k_rec": {
+   "value": 2,
+   "prob": 0.1914
+  },
+  "k_consistent": true,
+  "band_top3": [
+   {
+    "score": "3-1",
+    "prob": 0.0796
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0633
+   },
+   {
+    "score": "4-2",
+    "prob": 0.0375
+   }
+  ],
+  "odds_had": {
+   "home": 1.35,
+   "draw": 4.8,
+   "away": 5.6
+  },
+  "odds_hhad": {
+   "home": 2.05,
+   "draw": 3.72,
+   "away": 2.69
+  },
+  "odds_crs": {
+   "1:0": 11,
+   "2:0": 9,
+   "2:1": 6.8,
+   "3:0": 11,
+   "3:1": 10,
+   "3:2": 16,
+   "4:0": 19,
+   "4:1": 17,
+   "4:2": 26,
+   "5:0": 31,
+   "5:1": 30,
+   "5:2": 45,
+   "win-other": 15,
+   "0:0": 31,
+   "1:1": 10,
+   "2:2": 14,
+   "3:3": 36,
+   "draw-other": 175,
+   "0:1": 22,
+   "0:2": 36,
+   "1:2": 13,
+   "0:3": 80,
+   "1:3": 40,
+   "2:3": 29,
+   "0:4": 300,
+   "1:4": 120,
+   "2:4": 90,
+   "0:5": 650,
+   "1:5": 350,
+   "2:5": 350,
+   "loss-other": 80
+  },
+  "odds_ttg": {
+   "0": 31,
+   "1": 8.4,
+   "2": 4.9,
+   "3": 3.6,
+   "4": 4.1,
+   "5": 5.8,
+   "6": 9.2,
+   "7+": 10.5
+  },
+  "odds_hafu": {
+   "HH": 1.86,
+   "HD": 17,
+   "HA": 42,
+   "DH": 4.2,
+   "DD": 8.5,
+   "DA": 15,
+   "AH": 20,
+   "AD": 17,
+   "AA": 9.7
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六013",
+  "match_id": 2042030,
+  "league": "德甲",
+  "home": "埃尔沃斯堡",
+  "away": "奥格斯堡",
+  "time": "2026-10-17 21:30:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★低",
+  "size_tier": "常规正常球",
+  "lambda_home": 1.862,
+  "lambda_away": 1.557,
+  "lambda_total": 3.419,
+  "fused": {
+   "home": 0.4361,
+   "draw": 0.231,
+   "away": 0.3329
+  },
+  "primary": "home",
+  "secondary": "away",
+  "primary_prob": 0.4361,
+  "secondary_prob": 0.3329,
+  "had_recommend": {
+   "first": "home",
+   "second": "away"
+  },
+  "hhad_line": -1,
+  "hhad_recommend": {
+   "first": "让(-1)负",
+   "second": "让(-1)胜"
+  },
+  "hhad_model": {
+   "home": 0.2473,
+   "draw": 0.204,
+   "away": 0.5487
+  },
+  "hhad_market": {
+   "home": 0.1948,
+   "draw": 0.2062,
+   "away": 0.599
+  },
+  "score_top5": [
+   {
+    "score": "2-1",
+    "prob": 0.0884,
+    "odds": 7.7
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1073,
+    "odds": 7.5
+   },
+   {
+    "score": "2-2",
+    "prob": 0.0688,
+    "odds": 10
+   },
+   {
+    "score": "1-2",
+    "prob": 0.0739,
+    "odds": 8
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0568,
+    "odds": 15
+   }
+  ],
+  "bofen": {
+   "type": "爆冷",
+   "score": "1-2",
+   "odds": 8.0
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.2498,
+    "odds": 3.7
+   },
+   {
+    "code": "负负",
+    "prob": 0.1718,
+    "odds": 3.85
+   },
+   {
+    "code": "平胜",
+    "prob": 0.1595,
+    "odds": 6
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 3,
+    "prob": 0.2181,
+    "odds": 3.5
+   },
+   {
+    "goals": 2,
+    "prob": 0.2037,
+    "odds": 4.5
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.2537
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1702
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1398
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.2479
+  },
+  "k_rec": {
+   "value": 1,
+   "prob": 0.1917
+  },
+  "k_consistent": false,
+  "band_top3": [
+   {
+    "score": "2-1",
+    "prob": 0.0884
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0486
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0427
+   }
+  ],
+  "odds_had": {
+   "home": 2.26,
+   "draw": 3.6,
+   "away": 2.45
+  },
+  "odds_hhad": {
+   "home": 4.55,
+   "draw": 4.3,
+   "away": 1.48
+  },
+  "odds_crs": {
+   "1:0": 13,
+   "2:0": 15,
+   "2:1": 7.7,
+   "3:0": 25,
+   "3:1": 15,
+   "3:2": 16,
+   "4:0": 60,
+   "4:1": 32,
+   "4:2": 45,
+   "5:0": 175,
+   "5:1": 100,
+   "5:2": 100,
+   "win-other": 32,
+   "0:0": 24,
+   "1:1": 7.5,
+   "2:2": 10,
+   "3:3": 30,
+   "draw-other": 150,
+   "0:1": 14,
+   "0:2": 16,
+   "1:2": 8,
+   "0:3": 30,
+   "1:3": 17,
+   "2:3": 17,
+   "0:4": 65,
+   "1:4": 36,
+   "2:4": 50,
+   "0:5": 200,
+   "1:5": 120,
+   "2:5": 120,
+   "loss-other": 35
+  },
+  "odds_ttg": {
+   "0": 24,
+   "1": 8,
+   "2": 4.5,
+   "3": 3.5,
+   "4": 4.3,
+   "5": 6,
+   "6": 10,
+   "7+": 12.5
+  },
+  "odds_hafu": {
+   "HH": 3.7,
+   "HD": 12.5,
+   "HA": 21,
+   "DH": 6,
+   "DD": 7,
+   "DA": 6.5,
+   "AH": 19,
+   "AD": 12.5,
+   "AA": 3.85
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六014",
+  "match_id": 2042031,
+  "league": "德甲",
+  "home": "云达不来梅",
+  "away": "帕德博恩",
+  "time": "2026-10-17 21:30:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "常规正常球",
+  "lambda_home": 2.057,
+  "lambda_away": 1.297,
+  "lambda_total": 3.354,
+  "fused": {
+   "home": 0.5393,
+   "draw": 0.22,
+   "away": 0.2408
+  },
+  "primary": "home",
+  "secondary": "away",
+  "primary_prob": 0.5393,
+  "secondary_prob": 0.2408,
+  "had_recommend": {
+   "first": "home",
+   "second": "away"
+  },
+  "hhad_line": -1,
+  "hhad_recommend": {
+   "first": "让(-1)负",
+   "second": "让(-1)胜"
+  },
+  "hhad_model": {
+   "home": 0.3284,
+   "draw": 0.2213,
+   "away": 0.4504
+  },
+  "hhad_market": {
+   "home": 0.322,
+   "draw": 0.246,
+   "away": 0.432
+  },
+  "score_top5": [
+   {
+    "score": "2-1",
+    "prob": 0.0959,
+    "odds": 6.7
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0739,
+    "odds": 9.5
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1053,
+    "odds": 7.5
+   },
+   {
+    "score": "3-1",
+    "prob": 0.0657,
+    "odds": 11
+   },
+   {
+    "score": "3-0",
+    "prob": 0.0507,
+    "odds": 13
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "3-1",
+   "odds": 11.0
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.3153,
+    "odds": 2.35
+   },
+   {
+    "code": "平胜",
+    "prob": 0.1868,
+    "odds": 4.7
+   },
+   {
+    "code": "平平",
+    "prob": 0.1223,
+    "odds": 7
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 3,
+    "prob": 0.2197,
+    "odds": 3.45
+   },
+   {
+    "goals": 2,
+    "prob": 0.2086,
+    "odds": 4.2
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.2594
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1963
+   },
+   {
+    "score": "1-1",
+    "prob": 0.13
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.2364
+  },
+  "k_rec": {
+   "value": 1,
+   "prob": 0.2091
+  },
+  "k_consistent": false,
+  "band_top3": [
+   {
+    "score": "2-1",
+    "prob": 0.0959
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0597
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0426
+   }
+  ],
+  "odds_had": {
+   "home": 1.57,
+   "draw": 4.02,
+   "away": 4.1
+  },
+  "odds_hhad": {
+   "home": 2.75,
+   "draw": 3.6,
+   "away": 2.05
+  },
+  "odds_crs": {
+   "1:0": 10,
+   "2:0": 9.5,
+   "2:1": 6.7,
+   "3:0": 13,
+   "3:1": 11,
+   "3:2": 16,
+   "4:0": 25,
+   "4:1": 21,
+   "4:2": 35,
+   "5:0": 65,
+   "5:1": 50,
+   "5:2": 80,
+   "win-other": 23,
+   "0:0": 21,
+   "1:1": 7.5,
+   "2:2": 12,
+   "3:3": 41,
+   "draw-other": 250,
+   "0:1": 17,
+   "0:2": 26,
+   "1:2": 11,
+   "0:3": 60,
+   "1:3": 29,
+   "2:3": 27,
+   "0:4": 200,
+   "1:4": 100,
+   "2:4": 90,
+   "0:5": 500,
+   "1:5": 350,
+   "2:5": 300,
+   "loss-other": 75
+  },
+  "odds_ttg": {
+   "0": 21,
+   "1": 7.5,
+   "2": 4.2,
+   "3": 3.45,
+   "4": 4.4,
+   "5": 6.5,
+   "6": 11,
+   "7+": 14
+  },
+  "odds_hafu": {
+   "HH": 2.35,
+   "HD": 14,
+   "HA": 30,
+   "DH": 4.7,
+   "DD": 7,
+   "DA": 10,
+   "AH": 19,
+   "AD": 14,
+   "AA": 7
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六015",
+  "match_id": 2042032,
+  "league": "德甲",
+  "home": "沙尔克04",
+  "away": "美因茨",
+  "time": "2026-10-17 21:30:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★低",
+  "size_tier": "常规正常球",
+  "lambda_home": 1.528,
+  "lambda_away": 1.701,
+  "lambda_total": 3.229,
+  "fused": {
+   "home": 0.3417,
+   "draw": 0.2406,
+   "away": 0.4177
+  },
+  "primary": "away",
+  "secondary": "home",
+  "primary_prob": 0.4177,
+  "secondary_prob": 0.3417,
+  "had_recommend": {
+   "first": "away",
+   "second": "home"
+  },
+  "hhad_line": 1,
+  "hhad_recommend": {
+   "first": "让(+1)胜",
+   "second": "让(+1)负"
+  },
+  "hhad_model": {
+   "home": 0.5794,
+   "draw": 0.2022,
+   "away": 0.2184
+  },
+  "hhad_market": {
+   "home": 0.5569,
+   "draw": 0.2271,
+   "away": 0.216
+  },
+  "score_top5": [
+   {
+    "score": "1-2",
+    "prob": 0.0875,
+    "odds": 7
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1163,
+    "odds": 6.5
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0786,
+    "odds": 8.5
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0573,
+    "odds": 12
+   },
+   {
+    "score": "1-3",
+    "prob": 0.0496,
+    "odds": 15
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "1-3",
+   "odds": 15.0
+  },
+  "hafu_top3": [
+   {
+    "code": "负负",
+    "prob": 0.2298,
+    "odds": 3.25
+   },
+   {
+    "code": "胜胜",
+    "prob": 0.1844,
+    "odds": 4.75
+   },
+   {
+    "code": "平负",
+    "prob": 0.154,
+    "odds": 5.4
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 3,
+    "prob": 0.2222,
+    "odds": 3.45
+   },
+   {
+    "goals": 2,
+    "prob": 0.2198,
+    "odds": 3.75
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.273
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1687
+   },
+   {
+    "score": "1-0",
+    "prob": 0.15
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.259
+  },
+  "k_rec": {
+   "value": -1,
+   "prob": 0.1888
+  },
+  "k_consistent": false,
+  "band_top3": [
+   {
+    "score": "1-2",
+    "prob": 0.0875
+   },
+   {
+    "score": "0-1",
+    "prob": 0.054
+   },
+   {
+    "score": "2-3",
+    "prob": 0.0379
+   }
+  ],
+  "odds_had": {
+   "home": 2.85,
+   "draw": 3.45,
+   "away": 2.05
+  },
+  "odds_hhad": {
+   "home": 1.59,
+   "draw": 3.9,
+   "away": 4.1
+  },
+  "odds_crs": {
+   "1:0": 11.5,
+   "2:0": 17,
+   "2:1": 8.5,
+   "3:0": 30,
+   "3:1": 20,
+   "3:2": 23,
+   "4:0": 90,
+   "4:1": 60,
+   "4:2": 75,
+   "5:0": 350,
+   "5:1": 200,
+   "5:2": 300,
+   "win-other": 65,
+   "0:0": 16,
+   "1:1": 6.5,
+   "2:2": 11,
+   "3:3": 40,
+   "draw-other": 250,
+   "0:1": 9.5,
+   "0:2": 12,
+   "1:2": 7,
+   "0:3": 20,
+   "1:3": 15,
+   "2:3": 19,
+   "0:4": 50,
+   "1:4": 35,
+   "2:4": 50,
+   "0:5": 150,
+   "1:5": 100,
+   "2:5": 150,
+   "loss-other": 50
+  },
+  "odds_ttg": {
+   "0": 16,
+   "1": 6,
+   "2": 3.75,
+   "3": 3.45,
+   "4": 4.7,
+   "5": 7.75,
+   "6": 13.5,
+   "7+": 19
+  },
+  "odds_hafu": {
+   "HH": 4.75,
+   "HD": 13,
+   "HA": 21,
+   "DH": 7,
+   "DD": 6,
+   "DA": 5.4,
+   "AH": 25,
+   "AD": 13,
+   "AA": 3.25
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六016",
+  "match_id": 2042033,
+  "league": "德甲",
+  "home": "汉堡",
+  "away": "斯图加特",
+  "time": "2026-10-17 21:30:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "常规正常球",
+  "lambda_home": 1.348,
+  "lambda_away": 2.161,
+  "lambda_total": 3.509,
+  "fused": {
+   "home": 0.2427,
+   "draw": 0.2132,
+   "away": 0.5441
+  },
+  "primary": "away",
+  "secondary": "home",
+  "primary_prob": 0.5441,
+  "secondary_prob": 0.2427,
+  "had_recommend": {
+   "first": "away",
+   "second": "home"
+  },
+  "hhad_line": 1,
+  "hhad_recommend": {
+   "first": "让(+1)胜",
+   "second": "让(+1)负"
+  },
+  "hhad_model": {
+   "home": 0.4399,
+   "draw": 0.2175,
+   "away": 0.3426
+  },
+  "hhad_market": {
+   "home": 0.4409,
+   "draw": 0.2332,
+   "away": 0.3258
+  },
+  "score_top5": [
+   {
+    "score": "1-2",
+    "prob": 0.0942,
+    "odds": 7
+   },
+   {
+    "score": "1-1",
+    "prob": 0.0985,
+    "odds": 8.5
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0699,
+    "odds": 11.5
+   },
+   {
+    "score": "1-3",
+    "prob": 0.0679,
+    "odds": 10
+   },
+   {
+    "score": "2-2",
+    "prob": 0.0635,
+    "odds": 11
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "1-3",
+   "odds": 10.0
+  },
+  "hafu_top3": [
+   {
+    "code": "负负",
+    "prob": 0.3226,
+    "odds": 2.38
+   },
+   {
+    "code": "平负",
+    "prob": 0.1859,
+    "odds": 4.9
+   },
+   {
+    "code": "胜胜",
+    "prob": 0.1192,
+    "odds": 6.3
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 3,
+    "prob": 0.2155,
+    "odds": 3.6
+   },
+   {
+    "goals": 2,
+    "prob": 0.1956,
+    "odds": 4.9
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.2443
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1926
+   },
+   {
+    "score": "1-1",
+    "prob": 0.133
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.228
+  },
+  "k_rec": {
+   "value": -1,
+   "prob": 0.2062
+  },
+  "k_consistent": false,
+  "band_top3": [
+   {
+    "score": "1-2",
+    "prob": 0.0942
+   },
+   {
+    "score": "0-1",
+    "prob": 0.0533
+   },
+   {
+    "score": "2-3",
+    "prob": 0.0457
+   }
+  ],
+  "odds_had": {
+   "home": 3.78,
+   "draw": 4.1,
+   "away": 1.61
+  },
+  "odds_hhad": {
+   "home": 2.01,
+   "draw": 3.8,
+   "away": 2.72
+  },
+  "odds_crs": {
+   "1:0": 20,
+   "2:0": 27,
+   "2:1": 11,
+   "3:0": 60,
+   "3:1": 25,
+   "3:2": 23,
+   "4:0": 150,
+   "4:1": 75,
+   "4:2": 60,
+   "5:0": 500,
+   "5:1": 200,
+   "5:2": 200,
+   "win-other": 45,
+   "0:0": 31,
+   "1:1": 8.5,
+   "2:2": 11,
+   "3:3": 30,
+   "draw-other": 175,
+   "0:1": 12.5,
+   "0:2": 11.5,
+   "1:2": 7,
+   "0:3": 15.5,
+   "1:3": 10,
+   "2:3": 14.5,
+   "0:4": 27,
+   "1:4": 20,
+   "2:4": 27,
+   "0:5": 60,
+   "1:5": 50,
+   "2:5": 60,
+   "loss-other": 17
+  },
+  "odds_ttg": {
+   "0": 31,
+   "1": 9.5,
+   "2": 4.9,
+   "3": 3.6,
+   "4": 4,
+   "5": 5.8,
+   "6": 9,
+   "7+": 10
+  },
+  "odds_hafu": {
+   "HH": 6.3,
+   "HD": 14,
+   "HA": 17,
+   "DH": 9.5,
+   "DD": 7.75,
+   "DA": 4.9,
+   "AH": 28,
+   "AD": 14,
+   "AA": 2.38
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六017",
+  "match_id": 2042034,
+  "league": "德甲",
+  "home": "柏林联合",
+  "away": "多特蒙德",
+  "time": "2026-10-17 21:30:00",
+  "is_single": true,
+  "stadium_status": "正常",
+  "confidence": "★低",
+  "size_tier": "常规正常球",
+  "lambda_home": 1.138,
+  "lambda_away": 2.295,
+  "lambda_total": 3.433,
+  "fused": {
+   "home": 0.1653,
+   "draw": 0.292,
+   "away": 0.5426
+  },
+  "primary": "away",
+  "secondary": "draw",
+  "primary_prob": 0.5426,
+  "secondary_prob": 0.292,
+  "had_recommend": {
+   "first": "away",
+   "second": "draw"
+  },
+  "hhad_line": 1,
+  "hhad_recommend": {
+   "first": "让(+1)胜",
+   "second": "让(+1)负"
+  },
+  "hhad_model": {
+   "home": 0.367,
+   "draw": 0.2235,
+   "away": 0.4095
+  },
+  "hhad_market": {
+   "home": 0.3768,
+   "draw": 0.233,
+   "away": 0.3901
+  },
+  "score_top5": [
+   {
+    "score": "1-2",
+    "prob": 0.0968,
+    "odds": 7
+   },
+   {
+    "score": "1-1",
+    "prob": 0.0953,
+    "odds": 8.5
+   },
+   {
+    "score": "0-2",
+    "prob": 0.085,
+    "odds": 8.5
+   },
+   {
+    "score": "1-3",
+    "prob": 0.074,
+    "odds": 10
+   },
+   {
+    "score": "0-3",
+    "prob": 0.0651,
+    "odds": 12
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "0-3",
+   "odds": 12.0
+  },
+  "hafu_top3": [
+   {
+    "code": "负负",
+    "prob": 0.3746,
+    "odds": 2
+   },
+   {
+    "code": "平负",
+    "prob": 0.2039,
+    "odds": 4.4
+   },
+   {
+    "code": "平平",
+    "prob": 0.1105,
+    "odds": 7.5
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 3,
+    "prob": 0.2177,
+    "odds": 3.4
+   },
+   {
+    "goals": 2,
+    "prob": 0.2012,
+    "odds": 4.3
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.2506
+   },
+   {
+    "score": "0-1",
+    "prob": 0.2137
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1231
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.2125
+  },
+  "k_rec": {
+   "value": -1,
+   "prob": 0.2125
+  },
+  "k_consistent": false,
+  "band_top3": [
+   {
+    "score": "1-2",
+    "prob": 0.0968
+   },
+   {
+    "score": "0-1",
+    "prob": 0.0631
+   },
+   {
+    "score": "2-3",
+    "prob": 0.0421
+   }
+  ],
+  "odds_had": {
+   "home": 5,
+   "draw": 4.35,
+   "away": 1.43
+  },
+  "odds_hhad": {
+   "home": 2.35,
+   "draw": 3.8,
+   "away": 2.27
+  },
+  "odds_crs": {
+   "1:0": 17,
+   "2:0": 30,
+   "2:1": 13,
+   "3:0": 90,
+   "3:1": 39,
+   "3:2": 30,
+   "4:0": 300,
+   "4:1": 150,
+   "4:2": 120,
+   "5:0": 700,
+   "5:1": 500,
+   "5:2": 500,
+   "win-other": 100,
+   "0:0": 22,
+   "1:1": 8.5,
+   "2:2": 12,
+   "3:3": 40,
+   "draw-other": 250,
+   "0:1": 9.5,
+   "0:2": 8.5,
+   "1:2": 7,
+   "0:3": 12,
+   "1:3": 10,
+   "2:3": 16,
+   "0:4": 20,
+   "1:4": 18,
+   "2:4": 30,
+   "0:5": 50,
+   "1:5": 41,
+   "2:5": 80,
+   "loss-other": 19
+  },
+  "odds_ttg": {
+   "0": 22,
+   "1": 7.5,
+   "2": 4.3,
+   "3": 3.4,
+   "4": 4.3,
+   "5": 6.7,
+   "6": 11,
+   "7+": 13.5
+  },
+  "odds_hafu": {
+   "HH": 8.5,
+   "HD": 17,
+   "HA": 20,
+   "DH": 12,
+   "DD": 7.5,
+   "DA": 4.4,
+   "AH": 39,
+   "AD": 17,
+   "AA": 2
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六018",
+  "match_id": 2042035,
+  "league": "英超",
+  "home": "布伦特福德",
+  "away": "利物浦",
+  "time": "2026-10-17 22:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★低",
+  "size_tier": "常规正常球",
+  "lambda_home": 1.739,
+  "lambda_away": 1.32,
+  "lambda_total": 3.058,
+  "fused": {
+   "home": 0.4149,
+   "draw": 0.2949,
+   "away": 0.2902
+  },
+  "primary": "home",
+  "secondary": "draw",
+  "primary_prob": 0.4149,
+  "secondary_prob": 0.2949,
+  "had_recommend": {
+   "first": "home",
+   "second": "draw"
+  },
+  "hhad_line": -1,
+  "hhad_recommend": {
+   "first": "让(-1)负",
+   "second": "让(-1)胜"
+  },
+  "hhad_model": {
+   "home": 0.2545,
+   "draw": 0.2189,
+   "away": 0.5267
+  },
+  "hhad_market": {
+   "home": 0.1947,
+   "draw": 0.2187,
+   "away": 0.5866
+  },
+  "score_top5": [
+   {
+    "score": "2-1",
+    "prob": 0.0937,
+    "odds": 7.5
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1217,
+    "odds": 6.75
+   },
+   {
+    "score": "1-2",
+    "prob": 0.0711,
+    "odds": 8
+   },
+   {
+    "score": "2-0",
+    "prob": 0.071,
+    "odds": 13
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0676,
+    "odds": 11
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "3-1",
+   "odds": 14.0
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.2632,
+    "odds": 3.65
+   },
+   {
+    "code": "平胜",
+    "prob": 0.1727,
+    "odds": 5.4
+   },
+   {
+    "code": "负负",
+    "prob": 0.151,
+    "odds": 4.2
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 2,
+    "prob": 0.2337,
+    "odds": 3.95
+   },
+   {
+    "goals": 3,
+    "prob": 0.2239,
+    "odds": 3.45
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.2914
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1876
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1389
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.2628
+  },
+  "k_rec": {
+   "value": 1,
+   "prob": 0.2048
+  },
+  "k_consistent": false,
+  "band_top3": [
+   {
+    "score": "2-1",
+    "prob": 0.0937
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0676
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0358
+   }
+  ],
+  "odds_had": {
+   "home": 2.19,
+   "draw": 3.45,
+   "away": 2.62
+  },
+  "odds_hhad": {
+   "home": 4.55,
+   "draw": 4.05,
+   "away": 1.51
+  },
+  "odds_crs": {
+   "1:0": 11,
+   "2:0": 13,
+   "2:1": 7.5,
+   "3:0": 23,
+   "3:1": 14,
+   "3:2": 19,
+   "4:0": 55,
+   "4:1": 35,
+   "4:2": 45,
+   "5:0": 175,
+   "5:1": 100,
+   "5:2": 150,
+   "win-other": 45,
+   "0:0": 17,
+   "1:1": 6.75,
+   "2:2": 10,
+   "3:3": 35,
+   "draw-other": 200,
+   "0:1": 12,
+   "0:2": 16,
+   "1:2": 8,
+   "0:3": 31,
+   "1:3": 18,
+   "2:3": 21,
+   "0:4": 80,
+   "1:4": 50,
+   "2:4": 60,
+   "0:5": 350,
+   "1:5": 175,
+   "2:5": 200,
+   "loss-other": 60
+  },
+  "odds_ttg": {
+   "0": 17,
+   "1": 6.5,
+   "2": 3.95,
+   "3": 3.45,
+   "4": 4.5,
+   "5": 7,
+   "6": 13,
+   "7+": 18
+  },
+  "odds_hafu": {
+   "HH": 3.65,
+   "HD": 14,
+   "HA": 25,
+   "DH": 5.4,
+   "DD": 5.8,
+   "DA": 6.5,
+   "AH": 21,
+   "AD": 14,
+   "AA": 4.2
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六019",
+  "match_id": 2042036,
+  "league": "英超",
+  "home": "曼彻斯特城",
+  "away": "伊普斯维奇",
+  "time": "2026-10-17 22:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★★高",
+  "size_tier": "大球",
+  "lambda_home": 3.336,
+  "lambda_away": 0.981,
+  "lambda_total": 4.317,
+  "fused": {
+   "home": 0.7358,
+   "draw": 0.18,
+   "away": 0.0842
+  },
+  "primary": "home",
+  "secondary": "draw",
+  "primary_prob": 0.7358,
+  "secondary_prob": 0.18,
+  "had_recommend": {
+   "first": "home",
+   "second": "draw"
+  },
+  "hhad_line": -2,
+  "hhad_recommend": {
+   "first": "让(-2)平",
+   "second": "让(-2)胜"
+  },
+  "hhad_model": {
+   "home": 0.4523,
+   "draw": 0.1966,
+   "away": 0.3511
+  },
+  "hhad_market": {
+   "home": 0.3899,
+   "draw": 0.2133,
+   "away": 0.3969
+  },
+  "score_top5": [
+   {
+    "score": "3-0",
+    "prob": 0.0825,
+    "odds": 7.5
+   },
+   {
+    "score": "3-1",
+    "prob": 0.081,
+    "odds": 8
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0742,
+    "odds": 6.5
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0728,
+    "odds": 8
+   },
+   {
+    "score": "4-0",
+    "prob": 0.0688,
+    "odds": 10
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "4-0",
+   "odds": 10.0
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.5131,
+    "odds": 1.4
+   },
+   {
+    "code": "平胜",
+    "prob": 0.2032,
+    "odds": 4.1
+   },
+   {
+    "code": "平平",
+    "prob": 0.0592,
+    "odds": 12
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 4,
+    "prob": 0.1931,
+    "odds": 4.1
+   },
+   {
+    "goals": 3,
+    "prob": 0.1789,
+    "odds": 3.75
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "1-0",
+    "prob": 0.2164
+   },
+   {
+    "score": "0-0",
+    "prob": 0.1754
+   },
+   {
+    "score": "2-0",
+    "prob": 0.1602
+   }
+  ],
+  "k_dist": {
+   "value": 2,
+   "prob": 0.1966
+  },
+  "k_rec": {
+   "value": 2,
+   "prob": 0.1966
+  },
+  "k_consistent": true,
+  "band_top3": [
+   {
+    "score": "3-1",
+    "prob": 0.081
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0742
+   },
+   {
+    "score": "4-2",
+    "prob": 0.0331
+   }
+  ],
+  "odds_had": {
+   "home": 1.12,
+   "draw": 6.9,
+   "away": 11
+  },
+  "odds_hhad": {
+   "home": 2.27,
+   "draw": 4.15,
+   "away": 2.23
+  },
+  "odds_crs": {
+   "1:0": 10,
+   "2:0": 6.5,
+   "2:1": 8,
+   "3:0": 7.5,
+   "3:1": 8,
+   "3:2": 21,
+   "4:0": 10,
+   "4:1": 12.5,
+   "4:2": 31,
+   "5:0": 17,
+   "5:1": 21,
+   "5:2": 55,
+   "win-other": 9,
+   "0:0": 33,
+   "1:1": 13,
+   "2:2": 21,
+   "3:3": 80,
+   "draw-other": 400,
+   "0:1": 40,
+   "0:2": 90,
+   "1:2": 32,
+   "0:3": 300,
+   "1:3": 100,
+   "2:3": 80,
+   "0:4": 750,
+   "1:4": 400,
+   "2:4": 350,
+   "0:5": 1000,
+   "1:5": 1000,
+   "2:5": 850,
+   "loss-other": 350
+  },
+  "odds_ttg": {
+   "0": 33,
+   "1": 9,
+   "2": 5,
+   "3": 3.75,
+   "4": 4.1,
+   "5": 5.6,
+   "6": 8.5,
+   "7+": 9.5
+  },
+  "odds_hafu": {
+   "HH": 1.4,
+   "HD": 27,
+   "HA": 90,
+   "DH": 4.1,
+   "DD": 12,
+   "DA": 27,
+   "AH": 23,
+   "AD": 27,
+   "AA": 22
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六020",
+  "match_id": 2042037,
+  "league": "英超",
+  "home": "富勒姆",
+  "away": "赫尔城",
+  "time": "2026-10-17 22:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "小球",
+  "lambda_home": 1.874,
+  "lambda_away": 0.922,
+  "lambda_total": 2.796,
+  "fused": {
+   "home": 0.5432,
+   "draw": 0.2845,
+   "away": 0.1724
+  },
+  "primary": "home",
+  "secondary": "draw",
+  "primary_prob": 0.5432,
+  "secondary_prob": 0.2845,
+  "had_recommend": {
+   "first": "home",
+   "second": "draw"
+  },
+  "hhad_line": -1,
+  "hhad_recommend": {
+   "first": "让(-1)负",
+   "second": "让(-1)胜"
+  },
+  "hhad_model": {
+   "home": 0.3511,
+   "draw": 0.2462,
+   "away": 0.4027
+  },
+  "hhad_market": {
+   "home": 0.3473,
+   "draw": 0.2643,
+   "away": 0.3884
+  },
+  "score_top5": [
+   {
+    "score": "1-0",
+    "prob": 0.1007,
+    "odds": 6.5
+   },
+   {
+    "score": "2-0",
+    "prob": 0.1072,
+    "odds": 7
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0988,
+    "odds": 6.25
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1192,
+    "odds": 7
+   },
+   {
+    "score": "0-0",
+    "prob": 0.0748,
+    "odds": 13
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "3-0",
+   "odds": 10.0
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.347,
+    "odds": 2.13
+   },
+   {
+    "code": "平胜",
+    "prob": 0.2126,
+    "odds": 3.9
+   },
+   {
+    "code": "平平",
+    "prob": 0.1437,
+    "odds": 6
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 2,
+    "prob": 0.2523,
+    "odds": 3.4
+   },
+   {
+    "goals": 3,
+    "prob": 0.2224,
+    "odds": 3.45
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.3212
+   },
+   {
+    "score": "1-0",
+    "prob": 0.231
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1074
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.2493
+  },
+  "k_rec": {
+   "value": 1,
+   "prob": 0.2325
+  },
+  "k_consistent": false,
+  "band_top3": [
+   {
+    "score": "1-0",
+    "prob": 0.1007
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0988
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0285
+   }
+  ],
+  "odds_had": {
+   "home": 1.46,
+   "draw": 3.8,
+   "away": 5.5
+  },
+  "odds_hhad": {
+   "home": 2.55,
+   "draw": 3.35,
+   "away": 2.28
+  },
+  "odds_crs": {
+   "1:0": 6.5,
+   "2:0": 7,
+   "2:1": 6.25,
+   "3:0": 10,
+   "3:1": 11,
+   "3:2": 23,
+   "4:0": 21,
+   "4:1": 23,
+   "4:2": 50,
+   "5:0": 50,
+   "5:1": 60,
+   "5:2": 125,
+   "win-other": 35,
+   "0:0": 13,
+   "1:1": 7,
+   "2:2": 15,
+   "3:3": 70,
+   "draw-other": 500,
+   "0:1": 15,
+   "0:2": 33,
+   "1:2": 15,
+   "0:3": 100,
+   "1:3": 55,
+   "2:3": 50,
+   "0:4": 400,
+   "1:4": 200,
+   "2:4": 250,
+   "0:5": 1000,
+   "1:5": 750,
+   "2:5": 750,
+   "loss-other": 300
+  },
+  "odds_ttg": {
+   "0": 13,
+   "1": 5.2,
+   "2": 3.4,
+   "3": 3.45,
+   "4": 5,
+   "5": 9.5,
+   "6": 17,
+   "7+": 27
+  },
+  "odds_hafu": {
+   "HH": 2.13,
+   "HD": 17,
+   "HA": 45,
+   "DH": 3.9,
+   "DD": 6,
+   "DA": 12,
+   "AH": 23,
+   "AD": 17,
+   "AA": 10.5
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六021",
+  "match_id": 2042038,
+  "league": "西甲",
+  "home": "比利亚雷亚尔",
+  "away": "埃尔切",
+  "time": "2026-10-17 22:15:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "常规正常球",
+  "lambda_home": 2.561,
+  "lambda_away": 1.103,
+  "lambda_total": 3.665,
+  "fused": {
+   "home": 0.663,
+   "draw": 0.2215,
+   "away": 0.1155
+  },
+  "primary": "home",
+  "secondary": "draw",
+  "primary_prob": 0.663,
+  "secondary_prob": 0.2215,
+  "had_recommend": {
+   "first": "home",
+   "second": "draw"
+  },
+  "hhad_line": -1,
+  "hhad_recommend": {
+   "first": "让(-1)平",
+   "second": "让(-1)胜"
+  },
+  "hhad_model": {
+   "home": 0.4746,
+   "draw": 0.2138,
+   "away": 0.3115
+  },
+  "hhad_market": {
+   "home": 0.4425,
+   "draw": 0.2425,
+   "away": 0.315
+  },
+  "score_top5": [
+   {
+    "score": "2-1",
+    "prob": 0.0927,
+    "odds": 7
+   },
+   {
+    "score": "2-0",
+    "prob": 0.084,
+    "odds": 8
+   },
+   {
+    "score": "3-1",
+    "prob": 0.0791,
+    "odds": 9.5
+   },
+   {
+    "score": "3-0",
+    "prob": 0.0718,
+    "odds": 9.5
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0562,
+    "odds": 9
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "4-0",
+   "odds": 16.0
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.3998,
+    "odds": 1.84
+   },
+   {
+    "code": "平胜",
+    "prob": 0.2267,
+    "odds": 4.15
+   },
+   {
+    "code": "平平",
+    "prob": 0.0965,
+    "odds": 8
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 3,
+    "prob": 0.2101,
+    "odds": 3.45
+   },
+   {
+    "goals": 4,
+    "prob": 0.1925,
+    "odds": 4.3
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.2616
+   },
+   {
+    "score": "1-0",
+    "prob": 0.2286
+   },
+   {
+    "score": "2-0",
+    "prob": 0.1177
+   }
+  ],
+  "k_dist": {
+   "value": 1,
+   "prob": 0.2044
+  },
+  "k_rec": {
+   "value": 1,
+   "prob": 0.2044
+  },
+  "k_consistent": true,
+  "band_top3": [
+   {
+    "score": "2-1",
+    "prob": 0.0927
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0562
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0437
+   }
+  ],
+  "odds_had": {
+   "home": 1.31,
+   "draw": 4.8,
+   "away": 6.35
+  },
+  "odds_hhad": {
+   "home": 2,
+   "draw": 3.65,
+   "away": 2.81
+  },
+  "odds_crs": {
+   "1:0": 9,
+   "2:0": 8,
+   "2:1": 7,
+   "3:0": 9.5,
+   "3:1": 9.5,
+   "3:2": 17,
+   "4:0": 16,
+   "4:1": 16,
+   "4:2": 30,
+   "5:0": 30,
+   "5:1": 30,
+   "5:2": 70,
+   "win-other": 16,
+   "0:0": 24,
+   "1:1": 9.5,
+   "2:2": 14,
+   "3:3": 45,
+   "draw-other": 250,
+   "0:1": 21,
+   "0:2": 42,
+   "1:2": 17,
+   "0:3": 100,
+   "1:3": 50,
+   "2:3": 40,
+   "0:4": 300,
+   "1:4": 200,
+   "2:4": 150,
+   "0:5": 600,
+   "1:5": 400,
+   "2:5": 400,
+   "loss-other": 150
+  },
+  "odds_ttg": {
+   "0": 24,
+   "1": 7.5,
+   "2": 4.4,
+   "3": 3.45,
+   "4": 4.3,
+   "5": 6.4,
+   "6": 10.5,
+   "7+": 13
+  },
+  "odds_hafu": {
+   "HH": 1.84,
+   "HD": 18,
+   "HA": 40,
+   "DH": 4.15,
+   "DD": 8,
+   "DA": 15,
+   "AH": 20,
+   "AD": 18,
+   "AA": 11
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六022",
+  "match_id": 2042039,
+  "league": "法甲",
+  "home": "斯特拉斯堡",
+  "away": "巴黎圣日尔曼",
+  "time": "2026-10-17 23:15:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★低",
+  "size_tier": "大球",
+  "lambda_home": 1.176,
+  "lambda_away": 2.999,
+  "lambda_total": 4.175,
+  "fused": {
+   "home": 0.1416,
+   "draw": 0.1584,
+   "away": 0.7
+  },
+  "primary": "away",
+  "secondary": "draw",
+  "primary_prob": 0.7,
+  "secondary_prob": 0.1584,
+  "had_recommend": {
+   "first": "away",
+   "second": "draw"
+  },
+  "hhad_line": 1,
+  "hhad_recommend": {
+   "first": "让(+1)负",
+   "second": "让(+1)胜"
+  },
+  "hhad_model": {
+   "home": 0.2588,
+   "draw": 0.1921,
+   "away": 0.5492
+  },
+  "hhad_market": {
+   "home": 0.3076,
+   "draw": 0.2187,
+   "away": 0.4737
+  },
+  "score_top5": [
+   {
+    "score": "1-2",
+    "prob": 0.0813,
+    "odds": 7
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0691,
+    "odds": 9.75
+   },
+   {
+    "score": "1-3",
+    "prob": 0.0813,
+    "odds": 8.75
+   },
+   {
+    "score": "0-3",
+    "prob": 0.0691,
+    "odds": 11.5
+   },
+   {
+    "score": "1-1",
+    "prob": 0.0613,
+    "odds": 10.5
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "0-4",
+   "odds": 18.0
+  },
+  "hafu_top3": [
+   {
+    "code": "负负",
+    "prob": 0.4519,
+    "odds": 1.77
+   },
+   {
+    "code": "平负",
+    "prob": 0.2024,
+    "odds": 4.3
+   },
+   {
+    "code": "平平",
+    "prob": 0.0751,
+    "odds": 9.4
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 4,
+    "prob": 0.1946,
+    "odds": 4.2
+   },
+   {
+    "goals": 3,
+    "prob": 0.1865,
+    "odds": 3.8
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-1",
+    "prob": 0.2041
+   },
+   {
+    "score": "0-0",
+    "prob": 0.1872
+   },
+   {
+    "score": "0-2",
+    "prob": 0.1374
+   }
+  ],
+  "k_dist": {
+   "value": -2,
+   "prob": 0.1961
+  },
+  "k_rec": {
+   "value": -2,
+   "prob": 0.1961
+  },
+  "k_consistent": true,
+  "band_top3": [
+   {
+    "score": "1-3",
+    "prob": 0.0813
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0692
+   },
+   {
+    "score": "2-4",
+    "prob": 0.0358
+   }
+  ],
+  "odds_had": {
+   "home": 5.95,
+   "draw": 5.2,
+   "away": 1.3
+  },
+  "odds_hhad": {
+   "home": 2.88,
+   "draw": 4.05,
+   "away": 1.87
+  },
+  "odds_crs": {
+   "1:0": 26,
+   "2:0": 45,
+   "2:1": 17,
+   "3:0": 100,
+   "3:1": 45,
+   "3:2": 32,
+   "4:0": 300,
+   "4:1": 120,
+   "4:2": 100,
+   "5:0": 700,
+   "5:1": 500,
+   "5:2": 400,
+   "win-other": 80,
+   "0:0": 35,
+   "1:1": 10.5,
+   "2:2": 12.5,
+   "3:3": 32,
+   "draw-other": 120,
+   "0:1": 12.5,
+   "0:2": 9.75,
+   "1:2": 7,
+   "0:3": 11.5,
+   "1:3": 8.75,
+   "2:3": 13.5,
+   "0:4": 18,
+   "1:4": 14,
+   "2:4": 24,
+   "0:5": 36,
+   "1:5": 27,
+   "2:5": 45,
+   "loss-other": 11.5
+  },
+  "odds_ttg": {
+   "0": 35,
+   "1": 9.5,
+   "2": 5.25,
+   "3": 3.8,
+   "4": 4.2,
+   "5": 5.5,
+   "6": 8,
+   "7+": 8.2
+  },
+  "odds_hafu": {
+   "HH": 10.5,
+   "HD": 18,
+   "HA": 19,
+   "DH": 15,
+   "DD": 9.4,
+   "DA": 4.3,
+   "AH": 40,
+   "AD": 18,
+   "AA": 1.77
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六023",
+  "match_id": 2042040,
+  "league": "意甲",
+  "home": "博洛尼亚",
+  "away": "国际米兰",
+  "time": "2026-10-18 00:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "常规正常球",
+  "lambda_home": 1.012,
+  "lambda_away": 2.05,
+  "lambda_total": 3.062,
+  "fused": {
+   "home": 0.1838,
+   "draw": 0.2481,
+   "away": 0.5681
+  },
+  "primary": "away",
+  "secondary": "draw",
+  "primary_prob": 0.5681,
+  "secondary_prob": 0.2481,
+  "had_recommend": {
+   "first": "away",
+   "second": "draw"
+  },
+  "hhad_line": 1,
+  "hhad_recommend": {
+   "first": "让(+1)胜",
+   "second": "让(+1)负"
+  },
+  "hhad_model": {
+   "home": 0.3867,
+   "draw": 0.2365,
+   "away": 0.3768
+  },
+  "hhad_market": {
+   "home": 0.3613,
+   "draw": 0.2604,
+   "away": 0.3783
+  },
+  "score_top5": [
+   {
+    "score": "1-2",
+    "prob": 0.0995,
+    "odds": 7
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0983,
+    "odds": 7.5
+   },
+   {
+    "score": "0-1",
+    "prob": 0.0833,
+    "odds": 7.5
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1097,
+    "odds": 7
+   },
+   {
+    "score": "0-3",
+    "prob": 0.0672,
+    "odds": 11
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "0-3",
+   "odds": 11.0
+  },
+  "hafu_top3": [
+   {
+    "code": "负负",
+    "prob": 0.3428,
+    "odds": 2.1
+   },
+   {
+    "code": "平负",
+    "prob": 0.227,
+    "odds": 4.1
+   },
+   {
+    "code": "平平",
+    "prob": 0.1292,
+    "odds": 6
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 2,
+    "prob": 0.232,
+    "odds": 3.75
+   },
+   {
+    "goals": 3,
+    "prob": 0.2239,
+    "odds": 3.55
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.3246
+   },
+   {
+    "score": "0-1",
+    "prob": 0.2312
+   },
+   {
+    "score": "1-0",
+    "prob": 0.108
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.2327
+  },
+  "k_rec": {
+   "value": -1,
+   "prob": 0.2238
+  },
+  "k_consistent": false,
+  "band_top3": [
+   {
+    "score": "1-2",
+    "prob": 0.0995
+   },
+   {
+    "score": "0-1",
+    "prob": 0.0833
+   },
+   {
+    "score": "2-3",
+    "prob": 0.0344
+   }
+  ],
+  "odds_had": {
+   "home": 5.42,
+   "draw": 4.15,
+   "away": 1.42
+  },
+  "odds_hhad": {
+   "home": 2.45,
+   "draw": 3.4,
+   "away": 2.34
+  },
+  "odds_crs": {
+   "1:0": 14,
+   "2:0": 29,
+   "2:1": 13,
+   "3:0": 90,
+   "3:1": 50,
+   "3:2": 40,
+   "4:0": 350,
+   "4:1": 200,
+   "4:2": 200,
+   "5:0": 700,
+   "5:1": 500,
+   "5:2": 500,
+   "win-other": 200,
+   "0:0": 16,
+   "1:1": 7,
+   "2:2": 13,
+   "3:3": 60,
+   "draw-other": 300,
+   "0:1": 7.5,
+   "0:2": 7.5,
+   "1:2": 7,
+   "0:3": 11,
+   "1:3": 11,
+   "2:3": 20,
+   "0:4": 20,
+   "1:4": 21,
+   "2:4": 50,
+   "0:5": 50,
+   "1:5": 50,
+   "2:5": 100,
+   "loss-other": 28
+  },
+  "odds_ttg": {
+   "0": 16,
+   "1": 5.6,
+   "2": 3.75,
+   "3": 3.55,
+   "4": 4.9,
+   "5": 7.75,
+   "6": 13,
+   "7+": 19
+  },
+  "odds_hafu": {
+   "HH": 9.6,
+   "HD": 17.5,
+   "HA": 21,
+   "DH": 13,
+   "DD": 6,
+   "DA": 4.1,
+   "AH": 40,
+   "AD": 17.5,
+   "AA": 2.1
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六024",
+  "match_id": 2042041,
+  "league": "英超",
+  "home": "纽卡斯尔联",
+  "away": "阿斯顿维拉",
+  "time": "2026-10-18 00:30:00",
+  "is_single": true,
+  "stadium_status": "正常",
+  "confidence": "★低",
+  "size_tier": "常规正常球",
+  "lambda_home": 1.701,
+  "lambda_away": 1.358,
+  "lambda_total": 3.059,
+  "fused": {
+   "home": 0.3447,
+   "draw": 0.4041,
+   "away": 0.2512
+  },
+  "primary": "draw",
+  "secondary": "home",
+  "primary_prob": 0.4041,
+  "secondary_prob": 0.3447,
+  "had_recommend": {
+   "first": "draw",
+   "second": "home"
+  },
+  "hhad_line": -1,
+  "hhad_recommend": {
+   "first": "让(-1)负",
+   "second": "让(-1)胜"
+  },
+  "hhad_model": {
+   "home": 0.2409,
+   "draw": 0.2152,
+   "away": 0.5439
+  },
+  "hhad_market": {
+   "home": 0.23,
+   "draw": 0.23,
+   "away": 0.54
+  },
+  "score_top5": [
+   {
+    "score": "1-1",
+    "prob": 0.1225,
+    "odds": 7
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0922,
+    "odds": 7
+   },
+   {
+    "score": "1-2",
+    "prob": 0.0736,
+    "odds": 8.5
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0679,
+    "odds": 12
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0657,
+    "odds": 10.5
+   }
+  ],
+  "bofen": {
+   "type": "搏冷",
+   "score": "2-2",
+   "odds": 10.0
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.252,
+    "odds": 3
+   },
+   {
+    "code": "平胜",
+    "prob": 0.1677,
+    "odds": 5.2
+   },
+   {
+    "code": "负负",
+    "prob": 0.16,
+    "odds": 5
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 2,
+    "prob": 0.2337,
+    "odds": 3.9
+   },
+   {
+    "goals": 3,
+    "prob": 0.2239,
+    "odds": 3.5
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.2914
+   },
+   {
+    "score": "1-0",
+    "prob": 0.183
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1432
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.2648
+  },
+  "k_rec": {
+   "value": 0,
+   "prob": 0.2648
+  },
+  "k_consistent": true,
+  "band_top3": [
+   {
+    "score": "1-1",
+    "prob": 0.1225
+   },
+   {
+    "score": "2-2",
+    "prob": 0.0626
+   },
+   {
+    "score": "0-0",
+    "prob": 0.0611
+   }
+  ],
+  "odds_had": {
+   "home": 1.97,
+   "draw": 3.6,
+   "away": 2.92
+  },
+  "odds_hhad": {
+   "home": 3.85,
+   "draw": 3.85,
+   "away": 1.64
+  },
+  "odds_crs": {
+   "1:0": 10.5,
+   "2:0": 12,
+   "2:1": 7,
+   "3:0": 19,
+   "3:1": 13,
+   "3:2": 17,
+   "4:0": 50,
+   "4:1": 31,
+   "4:2": 45,
+   "5:0": 120,
+   "5:1": 80,
+   "5:2": 100,
+   "win-other": 36,
+   "0:0": 20,
+   "1:1": 7,
+   "2:2": 10,
+   "3:3": 35,
+   "draw-other": 175,
+   "0:1": 14,
+   "0:2": 18,
+   "1:2": 8.5,
+   "0:3": 36,
+   "1:3": 20,
+   "2:3": 22,
+   "0:4": 100,
+   "1:4": 60,
+   "2:4": 70,
+   "0:5": 400,
+   "1:5": 200,
+   "2:5": 200,
+   "loss-other": 60
+  },
+  "odds_ttg": {
+   "0": 20,
+   "1": 6.25,
+   "2": 3.9,
+   "3": 3.5,
+   "4": 4.5,
+   "5": 7.25,
+   "6": 12,
+   "7+": 17
+  },
+  "odds_hafu": {
+   "HH": 3,
+   "HD": 14,
+   "HA": 28,
+   "DH": 5.2,
+   "DD": 6.2,
+   "DA": 7.25,
+   "AH": 20,
+   "AD": 14,
+   "AA": 5
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六025",
+  "match_id": 2042042,
+  "league": "德甲",
+  "home": "拜仁慕尼黑",
+  "away": "莱比锡红牛",
+  "time": "2026-10-18 00:30:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "大球",
+  "lambda_home": 3.283,
+  "lambda_away": 1.122,
+  "lambda_total": 4.405,
+  "fused": {
+   "home": 0.747,
+   "draw": 0.1379,
+   "away": 0.115
+  },
+  "primary": "home",
+  "secondary": "draw",
+  "primary_prob": 0.747,
+  "secondary_prob": 0.1379,
+  "had_recommend": {
+   "first": "home",
+   "second": "draw"
+  },
+  "hhad_line": -2,
+  "hhad_recommend": {
+   "first": "让(-2)平",
+   "second": "让(-2)胜"
+  },
+  "hhad_model": {
+   "home": 0.4175,
+   "draw": 0.1946,
+   "away": 0.3879
+  },
+  "hhad_market": {
+   "home": 0.447,
+   "draw": 0.1903,
+   "away": 0.3627
+  },
+  "score_top5": [
+   {
+    "score": "3-1",
+    "prob": 0.0808,
+    "odds": 9
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0739,
+    "odds": 10
+   },
+   {
+    "score": "3-0",
+    "prob": 0.072,
+    "odds": 11
+   },
+   {
+    "score": "4-1",
+    "prob": 0.0663,
+    "odds": 11
+   },
+   {
+    "score": "4-0",
+    "prob": 0.0591,
+    "odds": 13
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "4-0",
+   "odds": 13.0
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.4857,
+    "odds": 1.4
+   },
+   {
+    "code": "平胜",
+    "prob": 0.2003,
+    "odds": 4.75
+   },
+   {
+    "code": "平平",
+    "prob": 0.0632,
+    "odds": 16
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 4,
+    "prob": 0.1917,
+    "odds": 4.3
+   },
+   {
+    "goals": 3,
+    "prob": 0.174,
+    "odds": 4.9
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "1-0",
+    "prob": 0.2035
+   },
+   {
+    "score": "0-0",
+    "prob": 0.1705
+   },
+   {
+    "score": "2-0",
+    "prob": 0.1495
+   }
+  ],
+  "k_dist": {
+   "value": 2,
+   "prob": 0.1946
+  },
+  "k_rec": {
+   "value": 2,
+   "prob": 0.1946
+  },
+  "k_consistent": true,
+  "band_top3": [
+   {
+    "score": "3-1",
+    "prob": 0.0808
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0659
+   },
+   {
+    "score": "4-2",
+    "prob": 0.0372
+   }
+  ],
+  "odds_had": null,
+  "odds_hhad": {
+   "home": 1.98,
+   "draw": 4.65,
+   "away": 2.44
+  },
+  "odds_crs": {
+   "1:0": 21,
+   "2:0": 13,
+   "2:1": 10,
+   "3:0": 11,
+   "3:1": 9,
+   "3:2": 14,
+   "4:0": 13,
+   "4:1": 11,
+   "4:2": 17,
+   "5:0": 18,
+   "5:1": 15,
+   "5:2": 25,
+   "win-other": 4.5,
+   "0:0": 70,
+   "1:1": 18,
+   "2:2": 17,
+   "3:3": 36,
+   "draw-other": 100,
+   "0:1": 70,
+   "0:2": 120,
+   "1:2": 30,
+   "0:3": 250,
+   "1:3": 80,
+   "2:3": 36,
+   "0:4": 500,
+   "1:4": 200,
+   "2:4": 125,
+   "0:5": 1000,
+   "1:5": 500,
+   "2:5": 500,
+   "loss-other": 80
+  },
+  "odds_ttg": {
+   "0": 70,
+   "1": 20,
+   "2": 8.75,
+   "3": 4.9,
+   "4": 4.3,
+   "5": 4.5,
+   "6": 5.8,
+   "7+": 4.1
+  },
+  "odds_hafu": {
+   "HH": 1.4,
+   "HD": 22,
+   "HA": 60,
+   "DH": 4.75,
+   "DD": 16,
+   "DA": 26,
+   "AH": 16,
+   "AD": 22,
+   "AA": 17
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六026",
+  "match_id": 2042043,
+  "league": "西甲",
+  "home": "皇家贝蒂斯",
+  "away": "巴塞罗那",
+  "time": "2026-10-18 00:30:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "大球",
+  "lambda_home": 1.359,
+  "lambda_away": 3.046,
+  "lambda_total": 4.405,
+  "fused": {
+   "home": 0.1611,
+   "draw": 0.1986,
+   "away": 0.6403
+  },
+  "primary": "away",
+  "secondary": "draw",
+  "primary_prob": 0.6403,
+  "secondary_prob": 0.1986,
+  "had_recommend": {
+   "first": "away",
+   "second": "draw"
+  },
+  "hhad_line": 1,
+  "hhad_recommend": {
+   "first": "让(+1)负",
+   "second": "让(+1)胜"
+  },
+  "hhad_model": {
+   "home": 0.2871,
+   "draw": 0.1901,
+   "away": 0.5228
+  },
+  "hhad_market": {
+   "home": 0.2813,
+   "draw": 0.2037,
+   "away": 0.5151
+  },
+  "score_top5": [
+   {
+    "score": "1-3",
+    "prob": 0.0782,
+    "odds": 8
+   },
+   {
+    "score": "1-2",
+    "prob": 0.077,
+    "odds": 8
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0567,
+    "odds": 11
+   },
+   {
+    "score": "1-4",
+    "prob": 0.0595,
+    "odds": 13
+   },
+   {
+    "score": "0-3",
+    "prob": 0.0575,
+    "odds": 12
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "1-4",
+   "odds": 13.0
+  },
+  "hafu_top3": [
+   {
+    "code": "负负",
+    "prob": 0.4144,
+    "odds": 1.75
+   },
+   {
+    "code": "平负",
+    "prob": 0.2105,
+    "odds": 4.5
+   },
+   {
+    "code": "平平",
+    "prob": 0.0756,
+    "odds": 10
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 4,
+    "prob": 0.1916,
+    "odds": 4.05
+   },
+   {
+    "goals": 3,
+    "prob": 0.174,
+    "odds": 4.15
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-1",
+    "prob": 0.2024
+   },
+   {
+    "score": "0-0",
+    "prob": 0.2021
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1267
+   }
+  ],
+  "k_dist": {
+   "value": -2,
+   "prob": 0.1887
+  },
+  "k_rec": {
+   "value": -2,
+   "prob": 0.1887
+  },
+  "k_consistent": true,
+  "band_top3": [
+   {
+    "score": "1-3",
+    "prob": 0.0782
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0567
+   },
+   {
+    "score": "2-4",
+    "prob": 0.0405
+   }
+  ],
+  "odds_had": {
+   "home": 6.3,
+   "draw": 5.65,
+   "away": 1.26
+  },
+  "odds_hhad": {
+   "home": 3.15,
+   "draw": 4.35,
+   "away": 1.72
+  },
+  "odds_crs": {
+   "1:0": 32,
+   "2:0": 50,
+   "2:1": 18,
+   "3:0": 90,
+   "3:1": 40,
+   "3:2": 26,
+   "4:0": 300,
+   "4:1": 100,
+   "4:2": 90,
+   "5:0": 500,
+   "5:1": 300,
+   "5:2": 300,
+   "win-other": 60,
+   "0:0": 50,
+   "1:1": 13,
+   "2:2": 12.5,
+   "3:3": 28,
+   "draw-other": 100,
+   "0:1": 15.5,
+   "0:2": 11,
+   "1:2": 8,
+   "0:3": 12,
+   "1:3": 8,
+   "2:3": 14,
+   "0:4": 17.5,
+   "1:4": 13,
+   "2:4": 19,
+   "0:5": 35,
+   "1:5": 23,
+   "2:5": 45,
+   "loss-other": 8.75
+  },
+  "odds_ttg": {
+   "0": 50,
+   "1": 12.5,
+   "2": 6.2,
+   "3": 4.15,
+   "4": 4.05,
+   "5": 4.9,
+   "6": 7,
+   "7+": 6.3
+  },
+  "odds_hafu": {
+   "HH": 10,
+   "HD": 18,
+   "HA": 17,
+   "DH": 16,
+   "DD": 10,
+   "DA": 4.5,
+   "AH": 35,
+   "AD": 18,
+   "AA": 1.75
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六027",
+  "match_id": 2042044,
+  "league": "荷甲",
+  "home": "特尔斯达",
+  "away": "费耶诺德",
+  "time": "2026-10-18 02:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "常规正常球",
+  "lambda_home": 1.062,
+  "lambda_away": 2.598,
+  "lambda_total": 3.66,
+  "fused": {
+   "home": 0.1431,
+   "draw": 0.1762,
+   "away": 0.6807
+  },
+  "primary": "away",
+  "secondary": "draw",
+  "primary_prob": 0.6807,
+  "secondary_prob": 0.1762,
+  "had_recommend": {
+   "first": "away",
+   "second": "draw"
+  },
+  "hhad_line": 1,
+  "hhad_recommend": {
+   "first": "让(+1)平",
+   "second": "让(+1)负"
+  },
+  "hhad_model": {
+   "home": 0.2966,
+   "draw": 0.2127,
+   "away": 0.4907
+  },
+  "hhad_market": {
+   "home": 0.2751,
+   "draw": 0.2215,
+   "away": 0.5034
+  },
+  "score_top5": [
+   {
+    "score": "1-2",
+    "prob": 0.0922,
+    "odds": 7.5
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0868,
+    "odds": 8.5
+   },
+   {
+    "score": "1-3",
+    "prob": 0.0799,
+    "odds": 8.7
+   },
+   {
+    "score": "0-3",
+    "prob": 0.0752,
+    "odds": 9.5
+   },
+   {
+    "score": "1-1",
+    "prob": 0.0802,
+    "odds": 10
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "0-4",
+   "odds": 14.0
+  },
+  "hafu_top3": [
+   {
+    "code": "负负",
+    "prob": 0.4272,
+    "odds": 1.69
+   },
+   {
+    "code": "平负",
+    "prob": 0.2107,
+    "odds": 4.2
+   },
+   {
+    "code": "平平",
+    "prob": 0.0934,
+    "odds": 9.05
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 3,
+    "prob": 0.2103,
+    "odds": 3.8
+   },
+   {
+    "goals": 4,
+    "prob": 0.1924,
+    "odds": 4.2
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.2286
+   },
+   {
+    "score": "0-1",
+    "prob": 0.221
+   },
+   {
+    "score": "0-2",
+    "prob": 0.128
+   }
+  ],
+  "k_dist": {
+   "value": -1,
+   "prob": 0.2035
+  },
+  "k_rec": {
+   "value": -1,
+   "prob": 0.2035
+  },
+  "k_consistent": true,
+  "band_top3": [
+   {
+    "score": "1-2",
+    "prob": 0.0922
+   },
+   {
+    "score": "0-1",
+    "prob": 0.0576
+   },
+   {
+    "score": "2-3",
+    "prob": 0.0424
+   }
+  ],
+  "odds_had": {
+   "home": 7.95,
+   "draw": 5.25,
+   "away": 1.23
+  },
+  "odds_hhad": {
+   "home": 3.22,
+   "draw": 4,
+   "away": 1.76
+  },
+  "odds_crs": {
+   "1:0": 27,
+   "2:0": 55,
+   "2:1": 19,
+   "3:0": 175,
+   "3:1": 60,
+   "3:2": 38,
+   "4:0": 550,
+   "4:1": 250,
+   "4:2": 200,
+   "5:0": 1000,
+   "5:1": 650,
+   "5:2": 550,
+   "win-other": 120,
+   "0:0": 30,
+   "1:1": 10,
+   "2:2": 13.5,
+   "3:3": 45,
+   "draw-other": 200,
+   "0:1": 10.5,
+   "0:2": 8.5,
+   "1:2": 7.5,
+   "0:3": 9.5,
+   "1:3": 8.7,
+   "2:3": 16,
+   "0:4": 14,
+   "1:4": 14,
+   "2:4": 26,
+   "0:5": 28,
+   "1:5": 27,
+   "2:5": 50,
+   "loss-other": 11
+  },
+  "odds_ttg": {
+   "0": 30,
+   "1": 8.25,
+   "2": 4.6,
+   "3": 3.8,
+   "4": 4.2,
+   "5": 5.7,
+   "6": 9.5,
+   "7+": 9.9
+  },
+  "odds_hafu": {
+   "HH": 12,
+   "HD": 19,
+   "HA": 20,
+   "DH": 17,
+   "DD": 9.05,
+   "DA": 4.2,
+   "AH": 60,
+   "AD": 19,
+   "AA": 1.69
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六028",
+  "match_id": 2042045,
+  "league": "意甲",
+  "home": "罗马",
+  "away": "热那亚",
+  "time": "2026-10-18 02:45:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "常规正常球",
+  "lambda_home": 1.952,
+  "lambda_away": 0.887,
+  "lambda_total": 2.839,
+  "fused": {
+   "home": 0.6119,
+   "draw": 0.2534,
+   "away": 0.1348
+  },
+  "primary": "home",
+  "secondary": "draw",
+  "primary_prob": 0.6119,
+  "secondary_prob": 0.2534,
+  "had_recommend": {
+   "first": "home",
+   "second": "draw"
+  },
+  "hhad_line": -1,
+  "hhad_recommend": {
+   "first": "让(-1)负",
+   "second": "让(-1)胜"
+  },
+  "hhad_model": {
+   "home": 0.3769,
+   "draw": 0.246,
+   "away": 0.3771
+  },
+  "hhad_market": {
+   "home": 0.4123,
+   "draw": 0.2532,
+   "away": 0.3345
+  },
+  "score_top5": [
+   {
+    "score": "1-0",
+    "prob": 0.101,
+    "odds": 6.5
+   },
+   {
+    "score": "2-0",
+    "prob": 0.1114,
+    "odds": 6
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0988,
+    "odds": 6.5
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1144,
+    "odds": 8
+   },
+   {
+    "score": "3-0",
+    "prob": 0.0725,
+    "odds": 8.5
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "3-0",
+   "odds": 8.5
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.3476,
+    "odds": 1.95
+   },
+   {
+    "code": "平胜",
+    "prob": 0.2367,
+    "odds": 4
+   },
+   {
+    "code": "平平",
+    "prob": 0.1389,
+    "odds": 6.3
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 2,
+    "prob": 0.2488,
+    "odds": 3.7
+   },
+   {
+    "goals": 3,
+    "prob": 0.223,
+    "odds": 3.5
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.351
+   },
+   {
+    "score": "1-0",
+    "prob": 0.2411
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1035
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.2393
+  },
+  "k_rec": {
+   "value": 1,
+   "prob": 0.2328
+  },
+  "k_consistent": false,
+  "band_top3": [
+   {
+    "score": "1-0",
+    "prob": 0.101
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0988
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0285
+   }
+  ],
+  "odds_had": {
+   "home": 1.34,
+   "draw": 4.3,
+   "away": 6.65
+  },
+  "odds_hhad": {
+   "home": 2.15,
+   "draw": 3.5,
+   "away": 2.65
+  },
+  "odds_crs": {
+   "1:0": 6.5,
+   "2:0": 6,
+   "2:1": 6.5,
+   "3:0": 8.5,
+   "3:1": 11,
+   "3:2": 25,
+   "4:0": 16,
+   "4:1": 20,
+   "4:2": 50,
+   "5:0": 35,
+   "5:1": 50,
+   "5:2": 100,
+   "win-other": 27,
+   "0:0": 14,
+   "1:1": 8,
+   "2:2": 17,
+   "3:3": 80,
+   "draw-other": 400,
+   "0:1": 17,
+   "0:2": 45,
+   "1:2": 18,
+   "0:3": 150,
+   "1:3": 70,
+   "2:3": 70,
+   "0:4": 400,
+   "1:4": 300,
+   "2:4": 300,
+   "0:5": 900,
+   "1:5": 800,
+   "2:5": 700,
+   "loss-other": 300
+  },
+  "odds_ttg": {
+   "0": 14,
+   "1": 5.2,
+   "2": 3.7,
+   "3": 3.5,
+   "4": 5,
+   "5": 8.5,
+   "6": 15,
+   "7+": 21
+  },
+  "odds_hafu": {
+   "HH": 1.95,
+   "HD": 19,
+   "HA": 50,
+   "DH": 4,
+   "DD": 6.3,
+   "DA": 13,
+   "AH": 25,
+   "AD": 19,
+   "AA": 11
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六029",
+  "match_id": 2042046,
+  "league": "西甲",
+  "home": "巴伦西亚",
+  "away": "毕尔巴鄂竞技",
+  "time": "2026-10-18 03:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★低",
+  "size_tier": "小球",
+  "lambda_home": 1.012,
+  "lambda_away": 1.366,
+  "lambda_total": 2.379,
+  "fused": {
+   "home": 0.276,
+   "draw": 0.3249,
+   "away": 0.3992
+  },
+  "primary": "away",
+  "secondary": "draw",
+  "primary_prob": 0.3992,
+  "secondary_prob": 0.3249,
+  "had_recommend": {
+   "first": "away",
+   "second": "draw"
+  },
+  "hhad_line": 1,
+  "hhad_recommend": {
+   "first": "让(+1)胜",
+   "second": "让(+1)平"
+  },
+  "hhad_model": {
+   "home": 0.5505,
+   "draw": 0.2369,
+   "away": 0.2126
+  },
+  "hhad_market": {
+   "home": 0.5536,
+   "draw": 0.246,
+   "away": 0.2004
+  },
+  "score_top5": [
+   {
+    "score": "0-1",
+    "prob": 0.11,
+    "odds": 6.5
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1449,
+    "odds": 5.6
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0865,
+    "odds": 9
+   },
+   {
+    "score": "1-2",
+    "prob": 0.0876,
+    "odds": 7.25
+   },
+   {
+    "score": "0-0",
+    "prob": 0.1094,
+    "odds": 9.5
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "0-2",
+   "odds": 9.0
+  },
+  "hafu_top3": [
+   {
+    "code": "负负",
+    "prob": 0.2294,
+    "odds": 3.4
+   },
+   {
+    "code": "平负",
+    "prob": 0.1945,
+    "odds": 4.8
+   },
+   {
+    "code": "平平",
+    "prob": 0.1879,
+    "odds": 4.5
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 2,
+    "prob": 0.2788,
+    "odds": 3.1
+   },
+   {
+    "goals": 3,
+    "prob": 0.2079,
+    "odds": 3.6
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.4155
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1998
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1453
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.3059
+  },
+  "k_rec": {
+   "value": -1,
+   "prob": 0.2202
+  },
+  "k_consistent": false,
+  "band_top3": [
+   {
+    "score": "0-1",
+    "prob": 0.11
+   },
+   {
+    "score": "1-2",
+    "prob": 0.0876
+   },
+   {
+    "score": "2-3",
+    "prob": 0.0202
+   }
+  ],
+  "odds_had": {
+   "home": 3.2,
+   "draw": 3.1,
+   "away": 2.03
+  },
+  "odds_hhad": {
+   "home": 1.6,
+   "draw": 3.6,
+   "away": 4.42
+  },
+  "odds_crs": {
+   "1:0": 8.5,
+   "2:0": 15,
+   "2:1": 10,
+   "3:0": 50,
+   "3:1": 30,
+   "3:2": 35,
+   "4:0": 150,
+   "4:1": 100,
+   "4:2": 150,
+   "5:0": 400,
+   "5:1": 400,
+   "5:2": 400,
+   "win-other": 200,
+   "0:0": 9.5,
+   "1:1": 5.6,
+   "2:2": 13.5,
+   "3:3": 75,
+   "draw-other": 400,
+   "0:1": 6.5,
+   "0:2": 9,
+   "1:2": 7.25,
+   "0:3": 18,
+   "1:3": 16,
+   "2:3": 30,
+   "0:4": 50,
+   "1:4": 50,
+   "2:4": 90,
+   "0:5": 150,
+   "1:5": 150,
+   "2:5": 200,
+   "loss-other": 100
+  },
+  "odds_ttg": {
+   "0": 9.5,
+   "1": 4.2,
+   "2": 3.1,
+   "3": 3.6,
+   "4": 6.1,
+   "5": 12.5,
+   "6": 25,
+   "7+": 40
+  },
+  "odds_hafu": {
+   "HH": 5.55,
+   "HD": 15,
+   "HA": 25,
+   "DH": 7,
+   "DD": 4.5,
+   "DA": 4.8,
+   "AH": 30,
+   "AD": 15,
+   "AA": 3.4
+  }
+ },
+ {
+  "date": "2026-10-17",
+  "match_num": "周六030",
+  "match_id": 2042047,
+  "league": "美职",
+  "home": "新英格兰革命",
+  "away": "芝加哥火焰",
+  "time": "2026-10-18 07:30:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "confidence": "★★中",
+  "size_tier": "常规正常球",
+  "lambda_home": 1.766,
+  "lambda_away": 1.53,
+  "lambda_total": 3.296,
+  "fused": {
+   "home": 0.4283,
+   "draw": 0.2357,
+   "away": 0.336
+  },
+  "primary": "home",
+  "secondary": "away",
+  "primary_prob": 0.4283,
+  "secondary_prob": 0.336,
+  "had_recommend": {
+   "first": "home",
+   "second": "away"
+  },
+  "hhad_line": -1,
+  "hhad_recommend": {
+   "first": "让(-1)负",
+   "second": "让(-1)胜"
+  },
+  "hhad_model": {
+   "home": 0.2316,
+   "draw": 0.2039,
+   "away": 0.5646
+  },
+  "hhad_market": {
+   "home": 0.215,
+   "draw": 0.2135,
+   "away": 0.5715
+  },
+  "score_top5": [
+   {
+    "score": "2-1",
+    "prob": 0.0884,
+    "odds": 7.5
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1131,
+    "odds": 7.5
+   },
+   {
+    "score": "1-2",
+    "prob": 0.0765,
+    "odds": 8.5
+   },
+   {
+    "score": "2-2",
+    "prob": 0.0676,
+    "odds": 10.5
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0577,
+    "odds": 14
+   }
+  ],
+  "bofen": {
+   "type": "穿盘大热",
+   "score": "3-1",
+   "odds": 14.0
+  },
+  "hafu_top3": [
+   {
+    "code": "胜胜",
+    "prob": 0.2394,
+    "odds": 3.3
+   },
+   {
+    "code": "负负",
+    "prob": 0.1777,
+    "odds": 4.4
+   },
+   {
+    "code": "平胜",
+    "prob": 0.1572,
+    "odds": 5.55
+   }
+  ],
+  "ttg_top2": [
+   {
+    "goals": 3,
+    "prob": 0.221,
+    "odds": 3.5
+   },
+   {
+    "goals": 2,
+    "prob": 0.2142,
+    "odds": 4.45
+   }
+  ],
+  "ht_scores_top3": [
+   {
+    "score": "0-0",
+    "prob": 0.266
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1703
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1454
+   }
+  ],
+  "k_dist": {
+   "value": 0,
+   "prob": 0.2548
+  },
+  "k_rec": {
+   "value": 1,
+   "prob": 0.1909
+  },
+  "k_consistent": false,
+  "band_top3": [
+   {
+    "score": "2-1",
+    "prob": 0.0884
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0524
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0398
+   }
+  ],
+  "odds_had": {
+   "home": 2.1,
+   "draw": 3.65,
+   "away": 2.64
+  },
+  "odds_hhad": {
+   "home": 4.12,
+   "draw": 4.15,
+   "away": 1.55
+  },
+  "odds_crs": {
+   "1:0": 12.5,
+   "2:0": 14,
+   "2:1": 7.5,
+   "3:0": 22,
+   "3:1": 14,
+   "3:2": 16,
+   "4:0": 50,
+   "4:1": 31,
+   "4:2": 38,
+   "5:0": 125,
+   "5:1": 75,
+   "5:2": 110,
+   "win-other": 29,
+   "0:0": 24,
+   "1:1": 7.5,
+   "2:2": 10.5,
+   "3:3": 30,
+   "draw-other": 125,
+   "0:1": 14,
+   "0:2": 18,
+   "1:2": 8.5,
+   "0:3": 33,
+   "1:3": 18,
+   "2:3": 18,
+   "0:4": 80,
+   "1:4": 42,
+   "2:4": 45,
+   "0:5": 200,
+   "1:5": 150,
+   "2:5": 150,
+   "loss-other": 36
+  },
+  "odds_ttg": {
+   "0": 24,
+   "1": 7.8,
+   "2": 4.45,
+   "3": 3.5,
+   "4": 4.3,
+   "5": 5.9,
+   "6": 10.5,
+   "7+": 13
+  },
+  "odds_hafu": {
+   "HH": 3.3,
+   "HD": 13,
+   "HA": 22,
+   "DH": 5.55,
+   "DD": 6.75,
+   "DA": 7,
+   "AH": 19,
+   "AD": 13,
+   "AA": 4.4
+  }
+ }
+]

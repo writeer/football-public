@@ -1,0 +1,147 @@
+{
+    "league_info": {
+        "name_cn": "荷兰甲级联赛",
+        "name_en": "Eredivisie",
+        "country": "荷兰",
+        "country_code": "NL",
+        "level": "顶级",
+        "num_teams": 18,
+        "format": "双循环，34轮",
+        "season_period": "8月-次年5月（跨年）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.eredivisie.nl",
+        "governing_body": "荷兰足球协会（KNVB）",
+        "cross_league_level": "L2",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 3.18,
+        "draw_rate": 0.215,
+        "home_win_rate": 0.448,
+        "away_win_rate": 0.337,
+        "over_2_5_rate": 0.66,
+        "under_2_5_rate": 0.34,
+        "btts_rate": 0.63,
+        "top_scores": [
+            {
+                "score": "2-1",
+                "frequency": 0.095,
+                "direction": "主胜"
+            },
+            {
+                "score": "3-1",
+                "frequency": 0.078,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.072,
+                "direction": "平局"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.068,
+                "direction": "主胜"
+            },
+            {
+                "score": "3-0",
+                "frequency": 0.062,
+                "direction": "主胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.025,
+            "1_goal": 0.08,
+            "2_goals": 0.17,
+            "3_goals": 0.25,
+            "4_goals": 0.23,
+            "5_plus_goals": 0.245
+        },
+        "avg_home_goals": 1.82,
+        "avg_away_goals": 1.36,
+        "home_advantage_factor": 1.14,
+        "ht_draw_rate": 0.387,
+        "ht_draw_rate_note": "荷甲半场平局率。2026-09-12核算：football-data.co.uk官方逐场半场比分，5季合并1530场→0.3869；单季2025/26=0.3464。thefishy.uk(2025/26)得0.3464，验证一致。按5季合并属中高半场平局档(0.35-0.40)，lambda_ht系数0.42。",
+        "ht_draw_rate_source": [
+            "https://www.football-data.co.uk/mmz4281/2526/N1.csv",
+            "https://www.thefishy.uk/leaguetable.php?table=36&season=23"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "中高(0.35-0.40)",
+        "ht_draw_rate_confidence": "高(官方逐场半场比分/交叉验证一致)"
+    },
+    "match_style": {
+        "tactical_character": "大球联赛代表，进攻足球盛行。强调控球和进攻组织，防守相对松散。阿贾克斯青训体系世界闻名，全攻全守足球哲学传承至今。场均进球仅次于德甲。",
+        "tempo": "快",
+        "physicality": "中",
+        "technical_focus": "极高",
+        "var_usage": "2018-19赛季引入VAR，使用频率适中。",
+        "key_trends": [
+            "场均进球极高，大球率约66%",
+            "阿贾克斯/埃因霍温/费耶诺德三强格局",
+            "全攻全守哲学传承",
+            "防守松散导致大球频出"
+        ],
+        "style_tags": [
+            "进攻",
+            "大球",
+            "全攻全守",
+            "青训"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.55,
+        "avg_red_cards": 0.13,
+        "avg_penalties": 0.28,
+        "referee_style": "裁判鼓励比赛流畅性，出牌率较低。荷甲比赛节奏快，犯规后快速恢复比赛。",
+        "first_half_stoppage_avg": 2.0,
+        "second_half_stoppage_avg": 5.0,
+        "stoppage_note": "补时较短，比赛流畅度高。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "荷甲整体廉洁度较高。"
+            }
+        ],
+        "discipline_features": "黄牌累积5张停1场。纪律处罚较宽松。",
+        "official_rules": "IFAB规则+荷甲特别规则。",
+        "integrity_rating": "极高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价荷甲'进球最多'，'适合买大球'。彩民认为'荷甲大球稳'，'阿贾克斯客胜率高'。",
+        "betting_market": {
+            "market_efficiency": "中高",
+            "liquidity": "中",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "中高",
+        "jingcai_tips": [
+            "荷甲大球率极高，OVER 2.5是常规选择",
+            "三强客胜率高",
+            "中下游对攻导致大球",
+            "注意赛季初阿贾克斯出售主力后的磨合期",
+            "荷甲主场优势不如其他联赛明显"
+        ],
+        "common_sayings": [
+            "荷甲大球王",
+            "进球看荷甲",
+            "三强太强"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    }
+}

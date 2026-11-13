@@ -1,0 +1,339 @@
+{
+  "date": "2026-08-26",
+  "day": "wednesday",
+  "backtest_id": "BT-20260826-WED",
+  "model_version": "2.6.2",
+  "total_matches": 12,
+  "completed_matches": 10,
+  "pending_matches": ["011", "012"],
+  "source_files": {
+    "prediction_json": "memory/predictions/20260826_wednesday/predictions.json",
+    "analysis_report": "reports/analysis/20260826_wednesday_analysis_zhihu.md",
+    "backtest_report": "reports/backtest/backtest_20260826_wednesday_zhihu.md"
+  },
+  "actual_results_summary": "12场中10场已完赛(011帕梅/012达伽马巴西杯1/4决赛首回合仍在比赛中，赛果暂无)。已完赛10场6方向首选命中、9方向(含次选)命中。最大亮点：英联赛杯三场方向全中(003热刺5-1/004纽卡3-2/009埃弗顿0-4)、方向串A/B双中。最大翻车：007维京3-1逆转(预测客胜)、008费内巴切客场2-1(预测主胜)两场欧冠次回合方向全反。TTG 5/10(50%)大球场次(003/004/005/009/010)全低估。011/012赛果待定，回测待补。",
+  "hit_rates": {
+    "direction_first_and_second": { "hits": 9, "total": 10, "rate": 0.9, "rating": "优秀" },
+    "direction_first_only": { "hits": 6, "total": 10, "rate": 0.6, "rating": "良好" },
+    "ttg_top2": { "hits": 5, "total": 10, "rate": 0.5, "rating": "一般" },
+    "htft_top3": { "hits": 8, "total": 10, "rate": 0.8, "rating": "良好" },
+    "crs_top5": { "hits": 3, "total": 10, "rate": 0.3, "rating": "较差" }
+  },
+  "direction_detail": {
+    "first_hits": ["001", "003", "004", "005", "009", "010"],
+    "second_hits": ["006"],
+    "missed": ["002", "007", "008"],
+    "pending": ["011", "012"]
+  },
+  "matches": [
+    {
+      "id": "001",
+      "league": "韩职第25轮",
+      "home": "大田市民",
+      "away": "蔚山现代",
+      "actual_score": "2:1",
+      "actual_ht_score": "0:0",
+      "actual_direction": "主胜",
+      "actual_ttg": 3,
+      "actual_htft": "平胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.42 },
+        "had_second": { "direction": "平", "prob": 0.29 },
+        "ttg_top2": [3, 2],
+        "htft_top3": ["平胜", "平平", "胜胜"],
+        "crs_top5": ["1-1", "2-1", "1-2", "2-2", "0-1"]
+      },
+      "hits": { "direction": "✅首", "ttg": true, "htft": true, "crs": true },
+      "notes": "四维全中。大田补时两球2-1逆转蔚山(90+4'郑在熙/90+7'鲁比克森)，半场0-0→全场2-1平胜。方向主胜首选+TTG(3球首选)+半全场(平胜TOP1)+比分(2-1=TOP2)全命中。规则65上修+0.15(韩职Tier3)方向正确，大田主场交锋占优+保级战意兑现。"
+    },
+    {
+      "id": "002",
+      "league": "韩职第25轮",
+      "home": "安养FC",
+      "away": "仁川联",
+      "actual_score": "2:1",
+      "actual_ht_score": "1:1",
+      "actual_direction": "主胜",
+      "actual_ttg": 3,
+      "actual_htft": "平胜",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.42 },
+        "had_second": { "direction": "平", "prob": 0.28 },
+        "ttg_top2": [2, 3],
+        "htft_top3": ["平负", "平平", "负负"],
+        "crs_top5": ["0-1", "1-2", "0-2", "1-1", "0-0"]
+      },
+      "hits": { "direction": "❌", "ttg": true, "htft": false, "crs": false },
+      "notes": "方向翻车。安养近5场1胜4负(含0-7惨败FC首尔)但主场2-1逆转10人仁川(马修斯梅开二度)。TTG(3球次选)命中，但方向(预测客胜/平实际主胜)、半全场(平胜不在TOP3)、比分(2-1不在TOP5)全错。韩职主场因素+保级战意强于近期状态——安养类'主场龙'场次主胜权重应上修(L051)。"
+    },
+    {
+      "id": "003",
+      "league": "英联赛杯第2轮",
+      "home": "热刺",
+      "away": "查尔顿",
+      "actual_score": "5:1",
+      "actual_ht_score": "2:0",
+      "actual_direction": "主胜",
+      "actual_ttg": 6,
+      "actual_htft": "胜胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.82 },
+        "had_second": { "direction": "平", "prob": 0.1 },
+        "ttg_top2": [3, 4],
+        "htft_top3": ["胜胜", "平胜", "胜平"],
+        "crs_top5": ["2-0", "3-0", "3-1", "2-1", "4-0"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": false },
+      "notes": "方向主胜82%首选+半全场胜胜(TOP1)命中，但TTG 6球(预测3/4)与比分5-1(预测2-0/3-0/3-1/2-1/4-0)严重低估。热刺5-1大胜查尔顿(摩尔/索兰克/丹索/萨维奥/戴维斯进球)，新援萨维奥首秀破门。英联赛杯英超球队轮换后仍大胜，TTG大球低估(L049)。"
+    },
+    {
+      "id": "004",
+      "league": "英联赛杯第2轮",
+      "home": "纽卡斯尔",
+      "away": "西布罗姆",
+      "actual_score": "3:2",
+      "actual_ht_score": "1:1",
+      "actual_direction": "主胜",
+      "actual_ttg": 5,
+      "actual_htft": "平胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.75 },
+        "had_second": { "direction": "平", "prob": 0.14 },
+        "ttg_top2": [3, 4],
+        "htft_top3": ["胜胜", "平胜", "胜平"],
+        "crs_top5": ["2-0", "2-1", "3-1", "3-0", "1-0"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": false },
+      "notes": "方向主胜75%首选+半全场平胜(TOP2)命中，但TTG 5球(预测3/4)与比分3-2(预测2-0/2-1/3-1/3-0/1-0)落空。纽卡3-2险胜西布罗姆(19'Price任意球0-1/38'Toure扳平/48'+81'Barnes双响/77'Price点球2-2)，新援Toure首秀进球。英联杯跨级战大球频出，TTG低估(L049)。"
+    },
+    {
+      "id": "005",
+      "league": "欧冠附加赛次回合",
+      "home": "雅典AEK",
+      "away": "索列夫",
+      "actual_score": "4:0",
+      "actual_ht_score": "3:0",
+      "actual_direction": "主胜",
+      "actual_ttg": 4,
+      "actual_htft": "胜胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.58 },
+        "had_second": { "direction": "平", "prob": 0.22 },
+        "ttg_top2": [2, 1],
+        "htft_top3": ["平胜", "平平", "胜胜"],
+        "crs_top5": ["1-0", "2-0", "1-1", "0-0", "2-1"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": false },
+      "notes": "方向主胜58%首选+半全场胜胜(TOP3)命中，但TTG 4球(预测2/1球)与比分4-0(预测1-0/2-0/1-1/0-0/2-1)严重低估。AEK 4-0大胜(约维奇/沃尔高梅开二度/马林)，首回合0-0次回合主场碾压。首回合0-0保守信号导致TTG档位给2/1球过低——次回合主场强队放开进攻(L049)。"
+    },
+    {
+      "id": "006",
+      "league": "欧冠附加赛次回合",
+      "home": "采列",
+      "away": "布拉迪斯",
+      "actual_score": "1:1(加时1:2)",
+      "actual_ht_score": "1:1",
+      "actual_direction": "平",
+      "actual_ttg": 2,
+      "actual_htft": "平平",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.4 },
+        "had_second": { "direction": "平", "prob": 0.28 },
+        "ttg_top2": [2, 3],
+        "htft_top3": ["平负", "平平", "胜负"],
+        "crs_top5": ["1-1", "1-2", "0-1", "2-1", "0-0"]
+      },
+      "hits": { "direction": "✅次", "ttg": true, "htft": true, "crs": true },
+      "notes": "方向次选平局+TTG(2球首选)+半全场平平(TOP2)+比分(1-1=TOP1)四维命中。90分钟1-1(什波拉尔/塞什拉尔点球)，加时马丁内斯绝杀布拉迪斯1-2晋级。竞彩按90分钟口径：方向平/总进球2球/半全场平平/比分1-1。首回合1-1→次回合再平，欧冠附加赛平局暴风眼(L027)延续。"
+    },
+    {
+      "id": "007",
+      "league": "欧冠附加赛次回合",
+      "home": "维京",
+      "away": "萨迪纳摩",
+      "actual_score": "3:1",
+      "actual_ht_score": "1:1",
+      "actual_direction": "主胜",
+      "actual_ttg": 4,
+      "actual_htft": "平胜",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.38 },
+        "had_second": { "direction": "平", "prob": 0.28 },
+        "ttg_top2": [3, 4],
+        "htft_top3": ["平负", "平平", "负负"],
+        "crs_top5": ["1-1", "1-2", "2-2", "2-1", "1-3"]
+      },
+      "hits": { "direction": "❌", "ttg": true, "htft": false, "crs": false },
+      "notes": "方向翻车。维京主场3-1逆转萨迪纳摩(10'Hoxha 0-1/18'Tripic点球1-1/48'Austbø 2-1/50'Moi 3-1)，首回合客场2-2→次回合主场3-1晋级。TTG(4球次选)命中，但方向(预测客胜/平实际主胜)、半全场(平胜不在TOP3)、比分(3-1不在TOP5)全错。L045教训(落后方主场开放对攻)在维京应验——首回合客场平局+次回合主场→主胜概率被低估(L050)。"
+    },
+    {
+      "id": "008",
+      "league": "欧冠附加赛次回合",
+      "home": "里昂",
+      "away": "费内巴切",
+      "actual_score": "1:2",
+      "actual_ht_score": "0:2",
+      "actual_direction": "客胜",
+      "actual_ttg": 3,
+      "actual_htft": "负负",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.55 },
+        "had_second": { "direction": "平", "prob": 0.25 },
+        "ttg_top2": [2, 3],
+        "htft_top3": ["胜胜", "平胜", "胜平"],
+        "crs_top5": ["2-0", "2-1", "1-0", "3-1", "1-1"]
+      },
+      "hits": { "direction": "❌", "ttg": true, "htft": false, "crs": false },
+      "notes": "方向翻车。费内巴切客场2-1里昂(24'Muriqi 0-1/28'Brown 0-2/下半场里昂扳回)，首回合1-1→次回合客场晋级。TTG(3球次选)命中，但方向(预测主胜/平实际客胜)、半全场(负负不在TOP3)、比分(1-2不在TOP5)全错。费内巴切10+人残阵仍客场赢球——残阵传统强队不机械下修客队lambda(L046延续)，欧冠次回合方向高不确定(L050)。"
+    },
+    {
+      "id": "009",
+      "league": "英联赛杯第2轮",
+      "home": "普雷斯顿",
+      "away": "埃弗顿",
+      "actual_score": "0:4",
+      "actual_ht_score": "0:1",
+      "actual_direction": "客胜",
+      "actual_ttg": 4,
+      "actual_htft": "负负",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.65 },
+        "had_second": { "direction": "平", "prob": 0.2 },
+        "ttg_top2": [2, 3],
+        "htft_top3": ["平负", "负负", "平平"],
+        "crs_top5": ["0-1", "0-2", "1-2", "0-3", "1-1"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": false },
+      "notes": "方向客胜65%首选+半全场负负(TOP2)命中，但TTG 4球(预测2/3)与比分0-4(预测0-1/0-2/1-2/0-3/1-1)低估。埃弗顿0-4大胜(巴里帽子戏法+约翰逊传射)，半场0-1→全场0-4。英联赛杯英超球队碾压英冠，TTG大球低估(L049)。"
+    },
+    {
+      "id": "010",
+      "league": "西甲第1轮",
+      "home": "皇马",
+      "away": "皇家社会",
+      "actual_score": "4:1",
+      "actual_ht_score": "1:1",
+      "actual_direction": "主胜",
+      "actual_ttg": 5,
+      "actual_htft": "平胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.72 },
+        "had_second": { "direction": "平", "prob": 0.16 },
+        "ttg_top2": [3, 4],
+        "htft_top3": ["胜胜", "平胜", "胜平"],
+        "crs_top5": ["2-0", "2-1", "3-1", "1-0", "3-0"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": false },
+      "notes": "方向主胜72%首选+半全场平胜(TOP2)命中，但TTG 5球(预测3/4)与比分4-1(预测2-0/2-1/3-1/1-0/3-0)落空。皇马4-1大胜(姆巴佩40'/60'/80'帽子戏法+维尼修斯68')，半场1-1(苏契奇44'扳平)→全场4-1。皇马7人缺阵仍大胜——残阵≠必败(L020延续)，西甲首轮大球低估(L049)。"
+    },
+    {
+      "id": "011",
+      "league": "巴西杯1/4决赛首回合",
+      "home": "帕梅拉斯",
+      "away": "桑托斯",
+      "status": "in_progress",
+      "actual_score": "暂无（比赛中）",
+      "actual_ht_score": "暂无",
+      "actual_direction": "暂无",
+      "actual_ttg": null,
+      "actual_htft": "暂无",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.68 },
+        "had_second": { "direction": "平", "prob": 0.2 },
+        "ttg_top2": [2, 3],
+        "htft_top3": ["胜胜", "平胜", "胜平"],
+        "crs_top5": ["1-0", "2-0", "2-1", "1-1", "3-0"]
+      },
+      "hits": { "direction": "⏳", "ttg": "⏳", "htft": "⏳", "crs": "⏳" },
+      "notes": "比赛进行中，赛果暂无。四重触发规则65(身价2.4倍+让球1球+排名差8+积分差25)，待赛后回测确认。"
+    },
+    {
+      "id": "012",
+      "league": "巴西杯1/4决赛首回合",
+      "home": "达伽马",
+      "away": "维多利亚",
+      "status": "in_progress",
+      "actual_score": "暂无（比赛中）",
+      "actual_ht_score": "暂无",
+      "actual_direction": "暂无",
+      "actual_ttg": null,
+      "actual_htft": "暂无",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.55 },
+        "had_second": { "direction": "平", "prob": 0.25 },
+        "ttg_top2": [2, 3],
+        "htft_top3": ["平胜", "平平", "胜胜"],
+        "crs_top5": ["1-0", "2-0", "1-1", "2-1", "0-0"]
+      },
+      "hits": { "direction": "⏳", "ttg": "⏳", "htft": "⏳", "crs": "⏳" },
+      "notes": "比赛进行中，赛果暂无。双方极度残阵(达伽马5人缺阵/维多利亚8+人)+杯赛首回合，待赛后回测确认。"
+    }
+  ],
+  "parlay_results": {
+    "direction": [
+      { "name": "热门方向串A", "matches": ["003热刺主胜(✅5-1)", "009埃弗顿客胜(✅0-4)"], "results": [true, true], "hit": true, "est_odds": 1.62 },
+      { "name": "热门方向串B", "matches": ["003热刺主胜(✅5-1)", "010皇马主胜(✅4-1)"], "results": [true, true], "hit": true, "est_odds": 1.33 },
+      { "name": "热门方向串C", "matches": ["010皇马主胜(✅4-1)", "011帕梅主胜(⏳比赛中)"], "results": [true, null], "hit": "⏳", "est_odds": 1.72 },
+      { "name": "稳健方向3串", "matches": ["003热刺主胜(✅5-1)", "009埃弗顿客胜(✅0-4)", "011帕梅主胜(⏳比赛中)"], "results": [true, true, null], "hit": "⏳", "est_odds": 2.36 }
+    ],
+    "handicap": [
+      { "name": "稳健让球串", "matches": ["001大田让(-1)负(❌2-1让平)", "006采列让(-1)负(✅1-1让负)"], "results": [false, true], "hit": false, "est_odds": 2.34 },
+      { "name": "价值让球串", "matches": ["010皇马让(-1)负(❌4-1让胜)", "012达伽马让(-1)负(⏳比赛中)"], "results": [false, null], "hit": false, "est_odds": 8.78 }
+    ],
+    "mixed": [
+      { "name": "半全场基础串A", "matches": ["003热刺胜胜(✅胜胜)", "011帕梅胜胜(⏳比赛中)"], "results": [true, null], "hit": "⏳", "est_odds": 3.41 },
+      { "name": "半全场基础串B", "matches": ["009埃弗顿负负(✅负负)", "010皇马胜胜(❌平胜)"], "results": [true, false], "hit": false, "est_odds": 3.28 },
+      { "name": "方向+半全场A", "matches": ["003热刺主胜(✅5-1)", "011帕梅胜胜(⏳比赛中)"], "results": [true, null], "hit": "⏳", "est_odds": 2.49 },
+      { "name": "方向+半全场B", "matches": ["009埃弗顿客胜(✅0-4)", "010皇马胜胜(❌平胜)"], "results": [true, false], "hit": false, "est_odds": 2.29 }
+    ],
+    "entertainment_ttg": [
+      { "name": "总进球串A", "matches": ["007维京4球(✅4球)", "010皇马4球(❌5球)", "003热刺4球(❌6球)"], "results": [true, false, false], "hit": false, "est_odds": 98.3 },
+      { "name": "总进球串B", "matches": ["005 AEK 1球(❌4球)", "002安养2球(❌3球)", "012达伽马2球(⏳比赛中)"], "results": [false, false, null], "hit": false, "est_odds": 49.7 },
+      { "name": "总进球串C", "matches": ["008里昂3球(✅3球)", "007维京3球(❌4球)", "011帕梅2球(⏳比赛中)"], "results": [true, false, null], "hit": false, "est_odds": 43.4 }
+    ],
+    "entertainment_htft": [
+      { "name": "高赔半全场串A", "matches": ["002安养平负(❌平胜)", "006采列平负(❌平平)", "010皇马胜平(❌平胜)"], "results": [false, false, false], "hit": false, "est_odds": 792.9 },
+      { "name": "高赔半全场串B(稳健调整)", "matches": ["005 AEK平平(❌胜胜)", "007维京平负(❌平胜)", "012达伽马平胜(⏳比赛中)"], "results": [false, false, null], "hit": false, "est_odds": 158.8 },
+      { "name": "高赔半全场串C", "matches": ["001大田平胜(✅平胜)", "008里昂胜平(❌负负)", "011帕梅平胜(⏳比赛中)"], "results": [true, false, null], "hit": false, "est_odds": 324.0 },
+      { "name": "高赔半全场串D(可博调整)", "matches": ["009埃弗顿负负(✅负负)", "004纽卡胜平(❌平胜)", "003热刺平胜(❌胜胜)"], "results": [true, false, false], "hit": false, "est_odds": 174.4 }
+    ],
+    "entertainment_mixed": [
+      { "name": "混合串A", "matches": ["003热刺胜胜(✅胜胜)", "010皇马4球(❌5球)", "011帕梅2球(⏳比赛中)"], "results": [true, false, null], "hit": false, "est_odds": 23.0 },
+      { "name": "混合串B", "matches": ["009埃弗顿负负(✅负负)", "007维京4球(✅4球)", "005 AEK 1球(❌4球)"], "results": [true, true, false], "hit": false, "est_odds": 44.3 },
+      { "name": "混合串C", "matches": ["002安养平负(❌平胜)", "012达伽马3球(⏳比赛中)", "008里昂胜平(❌负负)"], "results": [false, null, false], "hit": false, "est_odds": 294.2 },
+      { "name": "混合串D", "matches": ["010皇马胜平(❌平胜)", "006采列2球(✅2球)", "001大田3球(✅3球)"], "results": [false, true, true], "hit": false, "est_odds": 269.3 }
+    ],
+    "score": [
+      { "name": "稳健比分串", "matches": ["003热刺2-0(❌5-1)", "010皇马2-0(❌4-1)", "011帕梅2-0(⏳比赛中)"], "results": [false, false, null], "hit": false, "est_odds": 319.7 },
+      { "name": "混合比分串", "matches": ["011帕梅1-0/2-0(⏳比赛中)", "008里昂2-0/2-1(❌1-2)", "001大田1-1/2-1(✅2-1)"], "results": [null, false, true], "hit": false, "est_odds": "304-445" },
+      { "name": "TOP5比分串", "matches": ["005 AEK 1-0/1-1(❌4-0)", "007维京1-1/1-2(❌3-1)", "012达伽马1-0/2-0(⏳比赛中)"], "results": [false, false, null], "hit": false, "est_odds": "291-438" },
+      { "name": "搏冷比分串", "matches": ["002安养0-2(❌2-1)", "010皇马3-1(❌4-1)", "007维京2-2(❌3-1)"], "results": [false, false, false], "hit": false, "est_odds": 1010.6 },
+      { "name": "单挑比分①", "matches": ["008里昂2-0(❌1-2)"], "results": [false], "hit": false, "est_odds": 9.50 },
+      { "name": "单挑比分②", "matches": ["011帕梅2-0(⏳比赛中)"], "results": [null], "hit": "⏳", "est_odds": 6.25 }
+    ]
+  },
+  "parlay_summary": {
+    "total_schemes": 25,
+    "total_hits": 2,
+    "pending_schemes": 5,
+    "hit_rate_decided": 0.1,
+    "hit_schemes": ["热门方向串A (~1.62)", "热门方向串B (~1.33)"],
+    "pending_scheme_names": ["热门方向串C", "稳健方向3串", "半全场基础串A", "方向+半全场A", "单挑比分②"],
+    "robust_hit_rate": { "hit": 2, "total": 6, "rate": 0.333, "pending": 4 },
+    "entertainment_hit_rate": { "hit": 0, "total": 14, "rate": 0.0, "pending": 1 }
+  },
+  "lessons_applied": ["L040", "L044", "L045", "L046", "L025", "L027", "L020"],
+  "rules_triggered": ["规则65(12场全触发，011四重触发)", "规则62比分推演", "规则28基本面>市场", "规则12历史交锋", "规则63单关(未告知场次不启用)", "L045(007维京主场逆转)", "L027(006杯赛平局暴风眼)", "L046(008费内巴切残阵客胜)"],
+  "new_lessons": ["L049", "L050", "L051"],
+  "key_findings": [
+    "方向(含次选)9/10(90%)优秀，仅首选6/10(60%)良好——次选平局命中1场(006)贡献关键，杯赛首回合平局次选覆盖价值高(L027延续)；011/012赛果待定",
+    "TTG 5/10(50%)一般——大球场次(003热刺6球/004纽卡5球/005 AEK 4球/009埃弗顿4球/010皇马5球)全低估。规则65上修对英联杯/欧冠次回合仍不足(L049)",
+    "比分TOP5 3/10(30%)较差——大比分场次(5-1/3-2/4-0/4-1)全落空，模型比分集中低档位，仅001/006两场命中",
+    "半全场TOP3 8/10(80%)良好——胜胜/负负/平胜路径覆盖较好，但002/007/008三场半全场路径反转",
+    "欧冠附加赛次回合4场方向2中2反：005/006命中(主胜/平)，007维京3-1逆转(预测客胜)、008费内巴切客场2-1(预测主胜)全反——次回合定生死场次(首回合平局)方向置信度需降级(L050)",
+    "巴西杯1/4决赛首回合011帕梅/012达伽马仍在比赛中，赛果暂无，待赛后回测补录",
+    "英联赛杯三场方向全中(003/004/009)但TTG全低估(6/5/4球)——英超球队轮换后仍大胜，英联杯跨级战大球频出(L049)",
+    "002安养主场2-1逆转仁川：安养近5场1胜4负(含0-7惨败)仍主场反弹——韩职主场因素+保级战意强于近期状态(L051)",
+    "010皇马4-1皇社：方向✅但TTG 5球(预测3/4)、比分4-1(预测2-0/2-1/3-1/1-0/3-0)全落空——姆巴佩戴帽，皇马7人缺阵仍大胜(残阵≠必败)"
+  ]
+}

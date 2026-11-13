@@ -1,0 +1,158 @@
+{
+    "league_info": {
+        "name_cn": "西班牙甲级联赛",
+        "name_en": "La Liga",
+        "country": "西班牙",
+        "country_code": "ES",
+        "level": "顶级",
+        "num_teams": 20,
+        "format": "双循环，38轮",
+        "season_period": "8月-次年5月（跨年）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.laliga.com",
+        "governing_body": "西班牙足球联赛联盟（LFP）",
+        "cross_league_level": "L1",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.48,
+        "draw_rate": 0.285,
+        "ht_draw_rate": 0.441,
+        "ht_draw_rate_note": "西甲半场平局率。2026-09-12复核：football-data.co.uk官方逐场半场比分，5季合并1900场→0.4405（各季0.461/0.455/0.424/0.445/0.418）；thefishy.uk(2025/26)得0.4184，验证一致。属高半场平局档(≥0.40)，lambda_ht系数0.38，半全场首选应含'平'。原值0.445与本次结论同档，仅微调。",
+        "ht_draw_rate_source": [
+            "https://www.football-data.co.uk/mmz4281/2526/SP1.csv",
+            "https://www.thefishy.uk/leaguetable.php?table=31&season=23"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "home_win_rate": 0.418,
+        "away_win_rate": 0.297,
+        "over_2_5_rate": 0.47,
+        "under_2_5_rate": 0.53,
+        "btts_rate": 0.49,
+        "top_scores": [
+            {
+                "score": "1-1",
+                "frequency": 0.098,
+                "direction": "平局"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.088,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.083,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-0",
+                "frequency": 0.065,
+                "direction": "平局"
+            },
+            {
+                "score": "0-1",
+                "frequency": 0.061,
+                "direction": "客胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.065,
+            "1_goal": 0.17,
+            "2_goals": 0.28,
+            "3_goals": 0.23,
+            "4_goals": 0.15,
+            "5_plus_goals": 0.105
+        },
+        "avg_home_goals": 1.42,
+        "avg_away_goals": 1.06,
+        "home_advantage_factor": 1.16,
+        "ht_draw_rate_tier": "高(≥0.40)",
+        "ht_draw_rate_confidence": "高(官方逐场半场比分/交叉验证一致)"
+    },
+    "match_style": {
+        "tactical_character": "强调控球和技术，传控足球（Tiki-Taka）发源地。注重地面配合和中场控制，防守组织性强。近年节奏加快，直接进攻比例上升。",
+        "tempo": "中",
+        "physicality": "中低",
+        "technical_focus": "极高",
+        "var_usage": "2018-19赛季引入VAR。对点球和越位判罚介入较多。西甲VAR争议主要集中在对'体毛级越位'和'轻微接触点球'的判罚标准上。",
+        "key_trends": [
+            "巴萨继承传控基因但加入直接进攻元素",
+            "皇马转型为高效反击型球队",
+            "马竞西蒙尼体系强调防守硬度和定位球",
+            "中下游球队普遍采用低位防守+快速反击"
+        ],
+        "style_tags": [
+            "技术流",
+            "控球",
+            "战术纪律",
+            "中场控制"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 5.12,
+        "avg_red_cards": 0.21,
+        "avg_penalties": 0.31,
+        "referee_style": "西甲裁判出牌率五大联赛最高，对犯规零容忍。对拖延时间和抗议判罚出牌积极。点球判罚率较高，VAR回看频繁。",
+        "first_half_stoppage_avg": 2.5,
+        "second_half_stoppage_avg": 5.2,
+        "stoppage_note": "因倒地和抗议较多，补时略长。2023-24赛季起也跟随严格补时趋势。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "Operation Oikos（2019）",
+                "year": "2019",
+                "description": "西班牙警方打击足球假赛集团，涉及西乙和西乙B多场比赛。主要涉及低级别联赛，未波及西甲顶级联赛。多名球员和经纪人被捕。"
+            },
+            {
+                "event": "Vallecas案",
+                "year": "2018",
+                "description": "涉及Rayo Vallecano和Levante等球队的末轮比赛涉嫌操纵，主要与保级相关。调查后未确认顶级联赛比赛被操纵。"
+            }
+        ],
+        "discipline_features": "西甲纪律委员会（CSD）独立运作。黄牌停赛累积5张停1场。红牌自动停赛。抗议行为处罚严格，教练员在场边言行受密切监控。",
+        "official_rules": "IFAB规则+西甲特别规则。财政公平法案（LaLiga的SDE控制）执行严格，巴萨曾因薪资帽问题无法注册球员。",
+        "integrity_rating": "高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价西甲'技术含量最高'，但'进球偏少，比赛节奏偏慢'。皇马巴萨双雄格局近年被马竞打破，但三强垄断仍然明显。彩民认为'西甲小球多'，'1-1和1-0最常见'。",
+        "betting_market": {
+            "market_efficiency": "高",
+            "liquidity": "高",
+            "mainstream_bookmakers": [
+                "Bet365",
+                "William Hill",
+                "888sport"
+            ],
+            "line_movement_frequency": "中高频",
+            "sharp_money": "西班牙本土资金+亚洲资金"
+        },
+        "upset_frequency": "中",
+        "jingcai_tips": [
+            "西甲小球率较高，UNDER 2.5值得重点关注",
+            "皇马巴萨客场对中游队经常小胜或平局",
+            "马竞主场防守极强，大球难出",
+            "保级队末轮战意强，注意冷门",
+            "黄牌数偏高，走地可关注走牌"
+        ],
+        "common_sayings": [
+            "西甲小球多",
+            "国家德比不看赔率",
+            "马竞主场是铁桶阵"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.laliga.com",
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://understat.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "高"
+    }
+}

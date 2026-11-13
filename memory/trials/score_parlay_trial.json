@@ -1,0 +1,2069 @@
+{
+ "trial": "规则67 比分串方向优先四步流程（双轨制）",
+ "caliber_since": "2026-09-17",
+ "updated": "2026-11-02",
+ "hit_rule": {
+  "exact": "比分精确命中 = 命中",
+  "semi": "方向命中但比分未中 = 半命中（不计入命中率分子）",
+  "miss": "方向未中 = 未命中"
+ },
+ "cumulative": {
+  "registered_matches": 43,
+  "exact": 6,
+  "semi": 22,
+  "miss": 15,
+  "exact_hit_rate": 0.14,
+  "promotion_threshold": {
+   "min_matches": 20,
+   "min_hit_rate": 0.6
+  },
+  "status": "维持试用，不转正（截至2026-11-01 双轨制累计43场 exact 6/43=14.0%，远低于60%转正线；11-01 回填7场：exact 1（020）、semi 4（003/007/012/013）、miss 2（004/008））",
+  "pending_matches": 5,
+  "pending_note": "待回填：2026-10-27 三场（007/008/009）＋2026-10-28 两场（005/006）；11-01 七场已于 2026-11-02 回填（1 exact / 4 semi / 2 miss）",
+  "double_count_note": "002柏太阳神vs神户胜利船按正向（稳健比分串）与单关口径各计1场，records数组仅存1条；故 records 数=12 而计入场次=13",
+  "revision": "2026-09-30：015 赛果由 2-2 更正为 4-2，判定由未命中改为半命中",
+  "updated": "2026-11-02"
+ },
+ "records": [
+  {
+   "date": "2026-09-12",
+   "caliber": "旧口径(方向内条件众数+合并桶)",
+   "match": "001 蔚山现代vs仁川联",
+   "direction": "主胜 45.4%",
+   "k_dir_inner": "主胜1球(49.2%)",
+   "ttg": "2球/3球",
+   "pred_score": "2:1",
+   "actual": "2:1",
+   "verdict": "exact"
+  },
+  {
+   "date": "2026-09-12",
+   "caliber": "旧口径(方向内条件众数+合并桶)",
+   "match": "002 全北现代vs首尔FC",
+   "direction": "客胜 41.8%",
+   "k_dir_inner": "客胜1球(50.0%)",
+   "ttg": "2球/3球",
+   "pred_score": "1:2",
+   "actual": "1:2",
+   "verdict": "exact"
+  },
+  {
+   "date": "2026-09-29",
+   "caliber": "双轨制",
+   "match_num": "007",
+   "match": "日本女足vs韩国女足",
+   "k_dist": {
+    "value": 2,
+    "pct": 0.233
+   },
+   "k_rec": {
+    "value": 2,
+    "pct": 0.233
+   },
+   "band_top3": [
+    [
+     "2-0",
+     0.16
+    ],
+    [
+     "3-1",
+     0.063
+    ],
+    [
+     "4-2",
+     0.009
+    ]
+   ],
+   "ttg_top1": "2球",
+   "k_dist_direction": "主胜",
+   "had_top1": "主胜",
+   "divergence": false,
+   "pred_score": "2-0",
+   "actual": "2-0",
+   "verdict": "exact",
+   "used_in": [
+    "稳健比分串",
+    "连续编号比分串①"
+   ]
+  },
+  {
+   "date": "2026-09-29",
+   "caliber": "双轨制",
+   "match_num": "013",
+   "match": "西班牙vs克罗地亚",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.235
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.235
+   },
+   "band_top3": [
+    [
+     "1-0",
+     0.136
+    ],
+    [
+     "2-1",
+     0.081
+    ],
+    [
+     "3-2",
+     0.016
+    ]
+   ],
+   "ttg_top1": "2球",
+   "k_dist_direction": "主胜",
+   "had_top1": "主胜",
+   "divergence": false,
+   "pred_score": "1-0",
+   "actual": "4-1",
+   "verdict": "semi",
+   "used_in": [
+    "稳健比分串",
+    "连续编号比分串①",
+    "单挑比分②"
+   ]
+  },
+  {
+   "date": "2026-09-29",
+   "caliber": "双轨制",
+   "match_num": "014",
+   "match": "保加利亚vs爱沙尼亚",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.277
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.277
+   },
+   "band_top3": [
+    [
+     "1-0",
+     0.171
+    ],
+    [
+     "2-1",
+     0.089
+    ],
+    [
+     "3-2",
+     0.019
+    ]
+   ],
+   "ttg_top1": "2球",
+   "k_dist_direction": "主胜",
+   "had_top1": "主胜",
+   "divergence": false,
+   "pred_score": "1-0",
+   "actual": "0-0",
+   "verdict": "miss",
+   "used_in": [
+    "连续编号比分串①"
+   ]
+  },
+  {
+   "date": "2026-09-29",
+   "caliber": "双轨制",
+   "match_num": "015",
+   "match": "美国vs智利",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.25
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.25
+   },
+   "band_top3": [
+    [
+     "1-0",
+     0.12
+    ],
+    [
+     "2-1",
+     0.098
+    ],
+    [
+     "3-2",
+     0.022
+    ]
+   ],
+   "ttg_top1": "2球",
+   "k_dist_direction": "主胜",
+   "had_top1": "主胜",
+   "divergence": false,
+   "pred_score": "1-0",
+   "actual": "4-2",
+   "verdict": "semi",
+   "used_in": [
+    "连续编号比分串②(替代方案)",
+    "单挑比分①"
+   ],
+   "note": "赛果由 2-2 更正为 4-2（半场 1-1）；方向（主胜）命中、比分未中 → 半命中"
+  },
+  {
+   "date": "2026-10-09",
+   "caliber": "双轨制",
+   "match_num": "002",
+   "match": "柏太阳神vs神户胜利船（单关）",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.285
+   },
+   "k_rec": {
+    "value": 0,
+    "pct": 0.285
+   },
+   "band_top3": [
+    [
+     "1-1",
+     0.136
+    ],
+    [
+     "0-0",
+     0.082
+    ],
+    [
+     "2-2",
+     0.055
+    ]
+   ],
+   "ttg_top1": "2球",
+   "k_dist_direction": "平",
+   "had_top1": "平",
+   "divergence": false,
+   "pred_score": "1-1",
+   "actual": "4-2",
+   "verdict": "miss",
+   "used_in": [
+    "稳健比分串",
+    "单挑比分②"
+   ],
+   "note": "规则63单关平局上修+11%后平局登顶，实际主胜4-2；正向与单关口径各计1场"
+  },
+  {
+   "date": "2026-10-09",
+   "caliber": "双轨制",
+   "match_num": "006",
+   "match": "PSV埃因霍温vs海伦芬",
+   "k_dist": {
+    "value": 2,
+    "pct": 0.194
+   },
+   "k_rec": {
+    "value": 2,
+    "pct": 0.194
+   },
+   "band_top3": [
+    [
+     "3-1",
+     0.08
+    ],
+    [
+     "2-0",
+     0.066
+    ],
+    [
+     "4-2",
+     0.037
+    ]
+   ],
+   "ttg_top1": "4球",
+   "k_dist_direction": "主胜",
+   "had_top1": "主胜",
+   "divergence": false,
+   "pred_score": "3-1",
+   "actual": "2-0",
+   "verdict": "exact",
+   "used_in": [
+    "连续编号比分串②"
+   ],
+   "note": "实际2-0为带内#2候选；残阵（9人伤停）让-2首选让平命中"
+  },
+  {
+   "date": "2026-10-09",
+   "caliber": "双轨制",
+   "match_num": "007",
+   "match": "赫拉克勒斯vs瓦尔韦克",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.211
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.211
+   },
+   "band_top3": [
+    [
+     "2-1",
+     0.096
+    ],
+    [
+     "1-0",
+     0.065
+    ],
+    [
+     "3-2",
+     0.041
+    ]
+   ],
+   "ttg_top1": "3球",
+   "k_dist_direction": "主胜",
+   "had_top1": "主胜",
+   "divergence": false,
+   "pred_score": "2-1",
+   "actual": "3-0",
+   "verdict": "semi",
+   "used_in": [
+    "连续编号比分串①",
+    "连续编号比分串②"
+   ],
+   "note": "方向（主胜+1）命中、比分3-0未入带 → 半命中"
+  },
+  {
+   "date": "2026-10-09",
+   "caliber": "双轨制",
+   "match_num": "008",
+   "match": "多特蒙德vs云达不来梅",
+   "k_dist": {
+    "value": 2,
+    "pct": 0.205
+   },
+   "k_rec": {
+    "value": 2,
+    "pct": 0.205
+   },
+   "band_top3": [
+    [
+     "2-0",
+     0.088
+    ],
+    [
+     "3-1",
+     0.082
+    ],
+    [
+     "4-2",
+     0.029
+    ]
+   ],
+   "ttg_top1": "3球",
+   "k_dist_direction": "主胜",
+   "had_top1": "主胜",
+   "divergence": false,
+   "pred_score": "2-0",
+   "actual": "2-2",
+   "verdict": "miss",
+   "used_in": [
+    "连续编号比分串①",
+    "单挑比分①"
+   ],
+   "note": "补时绝平2-2；实际2-2恰在搏冷比分串2选1剧本（1-1/2-2）内但未落正式推荐位"
+  },
+  {
+   "date": "2026-10-09",
+   "caliber": "双轨制",
+   "match_num": "010",
+   "match": "西汉姆联vs女王公园巡游者",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.211
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.211
+   },
+   "band_top3": [
+    [
+     "2-1",
+     0.096
+    ],
+    [
+     "1-0",
+     0.063
+    ],
+    [
+     "3-2",
+     0.042
+    ]
+   ],
+   "ttg_top1": "3球",
+   "k_dist_direction": "主胜",
+   "had_top1": "主胜",
+   "divergence": false,
+   "pred_score": "2-1",
+   "actual": "1-1",
+   "verdict": "miss",
+   "used_in": [
+    "稳健比分串"
+   ],
+   "note": "实际1-1不在比分TOP5——主胜方向过滤挤出平局比分"
+  },
+  {
+   "date": "2026-10-09",
+   "caliber": "双轨制",
+   "match_num": "009",
+   "match": "朗斯vs里昂（单关）",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.249
+   },
+   "k_rec": {
+    "value": 0,
+    "pct": 0.249
+   },
+   "band_top3": [
+    [
+     "1-1",
+     0.109
+    ],
+    [
+     "2-2",
+     0.068
+    ],
+    [
+     "0-0",
+     0.047
+    ]
+   ],
+   "ttg_top1": "3球",
+   "k_dist_direction": "平",
+   "had_top1": "平",
+   "divergence": false,
+   "pred_score": "1-1",
+   "actual": "2-1",
+   "verdict": "miss",
+   "used_in": [],
+   "note": "规则63+69双上修平局登顶(45.6%)，实际朗斯2-1主胜"
+  },
+  {
+   "date": "2026-10-12",
+   "caliber": "双轨制",
+   "match_num": "002",
+   "match": "亚特兰大vs威尼斯",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.238
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.238
+   },
+   "band_top3": [
+    [
+     "2-0",
+     0.132
+    ],
+    [
+     "1-0",
+     0.116
+    ],
+    [
+     "2-1",
+     0.095
+    ]
+   ],
+   "ttg_top1": "2球",
+   "k_dist_direction": "主胜",
+   "had_top1": "主胜",
+   "divergence": false,
+   "pred_score": "2-0",
+   "actual": "3-1",
+   "verdict": "semi",
+   "used_in": [
+    "稳健比分串",
+    "连续编号比分串①",
+    "单挑比分①"
+   ],
+   "note": "全场唯一『众数一致』场次；身价3.7倍碾压｜10-15补记：实际3-1主胜，比分未入带→semi；一致场计入（唯一众数一致场）"
+  },
+  {
+   "date": "2026-10-12",
+   "caliber": "双轨制",
+   "match_num": "001",
+   "match": "迪拜连接vs吉达国民",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.293
+   },
+   "k_rec": {
+    "value": -1,
+    "pct": 0.21
+   },
+   "band_top3": [
+    [
+     "0-1",
+     0.092
+    ],
+    [
+     "1-2",
+     0.09
+    ],
+    [
+     "2-3",
+     0.025
+    ]
+   ],
+   "ttg_top1": "2球",
+   "k_dist_direction": "平",
+   "had_top1": "客胜",
+   "divergence": true,
+   "pred_score": "1-1",
+   "actual": "1-3",
+   "verdict": "semi",
+   "used_in": [
+    "连续编号比分串①（分歧·降级使用）"
+   ],
+   "note": "分歧：分布众数0(平) vs 首推客胜｜10-15补记：实际1-3客胜方向中、比分未入带；分歧场仅记录不计入"
+  },
+  {
+   "date": "2026-10-12",
+   "caliber": "双轨制",
+   "match_num": "003",
+   "match": "马尔默vs卡尔马",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.267
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.234
+   },
+   "band_top3": [
+    [
+     "1-0",
+     0.108
+    ],
+    [
+     "2-1",
+     0.097
+    ],
+    [
+     "3-2",
+     0.026
+    ]
+   ],
+   "ttg_top1": "2球",
+   "k_dist_direction": "平",
+   "had_top1": "主胜",
+   "divergence": true,
+   "pred_score": "1-1",
+   "actual": "1-0",
+   "verdict": "exact",
+   "used_in": [
+    "稳健比分串（分歧·降级使用）"
+   ],
+   "note": "分歧幅度全轮最小(3.3pp)；主队约9人严重残阵｜10-15补记：实际1-0带内TOP1精确命中exact；分歧场仅记录不计入"
+  },
+  {
+   "date": "2026-10-12",
+   "caliber": "双轨制",
+   "match_num": "009",
+   "match": "科里蒂巴vs博塔弗戈",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.309
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.205
+   },
+   "band_top3": [
+    [
+     "1-0",
+     0.099
+    ],
+    [
+     "2-1",
+     0.083
+    ],
+    [
+     "3-2",
+     0.02
+    ]
+   ],
+   "ttg_top1": "2球",
+   "k_dist_direction": "平",
+   "had_top1": "主胜",
+   "divergence": true,
+   "pred_score": "1-0",
+   "actual": "1-1",
+   "verdict": "miss",
+   "used_in": [
+    "连续编号比分串②（分歧·降级使用）"
+   ],
+   "note": "分歧：分布众数0(平) vs 首推主胜｜10-15补记：实际1-1平方向未中；分歧场仅记录不计入"
+  },
+  {
+   "date": "2026-10-12",
+   "caliber": "双轨制",
+   "match_num": "010",
+   "match": "法马利康vs阿尔维卡",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.287
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.231
+   },
+   "band_top3": [
+    [
+     "1-0",
+     0.112
+    ],
+    [
+     "2-1",
+     0.094
+    ],
+    [
+     "3-2",
+     0.023
+    ]
+   ],
+   "ttg_top1": "2球",
+   "k_dist_direction": "平",
+   "had_top1": "主胜",
+   "divergence": true,
+   "pred_score": "1-0",
+   "actual": "1-4",
+   "verdict": "miss",
+   "used_in": [
+    "连续编号比分串②（分歧·降级使用）",
+    "单挑比分②"
+   ],
+   "note": "分歧：分布众数0(平) vs 首推主胜｜10-15补记：实际1-4客胜方向未中；分歧场仅记录不计入"
+  },
+  {
+   "date": "2026-10-13",
+   "caliber": "双轨制",
+   "match_num": "005",
+   "match": "国际米兰vs布鲁日",
+   "k_dist": {
+    "value": 2,
+    "pct": 0.214
+   },
+   "k_rec": {
+    "value": 2,
+    "pct": 0.214
+   },
+   "band_top3": [
+    [
+     "2-0",
+     0.107
+    ],
+    [
+     "3-1",
+     0.081
+    ],
+    [
+     "4-2",
+     0.023
+    ]
+   ],
+   "ttg_top1": "3球",
+   "k_dist_direction": "主胜",
+   "had_top1": "主胜",
+   "divergence": false,
+   "pred_score": "2-0",
+   "actual": "3-4",
+   "verdict": "miss",
+   "used_in": [
+    "稳健比分串",
+    "单挑比分①"
+   ],
+   "note": "10-15补录：实际3-4客胜方向未中→miss；大热主胜77.8%被掀翻"
+  },
+  {
+   "date": "2026-10-13",
+   "caliber": "双轨制",
+   "match_num": "010",
+   "match": "加拉塔萨雷vs巴塞罗那",
+   "k_dist": {
+    "value": -2,
+    "pct": 0.194
+   },
+   "k_rec": {
+    "value": -2,
+    "pct": 0.194
+   },
+   "band_top3": [
+    [
+     "1-3",
+     0.08
+    ],
+    [
+     "0-2",
+     0.058
+    ],
+    [
+     "2-4",
+     0.042
+    ]
+   ],
+   "ttg_top1": "4球",
+   "k_dist_direction": "客胜",
+   "had_top1": "客胜",
+   "divergence": false,
+   "pred_score": "1-3",
+   "actual": "1-4",
+   "verdict": "semi",
+   "used_in": [
+    "稳健比分串"
+   ],
+   "note": "10-15补录：实际1-4客胜方向中、比分未入带→semi"
+  },
+  {
+   "date": "2026-10-14",
+   "caliber": "双轨制",
+   "match_num": "001",
+   "match": "墨尔本胜利vs首尔FC",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.266
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.266
+   },
+   "band_top3": [
+    [
+     "1-0",
+     0.164
+    ],
+    [
+     "2-1",
+     0.084
+    ],
+    [
+     "3-2",
+     0.016
+    ]
+   ],
+   "ttg_top1": "2球",
+   "k_dist_direction": "主胜",
+   "had_top1": "主胜",
+   "divergence": false,
+   "pred_score": "1-0",
+   "actual": "3-0",
+   "verdict": "semi",
+   "used_in": [
+    "连续编号比分串①"
+   ],
+   "note": "亚冠乙；墨尔本足总杯决赛点球4天恢复疲劳-5%，1球小胜剧本｜10-15回填：实际3-0主胜方向中、比分未入带→semi"
+  },
+  {
+   "date": "2026-10-14",
+   "caliber": "双轨制",
+   "match_num": "002",
+   "match": "神户胜利船vs全北现代",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.271
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.271
+   },
+   "band_top3": [
+    [
+     "1-0",
+     0.163
+    ],
+    [
+     "2-1",
+     0.089
+    ],
+    [
+     "3-2",
+     0.018
+    ]
+   ],
+   "ttg_top1": "2球",
+   "k_dist_direction": "主胜",
+   "had_top1": "主胜",
+   "divergence": false,
+   "pred_score": "1-0",
+   "actual": "2-0",
+   "verdict": "semi",
+   "used_in": [
+    "连续编号比分串①"
+   ],
+   "note": "亚冠精英；交锋空白（规则19强制冷门候选），神户慢热1球小胜｜10-15回填：实际2-0主胜比分未入带→semi"
+  },
+  {
+   "date": "2026-10-14",
+   "caliber": "双轨制",
+   "match_num": "003",
+   "match": "柏太阳神vs曼谷港务",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.247
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.247
+   },
+   "band_top3": [
+    [
+     "1-0",
+     0.134
+    ],
+    [
+     "2-1",
+     0.089
+    ],
+    [
+     "3-2",
+     0.021
+    ]
+   ],
+   "ttg_top1": "3球",
+   "k_dist_direction": "主胜",
+   "had_top1": "主胜",
+   "divergence": false,
+   "pred_score": "1-0",
+   "actual": "5-1",
+   "verdict": "semi",
+   "used_in": [
+    "单挑比分①"
+   ],
+   "note": "亚冠精英让-2深盘；L194市场支持率78.4%>75%置信度上限★★，单挑取带内众数1-0而非穿盘｜10-15回填：实际5-1主胜大胜比分未入带→semi"
+  },
+  {
+   "date": "2026-10-14",
+   "caliber": "双轨制",
+   "match_num": "005",
+   "match": "费耶诺德vs科莫",
+   "k_dist": {
+    "value": -1,
+    "pct": 0.251
+   },
+   "k_rec": {
+    "value": -1,
+    "pct": 0.251
+   },
+   "band_top3": [
+    [
+     "0-1",
+     0.129
+    ],
+    [
+     "1-2",
+     0.093
+    ],
+    [
+     "2-3",
+     0.025
+    ]
+   ],
+   "ttg_top1": "2球",
+   "k_dist_direction": "客胜",
+   "had_top1": "客胜",
+   "divergence": false,
+   "pred_score": "0-1",
+   "actual": "3-2",
+   "verdict": "miss",
+   "used_in": [
+    "连续编号比分串②",
+    "单挑比分②"
+   ],
+   "note": "欧冠；费耶后防≥3人缺阵客λ+15%，UEFA客队球迷禁入（主场满座不修正）；科莫1球客胜剧本｜10-15回填：实际3-2主胜方向未中→miss"
+  },
+  {
+   "date": "2026-10-14",
+   "caliber": "双轨制",
+   "match_num": "006",
+   "match": "LASK林茨vs利物浦",
+   "k_dist": {
+    "value": -1,
+    "pct": 0.218
+   },
+   "k_rec": {
+    "value": -1,
+    "pct": 0.218
+   },
+   "band_top3": [
+    [
+     "1-2",
+     0.089
+    ],
+    [
+     "0-1",
+     0.089
+    ],
+    [
+     "2-3",
+     0.033
+    ]
+   ],
+   "ttg_top1": "3球",
+   "k_dist_direction": "客胜",
+   "had_top1": "客胜",
+   "divergence": false,
+   "pred_score": "1-2",
+   "actual": "3-6",
+   "verdict": "semi",
+   "used_in": [
+    "稳健比分串",
+    "连续编号比分串②"
+   ],
+   "note": "欧冠；利物浦锋线三将缺阵-10%，客胜77.8%但优势分散（-1/-2/-3），铁桶1球小胜剧本；非单关不上修平局｜10-15回填：实际3-6客胜方向中比分未入带→semi"
+  },
+  {
+   "date": "2026-10-14",
+   "caliber": "双轨制",
+   "match_num": "013",
+   "match": "弗鲁米嫩塞vs帕尔梅拉斯",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.353
+   },
+   "k_rec": {
+    "value": 0,
+    "pct": 0.353
+   },
+   "band_top3": [
+    [
+     "0-0",
+     0.202
+    ],
+    [
+     "1-1",
+     0.129
+    ],
+    [
+     "2-2",
+     0.021
+    ]
+   ],
+   "ttg_top1": "1球",
+   "k_dist_direction": "平",
+   "had_top1": "平",
+   "divergence": false,
+   "pred_score": "0-0",
+   "actual": "1-2",
+   "verdict": "miss",
+   "used_in": [
+    "稳健比分串"
+   ],
+   "note": "解放者杯半决赛首回合；弗鲁双核Cano+John Kennedy赛季报销（规则32强制★），闷战超小球0-0核心剧本；本日唯一k_dist=HAD方向场｜10-15回填：实际1-2客胜方向未中→miss"
+  },
+  {
+   "date": "2026-10-17",
+   "caliber": "双轨制",
+   "match_num": "002",
+   "match": "鹿岛鹿角vs长崎航海",
+   "league": "日职",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.2065
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.2065
+   },
+   "band_top3": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ],
+   "ttg": "3/4",
+   "k_dist_dir": "主胜",
+   "had_dir": "主胜",
+   "divergent": false,
+   "pred_score": "2:1",
+   "actual": "2-0",
+   "verdict": "semi",
+   "used_in": [
+    "稳健比分串",
+    "连续编号比分串①",
+    "方向+半全场A"
+   ],
+   "note": "10-18回填：实际2-0，方向（主胜）命中、比分未中→semi；比分TOP5第2位命中2-0"
+  },
+  {
+   "date": "2026-10-17",
+   "caliber": "双轨制",
+   "match_num": "003",
+   "match": "蔚山现代vs富川FC",
+   "league": "韩职",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.2126
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.2126
+   },
+   "band_top3": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ],
+   "ttg": "3/2",
+   "k_dist_dir": "主胜",
+   "had_dir": "主胜",
+   "divergent": false,
+   "pred_score": "2:1",
+   "actual": "2-1",
+   "verdict": "exact",
+   "used_in": [
+    "连续编号比分串①"
+   ],
+   "note": "10-18回填：2-1精确命中（带内TOP1）"
+  },
+  {
+   "date": "2026-10-17",
+   "caliber": "双轨制",
+   "match_num": "021",
+   "match": "比利亚雷亚尔vs埃尔切",
+   "league": "西甲",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.2044
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.2044
+   },
+   "band_top3": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ],
+   "ttg": "3/4",
+   "k_dist_dir": "主胜",
+   "had_dir": "主胜",
+   "divergent": false,
+   "pred_score": "2:1",
+   "actual": "0-0",
+   "verdict": "miss",
+   "used_in": [
+    "稳健比分串",
+    "连续编号比分串②"
+   ],
+   "note": "10-18回填：实际0-0，方向（主胜）未中→miss；0-0不在带内也不在比分TOP5"
+  },
+  {
+   "date": "2026-10-17",
+   "caliber": "双轨制",
+   "match_num": "022",
+   "match": "斯特拉斯堡vs巴黎圣日尔曼",
+   "league": "法甲",
+   "k_dist": {
+    "value": -2,
+    "pct": 0.1961
+   },
+   "k_rec": {
+    "value": -2,
+    "pct": 0.1961
+   },
+   "band_top3": [
+    "1-3",
+    "0-2",
+    "2-4"
+   ],
+   "ttg": "4/3",
+   "k_dist_dir": "客胜",
+   "had_dir": "客胜",
+   "divergent": false,
+   "pred_score": "1:2",
+   "actual": "1-3",
+   "verdict": "semi",
+   "used_in": [
+    "连续编号比分串②",
+    "单挑比分①（取1-3精确命中）"
+   ],
+   "note": "10-18回填：实际1-3，方向（客胜）命中、TOP1比分1-2未中→semi；同场单挑①1-3精确命中8.75倍（不在本台账计分口径内）"
+  },
+  {
+   "date": "2026-10-17",
+   "caliber": "双轨制",
+   "match_num": "010",
+   "match": "汉坎vs博德闪耀",
+   "league": "挪超",
+   "k_dist": {
+    "value": -2,
+    "pct": 0.1986
+   },
+   "k_rec": {
+    "value": -2,
+    "pct": 0.1986
+   },
+   "band_top3": [
+    "1-3",
+    "0-2",
+    "2-4"
+   ],
+   "ttg": "4/3",
+   "k_dist_dir": "客胜",
+   "had_dir": "客胜",
+   "divergent": false,
+   "pred_score": "1:3",
+   "actual": "0-2",
+   "verdict": "semi",
+   "used_in": [
+    "单挑比分②"
+   ],
+   "note": "10-18回填：实际0-2，方向（客胜）命中、比分1-3未中→semi；0-2为比分TOP5第4位"
+  },
+  {
+   "date": "2026-10-20",
+   "caliber": "双轨制",
+   "match_num": "005",
+   "match": "罗马 vs 布拉迪斯(斯洛万)",
+   "league": "欧冠",
+   "k_dist": {
+    "value": 3,
+    "pct": 0.194
+   },
+   "k_rec": {
+    "value": 3,
+    "pct": 0.194
+   },
+   "band_top3": [
+    [
+     "3-0",
+     0.114
+    ],
+    [
+     "4-1",
+     0.064
+    ],
+    [
+     "5-2",
+     0.014
+    ]
+   ],
+   "ttg": "4球/5球",
+   "direction": "主胜 81.0%",
+   "k_dist_dir": "主胜",
+   "divergent": false,
+   "usage": "稳健比分串 3-0",
+   "pred_score": "3:0",
+   "actual": "4:0",
+   "verdict": "semi（方向中主胜，净胜球+4未入带；带内TOP1为3-0）"
+  },
+  {
+   "date": "2026-10-20",
+   "caliber": "双轨制",
+   "match_num": "010",
+   "match": "波尔图 vs 埃因霍温",
+   "league": "欧冠",
+   "k_dist": {
+    "value": 2,
+    "pct": 0.195
+   },
+   "k_rec": {
+    "value": 2,
+    "pct": 0.195
+   },
+   "band_top3": [
+    [
+     "3-1",
+     0.08
+    ],
+    [
+     "2-0",
+     0.073
+    ],
+    [
+     "4-2",
+     0.033
+    ]
+   ],
+   "ttg": "3球/4球",
+   "direction": "主胜 61.9%",
+   "k_dist_dir": "主胜",
+   "divergent": false,
+   "usage": "稳健比分串 3-1",
+   "pred_score": "3:1",
+   "actual": "0:1",
+   "verdict": "miss（方向未中，实际客胜；比分未入带）"
+  },
+  {
+   "date": "2026-10-27",
+   "caliber": "双轨制",
+   "match_num": "007",
+   "match": "多特蒙德 vs 云达不来梅",
+   "league": "德国杯",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.21
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.21
+   },
+   "band_top3": [
+    [
+     "2-1",
+     0.096
+    ],
+    [
+     "1-0",
+     0.06
+    ],
+    [
+     "3-2",
+     0.043
+    ]
+   ],
+   "ttg": "3球/2球",
+   "k_dist_dir": "主胜",
+   "had_dir": "主胜",
+   "divergent": false,
+   "used_in": [
+    "稳健比分串",
+    "连续编号比分串①"
+   ],
+   "pred_score": "2:1",
+   "actual": null,
+   "verdict": "pending"
+  },
+  {
+   "date": "2026-10-27",
+   "caliber": "双轨制",
+   "match_num": "008",
+   "match": "科隆 vs 柏林联合",
+   "league": "德国杯",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.208
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.208
+   },
+   "band_top3": [
+    [
+     "2-1",
+     0.095
+    ],
+    [
+     "1-0",
+     0.056
+    ],
+    [
+     "3-2",
+     0.045
+    ]
+   ],
+   "ttg": "3球/4球",
+   "k_dist_dir": "主胜",
+   "had_dir": "主胜",
+   "divergent": false,
+   "used_in": [
+    "连续编号比分串①",
+    "连续编号比分串②"
+   ],
+   "pred_score": "2:1",
+   "actual": null,
+   "verdict": "pending"
+  },
+  {
+   "date": "2026-10-27",
+   "caliber": "双轨制",
+   "match_num": "009",
+   "match": "罗马 vs 卡利亚里",
+   "league": "意甲",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.243
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.243
+   },
+   "band_top3": [
+    [
+     "1-0",
+     0.137
+    ],
+    [
+     "2-1",
+     0.088
+    ],
+    [
+     "3-2",
+     0.017
+    ]
+   ],
+   "ttg": "2球/3球",
+   "k_dist_dir": "主胜",
+   "had_dir": "主胜",
+   "divergent": false,
+   "used_in": [
+    "稳健比分串",
+    "连续编号比分串②"
+   ],
+   "pred_score": "1:0",
+   "actual": null,
+   "verdict": "pending"
+  },
+  {
+   "date": "2026-10-28",
+   "caliber": "双轨制",
+   "match_num": "005",
+   "match": "威尼斯 vs 国际米兰",
+   "league": "意甲",
+   "k_dist": {
+    "value": -1,
+    "pct": 0.198
+   },
+   "k_rec": {
+    "value": -1,
+    "pct": 0.198
+   },
+   "band_top3": [
+    [
+     "1-2",
+     0.088
+    ],
+    [
+     "2-3",
+     0.05
+    ],
+    [
+     "0-1",
+     0.044
+    ]
+   ],
+   "ttg": "3球/4球",
+   "k_dist_dir": "客胜",
+   "had_dir": "客胜",
+   "divergent": false,
+   "used_in": [
+    "稳健比分串",
+    "连续编号比分串①"
+   ],
+   "pred_score": "1:2",
+   "actual": null,
+   "verdict": "pending",
+   "note": "单挑比分①②因带内赔率<8.00留空；连续编号②因带内≥8%组合用尽留空"
+  },
+  {
+   "date": "2026-10-28",
+   "caliber": "双轨制",
+   "match_num": "006",
+   "match": "AC米兰 vs 博洛尼亚",
+   "league": "意甲",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.228
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.228
+   },
+   "band_top3": [
+    [
+     "2-1",
+     0.098
+    ],
+    [
+     "1-0",
+     0.095
+    ],
+    [
+     "3-2",
+     0.03
+    ]
+   ],
+   "ttg": "2球/3球",
+   "k_dist_dir": "主胜",
+   "had_dir": "主胜",
+   "divergent": false,
+   "used_in": [
+    "稳健比分串",
+    "连续编号比分串①"
+   ],
+   "pred_score": "2:1",
+   "actual": null,
+   "verdict": "pending"
+  },
+  {
+   "date": "2026-10-31",
+   "caliber": "双轨制",
+   "match_num": "003",
+   "match": "柏太阳神 vs 浦和红钻",
+   "league": "日职",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.1915
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.1915
+   },
+   "band_top3": [
+    [
+     "2-1",
+     0.0804
+    ],
+    [
+     "3-2",
+     0.0561
+    ],
+    [
+     "1-0",
+     0.0308
+    ]
+   ],
+   "ttg": "4球/3球",
+   "k_dist_dir": "主胜",
+   "had_dir": "主胜",
+   "divergent": false,
+   "used_in": [
+    "连续编号比分串①"
+   ],
+   "pred_score": "2:1",
+   "actual": "4-0",
+   "verdict": "semi（方向中主胜，净胜+4未入带；带内TOP1为2-1）"
+  },
+  {
+   "date": "2026-10-31",
+   "caliber": "双轨制",
+   "match_num": "004",
+   "match": "光州FC vs 金泉尚武",
+   "league": "韩职",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.2822
+   },
+   "k_rec": {
+    "value": -1,
+    "pct": 0.2181
+   },
+   "band_top3": [
+    [
+     "1-2",
+     0.094
+    ],
+    [
+     "0-1",
+     0.0927
+    ],
+    [
+     "2-3",
+     0.0272
+    ]
+   ],
+   "ttg": "2球/3球",
+   "k_dist_dir": "平",
+   "had_dir": "客胜",
+   "divergent": true,
+   "used_in": [
+    "连续编号比分串①"
+   ],
+   "pred_score": "1:2",
+   "actual": "1-1",
+   "verdict": "miss（方向未中，实际平局；比分未入带）"
+  },
+  {
+   "date": "2026-10-31",
+   "caliber": "双轨制",
+   "match_num": "005",
+   "match": "麦克阿瑟FC vs 西悉尼漫步者",
+   "league": "澳超",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.2576
+   },
+   "k_rec": {
+    "value": 0,
+    "pct": 0.2576
+   },
+   "band_top3": [
+    [
+     "1-1",
+     0.1146
+    ],
+    [
+     "2-2",
+     0.068
+    ],
+    [
+     "0-0",
+     0.051
+    ]
+   ],
+   "ttg": "3球/2球",
+   "k_dist_dir": "平",
+   "had_dir": "平",
+   "divergent": false,
+   "used_in": [
+    "稳健比分串"
+   ],
+   "pred_score": "1:1",
+   "actual": "0-0",
+   "verdict": "semi（方向中平，0-0为带内#3，未精确）"
+  },
+  {
+   "date": "2026-10-31",
+   "caliber": "双轨制",
+   "match_num": "017",
+   "match": "赫尔城 vs 伊普斯维奇",
+   "league": "英超",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.2663
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.211
+   },
+   "band_top3": [
+    [
+     "2-1",
+     0.0952
+    ],
+    [
+     "1-0",
+     0.0757
+    ],
+    [
+     "3-2",
+     0.0336
+    ]
+   ],
+   "ttg": "2球/3球",
+   "k_dist_dir": "平",
+   "had_dir": "主胜",
+   "divergent": true,
+   "used_in": [
+    "连续编号比分串②"
+   ],
+   "pred_score": "2:1",
+   "actual": "2-2",
+   "verdict": "miss（方向未中，实际平局；比分未入带）"
+  },
+  {
+   "date": "2026-10-31",
+   "caliber": "双轨制",
+   "match_num": "018",
+   "match": "布伦特福德 vs 诺丁汉森林",
+   "league": "英超",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.2633
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.2373
+   },
+   "band_top3": [
+    [
+     "1-0",
+     0.1119
+    ],
+    [
+     "2-1",
+     0.0971
+    ],
+    [
+     "3-2",
+     0.0249
+    ]
+   ],
+   "ttg": "2球/3球",
+   "k_dist_dir": "平",
+   "had_dir": "主胜",
+   "divergent": true,
+   "used_in": [
+    "连续编号比分串②"
+   ],
+   "pred_score": "1:0",
+   "actual": "2-0",
+   "verdict": "semi（方向中主胜，净胜+2未入带；带内TOP1为1-0）"
+  },
+  {
+   "date": "2026-10-31",
+   "caliber": "双轨制",
+   "match_num": "024",
+   "match": "皇家贝蒂斯 vs 马拉加",
+   "league": "西甲",
+   "k_dist": {
+    "value": 2,
+    "pct": 0.2186
+   },
+   "k_rec": {
+    "value": 2,
+    "pct": 0.2186
+   },
+   "band_top3": [
+    [
+     "2-0",
+     0.1279
+    ],
+    [
+     "3-1",
+     0.0731
+    ],
+    [
+     "4-2",
+     0.0157
+    ]
+   ],
+   "ttg": "2球/3球",
+   "k_dist_dir": "主胜",
+   "had_dir": "主胜",
+   "divergent": false,
+   "used_in": [
+    "稳健比分串",
+    "单挑比分①"
+   ],
+   "pred_score": "2:0",
+   "actual": "2-1",
+   "verdict": "semi（方向中主胜，净胜+1未入带；带内TOP1为2-0）"
+  },
+  {
+   "date": "2026-10-31",
+   "caliber": "双轨制",
+   "match_num": "027",
+   "match": "巴塞罗那 vs 阿拉维斯",
+   "league": "西甲",
+   "k_dist": {
+    "value": 2,
+    "pct": 0.2009
+   },
+   "k_rec": {
+    "value": 2,
+    "pct": 0.2009
+   },
+   "band_top3": [
+    [
+     "2-0",
+     0.082
+    ],
+    [
+     "3-1",
+     0.0816
+    ],
+    [
+     "4-2",
+     0.0304
+    ]
+   ],
+   "ttg": "4球/3球",
+   "k_dist_dir": "主胜",
+   "had_dir": "主胜",
+   "divergent": false,
+   "used_in": [
+    "单挑比分②"
+   ],
+   "pred_score": "3:0",
+   "actual": "6-1",
+   "verdict": "semi（方向中主胜，净胜+5未入带；带内TOP1为2-0）"
+  },
+  {
+   "date": "2026-11-01",
+   "caliber": "双轨制",
+   "match_num": "003",
+   "match": "町田泽维亚 vs 大阪钢巴",
+   "league": "日职",
+   "k_dist": {
+    "value": 2,
+    "pct": 0.208
+   },
+   "k_rec": {
+    "value": 2,
+    "pct": 0.208
+   },
+   "band_top3": [
+    [
+     "2-0",
+     0.098
+    ],
+    [
+     "3-1",
+     0.08
+    ],
+    [
+     "4-2",
+     0.025
+    ]
+   ],
+   "ttg": "3球/4球",
+   "k_dist_dir": "主胜",
+   "had_dir": "主胜",
+   "divergent": false,
+   "used_in": [
+    "比分串B",
+    "连续编号比分A"
+   ],
+   "pred_score": "2-0",
+   "actual": "0-0",
+   "verdict": "semi（方向中平（次选），净胜0未入带；带内TOP1为2-0）"
+  },
+  {
+   "date": "2026-11-01",
+   "caliber": "双轨制",
+   "match_num": "004",
+   "match": "首尔FC vs 仁川联",
+   "league": "韩职",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.236
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.236
+   },
+   "band_top3": [
+    [
+     "1-0",
+     0.109
+    ],
+    [
+     "2-1",
+     0.097
+    ],
+    [
+     "3-2",
+     0.026
+    ]
+   ],
+   "ttg": "2球/3球",
+   "k_dist_dir": "主胜",
+   "had_dir": "主胜",
+   "divergent": false,
+   "used_in": [
+    "连续编号比分A",
+    "单挑比分①"
+   ],
+   "pred_score": "1-0",
+   "actual": "0-1",
+   "verdict": "miss（方向未中，实际客胜；比分未入带）"
+  },
+  {
+   "date": "2026-11-01",
+   "caliber": "双轨制",
+   "match_num": "007",
+   "match": "科莫 vs 威尼斯",
+   "league": "意甲",
+   "k_dist": {
+    "value": 2,
+    "pct": 0.225
+   },
+   "k_rec": {
+    "value": 2,
+    "pct": 0.225
+   },
+   "band_top3": [
+    [
+     "2-0",
+     0.138
+    ],
+    [
+     "3-1",
+     0.072
+    ],
+    [
+     "4-2",
+     0.014
+    ]
+   ],
+   "ttg": "3球/2球",
+   "k_dist_dir": "主胜",
+   "had_dir": "主胜",
+   "divergent": false,
+   "used_in": [
+    "稳健比分串",
+    "单挑比分①"
+   ],
+   "pred_score": "2-0",
+   "actual": "1-0",
+   "verdict": "semi（方向中主胜，净胜+1未入带；带内TOP1为2-0）"
+  },
+  {
+   "date": "2026-11-01",
+   "caliber": "双轨制",
+   "match_num": "008",
+   "match": "赫塔费 vs 塞维利亚",
+   "league": "西甲",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.305
+   },
+   "k_rec": {
+    "value": 0,
+    "pct": 0.305
+   },
+   "band_top3": [
+    [
+     "1-1",
+     0.145
+    ],
+    [
+     "0-0",
+     0.109
+    ],
+    [
+     "2-2",
+     0.045
+    ]
+   ],
+   "ttg": "2球/3球",
+   "k_dist_dir": "平",
+   "had_dir": "平",
+   "divergent": false,
+   "used_in": [
+    "单挑比分②"
+   ],
+   "pred_score": "1-1",
+   "actual": "3-1",
+   "verdict": "miss（方向未中，实际主胜；比分未入带）"
+  },
+  {
+   "date": "2026-11-01",
+   "caliber": "双轨制",
+   "match_num": "012",
+   "match": "弗洛西诺内 vs 都灵",
+   "league": "意甲",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.202
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.202
+   },
+   "band_top3": [
+    [
+     "2-1",
+     0.091
+    ],
+    [
+     "3-2",
+     0.049
+    ],
+    [
+     "1-0",
+     0.047
+    ]
+   ],
+   "ttg": "3球/4球",
+   "k_dist_dir": "主胜",
+   "had_dir": "主胜",
+   "divergent": false,
+   "used_in": [
+    "连续编号比分B",
+    "单挑比分②"
+   ],
+   "pred_score": "2-1",
+   "actual": "2-0",
+   "verdict": "semi（方向中主胜，净胜+2未入带；带内TOP1为2-1）"
+  },
+  {
+   "date": "2026-11-01",
+   "caliber": "双轨制",
+   "match_num": "013",
+   "match": "拉齐奥 vs 卡利亚里",
+   "league": "意甲",
+   "k_dist": {
+    "value": 2,
+    "pct": 0.226
+   },
+   "k_rec": {
+    "value": 2,
+    "pct": 0.226
+   },
+   "band_top3": [
+    [
+     "2-0",
+     0.142
+    ],
+    [
+     "3-1",
+     0.07
+    ],
+    [
+     "4-2",
+     0.013
+    ]
+   ],
+   "ttg": "2球/3球",
+   "k_dist_dir": "主胜",
+   "had_dir": "主胜",
+   "divergent": false,
+   "used_in": [
+    "稳健比分串",
+    "连续编号比分B"
+   ],
+   "pred_score": "2-0",
+   "actual": "2-1",
+   "verdict": "semi（方向中主胜，净胜+1未入带；带内TOP1为2-0）"
+  },
+  {
+   "date": "2026-11-01",
+   "caliber": "双轨制",
+   "match_num": "020",
+   "match": "维塞乌 vs 里奥阿维",
+   "league": "葡超",
+   "k_dist": {
+    "value": 1,
+    "pct": 0.208
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.208
+   },
+   "band_top3": [
+    [
+     "2-1",
+     0.094
+    ],
+    [
+     "1-0",
+     0.068
+    ],
+    [
+     "3-2",
+     0.038
+    ]
+   ],
+   "ttg": "3球/2球",
+   "k_dist_dir": "主胜",
+   "had_dir": "主胜",
+   "divergent": false,
+   "used_in": [
+    "比分串B"
+   ],
+   "pred_score": "2-1",
+   "actual": "2-1",
+   "verdict": "exact（方向中主胜，带内TOP1 2-1精确命中）"
+  }
+ ],
+ "divergence_flagged": [
+  {
+   "date": "2026-09-29",
+   "match_num": "012",
+   "match": "卢森堡vs冰岛",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.281
+   },
+   "k_rec": {
+    "value": -1,
+    "pct": 0.244
+   },
+   "had_top1": "客胜",
+   "action": "剔出全部正向比分子分类",
+   "actual": "0-3 客胜",
+   "note": "方向端本可命中；剔除处置损失一次可用信号"
+  },
+  {
+   "date": "2026-10-09",
+   "match_num": "004",
+   "match": "IFK哥德堡vs韦斯特罗斯",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.22
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.215
+   },
+   "had_top1": "主胜",
+   "action": "剔出全部正向比分子分类（分歧仅记录）",
+   "actual": "1-0",
+   "note": "实际1-0恰为k_rec带内#2候选（2-1>1-0>3-2）；分歧剔除处置再损失一次可用信号（012卢森堡后第二次）"
+  },
+  {
+   "date": "2026-10-09",
+   "match_num": "003",
+   "match": "海登海姆vs凯泽斯劳滕",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.243
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.213
+   },
+   "had_top1": "主胜",
+   "action": "剔出全部正向比分子分类（分歧仅记录）",
+   "actual": "0-0",
+   "note": "实际0-0未入带；k_dist=0（平）方向与实际一致，分歧场次k_dist方向正确"
+  },
+  {
+   "date": "2026-10-12",
+   "match_num": "001",
+   "match": "迪拜连接vs吉达国民",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.293
+   },
+   "k_rec": {
+    "value": -1,
+    "pct": 0.21
+   },
+   "had_top1": "客胜",
+   "action": "标注分歧；因稳健池不足按『降级使用』进入连续编号比分串（已披露）",
+   "actual": "1-3 客胜",
+   "note": "2026-10-12全轮10场中9场为分歧（平局为最大单桶），稳健比分串可用池仅002一场——本日按『保结构完整+逐场披露』处置"
+  },
+  {
+   "date": "2026-10-12",
+   "match_num": "003",
+   "match": "马尔默vs卡尔马",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.267
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.234
+   },
+   "had_top1": "主胜",
+   "action": "标注分歧（幅度3.3pp，全轮最小），降级使用",
+   "actual": "1-0 主胜",
+   "note": "主队约9人严重残阵，方向端本身已降级★"
+  },
+  {
+   "date": "2026-10-12",
+   "match_num": "009",
+   "match": "科里蒂巴vs博塔弗戈",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.309
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.205
+   },
+   "had_top1": "主胜",
+   "action": "标注分歧，降级使用",
+   "actual": "1-1 平",
+   "note": "—"
+  },
+  {
+   "date": "2026-10-12",
+   "match_num": "010",
+   "match": "法马利康vs阿尔维卡",
+   "k_dist": {
+    "value": 0,
+    "pct": 0.287
+   },
+   "k_rec": {
+    "value": 1,
+    "pct": 0.231
+   },
+   "had_top1": "主胜",
+   "action": "标注分歧，降级使用",
+   "actual": "1-4 客胜",
+   "note": "—"
+  }
+ ],
+ "open_issues": [
+  "「分布-方向分歧」场次应只剔比分推荐，不应连带剔除方向/让球推荐",
+  "比分端第③步（首推总进球档位）连续两轮低估，建议并行登记「上修一档」候选做 A/B 对照",
+  "比分类方案分散度缺陷：同一场次同一比分不得在比分串/单挑中重复使用（2026-09-29 已实际发生）",
+  "门限 k_rec ≥20% 区分度不足：09-29 四场区间 23.3%–27.7%，结果 1 中 1 半 2 空"
+ ]
+}

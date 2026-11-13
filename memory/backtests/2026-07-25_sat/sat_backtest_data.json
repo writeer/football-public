@@ -1,0 +1,387 @@
+{
+  "backtest_id": "2026-07-25_sat",
+  "backtest_date": "2026-07-26",
+  "match_date": "2026-07-25",
+  "model_version": "标准泊松v2 + 韩职特化(规则22前)",
+  "total_matches": 11,
+  "completed_matches": 9,
+  "pending_matches": 2,
+  "pending_match_ids": ["210", "211"],
+  "summary": {
+    "direction_hit": {"hit": 4, "total": 9, "rate": 0.44, "level": "中"},
+    "score_top1_hit": {"hit": 1, "total": 9, "rate": 0.11, "level": "低"},
+    "score_top5_cover": {"hit": 4, "total": 9, "rate": 0.44, "level": "中"},
+    "ht_score_top5": {"hit": 7, "total": 9, "rate": 0.78, "level": "高"},
+    "total_goals_hit": {"hit": 2, "total": 9, "rate": 0.22, "level": "低"},
+    "ou25_hit": {"hit": 3, "total": 9, "rate": 0.33, "level": "低"},
+    "handicap_hit": {"hit": 4, "total": 9, "rate": 0.44, "level": "中"},
+    "htft_top3": {"hit": 6, "total": 9, "rate": 0.67, "level": "高"}
+  },
+  "matches": [
+    {
+      "match_id": "201",
+      "league": "韩职",
+      "home": "金泉尚武",
+      "away": "大田市民",
+      "confidence": "★",
+      "prediction": {
+        "direction": "客胜",
+        "direction_prob": 0.515,
+        "score_top3": ["0:1(18.8%)", "0:2(13.8%)", "0:0(12.7%)"],
+        "ht_score_pred": "0:0",
+        "total_goals_pred": "2球",
+        "ou25_pred": "小2.5",
+        "handicap_pred": "让胜",
+        "htft_top3": ["平负", "负负", "平平"]
+      },
+      "actual": {
+        "direction": "主胜",
+        "score": "3:2",
+        "ht_score": "2:1",
+        "total_goals": 5,
+        "ou25": "大2.5",
+        "handicap": "让胜",
+        "htft": "胜胜"
+      },
+      "hit": {
+        "direction": false,
+        "score_top1": false,
+        "score_top5": false,
+        "ht_score_top5": false,
+        "total_goals": false,
+        "ou25": false,
+        "handicap": true,
+        "htft_top3": false
+      },
+      "error_analysis": "模型严重高估大田市民，忽略金泉主场韧性。规则16极端平局率倾斜未触发(金泉平局率高但本场未出平局)。韩职特化(规则22)后lambda从0.587→0.856，主胜概率从16.5%→31.5%，更接近实际主胜结果。"
+    },
+    {
+      "match_id": "202",
+      "league": "韩职",
+      "home": "浦项制铁",
+      "away": "全北现代",
+      "confidence": "★",
+      "prediction": {
+        "direction": "客胜",
+        "direction_prob": 0.419,
+        "score_top3": ["0:1(17.2%)", "0:0(14.4%)", "1:1(12.8%)"],
+        "ht_score_pred": "0:0",
+        "total_goals_pred": "1球",
+        "ou25_pred": "小2.5",
+        "handicap_pred": "让胜",
+        "htft_top3": ["平负", "平平", "负负"]
+      },
+      "actual": {
+        "direction": "客胜",
+        "score": "0:2",
+        "ht_score": "0:1",
+        "total_goals": 2,
+        "ou25": "小2.5",
+        "handicap": "让胜",
+        "htft": "负负"
+      },
+      "hit": {
+        "direction": true,
+        "score_top1": false,
+        "score_top5": true,
+        "ht_score_top5": true,
+        "total_goals": false,
+        "ou25": true,
+        "handicap": true,
+        "htft_top3": true
+      }
+    },
+    {
+      "match_id": "203",
+      "league": "瑞超",
+      "home": "代格福什",
+      "away": "佐加顿斯",
+      "confidence": "★★",
+      "prediction": {
+        "direction": "客胜",
+        "direction_prob": 0.571,
+        "score_top3": ["0:1(12.5%)", "0:2(12.2%)", "1:1(10.0%)"],
+        "ht_score_pred": "0:0",
+        "total_goals_pred": "2球",
+        "ou25_pred": "大2.5",
+        "handicap_pred": "让负",
+        "htft_top3": ["负负", "平负", "负平"]
+      },
+      "actual": {
+        "direction": "客胜",
+        "score": "0:1",
+        "ht_score": "0:1",
+        "total_goals": 1,
+        "ou25": "小2.5",
+        "handicap": "让平",
+        "htft": "负负"
+      },
+      "hit": {
+        "direction": true,
+        "score_top1": true,
+        "score_top5": true,
+        "ht_score_top5": true,
+        "total_goals": false,
+        "ou25": false,
+        "handicap": false,
+        "htft_top3": true
+      }
+    },
+    {
+      "match_id": "204",
+      "league": "芬超",
+      "home": "玛丽港",
+      "away": "AC奥卢",
+      "confidence": "★★",
+      "prediction": {
+        "direction": "客胜",
+        "direction_prob": 0.641,
+        "score_top3": ["0:2(15.9%)", "0:1(15.7%)", "0:3(10.8%)"],
+        "ht_score_pred": "0:0",
+        "total_goals_pred": "2球",
+        "ou25_pred": "小2.5",
+        "handicap_pred": "让负",
+        "htft_top3": ["负负", "平负", "负平"]
+      },
+      "actual": {
+        "direction": "平局",
+        "score": "1:1",
+        "ht_score": "1:0",
+        "total_goals": 2,
+        "ou25": "小2.5",
+        "handicap": "让胜",
+        "htft": "胜平"
+      },
+      "hit": {
+        "direction": false,
+        "score_top1": false,
+        "score_top5": true,
+        "ht_score_top5": true,
+        "total_goals": true,
+        "ou25": true,
+        "handicap": false,
+        "htft_top3": false
+      },
+      "error_analysis": "AC奥卢客场被高估，玛丽港保级战意不足。规则20小联赛主场优势权重应加强。"
+    },
+    {
+      "match_id": "205",
+      "league": "挪超",
+      "home": "克里斯蒂",
+      "away": "斯达",
+      "confidence": "★★",
+      "prediction": {
+        "direction": "主胜",
+        "direction_prob": 0.390,
+        "score_top3": ["1:0(14.5%)", "1:1(13.3%)", "0:0(12.1%)"],
+        "ht_score_pred": "0:0",
+        "total_goals_pred": "2球",
+        "ou25_pred": "小2.5",
+        "handicap_pred": "让负",
+        "htft_top3": ["平胜", "平平", "平负"]
+      },
+      "actual": {
+        "direction": "客胜",
+        "score": "1:2",
+        "ht_score": "1:1",
+        "total_goals": 3,
+        "ou25": "大2.5",
+        "handicap": "让负",
+        "htft": "平负"
+      },
+      "hit": {
+        "direction": false,
+        "score_top1": false,
+        "score_top5": false,
+        "ht_score_top5": true,
+        "total_goals": false,
+        "ou25": false,
+        "handicap": true,
+        "htft_top3": true
+      },
+      "error_analysis": "挪超保级队主场优势被高估。"
+    },
+    {
+      "match_id": "206",
+      "league": "芬超",
+      "home": "库奥皮奥",
+      "away": "瓦萨",
+      "confidence": "★",
+      "prediction": {
+        "direction": "主胜",
+        "direction_prob": 0.440,
+        "score_top3": ["1:0(15.6%)", "1:1(12.7%)", "0:0(11.8%)"],
+        "ht_score_pred": "0:0",
+        "total_goals_pred": "2球",
+        "ou25_pred": "小2.5",
+        "handicap_pred": "让负",
+        "htft_top3": ["平胜", "胜胜", "平平"]
+      },
+      "actual": {
+        "direction": "主胜",
+        "score": "3:1",
+        "ht_score": "3:0",
+        "total_goals": 4,
+        "ou25": "大2.5",
+        "handicap": "让胜",
+        "htft": "胜胜"
+      },
+      "hit": {
+        "direction": true,
+        "score_top1": false,
+        "score_top5": false,
+        "ht_score_top5": false,
+        "total_goals": false,
+        "ou25": false,
+        "handicap": false,
+        "htft_top3": true
+      }
+    },
+    {
+      "match_id": "207",
+      "league": "瑞超",
+      "home": "卡尔马",
+      "away": "米亚尔比",
+      "confidence": "★★",
+      "prediction": {
+        "direction": "客胜",
+        "direction_prob": 0.358,
+        "score_top3": ["1:1(12.8%)", "0:1(10.9%)", "1:0(9.9%)"],
+        "ht_score_pred": "0:0",
+        "total_goals_pred": "2球",
+        "ou25_pred": "小2.5",
+        "handicap_pred": "让负",
+        "htft_top3": ["平负", "平胜", "平平"]
+      },
+      "actual": {
+        "direction": "主胜",
+        "score": "2:1",
+        "ht_score": "1:1",
+        "total_goals": 3,
+        "ou25": "大2.5",
+        "handicap": "让平",
+        "htft": "平胜"
+      },
+      "hit": {
+        "direction": false,
+        "score_top1": false,
+        "score_top5": false,
+        "ht_score_top5": true,
+        "total_goals": false,
+        "ou25": false,
+        "handicap": false,
+        "htft_top3": true
+      },
+      "error_analysis": "瑞超中游对决方向判断失误。"
+    },
+    {
+      "match_id": "208",
+      "league": "巴甲",
+      "home": "巴竞技",
+      "away": "巴西国际",
+      "confidence": "★",
+      "prediction": {
+        "direction": "主胜",
+        "direction_prob": 0.494,
+        "score_top3": ["1:0(18.5%)", "0:0(13.3%)", "2:0(12.9%)"],
+        "ht_score_pred": "0:0",
+        "total_goals_pred": "2球",
+        "ou25_pred": "小2.5",
+        "handicap_pred": "让负",
+        "htft_top3": ["平胜", "胜胜", "平平"]
+      },
+      "actual": {
+        "direction": "主胜",
+        "score": "2:0",
+        "ht_score": "1:0",
+        "total_goals": 2,
+        "ou25": "小2.5",
+        "handicap": "让胜",
+        "htft": "胜胜"
+      },
+      "hit": {
+        "direction": true,
+        "score_top1": false,
+        "score_top5": true,
+        "ht_score_top5": true,
+        "total_goals": true,
+        "ou25": true,
+        "handicap": false,
+        "htft_top3": true
+      },
+      "note": "最稳胆材，方向+比分+总进球+大小球全中"
+    },
+    {
+      "match_id": "209",
+      "league": "巴甲",
+      "home": "桑托斯",
+      "away": "沙佩科",
+      "confidence": "★★",
+      "prediction": {
+        "direction": "主胜",
+        "direction_prob": 0.573,
+        "score_top3": ["1:0(20.3%)", "2:0(15.5%)", "0:0(13.2%)"],
+        "ht_score_pred": "0:0",
+        "total_goals_pred": "2球",
+        "ou25_pred": "小2.5",
+        "handicap_pred": "让负",
+        "htft_top3": ["平胜", "胜胜", "平平"]
+      },
+      "actual": {
+        "direction": "平局",
+        "score": "2:2",
+        "ht_score": "1:0",
+        "total_goals": 4,
+        "ou25": "大2.5",
+        "handicap": "让负",
+        "htft": "胜平"
+      },
+      "hit": {
+        "direction": false,
+        "score_top1": false,
+        "score_top5": false,
+        "ht_score_top5": true,
+        "total_goals": false,
+        "ou25": false,
+        "handicap": true,
+        "htft_top3": false
+      },
+      "error_analysis": "巴甲热门翻车，规则21反热门偏误校正应更严格执行。主胜57.3%+市场83%支持却打出2:2平局。"
+    }
+  ],
+  "key_findings": {
+    "direction": "44%命中率，韩职201场最大失误(客胜51.5%实际主胜3:2)",
+    "score": "TOP1仅11%，TOP5覆盖44%。大球赛事lambda被低估",
+    "ou_goals": "大小球33%总进球22%，模型系统性偏向小球，9场中7场预测小球但实际5场大球",
+    "handicap": "44%命中率，与方向预测表现一致",
+    "htft": "67%命中率表现最好，半全场模型结构合理",
+    "ht_score": "78%命中率(TOP5)，但TOP1命中率为0%，0:0被过度推荐"
+  },
+  "improvements_applied": {
+    "lambda": "韩职主场加成1.12→1.20，xG校准±20%→±25%",
+    "k_league": "新增规则22韩职特化：军旅球队主场+0.10，保级队主场+0.15，市场热度>70%触发冷门检查",
+    "xg_range": "放宽xG校准范围至±25%(从±20%)"
+  },
+  "parlay_backtest": {
+    "user_actual": {
+      "combo": "203客胜 × 209主胜",
+      "result": "未中(209翻车)",
+      "note": "203方向正确但209巴甲热门翻车，符合规则21反热门偏误"
+    },
+    "potential_hits": [
+      {"combo": "203客胜 × 208主胜", "result": "命中", "odds_approx": 3.01},
+      {"combo": "202让胜 × 208主胜", "result": "命中"},
+      {"combo": "206主胜 × 208主胜", "result": "命中"}
+    ],
+    "best_anchor": "208巴竞技主胜是最稳胆材"
+  },
+  "source_files": {
+    "prediction_data": "memory/predictions/2026-07-25_weekend/saturday_predictions_v2.json",
+    "prediction_html": "reports/html/sat_20260725_analysis.html",
+    "backtest_html": "reports/html/backtest_20260725_sat.html",
+    "deep_analysis": {
+      "kimcheon": "reports/html/kimcheon_vs_daejeon_deep.html",
+      "pohang": "reports/html/pohang_vs_jeonbuk_deep.html"
+    }
+  }
+}

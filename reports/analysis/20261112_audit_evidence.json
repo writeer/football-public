@@ -1,0 +1,198 @@
+﻿{
+  "file": "reports\\analysis\\20261112_analysis_zhihu.md",
+  "generated_at": "2026-11-12T06:00:13.775Z",
+  "checks": {
+    "title": "PASS",
+    "header_block": "PASS",
+    "chapter_order": "PASS",
+    "per_match_parts": "PASS",
+    "reco_table": "PASS",
+    "table_columns": "PASS",
+    "no_hr": "PASS",
+    "no_rule_xx": "PASS",
+    "single_001_three_places": "PASS",
+    "link_sections": "PASS",
+    "closing": "PASS",
+    "sim_one_line": "PASS",
+    "info_completeness": "WARN"
+  },
+  "counts": {
+    "title_line": "# 【分析】2026-11-12（周四）6场欧国联 | 强弱对话扎堆，让球盘才是真难点",
+    "header_positions": {
+      "报告说明": 2,
+      "风险提示": 4,
+      "免责声明": 6,
+      "近5日置信度命中率": 8,
+      "每日更新": 10
+    },
+    "chapters": [
+      "总览",
+      "周四001 土耳其 vs 比利时（欧国联 A1）",
+      "周四002 亚美尼亚 vs 塞浦路斯（欧国联 C2）",
+      "周四003 阿尔巴尼 vs 芬兰（欧国联 C1）",
+      "周四004 黑山 vs 拉脱维亚（欧国联 C2）",
+      "周四005 英格兰 vs 克罗地亚（欧国联 A3）",
+      "周四006 捷克 vs 西班牙（欧国联 A3）",
+      "综合推荐汇总",
+      "搏冷推荐汇总",
+      "串关思路",
+      "本轮规律",
+      "☕ 写在最后"
+    ],
+    "missing_chapters": [],
+    "extra_chapters": [],
+    "per_match": [
+      {
+        "match": "周四001 土耳其 vs 比利时（欧国联 A1）",
+        "missing_parts": []
+      },
+      {
+        "match": "周四002 亚美尼亚 vs 塞浦路斯（欧国联 C2）",
+        "missing_parts": []
+      },
+      {
+        "match": "周四003 阿尔巴尼 vs 芬兰（欧国联 C1）",
+        "missing_parts": []
+      },
+      {
+        "match": "周四004 黑山 vs 拉脱维亚（欧国联 C2）",
+        "missing_parts": []
+      },
+      {
+        "match": "周四005 英格兰 vs 克罗地亚（欧国联 A3）",
+        "missing_parts": []
+      },
+      {
+        "match": "周四006 捷克 vs 西班牙（欧国联 A3）",
+        "missing_parts": []
+      }
+    ],
+    "reco_row_order": [
+      {
+        "match": "周四001 土耳其 vs 比利时（欧国联 A1）",
+        "six_rows": true,
+        "ascending": true
+      },
+      {
+        "match": "周四002 亚美尼亚 vs 塞浦路斯（欧国联 C2）",
+        "six_rows": true,
+        "ascending": true
+      },
+      {
+        "match": "周四003 阿尔巴尼 vs 芬兰（欧国联 C1）",
+        "six_rows": true,
+        "ascending": true
+      },
+      {
+        "match": "周四004 黑山 vs 拉脱维亚（欧国联 C2）",
+        "six_rows": true,
+        "ascending": true
+      },
+      {
+        "match": "周四005 英格兰 vs 克罗地亚（欧国联 A3）",
+        "six_rows": true,
+        "ascending": true
+      },
+      {
+        "match": "周四006 捷克 vs 西班牙（欧国联 A3）",
+        "six_rows": true,
+        "ascending": true
+      }
+    ],
+    "tables": 115,
+    "wide_tables": [],
+    "hr_count": 0,
+    "rule_mentions": [],
+    "single_001": {
+      "header": true,
+      "overview_note": true,
+      "match_section": true
+    },
+    "entertainment_subcats": {
+      "高赔总进球串": true,
+      "高赔半全场串": true,
+      "半全场混合总进球串": true,
+      "比分串": true
+    },
+    "french_league_note": true,
+    "info_completeness": [
+      {
+        "match": "周四001 土耳其 vs 比利时（欧国联 A1）",
+        "missing": [
+          "身价",
+          "伤停",
+          "首发"
+        ],
+        "level": "WARN",
+        "missing_word_count": 2
+      },
+      {
+        "match": "周四002 亚美尼亚 vs 塞浦路斯（欧国联 C2）",
+        "missing": [
+          "身价",
+          "伤停",
+          "首发"
+        ],
+        "level": "WARN",
+        "missing_word_count": 2
+      },
+      {
+        "match": "周四003 阿尔巴尼 vs 芬兰（欧国联 C1）",
+        "missing": [
+          "身价",
+          "伤停",
+          "首发"
+        ],
+        "level": "WARN",
+        "missing_word_count": 2
+      },
+      {
+        "match": "周四004 黑山 vs 拉脱维亚（欧国联 C2）",
+        "missing": [
+          "身价",
+          "伤停",
+          "首发"
+        ],
+        "level": "WARN",
+        "missing_word_count": 2
+      },
+      {
+        "match": "周四005 英格兰 vs 克罗地亚（欧国联 A3）",
+        "missing": [
+          "身价",
+          "伤停",
+          "首发"
+        ],
+        "level": "WARN",
+        "missing_word_count": 2
+      },
+      {
+        "match": "周四006 捷克 vs 西班牙（欧国联 A3）",
+        "missing": [
+          "身价",
+          "伤停",
+          "首发"
+        ],
+        "level": "WARN",
+        "missing_word_count": 2
+      }
+    ]
+  },
+  "warnings": [
+    "周四001 土耳其 vs 比利时（欧国联 A1）: 关键信息缺 3/5（身价、伤停、首发）→ WARN",
+    "周四002 亚美尼亚 vs 塞浦路斯（欧国联 C2）: 关键信息缺 3/5（身价、伤停、首发）→ WARN",
+    "周四003 阿尔巴尼 vs 芬兰（欧国联 C1）: 关键信息缺 3/5（身价、伤停、首发）→ WARN",
+    "周四004 黑山 vs 拉脱维亚（欧国联 C2）: 关键信息缺 3/5（身价、伤停、首发）→ WARN",
+    "周四005 英格兰 vs 克罗地亚（欧国联 A3）: 关键信息缺 3/5（身价、伤停、首发）→ WARN",
+    "周四006 捷克 vs 西班牙（欧国联 A3）: 关键信息缺 3/5（身价、伤停、首发）→ WARN"
+  ],
+  "summary": {
+    "total_checks": 13,
+    "failed_count": 0,
+    "failed": [],
+    "warned_count": 1,
+    "warned": [
+      "info_completeness"
+    ]
+  }
+}

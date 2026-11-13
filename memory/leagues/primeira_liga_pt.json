@@ -1,0 +1,146 @@
+{
+    "league_info": {
+        "name_cn": "葡萄牙超级联赛",
+        "name_en": "Primeira Liga",
+        "country": "葡萄牙",
+        "country_code": "PT",
+        "level": "顶级",
+        "num_teams": 18,
+        "format": "双循环，34轮",
+        "season_period": "8月-次年5月（跨年）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.ligaportugal.pt",
+        "governing_body": "葡萄牙职业足球联盟（LPFP）",
+        "cross_league_level": "L2",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.52,
+        "draw_rate": 0.265,
+        "home_win_rate": 0.428,
+        "away_win_rate": 0.307,
+        "over_2_5_rate": 0.5,
+        "under_2_5_rate": 0.5,
+        "btts_rate": 0.52,
+        "top_scores": [
+            {
+                "score": "2-1",
+                "frequency": 0.095,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.085,
+                "direction": "平局"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.075,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-1",
+                "frequency": 0.062,
+                "direction": "客胜"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.058,
+                "direction": "主胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.058,
+            "1_goal": 0.15,
+            "2_goals": 0.27,
+            "3_goals": 0.23,
+            "4_goals": 0.17,
+            "5_plus_goals": 0.122
+        },
+        "avg_home_goals": 1.42,
+        "avg_away_goals": 1.1,
+        "home_advantage_factor": 1.18,
+        "ht_draw_rate": 0.414,
+        "ht_draw_rate_note": "葡超半场平局率。2026-09-12核算：football-data.co.uk官方逐场半场比分，5季合并1530场→0.4137；单季2025/26=0.4314。thefishy.uk(2025/26,612队次)得0.4314，验证一致。属高半场平局档(≥0.40)，lambda_ht系数0.38，半全场首选应含'平'。",
+        "ht_draw_rate_source": [
+            "https://www.football-data.co.uk/mmz4281/2526/P1.csv",
+            "https://www.thefishy.uk/leaguetable.php?table=37&season=23"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "高(≥0.40)",
+        "ht_draw_rate_confidence": "高(官方逐场半场比分/交叉验证一致)"
+    },
+    "match_style": {
+        "tactical_character": "技术流足球，注重控球和传切配合。本菲卡、波尔图、体育CP三强垄断。中下游球队以防守反击为主。葡萄牙青训体系世界一流，大量球员输往五大联赛。",
+        "tempo": "中",
+        "physicality": "中",
+        "technical_focus": "极高",
+        "var_usage": "2019-20赛季引入VAR，使用频率适中。",
+        "key_trends": [
+            "三强（本菲卡/波尔图/体育CP）垄断冠军",
+            "青训出口大国",
+            "技术型中场是联赛特色",
+            "中下游防守组织能力强"
+        ],
+        "style_tags": [
+            "技术流",
+            "青训",
+            "三强垄断",
+            "传切配合"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 4.35,
+        "avg_red_cards": 0.17,
+        "avg_penalties": 0.25,
+        "referee_style": "裁判尺度中等偏严，对战术犯规出牌积极。",
+        "first_half_stoppage_avg": 2.2,
+        "second_half_stoppage_avg": 5.3,
+        "stoppage_note": "补时中等。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "Apito Dourado（金哨丑闻）",
+                "year": "2004",
+                "description": "涉及裁判贿赂，多名裁判和俱乐部官员涉案。主要影响葡萄牙杯和低级别联赛。"
+            }
+        ],
+        "discipline_features": "黄牌累积5张停1场。纪律处罚体系严格。",
+        "official_rules": "IFAB规则+葡超特别规则。",
+        "integrity_rating": "中高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价葡超'三强太强'，'其他球队差距大'。彩民认为'葡超小球多'，'三强客场也稳'。",
+        "betting_market": {
+            "market_efficiency": "中高",
+            "liquidity": "中",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "中高",
+        "jingcai_tips": [
+            "三强（本菲卡/波尔图/体育CP）客胜率高",
+            "中游队对攻型打法少，小球多",
+            "赛季末保级队战意强",
+            "葡超主场优势明显"
+        ],
+        "common_sayings": [
+            "葡超看三强",
+            "小球联赛",
+            "客场也能赢"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    }
+}

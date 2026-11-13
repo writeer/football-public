@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-15",
+  "day": "周四",
+  "totalMatches": 13,
+  "completedMatches": 12,
+  "pendingMatches": ["014"],
+  "source": "reports/analysis/20261015_thursday_analysis_zhihu.md",
+  "source_files": [
+    "reports/analysis/20261015_thursday_analysis_zhihu.md",
+    "reports/data/20261015_model.json",
+    "reports/data/20261015_odds_summary.json"
+  ],
+  "result_verification": {
+    "source": "UEFA.com 官方赛果页（欧联/欧协联第2/第1轮）+ ESPN（解放者杯）via mcp-sports-hub",
+    "verified_at": "2026-10-16 09:52",
+    "notes": "12场已完赛比分与UEFA官方页面逐场一致；014（Estudiantes vs Flamengo）为解放者杯半决赛首回合（CONMEBOL官方赛程：首回合10-15、次回合10-22马拉卡纳），核验时仍在进行（0-0，65分钟）"
+  },
+  "results": [
+    {"num": "001", "match": "里昂vs水晶宫", "league": "欧罗巴", "conf": "★★", "is_single": true, "ht": "2-0", "ft": "3-2", "had": "主胜", "had2": "平", "hadHit": "first", "hafuLine": -1, "hafuPick": "让(-1)负/让(-1)胜", "hafuRes": "让(-1)平", "hafuHit": "none", "crsTop5": ["1-1", "2-1", "1-2", "1-0", "2-2"], "crsHit": false, "ttgActual": 5, "ttgPick": [3, 2], "ttgHit": false, "htftActual": "胜胜", "htftTop3": ["平胜", "胜胜", "平负"], "htftHit": true, "htScoreActual": "2-0", "htTop3": ["0-0", "1-0", "0-1"], "htScoreHit": false, "bo_type": "搏冷", "bo_pick": "2-2", "boHit": false, "boDirOnly": false, "note": "v2.19.1法甲边界修正后首选主胜39.5%命中；让球净胜+1推让负未中"},
+    {"num": "002", "match": "托林斯vs桑德兰", "league": "欧罗巴", "conf": "★★", "is_single": false, "ht": "1-0", "ft": "1-2", "had": "客胜", "had2": "平", "hadHit": "first", "hafuLine": 2, "hafuPick": "让(+2)胜/让(+2)负", "hafuRes": "让(+2)胜", "hafuHit": "first", "crsTop5": ["0-2", "1-2", "0-3", "1-3", "0-1"], "crsHit": true, "ttgActual": 3, "ttgPick": [3, 4], "ttgHit": true, "htftActual": "胜负", "htftTop3": ["负负", "平负", "胜负"], "htftHit": true, "htScoreActual": "1-0", "htTop3": ["0-1", "0-0", "0-2"], "htScoreHit": false, "bo_type": "穿盘大热", "bo_pick": "0-3", "boHit": false, "boDirOnly": true},
+    {"num": "003", "match": "波兹南vs勒沃库森", "league": "欧罗巴", "conf": "★★", "is_single": false, "ht": "0-2", "ft": "0-4", "had": "客胜", "had2": "平", "hadHit": "first", "hafuLine": 1, "hafuPick": "让(+1)胜/让(+1)负", "hafuRes": "让(+1)负", "hafuHit": "second", "crsTop5": ["1-2", "1-1", "1-3", "0-2", "2-2"], "crsHit": false, "ttgActual": 4, "ttgPick": [3, 4], "ttgHit": true, "htftActual": "负负", "htftTop3": ["负负", "平负", "胜负"], "htftHit": true, "htScoreActual": "0-2", "htTop3": ["0-1", "0-0", "1-1"], "htScoreHit": false, "bo_type": "穿盘大热", "bo_pick": "1-3", "boHit": false, "boDirOnly": true},
+    {"num": "004", "match": "圣吉联合vs皇家社会", "league": "欧罗巴", "conf": "★", "is_single": false, "ht": "0-0", "ft": "1-1", "had": "主胜", "had2": "客胜", "hadHit": "none", "hafuLine": -1, "hafuPick": "让(-1)负/让(-1)胜", "hafuRes": "让(-1)负", "hafuHit": "first", "crsTop5": ["1-1", "2-1", "1-2", "1-0", "2-2"], "crsHit": true, "ttgActual": 2, "ttgPick": [3, 2], "ttgHit": true, "htftActual": "平平", "htftTop3": ["平胜", "胜胜", "平负"], "htftHit": false, "htScoreActual": "0-0", "htTop3": ["0-0", "1-0", "0-1"], "htScoreHit": true, "bo_type": "搏冷", "bo_pick": "1-2", "boHit": false, "boDirOnly": false, "note": "方向唯一全错场（预测账面无双平局覆盖）"},
+    {"num": "005", "match": "萨尔茨堡vsAC米兰", "league": "欧罗巴", "conf": "★★", "is_single": false, "ht": "0-2", "ft": "0-4", "had": "客胜", "had2": "平", "hadHit": "first", "hafuLine": 1, "hafuPick": "让(+1)胜/让(+1)负", "hafuRes": "让(+1)负", "hafuHit": "second", "crsTop5": ["1-1", "1-2", "0-1", "0-2", "1-3"], "crsHit": false, "ttgActual": 4, "ttgPick": [3, 2], "ttgHit": false, "htftActual": "负负", "htftTop3": ["负负", "平负", "胜负"], "htftHit": true, "htScoreActual": "0-2", "htTop3": ["0-0", "0-1", "1-0"], "htScoreHit": false, "bo_type": "搏冷", "bo_pick": "1-1", "boHit": false, "boDirOnly": false},
+    {"num": "006", "match": "克拉约瓦vs赫塔费", "league": "欧协联", "conf": "★", "is_single": false, "ht": "0-0", "ft": "1-1", "had": "客胜", "had2": "平", "hadHit": "second", "hafuLine": 1, "hafuPick": "让(+1)胜/让(+1)平", "hafuRes": "让(+1)胜", "hafuHit": "first", "crsTop5": ["1-1", "0-1", "1-0", "0-0", "1-2"], "crsHit": true, "ttgActual": 2, "ttgPick": [2, 1], "ttgHit": true, "htftActual": "平平", "htftTop3": ["平负", "平胜", "负负"], "htftHit": false, "htScoreActual": "0-0", "htTop3": ["0-0", "0-1", "1-0"], "htScoreHit": true, "bo_type": "搏冷", "bo_pick": "0-0", "boHit": false, "boDirOnly": true},
+    {"num": "008", "match": "塞尔塔vs尤文图斯", "league": "欧罗巴", "conf": "★★", "is_single": true, "ht": "1-0", "ft": "1-2", "had": "客胜", "had2": "平", "hadHit": "first", "hafuLine": 1, "hafuPick": "让(+1)胜/让(+1)平", "hafuRes": "让(+1)平", "hafuHit": "second", "crsTop5": ["1-1", "0-1", "1-2", "1-0", "0-2"], "crsHit": true, "ttgActual": 3, "ttgPick": [2, 3], "ttgHit": true, "htftActual": "胜负", "htftTop3": ["平负", "负负", "平胜"], "htftHit": false, "htScoreActual": "1-0", "htTop3": ["0-0", "0-1", "1-0"], "htScoreHit": true, "bo_type": "搏冷", "bo_pick": "1-1", "boHit": false, "boDirOnly": false},
+    {"num": "009", "match": "霍芬海姆vs贝西克塔", "league": "欧罗巴", "conf": "★★", "is_single": false, "ht": "1-1", "ft": "2-3", "had": "主胜", "had2": "客胜", "hadHit": "second", "hafuLine": -1, "hafuPick": "让(-1)负/让(-1)胜", "hafuRes": "让(-1)负", "hafuHit": "first", "crsTop5": ["2-1", "1-1", "2-2", "1-2", "3-1"], "crsHit": false, "ttgActual": 5, "ttgPick": [3, 4], "ttgHit": false, "htftActual": "平负", "htftTop3": ["胜胜", "平胜", "负胜"], "htftHit": false, "htScoreActual": "1-1", "htTop3": ["0-0", "1-0", "0-1"], "htScoreHit": false, "bo_type": "穿盘大热", "bo_pick": "3-1", "boHit": false, "boDirOnly": false},
+    {"num": "010", "match": "马赛vs奥林匹亚科斯", "league": "欧罗巴", "conf": "★★", "is_single": false, "ht": "0-1", "ft": "0-1", "had": "主胜", "had2": "客胜", "hadHit": "second", "hafuLine": -1, "hafuPick": "让(-1)负/让(-1)胜", "hafuRes": "让(-1)负", "hafuHit": "first", "crsTop5": ["1-1", "2-1", "1-0", "1-2", "2-0"], "crsHit": false, "ttgActual": 1, "ttgPick": [3, 2], "ttgHit": false, "htftActual": "负负", "htftTop3": ["平胜", "胜胜", "负胜"], "htftHit": false, "htScoreActual": "0-1", "htTop3": ["0-0", "1-0", "0-1"], "htScoreHit": true, "bo_type": "穿盘大热", "bo_pick": "2-0", "boHit": false, "boDirOnly": false, "note": "首选主胜落空，客胜由次选补回；法甲联赛特点不适用于欧战（v2.19.1）"},
+    {"num": "011", "match": "伯恩茅斯vs格拉茨风暴", "league": "欧罗巴", "conf": "★★", "is_single": false, "ht": "1-0", "ft": "3-0", "had": "主胜", "had2": "平", "hadHit": "first", "hafuLine": -2, "hafuPick": "让(-2)负/让(-2)胜", "hafuRes": "让(-2)胜", "hafuHit": "second", "crsTop5": ["2-0", "3-0", "1-0", "2-1", "4-0"], "crsHit": true, "ttgActual": 3, "ttgPick": [3, 4], "ttgHit": true, "htftActual": "胜胜", "htftTop3": ["胜胜", "平胜", "平平"], "htftHit": true, "htScoreActual": "1-0", "htTop3": ["1-0", "0-0", "1-1"], "htScoreHit": true, "bo_type": "穿盘大热", "bo_pick": "3-0", "boHit": true, "boDirOnly": false, "note": "本轮唯一博分精确命中；让球首选让负落空、次选让胜补回"},
+    {"num": "012", "match": "本菲卡vs凯尔特人", "league": "欧罗巴", "conf": "★★", "is_single": false, "ht": "2-0", "ft": "4-1", "had": "主胜", "had2": "平", "hadHit": "first", "hafuLine": -2, "hafuPick": "让(-2)负/让(-2)胜", "hafuRes": "让(-2)胜", "hafuHit": "second", "crsTop5": ["2-0", "3-0", "2-1", "3-1", "1-0"], "crsHit": false, "ttgActual": 5, "ttgPick": [3, 4], "ttgHit": false, "htftActual": "胜胜", "htftTop3": ["胜胜", "平胜", "平平"], "htftHit": true, "htScoreActual": "2-0", "htTop3": ["1-0", "0-0", "2-0"], "htScoreHit": true, "bo_type": "穿盘大热", "bo_pick": "3-0", "boHit": false, "boDirOnly": true},
+    {"num": "013", "match": "哥本哈根vs布拉加", "league": "欧协联", "conf": "★", "is_single": false, "ht": "0-0", "ft": "3-0", "had": "主胜", "had2": "客胜", "hadHit": "first", "hafuLine": -1, "hafuPick": "让(-1)负/让(-1)平", "hafuRes": "让(-1)胜", "hafuHit": "none", "crsTop5": ["1-1", "1-0", "2-1", "0-1", "1-2"], "crsHit": false, "ttgActual": 3, "ttgPick": [2, 3], "ttgHit": true, "htftActual": "平胜", "htftTop3": ["平胜", "平平", "平负"], "htftHit": true, "htScoreActual": "0-0", "htTop3": ["0-0", "1-0", "0-1"], "htScoreHit": true, "bo_type": "搏冷", "bo_pick": "0-0", "boHit": false, "boDirOnly": false, "note": "让球首选让负、次选让平，实际让胜（穿盘）双输"},
+    {"num": "014", "match": "拉普大学vs弗拉门戈", "league": "解放者杯", "conf": "★", "is_single": false, "status": "pending", "ht": null, "ft": null, "had": "客胜", "had2": "平", "hafuLine": 1, "hafuPick": "让(+1)胜/让(+1)平", "crsTop5": ["0-1", "1-1", "0-0", "1-0", "0-2"], "ttgPick": [2, 1], "htftTop3": ["平负", "平平", "负负"], "htScoreActual": null, "htTop3": ["0-0", "0-1", "1-0"], "bo_type": "搏冷", "bo_pick": "0-0", "note": "解放者杯半决赛首回合，核验时(2026-10-16 09:52)ESPN显示0-0/65分钟，未计入任何命中统计"}
+  ],
+  "summary": {
+    "direction": {"first": 8, "second": 3, "hit": 11, "total": 12, "rate": 0.917, "first_only": 0.667},
+    "handicap": {"first": 5, "second": 5, "hit": 10, "total": 12, "rate": 0.833, "first_only": 0.417},
+    "total_goals_top2": {"hit": 7, "total": 12, "rate": 0.583},
+    "htft_top3": {"hit": 7, "total": 12, "rate": 0.583},
+    "score_top5": {"hit": 5, "total": 12, "rate": 0.417},
+    "ht_score_top3": {"hit": 7, "total": 12, "rate": 0.583},
+    "parlays": {"hit": 1, "total": 28, "rate": 0.036},
+    "directionMisses": ["004"],
+    "handicapMisses": ["001", "013"],
+    "bofen": {"exactList": ["011"], "dirOnlyList": ["002", "003", "006", "012"], "missList": ["001", "004", "005", "008", "009", "010", "013"]}
+  },
+  "parlays": [
+    {"name": "稳健方向串A", "type": "方向串", "matches": ["005", "009"], "results": ["❌客胜(实际0-4主胜方向错)", "❌主胜(实际2-3客胜)"], "hit": false, "odds_est": "~2.10"},
+    {"name": "价值方向串B", "type": "方向串", "matches": ["003", "010"], "results": ["✅客胜(0-4)", "❌主胜(实际0-1客胜)"], "hit": false, "odds_est": "~2.35"},
+    {"name": "稳健让球串", "type": "让球串", "matches": ["006", "008"], "results": ["✅让(+1)胜(1-1)", "❌让(+1)胜(1-2实际让平)"], "hit": false, "odds_est": "~2.60"},
+    {"name": "价值让球串", "type": "让球串", "matches": ["011", "012"], "results": ["❌让(-2)负(3-0实际让胜)", "❌让(-2)负(4-1实际让胜)"], "hit": false, "odds_est": "~5.17"},
+    {"name": "半全场串A", "type": "混合串", "matches": ["005", "009"], "results": ["✅负负(0-4)", "❌胜胜(实际平负)"], "hit": false, "odds_est": "~6.59"},
+    {"name": "半全场串B", "type": "混合串", "matches": ["002", "012"], "results": ["❌负负(实际胜负)", "✅胜胜(4-1)"], "hit": false, "odds_est": "~2.32"},
+    {"name": "方向+半全场A", "type": "混合串", "matches": ["003", "005"], "results": ["✅客胜(0-4)", "✅负负(0-4)"], "hit": true, "odds_est": "~3.66"},
+    {"name": "方向+半全场B", "type": "混合串", "matches": ["009", "002"], "results": ["❌主胜(实际2-3客胜)", "❌负负(实际胜负)"], "hit": false, "odds_est": "~2.73"},
+    {"name": "连续编号混合串A", "type": "混合串", "matches": ["005", "006"], "results": ["✅负负(0-4)", "❌平负(实际平平)"], "hit": false, "odds_est": "~11.96"},
+    {"name": "连续编号混合串B", "type": "混合串", "matches": ["011", "012"], "results": ["✅胜胜(3-0)", "❌让(-2)负(实际让胜)"], "hit": false, "odds_est": "~2.87"},
+    {"name": "总进球串A", "type": "总进球串", "matches": ["002", "009", "012"], "results": ["❌4球(实际3球)", "❌4球(实际5球)", "❌4球(实际5球)"], "hit": false, "odds_est": "~83.1"},
+    {"name": "总进球串B", "type": "总进球串", "matches": ["003", "011", "005"], "results": ["❌5球(实际4球)", "❌5球(实际3球)", "✅4球(4球)"], "hit": false, "odds_est": "~173.9"},
+    {"name": "连续编号总进球串①", "type": "总进球串", "matches": ["005", "006"], "results": ["✅4球(4球)", "❌1球(实际2球)"], "hit": false, "odds_est": "~16.8"},
+    {"name": "连续编号总进球串②", "type": "总进球串", "matches": ["012", "013"], "results": ["❌4球(实际5球)", "❌1球(实际3球)"], "hit": false, "odds_est": "~19.8"},
+    {"name": "高赔半全场串A", "type": "高赔半全场串", "matches": ["006", "014", "013"], "results": ["✅平平(1-1)", "⏳待定", "❌平平(实际平胜)"], "hit": false, "odds_est": "~91.6"},
+    {"name": "高赔半全场串B", "type": "高赔半全场串", "matches": ["008", "004", "006"], "results": ["❌平负(实际胜负)", "❌平负(实际平平)", "❌平负(实际平平)"], "hit": false, "odds_est": "~126.5"},
+    {"name": "连续编号高赔半全场串①", "type": "高赔半全场串", "matches": ["008", "009"], "results": ["❌平负(实际胜负)", "❌平胜(实际平负)"], "hit": false, "odds_est": "~24.0"},
+    {"name": "连续编号高赔半全场串②", "type": "高赔半全场串", "matches": ["012", "013"], "results": ["❌平胜(实际胜胜)", "❌平平(实际平胜)"], "hit": false, "odds_est": "~21.1"},
+    {"name": "混合串A", "type": "半全场混合", "matches": ["012", "014"], "results": ["✅胜胜(4-1)", "⏳待定"], "hit": null, "odds_est": "~5.0"},
+    {"name": "混合串B", "type": "半全场混合", "matches": ["002", "006"], "results": ["❌负负(实际胜负)", "❌0球(实际2球)"], "hit": false, "odds_est": "~12.9"},
+    {"name": "连续编号混合总进球串①", "type": "半全场混合", "matches": ["005", "006"], "results": ["❌平负(实际负负)", "❌1球(实际2球)"], "hit": false, "odds_est": "~16.8"},
+    {"name": "连续编号混合总进球串②", "type": "半全场混合", "matches": ["011", "012"], "results": ["❌平胜(实际胜胜)", "❌4球(实际5球)"], "hit": false, "odds_est": "~17.8"},
+    {"name": "稳健比分串", "type": "比分串", "matches": ["005", "009"], "results": ["❌1-2(实际0-4)", "❌2-1(实际2-3)"], "hit": false, "odds_est": "~50.8"},
+    {"name": "搏冷比分串", "type": "比分串", "matches": ["001", "008"], "results": ["❌1-1(实际3-2)", "❌1-1(实际1-2)"], "hit": false, "odds_est": "~42.0"},
+    {"name": "连续编号比分串①", "type": "比分串", "matches": ["002", "003"], "results": ["❌0-2(实际1-2)", "❌1-2(实际0-4)"], "hit": false, "odds_est": "~45.5"},
+    {"name": "连续编号比分串②", "type": "比分串", "matches": ["011", "012"], "results": ["❌2-0(实际3-0)", "❌2-0(实际4-1)"], "hit": false, "odds_est": "~43.5"},
+    {"name": "单挑比分①", "type": "比分串", "matches": ["006"], "results": ["❌0-0(实际1-1)"], "hit": false, "odds_est": "8.25"},
+    {"name": "单挑比分②", "type": "比分串", "matches": ["008"], "results": ["❌0-1(实际1-2)"], "hit": false, "odds_est": "7.0"}
+  ],
+  "parlaySummary": {
+    "totalHit": 1,
+    "totalCount": 28,
+    "rate": 0.036,
+    "steadyGroup": {"label": "稳健方案(方向串/让球串/混合串)", "hit": 1, "count": 10, "rate": 0.1},
+    "entertainmentGroup": {"label": "娱乐串(总进球串/高赔半全场串/半全场混合/比分串)", "hit": 0, "count": 18, "rate": 0},
+    "bySubcategory": {
+      "方向串": {"hit": 0, "count": 2},
+      "让球串": {"hit": 0, "count": 2},
+      "混合串": {"hit": 1, "count": 6},
+      "总进球串": {"hit": 0, "count": 4},
+      "高赔半全场串": {"hit": 0, "count": 4},
+      "半全场混合": {"hit": 0, "count": 4},
+      "比分串": {"hit": 0, "count": 6}
+    },
+    "pending": ["混合串A（含014腿，待终场）"]
+  },
+  "lessons_candidate": [
+    {"id": "L204", "title": "深盘让球双选优于单押", "evidence": "011(-2)3-0/012(-2)4-1/013(-1)3-0三场深盘全穿让负首选；011/012因次选含让胜保住合并命中，013次选仅让平双输。深盘让球首选让负时须保留让胜作次选。"},
+    {"id": "L205", "title": "残阵信号未转化为方向权重", "evidence": "010马赛3核心进攻缺阵+联赛第17+首轮1-4惨败，主胜仍推46.2%，实际0-1负（客胜由次选补回）。伤停已采集但未触发方向重排。"},
+    {"id": "L206", "title": "欧战大球潮击穿2-3球档", "evidence": "总进球TOP2仅7/12=58.3%，003(4球)/005(4球)/009(5球)/012(5球)四场超出预测档位；欧联/欧协联联赛阶段λ偏高。"}
+  ]
+}

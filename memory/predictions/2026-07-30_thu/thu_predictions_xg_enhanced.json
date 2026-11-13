@@ -1,0 +1,1154 @@
+[
+  {
+    "match_id": "周四001",
+    "league": "欧联",
+    "home": "中日德兰",
+    "away": "贝西克塔斯",
+    "first_leg": "贝西克塔斯 1-0 中日德兰",
+    "agg": "贝西克塔斯 1-0 领先",
+    "lambda_home": 2.31,
+    "lambda_away": 1.441,
+    "xg_analysis": {
+      "home_xg": 1.554,
+      "home_xga": 1.494,
+      "away_xg": 1.71,
+      "away_xga": 1.575,
+      "home_xg_diff": -0.22,
+      "away_xg_diff": 0.66,
+      "lambda_home_xg": 2.005,
+      "lambda_away_xg": 1.635,
+      "lambda_home_actual": 2.451,
+      "lambda_away_actual": 1.339,
+      "lambda_home_final": 2.31,
+      "lambda_away_final": 1.441,
+      "home_attack_ratio": 1.243,
+      "away_attack_ratio": 1.368,
+      "home_defense_ratio": 1.195,
+      "away_defense_ratio": 1.26
+    },
+    "dc_probs": {
+      "home": 55.9,
+      "draw": 21.8,
+      "away": 22.4
+    },
+    "skellam_probs": {
+      "home": 57.0,
+      "draw": 19.7,
+      "away": 23.3
+    },
+    "mc_probs": {
+      "home": 54.6,
+      "draw": 18.7,
+      "away": 26.8,
+      "over_2_5": 67.6,
+      "under_2_5": 32.4
+    },
+    "shin_probs": {
+      "home": 39.2,
+      "draw": 28.6,
+      "away": 32.2
+    },
+    "fused_probs": {
+      "home": 47.9,
+      "draw": 23.2,
+      "away": 28.9
+    },
+    "direction": "主胜",
+    "confidence": "高 ★★★",
+    "confidence_score": 5,
+    "top5_scores": [
+      {
+        "score": "1:1",
+        "prob": 25.4,
+        "raw_prob": 8.9,
+        "direction": "平局",
+        "total_goals": 2
+      },
+      {
+        "score": "2:1",
+        "prob": 24.4,
+        "raw_prob": 9.1,
+        "direction": "主胜",
+        "total_goals": 3
+      },
+      {
+        "score": "3:1",
+        "prob": 17.4,
+        "raw_prob": 7.0,
+        "direction": "主胜",
+        "total_goals": 4
+      },
+      {
+        "score": "2:0",
+        "prob": 16.5,
+        "raw_prob": 6.3,
+        "direction": "主胜",
+        "total_goals": 2
+      },
+      {
+        "score": "2:2",
+        "prob": 16.3,
+        "raw_prob": 6.5,
+        "direction": "平局",
+        "total_goals": 4
+      }
+    ],
+    "top10_scores": [
+      {
+        "score": "1:1",
+        "prob": 15.8,
+        "raw_prob": 8.9,
+        "direction": "平局",
+        "total_goals": 2
+      },
+      {
+        "score": "2:1",
+        "prob": 15.2,
+        "raw_prob": 9.1,
+        "direction": "主胜",
+        "total_goals": 3
+      },
+      {
+        "score": "3:1",
+        "prob": 10.8,
+        "raw_prob": 7.0,
+        "direction": "主胜",
+        "total_goals": 4
+      },
+      {
+        "score": "2:0",
+        "prob": 10.2,
+        "raw_prob": 6.3,
+        "direction": "主胜",
+        "total_goals": 2
+      },
+      {
+        "score": "2:2",
+        "prob": 10.1,
+        "raw_prob": 6.5,
+        "direction": "平局",
+        "total_goals": 4
+      },
+      {
+        "score": "1:2",
+        "prob": 8.8,
+        "raw_prob": 5.6,
+        "direction": "客胜",
+        "total_goals": 3
+      },
+      {
+        "score": "3:2",
+        "prob": 7.8,
+        "raw_prob": 5.0,
+        "direction": "主胜",
+        "total_goals": 5
+      },
+      {
+        "score": "1:0",
+        "prob": 7.5,
+        "raw_prob": 4.4,
+        "direction": "主胜",
+        "total_goals": 1
+      },
+      {
+        "score": "3:0",
+        "prob": 7.5,
+        "raw_prob": 4.8,
+        "direction": "主胜",
+        "total_goals": 3
+      },
+      {
+        "score": "4:1",
+        "prob": 6.2,
+        "raw_prob": 4.0,
+        "direction": "主胜",
+        "total_goals": 5
+      }
+    ],
+    "half_top3": [
+      {
+        "score": "0:0",
+        "prob": 22.3,
+        "direction": "平局"
+      },
+      {
+        "score": "1:0",
+        "prob": 18.5,
+        "direction": "主胜"
+      },
+      {
+        "score": "0:1",
+        "prob": 10.9,
+        "direction": "客胜"
+      }
+    ],
+    "over_2_5": 67.6,
+    "under_2_5": 32.4,
+    "model_std": 1.7,
+    "divergence": "",
+    "soft_home": 1.058,
+    "soft_away": 0.95,
+    "model_consistency": "3/3模型一致",
+    "xg_consistency": "xG方向分歧"
+  },
+  {
+    "match_id": "周四002",
+    "league": "欧联",
+    "home": "帕福斯",
+    "away": "斯普利特海杜克",
+    "first_leg": "海杜克 2-0 帕福斯",
+    "agg": "海杜克 2-0 领先",
+    "lambda_home": 1.891,
+    "lambda_away": 1.218,
+    "xg_analysis": {
+      "home_xg": 1.488,
+      "home_xga": 1.498,
+      "away_xg": 1.167,
+      "away_xga": 1.515,
+      "home_xg_diff": 0.13,
+      "away_xg_diff": 0.1,
+      "lambda_home_xg": 1.847,
+      "lambda_away_xg": 1.119,
+      "lambda_home_actual": 2.11,
+      "lambda_away_actual": 1.534,
+      "lambda_home_final": 1.891,
+      "lambda_away_final": 1.218,
+      "home_attack_ratio": 1.19,
+      "away_attack_ratio": 0.934,
+      "home_defense_ratio": 1.198,
+      "away_defense_ratio": 1.212
+    },
+    "dc_probs": {
+      "home": 51.7,
+      "draw": 25.1,
+      "away": 23.1
+    },
+    "skellam_probs": {
+      "home": 53.1,
+      "draw": 22.4,
+      "away": 24.5
+    },
+    "mc_probs": {
+      "home": 51.4,
+      "draw": 22.1,
+      "away": 26.5,
+      "over_2_5": 57.5,
+      "under_2_5": 42.5
+    },
+    "shin_probs": {
+      "home": 33.0,
+      "draw": 29.2,
+      "away": 37.8
+    },
+    "fused_probs": {
+      "home": 46.5,
+      "draw": 26.1,
+      "away": 27.5
+    },
+    "direction": "主胜",
+    "confidence": "中 ★★",
+    "confidence_score": 3,
+    "top5_scores": [
+      {
+        "score": "1:1",
+        "prob": 28.7,
+        "raw_prob": 11.6,
+        "direction": "平局",
+        "total_goals": 2
+      },
+      {
+        "score": "2:1",
+        "prob": 22.6,
+        "raw_prob": 9.7,
+        "direction": "主胜",
+        "total_goals": 3
+      },
+      {
+        "score": "2:0",
+        "prob": 18.0,
+        "raw_prob": 8.0,
+        "direction": "主胜",
+        "total_goals": 2
+      },
+      {
+        "score": "1:0",
+        "prob": 16.8,
+        "raw_prob": 7.1,
+        "direction": "主胜",
+        "total_goals": 1
+      },
+      {
+        "score": "0:0",
+        "prob": 14.0,
+        "raw_prob": 5.8,
+        "direction": "平局",
+        "total_goals": 0
+      }
+    ],
+    "top10_scores": [
+      {
+        "score": "1:1",
+        "prob": 18.0,
+        "raw_prob": 11.6,
+        "direction": "平局",
+        "total_goals": 2
+      },
+      {
+        "score": "2:1",
+        "prob": 14.2,
+        "raw_prob": 9.7,
+        "direction": "主胜",
+        "total_goals": 3
+      },
+      {
+        "score": "2:0",
+        "prob": 11.3,
+        "raw_prob": 8.0,
+        "direction": "主胜",
+        "total_goals": 2
+      },
+      {
+        "score": "1:0",
+        "prob": 10.5,
+        "raw_prob": 7.1,
+        "direction": "主胜",
+        "total_goals": 1
+      },
+      {
+        "score": "0:0",
+        "prob": 8.8,
+        "raw_prob": 5.8,
+        "direction": "平局",
+        "total_goals": 0
+      },
+      {
+        "score": "1:2",
+        "prob": 8.4,
+        "raw_prob": 6.3,
+        "direction": "客胜",
+        "total_goals": 3
+      },
+      {
+        "score": "3:1",
+        "prob": 8.3,
+        "raw_prob": 6.1,
+        "direction": "主胜",
+        "total_goals": 4
+      },
+      {
+        "score": "2:2",
+        "prob": 8.0,
+        "raw_prob": 5.9,
+        "direction": "平局",
+        "total_goals": 4
+      },
+      {
+        "score": "3:0",
+        "prob": 6.8,
+        "raw_prob": 5.0,
+        "direction": "主胜",
+        "total_goals": 3
+      },
+      {
+        "score": "0:1",
+        "prob": 5.8,
+        "raw_prob": 4.1,
+        "direction": "客胜",
+        "total_goals": 1
+      }
+    ],
+    "half_top3": [
+      {
+        "score": "0:0",
+        "prob": 28.5,
+        "direction": "平局"
+      },
+      {
+        "score": "1:0",
+        "prob": 20.1,
+        "direction": "主胜"
+      },
+      {
+        "score": "0:1",
+        "prob": 12.4,
+        "direction": "客胜"
+      }
+    ],
+    "over_2_5": 57.5,
+    "under_2_5": 42.5,
+    "model_std": 1.4,
+    "divergence": "",
+    "soft_home": 0.969,
+    "soft_away": 0.948,
+    "model_consistency": "3/3模型一致",
+    "xg_consistency": "xG方向分歧"
+  },
+  {
+    "match_id": "周四003",
+    "league": "欧联",
+    "home": "安德莱赫特",
+    "away": "哈马比",
+    "first_leg": "哈马比 1-1 安德莱赫特",
+    "agg": "1-1 平局",
+    "lambda_home": 1.543,
+    "lambda_away": 2.273,
+    "xg_analysis": {
+      "home_xg": 1.639,
+      "home_xga": 1.631,
+      "away_xg": 1.936,
+      "away_xga": 1.32,
+      "home_xg_diff": -0.37,
+      "away_xg_diff": 1.05,
+      "lambda_home_xg": 1.772,
+      "lambda_away_xg": 2.021,
+      "lambda_home_actual": 1.406,
+      "lambda_away_actual": 2.39,
+      "lambda_home_final": 1.543,
+      "lambda_away_final": 2.273,
+      "home_attack_ratio": 1.311,
+      "away_attack_ratio": 1.549,
+      "home_defense_ratio": 1.305,
+      "away_defense_ratio": 1.056
+    },
+    "dc_probs": {
+      "home": 24.9,
+      "draw": 22.1,
+      "away": 53.0
+    },
+    "skellam_probs": {
+      "home": 25.9,
+      "draw": 20.0,
+      "away": 54.1
+    },
+    "mc_probs": {
+      "home": 29.5,
+      "draw": 18.8,
+      "away": 51.7,
+      "over_2_5": 69.0,
+      "under_2_5": 31.0
+    },
+    "shin_probs": {
+      "home": 42.4,
+      "draw": 27.0,
+      "away": 30.7
+    },
+    "fused_probs": {
+      "home": 28.4,
+      "draw": 23.2,
+      "away": 48.4
+    },
+    "direction": "客胜",
+    "confidence": "高 ★★★",
+    "confidence_score": 4,
+    "top5_scores": [
+      {
+        "score": "1:1",
+        "prob": 26.0,
+        "raw_prob": 8.7,
+        "direction": "平局",
+        "total_goals": 2
+      },
+      {
+        "score": "1:2",
+        "prob": 22.7,
+        "raw_prob": 8.8,
+        "direction": "客胜",
+        "total_goals": 3
+      },
+      {
+        "score": "2:2",
+        "prob": 17.5,
+        "raw_prob": 6.8,
+        "direction": "平局",
+        "total_goals": 4
+      },
+      {
+        "score": "1:3",
+        "prob": 17.2,
+        "raw_prob": 6.7,
+        "direction": "客胜",
+        "total_goals": 4
+      },
+      {
+        "score": "2:1",
+        "prob": 16.6,
+        "raw_prob": 6.0,
+        "direction": "主胜",
+        "total_goals": 3
+      }
+    ],
+    "top10_scores": [
+      {
+        "score": "1:1",
+        "prob": 16.2,
+        "raw_prob": 8.7,
+        "direction": "平局",
+        "total_goals": 2
+      },
+      {
+        "score": "1:2",
+        "prob": 14.2,
+        "raw_prob": 8.8,
+        "direction": "客胜",
+        "total_goals": 3
+      },
+      {
+        "score": "2:2",
+        "prob": 11.0,
+        "raw_prob": 6.8,
+        "direction": "平局",
+        "total_goals": 4
+      },
+      {
+        "score": "1:3",
+        "prob": 10.8,
+        "raw_prob": 6.7,
+        "direction": "客胜",
+        "total_goals": 4
+      },
+      {
+        "score": "2:1",
+        "prob": 10.4,
+        "raw_prob": 6.0,
+        "direction": "主胜",
+        "total_goals": 3
+      },
+      {
+        "score": "0:2",
+        "prob": 9.2,
+        "raw_prob": 5.7,
+        "direction": "客胜",
+        "total_goals": 2
+      },
+      {
+        "score": "2:3",
+        "prob": 8.3,
+        "raw_prob": 5.1,
+        "direction": "客胜",
+        "total_goals": 5
+      },
+      {
+        "score": "0:3",
+        "prob": 7.0,
+        "raw_prob": 4.3,
+        "direction": "客胜",
+        "total_goals": 3
+      },
+      {
+        "score": "0:1",
+        "prob": 6.8,
+        "raw_prob": 4.0,
+        "direction": "客胜",
+        "total_goals": 1
+      },
+      {
+        "score": "1:4",
+        "prob": 6.1,
+        "raw_prob": 3.8,
+        "direction": "客胜",
+        "total_goals": 5
+      }
+    ],
+    "half_top3": [
+      {
+        "score": "0:0",
+        "prob": 21.8,
+        "direction": "平局"
+      },
+      {
+        "score": "0:1",
+        "prob": 17.6,
+        "direction": "客胜"
+      },
+      {
+        "score": "1:0",
+        "prob": 11.4,
+        "direction": "主胜"
+      }
+    ],
+    "over_2_5": 69.0,
+    "under_2_5": 31.0,
+    "model_std": 1.6,
+    "divergence": "模型客胜(48.4%) vs 市场主胜(42.4%)",
+    "soft_home": 0.949,
+    "soft_away": 1.048,
+    "model_consistency": "3/3模型一致",
+    "xg_consistency": "xG方向一致"
+  },
+  {
+    "match_id": "周四004",
+    "league": "欧联",
+    "home": "费伦茨瓦罗斯",
+    "away": "特温特",
+    "first_leg": "特温特 1-2 费伦茨瓦罗斯",
+    "agg": "费伦茨瓦罗斯 2-1 领先",
+    "lambda_home": 2.342,
+    "lambda_away": 1.207,
+    "xg_analysis": {
+      "home_xg": 1.742,
+      "home_xga": 1.199,
+      "away_xg": 1.569,
+      "away_xga": 1.446,
+      "home_xg_diff": 0.34,
+      "away_xg_diff": 0.48,
+      "lambda_home_xg": 2.064,
+      "lambda_away_xg": 1.204,
+      "lambda_home_actual": 2.606,
+      "lambda_away_actual": 1.228,
+      "lambda_home_final": 2.342,
+      "lambda_away_final": 1.207,
+      "home_attack_ratio": 1.394,
+      "away_attack_ratio": 1.255,
+      "home_defense_ratio": 0.959,
+      "away_defense_ratio": 1.157
+    },
+    "dc_probs": {
+      "home": 61.5,
+      "draw": 21.1,
+      "away": 17.4
+    },
+    "skellam_probs": {
+      "home": 62.7,
+      "draw": 18.9,
+      "away": 18.4
+    },
+    "mc_probs": {
+      "home": 59.4,
+      "draw": 19.2,
+      "away": 21.4,
+      "over_2_5": 63.5,
+      "under_2_5": 36.5
+    },
+    "shin_probs": {
+      "home": 39.4,
+      "draw": 27.7,
+      "away": 32.9
+    },
+    "fused_probs": {
+      "home": 53.0,
+      "draw": 23.6,
+      "away": 23.3
+    },
+    "direction": "主胜",
+    "confidence": "高 ★★★",
+    "confidence_score": 6,
+    "top5_scores": [
+      {
+        "score": "1:1",
+        "prob": 24.7,
+        "raw_prob": 9.2,
+        "direction": "平局",
+        "total_goals": 2
+      },
+      {
+        "score": "2:1",
+        "prob": 24.0,
+        "raw_prob": 9.5,
+        "direction": "主胜",
+        "total_goals": 3
+      },
+      {
+        "score": "2:0",
+        "prob": 19.3,
+        "raw_prob": 7.9,
+        "direction": "主胜",
+        "total_goals": 2
+      },
+      {
+        "score": "3:1",
+        "prob": 17.4,
+        "raw_prob": 7.5,
+        "direction": "主胜",
+        "total_goals": 4
+      },
+      {
+        "score": "1:0",
+        "prob": 14.6,
+        "raw_prob": 5.7,
+        "direction": "主胜",
+        "total_goals": 1
+      }
+    ],
+    "top10_scores": [
+      {
+        "score": "1:1",
+        "prob": 15.4,
+        "raw_prob": 9.2,
+        "direction": "平局",
+        "total_goals": 2
+      },
+      {
+        "score": "2:1",
+        "prob": 15.0,
+        "raw_prob": 9.5,
+        "direction": "主胜",
+        "total_goals": 3
+      },
+      {
+        "score": "2:0",
+        "prob": 12.1,
+        "raw_prob": 7.9,
+        "direction": "主胜",
+        "total_goals": 2
+      },
+      {
+        "score": "3:1",
+        "prob": 10.8,
+        "raw_prob": 7.5,
+        "direction": "主胜",
+        "total_goals": 4
+      },
+      {
+        "score": "1:0",
+        "prob": 9.1,
+        "raw_prob": 5.7,
+        "direction": "主胜",
+        "total_goals": 1
+      },
+      {
+        "score": "3:0",
+        "prob": 9.0,
+        "raw_prob": 6.2,
+        "direction": "主胜",
+        "total_goals": 3
+      },
+      {
+        "score": "2:2",
+        "prob": 8.4,
+        "raw_prob": 5.8,
+        "direction": "平局",
+        "total_goals": 4
+      },
+      {
+        "score": "1:2",
+        "prob": 7.2,
+        "raw_prob": 4.9,
+        "direction": "客胜",
+        "total_goals": 3
+      },
+      {
+        "score": "3:2",
+        "prob": 6.6,
+        "raw_prob": 4.5,
+        "direction": "主胜",
+        "total_goals": 5
+      },
+      {
+        "score": "0:0",
+        "prob": 6.4,
+        "raw_prob": 3.9,
+        "direction": "平局",
+        "total_goals": 0
+      }
+    ],
+    "half_top3": [
+      {
+        "score": "0:0",
+        "prob": 24.0,
+        "direction": "平局"
+      },
+      {
+        "score": "1:0",
+        "prob": 20.7,
+        "direction": "主胜"
+      },
+      {
+        "score": "0:1",
+        "prob": 10.0,
+        "direction": "客胜"
+      }
+    ],
+    "over_2_5": 63.5,
+    "under_2_5": 36.5,
+    "model_std": 1.9,
+    "divergence": "",
+    "soft_home": 1.027,
+    "soft_away": 0.995,
+    "model_consistency": "3/3模型一致",
+    "xg_consistency": "xG方向分歧"
+  },
+  {
+    "match_id": "周四005",
+    "league": "欧联",
+    "home": "本菲卡",
+    "away": "圣加仑",
+    "first_leg": "圣加仑 2-1 本菲卡",
+    "agg": "圣加仑 2-1 领先",
+    "lambda_home": 2.566,
+    "lambda_away": 1.057,
+    "xg_analysis": {
+      "home_xg": 1.953,
+      "home_xga": 0.966,
+      "away_xg": 1.749,
+      "away_xga": 1.398,
+      "home_xg_diff": 0.7,
+      "away_xg_diff": 0.33,
+      "lambda_home_xg": 2.237,
+      "lambda_away_xg": 1.081,
+      "lambda_home_actual": 2.634,
+      "lambda_away_actual": 1.113,
+      "lambda_home_final": 2.566,
+      "lambda_away_final": 1.057,
+      "home_attack_ratio": 1.562,
+      "away_attack_ratio": 1.399,
+      "home_defense_ratio": 0.773,
+      "away_defense_ratio": 1.118
+    },
+    "dc_probs": {
+      "home": 68.8,
+      "draw": 18.6,
+      "away": 12.6
+    },
+    "skellam_probs": {
+      "home": 69.9,
+      "draw": 16.6,
+      "away": 13.5
+    },
+    "mc_probs": {
+      "home": 64.9,
+      "draw": 17.4,
+      "away": 17.6,
+      "over_2_5": 64.7,
+      "under_2_5": 35.3
+    },
+    "shin_probs": {
+      "home": 60.0,
+      "draw": 23.7,
+      "away": 16.4
+    },
+    "fused_probs": {
+      "home": 60.8,
+      "draw": 21.2,
+      "away": 18.0
+    },
+    "direction": "主胜",
+    "confidence": "高 ★★★",
+    "confidence_score": 7,
+    "top5_scores": [
+      {
+        "score": "2:1",
+        "prob": 22.7,
+        "raw_prob": 9.3,
+        "direction": "主胜",
+        "total_goals": 3
+      },
+      {
+        "score": "1:1",
+        "prob": 21.3,
+        "raw_prob": 8.2,
+        "direction": "平局",
+        "total_goals": 2
+      },
+      {
+        "score": "2:0",
+        "prob": 20.9,
+        "raw_prob": 8.8,
+        "direction": "主胜",
+        "total_goals": 2
+      },
+      {
+        "score": "3:1",
+        "prob": 18.0,
+        "raw_prob": 8.0,
+        "direction": "主胜",
+        "total_goals": 4
+      },
+      {
+        "score": "3:0",
+        "prob": 17.0,
+        "raw_prob": 7.6,
+        "direction": "主胜",
+        "total_goals": 3
+      }
+    ],
+    "top10_scores": [
+      {
+        "score": "2:1",
+        "prob": 14.4,
+        "raw_prob": 9.3,
+        "direction": "主胜",
+        "total_goals": 3
+      },
+      {
+        "score": "1:1",
+        "prob": 13.5,
+        "raw_prob": 8.2,
+        "direction": "平局",
+        "total_goals": 2
+      },
+      {
+        "score": "2:0",
+        "prob": 13.3,
+        "raw_prob": 8.8,
+        "direction": "主胜",
+        "total_goals": 2
+      },
+      {
+        "score": "3:1",
+        "prob": 11.4,
+        "raw_prob": 8.0,
+        "direction": "主胜",
+        "total_goals": 4
+      },
+      {
+        "score": "3:0",
+        "prob": 10.8,
+        "raw_prob": 7.6,
+        "direction": "主胜",
+        "total_goals": 3
+      },
+      {
+        "score": "1:0",
+        "prob": 9.3,
+        "raw_prob": 5.9,
+        "direction": "主胜",
+        "total_goals": 1
+      },
+      {
+        "score": "4:1",
+        "prob": 7.3,
+        "raw_prob": 5.1,
+        "direction": "主胜",
+        "total_goals": 5
+      },
+      {
+        "score": "2:2",
+        "prob": 7.0,
+        "raw_prob": 4.9,
+        "direction": "平局",
+        "total_goals": 4
+      },
+      {
+        "score": "4:0",
+        "prob": 6.9,
+        "raw_prob": 4.8,
+        "direction": "主胜",
+        "total_goals": 4
+      },
+      {
+        "score": "3:2",
+        "prob": 6.0,
+        "raw_prob": 4.2,
+        "direction": "主胜",
+        "total_goals": 5
+      }
+    ],
+    "half_top3": [
+      {
+        "score": "0:0",
+        "prob": 23.2,
+        "direction": "平局"
+      },
+      {
+        "score": "1:0",
+        "prob": 22.2,
+        "direction": "主胜"
+      },
+      {
+        "score": "0:1",
+        "prob": 8.3,
+        "direction": "客胜"
+      }
+    ],
+    "over_2_5": 64.7,
+    "under_2_5": 35.3,
+    "model_std": 2.3,
+    "divergence": "",
+    "soft_home": 1.071,
+    "soft_away": 0.966,
+    "model_consistency": "3/3模型一致",
+    "xg_consistency": "xG方向一致"
+  },
+  {
+    "match_id": "周四006",
+    "league": "巴甲",
+    "home": "科林蒂安",
+    "away": "巴拉纳竞技",
+    "first_leg": "-",
+    "agg": "巴甲第21轮",
+    "lambda_home": 1.416,
+    "lambda_away": 0.878,
+    "xg_analysis": {
+      "home_xg": 1.31,
+      "home_xga": 1.126,
+      "away_xg": 1.272,
+      "away_xga": 1.421,
+      "home_xg_diff": 0.03,
+      "away_xg_diff": 0.18,
+      "lambda_home_xg": 1.608,
+      "lambda_away_xg": 0.917,
+      "lambda_home_actual": 1.351,
+      "lambda_away_actual": 1.009,
+      "lambda_home_final": 1.416,
+      "lambda_away_final": 0.878,
+      "home_attack_ratio": 1.048,
+      "away_attack_ratio": 1.018,
+      "home_defense_ratio": 0.901,
+      "away_defense_ratio": 1.137
+    },
+    "dc_probs": {
+      "home": 48.6,
+      "draw": 29.1,
+      "away": 22.3
+    },
+    "skellam_probs": {
+      "home": 49.6,
+      "draw": 27.1,
+      "away": 23.3
+    },
+    "mc_probs": {
+      "home": 48.2,
+      "draw": 27.1,
+      "away": 24.6,
+      "over_2_5": 40.2,
+      "under_2_5": 59.8
+    },
+    "shin_probs": {
+      "home": 41.5,
+      "draw": 29.7,
+      "away": 28.8
+    },
+    "fused_probs": {
+      "home": 44.9,
+      "draw": 29.4,
+      "away": 25.6
+    },
+    "direction": "主胜",
+    "confidence": "高 ★★★",
+    "confidence_score": 5,
+    "top5_scores": [
+      {
+        "score": "1:1",
+        "prob": 24.5,
+        "raw_prob": 13.5,
+        "direction": "平局",
+        "total_goals": 2
+      },
+      {
+        "score": "1:0",
+        "prob": 23.6,
+        "raw_prob": 13.3,
+        "direction": "主胜",
+        "total_goals": 1
+      },
+      {
+        "score": "0:0",
+        "prob": 19.7,
+        "raw_prob": 11.1,
+        "direction": "平局",
+        "total_goals": 0
+      },
+      {
+        "score": "2:0",
+        "prob": 17.0,
+        "raw_prob": 10.1,
+        "direction": "主胜",
+        "total_goals": 2
+      },
+      {
+        "score": "2:1",
+        "prob": 15.2,
+        "raw_prob": 8.9,
+        "direction": "主胜",
+        "total_goals": 3
+      }
+    ],
+    "top10_scores": [
+      {
+        "score": "1:1",
+        "prob": 17.1,
+        "raw_prob": 13.5,
+        "direction": "平局",
+        "total_goals": 2
+      },
+      {
+        "score": "1:0",
+        "prob": 16.5,
+        "raw_prob": 13.3,
+        "direction": "主胜",
+        "total_goals": 1
+      },
+      {
+        "score": "0:0",
+        "prob": 13.8,
+        "raw_prob": 11.1,
+        "direction": "平局",
+        "total_goals": 0
+      },
+      {
+        "score": "2:0",
+        "prob": 11.9,
+        "raw_prob": 10.1,
+        "direction": "主胜",
+        "total_goals": 2
+      },
+      {
+        "score": "2:1",
+        "prob": 10.6,
+        "raw_prob": 8.9,
+        "direction": "主胜",
+        "total_goals": 3
+      },
+      {
+        "score": "0:1",
+        "prob": 9.3,
+        "raw_prob": 7.9,
+        "direction": "客胜",
+        "total_goals": 1
+      },
+      {
+        "score": "1:2",
+        "prob": 6.2,
+        "raw_prob": 5.5,
+        "direction": "客胜",
+        "total_goals": 3
+      },
+      {
+        "score": "3:0",
+        "prob": 5.4,
+        "raw_prob": 4.8,
+        "direction": "主胜",
+        "total_goals": 3
+      },
+      {
+        "score": "3:1",
+        "prob": 4.7,
+        "raw_prob": 4.2,
+        "direction": "主胜",
+        "total_goals": 4
+      },
+      {
+        "score": "2:2",
+        "prob": 4.4,
+        "raw_prob": 3.9,
+        "direction": "平局",
+        "total_goals": 4
+      }
+    ],
+    "half_top3": [
+      {
+        "score": "0:0",
+        "prob": 38.8,
+        "direction": "平局"
+      },
+      {
+        "score": "1:0",
+        "prob": 22.0,
+        "direction": "主胜"
+      },
+      {
+        "score": "0:1",
+        "prob": 13.4,
+        "direction": "客胜"
+      }
+    ],
+    "over_2_5": 40.2,
+    "under_2_5": 59.8,
+    "model_std": 0.8,
+    "divergence": "",
+    "soft_home": 0.941,
+    "soft_away": 0.921,
+    "model_consistency": "3/3模型一致",
+    "xg_consistency": "xG方向分歧"
+  }
+]

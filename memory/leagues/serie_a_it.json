@@ -1,0 +1,164 @@
+{
+    "league_info": {
+        "name_cn": "意大利甲级联赛",
+        "name_en": "Serie A",
+        "country": "意大利",
+        "country_code": "IT",
+        "level": "顶级",
+        "num_teams": 20,
+        "format": "双循环，38轮",
+        "season_period": "8月-次年5月（跨年）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.seriea.com",
+        "governing_body": "意大利足球联赛联盟（Lega Serie A）",
+        "cross_league_level": "L1",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.63,
+        "draw_rate": 0.273,
+        "home_win_rate": 0.412,
+        "away_win_rate": 0.315,
+        "over_2_5_rate": 0.51,
+        "under_2_5_rate": 0.49,
+        "btts_rate": 0.51,
+        "top_scores": [
+            {
+                "score": "1-1",
+                "frequency": 0.092,
+                "direction": "平局"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.085,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.078,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-0",
+                "frequency": 0.068,
+                "direction": "平局"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.063,
+                "direction": "主胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.068,
+            "1_goal": 0.15,
+            "2_goals": 0.25,
+            "3_goals": 0.24,
+            "4_goals": 0.17,
+            "5_plus_goals": 0.122
+        },
+        "avg_home_goals": 1.45,
+        "avg_away_goals": 1.18,
+        "home_advantage_factor": 1.15,
+        "ht_draw_rate": 0.409,
+        "ht_draw_rate_note": "意甲半场平局率。2026-09-12核算：football-data.co.uk官方逐场半场比分，5季合并1900场→0.4089；单季2025/26=0.4395。thefishy.uk(2025/26)得0.4395，验证一致。属高半场平局档(≥0.40)，lambda_ht系数0.38，半全场首选应含'平'。",
+        "ht_draw_rate_source": [
+            "https://www.football-data.co.uk/mmz4281/2526/I1.csv",
+            "https://www.thefishy.uk/leaguetable.php?table=33&season=23"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "高(≥0.40)",
+        "ht_draw_rate_confidence": "高(官方逐场半场比分/交叉验证一致)"
+    },
+    "match_style": {
+        "tactical_character": "传统防守足球发源地，链式防守（Catenaccio）的故乡。近年进攻性增强，但防守组织和战术纪律仍是根基。三中卫体系流行，注重边翼卫套边和反击效率。",
+        "tempo": "中",
+        "physicality": "中高",
+        "technical_focus": "高",
+        "var_usage": "2017-18赛季引入VAR，意甲是五大联赛最早全面使用VAR的联赛。VAR介入频率高，争议相对较少。",
+        "key_trends": [
+            "三中卫体系广泛应用（孔蒂学派影响）",
+            "反击效率极高，因莫比莱/劳塔罗式射手代表",
+            "定位球防守组织严密，失球少",
+            "中下游球队防守反击战术成熟"
+        ],
+        "style_tags": [
+            "防守",
+            "战术纪律",
+            "反击",
+            "三中卫"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 4.65,
+        "avg_red_cards": 0.16,
+        "avg_penalties": 0.28,
+        "referee_style": "意甲裁判判罚相对宽松，允许一定程度的身体对抗。对战术犯规出牌较积极。VAR使用频繁，点球判罚率高。",
+        "first_half_stoppage_avg": 2.3,
+        "second_half_stoppage_avg": 5.5,
+        "stoppage_note": "意甲倒地和治疗时间较长，补时中等偏长。近年跟随英超趋势适当延长补时。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "Calciopoli（电话门丑闻）",
+                "year": "2006",
+                "description": "意大利足球史上最大丑闻。尤文图斯被剥夺2004-05和2005-06赛季冠军并降级，AC米兰、佛罗伦萨、拉齐奥等队被扣分。涉及裁判指派操纵，多名裁判和俱乐部高层被禁赛。"
+            },
+            {
+                "event": "Scommessopoli（赌球门）",
+                "year": "2011-2012",
+                "description": "涉及多名球员和教练的赌球操纵丑闻，主要影响意乙和部分意甲比赛。Conti、Pepe等球员涉案，多名球员被禁赛。"
+            },
+            {
+                "event": "Calcioscommesse",
+                "year": "2015",
+                "description": "持续调查的假赛案件，涉及低级别联赛和部分意甲比赛的末轮保级战。意大利足球廉洁性长期受关注。"
+            }
+        ],
+        "discipline_features": "意大利体育法庭（FIGC）独立运作。黄牌累积4张停1场（意甲为4张而非5张）。红牌自动停赛。意大利对假赛处罚极严厉，涉嫌操纵可面临多年禁赛。",
+        "official_rules": "IFAB规则+意甲特别规则。意大利对俱乐部财务监管较严格，但执行力度不如英超PSR。",
+        "integrity_rating": "中高（历史有污点但近年大幅改善）"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价意甲'防守第一'，'1-0和1-1最多'。近年进攻性增强但防守传统仍在。彩民认为'意甲平局多，小球多'，'保级战冷门频发'。尤文国米米兰三强格局相对稳定。",
+        "betting_market": {
+            "market_efficiency": "高",
+            "liquidity": "高",
+            "mainstream_bookmakers": [
+                "Bet365",
+                "Sisal",
+                "Goldbet"
+            ],
+            "line_movement_frequency": "中频",
+            "sharp_money": "意大利本土资金为主"
+        },
+        "upset_frequency": "中高",
+        "jingcai_tips": [
+            "意甲平局率五大联赛偏高，关注平局",
+            "保级队末轮经常爆冷，战意极强",
+            "米兰双雄和国米主场强势",
+            "中下游球队防守严密，大球难出",
+            "意甲整体小球倾向明显（用户2026-08-31记录）：防守战术纪律强、链式防守传统、三中卫体系普及，1-1/1-0/0-0为最常见比分；中下游对决优先考虑小球，TTG TOP2偏向2球/3球档，4球及以上大球多见于三强碾压或对攻局",
+            "电话门后意甲整体廉洁度提升，但保级战仍需谨慎"
+        ],
+        "common_sayings": [
+            "意甲防守看链式",
+            "1-0主义",
+            "保级意甲最精彩"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.seriea.com",
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://understat.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "高"
+    }
+}

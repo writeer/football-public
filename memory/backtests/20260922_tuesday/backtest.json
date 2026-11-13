@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "date": "2026-09-22",
+    "weekday": "周二",
+    "backtest_date": "2026-09-23",
+    "source_analysis": "reports/analysis/20260922_tuesday_analysis_zhihu.md",
+    "source_predictions": "reports/data/20260922_predictions.json",
+    "report": "reports/backtest/20260922_tuesday_backtest.md",
+    "match_count": 4,
+    "result_summary": "4场全主胜（001 2-0 / 002 4-1 / 003 2-1 / 004 3-2）"
+  },
+  "hit_rates": {
+    "had_first": {"hit": 4, "total": 4, "rate": 1.0},
+    "hhad_first": {"hit": 0, "total": 4, "rate": 0.0},
+    "hhad_first_second": {"hit": 4, "total": 4, "rate": 1.0},
+    "ttg_first": {"hit": 0, "total": 4, "rate": 0.0},
+    "ttg_top2": {"hit": 1, "total": 4, "rate": 0.25},
+    "hafu_first": {"hit": 1, "total": 4, "rate": 0.25},
+    "hafu_first_second": {"hit": 4, "total": 4, "rate": 1.0},
+    "score_top5": {"hit": 2, "total": 4, "rate": 0.5},
+    "score_inner_band_top3": {"hit": 2, "total": 4, "rate": 0.5},
+    "direction": {"hit": 4, "total": 4, "rate": 1.0}
+  },
+  "matches": [
+    {
+      "no": "001",
+      "league": "亚运男足 D组",
+      "home": "韩国亚运男足",
+      "away": "沙特阿拉伯亚运男足",
+      "ht": "0-0",
+      "ft": "2-0",
+      "actual_result": "H",
+      "actual_handicap_result": "让胜",
+      "actual_total_goals": 2,
+      "actual_goal_diff": 2,
+      "had_first": "主胜", "had_hit": true,
+      "hhad_first": "让平", "hhad_second": "让胜", "hhad_hit": false, "hhad_second_hit": true,
+      "ttg_rec": ["3球", "4球"], "ttg_hit": false,
+      "hafu_first": "胜胜", "hafu_second": "平胜", "actual_hafu": "平胜", "hafu_hit": false, "hafu_second_hit": true,
+      "k_dist": 1, "k_rec": 1, "inner_band": ["2-1", "1-0", "3-2"], "score_top5": ["2-0", "2-1", "3-0", "1-0", "1-1"],
+      "score_hit_top5": true, "score_hit_inner_band": false,
+      "verdict": "半命中（方向中/比分未中，净胜多1球）",
+      "rule65": {"triggered": true, "tier": "Tier3"}
+    },
+    {
+      "no": "002",
+      "league": "英锦赛 南部赛区H组",
+      "home": "米尔顿凯恩斯",
+      "away": "克劳利",
+      "ht": "2-0",
+      "ft": "4-1",
+      "actual_result": "H",
+      "actual_handicap_result": "让胜",
+      "actual_total_goals": 5,
+      "actual_goal_diff": 3,
+      "had_first": "主胜", "had_hit": true,
+      "hhad_first": "让平", "hhad_second": "让胜", "hhad_hit": false, "hhad_second_hit": true,
+      "ttg_rec": ["3球", "4球"], "ttg_hit": false,
+      "hafu_first": "胜胜", "hafu_second": "平胜", "actual_hafu": "胜胜", "hafu_hit": true, "hafu_second_hit": false,
+      "k_dist": 1, "k_rec": 1, "inner_band": ["2-1", "1-0", "3-2"], "score_top5": ["2-0", "1-1", "2-1", "1-0"],
+      "score_hit_top5": false, "score_hit_inner_band": false,
+      "verdict": "半命中（方向中/比分未中，净胜多2球）",
+      "rule65": {"triggered": true, "tier": "Tier3"}
+    },
+    {
+      "no": "003",
+      "league": "英锦赛 北部赛区F组",
+      "home": "诺茨郡",
+      "away": "格里姆斯比",
+      "ht": "1-0",
+      "ft": "2-1",
+      "actual_result": "H",
+      "actual_handicap_result": "让平",
+      "actual_total_goals": 3,
+      "actual_goal_diff": 1,
+      "had_first": "主胜", "had_hit": true,
+      "hhad_first": "让负", "hhad_second": "让平", "hhad_hit": false, "hhad_second_hit": true,
+      "ttg_rec": ["2球", "3球"], "ttg_hit": true,
+      "hafu_first": "平胜", "hafu_second": "胜胜", "actual_hafu": "胜胜", "hafu_hit": false, "hafu_second_hit": true,
+      "k_dist": 0, "k_rec": 1, "inner_band": ["1-0", "2-1", "3-2"], "score_top5": ["1-1", "1-0", "2-1", "2-0"],
+      "score_hit_top5": true, "score_hit_inner_band": true,
+      "verdict": "精确命中（分歧场，带内TOP2命中）",
+      "rule65": {"triggered": true, "tier": "Tier3"}
+    },
+    {
+      "no": "004",
+      "league": "英锦赛 北部赛区B组",
+      "home": "维冈竞技",
+      "away": "布莱克浦",
+      "ht": "1-0",
+      "ft": "3-2",
+      "actual_result": "H",
+      "actual_handicap_result": "让平",
+      "actual_total_goals": 5,
+      "actual_goal_diff": 1,
+      "had_first": "主胜", "had_hit": true,
+      "hhad_first": "让负", "hhad_second": "让平", "hhad_hit": false, "hhad_second_hit": true,
+      "ttg_rec": ["2球", "3球"], "ttg_hit": false,
+      "hafu_first": "平胜", "hafu_second": "胜胜", "actual_hafu": "胜胜", "hafu_hit": false, "hafu_second_hit": true,
+      "k_dist": 0, "k_rec": 1, "inner_band": ["1-0", "2-1", "3-2"], "score_top5": ["1-1", "1-0", "2-1", "0-0"],
+      "score_hit_top5": false, "score_hit_inner_band": true,
+      "verdict": "精确命中（分歧场，带内TOP3命中）",
+      "rule65": {"triggered": true, "tier": "Tier3"}
+    }
+  ],
+  "parlay_results": {
+    "稳健比分串": {"legs": ["001", "002"], "scores": ["2-1", "2-1"], "odds": 52.5, "hit": false},
+    "连续编号比分串①": {"legs": ["001", "002"], "scores": ["1-0", "1-0"], "odds": 87.0, "hit": false},
+    "单挑比分①": {"legs": ["002"], "scores": ["1-0"], "odds": 12.0, "hit": false},
+    "单挑比分②": {"legs": ["001"], "scores": ["2-1"], "odds": 7.25, "hit": false},
+    "搏冷比分串": {"legs": ["001", "003"], "note": "反向推理，不计入台账"}
+  },
+  "deviation_analysis": {
+    "k_dist_mean_abs_deviation": 1.25,
+    "k_rec_mean_abs_deviation": 0.75,
+    "ttg_mean_abs_deviation": 1.59,
+    "note": "k_rec（方向内众数）平均绝对偏差优于 k_dist（全局众数）；TTG 系统性偏低（3场低估、1场高估）"
+  },
+  "conclusion": {
+    "direction_rate": "4/4 = 100%",
+    "score_inner_band_rate": "2/4 = 50%",
+    "key_findings": [
+      "分歧场2/2全中 vs 一致场0/2全失——第二次证伪『一致场次更可靠』（L154）",
+      "让球首选0/4全错、次选4/4全中——支持让球端双层修正（L155）",
+      "英锦赛进球环境系统性低估：3场场均4.33球 vs 模型λ场均2.79（L156）",
+      "碾压场净胜球锚点+1持续偏低（001实际+2、002实际+3）"
+    ],
+    "new_lessons": ["L154", "L155", "L156"],
+    "trial_ledger_update": "memory/trials/score_parlay_trial.md（双轨制累计 28场可判定 / 精确3 / 半命中14 / 未命中11 / 精确率10.7%）"
+  }
+}

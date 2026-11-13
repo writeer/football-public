@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "step": "第2步信息审核核查",
+    "business_date": "261014",
+    "match_date": "2026-10-14",
+    "produced_at": "2026-10-14 11:35 Asia/Shanghai",
+    "nature": "结构化输出，最终采纳由总控裁决",
+    "rules_applied": ["0-Step4-8", "10", "25", "26-audit", "32", "37", "72-audit", "15-odds"],
+    "sources_verified": [
+      "asroma.com/en/news/76061 (Gasperini赛前发布会 2026-10-13)",
+      "transfermarkt.com Raiffeisen Arena = Hybrid grass",
+      "besoccer.com Mendy&Militao rejoin group training 2026-10-12",
+      "quadratin.com.mx Mendy未报名欧冠名单",
+      "juanmata8.com 4-27 Mata已复出 / aleagues.com.au 4-07肘部骨折手术（旧闻）",
+      "gazetaesportiva.com + band.com.br 弗鲁米嫩塞5人缺阵名单",
+      "bvb.de 施洛特贝克负荷管理未随队",
+      "disciplinary.uefa.com 费耶诺德客队球迷禁入缓刑至2028-09-23"
+    ]
+  },
+  "stadium_status": {
+    "001": {"status": "正常", "home_advantage_override": 1.0, "note": "AAMI Park可开合顶棚"},
+    "002": {"status": "正常", "home_advantage_override": 1.0},
+    "003": {"status": "正常", "home_advantage_override": 1.0},
+    "004": {"status": "正常", "home_advantage_override": 1.0},
+    "005": {"status": "正常开放（仅客队球迷禁入）", "home_advantage_override": 1.0, "closure_ratio": "不适用（主场0%关闭）", "sanction": "UEFA客队球迷禁入，缓刑至2028-09-23", "crush_match_allowed": true, "confidence_downgrade": false, "away_lambda_note": "无客队球迷，客λ不修正不加分", "verdict": "不属于部分关闭；主场加成不折半"},
+    "006": {"status": "正常", "home_advantage_override": 1.0, "note": "英国籍购票限制为俱乐部销售政策，非UEFA处罚；利物浦官方已售客票"},
+    "007": {"status": "正常", "home_advantage_override": 1.0},
+    "008": {"status": "正常", "home_advantage_override": 1.0},
+    "009": {"status": "正常", "home_advantage_override": 1.0},
+    "010": {"status": "正常", "home_advantage_override": 1.0},
+    "011": {"status": "正常", "home_advantage_override": 1.0},
+    "012": {"status": "正常", "home_advantage_override": 1.0},
+    "013": {"status": "正常", "home_advantage_override": 1.0},
+    "014": {"status": "正常", "home_advantage_override": 1.0}
+  },
+  "injuries_verdict": {
+    "001": {
+      "home": [{"name": "D'Arrigo", "status": "确认缺阵", "source": "melbournevictory.com.au [A]"}],
+      "away": [],
+      "conflicts": [
+        {"item": "Juan Mata肘部骨折", "verdict": "4-06旧伤已4月底复出，搜狐recycle旧闻，不予采信", "adopted": "俱乐部官方：仅D'Arrigo缺阵"},
+        {"item": "Lockyer", "verdict": "仅搜狐L5单源，存疑不用于λ"}
+      ]
+    },
+    "002": {"home": [], "away": [], "note": "双方伤停待补充，暂按无伤停基准"},
+    "003": {
+      "home": [{"name": "手塚康平", "status": "长期伤（未验证）", "lambda_effect": "-5%已内化"}],
+      "away": []
+    },
+    "004": {
+      "verdict": "Sportradar(B)优先：双方No missing players；搜狐名单(远野/白兰高/三井寺)未验证不用于λ",
+      "away_confirmed_longterm": [{"name": "石川慧", "note": "主力门将膝伤自2025-11，已内化于赛季基准"}]
+    },
+    "005": {
+      "home": [
+        {"name": "Beelen", "position": "中场", "status": "确认缺阵", "source": "Sportradar [B]"},
+        {"name": "Bos", "position": "后卫", "status": "确认缺阵", "source": "Sportradar [B]"},
+        {"name": "Nieuwkoop", "position": "后卫", "status": "确认缺阵", "source": "Sportradar [B]"},
+        {"name": "Smal", "position": "后卫", "status": "确认缺阵", "source": "Sportradar [B]"}
+      ],
+      "home_unverified": ["St. Juste", "渡边刚", "Borges", "van Persie (球迷屋E级，不用于λ)"],
+      "red_flag": "后防线≥3人缺阵 → 后防危机",
+      "away": "待补具体名单"
+    },
+    "006": {
+      "pitch_verified": "Raiffeisen Arena = Hybrid/天然草（非人工草），三源交叉验证",
+      "home": ["Usor", "Bello", "Harakaté"],
+      "away": [
+        {"name": "Gakpo", "status": "确认缺阵", "source": "liverpoolfc.com [A]"},
+        {"name": "Isak", "status": "确认缺阵", "source": "liverpoolfc.com [A]"},
+        {"name": "Szoboszlai", "status": "确认缺阵", "source": "liverpoolfc.com [A]"},
+        {"name": "Bradley", "status": "伤缺"},
+        {"name": "Leoni", "status": "伤缺（十字韧带）"},
+        {"name": "Ekitiké", "status": "伤缺"}
+      ]
+    },
+    "007": {
+      "verdict": "Sportradar vs 懂球帝冲突取保守口径",
+      "home_confirmed": [{"name": "Mohamed Touré", "note": "肩部手术至2027-01，长期伤号"}],
+      "home_unverified": ["Mahovo", "McLean", "Topić", "Ali Ahmed", "Forsyth（懂球帝单源，不按≥5人残阵重罚）"],
+      "away_confirmed": [
+        {"name": "Roerslev", "source": "southamptonfc.com [A]"},
+        {"name": "Bragg", "note": "红牌停赛"}
+      ],
+      "away_boost": ["Scienza", "Ross Stewart 已恢复合练"]
+    },
+    "008": {
+      "manager_verdict": "罗马主帅=Gasperini（asroma.com官网确认）；穆里尼奥=皇马主帅反戈旧主，两者不矛盾",
+      "home": [
+        {"name": "Svilar", "position": "主力门将", "status": "确认缺阵", "note": "手指骨折"},
+        {"name": "Cristante", "status": "确认缺阵"}
+      ],
+      "away": [
+        {"name": "Militão", "status": "确认缺阵"},
+        {"name": "Raúl Asencio", "note": "胫骨应力骨折"},
+        {"name": "Rodrygo", "status": "确认缺阵"},
+        {"name": "Mendy", "verdict": "韧带伤已10-12恢复合练，但未报名本场欧冠名单→缺阵（非新伤，λ不下修）"}
+      ]
+    },
+    "009": {
+      "home": ["Riisnæs", "Evjen", "Mikkelsen"],
+      "away": [
+        {"name": "Schlotterbeck", "verdict": "BVB官网确认负荷管理未随队（脚踝+人工草不适合恢复）"},
+        "Emre Can", "Lerma", "Konstantelias"
+      ],
+      "away_returning": ["Ryerson", "Chukwuemeka"],
+      "pitch": "Aspmyra人工草成立"
+    },
+    "010": {
+      "home": ["Guerrero", "伊涅", "W. Gomes", {"name": "Antony", "status": "出战成疑（λ减半）"}],
+      "home_returning": ["Pérez", "Sanusi", "João Costa"],
+      "away": ["Diogo Leite", "Mouandilmadji", "Pepe", "Saravia", "Fabiano", "Aboubakar"],
+      "red_flag": "波尔图6人缺阵（后防Pepe+Leite，锋线Aboubakar）"
+    },
+    "011": {
+      "home": [],
+      "away": [{"name": "Mayulu", "note": "青年队"}]
+    },
+    "012": {
+      "home": ["Ruggeri", "Maatsen（左后卫双人缺阵）", "Hemmings", "Cissé", "Onana", {"name": "Goretzka", "status": "存疑（λ减半）"}],
+      "away": ["Müldür", "Diouf", "Oosterwolde"]
+    },
+    "013": {
+      "home": [
+        {"name": "Germán Cano", "note": "主力前锋，身体过渡"},
+        {"name": "John Kennedy", "note": "本季最佳射手，十字韧带赛季报销"},
+        {"name": "Alisson"},
+        {"name": "Matheus Reis"},
+        {"name": "Riquelme", "note": "左大腿二级挫伤"}
+      ],
+      "home_red_flag": "前锋双核缺阵+单队5人 → 规则32强制低★",
+      "away": [
+        {"name": "Abel Ferreira", "note": "主帅执教席停赛"},
+        {"name": "Vitor Roque", "note": "脚踝未随队"},
+        {"name": "Jefté", "note": "膝手术+兴奋剂预防性停赛"},
+        {"name": "Ramón Sosa", "note": "10-13已合练，由存疑上调为可出战"},
+        {"name": "Gustavo Gómez", "note": "停赛期满复出"}
+      ],
+      "palmeiras_value": "待补充，标注身价未验证"
+    },
+    "014": {
+      "home": ["Pompeu", "Hiebert"],
+      "away": ["Adekugbe", "Badwal", "Cabrera", "Halbouni"],
+      "away_red_flag": "温哥华4人缺阵阵容不整"
+    }
+  },
+  "lambda_suggestions": {
+    "001": {"lambda_home": [1.15, 1.25], "lambda_away": [0.90, 0.95], "lambda_total": [2.1, 2.2], "reason": "D'Arrigo-5%；足总杯决赛4天恢复-5%"},
+    "002": {"lambda_home": [1.30, 1.40], "lambda_away": [0.90, 0.95], "lambda_total": [2.25, 2.35], "reason": "伤停待补暂不修正"},
+    "003": {"lambda_home": [2.00, 2.20], "lambda_away": [0.60, 0.70], "lambda_total": [2.7, 2.9], "reason": "规则65触发（让-2深盘）+0.3~0.4"},
+    "004": {"lambda_home": [1.15, 1.25], "lambda_away": [1.05, 1.15], "lambda_total": [2.2, 2.4], "reason": "横滨垫底+杯赛轮换-5~10%"},
+    "005": {"lambda_home": [1.00, 1.15], "lambda_away": [1.45, 1.60], "lambda_total": [2.5, 2.75], "reason": "费耶诺德后防危机→客λ+15%"},
+    "006": {"lambda_home": [0.75, 0.90], "lambda_away": [2.60, 3.00], "lambda_total": [3.4, 3.9], "reason": "利物浦锋线-10%；若λ_away≥3.5仅×0.90（人工草项不成立）"},
+    "007": {"lambda_home": [1.20, 1.30], "lambda_away": [1.05, 1.15], "lambda_total": [2.3, 2.45], "reason": "Touré-10%；Bragg停赛+Roerslev-5%"},
+    "008": {"lambda_home": [1.05, 1.15], "lambda_away": [1.55, 1.70], "lambda_total": [2.6, 2.85], "reason": "Svilar缺阵→客λ+5%；历史零封→主λ-10%"},
+    "009": {"lambda_home": [1.35, 1.50], "lambda_away": [1.30, 1.45], "lambda_total": [2.7, 2.95], "reason": "人工草+风雨主场加成上修；多特远征-10%"},
+    "010": {"lambda_home": [1.55, 1.65], "lambda_away": [1.10, 1.20], "lambda_total": [2.7, 2.85], "reason": "波尔图后防双缺→主λ+5%；Aboubakar→客λ-10%"},
+    "011": {"lambda_home": [1.70, 1.85], "lambda_away": [1.25, 1.40], "lambda_total": [3.0, 3.2], "reason": "曼城全主力"},
+    "012": {"lambda_home": [1.55, 1.70], "lambda_away": [1.05, 1.20], "lambda_total": [2.7, 2.9], "reason": "维拉左后卫危机→客λ+5%；费内磨合-5~10%"},
+    "013": {"lambda_home": [0.75, 0.85], "lambda_away": [0.75, 0.85], "lambda_total": [1.5, 1.7], "reason": "弗鲁前锋双核-15~20%；Vitor Roque→客λ-10%"},
+    "014": {"lambda_home": [1.50, 1.60], "lambda_away": [0.95, 1.10], "lambda_total": [2.5, 2.7], "reason": "温哥华4人缺阵→客λ-15%"}
+  },
+  "rule65_triggers": {
+    "003": "让-2深盘+市场主胜78.4% → 触发",
+    "005": "身价差2.3倍 → 触发（轻度）",
+    "006": "身价差17.5倍 → 触发（碾压）",
+    "008": "身价差3.0倍 → 触发（轻度）",
+    "009": "身价差7.4倍 → 触发但人工草主场对冲",
+    "012": "身价差2.4倍 → 触发（轻度）",
+    "others": "未达触发条件"
+  },
+  "rule63_single_draw_hint": {
+    "008": {"draw_noVig": 0.224, "top_dir": "客胜0.521", "gap_pp": 29.7, "level": "≥20pp", "hint": "平局上修+8%（仅提示不执行）"},
+    "011": {"draw_noVig": 0.243, "top_dir": "主胜0.439", "gap_pp": 19.6, "level": "10-20pp", "hint": "平局上修+10~12%（仅提示不执行）"}
+  },
+  "lesson_triggers": {
+    "L194": {"003": "主胜78.4%>75% → 强制★★上限，禁入方向串锚腿", "006": "客胜74.4%边界观察，非强制"},
+    "L195": {"note": "006人工草项不成立（天然混合草），λ_away≥3.5仅×0.90；009数值上不触发≥3.5"},
+    "L198": {"note": "本日无场次λ_total≥4.5（最高006约3.9），4/5球档不强制预留；003/006/011上探3-4球"}
+  },
+  "confidence_signals": {
+    "001": "无强制降级",
+    "002": "无强制降级（伤停/交锋缺失软提示）",
+    "003": "★★上限（L194）",
+    "004": "保守口径无强制降级",
+    "005": "主方向降级（后防危机）",
+    "006": "降星提示（边界+锋线伤停）",
+    "007": "中等（英冠冷门+伤停冲突）",
+    "008": "客方向中高，平局必修",
+    "009": "爆冷预警，次选必含主胜/平",
+    "010": "客方向降级（波尔图6人缺阵）",
+    "011": "无降星",
+    "012": "小降级（左后卫危机）",
+    "013": "强制低★（单队5人，规则32）",
+    "014": "客方向降级（温哥华4人缺阵）"
+  },
+  "pending_items": [
+    {"item": "亚洲球队身价（001/002/003）", "impact": "中", "mitigation": "以goalLine+市场去水概率替代判据"},
+    {"item": "部分交锋序列（002/004/007/014）", "impact": "低-中", "mitigation": "联赛JSON先验兜底"},
+    {"item": "帕尔梅拉斯身价（013）", "impact": "低"},
+    {"item": "部分近5轮逐场比分（008/009/010/011/012/014）", "impact": "低", "mitigation": "移交第4步基本面分析"},
+    {"item": "首尔FC伤停（001）", "impact": "低-中"},
+    {"item": "神户/全北伤停官宣（002）", "impact": "中", "mitigation": "赛前1小时首发复核"}
+  ],
+  "self_check": {
+    "stadium_all_14_verified": true,
+    "lambda_all_14_suggested": true,
+    "conflicts_all_adjudicated": true
+  }
+}

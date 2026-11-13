@@ -1,0 +1,1872 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>周四体彩5场比赛分析报告 v2 (2026-08-06)</title>
+    <style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0d1117;color:#c9d1d9;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei',sans-serif;line-height:1.6;padding:20px}
+.container{max-width:1400px;margin:0 auto}
+
+.page-header{text-align:center;padding:40px 20px;background:linear-gradient(135deg,#161b22,#0d1117);border:1px solid #30363d;border-radius:16px;margin-bottom:30px}
+.page-header h1{font-size:2.2em;color:#f0f6fc;margin-bottom:8px;letter-spacing:1px}
+.page-header .subtitle{color:#8b949e;font-size:1.1em}
+.page-header .date-badge{display:inline-block;background:#1f6feb;color:#fff;padding:4px 16px;border-radius:20px;font-size:0.85em;margin-top:10px}
+.page-header .update-badge{display:inline-block;background:#8957e5;color:#fff;padding:4px 16px;border-radius:20px;font-size:0.85em;margin-top:10px;margin-left:8px}
+
+.summary-section{margin-bottom:40px}
+.summary-section h2{color:#58a6ff;margin-bottom:15px;font-size:1.4em;border-bottom:2px solid #30363d;padding-bottom:10px}
+.table-wrap{overflow-x:auto;border-radius:12px;border:1px solid #30363d}
+.summary-table{width:100%;border-collapse:collapse;background:#161b22;min-width:800px}
+.summary-table th{background:#21262d;color:#f0f6fc;padding:12px 10px;text-align:center;font-size:0.85em;font-weight:600;white-space:nowrap}
+.summary-table td{padding:10px;text-align:center;border-bottom:1px solid #21262d;font-size:0.88em;white-space:nowrap}
+.summary-table tr:hover td{background:#1c2128}
+.summary-table .id-cell{color:#58a6ff;font-weight:bold;font-size:1em}
+.summary-table .team-cell{color:#f0f6fc;font-weight:500}
+
+.match-card{background:#161b22;border:1px solid #30363d;border-radius:16px;margin-bottom:30px;overflow:hidden}
+
+.match-header{background:linear-gradient(135deg,#1a1f2e 0%,#0d1117 100%);padding:25px;display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start;border-bottom:2px solid #58a6ff}
+.match-id{background:linear-gradient(135deg,#1f6feb,#58a6ff);color:#0d1117;font-size:1.8em;font-weight:800;width:65px;height:65px;display:flex;align-items:center;justify-content:center;border-radius:14px;flex-shrink:0}
+.match-info-block{flex:1;min-width:250px}
+.league-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px;align-items:center}
+.league-tag{display:inline-block;background:#1f6feb;color:#fff;padding:3px 12px;border-radius:6px;font-size:0.75em;font-weight:600}
+.league-tag.europa{background:#8957e5}
+.round-text{color:#8b949e;font-size:0.85em;margin-bottom:4px}
+.teams-line{font-size:1.5em;color:#f0f6fc;font-weight:700;margin-bottom:8px}
+.teams-line .vs{color:#58a6ff;margin:0 8px;font-size:0.8em}
+.match-meta{display:flex;flex-wrap:wrap;gap:12px;font-size:0.85em;color:#8b949e}
+.match-meta span{display:inline-flex;align-items:center;gap:4px}
+.first-leg-badge{display:inline-block;background:#238636;color:#fff;padding:3px 10px;border-radius:6px;font-size:0.8em;margin-top:6px}
+
+.confidence-bar{display:flex;align-items:center;gap:15px;padding:12px 25px;background:#0d1117;border-bottom:1px solid #21262d}
+.confidence-bar .stars{font-size:1.4em;letter-spacing:2px}
+.confidence-bar .conf-label{font-size:1em;font-weight:700}
+.confidence-bar .std-text{color:#8b949e;font-size:0.85em;margin-left:auto}
+
+.sec-title{color:#58a6ff;font-size:1.05em;margin:20px 25px 10px;padding-bottom:8px;border-bottom:1px solid #30363d;font-weight:600}
+
+.injury-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;padding:0 25px 15px}
+.injury-col{background:#0d1117;border-radius:10px;padding:15px;border:1px solid #21262d}
+.injury-col h4{margin-bottom:10px;font-size:0.9em;display:flex;align-items:center;gap:6px}
+.injury-col.home h4{color:#f85149}
+.injury-col.away h4{color:#58a6ff}
+.injury-col h4 .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.injury-col.home h4 .dot{background:#f85149}
+.injury-col.away h4 .dot{background:#58a6ff}
+.injury-item{padding:8px 0;border-bottom:1px solid #21262d;font-size:0.85em;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.injury-item:last-child{border-bottom:none}
+.injury-item .pname{color:#f0f6fc;font-weight:600}
+.injury-item .ppos{color:#d29922;font-size:0.9em}
+.injury-item .ptype{color:#f85149;font-size:0.9em}
+.injury-item .psrc{color:#8b949e;font-size:0.85em;margin-left:auto}
+.no-injury{color:#3fb950;font-size:0.85em;padding:5px 0}
+
+.model-wrap{padding:0 25px 15px;overflow-x:auto}
+.model-table{width:100%;border-collapse:collapse;min-width:500px}
+.model-table th{background:#21262d;color:#f0f6fc;padding:8px;text-align:center;font-size:0.82em;font-weight:600}
+.model-table td{padding:8px;text-align:center;border-bottom:1px solid #21262d;font-size:0.85em}
+.model-table .row-label{text-align:left;color:#8b949e;font-weight:600;padding-left:12px}
+.model-table .fused-row td{background:#1a1f2e}
+
+.data-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;padding:0 25px 15px}
+.data-card{background:#0d1117;border-radius:10px;padding:15px;border:1px solid #21262d}
+.data-card h4{color:#58a6ff;margin-bottom:10px;font-size:0.9em;font-weight:600}
+.data-card .table-scroll{overflow-x:auto}
+.data-table{width:100%;border-collapse:collapse}
+.data-table th{color:#8b949e;font-weight:normal;padding:6px 8px;text-align:center;border-bottom:1px solid #30363d;font-size:0.8em}
+.data-table td{padding:6px 8px;text-align:center;border-bottom:1px solid #161b22;font-size:0.82em}
+.data-table .rank{color:#8b949e;width:30px}
+.data-table .score-val{color:#f0f6fc;font-weight:600}
+.data-table .odds-val{font-weight:700}
+
+.rec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;padding:0 25px 15px}
+.rec-card{background:#0d1117;border:1px solid #21262d;border-radius:10px;padding:15px;text-align:center;position:relative;overflow:hidden}
+.rec-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%}
+.rec-card.had::before{background:#3fb950}
+.rec-card.hafu::before{background:#d29922}
+.rec-card.crs::before{background:#58a6ff}
+.rec-card.ttg::before{background:#bc8cff}
+.rec-card.htft::before{background:#f85149}
+.rec-card.ht::before{background:#39c5cf}
+.rec-card .rec-title{color:#8b949e;font-size:0.75em;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.rec-card .rec-badge{display:inline-block;padding:4px 14px;border-radius:8px;font-size:1em;font-weight:700;margin-bottom:6px}
+.rec-card .rec-prob{font-size:0.95em;font-weight:600;margin-bottom:4px}
+.rec-card .rec-odds{font-size:0.82em;color:#d29922}
+.rec-card .rec-ext{font-size:0.78em;color:#8b949e;margin-top:2px}
+.rec-card .rec-top-list{text-align:left;font-size:0.82em;padding:0 5px}
+.rec-card .rec-top-list .top-item{display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid #21262d}
+.rec-card .rec-top-list .top-item:last-child{border-bottom:none}
+.rec-card .rec-top-list .top-score{color:#f0f6fc;font-weight:600}
+.rec-card .rec-top-list .top-odds{color:#d29922;font-weight:600}
+.rec-card .not-sold{color:#f85149;font-size:1.1em;font-weight:700;padding:10px 0}
+
+.notes-section{padding:15px 25px 20px;margin:0 25px 20px;background:#0d1117;border-radius:10px;border:1px solid #21262d;border-left:3px solid #58a6ff}
+.notes-section .notes-label{color:#58a6ff;font-size:0.85em;font-weight:600;margin-bottom:6px}
+.notes-section .notes-text{color:#c9d1d9;font-size:0.88em;line-height:1.8}
+
+.page-footer{text-align:center;padding:20px;color:#8b949e;font-size:0.8em;border-top:1px solid #30363d;margin-top:30px}
+.page-footer .disclaimer{color:#f85149;margin-top:5px}
+
+@media(max-width:900px){
+    .data-grid{grid-template-columns:1fr}
+    .rec-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+    .injury-grid{grid-template-columns:1fr}
+    .rec-grid{grid-template-columns:1fr}
+    .match-header{flex-direction:column}
+    .teams-line{font-size:1.2em}
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        
+    <div class="page-header">
+        <h1>周四体彩5场比赛分析报告</h1>
+        <div class="subtitle">Dixon-Coles / Monte Carlo / Shin / 规则34v2 多模型预测</div>
+        <div class="date-badge">2026-08-06</div>
+        <div class="update-badge">v2 已更新TTG TOP2 / HTFT TOP3 / 欧联特点分析</div>
+    </div>
+    
+    <div class="summary-section">
+        <h2>比赛总览</h2>
+        <div class="table-wrap">
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>联赛</th>
+                        <th>主队</th>
+                        <th>客队</th>
+                        <th>开赛时间</th>
+                        <th>置信度</th>
+                        <th>胜平负推荐</th>
+                        <th>让球推荐</th>
+                        <th>标准差</th>
+                    </tr>
+                </thead>
+                <tbody>
+        <tr>
+            <td class="id-cell">001</td>
+            <td>巴西杯</td>
+            <td class="team-cell">维多利亚</td>
+            <td class="team-cell">巴拉纳竞技</td>
+            <td>2026-08-07 07:00</td>
+            <td><span style="color:#f85149">★</span></td>
+            <td><span style="color:#58a6ff">客胜 39.4%</span></td>
+            <td style="font-size:0.85em">让球客胜<br><span style="color:#8b949e;font-size:0.85em">(-1)</span></td>
+            <td>0.0794</td>
+        </tr>
+        <tr>
+            <td class="id-cell">002</td>
+            <td>欧罗巴</td>
+            <td class="team-cell">库奥皮奥</td>
+            <td class="team-cell">克拉约瓦大学</td>
+            <td>2026-08-06 23:00</td>
+            <td><span style="color:#f85149">★</span></td>
+            <td><span style="color:#58a6ff">客胜 39.1%</span></td>
+            <td style="font-size:0.85em">让球主胜<br><span style="color:#8b949e;font-size:0.85em">(1)</span></td>
+            <td>0.0502</td>
+        </tr>
+        <tr>
+            <td class="id-cell">003</td>
+            <td>欧罗巴</td>
+            <td class="team-cell">比亚韦斯托克</td>
+            <td class="team-cell">格拉斯哥流浪者</td>
+            <td>2026-08-07 00:00</td>
+            <td><span style="color:#f85149">★</span></td>
+            <td><span style="color:#3fb950">主胜 37.4%</span></td>
+            <td style="font-size:0.85em">让球主胜<br><span style="color:#8b949e;font-size:0.85em">(1)</span></td>
+            <td>0.0396</td>
+        </tr>
+        <tr>
+            <td class="id-cell">004</td>
+            <td>欧罗巴</td>
+            <td class="team-cell">塞萨洛尼基</td>
+            <td class="team-cell">安德莱赫特</td>
+            <td>2026-08-07 01:45</td>
+            <td><span style="color:#d29922">★★</span></td>
+            <td><span style="color:#3fb950">主胜 55.7%</span></td>
+            <td style="font-size:0.85em">让球客胜<br><span style="color:#8b949e;font-size:0.85em">(-1)</span></td>
+            <td>0.0247</td>
+        </tr>
+        <tr>
+            <td class="id-cell">005</td>
+            <td>欧罗巴</td>
+            <td class="team-cell">本菲卡</td>
+            <td class="team-cell">哈茨</td>
+            <td>2026-08-07 03:00</td>
+            <td><span style="color:#3fb950">★★★</span></td>
+            <td><span style="color:#3fb950">主胜 74.9%</span></td>
+            <td style="font-size:0.85em">让球主胜<br><span style="color:#8b949e;font-size:0.85em">(-2)</span></td>
+            <td>0.0353</td>
+        </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="summary-section">
+        <h2>综合推荐汇总</h2>
+        <div class="table-wrap">
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>对阵</th>
+                        <th>方向推荐</th>
+                        <th>让球推荐</th>
+                        <th>比分首选</th>
+                        <th>TTG首选</th>
+                        <th>TTG次选</th>
+                        <th>HTFT首选</th>
+                        <th>置信度</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="id-cell">001</td>
+                    <td class="team-cell">维多利亚 vs 巴拉纳竞技</td>
+                    <td>客胜 39.4%</td>
+                    <td style="font-size:0.85em">让球客胜 ((-1))</td>
+                    <td style="color:#58a6ff">0:1 (21.7%)</td>
+                    <td style="color:#bc8cff;font-weight:700">1球 (34.2%)</td>
+                    <td style="color:#8b949e">2球 (24.8%)</td>
+                    <td style="color:#f85149">负负 (26.0%)</td>
+                    <td><span style="color:#f85149">★</span></td>
+                </tr>
+                <tr>
+                    <td class="id-cell">002</td>
+                    <td class="team-cell">库奥皮奥 vs 克拉约瓦大学</td>
+                    <td>客胜 39.1%</td>
+                    <td style="font-size:0.85em">让球主胜 ((1))</td>
+                    <td style="color:#58a6ff">2:1 (17.3%)</td>
+                    <td style="color:#bc8cff;font-weight:700">3球 (30.0%)</td>
+                    <td style="color:#8b949e">4球 (18.1%)</td>
+                    <td style="color:#f85149">胜胜 (23.5%)</td>
+                    <td><span style="color:#f85149">★</span></td>
+                </tr>
+                <tr>
+                    <td class="id-cell">003</td>
+                    <td class="team-cell">比亚韦斯托克 vs 格拉斯哥流浪者</td>
+                    <td>主胜 37.4%</td>
+                    <td style="font-size:0.85em">让球主胜 ((1))</td>
+                    <td style="color:#58a6ff">2:1 (17.9%)</td>
+                    <td style="color:#bc8cff;font-weight:700">3球 (29.9%)</td>
+                    <td style="color:#8b949e">4球 (19.0%)</td>
+                    <td style="color:#f85149">胜胜 (24.0%)</td>
+                    <td><span style="color:#f85149">★</span></td>
+                </tr>
+                <tr>
+                    <td class="id-cell">004</td>
+                    <td class="team-cell">塞萨洛尼基 vs 安德莱赫特</td>
+                    <td>主胜 55.7%</td>
+                    <td style="font-size:0.85em">让球客胜 ((-1))</td>
+                    <td style="color:#58a6ff">2:1 (18.8%)</td>
+                    <td style="color:#bc8cff;font-weight:700">3球 (29.4%)</td>
+                    <td style="color:#8b949e">4球 (19.9%)</td>
+                    <td style="color:#f85149">胜胜 (34.0%)</td>
+                    <td><span style="color:#d29922">★★</span></td>
+                </tr>
+                <tr>
+                    <td class="id-cell">005</td>
+                    <td class="team-cell">本菲卡 vs 哈茨</td>
+                    <td>主胜 74.9%</td>
+                    <td style="font-size:0.85em">让球主胜 ((-2))</td>
+                    <td style="color:#58a6ff">2:1 (18.5%)</td>
+                    <td style="color:#bc8cff;font-weight:700">3球 (27.3%)</td>
+                    <td style="color:#8b949e">4球 (21.1%)</td>
+                    <td style="color:#f85149">胜胜 (44.2%)</td>
+                    <td><span style="color:#3fb950">★★★</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    
+<div class="match-card" id="europa-analysis" style="border-color:#8957e5">
+    <div class="match-header" style="border-bottom-color:#8957e5;background:linear-gradient(135deg,#1a1528 0%,#0d1117 100%)">
+        <div class="match-id" style="background:linear-gradient(135deg,#8957e5,#bc8cff)">EL</div>
+        <div class="match-info-block">
+            <div class="league-tags"><span class="league-tag europa">欧罗巴联赛特点分析</span><span style="color:#8b949e;font-size:0.85em">规则34v2 · 大开大合理论</span></div>
+            <div class="teams-line" style="font-size:1.3em">欧联资格赛 vs 五大联赛：为什么不是小球天堂？</div>
+            <div class="match-meta">
+                <span>📊 数据来源: FootyStats / BeSoccer / UEFA官方</span>
+                <span>🔄 规则34v2修正系数已应用</span>
+            </div>
+        </div>
+    </div>
+    
+    <div style="padding:20px 25px">
+        <div class="sec-title" style="color:#8957e5">📊 核心数据对比</div>
+        <div class="table-wrap" style="margin-bottom:20px">
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>特点维度</th>
+                        <th>欧联资格赛</th>
+                        <th>意甲</th>
+                        <th>西甲</th>
+                        <th>差异解读</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="team-cell">场均进球</td>
+                        <td style="color:#3fb950;font-weight:700">2.5-2.7</td>
+                        <td>2.45</td>
+                        <td>2.49</td>
+                        <td style="font-size:0.85em;color:#8b949e">高于大部分五大联赛</td>
+                    </tr>
+                    <tr>
+                        <td class="team-cell">3球占比</td>
+                        <td style="color:#3fb950;font-weight:700">~35-40%（众数）</td>
+                        <td>~20%</td>
+                        <td>~22%</td>
+                        <td style="font-size:0.85em;color:#8b949e">2:1是标准进程</td>
+                    </tr>
+                    <tr>
+                        <td class="team-cell">1球占比</td>
+                        <td style="color:#f85149;font-weight:700">~15-20%</td>
+                        <td>~25%</td>
+                        <td>~20%</td>
+                        <td style="font-size:0.85em;color:#8b949e">1球路径极窄</td>
+                    </tr>
+                    <tr>
+                        <td class="team-cell">0:1出现率</td>
+                        <td style="color:#f85149;font-weight:700">极低</td>
+                        <td>正常</td>
+                        <td>正常</td>
+                        <td style="font-size:0.85em;color:#8b949e">主队主场落后必反击</td>
+                    </tr>
+                    <tr>
+                        <td class="team-cell">BTTS率</td>
+                        <td style="color:#3fb950;font-weight:700">~55-60%</td>
+                        <td>~45%</td>
+                        <td>~48%</td>
+                        <td style="font-size:0.85em;color:#8b949e">双方都有进攻实力</td>
+                    </tr>
+                    <tr>
+                        <td class="team-cell">主场优势</td>
+                        <td style="color:#d29922;font-weight:700">显著</td>
+                        <td>中等</td>
+                        <td>中等</td>
+                        <td style="font-size:0.85em;color:#8b949e">小国球队主场加成更大</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="sec-title" style="color:#8957e5">🧠 "大开大合"理论五要点</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-bottom:20px">
+            <div style="background:#0d1117;border-radius:10px;padding:15px;border:1px solid #21262d;border-left:3px solid #8957e5">
+                <h4 style="color:#bc8cff;margin-bottom:8px">1. 防守不严密</h4>
+                <p style="font-size:0.88em;color:#c9d1d9;line-height:1.7">小联赛球队防守体系不如五大联赛紧凑，一旦落后就压上，后防留出空间。资格赛晋级球队本身就有进攻实力，不会保守死守。</p>
+            </div>
+            <div style="background:#0d1117;border-radius:10px;padding:15px;border:1px solid #21262d;border-left:3px solid #8957e5">
+                <h4 style="color:#bc8cff;margin-bottom:8px">2. 1球路径极窄</h4>
+                <p style="font-size:0.88em;color:#c9d1d9;line-height:1.7">上半场1:0后，落后方必然压上对攻 -> 要么2:0要么1:1。1:0保持到终场需要双方突然停止进攻，概率极低。0:1几乎不可能（主队主场落后必反击）。</p>
+            </div>
+            <div style="background:#0d1117;border-radius:10px;padding:15px;border:1px solid #21262d;border-left:3px solid #8957e5">
+                <h4 style="color:#bc8cff;margin-bottom:8px">3. 2:1是标准进程</h4>
+                <p style="font-size:0.88em;color:#c9d1d9;line-height:1.7">强队先进2球 -> 弱队扳回1球 = 最常见比赛走向。Q3首回合10场中2:1出现4次（40%），是绝对众数。</p>
+            </div>
+            <div style="background:#0d1117;border-radius:10px;padding:15px;border:1px solid #21262d;border-left:3px solid #8957e5">
+                <h4 style="color:#bc8cff;margin-bottom:8px">4. 首回合非铁桶</h4>
+                <p style="font-size:0.88em;color:#c9d1d9;line-height:1.7">资格赛首回合双方都要客场进球，不像淘汰赛死守。双方都有进攻意愿，不会出现0:0闷局（首回合0:0占比<10%）。</p>
+            </div>
+            <div style="background:#0d1117;border-radius:10px;padding:15px;border:1px solid #21262d;border-left:3px solid #8957e5;grid-column:span 2">
+                <h4 style="color:#bc8cff;margin-bottom:8px">5. 模型偏差来源：Dixon-Coles的rho参数方向错误</h4>
+                <p style="font-size:0.88em;color:#c9d1d9;line-height:1.7">DC模型的rho参数专门抬高0-0、1-0、0-1、1-1四个低比分。这在五大联赛是对的，但在欧联资格赛场景下，低比分本来就偏少，rho修正进一步放大了偏差。规则34v2在TTG层面已修正（3球x1.35，1球x0.65），比分矩阵也同步应用了相同系数重新排序。</p>
+            </div>
+        </div>
+        
+        <div class="sec-title" style="color:#8957e5">⚖️ 规则34v2修正系数</div>
+        <div class="table-wrap" style="margin-bottom:20px">
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>总进球数</th>
+                        <th>修正系数</th>
+                        <th>修正理由</th>
+                        <th>TTG推荐排序</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="team-cell">0球</td>
+                        <td style="color:#8b949e">x1.00</td>
+                        <td style="font-size:0.85em;color:#8b949e">维持不变（0:0在首回合罕见）</td>
+                        <td style="color:#8b949e">-</td>
+                    </tr>
+                    <tr>
+                        <td class="team-cell">1球</td>
+                        <td style="color:#f85149;font-weight:700">x0.65</td>
+                        <td style="font-size:0.85em;color:#8b949e">1球路径极窄，大幅下调</td>
+                        <td style="color:#8b949e">不推荐</td>
+                    </tr>
+                    <tr>
+                        <td class="team-cell">2球</td>
+                        <td style="color:#d29922">x0.70</td>
+                        <td style="font-size:0.85em;color:#8b949e">2:0需弱队全程零封，小联赛做不到</td>
+                        <td style="color:#d29922">次选</td>
+                    </tr>
+                    <tr style="background:#1a1f2e">
+                        <td class="team-cell" style="color:#3fb950;font-weight:700">3球</td>
+                        <td style="color:#3fb950;font-weight:700;font-size:1.1em">x1.35</td>
+                        <td style="font-size:0.85em;color:#3fb950">2:1是绝对众数40%，大幅上修</td>
+                        <td style="color:#3fb950;font-weight:700">首选 ★</td>
+                    </tr>
+                    <tr>
+                        <td class="team-cell">4+球</td>
+                        <td style="color:#bc8cff">x1.20</td>
+                        <td style="font-size:0.85em;color:#8b949e">3:3和5:0占20%，适度上修</td>
+                        <td style="color:#bc8cff">备选</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="sec-title" style="color:#8957e5">🎯 本轮4场欧联比分修正对比</div>
+        <div class="table-wrap" style="margin-bottom:20px">
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>对阵</th>
+                        <th>模型原始TOP1</th>
+                        <th>修正后应关注比分</th>
+                        <th>修正理由</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="team-cell">002 库奥皮奥vs克拉约瓦</td>
+                        <td style="color:#f85149">1:0 (11.2%)</td>
+                        <td style="color:#3fb950;font-weight:700">2:1, 1:1, 2:2</td>
+                        <td style="font-size:0.85em;color:#8b949e">3球众数，2:1概率被低估</td>
+                    </tr>
+                    <tr>
+                        <td class="team-cell">003 比亚韦vs流浪者</td>
+                        <td style="color:#f85149">1:0 (10.3%)</td>
+                        <td style="color:#3fb950;font-weight:700">2:1, 1:1, 2:2</td>
+                        <td style="font-size:0.85em;color:#8b949e">同上，3球修正后应重排</td>
+                    </tr>
+                    <tr>
+                        <td class="team-cell">004 塞萨洛尼基vs安德莱</td>
+                        <td style="color:#f85149">1:0 (10.6%)</td>
+                        <td style="color:#3fb950;font-weight:700">2:1, 2:0, 3:1</td>
+                        <td style="font-size:0.85em;color:#8b949e">主队强但3球路径更常见</td>
+                    </tr>
+                    <tr>
+                        <td class="team-cell">005 本菲卡vs哈茨</td>
+                        <td style="color:#d29922">2:1 (9.5%)</td>
+                        <td style="color:#3fb950;font-weight:700">2:1, 3:1, 3:0</td>
+                        <td style="font-size:0.85em;color:#8b949e">本菲卡碾压，3-4球合理</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="notes-section" style="border-left-color:#8957e5;margin:0">
+            <div class="notes-label" style="color:#8957e5">💡 核心结论</div>
+            <div class="notes-text">
+                欧联资格赛<b style="color:#f85149">不是小球天堂</b>。TTG推荐3球是正确的，比分也应向2:1、3:1、2:2这些3球比分倾斜。1:0和0:1在欧联资格赛中是<b style="color:#f85149">低概率事件</b>，不应作为首选。<br><br>
+                <b style="color:#3fb950">防冷应该防3球，不是防1球。</b>欧联资格赛球队来自小联赛，踢法大开大合，防守不如五大联赛严密。1球只存在于双方都进攻无力+防守差不多的情况（如意甲/巴甲），欧联双方都有进攻实力。<br><br>
+                <b>lambda_total建议范围：</b>2.5-2.8（而非此前偏低估的1.7-2.1）。本报告中002-005四场欧联均已应用规则34v2修正。
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+    <div class="match-card" id="match-001">
+        <div class="match-header">
+            <div class="match-id">001</div>
+            <div class="match-info-block">
+                <div class="league-tags"><span class="league-tag ">巴西杯</span><span style="color:#8b949e;font-size:0.85em">1/8决赛次回合</span></div>
+                <div class="teams-line">维多利亚<span class="vs">VS</span>巴拉纳竞技</div>
+                
+    <div class="match-meta">
+        <span>📍 Barradão球场（萨尔瓦多）</span>
+        <span>🌤️ 巴西冬季，约24℃，多云</span>
+        <span>⏰ 2026-08-07 07:00</span>
+    </div>
+                <div class="first-leg-badge">首回合: 巴拉纳竞技 2-0 维多利亚</div>
+            </div>
+        </div>
+        
+        <div class="confidence-bar">
+            <span class="stars"><span style="color:#f85149">★</span></span>
+            <span class="conf-label">低置信度</span>
+            <span class="std-text">模型间标准差: 0.0794</span>
+        </div>
+        
+        <div class="sec-title">📋 伤停信息（规则32核查）</div>
+        <div class="injury-grid">
+            <div class="injury-col home">
+                <h4><span class="dot"></span>维多利亚伤停</h4>
+                
+        <div class="injury-item">
+            <span class="pname">马丁内斯</span>
+            <span class="ppos">(中场核心)</span>
+            <span class="ptype">红牌停赛</span>
+            <span class="psrc">[头条/体彩]</span>
+        </div>
+        <div class="injury-item">
+            <span class="pname">门德斯</span>
+            <span class="ppos">(后卫)</span>
+            <span class="ptype">赛季报销</span>
+            <span class="psrc">[头条]</span>
+        </div>
+        <div class="injury-item">
+            <span class="pname">杜杜</span>
+            <span class="ppos">(中场)</span>
+            <span class="ptype">赛季报销</span>
+            <span class="psrc">[头条]</span>
+        </div>
+            </div>
+            <div class="injury-col away">
+                <h4><span class="dot"></span>巴拉纳竞技伤停</h4>
+                <div class="no-injury">已查证无伤停</div>
+            </div>
+        </div>
+        
+        <div class="sec-title">📊 模型概率对比</div>
+        <div class="model-wrap">
+            
+    <table class="model-table">
+        <thead>
+            <tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="row-label">Dixon-Coles</td><td>21.5%</td><td>29.3%</td><td>49.1%</td></tr>
+            <tr><td class="row-label">Monte Carlo</td><td>19.8%</td><td>32.6%</td><td>47.6%</td></tr>
+            <tr class="fused-row"><td class="row-label">融合概率</td><td><b>31.4%</b></td><td><b>29.2%</b></td><td><b>39.4%</b></td></tr>
+            <tr><td class="row-label">Shin去水</td><td>44.1%</td><td>26.5%</td><td>29.3%</td></tr>
+            <tr><td class="row-label">归一化去水</td><td>42.2%</td><td>27.7%</td><td>30.1%</td></tr>
+            <tr><td class="row-label">模型vs市场差</td><td style="color:#f85149">-12.7%</td><td style="color:#3fb950">+2.6%</td><td style="color:#3fb950">+10.1%</td></tr>
+        </tbody>
+    </table>
+        </div>
+        
+        <div class="sec-title">📈 比分预测 TOP10 </div>
+        <div class="data-grid">
+            <div class="data-card">
+                <h4>DC模型比分TOP10</h4>
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead><tr><th>#</th><th>比分</th><th>概率</th><th>体彩赔率</th></tr></thead>
+                        <tbody>
+        <tr style="background:#1a1f2e">
+            <td class="rank">1</td>
+            <td class="score-val">0:1</td>
+            <td>21.7%</td>
+            <td class="odds-val" style="color:#d29922">8.8</td>
+        </tr>
+        <tr style="background:#1a1f2e">
+            <td class="rank">2</td>
+            <td class="score-val">0:0</td>
+            <td>16.7%</td>
+            <td class="odds-val" style="color:#d29922">10.0</td>
+        </tr>
+        <tr style="background:#1a1f2e">
+            <td class="rank">3</td>
+            <td class="score-val">1:0</td>
+            <td>12.5%</td>
+            <td class="odds-val" style="color:#d29922">7.2</td>
+        </tr>
+        <tr >
+            <td class="rank">4</td>
+            <td class="score-val">0:2</td>
+            <td>11.1%</td>
+            <td class="odds-val" style="color:#d29922">15.0</td>
+        </tr>
+        <tr >
+            <td class="rank">5</td>
+            <td class="score-val">1:1</td>
+            <td>10.5%</td>
+            <td class="odds-val" style="color:#d29922">6.3</td>
+        </tr>
+        <tr >
+            <td class="rank">6</td>
+            <td class="score-val">1:2</td>
+            <td>6.6%</td>
+            <td class="odds-val" style="color:#d29922">9.75</td>
+        </tr>
+        <tr >
+            <td class="rank">7</td>
+            <td class="score-val">0:3</td>
+            <td>4.1%</td>
+            <td class="odds-val" style="color:#d29922">35.0</td>
+        </tr>
+        <tr >
+            <td class="rank">8</td>
+            <td class="score-val">2:1</td>
+            <td>3.6%</td>
+            <td class="odds-val" style="color:#d29922">8.0</td>
+        </tr>
+        <tr >
+            <td class="rank">9</td>
+            <td class="score-val">2:0</td>
+            <td>3.3%</td>
+            <td class="odds-val" style="color:#d29922">10.5</td>
+        </tr>
+        <tr >
+            <td class="rank">10</td>
+            <td class="score-val">1:3</td>
+            <td>2.4%</td>
+            <td class="odds-val" style="color:#d29922">28.0</td>
+        </tr></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="data-card">
+                <h4>蒙特卡洛验证TOP5</h4>
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead><tr><th>比分</th><th>频率</th></tr></thead>
+                        <tbody><tr><td class="score-val">0:1</td><td>20.5%</td></tr><tr><td class="score-val">0:0</td><td>17.9%</td></tr><tr><td class="score-val">1:1</td><td>12.5%</td></tr><tr><td class="score-val">0:2</td><td>10.9%</td></tr><tr><td class="score-val">1:0</td><td>10.7%</td></tr></tbody>
+                    </table>
+                </div>
+                <h4 style="margin-top:12px">半场比分TOP3</h4>
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead><tr><th>#</th><th>比分</th><th>概率</th></tr></thead>
+                        <tbody>
+        <tr>
+            <td class="rank">1</td>
+            <td class="score-val">0:0</td>
+            <td>49.0%</td>
+        </tr>
+        <tr>
+            <td class="rank">2</td>
+            <td class="score-val">0:1</td>
+            <td>22.6%</td>
+        </tr>
+        <tr>
+            <td class="rank">3</td>
+            <td class="score-val">1:0</td>
+            <td>12.3%</td>
+        </tr></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sec-title">🎯 六维度推荐（规则33扩展版）</div>
+        <div class="rec-grid">
+            <div class="rec-card had">
+                <div class="rec-title">胜平负</div>
+                <div class="rec-badge" style="background:#58a6ff22;color:#58a6ff">客胜 39.4%</div>
+                <div class="rec-odds">体彩: 2.1 / 3.2 / 2.95</div>
+            </div>
+            <div class="rec-card hafu">
+                <div class="rec-title">让球胜平负</div>
+                <div class="rec-badge" style="background:#d2992222;color:#d29922">让球客胜<br><span style="color:#8b949e;font-size:0.85em">(-1)</span></div>
+                <div class="rec-odds">体彩: 4.85/3.55/1.56</div>
+            </div>
+            <div class="rec-card crs">
+                <div class="rec-title">比分TOP3</div>
+                <div class="rec-top-list">
+                    <div class="top-item">
+                        <span class="top-score">0:1 <small style="color:#8b949e">(21.7%)</small></span>
+                        <span class="top-odds">@8.8</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">0:0 <small style="color:#8b949e">(16.7%)</small></span>
+                        <span class="top-odds">@10.0</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">1:0 <small style="color:#8b949e">(12.5%)</small></span>
+                        <span class="top-odds">@7.2</span>
+                    </div></div>
+            </div>
+            <div class="rec-card ttg">
+                <div class="rec-title">总进球TOP2</div>
+                
+        <div style="margin-bottom:8px">
+            <span style="color:#bc8cff;font-weight:700;font-size:0.85em">首选</span>
+            <span style="color:#f0f6fc;font-weight:700;font-size:1.1em">1球</span>
+            <span style="color:#d29922;font-weight:600;margin-left:8px">34.2%</span>
+            <span style="color:#8b949e;margin-left:8px">@4.0</span>
+        </div>
+        <div style="margin-bottom:8px">
+            <span style="color:#8b949e;font-weight:700;font-size:0.85em">次选</span>
+            <span style="color:#f0f6fc;font-weight:700;font-size:1.1em">2球</span>
+            <span style="color:#d29922;font-weight:600;margin-left:8px">24.8%</span>
+            <span style="color:#8b949e;margin-left:8px">@3.2</span>
+        </div>
+            </div>
+            <div class="rec-card htft">
+                <div class="rec-title">半全场TOP3</div>
+                
+        <div style="margin-bottom:6px">
+            <span style="color:#f85149;font-weight:600;font-size:0.8em">TOP1</span>
+            <span style="color:#f0f6fc;font-weight:700">负负</span>
+            <span style="color:#d29922;margin-left:6px">26.0%</span>
+            <span style="color:#8b949e;margin-left:6px">@5.0</span>
+        </div>
+        <div style="margin-bottom:6px">
+            <span style="color:#8b949e;font-weight:600;font-size:0.8em">TOP2</span>
+            <span style="color:#f0f6fc;font-weight:700">平平</span>
+            <span style="color:#d29922;margin-left:6px">25.3%</span>
+            <span style="color:#8b949e;margin-left:6px">@4.75</span>
+        </div>
+        <div style="margin-bottom:6px">
+            <span style="color:#8b949e;font-weight:600;font-size:0.8em">TOP3</span>
+            <span style="color:#f0f6fc;font-weight:700">平负</span>
+            <span style="color:#d29922;margin-left:6px">20.2%</span>
+            <span style="color:#8b949e;margin-left:6px">@6.5</span>
+        </div>
+            </div>
+            <div class="rec-card ht">
+                <div class="rec-title">半场比分TOP3</div>
+                <div class="rec-top-list">
+                    <div class="top-item">
+                        <span class="top-score">0:0</span>
+                        <span style="color:#8b949e">49.0%</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">0:1</span>
+                        <span style="color:#8b949e">22.6%</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">1:0</span>
+                        <span style="color:#8b949e">12.3%</span>
+                    </div></div>
+            </div>
+        </div>
+        
+        <div class="notes-section">
+            <div class="notes-label">📝 基本面分析</div>
+            <div class="notes-text">维多利亚连续4场进球荒，近5场1胜1平3负进1球失8球。巴竞技近10场仅丢4球连续3场零封。维多利亚需净胜2球以上才能晋级。</div>
+        </div>
+    </div>
+    <div class="match-card" id="match-002">
+        <div class="match-header">
+            <div class="match-id">002</div>
+            <div class="match-info-block">
+                <div class="league-tags"><span class="league-tag europa">欧罗巴</span><span style="color:#8b949e;font-size:0.85em">资格赛第三轮首回合</span><span style="display:inline-block;background:#8957e5;color:#fff;padding:2px 8px;border-radius:4px;font-size:0.75em;margin-left:8px">规则34v2已修正</span></div>
+                <div class="teams-line">库奥皮奥<span class="vs">VS</span>克拉约瓦大学</div>
+                
+    <div class="match-meta">
+        <span>📍 Savon Sanomat Areena（库奥皮奥）</span>
+        <span>🌤️ 芬兰夏季，约18℃，多云</span>
+        <span>⏰ 2026-08-06 23:00</span>
+    </div>
+                
+            </div>
+        </div>
+        
+        <div class="confidence-bar">
+            <span class="stars"><span style="color:#f85149">★</span></span>
+            <span class="conf-label">低置信度</span>
+            <span class="std-text">模型间标准差: 0.0502</span>
+        </div>
+        
+        <div class="sec-title">📋 伤停信息（规则32核查）</div>
+        <div class="injury-grid">
+            <div class="injury-col home">
+                <h4><span class="dot"></span>库奥皮奥伤停</h4>
+                
+        <div class="injury-item">
+            <span class="pname">布尔基</span>
+            <span class="ppos">(后卫(4号))</span>
+            <span class="ptype">伤缺</span>
+            <span class="psrc">[sporttery.cn]</span>
+        </div>
+            </div>
+            <div class="injury-col away">
+                <h4><span class="dot"></span>克拉约瓦大学伤停</h4>
+                <div class="no-injury">已查证无伤停</div>
+            </div>
+        </div>
+        
+        <div class="sec-title">📊 模型概率对比</div>
+        <div class="model-wrap">
+            
+    <table class="model-table">
+        <thead>
+            <tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="row-label">Dixon-Coles</td><td>43.1%</td><td>22.5%</td><td>34.4%</td></tr>
+            <tr><td class="row-label">Monte Carlo</td><td>41.2%</td><td>25.4%</td><td>33.5%</td></tr>
+            <tr class="fused-row"><td class="row-label">融合概率</td><td><b>35.2%</b></td><td><b>25.7%</b></td><td><b>39.1%</b></td></tr>
+            <tr><td class="row-label">Shin去水</td><td>27.1%</td><td>27.6%</td><td>45.4%</td></tr>
+            <tr><td class="row-label">归一化去水</td><td>28.1%</td><td>28.6%</td><td>43.2%</td></tr>
+            <tr><td class="row-label">模型vs市场差</td><td style="color:#3fb950">+8.2%</td><td style="color:#f85149">-1.9%</td><td style="color:#f85149">-6.3%</td></tr>
+        </tbody>
+    </table>
+        </div>
+        
+        <div class="sec-title">📈 比分预测 TOP10 <span style="color:#8957e5;font-size:0.85em">(规则34v2修正后)</span></div>
+        <div class="data-grid">
+            <div class="data-card">
+                <h4>DC模型比分TOP10</h4>
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead><tr><th>#</th><th>比分</th><th>概率</th><th>体彩赔率</th></tr></thead>
+                        <tbody>
+        <tr style="background:#1a1f2e">
+            <td class="rank">1</td>
+            <td class="score-val">2:1</td>
+            <td>17.3%</td>
+            <td class="odds-val" style="color:#d29922">10.0</td>
+        </tr>
+        <tr style="background:#1a1f2e">
+            <td class="rank">2</td>
+            <td class="score-val">1:2</td>
+            <td>15.0%</td>
+            <td class="odds-val" style="color:#d29922">7.5</td>
+        </tr>
+        <tr style="background:#1a1f2e">
+            <td class="rank">3</td>
+            <td class="score-val">1:1</td>
+            <td>10.8%</td>
+            <td class="odds-val" style="color:#d29922">6.5</td>
+        </tr>
+        <tr >
+            <td class="rank">4</td>
+            <td class="score-val">1:0</td>
+            <td>10.6%</td>
+            <td class="odds-val" style="color:#d29922">9.75</td>
+        </tr>
+        <tr >
+            <td class="rank">5</td>
+            <td class="score-val">2:2</td>
+            <td>9.7%</td>
+            <td class="odds-val" style="color:#d29922">13.0</td>
+        </tr>
+        <tr >
+            <td class="rank">6</td>
+            <td class="score-val">0:1</td>
+            <td>9.4%</td>
+            <td class="odds-val" style="color:#d29922">7.5</td>
+        </tr>
+        <tr >
+            <td class="rank">7</td>
+            <td class="score-val">3:1</td>
+            <td>7.4%</td>
+            <td class="odds-val" style="color:#d29922">26.0</td>
+        </tr>
+        <tr >
+            <td class="rank">8</td>
+            <td class="score-val">0:0</td>
+            <td>7.4%</td>
+            <td class="odds-val" style="color:#d29922">11.0</td>
+        </tr>
+        <tr >
+            <td class="rank">9</td>
+            <td class="score-val">2:0</td>
+            <td>7.1%</td>
+            <td class="odds-val" style="color:#d29922">17.0</td>
+        </tr>
+        <tr >
+            <td class="rank">10</td>
+            <td class="score-val">0:2</td>
+            <td>5.4%</td>
+            <td class="odds-val" style="color:#d29922">10.0</td>
+        </tr></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="data-card">
+                <h4>蒙特卡洛验证TOP5</h4>
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead><tr><th>比分</th><th>频率</th></tr></thead>
+                        <tbody><tr><td class="score-val">1:1</td><td>12.1%</td></tr><tr><td class="score-val">1:0</td><td>9.6%</td></tr><tr><td class="score-val">2:1</td><td>8.8%</td></tr><tr><td class="score-val">0:1</td><td>8.4%</td></tr><tr><td class="score-val">1:2</td><td>7.5%</td></tr></tbody>
+                    </table>
+                </div>
+                <h4 style="margin-top:12px">半场比分TOP3</h4>
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead><tr><th>#</th><th>比分</th><th>概率</th></tr></thead>
+                        <tbody>
+        <tr>
+            <td class="rank">1</td>
+            <td class="score-val">0:0</td>
+            <td>32.0%</td>
+        </tr>
+        <tr>
+            <td class="rank">2</td>
+            <td class="score-val">1:0</td>
+            <td>19.5%</td>
+        </tr>
+        <tr>
+            <td class="rank">3</td>
+            <td class="score-val">0:1</td>
+            <td>17.0%</td>
+        </tr></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sec-title">🎯 六维度推荐（规则33扩展版）</div>
+        <div class="rec-grid">
+            <div class="rec-card had">
+                <div class="rec-title">胜平负</div>
+                <div class="rec-badge" style="background:#58a6ff22;color:#58a6ff">客胜 39.1%</div>
+                <div class="rec-odds">体彩: 3.15 / 3.1 / 2.05</div>
+            </div>
+            <div class="rec-card hafu">
+                <div class="rec-title">让球胜平负</div>
+                <div class="rec-badge" style="background:#d2992222;color:#d29922">让球主胜<br><span style="color:#8b949e;font-size:0.85em">(1)</span></div>
+                <div class="rec-odds">体彩: 1.6/3.6/4.45</div>
+            </div>
+            <div class="rec-card crs">
+                <div class="rec-title">比分TOP3</div>
+                <div class="rec-top-list">
+                    <div class="top-item">
+                        <span class="top-score">2:1 <small style="color:#8b949e">(17.3%)</small></span>
+                        <span class="top-odds">@10.0</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">1:2 <small style="color:#8b949e">(15.0%)</small></span>
+                        <span class="top-odds">@7.5</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">1:1 <small style="color:#8b949e">(10.8%)</small></span>
+                        <span class="top-odds">@6.5</span>
+                    </div></div>
+            </div>
+            <div class="rec-card ttg">
+                <div class="rec-title">总进球TOP2</div>
+                
+        <div style="margin-bottom:8px">
+            <span style="color:#bc8cff;font-weight:700;font-size:0.85em">首选</span>
+            <span style="color:#f0f6fc;font-weight:700;font-size:1.1em">3球</span>
+            <span style="color:#d29922;font-weight:600;margin-left:8px">30.0%</span>
+            <span style="color:#8b949e;margin-left:8px">@3.75</span>
+        </div>
+        <div style="margin-bottom:8px">
+            <span style="color:#8b949e;font-weight:700;font-size:0.85em">次选</span>
+            <span style="color:#f0f6fc;font-weight:700;font-size:1.1em">4球</span>
+            <span style="color:#d29922;font-weight:600;margin-left:8px">18.1%</span>
+            <span style="color:#8b949e;margin-left:8px">@6.0</span>
+        </div>
+            </div>
+            <div class="rec-card htft">
+                <div class="rec-title">半全场TOP3</div>
+                
+        <div style="margin-bottom:6px">
+            <span style="color:#f85149;font-weight:600;font-size:0.8em">TOP1</span>
+            <span style="color:#f0f6fc;font-weight:700">胜胜</span>
+            <span style="color:#d29922;margin-left:6px">23.5%</span>
+            <span style="color:#8b949e;margin-left:6px">@5.5</span>
+        </div>
+        <div style="margin-bottom:6px">
+            <span style="color:#8b949e;font-weight:600;font-size:0.8em">TOP2</span>
+            <span style="color:#f0f6fc;font-weight:700">负负</span>
+            <span style="color:#d29922;margin-left:6px">18.1%</span>
+            <span style="color:#8b949e;margin-left:6px">@3.35</span>
+        </div>
+        <div style="margin-bottom:6px">
+            <span style="color:#8b949e;font-weight:600;font-size:0.8em">TOP3</span>
+            <span style="color:#f0f6fc;font-weight:700">平平</span>
+            <span style="color:#d29922;margin-left:6px">15.5%</span>
+            <span style="color:#8b949e;margin-left:6px">@5.05</span>
+        </div>
+            </div>
+            <div class="rec-card ht">
+                <div class="rec-title">半场比分TOP3</div>
+                <div class="rec-top-list">
+                    <div class="top-item">
+                        <span class="top-score">0:0</span>
+                        <span style="color:#8b949e">32.0%</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">1:0</span>
+                        <span style="color:#8b949e">19.5%</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">0:1</span>
+                        <span style="color:#8b949e">17.0%</span>
+                    </div></div>
+            </div>
+        </div>
+        
+        <div class="notes-section">
+            <div class="notes-label">📝 基本面分析</div>
+            <div class="notes-text">两队均从欧冠资格赛第二轮淘汰转入欧联。库奥皮奥被萨巴赫0-3双杀，克拉约瓦被索列夫淘汰。库奥皮奥芬超榜首联赛进行中，克拉约瓦罗甲未开赛。</div>
+        </div>
+    </div>
+    <div class="match-card" id="match-003">
+        <div class="match-header">
+            <div class="match-id">003</div>
+            <div class="match-info-block">
+                <div class="league-tags"><span class="league-tag europa">欧罗巴</span><span style="color:#8b949e;font-size:0.85em">资格赛第三轮首回合</span><span style="display:inline-block;background:#8957e5;color:#fff;padding:2px 8px;border-radius:4px;font-size:0.75em;margin-left:8px">规则34v2已修正</span></div>
+                <div class="teams-line">比亚韦斯托克<span class="vs">VS</span>格拉斯哥流浪者</div>
+                
+    <div class="match-meta">
+        <span>📍 Białystok City Stadium（比亚韦斯托克）</span>
+        <span>🌤️ 波兰夏季，约20℃，晴</span>
+        <span>⏰ 2026-08-07 00:00</span>
+    </div>
+                
+            </div>
+        </div>
+        
+        <div class="confidence-bar">
+            <span class="stars"><span style="color:#f85149">★</span></span>
+            <span class="conf-label">低置信度</span>
+            <span class="std-text">模型间标准差: 0.0396</span>
+        </div>
+        
+        <div class="sec-title">📋 伤停信息（规则32核查）</div>
+        <div class="injury-grid">
+            <div class="injury-col home">
+                <h4><span class="dot"></span>比亚韦斯托克伤停</h4>
+                
+        <div class="injury-item">
+            <span class="pname">Lozano</span>
+            <span class="ppos">(中场)</span>
+            <span class="ptype">伤缺</span>
+            <span class="psrc">[头条]</span>
+        </div>
+        <div class="injury-item">
+            <span class="pname">Prelec</span>
+            <span class="ppos">(前锋)</span>
+            <span class="ptype">伤缺</span>
+            <span class="psrc">[头条]</span>
+        </div>
+            </div>
+            <div class="injury-col away">
+                <h4><span class="dot"></span>格拉斯哥流浪者伤停</h4>
+                
+        <div class="injury-item">
+            <span class="pname">戈弗雷</span>
+            <span class="ppos">(中卫)</span>
+            <span class="ptype">伤缺</span>
+            <span class="psrc">[头条]</span>
+        </div>
+            </div>
+        </div>
+        
+        <div class="sec-title">📊 模型概率对比</div>
+        <div class="model-wrap">
+            
+    <table class="model-table">
+        <thead>
+            <tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="row-label">Dixon-Coles</td><td>43.6%</td><td>21.8%</td><td>34.6%</td></tr>
+            <tr><td class="row-label">Monte Carlo</td><td>41.9%</td><td>25.1%</td><td>33.0%</td></tr>
+            <tr class="fused-row"><td class="row-label">融合概率</td><td><b>37.4%</b></td><td><b>25.9%</b></td><td><b>36.7%</b></td></tr>
+            <tr><td class="row-label">Shin去水</td><td>33.4%</td><td>27.0%</td><td>39.6%</td></tr>
+            <tr><td class="row-label">归一化去水</td><td>33.4%</td><td>28.1%</td><td>38.5%</td></tr>
+            <tr><td class="row-label">模型vs市场差</td><td style="color:#3fb950">+4.0%</td><td style="color:#f85149">-1.1%</td><td style="color:#f85149">-2.9%</td></tr>
+        </tbody>
+    </table>
+        </div>
+        
+        <div class="sec-title">📈 比分预测 TOP10 <span style="color:#8957e5;font-size:0.85em">(规则34v2修正后)</span></div>
+        <div class="data-grid">
+            <div class="data-card">
+                <h4>DC模型比分TOP10</h4>
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead><tr><th>#</th><th>比分</th><th>概率</th><th>体彩赔率</th></tr></thead>
+                        <tbody>
+        <tr style="background:#1a1f2e">
+            <td class="rank">1</td>
+            <td class="score-val">2:1</td>
+            <td>17.9%</td>
+            <td class="odds-val" style="color:#d29922">8.8</td>
+        </tr>
+        <tr style="background:#1a1f2e">
+            <td class="rank">2</td>
+            <td class="score-val">1:2</td>
+            <td>15.6%</td>
+            <td class="odds-val" style="color:#d29922">8.0</td>
+        </tr>
+        <tr style="background:#1a1f2e">
+            <td class="rank">3</td>
+            <td class="score-val">2:2</td>
+            <td>10.6%</td>
+            <td class="odds-val" style="color:#d29922">12.0</td>
+        </tr>
+        <tr >
+            <td class="rank">4</td>
+            <td class="score-val">1:1</td>
+            <td>10.6%</td>
+            <td class="odds-val" style="color:#d29922">6.5</td>
+        </tr>
+        <tr >
+            <td class="rank">5</td>
+            <td class="score-val">1:0</td>
+            <td>9.9%</td>
+            <td class="odds-val" style="color:#d29922">9.5</td>
+        </tr>
+        <tr >
+            <td class="rank">6</td>
+            <td class="score-val">0:1</td>
+            <td>8.8%</td>
+            <td class="odds-val" style="color:#d29922">9.25</td>
+        </tr>
+        <tr >
+            <td class="rank">7</td>
+            <td class="score-val">3:1</td>
+            <td>8.1%</td>
+            <td class="odds-val" style="color:#d29922">21.0</td>
+        </tr>
+        <tr >
+            <td class="rank">8</td>
+            <td class="score-val">2:0</td>
+            <td>7.0%</td>
+            <td class="odds-val" style="color:#d29922">14.0</td>
+        </tr>
+        <tr >
+            <td class="rank">9</td>
+            <td class="score-val">0:0</td>
+            <td>6.3%</td>
+            <td class="odds-val" style="color:#d29922">13.0</td>
+        </tr>
+        <tr >
+            <td class="rank">10</td>
+            <td class="score-val">0:2</td>
+            <td>5.3%</td>
+            <td class="odds-val" style="color:#d29922">12.5</td>
+        </tr></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="data-card">
+                <h4>蒙特卡洛验证TOP5</h4>
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead><tr><th>比分</th><th>频率</th></tr></thead>
+                        <tbody><tr><td class="score-val">1:1</td><td>11.5%</td></tr><tr><td class="score-val">2:1</td><td>9.0%</td></tr><tr><td class="score-val">1:0</td><td>8.5%</td></tr><tr><td class="score-val">1:2</td><td>7.8%</td></tr><tr><td class="score-val">0:1</td><td>7.6%</td></tr></tbody>
+                    </table>
+                </div>
+                <h4 style="margin-top:12px">半场比分TOP3</h4>
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead><tr><th>#</th><th>比分</th><th>概率</th></tr></thead>
+                        <tbody>
+        <tr>
+            <td class="rank">1</td>
+            <td class="score-val">0:0</td>
+            <td>30.1%</td>
+        </tr>
+        <tr>
+            <td class="rank">2</td>
+            <td class="score-val">1:0</td>
+            <td>19.3%</td>
+        </tr>
+        <tr>
+            <td class="rank">3</td>
+            <td class="score-val">0:1</td>
+            <td>16.8%</td>
+        </tr></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sec-title">🎯 六维度推荐（规则33扩展版）</div>
+        <div class="rec-grid">
+            <div class="rec-card had">
+                <div class="rec-title">胜平负</div>
+                <div class="rec-badge" style="background:#3fb95022;color:#3fb950">主胜 37.4%</div>
+                <div class="rec-odds">体彩: 2.65 / 3.15 / 2.3</div>
+            </div>
+            <div class="rec-card hafu">
+                <div class="rec-title">让球胜平负</div>
+                <div class="rec-badge" style="background:#d2992222;color:#d29922">让球主胜<br><span style="color:#8b949e;font-size:0.85em">(1)</span></div>
+                <div class="rec-odds">体彩: 1.47/3.95/5.1</div>
+            </div>
+            <div class="rec-card crs">
+                <div class="rec-title">比分TOP3</div>
+                <div class="rec-top-list">
+                    <div class="top-item">
+                        <span class="top-score">2:1 <small style="color:#8b949e">(17.9%)</small></span>
+                        <span class="top-odds">@8.8</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">1:2 <small style="color:#8b949e">(15.6%)</small></span>
+                        <span class="top-odds">@8.0</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">2:2 <small style="color:#8b949e">(10.6%)</small></span>
+                        <span class="top-odds">@12.0</span>
+                    </div></div>
+            </div>
+            <div class="rec-card ttg">
+                <div class="rec-title">总进球TOP2</div>
+                
+        <div style="margin-bottom:8px">
+            <span style="color:#bc8cff;font-weight:700;font-size:0.85em">首选</span>
+            <span style="color:#f0f6fc;font-weight:700;font-size:1.1em">3球</span>
+            <span style="color:#d29922;font-weight:600;margin-left:8px">29.9%</span>
+            <span style="color:#8b949e;margin-left:8px">@3.6</span>
+        </div>
+        <div style="margin-bottom:8px">
+            <span style="color:#8b949e;font-weight:700;font-size:0.85em">次选</span>
+            <span style="color:#f0f6fc;font-weight:700;font-size:1.1em">4球</span>
+            <span style="color:#d29922;font-weight:600;margin-left:8px">19.0%</span>
+            <span style="color:#8b949e;margin-left:8px">@5.4</span>
+        </div>
+            </div>
+            <div class="rec-card htft">
+                <div class="rec-title">半全场TOP3</div>
+                
+        <div style="margin-bottom:6px">
+            <span style="color:#f85149;font-weight:600;font-size:0.8em">TOP1</span>
+            <span style="color:#f0f6fc;font-weight:700">胜胜</span>
+            <span style="color:#d29922;margin-left:6px">24.0%</span>
+            <span style="color:#8b949e;margin-left:6px">@4.4</span>
+        </div>
+        <div style="margin-bottom:6px">
+            <span style="color:#8b949e;font-weight:600;font-size:0.8em">TOP2</span>
+            <span style="color:#f0f6fc;font-weight:700">负负</span>
+            <span style="color:#d29922;margin-left:6px">18.4%</span>
+            <span style="color:#8b949e;margin-left:6px">@3.85</span>
+        </div>
+        <div style="margin-bottom:6px">
+            <span style="color:#8b949e;font-weight:600;font-size:0.8em">TOP3</span>
+            <span style="color:#f0f6fc;font-weight:700">平胜</span>
+            <span style="color:#d29922;margin-left:6px">15.2%</span>
+            <span style="color:#8b949e;margin-left:6px">@6.4</span>
+        </div>
+            </div>
+            <div class="rec-card ht">
+                <div class="rec-title">半场比分TOP3</div>
+                <div class="rec-top-list">
+                    <div class="top-item">
+                        <span class="top-score">0:0</span>
+                        <span style="color:#8b949e">30.1%</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">1:0</span>
+                        <span style="color:#8b949e">19.3%</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">0:1</span>
+                        <span style="color:#8b949e">16.8%</span>
+                    </div></div>
+            </div>
+        </div>
+        
+        <div class="notes-section">
+            <div class="notes-label">📝 基本面分析</div>
+            <div class="notes-text">比亚韦友谊赛数据较多（7-8月5场友谊赛全胜），波甲新赛季2连胜。流浪者苏超首轮1-1邓迪联。比亚韦主场人造草皮优势。无历史交锋。</div>
+        </div>
+    </div>
+    <div class="match-card" id="match-004">
+        <div class="match-header">
+            <div class="match-id">004</div>
+            <div class="match-info-block">
+                <div class="league-tags"><span class="league-tag europa">欧罗巴</span><span style="color:#8b949e;font-size:0.85em">资格赛第三轮首回合</span><span style="display:inline-block;background:#8957e5;color:#fff;padding:2px 8px;border-radius:4px;font-size:0.75em;margin-left:8px">规则34v2已修正</span></div>
+                <div class="teams-line">塞萨洛尼基<span class="vs">VS</span>安德莱赫特</div>
+                
+    <div class="match-meta">
+        <span>📍 Toumba Stadium（塞萨洛尼基）</span>
+        <span>🌤️ 希腊夏季，约30℃，晴</span>
+        <span>⏰ 2026-08-07 01:45</span>
+    </div>
+                
+            </div>
+        </div>
+        
+        <div class="confidence-bar">
+            <span class="stars"><span style="color:#d29922">★★</span></span>
+            <span class="conf-label">中置信度</span>
+            <span class="std-text">模型间标准差: 0.0247</span>
+        </div>
+        
+        <div class="sec-title">📋 伤停信息（规则32核查）</div>
+        <div class="injury-grid">
+            <div class="injury-col home">
+                <h4><span class="dot"></span>塞萨洛尼基伤停</h4>
+                
+        <div class="injury-item">
+            <span class="pname">阿里</span>
+            <span class="ppos">(前锋)</span>
+            <span class="ptype">肩伤（大概率缺阵）</span>
+            <span class="psrc">[头条]</span>
+        </div>
+        <div class="injury-item">
+            <span class="pname">沙洛夫</span>
+            <span class="ppos">(前锋)</span>
+            <span class="ptype">半月板伤缺</span>
+            <span class="psrc">[头条]</span>
+        </div>
+        <div class="injury-item">
+            <span class="pname">Shoretire</span>
+            <span class="ppos">(前锋)</span>
+            <span class="ptype">伤缺</span>
+            <span class="psrc">[头条]</span>
+        </div>
+            </div>
+            <div class="injury-col away">
+                <h4><span class="dot"></span>安德莱赫特伤停</h4>
+                
+        <div class="injury-item">
+            <span class="pname">萨德拉</span>
+            <span class="ppos">(后卫)</span>
+            <span class="ptype">手术长期缺阵</span>
+            <span class="psrc">[头条]</span>
+        </div>
+        <div class="injury-item">
+            <span class="pname">Keita</span>
+            <span class="ppos">(后卫)</span>
+            <span class="ptype">伤缺</span>
+            <span class="psrc">[头条]</span>
+        </div>
+        <div class="injury-item">
+            <span class="pname">Stroeykens</span>
+            <span class="ppos">(中场)</span>
+            <span class="ptype">伤缺</span>
+            <span class="psrc">[头条]</span>
+        </div>
+            </div>
+        </div>
+        
+        <div class="sec-title">📊 模型概率对比</div>
+        <div class="model-wrap">
+            
+    <table class="model-table">
+        <thead>
+            <tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="row-label">Dixon-Coles</td><td>57.8%</td><td>19.4%</td><td>22.9%</td></tr>
+            <tr><td class="row-label">Monte Carlo</td><td>56.0%</td><td>21.9%</td><td>22.2%</td></tr>
+            <tr class="fused-row"><td class="row-label">融合概率</td><td><b>55.7%</b></td><td><b>22.8%</b></td><td><b>21.4%</b></td></tr>
+            <tr><td class="row-label">Shin去水</td><td>65.3%</td><td>21.2%</td><td>13.5%</td></tr>
+            <tr><td class="row-label">归一化去水</td><td>59.9%</td><td>23.3%</td><td>16.7%</td></tr>
+            <tr><td class="row-label">模型vs市场差</td><td style="color:#f85149">-9.6%</td><td style="color:#3fb950">+1.7%</td><td style="color:#3fb950">+7.9%</td></tr>
+        </tbody>
+    </table>
+        </div>
+        
+        <div class="sec-title">📈 比分预测 TOP10 <span style="color:#8957e5;font-size:0.85em">(规则34v2修正后)</span></div>
+        <div class="data-grid">
+            <div class="data-card">
+                <h4>DC模型比分TOP10</h4>
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead><tr><th>#</th><th>比分</th><th>概率</th><th>体彩赔率</th></tr></thead>
+                        <tbody>
+        <tr style="background:#1a1f2e">
+            <td class="rank">1</td>
+            <td class="score-val">2:1</td>
+            <td>18.8%</td>
+            <td class="odds-val" style="color:#d29922">7.2</td>
+        </tr>
+        <tr style="background:#1a1f2e">
+            <td class="rank">2</td>
+            <td class="score-val">3:0</td>
+            <td>10.9%</td>
+            <td class="odds-val" style="color:#d29922">12.0</td>
+        </tr>
+        <tr style="background:#1a1f2e">
+            <td class="rank">3</td>
+            <td class="score-val">1:2</td>
+            <td>10.8%</td>
+            <td class="odds-val" style="color:#d29922">14.0</td>
+        </tr>
+        <tr >
+            <td class="rank">4</td>
+            <td class="score-val">3:1</td>
+            <td>10.8%</td>
+            <td class="odds-val" style="color:#d29922">12.0</td>
+        </tr>
+        <tr >
+            <td class="rank">5</td>
+            <td class="score-val">1:0</td>
+            <td>9.7%</td>
+            <td class="odds-val" style="color:#d29922">7.2</td>
+        </tr>
+        <tr >
+            <td class="rank">6</td>
+            <td class="score-val">2:2</td>
+            <td>9.3%</td>
+            <td class="odds-val" style="color:#d29922">15.0</td>
+        </tr>
+        <tr >
+            <td class="rank">7</td>
+            <td class="score-val">1:1</td>
+            <td>8.8%</td>
+            <td class="odds-val" style="color:#d29922">8.0</td>
+        </tr>
+        <tr >
+            <td class="rank">8</td>
+            <td class="score-val">2:0</td>
+            <td>8.8%</td>
+            <td class="odds-val" style="color:#d29922">7.75</td>
+        </tr>
+        <tr >
+            <td class="rank">9</td>
+            <td class="score-val">0:1</td>
+            <td>6.1%</td>
+            <td class="odds-val" style="color:#d29922">14.0</td>
+        </tr>
+        <tr >
+            <td class="rank">10</td>
+            <td class="score-val">3:2</td>
+            <td>6.0%</td>
+            <td class="odds-val" style="color:#d29922">23.0</td>
+        </tr></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="data-card">
+                <h4>蒙特卡洛验证TOP5</h4>
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead><tr><th>比分</th><th>频率</th></tr></thead>
+                        <tbody><tr><td class="score-val">1:1</td><td>10.4%</td></tr><tr><td class="score-val">2:1</td><td>10.1%</td></tr><tr><td class="score-val">1:0</td><td>9.3%</td></tr><tr><td class="score-val">2:0</td><td>8.8%</td></tr><tr><td class="score-val">3:1</td><td>6.5%</td></tr></tbody>
+                    </table>
+                </div>
+                <h4 style="margin-top:12px">半场比分TOP3</h4>
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead><tr><th>#</th><th>比分</th><th>概率</th></tr></thead>
+                        <tbody>
+        <tr>
+            <td class="rank">1</td>
+            <td class="score-val">0:0</td>
+            <td>27.9%</td>
+        </tr>
+        <tr>
+            <td class="rank">2</td>
+            <td class="score-val">1:0</td>
+            <td>22.6%</td>
+        </tr>
+        <tr>
+            <td class="rank">3</td>
+            <td class="score-val">0:1</td>
+            <td>13.0%</td>
+        </tr></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sec-title">🎯 六维度推荐（规则33扩展版）</div>
+        <div class="rec-grid">
+            <div class="rec-card had">
+                <div class="rec-title">胜平负</div>
+                <div class="rec-badge" style="background:#3fb95022;color:#3fb950">主胜 55.7%</div>
+                <div class="rec-odds">体彩: 1.48 / 3.8 / 5.3</div>
+            </div>
+            <div class="rec-card hafu">
+                <div class="rec-title">让球胜平负</div>
+                <div class="rec-badge" style="background:#d2992222;color:#d29922">让球客胜<br><span style="color:#8b949e;font-size:0.85em">(-1)</span></div>
+                <div class="rec-odds">体彩: 2.55/3.35/2.28</div>
+            </div>
+            <div class="rec-card crs">
+                <div class="rec-title">比分TOP3</div>
+                <div class="rec-top-list">
+                    <div class="top-item">
+                        <span class="top-score">2:1 <small style="color:#8b949e">(18.8%)</small></span>
+                        <span class="top-odds">@7.2</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">3:0 <small style="color:#8b949e">(10.9%)</small></span>
+                        <span class="top-odds">@12.0</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">1:2 <small style="color:#8b949e">(10.8%)</small></span>
+                        <span class="top-odds">@14.0</span>
+                    </div></div>
+            </div>
+            <div class="rec-card ttg">
+                <div class="rec-title">总进球TOP2</div>
+                
+        <div style="margin-bottom:8px">
+            <span style="color:#bc8cff;font-weight:700;font-size:0.85em">首选</span>
+            <span style="color:#f0f6fc;font-weight:700;font-size:1.1em">3球</span>
+            <span style="color:#d29922;font-weight:600;margin-left:8px">29.4%</span>
+            <span style="color:#8b949e;margin-left:8px">@3.6</span>
+        </div>
+        <div style="margin-bottom:8px">
+            <span style="color:#8b949e;font-weight:700;font-size:0.85em">次选</span>
+            <span style="color:#f0f6fc;font-weight:700;font-size:1.1em">4球</span>
+            <span style="color:#d29922;font-weight:600;margin-left:8px">19.9%</span>
+            <span style="color:#8b949e;margin-left:8px">@5.4</span>
+        </div>
+            </div>
+            <div class="rec-card htft">
+                <div class="rec-title">半全场TOP3</div>
+                
+        <div style="margin-bottom:6px">
+            <span style="color:#f85149;font-weight:600;font-size:0.8em">TOP1</span>
+            <span style="color:#f0f6fc;font-weight:700">胜胜</span>
+            <span style="color:#d29922;margin-left:6px">34.0%</span>
+            <span style="color:#8b949e;margin-left:6px">@2.2</span>
+        </div>
+        <div style="margin-bottom:6px">
+            <span style="color:#8b949e;font-weight:600;font-size:0.8em">TOP2</span>
+            <span style="color:#f0f6fc;font-weight:700">平胜</span>
+            <span style="color:#d29922;margin-left:6px">18.6%</span>
+            <span style="color:#8b949e;margin-left:6px">@4.3</span>
+        </div>
+        <div style="margin-bottom:6px">
+            <span style="color:#8b949e;font-weight:600;font-size:0.8em">TOP3</span>
+            <span style="color:#f0f6fc;font-weight:700">平平</span>
+            <span style="color:#d29922;margin-left:6px">12.8%</span>
+            <span style="color:#8b949e;margin-left:6px">@6.5</span>
+        </div>
+            </div>
+            <div class="rec-card ht">
+                <div class="rec-title">半场比分TOP3</div>
+                <div class="rec-top-list">
+                    <div class="top-item">
+                        <span class="top-score">0:0</span>
+                        <span style="color:#8b949e">27.9%</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">1:0</span>
+                        <span style="color:#8b949e">22.6%</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">0:1</span>
+                        <span style="color:#8b949e">13.0%</span>
+                    </div></div>
+            </div>
+        </div>
+        
+        <div class="notes-section">
+            <div class="notes-label">📝 基本面分析</div>
+            <div class="notes-text">塞萨洛尼基从欧罗巴第二轮晋级（总比分5-2基辅迪纳摩）。安德莱赫特从欧罗巴第二轮晋级（总比分4-2哈马比）。安德莱欧战客场连续6场不胜(2平4负)。塞萨洛新援卢歇增强中场。安德莱中场萨利巴解禁复出。</div>
+        </div>
+    </div>
+    <div class="match-card" id="match-005">
+        <div class="match-header">
+            <div class="match-id">005</div>
+            <div class="match-info-block">
+                <div class="league-tags"><span class="league-tag europa">欧罗巴</span><span style="color:#8b949e;font-size:0.85em">资格赛第三轮首回合</span><span style="display:inline-block;background:#8957e5;color:#fff;padding:2px 8px;border-radius:4px;font-size:0.75em;margin-left:8px">规则34v2已修正</span></div>
+                <div class="teams-line">本菲卡<span class="vs">VS</span>哈茨</div>
+                
+    <div class="match-meta">
+        <span>📍 光明球场（里斯本）</span>
+        <span>🌤️ 晴，29℃</span>
+        <span>⏰ 2026-08-07 03:00</span>
+    </div>
+                
+            </div>
+        </div>
+        
+        <div class="confidence-bar">
+            <span class="stars"><span style="color:#3fb950">★★★</span></span>
+            <span class="conf-label">高置信度</span>
+            <span class="std-text">模型间标准差: 0.0353</span>
+        </div>
+        
+        <div class="sec-title">📋 伤停信息（规则32核查）</div>
+        <div class="injury-grid">
+            <div class="injury-col home">
+                <h4><span class="dot"></span>本菲卡伤停</h4>
+                
+        <div class="injury-item">
+            <span class="pname">Bruma</span>
+            <span class="ppos">(前锋)</span>
+            <span class="ptype">伤缺</span>
+            <span class="psrc">[头条]</span>
+        </div>
+        <div class="injury-item">
+            <span class="pname">苏达科夫</span>
+            <span class="ppos">(中场)</span>
+            <span class="ptype">伤缺</span>
+            <span class="psrc">[头条]</span>
+        </div>
+            </div>
+            <div class="injury-col away">
+                <h4><span class="dot"></span>哈茨伤停</h4>
+                
+        <div class="injury-item">
+            <span class="pname">施沃格</span>
+            <span class="ppos">(主力门将)</span>
+            <span class="ptype">转会美因茨</span>
+            <span class="psrc">[头条]</span>
+        </div>
+        <div class="injury-item">
+            <span class="pname">哈尔基特</span>
+            <span class="ppos">(后防核心)</span>
+            <span class="ptype">重伤</span>
+            <span class="psrc">[头条]</span>
+        </div>
+        <div class="injury-item">
+            <span class="pname">波克格雷文克</span>
+            <span class="ppos">(中场)</span>
+            <span class="ptype">伤缺</span>
+            <span class="psrc">[头条]</span>
+        </div>
+        <div class="injury-item">
+            <span class="pname">金斯利</span>
+            <span class="ppos">(队长)</span>
+            <span class="ptype">伤退</span>
+            <span class="psrc">[头条]</span>
+        </div>
+            </div>
+        </div>
+        
+        <div class="sec-title">📊 模型概率对比</div>
+        <div class="model-wrap">
+            
+    <table class="model-table">
+        <thead>
+            <tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+        </thead>
+        <tbody>
+            <tr><td class="row-label">Dixon-Coles</td><td>70.3%</td><td>15.1%</td><td>14.6%</td></tr>
+            <tr><td class="row-label">Monte Carlo</td><td>69.8%</td><td>16.7%</td><td>13.5%</td></tr>
+            <tr class="fused-row"><td class="row-label">融合概率</td><td><b>74.9%</b></td><td><b>13.9%</b></td><td><b>11.2%</b></td></tr>
+            <tr><td class="row-label">Shin去水</td><td>69.9%</td><td>16.0%</td><td>14.1%</td></tr>
+            <tr><td class="row-label">归一化去水</td><td>83.9%</td><td>10.7%</td><td>5.4%</td></tr>
+            <tr><td class="row-label">模型vs市场差</td><td style="color:#3fb950">+5.0%</td><td style="color:#f85149">-2.1%</td><td style="color:#f85149">-3.0%</td></tr>
+        </tbody>
+    </table>
+        </div>
+        
+        <div class="sec-title">📈 比分预测 TOP10 <span style="color:#8957e5;font-size:0.85em">(规则34v2修正后)</span></div>
+        <div class="data-grid">
+            <div class="data-card">
+                <h4>DC模型比分TOP10</h4>
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead><tr><th>#</th><th>比分</th><th>概率</th><th>体彩赔率</th></tr></thead>
+                        <tbody>
+        <tr style="background:#1a1f2e">
+            <td class="rank">1</td>
+            <td class="score-val">2:1</td>
+            <td>18.5%</td>
+            <td class="odds-val" style="color:#d29922">9.5</td>
+        </tr>
+        <tr style="background:#1a1f2e">
+            <td class="rank">2</td>
+            <td class="score-val">3:0</td>
+            <td>15.0%</td>
+            <td class="odds-val" style="color:#d29922">6.8</td>
+        </tr>
+        <tr style="background:#1a1f2e">
+            <td class="rank">3</td>
+            <td class="score-val">3:1</td>
+            <td>13.5%</td>
+            <td class="odds-val" style="color:#d29922">10.0</td>
+        </tr>
+        <tr >
+            <td class="rank">4</td>
+            <td class="score-val">2:0</td>
+            <td>9.5%</td>
+            <td class="odds-val" style="color:#d29922">6.5</td>
+        </tr>
+        <tr >
+            <td class="rank">5</td>
+            <td class="score-val">4:1</td>
+            <td>8.3%</td>
+            <td class="odds-val" style="color:#d29922">14.0</td>
+        </tr>
+        <tr >
+            <td class="rank">6</td>
+            <td class="score-val">2:2</td>
+            <td>8.3%</td>
+            <td class="odds-val" style="color:#d29922">30.0</td>
+        </tr>
+        <tr >
+            <td class="rank">7</td>
+            <td class="score-val">4:0</td>
+            <td>8.3%</td>
+            <td class="odds-val" style="color:#d29922">8.5</td>
+        </tr>
+        <tr >
+            <td class="rank">8</td>
+            <td class="score-val">1:0</td>
+            <td>8.1%</td>
+            <td class="odds-val" style="color:#d29922">9.4</td>
+        </tr>
+        <tr >
+            <td class="rank">9</td>
+            <td class="score-val">1:1</td>
+            <td>6.7%</td>
+            <td class="odds-val" style="color:#d29922">15.0</td>
+        </tr>
+        <tr >
+            <td class="rank">10</td>
+            <td class="score-val">0:1</td>
+            <td>3.8%</td>
+            <td class="odds-val" style="color:#d29922">45.0</td>
+        </tr></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="data-card">
+                <h4>蒙特卡洛验证TOP5</h4>
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead><tr><th>比分</th><th>频率</th></tr></thead>
+                        <tbody><tr><td class="score-val">2:0</td><td>9.3%</td></tr><tr><td class="score-val">2:1</td><td>9.2%</td></tr><tr><td class="score-val">3:0</td><td>7.8%</td></tr><tr><td class="score-val">1:0</td><td>7.8%</td></tr><tr><td class="score-val">1:1</td><td>7.6%</td></tr></tbody>
+                    </table>
+                </div>
+                <h4 style="margin-top:12px">半场比分TOP3</h4>
+                <div class="table-scroll">
+                    <table class="data-table">
+                        <thead><tr><th>#</th><th>比分</th><th>概率</th></tr></thead>
+                        <tbody>
+        <tr>
+            <td class="rank">1</td>
+            <td class="score-val">1:0</td>
+            <td>24.1%</td>
+        </tr>
+        <tr>
+            <td class="rank">2</td>
+            <td class="score-val">0:0</td>
+            <td>23.2%</td>
+        </tr>
+        <tr>
+            <td class="rank">3</td>
+            <td class="score-val">2:0</td>
+            <td>12.5%</td>
+        </tr></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sec-title">🎯 六维度推荐（规则33扩展版）</div>
+        <div class="rec-grid">
+            <div class="rec-card had">
+                <div class="rec-title">胜平负</div>
+                <div class="rec-badge" style="background:#3fb95022;color:#3fb950">主胜 74.9%</div>
+                <div class="rec-odds">体彩: <span style="color:#f85149">未开售</span></div>
+            </div>
+            <div class="rec-card hafu">
+                <div class="rec-title">让球胜平负</div>
+                <div class="rec-badge" style="background:#d2992222;color:#d29922">让球主胜<br><span style="color:#8b949e;font-size:0.85em">(-2)</span></div>
+                <div class="rec-odds">体彩: 1.95/4.1/2.68</div>
+            </div>
+            <div class="rec-card crs">
+                <div class="rec-title">比分TOP3</div>
+                <div class="rec-top-list">
+                    <div class="top-item">
+                        <span class="top-score">2:1 <small style="color:#8b949e">(18.5%)</small></span>
+                        <span class="top-odds">@9.5</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">3:0 <small style="color:#8b949e">(15.0%)</small></span>
+                        <span class="top-odds">@6.8</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">3:1 <small style="color:#8b949e">(13.5%)</small></span>
+                        <span class="top-odds">@10.0</span>
+                    </div></div>
+            </div>
+            <div class="rec-card ttg">
+                <div class="rec-title">总进球TOP2</div>
+                
+        <div style="margin-bottom:8px">
+            <span style="color:#bc8cff;font-weight:700;font-size:0.85em">首选</span>
+            <span style="color:#f0f6fc;font-weight:700;font-size:1.1em">3球</span>
+            <span style="color:#d29922;font-weight:600;margin-left:8px">27.3%</span>
+            <span style="color:#8b949e;margin-left:8px">@3.85</span>
+        </div>
+        <div style="margin-bottom:8px">
+            <span style="color:#8b949e;font-weight:700;font-size:0.85em">次选</span>
+            <span style="color:#f0f6fc;font-weight:700;font-size:1.1em">4球</span>
+            <span style="color:#d29922;font-weight:600;margin-left:8px">21.1%</span>
+            <span style="color:#8b949e;margin-left:8px">@4.3</span>
+        </div>
+            </div>
+            <div class="rec-card htft">
+                <div class="rec-title">半全场TOP3</div>
+                
+        <div style="margin-bottom:6px">
+            <span style="color:#f85149;font-weight:600;font-size:0.8em">TOP1</span>
+            <span style="color:#f0f6fc;font-weight:700">胜胜</span>
+            <span style="color:#d29922;margin-left:6px">44.2%</span>
+            <span style="color:#8b949e;margin-left:6px">@1.37</span>
+        </div>
+        <div style="margin-bottom:6px">
+            <span style="color:#8b949e;font-weight:600;font-size:0.8em">TOP2</span>
+            <span style="color:#f0f6fc;font-weight:700">平胜</span>
+            <span style="color:#d29922;margin-left:6px">20.2%</span>
+            <span style="color:#8b949e;margin-left:6px">@4.25</span>
+        </div>
+        <div style="margin-bottom:6px">
+            <span style="color:#8b949e;font-weight:600;font-size:0.8em">TOP3</span>
+            <span style="color:#f0f6fc;font-weight:700">平平</span>
+            <span style="color:#d29922;margin-left:6px">9.7%</span>
+            <span style="color:#8b949e;margin-left:6px">@14.0</span>
+        </div>
+            </div>
+            <div class="rec-card ht">
+                <div class="rec-title">半场比分TOP3</div>
+                <div class="rec-top-list">
+                    <div class="top-item">
+                        <span class="top-score">1:0</span>
+                        <span style="color:#8b949e">24.1%</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">0:0</span>
+                        <span style="color:#8b949e">23.2%</span>
+                    </div>
+                    <div class="top-item">
+                        <span class="top-score">2:0</span>
+                        <span style="color:#8b949e">12.5%</span>
+                    </div></div>
+            </div>
+        </div>
+        
+        <div class="notes-section">
+            <div class="notes-label">📝 基本面分析</div>
+            <div class="notes-text">本菲卡从欧罗巴第二轮晋级（首回合1-2圣加仑，次回合5-0圣加仑，总比分6-2）。哈茨从欧冠第二轮被格拉茨风暴0-6总比分血洗淘汰。本菲卡帕夫利迪斯2场4球。哈茨4连败，新帅弗兰肯上任3场全败。本菲卡身价3.86亿欧。</div>
+        </div>
+    </div>
+    
+    
+<div class="summary-section">
+    <h2>串关思路</h2>
+    <div style="background:#161b22;border:1px solid #30363d;border-radius:12px;padding:20px">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+            <div>
+                <h4 style="color:#3fb950;margin-bottom:10px">稳健2串1</h4>
+                <div style="background:#0d1117;border-radius:8px;padding:12px;border-left:3px solid #3fb950">
+                    <p style="font-size:0.9em;color:#c9d1d9">
+                        <b>005 本菲卡胜胜 + 004 塞萨洛尼基主胜</b><br>
+                        005本菲卡主场碾压哈茨（4连败+4人伤停），胜胜概率44.2%赔率1.37<br>
+                        004塞萨洛尼基主场龙，安德莱客场6场不胜<br>
+                        综合赔率约3.0，稳健度较高
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h4 style="color:#d29922;margin-bottom:10px">进球3串1</h4>
+                <div style="background:#0d1117;border-radius:8px;padding:12px;border-left:3px solid #d29922">
+                    <p style="font-size:0.9em;color:#c9d1d9">
+                        <b>002+003+004 均3球</b><br>
+                        规则34v2验证：欧联资格赛3球是众数<br>
+                        002: 3球概率30.0% @3.75<br>
+                        003: 3球概率29.9% @3.60<br>
+                        004: 3球概率29.4% @3.60<br>
+                        综合赔率约48.6，小注博冷
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top:15px;background:#0d1117;border-radius:8px;padding:12px;border-left:3px solid #f85149">
+            <h4 style="color:#f85149;margin-bottom:8px">风险提示</h4>
+            <p style="font-size:0.85em;color:#8b949e">
+                001维多利亚残阵+进球荒，不建议纳入串关。002/003置信度均为低★，存在较大不确定性。005本菲卡让2球盘口风险较大（赔率1.95但需净胜3球）。欧联资格赛冷门率偏高，建议小注。
+            </p>
+        </div>
+    </div>
+</div>
+    
+    <div class="page-footer">
+        <p>报告生成时间: 2026-08-06 | 模型: Dixon-Coles + Monte Carlo + Shin + 规则34v2</p>
+        <p class="disclaimer">免责声明：本报告仅供研究参考，不构成投注建议。请理性购彩，量力而行。</p>
+    </div>
+    
+    </div>
+</body>
+</html>

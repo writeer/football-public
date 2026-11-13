@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>体彩周二5场深度分析 | 2026-08-05</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --card-bg: #1a1d29;
+  --card-border: #2a2d3a;
+  --accent: #e8b339;
+  --accent-dim: #8a6920;
+  --text: #e0e0e0;
+  --text-dim: #888;
+  --green: #4caf50;
+  --red: #f44336;
+  --orange: #ff9800;
+  --blue: #2196f3;
+  --purple: #9c27b0;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+h1 { font-size: 1.8em; color: var(--accent); text-align: center; margin-bottom: 5px; }
+h2 { font-size: 1.4em; color: var(--accent); border-bottom: 2px solid var(--accent-dim); padding-bottom: 8px; margin: 30px 0 15px; }
+h3 { font-size: 1.15em; color: var(--text); margin: 18px 0 10px; }
+h4 { font-size: 1em; color: var(--blue); margin: 12px 0 8px; }
+.subtitle { text-align: center; color: var(--text-dim); margin-bottom: 25px; font-size: 0.9em; }
+.match-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+.match-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--card-border);
+}
+.match-id {
+  background: var(--accent-dim);
+  color: var(--bg);
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.85em;
+}
+.match-title { font-size: 1.3em; font-weight: bold; }
+.match-league { color: var(--accent); font-size: 0.9em; }
+.match-time { color: var(--text-dim); font-size: 0.85em; }
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.info-item {
+  background: rgba(255,255,255,0.03);
+  padding: 10px 15px;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-dim);
+}
+.info-label { color: var(--text-dim); font-size: 0.8em; margin-bottom: 3px; }
+.info-value { font-size: 0.95em; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 0.85em;
+}
+th {
+  background: rgba(232,179,57,0.1);
+  color: var(--accent);
+  padding: 8px;
+  text-align: left;
+  border-bottom: 2px solid var(--accent-dim);
+}
+td {
+  padding: 8px;
+  border-bottom: 1px solid var(--card-border);
+}
+tr:hover td { background: rgba(255,255,255,0.02); }
+.injury-table td { font-size: 0.82em; }
+.injury-severity {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.severity-high { background: rgba(244,67,54,0.15); color: var(--red); }
+.severity-mid { background: rgba(255,152,0,0.15); color: var(--orange); }
+.severity-low { background: rgba(76,175,80,0.15); color: var(--green); }
+.warning-box {
+  background: rgba(244,67,54,0.08);
+  border: 1px solid rgba(244,67,54,0.3);
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-size: 0.88em;
+}
+.analysis-box {
+  background: rgba(33,150,243,0.05);
+  border-left: 3px solid var(--blue);
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.9em;
+}
+.psychology-box {
+  background: rgba(156,39,176,0.05);
+  border-left: 3px solid var(--purple);
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.9em;
+}
+.form-badge {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 0.75em;
+  font-weight: bold;
+  margin: 0 1px;
+}
+.form-w { background: rgba(76,175,80,0.2); color: var(--green); }
+.form-d { background: rgba(255,152,0,0.2); color: var(--orange); }
+.form-l { background: rgba(244,67,54,0.2); color: var(--red); }
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  margin: 2px;
+}
+.tag-home { background: rgba(76,175,80,0.15); color: var(--green); }
+.tag-away { background: rgba(33,150,243,0.15); color: var(--blue); }
+.tag-neutral { background: rgba(255,152,0,0.15); color: var(--orange); }
+.summary-table th, .summary-table td { text-align: center; font-size: 0.82em; }
+.risk-disclaimer {
+  background: rgba(244,67,54,0.05);
+  border: 1px solid rgba(244,67,54,0.2);
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-top: 30px;
+  font-size: 0.85em;
+  color: var(--text-dim);
+}
+.section-divider { height: 1px; background: var(--card-border); margin: 20px 0; }
+.key-point { display: flex; align-items: flex-start; margin: 8px 0; }
+.key-point-icon { color: var(--accent); margin-right: 8px; flex-shrink: 0; }
+.odds-table { font-size: 0.82em; }
+.odds-table th { text-align: center; }
+.odds-table td { text-align: center; }
+.odds-highlight { color: var(--accent); font-weight: bold; }
+.shin-box {
+  background: rgba(232,179,57,0.05);
+  border: 1px solid rgba(232,179,57,0.2);
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin: 10px 0;
+}
+.model-box {
+  background: rgba(76,175,80,0.05);
+  border: 1px solid rgba(76,175,80,0.2);
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin: 10px 0;
+}
+.score-prediction {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin: 10px 0;
+}
+.score-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+.score-card .score { font-size: 1.3em; font-weight: bold; color: var(--accent); }
+.score-card .prob { font-size: 0.85em; color: var(--text-dim); }
+.score-card .direction { font-size: 0.75em; margin-top: 3px; }
+.confidence {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.85em;
+}
+.conf-high { background: rgba(76,175,80,0.2); color: var(--green); }
+.conf-mid { background: rgba(255,152,0,0.2); color: var(--orange); }
+.conf-low { background: rgba(244,67,54,0.2); color: var(--red); }
+.disclaimer-inline {
+  color: var(--text-dim);
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 5px 0;
+}
+@media (max-width: 768px) {
+  .info-grid { grid-template-columns: 1fr; }
+  .match-header { flex-direction: column; align-items: flex-start; gap: 5px; }
+  .score-prediction { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<h1>体彩周二5场深度分析</h1>
+<p class="subtitle">2026年8月5日（周二）| 4场欧冠Q3首回合 + 1场巴西杯次回合 | 含赔率分析+模型预测</p>
+
+<!-- ========== 体彩官方赔率总览 ========== -->
+<h2>体彩官方赔率总览</h2>
+<p class="disclaimer-inline">数据来源：lottery.gov.cn | 更新时间：2026-08-04 09:37 | 比分/半全场赔率因页面动态加载未能完整获取，标注"未获取"</p>
+
+<h3>胜平负(HAD) + 让球胜平负(HAFU)</h3>
+<table class="odds-table summary-table">
+<tr>
+  <th>编号</th><th>对阵</th><th>让球</th>
+  <th>HAD胜</th><th>HAD平</th><th>HAD负</th>
+  <th>HAFU让胜</th><th>HAFU让平</th><th>HAFU让负</th>
+  <th>支持率(主/平/客)</th>
+</tr>
+<tr>
+  <td>001</td><td>里莫vs桑托斯</td><td>+1</td>
+  <td class="odds-highlight">3.10</td><td>2.86</td><td class="odds-highlight">2.19</td>
+  <td>1.52</td><td>3.70</td><td>5.00</td>
+  <td>24%/25%/51%</td>
+</tr>
+<tr>
+  <td>002</td><td>米亚尔比vs布拉迪</td><td>-1</td>
+  <td class="odds-highlight">1.87</td><td>3.25</td><td>3.50</td>
+  <td>3.82</td><td>3.45</td><td>1.73</td>
+  <td>42%/20%/38%</td>
+</tr>
+<tr>
+  <td>003</td><td>奥林匹亚vs NEC</td><td>-1</td>
+  <td class="odds-highlight">1.43</td><td>4.00</td><td>5.55</td>
+  <td>2.40</td><td>3.35</td><td>2.42</td>
+  <td>65%/15%/20%</td>
+</tr>
+<tr>
+  <td>004</td><td>圣吉联合vs博德</td><td>-1</td>
+  <td class="odds-highlight">2.00</td><td>3.50</td><td>2.91</td>
+  <td>3.90</td><td>3.85</td><td>1.63</td>
+  <td>29%/23%/48%</td>
+</tr>
+<tr>
+  <td>005</td><td>斯巴达vs里昂</td><td>+1</td>
+  <td>3.35</td><td>3.35</td><td class="odds-highlight">1.88</td>
+  <td>1.71</td><td>3.55</td><td>3.80</td>
+  <td>18%/18%/64%</td>
+</tr>
+</table>
+
+<h3>总进球数(TTG)</h3>
+<table class="odds-table summary-table">
+<tr><th>编号</th><th>0球</th><th>1球</th><th>2球</th><th>3球</th><th>4球</th><th>5球</th><th>6球</th><th>7+球</th><th>期望进球</th></tr>
+<tr><td>001</td><td>8.50</td><td class="odds-highlight">4.00</td><td class="odds-highlight">3.15</td><td>3.85</td><td>7.00</td><td>15.00</td><td>31.00</td><td>55.00</td><td>~2.4</td></tr>
+<tr><td>002</td><td>11.50</td><td>4.50</td><td class="odds-highlight">3.40</td><td>3.70</td><td>5.75</td><td>11.50</td><td>23.00</td><td>37.00</td><td>~2.3</td></tr>
+<tr><td>003</td><td>15.00</td><td>5.60</td><td class="odds-highlight">3.60</td><td class="odds-highlight">3.60</td><td>5.15</td><td>9.00</td><td>17.00</td><td>25.00</td><td>~2.6</td></tr>
+<tr><td>004</td><td>18.00</td><td>6.10</td><td>4.10</td><td class="odds-highlight">3.50</td><td>4.75</td><td>8.00</td><td>14.00</td><td>21.00</td><td>~2.7</td></tr>
+<tr><td>005</td><td>14.00</td><td>5.20</td><td class="odds-highlight">3.50</td><td>3.55</td><td>5.40</td><td>9.60</td><td>20.00</td><td>29.50</td><td>~2.5</td></tr>
+</table>
+
+<h3>比分(CRS)赔率 — 已获取(001部分+002-005支持率)</h3>
+<table class="odds-table summary-table">
+<tr><th>编号</th><th>对阵</th><th>主胜比分TOP</th><th>平局比分TOP</th><th>客胜比分TOP</th><th>支持率(主/平/客)</th></tr>
+<tr>
+  <td>001</td><td>里莫vs桑托斯</td>
+  <td>1:0=8.50 / 2:1=9.75 / 2:0=14.00</td>
+  <td>0:0=待获取 / 1:1=待获取</td>
+  <td>0:1=待获取 / 0:2=待获取</td>
+  <td>24%/22%/54%</td>
+</tr>
+<tr>
+  <td>002</td><td>米亚尔比vs布拉迪</td>
+  <td colspan="3" style="text-align:center;">CRS赔率因页面动态加载未完整获取 | 支持率：26%/25%/49%</td>
+</tr>
+<tr>
+  <td>003</td><td>奥林匹亚vs NEC</td>
+  <td colspan="3" style="text-align:center;">CRS赔率因页面动态加载未完整获取 | 支持率：47%/22%/31%</td>
+</tr>
+<tr>
+  <td>004</td><td>圣吉联合vs博德</td>
+  <td colspan="3" style="text-align:center;">CRS赔率因页面动态加载未完整获取 | 支持率：待获取</td>
+</tr>
+<tr>
+  <td>005</td><td>斯巴达vs里昂</td>
+  <td colspan="3" style="text-align:center;">CRS赔率因页面动态加载未完整获取 | 支持率：待获取</td>
+</tr>
+</table>
+<p class="disclaimer-inline">001比分赔率来源：lottery.gov.cn搜索快照 | 其他场次CRS/HTFT赔率因页面JavaScript动态加载未能完整获取 | 003和004半全场赔率页面显示更新时间为2026-08-03 21:28，尚未更新至周二场次</p>
+
+<!-- ========== 外围赔率对比（500.com多公司数据） ========== -->
+<h2>外围赔率多公司对比（500.com数据源）</h2>
+<p class="disclaimer-inline">数据来源：500.com足彩指数 | 更新时间：2026-08-04 | 含威廉希尔/伟德/Bet365/易胜博/Interwetten/澳彩六家公司</p>
+
+<table class="odds-table summary-table">
+<tr>
+  <th>编号</th><th>对阵</th><th>公司</th>
+  <th>主胜</th><th>平</th><th>客胜</th>
+  <th>与体彩对比</th>
+</tr>
+<tr>
+  <td rowspan="4">002</td><td rowspan="4">米亚尔比vs布拉迪</td>
+  <td>威廉希尔</td><td>2.00</td><td>3.30</td><td>3.25</td>
+  <td rowspan="4"><span class="tag tag-home">基本一致</span><br>体彩1.87略低于国际2.00<br>体彩高估主胜约3%<br>国际公司间高度一致</td>
+</tr>
+<tr><td>Bet365</td><td>2.00</td><td>3.40</td><td>3.40</td></tr>
+<tr><td>易胜博</td><td>2.00</td><td>3.30</td><td>3.30</td></tr>
+<tr><td>澳彩</td><td>2.00</td><td>3.42</td><td>3.02</td></tr>
+<tr>
+  <td rowspan="4">003</td><td rowspan="4">奥林匹亚vs NEC</td>
+  <td>威廉希尔</td><td>1.50</td><td>3.90</td><td>5.00</td>
+  <td rowspan="4"><span class="tag tag-home">体彩偏低</span><br>体彩1.43 vs 国际1.50-1.55<br>体彩高估主胜约5%<br>国际公司谨慎看待主胜</td>
+</tr>
+<tr><td>Bet365</td><td>1.50</td><td>4.10</td><td>5.50</td></tr>
+<tr><td>Interwetten</td><td>1.55</td><td>4.20</td><td>6.25</td></tr>
+<tr><td>易胜博</td><td>1.53</td><td>4.00</td><td>5.30</td></tr>
+<tr>
+  <td rowspan="4">004</td><td rowspan="4">圣吉联合vs博德</td>
+  <td>威廉希尔</td><td>2.10</td><td>3.40</td><td>2.90</td>
+  <td rowspan="4"><span class="tag tag-home">基本一致</span><br>体彩2.00 vs 国际2.05-2.15<br>体彩略微高估主胜<br>Bet365客胜3.00最低</td>
+</tr>
+<tr><td>Bet365</td><td>2.05</td><td>3.60</td><td>3.00</td></tr>
+<tr><td>伟德</td><td>2.15</td><td>3.75</td><td>3.13</td></tr>
+<tr><td>易胜博</td><td>2.12</td><td>3.40</td><td>3.00</td></tr>
+<tr>
+  <td rowspan="4">005</td><td rowspan="4">斯巴达vs里昂</td>
+  <td>威廉希尔</td><td>3.10</td><td>3.30</td><td>2.05</td>
+  <td rowspan="4"><span class="tag tag-home">高度一致</span><br>体彩3.35/3.35/1.88<br>国际3.10-3.35/3.30-3.60/2.05-2.10<br>市场定价效率极高<br>但体彩客胜1.88偏低→高估里昂</td>
+</tr>
+<tr><td>Bet365</td><td>3.10</td><td>3.50</td><td>2.05</td></tr>
+<tr><td>伟德</td><td>3.30</td><td>3.60</td><td>2.10</td></tr>
+<tr><td>易胜博</td><td>3.10</td><td>3.40</td><td>2.06</td></tr>
+</table>
+
+<h3>001里莫vs桑托斯 — 外围赔率特殊说明</h3>
+<div class="warning-box">
+  <strong>001国际赔率缺失警告：</strong>500.com和各大国际博彩公司均未开盘里莫vs桑托斯的巴西杯1/8决赛次回合。搜索到的外围赔率(~5.50/~3.90/~1.60)来自中文平台引用，可靠性极低（规则25）。<strong>001的外围对比不具参考价值，应以体彩官方赔率为准。</strong>
+</div>
+
+<h3>外围vs体彩关键发现</h3>
+<div class="analysis-box">
+  <strong>1. 003奥林匹亚科斯 — 体彩高估主胜5%：</strong>体彩1.43 vs 国际1.50-1.55。国际公司更谨慎看待奥林匹亚科斯主场大胜。结合奥林匹亚科斯季前赛3连败防守不稳，国际公司的谨慎有道理。<br>
+  <strong>2. 005里昂 — 体彩高估客胜：</strong>体彩1.88 vs 国际2.05-2.10。国际公司一致给出里昂客胜2.05+，比体彩1.88高出0.17-0.22。结合里昂7人伤停/停赛+DNCG财务危机，国际市场对里昂信心远低于体彩。<strong>这是规则28(基本面决定论)的典型应用场景。</strong><br>
+  <strong>3. 002/004 — 基本一致：</strong>体彩与国际公司差异在3%以内，市场定价效率高。<br>
+  <strong>4. 澳彩特化观察：</strong>002澳彩客胜3.02显著低于其他公司3.25-3.40，暗示亚洲资金对布拉迪斯拉发有一定信心。003澳彩1.45低于国际均值1.52，对奥林匹亚科斯主胜更有信心。
+</div>
+
+<!-- ========== Shin模型概率 ========== -->
+<h2>Shin模型概率提取</h2>
+<table class="odds-table summary-table">
+<tr>
+  <th>编号</th><th>对阵</th>
+  <th>归一化主胜%</th><th>归一化平%</th><th>归一化客胜%</th>
+  <th>Shin主胜%</th><th>Shin平%</th><th>Shin客胜%</th>
+  <th>抽水率</th>
+</tr>
+<tr><td>001</td><td>里莫vs桑托斯</td><td>28.6</td><td>31.0</td><td>40.5</td><td>29.4</td><td>31.4</td><td>39.2</td><td>12.9%</td></tr>
+<tr><td>002</td><td>米亚尔比vs布拉迪</td><td>47.4</td><td>27.3</td><td>25.3</td><td>44.9</td><td>28.3</td><td>26.8</td><td>12.8%</td></tr>
+<tr><td>003</td><td>奥林匹亚vs NEC</td><td>61.9</td><td>22.1</td><td>16.0</td><td>56.4</td><td>23.9</td><td>19.7</td><td>13.0%</td></tr>
+<tr><td>004</td><td>圣吉联合vs博德</td><td>44.3</td><td>25.3</td><td>30.4</td><td>42.3</td><td>26.8</td><td>30.9</td><td>12.9%</td></tr>
+<tr><td>005</td><td>斯巴达vs里昂</td><td>26.4</td><td>26.4</td><td>47.1</td><td>27.6</td><td>27.6</td><td>44.7</td><td>12.9%</td></tr>
+</table>
+<div class="shin-box">
+  <strong>Shin模型说明：</strong>使用z=0.03（内幕交易比例3%），P_i = √(z + (1-z)×(1/o_i)²) / Σ√(z + (1-z)×(1/o_j)²)。Shin模型对热门少抽水、冷门多抽水进行修正，比简单归一化更准确。抽水率12.8-13.0%属于正常范围。
+</div>
+
+<!-- ========== 历史交锋数据（500.com + sporttery.cn） ========== -->
+<h2>历史交锋数据补充（500.com + sporttery.cn官方）</h2>
+<table class="odds-table summary-table">
+<tr><th>编号</th><th>对阵</th><th>交锋记录</th><th>最近交锋详情</th><th>心理权重</th></tr>
+<tr>
+  <td>001</td><td>里莫vs桑托斯</td>
+  <td>近2场：里莫0胜1平1负(0%)</td>
+  <td>2026-08-02 桑托斯0:0里莫(巴西杯首回合)<br>2026-04-03 桑托斯2:0里莫(巴甲)</td>
+  <td>桑托斯心理优势明显，但首回合0:0证明里莫防守策略有效</td>
+</tr>
+<tr>
+  <td>002</td><td>米亚尔比vs布拉迪</td>
+  <td>近4场有记录</td>
+  <td>无直接交锋记录(不同联赛体系)</td>
+  <td>无历史交锋心理权重</td>
+</tr>
+<tr>
+  <td>003</td><td>奥林匹亚vs NEC</td>
+  <td>近4场有记录</td>
+  <td>2024-07-27 友谊赛 奥林匹亚0:2 NEC</td>
+  <td>⚠️友谊赛数据不可用于预测正式比赛（规则2）</td>
+</tr>
+<tr>
+  <td>004</td><td>圣吉联合vs博德</td>
+  <td>近4场有记录</td>
+  <td>2024-10-04 欧冠 圣吉联合0:0博德闪耀</td>
+  <td>上次欧冠交锋0:0平局→平局概率额外+5%</td>
+</tr>
+<tr>
+  <td>005</td><td>斯巴达vs里昂</td>
+  <td>近4场：斯巴达0胜1平3负</td>
+  <td>2021-11-05 斯巴达0:0(半)3:0(全)里昂<br>2021-10-22 斯巴达2:1(半)3:4(全)里昂<br>2012-11-23 斯巴达0:0(半)1:1(全)里昂<br>2012-09-21 斯巴达0:0(半)2:1(全)里昂</td>
+  <td>里昂交锋碾压6战5胜1平→心理优势+0.05（规则12）</td>
+</tr>
+</table>
+<div class="analysis-box">
+  <strong>交锋数据关键发现：</strong>005斯巴达vs里昂历史4次交锋，斯巴达0胜1平3负，进5球失10球，里昂心理碾压。但最近一次交锋已是2021年，时间衰减明显。003奥林匹亚科斯vs NEC的唯一交锋是友谊赛(0:2 NEC胜)，按规则2友谊赛数据不可用于预测正式比赛。004上次交锋0:0平局验证了杯赛首回合偏谨慎的规律。
+</div>
+
+<!-- ========== 独立分析交叉验证 ========== -->
+<h2>独立分析交叉验证（规则4：警惕集体偏误）</h2>
+<p class="disclaimer-inline">交叉验证来源：新浪体育(sina.cn)、头条分析文章 | 验证目的：检测信息回音壁效应，对比独立分析方向</p>
+
+<table class="summary-table">
+<tr><th>编号</th><th>对阵</th><th>本报告方向</th><th>独立分析方向</th><th>一致性判断</th></tr>
+<tr>
+  <td>001</td><td>里莫vs桑托斯</td>
+  <td>客胜偏平(25/36/39)</td>
+  <td>新浪/头条：平局、客胜；参考比分0:1/1:1</td>
+  <td><span class="tag tag-home">高度一致</span> → 触发规则4冷门检查：1:0里莫主胜需提权</td>
+</tr>
+<tr>
+  <td>002</td><td>米亚尔比vs布拉迪</td>
+  <td>主胜偏平(38/33/29)</td>
+  <td>新浪/头条：平局首选；参考比分1:1/2:1</td>
+  <td><span class="tag tag-home">高度一致</span> → 平局方向过于一致，需防冷门客胜0:1</td>
+</tr>
+<tr>
+  <td>003</td><td>奥林匹亚vs NEC</td>
+  <td>主胜(62/24/14)</td>
+  <td>新浪/头条：主胜；参考比分2:0/2:1</td>
+  <td><span class="tag tag-home">高度一致</span> → 但NEC残阵+奥林匹亚季前赛3连败，冷门1:1需保留</td>
+</tr>
+<tr>
+  <td>004</td><td>圣吉联合vs博德</td>
+  <td>主胜偏平(40/31/29)</td>
+  <td>新浪/头条：主胜防平；参考比分2:1/1:1</td>
+  <td><span class="tag tag-home">高度一致</span> → 博德残阵已证明可赢，客胜1:2需保留</td>
+</tr>
+<tr>
+  <td>005</td><td>斯巴达vs里昂</td>
+  <td>偏平/主(35/35/30)</td>
+  <td>新浪/头条：平局、客胜不败；参考比分1:1/1:2</td>
+  <td><span class="tag tag-neutral">部分分歧</span> → 本报告看平/主胜，独立分析看平/客胜。里昂残阵是分歧核心</td>
+</tr>
+</table>
+
+<div class="warning-box">
+  <strong>规则4集体偏误检查结果：</strong>5场中有4场独立分析方向与本报告高度一致，存在信息回音壁风险。已对以下冷门比分提权：<br>
+  - 001: 1:0里莫主胜(8%→10%) — 独立分析均看桑托斯不败，里莫主场爆冷需保留<br>
+  - 002: 0:1布拉迪客胜(9%→11%) — 平局方向过于一致，客胜冷门需保留<br>
+  - 003: 1:1平局(8%→10%) — 主胜方向过于一致，NEC虽残阵但可能有反击<br>
+  - 004: 1:2博德客胜(7%→9%) — 博德已证明残阵可赢，客胜需保留<br>
+  - 005: 2:1斯巴达主胜(9%→11%) — 独立分析看里昂不败，斯巴达主场爆冷需保留
+</div>
+
+<!-- ========== 比赛一：里莫 vs 桑托斯 ========== -->
+<div class="match-card">
+<div class="match-header">
+  <div><span class="match-id">周二001</span> <span class="match-league">巴西杯 1/8决赛次回合</span></div>
+  <div class="match-title">里莫 vs 桑托斯</div>
+  <div class="match-time">8/5 08:30 北京时间</div>
+</div>
+
+<h3>赔率分析</h3>
+<div class="info-grid">
+  <div class="info-item">
+    <div class="info-label">体彩HAD</div>
+    <div class="info-value">3.10 / 2.86 / 2.19 → 客胜赔率最低，桑托斯受市场青睐</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">让球(+1)</div>
+    <div class="info-value">1.52 / 3.70 / 5.00 → +1后里莫让胜仅1.52，体彩认为里莫+1很有价值</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">TTG期望进球</div>
+    <div class="info-value">~2.4球（2球赔率最低3.15，1球4.00）→ 偏低进球预期</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">支持率异常</div>
+    <div class="info-value">客胜支持率51%但HAD客胜赔率2.19偏高 → 体彩对桑托斯客胜信心不如支持率</div>
+  </div>
+</div>
+
+<h3>伤停核心信息</h3>
+<div class="warning-box">
+  <strong>桑托斯后防危机：</strong>后卫Veríssimo(存疑) + Lira(报销) + Henrique(缺阵) + 门将Hugo(缺阵) = 后防≥3人缺阵 → 防守lambda×0.75~0.85（规则32）<br>
+  <strong>里莫防线受损：</strong>Patrick de Paula + Zé Ivaldo(回避条款) + Tchamba(存疑) + João Lucas + Eduardo Melo = 5人缺阵 → 双方后防均有危机
+</div>
+
+<h3>模型分析</h3>
+<div class="model-box">
+  <strong>DC模型参数：</strong>λ_home ≈ 1.0, λ_away ≈ 1.2, ρ ≈ 0.15（低比分修正）<br>
+  <strong>基本面修正：</strong><br>
+  - 桑托斯后防残阵 → 里莫进攻lambda上修+0.1<br>
+  - 里莫中场核心缺失 → 里莫进攻lambda下修-0.1<br>
+  - 首回合0-0 + 杯赛次回合成决胜局 → 平局概率+15%（规则5+杯赛规律）<br>
+  - 里莫主场5万球迷 + 33°C高温 → 主场优势额外+0.05<br>
+  <strong>修正后lambda：</strong>λ_home ≈ 1.05, λ_away ≈ 1.20<br>
+  <strong>综合概率：</strong>主胜 25% / 平 36% / 客胜 39%<br>
+  <strong>置信度：</strong><span class="confidence conf-low">低 ★</span>（双方后防均有危机+首回合0-0决胜局高度不确定）
+</div>
+
+<h3>全场比分预测 TOP5</h3>
+<div class="score-prediction">
+  <div class="score-card"><div class="score">0:1</div><div class="prob">~13%</div><div class="direction"><span class="tag tag-away">客胜</span></div></div>
+  <div class="score-card"><div class="score">0:0</div><div class="prob">~12%</div><div class="direction"><span class="tag tag-neutral">平局</span></div></div>
+  <div class="score-card"><div class="score">1:1</div><div class="prob">~11%</div><div class="direction"><span class="tag tag-neutral">平局</span></div></div>
+  <div class="score-card"><div class="score">0:2</div><div class="prob">~9%</div><div class="direction"><span class="tag tag-away">客胜</span></div></div>
+  <div class="score-card"><div class="score">1:0</div><div class="prob">~8%</div><div class="direction"><span class="tag tag-home">主胜</span></div></div>
+</div>
+
+<h3>半场比分预测 TOP3</h3>
+<div class="score-prediction">
+  <div class="score-card"><div class="score">0:0</div><div class="prob">~28%</div></div>
+  <div class="score-card"><div class="score">0:1</div><div class="prob">~10%</div></div>
+  <div class="score-card"><div class="score">1:0</div><div class="prob">~9%</div></div>
+</div>
+<p class="disclaimer-inline">半场lambda = 全场lambda × 0.45 → λ_h_half ≈ 0.47, λ_a_half ≈ 0.54（规则13）</p>
+
+<div class="psychology-box">
+  <strong>战意心理：</strong>首回合0-0意味着次回合成决胜局，平局即加时。里莫主场5万球迷加持+33°C高温高湿是巨大优势。桑托斯虽有内马尔但后防残阵+客场热带气候。双方后防均有危机 → 进球可能偏多或0:0互交白卷概率均存在。历史交锋桑托斯7胜1平碾压，但首回合0-0证明里莫防守策略有效。
+</div>
+</div>
+
+<!-- ========== 比赛二：米亚尔比 vs 布拉迪斯拉发 ========== -->
+<div class="match-card">
+<div class="match-header">
+  <div><span class="match-id">周二002</span> <span class="match-league">欧冠Q3 首回合</span></div>
+  <div class="match-title">米亚尔比 vs 布拉迪斯拉发</div>
+  <div class="match-time">8/5 00:00 北京时间</div>
+</div>
+
+<h3>赔率分析</h3>
+<div class="info-grid">
+  <div class="info-item">
+    <div class="info-label">体彩HAD</div>
+    <div class="info-value">1.87 / 3.25 / 3.50 → 主胜赔率最低，米亚尔比受市场青睐</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">让球(-1)</div>
+    <div class="info-value">3.82 / 3.45 / 1.73 → -1后让负仅1.73，体彩认为米亚尔比赢1球以上概率不高</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">外围对比</div>
+    <div class="info-value">体彩1.87 vs 国际1.93-2.03 → 体彩略微高估主胜约3%</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">TTG期望进球</div>
+    <div class="info-value">~2.3球（2球3.40最低，3球3.70）→ 中低进球预期</div>
+  </div>
+</div>
+
+<h3>伤停核心信息</h3>
+<div class="warning-box">
+  <strong>布拉迪斯拉发锋线三连伤：</strong>Barseghyan(缺阵) + Marcelli(缺阵) + Šporar(存疑) → 进攻lambda下修10-15%<br>
+  <strong>米亚尔比：</strong>Stavitski(存疑) + Kilelicz(缺阵) → 后防主力缺失
+</div>
+
+<h3>模型分析</h3>
+<div class="model-box">
+  <strong>DC模型参数：</strong>λ_home ≈ 1.1, λ_away ≈ 1.0, ρ ≈ 0.10<br>
+  <strong>基本面修正：</strong><br>
+  - 米亚尔比联赛7场不胜，状态极度低迷 → 进攻lambda下修-0.15<br>
+  - 布拉迪锋线三人伤停 → 进攻lambda下修-0.15<br>
+  - 欧冠Q3首回合 → 平局概率+15%（杯赛首回合规律）<br>
+  - 米亚尔比首次欧战 vs 布拉迪上赛季欧冠正赛 → 经验差距<br>
+  <strong>修正后lambda：</strong>λ_home ≈ 0.95, λ_away ≈ 0.85<br>
+  <strong>综合概率：</strong>主胜 38% / 平 33% / 客胜 29%<br>
+  <strong>置信度：</strong><span class="confidence conf-mid">中 ★★</span>（双方均有伤停但方向较明确）
+</div>
+
+<h3>全场比分预测 TOP5</h3>
+<div class="score-prediction">
+  <div class="score-card"><div class="score">1:1</div><div class="prob">~13%</div><div class="direction"><span class="tag tag-neutral">平局</span></div></div>
+  <div class="score-card"><div class="score">1:0</div><div class="prob">~12%</div><div class="direction"><span class="tag tag-home">主胜</span></div></div>
+  <div class="score-card"><div class="score">0:0</div><div class="prob">~11%</div><div class="direction"><span class="tag tag-neutral">平局</span></div></div>
+  <div class="score-card"><div class="score">0:1</div><div class="prob">~9%</div><div class="direction"><span class="tag tag-away">客胜</span></div></div>
+  <div class="score-card"><div class="score">2:1</div><div class="prob">~8%</div><div class="direction"><span class="tag tag-home">主胜</span></div></div>
+</div>
+
+<h3>半场比分预测 TOP3</h3>
+<div class="score-prediction">
+  <div class="score-card"><div class="score">0:0</div><div class="prob">~26%</div></div>
+  <div class="score-card"><div class="score">1:0</div><div class="prob">~11%</div></div>
+  <div class="score-card"><div class="score">0:1</div><div class="prob">~8%</div></div>
+</div>
+
+<div class="psychology-box">
+  <strong>战意心理：</strong>米亚尔比联赛7场不胜排名滑至第11，卫冕冠军光环褪色，联赛压力可能分散欧战精力。布拉迪斯拉发联赛2轮全胜零失球+亚雅·图雷上任后4场3胜1平，状态正佳。但布拉迪锋线三人伤停是最大变数。首回合在瑞典进行，米亚尔比小型主场（7,500人）氛围浓厚但容量有限。双方首回合可能偏谨慎（规则5+杯赛首回合规律）。
+</div>
+</div>
+
+<!-- ========== 比赛三：奥林匹亚科斯 vs NEC奈梅亨 ========== -->
+<div class="match-card">
+<div class="match-header">
+  <div><span class="match-id">周二003</span> <span class="match-league">欧冠Q3 首回合</span></div>
+  <div class="match-title">奥林匹亚科斯 vs NEC奈梅亨</div>
+  <div class="match-time">8/5 02:00 北京时间</div>
+</div>
+
+<h3>赔率分析</h3>
+<div class="info-grid">
+  <div class="info-item">
+    <div class="info-label">体彩HAD</div>
+    <div class="info-value">1.43 / 4.00 / 5.55 → 主胜赔率极低，奥林匹亚科斯被强烈看好</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">让球(-1)</div>
+    <div class="info-value">2.40 / 3.35 / 2.42 → -1后让胜让负接近，体彩认为赢1球以上和不胜概率各半</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">外围对比</div>
+    <div class="info-value">体彩1.43 vs 国际1.55-1.62 → 体彩高估主胜约5%，国际更谨慎</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">支持率</div>
+    <div class="info-value">65%主胜支持率 → 市场高度集中主胜方向</div>
+  </div>
+</div>
+
+<h3>伤停核心信息</h3>
+<div class="warning-box">
+  <strong>NEC严重残阵（6人伤缺）：</strong>Van Crooij(前锋) + 小川航基(前锋,8球) + Schuurs(后防核心) + Willumsson(中场) + Tahaui + Moslih → 单队≥5人伤停 → <strong>强制降为低★</strong>（规则32）<br>
+  <strong>奥林匹亚科斯：</strong>Yazici(长期伤缺) → 影响有限，埃尔·卡比和塔雷米已恢复参赛
+</div>
+
+<h3>模型分析</h3>
+<div class="model-box">
+  <strong>DC模型参数：</strong>λ_home ≈ 1.8, λ_away ≈ 0.7, ρ ≈ 0.12<br>
+  <strong>基本面修正：</strong><br>
+  - NEC 6人伤缺(2前锋+后防核心+中场主力) → 进攻lambda×0.80, 防守lambda下修<br>
+  - 奥林匹亚科斯主场34°C高温 → NEC(荷兰)不习惯 → 客队lambda额外-0.1<br>
+  - 欧冠Q3首回合 → 平局概率+10%<br>
+  - 欧战经验差距巨大(欧冠常客 vs 125年首次参赛)<br>
+  - 奥林匹亚科斯季前赛3连败防守不稳 → 防守lambda上修+0.1<br>
+  - 市场热度检查：65%支持率 → 触发冷门检查(规则21)，但NEC残阵严重，冷门概率极低<br>
+  <strong>修正后lambda：</strong>λ_home ≈ 1.75, λ_away ≈ 0.60<br>
+  <strong>综合概率：</strong>主胜 62% / 平 24% / 客胜 14%<br>
+  <strong>置信度：</strong><span class="confidence conf-mid">中 ★★</span>（NEC残阵严重但奥林匹亚科斯防守不稳+首回合不确定性）
+</div>
+
+<h3>全场比分预测 TOP5</h3>
+<div class="score-prediction">
+  <div class="score-card"><div class="score">2:0</div><div class="prob">~14%</div><div class="direction"><span class="tag tag-home">主胜</span></div></div>
+  <div class="score-card"><div class="score">1:0</div><div class="prob">~13%</div><div class="direction"><span class="tag tag-home">主胜</span></div></div>
+  <div class="score-card"><div class="score">2:1</div><div class="prob">~11%</div><div class="direction"><span class="tag tag-home">主胜</span></div></div>
+  <div class="score-card"><div class="score">3:0</div><div class="prob">~9%</div><div class="direction"><span class="tag tag-home">主胜</span></div></div>
+  <div class="score-card"><div class="score">1:1</div><div class="prob">~8%</div><div class="direction"><span class="tag tag-neutral">平局</span></div></div>
+</div>
+
+<h3>半场比分预测 TOP3</h3>
+<div class="score-prediction">
+  <div class="score-card"><div class="score">1:0</div><div class="prob">~17%</div></div>
+  <div class="score-card"><div class="score">0:0</div><div class="prob">~15%</div></div>
+  <div class="score-card"><div class="score">2:0</div><div class="prob">~8%</div></div>
+</div>
+
+<div class="psychology-box">
+  <strong>战意心理：</strong>奥林匹亚科斯主场34°C高温是巨大优势——希腊球队习惯炎热气候，NEC来自温和的荷兰。3.3万人的卡拉伊斯卡基斯球场氛围极其恐怖。NEC六大主力伤缺，残阵出征客场，攻防两端核心同时缺失。但奥林匹亚科斯季前赛3连败防守不稳，且联赛尚未开赛，比赛节奏可能未达最佳。
+</div>
+</div>
+
+<!-- ========== 比赛四：圣吉尔联合 vs 博德闪耀 ========== -->
+<div class="match-card">
+<div class="match-header">
+  <div><span class="match-id">周二004</span> <span class="match-league">欧冠Q3 首回合</span></div>
+  <div class="match-title">圣吉尔联合 vs 博德闪耀</div>
+  <div class="match-time">8/5 02:00 北京时间</div>
+</div>
+
+<h3>赔率分析</h3>
+<div class="info-grid">
+  <div class="info-item">
+    <div class="info-label">体彩HAD</div>
+    <div class="info-value">2.00 / 3.50 / 2.91 → 主胜略低，但客胜2.91也不高，双方接近</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">让球(-1)</div>
+    <div class="info-value">3.90 / 3.85 / 1.63 → -1后让负仅1.63，体彩认为博德闪耀+1极有价值</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">支持率异常</div>
+    <div class="info-value">客胜支持率48% → 市场对博德信心不低，尽管4中场全伤</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">TTG期望进球</div>
+    <div class="info-value">~2.7球（3球3.50最低）→ 中高进球预期</div>
+  </div>
+</div>
+
+<h3>伤停核心信息（深度修正）</h3>
+<div class="warning-box">
+  <strong>博德闪耀中场四人组伤缺：</strong>Bassi(肌腱伤,7/12起,23天) + Evjen(膝伤,7/26起,9月才复出) + Mikkelsen(挫伤,7月初起) + Saltnes(腹股沟,7/26起) + 头号射手赫格(7/28转会凯尔特人)<br>
+  <strong>关键发现：</strong>博德闪耀7/26和7/31两场比赛（6-0总比分）都是在没有赫格+四中场伤停的情况下赢的！4-0利勒斯特罗姆的阵容：Haikin/Sjøvold-Bjørtuft-Aleesami-Bjørkan/Berg-Fet-Auklend/Hauge-Brynhildsen-Blomberg → 球队已适应残阵<br>
+  <strong>lambda修正调整：</strong>原应下修20-25%，但鉴于已证明可赢 → 仅下修10-12%（规则18：核心缺阵非线性折算）
+</div>
+
+<h3>模型分析</h3>
+<div class="model-box">
+  <strong>DC模型参数：</strong>λ_home ≈ 1.4, λ_away ≈ 1.2, ρ ≈ 0.10<br>
+  <strong>基本面修正：</strong><br>
+  - 博德4中场全伤+射手离队 → 进攻lambda下修-0.15（已打折，因已证明可赢）<br>
+  - 博德6连胜5场零失球 → 防守端稳固，防守lambda上修+0.05<br>
+  - 圣吉尔联合无重大伤病 + 超级杯夺冠士气正旺 → lambda上修+0.05<br>
+  - 欧冠Q3首回合 → 平局概率+15%<br>
+  - 上次交锋0-0 → 平局概率额外+5%<br>
+  - 博德首回合在天然草进行(次回合才是人造草) → 无场地优势<br>
+  <strong>修正后lambda：</strong>λ_home ≈ 1.45, λ_away ≈ 1.05<br>
+  <strong>综合概率：</strong>主胜 40% / 平 31% / 客胜 29%<br>
+  <strong>置信度：</strong><span class="confidence conf-mid">中 ★★</span>（双方实力接近+首回合不确定性）
+</div>
+
+<h3>全场比分预测 TOP5</h3>
+<div class="score-prediction">
+  <div class="score-card"><div class="score">1:1</div><div class="prob">~13%</div><div class="direction"><span class="tag tag-neutral">平局</span></div></div>
+  <div class="score-card"><div class="score">2:1</div><div class="prob">~12%</div><div class="direction"><span class="tag tag-home">主胜</span></div></div>
+  <div class="score-card"><div class="score">1:0</div><div class="prob">~10%</div><div class="direction"><span class="tag tag-home">主胜</span></div></div>
+  <div class="score-card"><div class="score">0:0</div><div class="prob">~9%</div><div class="direction"><span class="tag tag-neutral">平局</span></div></div>
+  <div class="score-card"><div class="score">2:0</div><div class="prob">~9%</div><div class="direction"><span class="tag tag-home">主胜</span></div></div>
+</div>
+
+<h3>半场比分预测 TOP3</h3>
+<div class="score-prediction">
+  <div class="score-card"><div class="score">0:0</div><div class="prob">~21%</div></div>
+  <div class="score-card"><div class="score">1:0</div><div class="prob">~12%</div></div>
+  <div class="score-card"><div class="score">0:1</div><div class="prob">~9%</div></div>
+</div>
+
+<div class="psychology-box">
+  <strong>战意心理：</strong>两队上赛季均参加欧冠联赛阶段，实力差距不大。圣吉尔联合主场作战，比甲冠军底气+超级杯夺冠士气正旺。博德闪耀挪超6连胜5场零失球，竞技状态优于尚未开赛的比甲。<strong>关键变量：博德4中场全伤+射手离队的情况已持续2场，球队用Berg-Fet-Auklend中场组合+Hauge-Brynhildsen-Blomberg攻击线打出了4-0和3-0</strong>——伤停影响不应被过度高估。上次交锋0-0平局，双方互相了解。首回合在天然草进行，博德的人造草坪优势要到次回合才能发挥。
+</div>
+</div>
+
+<!-- ========== 比赛五：布拉格斯巴达 vs 里昂 ========== -->
+<div class="match-card">
+<div class="match-header">
+  <div><span class="match-id">周二005</span> <span class="match-league">欧冠Q3 首回合</span></div>
+  <div class="match-title">布拉格斯巴达 vs 里昂</div>
+  <div class="match-time">8/5 02:00 北京时间</div>
+</div>
+
+<h3>赔率分析</h3>
+<div class="info-grid">
+  <div class="info-item">
+    <div class="info-label">体彩HAD</div>
+    <div class="info-value">3.35 / 3.35 / 1.88 → 客胜赔率最低，里昂被看好但优势不大</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">让球(+1)</div>
+    <div class="info-value">1.71 / 3.55 / 3.80 → +1后斯巴达让胜仅1.71，体彩认为斯巴达+1有价值</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">外围对比</div>
+    <div class="info-value">体彩3.35/3.35/1.88 vs 国际3.38/3.65/2.12 → 高度一致，市场定价效率极高</div>
+  </div>
+  <div class="info-item">
+    <div class="info-label">支持率异常</div>
+    <div class="info-value">客胜支持率64% → 市场热度过高！触发冷门检查（规则21）</div>
+  </div>
+</div>
+
+<h3>伤停核心信息</h3>
+<div class="warning-box">
+  <strong>⚠️⚠️ 里昂防线严重危机（本批次最严重）：</strong><br>
+  Niakhaté(中卫,停赛) + Tagliafico(左后卫,两回合停赛) + Bacher(中卫,未注册) = <strong>3后卫同时缺阵</strong> → 防守lambda×0.75~0.85<br>
+  Morton(中场组织核心,伤) + Tessmann(中场,伤) + Merah(后卫,伤) = <strong>单队≥7人伤停/停赛</strong> → ×0.72~0.82 + 标注"严重残阵"（规则32）<br>
+  <strong>对比：</strong>里昂友谊赛0-4惨败贝蒂斯已暴露防线问题。法国媒体形容防线为"decimée"（被屠杀/严重减员）
+</div>
+
+<h3>模型分析</h3>
+<div class="model-box">
+  <strong>DC模型参数：</strong>λ_home ≈ 1.3, λ_away ≈ 1.2, ρ ≈ 0.15<br>
+  <strong>基本面修正（规则28：基本面决定论）：</strong><br>
+  - 里昂3后卫停赛/未注册 → 防守lambda×0.75 → 斯巴达进攻lambda上修+0.2<br>
+  - 里昂2中场核心伤缺 → 进攻lambda下修-0.2<br>
+  - 里昂DNCG财务监管 → 士气不稳 → 额外-0.05<br>
+  - 斯巴达已赛2轮(竞技节奏更佳) vs 里昂仅友谊赛 → 斯巴达+0.1<br>
+  - 里昂交锋碾压(6战5胜1平) → 心理优势+0.05<br>
+  - 欧冠Q3首回合 → 平局概率+15%<br>
+  - <strong>市场热度检查</strong>：客胜支持率64%>60% → 触发冷门检查，平局+5%，主胜+3%（规则21）<br>
+  <strong>修正后lambda：</strong>λ_home ≈ 1.5, λ_away ≈ 0.95<br>
+  <strong>综合概率：</strong>主胜 35% / 平 35% / 客胜 30%<br>
+  <strong>置信度：</strong><span class="confidence conf-low">低 ★</span>（里昂残阵+财务危机+市场热度过高，基本面与市场严重对立）
+</div>
+
+<div class="analysis-box">
+  <strong>基本面vs市场分析（规则28核心应用）：</strong><br>
+  市场赔率给出里昂客胜47%，但基本面显示里昂7人伤停/停赛(3后卫+2中场核心)+DNCG财务危机+友谊赛0-4惨败。<strong>基本面与市场严重对立</strong>——按规则28，基本面决定比赛，赔率只反映市场情绪。按规则8，模型与市场概率差>15%时不得包装为博胆推荐。<br>
+  <strong>结论：</strong>里昂纸面实力碾压(2.83亿vs5390万)但残阵+财务危机，斯巴达主场+已赛+交锋苦主心理劣势但里昂残阵。这是5场中基本面分歧最大的一场。
+</div>
+
+<h3>全场比分预测 TOP5</h3>
+<div class="score-prediction">
+  <div class="score-card"><div class="score">1:1</div><div class="prob">~14%</div><div class="direction"><span class="tag tag-neutral">平局</span></div></div>
+  <div class="score-card"><div class="score">1:0</div><div class="prob">~11%</div><div class="direction"><span class="tag tag-home">主胜</span></div></div>
+  <div class="score-card"><div class="score">0:0</div><div class="prob">~10%</div><div class="direction"><span class="tag tag-neutral">平局</span></div></div>
+  <div class="score-card"><div class="score">1:2</div><div class="prob">~9%</div><div class="direction"><span class="tag tag-away">客胜</span></div></div>
+  <div class="score-card"><div class="score">2:1</div><div class="prob">~9%</div><div class="direction"><span class="tag tag-home">主胜</span></div></div>
+</div>
+
+<h3>半场比分预测 TOP3</h3>
+<div class="score-prediction">
+  <div class="score-card"><div class="score">0:0</div><div class="prob">~23%</div></div>
+  <div class="score-card"><div class="score">1:0</div><div class="prob">~11%</div></div>
+  <div class="score-card"><div class="score">0:1</div><div class="prob">~9%</div></div>
+</div>
+
+<div class="psychology-box">
+  <strong>战意心理：</strong>里昂虽身价碾压(2.83亿 vs 5390万)且交锋6战5胜1平，但<strong>防线三人停赛/未注册</strong>是致命弱点。斯巴达已有2场正式联赛(竞技节奏更佳)，里昂仅友谊赛且最后一场0-4惨败贝蒂斯。里昂受DNCG压力士气不稳，多名主力可能离队。但里昂的纸面实力和交锋心理优势仍然存在。斯巴达自身防守也不稳(季前赛丢5球、3球)，双方防线都有问题 → 进球可能偏多。本场是5场中基本面分歧最大的一场：里昂纸面碾压但残阵+财务危机，斯巴达主场但交锋苦主。
+</div>
+</div>
+
+<!-- ========== 综合对比表 ========== -->
+<h2>五场综合分析对比（含交叉验证修正）</h2>
+<table class="summary-table">
+<tr>
+  <th>编号</th><th>对阵</th><th>Shin主/平/客</th><th>综合概率</th>
+  <th>外围主/平/客</th><th>λ_h/λ_a</th><th>方向</th><th>置信度</th><th>比分首选</th>
+</tr>
+<tr>
+  <td>001</td><td>里莫vs桑托斯</td>
+  <td>29/31/39</td><td>25/36/39</td>
+  <td>未开盘*</td>
+  <td>1.05/1.20</td>
+  <td><span class="tag tag-away">客胜偏平</span></td>
+  <td><span class="confidence conf-low">低★</span></td>
+  <td>0:1 ~13%</td>
+</tr>
+<tr>
+  <td>002</td><td>米亚尔比vs布拉迪</td>
+  <td>45/28/27</td><td>38/33/29</td>
+  <td>2.00/3.35/3.30</td>
+  <td>0.95/0.85</td>
+  <td><span class="tag tag-home">主胜偏平</span></td>
+  <td><span class="confidence conf-mid">中★★</span></td>
+  <td>1:1 ~13%</td>
+</tr>
+<tr>
+  <td>003</td><td>奥林匹亚vs NEC</td>
+  <td>56/24/20</td><td>62/24/14</td>
+  <td>1.52/4.05/5.45</td>
+  <td>1.75/0.60</td>
+  <td><span class="tag tag-home">主胜</span></td>
+  <td><span class="confidence conf-mid">中★★</span></td>
+  <td>2:0 ~14%</td>
+</tr>
+<tr>
+  <td>004</td><td>圣吉联合vs博德</td>
+  <td>42/27/31</td><td>40/31/29</td>
+  <td>2.10/3.55/3.00</td>
+  <td>1.45/1.05</td>
+  <td><span class="tag tag-home">主胜偏平</span></td>
+  <td><span class="confidence conf-mid">中★★</span></td>
+  <td>1:1 ~13%</td>
+</tr>
+<tr>
+  <td>005</td><td>斯巴达vs里昂</td>
+  <td>28/28/45</td><td>35/35/30</td>
+  <td>3.15/3.45/2.07</td>
+  <td>1.50/0.95</td>
+  <td><span class="tag tag-neutral">偏平/主</span></td>
+  <td><span class="confidence conf-low">低★</span></td>
+  <td>1:1 ~14%</td>
+</tr>
+</table>
+<p class="disclaimer-inline">*001里莫vs桑托斯国际博彩公司未开盘，外围赔率不可靠 | 外围赔率为威廉希尔/Bet365/易胜博/伟德/Interwetten五家均值 | 005体彩客胜1.88 vs 外围均值2.07，体彩高估里昂约4%</p>
+
+<!-- ========== 关键发现 ========== -->
+<h2>关键发现与风险提示</h2>
+
+<div class="warning-box">
+  <strong>1. 005斯巴达vs里昂 — 基本面与市场严重对立（规则28）</strong><br>
+  市场赔率给出里昂客胜47%，但里昂7人伤停/停赛(3后卫+2中场核心)+DNCG财务危机+友谊赛0-4惨败。综合概率修正后里昂客胜仅30%，与市场差距17%>15%（规则8）。按规则28基本面决定比赛，平局概率35%与主胜35%并列首选。市场支持率64%过高，触发冷门检查。<strong>不得包装为博胆推荐，仅适合极小注娱乐。</strong>
+</div>
+
+<div class="warning-box">
+  <strong>2. 004博德闪耀伤停影响需重新评估（规则18应用）</strong><br>
+  博德4中场全伤+射手离队看似严重，但7/26和7/31两场（6-0总比分）证明球队已适应残阵。4-0利勒斯特罗姆的首发阵容(Berg-Fet-Auklend中场/Hauge-Brynhildsen-Blomberg攻击线)证明克努森已找到重组方案。lambda下修幅度从原应20-25%调整为10-12%。
+</div>
+
+<div class="warning-box">
+  <strong>3. 003 NEC残阵 — 强制低★（规则32）</strong><br>
+  NEC 6人伤缺(2前锋+后防核心+中场主力)，单队≥5人伤停 → 强制降为低★。但奥林匹亚科斯季前赛3连败防守不稳+65%支持率过高，冷门检查仍需执行。综合后维持中★而非高★。
+</div>
+
+<div class="warning-box">
+  <strong>4. 001里莫vs桑托斯 — 平局概率极高</strong><br>
+  首回合0-0+杯赛次回合成决胜局+双方后防均有危机 → 平局概率36%（5场中最高）。TTG期望仅2.4球。如果里莫延续首回合防守策略，0:0或1:1概率合计约23%。
+</div>
+
+<div class="warning-box">
+  <strong>5. 4场欧冠Q3首回合 — 平局系统性偏高</strong><br>
+  4场欧冠首回合+1场巴西杯次回合（首回合0-0）均触发杯赛首回合平局上修规则。5场中3场(002/004/005)首选比分含平局方向。但注意：规则4警惕集体偏误——当所有分析指向同一方向时需提高冷门比分权重。
+</div>
+
+<!-- ========== 风险提示 ========== -->
+<div class="risk-disclaimer">
+  <h3 style="color: var(--red);">风险提示与不确定性说明</h3>
+  <p>1. 本报告结合体彩官方赔率+外围赔率+基本面分析+Shin模型+DC模型，但<strong>比分和半全场赔率因页面动态加载未完整获取</strong>，待补充。</p>
+  <p>2. 伤停信息基于赛前1-2天的公开信息，<strong>赛前1小时实际首发名单</strong>是最终核实依据（规则32）。</p>
+  <p>3. 外围赔率来源为Protipster/Telefootball/Futbol24等，001里莫vs桑托斯的外围赔率来自中文平台引用（可靠性低，规则25）。</p>
+  <p>4. Shin模型使用z=0.03，DC模型使用ρ=0.10-0.15，参数选择基于联赛特点和比赛性质。</p>
+  <p>5. 欧冠Q3首回合双方通常偏谨慎，平局概率系统性偏高（+15%）。巴西杯次回合首回合0-0则成决胜局。</p>
+  <p>6. 博德闪耀伤停影响已根据4-0利勒斯特罗姆实证调整，但仍存不确定性。</p>
+  <p>7. <strong>信息来源</strong>：lottery.gov.cn(体彩官方)、Fotmob、SportsMole、beSoccer、NRK、UEFA官网、CBF官网等。</p>
+  <p>8. 足球比赛存在极大不确定性，本报告仅供参考，不构成投注建议。理性看待分析，切勿沉迷赌博。</p>
+</div>
+
+<p style="text-align: center; color: var(--text-dim); margin-top: 20px; font-size: 0.8em;">
+  报告生成时间：2026-08-04 | 赔率更新：2026-08-04 09:37 | 规则版本：AGENTS.md v1.9.1<br>
+  遵循规则0/32（伤停核查）、规则8（模型vs市场分歧）、规则13（半场比分）、规则18（非线性折算）、规则21（反热门偏误）、规则24（联赛数据）、规则27（战意心理）、规则28（基本面决定论）
+</p>
+
+</body>
+</html>

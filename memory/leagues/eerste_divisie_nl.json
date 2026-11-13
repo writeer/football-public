@@ -1,0 +1,165 @@
+{
+    "league_info": {
+        "name_cn": "荷兰足球乙级联赛",
+        "name_en": "Eerste Divisie (Keuken Kampioen Divisie)",
+        "country": "荷兰",
+        "country_code": "NL",
+        "level": "第二级别",
+        "num_teams": 20,
+        "format": "双循环，38轮（含4支青年队：Jong Ajax/Jong PSV/Jong AZ/Jong Utrecht）",
+        "season_period": "8月-次年5月（跨年，含冬歇期）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://keukenkampioendivisie.nl",
+        "governing_body": "荷兰足球协会（KNVB）",
+        "promotion_relegation": "冠军+亚军直接升入荷甲；第3-8名参加升级附加赛；青年队不可升级；无常规降级",
+        "special_rules": "38轮分为4个阶段，每阶段积分领先球队获附加赛资格（可顺延）",
+        "cross_league_level": "L4",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "total_matches": 380,
+        "avg_goals_per_match": 3.02,
+        "draw_rate": 0.232,
+        "home_win_rate": 0.458,
+        "away_win_rate": 0.311,
+        "over_2_5_rate": 0.59,
+        "under_2_5_rate": 0.41,
+        "btts_rate": 0.59,
+        "top_scores": [
+            {
+                "score": "1-0",
+                "frequency": 0.137,
+                "direction": "主胜/客胜"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.134,
+                "direction": "主胜/客胜"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.108,
+                "direction": "主胜/客胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.105,
+                "direction": "平局"
+            },
+            {
+                "score": "3-0",
+                "frequency": 0.082,
+                "direction": "主胜/客胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.06,
+            "1_goal": 0.14,
+            "2_goals": 0.21,
+            "3_goals": 0.21,
+            "4_goals": 0.19,
+            "5_plus_goals": 0.19
+        },
+        "avg_home_goals": 1.7,
+        "avg_away_goals": 1.32,
+        "home_advantage_factor": 1.29,
+        "max_score_match": "芬洛 2:7 海牙（第38轮）",
+        "champion": "福伦丹（FC Volendam，82分）",
+        "runner_up": "SBV精英（SBV Excelsior，74分）",
+        "ht_draw_rate": 0.358,
+        "ht_draw_rate_note": "荷乙半场平局率。2026-09-12核算：BetExplorer 联赛HT/FT(半全场)逐队统计表，按全赛季所有阶段合并，半场平局场次/总场次=0.358（380场）。源为二级聚合站(BetExplorer)，经内部一致性校验(半场领先=半场落后、各队9项计数之和=MP)，但本环境无法独立复核原始逐场半场比分，**标记待复核**；使用时按中高/高档参考，勿作高置信依据。",
+        "ht_draw_rate_source": [
+            "https://www.betexplorer.com/football/"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "中高(0.35-0.40)",
+        "ht_draw_rate_confidence": "中(二级聚合源BetExplorer，未独立复核)",
+        "ht_draw_rate_status": "pending_verification"
+    },
+    "match_style": {
+        "tactical_character": "继承荷兰全攻全守足球哲学，强调整体性与位置轮换。各队前中后场实力相对均衡，战术风格多元化（控球型vs快速反击型并存）。防守端普遍较弱，尤其青年队防守能力差距明显（埃因霍温青年场均失2.26球）。",
+        "tempo": "快",
+        "physicality": "中偏高",
+        "technical_focus": "高（进攻优先于防守）",
+        "var_usage": "不使用VAR。荷乙作为第二级别联赛未引入视频助理裁判系统，裁判场上判罚为最终决定。",
+        "key_trends": [
+            "青年队（Jong队伍）实力波动大，防守端漏洞多",
+            "传统劲旅（坎布尔/海牙/福伦丹）与青年队实力差距显著",
+            "阶段赛制导致战意判断复杂，中游球队可能无欲无求或战意爆表",
+            "大比分频发（6:4, 2:7, 6:0等）",
+            "无VAR意味着裁判误判无法纠正"
+        ],
+        "style_tags": [
+            "高进球",
+            "全攻全守",
+            "攻强守弱",
+            "开放型",
+            "青年队参与",
+            "无VAR",
+            "大球友好"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.75,
+        "avg_red_cards": 0.17,
+        "avg_penalties": 0.3,
+        "referee_style": "身体对抗判罚尺度较宽松，允许一定程度的粗犷防守。比赛流畅度较高，响哨频率低于五大联赛。无VAR辅助。",
+        "first_half_stoppage_avg": 1.5,
+        "second_half_stoppage_avg": 4.0,
+        "stoppage_note": "无VAR意味着无视频审查补时，换人和伤停为主要补时来源，补时通常较短。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "荷乙整体廉洁度较高。主要风险来自赛制复杂导致的战意不对称，而非系统性假赛问题。"
+            }
+        ],
+        "discipline_features": "赛制复杂导致战意不对称（阶段冠军已获资格后可能松懈）；青年队无升降级压力，比赛态度可能波动；赛季末期已无升级希望的球队可能战意不足。",
+        "official_rules": "由KNVB管理，遵循FIFA标准比赛规则，无VAR辅助。",
+        "integrity_rating": "中偏高",
+        "special_risk_factors": "阶段赛制顺延规则导致战意难以判断；青年队成绩不影响升级，末期可能轮换阵容；无降级压力可能导致部分球队缺乏竞争动力"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "被视为欧洲足坛人才孵化器，以进攻火爆、比赛观赏性强著称。但防守质量参差不齐。赛制被广泛认为全欧洲最复杂。",
+        "betting_market": {
+            "market_efficiency": "中",
+            "liquidity": "中偏低",
+            "line_movement_frequency": "中频",
+            "sharp_money": "荷兰本土玩家对荷乙了解较深，青年队阵容信息（一线队调人）是关键信息差"
+        },
+        "upset_frequency": "中偏高",
+        "jingcai_tips": [
+            "大球是荷乙的默认选项，大2.5率59%",
+            "主场优势明显（主胜45.8% vs 客胜31.1%）",
+            "1-1是最常见平局比分（约10.5%）",
+            "务必关注青年队阵容变动信息（上级俱乐部随时调人）",
+            "阶段赛制下务必确认球队战意",
+            "无VAR意味着裁判误判无法纠正，可能影响比赛结果",
+            "大比分频发，4+球占38%"
+        ],
+        "common_sayings": [
+            "荷乙无弱旅（指进攻端）",
+            "场均3球起步",
+            "全攻全守的摇篮",
+            "赛制最复杂的联赛",
+            "青年队是大球提款机"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-08-06",
+        "sources": [
+            "https://keukenkampioendivisie.nl",
+            "https://liansai.500.com/zuqiu-7184/",
+            "https://liansai.500.com/zuqiu-7184/shuju-21044/score/",
+            "https://www.qtx.com/others/41649.html",
+            "https://m.baike.com/wiki/荷兰足球乙级联赛/5065979"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高",
+        "notes": "赛果分布、场均进球、进球分布为精确统计（来源500.com）；BTTS率为泊松模型估算；黄牌/红牌/点球为基于联赛特征的估算值"
+    }
+}

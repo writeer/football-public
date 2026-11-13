@@ -1,0 +1,195 @@
+{
+    "league_info": {
+        "name_cn": "英格兰超级联赛",
+        "name_en": "Premier League",
+        "country": "英格兰",
+        "country_code": "EN",
+        "level": "顶级",
+        "num_teams": 20,
+        "format": "双循环，38轮",
+        "season_period": "8月-次年5月（跨年）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.premierleague.com",
+        "governing_body": "英格兰足球总会（The FA）",
+        "cross_league_level": "L1",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.86,
+        "draw_rate": 0.242,
+        "home_win_rate": 0.443,
+        "away_win_rate": 0.315,
+        "over_2_5_rate": 0.57,
+        "under_2_5_rate": 0.43,
+        "btts_rate": 0.56,
+        "top_scores": [
+            {
+                "score": "2-1",
+                "frequency": 0.098,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.082,
+                "direction": "平局"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.073,
+                "direction": "主胜"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.068,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-1",
+                "frequency": 0.061,
+                "direction": "客胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.03,
+            "1_goal": 0.11,
+            "2_goals": 0.2,
+            "3_goals": 0.24,
+            "4_goals": 0.2,
+            "5_plus_goals": 0.22
+        },
+        "avg_home_goals": 1.55,
+        "avg_away_goals": 1.31,
+        "home_advantage_factor": 1.1,
+        "ht_draw_rate": 0.384,
+        "ht_home_win_rate": 0.4,
+        "ht_away_win_rate": 0.275,
+        "ht_note": "英超半场平局率约30-35%，低于韩职/日职。高强度对抗和快节奏转换使上半场进球偏早，半场已有胜负倾向的比例较高。",
+        "ht_draw_rate_note": "英超半场平局率。2026-09-12核算：football-data.co.uk官方逐场半场比分(HTHG/HTAG)，5季(2021/22-2025/26)合并1900场，半场平局729场→0.3837；单季2025/26=0.3789。thefishy.uk半场表(2025/26,760队次)得0.3789，独立验证一致。**修正原值0.325（偏低）**：英超实际属中高半场平局档(0.35-0.40)，lambda_ht系数0.42。",
+        "ht_draw_rate_source": [
+            "https://www.football-data.co.uk/mmz4281/2526/E0.csv",
+            "https://www.thefishy.uk/leaguetable.php?table=1&season=23"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "中高(0.35-0.40)",
+        "ht_draw_rate_confidence": "高(官方逐场半场比分/交叉验证一致)",
+        "home_advantage_note": "规则68（2026-09-13）：英超主场优势下调，系数由1.18降至1.10-1.13；主胜概率-3~-5%、平局+4~6%",
+        "internal_sample": {
+            "source": "memory/backtests 历史归档去重统计（reports/data/league_result_distribution.json）",
+            "as_of": "2026-09-13",
+            "matches": 24,
+            "home_win": 7,
+            "draw": 8,
+            "away_win": 9,
+            "home_win_rate": 0.292,
+            "draw_rate": 0.333,
+            "away_win_rate": 0.375,
+            "note": "客场胜率反超主场（唯一如此的高频联赛样本）；样本偏小，每轮回测须更新"
+        }
+    },
+    "match_style": {
+        "tactical_character": "高强度对抗、快节奏转换。强调身体对抗和攻防转换速度，重视高位逼抢和快速反击。近年三中卫体系复兴，边翼卫进攻作用突出。",
+        "tempo": "快",
+        "physicality": "高",
+        "technical_focus": "中",
+        "var_usage": "2019-20赛季引入VAR。涉及进球、点球、红牌、身份识别四类判罚。争议较多，体毛级越位判罚引发广泛讨论。2024-25赛季引入半自动越位技术。",
+        "key_trends": [
+            "高位逼抢成为标配，中下游球队也普遍采用",
+            "边锋内切+边后卫套边是最常见进攻模式",
+            "定位球进球占比约28%，角球战术日益精细",
+            "换人规则5人制，但多数教练用不满"
+        ],
+        "style_tags": [
+            "高强度",
+            "快节奏",
+            "身体对抗",
+            "进攻导向"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.85,
+        "avg_red_cards": 0.18,
+        "avg_penalties": 0.27,
+        "referee_style": "英超裁判总体鼓励身体对抗，哨较松。但近年对战术犯规和拖延时间出牌趋严。Michael Oliver和Anthony Taylor为代表性主裁判。",
+        "first_half_stoppage_avg": 2.1,
+        "second_half_stoppage_avg": 5.8,
+        "stoppage_note": "2023-24赛季起严格执行伤停补时，下半场补时普遍5-8分钟，重大伤病或庆祝多的比赛可达10+分钟。被称为'英超超长补时时代'。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大联赛级别假赛丑闻",
+                "year": "-",
+                "description": "英超整体廉洁度较高，主要风险在低级别联赛。2024年有非联赛级别球员涉嫌赌球被调查，但未波及英超。"
+            }
+        ],
+        "discipline_features": "FA纪律委员会独立运作，红牌自动停赛3场（直红）或1场（两黄）。累计5张黄牌停赛1场。暴力行为可追溯处罚。VAR介入后纪律处罚更精确。",
+        "official_rules": "IFAB足球规则+英超特别规则。财政公平法案（PSR/FFP）对俱乐部支出有严格限制，2023-24赛季 Everton和Nottingham Forest因违规被扣分。",
+        "integrity_rating": "高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友普遍认为英超是'世界第一联赛'，比赛观赏性最强，悬念最大。中下游球队经常爆冷击败豪门。彩民评价'英超无弱旅'，但也有人认为'近年豪门垄断加剧'。",
+        "betting_market": {
+            "market_efficiency": "极高",
+            "liquidity": "极高",
+            "mainstream_bookmakers": [
+                "Bet365",
+                "William Hill",
+                "Ladbrokes"
+            ],
+            "line_movement_frequency": "高频",
+            "sharp_money": "亚洲市场资金影响力大"
+        },
+        "upset_frequency": "高（2026-09-13由\"中高\"上调，主因主场优势弱化+无弱旅）",
+        "jingcai_tips": [
+            "英超主场加成低（系数1.10-1.13），主胜概率-3~-5%、平局+4~6%（规则68）",
+            "英超无弱旅：弱队近5轮>=7分→攻击lambda+10~20%；强队近3轮<=1胜→-10~15%（规则68）",
+            "圣诞赛程密集期冷门频发，注意轮换",
+            "BIG6内战进球数偏少（通常2-3球）",
+            "升班马主场对中游球队常有意外结果",
+            "赛季末保级队战意强，经常爆冷",
+            "英超爆冷预警：强队近3轮<=1胜或弱队近5轮>=7分→次选必含平局与爆冷方向"
+        ],
+        "common_sayings": [
+            "英超无弱旅",
+            "圣诞快车冷门多",
+            "BIG6内战不看排名"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-09-13",
+        "sources": [
+            "https://www.premierleague.com",
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://understat.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "高"
+    },
+    "rule_68": {
+        "rule_name": "规则68 英超主场加成低与弱队状态系数上修",
+        "added_date": "2026-09-13",
+        "trigger_observation": "英超主场加成低、无弱旅；只要球队状态好，弱队爆冷强队是常有的事，应按最近状态上修弱队系数",
+        "home_advantage_adjust": {
+            "factor_from": 1.18,
+            "factor_to": "1.10-1.13",
+            "home_win": "-3~-5%",
+            "draw": "+4~6%"
+        },
+        "weak_team_form_coefficient": {
+            "form_good": "近5轮积分>=7分 或 近3轮>=2胜",
+            "form_bad": "近5轮积分<=3分 或 近3轮<=1胜",
+            "weak_team_good_form": "该队攻击lambda +10~20%",
+            "strong_team_bad_form": "该队攻击lambda -10~15%、防守lambda上修",
+            "both": "弱队取+20%且爆冷概率上修幅度加倍",
+            "away_rule": "弱队状态好时不得因客场身份下修（英超客场不构成劣势）",
+            "missing_data": "不修正并标注缺失；禁止用主客场身份代替状态判断"
+        },
+        "upset_alert": "强队近3轮<=1胜 或 弱队近5轮>=7分 → 标注英超爆冷预警；方向次选必须覆盖平局与爆冷方向；置信度降一级",
+        "promoted_team": "仅新赛季前6轮享主场+3%，第7轮起按最近状态判定",
+        "rule65_relation": "英超仍为Tier1例外、不上修大球；爆冷预警引致的平局上修与规则65独立作用",
+        "enforced_by": "总控强制走查（规则64职责清单）"
+    }
+}

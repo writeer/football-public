@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周五10场深度分析（官方赔率更新版）| 2026-08-07</title>
+<style>
+:root {
+  --bg: #0f1117; --card: #1a1d29; --card2: #222639; --card3: #262a3e;
+  --border: #2d3148; --border2: #3a3f5c;
+  --text: #e4e6ef; --text2: #9298b8; --text3: #6b7194;
+  --accent: #f87132; --accent2: #4ade80; --accent3: #60a5fa;
+  --red: #ef4444; --green: #22c55e; --yellow: #eab308;
+  --purple: #a78bfa; --orange: #fb923c; --cyan: #22d3ee; --pink: #f472b6;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif; line-height: 1.6; }
+.container { max-width: 1280px; margin: 0 auto; padding: 20px; }
+.header { text-align: center; padding: 36px 20px; background: linear-gradient(135deg, #1a1d29, #222639); border-radius: 14px; border: 1px solid var(--border2); margin-bottom: 24px; }
+.header h1 { font-size: 30px; color: var(--accent); margin-bottom: 8px; }
+.header .subtitle { color: var(--text2); font-size: 14px; }
+.header .meta { display: flex; justify-content: center; gap: 12px; margin-top: 14px; flex-wrap: wrap; }
+.header .meta span { background: var(--card3); padding: 4px 14px; border-radius: 6px; font-size: 12px; color: var(--accent3); }
+.update-banner { background: rgba(34,197,94,0.1); border: 1px solid var(--green); border-radius: 8px; padding: 14px 20px; margin-bottom: 16px; text-align: center; font-size: 13px; color: var(--green); }
+.risk-warning { background: rgba(239,68,68,0.1); border: 1px solid var(--red); border-radius: 8px; padding: 14px 20px; margin-bottom: 24px; text-align: center; font-size: 13px; color: var(--red); line-height: 1.8; }
+h2.section-h { color: var(--accent3); font-size: 22px; margin: 30px 0 16px; padding-left: 12px; border-left: 4px solid var(--accent3); }
+.summary-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; background: var(--card); border-radius: 10px; overflow: hidden; font-size: 12px; }
+.summary-table th { background: var(--card2); padding: 12px 6px; text-align: center; font-size: 11px; color: var(--accent3); border-bottom: 2px solid var(--border); white-space: nowrap; }
+.summary-table td { padding: 10px 6px; text-align: center; border-bottom: 1px solid var(--border); }
+.summary-table tr:hover { background: var(--card2); }
+.summary-table .league { color: var(--purple); font-weight: bold; }
+.summary-table .home-c { color: var(--green); }
+.summary-table .away-c { color: var(--red); }
+.summary-table .div-high { color: var(--red); font-weight: bold; }
+.summary-table .div-mid { color: var(--yellow); }
+.summary-table .div-low { color: var(--green); }
+.match-card { background: var(--card); border-radius: 14px; margin-bottom: 28px; overflow: hidden; border: 1px solid var(--border); }
+.match-header { display: flex; justify-content: space-between; align-items: center; padding: 18px 24px; background: linear-gradient(135deg, var(--card2), var(--card3)); border-bottom: 2px solid var(--border); }
+.match-id { background: var(--accent); color: #fff; padding: 4px 14px; border-radius: 6px; font-size: 13px; font-weight: bold; white-space: nowrap; }
+.match-title { font-size: 20px; font-weight: bold; flex: 1; text-align: center; }
+.match-title .vs { color: var(--text3); font-weight: normal; margin: 0 8px; }
+.match-time { color: var(--text2); font-size: 13px; white-space: nowrap; }
+.venue-weather { font-size: 13px; color: var(--text2); padding: 10px 24px; background: var(--card2); border-bottom: 1px solid var(--border); display: flex; gap: 20px; flex-wrap: wrap; }
+.match-body { padding: 20px 24px; }
+.section-title { font-size: 15px; color: var(--accent3); margin: 16px 0 8px; font-weight: bold; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+.odds-table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 13px; }
+.odds-table th { background: var(--card3); color: var(--accent3); padding: 8px; text-align: center; font-size: 12px; border-bottom: 1px solid var(--border2); }
+.odds-table td { padding: 8px; text-align: center; border-bottom: 1px solid var(--border); }
+.odds-table .odds-val { color: var(--accent2); font-weight: bold; }
+.odds-table .shin-val { color: var(--cyan); }
+.divergence-box { border-radius: 8px; padding: 14px 16px; margin: 10px 0; font-size: 13px; line-height: 1.8; }
+.div-extreme { background: rgba(239,68,68,0.15); border: 1px solid var(--red); }
+.div-high { background: rgba(234,179,8,0.1); border: 1px solid var(--yellow); }
+.div-normal { background: rgba(34,197,94,0.08); border: 1px solid var(--green); }
+.upset-box { border-radius: 8px; padding: 12px 16px; margin: 10px 0; font-size: 13px; line-height: 1.8; }
+.upset-cold { background: rgba(248,113,50,0.12); border: 1px solid var(--accent); }
+.upset-value { background: rgba(96,165,250,0.1); border: 1px solid var(--accent3); }
+.upset-hot { background: rgba(234,179,8,0.1); border: 1px solid var(--yellow); }
+.upset-box .upset-icon { font-size: 16px; margin-right: 6px; }
+.upset-box b { font-size: 13px; }
+.had-bar { display: flex; height: 28px; border-radius: 6px; overflow: hidden; margin: 8px 0; }
+.had-seg { display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 11px; font-weight: bold; color: #fff; }
+.had-h { background: var(--green); }
+.had-d { background: var(--yellow); }
+.had-a { background: var(--red); }
+.had-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 12px 0; }
+.had-compare .col { background: var(--card2); border-radius: 8px; padding: 12px; }
+.had-compare .col-title { font-size: 12px; color: var(--text3); margin-bottom: 6px; text-align: center; }
+.reco-table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+.reco-table th { background: var(--card3); padding: 8px; font-size: 12px; color: var(--accent3); text-align: center; }
+.reco-table td { padding: 8px; font-size: 13px; text-align: center; border: 1px solid var(--border); }
+.reco-table .highlight { color: var(--accent); font-weight: bold; }
+.reco-table .dim-label { text-align: left; font-weight: bold; color: var(--text2); width: 120px; }
+.conf-badge { display: inline-block; padding: 2px 10px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+.conf-high { background: rgba(34,197,94,0.2); color: var(--green); }
+.conf-mid { background: rgba(234,179,8,0.2); color: var(--yellow); }
+.conf-low { background: rgba(239,68,68,0.2); color: var(--red); }
+.parlay-section { background: var(--card); border-radius: 14px; padding: 24px; margin-bottom: 24px; border: 1px solid var(--border); }
+.parlay-item { padding: 14px 16px; margin: 10px 0; background: var(--card2); border-radius: 8px; border-left: 4px solid var(--accent); }
+.pattern-box { background: var(--card2); padding: 14px 16px; border-radius: 8px; margin: 10px 0; border-left: 4px solid var(--cyan); }
+.pattern-box .pattern-num { display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background: var(--cyan); color: var(--bg); border-radius: 50%; font-weight: bold; font-size: 12px; margin-right: 8px; }
+.info-text { font-size: 13px; color: var(--text); line-height: 1.8; margin-bottom: 6px; }
+.footer { text-align: center; padding: 30px 0; color: var(--text3); font-size: 12px; border-top: 1px solid var(--border); margin-top: 30px; line-height: 1.8; }
+.nav-bar { position: sticky; top: 0; z-index: 100; background: var(--bg); padding: 10px 0; border-bottom: 1px solid var(--border); margin-bottom: 20px; display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+.nav-bar a { font-size: 11px; padding: 4px 8px; background: var(--card2); color: var(--text2); border-radius: 4px; text-decoration: none; transition: 0.2s; }
+.nav-bar a:hover { background: var(--accent); color: #fff; }
+.support-bar { display: flex; height: 20px; border-radius: 4px; overflow: hidden; margin: 6px 0; }
+.support-seg { display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: bold; color: #fff; }
+@media (max-width: 768px) { .had-compare { grid-template-columns: 1fr; } .summary-table { font-size: 10px; } }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+  <h1>周五10场深度分析（官方赔率更新版）</h1>
+  <div class="subtitle">2026-08-07（周五）| 体彩官方赔率已更新 | 10场赛事 | 模型vs市场分歧分析</div>
+  <div class="meta">
+    <span>赔率来源: sporttery.cn</span>
+    <span>赔率更新: 2026-08-06 21:57</span>
+    <span>模型: Dixon-Coles泊松分布</span>
+    <span>含5类全玩法赔率</span>
+  </div>
+</div>
+<div class="update-banner">
+  体彩官方赔率已开售！本报告已用sporttery.cn官方赔率替换预估值，新增Shin隐含概率校准和模型vs市场分歧分析（规则8/28）。
+</div>
+<div class="risk-warning">
+  风险提示：本分析基于公开数据整理，仅供参考交流，不构成任何投注建议。模型与市场严重分歧处已标注，不确定性极高。足球赛事存在临场变数，请理性观赛，量力而行。
+</div>
+<div class="nav-bar">
+  <a href="#overview">总览表</a>
+  <a href="#divergence">分歧分析</a>
+  <a href="#m周五001">001 横滨vs鹿岛</a>
+  <a href="#m周五002">002 大阪vs浦和</a>
+  <a href="#m周五003">003 塞伊vs赫尔</a>
+  <a href="#m周五004">004 桑纳vs奥斯</a>
+  <a href="#m周五005">005 坎布vsSB</a>
+  <a href="#m周五006">006 奥斯vs布雷</a>
+  <a href="#m周五007">007 埃门vs罗达</a>
+  <a href="#m周五008">008 波鸿vs柏林</a>
+  <a href="#m周五009">009 米德vs雷克</a>
+  <a href="#m周五010">010 埃斯vs法马</a>
+  <a href="#parlay">串关思路</a>
+  <a href="#patterns">五大发现</a>
+</div>
+<h2 class="section-h" id="overview">总览表（官方赔率版）</h2>
+<table class="summary-table">
+<thead><tr>
+  <th>编号</th><th>联赛</th><th>对阵</th><th>开赛</th>
+  <th>官方HAD</th><th>让球</th><th>模型方向</th><th>市场Shin</th>
+  <th>分歧</th><th>调整置信度</th><th>比分首选</th><th>总进球</th>
+</tr></thead>
+<tbody>
+<tr>
+  <td>周五001</td><td class="league">日职</td>
+  <td>横滨水手 vs 鹿岛鹿角</td><td>18:25</td>
+  <td>3.9/3.32/1.75</td><td>+1</td>
+  <td class="home-c">主胜 34.5%</td>
+  <td class="away-c">客胜 42.2%</td>
+  <td class="div-low">7.9%</td>
+  <td><span class="conf-badge conf-low">★</span></td>
+  <td>1-1 (14.8%)</td>
+  <td>2球 (28.8%)</td>
+</tr>
+<tr>
+  <td>周五002</td><td class="league">日职</td>
+  <td>大阪钢巴 vs 浦和红钻</td><td>18:30</td>
+  <td>2.32/3.12/2.65</td><td>-1</td>
+  <td class="away-c">客胜 65.5%</td>
+  <td class="home-c">主胜 35.9%</td>
+  <td class="div-high">32.1% 严重</td>
+  <td><span class="conf-badge conf-low">★</span></td>
+  <td>0-2 (13.6%)</td>
+  <td>2球 (27.2%)</td>
+</tr>
+<tr>
+  <td>周五003</td><td class="league">芬超</td>
+  <td>塞伊奈约基 vs 赫尔辛基火花</td><td>00:00</td>
+  <td>2.02/3.5/2.88</td><td>-1</td>
+  <td class="home-c">主胜 36.8%</td>
+  <td class="home-c">主胜 38.8%</td>
+  <td class="div-low">2.0%</td>
+  <td><span class="conf-badge conf-low">★</span></td>
+  <td>1-1 (14.7%)</td>
+  <td>2球 (29.2%)</td>
+</tr>
+<tr>
+  <td>周五004</td><td class="league">挪超</td>
+  <td>桑纳菲尤尔 vs 奥斯陆KFUM</td><td>01:00</td>
+  <td>1.96/3.47/3.02</td><td>-1</td>
+  <td class="home-c">主胜 41.6%</td>
+  <td class="home-c">主胜 39.4%</td>
+  <td class="div-low">3.5%</td>
+  <td><span class="conf-badge conf-low">★</span></td>
+  <td>1-1 (14.5%)</td>
+  <td>2球 (27.0%)</td>
+</tr>
+<tr>
+  <td>周五005</td><td class="league">荷甲</td>
+  <td>坎布尔 vs SBV精英</td><td>02:00</td>
+  <td>2.36/3.5/2.38</td><td>-1</td>
+  <td class="away-c">客胜 80.4%</td>
+  <td class="home-c">主胜 35.6%</td>
+  <td class="div-high">44.9% 严重</td>
+  <td><span class="conf-badge conf-low">★</span></td>
+  <td>0-2 (12.8%)</td>
+  <td>3球 (23.9%)</td>
+</tr>
+<tr>
+  <td>周五006</td><td class="league">荷乙</td>
+  <td>奥斯 vs 布雷达</td><td>02:00</td>
+  <td>4.45/4.0/1.53</td><td>+1</td>
+  <td class="away-c">客胜 64.8%</td>
+  <td class="away-c">客胜 46.0%</td>
+  <td class="div-mid">18.8% 警戒</td>
+  <td><span class="conf-badge conf-mid">★★</span></td>
+  <td>0-2 (11.5%)</td>
+  <td>2球 (23.6%)</td>
+</tr>
+<tr>
+  <td>周五007</td><td class="league">荷乙</td>
+  <td>埃门 vs 罗达JC</td><td>02:00</td>
+  <td>2.25/3.5/2.52</td><td>-1</td>
+  <td class="away-c">客胜 64.2%</td>
+  <td class="home-c">主胜 36.6%</td>
+  <td class="div-high">29.7% 严重</td>
+  <td><span class="conf-badge conf-low">★</span></td>
+  <td>0-2 (11.2%)</td>
+  <td>2球 (23.5%)</td>
+</tr>
+<tr>
+  <td>周五008</td><td class="league">德乙</td>
+  <td>波鸿 vs 柏林赫塔</td><td>02:30</td>
+  <td>2.15/3.4/2.7</td><td>-1</td>
+  <td class="home-c">主胜 43.4%</td>
+  <td class="home-c">主胜 37.4%</td>
+  <td class="div-low">6.0%</td>
+  <td><span class="conf-badge conf-low">★</span></td>
+  <td>1-1 (13.7%)</td>
+  <td>2球 (25.0%)</td>
+</tr>
+<tr>
+  <td>周五009</td><td class="league">英联赛杯</td>
+  <td>米德尔斯堡 vs 雷克斯汉姆</td><td>03:00</td>
+  <td>1.46/3.95/5.25</td><td>-1</td>
+  <td class="away-c">客胜 36.0%</td>
+  <td class="home-c">主胜 47.6%</td>
+  <td class="div-mid">18.6% 警戒</td>
+  <td><span class="conf-badge conf-low">★</span></td>
+  <td>0-0 (16.4%)</td>
+  <td>2球 (39.2%)</td>
+</tr>
+<tr>
+  <td>周五010</td><td class="league">葡超</td>
+  <td>埃斯托里尔 vs 法马利康</td><td>03:15</td>
+  <td>2.95/3.23/2.08</td><td>+1</td>
+  <td class="away-c">客胜 65.1%</td>
+  <td class="away-c">客胜 38.1%</td>
+  <td class="div-high">27.0% 严重</td>
+  <td><span class="conf-badge conf-low">★</span></td>
+  <td>0-2 (14.1%)</td>
+  <td>2球 (27.9%)</td>
+</tr>
+</tbody></table>
+<h2 class="section-h" id="divergence">模型vs市场分歧分析（规则8/28）</h2>
+<table class="summary-table">
+<thead><tr>
+  <th>编号</th><th>对阵</th><th>模型H/D/A</th><th>市场Shin H/D/A</th>
+  <th>H分歧</th><th>D分歧</th><th>A分歧</th><th>最大分歧</th><th>规则8</th><th>调整说明</th>
+</tr></thead>
+<tbody>
+<tr>
+  <td>周五001</td><td>横滨水手 vs 鹿岛鹿角</td>
+  <td>34.5/31.2/34.3</td><td>27.7/30.1/42.2</td>
+  <td class="div-low">+6.8%</td>
+  <td class="div-low">+1.1%</td>
+  <td class="div-low">-7.9%</td>
+  <td class="div-low">7.9%</td>
+  <td>-</td>
+  <td style="font-size:11px;">模型与市场分歧7.9%，正常范围</td>
+</tr>
+<tr>
+  <td>周五002</td><td>大阪钢巴 vs 浦和红钻</td>
+  <td>11.2/23.3/65.5</td><td>35.9/30.7/33.4</td>
+  <td class="div-high">-24.7%</td>
+  <td class="div-low">-7.4%</td>
+  <td class="div-high">+32.1%</td>
+  <td class="div-high">32.1%</td>
+  <td>触发</td>
+  <td style="font-size:11px;">模型与市场分歧32.1%，规则8触发，强制降为★</td>
+</tr>
+<tr>
+  <td>周五003</td><td>塞伊奈约基 vs 赫尔辛基火花</td>
+  <td>36.8/30.9/32.3</td><td>38.8/29.0/32.2</td>
+  <td class="div-low">-2.0%</td>
+  <td class="div-low">+1.9%</td>
+  <td class="div-low">+0.1%</td>
+  <td class="div-low">2.0%</td>
+  <td>-</td>
+  <td style="font-size:11px;">模型与市场分歧2.0%，正常范围</td>
+</tr>
+<tr>
+  <td>周五004</td><td>桑纳菲尤尔 vs 奥斯陆KFUM</td>
+  <td>41.6/30.5/27.9</td><td>39.4/29.2/31.4</td>
+  <td class="div-low">+2.2%</td>
+  <td class="div-low">+1.3%</td>
+  <td class="div-low">-3.5%</td>
+  <td class="div-low">3.5%</td>
+  <td>-</td>
+  <td style="font-size:11px;">模型与市场分歧3.5%，正常范围</td>
+</tr>
+<tr>
+  <td>周五005</td><td>坎布尔 vs SBV精英</td>
+  <td>5.4/14.1/80.4</td><td>35.6/28.9/35.5</td>
+  <td class="div-high">-30.2%</td>
+  <td class="div-mid">-14.8%</td>
+  <td class="div-high">+44.9%</td>
+  <td class="div-high">44.9%</td>
+  <td>触发</td>
+  <td style="font-size:11px;">模型与市场分歧44.9%，规则8触发，强制降为★</td>
+</tr>
+<tr>
+  <td>周五006</td><td>奥斯 vs 布雷达</td>
+  <td>13.0/22.1/64.8</td><td>26.2/27.8/46.0</td>
+  <td class="div-mid">-13.2%</td>
+  <td class="div-low">-5.7%</td>
+  <td class="div-high">+18.8%</td>
+  <td class="div-mid">18.8%</td>
+  <td>触发</td>
+  <td style="font-size:11px;">模型与市场分歧18.8%，规则8触发，降为★★</td>
+</tr>
+<tr>
+  <td>周五007</td><td>埃门 vs 罗达JC</td>
+  <td>13.5/22.3/64.2</td><td>36.6/29.0/34.5</td>
+  <td class="div-high">-23.1%</td>
+  <td class="div-low">-6.7%</td>
+  <td class="div-high">+29.7%</td>
+  <td class="div-high">29.7%</td>
+  <td>触发</td>
+  <td style="font-size:11px;">模型与市场分歧29.7%，规则8触发，强制降为★</td>
+</tr>
+<tr>
+  <td>周五008</td><td>波鸿 vs 柏林赫塔</td>
+  <td>43.4/28.7/27.9</td><td>37.4/29.4/33.2</td>
+  <td class="div-low">+6.0%</td>
+  <td class="div-low">-0.7%</td>
+  <td class="div-low">-5.3%</td>
+  <td class="div-low">6.0%</td>
+  <td>-</td>
+  <td style="font-size:11px;">模型与市场分歧6.0%，正常范围</td>
+</tr>
+<tr>
+  <td>周五009</td><td>米德尔斯堡 vs 雷克斯汉姆</td>
+  <td>29.0/35.0/36.0</td><td>47.6/28.2/24.2</td>
+  <td class="div-high">-18.6%</td>
+  <td class="div-low">+6.8%</td>
+  <td class="div-mid">+11.8%</td>
+  <td class="div-mid">18.6%</td>
+  <td>触发</td>
+  <td style="font-size:11px;">模型与市场分歧18.6%，规则8触发</td>
+</tr>
+<tr>
+  <td>周五010</td><td>埃斯托里尔 vs 法马利康</td>
+  <td>11.0/23.9/65.1</td><td>31.7/30.2/38.1</td>
+  <td class="div-high">-20.7%</td>
+  <td class="div-low">-6.3%</td>
+  <td class="div-high">+27.0%</td>
+  <td class="div-high">27.0%</td>
+  <td>触发</td>
+  <td style="font-size:11px;">模型与市场分歧27.0%，规则8触发，强制降为★</td>
+</tr>
+</tbody></table>
+<div style="background:var(--card);border-radius:10px;padding:16px;margin:16px 0;font-size:13px;line-height:1.8;">
+<b style="color:var(--accent3);">规则8说明：</b> 当模型与市场概率差>15%时，不得将该方向包装为博胆推荐，必须标注不确定性极高。<br>
+<b style="color:var(--accent3);">规则28说明：</b> 基本面 > 数学模型 > 市场赔率 > 公众意见。模型与市场矛盾时以基本面为准，但需警惕追热。<br>
+<b style="color:var(--accent3);">规则11说明：</b> 高置信度仅表示模型一致性高，不代表一定命中。已出现3次★★★翻车。
+</div>
+<h2 class="section-h">逐场官方赔率分析</h2>
+
+<div class="match-card" id="m周五001">
+<div class="match-header">
+  <span class="match-id">周五001</span>
+  <span class="match-title">横滨水手 <span class="vs">VS</span> 鹿岛鹿角</span>
+  <span class="match-time">18:25</span>
+</div>
+<div class="venue-weather">
+  <span>场地: 东京国立竞技场（中立场地）</span>
+  <span>天气: 晴 31°C</span>
+  <span>联赛: 日职</span>
+</div>
+<div class="match-body">
+<div class="info-text"><b>球队排名：</b>横滨水手上赛季排名第20（垫底），鹿岛第6</div>
+<div class="section-title">官方赔率（sporttery.cn）</div>
+<table class="odds-table">
+<tr><th>玩法</th><th>主胜/让胜</th><th>平/让平</th><th>客胜/让负</th><th>支持率</th></tr>
+<tr>
+  <td><b>胜平负</b></td>
+  <td class="odds-val">3.9</td>
+  <td class="odds-val">3.32</td>
+  <td class="odds-val">1.75</td>
+  <td>30%/21%/49%</td>
+</tr>
+<tr>
+  <td><b>让球(+1)</b></td>
+  <td class="odds-val">1.83</td>
+  <td class="odds-val">3.35</td>
+  <td class="odds-val">3.52</td>
+  <td>50%/28%/22%</td>
+</tr>
+</table>
+<div class="info-text"><b>总进球赔率：</b>0球=11.0 / 1球=4.5 / 2球=3.4 / 3球=3.7 / 4球=6.0 / 5球=12.0 / 6球=22.0 / 7球=32.0</div><div class="info-text"><b>半全场赔率：</b>胜胜=7.25 / 胜平=16.0 / 胜负=24.0 / 平胜=9.25 / 平平=5.6 / 平负=4.4 / 负胜=35.0 / 负平=16.0 / 负负=2.8</div><div class="info-text"><b>比分赔率：</b>1:0=11.0 / 2:0=22.0 / 2:1=12.0 / 3:0=65.0 / 3:1=35.0 / 3:2=45.0 / 0:0=11.0 / 1:1=6.5 / 2:2=14.0 / 3:3=80.0 / 0:1=6.5 / 0:2=8.5 ...</div>
+<div class="section-title">模型 vs 市场对比</div>
+<div class="had-compare">
+  <div class="col">
+    <div class="col-title">模型概率（Dixon-Coles泊松）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:34.5%">H 34.5%</div>
+      <div class="had-seg had-d" style="width:31.2%">D 31.2%</div>
+      <div class="had-seg had-a" style="width:34.3%">A 34.3%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">lambda: 1.19 / 1.19 (总2.38)</div>
+  </div>
+  <div class="col">
+    <div class="col-title">市场Shin概率（官方赔率校准）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:27.7%">H 27.7%</div>
+      <div class="had-seg had-d" style="width:30.1%">D 30.1%</div>
+      <div class="had-seg had-a" style="width:42.2%">A 42.2%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">赔率: 3.9 / 3.32 / 1.75</div>
+  </div>
+</div>
+
+<div class="divergence-box div-normal">
+<b>分歧分析：正常范围（最大分歧 7.9%）</b><br>
+主胜: 模型34.5% vs 市场27.7% → 分歧 ↑6.8%<br>平局: 模型31.2% vs 市场30.1% → 分歧 ↑1.1%<br>客胜: 模型34.3% vs 市场42.2% → 分歧 ↓7.9%<br><br>模型与市场分歧7.9%，正常范围</div>
+<div class="info-text">
+<b>市场支持率：</b>
+<div class="support-bar">
+  <div class="support-seg had-h" style="width:30%">30%</div>
+  <div class="support-seg had-d" style="width:21%">21%</div>
+  <div class="support-seg had-a" style="width:49%">49%</div>
+</div>
+</div>
+<div class="section-title">6维度推荐表（调整后置信度: <span class="conf-badge conf-low">★</span>）</div>
+<table class="reco-table">
+<tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th><th>官方赔率</th></tr>
+<tr><td class="dim-label">胜平负</td><td class="highlight">主胜 34.5%</td><td>客胜 34.3%</td><td>平局 31.2%</td><td>3.9</td></tr><tr><td class="dim-label">让球(+1)</td><td class="highlight">让负 45.6%</td><td>让平 27.7%</td><td>让胜 26.8%</td><td>3.52</td></tr><tr><td class="dim-label">比分TOP5</td><td class="highlight">1-1 14.8%</td><td>0-0 10.9%</td><td>1-0 9.3%</td><td>-</td></tr><tr><td class="dim-label"></td><td>0-1 9.3%</td><td>2-1 7.8%</td><td>-</td><td>-</td></tr><tr><td class="dim-label">总进球</td><td class="highlight">2球 28.8%</td><td>3球 23.0%</td><td>1球 16.7%</td><td>3.4</td></tr><tr><td class="dim-label">半全场</td><td class="highlight">负负 2.8</td><td>平负 4.4</td><td>平平 5.6</td><td>2.8</td></tr><tr><td class="dim-label">半场比分</td><td class="highlight">0-0 35.5%</td><td>1-0 17.1%</td><td>0-1 17.0%</td><td>-</td></tr></table>
+</div></div>
+
+<div class="match-card" id="m周五002">
+<div class="match-header">
+  <span class="match-id">周五002</span>
+  <span class="match-title">大阪钢巴 <span class="vs">VS</span> 浦和红钻</span>
+  <span class="match-time">18:30</span>
+</div>
+<div class="venue-weather">
+  <span>场地: 松下吹田球场（大阪）</span>
+  <span>天气: 晴 32°C</span>
+  <span>联赛: 日职</span>
+</div>
+<div class="match-body">
+<div class="info-text"><b>球队排名：</b>大阪钢巴第4，浦和红钻第17</div>
+<div class="section-title">官方赔率（sporttery.cn）</div>
+<table class="odds-table">
+<tr><th>玩法</th><th>主胜/让胜</th><th>平/让平</th><th>客胜/让负</th><th>支持率</th></tr>
+<tr>
+  <td><b>胜平负</b></td>
+  <td class="odds-val">2.32</td>
+  <td class="odds-val">3.12</td>
+  <td class="odds-val">2.65</td>
+  <td>47%/30%/23%</td>
+</tr>
+<tr>
+  <td><b>让球(-1)</b></td>
+  <td class="odds-val">5.25</td>
+  <td class="odds-val">3.95</td>
+  <td class="odds-val">1.46</td>
+  <td>27%/28%/45%</td>
+</tr>
+</table>
+<div class="info-text"><b>总进球赔率：</b>0球=11.0 / 1球=4.55 / 2球=3.4 / 3球=3.75 / 4球=6.0 / 5球=11.5 / 6球=21.0 / 7球=32.0</div><div class="info-text"><b>半全场赔率：</b>胜胜=3.95 / 胜平=14.5 / 胜负=28.0 / 平胜=5.7 / 平平=5.3 / 平负=6.5 / 负胜=25.0 / 负平=14.5 / 负负=4.6</div>
+<div class="section-title">模型 vs 市场对比</div>
+<div class="had-compare">
+  <div class="col">
+    <div class="col-title">模型概率（Dixon-Coles泊松）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:11.2%">H 11.2%</div>
+      <div class="had-seg had-d" style="width:23.3%">D 23.3%</div>
+      <div class="had-seg had-a" style="width:65.5%">A 65.5%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">lambda: 0.69 / 1.93 (总2.62)</div>
+  </div>
+  <div class="col">
+    <div class="col-title">市场Shin概率（官方赔率校准）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:35.9%">H 35.9%</div>
+      <div class="had-seg had-d" style="width:30.7%">D 30.7%</div>
+      <div class="had-seg had-a" style="width:33.4%">A 33.4%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">赔率: 2.32 / 3.12 / 2.65</div>
+  </div>
+</div>
+
+<div class="divergence-box div-extreme">
+<b>分歧分析：严重分歧（最大分歧 32.1%）</b><br>
+主胜: 模型11.2% vs 市场35.9% → 分歧 ↓24.7%<br>平局: 模型23.3% vs 市场30.7% → 分歧 ↓7.4%<br>客胜: 模型65.5% vs 市场33.4% → 分歧 ↑32.1%<br><br>模型与市场分歧32.1%，规则8触发，强制降为★</div>
+<div class="info-text">
+<b>市场支持率：</b>
+<div class="support-bar">
+  <div class="support-seg had-h" style="width:47%">47%</div>
+  <div class="support-seg had-d" style="width:30%">30%</div>
+  <div class="support-seg had-a" style="width:23%">23%</div>
+</div>
+</div>
+<div class="section-title">6维度推荐表（调整后置信度: <span class="conf-badge conf-low">★</span>）</div>
+<table class="reco-table">
+<tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th><th>官方赔率</th></tr>
+<tr><td class="dim-label">胜平负</td><td class="highlight">客胜 65.5%</td><td>平局 23.3%</td><td>主胜 11.2%</td><td>2.65</td></tr><tr><td class="dim-label">让球(-1)</td><td class="highlight">让负 74.8%</td><td>让平 17.7%</td><td>让胜 7.5%</td><td>1.46</td></tr><tr><td class="dim-label">比分TOP5</td><td class="highlight">0-2 13.6%</td><td>0-1 12.9%</td><td>1-1 11.0%</td><td>-</td></tr><tr><td class="dim-label"></td><td>1-2 9.3%</td><td>0-3 8.7%</td><td>-</td><td>-</td></tr><tr><td class="dim-label">总进球</td><td class="highlight">2球 27.2%</td><td>3球 23.9%</td><td>4球 16.5%</td><td>3.4</td></tr><tr><td class="dim-label">半全场</td><td class="highlight">胜胜 3.95</td><td>负负 4.6</td><td>平平 5.3</td><td>3.95</td></tr><tr><td class="dim-label">半场比分</td><td class="highlight">0-0 31.9%</td><td>0-1 25.7%</td><td>0-2 11.6%</td><td>-</td></tr></table>
+
+<div class="upset-box upset-cold">
+<span class="upset-icon">🔥</span><b>搏冷建议：</b>模型看客胜(65.5%)，市场看主胜(35.9%)，方向对立。客胜赔率2.65，分歧32.1%，极小注搏冷有价值。
+</div>
+</div></div>
+
+<div class="match-card" id="m周五003">
+<div class="match-header">
+  <span class="match-id">周五003</span>
+  <span class="match-title">塞伊奈约基 <span class="vs">VS</span> 赫尔辛基火花</span>
+  <span class="match-time">00:00</span>
+</div>
+<div class="venue-weather">
+  <span>场地: 塞伊奈约基主场（人工草皮）</span>
+  <span>天气: 晴 18°C</span>
+  <span>联赛: 芬超</span>
+</div>
+<div class="match-body">
+<div class="info-text"><b>球队排名：</b>塞伊奈第10，赫尔辛基火花第5</div>
+<div class="section-title">官方赔率（sporttery.cn）</div>
+<table class="odds-table">
+<tr><th>玩法</th><th>主胜/让胜</th><th>平/让平</th><th>客胜/让负</th><th>支持率</th></tr>
+<tr>
+  <td><b>胜平负</b></td>
+  <td class="odds-val">2.02</td>
+  <td class="odds-val">3.5</td>
+  <td class="odds-val">2.88</td>
+  <td>49%/20%/31%</td>
+</tr>
+<tr>
+  <td><b>让球(-1)</b></td>
+  <td class="odds-val">3.95</td>
+  <td class="odds-val">3.95</td>
+  <td class="odds-val">1.61</td>
+  <td>24%/25%/51%</td>
+</tr>
+</table>
+<div class="info-text"><b>总进球赔率：</b>0球=20.0 / 1球=6.5 / 2球=4.2 / 3球=3.55 / 4球=4.7 / 5球=7.2 / 6球=14.0 / 7球=18.0</div><div class="info-text"><b>半全场赔率：</b>胜胜=3.3 / 胜平=13.0 / 胜负=30.0 / 平胜=5.5 / 平平=7.0 / 平负=7.5 / 负胜=23.0 / 负平=13.0 / 负负=4.7</div>
+<div class="section-title">模型 vs 市场对比</div>
+<div class="had-compare">
+  <div class="col">
+    <div class="col-title">模型概率（Dixon-Coles泊松）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:36.8%">H 36.8%</div>
+      <div class="had-seg had-d" style="width:30.9%">D 30.9%</div>
+      <div class="had-seg had-a" style="width:32.3%">A 32.3%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">lambda: 1.26 / 1.16 (总2.42)</div>
+  </div>
+  <div class="col">
+    <div class="col-title">市场Shin概率（官方赔率校准）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:38.8%">H 38.8%</div>
+      <div class="had-seg had-d" style="width:29.0%">D 29.0%</div>
+      <div class="had-seg had-a" style="width:32.2%">A 32.2%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">赔率: 2.02 / 3.5 / 2.88</div>
+  </div>
+</div>
+
+<div class="divergence-box div-normal">
+<b>分歧分析：正常范围（最大分歧 2.0%）</b><br>
+主胜: 模型36.8% vs 市场38.8% → 分歧 ↓2.0%<br>平局: 模型30.9% vs 市场29.0% → 分歧 ↑1.9%<br>客胜: 模型32.3% vs 市场32.2% → 分歧 ↑0.1%<br><br>模型与市场分歧2.0%，正常范围</div>
+<div class="info-text">
+<b>市场支持率：</b>
+<div class="support-bar">
+  <div class="support-seg had-h" style="width:49%">49%</div>
+  <div class="support-seg had-d" style="width:20%">20%</div>
+  <div class="support-seg had-a" style="width:31%">31%</div>
+</div>
+</div>
+<div class="section-title">6维度推荐表（调整后置信度: <span class="conf-badge conf-low">★</span>）</div>
+<table class="reco-table">
+<tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th><th>官方赔率</th></tr>
+<tr><td class="dim-label">胜平负</td><td class="highlight">主胜 36.8%</td><td>客胜 32.3%</td><td>平局 30.9%</td><td>2.02</td></tr><tr><td class="dim-label">让球(-1)</td><td class="highlight">让负 43.4%</td><td>让平 27.7%</td><td>让胜 28.9%</td><td>1.61</td></tr><tr><td class="dim-label">比分TOP5</td><td class="highlight">1-1 14.7%</td><td>0-0 10.6%</td><td>1-0 9.5%</td><td>-</td></tr><tr><td class="dim-label"></td><td>0-1 8.7%</td><td>2-1 8.2%</td><td>-</td><td>-</td></tr><tr><td class="dim-label">总进球</td><td class="highlight">2球 29.2%</td><td>3球 22.6%</td><td>1球 16.2%</td><td>4.2</td></tr><tr><td class="dim-label">半全场</td><td class="highlight">胜胜 3.3</td><td>负负 4.7</td><td>平胜 5.5</td><td>3.3</td></tr><tr><td class="dim-label">半场比分</td><td class="highlight">0-0 34.9%</td><td>1-0 17.7%</td><td>0-1 16.3%</td><td>-</td></tr></table>
+</div></div>
+
+<div class="match-card" id="m周五004">
+<div class="match-header">
+  <span class="match-id">周五004</span>
+  <span class="match-title">桑纳菲尤尔 <span class="vs">VS</span> 奥斯陆KFUM</span>
+  <span class="match-time">01:00</span>
+</div>
+<div class="venue-weather">
+  <span>场地: 桑纳菲尤尔主场</span>
+  <span>天气: 多云 16°C</span>
+  <span>联赛: 挪超</span>
+</div>
+<div class="match-body">
+<div class="info-text"><b>球队排名：</b>桑纳菲第12，KFUM第13（保级对手）</div>
+<div class="section-title">官方赔率（sporttery.cn）</div>
+<table class="odds-table">
+<tr><th>玩法</th><th>主胜/让胜</th><th>平/让平</th><th>客胜/让负</th><th>支持率</th></tr>
+<tr>
+  <td><b>胜平负</b></td>
+  <td class="odds-val">1.96</td>
+  <td class="odds-val">3.47</td>
+  <td class="odds-val">3.02</td>
+  <td>65%/19%/16%</td>
+</tr>
+<tr>
+  <td><b>让球(-1)</b></td>
+  <td class="odds-val">3.95</td>
+  <td class="odds-val">3.65</td>
+  <td class="odds-val">1.66</td>
+  <td>29%/31%/40%</td>
+</tr>
+</table>
+<div class="info-text"><b>总进球赔率：</b>0球=15.0 / 1球=5.75 / 2球=3.8 / 3球=3.6 / 4球=5.1 / 5球=8.25 / 6球=16.0 / 7球=23.0</div><div class="info-text"><b>半全场赔率：</b>胜胜=3.35 / 胜平=14.0 / 胜负=27.0 / 平胜=5.1 / 平平=6.25 / 平负=7.5 / 负胜=22.0 / 负平=14.0 / 负负=5.25</div>
+<div class="section-title">模型 vs 市场对比</div>
+<div class="had-compare">
+  <div class="col">
+    <div class="col-title">模型概率（Dixon-Coles泊松）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:41.6%">H 41.6%</div>
+      <div class="had-seg had-d" style="width:30.5%">D 30.5%</div>
+      <div class="had-seg had-a" style="width:27.9%">A 27.9%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">lambda: 1.35 / 1.07 (总2.42)</div>
+  </div>
+  <div class="col">
+    <div class="col-title">市场Shin概率（官方赔率校准）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:39.4%">H 39.4%</div>
+      <div class="had-seg had-d" style="width:29.2%">D 29.2%</div>
+      <div class="had-seg had-a" style="width:31.4%">A 31.4%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">赔率: 1.96 / 3.47 / 3.02</div>
+  </div>
+</div>
+
+<div class="divergence-box div-normal">
+<b>分歧分析：正常范围（最大分歧 3.5%）</b><br>
+主胜: 模型41.6% vs 市场39.4% → 分歧 ↑2.2%<br>平局: 模型30.5% vs 市场29.2% → 分歧 ↑1.3%<br>客胜: 模型27.9% vs 市场31.4% → 分歧 ↓3.5%<br><br>模型与市场分歧3.5%，正常范围</div>
+<div class="info-text">
+<b>市场支持率：</b>
+<div class="support-bar">
+  <div class="support-seg had-h" style="width:65%">65%</div>
+  <div class="support-seg had-d" style="width:19%">19%</div>
+  <div class="support-seg had-a" style="width:16%">16%</div>
+</div>
+<br><b style="color:var(--yellow);">规则21触发：</b>市场支持率主胜65%>50%，需检查冷门因素。已连续4次追热门翻车。</div>
+<div class="section-title">6维度推荐表（调整后置信度: <span class="conf-badge conf-low">★</span>）</div>
+<table class="reco-table">
+<tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th><th>官方赔率</th></tr>
+<tr><td class="dim-label">胜平负</td><td class="highlight">主胜 41.6%</td><td>平局 30.5%</td><td>客胜 27.9%</td><td>1.96</td></tr><tr><td class="dim-label">让球(-1)</td><td class="highlight">让负 38.5%</td><td>让平 28.0%</td><td>让胜 33.5%</td><td>1.66</td></tr><tr><td class="dim-label">比分TOP5</td><td class="highlight">1-1 14.5%</td><td>0-0 10.5%</td><td>1-0 10.3%</td><td>-</td></tr><tr><td class="dim-label"></td><td>2-1 8.7%</td><td>2-0 8.1%</td><td>-</td><td>-</td></tr><tr><td class="dim-label">总进球</td><td class="highlight">2球 27.0%</td><td>3球 23.4%</td><td>1球 16.7%</td><td>3.8</td></tr><tr><td class="dim-label">半全场</td><td class="highlight">胜胜 3.35</td><td>平胜 5.1</td><td>负负 5.25</td><td>3.35</td></tr><tr><td class="dim-label">半场比分</td><td class="highlight">0-0 34.9%</td><td>1-0 19.2%</td><td>0-1 14.9%</td><td>-</td></tr></table>
+
+<div class="upset-box upset-hot">
+<span class="upset-icon">⚠️</span><b>市场过热：</b>主胜支持率65%>55%，追热风险高。已连续4次追热门翻车(规则21)，建议防冷门或平局。
+</div>
+</div></div>
+
+<div class="match-card" id="m周五005">
+<div class="match-header">
+  <span class="match-id">周五005</span>
+  <span class="match-title">坎布尔 <span class="vs">VS</span> SBV精英</span>
+  <span class="match-time">02:00</span>
+</div>
+<div class="venue-weather">
+  <span>场地: 科伊球场（吕伐登）</span>
+  <span>天气: 多云 15°C</span>
+  <span>联赛: 荷甲</span>
+</div>
+<div class="match-body">
+<div class="info-text"><b>球队排名：</b>坎布尔第4，SBV精英第5（实力接近）</div>
+<div class="section-title">官方赔率（sporttery.cn）</div>
+<table class="odds-table">
+<tr><th>玩法</th><th>主胜/让胜</th><th>平/让平</th><th>客胜/让负</th><th>支持率</th></tr>
+<tr>
+  <td><b>胜平负</b></td>
+  <td class="odds-val">2.36</td>
+  <td class="odds-val">3.5</td>
+  <td class="odds-val">2.38</td>
+  <td>30%/25%/45%</td>
+</tr>
+<tr>
+  <td><b>让球(-1)</b></td>
+  <td class="odds-val">5.0</td>
+  <td class="odds-val">4.18</td>
+  <td class="odds-val">1.45</td>
+  <td>22%/22%/56%</td>
+</tr>
+</table>
+<div class="info-text"><b>总进球赔率：</b>0球=18.0 / 1球=6.75 / 2球=4.05 / 3球=3.6 / 4球=4.8 / 5球=7.5 / 6球=13.0 / 7球=17.5</div><div class="info-text"><b>半全场赔率：</b>胜胜=3.85 / 胜平=15.0 / 胜负=22.5 / 平胜=6.25 / 平平=6.5 / 平负=6.5 / 负胜=22.0 / 负平=15.0 / 负负=3.95</div>
+<div class="section-title">模型 vs 市场对比</div>
+<div class="had-compare">
+  <div class="col">
+    <div class="col-title">模型概率（Dixon-Coles泊松）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:5.4%">H 5.4%</div>
+      <div class="had-seg had-d" style="width:14.1%">D 14.1%</div>
+      <div class="had-seg had-a" style="width:80.4%">A 80.4%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">lambda: 0.64 / 2.74 (总3.38)</div>
+  </div>
+  <div class="col">
+    <div class="col-title">市场Shin概率（官方赔率校准）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:35.6%">H 35.6%</div>
+      <div class="had-seg had-d" style="width:28.9%">D 28.9%</div>
+      <div class="had-seg had-a" style="width:35.5%">A 35.5%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">赔率: 2.36 / 3.5 / 2.38</div>
+  </div>
+</div>
+
+<div class="divergence-box div-extreme">
+<b>分歧分析：严重分歧（最大分歧 44.9%）</b><br>
+主胜: 模型5.4% vs 市场35.6% → 分歧 ↓30.2%<br>平局: 模型14.1% vs 市场28.9% → 分歧 ↓14.8%<br>客胜: 模型80.4% vs 市场35.5% → 分歧 ↑44.9%<br><br>模型与市场分歧44.9%，规则8触发，强制降为★</div>
+<div class="info-text">
+<b>市场支持率：</b>
+<div class="support-bar">
+  <div class="support-seg had-h" style="width:30%">30%</div>
+  <div class="support-seg had-d" style="width:25%">25%</div>
+  <div class="support-seg had-a" style="width:45%">45%</div>
+</div>
+</div>
+<div class="section-title">6维度推荐表（调整后置信度: <span class="conf-badge conf-low">★</span>）</div>
+<table class="reco-table">
+<tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th><th>官方赔率</th></tr>
+<tr><td class="dim-label">胜平负</td><td class="highlight">客胜 80.4%</td><td>平局 14.1%</td><td>主胜 5.4%</td><td>2.38</td></tr><tr><td class="dim-label">让球(-1)</td><td class="highlight">让负 86.5%</td><td>让平 10.1%</td><td>让胜 3.4%</td><td>1.45</td></tr><tr><td class="dim-label">比分TOP5</td><td class="highlight">0-2 12.8%</td><td>0-3 11.7%</td><td>0-1 8.5%</td><td>-</td></tr><tr><td class="dim-label"></td><td>1-2 8.2%</td><td>0-4 8.0%</td><td>-</td><td>-</td></tr><tr><td class="dim-label">总进球</td><td class="highlight">3球 23.9%</td><td>4球 21.8%</td><td>2球 18.2%</td><td>3.6</td></tr><tr><td class="dim-label">半全场</td><td class="highlight">胜胜 3.85</td><td>负负 3.95</td><td>平胜 6.25</td><td>3.85</td></tr><tr><td class="dim-label">半场比分</td><td class="highlight">0-1 25.9%</td><td>0-0 22.8%</td><td>0-2 16.6%</td><td>-</td></tr></table>
+
+<div class="upset-box upset-cold">
+<span class="upset-icon">🔥</span><b>搏冷建议：</b>模型看客胜(80.4%)，市场看主胜(35.6%)，方向对立。客胜赔率2.38，分歧44.9%，极小注搏冷有价值。
+</div>
+</div></div>
+
+<div class="match-card" id="m周五006">
+<div class="match-header">
+  <span class="match-id">周五006</span>
+  <span class="match-title">奥斯 <span class="vs">VS</span> 布雷达</span>
+  <span class="match-time">02:00</span>
+</div>
+<div class="venue-weather">
+  <span>场地: 奥斯主场</span>
+  <span>天气: 多云 15°C</span>
+  <span>联赛: 荷乙</span>
+</div>
+<div class="match-body">
+<div class="info-text"><b>球队排名：</b>奥斯第16，布雷达第12</div>
+<div class="section-title">官方赔率（sporttery.cn）</div>
+<table class="odds-table">
+<tr><th>玩法</th><th>主胜/让胜</th><th>平/让平</th><th>客胜/让负</th><th>支持率</th></tr>
+<tr>
+  <td><b>胜平负</b></td>
+  <td class="odds-val">4.45</td>
+  <td class="odds-val">4.0</td>
+  <td class="odds-val">1.53</td>
+  <td>19%/19%/62%</td>
+</tr>
+<tr>
+  <td><b>让球(+1)</b></td>
+  <td class="odds-val">2.16</td>
+  <td class="odds-val">3.6</td>
+  <td class="odds-val">2.58</td>
+  <td>38%/30%/32%</td>
+</tr>
+</table>
+<div class="info-text"><b>总进球赔率：</b>0球=21.0 / 1球=6.8 / 2球=4.3 / 3球=3.55 / 4球=4.6 / 5球=7.2 / 6球=13.0 / 7球=17.0</div><div class="info-text"><b>半全场赔率：</b>胜胜=7.5 / 胜平=17.0 / 胜负=21.0 / 平胜=11.0 / 平平=7.2 / 平负=4.7 / 负胜=35.0 / 负平=17.0 / 负负=2.3</div>
+<div class="section-title">模型 vs 市场对比</div>
+<div class="had-compare">
+  <div class="col">
+    <div class="col-title">模型概率（Dixon-Coles泊松）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:13.0%">H 13.0%</div>
+      <div class="had-seg had-d" style="width:22.1%">D 22.1%</div>
+      <div class="had-seg had-a" style="width:64.8%">A 64.8%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">lambda: 0.86 / 2.10 (总2.96)</div>
+  </div>
+  <div class="col">
+    <div class="col-title">市场Shin概率（官方赔率校准）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:26.2%">H 26.2%</div>
+      <div class="had-seg had-d" style="width:27.8%">D 27.8%</div>
+      <div class="had-seg had-a" style="width:46.0%">A 46.0%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">赔率: 4.45 / 4.0 / 1.53</div>
+  </div>
+</div>
+
+<div class="divergence-box div-high">
+<b>分歧分析：警戒分歧（最大分歧 18.8%）</b><br>
+主胜: 模型13.0% vs 市场26.2% → 分歧 ↓13.2%<br>平局: 模型22.1% vs 市场27.8% → 分歧 ↓5.7%<br>客胜: 模型64.8% vs 市场46.0% → 分歧 ↑18.8%<br><br>模型与市场分歧18.8%，规则8触发，降为★★</div>
+<div class="info-text">
+<b>市场支持率：</b>
+<div class="support-bar">
+  <div class="support-seg had-h" style="width:19%">19%</div>
+  <div class="support-seg had-d" style="width:19%">19%</div>
+  <div class="support-seg had-a" style="width:62%">62%</div>
+</div>
+<br><b style="color:var(--yellow);">规则21触发：</b>市场支持率客胜62%>50%，需检查冷门因素。已连续4次追热门翻车。</div>
+<div class="section-title">6维度推荐表（调整后置信度: <span class="conf-badge conf-mid">★★</span>）</div>
+<table class="reco-table">
+<tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th><th>官方赔率</th></tr>
+<tr><td class="dim-label">胜平负</td><td class="highlight">客胜 64.8%</td><td>平局 22.1%</td><td>主胜 13.0%</td><td>1.53</td></tr><tr><td class="dim-label">让球(+1)</td><td class="highlight">让负 74.4%</td><td>让平 16.9%</td><td>让胜 8.7%</td><td>2.58</td></tr><tr><td class="dim-label">比分TOP5</td><td class="highlight">0-2 11.5%</td><td>1-1 10.6%</td><td>1-2 9.8%</td><td>-</td></tr><tr><td class="dim-label"></td><td>0-1 9.7%</td><td>0-3 8.0%</td><td>-</td><td>-</td></tr><tr><td class="dim-label">总进球</td><td class="highlight">2球 23.6%</td><td>3球 23.2%</td><td>4球 18.8%</td><td>4.3</td></tr><tr><td class="dim-label">半全场</td><td class="highlight">负负 2.3</td><td>平负 4.7</td><td>平平 7.2</td><td>2.3</td></tr><tr><td class="dim-label">半场比分</td><td class="highlight">0-0 27.7%</td><td>0-1 23.7%</td><td>0-2 11.8%</td><td>-</td></tr></table>
+
+<div class="upset-box upset-value">
+<span class="upset-icon">💡</span><b>价值提示：</b>模型与市场同看客胜，但模型概率64.8%远高于市场46.0%，分歧18.8%。模型更有信心，可适当追击。
+</div>
+
+<div class="upset-box upset-hot">
+<span class="upset-icon">⚠️</span><b>市场过热：</b>客胜支持率62%>55%，追热风险高。已连续4次追热门翻车(规则21)，建议防冷门或平局。
+</div>
+</div></div>
+
+<div class="match-card" id="m周五007">
+<div class="match-header">
+  <span class="match-id">周五007</span>
+  <span class="match-title">埃门 <span class="vs">VS</span> 罗达JC</span>
+  <span class="match-time">02:00</span>
+</div>
+<div class="venue-weather">
+  <span>场地: 德奥德梅尔迪克球场</span>
+  <span>天气: 多云 15°C</span>
+  <span>联赛: 荷乙</span>
+</div>
+<div class="match-body">
+<div class="info-text"><b>球队排名：</b>埃门第8，罗达JC第15</div>
+<div class="section-title">官方赔率（sporttery.cn）</div>
+<table class="odds-table">
+<tr><th>玩法</th><th>主胜/让胜</th><th>平/让平</th><th>客胜/让负</th><th>支持率</th></tr>
+<tr>
+  <td><b>胜平负</b></td>
+  <td class="odds-val">2.25</td>
+  <td class="odds-val">3.5</td>
+  <td class="odds-val">2.52</td>
+  <td>35%/31%/34%</td>
+</tr>
+<tr>
+  <td><b>让球(-1)</b></td>
+  <td class="odds-val">4.5</td>
+  <td class="odds-val">4.2</td>
+  <td class="odds-val">1.5</td>
+  <td>21%/22%/57%</td>
+</tr>
+</table>
+<div class="info-text"><b>总进球赔率：</b>0球=22.0 / 1球=7.0 / 2球=4.3 / 3球=3.6 / 4球=4.6 / 5球=6.8 / 6球=13.0 / 7球=16.0</div><div class="info-text"><b>半全场赔率：</b>胜胜=3.75 / 胜平=15.0 / 胜负=25.0 / 平胜=6.3 / 平平=6.5 / 平负=6.8 / 负胜=24.0 / 负平=15.0 / 负负=3.85</div>
+<div class="section-title">模型 vs 市场对比</div>
+<div class="had-compare">
+  <div class="col">
+    <div class="col-title">模型概率（Dixon-Coles泊松）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:13.5%">H 13.5%</div>
+      <div class="had-seg had-d" style="width:22.3%">D 22.3%</div>
+      <div class="had-seg had-a" style="width:64.2%">A 64.2%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">lambda: 0.88 / 2.09 (总2.97)</div>
+  </div>
+  <div class="col">
+    <div class="col-title">市场Shin概率（官方赔率校准）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:36.6%">H 36.6%</div>
+      <div class="had-seg had-d" style="width:29.0%">D 29.0%</div>
+      <div class="had-seg had-a" style="width:34.5%">A 34.5%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">赔率: 2.25 / 3.5 / 2.52</div>
+  </div>
+</div>
+
+<div class="divergence-box div-extreme">
+<b>分歧分析：严重分歧（最大分歧 29.7%）</b><br>
+主胜: 模型13.5% vs 市场36.6% → 分歧 ↓23.1%<br>平局: 模型22.3% vs 市场29.0% → 分歧 ↓6.7%<br>客胜: 模型64.2% vs 市场34.5% → 分歧 ↑29.7%<br><br>模型与市场分歧29.7%，规则8触发，强制降为★</div>
+<div class="info-text">
+<b>市场支持率：</b>
+<div class="support-bar">
+  <div class="support-seg had-h" style="width:35%">35%</div>
+  <div class="support-seg had-d" style="width:31%">31%</div>
+  <div class="support-seg had-a" style="width:34%">34%</div>
+</div>
+</div>
+<div class="section-title">6维度推荐表（调整后置信度: <span class="conf-badge conf-low">★</span>）</div>
+<table class="reco-table">
+<tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th><th>官方赔率</th></tr>
+<tr><td class="dim-label">胜平负</td><td class="highlight">客胜 64.2%</td><td>平局 22.3%</td><td>主胜 13.5%</td><td>2.52</td></tr><tr><td class="dim-label">让球(-1)</td><td class="highlight">让负 73.8%</td><td>让平 17.1%</td><td>让胜 9.1%</td><td>1.5</td></tr><tr><td class="dim-label">比分TOP5</td><td class="highlight">0-2 11.2%</td><td>1-1 10.6%</td><td>1-2 9.9%</td><td>-</td></tr><tr><td class="dim-label"></td><td>0-1 9.5%</td><td>0-3 7.8%</td><td>-</td><td>-</td></tr><tr><td class="dim-label">总进球</td><td class="highlight">2球 23.5%</td><td>3球 23.2%</td><td>4球 18.8%</td><td>4.3</td></tr><tr><td class="dim-label">半全场</td><td class="highlight">胜胜 3.75</td><td>负负 3.85</td><td>平胜 6.3</td><td>3.75</td></tr><tr><td class="dim-label">半场比分</td><td class="highlight">0-0 27.5%</td><td>0-1 23.4%</td><td>0-2 11.7%</td><td>-</td></tr></table>
+
+<div class="upset-box upset-cold">
+<span class="upset-icon">🔥</span><b>搏冷建议：</b>模型看客胜(64.2%)，市场看主胜(36.6%)，方向对立。客胜赔率2.52，分歧29.7%，极小注搏冷有价值。
+</div>
+</div></div>
+
+<div class="match-card" id="m周五008">
+<div class="match-header">
+  <span class="match-id">周五008</span>
+  <span class="match-title">波鸿 <span class="vs">VS</span> 柏林赫塔</span>
+  <span class="match-time">02:30</span>
+</div>
+<div class="venue-weather">
+  <span>场地: 鲁尔球场（波鸿）</span>
+  <span>天气: 多云 18°C</span>
+  <span>联赛: 德乙</span>
+</div>
+<div class="match-body">
+<div class="info-text"><b>球队排名：</b>波鸿第2，柏林赫塔第10</div>
+<div class="section-title">官方赔率（sporttery.cn）</div>
+<table class="odds-table">
+<tr><th>玩法</th><th>主胜/让胜</th><th>平/让平</th><th>客胜/让负</th><th>支持率</th></tr>
+<tr>
+  <td><b>胜平负</b></td>
+  <td class="odds-val">2.15</td>
+  <td class="odds-val">3.4</td>
+  <td class="odds-val">2.7</td>
+  <td>48%/27%/25%</td>
+</tr>
+<tr>
+  <td><b>让球(-1)</b></td>
+  <td class="odds-val">4.5</td>
+  <td class="odds-val">3.95</td>
+  <td class="odds-val">1.53</td>
+  <td>26%/28%/46%</td>
+</tr>
+</table>
+<div class="info-text"><b>总进球赔率：</b>0球=17.0 / 1球=6.25 / 2球=3.75 / 3球=3.65 / 4球=4.85 / 5球=8.0 / 6球=15.0 / 7球=21.0</div><div class="info-text"><b>半全场赔率：</b>胜胜=3.55 / 胜平=14.0 / 胜负=25.0 / 平胜=5.75 / 平平=6.25 / 平负=6.75 / 负胜=22.0 / 负平=14.0 / 负负=4.75</div>
+<div class="section-title">模型 vs 市场对比</div>
+<div class="had-compare">
+  <div class="col">
+    <div class="col-title">模型概率（Dixon-Coles泊松）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:43.4%">H 43.4%</div>
+      <div class="had-seg had-d" style="width:28.7%">D 28.7%</div>
+      <div class="had-seg had-a" style="width:27.9%">A 27.9%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">lambda: 1.50 / 1.17 (总2.67)</div>
+  </div>
+  <div class="col">
+    <div class="col-title">市场Shin概率（官方赔率校准）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:37.4%">H 37.4%</div>
+      <div class="had-seg had-d" style="width:29.4%">D 29.4%</div>
+      <div class="had-seg had-a" style="width:33.2%">A 33.2%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">赔率: 2.15 / 3.4 / 2.7</div>
+  </div>
+</div>
+
+<div class="divergence-box div-normal">
+<b>分歧分析：正常范围（最大分歧 6.0%）</b><br>
+主胜: 模型43.4% vs 市场37.4% → 分歧 ↑6.0%<br>平局: 模型28.7% vs 市场29.4% → 分歧 ↓0.7%<br>客胜: 模型27.9% vs 市场33.2% → 分歧 ↓5.3%<br><br>模型与市场分歧6.0%，正常范围</div>
+<div class="info-text">
+<b>市场支持率：</b>
+<div class="support-bar">
+  <div class="support-seg had-h" style="width:48%">48%</div>
+  <div class="support-seg had-d" style="width:27%">27%</div>
+  <div class="support-seg had-a" style="width:25%">25%</div>
+</div>
+</div>
+<div class="section-title">6维度推荐表（调整后置信度: <span class="conf-badge conf-low">★</span>）</div>
+<table class="reco-table">
+<tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th><th>官方赔率</th></tr>
+<tr><td class="dim-label">胜平负</td><td class="highlight">主胜 43.4%</td><td>平局 28.7%</td><td>客胜 27.9%</td><td>2.15</td></tr><tr><td class="dim-label">让球(-1)</td><td class="highlight">让负 38.6%</td><td>让平 26.4%</td><td>让胜 35.0%</td><td>1.53</td></tr><tr><td class="dim-label">比分TOP5</td><td class="highlight">1-1 13.7%</td><td>2-1 9.1%</td><td>1-0 8.8%</td><td>-</td></tr><tr><td class="dim-label"></td><td>0-0 8.5%</td><td>2-0 7.8%</td><td>-</td><td>-</td></tr><tr><td class="dim-label">总进球</td><td class="highlight">2球 25.0%</td><td>3球 23.2%</td><td>4球 16.6%</td><td>3.75</td></tr><tr><td class="dim-label">半全场</td><td class="highlight">胜胜 3.55</td><td>负负 4.75</td><td>平胜 5.75</td><td>3.55</td></tr><tr><td class="dim-label">半场比分</td><td class="highlight">0-0 31.5%</td><td>1-0 19.0%</td><td>0-1 14.4%</td><td>-</td></tr></table>
+</div></div>
+
+<div class="match-card" id="m周五009">
+<div class="match-header">
+  <span class="match-id">周五009</span>
+  <span class="match-title">米德尔斯堡 <span class="vs">VS</span> 雷克斯汉姆</span>
+  <span class="match-time">03:00</span>
+</div>
+<div class="venue-weather">
+  <span>场地: 河畔球场（米德尔斯堡）</span>
+  <span>天气: 多云 14°C</span>
+  <span>联赛: 英联赛杯</span>
+</div>
+<div class="match-body">
+
+<div class="section-title">官方赔率（sporttery.cn）</div>
+<table class="odds-table">
+<tr><th>玩法</th><th>主胜/让胜</th><th>平/让平</th><th>客胜/让负</th><th>支持率</th></tr>
+<tr>
+  <td><b>胜平负</b></td>
+  <td class="odds-val">1.46</td>
+  <td class="odds-val">3.95</td>
+  <td class="odds-val">5.25</td>
+  <td>64%/20%/16%</td>
+</tr>
+<tr>
+  <td><b>让球(-1)</b></td>
+  <td class="odds-val">2.47</td>
+  <td class="odds-val">3.5</td>
+  <td class="odds-val">2.28</td>
+  <td>33%/29%/38%</td>
+</tr>
+</table>
+<div class="info-text"><b>总进球赔率：</b>0球=15.0 / 1球=5.5 / 2球=3.8 / 3球=3.7 / 4球=5.2 / 5球=8.5 / 6球=15.0 / 7球=22.0</div><div class="info-text"><b>半全场赔率：</b>胜胜=2.15 / 胜平=18.0 / 胜负=45.0 / 平胜=4.5 / 平平=6.5 / 平负=12.0 / 负胜=24.0 / 负平=18.0 / 负负=9.5</div>
+<div class="section-title">模型 vs 市场对比</div>
+<div class="had-compare">
+  <div class="col">
+    <div class="col-title">模型概率（Dixon-Coles泊松）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:29.0%">H 29.0%</div>
+      <div class="had-seg had-d" style="width:35.0%">D 35.0%</div>
+      <div class="had-seg had-a" style="width:36.0%">A 36.0%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">lambda: 0.90 / 1.03 (总1.93)</div>
+  </div>
+  <div class="col">
+    <div class="col-title">市场Shin概率（官方赔率校准）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:47.6%">H 47.6%</div>
+      <div class="had-seg had-d" style="width:28.2%">D 28.2%</div>
+      <div class="had-seg had-a" style="width:24.2%">A 24.2%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">赔率: 1.46 / 3.95 / 5.25</div>
+  </div>
+</div>
+
+<div class="divergence-box div-high">
+<b>分歧分析：警戒分歧（最大分歧 18.6%）</b><br>
+主胜: 模型29.0% vs 市场47.6% → 分歧 ↓18.6%<br>平局: 模型35.0% vs 市场28.2% → 分歧 ↑6.8%<br>客胜: 模型36.0% vs 市场24.2% → 分歧 ↑11.8%<br><br>模型与市场分歧18.6%，规则8触发</div>
+<div class="info-text">
+<b>市场支持率：</b>
+<div class="support-bar">
+  <div class="support-seg had-h" style="width:64%">64%</div>
+  <div class="support-seg had-d" style="width:20%">20%</div>
+  <div class="support-seg had-a" style="width:16%">16%</div>
+</div>
+<br><b style="color:var(--yellow);">规则21触发：</b>市场支持率主胜64%>50%，需检查冷门因素。已连续4次追热门翻车。</div>
+<div class="section-title">6维度推荐表（调整后置信度: <span class="conf-badge conf-low">★</span>）</div>
+<table class="reco-table">
+<tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th><th>官方赔率</th></tr>
+<tr><td class="dim-label">胜平负</td><td class="highlight">客胜 36.0%</td><td>平局 35.0%</td><td>主胜 29.0%</td><td>5.25</td></tr><tr><td class="dim-label">让球(-1)</td><td class="highlight">让负 47.2%</td><td>让平 30.6%</td><td>让胜 22.2%</td><td>2.28</td></tr><tr><td class="dim-label">比分TOP5</td><td class="highlight">0-0 16.4%</td><td>1-1 15.2%</td><td>0-1 13.3%</td><td>-</td></tr><tr><td class="dim-label"></td><td>1-0 11.3%</td><td>0-2 7.7%</td><td>-</td><td>-</td></tr><tr><td class="dim-label">总进球</td><td class="highlight">2球 39.2%</td><td>1球 21.4%</td><td>3球 17.5%</td><td>3.8</td></tr><tr><td class="dim-label">半全场</td><td class="highlight">胜胜 2.15</td><td>平胜 4.5</td><td>平平 6.5</td><td>2.15</td></tr><tr><td class="dim-label">半场比分</td><td class="highlight">0-0 43.1%</td><td>0-1 18.4%</td><td>1-0 16.0%</td><td>-</td></tr></table>
+
+<div class="upset-box upset-cold">
+<span class="upset-icon">🔥</span><b>搏冷建议：</b>模型看客胜(36.0%)，市场看主胜(47.6%)，方向对立。客胜赔率5.25，分歧18.6%，极小注搏冷有价值。
+</div>
+
+<div class="upset-box upset-hot">
+<span class="upset-icon">⚠️</span><b>市场过热：</b>主胜支持率64%>55%，追热风险高。已连续4次追热门翻车(规则21)，建议防冷门或平局。
+</div>
+</div></div>
+
+<div class="match-card" id="m周五010">
+<div class="match-header">
+  <span class="match-id">周五010</span>
+  <span class="match-title">埃斯托里尔 <span class="vs">VS</span> 法马利康</span>
+  <span class="match-time">03:15</span>
+</div>
+<div class="venue-weather">
+  <span>场地: 埃斯托里尔主场</span>
+  <span>天气: 晴 22°C</span>
+  <span>联赛: 葡超</span>
+</div>
+<div class="match-body">
+<div class="info-text"><b>球队排名：</b>埃斯托里尔第6，法马利康第8</div>
+<div class="section-title">官方赔率（sporttery.cn）</div>
+<table class="odds-table">
+<tr><th>玩法</th><th>主胜/让胜</th><th>平/让平</th><th>客胜/让负</th><th>支持率</th></tr>
+<tr>
+  <td><b>胜平负</b></td>
+  <td class="odds-val">2.95</td>
+  <td class="odds-val">3.23</td>
+  <td class="odds-val">2.08</td>
+  <td>19%/25%/56%</td>
+</tr>
+<tr>
+  <td><b>让球(+1)</b></td>
+  <td class="odds-val">1.56</td>
+  <td class="odds-val">3.7</td>
+  <td class="odds-val">4.58</td>
+  <td>39%/28%/33%</td>
+</tr>
+</table>
+<div class="info-text"><b>总进球赔率：</b>0球=12.0 / 1球=4.75 / 2球=3.45 / 3球=3.7 / 4球=5.7 / 5球=10.5 / 6球=20.0 / 7球=34.0</div><div class="info-text"><b>半全场赔率：</b>胜胜=5.2 / 胜平=15.0 / 胜负=24.0 / 平胜=7.0 / 平平=5.6 / 平负=5.2 / 负胜=28.0 / 负平=15.0 / 负负=3.5</div>
+<div class="section-title">模型 vs 市场对比</div>
+<div class="had-compare">
+  <div class="col">
+    <div class="col-title">模型概率（Dixon-Coles泊松）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:11.0%">H 11.0%</div>
+      <div class="had-seg had-d" style="width:23.9%">D 23.9%</div>
+      <div class="had-seg had-a" style="width:65.1%">A 65.1%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">lambda: 0.65 / 1.86 (总2.51)</div>
+  </div>
+  <div class="col">
+    <div class="col-title">市场Shin概率（官方赔率校准）</div>
+    <div class="had-bar">
+      <div class="had-seg had-h" style="width:31.7%">H 31.7%</div>
+      <div class="had-seg had-d" style="width:30.2%">D 30.2%</div>
+      <div class="had-seg had-a" style="width:38.1%">A 38.1%</div>
+    </div>
+    <div style="font-size:11px;color:var(--text2);margin-top:4px;">赔率: 2.95 / 3.23 / 2.08</div>
+  </div>
+</div>
+
+<div class="divergence-box div-extreme">
+<b>分歧分析：严重分歧（最大分歧 27.0%）</b><br>
+主胜: 模型11.0% vs 市场31.7% → 分歧 ↓20.7%<br>平局: 模型23.9% vs 市场30.2% → 分歧 ↓6.3%<br>客胜: 模型65.1% vs 市场38.1% → 分歧 ↑27.0%<br><br>模型与市场分歧27.0%，规则8触发，强制降为★</div>
+<div class="info-text">
+<b>市场支持率：</b>
+<div class="support-bar">
+  <div class="support-seg had-h" style="width:19%">19%</div>
+  <div class="support-seg had-d" style="width:25%">25%</div>
+  <div class="support-seg had-a" style="width:56%">56%</div>
+</div>
+<br><b style="color:var(--yellow);">规则21触发：</b>市场支持率客胜56%>50%，需检查冷门因素。已连续4次追热门翻车。</div>
+<div class="section-title">6维度推荐表（调整后置信度: <span class="conf-badge conf-low">★</span>）</div>
+<table class="reco-table">
+<tr><th>维度</th><th>首选</th><th>次选</th><th>备选</th><th>官方赔率</th></tr>
+<tr><td class="dim-label">胜平负</td><td class="highlight">客胜 65.1%</td><td>平局 23.9%</td><td>主胜 11.0%</td><td>2.08</td></tr><tr><td class="dim-label">让球(+1)</td><td class="highlight">让负 74.4%</td><td>让平 18.2%</td><td>让胜 7.3%</td><td>4.58</td></tr><tr><td class="dim-label">比分TOP5</td><td class="highlight">0-2 14.1%</td><td>0-1 13.8%</td><td>1-1 11.1%</td><td>-</td></tr><tr><td class="dim-label"></td><td>0-0 9.4%</td><td>1-2 9.1%</td><td>-</td><td>-</td></tr><tr><td class="dim-label">总进球</td><td class="highlight">2球 27.9%</td><td>3球 23.5%</td><td>4球 16.0%</td><td>3.45</td></tr><tr><td class="dim-label">半全场</td><td class="highlight">负负 3.5</td><td>胜胜 5.2</td><td>平负 5.2</td><td>3.5</td></tr><tr><td class="dim-label">半场比分</td><td class="highlight">0-0 33.3%</td><td>0-1 26.0%</td><td>0-2 11.4%</td><td>-</td></tr></table>
+
+<div class="upset-box upset-value">
+<span class="upset-icon">💡</span><b>价值提示：</b>模型与市场同看客胜，但模型概率65.1%远高于市场38.1%，分歧27.0%。模型更有信心，可适当追击。
+</div>
+
+<div class="upset-box upset-hot">
+<span class="upset-icon">⚠️</span><b>市场过热：</b>客胜支持率56%>55%，追热风险高。已连续4次追热门翻车(规则21)，建议防冷门或平局。
+</div>
+</div></div>
+<div class="parlay-section">
+<h2 class="section-h" id="upset">搏冷推荐汇总</h2>
+<table class="odds-table" style="margin:12px 0;">
+<tr><th>编号</th><th>对阵</th><th>搏冷方向</th><th>模型概率</th><th>市场方向</th><th>市场概率</th><th>赔率</th><th>分歧</th><th>类型</th></tr>
+<tr><td>周五002</td><td>大阪钢巴 vs 浦和红钻</td><td class="highlight"><b>客胜</b></td><td>65.5%</td><td>主胜</td><td>35.9%</td><td class="odds-val">2.65</td><td style="color:var(--red);">32.1%</td><td>方向对立</td></tr>
+<tr><td>周五005</td><td>坎布尔 vs SBV精英</td><td class="highlight"><b>客胜</b></td><td>80.4%</td><td>主胜</td><td>35.6%</td><td class="odds-val">2.38</td><td style="color:var(--red);">44.9%</td><td>方向对立</td></tr>
+<tr><td>周五006</td><td>奥斯 vs 布雷达</td><td class="highlight"><b>客胜</b></td><td>64.8%</td><td>客胜</td><td>46.0%</td><td class="odds-val">1.53</td><td style="color:var(--red);">18.8%</td><td>价值追击</td></tr>
+<tr><td>周五007</td><td>埃门 vs 罗达JC</td><td class="highlight"><b>客胜</b></td><td>64.2%</td><td>主胜</td><td>36.6%</td><td class="odds-val">2.52</td><td style="color:var(--red);">29.7%</td><td>方向对立</td></tr>
+<tr><td>周五009</td><td>米德尔斯堡 vs 雷克斯汉姆</td><td class="highlight"><b>客胜</b></td><td>36.0%</td><td>主胜</td><td>47.6%</td><td class="odds-val">5.25</td><td style="color:var(--red);">18.6%</td><td>方向对立</td></tr>
+<tr><td>周五010</td><td>埃斯托里尔 vs 法马利康</td><td class="highlight"><b>客胜</b></td><td>65.1%</td><td>客胜</td><td>38.1%</td><td class="odds-val">2.08</td><td style="color:var(--red);">27.0%</td><td>价值追击</td></tr>
+</table>
+<div style="font-size:12px;color:var(--text3);margin:8px 0 16px 0;">搏冷建议仅适合极小注娱乐，分歧越大不确定性越高。方向对立型搏冷风险最高但赔率最优；价值追击型分歧虽大但方向一致，相对安全。</div>
+<div style="background:var(--card2);border-radius:8px;padding:14px 16px;margin:10px 0;border-left:4px solid var(--yellow);">
+<b style="color:var(--yellow);">⚠️ 市场过热场次（支持率>55%）：</b><br>
+<span style="color:var(--text2);font-size:13px;">• 周五004 桑纳菲尤尔vs奥斯陆KFUM：主胜支持率65%，追热风险高，防冷门/平局</span><br>
+<span style="color:var(--text2);font-size:13px;">• 周五006 奥斯vs布雷达：客胜支持率62%，追热风险高，防冷门/平局</span><br>
+<span style="color:var(--text2);font-size:13px;">• 周五009 米德尔斯堡vs雷克斯汉姆：主胜支持率64%，追热风险高，防冷门/平局</span><br>
+<span style="color:var(--text2);font-size:13px;">• 周五010 埃斯托里尔vs法马利康：客胜支持率56%，追热风险高，防冷门/平局</span><br>
+</div>
+<div style="font-size:12px;color:var(--text3);margin:8px 0 16px 0;">规则21：已连续4次追热门翻车。市场过热≠一定冷门，但赔率价值已被压缩，追热性价比低。</div>
+</div>
+
+<div class="parlay-section">
+<h2 class="section-h" id="parlay">串关思路（官方赔率版）</h2>
+<div class="parlay-item">
+<b>稳健2串1：</b>004 桑纳菲主胜(1.96) + 006 布雷达客胜(1.53)
+<br><span style="color:var(--text2);font-size:12px;">模型与市场方向一致，分歧均在15%以内。004桑纳菲主场保级6分战+市场支持率65%；006布雷达客胜赔1.53市场信心足。组合赔率约3.00。</span>
+</div>
+<div class="parlay-item">
+<b>价值2串1：</b>008 波鸿主胜/平(2.15) + 001 鹿岛客胜(1.75)
+<br><span style="color:var(--text2);font-size:12px;">008波鸿德乙第2主场强势+交锋5场不败，模型与市场一致；001鹿岛客胜赔1.75市场信心足，横滨垫底+3主力伤缺。组合赔率约3.76。</span>
+</div>
+<div class="parlay-item">
+<b>让球容错2串1：</b>002 让负(1.46) + 007 让负(1.50)
+<br><span style="color:var(--text2);font-size:12px;">002大阪-1让负=浦和不输2球以上(赔1.46)；007埃门-1让负=罗达JC不输2球以上(赔1.50)。让球方案容错性高（规则33），组合赔率约2.19。</span>
+</div>
+<div class="parlay-item">
+<b>博冷单关：</b>009 米堡vs雷克斯 平局(3.95)
+<br><span style="color:var(--text2);font-size:12px;">模型与市场严重分歧(19%)：模型看平/客，市场看主胜64%。但联赛杯主场优势反常(0.80)+上赛季两次平局+米堡5人伤缺，平局有价值。仅适合极小注娱乐。</span>
+</div>
+<div class="parlay-item" style="border-left-color:var(--red);">
+<b style="color:var(--red);">分歧警示场次：</b>002/005/006/007/009/010 模型与市场严重分歧(>15%)
+<br><span style="color:var(--text2);font-size:12px;">规则8触发，不得作为博胆推荐。005坎布尔vs SBV分歧高达44.9%为极端分歧——模型看SBV客胜80.4%，市场看双方均势(2.36/2.38)。003修正后分歧仅2.0%，是本轮最对齐场次。以基本面为准但不确定性极高。</span>
+</div>
+</div>
+
+<div class="parlay-section">
+<h2 class="section-h" id="patterns">本轮六大发现（官方赔率版）</h2>
+
+<div class="pattern-box">
+  <span class="pattern-num">1</span>
+  <b>防守端伤停修正：003赫尔辛基火花方向翻转（规则32）</b>
+  <br><span style="color:var(--text2);font-size:13px;">003客队赫尔辛基火花3名防守球员(含主力门将)停赛+2名中前场伤缺，共5人缺阵。修正前模型看好客胜38.5%，修正后(injury_adj_h×1.30, 对手防守崩塌→主队攻击+30%)翻转为<b style="color:var(--accent2);">主胜36.8%</b>，与市场Shin(主胜38.8%)基本对齐(分歧仅2.0%)。这是本轮模型与市场最对齐的场次。002门将缺阵→客队攻击+12%，007主队4名中后场缺阵→客队攻击+25%。</span>
+</div>
+
+<div class="pattern-box">
+  <span class="pattern-num">2</span>
+  <b>极端分歧：005坎布尔vs SBV精英（分歧44.9%）</b>
+  <br><span style="color:var(--text2);font-size:13px;">模型预测SBV客胜80.4%，但官方赔率2.36/3.50/2.38显示市场认为双方势均力敌（Shin概率H36%/D29%/A35%）。sporttery.cn排名坎布尔第4、SBV第5，实力接近。模型过度放大了坎布尔主力射手离队的影响。规则28：基本面>模型，需重新审视。极端分歧场次仅供极小注娱乐。</span>
+</div>
+
+<div class="pattern-box">
+  <span class="pattern-num">3</span>
+  <b>排名修正：001横滨水手上赛季第20（垫底）非第15</b>
+  <br><span style="var(--text2);font-size:13px;">sporttery.cn显示横滨水手上赛季排名第20（J1垫底），而非分析中的第15。这解释了市场为何给出3.90的主胜高赔——垫底队+3主力伤缺+中立场地，鹿岛客胜1.75合理。模型概率34.2%需大幅下修，市场Shin概率H23%/D27%/A50%更接近真实。</span>
+</div>
+
+<div class="pattern-box">
+  <span class="pattern-num">4</span>
+  <b>让球方案容错性最高：80%命中率延续</b>
+  <br><span style="color:var(--text2);font-size:13px;">周四回测让球方案80%命中（4/5），本轮继续推荐。002让负1.46（大阪-1=浦和不输2球）、007让负1.50（埃门-1=罗达不输2球）是本轮最优让球选择。让球盘容错性远高于方向盘，应作为核心推荐维度。</span>
+</div>
+
+<div class="pattern-box">
+  <span class="pattern-num">5</span>
+  <b>市场支持率>50%触发规则21冷门检查</b>
+  <br><span style="color:var(--text2);font-size:13px;">001鹿岛49%、002大阪47%、004桑纳菲65%、005 SBV 45%、006布雷达62%、009米堡64%、010法马利康56%——7场市场支持率方向>45%。已连续4次追热门翻车，必须执行强制性冷门检查。009米堡64%支持率+联赛杯主场反常+5人伤缺，是最需防冷的场次。</span>
+</div>
+
+<div class="pattern-box">
+  <span class="pattern-num">6</span>
+  <b>TTG联赛特征分化修正：各联赛进球分布差异巨大</b>
+  <br><span style="color:var(--text2);font-size:13px;">本轮10场覆盖8个联赛，各联赛历史进球分布差异显著。荷甲场均3.18球（大2.5率66%），修正后005的4球升为次选（21.8%）；德乙场均3.02球，008的1球被4球替代进入TOP3；英联赛杯2球历史频率42.4%，009的2球概率从28.8%修正至39.2%；日职/芬超小球联赛2球进一步强化。修正力度45%，保留55%原始泊松模型。联赛通用模型已无法覆盖这种分化，必须逐联赛修正。</span>
+</div>
+</div>
+
+<div class="footer">
+  <p>分析时间：2026-08-07 | 赔率来源：体彩官方sporttery.cn（更新2026-08-06 21:57）</p>
+  <p>模型：Dixon-Coles泊松分布 | Shin概率校准 | 规则8/11/21/28/32/33/34v2</p>
+  <p>本分析仅供交流参考，不构成投注建议。模型与市场严重分歧处已标注，不确定性极高。请理性观赛，量力而行。</p>
+  <p>伤停信息存在多源矛盾处需赛前1小时首发确认。赔率可能临场变动，请以体彩官方实时赔率为准。</p>
+</div>
+</div>
+</body>
+</html>

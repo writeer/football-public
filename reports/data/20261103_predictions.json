@@ -1,0 +1,2217 @@
+[
+ {
+  "num": "周二001",
+  "league": "亚冠精英",
+  "home": "纽卡斯尔喷气机",
+  "away": "上海海港",
+  "kickoff": "15:45",
+  "match_date": "2026-11-03",
+  "is_single": false,
+  "single_note": null,
+  "single_match": null,
+  "confidence": "★★",
+  "lambda": {
+   "home": 1.25,
+   "away": 2.05,
+   "total": 3.3
+  },
+  "model": {
+   "home": 0.2184,
+   "draw": 0.2387,
+   "away": 0.5429
+  },
+  "market": {
+   "home": 0.2619,
+   "draw": 0.2221,
+   "away": 0.516,
+   "overround": 0.1399
+  },
+  "handicap": {
+   "line": 1,
+   "win": 0.449,
+   "push": 0.2164,
+   "lose": 0.3346
+  },
+  "odds_had": {
+   "home": 3.35,
+   "draw": 3.95,
+   "away": 1.7
+  },
+  "odds_hhad": {
+   "home": 1.83,
+   "draw": 3.8,
+   "away": 3.03,
+   "handicap": 1
+  },
+  "odds_crs": {
+   "1:0": 17,
+   "2:0": 23,
+   "2:1": 10,
+   "3:0": 45,
+   "3:1": 22,
+   "3:2": 22,
+   "4:0": 80,
+   "4:1": 50,
+   "4:2": 50,
+   "5:0": 250,
+   "5:1": 120,
+   "5:2": 120,
+   "win-other": 45,
+   "0:0": 26,
+   "1:1": 8.25,
+   "2:2": 10.5,
+   "3:3": 29,
+   "draw-other": 100,
+   "0:1": 12,
+   "0:2": 12,
+   "1:2": 7.5,
+   "0:3": 19,
+   "1:3": 12,
+   "2:3": 16,
+   "0:4": 31,
+   "1:4": 23,
+   "2:4": 31,
+   "0:5": 70,
+   "1:5": 55,
+   "2:5": 60,
+   "loss-other": 23
+  },
+  "odds_ttg": {
+   "0": 26,
+   "1": 8,
+   "2": 4.6,
+   "3": 3.55,
+   "4": 4.3,
+   "5": 6,
+   "6": 9.5,
+   "7+": 11.5
+  },
+  "odds_hafu": {
+   "HH": 5.25,
+   "HD": 13,
+   "HA": 20,
+   "DH": 8.75,
+   "DD": 7.5,
+   "DA": 5,
+   "AH": 29,
+   "AD": 13,
+   "AA": 2.65
+  },
+  "value": {
+   "home": "€7.38M",
+   "away": "€14.35M"
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Newcastle+Jets",
+   "away": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Shanghai+Port",
+   "provider": "Transfermarkt（阵容页快照，2026-11-03 采集）"
+  },
+  "stadium": "McDonald Jones Stadium（纽卡斯尔，正常）",
+  "weather": "16-31℃ 阵雨概率80% 可能雷暴",
+  "injuries": {
+   "home": "3人：肯尼迪（踝）、弗赖尔（十字韧带）、库珀（足）",
+   "away": "1人：蒯纪闻（中场）；外援齐整"
+  },
+  "recommendation": {
+   "had_primary": "away",
+   "had_primary_prob": 0.5429,
+   "had_secondary": "draw",
+   "had_secondary_prob": 0.2387,
+   "hc_line": 1,
+   "hc_primary": "lose",
+   "hc_primary_label": "让负",
+   "hc_primary_prob": 0.3346,
+   "hc_secondary": "push",
+   "hc_secondary_label": "让平",
+   "hc_secondary_prob": 0.2164,
+   "cr_top5": [
+    {
+     "score": "1-1",
+     "prob": 0.1021,
+     "odds": 8.25
+    },
+    {
+     "score": "1-2",
+     "prob": 0.0969,
+     "odds": 7.5
+    },
+    {
+     "score": "0-2",
+     "prob": 0.0775,
+     "odds": 12
+    },
+    {
+     "score": "0-1",
+     "prob": 0.0681,
+     "odds": 12
+    },
+    {
+     "score": "0-3",
+     "prob": 0.053,
+     "odds": 19
+    }
+   ],
+   "hafu_top3": [
+    {
+     "pick": "AA",
+     "prob": 0.3358,
+     "odds": 2.65
+    },
+    {
+     "pick": "DA",
+     "prob": 0.1848,
+     "odds": 5
+    },
+    {
+     "pick": "DD",
+     "prob": 0.1157,
+     "odds": 7.5
+    }
+   ],
+   "ttg_top2": [
+    "3球",
+    "2球"
+   ],
+   "six_tier": "常规正常球(2-3球)",
+   "ht_scores_top3": [
+    {
+     "score": "0-0",
+     "prob": 0.2671
+    },
+    {
+     "score": "0-1",
+     "prob": 0.2191
+    },
+    {
+     "score": "1-0",
+     "prob": 0.1336
+    }
+   ],
+   "k_dist": {
+    "k": 0,
+    "p": 0.22737265414568458
+   },
+   "k_rec": {
+    "k": -1,
+    "p": 0.21637172572652738
+   }
+  },
+  "note": "喷气机亚冠3战0分、进4失15；海港争前8主力出战。让(+1)且客胜≥45%，让胜被排除，让负33.5%首选、让平21.6%次选。"
+ },
+ {
+  "num": "周二002",
+  "league": "亚冠精英",
+  "home": "柏太阳神",
+  "away": "大田市民",
+  "kickoff": "18:00",
+  "match_date": "2026-11-03",
+  "is_single": false,
+  "single_note": null,
+  "single_match": null,
+  "confidence": "★★",
+  "lambda": {
+   "home": 2.25,
+   "away": 1.4,
+   "total": 3.65
+  },
+  "model": {
+   "home": 0.5527,
+   "draw": 0.2237,
+   "away": 0.2235
+  },
+  "market": {
+   "home": 0.6011,
+   "draw": 0.2233,
+   "away": 0.1755,
+   "overround": 0.1394
+  },
+  "handicap": {
+   "line": -1,
+   "win": 0.353,
+   "push": 0.2073,
+   "lose": 0.4397
+  },
+  "odds_had": {
+   "home": 1.46,
+   "draw": 3.93,
+   "away": 5
+  },
+  "odds_hhad": {
+   "home": 2.4,
+   "draw": 3.5,
+   "away": 2.29,
+   "handicap": -1
+  },
+  "odds_crs": {
+   "1:0": 8,
+   "2:0": 8,
+   "2:1": 7,
+   "3:0": 11,
+   "3:1": 11,
+   "3:2": 20,
+   "4:0": 22,
+   "4:1": 21,
+   "4:2": 40,
+   "5:0": 45,
+   "5:1": 45,
+   "5:2": 80,
+   "win-other": 29,
+   "0:0": 15,
+   "1:1": 7.5,
+   "2:2": 14,
+   "3:3": 50,
+   "draw-other": 300,
+   "0:1": 15,
+   "0:2": 28,
+   "1:2": 13,
+   "0:3": 80,
+   "1:3": 40,
+   "2:3": 37,
+   "0:4": 250,
+   "1:4": 120,
+   "2:4": 120,
+   "0:5": 600,
+   "1:5": 400,
+   "2:5": 400,
+   "loss-other": 120
+  },
+  "odds_ttg": {
+   "0": 15,
+   "1": 5.8,
+   "2": 3.8,
+   "3": 3.4,
+   "4": 4.8,
+   "5": 8,
+   "6": 14,
+   "7+": 19
+  },
+  "odds_hafu": {
+   "HH": 2.1,
+   "HD": 17,
+   "HA": 40,
+   "DH": 4.1,
+   "DD": 6.5,
+   "DA": 12,
+   "AH": 23,
+   "AD": 17,
+   "AA": 9
+  },
+  "value": {
+   "home": "€18.33M",
+   "away": "€13.35M"
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Kashiwa+Reysol",
+   "away": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Daejeon+Hana+Citizen",
+   "provider": "Transfermarkt（阵容页快照，2026-11-03 采集）"
+  },
+  "stadium": "三协F柏球场（千叶柏市，正常）",
+  "weather": "13-20℃ 多云 无雨",
+  "injuries": {
+   "home": "5人：手冢康平、马场晴也（十字韧带）、山田雄士（半月板）、大久保智明（跟腱）、熊坂光希（膝）",
+   "away": "1人：徐荣宰（踝）"
+  },
+  "recommendation": {
+   "had_primary": "home",
+   "had_primary_prob": 0.5527,
+   "had_secondary": "away",
+   "had_secondary_prob": 0.2235,
+   "hc_line": -1,
+   "hc_primary": "win",
+   "hc_primary_label": "让胜",
+   "hc_primary_prob": 0.353,
+   "hc_secondary": "push",
+   "hc_secondary_label": "让平",
+   "hc_secondary_prob": 0.2073,
+   "cr_top5": [
+    {
+     "score": "2-1",
+     "prob": 0.0921,
+     "odds": 7
+    },
+    {
+     "score": "1-1",
+     "prob": 0.0884,
+     "odds": 7.5
+    },
+    {
+     "score": "3-1",
+     "prob": 0.0691,
+     "odds": 11
+    },
+    {
+     "score": "2-0",
+     "prob": 0.0658,
+     "odds": 8
+    },
+    {
+     "score": "3-0",
+     "prob": 0.0493,
+     "odds": 11
+    }
+   ],
+   "hafu_top3": [
+    {
+     "pick": "HH",
+     "prob": 0.3467,
+     "odds": 2.1
+    },
+    {
+     "pick": "DH",
+     "prob": 0.1778,
+     "odds": 4.1
+    },
+    {
+     "pick": "AA",
+     "prob": 0.1261,
+     "odds": 9
+    }
+   ],
+   "ttg_top2": [
+    "3球",
+    "4球"
+   ],
+   "six_tier": "大球(4-5球)",
+   "ht_scores_top3": [
+    {
+     "score": "0-0",
+     "prob": 0.2322
+    },
+    {
+     "score": "1-0",
+     "prob": 0.209
+    },
+    {
+     "score": "0-1",
+     "prob": 0.1301
+    }
+   ],
+   "k_dist": {
+    "k": 0,
+    "p": 0.21306290984795206
+   },
+   "k_rec": {
+    "k": 1,
+    "p": 0.20731625899352654
+   }
+  },
+  "note": "L258触发：主队5人长期伤停=残阵 → 方向次选必须客胜（不得给平）。让(-1)且主胜55.3%≥55%禁让负，让胜35.3%首选。"
+ },
+ {
+  "num": "周二003",
+  "league": "亚冠精英",
+  "home": "曼谷港务",
+  "away": "北京国安",
+  "kickoff": "20:15",
+  "match_date": "2026-11-03",
+  "is_single": true,
+  "single_note": {
+   "applied": true,
+   "gap_pp": 23.1,
+   "factor": 1.08,
+   "draw_after": 0.2763216522607631
+  },
+  "single_match": {
+   "is_single": true,
+   "source": "用户赛前告知",
+   "gap_pp": 23.1,
+   "tier": "≥20pp",
+   "uplift": 1.08,
+   "draw_before": 0.2559,
+   "draw_after": 0.2763
+  },
+  "confidence": "★",
+  "lambda": {
+   "home": 1.3,
+   "away": 1.85,
+   "total": 3.15
+  },
+  "model": {
+   "home": 0.2499,
+   "draw": 0.2763,
+   "away": 0.4738
+  },
+  "market": {
+   "home": 0.2404,
+   "draw": 0.2279,
+   "away": 0.5317,
+   "overround": 0.1398
+  },
+  "handicap": {
+   "line": 1,
+   "win": 0.5048,
+   "push": 0.2132,
+   "lose": 0.2819
+  },
+  "odds_had": {
+   "home": 3.65,
+   "draw": 3.85,
+   "away": 1.65
+  },
+  "odds_hhad": {
+   "home": 1.91,
+   "draw": 3.7,
+   "away": 2.9,
+   "handicap": 1
+  },
+  "odds_crs": {
+   "1:0": 17,
+   "2:0": 26,
+   "2:1": 11,
+   "3:0": 50,
+   "3:1": 26,
+   "3:2": 24,
+   "4:0": 120,
+   "4:1": 70,
+   "4:2": 60,
+   "5:0": 400,
+   "5:1": 200,
+   "5:2": 200,
+   "win-other": 60,
+   "0:0": 23,
+   "1:1": 8,
+   "2:2": 11,
+   "3:3": 31,
+   "draw-other": 120,
+   "0:1": 11,
+   "0:2": 11,
+   "1:2": 7.5,
+   "0:3": 14,
+   "1:3": 11,
+   "2:3": 17,
+   "0:4": 26,
+   "1:4": 23,
+   "2:4": 31,
+   "0:5": 50,
+   "1:5": 45,
+   "2:5": 60,
+   "loss-other": 23
+  },
+  "odds_ttg": {
+   "0": 23,
+   "1": 7.5,
+   "2": 4.4,
+   "3": 3.5,
+   "4": 4.3,
+   "5": 6.5,
+   "6": 10,
+   "7+": 13
+  },
+  "odds_hafu": {
+   "HH": 6,
+   "HD": 14,
+   "HA": 20,
+   "DH": 9.5,
+   "DD": 7,
+   "DA": 4.8,
+   "AH": 35,
+   "AD": 14,
+   "AA": 2.45
+  },
+  "value": {
+   "home": "€8.75M",
+   "away": "€11.53M"
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Port+FC",
+   "away": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Beijing+Guoan",
+   "provider": "Transfermarkt（阵容页快照，2026-11-03 采集）"
+  },
+  "stadium": "True BG Stadium（巴吞他尼，正常）",
+  "weather": "29℃ 晴 降雨<5%",
+  "injuries": {
+   "home": "3人：卡卡·门德斯（膝）、阿斯纳维（跟腱术后）、马特乌斯·林斯（术后）",
+   "away": "5-7人：斯帕伊奇、法比奥（赛季报销）、吴少聪、何宇鹏、韩佳奇；塞尔吉尼奥/拉莫斯成疑"
+  },
+  "recommendation": {
+   "had_primary": "away",
+   "had_primary_prob": 0.4738,
+   "had_secondary": "draw",
+   "had_secondary_prob": 0.2763,
+   "hc_line": 1,
+   "hc_primary": "lose",
+   "hc_primary_label": "让负",
+   "hc_primary_prob": 0.2819,
+   "hc_secondary": "push",
+   "hc_secondary_label": "让平",
+   "hc_secondary_prob": 0.2132,
+   "cr_top5": [
+    {
+     "score": "1-1",
+     "prob": 0.1113,
+     "odds": 8
+    },
+    {
+     "score": "1-2",
+     "prob": 0.0953,
+     "odds": 7.5
+    },
+    {
+     "score": "0-2",
+     "prob": 0.0733,
+     "odds": 11
+    },
+    {
+     "score": "0-1",
+     "prob": 0.071,
+     "odds": 11
+    },
+    {
+     "score": "0-3",
+     "prob": 0.0452,
+     "odds": 14
+    }
+   ],
+   "hafu_top3": [
+    {
+     "pick": "AA",
+     "prob": 0.2946,
+     "odds": 2.45
+    },
+    {
+     "pick": "DA",
+     "prob": 0.1742,
+     "odds": 4.8
+    },
+    {
+     "pick": "DD",
+     "prob": 0.1264,
+     "odds": 7
+    }
+   ],
+   "ttg_top2": [
+    "3球",
+    "2球"
+   ],
+   "six_tier": "常规正常球(2-3球)",
+   "ht_scores_top3": [
+    {
+     "score": "0-0",
+     "prob": 0.2837
+    },
+    {
+     "score": "0-1",
+     "prob": 0.2099
+    },
+    {
+     "score": "1-0",
+     "prob": 0.1475
+    }
+   ],
+   "k_dist": {
+    "k": 0,
+    "p": 0.24366988735517023
+   },
+   "k_rec": {
+    "k": -1,
+    "p": 0.21323123693823334
+   }
+  },
+  "note": "单关（用户赛前告知）：平局25.6%→27.6%（+8%，首选与平局差23.1pp≥20pp档）。国安残阵+长途飞行，方向次选给平；让(+1)且客胜≥45%，让负28.2%首选。"
+ },
+ {
+  "num": "周二004",
+  "league": "欧冠",
+  "home": "加拉塔萨雷",
+  "away": "斯图加特",
+  "kickoff": "01:45",
+  "match_date": "2026-11-04",
+  "is_single": false,
+  "single_note": null,
+  "single_match": null,
+  "confidence": "★★",
+  "lambda": {
+   "home": 2.25,
+   "away": 1.8,
+   "total": 4.05
+  },
+  "model": {
+   "home": 0.473,
+   "draw": 0.2231,
+   "away": 0.3039
+  },
+  "market": {
+   "home": 0.418,
+   "draw": 0.228,
+   "away": 0.354,
+   "overround": 0.1392
+  },
+  "handicap": {
+   "line": -1,
+   "win": 0.2907,
+   "push": 0.1888,
+   "lose": 0.5205
+  },
+  "odds_had": {
+   "home": 2.1,
+   "draw": 3.85,
+   "away": 2.48
+  },
+  "odds_hhad": {
+   "home": 4,
+   "draw": 4.25,
+   "away": 1.53,
+   "handicap": -1
+  },
+  "odds_crs": {
+   "1:0": 14,
+   "2:0": 15,
+   "2:1": 8,
+   "3:0": 24,
+   "3:1": 13.5,
+   "3:2": 15,
+   "4:0": 50,
+   "4:1": 30,
+   "4:2": 34,
+   "5:0": 150,
+   "5:1": 70,
+   "5:2": 90,
+   "win-other": 25,
+   "0:0": 27,
+   "1:1": 8.5,
+   "2:2": 9.5,
+   "3:3": 25,
+   "draw-other": 100,
+   "0:1": 16,
+   "0:2": 19,
+   "1:2": 9,
+   "0:3": 32,
+   "1:3": 17,
+   "2:3": 17,
+   "0:4": 75,
+   "1:4": 36,
+   "2:4": 38,
+   "0:5": 200,
+   "1:5": 100,
+   "2:5": 100,
+   "loss-other": 32
+  },
+  "odds_ttg": {
+   "0": 27,
+   "1": 8.5,
+   "2": 4.7,
+   "3": 3.65,
+   "4": 4.3,
+   "5": 5.9,
+   "6": 9,
+   "7+": 10
+  },
+  "odds_hafu": {
+   "HH": 3.45,
+   "HD": 13.5,
+   "HA": 22,
+   "DH": 5.75,
+   "DD": 7,
+   "DA": 6.5,
+   "AH": 20,
+   "AD": 13.5,
+   "AA": 4
+  },
+  "value": {
+   "home": "€381.5M",
+   "away": "€399.45M"
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Galatasaray",
+   "away": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=VfB+Stuttgart",
+   "provider": "Transfermarkt（阵容页快照，2026-11-03 采集）"
+  },
+  "stadium": "RAMS Park（伊斯坦布尔，正常）",
+  "weather": "15.4℃ 小雨 风3km/h",
+  "injuries": {
+   "home": "0人：奥斯梅恩、巴达克奇、托雷拉全可用",
+   "away": "3-5人：绍尔、斯蒂勒（核心中场）、瓦格诺曼；迪尔/扎加杜成疑"
+  },
+  "recommendation": {
+   "had_primary": "home",
+   "had_primary_prob": 0.473,
+   "had_secondary": "away",
+   "had_secondary_prob": 0.3039,
+   "hc_line": -1,
+   "hc_primary": "lose",
+   "hc_primary_label": "让负",
+   "hc_primary_prob": 0.5205,
+   "hc_secondary": "push",
+   "hc_secondary_label": "让平",
+   "hc_secondary_prob": 0.1888,
+   "cr_top5": [
+    {
+     "score": "2-1",
+     "prob": 0.0794,
+     "odds": 8
+    },
+    {
+     "score": "1-1",
+     "prob": 0.0762,
+     "odds": 8.5
+    },
+    {
+     "score": "2-2",
+     "prob": 0.0714,
+     "odds": 9.5
+    },
+    {
+     "score": "1-2",
+     "prob": 0.0635,
+     "odds": 9
+    },
+    {
+     "score": "3-1",
+     "prob": 0.0595,
+     "odds": 13.5
+    }
+   ],
+   "hafu_top3": [
+    {
+     "pick": "HH",
+     "prob": 0.299,
+     "odds": 3.45
+    },
+    {
+     "pick": "DH",
+     "prob": 0.1437,
+     "odds": 5.75
+    },
+    {
+     "pick": "DA",
+     "prob": 0.1007,
+     "odds": 6.5
+    }
+   ],
+   "ttg_top2": [
+    "4球",
+    "3球"
+   ],
+   "six_tier": "大球(4-5球)",
+   "ht_scores_top3": [
+    {
+     "score": "0-0",
+     "prob": 0.1825
+    },
+    {
+     "score": "1-0",
+     "prob": 0.1725
+    },
+    {
+     "score": "0-1",
+     "prob": 0.138
+    }
+   ],
+   "k_dist": {
+    "k": 0,
+    "p": 0.21248777157001722
+   },
+   "k_rec": {
+    "k": 1,
+    "p": 0.18881491779513537
+   }
+  },
+  "note": "L258触发：斯图加特客场4-2勒沃库森、欧冠2胜1平 → 次选客胜。加拉主场对德球队9场不胜。"
+ },
+ {
+  "num": "周二005",
+  "league": "欧冠",
+  "home": "马德里竞技",
+  "away": "拜仁慕尼黑",
+  "kickoff": "04:00",
+  "match_date": "2026-11-04",
+  "is_single": true,
+  "single_note": {
+   "applied": true,
+   "gap_pp": 14.1,
+   "factor": 1.11,
+   "draw_after": 0.2889455904387344
+  },
+  "single_match": {
+   "is_single": true,
+   "source": "用户赛前告知",
+   "gap_pp": 14.1,
+   "tier": "10~20pp",
+   "uplift": 1.11,
+   "draw_before": 0.2603,
+   "draw_after": 0.2889
+  },
+  "confidence": "★",
+  "lambda": {
+   "home": 1.55,
+   "away": 1.7,
+   "total": 3.25
+  },
+  "model": {
+   "home": 0.3255,
+   "draw": 0.2889,
+   "away": 0.3856
+  },
+  "market": {
+   "home": 0.3539,
+   "draw": 0.2322,
+   "away": 0.414,
+   "overround": 0.1395
+  },
+  "handicap": {
+   "line": 1,
+   "win": 0.5922,
+   "push": 0.1923,
+   "lose": 0.2155
+  },
+  "odds_had": {
+   "home": 2.48,
+   "draw": 3.78,
+   "away": 2.12
+  },
+  "odds_hhad": {
+   "home": 1.51,
+   "draw": 4.25,
+   "away": 4.15,
+   "handicap": 1
+  },
+  "odds_crs": {
+   "1:0": 14.5,
+   "2:0": 17,
+   "2:1": 8.75,
+   "3:0": 30,
+   "3:1": 17,
+   "3:2": 18,
+   "4:0": 80,
+   "4:1": 38,
+   "4:2": 40,
+   "5:0": 200,
+   "5:1": 100,
+   "5:2": 110,
+   "win-other": 32,
+   "0:0": 24,
+   "1:1": 8,
+   "2:2": 9.5,
+   "3:3": 28,
+   "draw-other": 100,
+   "0:1": 13.5,
+   "0:2": 15,
+   "1:2": 8,
+   "0:3": 25,
+   "1:3": 14,
+   "2:3": 16,
+   "0:4": 55,
+   "1:4": 30,
+   "2:4": 35,
+   "0:5": 150,
+   "1:5": 75,
+   "2:5": 100,
+   "loss-other": 30
+  },
+  "odds_ttg": {
+   "0": 24,
+   "1": 8,
+   "2": 4.5,
+   "3": 3.55,
+   "4": 4.3,
+   "5": 6.2,
+   "6": 9.5,
+   "7+": 12
+  },
+  "odds_hafu": {
+   "HH": 3.95,
+   "HD": 13.5,
+   "HA": 21,
+   "DH": 6.5,
+   "DD": 6.7,
+   "DA": 5.8,
+   "AH": 23,
+   "AD": 13.5,
+   "AA": 3.5
+  },
+  "value": {
+   "home": "€703.5M",
+   "away": "€1040M"
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Atletico+Madrid",
+   "away": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Bayern+Munich",
+   "provider": "Transfermarkt（阵容页快照，2026-11-03 采集）"
+  },
+  "stadium": "大都会球场（马德里，正常）",
+  "weather": "10-11℃ 无雨 风4km/h",
+  "injuries": {
+   "home": "2-3人：卡多佐（大腿）、尤尔曼德（停赛）、科克成疑",
+   "away": "4-6人：路易斯·迪亚斯、格纳布里、穆西亚拉、赛巴里；诺伊尔/奥利塞成疑（大概率出战）"
+  },
+  "recommendation": {
+   "had_primary": "away",
+   "had_primary_prob": 0.3856,
+   "had_secondary": "home",
+   "had_secondary_prob": 0.3255,
+   "hc_line": 1,
+   "hc_primary": "win",
+   "hc_primary_label": "让胜",
+   "hc_primary_prob": 0.5922,
+   "hc_secondary": "push",
+   "hc_secondary_label": "让平",
+   "hc_secondary_prob": 0.1923,
+   "cr_top5": [
+    {
+     "score": "1-1",
+     "prob": 0.1103,
+     "odds": 8
+    },
+    {
+     "score": "1-2",
+     "prob": 0.0868,
+     "odds": 8
+    },
+    {
+     "score": "2-1",
+     "prob": 0.0792,
+     "odds": 8.75
+    },
+    {
+     "score": "2-2",
+     "prob": 0.0673,
+     "odds": 9.5
+    },
+    {
+     "score": "0-1",
+     "prob": 0.0577,
+     "odds": 13.5
+    }
+   ],
+   "hafu_top3": [
+    {
+     "pick": "AA",
+     "prob": 0.2436,
+     "odds": 3.5
+    },
+    {
+     "pick": "HH",
+     "prob": 0.2018,
+     "odds": 3.95
+    },
+    {
+     "pick": "DA",
+     "prob": 0.1413,
+     "odds": 5.8
+    }
+   ],
+   "ttg_top2": [
+    "3球",
+    "2球"
+   ],
+   "six_tier": "常规正常球(2-3球)",
+   "ht_scores_top3": [
+    {
+     "score": "0-0",
+     "prob": 0.2554
+    },
+    {
+     "score": "0-1",
+     "prob": 0.1823
+    },
+    {
+     "score": "1-0",
+     "prob": 0.1663
+    }
+   ],
+   "k_dist": {
+    "k": 0,
+    "p": 0.24791556451199862
+   },
+   "k_rec": {
+    "k": -1,
+    "p": 0.19230820146579755
+   }
+  },
+  "note": "单关（用户赛前告知）：平局26.0%→28.9%（+11%，差14.1pp落在10-20pp档）。客胜38.6%首选、主胜32.5%次选（高于平局28.9%）。拜仁锋线仅剩凯恩，主帅孔帕尼未随队。"
+ },
+ {
+  "num": "周二006",
+  "league": "欧冠",
+  "home": "LASK林茨",
+  "away": "布拉迪斯拉发",
+  "kickoff": "04:00",
+  "match_date": "2026-11-04",
+  "is_single": false,
+  "single_note": null,
+  "single_match": null,
+  "confidence": "★★★",
+  "lambda": {
+   "home": 2.4,
+   "away": 0.95,
+   "total": 3.35
+  },
+  "model": {
+   "home": 0.6801,
+   "draw": 0.1962,
+   "away": 0.1237
+  },
+  "market": {
+   "home": 0.6853,
+   "draw": 0.172,
+   "away": 0.1426,
+   "overround": 0.1399
+  },
+  "handicap": {
+   "line": -1,
+   "win": 0.4699,
+   "push": 0.2181,
+   "lose": 0.312
+  },
+  "odds_had": {
+   "home": 1.28,
+   "draw": 5.1,
+   "away": 6.15
+  },
+  "odds_hhad": {
+   "home": 1.88,
+   "draw": 3.9,
+   "away": 2.85,
+   "handicap": -1
+  },
+  "odds_crs": {
+   "1:0": 11,
+   "2:0": 9,
+   "2:1": 7,
+   "3:0": 11,
+   "3:1": 8.75,
+   "3:2": 15,
+   "4:0": 19,
+   "4:1": 15,
+   "4:2": 26,
+   "5:0": 40,
+   "5:1": 30,
+   "5:2": 50,
+   "win-other": 14,
+   "0:0": 27,
+   "1:1": 9.75,
+   "2:2": 12.5,
+   "3:3": 35,
+   "draw-other": 150,
+   "0:1": 24,
+   "0:2": 40,
+   "1:2": 16,
+   "0:3": 100,
+   "1:3": 45,
+   "2:3": 34,
+   "0:4": 300,
+   "1:4": 120,
+   "2:4": 100,
+   "0:5": 700,
+   "1:5": 400,
+   "2:5": 350,
+   "loss-other": 90
+  },
+  "odds_ttg": {
+   "0": 27,
+   "1": 8.5,
+   "2": 4.8,
+   "3": 3.6,
+   "4": 4.2,
+   "5": 5.9,
+   "6": 9,
+   "7+": 10.5
+  },
+  "odds_hafu": {
+   "HH": 1.83,
+   "HD": 18,
+   "HA": 42,
+   "DH": 4.25,
+   "DD": 8.5,
+   "DA": 15,
+   "AH": 19,
+   "AD": 18,
+   "AA": 10
+  },
+  "value": {
+   "home": "€62.4M",
+   "away": "€38.17M"
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=LASK",
+   "away": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Slovan+Bratislava",
+   "provider": "Transfermarkt（阵容页快照，2026-11-03 采集）"
+  },
+  "stadium": "Raiffeisen Arena（林茨，正常）",
+  "weather": "6.4℃ 无雨 风6km/h",
+  "injuries": {
+   "home": "0人（贝洛肌肉伤成疑）",
+   "away": "0人（切雷普卡伊背伤成疑）"
+  },
+  "recommendation": {
+   "had_primary": "home",
+   "had_primary_prob": 0.6801,
+   "had_secondary": "draw",
+   "had_secondary_prob": 0.1962,
+   "hc_line": -1,
+   "hc_primary": "push",
+   "hc_primary_label": "让平",
+   "hc_primary_prob": 0.2181,
+   "hc_secondary": "win",
+   "hc_secondary_label": "让胜",
+   "hc_secondary_prob": 0.4699,
+   "cr_top5": [
+    {
+     "score": "2-0",
+     "prob": 0.101,
+     "odds": 9
+    },
+    {
+     "score": "2-1",
+     "prob": 0.096,
+     "odds": 7
+    },
+    {
+     "score": "1-1",
+     "prob": 0.0864,
+     "odds": 9.75
+    },
+    {
+     "score": "3-0",
+     "prob": 0.0808,
+     "odds": 11
+    },
+    {
+     "score": "1-0",
+     "prob": 0.0778,
+     "odds": 11
+    }
+   ],
+   "hafu_top3": [
+    {
+     "pick": "HH",
+     "prob": 0.4531,
+     "odds": 1.83
+    },
+    {
+     "pick": "DH",
+     "prob": 0.2041,
+     "odds": 4.25
+    },
+    {
+     "pick": "AA",
+     "prob": 0.0688,
+     "odds": 10
+    }
+   ],
+   "ttg_top2": [
+    "3球",
+    "2球"
+   ],
+   "six_tier": "常规正常球(2-3球)",
+   "ht_scores_top3": [
+    {
+     "score": "1-0",
+     "prob": 0.2468
+    },
+    {
+     "score": "0-0",
+     "prob": 0.2449
+    },
+    {
+     "score": "2-0",
+     "prob": 0.1244
+    }
+   ],
+   "k_dist": {
+    "k": 1,
+    "p": 0.2180638028181439
+   },
+   "k_rec": {
+    "k": 1,
+    "p": 0.2180638028181439
+   }
+  },
+  "note": "客队看台关闭（Slovan球迷被禁1场），非空场。Slovan欧冠11连败0分，LASK上轮3-2客胜葡萄牙体育。"
+ },
+ {
+  "num": "周二007",
+  "league": "欧冠",
+  "home": "费耶诺德",
+  "away": "国际米兰",
+  "kickoff": "04:00",
+  "match_date": "2026-11-04",
+  "is_single": false,
+  "single_note": null,
+  "single_match": null,
+  "confidence": "★",
+  "lambda": {
+   "home": 1.15,
+   "away": 1.35,
+   "total": 2.5
+  },
+  "model": {
+   "home": 0.3018,
+   "draw": 0.3032,
+   "away": 0.395
+  },
+  "market": {
+   "home": 0.231,
+   "draw": 0.2168,
+   "away": 0.5522,
+   "overround": 0.139
+  },
+  "handicap": {
+   "line": 1,
+   "win": 0.5968,
+   "push": 0.212,
+   "lose": 0.1912
+  },
+  "odds_had": {
+   "home": 3.8,
+   "draw": 4.05,
+   "away": 1.59
+  },
+  "odds_hhad": {
+   "home": 2,
+   "draw": 3.82,
+   "away": 2.65,
+   "handicap": 1
+  },
+  "odds_crs": {
+   "1:0": 18,
+   "2:0": 28,
+   "2:1": 11.5,
+   "3:0": 60,
+   "3:1": 26,
+   "3:2": 23,
+   "4:0": 150,
+   "4:1": 75,
+   "4:2": 60,
+   "5:0": 500,
+   "5:1": 200,
+   "5:2": 200,
+   "win-other": 55,
+   "0:0": 24,
+   "1:1": 8.75,
+   "2:2": 10.5,
+   "3:3": 30,
+   "draw-other": 120,
+   "0:1": 11.5,
+   "0:2": 11,
+   "1:2": 7,
+   "0:3": 15,
+   "1:3": 10.5,
+   "2:3": 14,
+   "0:4": 30,
+   "1:4": 20,
+   "2:4": 27,
+   "0:5": 70,
+   "1:5": 50,
+   "2:5": 60,
+   "loss-other": 21
+  },
+  "odds_ttg": {
+   "0": 24,
+   "1": 7.75,
+   "2": 4.55,
+   "3": 3.55,
+   "4": 4.3,
+   "5": 6.2,
+   "6": 9.5,
+   "7+": 12
+  },
+  "odds_hafu": {
+   "HH": 6.25,
+   "HD": 15,
+   "HA": 18,
+   "DH": 9.5,
+   "DD": 7.25,
+   "DA": 4.7,
+   "AH": 30,
+   "AD": 15,
+   "AA": 2.4
+  },
+  "value": {
+   "home": "€245.23M",
+   "away": "€738.3M"
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Feyenoord",
+   "away": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Inter+Milan",
+   "provider": "Transfermarkt（阵容页快照，2026-11-03 采集）"
+  },
+  "stadium": "德奎普（鹿特丹，正常）",
+  "weather": "7.6-8℃ 无雨 风15-20km/h",
+  "injuries": {
+   "home": "5-8人：博斯、莫德、纽科普、斯马尔、圣贾斯特；纳尔逊/贝伦/S.范佩西",
+   "away": "5-7人：巴斯托尼（停赛）、劳塔罗（肌肉）、琼斯、斯通斯、帕瓦尔、普罗韦德尔"
+  },
+  "recommendation": {
+   "had_primary": "away",
+   "had_primary_prob": 0.395,
+   "had_secondary": "draw",
+   "had_secondary_prob": 0.3032,
+   "hc_line": 1,
+   "hc_primary": "win",
+   "hc_primary_label": "让胜",
+   "hc_primary_prob": 0.5968,
+   "hc_secondary": "push",
+   "hc_secondary_label": "让平",
+   "hc_secondary_prob": 0.212,
+   "cr_top5": [
+    {
+     "score": "1-1",
+     "prob": 0.1376,
+     "odds": 8.75
+    },
+    {
+     "score": "0-1",
+     "prob": 0.1006,
+     "odds": 11.5
+    },
+    {
+     "score": "0-0",
+     "prob": 0.0923,
+     "odds": 24
+    },
+    {
+     "score": "1-2",
+     "prob": 0.086,
+     "odds": 7
+    },
+    {
+     "score": "1-0",
+     "prob": 0.0842,
+     "odds": 18
+    }
+   ],
+   "hafu_top3": [
+    {
+     "pick": "AA",
+     "prob": 0.2334,
+     "odds": 2.4
+    },
+    {
+     "pick": "HH",
+     "prob": 0.1736,
+     "odds": 6.25
+    },
+    {
+     "pick": "DA",
+     "prob": 0.1572,
+     "odds": 4.7
+    }
+   ],
+   "ttg_top2": [
+    "2球",
+    "1球"
+   ],
+   "six_tier": "小球(1-2球)",
+   "ht_scores_top3": [
+    {
+     "score": "0-0",
+     "prob": 0.3499
+    },
+    {
+     "score": "0-1",
+     "prob": 0.1984
+    },
+    {
+     "score": "1-0",
+     "prob": 0.169
+    }
+   ],
+   "k_dist": {
+    "k": 0,
+    "p": 0.28878709674391984
+   },
+   "k_rec": {
+    "k": -1,
+    "p": 0.21201257189338027
+   }
+  },
+  "note": "重叠残阵（L029例外）：双方≥5人伤停，让球不套用“主胜≥55%禁让负”，按52a取让胜。"
+ },
+ {
+  "num": "周二008",
+  "league": "欧冠",
+  "home": "曼彻斯特联",
+  "away": "罗马",
+  "kickoff": "04:00",
+  "match_date": "2026-11-04",
+  "is_single": false,
+  "single_note": null,
+  "single_match": null,
+  "confidence": "★",
+  "lambda": {
+   "home": 1.6,
+   "away": 1.55,
+   "total": 3.15
+  },
+  "model": {
+   "home": 0.3776,
+   "draw": 0.266,
+   "away": 0.3564
+  },
+  "market": {
+   "home": 0.4028,
+   "draw": 0.2373,
+   "away": 0.3599,
+   "overround": 0.1388
+  },
+  "handicap": {
+   "line": -1,
+   "win": 0.1956,
+   "push": 0.1885,
+   "lose": 0.6159
+  },
+  "odds_had": {
+   "home": 2.18,
+   "draw": 3.7,
+   "away": 2.44
+  },
+  "odds_hhad": {
+   "home": 4.3,
+   "draw": 4.25,
+   "away": 1.49,
+   "handicap": -1
+  },
+  "odds_crs": {
+   "1:0": 11.5,
+   "2:0": 14.5,
+   "2:1": 7.5,
+   "3:0": 22,
+   "3:1": 14,
+   "3:2": 16,
+   "4:0": 55,
+   "4:1": 35,
+   "4:2": 36,
+   "5:0": 125,
+   "5:1": 85,
+   "5:2": 90,
+   "win-other": 35,
+   "0:0": 21,
+   "1:1": 7.75,
+   "2:2": 10,
+   "3:3": 30,
+   "draw-other": 150,
+   "0:1": 13.5,
+   "0:2": 18,
+   "1:2": 9,
+   "0:3": 30,
+   "1:3": 16,
+   "2:3": 18,
+   "0:4": 90,
+   "1:4": 45,
+   "2:4": 50,
+   "0:5": 250,
+   "1:5": 125,
+   "2:5": 125,
+   "loss-other": 40
+  },
+  "odds_ttg": {
+   "0": 21,
+   "1": 7.25,
+   "2": 4.25,
+   "3": 3.45,
+   "4": 4.4,
+   "5": 6.75,
+   "6": 11,
+   "7+": 13
+  },
+  "odds_hafu": {
+   "HH": 3.35,
+   "HD": 14,
+   "HA": 25,
+   "DH": 5.7,
+   "DD": 6.35,
+   "DA": 6.5,
+   "AH": 21,
+   "AD": 14,
+   "AA": 4.2
+  },
+  "value": {
+   "home": "€928.8M",
+   "away": "€498.4M"
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Manchester+United",
+   "away": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=AS+Roma",
+   "provider": "Transfermarkt（阵容页快照，2026-11-03 采集）"
+  },
+  "stadium": "老特拉福德（曼彻斯特，正常）",
+  "weather": "10℃ 无雨 风11-13km/h",
+  "injuries": {
+   "home": "4-5人：多古、拉什福德（髋）、舍什科（胫）、肖（大腿）；迪亚洛成疑",
+   "away": "3-4人：斯维拉尔（主力门将）、科内、佩莱格里尼；迪巴拉成疑"
+  },
+  "recommendation": {
+   "had_primary": "home",
+   "had_primary_prob": 0.3776,
+   "had_secondary": "away",
+   "had_secondary_prob": 0.3564,
+   "hc_line": -1,
+   "hc_primary": "lose",
+   "hc_primary_label": "让负",
+   "hc_primary_prob": 0.6159,
+   "hc_secondary": "push",
+   "hc_secondary_label": "让平",
+   "hc_secondary_prob": 0.1885,
+   "cr_top5": [
+    {
+     "score": "1-1",
+     "prob": 0.1148,
+     "odds": 7.75
+    },
+    {
+     "score": "2-1",
+     "prob": 0.085,
+     "odds": 7.5
+    },
+    {
+     "score": "1-2",
+     "prob": 0.0824,
+     "odds": 9
+    },
+    {
+     "score": "2-2",
+     "prob": 0.0659,
+     "odds": 10
+    },
+    {
+     "score": "1-0",
+     "prob": 0.0601,
+     "odds": 11.5
+    }
+   ],
+   "hafu_top3": [
+    {
+     "pick": "HH",
+     "prob": 0.2271,
+     "odds": 3.35
+    },
+    {
+     "pick": "AA",
+     "prob": 0.213,
+     "odds": 4.2
+    },
+    {
+     "pick": "DH",
+     "prob": 0.1367,
+     "odds": 5.7
+    }
+   ],
+   "ttg_top2": [
+    "3球",
+    "2球"
+   ],
+   "six_tier": "常规正常球(2-3球)",
+   "ht_scores_top3": [
+    {
+     "score": "0-0",
+     "prob": 0.2663
+    },
+    {
+     "score": "1-0",
+     "prob": 0.179
+    },
+    {
+     "score": "0-1",
+     "prob": 0.1734
+    }
+   ],
+   "k_dist": {
+    "k": 0,
+    "p": 0.25328882987218293
+   },
+   "k_rec": {
+    "k": 1,
+    "p": 0.18846359540009452
+   }
+  },
+  "note": "L258触发：曼联近10场1胜3平6负、残阵 → 次选客胜。曼联主场对罗马4战全胜为唯一反向支撑。"
+ },
+ {
+  "num": "周二009",
+  "league": "欧冠",
+  "home": "巴塞罗那",
+  "away": "阿斯顿维拉",
+  "kickoff": "04:00",
+  "match_date": "2026-11-04",
+  "is_single": false,
+  "single_note": null,
+  "single_match": null,
+  "confidence": "★★",
+  "lambda": {
+   "home": 3.15,
+   "away": 1.25,
+   "total": 4.4
+  },
+  "model": {
+   "home": 0.7379,
+   "draw": 0.15,
+   "away": 0.1121
+  },
+  "market": {
+   "home": 0.7697,
+   "draw": 0.13,
+   "away": 0.1003,
+   "overround": 0.1396
+  },
+  "handicap": {
+   "line": -2,
+   "win": 0.3705,
+   "push": 0.1925,
+   "lose": 0.437
+  },
+  "odds_had": {
+   "home": 1.14,
+   "draw": 6.75,
+   "away": 8.75
+  },
+  "odds_hhad": {
+   "home": 2.2,
+   "draw": 4.4,
+   "away": 2.19,
+   "handicap": -2
+  },
+  "odds_crs": {
+   "1:0": 17,
+   "2:0": 12,
+   "2:1": 8.5,
+   "3:0": 11,
+   "3:1": 8.25,
+   "3:2": 14.5,
+   "4:0": 14,
+   "4:1": 12,
+   "4:2": 18,
+   "5:0": 21,
+   "5:1": 18,
+   "5:2": 29,
+   "win-other": 6.2,
+   "0:0": 60,
+   "1:1": 14.5,
+   "2:2": 15,
+   "3:3": 32,
+   "draw-other": 100,
+   "0:1": 50,
+   "0:2": 80,
+   "1:2": 25,
+   "0:3": 175,
+   "1:3": 60,
+   "2:3": 35,
+   "0:4": 400,
+   "1:4": 120,
+   "2:4": 90,
+   "0:5": 800,
+   "1:5": 500,
+   "2:5": 300,
+   "loss-other": 75
+  },
+  "odds_ttg": {
+   "0": 60,
+   "1": 14.5,
+   "2": 7,
+   "3": 4.6,
+   "4": 4.2,
+   "5": 4.75,
+   "6": 6.25,
+   "7+": 5
+  },
+  "odds_hafu": {
+   "HH": 1.47,
+   "HD": 22,
+   "HA": 56,
+   "DH": 4.5,
+   "DD": 13.5,
+   "DA": 24,
+   "AH": 17,
+   "AD": 22,
+   "AA": 14.5
+  },
+  "value": {
+   "home": "€1295.8M",
+   "away": "€633.7M"
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=FC+Barcelona",
+   "away": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Aston+Villa",
+   "provider": "Transfermarkt（阵容页快照，2026-11-03 采集）"
+  },
+  "stadium": "诺坎普（巴塞罗那，正常）",
+  "weather": "13.1℃ 小雨 风14km/h",
+  "injuries": {
+   "home": "6人：克里斯滕森、埃里克·加西亚、埃斯帕特、孔德（踝）、奥尔莫、巴尔德吉",
+   "away": "2-3人：鲁杰里、万-比萨卡（大腿）、奥纳纳（十字韧带）"
+  },
+  "recommendation": {
+   "had_primary": "home",
+   "had_primary_prob": 0.7379,
+   "had_secondary": "away",
+   "had_secondary_prob": 0.1121,
+   "hc_line": -2,
+   "hc_primary": "lose",
+   "hc_primary_label": "让负",
+   "hc_primary_prob": 0.437,
+   "hc_secondary": "win",
+   "hc_secondary_label": "让胜",
+   "hc_secondary_prob": 0.3705,
+   "cr_top5": [
+    {
+     "score": "3-1",
+     "prob": 0.08,
+     "odds": 8.25
+    },
+    {
+     "score": "2-1",
+     "prob": 0.0762,
+     "odds": 8.5
+    },
+    {
+     "score": "3-0",
+     "prob": 0.064,
+     "odds": 11
+    },
+    {
+     "score": "4-1",
+     "prob": 0.063,
+     "odds": 12
+    },
+    {
+     "score": "2-0",
+     "prob": 0.0609,
+     "odds": 12
+    }
+   ],
+   "hafu_top3": [
+    {
+     "pick": "HH",
+     "prob": 0.5165,
+     "odds": 1.47
+    },
+    {
+     "pick": "DH",
+     "prob": 0.1831,
+     "odds": 4.5
+    },
+    {
+     "pick": "AA",
+     "prob": 0.063,
+     "odds": 14.5
+    }
+   ],
+   "ttg_top2": [
+    "4球",
+    "5球"
+   ],
+   "six_tier": "超大球(5-6球)",
+   "ht_scores_top3": [
+    {
+     "score": "1-0",
+     "prob": 0.2084
+    },
+    {
+     "score": "0-0",
+     "prob": 0.1576
+    },
+    {
+     "score": "2-0",
+     "prob": 0.1379
+    }
+   ],
+   "k_dist": {
+    "k": 2,
+    "p": 0.1925198073710065
+   },
+   "k_rec": {
+    "k": 2,
+    "p": 0.1925198073710065
+   }
+  },
+  "note": "残阵降级→L260失效“残阵例外”启用：让球首选回模型最高腿 让(-2)负43.7%。维拉欧冠9分第2、3连胜。"
+ },
+ {
+  "num": "周二010",
+  "league": "欧冠",
+  "home": "比利亚雷亚尔",
+  "away": "巴黎圣日尔曼",
+  "kickoff": "04:00",
+  "match_date": "2026-11-04",
+  "is_single": false,
+  "single_note": null,
+  "single_match": null,
+  "confidence": "★★",
+  "lambda": {
+   "home": 1.45,
+   "away": 2.35,
+   "total": 3.8
+  },
+  "model": {
+   "home": 0.2209,
+   "draw": 0.2167,
+   "away": 0.5625
+  },
+  "market": {
+   "home": 0.1859,
+   "draw": 0.1828,
+   "away": 0.6313,
+   "overround": 0.1396
+  },
+  "handicap": {
+   "line": 1,
+   "win": 0.4301,
+   "push": 0.2041,
+   "lose": 0.3657
+  },
+  "odds_had": {
+   "home": 4.72,
+   "draw": 4.8,
+   "away": 1.39
+  },
+  "odds_hhad": {
+   "home": 2.41,
+   "draw": 3.95,
+   "away": 2.12,
+   "handicap": 1
+  },
+  "odds_crs": {
+   "1:0": 25,
+   "2:0": 35,
+   "2:1": 14,
+   "3:0": 75,
+   "3:1": 30,
+   "3:2": 26,
+   "4:0": 175,
+   "4:1": 80,
+   "4:2": 60,
+   "5:0": 500,
+   "5:1": 200,
+   "5:2": 150,
+   "win-other": 50,
+   "0:0": 33,
+   "1:1": 10,
+   "2:2": 11,
+   "3:3": 28,
+   "draw-other": 90,
+   "0:1": 14,
+   "0:2": 11,
+   "1:2": 7.5,
+   "0:3": 14,
+   "1:3": 9.5,
+   "2:3": 13,
+   "0:4": 25,
+   "1:4": 16,
+   "2:4": 22,
+   "0:5": 50,
+   "1:5": 32,
+   "2:5": 40,
+   "loss-other": 13.5
+  },
+  "odds_ttg": {
+   "0": 33,
+   "1": 10,
+   "2": 5.3,
+   "3": 3.75,
+   "4": 4.2,
+   "5": 5.35,
+   "6": 8,
+   "7+": 8.5
+  },
+  "odds_hafu": {
+   "HH": 7.4,
+   "HD": 16,
+   "HA": 17,
+   "DH": 12,
+   "DD": 9,
+   "DA": 4.5,
+   "AH": 32,
+   "AD": 16,
+   "AA": 2.05
+  },
+  "value": {
+   "home": "€368.05M",
+   "away": "€1360M"
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Villarreal",
+   "away": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Paris+Saint-Germain",
+   "provider": "Transfermarkt（阵容页快照，2026-11-03 采集）"
+  },
+  "stadium": "陶瓷球场（比利亚雷亚尔，正常）",
+  "weather": "9℃ 无雨 风2km/h",
+  "injuries": {
+   "home": "4人：阿霍马奇、萨利巴（肌肉）、福伊特、莫雷诺（队长，肌肉）",
+   "away": "4人：登贝莱、克瓦拉茨赫利亚（膝）、马尔基尼奥斯、努诺·门德斯"
+  },
+  "recommendation": {
+   "had_primary": "away",
+   "had_primary_prob": 0.5625,
+   "had_secondary": "home",
+   "had_secondary_prob": 0.2209,
+   "hc_line": 1,
+   "hc_primary": "lose",
+   "hc_primary_label": "让负",
+   "hc_primary_prob": 0.3657,
+   "hc_secondary": "push",
+   "hc_secondary_label": "让平",
+   "hc_secondary_prob": 0.2041,
+   "cr_top5": [
+    {
+     "score": "1-2",
+     "prob": 0.0896,
+     "odds": 7.5
+    },
+    {
+     "score": "1-1",
+     "prob": 0.0823,
+     "odds": 10
+    },
+    {
+     "score": "1-3",
+     "prob": 0.0702,
+     "odds": 9.5
+    },
+    {
+     "score": "2-2",
+     "prob": 0.0649,
+     "odds": 11
+    },
+    {
+     "score": "0-2",
+     "prob": 0.0618,
+     "odds": 11
+    }
+   ],
+   "hafu_top3": [
+    {
+     "pick": "AA",
+     "prob": 0.3641,
+     "odds": 2.05
+    },
+    {
+     "pick": "DA",
+     "prob": 0.1688,
+     "odds": 4.5
+    },
+    {
+     "pick": "HH",
+     "prob": 0.1282,
+     "odds": 7.4
+    }
+   ],
+   "ttg_top2": [
+    "3球",
+    "4球"
+   ],
+   "six_tier": "大球(4-5球)",
+   "ht_scores_top3": [
+    {
+     "score": "0-0",
+     "prob": 0.2027
+    },
+    {
+     "score": "0-1",
+     "prob": 0.2001
+    },
+    {
+     "score": "1-0",
+     "prob": 0.1234
+    }
+   ],
+   "k_dist": {
+    "k": 0,
+    "p": 0.20634835052829534
+   },
+   "k_rec": {
+    "k": -1,
+    "p": 0.20412495596639627
+   }
+  },
+  "note": "PSG四主力未随队但欧冠13场不败、9连胜；黄潜欧冠3战3分。方向客胜56.2%，次选主胜22.1%（略高于平局21.7%）。让(+1)且客胜≥45%，让负36.6%首选。"
+ },
+ {
+  "num": "周二011",
+  "league": "欧冠",
+  "home": "博德闪耀",
+  "away": "里尔",
+  "kickoff": "04:00",
+  "match_date": "2026-11-04",
+  "is_single": false,
+  "single_note": null,
+  "single_match": null,
+  "confidence": "★★",
+  "lambda": {
+   "home": 2.05,
+   "away": 1.15,
+   "total": 3.2
+  },
+  "model": {
+   "home": 0.5651,
+   "draw": 0.2374,
+   "away": 0.1975
+  },
+  "market": {
+   "home": 0.5554,
+   "draw": 0.2167,
+   "away": 0.2279,
+   "overround": 0.1396
+  },
+  "handicap": {
+   "line": -1,
+   "win": 0.3518,
+   "push": 0.2217,
+   "lose": 0.4265
+  },
+  "odds_had": {
+   "home": 1.58,
+   "draw": 4.05,
+   "away": 3.85
+  },
+  "odds_hhad": {
+   "home": 2.66,
+   "draw": 3.8,
+   "away": 2,
+   "handicap": -1
+  },
+  "odds_crs": {
+   "1:0": 10,
+   "2:0": 11,
+   "2:1": 7,
+   "3:0": 16,
+   "3:1": 11,
+   "3:2": 15,
+   "4:0": 33,
+   "4:1": 22,
+   "4:2": 30,
+   "5:0": 70,
+   "5:1": 50,
+   "5:2": 55,
+   "win-other": 23,
+   "0:0": 22,
+   "1:1": 8.25,
+   "2:2": 11,
+   "3:3": 32,
+   "draw-other": 120,
+   "0:1": 17,
+   "0:2": 26,
+   "1:2": 11.5,
+   "0:3": 55,
+   "1:3": 25,
+   "2:3": 24,
+   "0:4": 120,
+   "1:4": 65,
+   "2:4": 70,
+   "0:5": 350,
+   "1:5": 200,
+   "2:5": 200,
+   "loss-other": 55
+  },
+  "odds_ttg": {
+   "0": 22,
+   "1": 7.5,
+   "2": 4.4,
+   "3": 3.55,
+   "4": 4.3,
+   "5": 6.5,
+   "6": 10,
+   "7+": 12.5
+  },
+  "odds_hafu": {
+   "HH": 2.45,
+   "HD": 14.5,
+   "HA": 32,
+   "DH": 4.7,
+   "DD": 7,
+   "DA": 9.5,
+   "AH": 20,
+   "AD": 14.5,
+   "AA": 6
+  },
+  "value": {
+   "home": "€79.2M",
+   "away": "€253.3M"
+  },
+  "value_source": {
+   "home": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Bodo/Glimt",
+   "away": "https://www.transfermarkt.com/schnellsuche/ergebnis/schnellsuche?query=Lille",
+   "provider": "Transfermarkt（阵容页快照，2026-11-03 采集）"
+  },
+  "stadium": "Aspmyra（博德，正常）",
+  "weather": "8.7℃ 小雨 风40-42km/h（大风）",
+  "injuries": {
+   "home": "4人：埃维延（膝）、法耶·伦德、里斯奈斯（膝）、米克尔森（腹股沟）",
+   "away": "5人：本塔莱布（病）、姆巴佩（停赛）、蒂亚戈·桑托斯（膝）、上田（脚）、伊加马内（十字韧带）"
+  },
+  "recommendation": {
+   "had_primary": "home",
+   "had_primary_prob": 0.5651,
+   "had_secondary": "draw",
+   "had_secondary_prob": 0.2374,
+   "hc_line": -1,
+   "hc_primary": "win",
+   "hc_primary_label": "让胜",
+   "hc_primary_prob": 0.3518,
+   "hc_secondary": "push",
+   "hc_secondary_label": "让平",
+   "hc_secondary_prob": 0.2217,
+   "cr_top5": [
+    {
+     "score": "1-1",
+     "prob": 0.1038,
+     "odds": 8.25
+    },
+    {
+     "score": "2-1",
+     "prob": 0.0985,
+     "odds": 7
+    },
+    {
+     "score": "2-0",
+     "prob": 0.0857,
+     "odds": 11
+    },
+    {
+     "score": "1-0",
+     "prob": 0.0759,
+     "odds": 10
+    },
+    {
+     "score": "3-1",
+     "prob": 0.0673,
+     "odds": 11
+    }
+   ],
+   "hafu_top3": [
+    {
+     "pick": "HH",
+     "prob": 0.3604,
+     "odds": 2.45
+    },
+    {
+     "pick": "DH",
+     "prob": 0.185,
+     "odds": 4.7
+    },
+    {
+     "pick": "AA",
+     "prob": 0.1123,
+     "odds": 6
+    }
+   ],
+   "ttg_top2": [
+    "3球",
+    "2球"
+   ],
+   "six_tier": "常规正常球(2-3球)",
+   "ht_scores_top3": [
+    {
+     "score": "0-0",
+     "prob": 0.2608
+    },
+    {
+     "score": "1-0",
+     "prob": 0.2245
+    },
+    {
+     "score": "0-1",
+     "prob": 0.126
+    }
+   ],
+   "k_dist": {
+    "k": 0,
+    "p": 0.22611612020318145
+   },
+   "k_rec": {
+    "k": 1,
+    "p": 0.22165256047545398
+   }
+  },
+  "note": "里尔5人伤停+欧冠3连败0分；博德主场欧冠4连胜，但大风40km/h抑制进攻。L253：主胜56.5%≥55%禁让负→让胜首选。"
+ }
+]

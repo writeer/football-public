@@ -1,0 +1,962 @@
+{
+ "date": "2026-08-29",
+ "day": "周六",
+ "total": 28,
+ "backtested": 27,
+ "postponed": [
+  6018
+ ],
+ "summary": {
+  "direction_first": 13,
+  "direction_all": 22,
+  "ttg": 12,
+  "htft": 15,
+  "crs": 11,
+  "hafu": 24,
+  "n": 27
+ },
+ "matches": [
+  {
+   "num": 6001,
+   "home": "水户蜀葵",
+   "away": "町田泽维",
+   "league": "日职",
+   "pred_dir": "客胜/平局",
+   "actual_dir": "平局",
+   "dir_hit": "✅次",
+   "pred_ttg": "2/3",
+   "actual_total": 2,
+   "ttg_hit": "✅",
+   "pred_htft": "负负/平负/平平",
+   "actual_htft": "平平",
+   "htft_hit": "✅",
+   "pred_crs": "1-1,1-2,0-2,0-1,0-0",
+   "actual_score": "1-1",
+   "crs_hit": "✅",
+   "actual_ht": "1-1",
+   "goal_line": 1,
+   "hafu_hit": "✅",
+   "score_full": [
+    1,
+    1
+   ],
+   "notes": "规则65触发(让球1球)Tier2+0.3",
+   "lg": "日职"
+  },
+  {
+   "num": 6002,
+   "home": "清水鼓动",
+   "away": "柏太阳神",
+   "league": "日职",
+   "pred_dir": "客胜/平局",
+   "actual_dir": "客胜",
+   "dir_hit": "✅首",
+   "pred_ttg": "3/2",
+   "actual_total": 1,
+   "ttg_hit": "❌",
+   "pred_htft": "负负/平负/平平",
+   "actual_htft": "平负",
+   "htft_hit": "✅",
+   "pred_crs": "1-1,1-2,0-2,0-1,2-1",
+   "actual_score": "0-1",
+   "crs_hit": "✅",
+   "actual_ht": "0-0",
+   "goal_line": 1,
+   "hafu_hit": "✅",
+   "score_full": [
+    0,
+    1
+   ],
+   "notes": "规则65触发(让球1球/排名差13)Tier2+0.3;规则63单关平局+8%",
+   "lg": "日职"
+  },
+  {
+   "num": 6003,
+   "home": "大宫松鼠",
+   "away": "湘南海洋",
+   "league": "日乙",
+   "pred_dir": "主胜/平局",
+   "actual_dir": "平局",
+   "dir_hit": "✅次",
+   "pred_ttg": "3/2",
+   "actual_total": 4,
+   "ttg_hit": "❌",
+   "pred_htft": "胜胜/平胜/负负",
+   "actual_htft": "负平",
+   "htft_hit": "❌",
+   "pred_crs": "1-1,2-1,1-2,2-0,2-2",
+   "actual_score": "2-2",
+   "crs_hit": "✅",
+   "actual_ht": "0-2",
+   "goal_line": -1,
+   "hafu_hit": "✅",
+   "score_full": [
+    2,
+    2
+   ],
+   "notes": "规则65触发(让球1球)Tier3+0.4;规则57乙级平局+10%",
+   "lg": "日乙"
+  },
+  {
+   "num": 6004,
+   "home": "蔚山现代",
+   "away": "金泉尚武",
+   "league": "韩职",
+   "pred_dir": "主胜/客胜",
+   "actual_dir": "主胜",
+   "dir_hit": "✅首",
+   "pred_ttg": "3/2",
+   "actual_total": 4,
+   "ttg_hit": "❌",
+   "pred_htft": "胜胜/平胜/负负",
+   "actual_htft": "平胜",
+   "htft_hit": "✅",
+   "pred_crs": "1-1,2-1,1-2,2-2,2-0",
+   "actual_score": "3-1",
+   "crs_hit": "❌",
+   "actual_ht": "1-1",
+   "goal_line": -1,
+   "hafu_hit": "❌",
+   "score_full": [
+    3,
+    1
+   ],
+   "notes": "规则65触发(让球1球/排名差8)Tier3+0.4;规则63单关平局+11%",
+   "lg": "韩职"
+  },
+  {
+   "num": 6006,
+   "home": "利物浦",
+   "away": "诺丁汉",
+   "league": "英超",
+   "pred_dir": "主胜/平局",
+   "actual_dir": "平局",
+   "dir_hit": "✅次",
+   "pred_ttg": "3/4",
+   "actual_total": 4,
+   "ttg_hit": "✅",
+   "pred_htft": "胜胜/平胜/平平",
+   "actual_htft": "负平",
+   "htft_hit": "❌",
+   "pred_crs": "2-1,1-1,2-0,3-1,3-0",
+   "actual_score": "2-2",
+   "crs_hit": "❌",
+   "actual_ht": "0-1",
+   "goal_line": -1,
+   "hafu_hit": "✅",
+   "score_full": [
+    2,
+    2
+   ],
+   "notes": "规则35新赛季+0.1;规则65英超例外不上修;规则65触发(让球1球/λ差1.29)Tier1+0.0;规则63单关平局+8%",
+   "lg": "英超"
+  },
+  {
+   "num": 6007,
+   "home": "伍尔弗",
+   "away": "斯托克城",
+   "league": "ED1",
+   "pred_dir": "主胜/平局",
+   "actual_dir": "主胜",
+   "dir_hit": "✅首",
+   "pred_ttg": "3/2",
+   "actual_total": 5,
+   "ttg_hit": "❌",
+   "pred_htft": "胜胜/平胜/平平",
+   "actual_htft": "胜胜",
+   "htft_hit": "✅",
+   "pred_crs": "1-1,2-1,2-0,1-0,3-1",
+   "actual_score": "4-1",
+   "crs_hit": "❌",
+   "actual_ht": "2-1",
+   "goal_line": -1,
+   "hafu_hit": "✅",
+   "score_full": [
+    4,
+    1
+   ],
+   "notes": "规则65触发(让球1球/排名差17/λ差1.05)Tier2+0.3",
+   "lg": "英冠"
+  },
+  {
+   "num": 6008,
+   "home": "埃夫斯堡",
+   "away": "代格福什",
+   "league": "瑞超",
+   "pred_dir": "主胜/平局",
+   "actual_dir": "主胜",
+   "dir_hit": "✅首",
+   "pred_ttg": "3/2",
+   "actual_total": 2,
+   "ttg_hit": "✅",
+   "pred_htft": "胜胜/平胜/平平",
+   "actual_htft": "胜胜",
+   "htft_hit": "✅",
+   "pred_crs": "1-1,2-1,2-0,1-0,3-1",
+   "actual_score": "2-0",
+   "crs_hit": "✅",
+   "actual_ht": "1-0",
+   "goal_line": -1,
+   "hafu_hit": "✅",
+   "score_full": [
+    2,
+    0
+   ],
+   "notes": "规则65触发(让球1球/排名差9/λ差1.04)Tier2+0.3",
+   "lg": "瑞超"
+  },
+  {
+   "num": 6009,
+   "home": "埃沃斯堡",
+   "away": "勒沃库森",
+   "league": "德甲",
+   "pred_dir": "客胜/平局",
+   "actual_dir": "主胜",
+   "dir_hit": "❌",
+   "pred_ttg": "3/4",
+   "actual_total": 5,
+   "ttg_hit": "❌",
+   "pred_htft": "负负/平负/平平",
+   "actual_htft": "胜胜",
+   "htft_hit": "❌",
+   "pred_crs": "1-2,1-1,1-3,0-2,2-2",
+   "actual_score": "3-2",
+   "crs_hit": "❌",
+   "actual_ht": "2-0",
+   "goal_line": 1,
+   "hafu_hit": "✅",
+   "score_full": [
+    3,
+    2
+   ],
+   "notes": "规则35新赛季+0.1;规则65触发(让球1球/λ差1.08)Tier1+0.15;规则63单关平局+8%",
+   "lg": "德甲"
+  },
+  {
+   "num": 6010,
+   "home": "莱红牛",
+   "away": "门兴",
+   "league": "德甲",
+   "pred_dir": "主胜/平局",
+   "actual_dir": "主胜",
+   "dir_hit": "✅首",
+   "pred_ttg": "3/4",
+   "actual_total": 3,
+   "ttg_hit": "✅",
+   "pred_htft": "胜胜/平胜/平平",
+   "actual_htft": "胜胜",
+   "htft_hit": "✅",
+   "pred_crs": "2-1,1-1,3-1,2-0,2-2",
+   "actual_score": "3-0",
+   "crs_hit": "❌",
+   "actual_ht": "1-0",
+   "goal_line": -1,
+   "hafu_hit": "✅",
+   "score_full": [
+    3,
+    0
+   ],
+   "notes": "规则35新赛季+0.1;规则65触发(让球1球/排名差9/λ差1.11)Tier1+0.15",
+   "lg": "德甲"
+  },
+  {
+   "num": 6011,
+   "home": "柏林联合",
+   "away": "法兰克福",
+   "league": "德甲",
+   "pred_dir": "客胜/主胜",
+   "actual_dir": "平局",
+   "dir_hit": "❌",
+   "pred_ttg": "3/2",
+   "actual_total": 6,
+   "ttg_hit": "❌",
+   "pred_htft": "负负/胜胜/平负",
+   "actual_htft": "负平",
+   "htft_hit": "❌",
+   "pred_crs": "1-1,1-2,2-1,2-2,0-2",
+   "actual_score": "3-3",
+   "crs_hit": "❌",
+   "actual_ht": "1-2",
+   "goal_line": -1,
+   "hafu_hit": "✅",
+   "score_full": [
+    3,
+    3
+   ],
+   "notes": "规则35新赛季+0.1;规则65触发(让球1球/排名差10)Tier1+0.15",
+   "lg": "德甲"
+  },
+  {
+   "num": 6012,
+   "home": "科隆",
+   "away": "霍芬海姆",
+   "league": "德甲",
+   "pred_dir": "客胜/主胜",
+   "actual_dir": "主胜",
+   "dir_hit": "✅次",
+   "pred_ttg": "3/4",
+   "actual_total": 5,
+   "ttg_hit": "❌",
+   "pred_htft": "负负/胜胜/平负",
+   "actual_htft": "负胜",
+   "htft_hit": "❌",
+   "pred_crs": "1-1,1-2,2-1,2-2,1-3",
+   "actual_score": "3-2",
+   "crs_hit": "❌",
+   "actual_ht": "0-1",
+   "goal_line": 1,
+   "hafu_hit": "✅",
+   "score_full": [
+    3,
+    2
+   ],
+   "notes": "规则35新赛季+0.1;规则65触发(让球1球)Tier1+0.15",
+   "lg": "德甲"
+  },
+  {
+   "num": 6013,
+   "home": "美因茨",
+   "away": "帕德博恩",
+   "league": "德甲",
+   "pred_dir": "主胜/平局",
+   "actual_dir": "平局",
+   "dir_hit": "✅次",
+   "pred_ttg": "3/4",
+   "actual_total": 0,
+   "ttg_hit": "❌",
+   "pred_htft": "胜胜/平胜/平平",
+   "actual_htft": "平平",
+   "htft_hit": "✅",
+   "pred_crs": "2-1,1-1,2-0,3-1,3-0",
+   "actual_score": "0-0",
+   "crs_hit": "❌",
+   "actual_ht": "0-0",
+   "goal_line": -1,
+   "hafu_hit": "✅",
+   "score_full": [
+    0,
+    0
+   ],
+   "notes": "规则35新赛季+0.1;规则65触发(让球1球/λ差1.08)Tier1+0.15",
+   "lg": "德甲"
+  },
+  {
+   "num": 6014,
+   "home": "考文垂",
+   "away": "赫尔城",
+   "league": "英超",
+   "pred_dir": "主胜/平局",
+   "actual_dir": "客胜",
+   "dir_hit": "❌",
+   "pred_ttg": "2/3",
+   "actual_total": 1,
+   "ttg_hit": "❌",
+   "pred_htft": "胜胜/平胜/平平",
+   "actual_htft": "平负",
+   "htft_hit": "❌",
+   "pred_crs": "1-1,2-1,2-0,1-0,0-0",
+   "actual_score": "0-1",
+   "crs_hit": "❌",
+   "actual_ht": "0-0",
+   "goal_line": -1,
+   "hafu_hit": "✅",
+   "score_full": [
+    0,
+    1
+   ],
+   "notes": "规则35新赛季+0.1;规则65英超例外不上修;规则65触发(让球1球/排名差11)Tier1+0.0",
+   "lg": "英超"
+  },
+  {
+   "num": 6015,
+   "home": "伯恩茅斯",
+   "away": "埃弗顿",
+   "league": "英超",
+   "pred_dir": "主胜/平局",
+   "actual_dir": "平局",
+   "dir_hit": "✅次",
+   "pred_ttg": "3/2",
+   "actual_total": 2,
+   "ttg_hit": "✅",
+   "pred_htft": "胜胜/平胜/负负",
+   "actual_htft": "胜平",
+   "htft_hit": "❌",
+   "pred_crs": "1-1,2-1,2-0,1-2,1-0",
+   "actual_score": "1-1",
+   "crs_hit": "✅",
+   "actual_ht": "1-0",
+   "goal_line": -1,
+   "hafu_hit": "✅",
+   "score_full": [
+    1,
+    1
+   ],
+   "notes": "规则35新赛季+0.1;规则65英超例外不上修;规则65触发(让球1球/排名差8)Tier1+0.0;规则63单关平局+8%",
+   "lg": "英超"
+  },
+  {
+   "num": 6016,
+   "home": "莱万特",
+   "away": "贝蒂斯",
+   "league": "西甲",
+   "pred_dir": "客胜/主胜",
+   "actual_dir": "主胜",
+   "dir_hit": "✅次",
+   "pred_ttg": "3/2",
+   "actual_total": 7,
+   "ttg_hit": "❌",
+   "pred_htft": "负负/平负/胜胜",
+   "actual_htft": "平胜",
+   "htft_hit": "❌",
+   "pred_crs": "1-1,1-2,2-1,0-2,2-2",
+   "actual_score": "5-2",
+   "crs_hit": "❌",
+   "actual_ht": "2-2",
+   "goal_line": 1,
+   "hafu_hit": "✅",
+   "score_full": [
+    5,
+    2
+   ],
+   "notes": "规则35新赛季+0.1;规则65触发(让球1球/排名差12)Tier1+0.15",
+   "lg": "西甲"
+  },
+  {
+   "num": 6017,
+   "home": "斯特拉斯",
+   "away": "朗斯",
+   "league": "法甲",
+   "pred_dir": "客胜/主胜",
+   "actual_dir": "主胜",
+   "dir_hit": "✅次",
+   "pred_ttg": "3/2",
+   "actual_total": 3,
+   "ttg_hit": "✅",
+   "pred_htft": "负负/平负/胜胜",
+   "actual_htft": "负胜",
+   "htft_hit": "❌",
+   "pred_crs": "1-1,1-2,2-1,2-2,0-2",
+   "actual_score": "2-1",
+   "crs_hit": "✅",
+   "actual_ht": "0-1",
+   "goal_line": 1,
+   "hafu_hit": "✅",
+   "score_full": [
+    2,
+    1
+   ],
+   "notes": "规则35新赛季+0.1;规则65触发(让球1球/排名差15)Tier1+0.15;规则63单关平局+8%",
+   "lg": "法甲"
+  },
+  {
+   "num": 6019,
+   "home": "热刺",
+   "away": "纽卡斯尔",
+   "league": "英超",
+   "pred_dir": "主胜/客胜",
+   "actual_dir": "客胜",
+   "dir_hit": "✅次",
+   "pred_ttg": "3/2",
+   "actual_total": 2,
+   "ttg_hit": "✅",
+   "pred_htft": "胜胜/负负/平胜",
+   "actual_htft": "平负",
+   "htft_hit": "❌",
+   "pred_crs": "1-1,2-1,1-2,2-2,2-0",
+   "actual_score": "0-2",
+   "crs_hit": "❌",
+   "actual_ht": "0-0",
+   "goal_line": -1,
+   "hafu_hit": "✅",
+   "score_full": [
+    0,
+    2
+   ],
+   "notes": "规则35新赛季+0.1;规则65英超例外不上修;规则65触发(让球1球)Tier1+0.0;规则63单关平局+11%",
+   "lg": "英超"
+  },
+  {
+   "num": 6020,
+   "home": "多特蒙德",
+   "away": "汉堡",
+   "league": "德甲",
+   "pred_dir": "主胜/平局",
+   "actual_dir": "主胜",
+   "dir_hit": "✅首",
+   "pred_ttg": "3/4",
+   "actual_total": 2,
+   "ttg_hit": "❌",
+   "pred_htft": "胜胜/平胜/平平",
+   "actual_htft": "胜胜",
+   "htft_hit": "✅",
+   "pred_crs": "2-1,2-0,3-1,1-1,3-0",
+   "actual_score": "2-0",
+   "crs_hit": "✅",
+   "actual_ht": "2-0",
+   "goal_line": -1,
+   "hafu_hit": "✅",
+   "score_full": [
+    2,
+    0
+   ],
+   "notes": "规则35新赛季+0.1;规则65触发(让球1球/λ差1.52)Tier1+0.15",
+   "lg": "德甲"
+  },
+  {
+   "num": 6021,
+   "home": "蒙扎",
+   "away": "乌迪内斯",
+   "league": "意甲",
+   "pred_dir": "客胜/主胜",
+   "actual_dir": "客胜",
+   "dir_hit": "✅首",
+   "pred_ttg": "2/3",
+   "actual_total": 5,
+   "ttg_hit": "❌",
+   "pred_htft": "负负/胜胜/平负",
+   "actual_htft": "负负",
+   "htft_hit": "✅",
+   "pred_crs": "1-1,1-2,2-1,0-0,0-1",
+   "actual_score": "2-3",
+   "crs_hit": "❌",
+   "actual_ht": "1-3",
+   "goal_line": 1,
+   "hafu_hit": "✅",
+   "score_full": [
+    2,
+    3
+   ],
+   "notes": "规则35新赛季+0.1;规则65触发(让球1球)Tier1+0.15",
+   "lg": "意甲"
+  },
+  {
+   "num": 6022,
+   "home": "佛罗伦萨",
+   "away": "弗洛西诺",
+   "league": "意甲",
+   "pred_dir": "主胜/平局",
+   "actual_dir": "客胜",
+   "dir_hit": "❌",
+   "pred_ttg": "3/2",
+   "actual_total": 3,
+   "ttg_hit": "✅",
+   "pred_htft": "胜胜/平胜/平平",
+   "actual_htft": "负负",
+   "htft_hit": "❌",
+   "pred_crs": "1-1,2-1,2-0,1-0,3-1",
+   "actual_score": "0-3",
+   "crs_hit": "❌",
+   "actual_ht": "0-2",
+   "goal_line": -1,
+   "hafu_hit": "✅",
+   "score_full": [
+    0,
+    3
+   ],
+   "notes": "规则35新赛季+0.1;规则65触发(让球1球/λ差0.94)Tier1+0.15;规则63单关平局+8%",
+   "lg": "意甲"
+  },
+  {
+   "num": 6023,
+   "home": "萨索洛",
+   "away": "都灵",
+   "league": "意甲",
+   "pred_dir": "主胜/客胜",
+   "actual_dir": "主胜",
+   "dir_hit": "✅首",
+   "pred_ttg": "3/2",
+   "actual_total": 3,
+   "ttg_hit": "✅",
+   "pred_htft": "胜胜/平胜/负负",
+   "actual_htft": "平胜",
+   "htft_hit": "✅",
+   "pred_crs": "1-1,2-1,1-2,2-0,1-0",
+   "actual_score": "2-1",
+   "crs_hit": "✅",
+   "actual_ht": "1-1",
+   "goal_line": -1,
+   "hafu_hit": "✅",
+   "score_full": [
+    2,
+    1
+   ],
+   "notes": "规则35新赛季+0.1;规则65触发(让球1球)Tier1+0.15",
+   "lg": "意甲"
+  },
+  {
+   "num": 6024,
+   "home": "阿尔克马",
+   "away": "前进之鹰",
+   "league": "荷甲",
+   "pred_dir": "主胜/平局",
+   "actual_dir": "主胜",
+   "dir_hit": "✅首",
+   "pred_ttg": "4/3",
+   "actual_total": 7,
+   "ttg_hit": "❌",
+   "pred_htft": "胜胜/平胜/平平",
+   "actual_htft": "胜胜",
+   "htft_hit": "✅",
+   "pred_crs": "2-1,3-1,1-1,2-0,3-0",
+   "actual_score": "5-2",
+   "crs_hit": "❌",
+   "actual_ht": "2-1",
+   "goal_line": -1,
+   "hafu_hit": "✅",
+   "score_full": [
+    5,
+    2
+   ],
+   "notes": "规则35新赛季+0.1;规则65触发(让球1球/λ差1.53)Tier2+0.3",
+   "lg": "荷甲"
+  },
+  {
+   "num": 6025,
+   "home": "皇家社会",
+   "away": "西班牙人",
+   "league": "西甲",
+   "pred_dir": "主胜/平局",
+   "actual_dir": "主胜",
+   "dir_hit": "✅首",
+   "pred_ttg": "3/2",
+   "actual_total": 3,
+   "ttg_hit": "✅",
+   "pred_htft": "胜胜/平胜/负负",
+   "actual_htft": "平胜",
+   "htft_hit": "✅",
+   "pred_crs": "1-1,2-1,2-0,1-0,1-2",
+   "actual_score": "2-1",
+   "crs_hit": "✅",
+   "actual_ht": "1-1",
+   "goal_line": -1,
+   "hafu_hit": "✅",
+   "score_full": [
+    2,
+    1
+   ],
+   "notes": "规则35新赛季+0.1;规则65触发(让球1球/排名差10)Tier1+0.15",
+   "lg": "西甲"
+  },
+  {
+   "num": 6026,
+   "home": "维塞乌",
+   "away": "波尔图",
+   "league": "葡超",
+   "pred_dir": "客胜/平局",
+   "actual_dir": "客胜",
+   "dir_hit": "✅首",
+   "pred_ttg": "3/4",
+   "actual_total": 3,
+   "ttg_hit": "✅",
+   "pred_htft": "负负/平负/平平",
+   "actual_htft": "负负",
+   "htft_hit": "✅",
+   "pred_crs": "0-2,1-2,0-3,1-1,1-3",
+   "actual_score": "0-3",
+   "crs_hit": "✅",
+   "actual_ht": "0-3",
+   "goal_line": 1,
+   "hafu_hit": "✅",
+   "score_full": [
+    0,
+    3
+   ],
+   "notes": "规则35新赛季+0.1;规则65触发(让球1球/排名差10/λ差1.59)Tier2+0.3",
+   "lg": "葡超"
+  },
+  {
+   "num": 6027,
+   "home": "尤文图斯",
+   "away": "帕尔马",
+   "league": "意甲",
+   "pred_dir": "主胜/平局",
+   "actual_dir": "主胜",
+   "dir_hit": "✅首",
+   "pred_ttg": "3/2",
+   "actual_total": 2,
+   "ttg_hit": "✅",
+   "pred_htft": "胜胜/平胜/平平",
+   "actual_htft": "平胜",
+   "htft_hit": "✅",
+   "pred_crs": "2-0,3-0,2-1,3-1,1-1",
+   "actual_score": "2-0",
+   "crs_hit": "✅",
+   "actual_ht": "0-0",
+   "goal_line": -2,
+   "hafu_hit": "❌",
+   "score_full": [
+    2,
+    0
+   ],
+   "notes": "规则35新赛季+0.1;规则65触发(让球2球/排名差8/λ差1.84)Tier1+0.15",
+   "lg": "意甲"
+  },
+  {
+   "num": 6028,
+   "home": "塞维利亚",
+   "away": "马竞",
+   "league": "西甲",
+   "pred_dir": "客胜/平局",
+   "actual_dir": "客胜",
+   "dir_hit": "✅首",
+   "pred_ttg": "2/3",
+   "actual_total": 4,
+   "ttg_hit": "❌",
+   "pred_htft": "负负/平负/平平",
+   "actual_htft": "负负",
+   "htft_hit": "✅",
+   "pred_crs": "1-1,1-2,0-2,0-1,2-1",
+   "actual_score": "1-3",
+   "crs_hit": "❌",
+   "actual_ht": "0-3",
+   "goal_line": 1,
+   "hafu_hit": "❌",
+   "score_full": [
+    1,
+    3
+   ],
+   "notes": "规则35新赛季+0.1;规则65触发(让球1球)Tier1+0.15;规则63单关平局+8%",
+   "lg": "西甲"
+  },
+  {
+   "num": 6029,
+   "home": "华盛顿",
+   "away": "洛杉矶FC",
+   "league": "美职",
+   "pred_dir": "客胜/主胜",
+   "actual_dir": "平局",
+   "dir_hit": "❌",
+   "pred_ttg": "3/2",
+   "actual_total": 0,
+   "ttg_hit": "❌",
+   "pred_htft": "负负/平负/胜胜",
+   "actual_htft": "平平",
+   "htft_hit": "❌",
+   "pred_crs": "1-1,1-2,2-1,2-2,0-2",
+   "actual_score": "0-0",
+   "crs_hit": "❌",
+   "actual_ht": "0-0",
+   "goal_line": 1,
+   "hafu_hit": "✅",
+   "score_full": [
+    0,
+    0
+   ],
+   "notes": "规则65触发(让球1球/排名差8)Tier2+0.3",
+   "lg": "美职"
+  }
+ ],
+ "parlays": [
+  {
+   "name": "稳健方向串",
+   "type": "方向串",
+   "items": [
+    [
+     "017 朗斯客胜",
+     "❌2-1"
+    ],
+    [
+     "026 波尔图客胜",
+     "✅0-3"
+    ],
+    [
+     "027 尤文主胜",
+     "✅2-0"
+    ]
+   ],
+   "hit": false
+  },
+  {
+   "name": "次选方向串",
+   "type": "方向串",
+   "items": [
+    [
+     "013 美因茨主胜",
+     "❌0-0"
+    ],
+    [
+     "020 多特主胜",
+     "✅2-0"
+    ],
+    [
+     "024 AZ主胜",
+     "✅5-2"
+    ]
+   ],
+   "hit": false
+  },
+  {
+   "name": "稳健让球串",
+   "type": "让球串",
+   "items": [
+    [
+     "006 利物浦让(-1)主胜",
+     "❌2-2"
+    ],
+    [
+     "013 美因茨让(-1)主胜",
+     "❌0-0"
+    ]
+   ],
+   "hit": false
+  },
+  {
+   "name": "价值让球串",
+   "type": "让球串",
+   "items": [
+    [
+     "018 维京让(-2)主胜",
+     "⏸延期"
+    ],
+    [
+     "027 尤文让(-2)主胜",
+     "❌2-0仅赢2球"
+    ]
+   ],
+   "hit": false
+  },
+  {
+   "name": "半全场串A",
+   "type": "混合串",
+   "items": [
+    [
+     "018 维京胜胜",
+     "⏸延期"
+    ],
+    [
+     "024 AZ胜胜",
+     "✅胜胜"
+    ],
+    [
+     "027 尤文胜胜",
+     "✅平胜"
+    ]
+   ],
+   "hit": false
+  },
+  {
+   "name": "半全场串B",
+   "type": "混合串",
+   "items": [
+    [
+     "026 波尔图负负",
+     "✅负负"
+    ],
+    [
+     "017 朗斯负负",
+     "❌负胜"
+    ],
+    [
+     "007 狼队胜胜",
+     "✅胜胜"
+    ]
+   ],
+   "hit": false
+  },
+  {
+   "name": "方向+半全场A",
+   "type": "混合串",
+   "items": [
+    [
+     "013 美因茨主胜",
+     "❌0-0"
+    ],
+    [
+     "008 埃堡胜胜",
+     "✅胜胜"
+    ]
+   ],
+   "hit": false
+  },
+  {
+   "name": "方向+半全场B",
+   "type": "混合串",
+   "items": [
+    [
+     "020 多特主胜",
+     "✅2-0"
+    ],
+    [
+     "009 勒沃库森负负",
+     "❌胜胜"
+    ]
+   ],
+   "hit": false
+  },
+  {
+   "name": "总进球串A",
+   "type": "娱乐串",
+   "items": [
+    [
+     "024 AZ 4球",
+     "❌7球"
+    ],
+    [
+     "008 埃堡3球",
+     "❌2球"
+    ],
+    [
+     "020 多特3球",
+     "❌2球"
+    ]
+   ],
+   "hit": false
+  },
+  {
+   "name": "高赔半全场串A",
+   "type": "娱乐串",
+   "items": [
+    [
+     "013 美因茨胜胜",
+     "❌平平"
+    ],
+    [
+     "006 利物浦胜胜",
+     "❌负平"
+    ],
+    [
+     "012 霍村负负",
+     "❌负胜"
+    ]
+   ],
+   "hit": false
+  },
+  {
+   "name": "混合串A",
+   "type": "娱乐串",
+   "items": [
+    [
+     "026 波尔图负负",
+     "✅负负"
+    ],
+    [
+     "024 AZ 4球",
+     "❌7球"
+    ]
+   ],
+   "hit": false
+  },
+  {
+   "name": "单挑比分①",
+   "type": "娱乐串",
+   "items": [
+    [
+     "007 狼队2-0",
+     "❌4-1"
+    ]
+   ],
+   "hit": false
+  },
+  {
+   "name": "单挑比分②",
+   "type": "娱乐串",
+   "items": [
+    [
+     "026 波尔图0-2",
+     "❌0-3"
+    ]
+   ],
+   "hit": false
+  }
+ ]
+}

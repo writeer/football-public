@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-08-29 周六竞彩足球分析报告</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Noto Sans CJK SC", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif; background: #f5f6f8; color: #2c3e50; line-height: 1.6; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 24px 16px 60px; }
+  header { background: linear-gradient(135deg, #1a5c3a 0%, #2e8b57 100%); color: #fff; padding: 32px 28px; border-radius: 14px; margin-bottom: 24px; }
+  header h1 { font-size: 26px; margin-bottom: 8px; }
+  header .sub { opacity: 0.92; font-size: 14px; }
+  .stat-row { display: flex; gap: 14px; margin-top: 16px; flex-wrap: wrap; }
+  .stat { background: rgba(255,255,255,0.15); padding: 10px 16px; border-radius: 8px; font-size: 14px; }
+  .stat b { font-size: 20px; }
+  h2.league-title { font-size: 19px; margin: 26px 0 12px; padding-left: 12px; border-left: 4px solid #2e8b57; color: #1a5c3a; }
+  .count { font-size: 13px; color: #888; font-weight: normal; }
+  .cards { display: grid; grid-template-columns: 1fr; gap: 14px; }
+  .match-card { background: #fff; border-radius: 12px; padding: 16px 18px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .match-head { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+  .match-num { font-weight: 700; color: #1a5c3a; margin-right: 6px; }
+  .match-teams { font-size: 16px; font-weight: 600; }
+  .vs { color: #bbb; font-weight: normal; font-size: 13px; margin: 0 4px; }
+  .single-tag { background: #e74c3c; color: #fff; font-size: 11px; padding: 2px 7px; border-radius: 4px; margin-left: 6px; }
+  .val-note { font-size: 11px; color: #e67e22; background: #fdf2e9; padding: 2px 7px; border-radius: 4px; margin-left: 6px; }
+  .dir-badge { color: #fff; font-size: 13px; font-weight: 700; padding: 3px 12px; border-radius: 14px; }
+  .dir-2nd { font-size: 13px; color: #666; margin-left: 6px; }
+  .stars { color: #f39c12; font-weight: 700; margin-left: 4px; }
+  .match-probs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 10px; }
+  .prob-item label { font-size: 12px; color: #777; display: block; margin-bottom: 3px; }
+  .bar { position: relative; background: #ecf0f1; height: 20px; border-radius: 10px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 10px; }
+  .bar span { position: absolute; right: 8px; top: 0; font-size: 11px; line-height: 20px; color: #333; }
+  .match-detail { font-size: 13px; }
+  .kv { display: flex; margin-bottom: 4px; }
+  .kv .k { flex: 0 0 62px; color: #999; font-size: 12px; }
+  .kv .v { flex: 1; color: #444; }
+  .kv .v b { color: #2c3e50; }
+  .overview-table, .parlay-table { width: 100%; border-collapse: collapse; background: #fff; font-size: 13px; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .overview-table th, .overview-table td, .parlay-table th, .parlay-table td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #eee; }
+  .overview-table th { background: #1a5c3a; color: #fff; }
+  .single-row td { background: #fef5f5; }
+  .parlay-block { background: #fff; border-radius: 12px; padding: 18px; margin-bottom: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .parlay-block h3 { font-size: 16px; color: #1a5c3a; margin-bottom: 4px; }
+  .parlay-desc { font-size: 12px; color: #999; margin-bottom: 10px; }
+  .parlay-table th { background: #2e8b57; color: #fff; }
+  .risk { background: #fff8e1; border-left: 4px solid #f39c12; padding: 16px 18px; border-radius: 8px; margin-top: 24px; font-size: 13px; color: #7f6000; }
+  .risk h3 { color: #b7791f; font-size: 15px; margin-bottom: 8px; }
+  .risk ul { padding-left: 20px; }
+  .risk li { margin-bottom: 4px; }
+  .section-nav { background: #fff; border-radius: 10px; padding: 14px 18px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); font-size: 13px; color: #666; }
+  .section-nav a { color: #2e8b57; text-decoration: none; margin-right: 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>周六竞彩足球分析报告</h1>
+    <div class="sub">日期：2026-08-29（周六）｜ 基于多模型融合（Dixon-Coles + 泊松 + 单关平局上修 + 大球上修）</div>
+    <div class="stat-row">
+      <div class="stat">总场次 <b>27</b></div>
+      <div class="stat">单关场次 <b>9</b></div>
+      <div class="stat">覆盖联赛 <b>13</b></div>
+    </div>
+  </header>
+
+  <div class="section-nav">单关场次：周六002、周六004、周六006、周六009、周六015、周六017、周六019、周六022、周六028　|　<a href="#overview">总览</a> <a href="#parlays">串关方案</a> <a href="#risk">风险提示</a></div>
+
+  <h2 class="league-title" id="overview">全场次总览</h2>
+  <table class="overview-table">
+    <thead><tr><th>场次</th><th>联赛</th><th>对阵</th><th>方向</th><th>次选</th><th>置信</th><th>概率(主/平/客)</th><th>总进球TOP2</th><th>比分TOP3</th><th>单关</th></tr></thead>
+    <tbody><tr class="">
+      <td>001</td>
+      <td>日职</td>
+      <td>水户蜀葵 vs 町田泽维</td>
+      <td><span class="dir-badge" style="background:#2980b9">客胜</span></td>
+      <td>主胜</td>
+      <td>★★</td>
+      <td>24.5% / 20.7% / 54.7%</td>
+      <td>3球 / 4球</td>
+      <td>1:2、1:1、2:2</td>
+      <td></td>
+    </tr>
+<tr class="single-row">
+      <td>002</td>
+      <td>日职</td>
+      <td>清水鼓动 vs 柏太阳神</td>
+      <td><span class="dir-badge" style="background:#2980b9">客胜</span></td>
+      <td>平局</td>
+      <td>★</td>
+      <td>17.0% / 27.3% / 55.7%</td>
+      <td>4球 / 3球</td>
+      <td>1:2、1:3、1:1</td>
+      <td>单关</td>
+    </tr>
+<tr class="">
+      <td>003</td>
+      <td>日乙</td>
+      <td>大宫松鼠 vs 湘南海洋</td>
+      <td><span class="dir-badge" style="background:#c0392b">主胜</span></td>
+      <td>客胜</td>
+      <td>★★</td>
+      <td>54.8% / 21.4% / 23.9%</td>
+      <td>3球 / 4球</td>
+      <td>2:1、1:1、3:1</td>
+      <td></td>
+    </tr>
+<tr class="single-row">
+      <td>004</td>
+      <td>韩职</td>
+      <td>蔚山现代 vs 金泉尚武</td>
+      <td><span class="dir-badge" style="background:#c0392b">主胜</span></td>
+      <td>平局</td>
+      <td>★★</td>
+      <td>41.2% / 33.0% / 25.8%</td>
+      <td>3球 / 2球</td>
+      <td>1:1、2:1、1:2</td>
+      <td>单关</td>
+    </tr>
+<tr class="single-row">
+      <td>006</td>
+      <td>英超</td>
+      <td>利物浦 vs 诺丁汉</td>
+      <td><span class="dir-badge" style="background:#c0392b">主胜</span></td>
+      <td>平局</td>
+      <td>★★</td>
+      <td>61.5% / 26.0% / 12.5%</td>
+      <td>3球 / 4球</td>
+      <td>2:1、3:1、1:1</td>
+      <td>单关</td>
+    </tr>
+<tr class="">
+      <td>008</td>
+      <td>瑞超</td>
+      <td>埃夫斯堡 vs 代格福什</td>
+      <td><span class="dir-badge" style="background:#c0392b">主胜</span></td>
+      <td>平局</td>
+      <td>★★★</td>
+      <td>63.4% / 20.6% / 16.0%</td>
+      <td>3球 / 2球</td>
+      <td>2:1、1:1、2:0</td>
+      <td></td>
+    </tr>
+<tr class="single-row">
+      <td>009</td>
+      <td>德甲</td>
+      <td>埃沃斯堡 vs 勒沃库森</td>
+      <td><span class="dir-badge" style="background:#2980b9">客胜</span></td>
+      <td>主胜</td>
+      <td>★★★</td>
+      <td>20.2% / 16.6% / 63.1%</td>
+      <td>4球 / 3球</td>
+      <td>1:3、1:2、2:3</td>
+      <td>单关</td>
+    </tr>
+<tr class="">
+      <td>010</td>
+      <td>德甲</td>
+      <td>莱红牛 vs 门兴</td>
+      <td><span class="dir-badge" style="background:#c0392b">主胜</span></td>
+      <td>客胜</td>
+      <td>★★★</td>
+      <td>60.4% / 19.0% / 20.6%</td>
+      <td>4球 / 3球</td>
+      <td>2:1、3:1、1:1</td>
+      <td></td>
+    </tr>
+<tr class="">
+      <td>011</td>
+      <td>德甲</td>
+      <td>柏林联合 vs 法兰克福</td>
+      <td><span class="dir-badge" style="background:#2980b9">客胜</span></td>
+      <td>主胜</td>
+      <td>★</td>
+      <td>31.7% / 21.5% / 46.8%</td>
+      <td>4球 / 3球</td>
+      <td>1:2、1:1、2:2</td>
+      <td></td>
+    </tr>
+<tr class="">
+      <td>012</td>
+      <td>德甲</td>
+      <td>科隆 vs 霍芬海姆</td>
+      <td><span class="dir-badge" style="background:#2980b9">客胜</span></td>
+      <td>主胜</td>
+      <td>★★</td>
+      <td>30.7% / 20.4% / 48.9%</td>
+      <td>4球 / 3球</td>
+      <td>1:2、2:2、1:1</td>
+      <td></td>
+    </tr>
+<tr class="">
+      <td>013</td>
+      <td>德甲</td>
+      <td>美因茨 vs 帕德博恩</td>
+      <td><span class="dir-badge" style="background:#c0392b">主胜</span></td>
+      <td>平局</td>
+      <td>★★</td>
+      <td>67.8% / 17.1% / 15.1%</td>
+      <td>4球 / 3球</td>
+      <td>2:1、3:1、1:1</td>
+      <td></td>
+    </tr>
+<tr class="">
+      <td>014</td>
+      <td>英超</td>
+      <td>考文垂 vs 赫尔城</td>
+      <td><span class="dir-badge" style="background:#c0392b">主胜</span></td>
+      <td>客胜</td>
+      <td>★★★</td>
+      <td>54.8% / 22.0% / 23.2%</td>
+      <td>3球 / 4球</td>
+      <td>1:1、2:1、3:1</td>
+      <td></td>
+    </tr>
+<tr class="single-row">
+      <td>015</td>
+      <td>英超</td>
+      <td>伯恩茅斯 vs 埃弗顿</td>
+      <td><span class="dir-badge" style="background:#c0392b">主胜</span></td>
+      <td>平局</td>
+      <td>★</td>
+      <td>39.6% / 31.1% / 29.3%</td>
+      <td>3球 / 4球</td>
+      <td>1:1、2:1、1:2</td>
+      <td>单关</td>
+    </tr>
+<tr class="">
+      <td>016</td>
+      <td>西甲</td>
+      <td>莱万特 vs 贝蒂斯</td>
+      <td><span class="dir-badge" style="background:#2980b9">客胜</span></td>
+      <td>主胜</td>
+      <td>★★</td>
+      <td>26.3% / 23.1% / 50.6%</td>
+      <td>3球 / 2球</td>
+      <td>1:1、1:2、2:2</td>
+      <td></td>
+    </tr>
+<tr class="single-row">
+      <td>017</td>
+      <td>法甲</td>
+      <td>斯特拉斯堡 vs 朗斯</td>
+      <td><span class="dir-badge" style="background:#2980b9">客胜</span></td>
+      <td>平局</td>
+      <td>★★</td>
+      <td>23.6% / 28.5% / 47.9%</td>
+      <td>4球 / 3球</td>
+      <td>1:2、1:1、2:2</td>
+      <td>单关</td>
+    </tr>
+<tr class="">
+      <td>018</td>
+      <td>挪超</td>
+      <td>维京 vs 奥勒松</td>
+      <td><span class="dir-badge" style="background:#c0392b">主胜</span></td>
+      <td>平局</td>
+      <td>★★</td>
+      <td>81.8% / 12.2% / 5.9%</td>
+      <td>3球 / 4球</td>
+      <td>3:0、2:0、3:1</td>
+      <td></td>
+    </tr>
+<tr class="single-row">
+      <td>019</td>
+      <td>英超</td>
+      <td>热刺 vs 纽卡斯尔</td>
+      <td><span class="dir-badge" style="background:#2980b9">客胜</span></td>
+      <td>主胜</td>
+      <td>★</td>
+      <td>34.7% / 22.8% / 42.5%</td>
+      <td>3球 / 4球</td>
+      <td>1:1、1:2、2:1</td>
+      <td>单关</td>
+    </tr>
+<tr class="">
+      <td>020</td>
+      <td>德甲</td>
+      <td>多特蒙德 vs 汉堡</td>
+      <td><span class="dir-badge" style="background:#c0392b">主胜</span></td>
+      <td>平局</td>
+      <td>★★★</td>
+      <td>75.5% / 13.9% / 10.6%</td>
+      <td>4球 / 3球</td>
+      <td>3:1、2:1、4:1</td>
+      <td></td>
+    </tr>
+<tr class="">
+      <td>021</td>
+      <td>意甲</td>
+      <td>蒙扎 vs 乌迪内斯</td>
+      <td><span class="dir-badge" style="background:#2980b9">客胜</span></td>
+      <td>主胜</td>
+      <td>★</td>
+      <td>34.9% / 22.4% / 42.7%</td>
+      <td>3球 / 4球</td>
+      <td>1:1、1:2、2:2</td>
+      <td></td>
+    </tr>
+<tr class="single-row">
+      <td>022</td>
+      <td>意甲</td>
+      <td>佛罗伦萨 vs 弗罗西诺内</td>
+      <td><span class="dir-badge" style="background:#c0392b">主胜</span></td>
+      <td>平局</td>
+      <td>★★★</td>
+      <td>60.8% / 20.0% / 19.1%</td>
+      <td>3球 / 4球</td>
+      <td>2:1、1:1、3:1</td>
+      <td>单关</td>
+    </tr>
+<tr class="">
+      <td>023</td>
+      <td>意甲</td>
+      <td>萨索洛 vs 都灵</td>
+      <td><span class="dir-badge" style="background:#7f8c8d">平局</span></td>
+      <td>客胜</td>
+      <td>★</td>
+      <td>38.7% / 22.5% / 38.7%</td>
+      <td>3球 / 4球</td>
+      <td>1:1、1:2、2:1</td>
+      <td></td>
+    </tr>
+<tr class="">
+      <td>024</td>
+      <td>荷甲</td>
+      <td>阿尔克马 vs 前进之鹰</td>
+      <td><span class="dir-badge" style="background:#c0392b">主胜</span></td>
+      <td>平局</td>
+      <td>★★★</td>
+      <td>69.2% / 16.2% / 14.6%</td>
+      <td>4球 / 3球</td>
+      <td>2:1、3:1、4:1</td>
+      <td></td>
+    </tr>
+<tr class="">
+      <td>025</td>
+      <td>西甲</td>
+      <td>皇家社会 vs 西班牙人</td>
+      <td><span class="dir-badge" style="background:#c0392b">主胜</span></td>
+      <td>客胜</td>
+      <td>★★★</td>
+      <td>50.5% / 23.9% / 25.6%</td>
+      <td>3球 / 2球</td>
+      <td>1:1、2:1、2:0</td>
+      <td></td>
+    </tr>
+<tr class="">
+      <td>026</td>
+      <td>葡超</td>
+      <td>维塞乌 vs 波尔图</td>
+      <td><span class="dir-badge" style="background:#2980b9">客胜</span></td>
+      <td>平局</td>
+      <td>★★</td>
+      <td>7.9% / 12.1% / 80.0%</td>
+      <td>4球 / 3球</td>
+      <td>1:3、0:3、1:2</td>
+      <td></td>
+    </tr>
+<tr class="">
+      <td>027</td>
+      <td>意甲</td>
+      <td>尤文图斯 vs 帕尔马</td>
+      <td><span class="dir-badge" style="background:#c0392b">主胜</span></td>
+      <td>平局</td>
+      <td>★★</td>
+      <td>71.8% / 16.2% / 12.0%</td>
+      <td>3球 / 4球</td>
+      <td>2:1、3:1、2:0</td>
+      <td></td>
+    </tr>
+<tr class="single-row">
+      <td>028</td>
+      <td>西甲</td>
+      <td>塞维利亚 vs 马竞</td>
+      <td><span class="dir-badge" style="background:#2980b9">客胜</span></td>
+      <td>主胜</td>
+      <td>★</td>
+      <td>36.1% / 23.7% / 40.2%</td>
+      <td>3球 / 4球</td>
+      <td>1:1、1:2、2:1</td>
+      <td>单关</td>
+    </tr>
+<tr class="">
+      <td>029</td>
+      <td>美职</td>
+      <td>华盛顿 vs 洛杉矶FC</td>
+      <td><span class="dir-badge" style="background:#2980b9">客胜</span></td>
+      <td>主胜</td>
+      <td>★★</td>
+      <td>30.7% / 25.7% / 43.6%</td>
+      <td>2球 / 3球</td>
+      <td>1:1、1:2、2:1</td>
+      <td></td>
+    </tr></tbody>
+  </table>
+
+  
+    <section class="league-block">
+      <h2 class="league-title">日职联 J1 <span class="count">(2场)</span></h2>
+      <div class="cards">
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六001</span>
+          <span class="match-teams">水户蜀葵 <span class="vs">vs</span> 町田泽维</span>
+           <span class="val-note">身价差 1.87×</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#2980b9">客胜</span> <span class="dir-2nd">次选 主胜</span> <span class="stars">★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:24.5%;background:#95a5a6"></div><span>24.5%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:20.7%;background:#95a5a6"></div><span>20.7%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:54.7%;background:#e67e22"></div><span>54.7%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：3球 / 4球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:2、1:1、2:2、1:3、2:1</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：负负、平负、胜胜</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主1.60 / 客2.40</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">近2次2-2平局; 同主客近5次2胜2平1负</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>水户蜀葵</b>：一门+2中卫+后腰缺阵(防线严重残缺)　<b>町田泽维</b>：小川航基(中锋)缺阵</span></div><div class="kv"><span class="k">要点</span><span class="v">町田多线作战(亚冠); 水户防线严重伤停但进攻端有火力(3场5球)</span></div>
+      </div>
+    </div>
+
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六002</span>
+          <span class="match-teams">清水鼓动 <span class="vs">vs</span> 柏太阳神</span>
+          <span class="single-tag">单关</span> <span class="val-note">身价差 1.36×</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#2980b9">客胜</span> <span class="dir-2nd">次选 平局</span> <span class="stars">★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:17.0%;background:#95a5a6"></div><span>17.0%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:27.3%;background:#95a5a6"></div><span>27.3%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:55.7%;background:#e74c3c"></div><span>55.7%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：4球 / 3球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:2、1:3、1:1、2:2、0:2</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：负负、平负、胜胜</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主1.50 / 客2.60</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">柏已成克星: 近5次4胜1平; 2025年双杀零封; 同主客1胜1平3负</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>清水鼓动</b>：7+人缺阵(前锋红牌停赛+后卫停赛+多人伤伤)　<b>柏太阳神</b>：3名中场伤停</span></div><div class="kv"><span class="k">要点</span><span class="v">清水严重残阵; 柏太阳神8月25日藤尾翔太转会</span></div>
+      </div>
+    </div></div>
+    </section>
+
+    <section class="league-block">
+      <h2 class="league-title">日职乙 J2 <span class="count">(1场)</span></h2>
+      <div class="cards">
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六003</span>
+          <span class="match-teams">大宫松鼠 <span class="vs">vs</span> 湘南海洋</span>
+           <span class="val-note">身价差 1.38×</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#c0392b">主胜</span> <span class="dir-2nd">次选 客胜</span> <span class="stars">★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:54.8%;background:#e67e22"></div><span>54.8%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:21.4%;background:#95a5a6"></div><span>21.4%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:23.9%;background:#95a5a6"></div><span>23.9%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：3球 / 4球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：2:1、1:1、3:1、2:2、2:0</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：胜胜、平胜、负负</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主2.30 / 客1.50</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">大宫同主客历史碾压: 6胜4平0负; 近6次5胜1平</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>大宫松鼠</b>：一门伤缺(替补门将经验少); 前锋山本出战成疑　<b>湘南海洋</b>：无具体伤停</span></div><div class="kv"><span class="k">要点</span><span class="v">大宫一门伤停; 湘南3轮0失球; 日乙Tier3但小球率52%</span></div>
+      </div>
+    </div></div>
+    </section>
+
+    <section class="league-block">
+      <h2 class="league-title">韩K联 <span class="count">(1场)</span></h2>
+      <div class="cards">
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六004</span>
+          <span class="match-teams">蔚山现代 <span class="vs">vs</span> 金泉尚武</span>
+          <span class="single-tag">单关</span> 
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#c0392b">主胜</span> <span class="dir-2nd">次选 平局</span> <span class="stars">★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:41.2%;background:#f1c40f"></div><span>41.2%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:33.0%;background:#95a5a6"></div><span>33.0%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:25.8%;background:#95a5a6"></div><span>25.8%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：3球 / 2球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:1、2:1、1:2、2:0、2:2</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：胜胜、平胜、负负</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主1.80 / 客1.40</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">近10次金泉2胜3平5负; 最近2次: 1-2(蔚山客胜)、0-0(平)</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>蔚山现代</b>：2后卫伤停; 佩德里尼奥伤; 3名外援前锋复出(利好)　<b>金泉尚武</b>：无具体伤停信息</span></div><div class="kv"><span class="k">要点</span><span class="v">蔚山3连败+外援复出; 金泉平局率极高(15/25=60%)</span></div>
+      </div>
+    </div></div>
+    </section>
+
+    <section class="league-block">
+      <h2 class="league-title">英超 <span class="count">(4场)</span></h2>
+      <div class="cards">
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六019</span>
+          <span class="match-teams">热刺 <span class="vs">vs</span> 纽卡斯尔</span>
+          <span class="single-tag">单关</span> <span class="val-note">身价差 1.35×</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#2980b9">客胜</span> <span class="dir-2nd">次选 主胜</span> <span class="stars">★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:34.7%;background:#95a5a6"></div><span>34.7%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:22.8%;background:#95a5a6"></div><span>22.8%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:42.5%;background:#f1c40f"></div><span>42.5%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：3球 / 4球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:1、1:2、2:1、2:2、1:3</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：负负、胜胜、平负</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主1.80 / 客2.00</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">纽卡近2赛季客场连胜热刺(1-2, 1-2)! 同主客0胜2平1负</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>热刺</b>：13+人伤停!(麦迪逊+库卢+西蒙斯等多名核心) 极残　<b>纽卡斯尔</b>：队长后卫伤+中场伤+后卫伤+前锋伤</span></div><div class="kv"><span class="k">要点</span><span class="v">英超第2轮开单关; 热刺极残阵(13+人缺); 纽卡客场连胜魔咒; 新援马尔穆什首秀</span></div>
+      </div>
+    </div>
+
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六006</span>
+          <span class="match-teams">利物浦 <span class="vs">vs</span> 诺丁汉</span>
+          <span class="single-tag">单关</span> <span class="val-note">身价差 1.75×</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#c0392b">主胜</span> <span class="dir-2nd">次选 平局</span> <span class="stars">★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:61.5%;background:#e74c3c"></div><span>61.5%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:26.0%;background:#95a5a6"></div><span>26.0%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:12.5%;background:#95a5a6"></div><span>12.5%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：3球 / 4球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：2:1、3:1、1:1、2:0、3:0</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：胜胜、平胜、平平</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主2.70 / 客1.30</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">森林近2次安菲尔德全胜(3-0, 1-0)! 但上次交锋利物浦1-0绝杀</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>利物浦</b>：基耶萨+戈麦斯+布拉德利+莱奥尼+埃基蒂克缺阵　<b>诺丁汉</b>：吉布斯-怀特可能复出; 新援德拉普待定</span></div><div class="kv"><span class="k">要点</span><span class="v">利物浦主场首秀; 森林安菲尔德魔咒(近2次全胜); 但森林状态极差</span></div>
+      </div>
+    </div>
+
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六014</span>
+          <span class="match-teams">考文垂 <span class="vs">vs</span> 赫尔城</span>
+           <span class="val-note">身价差 2.0×（身价碾压）</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#c0392b">主胜</span> <span class="dir-2nd">次选 客胜</span> <span class="stars">★★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:54.8%;background:#e67e22"></div><span>54.8%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:22.0%;background:#95a5a6"></div><span>22.0%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:23.2%;background:#95a5a6"></div><span>23.2%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：3球 / 4球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:1、2:1、3:1、2:0、2:2</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：胜胜、平胜、负负</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主2.20 / 客1.40</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">近2次0-0闷平; 兰帕德赫尔城克星(球员+教练不败)</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>考文垂</b>：前锋大腿伤+2后卫伤缺　<b>赫尔城</b>：6人伤缺! 被迫5后卫+单箭头</span></div><div class="kv"><span class="k">要点</span><span class="v">英超第2轮; 考文垂身价2倍碾压; 赫尔城6人伤缺; 兰帕德克星因素</span></div>
+      </div>
+    </div>
+
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六015</span>
+          <span class="match-teams">伯恩茅斯 <span class="vs">vs</span> 埃弗顿</span>
+          <span class="single-tag">单关</span> <span class="val-note">身价差 1.20×</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#c0392b">主胜</span> <span class="dir-2nd">次选 平局</span> <span class="stars">★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:39.6%;background:#f1c40f"></div><span>39.6%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:31.1%;background:#95a5a6"></div><span>31.1%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:29.3%;background:#95a5a6"></div><span>29.3%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：3球 / 4球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:1、2:1、1:2、2:2、3:1</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：胜胜、负负、平胜</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主2.00 / 客1.70</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">伯恩茅斯近10次7胜0平3负; 近3次主场全胜; 但上次主场0-1负</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>伯恩茅斯</b>：2后卫伤+前锋伤+门将停赛　<b>埃弗顿</b>：2中场伤缺(含新援)+1中场存疑</span></div><div class="kv"><span class="k">要点</span><span class="v">英超第2轮开单关; 伯恩茅斯主场交锋占优; 埃弗顿状态更好</span></div>
+      </div>
+    </div></div>
+    </section>
+
+    <section class="league-block">
+      <h2 class="league-title">瑞典超 <span class="count">(1场)</span></h2>
+      <div class="cards">
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六008</span>
+          <span class="match-teams">埃夫斯堡 <span class="vs">vs</span> 代格福什</span>
+           <span class="val-note">身价差 2.2×（身价碾压）</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#c0392b">主胜</span> <span class="dir-2nd">次选 平局</span> <span class="stars">★★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:63.4%;background:#e74c3c"></div><span>63.4%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:20.6%;background:#95a5a6"></div><span>20.6%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:16.0%;background:#95a5a6"></div><span>16.0%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：3球 / 2球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：2:1、1:1、2:0、3:1、1:0</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：胜胜、平胜、平平</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主2.30 / 客1.10</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">同主客4场1胜2平1负(无优势); 全部交锋近10次7胜2平1负</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>埃夫斯堡</b>：无具体伤停信息　<b>代格福什</b>：中场核心停赛+2后卫伤停(防守大幅减员)</span></div><div class="kv"><span class="k">要点</span><span class="v">埃夫斯堡身价碾压2.25倍; 代格福什中场核心停赛+防线残缺</span></div>
+      </div>
+    </div></div>
+    </section>
+
+    <section class="league-block">
+      <h2 class="league-title">德甲 <span class="count">(6场)</span></h2>
+      <div class="cards">
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六020</span>
+          <span class="match-teams">多特蒙德 <span class="vs">vs</span> 汉堡</span>
+           <span class="val-note">身价差 4.5×（身价碾压）</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#c0392b">主胜</span> <span class="dir-2nd">次选 平局</span> <span class="stars">★★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:75.5%;background:#e74c3c"></div><span>75.5%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:13.9%;background:#95a5a6"></div><span>13.9%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:10.6%;background:#95a5a6"></div><span>10.6%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：4球 / 3球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：3:1、2:1、4:1、3:0、2:0</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：胜胜、平胜、平平</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主3.25 / 客1.25</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">多特近5年主场对汉堡100%胜! 近5次4胜1平</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>多特蒙德</b>：中场老将十字韧带+中卫脚踝伤　<b>汉堡</b>：4人伤缺</span></div><div class="kv"><span class="k">要点</span><span class="v">德甲首轮; 多特4.5倍碾压+首轮不败纪录; 汉堡时隔7年返德甲</span></div>
+      </div>
+    </div>
+
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六009</span>
+          <span class="match-teams">埃沃斯堡 <span class="vs">vs</span> 勒沃库森</span>
+          <span class="single-tag">单关</span> <span class="val-note">身价差 7.8×（身价碾压）</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#2980b9">客胜</span> <span class="dir-2nd">次选 主胜</span> <span class="stars">★★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:20.2%;background:#95a5a6"></div><span>20.2%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:16.6%;background:#95a5a6"></div><span>16.6%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:63.1%;background:#e74c3c"></div><span>63.1%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：4球 / 3球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:3、1:2、2:3、2:2、1:4</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：负负、平负、胜胜</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主1.85 / 客3.15</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">仅2次交锋各1胜: 埃沃4-3勒沃(7球)、勒沃3-0埃沃(3球), 场均5球!</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>埃沃斯堡</b>：赛弗特+齐默尔舍德伤缺　<b>勒沃库森</b>：泰里耶+本塞吉尔+安德里希+阿达米伤缺(前场多人缺阵)</span></div><div class="kv"><span class="k">要点</span><span class="v">埃沃斯堡历史首场德甲主场! 载入史册; 勒沃身价7.85倍碾压; 交锋场均5球</span></div>
+      </div>
+    </div>
+
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六010</span>
+          <span class="match-teams">莱红牛 <span class="vs">vs</span> 门兴</span>
+           <span class="val-note">身价差 3.9×（身价碾压）</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#c0392b">主胜</span> <span class="dir-2nd">次选 客胜</span> <span class="stars">★★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:60.4%;background:#e74c3c"></div><span>60.4%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:19.0%;background:#95a5a6"></div><span>19.0%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:20.6%;background:#95a5a6"></div><span>20.6%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：4球 / 3球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：2:1、3:1、1:1、2:2、3:2</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：胜胜、平胜、负负</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主2.65 / 客1.55</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">近3场2次0-0/1-0低球闷战; 近16场莱比锡9胜3平4负</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>莱红牛</b>：门将十字韧带+后卫内收肌+中场伤缺; 前锋膝手术　<b>门兴</b>：3人长期伤缺</span></div><div class="kv"><span class="k">要点</span><span class="v">德甲首轮; 交锋低球闷战特征; 莱比锡身价3.9倍碾压</span></div>
+      </div>
+    </div>
+
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六011</span>
+          <span class="match-teams">柏林联合 <span class="vs">vs</span> 法兰克福</span>
+           <span class="val-note">身价差 2.8×（身价碾压）</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#2980b9">客胜</span> <span class="dir-2nd">次选 主胜</span> <span class="stars">★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:31.7%;background:#95a5a6"></div><span>31.7%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:21.5%;background:#95a5a6"></div><span>21.5%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:46.8%;background:#e67e22"></div><span>46.8%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：4球 / 3球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:2、1:1、2:2、2:1、1:3</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：负负、胜胜、平负</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主1.85 / 客2.25</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">近年主场2平; 历史法兰克福占优</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>柏林联合</b>：2门将伤+前锋跟腱伤+后卫小腿伤(门将危机)　<b>法兰克福</b>：7人伤停(中场+后卫+前锋)但阵容深度厚</span></div><div class="kv"><span class="k">要点</span><span class="v">德甲首轮; 柏林联合门将危机; 法兰克福7人伤停但深度厚</span></div>
+      </div>
+    </div>
+
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六012</span>
+          <span class="match-teams">科隆 <span class="vs">vs</span> 霍芬海姆</span>
+           <span class="val-note">身价差 2.4×（身价碾压）</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#2980b9">客胜</span> <span class="dir-2nd">次选 主胜</span> <span class="stars">★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:30.7%;background:#95a5a6"></div><span>30.7%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:20.4%;background:#95a5a6"></div><span>20.4%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:48.9%;background:#e67e22"></div><span>48.9%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：4球 / 3球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:2、2:2、1:1、1:3、2:3</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：负负、胜胜、平负</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主1.95 / 客2.45</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">近6次主场队从未获胜! 科隆上次主场胜2015年; 近5场科隆2胜2平1负</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>科隆</b>：前锋肌肉伤+2后卫伤缺　<b>霍芬海姆</b>：前锋停赛+后卫伤+中场停赛</span></div><div class="kv"><span class="k">要点</span><span class="v">德甲首轮; 主场队6场不胜魔咒; 交锋大球倾向</span></div>
+      </div>
+    </div>
+
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六013</span>
+          <span class="match-teams">美因茨 <span class="vs">vs</span> 帕德博恩</span>
+           <span class="val-note">身价差 3.8×（身价碾压）</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#c0392b">主胜</span> <span class="dir-2nd">次选 平局</span> <span class="stars">★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:67.8%;background:#e74c3c"></div><span>67.8%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:17.1%;background:#95a5a6"></div><span>17.1%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:15.1%;background:#95a5a6"></div><span>15.1%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：4球 / 3球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：2:1、3:1、1:1、2:0、3:0</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：胜胜、平胜、平平</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主2.85 / 客1.35</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">美因茨4胜1平0负, 进17失4! 绝对碾压</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>美因茨</b>：2前锋伤+2中场伤缺　<b>帕德博恩</b>：2中场伤+前锋伤+后卫伤(长期)</span></div><div class="kv"><span class="k">要点</span><span class="v">德甲首轮; 美因茨身价3.8倍碾压+交锋统治; 帕德博恩升班马</span></div>
+      </div>
+    </div></div>
+    </section>
+
+    <section class="league-block">
+      <h2 class="league-title">西甲 <span class="count">(3场)</span></h2>
+      <div class="cards">
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六025</span>
+          <span class="match-teams">皇家社会 <span class="vs">vs</span> 西班牙人</span>
+           <span class="val-note">身价差 3.5×（身价碾压）</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#c0392b">主胜</span> <span class="dir-2nd">次选 客胜</span> <span class="stars">★★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:50.5%;background:#e67e22"></div><span>50.5%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:23.9%;background:#95a5a6"></div><span>23.9%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:25.6%;background:#95a5a6"></div><span>25.6%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：3球 / 2球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:1、2:1、2:0、1:2、2:2</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：胜胜、平胜、负负</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主1.95 / 客1.35</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">皇社15胜7平7负; 近6次4胜2平0负; 同主客近5年占优</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>皇家社会</b>：后卫膝伤+中场肌肉伤+中场伤　<b>西班牙人</b>：后卫停赛+普阿多(队长前锋核心)十字韧带!+基克(前锋)腿筋伤!</span></div><div class="kv"><span class="k">要点</span><span class="v">西甲第3轮; 皇社两连败; 西班牙人锋线双核全伤(普阿多+基克)</span></div>
+      </div>
+    </div>
+
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六028</span>
+          <span class="match-teams">塞维利亚 <span class="vs">vs</span> 马竞</span>
+          <span class="single-tag">单关</span> <span class="val-note">身价差 2.2×（身价碾压）</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#2980b9">客胜</span> <span class="dir-2nd">次选 主胜</span> <span class="stars">★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:36.1%;background:#f1c40f"></div><span>36.1%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:23.7%;background:#95a5a6"></div><span>23.7%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:40.2%;background:#f1c40f"></div><span>40.2%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：3球 / 4球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:1、1:2、2:1、2:2、1:3</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：负负、胜胜、平负</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主1.75 / 客1.85</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">塞维利亚主场近3场连胜! 上次交锋塞维2-1马竞; 但历史马竞65球&gt;塞维43球</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>塞维利亚</b>：中场肌肉伤　<b>马竞</b>：阿尔瓦雷斯(核心前锋)转会不出场!+瑟洛特(中锋)肌肉伤+后卫停赛+中场伤(存疑)</span></div><div class="kv"><span class="k">要点</span><span class="v">西甲第3轮开单关; 塞维利亚开局完美+主场3连胜; 马竞双中锋全缺(阿尔瓦雷斯转会+瑟洛特伤)</span></div>
+      </div>
+    </div>
+
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六016</span>
+          <span class="match-teams">莱万特 <span class="vs">vs</span> 贝蒂斯</span>
+           <span class="val-note">身价差 3.0×（身价碾压）</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#2980b9">客胜</span> <span class="dir-2nd">次选 主胜</span> <span class="stars">★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:26.3%;background:#95a5a6"></div><span>26.3%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:23.1%;background:#95a5a6"></div><span>23.1%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:50.6%;background:#e67e22"></div><span>50.6%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：3球 / 2球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:1、1:2、2:2、2:1、0:2</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：负负、平负、胜胜</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主1.45 / 客2.05</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">同主客近年大球: 4-3, 4-2, 2-4, 2-2! 场均4.25球</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>莱万特</b>：前锋十字韧带(12月复出)　<b>贝蒂斯</b>：门将肩伤+中场肌肉伤+前锋膝伤(存疑)+后卫伤</span></div><div class="kv"><span class="k">要点</span><span class="v">西甲第3轮; 贝蒂斯身价3倍碾压+防守极佳; H2H大球历史</span></div>
+      </div>
+    </div></div>
+    </section>
+
+    <section class="league-block">
+      <h2 class="league-title">法甲 <span class="count">(1场)</span></h2>
+      <div class="cards">
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六017</span>
+          <span class="match-teams">斯特拉斯堡 <span class="vs">vs</span> 朗斯</span>
+          <span class="single-tag">单关</span> <span class="val-note">身价差 1.75×</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#2980b9">客胜</span> <span class="dir-2nd">次选 平局</span> <span class="stars">★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:23.6%;background:#95a5a6"></div><span>23.6%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:28.5%;background:#95a5a6"></div><span>28.5%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:47.9%;background:#e67e22"></div><span>47.9%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：4球 / 3球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:2、1:1、2:2、1:3、2:3</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：负负、平负、胜胜</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主1.75 / 客2.45</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">近6场1胜2平3负; 近5场1胜2平2负</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>斯特拉斯堡</b>：中场红牌停赛(首轮红牌)　<b>朗斯</b>：后防线5人伤停/停赛! 防守大幅减员</span></div><div class="kv"><span class="k">要点</span><span class="v">法甲第2轮开单关; 斯特拉斯堡极差+红牌停赛; 朗斯状态极佳但后防5人缺</span></div>
+      </div>
+    </div></div>
+    </section>
+
+    <section class="league-block">
+      <h2 class="league-title">挪超 <span class="count">(1场)</span></h2>
+      <div class="cards">
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六018</span>
+          <span class="match-teams">维京 <span class="vs">vs</span> 奥勒松</span>
+           <span class="val-note">身价差 4.0×（身价碾压）</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#c0392b">主胜</span> <span class="dir-2nd">次选 平局</span> <span class="stars">★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:81.8%;background:#e74c3c"></div><span>81.8%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:12.2%;background:#95a5a6"></div><span>12.2%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:5.9%;background:#95a5a6"></div><span>5.9%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：3球 / 4球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：3:0、2:0、3:1、4:0、2:1</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：胜胜、平胜、平平</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主3.10 / 客0.80</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">近5场3胜1平1负; 历史28场11胜11负6平(均势!)</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>维京</b>：刚踢完欧冠附加赛(3-1胜萨格勒布), 体能消耗　<b>奥勒松</b>：阵容单薄</span></div><div class="kv"><span class="k">要点</span><span class="v">挪超第19轮; 维京身价4倍碾压+主场龙; 奥勒松防守极差(上轮5-5); 欧冠体能消耗</span></div>
+      </div>
+    </div></div>
+    </section>
+
+    <section class="league-block">
+      <h2 class="league-title">意甲 <span class="count">(4场)</span></h2>
+      <div class="cards">
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六021</span>
+          <span class="match-teams">蒙扎 <span class="vs">vs</span> 乌迪内斯</span>
+           
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#2980b9">客胜</span> <span class="dir-2nd">次选 主胜</span> <span class="stars">★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:34.9%;background:#95a5a6"></div><span>34.9%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:22.4%;background:#95a5a6"></div><span>22.4%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:42.7%;background:#f1c40f"></div><span>42.7%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：3球 / 4球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:1、1:2、2:2、2:1、1:3</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：负负、胜胜、平负</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主1.85 / 客2.05</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">近5次2胜3平2负(均势); 4/5次双方进球! 同主客1胜1平2负</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>蒙扎</b>：队长中场膝伤+中场伤+翼卫伤+膝伤　<b>乌迪内斯</b>：后卫停赛+后卫膝伤+中场内收肌伤(休1月)</span></div><div class="kv"><span class="k">要点</span><span class="v">意甲第2轮; 蒙扎主场魔咒+双方残阵; 交锋4/5次双方进球</span></div>
+      </div>
+    </div>
+
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六022</span>
+          <span class="match-teams">佛罗伦萨 <span class="vs">vs</span> 弗罗西诺内</span>
+          <span class="single-tag">单关</span> <span class="val-note">身价差 6.9×（身价碾压）</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#c0392b">主胜</span> <span class="dir-2nd">次选 平局</span> <span class="stars">★★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:60.8%;background:#e74c3c"></div><span>60.8%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:20.0%;background:#95a5a6"></div><span>20.0%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:19.1%;background:#95a5a6"></div><span>19.1%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：3球 / 4球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：2:1、1:1、3:1、2:0、2:2</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：胜胜、平胜、平平</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主2.45 / 客1.35</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">主场近5年100%胜! 近6次2胜3平1负; 最大比分5-1</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>佛罗伦萨</b>：后卫十字韧带(长期)+基恩(前锋核心,转会科莫!)　<b>弗罗西诺内</b>：无伤停报告, 阵容完整</span></div><div class="kv"><span class="k">要点</span><span class="v">意甲第2轮开单关; 佛罗伦萨身价6.9倍碾压+主场H2H全胜; 但基恩离队锋线真空</span></div>
+      </div>
+    </div>
+
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六023</span>
+          <span class="match-teams">萨索洛 <span class="vs">vs</span> 都灵</span>
+           
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#7f8c8d">平局</span> <span class="dir-2nd">次选 客胜</span> <span class="stars">★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:38.7%;background:#f1c40f"></div><span>38.7%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:22.5%;background:#95a5a6"></div><span>22.5%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:38.7%;background:#f1c40f"></div><span>38.7%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：3球 / 4球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:1、1:2、2:1、2:2、1:3</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：胜胜、负负、平胜</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主1.95 / 客1.95</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">萨索洛主场十年魔咒: 1胜9平6负! 都灵连续8次客场进球</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>萨索洛</b>：中场伤+后卫十字韧带; 贝拉尔迪复出!(利好)　<b>都灵</b>：6人伤缺但阵容近满配</span></div><div class="kv"><span class="k">要点</span><span class="v">意甲第2轮; 萨索洛主场十年魔咒; 贝拉尔迪复出; 都灵客场连续进球</span></div>
+      </div>
+    </div>
+
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六027</span>
+          <span class="match-teams">尤文图斯 <span class="vs">vs</span> 帕尔马</span>
+           <span class="val-note">身价差 6.2×（身价碾压）</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#c0392b">主胜</span> <span class="dir-2nd">次选 平局</span> <span class="stars">★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:71.8%;background:#e74c3c"></div><span>71.8%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:16.2%;background:#95a5a6"></div><span>16.2%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:12.0%;background:#95a5a6"></div><span>12.0%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：3球 / 4球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：2:1、3:1、2:0、3:0、1:1</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：胜胜、平胜、平平</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主2.85 / 客1.15</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">尤文对帕尔马28胜(意甲历史); 帕尔马上次安联取胜2015年!</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>尤文图斯</b>：伊尔迪兹(核心前锋)骨折缺阵3个月!+弗拉霍维奇背伤+后卫大腿伤+前锋伤+中场停赛　<b>帕尔马</b>：中场腹股沟手术(长期)+大腿伤</span></div><div class="kv"><span class="k">要点</span><span class="v">意甲第2轮; 尤文主场绝对优势+防守顶尖; 但伊尔迪兹骨折重创进攻; 帕尔马升班马</span></div>
+      </div>
+    </div></div>
+    </section>
+
+    <section class="league-block">
+      <h2 class="league-title">荷甲 <span class="count">(1场)</span></h2>
+      <div class="cards">
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六024</span>
+          <span class="match-teams">阿尔克马 <span class="vs">vs</span> 前进之鹰</span>
+           
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#c0392b">主胜</span> <span class="dir-2nd">次选 平局</span> <span class="stars">★★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:69.2%;background:#e74c3c"></div><span>69.2%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:16.2%;background:#95a5a6"></div><span>16.2%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:14.6%;background:#95a5a6"></div><span>14.6%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：4球 / 3球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：2:1、3:1、4:1、1:1、2:0</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：胜胜、平胜、平平</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主3.00 / 客1.40</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">阿尔克马11胜1负5平! 主场绝对优势; 近2次1-1、2-2平</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>阿尔克马</b>：后卫腹股沟伤+中场膝伤(2027年1月回归)+后卫轻伤(存疑)　<b>前进之鹰</b>：后卫腿伤+伤+十字韧带伤</span></div><div class="kv"><span class="k">要点</span><span class="v">荷甲第4轮; 双方全胜/不败+防守都极佳; 阿尔克马主场H2H碾压</span></div>
+      </div>
+    </div></div>
+    </section>
+
+    <section class="league-block">
+      <h2 class="league-title">葡超 <span class="count">(1场)</span></h2>
+      <div class="cards">
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六026</span>
+          <span class="match-teams">维塞乌 <span class="vs">vs</span> 波尔图</span>
+           <span class="val-note">身价差 21.3×（身价碾压）</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#2980b9">客胜</span> <span class="dir-2nd">次选 平局</span> <span class="stars">★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:7.9%;background:#95a5a6"></div><span>7.9%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:12.1%;background:#95a5a6"></div><span>12.1%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:80.0%;background:#e74c3c"></div><span>80.0%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：4球 / 3球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:3、0:3、1:2、1:4、0:2</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：负负、平负、平平</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主1.10 / 客3.40</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">近5次波尔图全胜! 进14失1! 绝对统治</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>维塞乌</b>：中场主力大腿伤　<b>波尔图</b>：前锋十字韧带(长期)+中场腓骨骨折+前锋大腿伤(存疑); 但右后卫+门将复出</span></div><div class="kv"><span class="k">要点</span><span class="v">葡超第4轮; 波尔图身价21倍碾压+3场零封+H2H绝对统治; 维塞乌2轮不胜</span></div>
+      </div>
+    </div></div>
+    </section>
+
+    <section class="league-block">
+      <h2 class="league-title">美职联 <span class="count">(1场)</span></h2>
+      <div class="cards">
+    <div class="match-card">
+      <div class="match-head">
+        <div class="match-title">
+          <span class="match-num">周六029</span>
+          <span class="match-teams">华盛顿 <span class="vs">vs</span> 洛杉矶FC</span>
+           <span class="val-note">身价差 1.86×</span>
+        </div>
+        <div class="match-dir"><span class="dir-badge" style="background:#2980b9">客胜</span> <span class="dir-2nd">次选 主胜</span> <span class="stars">★★</span></div>
+      </div>
+      <div class="match-probs">
+        <div class="prob-item"><label>主胜</label><div class="bar"><div class="bar-fill" style="width:30.7%;background:#95a5a6"></div><span>30.7%</span></div></div>
+        <div class="prob-item"><label>平局</label><div class="bar"><div class="bar-fill" style="width:25.7%;background:#95a5a6"></div><span>25.7%</span></div></div>
+        <div class="prob-item"><label>客胜</label><div class="bar"><div class="bar-fill" style="width:43.6%;background:#f1c40f"></div><span>43.6%</span></div></div>
+      </div>
+      <div class="match-detail">
+        <div class="kv"><span class="k">总进球</span><span class="v">TOP2：2球 / 3球</span></div>
+        <div class="kv"><span class="k">比分</span><span class="v">TOP5：1:1、1:2、2:1、0:1、0:2</span></div>
+        <div class="kv"><span class="k">半全场</span><span class="v">TOP3：负负、平负、胜胜</span></div>
+        <div class="kv"><span class="k">模型λ</span><span class="v">主1.40 / 客1.70</span></div>
+        <div class="kv"><span class="k">交锋</span><span class="v">华盛顿0胜! 洛杉矶FC 2胜; 近3次: 1-0, 0-4, 1-1</span></div><div class="kv"><span class="k">伤停</span><span class="v"><b>华盛顿</b>：后卫停赛+后卫大腿伤+前锋腿伤　<b>洛杉矶FC</b>：前锋伤+门将伤+后卫伤+中场伤+中场伤</span></div><div class="kv"><span class="k">要点</span><span class="v">美职进行中; 华盛顿从未胜洛杉矶FC; 华盛顿近11场10不败但大量平局; 洛杉矶有孙兴慜</span></div>
+      </div>
+    </div></div>
+    </section>
+
+  <h2 class="league-title" id="parlays">串关推荐方案</h2>
+  
+    <div class="parlay-block">
+      <h3>方向串 A（稳健）</h3>
+      <p class="parlay-desc">选取高置信度方向场次，追求稳健</p>
+      <table class="parlay-table"><thead><tr><th>场次</th><th>对阵</th><th>推荐</th><th>置信度</th><th>概率(主/平/客)</th></tr></thead><tbody><tr><td>013</td><td>美因茨 vs 帕德博恩</td><td>主胜</td><td>★★</td><td>67.8% / 17.1% / 15.1%</td></tr><tr><td>020</td><td>多特蒙德 vs 汉堡</td><td>主胜</td><td>★★★</td><td>75.5% / 13.9% / 10.6%</td></tr><tr><td>026</td><td>维塞乌 vs 波尔图</td><td>客胜</td><td>★★</td><td>7.9% / 12.1% / 80.0%</td></tr></tbody></table>
+    </div>
+    <div class="parlay-block">
+      <h3>让球串 B（价值）</h3>
+      <p class="parlay-desc">让球盘深场次，追求让球价值</p>
+      <table class="parlay-table"><thead><tr><th>场次</th><th>对阵</th><th>推荐</th><th>置信度</th><th>概率(主/平/客)</th></tr></thead><tbody><tr><td>020</td><td>多特蒙德 vs 汉堡</td><td>让-1球 主胜</td><td>★★★</td><td>75.5% / 13.9% / 10.6%</td></tr><tr><td>026</td><td>维塞乌 vs 波尔图</td><td>让1球 客胜</td><td>★★</td><td>7.9% / 12.1% / 80.0%</td></tr><tr><td>018</td><td>维京 vs 奥勒松</td><td>让-2球 主胜</td><td>★★</td><td>81.8% / 12.2% / 5.9%</td></tr></tbody></table>
+    </div>
+    <div class="parlay-block">
+      <h3>混合串 C</h3>
+      <p class="parlay-desc">方向与让球结合</p>
+      <table class="parlay-table"><thead><tr><th>场次</th><th>对阵</th><th>推荐</th><th>置信度</th><th>概率(主/平/客)</th></tr></thead><tbody><tr><td>013</td><td>美因茨 vs 帕德博恩</td><td>主胜</td><td>★★</td><td>67.8% / 17.1% / 15.1%</td></tr><tr><td>020</td><td>多特蒙德 vs 汉堡</td><td>主胜</td><td>★★★</td><td>75.5% / 13.9% / 10.6%</td></tr><tr><td>026</td><td>维塞乌 vs 波尔图</td><td>客胜</td><td>★★</td><td>7.9% / 12.1% / 80.0%</td></tr></tbody></table>
+    </div>
+    <div class="parlay-block">
+      <h3>娱乐串 D（比分）</h3>
+      <p class="parlay-desc">高赔比分串，基本面优先</p>
+      <table class="parlay-table"><thead><tr><th>场次</th><th>对阵</th><th>推荐</th><th>置信度</th><th>概率(主/平/客)</th></tr></thead><tbody><tr><td>027</td><td>尤文图斯 vs 帕尔马</td><td>比分 2:1</td><td>★★</td><td>71.8% / 16.2% / 12.0%</td></tr><tr><td>020</td><td>多特蒙德 vs 汉堡</td><td>比分 3:1</td><td>★★★</td><td>75.5% / 13.9% / 10.6%</td></tr><tr><td>026</td><td>维塞乌 vs 波尔图</td><td>比分 1:3</td><td>★★</td><td>7.9% / 12.1% / 80.0%</td></tr></tbody></table>
+    </div>
+
+  <div class="risk" id="risk">
+    <h3>风险提示</h3>
+    <ul>
+      <li>本报告基于历史数据与数学模型，任何预测均非 100% 准确，比分存在极大不确定性。</li>
+      <li>突发因素（红牌、点球、天气、临场伤停）无法完全预测，请以实时数据为准。</li>
+      <li>单关场次平局概率已按规则 63 上修，方向仅供概率参考，不代表必然结果。</li>
+      <li>大球预测已按规则 65 上修，Tier2/Tier3 联赛倾向大球，但小球联赛（日乙等）需注意小球基准冲突。</li>
+      <li>理性看待预测，切勿沉迷赌博。本报告不构成任何投注建议。</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

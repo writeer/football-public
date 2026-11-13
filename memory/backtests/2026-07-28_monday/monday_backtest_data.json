@@ -1,0 +1,126 @@
+{
+  "backtest_id": "bt_20260728_monday",
+  "match_date": "2026-07-28",
+  "model_version": "v1.4.0",
+  "backtest_time": "2026-07-28",
+  "source_files": {
+    "predictions": "memory/predictions/2026-07-28_monday/monday_predictions.json",
+    "html_report": "reports/html/monday_20260727_analysis.html"
+  },
+  "summary": {
+    "total_matches": 2,
+    "direction_hit_rate": "0/2 = 0.0%",
+    "score_top1_hit_rate": "0/2 = 0.0%",
+    "score_top5_hit_rate": "0/2 = 0.0%",
+    "over_under_hit_rate": "0/2 = 0.0%",
+    "actual_draws": 1,
+    "predicted_draws": 0
+  },
+  "matches": [
+    {
+      "match_id": "monday_001",
+      "league": "瑞典超",
+      "time": "07-28 01:00",
+      "home": "赫根 BK Hacken",
+      "away": "AIK索尔纳",
+      "pred_direction": "主胜",
+      "pred_probs": {
+        "home": 0.514,
+        "draw": 0.212,
+        "away": 0.274
+      },
+      "actual_score": "0-0",
+      "actual_direction": "平局",
+      "direction_hit": false,
+      "score_top1_hit": false,
+      "score_top5_hit": false,
+      "over_under_hit": false,
+      "pred_top_scores": [
+        ["2:1", 6.1],
+        ["2:2", 6.0],
+        ["3:1", 6.0],
+        ["3:2", 5.8],
+        ["4:1", 4.7]
+      ],
+      "pred_half_top5": [
+        ["1:0", 14.5],
+        ["1:1", 12.7],
+        ["0:0", 10.6],
+        ["2:0", 9.9],
+        ["0:1", 8.9]
+      ],
+      "pred_over25": 87.9,
+      "actual_ht_score": "0-0",
+      "actual_total_goals": 0,
+      "source": "FIFA.com / footballcritic.com",
+      "analysis": {
+        "why_wrong": "模型lambda_home=3.058严重高估了赫根主场攻击力。赫根近期3连败且每场失3+球（3-4/2-4/1-4），防守崩溃影响了进攻节奏。实际比赛0-0说明双方进攻效率都极低，模型87.9%大2.5球概率与实际0球完全相反。",
+        "draw_missed": true,
+        "draw_prob_predicted": 0.212,
+        "shin_draw_prob": 0.254,
+        "key_factor": "赫根连续3场大比分失利后防守心态保守，0-0半场比分在半场TOP5中排第3(10.6%)，但全场0-0未出现在TOP5中。模型对双方进攻lambda都高估了。",
+        "lesson": "连续大比分失利的球队，下一场总进球lambda应大幅下调而非维持原水平。防守崩溃往往导致球队在下一场极端保守。"
+      }
+    },
+    {
+      "match_id": "monday_002",
+      "league": "挪威超",
+      "time": "07-28 01:00",
+      "home": "罗森博格 Rosenborg",
+      "away": "腓特烈斯塔 Fredrikstad",
+      "pred_direction": "主胜",
+      "pred_probs": {
+        "home": 0.603,
+        "draw": 0.224,
+        "away": 0.172
+      },
+      "actual_score": "4-0",
+      "actual_direction": "主胜",
+      "direction_hit": true,
+      "score_top1_hit": false,
+      "score_top5_hit": true,
+      "over_under_hit": true,
+      "pred_top_scores": [
+        ["2:1", 10.0],
+        ["2:0", 9.8],
+        ["3:0", 8.3],
+        ["1:0", 8.2],
+        ["1:1", 7.9]
+      ],
+      "pred_half_top5": [
+        ["1:0", 23.8],
+        ["0:0", 22.9],
+        ["2:0", 12.7],
+        ["1:1", 9.8],
+        ["0:1", 9.2]
+      ],
+      "pred_over25": 65.3,
+      "actual_ht_score": "2-0",
+      "actual_total_goals": 4,
+      "source": "球迷屋/唯彩看球/telefootball.net",
+      "analysis": {
+        "why_right": "方向命中。罗森博格开场13分钟内2球（10'和13'进球），半场2-0领先，下半场再入2球。模型预测主胜60.3%（低置信度），实际结果验证了主胜方向。",
+        "score_analysis": "4-0未在TOP5中，但3:0在TOP3(8.3%)。模型低估了罗森博格的进攻爆发力——lambda_home=2.391但实际打进4球。",
+        "over_under_analysis": "大2.5球命中(65.3%)。实际4球远超2.5。",
+        "handicap_analysis": "让一球盘穿盘命中。4-0的比分轻松覆盖-1让球。",
+        "key_factor": "罗森博格快速开局奠定胜局，13分钟2球彻底打开局面。",
+        "lesson": "低置信度(★)不代表方向错误。当模型与市场分歧接近15%警戒线时（本场合9.5%），应更多信任数学模型而非市场情绪。"
+      }
+    }
+  ],
+  "key_findings": [
+    "方向命中率0/2（0%），但样本量仅2场，统计意义有限",
+    "平局再次漏判：赫根0-0平局，模型预测主胜51.4%，平局仅21.2%",
+    "连续第3天平局漏判：周末22场漏判9场→周一2场漏判1场，平局系统性低估问题持续",
+    "赫根进攻lambda严重高估（3.058→实际0球），连续大败后的心理影响未纳入模型",
+    "罗森博格4-0大胜验证方向预测，但比分和进球数高估了腓特烈斯塔的抵抗能力",
+    "大小球2.5命中率0/2：赫根87.9%大球→0球，罗森博格65.3%大球→4球（1中1错）",
+    "Shin市场的平局概率（25.4%）比模型（21.2%）更接近实际情况",
+    "tips.gg和betonsport预测AIK不败方向正确（0-0属平局/客队不败），模型预测主胜方向错误"
+  ],
+  "improvements_applied": [
+    "平局先验修正规则（主客胜率差<15%时平局+10%）需继续执行并扩大适用范围",
+    "连续大比分失利后的lambda下调机制：当球队近3场每场失3+球时，进攻和防守lambda都应大幅下调",
+    "Shin市场平局概率应给予更高权重——连续多日验证Shin平局概率比模型更准"
+  ]
+}

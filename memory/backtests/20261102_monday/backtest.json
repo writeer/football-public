@@ -1,0 +1,1821 @@
+{
+ "meta": {
+  "date": "2026-11-02",
+  "day": "周一",
+  "generated_at": "2026-11-04T09:10:00",
+  "note": "009布拉干蒂诺vs桑托斯于11-04官方结算2-1（半场2-1），补入统计"
+ },
+ "aggregate": {
+  "total": 9,
+  "settled": 9,
+  "settled_nums": [
+   "周一001",
+   "周一002",
+   "周一003",
+   "周一004",
+   "周一005",
+   "周一006",
+   "周一007",
+   "周一008",
+   "周一009"
+  ],
+  "pending": [],
+  "direction_primary": "4/8",
+  "direction_cover": "5/8",
+  "handicap_primary": "3/9",
+  "handicap_cover": "7/9",
+  "score_top5": "4/9",
+  "ttg_top2": "4/9",
+  "hafu_top3": "4/9",
+  "ht_score_top3": "5/9",
+  "tier": "4/9",
+  "over_under": "3/9",
+  "parlays": "2/29（29方案，待结算0）",
+  "parlay_stake": 29,
+  "parlay_return": 15.3,
+  "parlay_roi": -47.2
+ },
+ "rows": [
+  {
+   "num": "周一001",
+   "league": "芬超",
+   "home": "国际图尔库",
+   "away": "赫尔辛基火花",
+   "kickoff": "2026-11-03 00:00:00",
+   "confidence": "★",
+   "is_single": false,
+   "prediction": {
+    "had_primary": "home",
+    "had_secondary": "draw",
+    "hc_line": -1,
+    "hc_primary": "lose",
+    "hc_secondary": "push",
+    "hc_primary_prob": 0.4713682812441173,
+    "hc_secondary_prob": 0.24640666823929838,
+    "cr_top5": [
+     "1-0",
+     "1-1",
+     "2-0",
+     "0-0",
+     "2-1"
+    ],
+    "hafu_top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "ttg_top2": [
+     2,
+     3
+    ],
+    "tier": "常规正常球(2-3球)",
+    "over_under": "小",
+    "ht_score_top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "model": {
+     "home": 0.5186062959329377,
+     "draw": 0.2887426676493742,
+     "away": 0.1926510364176882
+    },
+    "market": {
+     "home": 0.675073512779914,
+     "draw": 0.18672246098167836,
+     "away": 0.1382040262384076,
+     "overround": 0.13947704163820762
+    }
+   },
+   "actual": {
+    "score": "4-3",
+    "ht_score": "1-1",
+    "htft": "平胜",
+    "direction": "home",
+    "handicap": "push",
+    "goalLine": -1,
+    "total": 7,
+    "ttg": "7+",
+    "result_raw": "4:3",
+    "sectionsNo1": "1:1"
+   },
+   "hits": {
+    "direction_primary": true,
+    "direction_secondary": false,
+    "direction_cover": true,
+    "handicap_primary": false,
+    "handicap_secondary": true,
+    "handicap_cover": true,
+    "score_top5": false,
+    "score_rank": null,
+    "ttg_top2": false,
+    "hafu_top3": true,
+    "ht_score_top3": false,
+    "tier": false,
+    "over_under": false
+   },
+   "status": "settled"
+  },
+  {
+   "num": "周一002",
+   "league": "意甲",
+   "home": "萨索洛",
+   "away": "佛罗伦萨",
+   "kickoff": "2026-11-03 01:30:00",
+   "confidence": "★",
+   "is_single": false,
+   "prediction": {
+    "had_primary": "home",
+    "had_secondary": "away",
+    "hc_line": 1,
+    "hc_primary": "win",
+    "hc_secondary": "push",
+    "hc_primary_prob": 0.7045145223356251,
+    "hc_secondary_prob": 0.1575888511483363,
+    "cr_top5": [
+     "1-1",
+     "2-1",
+     "1-2",
+     "2-2",
+     "2-0"
+    ],
+    "hafu_top3": [
+     "胜胜",
+     "平胜",
+     "负负"
+    ],
+    "ttg_top2": [
+     3,
+     2
+    ],
+    "tier": "常规正常球(2-3球)",
+    "over_under": "大",
+    "ht_score_top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "model": {
+     "home": 0.4556636809213196,
+     "draw": 0.25355434029350826,
+     "away": 0.2907819787851721
+    },
+    "market": {
+     "home": 0.3402785484407946,
+     "draw": 0.26603595605371216,
+     "away": 0.3936854955054933,
+     "overround": 0.13905769552865177
+    }
+   },
+   "actual": {
+    "score": "2-4",
+    "ht_score": "1-1",
+    "htft": "平负",
+    "direction": "away",
+    "handicap": "lose",
+    "goalLine": 1,
+    "total": 6,
+    "ttg": "6",
+    "result_raw": "2:4",
+    "sectionsNo1": "1:1"
+   },
+   "hits": {
+    "direction_primary": false,
+    "direction_secondary": true,
+    "direction_cover": true,
+    "handicap_primary": false,
+    "handicap_secondary": false,
+    "handicap_cover": false,
+    "score_top5": false,
+    "score_rank": null,
+    "ttg_top2": false,
+    "hafu_top3": false,
+    "ht_score_top3": false,
+    "tier": false,
+    "over_under": true
+   },
+   "status": "settled"
+  },
+  {
+   "num": "周一003",
+   "league": "瑞超",
+   "home": "哥德堡盖斯",
+   "away": "AIK索尔纳",
+   "kickoff": "2026-11-03 02:00:00",
+   "confidence": "★",
+   "is_single": false,
+   "prediction": {
+    "had_primary": "home",
+    "had_secondary": "draw",
+    "hc_line": -1,
+    "hc_primary": "lose",
+    "hc_secondary": "push",
+    "hc_primary_prob": 0.5365914619504775,
+    "hc_secondary_prob": 0.2341728647345218,
+    "cr_top5": [
+     "1-1",
+     "1-0",
+     "0-0",
+     "2-0",
+     "0-1"
+    ],
+    "hafu_top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "ttg_top2": [
+     2,
+     3
+    ],
+    "tier": "常规正常球(2-3球)",
+    "over_under": "小",
+    "ht_score_top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "model": {
+     "home": 0.4538773810922961,
+     "draw": 0.3060315013493909,
+     "away": 0.24009111755831306
+    },
+    "market": {
+     "home": 0.5223765133640197,
+     "draw": 0.23718717363555483,
+     "away": 0.24043631300042548,
+     "overround": 0.13948096824809153
+    }
+   },
+   "actual": {
+    "score": "2-1",
+    "ht_score": "1-0",
+    "htft": "胜胜",
+    "direction": "home",
+    "handicap": "push",
+    "goalLine": -1,
+    "total": 3,
+    "ttg": "3",
+    "result_raw": "2:1",
+    "sectionsNo1": "1:0"
+   },
+   "hits": {
+    "direction_primary": true,
+    "direction_secondary": false,
+    "direction_cover": true,
+    "handicap_primary": false,
+    "handicap_secondary": true,
+    "handicap_cover": true,
+    "score_top5": false,
+    "score_rank": null,
+    "ttg_top2": true,
+    "hafu_top3": true,
+    "ht_score_top3": true,
+    "tier": true,
+    "over_under": false
+   },
+   "status": "settled"
+  },
+  {
+   "num": "周一004",
+   "league": "意甲",
+   "home": "亚特兰大",
+   "away": "帕尔马",
+   "kickoff": "2026-11-03 03:45:00",
+   "confidence": "★",
+   "is_single": false,
+   "prediction": {
+    "had_primary": "home",
+    "had_secondary": "draw",
+    "hc_line": -1,
+    "hc_primary": "win",
+    "hc_secondary": "push",
+    "hc_primary_prob": 0.36416351435428285,
+    "hc_secondary_prob": 0.25566787008455283,
+    "cr_top5": [
+     "1-0",
+     "2-0",
+     "1-1",
+     "0-0",
+     "2-1"
+    ],
+    "hafu_top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "ttg_top2": [
+     2,
+     3
+    ],
+    "tier": "常规正常球(2-3球)",
+    "over_under": "小",
+    "ht_score_top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "model": {
+     "home": 0.6097882093352855,
+     "draw": 0.2569854895422485,
+     "away": 0.13322630112246595
+    },
+    "market": {
+     "home": 0.6646712220823974,
+     "draw": 0.197160901831183,
+     "away": 0.1381678760864196,
+     "overround": 0.13977517365998304
+    }
+   },
+   "actual": {
+    "score": "0-3",
+    "ht_score": "0-1",
+    "htft": "负负",
+    "direction": "away",
+    "handicap": "lose",
+    "goalLine": -1,
+    "total": 3,
+    "ttg": "3",
+    "result_raw": "0:3",
+    "sectionsNo1": "0:1"
+   },
+   "hits": {
+    "direction_primary": false,
+    "direction_secondary": false,
+    "direction_cover": false,
+    "handicap_primary": false,
+    "handicap_secondary": false,
+    "handicap_cover": false,
+    "score_top5": false,
+    "score_rank": null,
+    "ttg_top2": true,
+    "hafu_top3": false,
+    "ht_score_top3": true,
+    "tier": true,
+    "over_under": false
+   },
+   "status": "settled"
+  },
+  {
+   "num": "周一005",
+   "league": "法乙",
+   "home": "圣旺红星",
+   "away": "南锡",
+   "kickoff": "2026-11-03 03:45:00",
+   "confidence": "★",
+   "is_single": false,
+   "prediction": {
+    "had_primary": "home",
+    "had_secondary": "draw",
+    "hc_line": -1,
+    "hc_primary": "lose",
+    "hc_secondary": "push",
+    "hc_primary_prob": 0.6456744526724641,
+    "hc_secondary_prob": 0.20706367312350074,
+    "cr_top5": [
+     "1-1",
+     "0-0",
+     "1-0",
+     "0-1",
+     "1-2"
+    ],
+    "hafu_top3": [
+     "平平",
+     "胜胜",
+     "平胜"
+    ],
+    "ttg_top2": [
+     2,
+     1
+    ],
+    "tier": "常规正常球(2-3球)",
+    "over_under": "小",
+    "ht_score_top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "model": {
+     "home": 0.34611200740383774,
+     "draw": 0.33259844538836064,
+     "away": 0.3212895472078017
+    },
+    "market": {
+     "home": 0.39181724557625697,
+     "draw": 0.2831195580938115,
+     "away": 0.3250631963299317,
+     "overround": 0.1393795869602319
+    }
+   },
+   "actual": {
+    "score": "1-4",
+    "ht_score": "1-2",
+    "htft": "负负",
+    "direction": "away",
+    "handicap": "lose",
+    "goalLine": -1,
+    "total": 5,
+    "ttg": "5",
+    "result_raw": "1:4",
+    "sectionsNo1": "1:2"
+   },
+   "hits": {
+    "direction_primary": false,
+    "direction_secondary": false,
+    "direction_cover": false,
+    "handicap_primary": true,
+    "handicap_secondary": false,
+    "handicap_cover": true,
+    "score_top5": false,
+    "score_rank": null,
+    "ttg_top2": false,
+    "hafu_top3": false,
+    "ht_score_top3": false,
+    "tier": false,
+    "over_under": false
+   },
+   "status": "settled"
+  },
+  {
+   "num": "周一006",
+   "league": "英超",
+   "home": "纽卡斯尔联",
+   "away": "埃弗顿",
+   "kickoff": "2026-11-03 04:00:00",
+   "confidence": "★★",
+   "is_single": true,
+   "prediction": {
+    "had_primary": "home",
+    "had_secondary": "draw",
+    "hc_line": -1,
+    "hc_primary": "lose",
+    "hc_secondary": "push",
+    "hc_primary_prob": 0.5901383671391731,
+    "hc_secondary_prob": 0.21499913259846462,
+    "cr_top5": [
+     "1-1",
+     "1-0",
+     "2-1",
+     "0-1",
+     "1-2"
+    ],
+    "hafu_top3": [
+     "胜胜",
+     "平平",
+     "平胜"
+    ],
+    "ttg_top2": [
+     2,
+     3
+    ],
+    "tier": "常规正常球(2-3球)",
+    "over_under": "小",
+    "ht_score_top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "model": {
+     "home": 0.40148223646876274,
+     "draw": 0.3047319388716563,
+     "away": 0.2937858246595809
+    },
+    "market": {
+     "home": 0.4104006428653426,
+     "draw": 0.2702330386867179,
+     "away": 0.31936631844793933,
+     "overround": 0.13861839095483974
+    }
+   },
+   "actual": {
+    "score": "0-1",
+    "ht_score": "0-0",
+    "htft": "平负",
+    "direction": "away",
+    "handicap": "lose",
+    "goalLine": -1,
+    "total": 1,
+    "ttg": "1",
+    "result_raw": "0:1",
+    "sectionsNo1": "0:0"
+   },
+   "hits": {
+    "direction_primary": false,
+    "direction_secondary": false,
+    "direction_cover": false,
+    "handicap_primary": true,
+    "handicap_secondary": false,
+    "handicap_cover": true,
+    "score_top5": true,
+    "score_rank": 4,
+    "ttg_top2": false,
+    "hafu_top3": false,
+    "ht_score_top3": true,
+    "tier": false,
+    "over_under": true
+   },
+   "status": "settled"
+  },
+  {
+   "num": "周一007",
+   "league": "西甲",
+   "home": "拉科鲁尼亚",
+   "away": "奥萨苏纳",
+   "kickoff": "2026-11-03 04:00:00",
+   "confidence": "★★",
+   "is_single": false,
+   "prediction": {
+    "had_primary": "home",
+    "had_secondary": "draw",
+    "hc_line": -1,
+    "hc_primary": "lose",
+    "hc_secondary": "push",
+    "hc_primary_prob": 0.5326188889278818,
+    "hc_secondary_prob": 0.22386802390593288,
+    "cr_top5": [
+     "1-1",
+     "1-0",
+     "2-1",
+     "2-0",
+     "0-0"
+    ],
+    "hafu_top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "ttg_top2": [
+     2,
+     3
+    ],
+    "tier": "常规正常球(2-3球)",
+    "over_under": "小",
+    "ht_score_top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "model": {
+     "home": 0.45862468082633745,
+     "draw": 0.28619806142340043,
+     "away": 0.25517725775026207
+    },
+    "market": {
+     "home": 0.4392857142857143,
+     "draw": 0.29285714285714287,
+     "away": 0.26785714285714285,
+     "overround": 0.1382113821138211
+    }
+   },
+   "actual": {
+    "score": "2-1",
+    "ht_score": "0-1",
+    "htft": "负胜",
+    "direction": "home",
+    "handicap": "push",
+    "goalLine": -1,
+    "total": 3,
+    "ttg": "3",
+    "result_raw": "2:1",
+    "sectionsNo1": "0:1"
+   },
+   "hits": {
+    "direction_primary": true,
+    "direction_secondary": false,
+    "direction_cover": true,
+    "handicap_primary": false,
+    "handicap_secondary": true,
+    "handicap_cover": true,
+    "score_top5": true,
+    "score_rank": 3,
+    "ttg_top2": true,
+    "hafu_top3": false,
+    "ht_score_top3": true,
+    "tier": true,
+    "over_under": false
+   },
+   "status": "settled"
+  },
+  {
+   "num": "周一008",
+   "league": "葡超",
+   "home": "本菲卡",
+   "away": "阿尔维卡",
+   "kickoff": "2026-11-03 04:15:00",
+   "confidence": "★",
+   "is_single": false,
+   "prediction": {
+    "had_primary": "hhad_lose",
+    "had_secondary": "hhad_push",
+    "hc_line": -2,
+    "hc_primary": "lose",
+    "hc_secondary": "push",
+    "hc_primary_prob": 0.5086138443287752,
+    "hc_secondary_prob": 0.2074752137002204,
+    "cr_top5": [
+     "2-0",
+     "2-1",
+     "3-0",
+     "1-1",
+     "1-0"
+    ],
+    "hafu_top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "ttg_top2": [
+     3,
+     2
+    ],
+    "tier": "常规正常球(2-3球)",
+    "over_under": "大",
+    "ht_score_top3": [
+     "0-0",
+     "1-0",
+     "2-0"
+    ],
+    "model": {
+     "home": 0.7001754086681823,
+     "draw": 0.18847577111943278,
+     "away": 0.11134882021238494
+    },
+    "market": null
+   },
+   "actual": {
+    "score": "1-0",
+    "ht_score": "0-0",
+    "htft": "平胜",
+    "direction": "home",
+    "handicap": "lose",
+    "goalLine": -2,
+    "total": 1,
+    "ttg": "1",
+    "result_raw": "1:0",
+    "sectionsNo1": "0:0"
+   },
+   "hits": {
+    "direction_primary": null,
+    "direction_secondary": null,
+    "direction_cover": null,
+    "handicap_primary": true,
+    "handicap_secondary": false,
+    "handicap_cover": true,
+    "score_top5": true,
+    "score_rank": 5,
+    "ttg_top2": false,
+    "hafu_top3": true,
+    "ht_score_top3": true,
+    "tier": false,
+    "over_under": false
+   },
+   "status": "settled"
+  },
+  {
+   "num": "周一009",
+   "league": "巴甲",
+   "home": "布拉干蒂诺RB",
+   "away": "桑托斯",
+   "kickoff": "2026-11-03 07:00:00",
+   "confidence": "★",
+   "is_single": false,
+   "prediction": {
+    "had_primary": "home",
+    "had_secondary": "draw",
+    "hc_line": -1,
+    "hc_primary": "lose",
+    "hc_secondary": "win",
+    "hc_primary_prob": 0.49555558704729447,
+    "hc_secondary_prob": 0.2747030942522797,
+    "cr_top5": [
+     "1-1",
+     "1-0",
+     "2-1",
+     "2-0",
+     "0-1"
+    ],
+    "hafu_top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "ttg_top2": [
+     2,
+     3
+    ],
+    "tier": "常规正常球(2-3球)",
+    "over_under": "大",
+    "ht_score_top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "model": {
+     "home": 0.495418969781012,
+     "draw": 0.2767112927840075,
+     "away": 0.22786973743498046
+    },
+    "market": {
+     "home": 0.4627671055471617,
+     "draw": 0.26246492553421114,
+     "away": 0.27476796891862726,
+     "overround": 0.1373232521602512
+    }
+   },
+   "actual": {
+    "score": "2-1",
+    "ht_score": "2-1",
+    "htft": "胜胜",
+    "direction": "home",
+    "handicap": "win",
+    "goalLine": -1,
+    "total": 3,
+    "ttg": "3",
+    "result_raw": "2:1",
+    "sectionsNo1": "2:1"
+   },
+   "hits": {
+    "direction_primary": true,
+    "direction_secondary": false,
+    "direction_cover": true,
+    "handicap_primary": false,
+    "handicap_secondary": true,
+    "handicap_cover": true,
+    "score_top5": true,
+    "score_rank": 3,
+    "ttg_top2": true,
+    "hafu_top3": true,
+    "ht_score_top3": false,
+    "tier": true,
+    "over_under": true
+   },
+   "status": "settled"
+  }
+ ],
+ "parlays": [
+  {
+   "name": "方向串A（稳健）",
+   "type": "方向串",
+   "matches": [
+    "周一004 had home",
+    "周一009 had home",
+    "周一007 had home"
+   ],
+   "results": [
+    "0-3",
+    "2-1",
+    "2-1"
+   ],
+   "legs": [
+    {
+     "num": "周一004",
+     "market": "had",
+     "pick": "home",
+     "odds": 1.32,
+     "actual": "0-3",
+     "hit": false
+    },
+    {
+     "num": "周一009",
+     "market": "had",
+     "pick": "home",
+     "odds": 1.9,
+     "actual": "2-1",
+     "hit": true
+    },
+    {
+     "num": "周一007",
+     "market": "had",
+     "pick": "home",
+     "odds": 2,
+     "actual": "2-1",
+     "hit": true
+    }
+   ],
+   "odds_est": 5.02,
+   "odds": 5.02,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "方向串B（价值）",
+   "type": "方向串",
+   "matches": [
+    "周一003 had home",
+    "周一006 had home",
+    "周一009 had home"
+   ],
+   "results": [
+    "2-1",
+    "0-1",
+    "2-1"
+   ],
+   "legs": [
+    {
+     "num": "周一003",
+     "market": "had",
+     "pick": "home",
+     "odds": 1.68,
+     "actual": "2-1",
+     "hit": true
+    },
+    {
+     "num": "周一006",
+     "market": "had",
+     "pick": "home",
+     "odds": 2.14,
+     "actual": "0-1",
+     "hit": false
+    },
+    {
+     "num": "周一009",
+     "market": "had",
+     "pick": "home",
+     "odds": 1.9,
+     "actual": "2-1",
+     "hit": true
+    }
+   ],
+   "odds_est": 6.83,
+   "odds": 6.83,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "稳健让球串",
+   "type": "让球串",
+   "matches": [
+    "周一006 hhad lose",
+    "周一007 hhad lose",
+    "周一009 hhad lose"
+   ],
+   "results": [
+    "0-1",
+    "2-1",
+    "2-1"
+   ],
+   "legs": [
+    {
+     "num": "周一006",
+     "market": "hhad",
+     "pick": "lose",
+     "odds": 1.52,
+     "actual": "0-1",
+     "hit": true
+    },
+    {
+     "num": "周一007",
+     "market": "hhad",
+     "pick": "lose",
+     "odds": 1.61,
+     "actual": "2-1",
+     "hit": false
+    },
+    {
+     "num": "周一009",
+     "market": "hhad",
+     "pick": "lose",
+     "odds": 1.65,
+     "actual": "2-1",
+     "hit": false
+    }
+   ],
+   "odds_est": 4.04,
+   "odds": 4.04,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "价值让球串",
+   "type": "让球串",
+   "matches": [
+    "周一002 hhad win",
+    "周一005 hhad lose",
+    "周一008 hhad lose"
+   ],
+   "results": [
+    "2-4",
+    "1-4",
+    "1-0"
+   ],
+   "legs": [
+    {
+     "num": "周一002",
+     "market": "hhad",
+     "pick": "win",
+     "odds": 1.47,
+     "actual": "2-4",
+     "hit": false
+    },
+    {
+     "num": "周一005",
+     "market": "hhad",
+     "pick": "lose",
+     "odds": 1.47,
+     "actual": "1-4",
+     "hit": true
+    },
+    {
+     "num": "周一008",
+     "market": "hhad",
+     "pick": "lose",
+     "odds": 2.5,
+     "actual": "1-0",
+     "hit": true
+    }
+   ],
+   "odds_est": 5.4,
+   "odds": 5.4,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "半全场串A",
+   "type": "混合串",
+   "matches": [
+    "周一003 hafu 胜胜",
+    "周一009 hafu 胜胜"
+   ],
+   "results": [
+    "2-1",
+    "2-1"
+   ],
+   "legs": [
+    {
+     "num": "周一003",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 2.55,
+     "actual": "2-1",
+     "hit": true
+    },
+    {
+     "num": "周一009",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 3,
+     "actual": "2-1",
+     "hit": true
+    }
+   ],
+   "odds_est": 7.65,
+   "odds": 7.65,
+   "stake": 1,
+   "hit": "✅",
+   "status": "win",
+   "return": 7.65
+  },
+  {
+   "name": "半全场串B",
+   "type": "混合串",
+   "matches": [
+    "周一002 hafu 胜胜",
+    "周一006 hafu 胜胜"
+   ],
+   "results": [
+    "2-4",
+    "0-1"
+   ],
+   "legs": [
+    {
+     "num": "周一002",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 4.1,
+     "actual": "2-4",
+     "hit": false
+    },
+    {
+     "num": "周一006",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 3.45,
+     "actual": "0-1",
+     "hit": false
+    }
+   ],
+   "odds_est": 14.14,
+   "odds": 14.14,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "方向+半全场A",
+   "type": "混合串",
+   "matches": [
+    "周一004 had home",
+    "周一009 hafu 胜胜"
+   ],
+   "results": [
+    "0-3",
+    "2-1"
+   ],
+   "legs": [
+    {
+     "num": "周一004",
+     "market": "had",
+     "pick": "home",
+     "odds": 1.32,
+     "actual": "0-3",
+     "hit": false
+    },
+    {
+     "num": "周一009",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 3,
+     "actual": "2-1",
+     "hit": true
+    }
+   ],
+   "odds_est": 3.96,
+   "odds": 3.96,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "方向+半全场B",
+   "type": "混合串",
+   "matches": [
+    "周一006 had home",
+    "周一007 hafu 胜胜"
+   ],
+   "results": [
+    "0-1",
+    "2-1"
+   ],
+   "legs": [
+    {
+     "num": "周一006",
+     "market": "had",
+     "pick": "home",
+     "odds": 2.14,
+     "actual": "0-1",
+     "hit": false
+    },
+    {
+     "num": "周一007",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 3.5,
+     "actual": "2-1",
+     "hit": false
+    }
+   ],
+   "odds_est": 7.49,
+   "odds": 7.49,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "连续编号混合串A",
+   "type": "混合串",
+   "matches": [
+    "周一005 hafu 平平",
+    "周一006 hafu 平平"
+   ],
+   "results": [
+    "1-4",
+    "0-1"
+   ],
+   "legs": [
+    {
+     "num": "周一005",
+     "market": "hafu",
+     "pick": "平平",
+     "odds": 4.7,
+     "actual": "1-4",
+     "hit": false
+    },
+    {
+     "num": "周一006",
+     "market": "hafu",
+     "pick": "平平",
+     "odds": 5.7,
+     "actual": "0-1",
+     "hit": false
+    }
+   ],
+   "odds_est": 26.79,
+   "odds": 26.79,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "连续编号混合串B",
+   "type": "混合串",
+   "matches": [
+    "周一007 hafu 胜胜",
+    "周一008 hafu 胜胜"
+   ],
+   "results": [
+    "2-1",
+    "1-0"
+   ],
+   "legs": [
+    {
+     "num": "周一007",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 3.5,
+     "actual": "2-1",
+     "hit": false
+    },
+    {
+     "num": "周一008",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 1.36,
+     "actual": "1-0",
+     "hit": false
+    }
+   ],
+   "odds_est": 4.76,
+   "odds": 4.76,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "总进球串A",
+   "type": "高赔总进球串",
+   "matches": [
+    "周一002 ttg 3",
+    "周一008 ttg 3",
+    "周一009 ttg 2"
+   ],
+   "results": [
+    "2-4",
+    "1-0",
+    "2-1"
+   ],
+   "legs": [
+    {
+     "num": "周一002",
+     "market": "ttg",
+     "pick": 3,
+     "odds": 3.45,
+     "actual": "2-4",
+     "hit": false
+    },
+    {
+     "num": "周一008",
+     "market": "ttg",
+     "pick": 3,
+     "odds": 3.7,
+     "actual": "1-0",
+     "hit": false
+    },
+    {
+     "num": "周一009",
+     "market": "ttg",
+     "pick": 2,
+     "odds": 3.85,
+     "actual": "2-1",
+     "hit": false
+    }
+   ],
+   "odds_est": 49.15,
+   "odds": 49.15,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "总进球串B",
+   "type": "高赔总进球串",
+   "matches": [
+    "周一001 ttg 2",
+    "周一005 ttg 2",
+    "周一007 ttg 2"
+   ],
+   "results": [
+    "4-3",
+    "1-4",
+    "2-1"
+   ],
+   "legs": [
+    {
+     "num": "周一001",
+     "market": "ttg",
+     "pick": 2,
+     "odds": 4.2,
+     "actual": "4-3",
+     "hit": false
+    },
+    {
+     "num": "周一005",
+     "market": "ttg",
+     "pick": 2,
+     "odds": 3.1,
+     "actual": "1-4",
+     "hit": false
+    },
+    {
+     "num": "周一007",
+     "market": "ttg",
+     "pick": 2,
+     "odds": 3.1,
+     "actual": "2-1",
+     "hit": false
+    }
+   ],
+   "odds_est": 40.36,
+   "odds": 40.36,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "连续编号总进球串①",
+   "type": "高赔总进球串",
+   "matches": [
+    "周一005 ttg 2",
+    "周一006 ttg 2"
+   ],
+   "results": [
+    "1-4",
+    "0-1"
+   ],
+   "legs": [
+    {
+     "num": "周一005",
+     "market": "ttg",
+     "pick": 2,
+     "odds": 3.1,
+     "actual": "1-4",
+     "hit": false
+    },
+    {
+     "num": "周一006",
+     "market": "ttg",
+     "pick": 2,
+     "odds": 3.7,
+     "actual": "0-1",
+     "hit": false
+    }
+   ],
+   "odds_est": 11.47,
+   "odds": 11.47,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "连续编号总进球串②",
+   "type": "高赔总进球串",
+   "matches": [
+    "周一007 ttg 2",
+    "周一008 ttg 3"
+   ],
+   "results": [
+    "2-1",
+    "1-0"
+   ],
+   "legs": [
+    {
+     "num": "周一007",
+     "market": "ttg",
+     "pick": 2,
+     "odds": 3.1,
+     "actual": "2-1",
+     "hit": false
+    },
+    {
+     "num": "周一008",
+     "market": "ttg",
+     "pick": 3,
+     "odds": 3.7,
+     "actual": "1-0",
+     "hit": false
+    }
+   ],
+   "odds_est": 11.47,
+   "odds": 11.47,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "高赔半全场串A",
+   "type": "高赔半全场串",
+   "matches": [
+    "周一003 hafu 胜胜",
+    "周一009 hafu 胜胜"
+   ],
+   "results": [
+    "2-1",
+    "2-1"
+   ],
+   "legs": [
+    {
+     "num": "周一003",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 2.55,
+     "actual": "2-1",
+     "hit": true
+    },
+    {
+     "num": "周一009",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 3,
+     "actual": "2-1",
+     "hit": true
+    }
+   ],
+   "odds_est": 7.65,
+   "odds": 7.65,
+   "stake": 1,
+   "hit": "✅",
+   "status": "win",
+   "return": 7.65
+  },
+  {
+   "name": "高赔半全场串B",
+   "type": "高赔半全场串",
+   "matches": [
+    "周一002 hafu 胜胜",
+    "周一006 hafu 胜胜"
+   ],
+   "results": [
+    "2-4",
+    "0-1"
+   ],
+   "legs": [
+    {
+     "num": "周一002",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 4.1,
+     "actual": "2-4",
+     "hit": false
+    },
+    {
+     "num": "周一006",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 3.45,
+     "actual": "0-1",
+     "hit": false
+    }
+   ],
+   "odds_est": 14.14,
+   "odds": 14.14,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "连续编号高赔半全场串①",
+   "type": "高赔半全场串",
+   "matches": [
+    "周一001 hafu 胜胜",
+    "周一002 hafu 胜胜"
+   ],
+   "results": [
+    "4-3",
+    "2-4"
+   ],
+   "legs": [
+    {
+     "num": "周一001",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 1.86,
+     "actual": "4-3",
+     "hit": false
+    },
+    {
+     "num": "周一002",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 4.1,
+     "actual": "2-4",
+     "hit": false
+    }
+   ],
+   "odds_est": 7.63,
+   "odds": 7.63,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "连续编号高赔半全场串②",
+   "type": "高赔半全场串",
+   "matches": [
+    "周一007 hafu 胜胜",
+    "周一008 hafu 胜胜"
+   ],
+   "results": [
+    "2-1",
+    "1-0"
+   ],
+   "legs": [
+    {
+     "num": "周一007",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 3.5,
+     "actual": "2-1",
+     "hit": false
+    },
+    {
+     "num": "周一008",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 1.36,
+     "actual": "1-0",
+     "hit": false
+    }
+   ],
+   "odds_est": 4.76,
+   "odds": 4.76,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "混合串A",
+   "type": "半全场混合总进球串",
+   "matches": [
+    "周一004 hafu 胜胜",
+    "周一002 ttg 3"
+   ],
+   "results": [
+    "0-3",
+    "2-4"
+   ],
+   "legs": [
+    {
+     "num": "周一004",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 1.9,
+     "actual": "0-3",
+     "hit": false
+    },
+    {
+     "num": "周一002",
+     "market": "ttg",
+     "pick": 3,
+     "odds": 3.45,
+     "actual": "2-4",
+     "hit": false
+    }
+   ],
+   "odds_est": 6.55,
+   "odds": 6.55,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "混合串B",
+   "type": "半全场混合总进球串",
+   "matches": [
+    "周一009 hafu 胜胜",
+    "周一008 ttg 3"
+   ],
+   "results": [
+    "2-1",
+    "1-0"
+   ],
+   "legs": [
+    {
+     "num": "周一009",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 3,
+     "actual": "2-1",
+     "hit": true
+    },
+    {
+     "num": "周一008",
+     "market": "ttg",
+     "pick": 3,
+     "odds": 3.7,
+     "actual": "1-0",
+     "hit": false
+    }
+   ],
+   "odds_est": 11.1,
+   "odds": 11.1,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "连续编号混合总进球串①",
+   "type": "半全场混合总进球串",
+   "matches": [
+    "周一005 hafu 平平",
+    "周一006 ttg 2"
+   ],
+   "results": [
+    "1-4",
+    "0-1"
+   ],
+   "legs": [
+    {
+     "num": "周一005",
+     "market": "hafu",
+     "pick": "平平",
+     "odds": 4.7,
+     "actual": "1-4",
+     "hit": false
+    },
+    {
+     "num": "周一006",
+     "market": "ttg",
+     "pick": 2,
+     "odds": 3.7,
+     "actual": "0-1",
+     "hit": false
+    }
+   ],
+   "odds_est": 17.39,
+   "odds": 17.39,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "连续编号混合总进球串②",
+   "type": "半全场混合总进球串",
+   "matches": [
+    "周一007 hafu 胜胜",
+    "周一008 ttg 3"
+   ],
+   "results": [
+    "2-1",
+    "1-0"
+   ],
+   "legs": [
+    {
+     "num": "周一007",
+     "market": "hafu",
+     "pick": "胜胜",
+     "odds": 3.5,
+     "actual": "2-1",
+     "hit": false
+    },
+    {
+     "num": "周一008",
+     "market": "ttg",
+     "pick": 3,
+     "odds": 3.7,
+     "actual": "1-0",
+     "hit": false
+    }
+   ],
+   "odds_est": 12.95,
+   "odds": 12.95,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "稳健比分串",
+   "type": "比分串",
+   "matches": [
+    "周一006 crs 1-1",
+    "周一009 crs 1-1"
+   ],
+   "results": [
+    "0-1",
+    "2-1"
+   ],
+   "legs": [
+    {
+     "num": "周一006",
+     "market": "crs",
+     "pick": "1-1",
+     "odds": 6.5,
+     "actual": "0-1",
+     "hit": false
+    },
+    {
+     "num": "周一009",
+     "market": "crs",
+     "pick": "1-1",
+     "odds": 7,
+     "actual": "2-1",
+     "hit": false
+    }
+   ],
+   "odds_est": 45.5,
+   "odds": 45.5,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "搏冷比分串（单注001）",
+   "type": "比分串",
+   "matches": [
+    "周一001 crs 0-1"
+   ],
+   "results": [
+    "4-3"
+   ],
+   "legs": [
+    {
+     "num": "周一001",
+     "market": "crs",
+     "pick": "0-1",
+     "odds": 21,
+     "actual": "4-3",
+     "hit": false
+    }
+   ],
+   "odds_est": 21.0,
+   "odds": 21.0,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "搏冷比分串（单注004）",
+   "type": "比分串",
+   "matches": [
+    "周一004 crs 1-1"
+   ],
+   "results": [
+    "0-3"
+   ],
+   "legs": [
+    {
+     "num": "周一004",
+     "market": "crs",
+     "pick": "1-1",
+     "odds": 7.75,
+     "actual": "0-3",
+     "hit": false
+    }
+   ],
+   "odds_est": 7.75,
+   "odds": 7.75,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "连续编号比分串①",
+   "type": "比分串",
+   "matches": [
+    "周一005 crs 1-1",
+    "周一006 crs 1-0"
+   ],
+   "results": [
+    "1-4",
+    "0-1"
+   ],
+   "legs": [
+    {
+     "num": "周一005",
+     "market": "crs",
+     "pick": "1-1",
+     "odds": 6,
+     "actual": "1-4",
+     "hit": false
+    },
+    {
+     "num": "周一006",
+     "market": "crs",
+     "pick": "1-0",
+     "odds": 9.5,
+     "actual": "0-1",
+     "hit": false
+    }
+   ],
+   "odds_est": 57.0,
+   "odds": 57.0,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "连续编号比分串②",
+   "type": "比分串",
+   "matches": [
+    "周一007 crs 1-1",
+    "周一008 crs 2-0"
+   ],
+   "results": [
+    "2-1",
+    "1-0"
+   ],
+   "legs": [
+    {
+     "num": "周一007",
+     "market": "crs",
+     "pick": "1-1",
+     "odds": 5.8,
+     "actual": "2-1",
+     "hit": false
+    },
+    {
+     "num": "周一008",
+     "market": "crs",
+     "pick": "2-0",
+     "odds": 6.7,
+     "actual": "1-0",
+     "hit": false
+    }
+   ],
+   "odds_est": 38.86,
+   "odds": 38.86,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "单挑比分①",
+   "type": "比分串",
+   "matches": [
+    "周一006 crs 1-1"
+   ],
+   "results": [
+    "0-1"
+   ],
+   "legs": [
+    {
+     "num": "周一006",
+     "market": "crs",
+     "pick": "1-1",
+     "odds": 6.5,
+     "actual": "0-1",
+     "hit": false
+    }
+   ],
+   "odds_est": 6.5,
+   "odds": 6.5,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  },
+  {
+   "name": "单挑比分②",
+   "type": "比分串",
+   "matches": [
+    "周一009 crs 1-1"
+   ],
+   "results": [
+    "2-1"
+   ],
+   "legs": [
+    {
+     "num": "周一009",
+     "market": "crs",
+     "pick": "1-1",
+     "odds": 7,
+     "actual": "2-1",
+     "hit": false
+    }
+   ],
+   "odds_est": 7.0,
+   "odds": 7.0,
+   "stake": 1,
+   "hit": "❌",
+   "status": "lose",
+   "return": 0
+  }
+ ]
+}

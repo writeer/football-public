@@ -1,0 +1,1705 @@
+{
+  "ticket_id": "20260818_周二",
+  "date": "2026-08-18 16:50",
+  "summary": {
+    "total_matches": 4,
+    "high_confidence": [
+      "周二004"
+    ],
+    "medium_confidence": [],
+    "low_confidence": [
+      "周二001"
+    ],
+    "direction_distribution": {},
+    "divergence_alerts": []
+  },
+  "matches": [
+    {
+      "analysis": {
+        "match_info": {
+          "match_id": "周二001",
+          "league": "解放者杯",
+          "home_team": "里瓦达维亚独立",
+          "away_team": "弗鲁米嫩塞",
+          "odds": {
+            "home": 2.36,
+            "draw": 2.65,
+            "away": 3.05
+          },
+          "home_value": 3933,
+          "away_value": 11300
+        },
+        "league_diagnosis": {
+          "league": "解放者杯",
+          "vmr": 1.12,
+          "vmr_conclusion": "轻微过离散，DC模型优先",
+          "primary_model": "DC",
+          "avg_goals": 2.5,
+          "estimated_00_rate": 0.10671049821106843,
+          "zip_conclusion": "推荐启用ZIP",
+          "use_zip": true,
+          "home_advantage": 1.35,
+          "defensive": false,
+          "over_dispersed": false
+        },
+        "lambda": {
+          "home_raw": 2.4635826,
+          "away_raw": 1.3208800000000003,
+          "home_final": 2.6606692080000003,
+          "away_final": 1.2838953600000005
+        },
+        "ratings": {
+          "elo": {
+            "home": 1930.5,
+            "away": 1930.1000000000001
+          },
+          "pi": {
+            "home": {
+              "attack": 1.1199999999999999,
+              "defense": 0.8800000000000001
+            },
+            "away": {
+              "attack": 1.184,
+              "defense": 0.976
+            }
+          }
+        },
+        "model_outcomes": {
+          "dc": {
+            "home": 0.6565878359612267,
+            "draw": 0.18701707729746353,
+            "away": 0.15639508674130975
+          },
+          "nb": {
+            "home": 0.6032526426946886,
+            "draw": 0.18027968469329136,
+            "away": 0.21646767261202005
+          },
+          "zip": {
+            "home": 0.6443402238123516,
+            "draw": 0.17220868710599782,
+            "away": 0.18345108908165061
+          },
+          "skellam": {
+            "home": 0.6672375696269495,
+            "draw": 0.16867292756649085,
+            "away": 0.16408950280655968
+          },
+          "elo": {
+            "home": 0.5005756460189137,
+            "draw": 0.2597006640701649,
+            "away": 0.2397236899109214
+          },
+          "monte_carlo": {
+            "home": 0.6164,
+            "draw": 0.1762,
+            "away": 0.2074
+          },
+          "shin": {
+            "home": 0.37532796210731617,
+            "draw": 0.33425433606538346,
+            "away": 0.2904177018273004,
+            "z": 0.07
+          }
+        },
+        "odds_calibration": {
+          "raw": {
+            "home": 0.42372881355932207,
+            "draw": 0.37735849056603776,
+            "away": 0.3278688524590164
+          },
+          "normalize": {
+            "home": 0.37532796210731617,
+            "draw": 0.33425433606538346,
+            "away": 0.2904177018273004
+          },
+          "shin": {
+            "home": 0.37532796210731617,
+            "draw": 0.33425433606538346,
+            "away": 0.2904177018273004,
+            "z": 0.07
+          },
+          "power": {
+            "home": 0.3583982773029486,
+            "draw": 0.334322488600686,
+            "away": 0.30727923409636543
+          },
+          "overround": 1.1289561565843762,
+          "margin": 12.89561565843762
+        },
+        "final_probabilities": {
+          "home": 0.5353922458289535,
+          "draw": 0.23631369608928632,
+          "away": 0.2282940580817602
+        },
+        "final_scores": [
+          [
+            [
+              2,
+              1
+            ],
+            0.07917590011215468
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            0.07119846214297945
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            0.0672745078151726
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            0.06683957960089135
+          ],
+          [
+            [
+              3,
+              0
+            ],
+            0.05706274261621532
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            0.055200575971498876
+          ],
+          [
+            [
+              2,
+              2
+            ],
+            0.05030538590014791
+          ],
+          [
+            [
+              1,
+              2
+            ],
+            0.037171791079290986
+          ],
+          [
+            [
+              4,
+              1
+            ],
+            0.03436143488536738
+          ],
+          [
+            [
+              3,
+              2
+            ],
+            0.026980533260988006
+          ]
+        ],
+        "goal_distribution": {
+          "0": 0.0419,
+          "1": 0.1113,
+          "2": 0.1585,
+          "3": 0.1733,
+          "4": 0.1534,
+          "5": 0.1294,
+          "6": 0.0892,
+          "7": 0.0574,
+          "7+": 0.143
+        },
+        "over_under": {
+          "over_25": 0.6883,
+          "under_25": 0.3117
+        },
+        "htft": [
+          {
+            "htft": "主-主",
+            "code": "H/H",
+            "probability": 0.3977246618259455
+          },
+          {
+            "htft": "平-主",
+            "code": "D/H",
+            "probability": 0.19786748181212424
+          },
+          {
+            "htft": "平-平",
+            "code": "D/D",
+            "probability": 0.09071841055521601
+          },
+          {
+            "htft": "客-客",
+            "code": "A/A",
+            "probability": 0.08093035627554036
+          },
+          {
+            "htft": "平-客",
+            "code": "D/A",
+            "probability": 0.06364514979857949
+          }
+        ],
+        "confidence": {
+          "score": 0,
+          "level": "low",
+          "stars": "★",
+          "details": {
+            "model_consistency": "高度一致",
+            "odds_alignment": "对齐度一般",
+            "data_quality": "数据稳定",
+            "sample_size": "样本不足",
+            "external": "待高山验证"
+          },
+          "gaoshan": {
+            "confidence_adjustment": 0,
+            "reason": "解放者杯样本不足(<20场)，高山验证跳过",
+            "league_accuracy": 0.4667931688804554
+          }
+        },
+        "divergence": {
+          "home": 0.16006428372163733,
+          "draw": -0.09794063997609714,
+          "away": -0.06212364374554022
+        },
+        "ev": {
+          "home": -0.11422600942673389,
+          "draw": -0.11422600942673389,
+          "away": -0.11422600942673378
+        },
+        "injuries": [
+          {
+            "team": "home",
+            "player": "马加尼奥",
+            "position": "goalkeeper",
+            "importance": "key"
+          },
+          {
+            "team": "away",
+            "player": "约翰·肯尼迪",
+            "position": "forward",
+            "importance": "key"
+          },
+          {
+            "team": "away",
+            "player": "马修斯·雷斯",
+            "position": "defender",
+            "importance": "key"
+          }
+        ],
+        "notes": "解放者杯1/8决赛次回合",
+        "h2h_psychology": {
+          "lambda_home_adj": 1.0,
+          "lambda_away_adj": 1.0,
+          "outcome_bias": {
+            "home": 0.333,
+            "draw": 0.333,
+            "away": 0.333
+          },
+          "psychology_notes": [
+            "交锋样本不足，跳过心理权重"
+          ],
+          "strength": 0.0,
+          "raw_signals": {}
+        }
+      },
+      "recommendation": {
+        "direction": "主胜",
+        "direction_prob": 0.5353922458289535,
+        "confidence": {
+          "score": 0,
+          "level": "low",
+          "stars": "★",
+          "details": {
+            "model_consistency": "高度一致",
+            "odds_alignment": "对齐度一般",
+            "data_quality": "数据稳定",
+            "sample_size": "样本不足",
+            "external": "待高山验证"
+          },
+          "gaoshan": {
+            "confidence_adjustment": 0,
+            "reason": "解放者杯样本不足(<20场)，高山验证跳过",
+            "league_accuracy": 0.4667931688804554
+          }
+        },
+        "scores": {
+          "primary": "2-1",
+          "alt1": "1-1",
+          "alt2": "2-0"
+        },
+        "total_goals": "大2.5",
+        "htft": "主-主",
+        "positive_ev": false,
+        "ev_details": {
+          "home": -0.11422600942673389,
+          "draw": -0.11422600942673389,
+          "away": -0.11422600942673378
+        }
+      }
+    },
+    {
+      "analysis": {
+        "match_info": {
+          "match_id": "周二002",
+          "league": "欧冠资格赛",
+          "home_team": "索菲亚列夫斯基",
+          "away_team": "雅典AEK",
+          "odds": {
+            "home": 3.0,
+            "draw": 2.95,
+            "away": 2.19
+          },
+          "home_value": 3963,
+          "away_value": 8550
+        },
+        "league_diagnosis": {
+          "league": "欧冠资格赛",
+          "vmr": 1.12,
+          "vmr_conclusion": "轻微过离散，DC模型优先",
+          "primary_model": "DC",
+          "avg_goals": 2.5,
+          "estimated_00_rate": 0.10671049821106843,
+          "zip_conclusion": "推荐启用ZIP",
+          "use_zip": true,
+          "home_advantage": 1.35,
+          "defensive": false,
+          "over_dispersed": false
+        },
+        "lambda": {
+          "home_raw": 2.312388,
+          "away_raw": 0.594,
+          "home_final": 2.1389589,
+          "away_final": 0.54945
+        },
+        "ratings": {
+          "elo": {
+            "home": 1959.3,
+            "away": 1937.5
+          },
+          "pi": {
+            "home": {
+              "attack": 1.3359999999999999,
+              "defense": 0.4
+            },
+            "away": {
+              "attack": 1.2,
+              "defense": 0.8
+            }
+          }
+        },
+        "model_outcomes": {
+          "dc": {
+            "home": 0.7326541944569444,
+            "draw": 0.19577284442508608,
+            "away": 0.07157296111796957
+          },
+          "nb": {
+            "home": 0.6919965479852925,
+            "draw": 0.20290077510221918,
+            "away": 0.10510267691248829
+          },
+          "zip": {
+            "home": 0.7124476560044918,
+            "draw": 0.19346192171631835,
+            "away": 0.09409042227918987
+          },
+          "skellam": {
+            "home": 0.7434866236057837,
+            "draw": 0.17467188370580244,
+            "away": 0.0818414926884139
+          },
+          "elo": {
+            "home": 0.531331615253807,
+            "draw": 0.24370756006802036,
+            "away": 0.22496082467817263
+          },
+          "monte_carlo": {
+            "home": 0.6958,
+            "draw": 0.1987,
+            "away": 0.1055
+          },
+          "shin": {
+            "home": 0.2952629053266607,
+            "draw": 0.3002673613491465,
+            "away": 0.40446973332419284,
+            "z": 0.07
+          }
+        },
+        "odds_calibration": {
+          "raw": {
+            "home": 0.3333333333333333,
+            "draw": 0.3389830508474576,
+            "away": 0.4566210045662101
+          },
+          "normalize": {
+            "home": 0.2952629053266607,
+            "draw": 0.3002673613491465,
+            "away": 0.40446973332419284
+          },
+          "shin": {
+            "home": 0.2952629053266607,
+            "draw": 0.3002673613491465,
+            "away": 0.40446973332419284,
+            "z": 0.07
+          },
+          "power": {
+            "home": 0.310755245250826,
+            "draw": 0.31390483934482005,
+            "away": 0.375339915404354
+          },
+          "overround": 1.128937388747001,
+          "margin": 12.89373887470009
+        },
+        "final_probabilities": {
+          "home": 0.5704941988840008,
+          "draw": 0.2367339363580489,
+          "away": 0.19277186475795027
+        },
+        "final_scores": [
+          [
+            [
+              2,
+              0
+            ],
+            0.14495009556959165
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            0.14142495222071244
+          ],
+          [
+            [
+              3,
+              0
+            ],
+            0.10236460525521071
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            0.0910820430717409
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            0.08225101261940422
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            0.07749907510905477
+          ],
+          [
+            [
+              4,
+              0
+            ],
+            0.05729645950450174
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            0.05514014492558521
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            0.04257731925825545
+          ],
+          [
+            [
+              4,
+              1
+            ],
+            0.021986813650873613
+          ]
+        ],
+        "goal_distribution": {
+          "0": 0.0988,
+          "1": 0.1974,
+          "2": 0.2256,
+          "3": 0.1875,
+          "4": 0.1306,
+          "5": 0.0775,
+          "6": 0.0428,
+          "7": 0.021,
+          "7+": 0.0398
+        },
+        "over_under": {
+          "over_25": 0.47819999999999996,
+          "under_25": 0.5218
+        },
+        "htft": [
+          {
+            "htft": "主-主",
+            "code": "H/H",
+            "probability": 0.459007199635314
+          },
+          {
+            "htft": "平-主",
+            "code": "D/H",
+            "probability": 0.24742678023451206
+          },
+          {
+            "htft": "平-平",
+            "code": "D/D",
+            "probability": 0.12422501940255863
+          },
+          {
+            "htft": "平-客",
+            "code": "D/A",
+            "probability": 0.038942054367257256
+          },
+          {
+            "htft": "客-客",
+            "code": "A/A",
+            "probability": 0.03646777332459929
+          }
+        ],
+        "confidence": {
+          "score": -1,
+          "level": "very_low",
+          "stars": "☆",
+          "details": {
+            "model_consistency": "中度一致",
+            "odds_alignment": "显著偏离",
+            "data_quality": "数据稳定",
+            "sample_size": "样本不足",
+            "external": "待高山验证"
+          },
+          "gaoshan": {
+            "confidence_adjustment": 0,
+            "reason": "欧冠资格赛样本不足(<20场)，高山验证跳过",
+            "league_accuracy": 0.4667931688804554
+          }
+        },
+        "divergence": {
+          "home": 0.27523129355734005,
+          "draw": -0.0635334249910976,
+          "away": -0.21169786856624256
+        },
+        "ev": {
+          "home": -0.11421128402001779,
+          "draw": -0.11421128402001779,
+          "away": -0.11421128402001768
+        },
+        "injuries": [
+          {
+            "team": "home",
+            "player": "布拉斯",
+            "position": "midfield",
+            "importance": "starter"
+          },
+          {
+            "team": "away",
+            "player": "加钦诺维奇",
+            "position": "midfield",
+            "importance": "key"
+          }
+        ],
+        "notes": "欧冠资格赛附加赛首回合",
+        "h2h_psychology": {
+          "lambda_home_adj": 1.0,
+          "lambda_away_adj": 1.0,
+          "outcome_bias": {
+            "home": 0.333,
+            "draw": 0.333,
+            "away": 0.333
+          },
+          "psychology_notes": [
+            "交锋样本不足，跳过心理权重"
+          ],
+          "strength": 0.0,
+          "raw_signals": {}
+        }
+      },
+      "recommendation": {
+        "direction": "主胜",
+        "direction_prob": 0.5704941988840008,
+        "confidence": {
+          "score": -1,
+          "level": "very_low",
+          "stars": "☆",
+          "details": {
+            "model_consistency": "中度一致",
+            "odds_alignment": "显著偏离",
+            "data_quality": "数据稳定",
+            "sample_size": "样本不足",
+            "external": "待高山验证"
+          },
+          "gaoshan": {
+            "confidence_adjustment": 0,
+            "reason": "欧冠资格赛样本不足(<20场)，高山验证跳过",
+            "league_accuracy": 0.4667931688804554
+          }
+        },
+        "scores": {
+          "primary": "2-0",
+          "alt1": "1-0",
+          "alt2": "3-0"
+        },
+        "total_goals": "2-3球",
+        "htft": "主-主",
+        "positive_ev": false,
+        "ev_details": {
+          "home": -0.11421128402001779,
+          "draw": -0.11421128402001779,
+          "away": -0.11421128402001768
+        }
+      }
+    },
+    {
+      "analysis": {
+        "match_info": {
+          "match_id": "周二003",
+          "league": "欧冠资格赛",
+          "home_team": "萨格勒布迪纳摩",
+          "away_team": "维京",
+          "odds": {
+            "home": 1.58,
+            "draw": 3.75,
+            "away": 4.35
+          },
+          "home_value": 6650,
+          "away_value": 4900
+        },
+        "league_diagnosis": {
+          "league": "欧冠资格赛",
+          "vmr": 1.12,
+          "vmr_conclusion": "轻微过离散，DC模型优先",
+          "primary_model": "DC",
+          "avg_goals": 2.5,
+          "estimated_00_rate": 0.10671049821106843,
+          "zip_conclusion": "推荐启用ZIP",
+          "use_zip": true,
+          "home_advantage": 1.35,
+          "defensive": false,
+          "over_dispersed": false
+        },
+        "lambda": {
+          "home_raw": 3.583764,
+          "away_raw": 0.8740000000000001,
+          "home_final": 3.87046512,
+          "away_final": 0.8495280000000002
+        },
+        "ratings": {
+          "elo": {
+            "home": 1992.5,
+            "away": 1971.5
+          },
+          "pi": {
+            "home": {
+              "attack": 2.0,
+              "defense": 0.4
+            },
+            "away": {
+              "attack": 1.8800000000000001,
+              "defense": 0.8
+            }
+          }
+        },
+        "model_outcomes": {
+          "dc": {
+            "home": 0.8776308893297289,
+            "draw": 0.0845228025984711,
+            "away": 0.03784630807180002
+          },
+          "nb": {
+            "home": 0.7505283969905575,
+            "draw": 0.14102644259749383,
+            "away": 0.10844516041194865
+          },
+          "zip": {
+            "home": 0.8401990154633849,
+            "draw": 0.09376582285876282,
+            "away": 0.06603516167785224
+          },
+          "skellam": {
+            "home": 0.8867978316945452,
+            "draw": 0.07319951751746229,
+            "away": 0.04000265078799253
+          },
+          "elo": {
+            "home": 0.5301846800039021,
+            "draw": 0.24430396639797095,
+            "away": 0.225511353598127
+          },
+          "monte_carlo": {
+            "home": 0.78,
+            "draw": 0.1241,
+            "away": 0.0959
+          },
+          "shin": {
+            "home": 0.5603648168186737,
+            "draw": 0.23610037615293453,
+            "away": 0.20353480702839186,
+            "z": 0.07
+          }
+        },
+        "odds_calibration": {
+          "raw": {
+            "home": 0.6329113924050632,
+            "draw": 0.26666666666666666,
+            "away": 0.2298850574712644
+          },
+          "normalize": {
+            "home": 0.5603648168186737,
+            "draw": 0.23610037615293453,
+            "away": 0.20353480702839186
+          },
+          "shin": {
+            "home": 0.5603648168186737,
+            "draw": 0.23610037615293453,
+            "away": 0.20353480702839186,
+            "z": 0.07
+          },
+          "power": {
+            "home": 0.46729338490256034,
+            "draw": 0.2782051240331833,
+            "away": 0.2545014910642563
+          },
+          "overround": 1.1294631165429942,
+          "margin": 12.946311654299425
+        },
+        "final_probabilities": {
+          "home": 0.6757679047010962,
+          "draw": 0.17559226025659067,
+          "away": 0.14863983504231318
+        },
+        "final_scores": [
+          [
+            [
+              3,
+              0
+            ],
+            0.08057004489698127
+          ],
+          [
+            [
+              4,
+              0
+            ],
+            0.07345545198718845
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            0.07227547744849629
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            0.06527351981640861
+          ],
+          [
+            [
+              4,
+              1
+            ],
+            0.059741196394186576
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            0.058328283986040216
+          ],
+          [
+            [
+              5,
+              0
+            ],
+            0.0581502379572313
+          ],
+          [
+            [
+              5,
+              1
+            ],
+            0.03067621215091837
+          ],
+          [
+            [
+              6,
+              0
+            ],
+            0.024017275732542656
+          ],
+          [
+            [
+              6,
+              1
+            ],
+            0.01479334987844474
+          ]
+        ],
+        "goal_distribution": {
+          "0": 0.0427,
+          "1": 0.095,
+          "2": 0.1353,
+          "3": 0.1432,
+          "4": 0.127,
+          "5": 0.1142,
+          "6": 0.0944,
+          "7": 0.0728,
+          "7+": 0.2482
+        },
+        "over_under": {
+          "over_25": 0.727,
+          "under_25": 0.273
+        },
+        "htft": [
+          {
+            "htft": "主-主",
+            "code": "H/H",
+            "probability": 0.5623689021948662
+          },
+          {
+            "htft": "平-主",
+            "code": "D/H",
+            "probability": 0.18754152509770103
+          },
+          {
+            "htft": "平-平",
+            "code": "D/D",
+            "probability": 0.03979755292292977
+          },
+          {
+            "htft": "客-主",
+            "code": "A/H",
+            "probability": 0.03050979633321256
+          },
+          {
+            "htft": "客-客",
+            "code": "A/A",
+            "probability": 0.017845575776616336
+          }
+        ],
+        "confidence": {
+          "score": -2,
+          "level": "very_low",
+          "stars": "☆",
+          "details": {
+            "model_consistency": "中度一致",
+            "odds_alignment": "对齐度一般",
+            "data_quality": "数据稳定",
+            "sample_size": "样本不足",
+            "external": "待高山验证"
+          },
+          "gaoshan": {
+            "confidence_adjustment": 0,
+            "reason": "欧冠资格赛样本不足(<20场)，高山验证跳过",
+            "league_accuracy": 0.4667931688804554
+          }
+        },
+        "divergence": {
+          "home": 0.11540308788242248,
+          "draw": -0.06050811589634386,
+          "away": -0.05489497198607868
+        },
+        "ev": {
+          "home": -0.11462358942649553,
+          "draw": -0.11462358942649553,
+          "away": -0.11462358942649553
+        },
+        "injuries": [
+          {
+            "team": "home",
+            "player": "菲利波维奇",
+            "position": "goalkeeper",
+            "importance": "key"
+          },
+          {
+            "team": "away",
+            "player": "巴尔特尔森",
+            "position": "defender",
+            "importance": "key"
+          },
+          {
+            "team": "away",
+            "player": "贝里沙",
+            "position": "forward",
+            "importance": "key"
+          }
+        ],
+        "notes": "欧冠资格赛附加赛首回合",
+        "h2h_psychology": {
+          "lambda_home_adj": 1.0,
+          "lambda_away_adj": 1.0,
+          "outcome_bias": {
+            "home": 0.333,
+            "draw": 0.333,
+            "away": 0.333
+          },
+          "psychology_notes": [
+            "交锋样本不足，跳过心理权重"
+          ],
+          "strength": 0.0,
+          "raw_signals": {}
+        }
+      },
+      "recommendation": {
+        "direction": "主胜",
+        "direction_prob": 0.6757679047010962,
+        "confidence": {
+          "score": -2,
+          "level": "very_low",
+          "stars": "☆",
+          "details": {
+            "model_consistency": "中度一致",
+            "odds_alignment": "对齐度一般",
+            "data_quality": "数据稳定",
+            "sample_size": "样本不足",
+            "external": "待高山验证"
+          },
+          "gaoshan": {
+            "confidence_adjustment": 0,
+            "reason": "欧冠资格赛样本不足(<20场)，高山验证跳过",
+            "league_accuracy": 0.4667931688804554
+          }
+        },
+        "scores": {
+          "primary": "3-0",
+          "alt1": "4-0",
+          "alt2": "2-0"
+        },
+        "total_goals": "大2.5",
+        "htft": "主-主",
+        "positive_ev": false,
+        "ev_details": {
+          "home": -0.11462358942649553,
+          "draw": -0.11462358942649553,
+          "away": -0.11462358942649553
+        }
+      }
+    },
+    {
+      "analysis": {
+        "match_info": {
+          "match_id": "周二004",
+          "league": "欧冠资格赛",
+          "home_team": "费内巴切",
+          "away_team": "里昂",
+          "odds": {
+            "home": 1.84,
+            "draw": 3.45,
+            "away": 3.38
+          },
+          "home_value": 30500,
+          "away_value": 29300
+        },
+        "league_diagnosis": {
+          "league": "欧冠资格赛",
+          "vmr": 1.12,
+          "vmr_conclusion": "轻微过离散，DC模型优先",
+          "primary_model": "DC",
+          "avg_goals": 2.5,
+          "estimated_00_rate": 0.10671049821106843,
+          "zip_conclusion": "推荐启用ZIP",
+          "use_zip": true,
+          "home_advantage": 1.35,
+          "defensive": false,
+          "over_dispersed": false
+        },
+        "lambda": {
+          "home_raw": 1.8881100000000004,
+          "away_raw": 0.9095999999999999,
+          "home_final": 1.8352429200000004,
+          "away_final": 0.9086904
+        },
+        "ratings": {
+          "elo": {
+            "home": 1939.5,
+            "away": 1957.5
+          },
+          "pi": {
+            "home": {
+              "attack": 1.0,
+              "defense": 0.48
+            },
+            "away": {
+              "attack": 1.6,
+              "defense": 0.8
+            }
+          }
+        },
+        "model_outcomes": {
+          "dc": {
+            "home": 0.5777095699674182,
+            "draw": 0.25355427655739937,
+            "away": 0.16873615347518245
+          },
+          "nb": {
+            "home": 0.5632875338686663,
+            "draw": 0.23141666758103788,
+            "away": 0.20529579855029587
+          },
+          "zip": {
+            "home": 0.5738723155182089,
+            "draw": 0.23288426065158255,
+            "away": 0.1932434238302085
+          },
+          "skellam": {
+            "home": 0.5919188486187472,
+            "draw": 0.22550433178348392,
+            "away": 0.18257681959776886
+          },
+          "elo": {
+            "home": 0.4741190691088309,
+            "draw": 0.24654191593659208,
+            "away": 0.2793390149545771
+          },
+          "monte_carlo": {
+            "home": 0.5641,
+            "draw": 0.2324,
+            "away": 0.2035
+          },
+          "shin": {
+            "home": 0.48129865198405164,
+            "draw": 0.25669261439149427,
+            "away": 0.2620087336244542,
+            "z": 0.07
+          }
+        },
+        "odds_calibration": {
+          "raw": {
+            "home": 0.5434782608695652,
+            "draw": 0.2898550724637681,
+            "away": 0.2958579881656805
+          },
+          "normalize": {
+            "home": 0.48129865198405164,
+            "draw": 0.25669261439149427,
+            "away": 0.2620087336244542
+          },
+          "shin": {
+            "home": 0.48129865198405164,
+            "draw": 0.25669261439149427,
+            "away": 0.2620087336244542,
+            "z": 0.07
+          },
+          "power": {
+            "home": 0.4201517563482143,
+            "draw": 0.28814123954269294,
+            "away": 0.2917070041090927
+          },
+          "overround": 1.1291913214990137,
+          "margin": 12.919132149901369
+        },
+        "final_probabilities": {
+          "home": 0.5107763578243238,
+          "draw": 0.25501310858835974,
+          "away": 0.23421053358731636
+        },
+        "final_scores": [
+          [
+            [
+              1,
+              0
+            ],
+            0.11321034051423662
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            0.10845140114205999
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            0.10269780548591985
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            0.08888451409451704
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            0.0827869679599385
+          ],
+          [
+            [
+              3,
+              0
+            ],
+            0.063433011165593
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            0.06058341548490144
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            0.05499572430299035
+          ],
+          [
+            [
+              1,
+              2
+            ],
+            0.04666966963382381
+          ],
+          [
+            [
+              2,
+              2
+            ],
+            0.04059370325217225
+          ]
+        ],
+        "goal_distribution": {
+          "0": 0.0833,
+          "1": 0.1899,
+          "2": 0.2292,
+          "3": 0.197,
+          "4": 0.1344,
+          "5": 0.0846,
+          "6": 0.0464,
+          "7": 0.0204,
+          "7+": 0.0352
+        },
+        "over_under": {
+          "over_25": 0.49760000000000004,
+          "under_25": 0.5024
+        },
+        "htft": [
+          {
+            "htft": "主-主",
+            "code": "H/H",
+            "probability": 0.3428054544616025
+          },
+          {
+            "htft": "平-主",
+            "code": "D/H",
+            "probability": 0.21270450559436618
+          },
+          {
+            "htft": "平-平",
+            "code": "D/D",
+            "probability": 0.14736056681884122
+          },
+          {
+            "htft": "客-客",
+            "code": "A/A",
+            "probability": 0.0884672715579714
+          },
+          {
+            "htft": "平-客",
+            "code": "D/A",
+            "probability": 0.07956262573169291
+          }
+        ],
+        "confidence": {
+          "score": 6,
+          "level": "high",
+          "stars": "★★★",
+          "details": {
+            "model_consistency": "高度一致",
+            "odds_alignment": "高度对齐",
+            "data_quality": "数据稳定",
+            "sample_size": "样本不足",
+            "external": "待高山验证"
+          },
+          "gaoshan": {
+            "confidence_adjustment": 0,
+            "reason": "欧冠资格赛样本不足(<20场)，高山验证跳过",
+            "league_accuracy": 0.4667931688804554
+          }
+        },
+        "divergence": {
+          "home": 0.029477705840272206,
+          "draw": -0.001679505803134529,
+          "away": -0.027798200037137843
+        },
+        "ev": {
+          "home": -0.11441048034934498,
+          "draw": -0.11441048034934476,
+          "away": -0.11441048034934487
+        },
+        "injuries": [
+          {
+            "team": "home",
+            "player": "瑟云聚",
+            "position": "defender",
+            "importance": "key"
+          },
+          {
+            "team": "home",
+            "player": "卢卡库",
+            "position": "forward",
+            "importance": "key"
+          },
+          {
+            "team": "away",
+            "player": "舒尔茨",
+            "position": "midfield",
+            "importance": "key"
+          },
+          {
+            "team": "away",
+            "player": "塔利亚菲科",
+            "position": "defender",
+            "importance": "key"
+          }
+        ],
+        "notes": "欧冠资格赛附加赛首回合",
+        "h2h_psychology": {
+          "lambda_home_adj": 1.0,
+          "lambda_away_adj": 1.0,
+          "outcome_bias": {
+            "home": 0.333,
+            "draw": 0.333,
+            "away": 0.333
+          },
+          "psychology_notes": [
+            "交锋样本不足，跳过心理权重"
+          ],
+          "strength": 0.0,
+          "raw_signals": {}
+        }
+      },
+      "recommendation": {
+        "direction": "主胜",
+        "direction_prob": 0.5107763578243238,
+        "confidence": {
+          "score": 6,
+          "level": "high",
+          "stars": "★★★",
+          "details": {
+            "model_consistency": "高度一致",
+            "odds_alignment": "高度对齐",
+            "data_quality": "数据稳定",
+            "sample_size": "样本不足",
+            "external": "待高山验证"
+          },
+          "gaoshan": {
+            "confidence_adjustment": 0,
+            "reason": "欧冠资格赛样本不足(<20场)，高山验证跳过",
+            "league_accuracy": 0.4667931688804554
+          }
+        },
+        "scores": {
+          "primary": "1-0",
+          "alt1": "1-1",
+          "alt2": "2-0"
+        },
+        "total_goals": "2-3球",
+        "htft": "主-主",
+        "positive_ev": false,
+        "ev_details": {
+          "home": -0.11441048034934498,
+          "draw": -0.11441048034934476,
+          "away": -0.11441048034934487
+        }
+      }
+    }
+  ],
+  "parlay_suggestions": {
+    "conservative": [],
+    "balanced": [],
+    "aggressive": [],
+    "all_qualified": [
+      {
+        "match_id": "周二004",
+        "match": "费内巴切 vs 里昂",
+        "direction": "主胜",
+        "probability": 0.5107763578243238,
+        "confidence": {
+          "score": 6,
+          "level": "high",
+          "stars": "★★★",
+          "details": {
+            "model_consistency": "高度一致",
+            "odds_alignment": "高度对齐",
+            "data_quality": "数据稳定",
+            "sample_size": "样本不足",
+            "external": "待高山验证"
+          },
+          "gaoshan": {
+            "confidence_adjustment": 0,
+            "reason": "欧冠资格赛样本不足(<20场)，高山验证跳过",
+            "league_accuracy": 0.4667931688804554
+          }
+        },
+        "odds": 1.84,
+        "result_ref": {
+          "analysis": {
+            "match_info": {
+              "match_id": "周二004",
+              "league": "欧冠资格赛",
+              "home_team": "费内巴切",
+              "away_team": "里昂",
+              "odds": {
+                "home": 1.84,
+                "draw": 3.45,
+                "away": 3.38
+              },
+              "home_value": 30500,
+              "away_value": 29300
+            },
+            "league_diagnosis": {
+              "league": "欧冠资格赛",
+              "vmr": 1.12,
+              "vmr_conclusion": "轻微过离散，DC模型优先",
+              "primary_model": "DC",
+              "avg_goals": 2.5,
+              "estimated_00_rate": 0.10671049821106843,
+              "zip_conclusion": "推荐启用ZIP",
+              "use_zip": true,
+              "home_advantage": 1.35,
+              "defensive": false,
+              "over_dispersed": false
+            },
+            "lambda": {
+              "home_raw": 1.8881100000000004,
+              "away_raw": 0.9095999999999999,
+              "home_final": 1.8352429200000004,
+              "away_final": 0.9086904
+            },
+            "ratings": {
+              "elo": {
+                "home": 1939.5,
+                "away": 1957.5
+              },
+              "pi": {
+                "home": {
+                  "attack": 1.0,
+                  "defense": 0.48
+                },
+                "away": {
+                  "attack": 1.6,
+                  "defense": 0.8
+                }
+              }
+            },
+            "model_outcomes": {
+              "dc": {
+                "home": 0.5777095699674182,
+                "draw": 0.25355427655739937,
+                "away": 0.16873615347518245
+              },
+              "nb": {
+                "home": 0.5632875338686663,
+                "draw": 0.23141666758103788,
+                "away": 0.20529579855029587
+              },
+              "zip": {
+                "home": 0.5738723155182089,
+                "draw": 0.23288426065158255,
+                "away": 0.1932434238302085
+              },
+              "skellam": {
+                "home": 0.5919188486187472,
+                "draw": 0.22550433178348392,
+                "away": 0.18257681959776886
+              },
+              "elo": {
+                "home": 0.4741190691088309,
+                "draw": 0.24654191593659208,
+                "away": 0.2793390149545771
+              },
+              "monte_carlo": {
+                "home": 0.5641,
+                "draw": 0.2324,
+                "away": 0.2035
+              },
+              "shin": {
+                "home": 0.48129865198405164,
+                "draw": 0.25669261439149427,
+                "away": 0.2620087336244542,
+                "z": 0.07
+              }
+            },
+            "odds_calibration": {
+              "raw": {
+                "home": 0.5434782608695652,
+                "draw": 0.2898550724637681,
+                "away": 0.2958579881656805
+              },
+              "normalize": {
+                "home": 0.48129865198405164,
+                "draw": 0.25669261439149427,
+                "away": 0.2620087336244542
+              },
+              "shin": {
+                "home": 0.48129865198405164,
+                "draw": 0.25669261439149427,
+                "away": 0.2620087336244542,
+                "z": 0.07
+              },
+              "power": {
+                "home": 0.4201517563482143,
+                "draw": 0.28814123954269294,
+                "away": 0.2917070041090927
+              },
+              "overround": 1.1291913214990137,
+              "margin": 12.919132149901369
+            },
+            "final_probabilities": {
+              "home": 0.5107763578243238,
+              "draw": 0.25501310858835974,
+              "away": 0.23421053358731636
+            },
+            "final_scores": [
+              [
+                [
+                  1,
+                  0
+                ],
+                0.11321034051423662
+              ],
+              [
+                [
+                  1,
+                  1
+                ],
+                0.10845140114205999
+              ],
+              [
+                [
+                  2,
+                  0
+                ],
+                0.10269780548591985
+              ],
+              [
+                [
+                  2,
+                  1
+                ],
+                0.08888451409451704
+              ],
+              [
+                [
+                  0,
+                  0
+                ],
+                0.0827869679599385
+              ],
+              [
+                [
+                  3,
+                  0
+                ],
+                0.063433011165593
+              ],
+              [
+                [
+                  0,
+                  1
+                ],
+                0.06058341548490144
+              ],
+              [
+                [
+                  3,
+                  1
+                ],
+                0.05499572430299035
+              ],
+              [
+                [
+                  1,
+                  2
+                ],
+                0.04666966963382381
+              ],
+              [
+                [
+                  2,
+                  2
+                ],
+                0.04059370325217225
+              ]
+            ],
+            "goal_distribution": {
+              "0": 0.0833,
+              "1": 0.1899,
+              "2": 0.2292,
+              "3": 0.197,
+              "4": 0.1344,
+              "5": 0.0846,
+              "6": 0.0464,
+              "7": 0.0204,
+              "7+": 0.0352
+            },
+            "over_under": {
+              "over_25": 0.49760000000000004,
+              "under_25": 0.5024
+            },
+            "htft": [
+              {
+                "htft": "主-主",
+                "code": "H/H",
+                "probability": 0.3428054544616025
+              },
+              {
+                "htft": "平-主",
+                "code": "D/H",
+                "probability": 0.21270450559436618
+              },
+              {
+                "htft": "平-平",
+                "code": "D/D",
+                "probability": 0.14736056681884122
+              },
+              {
+                "htft": "客-客",
+                "code": "A/A",
+                "probability": 0.0884672715579714
+              },
+              {
+                "htft": "平-客",
+                "code": "D/A",
+                "probability": 0.07956262573169291
+              }
+            ],
+            "confidence": {
+              "score": 6,
+              "level": "high",
+              "stars": "★★★",
+              "details": {
+                "model_consistency": "高度一致",
+                "odds_alignment": "高度对齐",
+                "data_quality": "数据稳定",
+                "sample_size": "样本不足",
+                "external": "待高山验证"
+              },
+              "gaoshan": {
+                "confidence_adjustment": 0,
+                "reason": "欧冠资格赛样本不足(<20场)，高山验证跳过",
+                "league_accuracy": 0.4667931688804554
+              }
+            },
+            "divergence": {
+              "home": 0.029477705840272206,
+              "draw": -0.001679505803134529,
+              "away": -0.027798200037137843
+            },
+            "ev": {
+              "home": -0.11441048034934498,
+              "draw": -0.11441048034934476,
+              "away": -0.11441048034934487
+            },
+            "injuries": [
+              {
+                "team": "home",
+                "player": "瑟云聚",
+                "position": "defender",
+                "importance": "key"
+              },
+              {
+                "team": "home",
+                "player": "卢卡库",
+                "position": "forward",
+                "importance": "key"
+              },
+              {
+                "team": "away",
+                "player": "舒尔茨",
+                "position": "midfield",
+                "importance": "key"
+              },
+              {
+                "team": "away",
+                "player": "塔利亚菲科",
+                "position": "defender",
+                "importance": "key"
+              }
+            ],
+            "notes": "欧冠资格赛附加赛首回合",
+            "h2h_psychology": {
+              "lambda_home_adj": 1.0,
+              "lambda_away_adj": 1.0,
+              "outcome_bias": {
+                "home": 0.333,
+                "draw": 0.333,
+                "away": 0.333
+              },
+              "psychology_notes": [
+                "交锋样本不足，跳过心理权重"
+              ],
+              "strength": 0.0,
+              "raw_signals": {}
+            }
+          },
+          "recommendation": {
+            "direction": "主胜",
+            "direction_prob": 0.5107763578243238,
+            "confidence": {
+              "score": 6,
+              "level": "high",
+              "stars": "★★★",
+              "details": {
+                "model_consistency": "高度一致",
+                "odds_alignment": "高度对齐",
+                "data_quality": "数据稳定",
+                "sample_size": "样本不足",
+                "external": "待高山验证"
+              },
+              "gaoshan": {
+                "confidence_adjustment": 0,
+                "reason": "欧冠资格赛样本不足(<20场)，高山验证跳过",
+                "league_accuracy": 0.4667931688804554
+              }
+            },
+            "scores": {
+              "primary": "1-0",
+              "alt1": "1-1",
+              "alt2": "2-0"
+            },
+            "total_goals": "2-3球",
+            "htft": "主-主",
+            "positive_ev": false,
+            "ev_details": {
+              "home": -0.11441048034934498,
+              "draw": -0.11441048034934476,
+              "away": -0.11441048034934487
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+    "league_info": {
+        "name_cn": "欧洲超级杯",
+        "name_en": "UEFA Super Cup",
+        "country": "欧洲",
+        "level": "杯赛",
+        "format": "单场决胜制（90分钟战平直接点球，无加时）",
+        "season": "年度赛事",
+        "cross_year": false,
+        "lottery_status": "竞彩开售",
+        "competition_tier": 2,
+        "cross_league_level": null,
+        "competition_tier_note": "规则76赛事本身等级（1欧冠精英/2欧联欧协联/3亚冠精英/4解放者杯/5欧国联/6亚运会；None=不适用），2026-10-14建立"
+    },
+    "statistics": {
+        "avg_goals_per_match": 4.09,
+        "draw_rate": 0.4,
+        "home_win_rate": 0.4,
+        "away_win_rate": 0.2,
+        "over_25_rate": 0.6,
+        "under_25_rate": 0.4,
+        "top5_scores": [
+            {
+                "score": "2-1",
+                "frequency": 0.15
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.15
+            },
+            {
+                "score": "2-2",
+                "frequency": 0.12
+            },
+            {
+                "score": "3-1",
+                "frequency": 0.1
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.08
+            }
+        ],
+        "total_goals_distribution": {
+            "0": 0.0,
+            "1": 0.05,
+            "2": 0.15,
+            "3": 0.25,
+            "4": 0.2,
+            "5": 0.15,
+            "6+": 0.2
+        },
+        "notes": "改制以来从未出现0-0，最小比分1-0仅出现2次。近10年平局率高，从未有连续2届常规时间分胜负。低赔方胜出概率仅40%，爆冷概率60%。3球以上概率50%。",
+        "ht_draw_rate": null,
+        "ht_draw_rate_note": "杯赛/淘汰赛为主或赛制混合（小组赛+淘汰赛），单一'半场平局率'不具代表性，规则66不按单值修正。如需可对小组赛阶段单独统计。2026-09-12标注。",
+        "ht_draw_rate_status": "not_applicable",
+        "ht_draw_rate_updated": "2026-09-12"
+    },
+    "match_style": {
+        "tactical_style": "欧冠冠军vs欧联冠军，双方均为各自赛事冠军，战意充足。比赛节奏偏开放，进球多。",
+        "tempo": "高节奏",
+        "intensity": "高",
+        "var": true
+    },
+    "referee_and_stoppage": {
+        "referee_style": "欧足联指派顶级裁判",
+        "avg_yellow_cards": 4.0,
+        "avg_red_cards": 0.1,
+        "avg_penalties": 0.15,
+        "stoppage_time": "常规补时"
+    },
+    "integrity_and_discipline": {
+        "match_fixing": "无",
+        "discipline": "欧足联标准",
+        "official_rules": "90分钟战平直接点球（2026年起取消加时赛）"
+    },
+    "public_opinion_and_market": {
+        "public_opinion": "关注度极高的单场赛事，市场热度集中在欧冠冠军方",
+        "market_characteristics": "低赔方胜率仅40%，存在系统性爆冷倾向",
+        "upset_frequency": "高（60%爆冷率）",
+        "lottery_notes": "1. 场均进球4+，大球概率高 2. 平局率高，近10年无连续分胜负 3. 爆冷概率高，不宜重锤低赔方 4. 注意单场决胜制，点球可能性"
+    },
+    "data_sources": {
+        "sources": [
+            "https://m.hupu.com/bbs/44717039.html",
+            "https://www.163.com/dy/article/IC8K33KG0553W7Y4.html",
+            "https://zx.500.com/jczq/n_rdxw/20140812_393067.shtml"
+        ],
+        "update_date": "2026-08-12"
+    }
+}

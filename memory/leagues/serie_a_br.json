@@ -1,0 +1,144 @@
+{
+    "league_info": {
+        "name_cn": "巴西甲级联赛",
+        "name_en": "Série A",
+        "country": "巴西",
+        "country_code": "BR",
+        "level": "顶级",
+        "num_teams": 20,
+        "format": "双循环，38轮",
+        "season_period": "4月-12月（不跨年）",
+        "is_cross_year": false,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.cbf.com.br",
+        "governing_body": "巴西足球协会（CBF）",
+        "cross_league_level": "L3",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.45,
+        "draw_rate": 0.28,
+        "home_win_rate": 0.42,
+        "away_win_rate": 0.3,
+        "over_2_5_rate": 0.44,
+        "under_2_5_rate": 0.56,
+        "btts_rate": 0.47,
+        "top_scores": [
+            {
+                "score": "1-0",
+                "frequency": 0.088,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.085,
+                "direction": "平局"
+            },
+            {
+                "score": "0-0",
+                "frequency": 0.072,
+                "direction": "平局"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.068,
+                "direction": "主胜"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.055,
+                "direction": "主胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.072,
+            "1_goal": 0.18,
+            "2_goals": 0.28,
+            "3_goals": 0.22,
+            "4_goals": 0.15,
+            "5_plus_goals": 0.098
+        },
+        "avg_home_goals": 1.35,
+        "avg_away_goals": 1.1,
+        "home_advantage_factor": 1.16,
+        "ht_draw_rate": null,
+        "ht_draw_rate_note": "2026-09-12尝试补录：本环境无法取得该联赛'最近完整赛季'的第一手半场数据——thefishy.uk无该联赛半场表、football-data.co.uk扩展文件仅含全场比分(无半场)、Transfermarkt/worldfootball/FootyStats/soccerstats/BetExplorer 均被反爬拦截。按诚实原则置 null，不用估算值。使用时按缺失字段处理（规则66默认中低档0.45系数）。待可访问一手源时补录。",
+        "ht_draw_rate_source": [],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_confidence": "无",
+        "ht_draw_rate_status": "unavailable"
+    },
+    "match_style": {
+        "tactical_character": "技术流与身体对抗结合。弗拉门戈、帕尔梅拉斯、科林蒂安、圣保罗是传统强队。客场长途旅行影响大（巴西国土面积巨大）。天气炎热导致下半场体能下降。",
+        "tempo": "中",
+        "physicality": "高",
+        "technical_focus": "高",
+        "var_usage": "2023赛季引入VAR。",
+        "key_trends": [
+            "技术+身体对抗结合",
+            "弗拉门戈/帕尔梅拉斯/科林蒂安/圣保罗",
+            "客场长途旅行影响大",
+            "天气热下半场体能下降"
+        ],
+        "style_tags": [
+            "技术流",
+            "身体对抗",
+            "长途旅行",
+            "天气因素"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 4.35,
+        "avg_red_cards": 0.2,
+        "avg_penalties": 0.24,
+        "referee_style": "裁判尺度偏松，允许南美式激烈对抗。",
+        "first_half_stoppage_avg": 2.3,
+        "second_half_stoppage_avg": 5.5,
+        "stoppage_note": "补时偏长。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "2015年低级别假赛案",
+                "year": "2015",
+                "description": "涉及巴西低级别联赛的假赛案件，未波及巴甲。"
+            }
+        ],
+        "discipline_features": "黄牌累积5张停1场。",
+        "official_rules": "IFAB规则+巴甲特别规则。",
+        "integrity_rating": "中"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价巴甲'技术好'，'客场旅行累'。彩民认为'小球为主'，'下半场进球可能增多'。",
+        "betting_market": {
+            "market_efficiency": "中",
+            "liquidity": "中",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "中",
+        "jingcai_tips": [
+            "客场长途旅行影响需关注",
+            "下半场进球可能增多",
+            "小球为主，UNDER 2.5是常规选择",
+            "弗拉门戈/帕尔梅拉斯主场强势",
+            "天气炎热注意体能因素"
+        ],
+        "common_sayings": [
+            "巴甲看技术",
+            "客场旅行累",
+            "小球为主"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    }
+}

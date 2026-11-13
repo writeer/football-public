@@ -1,0 +1,91 @@
+{
+    "league_info": {
+        "name_cn": "南美解放者杯",
+        "name_en": "CONMEBOL Copa Libertadores",
+        "country": "南美洲",
+        "level": "洲际杯赛",
+        "format": "资格赛+小组赛+主客场淘汰赛，决赛单场",
+        "season": "年度赛事（1月-11月）",
+        "cross_year": false,
+        "lottery_status": "竞彩开售",
+        "competition_tier": 4,
+        "cross_league_level": null,
+        "competition_tier_note": "规则76赛事本身等级（1欧冠精英/2欧联欧协联/3亚冠精英/4解放者杯/5欧国联/6亚运会；None=不适用），2026-10-14建立"
+    },
+    "statistics": {
+        "avg_goals_per_match": 1.78,
+        "draw_rate": 0.27,
+        "home_win_rate": 0.48,
+        "away_win_rate": 0.25,
+        "over_25_rate": 0.38,
+        "under_25_rate": 0.62,
+        "top5_scores": [
+            {
+                "score": "1:0",
+                "frequency": 0.1667
+            },
+            {
+                "score": "1:1",
+                "frequency": 0.1349
+            },
+            {
+                "score": "0:0",
+                "frequency": 0.0903
+            },
+            {
+                "score": "2:1",
+                "frequency": 0.0873
+            },
+            {
+                "score": "2:0",
+                "frequency": 0.0794
+            }
+        ],
+        "total_goals_distribution": {
+            "0": 0.09,
+            "1": 0.25,
+            "2": 0.28,
+            "3": 0.18,
+            "4": 0.1,
+            "5": 0.06,
+            "6+": 0.04
+        },
+        "notes": "2026赛季126场比赛场均1.78球，偏低。1:0是众数(16.67%)，0:0占9%。南美赛事主场优势显著(48%主胜)。淘汰赛阶段客场进球已取消优惠，总比分打平直接点球（1/8决赛取消加时赛）。",
+        "ht_draw_rate": null,
+        "ht_draw_rate_note": "杯赛/淘汰赛为主或赛制混合（小组赛+淘汰赛），单一'半场平局率'不具代表性，规则66不按单值修正。如需可对小组赛阶段单独统计。2026-09-12标注。",
+        "ht_draw_rate_status": "not_applicable",
+        "ht_draw_rate_updated": "2026-09-12"
+    },
+    "match_style": {
+        "tactical_style": "南美足球风格，技术细腻但比赛节奏偏慢。淘汰赛阶段客队通常采取保守战术，主场优势显著。高位逼抢较少，更多依靠个人能力和定位球。",
+        "tempo": "中低节奏",
+        "intensity": "高（淘汰赛阶段）",
+        "var": true
+    },
+    "referee_and_stoppage": {
+        "referee_style": "南美裁判执法偏松，身体对抗容忍度高",
+        "avg_yellow_cards": 5.2,
+        "avg_red_cards": 0.2,
+        "avg_penalties": 0.18,
+        "stoppage_time": "南美裁判补时偏长，场均补时5-7分钟"
+    },
+    "integrity_and_discipline": {
+        "match_fixing": "历史上有零星假赛指控但无确认案例",
+        "discipline": "南美足联纪律委员会",
+        "official_rules": "1/8决赛取消加时赛，总比分打平直接点球"
+    },
+    "public_opinion_and_market": {
+        "public_opinion": "南美最高级别俱乐部赛事，关注度极高。巴西球队近年统治力强。",
+        "market_characteristics": "主场优势显著，小球概率高(62%)。淘汰赛首回合通常保守，进球偏低。",
+        "upset_frequency": "中高（南美赛事冷门频繁）",
+        "lottery_notes": "1. 场均1.78球，小球概率62% 2. 1:0和1:1是最高频比分 3. 主场优势显著(48%主胜) 4. 淘汰赛首回合偏保守 5. 0:0概率9%不可忽视 6. 巴西球队主场尤其强势"
+    },
+    "data_sources": {
+        "sources": [
+            "https://data.7m.com.cn/matches_data/159/gb/index.shtml",
+            "https://info.titan007.com/cn/CNormal/89.html",
+            "https://data.7m.com.cn/history_matches_data/2025/159/gb/index.shtml"
+        ],
+        "update_date": "2026-08-12"
+    }
+}

@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>竞彩分析报告 #周四6场 xG增强版 - 2026-07-30</title>
+<style>
+:root { --primary: #1a73e8; --success: #34a853; --warning: #fbbc04; --danger: #ea4335; --text: #202124; --text2: #5f6368; --bg: #f8f9fa; --border: #dadce0; --purple: #7c3aed; --info: #4285f4; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+.header { background: linear-gradient(135deg, var(--primary), #0d47a1); color: white; padding: 24px; border-radius: 12px; margin-bottom: 20px; }
+.header h1 { font-size: 28px; margin-bottom: 4px; }
+.header .subtitle { opacity: 0.85; font-size: 14px; }
+.header .rule-tag { display: inline-block; background: rgba(255,255,255,0.2); padding: 2px 10px; border-radius: 12px; font-size: 11px; margin-top: 8px; margin-right: 6px; }
+.card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+.card-title { font-size: 16px; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px; margin: 12px 0; }
+.stat-box { background: var(--bg); border-radius: 8px; padding: 14px; text-align: center; }
+.stat-value { font-size: 24px; font-weight: 700; color: var(--primary); }
+.stat-label { font-size: 12px; color: var(--text2); margin-top: 4px; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+th { background: var(--bg); text-align: left; padding: 10px 8px; font-weight: 600; border-bottom: 2px solid var(--border); }
+td { padding: 10px 8px; border-bottom: 1px solid var(--border); }
+tr:hover { background: rgba(26,115,232,0.03); }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+.badge-high { background: #e8f5e9; color: #2e7d32; }
+.badge-medium { background: #fff3e0; color: #e65100; }
+.badge-low { background: #fce4ec; color: #c62828; }
+.badge-very_low { background: #f3e5f5; color: #6a1b9a; }
+.badge-divergence { background: #f3e5f5; color: #7c3aed; }
+.prob-bar { height: 8px; background: var(--bg); border-radius: 4px; overflow: hidden; margin-top: 4px; }
+.prob-fill { height: 100%; border-radius: 4px; }
+.prob-fill-home { background: var(--success); }
+.prob-fill-draw { background: var(--warning); }
+.prob-fill-away { background: var(--danger); }
+.match-card { border-left: 4px solid var(--primary); padding-left: 16px; margin: 16px 0; }
+.match-card.home-rec { border-color: var(--success); }
+.match-card.draw-rec { border-color: var(--warning); }
+.match-card.away-rec { border-color: var(--danger); }
+.score-rec { display: inline-block; background: var(--primary); color: white; padding: 3px 8px; border-radius: 6px; font-weight: 700; margin-right: 4px; font-size: 13px; }
+.score-alt { display: inline-block; background: var(--bg); color: var(--text2); padding: 3px 8px; border-radius: 6px; font-size: 12px; margin-right: 4px; }
+.divergence-alert { background: #fff3e0; border-left: 4px solid var(--warning); padding: 10px 14px; border-radius: 0 8px 8px 0; margin: 8px 0; font-size: 13px; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+.info-section { background: #f0f7ff; border-radius: 8px; padding: 12px; margin: 8px 0; font-size: 13px; }
+.info-section h4 { font-size: 13px; font-weight: 600; margin-bottom: 6px; color: var(--primary); }
+.soft-factor { font-size: 12px; line-height: 1.7; }
+.soft-factor strong { color: var(--text); }
+.rec-box { display: inline-block; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 15px; margin: 4px 0; }
+.rec-box.home { background: #e8f5e9; color: #2e7d32; }
+.rec-box.draw { background: #fff3e0; color: #e65100; }
+.rec-box.away { background: #fce4ec; color: #c62828; }
+@media (max-width: 768px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } .container { padding: 10px; } }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>竞彩分析报告 #周四6场（xG增强版 v3）</h1>
+<div class="subtitle">生成时间: 2026-07-30 | 基于Dixon-Coles/负二项/Skellam/蒙特卡洛多模型融合 + xG校准 | v1.6.0方法论<br>体彩赔率更新: 2026-07-30 14:07 (来源: sporttery.cn/lottery.gov.cn) | 含胜平负/让球/总进球/半全场/比分五大玩法</div>
+<div><span class="rule-tag">规则27: 战意心理与体能分析</span><span class="rule-tag">规则28: 基本面决定论</span><span class="rule-tag">规则24: 联赛特点数据</span><span class="rule-tag">规则25: 中文平台信息禁用</span><span class="rule-tag" style="background:rgba(124,58,237,0.3)">xG校准v3</span><span class="rule-tag" style="background:rgba(52,168,83,0.3)">体彩五大玩法赔率</span></div>
+</div>
+
+<div class="card">
+  <div class="card-title">分析摘要</div>
+  <div class="stats-grid">
+    <div class="stat-box"><div class="stat-value">6</div><div class="stat-label">分析场次</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#2e7d32">3</div><div class="stat-label">高置信度</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#e65100">3</div><div class="stat-label">中置信度</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#c62828">0</div><div class="stat-label">低/极低置信度</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#2e7d32">4</div><div class="stat-label">推荐主胜</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#e65100">0</div><div class="stat-label">推荐平局</div></div>
+    <div class="stat-box"><div class="stat-value" style="color:#c62828">2</div><div class="stat-label">推荐客胜</div></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-title">比赛总览</div>
+  <table>
+    <thead><tr><th>编号</th><th>联赛</th><th>对阵</th><th>首回合</th><th>身价对比(主/客)</th><th>xG对比(主/客)</th><th>置信度</th><th>推荐</th><th>首选比分</th></tr></thead>
+    <tbody>
+<tr>
+  <td><strong>周四001</strong></td>
+  <td>欧罗巴资格赛</td>
+  <td>中日德兰 <span style="color:var(--text2)">vs</span> 贝西克塔斯</td>
+  <td style="font-size:12px">贝西克塔斯 1-0 中日德兰</td>
+  <td style="font-size:12px">€9900万 / €2.03亿</td>
+  <td style="font-size:12px;color:#e65100">1.55 / 1.5 (+0.05)</td>
+  <td><span class="badge badge-high">高 ★★★</span></td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">46.7%</span></td>
+  <td><span class="score-rec">1:0</span></td>
+</tr>
+<tr>
+  <td><strong>周四002</strong></td>
+  <td>欧罗巴资格赛</td>
+  <td>帕福斯FC <span style="color:var(--text2)">vs</span> 斯普利特海杜克</td>
+  <td style="font-size:12px">海杜克 2-0 帕福斯</td>
+  <td style="font-size:12px">€2628万 / €3300万</td>
+  <td style="font-size:12px;color:#e65100">1.5 / 1.6 (-0.10)</td>
+  <td><span class="badge badge-high">高 ★★★</span> <span class="badge badge-divergence">分歧</span></td>
+  <td><strong>客胜</strong> <span style="color:var(--text2);font-size:11px">37.5%</span></td>
+  <td><span class="score-rec">0:1</span></td>
+</tr>
+<tr>
+  <td><strong>周四003</strong></td>
+  <td>欧罗巴资格赛</td>
+  <td>安德莱赫特 <span style="color:var(--text2)">vs</span> 哈马比</td>
+  <td style="font-size:12px">哈马比 1-1 安德莱赫特</td>
+  <td style="font-size:12px">€9830万 / €3155万</td>
+  <td style="font-size:12px;color:#c62828">1.41 / 1.81 (-0.40)</td>
+  <td><span class="badge badge-medium">中 ★★</span> <span class="badge badge-divergence">分歧</span></td>
+  <td><strong>客胜</strong> <span style="color:var(--text2);font-size:11px">37.5%</span></td>
+  <td><span class="score-rec">0:1</span></td>
+</tr>
+<tr>
+  <td><strong>周四004</strong></td>
+  <td>欧罗巴资格赛</td>
+  <td>费伦茨瓦罗斯 <span style="color:var(--text2)">vs</span> 特温特</td>
+  <td style="font-size:12px">特温特 1-2 费伦茨瓦罗斯</td>
+  <td style="font-size:12px">€4000万 / €8250万</td>
+  <td style="font-size:12px;color:#e65100">1.71 / 2.0 (-0.29)</td>
+  <td><span class="badge badge-high">高 ★★★</span></td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">39.2%</span></td>
+  <td><span class="score-rec">1:0</span></td>
+</tr>
+<tr>
+  <td><strong>周四005</strong></td>
+  <td>欧罗巴资格赛</td>
+  <td>本菲卡 <span style="color:var(--text2)">vs</span> 圣加仑</td>
+  <td style="font-size:12px">圣加仑 2-1 本菲卡</td>
+  <td style="font-size:12px">€3.65亿 / €3500万</td>
+  <td style="font-size:12px;color:#2e7d32">2.18 / 1.7 (+0.48)</td>
+  <td><span class="badge badge-medium">中 ★★</span></td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">63.9%</span></td>
+  <td><span class="score-rec">1:0</span></td>
+</tr>
+<tr>
+  <td><strong>周四006</strong></td>
+  <td>巴甲</td>
+  <td>科林蒂安 <span style="color:var(--text2)">vs</span> 巴拉纳竞技</td>
+  <td style="font-size:12px">-</td>
+  <td style="font-size:12px">€1.50亿 / €7500万</td>
+  <td style="font-size:12px;color:#e65100">1.37 / 1.11 (+0.26)</td>
+  <td><span class="badge badge-medium">中 ★★</span></td>
+  <td><strong>主胜</strong> <span style="color:var(--text2);font-size:11px">45.9%</span></td>
+  <td><span class="score-rec">1:0</span></td>
+</tr>
+</tbody></table></div><div class="card">
+  <div class="card-title">逐场详细分析</div>
+
+<div class="match-card home-rec">
+  <h3 style="margin-bottom:4px">周四001 欧罗巴资格赛</h3>
+  <div style="font-size:18px;font-weight:700;margin-bottom:2px">中日德兰 <span style="color:var(--text2);font-weight:400">vs</span> 贝西克塔斯</div>
+  <div style="font-size:12px;color:var(--text2);margin-bottom:8px">首回合: 贝西克塔斯 1-0 中日德兰 | 总比分: 贝西克塔斯 1-0 领先 | MCH Arena (容量12,152)</div>
+  
+  <div style="display:flex;gap:4px;align-items:center;margin:6px 0">
+    <span style="width:40px;font-size:12px">主胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">46.7%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">平局</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:61%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">28.7%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">客胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:53%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">24.6%</span>
+  </div>
+  
+  
+  
+  <div class="rec-box home">主胜 | 融合概率 46.7% | 置信度 高 ★★★</div>
+  
+  <div class="grid-2" style="margin-top:10px">
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">比分TOP5</div>
+      <div><span class="score-rec">1:0</span><span style="font-size:11px;color:var(--text2)">20.6%</span> <span class="score-rec">0:0</span><span style="font-size:11px;color:var(--text2)">14.5%</span> <span class="score-rec">0:1</span><span style="font-size:11px;color:var(--text2)">12.0%</span> <span class="score-rec">2:0</span><span style="font-size:11px;color:var(--text2)">11.2%</span> <span class="score-rec">1:1</span><span style="font-size:11px;color:var(--text2)">10.7%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">半场TOP3</div>
+      <div><span class="score-alt">0:0</span><span style="font-size:11px;color:var(--text2)">43.1%</span> <span class="score-alt">1:0</span><span style="font-size:11px;color:var(--text2)">24.2%</span> <span class="score-alt">0:1</span><span style="font-size:11px;color:var(--text2)">13.7%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">大小球 / 让球</div>
+      <div style="font-size:12px">大球(2.5): 27.6% | 小球(2.5): 72.4%</div>
+      <div style="font-size:12px;margin-top:4px"><span class="score-alt">主让-1球</span><span style="font-size:11px;color:var(--text2)">94.7%</span> <span class="score-alt">平手盘</span><span style="font-size:11px;color:var(--text2)">78.2%</span> <span class="score-alt">主让1球</span><span style="font-size:11px;color:var(--text2)">50.4%</span> </div>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">赔率(体彩)</div>
+      <div style="font-size:14px;margin-bottom:8px">1.85 / 3.55 / 3.65</div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">模型参数</div>
+      <table style="font-size:12px;margin:0">
+        <tr><td>λ主/客</td><td>1.179 / 0.646</td></tr>
+        <tr><td style="color:var(--purple)">xG主/客</td><td style="color:var(--purple)">1.55 / 1.5 (xGA: 0.95/1.32)</td></tr>
+        <tr><td style="color:var(--purple)">xG校准因子</td><td style="color:var(--purple)">主×1.083 (预期1.44) / 客×0.925 (预期1.23)</td></tr>
+        <tr><td>DC主/平/客</td><td>50.4% / 27.8% / 21.8%</td></tr>
+        <tr><td>Skellam主/平/客</td><td>48.8% / 31.0% / 20.2%</td></tr>
+        <tr><td>MC主/平/客</td><td>48.7% / 30.8% / 20.5%</td></tr>
+        <tr><td>模型标准差</td><td>4.8%</td></tr>
+        <tr><td>软因素修正</td><td>主队×1.058 / 客队×0.95</td></tr>
+      </table>
+    </div>
+  </div>
+  
+  <!-- 体彩赔率 vs 模型概率 -->
+  <div class="info-section" style="margin-top:10px">
+    <h4 style="color:var(--purple)">体彩赔率 vs 模型概率（规则15: 赔率以体彩官方为准）</h4>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">① 胜平负</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>方向</th><th>体彩赔率</th><th>隐含概率</th><th>支持率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜</td><td>1.72</td><td>58.1%</td><td>55%</td><td>46.7%</td><td style="color:#c62828">-11.4%</td></tr><tr><td>平</td><td>3.7</td><td>27.0%</td><td>22%</td><td>28.7%</td><td style="color:#5f6368">+1.7%</td></tr><tr><td>负</td><td>3.6</td><td>27.8%</td><td>23%</td><td>24.6%</td><td style="color:#c62828">-3.2%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">② 让球胜平负（主让1球）</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>方向</th><th>体彩赔率</th><th>隐含概率</th><th>支持率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜</td><td>3.1</td><td>32.3%</td><td>29%</td><td>21.6%</td><td style="color:#c62828">-10.7%</td></tr><tr><td>平</td><td>3.6</td><td>27.8%</td><td>36%</td><td>28.8%</td><td style="color:#5f6368">+1.0%</td></tr><tr><td>负</td><td>1.89</td><td>52.9%</td><td>35%</td><td>49.6%</td><td style="color:#c62828">-3.3%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">③ 总进球数</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>进球数</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>0球</td><td>19.0</td><td>5.3%</td><td>14.5%</td><td style="color:#2e7d32">+9.2%</td></tr><tr><td>1球</td><td>6.2</td><td>16.1%</td><td>32.6%</td><td style="color:#2e7d32">+16.5%</td></tr><tr><td>2球</td><td>3.75</td><td>26.7%</td><td>25.3%</td><td style="color:#5f6368">-1.4%</td></tr><tr><td>3球</td><td>3.45</td><td>29.0%</td><td>16.3%</td><td style="color:#c62828">-12.7%</td></tr><tr><td>4球</td><td>4.6</td><td>21.7%</td><td>7.5%</td><td style="color:#c62828">-14.2%</td></tr><tr><td>5球</td><td>7.3</td><td>13.7%</td><td>2.7%</td><td style="color:#c62828">-11.0%</td></tr><tr><td>6球</td><td>13.0</td><td>7.7%</td><td>1.1%</td><td style="color:#c62828">-6.6%</td></tr><tr><td>7+球</td><td>20.0</td><td>5.0%</td><td>0.0%</td><td style="color:#c62828">-5.0%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">④ 半全场胜平负 <span style="font-size:10px;color:var(--text2);font-weight:normal">（体彩半全场待正式开盘，赔率仅供参考）</span></div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>半全场</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜胜</td><td>2.65</td><td>37.7%</td><td>29.0%</td><td style="color:#c62828">-8.7%</td></tr><tr><td>胜平</td><td>14.0</td><td>7.1%</td><td>4.0%</td><td style="color:#c62828">-3.1%</td></tr><tr><td>胜负</td><td>32.0</td><td>3.1%</td><td>0.8%</td><td style="color:#c62828">-2.3%</td></tr><tr><td>平胜</td><td>4.8</td><td>20.8%</td><td>18.3%</td><td style="color:#c62828">-2.5%</td></tr><tr><td>平平</td><td>6.45</td><td>15.5%</td><td>22.5%</td><td style="color:#2e7d32">+7.0%</td></tr><tr><td>平负</td><td>8.75</td><td>11.4%</td><td>8.6%</td><td style="color:#c62828">-2.8%</td></tr><tr><td>负胜</td><td>18.0</td><td>5.6%</td><td>1.6%</td><td style="color:#c62828">-4.0%</td></tr><tr><td>负平</td><td>14.0</td><td>7.1%</td><td>4.1%</td><td style="color:#c62828">-3.0%</td></tr><tr><td>负负</td><td>6.0</td><td>16.7%</td><td>11.2%</td><td style="color:#c62828">-5.5%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">⑤ 比分（体彩赔率TOP12 vs 模型概率）</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>比分</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>2:1</td><td>6.5</td><td>15.4%</td><td>7.2%</td><td style="color:#c62828">-8.2%</td></tr><tr><td>1:1</td><td>8.0</td><td>12.5%</td><td>10.7%</td><td style="color:#5f6368">-1.8%</td></tr><tr><td>1:0</td><td>8.75</td><td>11.4%</td><td>20.6%</td><td style="color:#2e7d32">+9.2%</td></tr><tr><td>2:0</td><td>10.0</td><td>10.0%</td><td>11.2%</td><td style="color:#5f6368">+1.2%</td></tr><tr><td>2:2</td><td>10.5</td><td>9.5%</td><td>2.3%</td><td style="color:#c62828">-7.2%</td></tr><tr><td>1:2</td><td>10.5</td><td>9.5%</td><td>4.0%</td><td style="color:#c62828">-5.5%</td></tr><tr><td>3:1</td><td>12.0</td><td>8.3%</td><td>2.8%</td><td style="color:#c62828">-5.5%</td></tr><tr><td>0:1</td><td>13.0</td><td>7.7%</td><td>12.0%</td><td style="color:#2e7d32">+4.3%</td></tr><tr><td>3:0</td><td>17.0</td><td>5.9%</td><td>4.4%</td><td style="color:#5f6368">-1.5%</td></tr><tr><td>3:2</td><td>17.0</td><td>5.9%</td><td>0.9%</td><td style="color:#c62828">-5.0%</td></tr><tr><td>0:0</td><td>19.0</td><td>5.3%</td><td>14.5%</td><td style="color:#2e7d32">+9.2%</td></tr><tr><td>0:2</td><td>22.0</td><td>4.5%</td><td>3.4%</td><td style="color:#5f6368">-1.1%</td></tr></tbody>
+    </table>
+  </div>
+
+  <!-- 身价对比 -->
+  <div class="info-section" style="margin-top:10px">
+    <h4>球队身价对比（Transfermarkt）</h4>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>球队</th><th>总身价</th><th>差距</th></tr></thead>
+      <tbody>
+        <tr><td><strong>中日德兰</strong></td><td>€9900万</td><td rowspan="2" style="text-align:center;vertical-align:middle">客队身价是主队的 2.0 倍</td></tr>
+        <tr><td><strong>贝西克塔斯</strong></td><td>€2.03亿</td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:10px;color:var(--text2);margin-top:4px">数据来源：Transfermarkt / 懂球帝 / 出奇体育（2026年7月更新）</div>
+  </div>
+  <!-- 场地天气新闻 -->
+  <div class="grid-2" style="margin-top:10px">
+    <div class="info-section">
+      <h4>比赛场地与天气</h4>
+      <div class="soft-factor">MCH Arena (容量12,152)<br>丹麦7月夜间约15-18°C，多云</div>
+    </div>
+    <div class="info-section">
+      <h4>伤停信息</h4>
+      <div class="soft-factor">体彩官伤停暂无数据（信息缺失，需赛前1小时确认首发）</div>
+    </div>
+  </div>
+
+  <!-- 战意心理与体能分析（规则27） -->
+  <div class="info-section">
+    <h4>战意心理与体能分析（规则27）</h4>
+    <div class="grid-2 soft-factor">
+      <div><strong>战意不对称：</strong>轻度不对称<br>
+      中日德兰：翻盘战意强(需赢球)，丹超刚开赛可全力投入<br>
+      贝西克塔斯：保平即可，联赛未开始专注欧战</div>
+      <div><strong>体能与休息：</strong><br>
+      中日德兰：丹超首轮3-2，上场比赛距今6天，体能充沛<br>
+      贝西克塔斯：6天前首回合，无联赛牵制，体能充沛</div>
+    </div>
+    <div class="grid-2 soft-factor" style="margin-top:6px">
+      <div><strong>心理因素：</strong><br>
+      中日德兰：首回合10人应战只输1球，士气受影响但非崩盘<br>
+      贝西克塔斯：主场赢球占先机，心态放松</div>
+      <div><strong>赛程牵制：</strong><br>
+      中日德兰：无后续赛程牵制<br>
+      贝西克塔斯：无后续赛程牵制</div>
+    </div>
+    <div class="soft-factor" style="margin-top:6px"><strong>综合软因素修正：</strong>主队λ×1.058 / 客队λ×0.95</div>
+  </div>
+  
+  <!-- 近期战绩与历史交锋 -->
+  <div style="margin-top:10px">
+    <div style="font-size:13px;font-weight:600;margin-bottom:6px">近期战绩与历史交锋</div>
+    <div class="grid-2">
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--success)">中日德兰 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-26</td><td>桑德捷斯基 2:3 中日德兰</td><td>胜</td><td>丹超</td></tr><tr><td>2026-07-24</td><td>贝西克塔斯 1:0 中日德兰</td><td>负</td><td>欧罗巴</td></tr><tr><td>2026-07-17</td><td>中日德兰 4:1 欧登塞</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-07-11</td><td>加的夫城 0:6 中日德兰</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-07-04</td><td>中日德兰 4:2 锡尔克堡</td><td>胜</td><td>俱乐部赛</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--danger)">贝西克塔斯 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-24</td><td>贝西克塔斯 1:0 中日德兰</td><td>胜</td><td>欧罗巴</td></tr><tr><td>2026-07-14</td><td>特斯巴达 3:2 贝西克塔斯</td><td>负</td><td>俱乐部赛</td></tr><tr><td>2026-07-05</td><td>莫索马伊洛瓦里 0:0 贝西克塔斯</td><td>平</td><td>俱乐部赛</td></tr><tr><td>2026-07-02</td><td>贝西克塔斯 2:1 贾伊米奥特</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-05-16</td><td>里泽 2:2 贝西克塔斯</td><td>平</td><td>土超</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="margin-top:8px">
+      <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--primary)">历史交锋</div>
+      <table style="font-size:11px;margin:0">
+        <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+        <tbody>
+          <tr><td>2026-07-24</td><td>贝西克塔斯 1:0 中日德兰</td><td>贝西克塔斯胜</td><td>欧罗巴</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="font-size:12px;color:var(--text2);margin-top:8px">中日德兰首回合15分钟红牌，10人应战只输1球。近10场6胜2平2负进23失11，丹超首轮3-2胜桑德捷斯基状态回升。xG 1.55说明进攻质量不错。贝西克塔斯近10场4胜3平3负进13失9，xGA 1.32防守有漏洞但保平即可深度防守。⚠️高山流水预测平局1:1——贝西克塔斯保平战意+客场收缩→平局概率上修。体彩官方伤停暂无数据，需赛前确认。</div>
+</div>
+
+<div class="match-card away-rec">
+  <h3 style="margin-bottom:4px">周四002 欧罗巴资格赛</h3>
+  <div style="font-size:18px;font-weight:700;margin-bottom:2px">帕福斯FC <span style="color:var(--text2);font-weight:400">vs</span> 斯普利特海杜克</div>
+  <div style="font-size:12px;color:var(--text2);margin-bottom:8px">首回合: 海杜克 2-0 帕福斯 | 总比分: 海杜克 2-0 领先 | Stelios Kyriakides Stadium (容量9,394)</div>
+  
+  <div style="display:flex;gap:4px;align-items:center;margin:6px 0">
+    <span style="width:40px;font-size:12px">主胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:89%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">33.5%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">平局</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:77%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">29.0%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">客胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:100%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">37.5%</span>
+  </div>
+  
+  <div class="divergence-alert">⚠️ 模型与市场分歧（客胜模型方向 vs 市场方向）</div>
+  
+  <div class="rec-box away">客胜 | 融合概率 37.5% | 置信度 高 ★★★</div>
+  
+  <div class="grid-2" style="margin-top:10px">
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">比分TOP5</div>
+      <div><span class="score-rec">0:1</span><span style="font-size:11px;color:var(--text2)">17.8%</span> <span class="score-rec">1:0</span><span style="font-size:11px;color:var(--text2)">15.3%</span> <span class="score-rec">0:0</span><span style="font-size:11px;color:var(--text2)">14.8%</span> <span class="score-rec">1:1</span><span style="font-size:11px;color:var(--text2)">11.6%</span> <span class="score-rec">0:2</span><span style="font-size:11px;color:var(--text2)">7.9%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">半场TOP3</div>
+      <div><span class="score-alt">0:0</span><span style="font-size:11px;color:var(--text2)">43.5%</span> <span class="score-alt">0:1</span><span style="font-size:11px;color:var(--text2)">20.5%</span> <span class="score-alt">1:0</span><span style="font-size:11px;color:var(--text2)">17.5%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">大小球 / 让球</div>
+      <div style="font-size:12px">大球(2.5): 27.0% | 小球(2.5): 73.0%</div>
+      <div style="font-size:12px;margin-top:4px"><span class="score-alt">主让-1球</span><span style="font-size:11px;color:var(--text2)">85.8%</span> <span class="score-alt">平手盘</span><span style="font-size:11px;color:var(--text2)">60.5%</span> <span class="score-alt">主让1球</span><span style="font-size:11px;color:var(--text2)">31.3%</span> </div>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">赔率(体彩)</div>
+      <div style="font-size:14px;margin-bottom:8px">1.8 / 3.55 / 3.8</div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">模型参数</div>
+      <table style="font-size:12px;margin:0">
+        <tr><td>λ主/客</td><td>0.826 / 0.977</td></tr>
+        <tr><td style="color:var(--purple)">xG主/客</td><td style="color:var(--purple)">1.5 / 1.6 (xGA: 1.27/1.22)</td></tr>
+        <tr><td style="color:var(--purple)">xG校准因子</td><td style="color:var(--purple)">主×1.026 (预期1.36) / 客×1.083 (预期1.44)</td></tr>
+        <tr><td>DC主/平/客</td><td>31.3% / 29.3% / 39.5%</td></tr>
+        <tr><td>Skellam主/平/客</td><td>29.5% / 32.7% / 37.7%</td></tr>
+        <tr><td>MC主/平/客</td><td>29.9% / 31.9% / 38.2%</td></tr>
+        <tr><td>模型标准差</td><td>2.1%</td></tr>
+        <tr><td>软因素修正</td><td>主队×0.969 / 客队×0.948</td></tr>
+      </table>
+    </div>
+  </div>
+  
+  <!-- 体彩赔率 vs 模型概率 -->
+  <div class="info-section" style="margin-top:10px">
+    <h4 style="color:var(--purple)">体彩赔率 vs 模型概率（规则15: 赔率以体彩官方为准）</h4>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">① 胜平负</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>方向</th><th>体彩赔率</th><th>隐含概率</th><th>支持率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜</td><td>1.8</td><td>55.6%</td><td>34%</td><td>33.5%</td><td style="color:#c62828">-22.1%</td></tr><tr><td>平</td><td>3.48</td><td>28.7%</td><td>23%</td><td>29.0%</td><td style="color:#5f6368">+0.3%</td></tr><tr><td>负</td><td>3.5</td><td>28.6%</td><td>43%</td><td>37.5%</td><td style="color:#2e7d32">+8.9%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">② 让球胜平负（主让1球）</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>方向</th><th>体彩赔率</th><th>隐含概率</th><th>支持率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜</td><td>3.62</td><td>27.6%</td><td>18%</td><td>9.6%</td><td style="color:#c62828">-18.0%</td></tr><tr><td>平</td><td>3.4</td><td>29.4%</td><td>30%</td><td>21.6%</td><td style="color:#c62828">-7.8%</td></tr><tr><td>负</td><td>1.79</td><td>55.9%</td><td>52%</td><td>68.7%</td><td style="color:#2e7d32">+12.8%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">③ 总进球数</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>进球数</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>0球</td><td>12.0</td><td>8.3%</td><td>14.8%</td><td style="color:#2e7d32">+6.5%</td></tr><tr><td>1球</td><td>4.2</td><td>23.8%</td><td>33.2%</td><td style="color:#2e7d32">+9.4%</td></tr><tr><td>2球</td><td>3.25</td><td>30.8%</td><td>25.1%</td><td style="color:#c62828">-5.7%</td></tr><tr><td>3球</td><td>3.6</td><td>27.8%</td><td>16.1%</td><td style="color:#c62828">-11.7%</td></tr><tr><td>4球</td><td>5.6</td><td>17.9%</td><td>7.3%</td><td style="color:#c62828">-10.6%</td></tr><tr><td>5球</td><td>10.5</td><td>9.5%</td><td>2.6%</td><td style="color:#c62828">-6.9%</td></tr><tr><td>6球</td><td>23.0</td><td>4.3%</td><td>1.0%</td><td style="color:#c62828">-3.3%</td></tr><tr><td>7+球</td><td>35.0</td><td>2.9%</td><td>0.0%</td><td style="color:#c62828">-2.9%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">④ 半全场胜平负 <span style="font-size:10px;color:var(--text2);font-weight:normal">（体彩半全场待正式开盘，赔率仅供参考）</span></div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>半全场</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜胜</td><td>2.8</td><td>35.7%</td><td>16.7%</td><td style="color:#c62828">-19.0%</td></tr><tr><td>胜平</td><td>14.0</td><td>7.1%</td><td>4.4%</td><td style="color:#c62828">-2.7%</td></tr><tr><td>胜负</td><td>38.0</td><td>2.6%</td><td>1.4%</td><td style="color:#5f6368">-1.2%</td></tr><tr><td>平胜</td><td>4.6</td><td>21.7%</td><td>12.0%</td><td style="color:#c62828">-9.7%</td></tr><tr><td>平平</td><td>5.6</td><td>17.9%</td><td>23.5%</td><td style="color:#2e7d32">+5.6%</td></tr><tr><td>平负</td><td>8.25</td><td>12.1%</td><td>14.8%</td><td style="color:#2e7d32">+2.7%</td></tr><tr><td>负胜</td><td>23.0</td><td>4.3%</td><td>1.1%</td><td style="color:#c62828">-3.2%</td></tr><tr><td>负平</td><td>14.0</td><td>7.1%</td><td>4.4%</td><td style="color:#c62828">-2.7%</td></tr><tr><td>负负</td><td>6.0</td><td>16.7%</td><td>21.8%</td><td style="color:#2e7d32">+5.1%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">⑤ 比分（模型概率TOP10，体彩比分赔率待更新）</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>比分</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>0:1</td><td>-</td><td>-</td><td>17.8%</td><td>-</td></tr><tr><td>1:0</td><td>-</td><td>-</td><td>15.3%</td><td>-</td></tr><tr><td>0:0</td><td>-</td><td>-</td><td>14.8%</td><td>-</td></tr><tr><td>1:1</td><td>-</td><td>-</td><td>11.6%</td><td>-</td></tr><tr><td>0:2</td><td>-</td><td>-</td><td>7.9%</td><td>-</td></tr><tr><td>1:2</td><td>-</td><td>-</td><td>6.5%</td><td>-</td></tr><tr><td>2:0</td><td>-</td><td>-</td><td>5.6%</td><td>-</td></tr><tr><td>2:1</td><td>-</td><td>-</td><td>5.5%</td><td>-</td></tr><tr><td>2:2</td><td>-</td><td>-</td><td>2.7%</td><td>-</td></tr><tr><td>0:3</td><td>-</td><td>-</td><td>2.6%</td><td>-</td></tr></tbody>
+    </table>
+  </div>
+
+  <!-- 身价对比 -->
+  <div class="info-section" style="margin-top:10px">
+    <h4>球队身价对比（Transfermarkt）</h4>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>球队</th><th>总身价</th><th>差距</th></tr></thead>
+      <tbody>
+        <tr><td><strong>帕福斯FC</strong></td><td>€2628万</td><td rowspan="2" style="text-align:center;vertical-align:middle">客队身价是主队的 1.3 倍</td></tr>
+        <tr><td><strong>斯普利特海杜克</strong></td><td>€3300万</td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:10px;color:var(--text2);margin-top:4px">数据来源：Transfermarkt / 懂球帝 / 出奇体育（2026年7月更新）</div>
+  </div>
+  <!-- 场地天气新闻 -->
+  <div class="grid-2" style="margin-top:10px">
+    <div class="info-section">
+      <h4>比赛场地与天气</h4>
+      <div class="soft-factor">Stelios Kyriakides Stadium (容量9,394)<br>塞浦路斯7月夜间约25-28°C，晴</div>
+    </div>
+    <div class="info-section">
+      <h4>伤停信息</h4>
+      <div class="soft-factor">体彩官方伤停暂无数据（信息缺失）</div>
+    </div>
+  </div>
+
+  <!-- 战意心理与体能分析（规则27） -->
+  <div class="info-section">
+    <h4>战意心理与体能分析（规则27）</h4>
+    <div class="grid-2 soft-factor">
+      <div><strong>战意不对称：</strong>严重不对称<br>
+      帕福斯FC：需翻盘3球，基本无望，战意可能低落<br>
+      斯普利特海杜克：2球优势，可控球消耗</div>
+      <div><strong>体能与休息：</strong><br>
+      帕福斯FC：塞浦路斯联赛未开始，体能充沛<br>
+      斯普利特海杜克：克罗地亚联赛未开始，体能充沛</div>
+    </div>
+    <div class="grid-2 soft-factor" style="margin-top:6px">
+      <div><strong>心理因素：</strong><br>
+      帕福斯FC：首回合0射正，信心受挫<br>
+      斯普利特海杜克：2-0完胜，信心充足</div>
+      <div><strong>赛程牵制：</strong><br>
+      帕福斯FC：无后续赛程牵制<br>
+      斯普利特海杜克：无后续赛程牵制</div>
+    </div>
+    <div class="soft-factor" style="margin-top:6px"><strong>综合软因素修正：</strong>主队λ×0.969 / 客队λ×0.948</div>
+  </div>
+  
+  <!-- 近期战绩与历史交锋 -->
+  <div style="margin-top:10px">
+    <div style="font-size:13px;font-weight:600;margin-bottom:6px">近期战绩与历史交锋</div>
+    <div class="grid-2">
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--success)">帕福斯FC 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-24</td><td>海杜克 2:0 帕福斯</td><td>负</td><td>欧罗巴</td></tr><tr><td>2026-07-17</td><td>布拉迪斯 3:2 帕福斯</td><td>负</td><td>俱乐部赛</td></tr><tr><td>2026-07-12</td><td>帕福斯 0:1 比亚韦</td><td>负</td><td>俱乐部赛</td></tr><tr><td>2026-07-09</td><td>亚布洛 0:0 帕福斯</td><td>平</td><td>俱乐部赛</td></tr><tr><td>2026-07-03</td><td>帕福斯 2:1 克拉科维亚</td><td>胜</td><td>俱乐部赛</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--danger)">斯普利特海杜克 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-24</td><td>海杜克 2:0 帕福斯</td><td>胜</td><td>欧罗巴</td></tr><tr><td>2026-07-17</td><td>日利纳 2:1 海杜克</td><td>负</td><td>欧罗巴</td></tr><tr><td>2026-07-10</td><td>海杜克 2:0 日利纳</td><td>胜</td><td>欧罗巴</td></tr><tr><td>2026-07-02</td><td>采列 0:1 海杜克</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-06-28</td><td>LNZ Cherkasy 0:1 海杜克</td><td>胜</td><td>俱乐部赛</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="margin-top:8px">
+      <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--primary)">历史交锋</div>
+      <table style="font-size:11px;margin:0">
+        <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+        <tbody>
+          <tr><td>2026-07-24</td><td>海杜克 2:0 帕福斯</td><td>海杜克胜</td><td>欧罗巴</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="font-size:12px;color:var(--text2);margin-top:8px">帕福斯需翻盘3球，难度极大。帕福斯近10场4胜2平4负进12失11，xG 1.50状态平平。海杜克近10场7胜1平2负进21失9，xG 1.60状态极佳。首回合海杜克2-0（56'64'进球），帕福斯射门13次射正4次但0进球，海杜克射门10次射正3次进2球。海杜克欧罗巴近3场2胜1负。⚠️之前误传帕福斯0射正，实际射正4次（Goal.com官方数据），中文平台信息错误（规则25）。</div>
+</div>
+
+<div class="match-card away-rec">
+  <h3 style="margin-bottom:4px">周四003 欧罗巴资格赛</h3>
+  <div style="font-size:18px;font-weight:700;margin-bottom:2px">安德莱赫特 <span style="color:var(--text2);font-weight:400">vs</span> 哈马比</div>
+  <div style="font-size:12px;color:var(--text2);margin-bottom:8px">首回合: 哈马比 1-1 安德莱赫特 | 总比分: 1-1 平局 | Lotto Park (容量21,500)</div>
+  
+  <div style="display:flex;gap:4px;align-items:center;margin:6px 0">
+    <span style="width:40px;font-size:12px">主胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:89%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">33.3%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">平局</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:78%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">29.1%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">客胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:100%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">37.5%</span>
+  </div>
+  
+  <div class="divergence-alert">⚠️ 模型与市场分歧（客胜模型方向 vs 市场方向）</div>
+  
+  <div class="rec-box away">客胜 | 融合概率 37.5% | 置信度 中 ★★</div>
+  
+  <div class="grid-2" style="margin-top:10px">
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">比分TOP5</div>
+      <div><span class="score-rec">0:1</span><span style="font-size:11px;color:var(--text2)">16.6%</span> <span class="score-rec">1:0</span><span style="font-size:11px;color:var(--text2)">13.0%</span> <span class="score-rec">1:1</span><span style="font-size:11px;color:var(--text2)">11.5%</span> <span class="score-rec">0:0</span><span style="font-size:11px;color:var(--text2)">10.9%</span> <span class="score-rec">0:2</span><span style="font-size:11px;color:var(--text2)">8.8%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">半场TOP3</div>
+      <div><span class="score-alt">0:0</span><span style="font-size:11px;color:var(--text2)">38.3%</span> <span class="score-alt">0:1</span><span style="font-size:11px;color:var(--text2)">22.0%</span> <span class="score-alt">1:0</span><span style="font-size:11px;color:var(--text2)">16.9%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">大小球 / 让球</div>
+      <div style="font-size:12px">大球(2.5): 34.2% | 小球(2.5): 65.8%</div>
+      <div style="font-size:12px;margin-top:4px"><span class="score-alt">主让-1球</span><span style="font-size:11px;color:var(--text2)">81.7%</span> <span class="score-alt">平手盘</span><span style="font-size:11px;color:var(--text2)">55.7%</span> <span class="score-alt">主让1球</span><span style="font-size:11px;color:var(--text2)">29.4%</span> </div>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">赔率(体彩)</div>
+      <div style="font-size:14px;margin-bottom:8px">2.1 / 3.35 / 3.1</div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">模型参数</div>
+      <table style="font-size:12px;margin:0">
+        <tr><td>λ主/客</td><td>0.889 / 1.179</td></tr>
+        <tr><td style="color:var(--purple)">xG主/客</td><td style="color:var(--purple)">1.41 / 1.81 (xGA: 1.73/1.22)</td></tr>
+        <tr><td style="color:var(--purple)">xG校准因子</td><td style="color:var(--purple)">主×0.992 (预期1.31) / 客×1.25 (预期1.77)</td></tr>
+        <tr><td>DC主/平/客</td><td>29.4% / 26.4% / 44.3%</td></tr>
+        <tr><td>Skellam主/平/客</td><td>27.6% / 29.8% / 42.6%</td></tr>
+        <tr><td>MC主/平/客</td><td>28.1% / 29.2% / 42.7%</td></tr>
+        <tr><td>模型标准差</td><td>5.9%</td></tr>
+        <tr><td>软因素修正</td><td>主队×0.949 / 客队×1.048</td></tr>
+      </table>
+    </div>
+  </div>
+  
+  <!-- 体彩赔率 vs 模型概率 -->
+  <div class="info-section" style="margin-top:10px">
+    <h4 style="color:var(--purple)">体彩赔率 vs 模型概率（规则15: 赔率以体彩官方为准）</h4>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">① 胜平负</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>方向</th><th>体彩赔率</th><th>隐含概率</th><th>支持率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜</td><td>2.02</td><td>49.5%</td><td>39%</td><td>33.3%</td><td style="color:#c62828">-16.2%</td></tr><tr><td>平</td><td>3.45</td><td>29.0%</td><td>28%</td><td>29.1%</td><td style="color:#5f6368">+0.1%</td></tr><tr><td>负</td><td>2.9</td><td>34.5%</td><td>33%</td><td>37.5%</td><td style="color:#2e7d32">+3.0%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">② 让球胜平负（主让1球）</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>方向</th><th>体彩赔率</th><th>隐含概率</th><th>支持率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜</td><td>4.15</td><td>24.1%</td><td>21%</td><td>9.4%</td><td style="color:#c62828">-14.7%</td></tr><tr><td>平</td><td>3.8</td><td>26.3%</td><td>32%</td><td>20.0%</td><td style="color:#c62828">-6.3%</td></tr><tr><td>负</td><td>1.6</td><td>62.5%</td><td>47%</td><td>70.6%</td><td style="color:#2e7d32">+8.1%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">③ 总进球数</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>进球数</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>0球</td><td>15.0</td><td>6.7%</td><td>10.9%</td><td style="color:#2e7d32">+4.2%</td></tr><tr><td>1球</td><td>5.6</td><td>17.9%</td><td>29.6%</td><td style="color:#2e7d32">+11.7%</td></tr><tr><td>2球</td><td>3.6</td><td>27.8%</td><td>25.3%</td><td style="color:#c62828">-2.5%</td></tr><tr><td>3球</td><td>3.3</td><td>30.3%</td><td>18.6%</td><td style="color:#c62828">-11.7%</td></tr><tr><td>4球</td><td>4.7</td><td>21.3%</td><td>9.6%</td><td style="color:#c62828">-11.7%</td></tr><tr><td>5球</td><td>8.5</td><td>11.8%</td><td>4.0%</td><td style="color:#c62828">-7.8%</td></tr><tr><td>6球</td><td>17.0</td><td>5.9%</td><td>1.9%</td><td style="color:#c62828">-4.0%</td></tr><tr><td>7+球</td><td>26.0</td><td>3.8%</td><td>0.0%</td><td style="color:#c62828">-3.8%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">④ 半全场胜平负 <span style="font-size:10px;color:var(--text2);font-weight:normal">（体彩半全场待正式开盘，赔率仅供参考）</span></div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>半全场</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜胜</td><td>3.25</td><td>30.8%</td><td>15.9%</td><td style="color:#c62828">-14.9%</td></tr><tr><td>胜平</td><td>13.0</td><td>7.7%</td><td>4.8%</td><td style="color:#c62828">-2.9%</td></tr><tr><td>胜负</td><td>28.0</td><td>3.6%</td><td>1.8%</td><td style="color:#5f6368">-1.8%</td></tr><tr><td>平胜</td><td>5.2</td><td>19.2%</td><td>10.8%</td><td style="color:#c62828">-8.4%</td></tr><tr><td>平平</td><td>6.25</td><td>16.0%</td><td>19.9%</td><td style="color:#2e7d32">+3.9%</td></tr><tr><td>平负</td><td>7.0</td><td>14.3%</td><td>15.5%</td><td style="color:#5f6368">+1.2%</td></tr><tr><td>负胜</td><td>23.0</td><td>4.3%</td><td>1.3%</td><td style="color:#c62828">-3.0%</td></tr><tr><td>负平</td><td>13.0</td><td>7.7%</td><td>4.7%</td><td style="color:#c62828">-3.0%</td></tr><tr><td>负负</td><td>4.6</td><td>21.7%</td><td>25.3%</td><td style="color:#2e7d32">+3.6%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">⑤ 比分（模型概率TOP10，体彩比分赔率待更新）</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>比分</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>0:1</td><td>-</td><td>-</td><td>16.6%</td><td>-</td></tr><tr><td>1:0</td><td>-</td><td>-</td><td>13.0%</td><td>-</td></tr><tr><td>1:1</td><td>-</td><td>-</td><td>11.5%</td><td>-</td></tr><tr><td>0:0</td><td>-</td><td>-</td><td>10.9%</td><td>-</td></tr><tr><td>0:2</td><td>-</td><td>-</td><td>8.8%</td><td>-</td></tr><tr><td>1:2</td><td>-</td><td>-</td><td>7.8%</td><td>-</td></tr><tr><td>2:1</td><td>-</td><td>-</td><td>5.9%</td><td>-</td></tr><tr><td>2:0</td><td>-</td><td>-</td><td>5.0%</td><td>-</td></tr><tr><td>2:2</td><td>-</td><td>-</td><td>3.5%</td><td>-</td></tr><tr><td>0:3</td><td>-</td><td>-</td><td>3.5%</td><td>-</td></tr></tbody>
+    </table>
+  </div>
+
+  <!-- 身价对比 -->
+  <div class="info-section" style="margin-top:10px">
+    <h4>球队身价对比（Transfermarkt）</h4>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>球队</th><th>总身价</th><th>差距</th></tr></thead>
+      <tbody>
+        <tr><td><strong>安德莱赫特</strong></td><td>€9830万</td><td rowspan="2" style="text-align:center;vertical-align:middle">主队身价是客队的 3.1 倍</td></tr>
+        <tr><td><strong>哈马比</strong></td><td>€3155万</td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:10px;color:var(--text2);margin-top:4px">数据来源：Transfermarkt / 懂球帝 / 出奇体育（2026年7月更新）</div>
+  </div>
+  <!-- 场地天气新闻 -->
+  <div class="grid-2" style="margin-top:10px">
+    <div class="info-section">
+      <h4>比赛场地与天气</h4>
+      <div class="soft-factor">Lotto Park (容量21,500)<br>比利时7月夜间约16-20°C，多云</div>
+    </div>
+    <div class="info-section">
+      <h4>伤停信息</h4>
+      <div class="soft-factor">安德莱赫特残阵: Saliba(中场,停赛,首回合两黄变红), Vertonghen(后卫,肌肉撕裂), Hatenboer(后卫,鼻骨骨折), Camara(后卫,跖骨骨折), Sardella(后卫,肌肉伤), Hey(后卫,骨折)——防线6人缺阵但首回合已缺阵5人,次回合仅新增Saliba停赛。哈马比: Kone(中场,膝伤,4月起缺阵)——可派出与首回合相同首发11人。来源: Sportsmole/anderlecht-online.be(高可信度); 头条/搜狐伤停名单标注未验证(规则25)</div>
+    </div>
+  </div>
+
+  <!-- 球员可用性详情 -->
+  <div class="info-section" style="margin-top:10px">
+    <h4>球员可用性详情（首回合vs次回合对比）</h4>
+    <div class="grid-2">
+      <div>
+        <strong style="color:var(--home-color)">安德莱赫特 缺阵名单</strong>
+        <table style="font-size:10px;margin-top:4px">
+          <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>原因</th></tr></thead>
+          <tbody><tr><td>Nathan Saliba</td><td>中场</td><td>停赛</td><td>首回合两黄变一红 <span style="color:#e74c3c;font-weight:bold">[次回合新增]</span></td></tr>
+<tr><td>Jan Vertonghen</td><td>后卫(核心)</td><td>伤病</td><td>肌肉撕裂</td></tr>
+<tr><td>Cedric Hatenboer</td><td>后卫</td><td>伤病</td><td>鼻骨骨折</td></tr>
+<tr><td>Ilay Camara</td><td>后卫</td><td>伤病</td><td>跖骨/脚骨折</td></tr>
+<tr><td>Killian Sardella</td><td>后卫</td><td>伤病</td><td>肌肉伤</td></tr>
+<tr><td>Lucas Hey</td><td>后卫</td><td>伤病</td><td>骨折</td></tr>
+</tbody>
+        </table>
+      </div>
+      <div>
+        <strong style="color:var(--away-color)">哈马比 缺阵名单</strong>
+        <table style="font-size:10px;margin-top:4px">
+          <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>原因</th></tr></thead>
+          <tbody><tr><td>Juri Cisotti (Sourou Kone)</td><td>中场</td><td>伤病</td><td>膝伤(2026年4月起)</td></tr>
+</tbody>
+        </table>
+      </div>
+    </div>
+    <div class="grid-2 soft-factor" style="margin-top:6px">
+      <div><strong>预计首发：</strong><br>
+      <span style="color:var(--home-color)">安德莱赫特</span>：4-4-2: Coosemans(C); Maamar, Petrot, Biancone, Augustinsson; Llansana, Kana, Ambros, Nga Kana; Sikan, Seke<br>
+      <span style="color:var(--away-color)">哈马比</span>：可派出与首回合相同首发11人</div>
+      <div><strong>首回合首发（主队）：</strong><br>4-2-3-1: Coosemans; Maamar, Biancone, Petrot, Augustinsson; Llansana, Kana; Saliba(红牌), Nga Kana, Seke; Sikan</div>
+    </div>
+    <div class="soft-factor" style="margin-top:6px;padding:6px;background:rgba(255,193,7,0.1);border-left:3px solid #ffc107"><strong>次回合vs首回合对比：</strong>次回合vs首回合: 仅新增Saliba停赛(中场), 其余伤兵首回合已缺阵。防线4人组不变(Maamar-Biancone-Petrot-Augustinsson)。Ambros可能替代Saliba中场位置。哈马比无新增缺阵,可全主力出战。</div>
+    <div style="font-size:10px;color:var(--text2);margin-top:4px">来源: Sportsmole / anderlecht-online.be / bollsvenskan.se（高可信度）; 中文平台信息标注未验证（规则25）</div>
+  </div>
+
+  <!-- 战意心理与体能分析（规则27） -->
+  <div class="info-section">
+    <h4>战意心理与体能分析（规则27）</h4>
+    <div class="grid-2 soft-factor">
+      <div><strong>战意不对称：</strong>轻度不对称<br>
+      安德莱赫特：主场0-0即可晋级，战意明确<br>
+      哈马比：必须进球才能晋级，需主动进攻</div>
+      <div><strong>体能与休息：</strong><br>
+      安德莱赫特：比甲7月底开赛，体能状态一般<br>
+      哈马比：瑞超进行中(15轮)，比赛节奏好</div>
+    </div>
+    <div class="grid-2 soft-factor" style="margin-top:6px">
+      <div><strong>心理因素：</strong><br>
+      安德莱赫特：首回合领先被绝平+少一人，心理受挫，新帅首胜压力大<br>
+      哈马比：89分钟绝平，士气高涨</div>
+      <div><strong>赛程牵制：</strong><br>
+      安德莱赫特：比甲新赛季刚开，无后续欧战牵制<br>
+      哈马比：瑞超15轮后排名第2，可能分心联赛</div>
+    </div>
+    <div class="soft-factor" style="margin-top:6px"><strong>综合软因素修正：</strong>主队λ×0.949 / 客队λ×1.048</div>
+  </div>
+  
+  <!-- 近期战绩与历史交锋 -->
+  <div style="margin-top:10px">
+    <div style="font-size:13px;font-weight:600;margin-bottom:6px">近期战绩与历史交锋</div>
+    <div class="grid-2">
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--success)">安德莱赫特 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-24</td><td>哈马比 1:1 安德莱赫特</td><td>平</td><td>欧罗巴</td></tr><tr><td>2026-07-16</td><td>阿尔克马 0:1 安德莱赫特</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-07-11</td><td>安德莱赫特 3:2 奈梅亨</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-07-04</td><td>安德莱赫特 0:0 布洛涅</td><td>平</td><td>俱乐部赛</td></tr><tr><td>2026-05-25</td><td>圣吉联合 5:1 安德莱赫特</td><td>负</td><td>比甲</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--danger)">哈马比 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-26</td><td>布鲁马波卡纳 1:1 哈马比</td><td>平</td><td>瑞超</td></tr><tr><td>2026-07-24</td><td>哈马比 1:1 安德莱赫特</td><td>平</td><td>欧罗巴</td></tr><tr><td>2026-07-19</td><td>哈马比 4:0 代格福什</td><td>胜</td><td>瑞超</td></tr><tr><td>2026-07-12</td><td>哈马比 2:0 卡尔马</td><td>胜</td><td>瑞超</td></tr><tr><td>2026-07-05</td><td>埃夫斯堡 1:2 哈马比</td><td>胜</td><td>瑞超</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="margin-top:8px">
+      <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--primary)">历史交锋</div>
+      <table style="font-size:11px;margin:0">
+        <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+        <tbody>
+          <tr><td>2026-07-24</td><td>哈马比 1:1 安德莱赫特</td><td>平局</td><td>欧罗巴</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="font-size:12px;color:var(--text2);margin-top:8px">安德莱赫特首回合6分钟领先，Saliba两黄变一红被罚下，89分钟被绝平。近10场3胜5平2负进14失16，平局率50%，xGA 1.73防守漏洞大。哈马比近10场5胜2平3负进21失12，xG 1.81瑞超第2进攻极强，实际进球2.13/game超过xG。安德莱赫特主场0-0即可晋级。⚠️高山流水预测半场0:0——安德莱保守+哈马比xG碾压→客胜/平局概率上修。</div>
+</div>
+
+<div class="match-card home-rec">
+  <h3 style="margin-bottom:4px">周四004 欧罗巴资格赛</h3>
+  <div style="font-size:18px;font-weight:700;margin-bottom:2px">费伦茨瓦罗斯 <span style="color:var(--text2);font-weight:400">vs</span> 特温特</div>
+  <div style="font-size:12px;color:var(--text2);margin-bottom:8px">首回合: 特温特 1-2 费伦茨瓦罗斯 | 总比分: 费伦茨瓦罗斯 2-1 领先 | Groupama Arena (容量22,000)</div>
+  
+  <div style="display:flex;gap:4px;align-items:center;margin:6px 0">
+    <span style="width:40px;font-size:12px">主胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">39.2%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">平局</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:67%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">26.1%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">客胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:89%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">34.7%</span>
+  </div>
+  
+  
+  
+  <div class="rec-box home">主胜 | 融合概率 39.2% | 置信度 高 ★★★</div>
+  
+  <div class="grid-2" style="margin-top:10px">
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">比分TOP5</div>
+      <div><span class="score-rec">1:0</span><span style="font-size:11px;color:var(--text2)">13.6%</span> <span class="score-rec">0:1</span><span style="font-size:11px;color:var(--text2)">11.5%</span> <span class="score-rec">1:1</span><span style="font-size:11px;color:var(--text2)">11.3%</span> <span class="score-rec">2:1</span><span style="font-size:11px;color:var(--text2)">8.5%</span> <span class="score-rec">2:0</span><span style="font-size:11px;color:var(--text2)">7.9%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">半场TOP3</div>
+      <div><span class="score-alt">0:0</span><span style="font-size:11px;color:var(--text2)">32.7%</span> <span class="score-alt">1:0</span><span style="font-size:11px;color:var(--text2)">21.4%</span> <span class="score-alt">0:1</span><span style="font-size:11px;color:var(--text2)">17.8%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">大小球 / 让球</div>
+      <div style="font-size:12px">大球(2.5): 43.0% | 小球(2.5): 57.0%</div>
+      <div style="font-size:12px;margin-top:4px"><span class="score-alt">主让-1球</span><span style="font-size:11px;color:var(--text2)">88.1%</span> <span class="score-alt">平手盘</span><span style="font-size:11px;color:var(--text2)">67.6%</span> <span class="score-alt">主让1球</span><span style="font-size:11px;color:var(--text2)">43.6%</span> </div>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">赔率(体彩)</div>
+      <div style="font-size:14px;margin-bottom:8px">2.7 / 3.45 / 2.3</div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">模型参数</div>
+      <table style="font-size:12px;margin:0">
+        <tr><td>λ主/客</td><td>1.317 / 1.085</td></tr>
+        <tr><td style="color:var(--purple)">xG主/客</td><td style="color:var(--purple)">1.71 / 2.0 (xGA: 1.01/1.17)</td></tr>
+        <tr><td style="color:var(--purple)">xG校准因子</td><td style="color:var(--purple)">主×1.087 (预期1.44) / 客×1.136 (预期1.5)</td></tr>
+        <tr><td>DC主/平/客</td><td>43.6% / 24.1% / 32.4%</td></tr>
+        <tr><td>Skellam主/平/客</td><td>41.9% / 27.4% / 30.7%</td></tr>
+        <tr><td>MC主/平/客</td><td>41.7% / 27.6% / 30.7%</td></tr>
+        <tr><td>模型标准差</td><td>3.7%</td></tr>
+        <tr><td>软因素修正</td><td>主队×1.027 / 客队×0.995</td></tr>
+      </table>
+    </div>
+  </div>
+  
+  <!-- 体彩赔率 vs 模型概率 -->
+  <div class="info-section" style="margin-top:10px">
+    <h4 style="color:var(--purple)">体彩赔率 vs 模型概率（规则15: 赔率以体彩官方为准）</h4>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">① 胜平负</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>方向</th><th>体彩赔率</th><th>隐含概率</th><th>支持率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜</td><td>2.85</td><td>35.1%</td><td>47%</td><td>39.2%</td><td style="color:#2e7d32">+4.1%</td></tr><tr><td>平</td><td>3.6</td><td>27.8%</td><td>23%</td><td>26.1%</td><td style="color:#5f6368">-1.7%</td></tr><tr><td>负</td><td>2.0</td><td>50.0%</td><td>30%</td><td>34.7%</td><td style="color:#c62828">-15.3%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">② 让球胜平负（主受让1球）</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>方向</th><th>体彩赔率</th><th>隐含概率</th><th>支持率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜</td><td>1.61</td><td>62.1%</td><td>52%</td><td>67.6%</td><td style="color:#2e7d32">+5.5%</td></tr><tr><td>平</td><td>3.83</td><td>26.1%</td><td>28%</td><td>20.4%</td><td style="color:#c62828">-5.7%</td></tr><tr><td>负</td><td>4.05</td><td>24.7%</td><td>20%</td><td>11.9%</td><td style="color:#c62828">-12.8%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">③ 总进球数</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>进球数</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>0球</td><td>17.0</td><td>5.9%</td><td>7.4%</td><td style="color:#5f6368">+1.5%</td></tr><tr><td>1球</td><td>5.9</td><td>16.9%</td><td>25.1%</td><td style="color:#2e7d32">+8.2%</td></tr><tr><td>2球</td><td>4.0</td><td>25.0%</td><td>24.5%</td><td style="color:#5f6368">-0.5%</td></tr><tr><td>3球</td><td>3.35</td><td>29.9%</td><td>20.9%</td><td style="color:#c62828">-9.0%</td></tr><tr><td>4球</td><td>4.55</td><td>22.0%</td><td>12.6%</td><td style="color:#c62828">-9.4%</td></tr><tr><td>5球</td><td>7.25</td><td>13.8%</td><td>6.0%</td><td style="color:#c62828">-7.8%</td></tr><tr><td>6球</td><td>14.0</td><td>7.1%</td><td>3.5%</td><td style="color:#c62828">-3.6%</td></tr><tr><td>7+球</td><td>21.0</td><td>4.8%</td><td>0.0%</td><td style="color:#c62828">-4.8%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">④ 半全场胜平负 <span style="font-size:10px;color:var(--text2);font-weight:normal">（体彩半全场待正式开盘，赔率仅供参考）</span></div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>半全场</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜胜</td><td>4.8</td><td>20.8%</td><td>25.4%</td><td style="color:#2e7d32">+4.6%</td></tr><tr><td>胜平</td><td>13.0</td><td>7.7%</td><td>5.2%</td><td style="color:#c62828">-2.5%</td></tr><tr><td>胜负</td><td>20.0</td><td>5.0%</td><td>1.7%</td><td style="color:#c62828">-3.3%</td></tr><tr><td>平胜</td><td>7.5</td><td>13.3%</td><td>14.4%</td><td style="color:#5f6368">+1.1%</td></tr><tr><td>平平</td><td>6.7</td><td>14.9%</td><td>16.7%</td><td style="color:#5f6368">+1.8%</td></tr><tr><td>平负</td><td>5.2</td><td>19.2%</td><td>11.1%</td><td style="color:#c62828">-8.1%</td></tr><tr><td>负胜</td><td>27.0</td><td>3.7%</td><td>2.2%</td><td style="color:#5f6368">-1.5%</td></tr><tr><td>负平</td><td>13.0</td><td>7.7%</td><td>5.2%</td><td style="color:#c62828">-2.5%</td></tr><tr><td>负负</td><td>3.05</td><td>32.8%</td><td>18.1%</td><td style="color:#c62828">-14.7%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">⑤ 比分（模型概率TOP10，体彩比分赔率待更新）</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>比分</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>1:0</td><td>-</td><td>-</td><td>13.6%</td><td>-</td></tr><tr><td>0:1</td><td>-</td><td>-</td><td>11.5%</td><td>-</td></tr><tr><td>1:1</td><td>-</td><td>-</td><td>11.3%</td><td>-</td></tr><tr><td>2:1</td><td>-</td><td>-</td><td>8.5%</td><td>-</td></tr><tr><td>2:0</td><td>-</td><td>-</td><td>7.9%</td><td>-</td></tr><tr><td>0:0</td><td>-</td><td>-</td><td>7.4%</td><td>-</td></tr><tr><td>1:2</td><td>-</td><td>-</td><td>7.0%</td><td>-</td></tr><tr><td>0:2</td><td>-</td><td>-</td><td>5.3%</td><td>-</td></tr><tr><td>2:2</td><td>-</td><td>-</td><td>4.6%</td><td>-</td></tr><tr><td>3:1</td><td>-</td><td>-</td><td>3.7%</td><td>-</td></tr></tbody>
+    </table>
+  </div>
+
+  <!-- 身价对比 -->
+  <div class="info-section" style="margin-top:10px">
+    <h4>球队身价对比（Transfermarkt）</h4>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>球队</th><th>总身价</th><th>差距</th></tr></thead>
+      <tbody>
+        <tr><td><strong>费伦茨瓦罗斯</strong></td><td>€4000万</td><td rowspan="2" style="text-align:center;vertical-align:middle">客队身价是主队的 2.1 倍</td></tr>
+        <tr><td><strong>特温特</strong></td><td>€8250万</td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:10px;color:var(--text2);margin-top:4px">数据来源：Transfermarkt / 懂球帝 / 出奇体育（2026年7月更新）</div>
+  </div>
+  <!-- 场地天气新闻 -->
+  <div class="grid-2" style="margin-top:10px">
+    <div class="info-section">
+      <h4>比赛场地与天气</h4>
+      <div class="soft-factor">Groupama Arena (容量22,000)<br>匈牙利7月夜间约20-23°C，晴</div>
+    </div>
+    <div class="info-section">
+      <h4>伤停信息</h4>
+      <div class="soft-factor">特温特: Lars Unnerstall(主力门将)腹部受伤出战成疑(体彩数据缺失，来自外媒)</div>
+    </div>
+  </div>
+
+  <!-- 战意心理与体能分析（规则27） -->
+  <div class="info-section">
+    <h4>战意心理与体能分析（规则27）</h4>
+    <div class="grid-2 soft-factor">
+      <div><strong>战意不对称：</strong>严重不对称<br>
+      费伦茨瓦罗斯：主场保平即可晋级，可防守反击<br>
+      特温特：必须赢球才能翻盘，需全力进攻</div>
+      <div><strong>体能与休息：</strong><br>
+      费伦茨瓦罗斯：匈牙利联赛已开赛，比赛状态好<br>
+      特温特：荷甲7月底开赛，体能状态一般</div>
+    </div>
+    <div class="grid-2 soft-factor" style="margin-top:6px">
+      <div><strong>心理因素：</strong><br>
+      费伦茨瓦罗斯：首回合客场2-1逆转，士气高涨<br>
+      特温特：主场领先被逆转，心理受挫</div>
+      <div><strong>赛程牵制：</strong><br>
+      费伦茨瓦罗斯：无后续欧战牵制<br>
+      特温特：荷甲新赛季刚开始，牵制低</div>
+    </div>
+    <div class="soft-factor" style="margin-top:6px"><strong>综合软因素修正：</strong>主队λ×1.027 / 客队λ×0.995</div>
+  </div>
+  
+  <!-- 近期战绩与历史交锋 -->
+  <div style="margin-top:10px">
+    <div style="font-size:13px;font-weight:600;margin-bottom:6px">近期战绩与历史交锋</div>
+    <div class="grid-2">
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--success)">费伦茨瓦罗斯 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-27</td><td>保克什 4:2 费伦茨瓦罗斯</td><td>负</td><td>匈甲</td></tr><tr><td>2026-07-24</td><td>特温特 1:2 费伦茨瓦罗斯</td><td>胜</td><td>欧罗巴</td></tr><tr><td>2026-07-17</td><td>费伦茨瓦罗斯 3:0 伏伊伏丁</td><td>胜</td><td>欧罗巴</td></tr><tr><td>2026-07-10</td><td>伏伊伏丁 1:2 费伦茨瓦罗斯</td><td>胜</td><td>欧罗巴</td></tr><tr><td>2026-07-01</td><td>费伦茨瓦罗斯 1:0 卡拉巴赫</td><td>胜</td><td>俱乐部赛</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--danger)">特温特 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-25</td><td>埃门 0:3 特温特</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-07-24</td><td>特温特 1:2 费伦茨瓦罗斯</td><td>负</td><td>欧罗巴</td></tr><tr><td>2026-07-18</td><td>特温特 0:2 根特</td><td>负</td><td>俱乐部赛</td></tr><tr><td>2026-07-18</td><td>特温特 2:2 根特</td><td>平</td><td>俱乐部赛</td></tr><tr><td>2026-07-11</td><td>塞萨洛 2:3 特温特</td><td>胜</td><td>俱乐部赛</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="margin-top:8px">
+      <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--primary)">历史交锋</div>
+      <table style="font-size:11px;margin:0">
+        <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+        <tbody>
+          <tr><td>2026-07-24</td><td>特温特 1:2 费伦茨瓦罗斯</td><td>费伦茨胜</td><td>欧罗巴</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="font-size:12px;color:var(--text2);margin-top:8px">费伦茨客场2-1逆转，近10场7胜2平1负进22失8，主场10场8胜2平0负主场极强！xG 1.71/xGA 1.01攻防兼备。特温特近10场5胜2平3负进20失16，xG 2.00进攻强但客场xGA 1.38防守弱。费伦茨保平即可晋级，特温特必须赢球翻盘→对攻格局大球概率高。</div>
+</div>
+
+<div class="match-card home-rec">
+  <h3 style="margin-bottom:4px">周四005 欧罗巴资格赛</h3>
+  <div style="font-size:18px;font-weight:700;margin-bottom:2px">本菲卡 <span style="color:var(--text2);font-weight:400">vs</span> 圣加仑</div>
+  <div style="font-size:12px;color:var(--text2);margin-bottom:8px">首回合: 圣加仑 2-1 本菲卡 | 总比分: 圣加仑 2-1 领先 | Estádio da Luz (容量64,642)</div>
+  
+  <div style="display:flex;gap:4px;align-items:center;margin:6px 0">
+    <span style="width:40px;font-size:12px">主胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">63.9%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">平局</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:33%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">21.0%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">客胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:24%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">15.1%</span>
+  </div>
+  
+  
+  
+  <div class="rec-box home">主胜 | 融合概率 63.9% | 置信度 中 ★★</div>
+  
+  <div class="grid-2" style="margin-top:10px">
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">比分TOP5</div>
+      <div><span class="score-rec">1:0</span><span style="font-size:11px;color:var(--text2)">17.1%</span> <span class="score-rec">2:0</span><span style="font-size:11px;color:var(--text2)">14.8%</span> <span class="score-rec">3:0</span><span style="font-size:11px;color:var(--text2)">9.3%</span> <span class="score-rec">2:1</span><span style="font-size:11px;color:var(--text2)">8.9%</span> <span class="score-rec">1:1</span><span style="font-size:11px;color:var(--text2)">8.2%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">半场TOP3</div>
+      <div><span class="score-alt">0:0</span><span style="font-size:11px;color:var(--text2)">31.9%</span> <span class="score-alt">1:0</span><span style="font-size:11px;color:var(--text2)">28.7%</span> <span class="score-alt">2:0</span><span style="font-size:11px;color:var(--text2)">11.7%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">大小球 / 让球</div>
+      <div style="font-size:12px">大球(2.5): 44.7% | 小球(2.5): 55.3%</div>
+      <div style="font-size:12px;margin-top:4px"><span class="score-alt">主让-1球</span><span style="font-size:11px;color:var(--text2)">97.4%</span> <span class="score-alt">平手盘</span><span style="font-size:11px;color:var(--text2)">87.7%</span> <span class="score-alt">主让1球</span><span style="font-size:11px;color:var(--text2)">69.1%</span> </div>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">赔率(体彩)</div>
+      <div style="font-size:14px;margin-bottom:8px">1.19 / 6.3 / 12.0</div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">模型参数</div>
+      <table style="font-size:12px;margin:0">
+        <tr><td>λ主/客</td><td>1.872 / 0.597</td></tr>
+        <tr><td style="color:var(--purple)">xG主/客</td><td style="color:var(--purple)">2.18 / 1.7 (xGA: 0.74/0.9)</td></tr>
+        <tr><td style="color:var(--purple)">xG校准因子</td><td style="color:var(--purple)">主×1.162 (预期1.54) / 客×0.921 (预期1.22)</td></tr>
+        <tr><td>DC主/平/客</td><td>69.1% / 18.5% / 12.3%</td></tr>
+        <tr><td>Skellam主/平/客</td><td>67.9% / 21.0% / 11.1%</td></tr>
+        <tr><td>MC主/平/客</td><td>67.4% / 21.3% / 11.2%</td></tr>
+        <tr><td>模型标准差</td><td>7.6%</td></tr>
+        <tr><td>软因素修正</td><td>主队×1.071 / 客队×0.966</td></tr>
+      </table>
+    </div>
+  </div>
+  
+  <!-- 体彩赔率 vs 模型概率 -->
+  <div class="info-section" style="margin-top:10px">
+    <h4 style="color:var(--purple)">体彩赔率 vs 模型概率（规则15: 赔率以体彩官方为准）</h4>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">① 胜平负</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>方向</th><th>体彩赔率</th><th>隐含概率</th><th>支持率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜</td><td>未开售</td><td>-</td><td>-</td><td>63.9%</td><td>-</td></tr><tr><td>平</td><td>未开售</td><td>-</td><td>-</td><td>21.0%</td><td>-</td></tr><tr><td>负</td><td>未开售</td><td>-</td><td>-</td><td>15.1%</td><td>-</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">② 让球胜平负（主让2球）</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>方向</th><th>体彩赔率</th><th>隐含概率</th><th>支持率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜</td><td>2.15</td><td>46.5%</td><td>33%</td><td>20.0%</td><td style="color:#c62828">-26.5%</td></tr><tr><td>平</td><td>3.9</td><td>25.6%</td><td>31%</td><td>21.3%</td><td style="color:#c62828">-4.3%</td></tr><tr><td>负</td><td>2.45</td><td>40.8%</td><td>36%</td><td>58.7%</td><td style="color:#2e7d32">+17.9%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">③ 总进球数</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>进球数</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>0球</td><td>27.0</td><td>3.7%</td><td>7.3%</td><td style="color:#2e7d32">+3.6%</td></tr><tr><td>1球</td><td>8.2</td><td>12.2%</td><td>23.4%</td><td style="color:#2e7d32">+11.2%</td></tr><tr><td>2球</td><td>4.95</td><td>20.2%</td><td>24.7%</td><td style="color:#2e7d32">+4.5%</td></tr><tr><td>3球</td><td>3.5</td><td>28.6%</td><td>21.3%</td><td style="color:#c62828">-7.3%</td></tr><tr><td>4球</td><td>4.1</td><td>24.4%</td><td>13.2%</td><td style="color:#c62828">-11.2%</td></tr><tr><td>5球</td><td>6.0</td><td>16.7%</td><td>6.5%</td><td style="color:#c62828">-10.2%</td></tr><tr><td>6球</td><td>9.5</td><td>10.5%</td><td>3.7%</td><td style="color:#c62828">-6.8%</td></tr><tr><td>7+球</td><td>11.0</td><td>9.1%</td><td>0.0%</td><td style="color:#c62828">-9.1%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">④ 半全场胜平负 <span style="font-size:10px;color:var(--text2);font-weight:normal">（体彩半全场待正式开盘，赔率仅供参考）</span></div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>半全场</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜胜</td><td>1.4</td><td>71.4%</td><td>44.3%</td><td style="color:#c62828">-27.1%</td></tr><tr><td>胜平</td><td>29.0</td><td>3.4%</td><td>3.4%</td><td style="color:#5f6368">+0.0%</td></tr><tr><td>胜负</td><td>100.0</td><td>1.0%</td><td>0.6%</td><td style="color:#5f6368">-0.4%</td></tr><tr><td>平胜</td><td>3.85</td><td>26.0%</td><td>20.9%</td><td style="color:#c62828">-5.1%</td></tr><tr><td>平平</td><td>11.5</td><td>8.7%</td><td>13.8%</td><td style="color:#2e7d32">+5.1%</td></tr><tr><td>平负</td><td>30.0</td><td>3.3%</td><td>4.6%</td><td style="color:#5f6368">+1.3%</td></tr><tr><td>负胜</td><td>24.0</td><td>4.2%</td><td>2.5%</td><td style="color:#5f6368">-1.7%</td></tr><tr><td>负平</td><td>29.0</td><td>3.4%</td><td>3.6%</td><td style="color:#5f6368">+0.2%</td></tr><tr><td>负负</td><td>26.0</td><td>3.8%</td><td>6.2%</td><td style="color:#2e7d32">+2.4%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">⑤ 比分（体彩赔率TOP12 vs 模型概率）</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>比分</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>2:0</td><td>6.5</td><td>15.4%</td><td>14.9%</td><td style="color:#5f6368">-0.5%</td></tr><tr><td>3:0</td><td>6.5</td><td>15.4%</td><td>9.3%</td><td style="color:#c62828">-6.1%</td></tr><tr><td>1:0</td><td>8.5</td><td>11.8%</td><td>17.1%</td><td style="color:#2e7d32">+5.3%</td></tr><tr><td>2:1</td><td>8.5</td><td>11.8%</td><td>8.9%</td><td style="color:#c62828">-2.9%</td></tr><tr><td>胜其它</td><td>9.0</td><td>11.1%</td><td>0%</td><td style="color:#c62828">-11.1%</td></tr><tr><td>4:0</td><td>9.25</td><td>10.8%</td><td>4.3%</td><td style="color:#c62828">-6.5%</td></tr><tr><td>3:1</td><td>9.5</td><td>10.5%</td><td>5.5%</td><td style="color:#c62828">-5.0%</td></tr><tr><td>4:1</td><td>13.0</td><td>7.7%</td><td>2.6%</td><td style="color:#c62828">-5.1%</td></tr><tr><td>1:1</td><td>13.0</td><td>7.7%</td><td>8.3%</td><td style="color:#5f6368">+0.6%</td></tr><tr><td>5:0</td><td>15.0</td><td>6.7%</td><td>1.6%</td><td style="color:#c62828">-5.1%</td></tr><tr><td>5:1</td><td>22.0</td><td>4.5%</td><td>0%</td><td style="color:#c62828">-4.5%</td></tr><tr><td>2:2</td><td>24.0</td><td>4.2%</td><td>2.7%</td><td style="color:#5f6368">-1.5%</td></tr></tbody>
+    </table>
+  </div>
+
+  <!-- 身价对比 -->
+  <div class="info-section" style="margin-top:10px">
+    <h4>球队身价对比（Transfermarkt）</h4>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>球队</th><th>总身价</th><th>差距</th></tr></thead>
+      <tbody>
+        <tr><td><strong>本菲卡</strong></td><td>€3.65亿</td><td rowspan="2" style="text-align:center;vertical-align:middle">主队身价是客队的 10.4 倍</td></tr>
+        <tr><td><strong>圣加仑</strong></td><td>€3500万</td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:10px;color:var(--text2);margin-top:4px">数据来源：Transfermarkt / 懂球帝 / 出奇体育（2026年7月更新）</div>
+  </div>
+  <!-- 场地天气新闻 -->
+  <div class="grid-2" style="margin-top:10px">
+    <div class="info-section">
+      <h4>比赛场地与天气</h4>
+      <div class="soft-factor">Estádio da Luz (容量64,642)<br>葡萄牙7月夜间约22-25°C，晴</div>
+    </div>
+    <div class="info-section">
+      <h4>伤停信息</h4>
+      <div class="soft-factor">体彩官方伤停暂无数据（信息缺失，首回合本菲卡阵容不整，需赛前确认首发）</div>
+    </div>
+  </div>
+
+  <!-- 战意心理与体能分析（规则27） -->
+  <div class="info-section">
+    <h4>战意心理与体能分析（规则27）</h4>
+    <div class="grid-2 soft-factor">
+      <div><strong>战意不对称：</strong>轻度不对称<br>
+      本菲卡：葡超豪门主场翻盘，超强战意<br>
+      圣加仑：客场摆大巴保晋级，战意明确</div>
+      <div><strong>体能与休息：</strong><br>
+      本菲卡：葡超7月底开赛，体能状态一般<br>
+      圣加仑：瑞士超7月底开赛，体能状态一般</div>
+    </div>
+    <div class="grid-2 soft-factor" style="margin-top:6px">
+      <div><strong>心理因素：</strong><br>
+      本菲卡：首回合客场爆冷输球，急于证明自己<br>
+      圣加仑：首回合爆冷赢球，信心爆棚</div>
+      <div><strong>赛程牵制：</strong><br>
+      本菲卡：无后续欧战牵制<br>
+      圣加仑：无后续欧战牵制</div>
+    </div>
+    <div class="soft-factor" style="margin-top:6px"><strong>综合软因素修正：</strong>主队λ×1.071 / 客队λ×0.966</div>
+  </div>
+  
+  <!-- 近期战绩与历史交锋 -->
+  <div style="margin-top:10px">
+    <div style="font-size:13px;font-weight:600;margin-bottom:6px">近期战绩与历史交锋</div>
+    <div class="grid-2">
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--success)">本菲卡 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-25</td><td>本菲卡 5:1 CF Os Belenenses</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-07-24</td><td>圣加仑 2:1 本菲卡</td><td>负</td><td>欧罗巴</td></tr><tr><td>2026-07-18</td><td>本菲卡 2:0 比利亚雷</td><td>胜</td><td>俱乐部赛</td></tr><tr><td>2026-07-12</td><td>本菲卡 1:2 弗拉门戈</td><td>负</td><td>俱乐部赛</td></tr><tr><td>2026-07-04</td><td>本菲卡 2:2 卡尔达什</td><td>平</td><td>俱乐部赛</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--danger)">圣加仑 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-26</td><td>圣加仑 2:1 苏黎世</td><td>胜</td><td>瑞士超</td></tr><tr><td>2026-07-24</td><td>圣加仑 2:1 本菲卡</td><td>胜</td><td>欧罗巴</td></tr><tr><td>2026-07-18</td><td>圣加仑 0:3 诺维奇</td><td>负</td><td>俱乐部赛</td></tr><tr><td>2026-07-11</td><td>里昂 6:3 圣加仑</td><td>负</td><td>俱乐部赛</td></tr><tr><td>2026-07-02</td><td>温特图尔 0:1 圣加仑</td><td>胜</td><td>俱乐部赛</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="margin-top:8px">
+      <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--primary)">历史交锋</div>
+      <table style="font-size:11px;margin:0">
+        <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+        <tbody>
+          <tr><td>2026-07-24</td><td>圣加仑 2:1 本菲卡</td><td>圣加仑胜</td><td>欧罗巴</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="font-size:12px;color:var(--text2);margin-top:8px">本菲卡主场翻盘战意极强。近10场5胜3平2负进24失14，主场10场6胜3平1负，xG 2.18主场强势。但残阵: Barreiro(呼吸道感染)、Wynder(膝伤)、Umeh(大腿伤)、Prestianni(停赛)、Durán/Índio(未注册)缺阵；Bruma已恢复训练。圣加仑近10场7胜1平2负，xG 1.70但含6场热身赛含金量有限。首回合圣加仑爆冷2-1，本菲卡残阵需关注赛前首发。</div>
+</div>
+
+<div class="match-card home-rec">
+  <h3 style="margin-bottom:4px">周四006 巴甲</h3>
+  <div style="font-size:18px;font-weight:700;margin-bottom:2px">科林蒂安 <span style="color:var(--text2);font-weight:400">vs</span> 巴拉纳竞技</div>
+  <div style="font-size:12px;color:var(--text2);margin-bottom:8px">首回合: - | 总比分: 巴甲第21轮 | Neo Química Arena (容量49,205)</div>
+  
+  <div style="display:flex;gap:4px;align-items:center;margin:6px 0">
+    <span style="width:40px;font-size:12px">主胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-home" style="width:100%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">45.9%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">平局</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-draw" style="width:66%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">30.2%</span>
+  </div>
+  <div style="display:flex;gap:4px;align-items:center;margin:4px 0">
+    <span style="width:40px;font-size:12px">客胜</span>
+    <div class="prob-bar" style="flex:1"><div class="prob-fill prob-fill-away" style="width:52%"></div></div>
+    <span style="width:40px;text-align:right;font-size:12px;font-weight:600">23.9%</span>
+  </div>
+  
+  
+  
+  <div class="rec-box home">主胜 | 融合概率 45.9% | 置信度 中 ★★</div>
+  
+  <div class="grid-2" style="margin-top:10px">
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">比分TOP5</div>
+      <div><span class="score-rec">1:0</span><span style="font-size:11px;color:var(--text2)">22.9%</span> <span class="score-rec">0:0</span><span style="font-size:11px;color:var(--text2)">17.9%</span> <span class="score-rec">2:0</span><span style="font-size:11px;color:var(--text2)">11.9%</span> <span class="score-rec">0:1</span><span style="font-size:11px;color:var(--text2)">11.8%</span> <span class="score-rec">1:1</span><span style="font-size:11px;color:var(--text2)">10.0%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">半场TOP3</div>
+      <div><span class="score-alt">0:0</span><span style="font-size:11px;color:var(--text2)">47.0%</span> <span class="score-alt">1:0</span><span style="font-size:11px;color:var(--text2)">24.6%</span> <span class="score-alt">0:1</span><span style="font-size:11px;color:var(--text2)">12.2%</span> </div>
+      <div style="font-size:13px;font-weight:600;margin:8px 0 4px">大小球 / 让球</div>
+      <div style="font-size:12px">大球(2.5): 22.8% | 小球(2.5): 77.2%</div>
+      <div style="font-size:12px;margin-top:4px"><span class="score-alt">主让-1球</span><span style="font-size:11px;color:var(--text2)">96.0%</span> <span class="score-alt">平手盘</span><span style="font-size:11px;color:var(--text2)">80.8%</span> <span class="score-alt">主让1球</span><span style="font-size:11px;color:var(--text2)">51.2%</span> </div>
+    </div>
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">赔率(体彩)</div>
+      <div style="font-size:14px;margin-bottom:8px">1.91 / 3.2 / 4.1</div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:6px">模型参数</div>
+      <table style="font-size:12px;margin:0">
+        <tr><td>λ主/客</td><td>1.109 / 0.534</td></tr>
+        <tr><td style="color:var(--purple)">xG主/客</td><td style="color:var(--purple)">1.37 / 1.11 (xGA: 0.82/1.2)</td></tr>
+        <tr><td style="color:var(--purple)">xG校准因子</td><td style="color:var(--purple)">主×1.049 (预期1.29) / 客×0.788 (预期0.97)</td></tr>
+        <tr><td>DC主/平/客</td><td>51.2% / 29.6% / 19.2%</td></tr>
+        <tr><td>Skellam主/平/客</td><td>49.7% / 32.6% / 17.7%</td></tr>
+        <tr><td>MC主/平/客</td><td>49.7% / 32.0% / 18.2%</td></tr>
+        <tr><td>模型标准差</td><td>6.7%</td></tr>
+        <tr><td>软因素修正</td><td>主队×0.941 / 客队×0.921</td></tr>
+      </table>
+    </div>
+  </div>
+  
+  <!-- 体彩赔率 vs 模型概率 -->
+  <div class="info-section" style="margin-top:10px">
+    <h4 style="color:var(--purple)">体彩赔率 vs 模型概率（规则15: 赔率以体彩官方为准）</h4>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">① 胜平负</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>方向</th><th>体彩赔率</th><th>隐含概率</th><th>支持率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜</td><td>1.72</td><td>58.1%</td><td>50%</td><td>45.9%</td><td style="color:#c62828">-12.2%</td></tr><tr><td>平</td><td>3.15</td><td>31.7%</td><td>26%</td><td>30.2%</td><td style="color:#5f6368">-1.5%</td></tr><tr><td>负</td><td>4.35</td><td>23.0%</td><td>24%</td><td>23.9%</td><td style="color:#5f6368">+0.9%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">② 让球胜平负（主让1球）</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>方向</th><th>体彩赔率</th><th>隐含概率</th><th>支持率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜</td><td>3.62</td><td>27.6%</td><td>25%</td><td>21.2%</td><td style="color:#c62828">-6.4%</td></tr><tr><td>平</td><td>3.15</td><td>31.7%</td><td>36%</td><td>30.0%</td><td style="color:#5f6368">-1.7%</td></tr><tr><td>负</td><td>1.87</td><td>53.5%</td><td>39%</td><td>48.8%</td><td style="color:#c62828">-4.7%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">③ 总进球数</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>进球数</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>0球</td><td>7.5</td><td>13.3%</td><td>17.9%</td><td style="color:#2e7d32">+4.6%</td></tr><tr><td>1球</td><td>3.7</td><td>27.0%</td><td>34.8%</td><td style="color:#2e7d32">+7.8%</td></tr><tr><td>2球</td><td>3.0</td><td>33.3%</td><td>24.6%</td><td style="color:#c62828">-8.7%</td></tr><tr><td>3球</td><td>3.65</td><td>27.4%</td><td>14.3%</td><td style="color:#c62828">-13.1%</td></tr><tr><td>4球</td><td>7.25</td><td>13.8%</td><td>5.9%</td><td style="color:#c62828">-7.9%</td></tr><tr><td>5球</td><td>17.0</td><td>5.9%</td><td>1.9%</td><td style="color:#c62828">-4.0%</td></tr><tr><td>6球</td><td>34.0</td><td>2.9%</td><td>0.7%</td><td style="color:#c62828">-2.2%</td></tr><tr><td>7+球</td><td>60.0</td><td>1.7%</td><td>0.0%</td><td style="color:#5f6368">-1.7%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">④ 半全场胜平负 <span style="font-size:10px;color:var(--text2);font-weight:normal">（体彩半全场待正式开盘，赔率仅供参考）</span></div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>半全场</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>胜胜</td><td>2.65</td><td>37.7%</td><td>29.2%</td><td style="color:#c62828">-8.5%</td></tr><tr><td>胜平</td><td>17.0</td><td>5.9%</td><td>3.5%</td><td style="color:#c62828">-2.4%</td></tr><tr><td>胜负</td><td>45.0</td><td>2.2%</td><td>0.5%</td><td style="color:#5f6368">-1.7%</td></tr><tr><td>平胜</td><td>4.1</td><td>24.4%</td><td>19.3%</td><td style="color:#c62828">-5.1%</td></tr><tr><td>平平</td><td>4.55</td><td>22.0%</td><td>25.1%</td><td style="color:#2e7d32">+3.1%</td></tr><tr><td>平负</td><td>9.25</td><td>10.8%</td><td>7.9%</td><td style="color:#c62828">-2.9%</td></tr><tr><td>负胜</td><td>28.0</td><td>3.6%</td><td>1.3%</td><td style="color:#c62828">-2.3%</td></tr><tr><td>负平</td><td>17.0</td><td>5.9%</td><td>3.6%</td><td style="color:#c62828">-2.3%</td></tr><tr><td>负负</td><td>7.8</td><td>12.8%</td><td>9.6%</td><td style="color:#c62828">-3.2%</td></tr></tbody>
+    </table>
+
+    <div style="font-size:13px;font-weight:600;margin:8px 0 4px">⑤ 比分（模型概率TOP10，体彩比分赔率待更新）</div>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>比分</th><th>体彩赔率</th><th>隐含概率</th><th>模型概率</th><th>差值</th></tr></thead>
+      <tbody><tr><td>1:0</td><td>-</td><td>-</td><td>22.9%</td><td>-</td></tr><tr><td>0:0</td><td>-</td><td>-</td><td>17.9%</td><td>-</td></tr><tr><td>2:0</td><td>-</td><td>-</td><td>11.9%</td><td>-</td></tr><tr><td>0:1</td><td>-</td><td>-</td><td>11.8%</td><td>-</td></tr><tr><td>1:1</td><td>-</td><td>-</td><td>10.0%</td><td>-</td></tr><tr><td>2:1</td><td>-</td><td>-</td><td>6.3%</td><td>-</td></tr><tr><td>3:0</td><td>-</td><td>-</td><td>4.4%</td><td>-</td></tr><tr><td>1:2</td><td>-</td><td>-</td><td>3.1%</td><td>-</td></tr><tr><td>0:2</td><td>-</td><td>-</td><td>2.8%</td><td>-</td></tr><tr><td>3:1</td><td>-</td><td>-</td><td>2.3%</td><td>-</td></tr></tbody>
+    </table>
+  </div>
+
+  <!-- 身价对比 -->
+  <div class="info-section" style="margin-top:10px">
+    <h4>球队身价对比（Transfermarkt）</h4>
+    <table style="font-size:11px;margin:0">
+      <thead><tr><th>球队</th><th>总身价</th><th>差距</th></tr></thead>
+      <tbody>
+        <tr><td><strong>科林蒂安</strong></td><td>€1.50亿</td><td rowspan="2" style="text-align:center;vertical-align:middle">主队身价是客队的 2.0 倍</td></tr>
+        <tr><td><strong>巴拉纳竞技</strong></td><td>€7500万</td></tr>
+      </tbody>
+    </table>
+    <div style="font-size:10px;color:var(--text2);margin-top:4px">数据来源：Transfermarkt / 懂球帝 / 出奇体育（2026年7月更新）</div>
+  </div>
+  <!-- 场地天气新闻 -->
+  <div class="grid-2" style="margin-top:10px">
+    <div class="info-section">
+      <h4>比赛场地与天气</h4>
+      <div class="soft-factor">Neo Química Arena (容量49,205)<br>巴西7月冬季约15-20°C，晴</div>
+    </div>
+    <div class="info-section">
+      <h4>伤停信息</h4>
+      <div class="soft-factor">科林蒂安: F·安吉利厄里(后卫)停赛(体彩官方); 巴拉纳竞技: 体彩官方伤停暂无数据</div>
+    </div>
+  </div>
+
+  <!-- 战意心理与体能分析（规则27） -->
+  <div class="info-section">
+    <h4>战意心理与体能分析（规则27）</h4>
+    <div class="grid-2 soft-factor">
+      <div><strong>战意不对称：</strong>对称<br>
+      科林蒂安：巴甲主场抢分，排名第8需追分<br>
+      巴拉纳竞技：排名第3，客场至少拿1分即可</div>
+      <div><strong>体能与休息：</strong><br>
+      科林蒂安：上一场7/27，休息3天，赛程密集<br>
+      巴拉纳竞技：上一场7/26，休息4天，但长途旅行</div>
+    </div>
+    <div class="grid-2 soft-factor" style="margin-top:6px">
+      <div><strong>心理因素：</strong><br>
+      科林蒂安：主场球迷支持，但多名伤缺影响<br>
+      巴拉纳竞技：客场战绩一般，但排名实力占优</div>
+      <div><strong>赛程牵制：</strong><br>
+      科林蒂安：巴甲进行中，一周双赛<br>
+      巴拉纳竞技：巴甲进行中，一周双赛</div>
+    </div>
+    <div class="soft-factor" style="margin-top:6px"><strong>综合软因素修正：</strong>主队λ×0.941 / 客队λ×0.921</div>
+  </div>
+  
+  <!-- 近期战绩与历史交锋 -->
+  <div style="margin-top:10px">
+    <div style="font-size:13px;font-weight:600;margin-bottom:6px">近期战绩与历史交锋</div>
+    <div class="grid-2">
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--success)">科林蒂安 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-27</td><td>巴伊亚 1:1 科林蒂安</td><td>平</td><td>巴甲</td></tr><tr><td>2026-07-24</td><td>科林蒂安 3:0 里莫</td><td>胜</td><td>巴甲</td></tr><tr><td>2026-07-13</td><td>Cascavel 1:1 科林蒂安</td><td>平</td><td>俱乐部赛</td></tr><tr><td>2026-05-31</td><td>格雷米奥 1:3 科林蒂安</td><td>胜</td><td>巴甲</td></tr><tr><td>2026-05-28</td><td>科林蒂安 0:2 普拉滕斯</td><td>负</td><td>解放者杯</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--danger)">巴拉纳竞技 近5场</div>
+        <table style="font-size:11px;margin:0">
+          <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+          <tbody>
+            <tr><td>2026-07-26</td><td>巴拉纳竞技 2:0 巴西国际</td><td>胜</td><td>巴甲</td></tr><tr><td>2026-07-23</td><td>圣保罗 1:2 巴拉纳竞技</td><td>胜</td><td>巴甲</td></tr><tr><td>2026-07-09</td><td>博卡 1:0 巴拉纳竞技</td><td>负</td><td>俱乐部赛</td></tr><tr><td>2026-05-31</td><td>巴拉纳竞技 1:0 米拉索尔</td><td>胜</td><td>巴甲</td></tr><tr><td>2026-05-25</td><td>里莫 1:2 巴拉纳竞技</td><td>胜</td><td>巴甲</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div style="margin-top:8px">
+      <div style="font-size:12px;font-weight:600;margin:6px 0 4px;color:var(--primary)">历史交锋</div>
+      <table style="font-size:11px;margin:0">
+        <thead><tr><th>日期</th><th>对阵</th><th>结果</th><th>赛事</th></tr></thead>
+        <tbody>
+          <tr><td>2026-02-20</td><td>巴拉纳竞技 0:1 科林蒂安</td><td>科林蒂安胜</td><td>巴甲</td></tr><tr><td>2025-09-11</td><td>科林蒂安 2:0 巴拉纳竞技</td><td>科林蒂安胜</td><td>巴西杯</td></tr><tr><td>2025-08-28</td><td>巴拉纳竞技 0:1 科林蒂安</td><td>科林蒂安胜</td><td>巴西杯</td></tr><tr><td>2024-10-18</td><td>科林蒂安 5:2 巴拉纳竞技</td><td>科林蒂安胜</td><td>巴甲</td></tr><tr><td>2024-06-24</td><td>巴拉纳竞技 1:1 科林蒂安</td><td>平局</td><td>巴甲</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="font-size:12px;color:var(--text2);margin-top:8px">科林蒂安排名第9(28分)主场5胜2平3负，近10场5胜3平2负状态回升，主场xG 1.37。近10次交锋科林蒂安7胜2平1负绝对占优！巴拉纳竞技排名第3(36分)客场3胜1平5负，但近5场4胜1负状态极佳，客场xG 1.11。⚠️高山流水预测客胜1:2——巴拉纳排名高+近期状态好→客胜概率上修。科林蒂安上轮3-0大胜里莫士气正旺。</div>
+</div>
+</div>
+<div class="card">
+  <div class="card-title">模型说明</div>
+  <div style="font-size:13px;color:var(--text2);line-height:1.8">
+    <p><strong>方法论 v1.6.0</strong>：基于规则28基本面决定论，分析优先级为：<strong>基本面（新闻/战意/状态/体能/伤停）> 数学模型 > 市场赔率 > 公众意见</strong>。</p>
+    <p><strong>xG校准v3</strong>：每支球队xG/xGA数据来自fbref.com/footystats.org（2025-26赛季）。校准公式：预期进球=(自身xG+对手xGA)/2，xG校准因子=预期进球/联赛单队均值，限制在±25%范围。xG数据参与lambda修正，确保进攻质量反映在概率中。</p>
+    <p><strong>加权融合权重</strong>：Dixon-Coles修正泊松(35%) + Skellam进球差(15%) + Elo实力评级(15%) + 基本面因素(15%) + Shin校准赔率(8%) + 公众意见(7%) + 有序逻辑回归(3%) + 外部AI(2%)。</p>
+    <p><strong>规则27</strong>：每场均包含战意不对称分析、体能与休息评估、心理因素分析、赛程牵制分析，软因素综合修正参与lambda计算。</p>
+    <p><strong>规则24</strong>：联赛特点数据（主场优势系数、平局率、场均进球等）已加载并用于模型修正。</p>
+    <p><strong>风险提示</strong>：足球比赛存在极大不确定性，任何模型预测均非100%准确。理性看待预测，切勿沉迷赌博。</p>
+  </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,311 @@
+{
+  "date": "2026-08-17",
+  "day": "monday",
+  "matches": [
+    {
+      "id": "001",
+      "league": "芬超",
+      "league_code": "veikkausliiga_fi",
+      "home": "赫尔火花(Gnistan)",
+      "away": "坦山猫(Ilves)",
+      "rank_home": 6,
+      "rank_away": 9,
+      "kickoff": "08-17 23:00",
+      "stadium": "Mustapekka Areena, 万塔",
+      "lambda_home": 1.30,
+      "lambda_away": 0.99,
+      "had": { "home": 0.42, "draw": 0.30, "away": 0.28 },
+      "hafu": { "line": -1, "home": 0.187, "draw": 0.241, "away": 0.572 },
+      "crs_top5": [
+        { "score": "1:0", "prob": 0.142 },
+        { "score": "1:1", "prob": 0.135 },
+        { "score": "0:0", "prob": 0.112 },
+        { "score": "0:1", "prob": 0.108 },
+        { "score": "2:0", "prob": 0.080 }
+      ],
+      "ttg_top2": [
+        { "goals": 2, "prob": 0.261 },
+        { "goals": 1, "prob": 0.250 }
+      ],
+      "htft_top3": [
+        { "label": "平胜", "prob": 0.169 },
+        { "label": "平平", "prob": 0.163 },
+        { "label": "胜胜", "prob": 0.146 }
+      ],
+      "half_score_top3": [
+        { "score": "0:0", "prob": 0.373 },
+        { "score": "1:0", "prob": 0.213 },
+        { "score": "0:1", "prob": 0.162 }
+      ],
+      "confidence": "★★",
+      "injuries_home": [],
+      "injuries_away": ["Ilves欧会杯疲劳(8/14)"],
+      "odds_had": { "home": 2.24, "draw": 3.35, "away": 2.60 },
+      "odds_hafu": { "home": 4.50, "draw": 4.15, "away": 1.50 },
+      "odds_ttg": [17.00, 6.30, 3.95, 3.60, 4.80, 8.00, 14.00, 20.00],
+      "odds_htft": [3.65, 14.00, 27.00, 6.00, 6.25, 7.00, 24.00, 14.00, 4.20],
+      "odds_crs": {
+        "1:0": 11.00, "2:0": 14.00, "2:1": 8.00, "0:0": 17.00, "1:1": 7.00,
+        "0:1": 12.00, "1:2": 9.00, "2:2": 12.00, "0:2": 16.00
+      },
+      "notes": "引用L022(芬超半场领先被逆转)。Ilves 3天前欧会杯被淘汰，客场体能存疑。",
+      "shin_had": { "home": 0.401, "draw": 0.258, "away": 0.341 }
+    },
+    {
+      "id": "002",
+      "league": "瑞超",
+      "league_code": "allsvenskan_se",
+      "home": "赫根(Häcken)",
+      "away": "哈尔姆斯(Halmstads)",
+      "rank_home": 7,
+      "rank_away": 16,
+      "kickoff": "08-18 01:00",
+      "stadium": "Bravida Arena, 哥德堡",
+      "lambda_home": 1.62,
+      "lambda_away": 0.55,
+      "had": { "home": 0.60, "draw": 0.25, "away": 0.15 },
+      "hafu": { "line": -1, "home": 0.332, "draw": 0.289, "away": 0.379 },
+      "crs_top5": [
+        { "score": "1:0", "prob": 0.199 },
+        { "score": "2:0", "prob": 0.140 },
+        { "score": "0:0", "prob": 0.126 },
+        { "score": "1:1", "prob": 0.105 },
+        { "score": "2:1", "prob": 0.077 }
+      ],
+      "ttg_top2": [
+        { "goals": 1, "prob": 0.267 },
+        { "goals": 2, "prob": 0.262 }
+      ],
+      "htft_top3": [
+        { "label": "胜胜", "prob": 0.257 },
+        { "label": "平胜", "prob": 0.224 },
+        { "label": "平平", "prob": 0.149 }
+      ],
+      "half_score_top3": [
+        { "score": "0:0", "prob": 0.393 },
+        { "score": "1:0", "prob": 0.279 },
+        { "score": "0:1", "prob": 0.095 }
+      ],
+      "confidence": "★★★",
+      "injuries_home": ["Filip Ohman(后卫,肩伤,赛季报销)", "Ben Engdahl(中场,下肢伤,赛季报销)", "Andreas Linde(门将,胫骨)", "Simen Hestnes(中场,个人原因)"],
+      "injuries_away": [],
+      "odds_had": { "home": 1.21, "draw": 5.60, "away": 8.05 },
+      "odds_hafu": { "home": 1.71, "draw": 4.00, "away": 3.40 },
+      "odds_ttg": [27.00, 8.00, 4.70, 3.80, 4.50, 6.25, 10.00, 12.00],
+      "odds_htft": [1.67, 21.00, 70.00, 4.25, 10.00, 21.00, 22.00, 21.00, 15.00],
+      "notes": "引用L020(残阵反弹:主场+争欧战+缺4人→lambda下修减半)。规则21触发(市场支持率72%>55%)。",
+      "shin_had": { "home": 0.768, "draw": 0.142, "away": 0.090 }
+    },
+    {
+      "id": "003",
+      "league": "英冠",
+      "league_code": "efl_championship_en",
+      "home": "加的夫城(Cardiff)",
+      "away": "雷克斯(Wrexham)",
+      "rank_home": 15,
+      "rank_away": 16,
+      "kickoff": "08-18 03:00",
+      "stadium": "Cardiff City Stadium, 加的夫",
+      "lambda_home": 1.13,
+      "lambda_away": 0.77,
+      "had": { "home": 0.36, "draw": 0.41, "away": 0.23 },
+      "hafu": { "line": -1, "home": 0.172, "draw": 0.258, "away": 0.570 },
+      "crs_top5": [
+        { "score": "1:0", "prob": 0.180 },
+        { "score": "0:0", "prob": 0.163 },
+        { "score": "1:1", "prob": 0.132 },
+        { "score": "0:1", "prob": 0.122 },
+        { "score": "2:0", "prob": 0.088 }
+      ],
+      "ttg_top2": [
+        { "goals": 1, "prob": 0.302 },
+        { "goals": 2, "prob": 0.261 }
+      ],
+      "htft_top3": [
+        { "label": "平平", "prob": 0.190 },
+        { "label": "平胜", "prob": 0.188 },
+        { "label": "胜胜", "prob": 0.141 }
+      ],
+      "half_score_top3": [
+        { "score": "0:0", "prob": 0.441 },
+        { "score": "1:0", "prob": 0.218 },
+        { "score": "0:1", "prob": 0.149 }
+      ],
+      "confidence": "★",
+      "injuries_home": ["Will Fish(后卫,疝气手术)", "Calum Chambers(后卫,膝伤)", "Dylan Lawlor(后卫)"],
+      "injuries_away": ["Josh Windass(前锋)", "Ben Sheaf(中场)"],
+      "odds_had": { "home": 2.27, "draw": 3.30, "away": 2.59 },
+      "odds_hafu": { "home": 4.80, "draw": 4.15, "away": 1.47 },
+      "odds_ttg": [14.00, 5.50, 3.70, 3.55, 5.30, 9.25, 16.00, 25.00],
+      "odds_htft": [3.85, 15.00, 29.00, 5.75, 5.40, 6.50, 27.00, 15.00, 4.40],
+      "notes": "规则57触发(英冠平局上修+8-12%)。L015引用(乙级联赛赛季初平局率37.5%)。L023引用(让球串优先)。",
+      "shin_had": { "home": 0.395, "draw": 0.262, "away": 0.343 }
+    },
+    {
+      "id": "004",
+      "league": "西甲",
+      "league_code": "la_liga_es",
+      "home": "拉科(Deportivo)",
+      "away": "埃尔切(Elche)",
+      "rank_home": 10,
+      "rank_away": 11,
+      "kickoff": "08-18 03:00",
+      "stadium": "Estadio Municipal de Riazor, 拉科鲁尼亚",
+      "lambda_home": 1.37,
+      "lambda_away": 0.92,
+      "had": { "home": 0.45, "draw": 0.30, "away": 0.25 },
+      "hafu": { "line": -1, "home": 0.212, "draw": 0.251, "away": 0.537 },
+      "crs_top5": [
+        { "score": "1:0", "prob": 0.150 },
+        { "score": "1:1", "prob": 0.132 },
+        { "score": "0:0", "prob": 0.112 },
+        { "score": "0:1", "prob": 0.101 },
+        { "score": "2:0", "prob": 0.089 }
+      ],
+      "ttg_top2": [
+        { "goals": 2, "prob": 0.261 },
+        { "goals": 1, "prob": 0.250 }
+      ],
+      "htft_top3": [
+        { "label": "平胜", "prob": 0.179 },
+        { "label": "胜胜", "prob": 0.164 },
+        { "label": "平平", "prob": 0.161 }
+      ],
+      "half_score_top3": [
+        { "score": "0:0", "prob": 0.373 },
+        { "score": "1:0", "prob": 0.224 },
+        { "score": "0:1", "prob": 0.151 }
+      ],
+      "confidence": "★★",
+      "injuries_home": ["Noe Carrillo(中场,踝伤,需评估)"],
+      "injuries_away": ["Yago Santiago(中场)", "Grady Diangana(前锋)"],
+      "odds_had": { "home": 2.16, "draw": 2.95, "away": 3.05 },
+      "odds_hafu": { "home": 5.00, "draw": 3.65, "away": 1.53 },
+      "odds_ttg": [9.00, 4.05, 3.20, 3.90, 7.00, 14.00, 26.00, 40.00],
+      "odds_htft": [3.75, 16.00, 35.00, 5.20, 4.45, 7.00, 30.00, 16.00, 5.25],
+      "notes": "L021引用(新赛季lambda上修)。Deportivo回归西甲首战+Aubameyang首秀。",
+      "shin_had": { "home": 0.417, "draw": 0.297, "away": 0.286 }
+    },
+    {
+      "id": "005",
+      "league": "葡超",
+      "league_code": "primeira_liga_pt",
+      "home": "卡萨皮亚(Casa Pia)",
+      "away": "本菲卡(Benfica)",
+      "rank_home": 16,
+      "rank_away": 9,
+      "kickoff": "08-18 03:15",
+      "stadium": "Estadio Municipal de Rio Maior, 里奥马约尔",
+      "lambda_home": 0.81,
+      "lambda_away": 1.67,
+      "had": { "home": 0.18, "draw": 0.28, "away": 0.54 },
+      "hafu": { "line": 2, "home": 0.699, "draw": 0.170, "away": 0.132 },
+      "crs_top5": [
+        { "score": "0:1", "prob": 0.152 },
+        { "score": "1:1", "prob": 0.118 },
+        { "score": "0:2", "prob": 0.111 },
+        { "score": "0:0", "prob": 0.094 },
+        { "score": "1:2", "prob": 0.090 }
+      ],
+      "ttg_top2": [
+        { "goals": 2, "prob": 0.255 },
+        { "goals": 1, "prob": 0.226 }
+      ],
+      "htft_top3": [
+        { "label": "负负", "prob": 0.227 },
+        { "label": "平负", "prob": 0.196 },
+        { "label": "平平", "prob": 0.141 }
+      ],
+      "half_score_top3": [
+        { "score": "0:0", "prob": 0.344 },
+        { "score": "0:1", "prob": 0.252 },
+        { "score": "1:0", "prob": 0.122 }
+      ],
+      "confidence": "★★",
+      "injuries_home": ["Joao Goulart(后卫,伤)"],
+      "injuries_away": ["Fredrik Aursnes(中场/队长,体能评估)"],
+      "odds_had": { "home": null, "draw": null, "away": null },
+      "odds_hafu": { "home": 2.14, "draw": 3.90, "away": 2.47 },
+      "odds_ttg": [18.00, 6.50, 4.10, 3.65, 4.70, 7.75, 13.00, 17.00],
+      "odds_htft": [29.00, 30.00, 30.00, 30.00, 9.50, 3.90, 125.0, 30.00, 1.50],
+      "notes": "HAD未开售。本菲卡50场联赛不败+Pavlidis 6球4场。欧联疲劳(8/13)。",
+      "shin_had": null
+    },
+    {
+      "id": "006",
+      "league": "巴甲",
+      "league_code": "serie_a_br",
+      "home": "巴西国际(Internacional)",
+      "away": "里莫(Remo)",
+      "rank_home": 16,
+      "rank_away": 19,
+      "kickoff": "08-18 07:00",
+      "stadium": "Estádio Beira-Rio, 阿雷格里港",
+      "lambda_home": 1.02,
+      "lambda_away": 0.78,
+      "had": { "home": 0.45, "draw": 0.34, "away": 0.21 },
+      "hafu": { "line": -1, "home": 0.127, "draw": 0.241, "away": 0.632 },
+      "crs_top5": [
+        { "score": "0:0", "prob": 0.194 },
+        { "score": "1:0", "prob": 0.177 },
+        { "score": "0:1", "prob": 0.147 },
+        { "score": "1:1", "prob": 0.132 },
+        { "score": "2:0", "prob": 0.072 }
+      ],
+      "ttg_top2": [
+        { "goals": 1, "prob": 0.325 },
+        { "goals": 0, "prob": 0.194 }
+      ],
+      "htft_top3": [
+        { "label": "平平", "prob": 0.210 },
+        { "label": "平胜", "prob": 0.177 },
+        { "label": "平负", "prob": 0.146 }
+      ],
+      "half_score_top3": [
+        { "score": "0:0", "prob": 0.476 },
+        { "score": "1:0", "prob": 0.196 },
+        { "score": "0:1", "prob": 0.163 }
+      ],
+      "confidence": "★",
+      "injuries_home": ["Sergio Rochet(门将)", "Thiago Maia(中场)", "Duplexe Tchamba(前锋)", "Kayky(前锋)"],
+      "injuries_away": ["Maik(后卫,肌肉伤)"],
+      "odds_had": { "home": 1.45, "draw": 3.80, "away": 5.70 },
+      "odds_hafu": { "home": 2.48, "draw": 3.30, "away": 2.37 },
+      "odds_ttg": [12.00, 4.90, 3.60, 3.70, 5.50, 10.00, 19.00, 29.00],
+      "odds_htft": [2.15, 19.00, 50.00, 4.40, 6.25, 12.00, 25.00, 19.00, 10.00],
+      "notes": "规则8触发(模型-市场分歧19%>15%)。L020引用(残阵反弹:主场+保级+缺4人→lambda下修减半)。规则53执行(比分首选0:0→TTG包含0球)。",
+      "shin_had": { "home": 0.636, "draw": 0.224, "away": 0.139 }
+    }
+  ],
+  "parlays": {
+    "direction": [
+      { "name": "方向串A", "matches": ["002 主胜", "004 主胜"], "est_odds": 2.61, "risk": "中" },
+      { "name": "方向串B", "matches": ["003 平", "006 主胜"], "est_odds": 4.79, "risk": "中高" }
+    ],
+    "handicap": [
+      { "name": "稳健让球串", "matches": ["005 让(+2)胜", "006 让(-1)负"], "est_odds": 5.07, "risk": "中" },
+      { "name": "价值让球串", "matches": ["001 让(-1)负", "003 让(-1)负"], "est_odds": 2.21, "risk": "中低" }
+    ],
+    "mixed": [
+      { "name": "半全场串A", "matches": ["002 胜胜", "005 负负"], "est_odds": 2.51, "risk": "中高" },
+      { "name": "半全场串B", "matches": ["004 平胜", "006 平平"], "est_odds": 98.80, "risk": "高" },
+      { "name": "方向+半全场A", "matches": ["002 主胜", "003 平平"], "est_odds": 18.15, "risk": "中高" },
+      { "name": "方向+半全场B", "matches": ["004 主胜", "006 平胜"], "est_odds": 9.50, "risk": "中高" }
+    ],
+    "entertainment": [
+      { "name": "混合串A", "matches": ["006 平平(HTFT)", "003 1球(TTG)"], "est_odds": 104.50, "risk": "极高" },
+      { "name": "混合串B", "matches": ["001 平胜(HTFT)", "006 0球(TTG)"], "est_odds": 168.00, "risk": "极高" },
+      { "name": "混合串C", "matches": ["003 平平(HTFT)", "004 3球(TTG)"], "est_odds": 58.50, "risk": "高" },
+      { "name": "混合串D", "matches": ["005 平负(HTFT)", "002 2球(TTG)"], "est_odds": 141.00, "risk": "极高" }
+    ],
+    "score": [
+      { "name": "稳健比分串", "matches": ["002 1-0", "006 0-0"], "est_odds": 96.00, "risk": "高" },
+      { "name": "混合比分串", "matches": ["001 1-0/1-1", "006 0-0/1-0"], "est_odds_range": "84-193", "notes": 4, "risk": "极高" },
+      { "name": "搏冷比分串", "matches": ["003 0-0", "006 1-1"], "est_odds": 45.00, "risk": "极高" },
+      { "name": "单挑比分①", "matches": ["006 0-0"], "est_odds": 12.00, "risk": "中" },
+      { "name": "单挑比分②", "matches": ["002 1-0"], "est_odds": 8.00, "risk": "中" }
+    ]
+  },
+  "lessons_applied": ["L015", "L020", "L021", "L022", "L023"],
+  "rules_triggered": ["规则8(006)", "规则21(002/003/006)", "规则32(003)", "规则53(006)", "规则57(003)", "规则60(全报告)", "规则61(娱乐串)"]
+}

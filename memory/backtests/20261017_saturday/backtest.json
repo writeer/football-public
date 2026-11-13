@@ -1,0 +1,3783 @@
+{
+ "backtest_id": "20261017_saturday",
+ "date": "2026-10-17",
+ "day": "周六",
+ "ticket_id": "261017",
+ "fetched_at": "2026-10-18（官方 JSON lastUpdateTime 见接口）",
+ "result_source": "体彩官方 getUniformMatchResultV1（/gateway/uniform/football/）；周六023-030 官方 matchDate=2026-10-18，按 matchId 对齐归档；30 场全部 matchResultStatus=2 已开奖",
+ "summary": {
+  "n": 30,
+  "dir_all": "23/30 = 76.7%",
+  "dir_first_only": "17/30 = 56.7%",
+  "hhad_all": "20/30 = 66.7%",
+  "hhad_first_only": "15/30 = 50.0%",
+  "ttg": "10/30 = 33.3%",
+  "hafu": "20/30 = 66.7%",
+  "crs": "12/30 = 40.0%",
+  "htScore": "17/30 = 56.7%",
+  "size": "5/30 = 16.7%",
+  "krec_band": "8/30 = 26.7%"
+ },
+ "tally": {
+  "n": 30,
+  "dirAll": 23,
+  "dirFirst": 17,
+  "dirSecond": 6,
+  "hhadAll": 20,
+  "hhadFirst": 15,
+  "hhadSecond": 5,
+  "ttg": 10,
+  "hafu": 20,
+  "crs": 12,
+  "htScore": 17,
+  "sizeHit": 5,
+  "krecBand": 8
+ },
+ "byConf": {
+  "★★中": {
+   "n": 19,
+   "hit": 16
+  },
+  "★低": {
+   "n": 10,
+   "hit": 6
+  },
+  "★★★高": {
+   "n": 1,
+   "hit": 1
+  }
+ },
+ "results": [
+  {
+   "id": "001",
+   "league": "澳超",
+   "home": "麦克阿瑟FC",
+   "away": "珀斯光荣",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "0-0",
+   "ft": "2-1",
+   "line": -1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "主胜",
+    "second": "客胜",
+    "actual": "主胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让负",
+    "second": "让胜",
+    "actual": "让平",
+    "hit": "❌"
+   },
+   "crs": {
+    "top5": [
+     "2-1",
+     "1-1",
+     "2-0",
+     "1-0",
+     "1-2"
+    ],
+    "actual": "2-1",
+    "hit": true,
+    "rank": 1
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "3"
+    ],
+    "actual": "3",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "常规正常球",
+    "actualGoals": 3,
+    "hit": true
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "actual": "平胜",
+    "hit": true,
+    "rank": 2
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "1-1"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 1
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": 1,
+    "actual": 1,
+    "krecBand": true,
+    "consistent": false
+   },
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ]
+  },
+  {
+   "id": "002",
+   "league": "日职",
+   "home": "鹿岛鹿角",
+   "away": "长崎航海",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "2-0",
+   "ft": "2-0",
+   "line": -1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "主胜",
+    "second": "平",
+    "actual": "主胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让平",
+    "second": "让胜",
+    "actual": "让胜",
+    "hit": "✅次"
+   },
+   "crs": {
+    "top5": [
+     "2-1",
+     "2-0",
+     "3-1",
+     "3-0",
+     "1-0"
+    ],
+    "actual": "2-0",
+    "hit": true,
+    "rank": 2
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "4"
+    ],
+    "actual": "2",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "小球",
+    "actualGoals": 2,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "actual": "胜胜",
+    "hit": true,
+    "rank": 1
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "2-0"
+    ],
+    "actual": "2-0",
+    "hit": true,
+    "rank": 3
+   },
+   "k": {
+    "k_dist": 1,
+    "k_rec": 1,
+    "actual": 2,
+    "krecBand": false,
+    "consistent": true
+   },
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ]
+  },
+  {
+   "id": "003",
+   "league": "韩职",
+   "home": "蔚山现代",
+   "away": "富川FC",
+   "conf": "★★中",
+   "single": true,
+   "stadium": "正常",
+   "ht": "0-1",
+   "ft": "2-1",
+   "line": -1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "主胜",
+    "second": "平",
+    "actual": "主胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让平",
+    "second": "让胜",
+    "actual": "让平",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "2-1",
+     "2-0",
+     "3-1",
+     "3-0",
+     "1-0"
+    ],
+    "actual": "2-1",
+    "hit": true,
+    "rank": 1
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "2"
+    ],
+    "actual": "3",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "常规正常球",
+    "actualGoals": 3,
+    "hit": true
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "actual": "负胜",
+    "hit": false,
+    "rank": 0
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "1-1"
+    ],
+    "actual": "0-1",
+    "hit": false,
+    "rank": 0
+   },
+   "k": {
+    "k_dist": 1,
+    "k_rec": 1,
+    "actual": 1,
+    "krecBand": true,
+    "consistent": true
+   },
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ]
+  },
+  {
+   "id": "004",
+   "league": "澳超",
+   "home": "中央海岸水手",
+   "away": "纽卡斯尔喷气机",
+   "conf": "★低",
+   "single": false,
+   "stadium": "正常",
+   "ht": "1-0",
+   "ft": "2-2",
+   "line": 1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "客胜",
+    "second": "主胜",
+    "actual": "平",
+    "hit": "❌"
+   },
+   "hhad": {
+    "line": 1,
+    "first": "让胜",
+    "second": "让负",
+    "actual": "让胜",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "1-2",
+     "1-1",
+     "0-2",
+     "1-3",
+     "2-1"
+    ],
+    "actual": "2-2",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "4"
+    ],
+    "actual": "4",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "大球",
+    "actualGoals": 4,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "平负",
+     "胜胜"
+    ],
+    "actual": "胜平",
+    "hit": false,
+    "rank": 0
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "0-1",
+     "1-1"
+    ],
+    "actual": "1-0",
+    "hit": false,
+    "rank": 0
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": -1,
+    "actual": 0,
+    "krecBand": false,
+    "consistent": false
+   },
+   "band": [
+    "1-2",
+    "0-1",
+    "2-3"
+   ]
+  },
+  {
+   "id": "005",
+   "league": "日职",
+   "home": "柏太阳神",
+   "away": "名古屋鲸八",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "1-2",
+   "ft": "1-3",
+   "line": -1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "主胜",
+    "second": "平",
+    "actual": "客胜",
+    "hit": "❌"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让平",
+    "second": "让胜",
+    "actual": "让负",
+    "hit": "❌"
+   },
+   "crs": {
+    "top5": [
+     "2-1",
+     "3-1",
+     "2-0",
+     "3-0",
+     "1-0"
+    ],
+    "actual": "1-3",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "4"
+    ],
+    "actual": "4",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "大球",
+    "actualGoals": 4,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "actual": "负负",
+    "hit": false,
+    "rank": 0
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "1-1"
+    ],
+    "actual": "1-2",
+    "hit": false,
+    "rank": 0
+   },
+   "k": {
+    "k_dist": 1,
+    "k_rec": 1,
+    "actual": -2,
+    "krecBand": false,
+    "consistent": true
+   },
+   "band": [
+    "2-1",
+    "3-2",
+    "1-0"
+   ]
+  },
+  {
+   "id": "006",
+   "league": "日乙",
+   "home": "宫崎惊奇牛鸟",
+   "away": "磐田喜悦",
+   "conf": "★低",
+   "single": false,
+   "stadium": "正常",
+   "ht": "1-1",
+   "ft": "1-1",
+   "line": -1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "主胜",
+    "second": "客胜",
+    "actual": "平",
+    "hit": "❌"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让负",
+    "second": "让胜",
+    "actual": "让负",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "2-1",
+     "1-1",
+     "1-2",
+     "1-0",
+     "2-0"
+    ],
+    "actual": "1-1",
+    "hit": true,
+    "rank": 2
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "3"
+    ],
+    "actual": "2",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "小球",
+    "actualGoals": 2,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "负负",
+     "平胜"
+    ],
+    "actual": "平平",
+    "hit": false,
+    "rank": 0
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "actual": "1-1",
+    "hit": false,
+    "rank": 0
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": 1,
+    "actual": 0,
+    "krecBand": false,
+    "consistent": false
+   },
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ]
+  },
+  {
+   "id": "007",
+   "league": "英超",
+   "home": "埃弗顿",
+   "away": "切尔西",
+   "conf": "★低",
+   "single": true,
+   "stadium": "正常",
+   "ht": "0-0",
+   "ft": "0-2",
+   "line": 1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "平",
+    "second": "客胜",
+    "actual": "客胜",
+    "hit": "✅次"
+   },
+   "hhad": {
+    "line": 1,
+    "first": "让胜",
+    "second": "让负",
+    "actual": "让负",
+    "hit": "✅次"
+   },
+   "crs": {
+    "top5": [
+     "1-1",
+     "1-2",
+     "2-1",
+     "0-1",
+     "0-2"
+    ],
+    "actual": "0-2",
+    "hit": true,
+    "rank": 5
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "3"
+    ],
+    "actual": "2",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "小球",
+    "actualGoals": 2,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "平负",
+     "胜胜"
+    ],
+    "actual": "平负",
+    "hit": true,
+    "rank": 2
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "0-1",
+     "1-0"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 1
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": 0,
+    "actual": -2,
+    "krecBand": false,
+    "consistent": true
+   },
+   "band": [
+    "1-1",
+    "0-0",
+    "2-2"
+   ]
+  },
+  {
+   "id": "008",
+   "league": "英冠",
+   "home": "米尔沃尔",
+   "away": "林肯城",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "0-2",
+   "ft": "2-2",
+   "line": -1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "主胜",
+    "second": "平",
+    "actual": "平",
+    "hit": "✅次"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让平",
+    "second": "让胜",
+    "actual": "让负",
+    "hit": "❌"
+   },
+   "crs": {
+    "top5": [
+     "2-0",
+     "2-1",
+     "1-0",
+     "3-0",
+     "1-1"
+    ],
+    "actual": "2-2",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "2"
+    ],
+    "actual": "4",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "大球",
+    "actualGoals": 4,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "actual": "负平",
+    "hit": false,
+    "rank": 0
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "1-1"
+    ],
+    "actual": "0-2",
+    "hit": false,
+    "rank": 0
+   },
+   "k": {
+    "k_dist": 1,
+    "k_rec": 1,
+    "actual": 0,
+    "krecBand": false,
+    "consistent": true
+   },
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ]
+  },
+  {
+   "id": "009",
+   "league": "西甲",
+   "home": "西班牙人",
+   "away": "马德里竞技",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "0-0",
+   "ft": "0-1",
+   "line": 1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "客胜",
+    "second": "平",
+    "actual": "客胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": 1,
+    "first": "让胜",
+    "second": "让负",
+    "actual": "让平",
+    "hit": "❌"
+   },
+   "crs": {
+    "top5": [
+     "1-2",
+     "0-2",
+     "0-1",
+     "1-3",
+     "1-1"
+    ],
+    "actual": "0-1",
+    "hit": true,
+    "rank": 3
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "2"
+    ],
+    "actual": "1",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "闷战超小球",
+    "actualGoals": 1,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "平负",
+     "平平"
+    ],
+    "actual": "平负",
+    "hit": true,
+    "rank": 2
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "0-1",
+     "1-1"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 1
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": -1,
+    "actual": -1,
+    "krecBand": true,
+    "consistent": false
+   },
+   "band": [
+    "1-2",
+    "0-1",
+    "2-3"
+   ]
+  },
+  {
+   "id": "010",
+   "league": "挪超",
+   "home": "汉坎",
+   "away": "博德闪耀",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "0-2",
+   "ft": "0-2",
+   "line": 2,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "客胜",
+    "second": "平",
+    "actual": "客胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": 2,
+    "first": "让平",
+    "second": "让胜",
+    "actual": "让平",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "1-3",
+     "1-2",
+     "0-3",
+     "0-2",
+     "0-4"
+    ],
+    "actual": "0-2",
+    "hit": true,
+    "rank": 4
+   },
+   "ttg": {
+    "pick": [
+     "4",
+     "3"
+    ],
+    "actual": "2",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "大球",
+    "actual": "小球",
+    "actualGoals": 2,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "平负",
+     "平平"
+    ],
+    "actual": "负负",
+    "hit": true,
+    "rank": 1
+   },
+   "htScore": {
+    "top3": [
+     "0-1",
+     "0-0",
+     "0-2"
+    ],
+    "actual": "0-2",
+    "hit": true,
+    "rank": 3
+   },
+   "k": {
+    "k_dist": -2,
+    "k_rec": -2,
+    "actual": -2,
+    "krecBand": true,
+    "consistent": true
+   },
+   "band": [
+    "1-3",
+    "0-2",
+    "2-4"
+   ]
+  },
+  {
+   "id": "011",
+   "league": "意甲",
+   "home": "威尼斯",
+   "away": "那不勒斯",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "0-0",
+   "ft": "1-0",
+   "line": 1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "客胜",
+    "second": "平",
+    "actual": "主胜",
+    "hit": "❌"
+   },
+   "hhad": {
+    "line": 1,
+    "first": "让胜",
+    "second": "让负",
+    "actual": "让胜",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "1-2",
+     "0-2",
+     "0-1",
+     "1-3",
+     "1-1"
+    ],
+    "actual": "1-0",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "3"
+    ],
+    "actual": "1",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "闷战超小球",
+    "actualGoals": 1,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "平负",
+     "平平"
+    ],
+    "actual": "平胜",
+    "hit": false,
+    "rank": 0
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "0-1",
+     "1-0"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 1
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": -1,
+    "actual": 1,
+    "krecBand": false,
+    "consistent": false
+   },
+   "band": [
+    "1-2",
+    "0-1",
+    "2-3"
+   ]
+  },
+  {
+   "id": "012",
+   "league": "芬超",
+   "home": "赫尔辛基",
+   "away": "赫尔辛基火花",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "0-0",
+   "ft": "4-0",
+   "line": -1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "主胜",
+    "second": "平",
+    "actual": "主胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让胜",
+    "second": "让负",
+    "actual": "让胜",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "3-1",
+     "2-1",
+     "2-0",
+     "3-0",
+     "4-1"
+    ],
+    "actual": "4-0",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "4",
+     "3"
+    ],
+    "actual": "4",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "大球",
+    "actual": "大球",
+    "actualGoals": 4,
+    "hit": true
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "actual": "平胜",
+    "hit": true,
+    "rank": 2
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "2-0"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 1
+   },
+   "k": {
+    "k_dist": 2,
+    "k_rec": 2,
+    "actual": 4,
+    "krecBand": false,
+    "consistent": true
+   },
+   "band": [
+    "3-1",
+    "2-0",
+    "4-2"
+   ]
+  },
+  {
+   "id": "013",
+   "league": "德甲",
+   "home": "埃尔沃斯堡",
+   "away": "奥格斯堡",
+   "conf": "★低",
+   "single": false,
+   "stadium": "正常",
+   "ht": "3-1",
+   "ft": "4-3",
+   "line": -1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "主胜",
+    "second": "客胜",
+    "actual": "主胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让负",
+    "second": "让胜",
+    "actual": "让平",
+    "hit": "❌"
+   },
+   "crs": {
+    "top5": [
+     "2-1",
+     "1-1",
+     "2-2",
+     "1-2",
+     "2-0"
+    ],
+    "actual": "4-3",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "2"
+    ],
+    "actual": "7+",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "穿盘可能",
+    "actualGoals": 7,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "负负",
+     "平胜"
+    ],
+    "actual": "胜胜",
+    "hit": true,
+    "rank": 1
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "actual": "3-1",
+    "hit": false,
+    "rank": 0
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": 1,
+    "actual": 1,
+    "krecBand": false,
+    "consistent": false
+   },
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ]
+  },
+  {
+   "id": "014",
+   "league": "德甲",
+   "home": "云达不来梅",
+   "away": "帕德博恩",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "0-2",
+   "ft": "2-2",
+   "line": -1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "主胜",
+    "second": "客胜",
+    "actual": "平",
+    "hit": "❌"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让负",
+    "second": "让胜",
+    "actual": "让负",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "2-1",
+     "2-0",
+     "1-1",
+     "3-1",
+     "3-0"
+    ],
+    "actual": "2-2",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "2"
+    ],
+    "actual": "4",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "大球",
+    "actualGoals": 4,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "actual": "负平",
+    "hit": false,
+    "rank": 0
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "1-1"
+    ],
+    "actual": "0-2",
+    "hit": false,
+    "rank": 0
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": 1,
+    "actual": 0,
+    "krecBand": false,
+    "consistent": false
+   },
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ]
+  },
+  {
+   "id": "015",
+   "league": "德甲",
+   "home": "沙尔克04",
+   "away": "美因茨",
+   "conf": "★低",
+   "single": false,
+   "stadium": "正常",
+   "ht": "0-1",
+   "ft": "0-1",
+   "line": 1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "客胜",
+    "second": "主胜",
+    "actual": "客胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": 1,
+    "first": "让胜",
+    "second": "让负",
+    "actual": "让平",
+    "hit": "❌"
+   },
+   "crs": {
+    "top5": [
+     "1-2",
+     "1-1",
+     "2-1",
+     "0-2",
+     "1-3"
+    ],
+    "actual": "0-1",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "2"
+    ],
+    "actual": "1",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "闷战超小球",
+    "actualGoals": 1,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "胜胜",
+     "平负"
+    ],
+    "actual": "负负",
+    "hit": true,
+    "rank": 1
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "0-1",
+     "1-0"
+    ],
+    "actual": "0-1",
+    "hit": true,
+    "rank": 2
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": -1,
+    "actual": -1,
+    "krecBand": true,
+    "consistent": false
+   },
+   "band": [
+    "1-2",
+    "0-1",
+    "2-3"
+   ]
+  },
+  {
+   "id": "016",
+   "league": "德甲",
+   "home": "汉堡",
+   "away": "斯图加特",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "0-0",
+   "ft": "1-0",
+   "line": 1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "客胜",
+    "second": "主胜",
+    "actual": "主胜",
+    "hit": "✅次"
+   },
+   "hhad": {
+    "line": 1,
+    "first": "让胜",
+    "second": "让负",
+    "actual": "让胜",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "1-2",
+     "1-1",
+     "0-2",
+     "1-3",
+     "2-2"
+    ],
+    "actual": "1-0",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "2"
+    ],
+    "actual": "1",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "闷战超小球",
+    "actualGoals": 1,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "平负",
+     "胜胜"
+    ],
+    "actual": "平胜",
+    "hit": false,
+    "rank": 0
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "0-1",
+     "1-1"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 1
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": -1,
+    "actual": 1,
+    "krecBand": false,
+    "consistent": false
+   },
+   "band": [
+    "1-2",
+    "0-1",
+    "2-3"
+   ]
+  },
+  {
+   "id": "017",
+   "league": "德甲",
+   "home": "柏林联合",
+   "away": "多特蒙德",
+   "conf": "★低",
+   "single": true,
+   "stadium": "正常",
+   "ht": "0-0",
+   "ft": "0-0",
+   "line": 1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "客胜",
+    "second": "平",
+    "actual": "平",
+    "hit": "✅次"
+   },
+   "hhad": {
+    "line": 1,
+    "first": "让胜",
+    "second": "让负",
+    "actual": "让胜",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "1-2",
+     "1-1",
+     "0-2",
+     "1-3",
+     "0-3"
+    ],
+    "actual": "0-0",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "2"
+    ],
+    "actual": "0",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "闷战超小球",
+    "actualGoals": 0,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "平负",
+     "平平"
+    ],
+    "actual": "平平",
+    "hit": true,
+    "rank": 3
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "0-1",
+     "1-1"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 1
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": -1,
+    "actual": 0,
+    "krecBand": false,
+    "consistent": false
+   },
+   "band": [
+    "1-2",
+    "0-1",
+    "2-3"
+   ]
+  },
+  {
+   "id": "018",
+   "league": "英超",
+   "home": "布伦特福德",
+   "away": "利物浦",
+   "conf": "★低",
+   "single": false,
+   "stadium": "正常",
+   "ht": "1-0",
+   "ft": "1-2",
+   "line": -1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "主胜",
+    "second": "平",
+    "actual": "客胜",
+    "hit": "❌"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让负",
+    "second": "让胜",
+    "actual": "让负",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "2-1",
+     "1-1",
+     "1-2",
+     "2-0",
+     "1-0"
+    ],
+    "actual": "1-2",
+    "hit": true,
+    "rank": 3
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "3"
+    ],
+    "actual": "3",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "常规正常球",
+    "actualGoals": 3,
+    "hit": true
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "负负"
+    ],
+    "actual": "胜负",
+    "hit": false,
+    "rank": 0
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "actual": "1-0",
+    "hit": true,
+    "rank": 2
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": 1,
+    "actual": -1,
+    "krecBand": false,
+    "consistent": false
+   },
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ]
+  },
+  {
+   "id": "019",
+   "league": "英超",
+   "home": "曼彻斯特城",
+   "away": "伊普斯维奇",
+   "conf": "★★★高",
+   "single": false,
+   "stadium": "正常",
+   "ht": "2-1",
+   "ft": "3-2",
+   "line": -2,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "主胜",
+    "second": "平",
+    "actual": "主胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": -2,
+    "first": "让平",
+    "second": "让胜",
+    "actual": "让负",
+    "hit": "❌"
+   },
+   "crs": {
+    "top5": [
+     "3-0",
+     "3-1",
+     "2-0",
+     "2-1",
+     "4-0"
+    ],
+    "actual": "3-2",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "4",
+     "3"
+    ],
+    "actual": "5",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "大球",
+    "actual": "超大球",
+    "actualGoals": 5,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "actual": "胜胜",
+    "hit": true,
+    "rank": 1
+   },
+   "htScore": {
+    "top3": [
+     "1-0",
+     "0-0",
+     "2-0"
+    ],
+    "actual": "2-1",
+    "hit": false,
+    "rank": 0
+   },
+   "k": {
+    "k_dist": 2,
+    "k_rec": 2,
+    "actual": 1,
+    "krecBand": false,
+    "consistent": true
+   },
+   "band": [
+    "3-1",
+    "2-0",
+    "4-2"
+   ]
+  },
+  {
+   "id": "020",
+   "league": "英超",
+   "home": "富勒姆",
+   "away": "赫尔城",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "1-0",
+   "ft": "1-0",
+   "line": -1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "主胜",
+    "second": "平",
+    "actual": "主胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让负",
+    "second": "让胜",
+    "actual": "让平",
+    "hit": "❌"
+   },
+   "crs": {
+    "top5": [
+     "1-0",
+     "2-0",
+     "2-1",
+     "1-1",
+     "0-0"
+    ],
+    "actual": "1-0",
+    "hit": true,
+    "rank": 1
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "3"
+    ],
+    "actual": "1",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "小球",
+    "actual": "闷战超小球",
+    "actualGoals": 1,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "actual": "胜胜",
+    "hit": true,
+    "rank": 1
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "actual": "1-0",
+    "hit": true,
+    "rank": 2
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": 1,
+    "actual": 1,
+    "krecBand": true,
+    "consistent": false
+   },
+   "band": [
+    "1-0",
+    "2-1",
+    "3-2"
+   ]
+  },
+  {
+   "id": "021",
+   "league": "西甲",
+   "home": "比利亚雷亚尔",
+   "away": "埃尔切",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "0-0",
+   "ft": "0-0",
+   "line": -1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "主胜",
+    "second": "平",
+    "actual": "平",
+    "hit": "✅次"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让平",
+    "second": "让胜",
+    "actual": "让负",
+    "hit": "❌"
+   },
+   "crs": {
+    "top5": [
+     "2-1",
+     "2-0",
+     "3-1",
+     "3-0",
+     "1-0"
+    ],
+    "actual": "0-0",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "4"
+    ],
+    "actual": "0",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "闷战超小球",
+    "actualGoals": 0,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "actual": "平平",
+    "hit": true,
+    "rank": 3
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "2-0"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 1
+   },
+   "k": {
+    "k_dist": 1,
+    "k_rec": 1,
+    "actual": 0,
+    "krecBand": false,
+    "consistent": true
+   },
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ]
+  },
+  {
+   "id": "022",
+   "league": "法甲",
+   "home": "斯特拉斯堡",
+   "away": "巴黎圣日尔曼",
+   "conf": "★低",
+   "single": false,
+   "stadium": "正常",
+   "ht": "1-0",
+   "ft": "1-3",
+   "line": 1,
+   "date": "2026-10-17",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "客胜",
+    "second": "平",
+    "actual": "客胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": 1,
+    "first": "让负",
+    "second": "让胜",
+    "actual": "让负",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "1-2",
+     "0-2",
+     "1-3",
+     "0-3",
+     "1-1"
+    ],
+    "actual": "1-3",
+    "hit": true,
+    "rank": 3
+   },
+   "ttg": {
+    "pick": [
+     "4",
+     "3"
+    ],
+    "actual": "4",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "大球",
+    "actual": "大球",
+    "actualGoals": 4,
+    "hit": true
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "平负",
+     "平平"
+    ],
+    "actual": "胜负",
+    "hit": false,
+    "rank": 0
+   },
+   "htScore": {
+    "top3": [
+     "0-1",
+     "0-0",
+     "0-2"
+    ],
+    "actual": "1-0",
+    "hit": false,
+    "rank": 0
+   },
+   "k": {
+    "k_dist": -2,
+    "k_rec": -2,
+    "actual": -2,
+    "krecBand": true,
+    "consistent": true
+   },
+   "band": [
+    "1-3",
+    "0-2",
+    "2-4"
+   ]
+  },
+  {
+   "id": "023",
+   "league": "意甲",
+   "home": "博洛尼亚",
+   "away": "国际米兰",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "1-1",
+   "ft": "1-3",
+   "line": 1,
+   "date": "2026-10-18",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "客胜",
+    "second": "平",
+    "actual": "客胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": 1,
+    "first": "让胜",
+    "second": "让负",
+    "actual": "让负",
+    "hit": "✅次"
+   },
+   "crs": {
+    "top5": [
+     "1-2",
+     "0-2",
+     "0-1",
+     "1-1",
+     "0-3"
+    ],
+    "actual": "1-3",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "3"
+    ],
+    "actual": "4",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "大球",
+    "actualGoals": 4,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "平负",
+     "平平"
+    ],
+    "actual": "平负",
+    "hit": true,
+    "rank": 2
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "0-1",
+     "1-0"
+    ],
+    "actual": "1-1",
+    "hit": false,
+    "rank": 0
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": -1,
+    "actual": -2,
+    "krecBand": false,
+    "consistent": false
+   },
+   "band": [
+    "1-2",
+    "0-1",
+    "2-3"
+   ]
+  },
+  {
+   "id": "024",
+   "league": "英超",
+   "home": "纽卡斯尔联",
+   "away": "阿斯顿维拉",
+   "conf": "★低",
+   "single": true,
+   "stadium": "正常",
+   "ht": "0-1",
+   "ft": "0-1",
+   "line": -1,
+   "date": "2026-10-18",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "平",
+    "second": "主胜",
+    "actual": "客胜",
+    "hit": "❌"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让负",
+    "second": "让胜",
+    "actual": "让负",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "1-1",
+     "2-1",
+     "1-2",
+     "2-0",
+     "1-0"
+    ],
+    "actual": "0-1",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "3"
+    ],
+    "actual": "1",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "闷战超小球",
+    "actualGoals": 1,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "负负"
+    ],
+    "actual": "负负",
+    "hit": true,
+    "rank": 3
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "actual": "0-1",
+    "hit": true,
+    "rank": 3
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": 0,
+    "actual": -1,
+    "krecBand": false,
+    "consistent": true
+   },
+   "band": [
+    "1-1",
+    "2-2",
+    "0-0"
+   ]
+  },
+  {
+   "id": "025",
+   "league": "德甲",
+   "home": "拜仁慕尼黑",
+   "away": "莱比锡红牛",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "3-0",
+   "ft": "6-1",
+   "line": -2,
+   "date": "2026-10-18",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "主胜",
+    "second": "平",
+    "actual": "主胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": -2,
+    "first": "让平",
+    "second": "让胜",
+    "actual": "让胜",
+    "hit": "✅次"
+   },
+   "crs": {
+    "top5": [
+     "3-1",
+     "2-1",
+     "3-0",
+     "4-1",
+     "4-0"
+    ],
+    "actual": "6-1",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "4",
+     "3"
+    ],
+    "actual": "7+",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "大球",
+    "actual": "穿盘可能",
+    "actualGoals": 7,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "actual": "胜胜",
+    "hit": true,
+    "rank": 1
+   },
+   "htScore": {
+    "top3": [
+     "1-0",
+     "0-0",
+     "2-0"
+    ],
+    "actual": "3-0",
+    "hit": false,
+    "rank": 0
+   },
+   "k": {
+    "k_dist": 2,
+    "k_rec": 2,
+    "actual": 5,
+    "krecBand": false,
+    "consistent": true
+   },
+   "band": [
+    "3-1",
+    "2-0",
+    "4-2"
+   ]
+  },
+  {
+   "id": "026",
+   "league": "西甲",
+   "home": "皇家贝蒂斯",
+   "away": "巴塞罗那",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "1-2",
+   "ft": "2-5",
+   "line": 1,
+   "date": "2026-10-18",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "客胜",
+    "second": "平",
+    "actual": "客胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": 1,
+    "first": "让负",
+    "second": "让胜",
+    "actual": "让负",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "1-3",
+     "1-2",
+     "0-2",
+     "1-4",
+     "0-3"
+    ],
+    "actual": "2-5",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "4",
+     "3"
+    ],
+    "actual": "7+",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "大球",
+    "actual": "穿盘可能",
+    "actualGoals": 7,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "平负",
+     "平平"
+    ],
+    "actual": "负负",
+    "hit": true,
+    "rank": 1
+   },
+   "htScore": {
+    "top3": [
+     "0-1",
+     "0-0",
+     "1-1"
+    ],
+    "actual": "1-2",
+    "hit": false,
+    "rank": 0
+   },
+   "k": {
+    "k_dist": -2,
+    "k_rec": -2,
+    "actual": -3,
+    "krecBand": false,
+    "consistent": true
+   },
+   "band": [
+    "1-3",
+    "0-2",
+    "2-4"
+   ]
+  },
+  {
+   "id": "027",
+   "league": "荷甲",
+   "home": "特尔斯达",
+   "away": "费耶诺德",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "2-3",
+   "ft": "3-4",
+   "line": 1,
+   "date": "2026-10-18",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "客胜",
+    "second": "平",
+    "actual": "客胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": 1,
+    "first": "让平",
+    "second": "让负",
+    "actual": "让平",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "1-2",
+     "0-2",
+     "1-3",
+     "0-3",
+     "1-1"
+    ],
+    "actual": "3-4",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "4"
+    ],
+    "actual": "7+",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "穿盘可能",
+    "actualGoals": 7,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "平负",
+     "平平"
+    ],
+    "actual": "负负",
+    "hit": true,
+    "rank": 1
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "0-1",
+     "0-2"
+    ],
+    "actual": "2-3",
+    "hit": false,
+    "rank": 0
+   },
+   "k": {
+    "k_dist": -1,
+    "k_rec": -1,
+    "actual": -1,
+    "krecBand": false,
+    "consistent": true
+   },
+   "band": [
+    "1-2",
+    "0-1",
+    "2-3"
+   ]
+  },
+  {
+   "id": "028",
+   "league": "意甲",
+   "home": "罗马",
+   "away": "热那亚",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "0-0",
+   "ft": "2-0",
+   "line": -1,
+   "date": "2026-10-18",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "主胜",
+    "second": "平",
+    "actual": "主胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让负",
+    "second": "让胜",
+    "actual": "让胜",
+    "hit": "✅次"
+   },
+   "crs": {
+    "top5": [
+     "1-0",
+     "2-0",
+     "2-1",
+     "1-1",
+     "3-0"
+    ],
+    "actual": "2-0",
+    "hit": true,
+    "rank": 2
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "3"
+    ],
+    "actual": "2",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "小球",
+    "actualGoals": 2,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "平平"
+    ],
+    "actual": "平胜",
+    "hit": true,
+    "rank": 2
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 1
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": 1,
+    "actual": 2,
+    "krecBand": false,
+    "consistent": false
+   },
+   "band": [
+    "1-0",
+    "2-1",
+    "3-2"
+   ]
+  },
+  {
+   "id": "029",
+   "league": "西甲",
+   "home": "巴伦西亚",
+   "away": "毕尔巴鄂竞技",
+   "conf": "★低",
+   "single": false,
+   "stadium": "正常",
+   "ht": "0-0",
+   "ft": "0-0",
+   "line": 1,
+   "date": "2026-10-18",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "客胜",
+    "second": "平",
+    "actual": "平",
+    "hit": "✅次"
+   },
+   "hhad": {
+    "line": 1,
+    "first": "让胜",
+    "second": "让平",
+    "actual": "让胜",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "0-1",
+     "1-1",
+     "0-2",
+     "1-2",
+     "0-0"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 5
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "3"
+    ],
+    "actual": "0",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "小球",
+    "actual": "闷战超小球",
+    "actualGoals": 0,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "平负",
+     "平平"
+    ],
+    "actual": "平平",
+    "hit": true,
+    "rank": 3
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "0-1",
+     "1-0"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 1
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": -1,
+    "actual": 0,
+    "krecBand": false,
+    "consistent": false
+   },
+   "band": [
+    "0-1",
+    "1-2",
+    "2-3"
+   ]
+  },
+  {
+   "id": "030",
+   "league": "美职",
+   "home": "新英格兰革命",
+   "away": "芝加哥火焰",
+   "conf": "★★中",
+   "single": false,
+   "stadium": "正常",
+   "ht": "1-0",
+   "ft": "1-0",
+   "line": -1,
+   "date": "2026-10-18",
+   "source": "体彩官方 getUniformMatchResultV1",
+   "had": {
+    "first": "主胜",
+    "second": "客胜",
+    "actual": "主胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让负",
+    "second": "让胜",
+    "actual": "让平",
+    "hit": "❌"
+   },
+   "crs": {
+    "top5": [
+     "2-1",
+     "1-1",
+     "1-2",
+     "2-2",
+     "2-0"
+    ],
+    "actual": "1-0",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "2"
+    ],
+    "actual": "1",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "闷战超小球",
+    "actualGoals": 1,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "负负",
+     "平胜"
+    ],
+    "actual": "胜胜",
+    "hit": true,
+    "rank": 1
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "actual": "1-0",
+    "hit": true,
+    "rank": 2
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": 1,
+    "actual": 1,
+    "krecBand": true,
+    "consistent": false
+   },
+   "band": [
+    "2-1",
+    "1-0",
+    "3-2"
+   ]
+  }
+ ],
+ "hit_rates": {
+  "dir": {
+   "merged": 23,
+   "first": 17,
+   "second": 6,
+   "missed": [
+    "004",
+    "005",
+    "006",
+    "011",
+    "014",
+    "018",
+    "024"
+   ]
+  },
+  "hhad": {
+   "merged": 20,
+   "first": 15,
+   "second": 5,
+   "missed": [
+    "001",
+    "005",
+    "008",
+    "009",
+    "013",
+    "015",
+    "019",
+    "020",
+    "021",
+    "030"
+   ]
+  },
+  "ttg": {
+   "hit": 10
+  },
+  "hafu": {
+   "hit": 20
+  },
+  "crs": {
+   "hit": 12
+  },
+  "htScore": {
+   "hit": 17
+  },
+  "size": {
+   "hit": 5
+  },
+  "krecBand": {
+   "hit": 8
+  }
+ },
+ "parlays": [
+  {
+   "name": "方向串A（稳健）",
+   "type": "方向串",
+   "odds_est": 1.96,
+   "matches": [
+    "002",
+    "019",
+    "026"
+   ],
+   "legs": [
+    [
+     "002",
+     "002鹿岛鹿角主胜",
+     null
+    ],
+    [
+     "019",
+     "019曼彻斯特城主胜",
+     null
+    ],
+    [
+     "026",
+     "026皇家贝蒂斯客胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "002",
+     "pick": "002鹿岛鹿角主胜",
+     "r": "Y"
+    },
+    {
+     "id": "019",
+     "pick": "019曼彻斯特城主胜",
+     "r": "Y"
+    },
+    {
+     "id": "026",
+     "pick": "026皇家贝蒂斯客胜",
+     "r": "Y"
+    }
+   ],
+   "hit": true
+  },
+  {
+   "name": "方向串B（价值）",
+   "type": "方向串",
+   "odds_est": 3.28,
+   "matches": [
+    "003",
+    "008",
+    "012"
+   ],
+   "legs": [
+    [
+     "003",
+     "003蔚山现代主胜",
+     null
+    ],
+    [
+     "008",
+     "008米尔沃尔主胜",
+     null
+    ],
+    [
+     "012",
+     "012赫尔辛基主胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "003",
+     "pick": "003蔚山现代主胜",
+     "r": "Y"
+    },
+    {
+     "id": "008",
+     "pick": "008米尔沃尔主胜",
+     "r": "N"
+    },
+    {
+     "id": "012",
+     "pick": "012赫尔辛基主胜",
+     "r": "Y"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "方向串C（客队强打）",
+   "type": "方向串",
+   "odds_est": 2.61,
+   "matches": [
+    "026",
+    "023",
+    "020"
+   ],
+   "legs": [
+    [
+     "026",
+     "026皇家贝蒂斯客胜",
+     null
+    ],
+    [
+     "023",
+     "023博洛尼亚客胜",
+     null
+    ],
+    [
+     "020",
+     "020富勒姆主胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "026",
+     "pick": "026皇家贝蒂斯客胜",
+     "r": "Y"
+    },
+    {
+     "id": "023",
+     "pick": "023博洛尼亚客胜",
+     "r": "Y"
+    },
+    {
+     "id": "020",
+     "pick": "020富勒姆主胜",
+     "r": "Y"
+    }
+   ],
+   "hit": true
+  },
+  {
+   "name": "稳健让球串",
+   "type": "让球串",
+   "odds_est": 4.25,
+   "matches": [
+    "007",
+    "015",
+    "029"
+   ],
+   "legs": [
+    [
+     "007",
+     "007埃弗顿让(+1)胜",
+     null
+    ],
+    [
+     "015",
+     "015沙尔克04让(+1)胜",
+     null
+    ],
+    [
+     "029",
+     "029巴伦西亚让(+1)胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "007",
+     "pick": "007埃弗顿让(+1)胜",
+     "r": "N"
+    },
+    {
+     "id": "015",
+     "pick": "015沙尔克04让(+1)胜",
+     "r": "N"
+    },
+    {
+     "id": "029",
+     "pick": "029巴伦西亚让(+1)胜",
+     "r": "Y"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "价值让球串",
+   "type": "让球串",
+   "odds_est": 39.6,
+   "matches": [
+    "019",
+    "025",
+    "012"
+   ],
+   "legs": [
+    [
+     "019",
+     "019曼彻斯特城让(-2)平",
+     null
+    ],
+    [
+     "025",
+     "025拜仁慕尼黑让(-2)平",
+     null
+    ],
+    [
+     "012",
+     "012赫尔辛基让(-1)胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "019",
+     "pick": "019曼彻斯特城让(-2)平",
+     "r": "N"
+    },
+    {
+     "id": "025",
+     "pick": "025拜仁慕尼黑让(-2)平",
+     "r": "N"
+    },
+    {
+     "id": "012",
+     "pick": "012赫尔辛基让(-1)胜",
+     "r": "Y"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "半全场串A",
+   "type": "混合串",
+   "odds_est": 10.8,
+   "matches": [
+    "019",
+    "021",
+    "012"
+   ],
+   "legs": [
+    [
+     "019",
+     "019曼彻斯特城胜胜",
+     null
+    ],
+    [
+     "021",
+     "021比利亚雷亚尔平胜",
+     null
+    ],
+    [
+     "012",
+     "012赫尔辛基胜胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "019",
+     "pick": "019曼彻斯特城胜胜",
+     "r": "Y"
+    },
+    {
+     "id": "021",
+     "pick": "021比利亚雷亚尔平胜",
+     "r": "N"
+    },
+    {
+     "id": "012",
+     "pick": "012赫尔辛基胜胜",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "半全场串B",
+   "type": "混合串",
+   "odds_est": 17.9,
+   "matches": [
+    "020",
+    "008",
+    "028"
+   ],
+   "legs": [
+    [
+     "020",
+     "020富勒姆胜胜",
+     null
+    ],
+    [
+     "008",
+     "008米尔沃尔平胜",
+     null
+    ],
+    [
+     "028",
+     "028罗马胜胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "020",
+     "pick": "020富勒姆胜胜",
+     "r": "Y"
+    },
+    {
+     "id": "008",
+     "pick": "008米尔沃尔平胜",
+     "r": "N"
+    },
+    {
+     "id": "028",
+     "pick": "028罗马胜胜",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "方向+半全场A",
+   "type": "混合串",
+   "odds_est": 1.95,
+   "matches": [
+    "002",
+    "019"
+   ],
+   "legs": [
+    [
+     "002",
+     "002鹿岛鹿角主胜",
+     null
+    ],
+    [
+     "019",
+     "019曼彻斯特城胜胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "002",
+     "pick": "002鹿岛鹿角主胜",
+     "r": "Y"
+    },
+    {
+     "id": "019",
+     "pick": "019曼彻斯特城胜胜",
+     "r": "Y"
+    }
+   ],
+   "hit": true
+  },
+  {
+   "name": "方向+半全场B",
+   "type": "混合串",
+   "odds_est": 2.8,
+   "matches": [
+    "003",
+    "021"
+   ],
+   "legs": [
+    [
+     "003",
+     "003蔚山现代主胜",
+     null
+    ],
+    [
+     "021",
+     "021比利亚雷亚尔胜胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "003",
+     "pick": "003蔚山现代主胜",
+     "r": "Y"
+    },
+    {
+     "id": "021",
+     "pick": "021比利亚雷亚尔胜胜",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "连续编号混合串A",
+   "type": "混合串",
+   "odds_est": 4.01,
+   "matches": [
+    "007",
+    "008"
+   ],
+   "legs": [
+    [
+     "007",
+     "007埃弗顿让(+1)胜",
+     null
+    ],
+    [
+     "008",
+     "008米尔沃尔胜胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "007",
+     "pick": "007埃弗顿让(+1)胜",
+     "r": "N"
+    },
+    {
+     "id": "008",
+     "pick": "008米尔沃尔胜胜",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "连续编号混合串B",
+   "type": "混合串",
+   "odds_est": 8.58,
+   "matches": [
+    "017",
+    "018"
+   ],
+   "legs": [
+    [
+     "017",
+     "017柏林联合让(+1)胜",
+     null
+    ],
+    [
+     "018",
+     "018布伦特福德胜胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "017",
+     "pick": "017柏林联合让(+1)胜",
+     "r": "Y"
+    },
+    {
+     "id": "018",
+     "pick": "018布伦特福德胜胜",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "总进球串A",
+   "type": "总进球串",
+   "odds_est": 65.3,
+   "matches": [
+    "004",
+    "010",
+    "019"
+   ],
+   "legs": [
+    [
+     "004",
+     "004中央海岸水手4球",
+     null
+    ],
+    [
+     "010",
+     "010汉坎4球",
+     null
+    ],
+    [
+     "019",
+     "019曼彻斯特城3球",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "004",
+     "pick": "004中央海岸水手4球",
+     "r": "Y"
+    },
+    {
+     "id": "010",
+     "pick": "010汉坎4球",
+     "r": "N"
+    },
+    {
+     "id": "019",
+     "pick": "019曼彻斯特城3球",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "总进球串B",
+   "type": "总进球串",
+   "odds_est": 77.5,
+   "matches": [
+    "012",
+    "022",
+    "025"
+   ],
+   "legs": [
+    [
+     "012",
+     "012赫尔辛基4球",
+     null
+    ],
+    [
+     "022",
+     "022斯特拉斯堡4球",
+     null
+    ],
+    [
+     "025",
+     "025拜仁慕尼黑5球",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "012",
+     "pick": "012赫尔辛基4球",
+     "r": "Y"
+    },
+    {
+     "id": "022",
+     "pick": "022斯特拉斯堡4球",
+     "r": "Y"
+    },
+    {
+     "id": "025",
+     "pick": "025拜仁慕尼黑5球",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "连续编号总进球串①",
+   "type": "总进球串",
+   "odds_est": 15.3,
+   "matches": [
+    "010",
+    "011"
+   ],
+   "legs": [
+    [
+     "010",
+     "010汉坎4球",
+     null
+    ],
+    [
+     "011",
+     "011威尼斯2球",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "010",
+     "pick": "010汉坎4球",
+     "r": "N"
+    },
+    {
+     "id": "011",
+     "pick": "011威尼斯2球",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "连续编号总进球串②",
+   "type": "总进球串",
+   "odds_est": 17.2,
+   "matches": [
+    "016",
+    "017"
+   ],
+   "legs": [
+    [
+     "016",
+     "016汉堡4球",
+     null
+    ],
+    [
+     "017",
+     "017柏林联合2球",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "016",
+     "pick": "016汉堡4球",
+     "r": "N"
+    },
+    {
+     "id": "017",
+     "pick": "017柏林联合2球",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "高赔半全场串A",
+   "type": "高赔半全场串",
+   "odds_est": 100.1,
+   "matches": [
+    "005",
+    "008",
+    "017"
+   ],
+   "legs": [
+    [
+     "005",
+     "005柏太阳神平胜",
+     null
+    ],
+    [
+     "008",
+     "008米尔沃尔平平",
+     null
+    ],
+    [
+     "017",
+     "017柏林联合平负",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "005",
+     "pick": "005柏太阳神平胜",
+     "r": "N"
+    },
+    {
+     "id": "008",
+     "pick": "008米尔沃尔平平",
+     "r": "N"
+    },
+    {
+     "id": "017",
+     "pick": "017柏林联合平负",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "高赔半全场串B",
+   "type": "高赔半全场串",
+   "odds_est": 13.5,
+   "matches": [
+    "012",
+    "026",
+    "021"
+   ],
+   "legs": [
+    [
+     "012",
+     "012赫尔辛基胜胜",
+     null
+    ],
+    [
+     "026",
+     "026皇家贝蒂斯负负",
+     null
+    ],
+    [
+     "021",
+     "021比利亚雷亚尔平胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "012",
+     "pick": "012赫尔辛基胜胜",
+     "r": "N"
+    },
+    {
+     "id": "026",
+     "pick": "026皇家贝蒂斯负负",
+     "r": "Y"
+    },
+    {
+     "id": "021",
+     "pick": "021比利亚雷亚尔平胜",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "连续编号高赔半全场串①",
+   "type": "高赔半全场串",
+   "odds_est": 17.2,
+   "matches": [
+    "007",
+    "008"
+   ],
+   "legs": [
+    [
+     "007",
+     "007埃弗顿负负",
+     null
+    ],
+    [
+     "008",
+     "008米尔沃尔平平",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "007",
+     "pick": "007埃弗顿负负",
+     "r": "N"
+    },
+    {
+     "id": "008",
+     "pick": "008米尔沃尔平平",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "连续编号高赔半全场串②",
+   "type": "高赔半全场串",
+   "odds_est": 25.4,
+   "matches": [
+    "023",
+    "024"
+   ],
+   "legs": [
+    [
+     "023",
+     "023博洛尼亚平负",
+     null
+    ],
+    [
+     "024",
+     "024纽卡斯尔联平平",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "023",
+     "pick": "023博洛尼亚平负",
+     "r": "Y"
+    },
+    {
+     "id": "024",
+     "pick": "024纽卡斯尔联平平",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "混合串A",
+   "type": "半全场混合",
+   "odds_est": 16.8,
+   "matches": [
+    "005",
+    "012"
+   ],
+   "legs": [
+    [
+     "005",
+     "005柏太阳神平胜",
+     null
+    ],
+    [
+     "012",
+     "012赫尔辛基4球",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "005",
+     "pick": "005柏太阳神平胜",
+     "r": "N"
+    },
+    {
+     "id": "012",
+     "pick": "012赫尔辛基4球",
+     "r": "Y"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "混合串B",
+   "type": "半全场混合",
+   "odds_est": 7.5,
+   "matches": [
+    "026",
+    "021"
+   ],
+   "legs": [
+    [
+     "026",
+     "026皇家贝蒂斯负负",
+     null
+    ],
+    [
+     "021",
+     "021比利亚雷亚尔4球",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "026",
+     "pick": "026皇家贝蒂斯负负",
+     "r": "Y"
+    },
+    {
+     "id": "021",
+     "pick": "021比利亚雷亚尔4球",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "连续编号混合总进球串①",
+   "type": "半全场混合",
+   "odds_est": 17.8,
+   "matches": [
+    "003",
+    "004"
+   ],
+   "legs": [
+    [
+     "003",
+     "003蔚山现代平胜",
+     null
+    ],
+    [
+     "004",
+     "004中央海岸水手4球",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "003",
+     "pick": "003蔚山现代平胜",
+     "r": "N"
+    },
+    {
+     "id": "004",
+     "pick": "004中央海岸水手4球",
+     "r": "Y"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "连续编号混合总进球串②",
+   "type": "半全场混合",
+   "odds_est": 26.7,
+   "matches": [
+    "024",
+    "025"
+   ],
+   "legs": [
+    [
+     "024",
+     "024纽卡斯尔联平平",
+     null
+    ],
+    [
+     "025",
+     "025拜仁慕尼黑4球",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "024",
+     "pick": "024纽卡斯尔联平平",
+     "r": "N"
+    },
+    {
+     "id": "025",
+     "pick": "025拜仁慕尼黑4球",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "稳健比分串",
+   "type": "比分串",
+   "odds_est": 42.0,
+   "matches": [
+    "002",
+    "021"
+   ],
+   "legs": [
+    [
+     "002",
+     "002鹿岛鹿角2-1",
+     null
+    ],
+    [
+     "021",
+     "021比利亚雷亚尔2-1",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "002",
+     "pick": "002鹿岛鹿角2-1",
+     "r": "N"
+    },
+    {
+     "id": "021",
+     "pick": "021比利亚雷亚尔2-1",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "搏冷比分串",
+   "type": "比分串",
+   "odds_est": 105.0,
+   "matches": [
+    "007",
+    "024"
+   ],
+   "legs": [
+    [
+     "007",
+     "007埃弗顿2-2",
+     null
+    ],
+    [
+     "024",
+     "024纽卡斯尔联2-2",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "007",
+     "pick": "007埃弗顿2-2",
+     "r": "N"
+    },
+    {
+     "id": "024",
+     "pick": "024纽卡斯尔联2-2",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "连续编号比分串①",
+   "type": "比分串",
+   "odds_est": 39.0,
+   "matches": [
+    "002",
+    "003"
+   ],
+   "legs": [
+    [
+     "002",
+     "002鹿岛鹿角2-1",
+     null
+    ],
+    [
+     "003",
+     "003蔚山现代2-1",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "002",
+     "pick": "002鹿岛鹿角2-1",
+     "r": "N"
+    },
+    {
+     "id": "003",
+     "pick": "003蔚山现代2-1",
+     "r": "Y"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "连续编号比分串②",
+   "type": "比分串",
+   "odds_est": 49.0,
+   "matches": [
+    "021",
+    "022"
+   ],
+   "legs": [
+    [
+     "021",
+     "021比利亚雷亚尔2-1",
+     null
+    ],
+    [
+     "022",
+     "022斯特拉斯堡1-2",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "021",
+     "pick": "021比利亚雷亚尔2-1",
+     "r": "N"
+    },
+    {
+     "id": "022",
+     "pick": "022斯特拉斯堡1-2",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  },
+  {
+   "name": "单挑比分①",
+   "type": "比分串",
+   "odds_est": 8.75,
+   "matches": [
+    "022"
+   ],
+   "legs": [
+    [
+     "022",
+     "022斯特拉斯堡1-3",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "022",
+     "pick": "022斯特拉斯堡1-3",
+     "r": "Y"
+    }
+   ],
+   "hit": true
+  },
+  {
+   "name": "单挑比分②",
+   "type": "比分串",
+   "odds_est": 8.25,
+   "matches": [
+    "010"
+   ],
+   "legs": [
+    [
+     "010",
+     "010汉坎1-3",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "010",
+     "pick": "010汉坎1-3",
+     "r": "N"
+    }
+   ],
+   "hit": false
+  }
+ ],
+ "parlay_stats": {
+  "total": 29,
+  "hit": 4,
+  "rate": "13.8%",
+  "by_type": {
+   "方向串": {
+    "n": 3,
+    "hit": 2
+   },
+   "让球串": {
+    "n": 2,
+    "hit": 0
+   },
+   "混合串": {
+    "n": 6,
+    "hit": 1
+   },
+   "总进球串": {
+    "n": 4,
+    "hit": 0
+   },
+   "高赔半全场串": {
+    "n": 4,
+    "hit": 0
+   },
+   "半全场混合": {
+    "n": 4,
+    "hit": 0
+   },
+   "比分串": {
+    "n": 6,
+    "hit": 1
+   }
+  }
+ },
+ "source_files": {
+  "predictions": "reports/data/20261017_predictions.json",
+  "analysis_report": "reports/analysis/20261017_saturday_analysis_zhihu.md",
+  "backtest_report": "reports/backtest/backtest_20261017_saturday_zhihu.md",
+  "results_official": "reports/data/20261017_results_official.json",
+  "results_raw": "reports/data/20261017_results_raw.json",
+  "lessons": "memory/lessons/20261017_saturday_lessons.json"
+ }
+}

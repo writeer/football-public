@@ -1,0 +1,923 @@
+﻿{
+  "success": true,
+  "method": "mcp",
+  "data": {
+    "updatedAt": "2026-09-28 11:12:15",
+    "matchCount": 8,
+    "pools": [
+      "had",
+      "hhad"
+    ],
+    "matches": [
+      {
+        "matchId": 2041740,
+        "matchNum": 1001,
+        "matchNumStr": "周一001",
+        "matchNumDate": "260928",
+        "businessDate": "2026-09-28",
+        "matchDate": "2026-09-28",
+        "matchTime": "18:25:00",
+        "weekday": "周一",
+        "league": {
+          "id": 39,
+          "code": "INT",
+          "abbName": "国际赛",
+          "allName": "国际赛"
+        },
+        "home": {
+          "code": "JPN",
+          "abbName": "日本",
+          "allName": "日本"
+        },
+        "away": {
+          "code": "VEN",
+          "abbName": "委内瑞拉",
+          "allName": "委内瑞拉"
+        },
+        "status": "Selling",
+        "bettingSingle": false,
+        "bettingAllUp": false,
+        "markets": {
+          "had": {
+            "pool": "had",
+            "poolNameZh": "胜平负",
+            "updateTime": "09:23:01",
+            "outcomes": [
+              {
+                "code": "h",
+                "key": "home",
+                "labelZh": "主胜",
+                "odds": 1.18,
+                "trend": "flat",
+                "impliedProb": 0.847458,
+                "noVigProb": 0.7509,
+                "fairOdds": 1.3317
+              },
+              {
+                "code": "d",
+                "key": "draw",
+                "labelZh": "平",
+                "odds": 5.15,
+                "trend": "flat",
+                "impliedProb": 0.194175,
+                "noVigProb": 0.172051,
+                "fairOdds": 5.8122
+              },
+              {
+                "code": "a",
+                "key": "away",
+                "labelZh": "主负",
+                "odds": 11.5,
+                "trend": "flat",
+                "impliedProb": 0.086957,
+                "noVigProb": 0.077049,
+                "fairOdds": 12.9788
+              }
+            ],
+            "overround": 1.128589,
+            "returnRate": 0.886062,
+            "margin": 0.113938
+          },
+          "hhad": {
+            "pool": "hhad",
+            "poolNameZh": "让球胜平负",
+            "updateTime": "09:23:02",
+            "outcomes": [
+              {
+                "code": "h",
+                "key": "home",
+                "labelZh": "主胜",
+                "odds": 1.71,
+                "trend": "flat",
+                "impliedProb": 0.584795,
+                "noVigProb": 0.517959,
+                "fairOdds": 1.9307
+              },
+              {
+                "code": "d",
+                "key": "draw",
+                "labelZh": "平",
+                "odds": 3.65,
+                "trend": "flat",
+                "impliedProb": 0.273973,
+                "noVigProb": 0.24266,
+                "fairOdds": 4.121
+              },
+              {
+                "code": "a",
+                "key": "away",
+                "labelZh": "主负",
+                "odds": 3.7,
+                "trend": "flat",
+                "impliedProb": 0.27027,
+                "noVigProb": 0.239381,
+                "fairOdds": 4.1774
+              }
+            ],
+            "goalLine": -1,
+            "overround": 1.129038,
+            "returnRate": 0.88571,
+            "margin": 0.11429
+          }
+        }
+      },
+      {
+        "matchId": 2041741,
+        "matchNum": 1002,
+        "matchNumStr": "周一002",
+        "matchNumDate": "260928",
+        "businessDate": "2026-09-28",
+        "matchDate": "2026-09-28",
+        "matchTime": "19:00:00",
+        "weekday": "周一",
+        "league": {
+          "id": 39,
+          "code": "INT",
+          "abbName": "国际赛",
+          "allName": "国际赛"
+        },
+        "home": {
+          "code": "KOR",
+          "abbName": "韩国",
+          "allName": "韩国"
+        },
+        "away": {
+          "code": "URU",
+          "abbName": "乌拉圭",
+          "allName": "乌拉圭"
+        },
+        "status": "Selling",
+        "bettingSingle": false,
+        "bettingAllUp": false,
+        "markets": {
+          "had": {
+            "pool": "had",
+            "poolNameZh": "胜平负",
+            "updateTime": "09:23:01",
+            "outcomes": [
+              {
+                "code": "h",
+                "key": "home",
+                "labelZh": "主胜",
+                "odds": 2.31,
+                "trend": "flat",
+                "impliedProb": 0.4329,
+                "noVigProb": 0.383175,
+                "fairOdds": 2.6098
+              },
+              {
+                "code": "d",
+                "key": "draw",
+                "labelZh": "平",
+                "odds": 3.05,
+                "trend": "flat",
+                "impliedProb": 0.327869,
+                "noVigProb": 0.290208,
+                "fairOdds": 3.4458
+              },
+              {
+                "code": "a",
+                "key": "away",
+                "labelZh": "主负",
+                "odds": 2.71,
+                "trend": "flat",
+                "impliedProb": 0.369004,
+                "noVigProb": 0.326618,
+                "fairOdds": 3.0617
+              }
+            ],
+            "overround": 1.129773,
+            "returnRate": 0.885134,
+            "margin": 0.114866
+          },
+          "hhad": {
+            "pool": "hhad",
+            "poolNameZh": "让球胜平负",
+            "updateTime": "09:23:02",
+            "outcomes": [
+              {
+                "code": "h",
+                "key": "home",
+                "labelZh": "主胜",
+                "odds": 5.18,
+                "trend": "flat",
+                "impliedProb": 0.19305,
+                "noVigProb": 0.170881,
+                "fairOdds": 5.852
+              },
+              {
+                "code": "d",
+                "key": "draw",
+                "labelZh": "平",
+                "odds": 3.9,
+                "trend": "flat",
+                "impliedProb": 0.25641,
+                "noVigProb": 0.226965,
+                "fairOdds": 4.406
+              },
+              {
+                "code": "a",
+                "key": "away",
+                "labelZh": "主负",
+                "odds": 1.47,
+                "trend": "flat",
+                "impliedProb": 0.680272,
+                "noVigProb": 0.602153,
+                "fairOdds": 1.6607
+              }
+            ],
+            "goalLine": -1,
+            "overround": 1.129733,
+            "returnRate": 0.885165,
+            "margin": 0.114835
+          }
+        }
+      },
+      {
+        "matchId": 2041742,
+        "matchNum": 1003,
+        "matchNumStr": "周一003",
+        "matchNumDate": "260928",
+        "businessDate": "2026-09-28",
+        "matchDate": "2026-09-29",
+        "matchTime": "00:00:00",
+        "weekday": "周一",
+        "league": {
+          "id": 127,
+          "code": "ENL",
+          "abbName": "欧国联",
+          "allName": "欧洲国家联赛"
+        },
+        "home": {
+          "code": "ARM",
+          "abbName": "亚美尼亚",
+          "allName": "亚美尼亚",
+          "rank": "[Group 21]"
+        },
+        "away": {
+          "code": "MNG",
+          "abbName": "黑山",
+          "allName": "黑山",
+          "rank": "[Group 22]"
+        },
+        "status": "Selling",
+        "bettingSingle": false,
+        "bettingAllUp": false,
+        "markets": {
+          "had": {
+            "pool": "had",
+            "poolNameZh": "胜平负",
+            "updateTime": "09:23:01",
+            "outcomes": [
+              {
+                "code": "h",
+                "key": "home",
+                "labelZh": "主胜",
+                "odds": 2.5,
+                "trend": "flat",
+                "impliedProb": 0.4,
+                "noVigProb": 0.354651,
+                "fairOdds": 2.8197
+              },
+              {
+                "code": "d",
+                "key": "draw",
+                "labelZh": "平",
+                "odds": 3.05,
+                "trend": "flat",
+                "impliedProb": 0.327869,
+                "noVigProb": 0.290698,
+                "fairOdds": 3.44
+              },
+              {
+                "code": "a",
+                "key": "away",
+                "labelZh": "主负",
+                "odds": 2.5,
+                "trend": "flat",
+                "impliedProb": 0.4,
+                "noVigProb": 0.354651,
+                "fairOdds": 2.8197
+              }
+            ],
+            "overround": 1.127869,
+            "returnRate": 0.886628,
+            "margin": 0.113372
+          },
+          "hhad": {
+            "pool": "hhad",
+            "poolNameZh": "让球胜平负",
+            "updateTime": "09:23:02",
+            "outcomes": [
+              {
+                "code": "h",
+                "key": "home",
+                "labelZh": "主胜",
+                "odds": 5.75,
+                "trend": "flat",
+                "impliedProb": 0.173913,
+                "noVigProb": 0.154019,
+                "fairOdds": 6.4927
+              },
+              {
+                "code": "d",
+                "key": "draw",
+                "labelZh": "平",
+                "odds": 4.15,
+                "trend": "flat",
+                "impliedProb": 0.240964,
+                "noVigProb": 0.2134,
+                "fairOdds": 4.686
+              },
+              {
+                "code": "a",
+                "key": "away",
+                "labelZh": "主负",
+                "odds": 1.4,
+                "trend": "flat",
+                "impliedProb": 0.714286,
+                "noVigProb": 0.63258,
+                "fairOdds": 1.5808
+              }
+            ],
+            "goalLine": -1,
+            "overround": 1.129163,
+            "returnRate": 0.885612,
+            "margin": 0.114388
+          }
+        }
+      },
+      {
+        "matchId": 2041743,
+        "matchNum": 1004,
+        "matchNumStr": "周一004",
+        "matchNumDate": "260928",
+        "businessDate": "2026-09-28",
+        "matchDate": "2026-09-29",
+        "matchTime": "02:45:00",
+        "weekday": "周一",
+        "league": {
+          "id": 127,
+          "code": "ENL",
+          "abbName": "欧国联",
+          "allName": "欧洲国家联赛"
+        },
+        "home": {
+          "code": "TUR",
+          "abbName": "土耳其",
+          "allName": "土耳其",
+          "rank": "[Group 13]"
+        },
+        "away": {
+          "code": "ITA",
+          "abbName": "意大利",
+          "allName": "意大利",
+          "rank": "[Group 14]"
+        },
+        "status": "Selling",
+        "bettingSingle": false,
+        "bettingAllUp": false,
+        "markets": {
+          "had": {
+            "pool": "had",
+            "poolNameZh": "胜平负",
+            "updateTime": "09:23:01",
+            "outcomes": [
+              {
+                "code": "h",
+                "key": "home",
+                "labelZh": "主胜",
+                "odds": 2.65,
+                "trend": "flat",
+                "impliedProb": 0.377358,
+                "noVigProb": 0.334295,
+                "fairOdds": 2.9914
+              },
+              {
+                "code": "d",
+                "key": "draw",
+                "labelZh": "平",
+                "odds": 3.3,
+                "trend": "flat",
+                "impliedProb": 0.30303,
+                "noVigProb": 0.268449,
+                "fairOdds": 3.7251
+              },
+              {
+                "code": "a",
+                "key": "away",
+                "labelZh": "主负",
+                "odds": 2.23,
+                "trend": "flat",
+                "impliedProb": 0.44843,
+                "noVigProb": 0.397256,
+                "fairOdds": 2.5173
+              }
+            ],
+            "overround": 1.128819,
+            "returnRate": 0.885881,
+            "margin": 0.114119
+          },
+          "hhad": {
+            "pool": "hhad",
+            "poolNameZh": "让球胜平负",
+            "updateTime": "09:23:02",
+            "outcomes": [
+              {
+                "code": "h",
+                "key": "home",
+                "labelZh": "主胜",
+                "odds": 1.5,
+                "trend": "flat",
+                "impliedProb": 0.666667,
+                "noVigProb": 0.591037,
+                "fairOdds": 1.6919
+              },
+              {
+                "code": "d",
+                "key": "draw",
+                "labelZh": "平",
+                "odds": 4.1,
+                "trend": "flat",
+                "impliedProb": 0.243902,
+                "noVigProb": 0.216233,
+                "fairOdds": 4.6246
+              },
+              {
+                "code": "a",
+                "key": "away",
+                "labelZh": "主负",
+                "odds": 4.6,
+                "trend": "flat",
+                "impliedProb": 0.217391,
+                "noVigProb": 0.19273,
+                "fairOdds": 5.1886
+              }
+            ],
+            "goalLine": 1,
+            "overround": 1.12796,
+            "returnRate": 0.886556,
+            "margin": 0.113444
+          }
+        }
+      },
+      {
+        "matchId": 2041744,
+        "matchNum": 1005,
+        "matchNumStr": "周一005",
+        "matchNumDate": "260928",
+        "businessDate": "2026-09-28",
+        "matchDate": "2026-09-29",
+        "matchTime": "02:45:00",
+        "weekday": "周一",
+        "league": {
+          "id": 127,
+          "code": "ENL",
+          "abbName": "欧国联",
+          "allName": "欧洲国家联赛"
+        },
+        "home": {
+          "code": "BEG",
+          "abbName": "比利时",
+          "allName": "比利时",
+          "rank": "[Group 11]"
+        },
+        "away": {
+          "code": "FRA",
+          "abbName": "法国",
+          "allName": "法国",
+          "rank": "[Group 12]"
+        },
+        "status": "Selling",
+        "bettingSingle": false,
+        "bettingAllUp": false,
+        "markets": {
+          "had": {
+            "pool": "had",
+            "poolNameZh": "胜平负",
+            "updateTime": "09:23:01",
+            "outcomes": [
+              {
+                "code": "h",
+                "key": "home",
+                "labelZh": "主胜",
+                "odds": 3.55,
+                "trend": "flat",
+                "impliedProb": 0.28169,
+                "noVigProb": 0.249445,
+                "fairOdds": 4.0089
+              },
+              {
+                "code": "d",
+                "key": "draw",
+                "labelZh": "平",
+                "odds": 3.71,
+                "trend": "flat",
+                "impliedProb": 0.269542,
+                "noVigProb": 0.238687,
+                "fairOdds": 4.1896
+              },
+              {
+                "code": "a",
+                "key": "away",
+                "labelZh": "主负",
+                "odds": 1.73,
+                "trend": "flat",
+                "impliedProb": 0.578035,
+                "noVigProb": 0.511867,
+                "fairOdds": 1.9536
+              }
+            ],
+            "overround": 1.129267,
+            "returnRate": 0.88553,
+            "margin": 0.11447
+          },
+          "hhad": {
+            "pool": "hhad",
+            "poolNameZh": "让球胜平负",
+            "updateTime": "09:23:02",
+            "outcomes": [
+              {
+                "code": "h",
+                "key": "home",
+                "labelZh": "主胜",
+                "odds": 1.87,
+                "trend": "flat",
+                "impliedProb": 0.534759,
+                "noVigProb": 0.473555,
+                "fairOdds": 2.1117
+              },
+              {
+                "code": "d",
+                "key": "draw",
+                "labelZh": "平",
+                "odds": 3.65,
+                "trend": "flat",
+                "impliedProb": 0.273973,
+                "noVigProb": 0.242616,
+                "fairOdds": 4.1217
+              },
+              {
+                "code": "a",
+                "key": "away",
+                "labelZh": "主负",
+                "odds": 3.12,
+                "trend": "flat",
+                "impliedProb": 0.320513,
+                "noVigProb": 0.283829,
+                "fairOdds": 3.5232
+              }
+            ],
+            "goalLine": 1,
+            "overround": 1.129245,
+            "returnRate": 0.885548,
+            "margin": 0.114452
+          }
+        }
+      },
+      {
+        "matchId": 2041745,
+        "matchNum": 1006,
+        "matchNumStr": "周一006",
+        "matchNumDate": "260928",
+        "businessDate": "2026-09-28",
+        "matchDate": "2026-09-29",
+        "matchTime": "02:45:00",
+        "weekday": "周一",
+        "league": {
+          "id": 127,
+          "code": "ENL",
+          "abbName": "欧国联",
+          "allName": "欧洲国家联赛"
+        },
+        "home": {
+          "code": "ROA",
+          "abbName": "罗马尼亚",
+          "allName": "罗马尼亚",
+          "rank": "[Group 44]"
+        },
+        "away": {
+          "code": "BOS",
+          "abbName": "波黑",
+          "allName": "波黑",
+          "rank": "[Group 43]"
+        },
+        "status": "Selling",
+        "bettingSingle": false,
+        "bettingAllUp": false,
+        "markets": {
+          "had": {
+            "pool": "had",
+            "poolNameZh": "胜平负",
+            "updateTime": "09:23:01",
+            "outcomes": [
+              {
+                "code": "h",
+                "key": "home",
+                "labelZh": "主胜",
+                "odds": 1.92,
+                "trend": "flat",
+                "impliedProb": 0.520833,
+                "noVigProb": 0.460955,
+                "fairOdds": 2.1694
+              },
+              {
+                "code": "d",
+                "key": "draw",
+                "labelZh": "平",
+                "odds": 3.22,
+                "trend": "flat",
+                "impliedProb": 0.310559,
+                "noVigProb": 0.274855,
+                "fairOdds": 3.6383
+              },
+              {
+                "code": "a",
+                "key": "away",
+                "labelZh": "主负",
+                "odds": 3.35,
+                "trend": "flat",
+                "impliedProb": 0.298507,
+                "noVigProb": 0.264189,
+                "fairOdds": 3.7852
+              }
+            ],
+            "overround": 1.1299,
+            "returnRate": 0.885034,
+            "margin": 0.114966
+          },
+          "hhad": {
+            "pool": "hhad",
+            "poolNameZh": "让球胜平负",
+            "updateTime": "09:23:02",
+            "outcomes": [
+              {
+                "code": "h",
+                "key": "home",
+                "labelZh": "主胜",
+                "odds": 4.05,
+                "trend": "flat",
+                "impliedProb": 0.246914,
+                "noVigProb": 0.218768,
+                "fairOdds": 4.571
+              },
+              {
+                "code": "d",
+                "key": "draw",
+                "labelZh": "平",
+                "odds": 3.58,
+                "trend": "flat",
+                "impliedProb": 0.27933,
+                "noVigProb": 0.247489,
+                "fairOdds": 4.0406
+              },
+              {
+                "code": "a",
+                "key": "away",
+                "labelZh": "主负",
+                "odds": 1.66,
+                "trend": "flat",
+                "impliedProb": 0.60241,
+                "noVigProb": 0.533742,
+                "fairOdds": 1.8736
+              }
+            ],
+            "goalLine": -1,
+            "overround": 1.128653,
+            "returnRate": 0.886012,
+            "margin": 0.113988
+          }
+        }
+      },
+      {
+        "matchId": 2041746,
+        "matchNum": 1007,
+        "matchNumStr": "周一007",
+        "matchNumDate": "260928",
+        "businessDate": "2026-09-28",
+        "matchDate": "2026-09-29",
+        "matchTime": "02:45:00",
+        "weekday": "周一",
+        "league": {
+          "id": 127,
+          "code": "ENL",
+          "abbName": "欧国联",
+          "allName": "欧洲国家联赛"
+        },
+        "home": {
+          "code": "SWE",
+          "abbName": "瑞典",
+          "allName": "瑞典",
+          "rank": "[Group 41]"
+        },
+        "away": {
+          "code": "POL",
+          "abbName": "波兰",
+          "allName": "波兰",
+          "rank": "[Group 42]"
+        },
+        "status": "Selling",
+        "bettingSingle": false,
+        "bettingAllUp": false,
+        "markets": {
+          "had": {
+            "pool": "had",
+            "poolNameZh": "胜平负",
+            "updateTime": "10:29:00",
+            "outcomes": [
+              {
+                "code": "h",
+                "key": "home",
+                "labelZh": "主胜",
+                "odds": 1.82,
+                "trend": "up",
+                "impliedProb": 0.549451,
+                "noVigProb": 0.486548,
+                "fairOdds": 2.0553
+              },
+              {
+                "code": "d",
+                "key": "draw",
+                "labelZh": "平",
+                "odds": 3.4,
+                "trend": "down",
+                "impliedProb": 0.294118,
+                "noVigProb": 0.260446,
+                "fairOdds": 3.8396
+              },
+              {
+                "code": "a",
+                "key": "away",
+                "labelZh": "主负",
+                "odds": 3.5,
+                "trend": "down",
+                "impliedProb": 0.285714,
+                "noVigProb": 0.253005,
+                "fairOdds": 3.9525
+              }
+            ],
+            "overround": 1.129282,
+            "returnRate": 0.885518,
+            "margin": 0.114482
+          },
+          "hhad": {
+            "pool": "hhad",
+            "poolNameZh": "让球胜平负",
+            "updateTime": "10:29:04",
+            "outcomes": [
+              {
+                "code": "h",
+                "key": "home",
+                "labelZh": "主胜",
+                "odds": 3.45,
+                "trend": "up",
+                "impliedProb": 0.289855,
+                "noVigProb": 0.256782,
+                "fairOdds": 3.8944
+              },
+              {
+                "code": "d",
+                "key": "draw",
+                "labelZh": "平",
+                "odds": 3.65,
+                "trend": "up",
+                "impliedProb": 0.273973,
+                "noVigProb": 0.242712,
+                "fairOdds": 4.1201
+              },
+              {
+                "code": "a",
+                "key": "away",
+                "labelZh": "主负",
+                "odds": 1.77,
+                "trend": "down",
+                "impliedProb": 0.564972,
+                "noVigProb": 0.500507,
+                "fairOdds": 1.998
+              }
+            ],
+            "goalLine": -1,
+            "overround": 1.128799,
+            "returnRate": 0.885897,
+            "margin": 0.114103
+          }
+        }
+      },
+      {
+        "matchId": 2041747,
+        "matchNum": 1008,
+        "matchNumStr": "周一008",
+        "matchNumDate": "260928",
+        "businessDate": "2026-09-28",
+        "matchDate": "2026-09-29",
+        "matchTime": "02:45:00",
+        "weekday": "周一",
+        "league": {
+          "id": 127,
+          "code": "ENL",
+          "abbName": "欧国联",
+          "allName": "欧洲国家联赛"
+        },
+        "home": {
+          "code": "NOR",
+          "abbName": "北爱尔兰",
+          "allName": "北爱尔兰",
+          "rank": "[Group 21]"
+        },
+        "away": {
+          "code": "HUN",
+          "abbName": "匈牙利",
+          "allName": "匈牙利",
+          "rank": "[Group 24]"
+        },
+        "status": "Selling",
+        "bettingSingle": false,
+        "bettingAllUp": false,
+        "markets": {
+          "had": {
+            "pool": "had",
+            "poolNameZh": "胜平负",
+            "updateTime": "09:23:01",
+            "outcomes": [
+              {
+                "code": "h",
+                "key": "home",
+                "labelZh": "主胜",
+                "odds": 2.6,
+                "trend": "flat",
+                "impliedProb": 0.384615,
+                "noVigProb": 0.340406,
+                "fairOdds": 2.9377
+              },
+              {
+                "code": "d",
+                "key": "draw",
+                "labelZh": "平",
+                "odds": 2.87,
+                "trend": "flat",
+                "impliedProb": 0.348432,
+                "noVigProb": 0.308382,
+                "fairOdds": 3.2427
+              },
+              {
+                "code": "a",
+                "key": "away",
+                "labelZh": "主负",
+                "odds": 2.52,
+                "trend": "flat",
+                "impliedProb": 0.396825,
+                "noVigProb": 0.351212,
+                "fairOdds": 2.8473
+              }
+            ],
+            "overround": 1.129873,
+            "returnRate": 0.885055,
+            "margin": 0.114945
+          },
+          "hhad": {
+            "pool": "hhad",
+            "poolNameZh": "让球胜平负",
+            "updateTime": "09:23:02",
+            "outcomes": [
+              {
+                "code": "h",
+                "key": "home",
+                "labelZh": "主胜",
+                "odds": 1.39,
+                "trend": "flat",
+                "impliedProb": 0.719424,
+                "noVigProb": 0.637439,
+                "fairOdds": 1.5688
+              },
+              {
+                "code": "d",
+                "key": "draw",
+                "labelZh": "平",
+                "odds": 4.1,
+                "trend": "flat",
+                "impliedProb": 0.243902,
+                "noVigProb": 0.216108,
+                "fairOdds": 4.6273
+              },
+              {
+                "code": "a",
+                "key": "away",
+                "labelZh": "主负",
+                "odds": 6.05,
+                "trend": "flat",
+                "impliedProb": 0.165289,
+                "noVigProb": 0.146453,
+                "fairOdds": 6.8281
+              }
+            ],
+            "goalLine": 1,
+            "overround": 1.128616,
+            "returnRate": 0.886041,
+            "margin": 0.113959
+          }
+        }
+      }
+    ],
+    "source": "mcp"
+  }
+}

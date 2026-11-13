@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周日竞彩足球全方位分析 · 2026-08-23</title>
+<style>
+:root{--bg:#0f1420;--card:#171e2e;--line:#242e44;--txt:#e8ecf5;--sub:#8b96ad;--h:#34c98e;--d:#f0b429;--a:#f2606b;--o:#34c98e;--u:#5b8def;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6;padding:0 0 60px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(135deg,#1a2740,#0f1420);border-bottom:1px solid var(--line);padding:32px 0 24px;margin-bottom:22px}
+header .wrap{display:flex;flex-direction:column;gap:8px}
+h1{font-size:26px;font-weight:700;letter-spacing:.5px}
+.sub{color:var(--sub);font-size:13px}
+.meta-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.tag{background:#22304e;color:#9fb3d9;font-size:12px;padding:3px 10px;border-radius:20px}
+h2{font-size:18px;margin:28px 0 14px;padding-left:10px;border-left:4px solid #3d6bff}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:10px;overflow:hidden;font-size:13px}
+th,td{padding:9px 10px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:#1c2540;color:#9fb3d9;font-weight:600;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td.mnum{color:#9fb3d9;font-variant-numeric:tabular-nums}
+td.lg{color:var(--sub)}
+td.tm{color:var(--sub);font-variant-numeric:tabular-nums}
+td.pick{font-weight:700;text-align:center}
+td.pick.h{color:var(--h)} td.pick.d{color:var(--d)} td.pick.a{color:var(--a)}
+.c-high{color:var(--h)!important;font-weight:700}
+.c-mid{color:var(--d)!important;font-weight:700}
+.c-low{color:var(--sub)!important}
+.grid{display:grid;grid-template-columns:1fr;gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.card-head{display:flex;align-items:center;gap:10px;padding:12px 16px;background:#1a2338;flex-wrap:wrap}
+.card-head .mnum{color:#9fb3d9;font-weight:700}
+.card-head .lg{color:var(--sub);font-size:12px}
+.card-head .tm{color:var(--sub);font-size:12px;font-variant-numeric:tabular-nums}
+.match-title{flex:1;font-size:15px;min-width:220px}
+.match-title .rank{color:var(--sub);font-size:11px;margin:0 3px}
+.match-title .vs{color:var(--sub);margin:0 6px}
+.badge{padding:3px 10px;border-radius:16px;font-size:12px;font-weight:700}
+.badge.h{background:#0d2b20;color:var(--h);border:1px solid #1e5a40}
+.badge.d{background:#2b220d;color:var(--d);border:1px solid #5a4a1e}
+.badge.a{background:#2b0d10;color:var(--a);border:1px solid #5a1e24}
+.card-body{padding:14px 16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:820px){.grid3{grid-template-columns:1fr}}
+.box{background:#131a2b;border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.box-t{font-size:12px;color:#9fb3d9;margin-bottom:8px;font-weight:600}
+.prob-row{display:flex;align-items:center;gap:8px;margin:5px 0;font-size:13px}
+.prob-row span{width:52px;color:var(--sub);flex-shrink:0}
+.prob-row span.h{color:var(--h)} .prob-row span.d{color:var(--d)} .prob-row span.a{color:var(--a)}
+.bar{flex:1;height:7px;background:#202a41;border-radius:4px;overflow:hidden}
+.fill{height:100%;border-radius:4px}
+.fill.h{background:var(--h)} .fill.d{background:var(--d)} .fill.a{background:var(--a)} .fill.o{background:var(--o)} .fill.u{background:var(--u)}
+.prob-row b{width:44px;text-align:right;font-variant-numeric:tabular-nums}
+.sub{font-size:11px;color:var(--sub);margin-top:7px}
+.rec-row{display:flex;align-items:center;gap:12px;margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);flex-wrap:wrap}
+.rec-label{font-size:12px;color:#9fb3d9;font-weight:600}
+.rec-scores{font-size:15px;font-weight:700;color:#fff}
+.chip{background:#202a41;color:#c7d1e5;font-size:11px;padding:3px 8px;border-radius:6px;margin-right:6px}
+.note{font-size:12.5px;color:#aeb9cf;background:#0f1828;border-left:3px solid #3d6bff;padding:8px 12px;margin-top:12px;border-radius:0 6px 6px 0}
+.section-note{font-size:13px;color:var(--sub);margin:8px 0 14px}
+.parlay{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(max-width:820px){.parlay{grid-template-columns:1fr}}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.pcard h3{font-size:15px;margin-bottom:8px}
+.pcard .legs{font-size:13px;color:#c7d1e5;margin:4px 0}
+.pcard .est{font-size:12px;color:var(--sub)}
+.risk{background:#1a1408;border:1px solid #4a3a10;border-radius:12px;padding:16px 18px;color:#d8c98a;font-size:13px;margin-top:20px}
+.risk b{color:#f0d060}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>⚽ 周日竞彩足球全方位分析</h1>
+  <div class="sub">2026-08-23（星期日）· 中国体彩竞彩足球全部 27 场 · 赔率更新时间 2026-08-23 11:06:15</div>
+  <div class="meta-tags">
+    <span class="tag">DC/Poisson 模型</span><span class="tag">Shin 去水</span><span class="tag">联赛特征库</span><span class="tag">基本面核查</span>
+  </div>
+</div></header>
+
+<div class="wrap">
+  <h2>一、总览（27场）</h2>
+  <p class="section-note">概率为模型与市场(去水)加权融合值；推荐为总控综合判断，置信度分 ★★★高 / ★★中 / ★低。胜平负赔率仅存档，不在报告中展示。</p>
+  <table>
+    <thead><tr><th>场次</th><th>联赛</th><th>对阵</th><th>时间</th><th>胜平负推荐</th><th>主/平/客概率</th><th>置信</th><th>比分推荐</th></tr></thead>
+    <tbody><tr><td class="mnum">周日001</td>
+<td class="lg">荷甲</td>
+<td class="team"><b>前进之鹰</b> vs 海牙</td>
+<td class="tm">18:15</td>
+<td class="pick h">主胜</td>
+<td>53%/23%/24%</td>
+<td class="c-high">★★★</td>
+<td>2:1 / 2:0 / 3:1</td></tr><tr><td class="mnum">周日002</td>
+<td class="lg">日职</td>
+<td class="team"><b>町田泽维</b> vs 浦和红钻</td>
+<td class="tm">18:30</td>
+<td class="pick h">主胜</td>
+<td>50%/27%/23%</td>
+<td class="c-mid">★★</td>
+<td>1:0 / 2:0 / 1:1</td></tr><tr><td class="mnum">周日003</td>
+<td class="lg">韩职</td>
+<td class="team"><b>大田市民</b> vs 江原FC</td>
+<td class="tm">18:30</td>
+<td class="pick a">客胜/平</td>
+<td>36%/29%/34%</td>
+<td class="c-low">★</td>
+<td>1:1 / 0:2 / 1:0</td></tr><tr><td class="mnum">周日004</td>
+<td class="lg">英冠</td>
+<td class="team"><b>西布罗姆</b> vs 伯恩利</td>
+<td class="tm">19:00</td>
+<td class="pick d">平局/主胜</td>
+<td>34%/28%/37%</td>
+<td class="c-low">★</td>
+<td>1:1 / 1:0 / 0:1</td></tr><tr><td class="mnum">周日005</td>
+<td class="lg">德国杯</td>
+<td class="team"><b>菲尔特</b> vs 波鸿</td>
+<td class="tm">19:00</td>
+<td class="pick a">客胜</td>
+<td>32%/26%/42%</td>
+<td class="c-mid">★★</td>
+<td>1:2 / 0:2 / 1:1</td></tr><tr><td class="mnum">周日006</td>
+<td class="lg">瑞超</td>
+<td class="team"><b>哥德堡</b> vs 埃夫斯堡</td>
+<td class="tm">20:00</td>
+<td class="pick a">客胜</td>
+<td>35%/26%/39%</td>
+<td class="c-mid">★★</td>
+<td>1:2 / 1:1 / 0:1</td></tr><tr><td class="mnum">周日007</td>
+<td class="lg">芬超</td>
+<td class="team"><b>赫尔辛基</b> vs 赫尔火花</td>
+<td class="tm">20:00</td>
+<td class="pick h">主胜</td>
+<td>63%/20%/17%</td>
+<td class="c-low">★</td>
+<td>2:1 / 1:1 / 2:0</td></tr><tr><td class="mnum">周日008</td>
+<td class="lg">荷甲</td>
+<td class="team"><b>埃因霍温</b> vs 格罗宁根</td>
+<td class="tm">20:30</td>
+<td class="pick h">主胜</td>
+<td>71%/16%/12%</td>
+<td class="c-high">★★★</td>
+<td>2:1 / 3:1 / 2:0</td></tr><tr><td class="mnum">周日009</td>
+<td class="lg">英超</td>
+<td class="team"><b>曼城</b> vs 伯恩茅斯</td>
+<td class="tm">21:00</td>
+<td class="pick h">主胜</td>
+<td>67%/18%/15%</td>
+<td class="c-high">★★★</td>
+<td>2:1 / 3:1 / 2:0</td></tr><tr><td class="mnum">周日010</td>
+<td class="lg">法甲</td>
+<td class="team"><b>昂热</b> vs 里尔</td>
+<td class="tm">21:00</td>
+<td class="pick a">客胜</td>
+<td>18%/26%/56%</td>
+<td class="c-mid">★★</td>
+<td>0:1 / 0:2 / 1:1</td></tr><tr><td class="mnum">周日011</td>
+<td class="lg">德国杯</td>
+<td class="team"><b>不伦瑞克</b> vs 柏林联合</td>
+<td class="tm">21:30</td>
+<td class="pick a">客胜</td>
+<td>23%/24%/53%</td>
+<td class="c-mid">★★</td>
+<td>1:2 / 0:2 / 1:1</td></tr><tr><td class="mnum">周日012</td>
+<td class="lg">葡超</td>
+<td class="team"><b>吉马良斯</b> vs 葡国民</td>
+<td class="tm">22:30</td>
+<td class="pick h">主胜/平</td>
+<td>56%/24%/19%</td>
+<td class="c-low">★</td>
+<td>1:1 / 1:0 / 2:1</td></tr><tr><td class="mnum">周日013</td>
+<td class="lg">瑞超</td>
+<td class="team"><b>哈马比</b> vs 盖斯</td>
+<td class="tm">22:30</td>
+<td class="pick h">主胜</td>
+<td>68%/18%/13%</td>
+<td class="c-mid">★★</td>
+<td>2:1 / 2:0 / 1:0</td></tr><tr><td class="mnum">周日014</td>
+<td class="lg">荷甲</td>
+<td class="team"><b>坎布尔</b> vs 费耶诺德</td>
+<td class="tm">22:45</td>
+<td class="pick a">客胜</td>
+<td>9%/14%/78%</td>
+<td class="c-high">★★★</td>
+<td>0:2 / 1:3 / 0:3</td></tr><tr><td class="mnum">周日015</td>
+<td class="lg">西甲</td>
+<td class="team"><b>马竞</b> vs 比利亚雷</td>
+<td class="tm">23:00</td>
+<td class="pick h">主胜</td>
+<td>52%/25%/23%</td>
+<td class="c-mid">★★</td>
+<td>2:1 / 1:0 / 1:1</td></tr><tr><td class="mnum">周日016</td>
+<td class="lg">法甲</td>
+<td class="team"><b>勒阿弗尔</b> vs 摩纳哥</td>
+<td class="tm">23:15</td>
+<td class="pick a">客胜/平</td>
+<td>25%/25%/50%</td>
+<td class="c-low">★</td>
+<td>1:1 / 0:1 / 1:2</td></tr><tr><td class="mnum">周日017</td>
+<td class="lg">英超</td>
+<td class="team"><b>纽卡斯尔</b> vs 利物浦</td>
+<td class="tm">23:30</td>
+<td class="pick a">客胜</td>
+<td>27%/23%/50%</td>
+<td class="c-mid">★★</td>
+<td>1:2 / 2:2 / 0:2</td></tr><tr><td class="mnum">周日018</td>
+<td class="lg">意甲</td>
+<td class="team"><b>弗洛西诺</b> vs 尤文图斯</td>
+<td class="tm">00:30</td>
+<td class="pick a">客胜</td>
+<td>13%/20%/68%</td>
+<td class="c-high">★★★</td>
+<td>0:2 / 1:2 / 0:1</td></tr><tr><td class="mnum">周日019</td>
+<td class="lg">意甲</td>
+<td class="team"><b>威尼斯</b> vs 莱切</td>
+<td class="tm">00:30</td>
+<td class="pick h">主胜/平</td>
+<td>46%/29%/25%</td>
+<td class="c-low">★</td>
+<td>1:1 / 1:0 / 2:1</td></tr><tr><td class="mnum">周日020</td>
+<td class="lg">葡超</td>
+<td class="team"><b>圣克拉拉</b> vs 法马利康</td>
+<td class="tm">01:00</td>
+<td class="pick h">主胜/平</td>
+<td>36%/31%/33%</td>
+<td class="c-low">★</td>
+<td>1:1 / 1:0 / 2:1</td></tr><tr><td class="mnum">周日021</td>
+<td class="lg">西甲</td>
+<td class="team"><b>赫塔费</b> vs 桑坦德</td>
+<td class="tm">01:30</td>
+<td class="pick h">主胜</td>
+<td>45%/31%/24%</td>
+<td class="c-low">★</td>
+<td>1:0 / 1:1 / 2:1</td></tr><tr><td class="mnum">周日022</td>
+<td class="lg">意甲</td>
+<td class="team"><b>都灵</b> vs AC米兰</td>
+<td class="tm">02:45</td>
+<td class="pick a">客胜</td>
+<td>20%/24%/56%</td>
+<td class="c-mid">★★</td>
+<td>1:2 / 1:1 / 0:1</td></tr><tr><td class="mnum">周日023</td>
+<td class="lg">意甲</td>
+<td class="team"><b>亚特兰大</b> vs 萨索洛</td>
+<td class="tm">02:45</td>
+<td class="pick h">主胜</td>
+<td>63%/21%/16%</td>
+<td class="c-mid">★★</td>
+<td>2:1 / 2:0 / 1:1</td></tr><tr><td class="mnum">周日024</td>
+<td class="lg">西甲</td>
+<td class="team"><b>埃尔切</b> vs 巴萨</td>
+<td class="tm">03:30</td>
+<td class="pick a">客胜</td>
+<td>11%/16%/73%</td>
+<td class="c-high">★★★</td>
+<td>0:2 / 0:3 / 1:3</td></tr><tr><td class="mnum">周日025</td>
+<td class="lg">葡超</td>
+<td class="team"><b>波尔图</b> vs 阿罗卡</td>
+<td class="tm">03:30</td>
+<td class="pick h">主胜</td>
+<td>78%/15%/7%</td>
+<td class="c-high">★★★</td>
+<td>2:0 / 3:0 / 1:0</td></tr><tr><td class="mnum">周日026</td>
+<td class="lg">美职</td>
+<td class="team"><b>新英格兰</b> vs 纽约城</td>
+<td class="tm">04:30</td>
+<td class="pick h">主胜</td>
+<td>42%/26%/32%</td>
+<td class="c-low">★</td>
+<td>2:1 / 1:1 / 1:0</td></tr><tr><td class="mnum">周日027</td>
+<td class="lg">巴甲</td>
+<td class="team"><b>桑托斯</b> vs 米拉索尔</td>
+<td class="tm">05:30</td>
+<td class="pick h">主胜</td>
+<td>53%/25%/22%</td>
+<td class="c-mid">★★</td>
+<td>2:0 / 1:0 / 2:1</td></tr></tbody>
+  </table>
+
+  <h2>二、逐场详解</h2>
+  <div class="grid">
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日001</span>
+    <span class="lg">荷甲</span>
+    <span class="tm">18:15</span>
+    <div class="match-title"><b>前进之鹰</b><span class="rank">[荷甲3]</span> <span class="vs">vs</span> <b>海牙</b><span class="rank">[荷甲16]</span></div>
+    <span class="badge h">主胜 <i>★★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:53%"></div></div><b>53%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:23%"></div></div><b>23%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:24%"></div></div><b>24%</b></div>
+        <div class="sub">λ 主/客 = 2.004 / 1.311</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(受让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>53%</b></div>
+        <div class="prob-row"><span>平</span><b>19%</b></div>
+        <div class="prob-row"><span>客胜</span><b>28%</b></div>
+        <div class="sub">让球倾向：前进之鹰(受让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:64%"></div></div><b>64%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:36%"></div></div><b>36%</b></div>
+        <div class="sub">总进球首选 3球 · 大球(3+)</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">2:1 / 2:0 / 3:1</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>胜/胜 33%</span><span class='chip'>平/胜 17%</span><span class='chip'>负/负 14%</span></span>
+    </div>
+    <div class="note">📌 前进之鹰4球火力(Tengstedt领跑)状态正佳，海牙升班马开局2连败进1失6。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日002</span>
+    <span class="lg">日职</span>
+    <span class="tm">18:30</span>
+    <div class="match-title"><b>町田泽维</b><span class="rank">[日职4]</span> <span class="vs">vs</span> <b>浦和红钻</b><span class="rank">[日职19]</span></div>
+    <span class="badge h">主胜 <i>★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:50%"></div></div><b>50%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:27%"></div></div><b>27%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:23%"></div></div><b>23%</b></div>
+        <div class="sub">λ 主/客 = 1.572 / 0.987</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(受让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>51%</b></div>
+        <div class="prob-row"><span>平</span><b>20%</b></div>
+        <div class="prob-row"><span>客胜</span><b>29%</b></div>
+        <div class="sub">让球倾向：町田泽维(受让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:47%"></div></div><b>47%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:53%"></div></div><b>53%</b></div>
+        <div class="sub">总进球首选 2球 · 小球(≤2)</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">1:0 / 2:0 / 1:1</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>胜/胜 30%</span><span class='chip'>平/胜 18%</span><span class='chip'>平/平 17%</span></span>
+    </div>
+    <div class="note">📌 町田2连胜轰9球，浦和2连败失8球；交锋町田近3场2胜1平。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日003</span>
+    <span class="lg">韩职</span>
+    <span class="tm">18:30</span>
+    <div class="match-title"><b>大田市民</b><span class="rank">[韩职10]</span> <span class="vs">vs</span> <b>江原FC</b><span class="rank">[韩职4]</span></div>
+    <span class="badge a">客胜/平 <i>★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:36%"></div></div><b>36%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:29%"></div></div><b>29%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:34%"></div></div><b>34%</b></div>
+        <div class="sub">λ 主/客 = 1.273 / 1.235</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(受让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>40%</b></div>
+        <div class="prob-row"><span>平</span><b>21%</b></div>
+        <div class="prob-row"><span>客胜</span><b>39%</b></div>
+        <div class="sub">让球倾向：大田市民(受让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:46%"></div></div><b>46%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:54%"></div></div><b>54%</b></div>
+        <div class="sub">总进球首选 2球 · 小球(≤2)</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">1:1 / 0:2 / 1:0</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>胜/胜 21%</span><span class='chip'>负/负 20%</span><span class='chip'>平/平 18%</span></span>
+    </div>
+    <div class="note">📌 江原交锋近3场2胜1平(2:0/2:0/1:1)，排名第4对第10；韩职平局率偏高。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日004</span>
+    <span class="lg">英冠</span>
+    <span class="tm">19:00</span>
+    <div class="match-title"><b>西布罗姆</b><span class="rank">[英冠9]</span> <span class="vs">vs</span> <b>伯恩利</b><span class="rank">[英冠16]</span></div>
+    <span class="badge d">平局/主胜 <i>★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:34%"></div></div><b>34%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:28%"></div></div><b>28%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:37%"></div></div><b>37%</b></div>
+        <div class="sub">λ 主/客 = 1.273 / 1.343</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>39%</b></div>
+        <div class="prob-row"><span>平</span><b>20%</b></div>
+        <div class="prob-row"><span>客胜</span><b>41%</b></div>
+        <div class="sub">让球倾向：伯恩利(让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:49%"></div></div><b>49%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:51%"></div></div><b>51%</b></div>
+        <div class="sub">总进球首选 2球 · 2-3球</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">1:1 / 1:0 / 0:1</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>负/负 22%</span><span class='chip'>胜/胜 20%</span><span class='chip'>平/平 17%</span></span>
+    </div>
+    <div class="note">📌 西布朗6连胜(新帅Morrison) vs 伯恩利16场未零封，英冠盘口胶着。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日005</span>
+    <span class="lg">德国杯</span>
+    <span class="tm">19:00</span>
+    <div class="match-title"><b>菲尔特</b><span class="rank"></span> <span class="vs">vs</span> <b>波鸿</b><span class="rank"></span></div>
+    <span class="badge a">客胜 <i>★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:32%"></div></div><b>32%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:26%"></div></div><b>26%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:42%"></div></div><b>42%</b></div>
+        <div class="sub">λ 主/客 = 1.394 / 1.619</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>36%</b></div>
+        <div class="prob-row"><span>平</span><b>20%</b></div>
+        <div class="prob-row"><span>客胜</span><b>44%</b></div>
+        <div class="sub">让球倾向：波鸿(让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:58%"></div></div><b>58%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:42%"></div></div><b>42%</b></div>
+        <div class="sub">总进球首选 2球 · 2-3球</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">1:2 / 0:2 / 1:1</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>负/负 25%</span><span class='chip'>胜/胜 19%</span><span class='chip'>平/平 15%</span></span>
+    </div>
+    <div class="note">📌 波鸿交锋对菲尔特5连胜，德甲vs德乙实力差距；杯赛需防冷。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日006</span>
+    <span class="lg">瑞超</span>
+    <span class="tm">20:00</span>
+    <div class="match-title"><b>哥德堡</b><span class="rank">[瑞超12]</span> <span class="vs">vs</span> <b>埃夫斯堡</b><span class="rank">[瑞超5]</span></div>
+    <span class="badge a">客胜 <i>★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:35%"></div></div><b>35%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:26%"></div></div><b>26%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:39%"></div></div><b>39%</b></div>
+        <div class="sub">λ 主/客 = 1.43 / 1.522</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>38%</b></div>
+        <div class="prob-row"><span>平</span><b>20%</b></div>
+        <div class="prob-row"><span>客胜</span><b>41%</b></div>
+        <div class="sub">让球倾向：埃夫斯堡(让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:57%"></div></div><b>57%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:43%"></div></div><b>43%</b></div>
+        <div class="sub">总进球首选 2球 · 2-3球</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">1:2 / 1:1 / 0:1</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>负/负 23%</span><span class='chip'>胜/胜 20%</span><span class='chip'>平/平 15%</span></span>
+    </div>
+    <div class="note">📌 埃夫斯堡交锋近5场4胜1平，哥德堡多人伤缺(前场深度受损)。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日007</span>
+    <span class="lg">芬超</span>
+    <span class="tm">20:00</span>
+    <div class="match-title"><b>赫尔辛基</b><span class="rank">[芬超3]</span> <span class="vs">vs</span> <b>赫尔火花</b><span class="rank">[芬超6]</span></div>
+    <span class="badge h">主胜 <i>★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:63%"></div></div><b>63%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:20%"></div></div><b>20%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:17%"></div></div><b>17%</b></div>
+        <div class="sub">λ 主/客 = 2.273 / 1.105</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(受让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>61%</b></div>
+        <div class="prob-row"><span>平</span><b>18%</b></div>
+        <div class="prob-row"><span>客胜</span><b>21%</b></div>
+        <div class="sub">让球倾向：赫尔辛基(受让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:66%"></div></div><b>66%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:34%"></div></div><b>34%</b></div>
+        <div class="sub">总进球首选 3球 · 2-3球</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">2:1 / 1:1 / 2:0</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>胜/胜 41%</span><span class='chip'>平/胜 19%</span><span class='chip'>平/平 11%</span></span>
+    </div>
+    <div class="note">📌 德比战：HJK排名第3但多达6人停赛，Gnistan状态不俗——主胜信心打折。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日008</span>
+    <span class="lg">荷甲</span>
+    <span class="tm">20:30</span>
+    <div class="match-title"><b>埃因霍温</b><span class="rank">[荷甲5]</span> <span class="vs">vs</span> <b>格罗宁根</b><span class="rank">[荷甲2]</span></div>
+    <span class="badge h">主胜 <i>★★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:71%"></div></div><b>71%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:16%"></div></div><b>16%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:12%"></div></div><b>12%</b></div>
+        <div class="sub">λ 主/客 = 2.739 / 1.105</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(受让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>69%</b></div>
+        <div class="prob-row"><span>平</span><b>15%</b></div>
+        <div class="prob-row"><span>客胜</span><b>16%</b></div>
+        <div class="sub">让球倾向：埃因霍温(受让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:74%"></div></div><b>74%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:26%"></div></div><b>26%</b></div>
+        <div class="sub">总进球首选 3球 · 大球(3+)</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">2:1 / 3:1 / 2:0</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>胜/胜 49%</span><span class='chip'>平/胜 19%</span><span class='chip'>平/平 8%</span></span>
+    </div>
+    <div class="note">📌 PSV交锋对格罗宁根10战9胜，荷甲大球基因；格罗宁根开局2连胜有韧性。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日009</span>
+    <span class="lg">英超</span>
+    <span class="tm">21:00</span>
+    <div class="match-title"><b>曼城</b><span class="rank">[英超13]</span> <span class="vs">vs</span> <b>伯恩茅斯</b><span class="rank">[英超8]</span></div>
+    <span class="badge h">主胜 <i>★★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:67%"></div></div><b>67%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:18%"></div></div><b>18%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:15%"></div></div><b>15%</b></div>
+        <div class="sub">λ 主/客 = 2.41 / 1.077</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(受让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>65%</b></div>
+        <div class="prob-row"><span>平</span><b>17%</b></div>
+        <div class="prob-row"><span>客胜</span><b>19%</b></div>
+        <div class="sub">让球倾向：曼城(受让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:68%"></div></div><b>68%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:32%"></div></div><b>32%</b></div>
+        <div class="sub">总进球首选 3球 · 大球(3+)</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">2:1 / 3:1 / 2:0</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>胜/胜 44%</span><span class='chip'>平/胜 19%</span><span class='chip'>平/平 10%</span></span>
+    </div>
+    <div class="note">📌 曼城英超主场对伯恩茅斯9战全胜(34-6)；但曼城新帅首秀+社区盾0-3，伯恩茅斯18场不败。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日010</span>
+    <span class="lg">法甲</span>
+    <span class="tm">21:00</span>
+    <div class="match-title"><b>昂热</b><span class="rank">[法甲10]</span> <span class="vs">vs</span> <b>里尔</b><span class="rank">[法甲12]</span></div>
+    <span class="badge a">客胜 <i>★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:18%"></div></div><b>18%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:26%"></div></div><b>26%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:56%"></div></div><b>56%</b></div>
+        <div class="sub">λ 主/客 = 0.829 / 1.648</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>24%</b></div>
+        <div class="prob-row"><span>平</span><b>20%</b></div>
+        <div class="prob-row"><span>客胜</span><b>56%</b></div>
+        <div class="sub">让球倾向：里尔(让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:45%"></div></div><b>45%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:55%"></div></div><b>55%</b></div>
+        <div class="sub">总进球首选 2球 · 小球(≤2)</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">0:1 / 0:2 / 1:1</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>负/负 35%</span><span class='chip'>平/负 20%</span><span class='chip'>平/平 17%</span></span>
+    </div>
+    <div class="note">📌 里尔交锋对昂热近5场4胜；但里尔队长安德烈停赛+多人伤，昂热主场交锋处劣势。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日011</span>
+    <span class="lg">德国杯</span>
+    <span class="tm">21:30</span>
+    <div class="match-title"><b>不伦瑞克</b><span class="rank"></span> <span class="vs">vs</span> <b>柏林联合</b><span class="rank"></span></div>
+    <span class="badge a">客胜 <i>★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:23%"></div></div><b>23%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:24%"></div></div><b>24%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:53%"></div></div><b>53%</b></div>
+        <div class="sub">λ 主/客 = 1.212 / 1.898</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>28%</b></div>
+        <div class="prob-row"><span>平</span><b>19%</b></div>
+        <div class="prob-row"><span>客胜</span><b>53%</b></div>
+        <div class="sub">让球倾向：柏林联合(让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:60%"></div></div><b>60%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:40%"></div></div><b>40%</b></div>
+        <div class="sub">总进球首选 3球 · 2-3球</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">1:2 / 0:2 / 1:1</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>负/负 33%</span><span class='chip'>平/负 17%</span><span class='chip'>平/平 14%</span></span>
+    </div>
+    <div class="note">📌 柏林联合新帅首秀，不伦瑞克近9季7次德国杯首轮出局；8年来首次交锋。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日012</span>
+    <span class="lg">葡超</span>
+    <span class="tm">22:30</span>
+    <div class="match-title"><b>吉马良斯</b><span class="rank">[葡超17]</span> <span class="vs">vs</span> <b>葡国民</b><span class="rank">[葡超5]</span></div>
+    <span class="badge h">主胜/平 <i>★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:56%"></div></div><b>56%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:24%"></div></div><b>24%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:19%"></div></div><b>19%</b></div>
+        <div class="sub">λ 主/客 = 1.817 / 0.974</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(受让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>56%</b></div>
+        <div class="prob-row"><span>平</span><b>20%</b></div>
+        <div class="prob-row"><span>客胜</span><b>25%</b></div>
+        <div class="sub">让球倾向：吉马良斯(受让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:53%"></div></div><b>53%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:47%"></div></div><b>47%</b></div>
+        <div class="sub">总进球首选 2球 · 2-3球</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">1:1 / 1:0 / 2:1</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>胜/胜 35%</span><span class='chip'>平/胜 19%</span><span class='chip'>平/平 15%</span></span>
+    </div>
+    <div class="note">📌 吉马良斯开局2连败垫底 vs 国民1胜1平——基本面背离赔率，谨慎看待主胜。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日013</span>
+    <span class="lg">瑞超</span>
+    <span class="tm">22:30</span>
+    <div class="match-title"><b>哈马比</b><span class="rank">[瑞超2]</span> <span class="vs">vs</span> <b>盖斯</b><span class="rank">[瑞超9]</span></div>
+    <span class="badge h">主胜 <i>★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:68%"></div></div><b>68%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:18%"></div></div><b>18%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:13%"></div></div><b>13%</b></div>
+        <div class="sub">λ 主/客 = 2.338 / 0.947</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(受让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>65%</b></div>
+        <div class="prob-row"><span>平</span><b>17%</b></div>
+        <div class="prob-row"><span>客胜</span><b>18%</b></div>
+        <div class="sub">让球倾向：哈马比(受让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:64%"></div></div><b>64%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:36%"></div></div><b>36%</b></div>
+        <div class="sub">总进球首选 3球 · 2-3球</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">2:1 / 2:0 / 1:0</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>胜/胜 45%</span><span class='chip'>平/胜 20%</span><span class='chip'>平/平 10%</span></span>
+    </div>
+    <div class="note">📌 哈马比第2状态火热(上轮4-0) vs 盖斯7人伤；但盖斯是哈马比克星(近10场仅1胜)。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日014</span>
+    <span class="lg">荷甲</span>
+    <span class="tm">22:45</span>
+    <div class="match-title"><b>坎布尔</b><span class="rank">[荷甲18]</span> <span class="vs">vs</span> <b>费耶诺德</b><span class="rank">[荷甲6]</span></div>
+    <span class="badge a">客胜 <i>★★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:9%"></div></div><b>9%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:14%"></div></div><b>14%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:78%"></div></div><b>78%</b></div>
+        <div class="sub">λ 主/客 = 0.898 / 2.881</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(让2球)</div>
+        <div class="prob-row"><span>主胜</span><b>22%</b></div>
+        <div class="prob-row"><span>平</span><b>12%</b></div>
+        <div class="prob-row"><span>客胜</span><b>67%</b></div>
+        <div class="sub">让球倾向：费耶诺德(让2球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:73%"></div></div><b>73%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:27%"></div></div><b>27%</b></div>
+        <div class="sub">总进球首选 3球 · 大球(3+)</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">0:2 / 1:3 / 0:3</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>负/负 55%</span><span class='chip'>平/负 19%</span><span class='chip'>平/平 7%</span></span>
+    </div>
+    <div class="note">📌 费耶诺德对坎布尔15连胜，坎布尔升班马开季崩盘进1失7。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日015</span>
+    <span class="lg">西甲</span>
+    <span class="tm">23:00</span>
+    <div class="match-title"><b>马竞</b><span class="rank">[西甲4]</span> <span class="vs">vs</span> <b>比利亚雷</b><span class="rank">[西甲8]</span></div>
+    <span class="badge h">主胜 <i>★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:52%"></div></div><b>52%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:25%"></div></div><b>25%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:23%"></div></div><b>23%</b></div>
+        <div class="sub">λ 主/客 = 1.76 / 1.104</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(受让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>52%</b></div>
+        <div class="prob-row"><span>平</span><b>20%</b></div>
+        <div class="prob-row"><span>客胜</span><b>28%</b></div>
+        <div class="sub">让球倾向：马竞(受让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:55%"></div></div><b>55%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:45%"></div></div><b>45%</b></div>
+        <div class="sub">总进球首选 2球 · 2-3球</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">2:1 / 1:0 / 1:1</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>胜/胜 32%</span><span class='chip'>平/胜 18%</span><span class='chip'>平/平 15%</span></span>
+    </div>
+    <div class="note">📌 黄潜多人伤+停赛(迪亚塔/莫雷诺)，马竞主场占优；但黄潜5月曾5-1爆冷马竞。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日016</span>
+    <span class="lg">法甲</span>
+    <span class="tm">23:15</span>
+    <div class="match-title"><b>勒阿弗尔</b><span class="rank">[法甲11]</span> <span class="vs">vs</span> <b>摩纳哥</b><span class="rank">[法甲13]</span></div>
+    <span class="badge a">客胜/平 <i>★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:25%"></div></div><b>25%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:25%"></div></div><b>25%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:50%"></div></div><b>50%</b></div>
+        <div class="sub">λ 主/客 = 1.18 / 1.757</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>29%</b></div>
+        <div class="prob-row"><span>平</span><b>20%</b></div>
+        <div class="prob-row"><span>客胜</span><b>51%</b></div>
+        <div class="sub">让球倾向：摩纳哥(让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:56%"></div></div><b>56%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:44%"></div></div><b>44%</b></div>
+        <div class="sub">总进球首选 2球 · 小球(≤2)</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">1:1 / 0:1 / 1:2</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>负/负 31%</span><span class='chip'>平/负 17%</span><span class='chip'>平/平 14%</span></span>
+    </div>
+    <div class="note">📌 摩纳哥多人伤+新帅首秀，勒阿弗尔主场交锋近3场不败(0:0/1:1)。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日017</span>
+    <span class="lg">英超</span>
+    <span class="tm">23:30</span>
+    <div class="match-title"><b>纽卡斯尔</b><span class="rank">[英超14]</span> <span class="vs">vs</span> <b>利物浦</b><span class="rank">[英超12]</span></div>
+    <span class="badge a">客胜 <i>★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:27%"></div></div><b>27%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:23%"></div></div><b>23%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:50%"></div></div><b>50%</b></div>
+        <div class="sub">λ 主/客 = 1.429 / 2.003</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>30%</b></div>
+        <div class="prob-row"><span>平</span><b>19%</b></div>
+        <div class="prob-row"><span>客胜</span><b>51%</b></div>
+        <div class="sub">让球倾向：利物浦(让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:67%"></div></div><b>67%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:33%"></div></div><b>33%</b></div>
+        <div class="sub">总进球首选 3球 · 大球(3+)</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">1:2 / 2:2 / 0:2</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>负/负 31%</span><span class='chip'>平/负 16%</span><span class='chip'>胜/胜 15%</span></span>
+    </div>
+    <div class="note">📌 利物浦对纽卡18场不败；双方均多名伤病+新帅，伊萨克战旧主，进球预期偏高。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日018</span>
+    <span class="lg">意甲</span>
+    <span class="tm">00:30</span>
+    <div class="match-title"><b>弗洛西诺</b><span class="rank">[意甲10]</span> <span class="vs">vs</span> <b>尤文图斯</b><span class="rank">[意甲11]</span></div>
+    <span class="badge a">客胜 <i>★★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:13%"></div></div><b>13%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:20%"></div></div><b>20%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:68%"></div></div><b>68%</b></div>
+        <div class="sub">λ 主/客 = 0.796 / 2.113</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>18%</b></div>
+        <div class="prob-row"><span>平</span><b>17%</b></div>
+        <div class="prob-row"><span>客胜</span><b>65%</b></div>
+        <div class="sub">让球倾向：尤文图斯(让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:56%"></div></div><b>56%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:44%"></div></div><b>44%</b></div>
+        <div class="sub">总进球首选 2球 · 2-3球</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">0:2 / 1:2 / 0:1</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>负/负 44%</span><span class='chip'>平/负 21%</span><span class='chip'>平/平 12%</span></span>
+    </div>
+    <div class="note">📌 尤文对弗洛西诺内5连胜且每场进2+球，实力与交锋双占优。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日019</span>
+    <span class="lg">意甲</span>
+    <span class="tm">00:30</span>
+    <div class="match-title"><b>威尼斯</b><span class="rank">[意甲17]</span> <span class="vs">vs</span> <b>莱切</b><span class="rank">[意甲13]</span></div>
+    <span class="badge h">主胜/平 <i>★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:46%"></div></div><b>46%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:29%"></div></div><b>29%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:25%"></div></div><b>25%</b></div>
+        <div class="sub">λ 主/客 = 1.439 / 0.996</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(受让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>48%</b></div>
+        <div class="prob-row"><span>平</span><b>21%</b></div>
+        <div class="prob-row"><span>客胜</span><b>31%</b></div>
+        <div class="sub">让球倾向：威尼斯(受让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:44%"></div></div><b>44%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:56%"></div></div><b>56%</b></div>
+        <div class="sub">总进球首选 2球 · 2-3球</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">1:1 / 1:0 / 2:1</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>胜/胜 28%</span><span class='chip'>平/平 18%</span><span class='chip'>平/胜 17%</span></span>
+    </div>
+    <div class="note">📌 莱切交锋近8场3胜4平(威尼斯仅1胜)；威尼斯升班马状态好(近10场6胜)。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日020</span>
+    <span class="lg">葡超</span>
+    <span class="tm">01:00</span>
+    <div class="match-title"><b>圣克拉拉</b><span class="rank">[葡超6]</span> <span class="vs">vs</span> <b>法马利康</b><span class="rank">[葡超13]</span></div>
+    <span class="badge h">主胜/平 <i>★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:36%"></div></div><b>36%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:31%"></div></div><b>31%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:33%"></div></div><b>33%</b></div>
+        <div class="sub">λ 主/客 = 1.159 / 1.106</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(受让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>40%</b></div>
+        <div class="prob-row"><span>平</span><b>21%</b></div>
+        <div class="prob-row"><span>客胜</span><b>39%</b></div>
+        <div class="sub">让球倾向：圣克拉拉(受让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:39%"></div></div><b>39%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:61%"></div></div><b>61%</b></div>
+        <div class="sub">总进球首选 2球 · 小球(≤2)</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">1:1 / 1:0 / 2:1</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>胜/胜 21%</span><span class='chip'>平/平 20%</span><span class='chip'>负/负 19%</span></span>
+    </div>
+    <div class="note">📌 法马利康上季双杀圣克拉拉(3:0/1:0)，但圣克拉拉帕先西亚3球火热、主场占优。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日021</span>
+    <span class="lg">西甲</span>
+    <span class="tm">01:30</span>
+    <div class="match-title"><b>赫塔费</b><span class="rank">[西甲20]</span> <span class="vs">vs</span> <b>桑坦德</b><span class="rank">[西甲7]</span></div>
+    <span class="badge h">主胜 <i>★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:45%"></div></div><b>45%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:31%"></div></div><b>31%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:24%"></div></div><b>24%</b></div>
+        <div class="sub">λ 主/客 = 1.288 / 0.879</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(受让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>48%</b></div>
+        <div class="prob-row"><span>平</span><b>21%</b></div>
+        <div class="prob-row"><span>客胜</span><b>31%</b></div>
+        <div class="sub">让球倾向：赫塔费(受让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:37%"></div></div><b>37%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:63%"></div></div><b>63%</b></div>
+        <div class="sub">总进球首选 2球 · 小球(≤2)</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">1:0 / 1:1 / 2:1</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>胜/胜 26%</span><span class='chip'>平/平 21%</span><span class='chip'>平/胜 17%</span></span>
+    </div>
+    <div class="note">📌 赫塔费首轮0-3崩盘+Femenia停赛，桑坦德升班马曾2-2逼平黄潜——主胜信心有限。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日022</span>
+    <span class="lg">意甲</span>
+    <span class="tm">02:45</span>
+    <div class="match-title"><b>都灵</b><span class="rank">[意甲16]</span> <span class="vs">vs</span> <b>AC米兰</b><span class="rank">[意甲6]</span></div>
+    <span class="badge a">客胜 <i>★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:20%"></div></div><b>20%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:24%"></div></div><b>24%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:56%"></div></div><b>56%</b></div>
+        <div class="sub">λ 主/客 = 0.937 / 1.744</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>25%</b></div>
+        <div class="prob-row"><span>平</span><b>20%</b></div>
+        <div class="prob-row"><span>客胜</span><b>55%</b></div>
+        <div class="sub">让球倾向：AC米兰(让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:50%"></div></div><b>50%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:50%"></div></div><b>50%</b></div>
+        <div class="sub">总进球首选 2球 · 大球(3+)</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">1:2 / 1:1 / 0:1</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>负/负 35%</span><span class='chip'>平/负 19%</span><span class='chip'>平/平 15%</span></span>
+    </div>
+    <div class="note">📌 米兰新帅阿莫林首秀+新援拉莫斯，但Leao缺阵+多人转会排除；都灵多人伤，交锋场均4.3球。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日023</span>
+    <span class="lg">意甲</span>
+    <span class="tm">02:45</span>
+    <div class="match-title"><b>亚特兰大</b><span class="rank">[意甲7]</span> <span class="vs">vs</span> <b>萨索洛</b><span class="rank">[意甲15]</span></div>
+    <span class="badge h">主胜 <i>★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:63%"></div></div><b>63%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:21%"></div></div><b>21%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:16%"></div></div><b>16%</b></div>
+        <div class="sub">λ 主/客 = 2.049 / 0.93</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(受让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>61%</b></div>
+        <div class="prob-row"><span>平</span><b>18%</b></div>
+        <div class="prob-row"><span>客胜</span><b>21%</b></div>
+        <div class="sub">让球倾向：亚特兰大(受让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:57%"></div></div><b>57%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:43%"></div></div><b>43%</b></div>
+        <div class="sub">总进球首选 2球 · 2-3球</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">2:1 / 2:0 / 1:1</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>胜/胜 40%</span><span class='chip'>平/胜 20%</span><span class='chip'>平/平 13%</span></span>
+    </div>
+    <div class="note">📌 亚特兰大欧战双线或轮换；萨索洛升班马交锋曾2:1/0:3爆冷亚特兰大，防平。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日024</span>
+    <span class="lg">西甲</span>
+    <span class="tm">03:30</span>
+    <div class="match-title"><b>埃尔切</b><span class="rank">[西甲10]</span> <span class="vs">vs</span> <b>巴萨</b><span class="rank">[西甲14]</span></div>
+    <span class="badge a">客胜 <i>★★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:11%"></div></div><b>11%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:16%"></div></div><b>16%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:73%"></div></div><b>73%</b></div>
+        <div class="sub">λ 主/客 = 0.928 / 2.578</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>15%</b></div>
+        <div class="prob-row"><span>平</span><b>15%</b></div>
+        <div class="prob-row"><span>客胜</span><b>70%</b></div>
+        <div class="sub">让球倾向：巴萨(让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:68%"></div></div><b>68%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:32%"></div></div><b>32%</b></div>
+        <div class="sub">总进球首选 3球 · 大球(3+)</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">0:2 / 0:3 / 1:3</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>负/负 50%</span><span class='chip'>平/负 20%</span><span class='chip'>平/平 9%</span></span>
+    </div>
+    <div class="note">📌 巴萨卫冕冠军冲三连冠，埃尔切升班马首轮1-1；实力差距明显。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日025</span>
+    <span class="lg">葡超</span>
+    <span class="tm">03:30</span>
+    <div class="match-title"><b>波尔图</b><span class="rank">[葡超4]</span> <span class="vs">vs</span> <b>阿罗卡</b><span class="rank">[葡超3]</span></div>
+    <span class="badge h">主胜 <i>★★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:78%"></div></div><b>78%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:15%"></div></div><b>15%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:7%"></div></div><b>7%</b></div>
+        <div class="sub">λ 主/客 = 2.514 / 0.652</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(受让2球)</div>
+        <div class="prob-row"><span>主胜</span><b>66%</b></div>
+        <div class="prob-row"><span>平</span><b>12%</b></div>
+        <div class="prob-row"><span>客胜</span><b>22%</b></div>
+        <div class="sub">让球倾向：波尔图(受让2球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:61%"></div></div><b>61%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:39%"></div></div><b>39%</b></div>
+        <div class="sub">总进球首选 3球 · 大球(3+)</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">2:0 / 3:0 / 1:0</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>胜/胜 54%</span><span class='chip'>平/胜 21%</span><span class='chip'>平/平 9%</span></span>
+    </div>
+    <div class="note">📌 波尔图对阿罗卡4连胜且未失球，阿罗卡4连胜但对手偏弱。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日026</span>
+    <span class="lg">美职</span>
+    <span class="tm">04:30</span>
+    <div class="match-title"><b>新英格兰</b><span class="rank">[美职4]</span> <span class="vs">vs</span> <b>纽约城</b><span class="rank">[美职7]</span></div>
+    <span class="badge h">主胜 <i>★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:42%"></div></div><b>42%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:26%"></div></div><b>26%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:32%"></div></div><b>32%</b></div>
+        <div class="sub">λ 主/客 = 1.641 / 1.403</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(受让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>44%</b></div>
+        <div class="prob-row"><span>平</span><b>20%</b></div>
+        <div class="prob-row"><span>客胜</span><b>36%</b></div>
+        <div class="sub">让球倾向：新英格兰(受让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:59%"></div></div><b>59%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:41%"></div></div><b>41%</b></div>
+        <div class="sub">总进球首选 2球 · 2-3球</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">2:1 / 1:1 / 1:0</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>胜/胜 26%</span><span class='chip'>负/负 19%</span><span class='chip'>平/胜 15%</span></span>
+    </div>
+    <div class="note">📌 新英格兰东区第4(上轮3-0)，纽约城头号射手Mercau转会传闻，美职主胜率偏低需谨慎。</div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-head">
+    <span class="mnum">周日027</span>
+    <span class="lg">巴甲</span>
+    <span class="tm">05:30</span>
+    <div class="match-title"><b>桑托斯</b><span class="rank">[巴甲14]</span> <span class="vs">vs</span> <b>米拉索尔</b><span class="rank">[巴甲17]</span></div>
+    <span class="badge h">主胜 <i>★★</i></span>
+  </div>
+  <div class="card-body">
+    <div class="grid3">
+      <div class="box">
+        <div class="box-t">胜平负概率</div>
+        <div class="prob-row"><span class="h">主胜</span><div class="bar"><div class="fill h" style="width:53%"></div></div><b>53%</b></div>
+        <div class="prob-row"><span class="d">平局</span><div class="bar"><div class="fill d" style="width:25%"></div></div><b>25%</b></div>
+        <div class="prob-row"><span class="a">客胜</span><div class="bar"><div class="fill a" style="width:22%"></div></div><b>22%</b></div>
+        <div class="sub">λ 主/客 = 1.696 / 1.022</div>
+      </div>
+      <div class="box">
+        <div class="box-t">让球(受让1球)</div>
+        <div class="prob-row"><span>主胜</span><b>52%</b></div>
+        <div class="prob-row"><span>平</span><b>20%</b></div>
+        <div class="prob-row"><span>客胜</span><b>27%</b></div>
+        <div class="sub">让球倾向：桑托斯(受让1球)</div>
+      </div>
+      <div class="box">
+        <div class="box-t">总进球</div>
+        <div class="prob-row"><span>大球(3+)</span><div class="bar"><div class="fill o" style="width:51%"></div></div><b>51%</b></div>
+        <div class="prob-row"><span>小球(≤2)</span><div class="bar"><div class="fill u" style="width:49%"></div></div><b>49%</b></div>
+        <div class="sub">总进球首选 2球 · 2-3球</div>
+      </div>
+    </div>
+    <div class="rec-row">
+      <span class="rec-label">比分推荐</span>
+      <span class="rec-scores">2:0 / 1:0 / 2:1</span>
+      <span class="rec-label">半全场</span>
+      <span class="rec-hafu"><span class='chip'>胜/胜 32%</span><span class='chip'>平/胜 18%</span><span class='chip'>平/平 15%</span></span>
+    </div>
+    <div class="note">📌 桑托斯主场对米拉索尔10次8胜2平从未输，内马尔+加比戈尔回归；米拉索尔处降级区。</div>
+  </div>
+</div></div>
+
+  <h2>三、串关思路（仅供参考）</h2>
+  <div class="parlay">
+    <div class="pcard">
+      <h3>🎯 稳健串（高置信方向）</h3>
+      <div class="legs">014 费耶诺德客胜 × 018 尤文客胜 × 024 巴萨客胜 × 025 波尔图主胜</div>
+      <div class="est">均为高置信深让方，串关可提升整体赔率；建议 4串1 或 3串1 组合。</div>
+    </div>
+    <div class="pcard">
+      <h3>⚡ 博冷串（高赔方向）</h3>
+      <div class="legs">003 江原客胜/平 × 007 赫尔辛基主胜(警惕6人停赛) × 013 哈马比主胜(防克星) × 023 亚特兰大主胜(防轮换)</div>
+      <div class="est">涉及基本面背离或魔咒场次，赔率偏高但风险大，小注娱乐为主。</div>
+    </div>
+    <div class="pcard">
+      <h3>🔢 总进球混合串</h3>
+      <div class="legs">008 埃因霍温大球 × 014 费耶诺德大球 × 017 纽卡vs利物浦大球</div>
+      <div class="est">荷甲与英超焦点战进球预期偏高，可搭配半全场路径多样化。</div>
+    </div>
+    <div class="pcard">
+      <h3>🎲 半全场娱乐串</h3>
+      <div class="legs">018 尤文 负/负(半场领先全场胜) × 024 巴萨 负/负 × 009 曼城 胜/胜</div>
+      <div class="est">深让强队半全场正路路径，娱乐小额。</div>
+    </div>
+  </div>
+
+  <div class="risk">
+    <b>⚠️ 风险提示</b>：足球比赛存在极大不确定性，任何模型预测均非100%准确。本报告基于体彩官方赔率、DC/Poisson 模型与公开基本面信息，突发因素（红牌、点球、天气、临场轮换）无法完全预测。部分场次为赛季第1-3轮，样本数据有限。伤停信息来自第三方前瞻，赛前可能变动，请以体彩官方与俱乐部最终名单为准。<b>理性看待预测，切勿沉迷赌博。</b>
+  </div>
+</div>
+</body>
+</html>

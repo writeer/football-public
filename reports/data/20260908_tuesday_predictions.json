@@ -1,0 +1,236 @@
+{
+  "date": "2026-09-08",
+  "weekday": "周二",
+  "matchCount": 12,
+  "singleMatches": ["001", "003", "008", "009"],
+  "matches": [
+    {
+      "num": "周二001",
+      "league": "韩职",
+      "home": "蔚山现代",
+      "away": "首尔FC",
+      "time": "18:30",
+      "had": {"h": 3.21, "d": 3.5, "a": 1.88},
+      "hhad": {"goalLine": 1, "h": 1.7, "d": 3.75, "a": 3.65},
+      "predictions": {
+        "had": {"first": "客胜", "firstProb": 0.39, "second": "平", "secondProb": 0.36},
+        "hhad": {"first": "让(+1)胜", "firstProb": 0.55, "second": "让(+1)平", "secondProb": 0.28},
+        "crs_top5": [{"score": "1:2", "prob": 0.12}, {"score": "0:2", "prob": 0.10}, {"score": "1:1", "prob": 0.09}, {"score": "0:1", "prob": 0.08}, {"score": "2:2", "prob": 0.07}],
+        "ttg": {"first": "2球", "firstProb": 0.22, "second": "3球", "secondProb": 0.20},
+        "hafu_top3": [{"result": "平负", "prob": 0.15}, {"result": "平平", "prob": 0.14}, {"result": "负负", "prob": 0.10}],
+        "ht_score_top3": [{"score": "0:0", "prob": 0.20}, {"score": "0:1", "prob": 0.12}, {"score": "1:1", "prob": 0.08}]
+      },
+      "confidence": "★★",
+      "rules_applied": ["规则65(Tier3积分差18触发但残阵降级+0.2)", "规则66(韩职ht_draw_rate=0.512高半场平局+10%)", "规则63(单关平局+8%)"]
+    },
+    {
+      "num": "周二002",
+      "league": "欧冠",
+      "home": "雅典AEK",
+      "away": "LASK林茨",
+      "time": "00:45",
+      "had": {"h": 1.65, "d": 3.7, "a": 3.95},
+      "hhad": {"goalLine": -1, "h": 2.92, "d": 3.65, "a": 1.95},
+      "predictions": {
+        "had": {"first": "主胜", "firstProb": 0.48, "second": "平", "secondProb": 0.26},
+        "hhad": {"first": "让(-1)平", "firstProb": 0.28, "second": "让(-1)胜", "secondProb": 0.26},
+        "crs_top5": [{"score": "2:1", "prob": 0.14}, {"score": "2:0", "prob": 0.11}, {"score": "3:1", "prob": 0.08}, {"score": "1:1", "prob": 0.07}, {"score": "1:0", "prob": 0.07}],
+        "ttg": {"first": "3球", "firstProb": 0.25, "second": "2球", "secondProb": 0.20},
+        "hafu_top3": [{"result": "胜胜", "prob": 0.18}, {"result": "平胜", "prob": 0.12}, {"result": "平平", "prob": 0.08}],
+        "ht_score_top3": [{"score": "1:0", "prob": 0.15}, {"score": "0:0", "prob": 0.12}, {"score": "2:0", "prob": 0.08}]
+      },
+      "confidence": "★★",
+      "rules_applied": []
+    },
+    {
+      "num": "周二003",
+      "league": "欧冠",
+      "home": "布鲁日",
+      "away": "阿斯顿维拉",
+      "time": "00:45",
+      "had": {"h": 2.53, "d": 3.35, "a": 2.3},
+      "hhad": {"goalLine": 1, "h": 1.47, "d": 4.15, "a": 4.8},
+      "predictions": {
+        "had": {"first": "平", "firstProb": 0.34, "second": "客胜", "secondProb": 0.33},
+        "hhad": {"first": "让(+1)胜", "firstProb": 0.55, "second": "让(+1)平", "secondProb": 0.25},
+        "crs_top5": [{"score": "1:1", "prob": 0.12}, {"score": "1:0", "prob": 0.12}, {"score": "0:0", "prob": 0.10}, {"score": "0:1", "prob": 0.08}, {"score": "2:1", "prob": 0.07}],
+        "ttg": {"first": "1球", "firstProb": 0.22, "second": "2球", "secondProb": 0.20},
+        "hafu_top3": [{"result": "平平", "prob": 0.12}, {"result": "胜平", "prob": 0.10}, {"result": "胜胜", "prob": 0.08}],
+        "ht_score_top3": [{"score": "0:0", "prob": 0.25}, {"score": "1:0", "prob": 0.10}, {"score": "0:1", "prob": 0.08}]
+      },
+      "confidence": "★",
+      "rules_applied": ["规则28(基本面与市场矛盾)", "规则65(身价差2.87x触发但进攻信号弱+0.1)", "规则63(单关平局+10%)"]
+    },
+    {
+      "num": "周二004",
+      "league": "荷甲",
+      "home": "奈梅亨",
+      "away": "SBV精英",
+      "time": "00:45",
+      "had": {"h": 1.48, "d": 4.3, "a": 4.55},
+      "hhad": {"goalLine": -1, "h": 2.35, "d": 3.9, "a": 2.24},
+      "predictions": {
+        "had": {"first": "主胜", "firstProb": 0.52, "second": "客胜", "secondProb": 0.22},
+        "hhad": {"first": "让(-1)平", "firstProb": 0.25, "second": "让(-1)胜", "secondProb": 0.22},
+        "crs_top5": [{"score": "2:1", "prob": 0.15}, {"score": "3:1", "prob": 0.10}, {"score": "2:2", "prob": 0.08}, {"score": "1:2", "prob": 0.08}, {"score": "3:2", "prob": 0.06}],
+        "ttg": {"first": "3球", "firstProb": 0.25, "second": "4球", "secondProb": 0.18},
+        "hafu_top3": [{"result": "胜胜", "prob": 0.15}, {"result": "平胜", "prob": 0.12}, {"result": "平平", "prob": 0.08}],
+        "ht_score_top3": [{"score": "1:1", "prob": 0.15}, {"score": "1:0", "prob": 0.12}, {"score": "0:1", "prob": 0.10}]
+      },
+      "confidence": "★★",
+      "rules_applied": ["规则65(身价差2.62x触发Tier2荷甲+0.3)"]
+    },
+    {
+      "num": "周二005",
+      "league": "沙职",
+      "home": "卡迪西亚",
+      "away": "吉达国民",
+      "time": "02:00",
+      "had": {"h": 1.75, "d": 3.8, "a": 3.4},
+      "hhad": {"goalLine": -1, "h": 3.1, "d": 3.85, "a": 1.83},
+      "predictions": {
+        "had": {"first": "主胜", "firstProb": 0.46, "second": "平", "secondProb": 0.26},
+        "hhad": {"first": "让(-1)平", "firstProb": 0.28, "second": "让(-1)胜", "secondProb": 0.22},
+        "crs_top5": [{"score": "2:1", "prob": 0.14}, {"score": "1:0", "prob": 0.11}, {"score": "1:1", "prob": 0.09}, {"score": "2:2", "prob": 0.08}, {"score": "3:1", "prob": 0.07}],
+        "ttg": {"first": "2球", "firstProb": 0.22, "second": "3球", "secondProb": 0.20},
+        "hafu_top3": [{"result": "胜胜", "prob": 0.16}, {"result": "平胜", "prob": 0.12}, {"result": "胜平", "prob": 0.08}],
+        "ht_score_top3": [{"score": "1:0", "prob": 0.14}, {"score": "0:0", "prob": 0.12}, {"score": "2:0", "prob": 0.08}]
+      },
+      "confidence": "★★",
+      "rules_applied": []
+    },
+    {
+      "num": "周二006",
+      "league": "英冠",
+      "home": "南安普敦",
+      "away": "斯旺西",
+      "time": "02:45",
+      "had": {"h": 1.67, "d": 3.6, "a": 3.95},
+      "hhad": {"goalLine": -1, "h": 3.05, "d": 3.56, "a": 1.92},
+      "predictions": {
+        "had": {"first": "平", "firstProb": 0.32, "second": "主胜", "secondProb": 0.30},
+        "hhad": {"first": "让(-1)负", "firstProb": 0.45, "second": "让(-1)平", "secondProb": 0.28},
+        "crs_top5": [{"score": "1:1", "prob": 0.14}, {"score": "0:0", "prob": 0.10}, {"score": "1:0", "prob": 0.10}, {"score": "0:1", "prob": 0.08}, {"score": "2:1", "prob": 0.06}],
+        "ttg": {"first": "1球", "firstProb": 0.22, "second": "2球", "secondProb": 0.20},
+        "hafu_top3": [{"result": "平平", "prob": 0.14}, {"result": "胜平", "prob": 0.10}, {"result": "胜胜", "prob": 0.08}],
+        "ht_score_top3": [{"score": "0:0", "prob": 0.25}, {"score": "1:0", "prob": 0.10}, {"score": "0:1", "prob": 0.08}]
+      },
+      "confidence": "★",
+      "rules_applied": ["规则65(排名差18位触发Tier3英冠+0.2降级)", "规则66(英冠ht_draw_rate=0.275低半场平局+3%)"]
+    },
+    {
+      "num": "周二007",
+      "league": "英联赛杯",
+      "home": "桑德兰",
+      "away": "赫尔城",
+      "time": "02:45",
+      "had": {"h": 1.53, "d": 3.65, "a": 5.0},
+      "hhad": {"goalLine": -1, "h": 2.82, "d": 3.25, "a": 2.15},
+      "predictions": {
+        "had": {"first": "主胜", "firstProb": 0.48, "second": "平", "secondProb": 0.28},
+        "hhad": {"first": "让(-1)平", "firstProb": 0.28, "second": "让(-1)负", "secondProb": 0.22},
+        "crs_top5": [{"score": "1:0", "prob": 0.14}, {"score": "1:1", "prob": 0.12}, {"score": "2:1", "prob": 0.10}, {"score": "0:0", "prob": 0.08}, {"score": "0:1", "prob": 0.08}],
+        "ttg": {"first": "2球", "firstProb": 0.22, "second": "1球", "secondProb": 0.20},
+        "hafu_top3": [{"result": "胜胜", "prob": 0.14}, {"result": "平平", "prob": 0.12}, {"result": "平胜", "prob": 0.10}],
+        "ht_score_top3": [{"score": "0:0", "prob": 0.20}, {"score": "1:0", "prob": 0.12}, {"score": "0:1", "prob": 0.08}]
+      },
+      "confidence": "★",
+      "rules_applied": []
+    },
+    {
+      "num": "周二008",
+      "league": "欧冠",
+      "home": "皇马",
+      "away": "国际米兰",
+      "time": "03:00",
+      "had": {"h": 1.43, "d": 4.4, "a": 4.95},
+      "hhad": {"goalLine": -1, "h": 2.25, "d": 3.75, "a": 2.4},
+      "predictions": {
+        "had": {"first": "主胜", "firstProb": 0.52, "second": "平", "secondProb": 0.28},
+        "hhad": {"first": "让(-1)平", "firstProb": 0.28, "second": "让(-1)胜", "secondProb": 0.22},
+        "crs_top5": [{"score": "2:1", "prob": 0.13}, {"score": "2:0", "prob": 0.11}, {"score": "1:1", "prob": 0.10}, {"score": "1:0", "prob": 0.08}, {"score": "3:1", "prob": 0.07}],
+        "ttg": {"first": "3球", "firstProb": 0.25, "second": "2球", "secondProb": 0.18},
+        "hafu_top3": [{"result": "胜胜", "prob": 0.16}, {"result": "平胜", "prob": 0.12}, {"result": "平平", "prob": 0.10}],
+        "ht_score_top3": [{"score": "1:0", "prob": 0.15}, {"score": "0:0", "prob": 0.12}, {"score": "1:1", "prob": 0.08}]
+      },
+      "confidence": "★★",
+      "rules_applied": ["规则65(身价差2.0x触发Tier1欧冠+0.2)", "规则63(单关平局+8%)"]
+    },
+    {
+      "num": "周二009",
+      "league": "欧冠",
+      "home": "多特蒙德",
+      "away": "比利亚雷亚尔",
+      "time": "03:00",
+      "had": {"h": 1.6, "d": 3.9, "a": 4.05},
+      "hhad": {"goalLine": -1, "h": 2.7, "d": 3.75, "a": 2.03},
+      "predictions": {
+        "had": {"first": "主胜", "firstProb": 0.50, "second": "平", "secondProb": 0.24},
+        "hhad": {"first": "让(-1)平", "firstProb": 0.28, "second": "让(-1)胜", "secondProb": 0.22},
+        "crs_top5": [{"score": "2:1", "prob": 0.14}, {"score": "2:0", "prob": 0.11}, {"score": "3:1", "prob": 0.08}, {"score": "2:2", "prob": 0.08}, {"score": "1:0", "prob": 0.07}],
+        "ttg": {"first": "3球", "firstProb": 0.25, "second": "2球", "secondProb": 0.18},
+        "hafu_top3": [{"result": "胜胜", "prob": 0.16}, {"result": "平胜", "prob": 0.12}, {"result": "胜平", "prob": 0.08}],
+        "ht_score_top3": [{"score": "1:0", "prob": 0.14}, {"score": "0:0", "prob": 0.12}, {"score": "2:0", "prob": 0.08}]
+      },
+      "confidence": "★★",
+      "rules_applied": ["规则63(单关平局+8%)"]
+    },
+    {
+      "num": "周二010",
+      "league": "欧冠",
+      "home": "里尔",
+      "away": "皇家贝蒂斯",
+      "time": "03:00",
+      "had": {"h": 1.9, "d": 3.3, "a": 3.33},
+      "hhad": {"goalLine": -1, "h": 3.75, "d": 3.7, "a": 1.69},
+      "predictions": {
+        "had": {"first": "主胜", "firstProb": 0.38, "second": "平", "secondProb": 0.32},
+        "hhad": {"first": "让(-1)平", "firstProb": 0.28, "second": "让(-1)负", "secondProb": 0.22},
+        "crs_top5": [{"score": "1:1", "prob": 0.12}, {"score": "2:1", "prob": 0.13}, {"score": "1:0", "prob": 0.10}, {"score": "0:0", "prob": 0.08}, {"score": "1:2", "prob": 0.08}],
+        "ttg": {"first": "2球", "firstProb": 0.22, "second": "3球", "secondProb": 0.18},
+        "hafu_top3": [{"result": "平平", "prob": 0.14}, {"result": "胜平", "prob": 0.10}, {"result": "胜胜", "prob": 0.10}],
+        "ht_score_top3": [{"score": "0:0", "prob": 0.22}, {"score": "1:0", "prob": 0.12}, {"score": "1:1", "prob": 0.08}]
+      },
+      "confidence": "★★",
+      "rules_applied": []
+    },
+    {
+      "num": "周二011",
+      "league": "欧冠",
+      "home": "波尔图",
+      "away": "曼城",
+      "time": "03:00",
+      "had": {"h": 4.85, "d": 4.05, "a": 1.48},
+      "hhad": {"goalLine": 1, "h": 2.26, "d": 3.65, "a": 2.42},
+      "predictions": {
+        "had": {"first": "客胜", "firstProb": 0.56, "second": "平", "secondProb": 0.22},
+        "hhad": {"first": "让(+1)负", "firstProb": 0.55, "second": "让(+1)平", "secondProb": 0.22},
+        "crs_top5": [{"score": "1:2", "prob": 0.15}, {"score": "0:2", "prob": 0.12}, {"score": "1:3", "prob": 0.10}, {"score": "0:3", "prob": 0.08}, {"score": "0:1", "prob": 0.08}],
+        "ttg": {"first": "3球", "firstProb": 0.25, "second": "2球", "secondProb": 0.18},
+        "hafu_top3": [{"result": "负负", "prob": 0.18}, {"result": "平负", "prob": 0.12}, {"result": "负平", "prob": 0.05}],
+        "ht_score_top3": [{"score": "0:1", "prob": 0.15}, {"score": "0:0", "prob": 0.12}, {"score": "0:2", "prob": 0.08}]
+      },
+      "confidence": "★★★",
+      "rules_applied": ["规则65(身价差3.08x触发Tier1欧冠+0.2-0.3)"]
+    },
+    {
+      "num": "周二012",
+      "league": "解放者杯",
+      "home": "弗鲁米嫩塞",
+      "away": "普拉滕斯",
+      "time": "06:00",
+      "had": {"h": 1.38, "d": 3.55, "a": 8.25},
+      "hhad": {"goalLine": -1, "h": 2.45, "d": 3.05, "a": 2.55},
+      "predictions": {
+        "had": {"first": "主胜", "firstProb": 0.58, "second": "平", "secondProb": 0.24},
+        "hhad": {"first": "让(-1)平", "firstProb": 0.28, "second": "让(-1)负", "secondProb": 0.22},
+        "crs_top5": [{"score": "1:0", "prob": 0.18}, {"score": "2:0", "prob": 0.14}, {"score": "2:1", "prob": 0.10}, {"score": "1:1", "prob": 0.08}, {"score": "0:0", "prob": 0.07}],
+        "ttg": {"first": "1球", "firstProb": 0.25, "second": "2球", "secondProb": 0.22},
+        "hafu_top3": [{"result": "胜胜", "prob": 0.18}, {"result": "平平", "prob": 0.10}, {"result": "平胜", "prob": 0.08}],
+        "ht_score_top3": [{"score": "1:0", "prob": 0.15}, {"score": "0:0", "prob": 0.15}, {"score": "2:0", "prob": 0.08}]
+      },
+      "confidence": "★★",
+      "rules_applied": ["规则65(身价差3.64x触发但小球联赛不机械上修→降级不触发)"]
+    }
+  ]
+}

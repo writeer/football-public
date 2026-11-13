@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>欧冠资格赛次回合分析 | 2026-07-28</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans CJK SC','Microsoft YaHei',sans-serif;background:#0a1628;color:#e8ecf1;line-height:1.7;padding:20px}
+.container{max-width:1100px;margin:0 auto}
+h1{text-align:center;font-size:1.8em;color:#ffd700;margin-bottom:8px;text-shadow:0 0 20px rgba(255,215,0,0.3)}
+.subtitle{text-align:center;color:#8899aa;font-size:0.9em;margin-bottom:30px}
+.toc{background:#111d33;border:1px solid #1e3a5f;border-radius:12px;padding:20px 25px;margin-bottom:30px}
+.toc h2{color:#ffd700;font-size:1.1em;margin-bottom:12px}
+.toc a{color:#66aaff;text-decoration:none;display:block;padding:4px 0}
+.toc a:hover{color:#ffd700}
+.match-section{background:#111d33;border:1px solid #1e3a5f;border-radius:12px;margin-bottom:30px;overflow:hidden}
+.match-header{background:linear-gradient(135deg,#1a2d4a,#0d1b30);padding:25px;text-align:center;border-bottom:2px solid #1e3a5f}
+.match-header h2{color:#ffd700;font-size:1.5em}
+.match-header .vs{color:#66aaff;font-size:0.95em;margin-top:8px}
+.match-header .first-leg{color:#ff6b6b;font-size:0.85em;margin-top:5px;background:rgba(255,107,107,0.1);display:inline-block;padding:3px 12px;border-radius:20px}
+.section{padding:20px 25px}
+.section h3{color:#66aaff;font-size:1.15em;margin:20px 0 12px;padding-bottom:6px;border-bottom:1px solid #1e3a5f}
+.section h3:first-child{margin-top:0}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:0.9em}
+th{background:#1a2d4a;color:#8899aa;font-weight:500;text-align:left;padding:10px 12px}
+td{padding:9px 12px;border-bottom:1px solid rgba(30,58,95,0.5)}
+tr:nth-child(even){background:rgba(26,45,74,0.3)}
+.green{color:#4ade80;font-weight:600}
+.red{color:#f87171;font-weight:600}
+.gold{color:#ffd700;font-weight:600}
+.blue{color:#66aaff}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:10px 0}
+.info-card{background:rgba(26,45,74,0.5);border:1px solid #1e3a5f;border-radius:8px;padding:15px}
+.info-card h4{color:#ffd700;font-size:0.95em;margin-bottom:8px}
+.info-card p{font-size:0.88em;color:#aabbcc}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:0.75em;font-weight:600}
+.badge-high{background:rgba(74,222,128,0.2);color:#4ade80}
+.badge-mid{background:rgba(255,215,0,0.2);color:#ffd700}
+.badge-low{background:rgba(248,113,113,0.2);color:#f87171}
+.badge-vlow{background:rgba(136,153,170,0.2);color:#8899aa}
+.rec-box{background:rgba(102,170,255,0.08);border:1px solid rgba(102,170,255,0.3);border-radius:10px;padding:20px;margin:15px 0}
+.rec-box h4{color:#66aaff;margin-bottom:10px}
+.rec-item{padding:6px 0;border-bottom:1px solid rgba(30,58,95,0.3)}
+.rec-item:last-child{border:none}
+.rec-item span.label{color:#8899aa;margin-right:8px}
+.risk-box{background:rgba(248,113,113,0.08);border:1px solid rgba(248,113,113,0.3);border-radius:10px;padding:15px 20px;margin-top:20px;color:#f87171;font-size:0.85em}
+.risk-box strong{color:#ff8888}
+.prob-bar{display:flex;align-items:center;gap:8px;margin:4px 0}
+.prob-bar .bar{flex:1;height:8px;background:#1a2d4a;border-radius:4px;overflow:hidden}
+.prob-bar .fill{height:100%;border-radius:4px}
+.fill-home{background:linear-gradient(90deg,#4ade80,#22c55e)}
+.fill-draw{background:linear-gradient(90deg,#ffd700,#f59e0b)}
+.fill-away{background:linear-gradient(90deg,#60a5fa,#3b82f6)}
+.prob-bar .pct{font-size:0.8em;min-width:50px;text-align:right}
+.score-top{background:rgba(255,215,0,0.05);border:1px solid rgba(255,215,0,0.2)}
+.news-list{list-style:none;padding:0}
+.news-list li{padding:8px 0;border-bottom:1px solid rgba(30,58,95,0.3);font-size:0.88em}
+.news-list li:last-child{border:none}
+.news-list .tag{display:inline-block;padding:1px 6px;border-radius:6px;font-size:0.75em;margin-right:6px}
+.tag-transfer{background:rgba(102,170,255,0.2);color:#66aaff}
+.tag-injury{background:rgba(248,113,113,0.2);color:#f87171}
+.tag-tactic{background:rgba(168,85,247,0.2);color:#a855f7}
+.tag-club{background:rgba(74,222,128,0.2);color:#4ade80}
+@media(max-width:768px){.info-grid{grid-template-columns:1fr}h1{font-size:1.4em}.section{padding:15px}table{font-size:0.8em}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>⚽ 欧冠资格赛次回合分析</h1>
+<p class="subtitle">2026-07-28 | 体彩第26097期 | 欧冠第二轮资格赛</p>
+
+<div class="toc">
+<h2>📋 目录</h2>
+<a href="#m1">第一场: 库奥皮奥 vs 萨巴赫 — 芬超主场龙能否逆转？</a>
+<a href="#m2">第二场: 哈茨 vs 格拉茨风暴 — 四球天堑下的荣誉之战</a>
+</div>
+
+<!-- ==================== 第一场 ==================== -->
+<div class="match-section" id="m1">
+<div class="match-header">
+<h2>🏆 库奥皮奥 (KuPS) vs 萨巴赫 (Sabah FK)</h2>
+<p class="vs">欧冠资格赛第二轮 次回合 | 芬兰库奥皮奥</p>
+<span class="first-leg">首回合: 萨巴赫 1-0 库奥皮奥 (Simic 45+1')</span>
+</div>
+<div class="section">
+
+<h3>📊 基本信息</h3>
+<div class="info-grid">
+<div class="info-card">
+<h4>比赛信息</h4>
+<p><strong>赛事:</strong> 欧冠资格赛第二轮次回合</p>
+<p><strong>时间:</strong> 2026-07-28 23:00 (北京时间)</p>
+<p><strong>晋级形势:</strong> 库奥皮奥需至少赢2球才能直接晋级；赢1球则加时；平局或负则淘汰</p>
+</div>
+<div class="info-card">
+<h4>🏟️ 场地</h4>
+<p><strong>体育场:</strong> Vare Areena (人工草皮)</p>
+<p><strong>城市:</strong> Kuopio, 芬兰</p>
+<p><strong>容量:</strong> ~5,000</p>
+</div>
+</div>
+
+<h3>🌤️ 天气</h3>
+<div class="info-card">
+<p><strong>温度:</strong> 12°C ~ 21°C</p>
+<p><strong>天气:</strong> 阴，可能有阵雨</p>
+<p><strong>风力:</strong> 西北风 &lt;3级</p>
+<p><strong>影响评估:</strong> 低温+小雨可能影响场地湿滑程度，对萨巴赫（阿塞拜疆）的适应略有利库奥皮奥。人造草皮在雨天排水性优于天然草，库奥皮奥对此场地极为熟悉。</p>
+</div>
+
+<h3>💰 赔率对比</h3>
+<table>
+<tr><th>公司</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>Bet365</td><td>3.20</td><td>3.50</td><td>2.10</td></tr>
+<tr><td>Dafabet</td><td>3.25</td><td>-</td><td>2.26</td></tr>
+<tr><td>Betano</td><td>3.15</td><td>3.30</td><td>2.15</td></tr>
+<tr class="score-top"><td><strong>均值</strong></td><td><strong>3.20</strong></td><td><strong>3.40</strong></td><td><strong>2.17</strong></td></tr>
+</table>
+<p style="font-size:0.85em;color:#8899aa;margin-top:8px">大小球: 大2.5 → 1.95 (Bet365) | 小2.5 → 1.91 (Betano)</p>
+<p style="font-size:0.85em;color:#8899aa">双方进球(BTTS): 1.80 (Bet365)</p>
+
+<h3>🧠 赔率校准对比</h3>
+<table>
+<tr><th>方法</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th><th>抽水率</th></tr>
+<tr><td>归一化去水</td><td>29.7%</td><td>28.0%</td><td>43.9%</td><td>5.7%</td></tr>
+<tr class="score-top"><td><strong>Shin 去水 ★</strong></td><td><strong class="blue">27.8%</strong></td><td><strong class="blue">28.5%</strong></td><td><strong class="blue">43.7%</strong></td><td><strong>z=0.02</strong></td></tr>
+</table>
+<p style="font-size:0.85em;color:#8899aa">Shin z=0.02: 内幕交易者比例极低，市场接近均衡。Shin校准后冷门（客胜）概率几乎不变，热门（主胜）概率微降，平局概率微升。</p>
+
+<h3>🏅 球队实力评级</h3>
+<table>
+<tr><th>指标</th><th>库奥皮奥 (KuPS)</th><th>萨巴赫 (Sabah FK)</th><th>对比</th></tr>
+<tr><td>球队总身价</td><td>~€630万</td><td>~€1,755万</td><td class="red">萨巴赫 ×2.8</td></tr>
+<tr><td>联赛排名</td><td>芬超第1 (15场30分)</td><td>阿塞超第1 (31场75分)</td><td class="blue">同为联赛冠军</td></tr>
+<tr><td>联赛战绩</td><td>8胜6平1负</td><td>23胜6平2负</td><td class="red">萨巴赫统治力更强</td></tr>
+<tr><td>联赛进球/失球</td><td>27/15 (净+12)</td><td>70/20 (净+50)</td><td class="red">萨巴赫攻击力碾压</td></tr>
+<tr><td>主场胜率</td><td class="green">73%</td><td>客场73%</td><td class="blue">主场双方均强势</td></tr>
+<tr><td>近期5场</td><td>W W D W L</td><td>W W W L D</td><td class="blue">状态相当</td></tr>
+<tr><td>场均xG</td><td>1.81</td><td>~1.65 (估算)</td><td class="green">KuPS略高</td></tr>
+<tr><td>场均xGA</td><td>1.14</td><td>~0.90 (估算)</td><td class="green">萨巴赫防守更好</td></tr>
+<tr><td>Elo估算</td><td>~1280</td><td>~1350</td><td class="red">萨巴赫+70</td></tr>
+<tr><td><strong>实力评分</strong></td><td><strong>52/100</strong></td><td><strong>62/100</strong></td><td class="red">萨巴赫领先10分</td></tr>
+</table>
+
+<h3>📐 xG 校准分析</h3>
+<div class="info-card">
+<p><strong>库奥皮奥 xG近10场:</strong> 场均xG 1.81，实际进球均值 1.75，偏离 <span class="red">-3.3%</span>（轻微低效，接近合理范围）</p>
+<p><strong>萨巴赫 xG估算:</strong> 场均进球2.27，xG~1.65，偏离 <span class="red">+37.6%</span>（进球效率极高，可能不可持续，但样本为阿塞超水平）</p>
+<p><strong>lambda校准前:</strong> 主队 λ_home = 1.55 / 客队 λ_away = 1.40</p>
+<p><strong>首回合修正:</strong> 库奥皮奥0-1落后需全力进攻→λ_home上调至1.70，萨巴赫可守反击→λ_away维持1.40</p>
+<p><strong>xG校准后:</strong> 主队 λ_home = 1.75 / 客队 λ_away = 1.45</p>
+<p><strong>校准结论:</strong> 库奥皮奥进攻xG略高于实际进球，说明运气一般但创造机会能力不差。萨巴赫进球效率远超xG，可能因阿塞超防守强度低于欧冠水平，此效率在欧冠可能回落。</p>
+</div>
+
+<h3>🔬 联赛诊断</h3>
+<div class="info-card">
+<p><strong>VMR检测:</strong> 芬超VMR~1.15，阿塞超VMR~1.08 → 均为轻度过离散，DC模型适用</p>
+<p><strong>零膨胀检测:</strong> 芬超0-0率~7%，阿塞超0-0率~5% → 无需ZIP/ZINB</p>
+<p><strong>推荐分布族:</strong> Dixon-Coles修正泊松（主力） + 负二项（对比） + Skellam进球差</p>
+<p><strong>欧冠资格赛特殊因素:</strong> 跨联赛小联赛对决，数据样本有限，贝叶斯收缩效应强。首回合结果对次回合心理权重极大。</p>
+</div>
+
+<h3>📐 模型预测对比</h3>
+<table>
+<tr><th>模型</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th></tr>
+<tr><td>DC模型（主力）</td><td>32.1%</td><td>25.8%</td><td>42.1%</td></tr>
+<tr><td>负二项分布</td><td>30.5%</td><td>27.2%</td><td>42.3%</td></tr>
+<tr><td>Skellam 进球差</td><td>31.8%</td><td>26.5%</td><td>41.7%</td></tr>
+<tr><td>蒙特卡洛 (10000场)</td><td>33.2%</td><td>25.3%</td><td>41.5%</td></tr>
+<tr class="score-top"><td><strong>加权融合 ★</strong></td><td><strong class="gold">32.2%</strong></td><td><strong class="blue">26.0%</strong></td><td><strong class="gold">41.8%</strong></td></tr>
+</table>
+
+<h3>📈 置信度与命中概率</h3>
+<div class="prob-bar"><span>主胜</span><div class="bar"><div class="fill fill-home" style="width:32.2%"></div></div><span class="pct">32.2%</span></div>
+<div class="prob-bar"><span>平局</span><div class="bar"><div class="fill fill-draw" style="width:26.0%"></div></div><span class="pct">26.0%</span></div>
+<div class="prob-bar"><span>客胜</span><div class="bar"><div class="fill fill-away" style="width:41.8%"></div></div><span class="pct">41.8%</span></div>
+
+<table style="margin-top:10px">
+<tr><th>结果</th><th>加权概率</th><th>Shin真实概率</th><th>概率差</th><th>置信度</th></tr>
+<tr><td>主胜</td><td>32.2%</td><td>27.8%</td><td class="green">+4.4%</td><td><span class="badge badge-low">低 ★</span></td></tr>
+<tr><td>平局</td><td>26.0%</td><td>28.5%</td><td class="red">-2.5%</td><td><span class="badge badge-low">低 ★</span></td></tr>
+<tr><td>客胜</td><td>41.8%</td><td>43.7%</td><td class="red">-1.9%</td><td><span class="badge badge-mid">中 ★★</span></td></tr>
+</table>
+<p><strong>置信度综合评级:</strong> <span class="badge badge-low">低 ★</span></p>
+<p style="font-size:0.85em;color:#8899aa">依据: 模型一致度中等(标准差: σ=0.7%, 一致) + 赔率对齐度高(差&lt;5%) + 数据质量中等(跨联赛小样本) + 外部验证分歧(中文平台多看好萨巴赫) → 综合得分1</p>
+
+<h3>⚽ 比分推荐 TOP 10</h3>
+<table>
+<tr><th>排名</th><th>比分</th><th>DC概率</th><th>MC频率</th><th>综合概率</th><th>方向</th></tr>
+<tr class="score-top"><td>1</td><td><strong>1:1</strong></td><td>8.2%</td><td>8.5%</td><td class="gold"><strong>8.3%</strong></td><td>平局</td></tr>
+<tr><td>2</td><td>0:1</td><td>7.5%</td><td>7.8%</td><td>7.6%</td><td class="red">客胜</td></tr>
+<tr><td>3</td><td>1:2</td><td>7.1%</td><td>6.9%</td><td>7.0%</td><td class="red">客胜</td></tr>
+<tr><td>4</td><td>2:1</td><td>5.8%</td><td>6.2%</td><td>6.0%</td><td class="green">主胜</td></tr>
+<tr><td>5</td><td>1:0</td><td>5.2%</td><td>5.8%</td><td>5.5%</td><td class="green">主胜</td></tr>
+<tr><td>6</td><td>0:0</td><td>5.4%</td><td>5.1%</td><td>5.2%</td><td>平局</td></tr>
+<tr><td>7</td><td>2:2</td><td>4.8%</td><td>4.5%</td><td>4.7%</td><td>平局</td></tr>
+<tr><td>8</td><td>0:2</td><td>4.2%</td><td>4.0%</td><td>4.1%</td><td class="red">客胜</td></tr>
+<tr><td>9</td><td>2:0</td><td>3.2%</td><td>3.5%</td><td>3.3%</td><td class="green">主胜</td></tr>
+<tr><td>10</td><td>1:3</td><td>3.0%</td><td>2.8%</td><td>2.9%</td><td class="red">客胜</td></tr>
+</table>
+
+<h3>🔢 总进球数预测</h3>
+<table>
+<tr><th>进球数</th><th>泊松</th><th>MC</th><th>推荐概率</th></tr>
+<tr><td>0球</td><td>6.8%</td><td>6.2%</td><td>6.5%</td></tr>
+<tr><td>1球</td><td>17.5%</td><td>18.1%</td><td>17.8%</td></tr>
+<tr><td>2球</td><td>23.1%</td><td>22.8%</td><td>23.0%</td></tr>
+<tr><td>3球</td><td>21.0%</td><td>21.5%</td><td>21.2%</td></tr>
+<tr><td>4+球</td><td>31.6%</td><td>31.4%</td><td>31.5%</td></tr>
+</table>
+<p><strong>大小球2.5:</strong> 大球 <span class="gold">52.7%</span> / 小球 47.3%</p>
+
+<h3>🏟️ 半全场 TOP 3</h3>
+<table>
+<tr><th>排名</th><th>半全场</th><th>概率</th></tr>
+<tr><td>1</td><td>平/平</td><td>8.5%</td></tr>
+<tr><td>2</td><td>平/负</td><td>7.8%</td></tr>
+<tr><td>3</td><td>平/胜</td><td>7.2%</td></tr>
+</table>
+
+<h3>🏥 伤停影响</h3>
+<table>
+<tr><th>球队</th><th>球员</th><th>位置</th><th>伤停类型</th><th>重要性</th><th>λ修正</th><th>来源</th></tr>
+<tr><td>库奥皮奥</td><td>Samuel Pasanen</td><td>中场</td><td>长期伤病</td><td>主力</td><td>-0.03</td><td>SportsMole</td></tr>
+<tr><td>库奥皮奥</td><td>Jerry Voutilainen</td><td>中场</td><td>长期伤病</td><td>替补</td><td>-0.01</td><td>SportsMole</td></tr>
+<tr><td>库奥皮奥</td><td>Calvin Kabuye</td><td>前锋</td><td>出战成疑</td><td>轮换</td><td>-0.01</td><td>Chopsoc</td></tr>
+<tr class="score-top"><td><strong>合计</strong></td><td colspan="5"><strong>库奥皮奥λ修正: λ_home 1.75→1.70 (下修2.9%)</strong></td><td></td></tr>
+</table>
+<p style="font-size:0.85em;color:#8899aa">萨巴赫暂无已知伤停报告（信息可能不完整，赛前需核实首发）</p>
+
+<h3>📰 球队近期新闻</h3>
+<ul class="news-list">
+<li><span class="tag tag-club">俱乐部</span>库奥皮奥为芬超领头羊，联赛15场不败(8胜6平1负)，但首回合0-1落后后欧战前景严峻</li>
+<li><span class="tag tag-tactic">战术</span>首回合库奥皮奥射门仅5次（萨巴赫18次），场面完全被动，主教练Nuutinen次回合必须调整进攻策略</li>
+<li><span class="tag tag-tactic">战术</span>库奥皮奥预计轮换回归，上轮联赛对VPS大规模轮换保存主力，预计Moreno继续领衔锋线</li>
+<li><span class="tag tag-club">俱乐部</span>萨巴赫作为阿塞拜疆超冠军，上赛季统治力极强(23胜6平2负)，欧冠资格赛已双杀TNS(总比分4-1)</li>
+<li><span class="tag tag-transfer">转会</span>萨巴赫夏窗送走波兰后卫Puchacz(转投荷尔斯泰因)，引进后卫Solvet和门将Samiqullin</li>
+<li><span class="tag tag-tactic">战术</span>萨巴赫首回合仅用1球优势，次回合不会完全龟缩，反击+控球结合策略</li>
+</ul>
+
+<h3>💬 网友意见精华（已过滤小编内容）</h3>
+<div class="info-card">
+<p><strong>主流倾向:</strong> 大多数中文分析平台看好萨巴赫不败晋级</p>
+<p><strong>网易分析:</strong> "库奥皮奥中前场三大主力缺失，主队想要翻盘难度极大。比分更倾向于1:1或0:1，小球概率偏大。"</p>
+<p><strong>搜狐分析:</strong> "全队身价仅630万欧元与萨巴赫1755万欧元存在档次差距，首回合18-5的射门比反映了双方真实实力差距。"</p>
+<p><strong>另一观点:</strong> "人造草皮主场成库奥皮奥最大杀器，双选平+胜值得关注。"</p>
+<p><strong>情绪倾向:</strong> 主胜 25% / 平局 35% / 客胜 40%</p>
+<p style="font-size:0.8em;color:#8899aa">来源评级: C（中文分析平台，仅供参考）</p>
+</div>
+
+<div class="rec-box">
+<h4>🎯 综合推荐</h4>
+<div class="rec-item"><span class="label">胜平负:</span> <strong class="red">客胜 (萨巴赫不败)</strong> — 41.8% | 置信度: 低★</div>
+<div class="rec-item"><span class="label">首选方向:</span> 萨巴赫客胜或平局（客不败概率67.8%）</div>
+<div class="rec-item"><span class="label">半全场:</span> 平/负 — 概率7.8%</div>
+<div class="rec-item"><span class="label">总进球:</span> 大球2.5 — 52.7%</div>
+<div class="rec-item"><span class="label">比分首选:</span> 1:1 (8.3%)</div>
+<div class="rec-item"><span class="label">比分次选:</span> 0:1 (7.6%)</div>
+<div class="rec-item"><span class="label">比分备选:</span> 1:2 (7.0%)</div>
+<div class="rec-item"><span class="label">搏冷:</span> 库奥皮奥2:1 (6.0%) — 若KuPS开场上手快，有逆转可能</div>
+</div>
+
+<div class="risk-box">
+<strong>⚠️ 风险提示:</strong>
+<br>• 库奥皮奥主场73%胜率不容小觑，人造草皮是天然主场优势
+<br>• 首回合仅0-1，库奥皮奥只需1球即可扳平总比分，战意极强
+<br>• 萨巴赫客场数据基于阿塞超水平，欧冠客场能力未知
+<br>• 中文平台分析存在同质化倾向（多看好萨巴赫），需警惕集体偏误
+<br>• 跨联赛小联赛对决数据有限，模型不确定性高
+</div>
+</div>
+</div>
+
+<!-- ==================== 第二场 ==================== -->
+<div class="match-section" id="m2">
+<div class="match-header">
+<h2>🏆 哈茨 (Hearts) vs 格拉茨风暴 (Sturm Graz)</h2>
+<p class="vs">欧冠资格赛第二轮 次回合 | 苏格兰爱丁堡</p>
+<span class="first-leg">首回合: 格拉茨风暴 4-0 哈茨 (Gorenc Stankovic + 半场后三连击)</span>
+</div>
+<div class="section">
+
+<h3>📊 基本信息</h3>
+<div class="info-grid">
+<div class="info-card">
+<h4>比赛信息</h4>
+<p><strong>赛事:</strong> 欧冠资格赛第二轮次回合</p>
+<p><strong>时间:</strong> 2026-07-29 02:45 (北京时间)</p>
+<p><strong>晋级形势:</strong> 哈茨需净胜5球直接晋级（赢4-0仅加时），基本不可能。格拉茨风暴几乎锁定晋级。</p>
+</div>
+<div class="info-card">
+<h4>🏟️ 场地</h4>
+<p><strong>体育场:</strong> Tynecastle Park (天然草皮)</p>
+<p><strong>城市:</strong> Edinburgh, 苏格兰</p>
+<p><strong>容量:</strong> 20,700</p>
+</div>
+</div>
+
+<h3>🌤️ 天气</h3>
+<div class="info-card">
+<p><strong>温度:</strong> 16°C ~ 22°C</p>
+<p><strong>天气:</strong> 多云转晴</p>
+<p><strong>风力:</strong> 无大风</p>
+<p><strong>影响评估:</strong> 天气条件良好，不影响比赛。适宜的气温有利于双方正常发挥技战术水平。</p>
+</div>
+
+<h3>💰 赔率对比</h3>
+<table>
+<tr><th>公司</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>William Hill</td><td>1.80 (4/5)</td><td>2.50 (5/2)</td><td>2.80 (14/5)</td></tr>
+<tr><td>Bet365</td><td>1.85</td><td>4.00</td><td>3.90</td></tr>
+<tr><td>Betano</td><td>1.85</td><td>3.80</td><td>3.80</td></tr>
+<tr class="score-top"><td><strong>均值</strong></td><td><strong>1.83</strong></td><td><strong>3.43</strong></td><td><strong>3.50</strong></td></tr>
+</table>
+<p style="font-size:0.85em;color:#8899aa;margin-top:8px">让球盘: 哈茨 -0.5 (水1.78)</p>
+<p style="font-size:0.85em;color:#8899aa">大小球: 3.0球</p>
+<p style="font-size:0.85em;color:#f87171">⚠️ 威廉希尔与Bet365平局/客胜赔率差异巨大（2.50 vs 4.00），说明市场对"90分钟赛果"分歧极大——威廉希尔将晋级赔率计入定价</p>
+
+<h3>🧠 赔率校准对比</h3>
+<table>
+<tr><th>方法</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th><th>抽水率</th></tr>
+<tr><td>归一化去水</td><td>52.1%</td><td>27.8%</td><td>27.2%</td><td>7.1%</td></tr>
+<tr class="score-top"><td><strong>Shin 去水 ★</strong></td><td><strong class="blue">50.8%</strong></td><td><strong class="blue">28.2%</strong></td><td><strong class="blue">26.0%</strong></td><td><strong>z=0.03</strong></td></tr>
+<tr><td>William Hill Shin</td><td>45.2%</td><td>32.5%</td><td>29.0%</td><td>z=0.05</td></tr>
+</table>
+<p style="font-size:0.85em;color:#8899aa">注意: William Hill的赔率结构将"晋级概率"计入，其平局/客胜概率显著高于Bet365，反映的是"哈茨晋级概率极低"而非"90分钟赛果概率"。本分析以Bet365赔率为准（纯90分钟赛果）。</p>
+
+<h3>🏅 球队实力评级</h3>
+<table>
+<tr><th>指标</th><th>哈茨 (Hearts)</th><th>格拉茨风暴 (Sturm)</th><th>对比</th></tr>
+<tr><td>球队总身价</td><td>~€3,000万</td><td>~€4,280万</td><td class="red">Sturm ×1.4</td></tr>
+<tr><td>联赛排名</td><td>苏超第3 (67分)</td><td>奥甲第2 (56分)</td><td class="blue">同为联赛前3</td></tr>
+<tr><td>上赛季战绩</td><td>20胜7平5负</td><td>16胜8平8负</td><td class="green">哈茨联赛战绩更佳</td></tr>
+<tr><td>联赛进球/失球</td><td>67/39 (净+28)</td><td>51/35 (净+16)</td><td class="green">哈茨攻击力更强</td></tr>
+<tr><td>近期10场(含资格赛)</td><td>5胜2平3负</td><td>7胜2平1负</td><td class="red">Sturm状态更佳</td></tr>
+<tr><td>欧战近10客场</td><td>失球场均1.1</td><td>欧战客场失球0.9</td><td class="blue">Sturm客场防守好</td></tr>
+<tr><td>核心球员</td><td>Claudio Braga(€7.5M)</td><td>Kiteishvili(15球)</td><td class="blue">Sturm核心更稳定</td></tr>
+<tr><td>Elo估算</td><td>~1350</td><td>~1420</td><td class="red">Sturm +70</td></tr>
+<tr><td><strong>实力评分</strong></td><td><strong>58/100</strong></td><td><strong>65/100</strong></td><td class="red">Sturm领先7分</td></tr>
+</table>
+
+<h3>📐 xG 校准分析</h3>
+<div class="info-card">
+<p><strong>哈茨:</strong> 苏超xG数据有限，联赛场均进球约1.68，失球约0.98。首回合0-4惨败中虽有67%控球，但xG极低（射正6次进0球），进攻效率极差。</p>
+<p><strong>格拉茨风暴:</strong> 奥甲场均进球1.59，失球1.09。首回合6次射正4球，xG转化率极高，锋线效率恐怖。</p>
+<p><strong>lambda基准:</strong> 哈茨主场 λ_home = 1.65 / Sturm客场 λ_away = 1.35</p>
+<p><strong>次回合修正:</strong></p>
+<p>- 哈茨: 主场荣誉战+全场必须强攻 → λ_home上调至1.80</p>
+<p>- Sturm: 4球优势必轮换+保守 → λ_away下修至1.15</p>
+<p>- 但Sturm反击效率极高(首回合证明) → 反击lambda补偿+0.10</p>
+<p><strong>lambda校准后:</strong> 哈茨 λ_home = 1.80 / Sturm λ_away = 1.25</p>
+<p><strong>校准结论:</strong> 哈茨主场强攻会创造更多射门机会，但进攻效率存疑。Sturm轮换后整体攻击力下降，但反击威胁仍在。关键变量是Sturm轮换幅度。</p>
+</div>
+
+<h3>🔬 联赛诊断</h3>
+<div class="info-card">
+<p><strong>VMR检测:</strong> 苏超VMR~1.12，奥甲VMR~1.10 → 均为轻度过离散，DC模型适用</p>
+<p><strong>零膨胀检测:</strong> 均无显著零膨胀，标准DC泊松即可</p>
+<p><strong>推荐分布族:</strong> Dixon-Coles修正泊松（主力）+ 负二项（对比）+ Skellam</p>
+<p><strong>次回合特殊因素:</strong> 4-0巨大分差使次回合性质完全不同于常规比赛——哈茨为荣誉而战全力进攻，Sturm几乎确定轮换且无晋级压力。</p>
+</div>
+
+<h3>📐 模型预测对比</h3>
+<table>
+<tr><th>模型</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th></tr>
+<tr><td>DC模型（主力）</td><td>51.2%</td><td>24.5%</td><td>24.3%</td></tr>
+<tr><td>负二项分布</td><td>49.8%</td><td>25.8%</td><td>24.4%</td></tr>
+<tr><td>Skellam 进球差</td><td>50.5%</td><td>24.2%</td><td>25.3%</td></tr>
+<tr><td>蒙特卡洛 (10000场)</td><td>51.8%</td><td>23.8%</td><td>24.4%</td></tr>
+<tr><td>DC+轮换修正</td><td>52.5%</td><td>25.0%</td><td>22.5%</td></tr>
+<tr class="score-top"><td><strong>加权融合 ★</strong></td><td><strong class="gold">51.5%</strong></td><td><strong class="blue">24.6%</strong></td><td><strong>23.9%</strong></td></tr>
+</table>
+
+<h3>📈 置信度与命中概率</h3>
+<div class="prob-bar"><span>主胜</span><div class="bar"><div class="fill fill-home" style="width:51.5%"></div></div><span class="pct">51.5%</span></div>
+<div class="prob-bar"><span>平局</span><div class="bar"><div class="fill fill-draw" style="width:24.6%"></div></div><span class="pct">24.6%</span></div>
+<div class="prob-bar"><span>客胜</span><div class="bar"><div class="fill fill-away" style="width:23.9%"></div></div><span class="pct">23.9%</span></div>
+
+<table style="margin-top:10px">
+<tr><th>结果</th><th>加权概率</th><th>Shin真实概率</th><th>概率差</th><th>置信度</th></tr>
+<tr><td>主胜</td><td>51.5%</td><td>50.8%</td><td class="green">+0.7%</td><td><span class="badge badge-mid">中 ★★</span></td></tr>
+<tr><td>平局</td><td>24.6%</td><td>28.2%</td><td class="red">-3.6%</td><td><span class="badge badge-low">低 ★</span></td></tr>
+<tr><td>客胜</td><td>23.9%</td><td>26.0%</td><td class="red">-2.1%</td><td><span class="badge badge-low">低 ★</span></td></tr>
+</table>
+<p><strong>置信度综合评级:</strong> <span class="badge badge-mid">中 ★★</span></p>
+<p style="font-size:0.85em;color:#8899aa">依据: 模型一致度高(标准差: σ=0.8%, 一致) + 赔率对齐度中等(差<4%) + 数据质量中等(首回合极端比分导致次回合特殊性) + 外部验证分歧大 → 综合得分1</p>
+
+<p style="font-size:0.88em;color:#ffd700;margin-top:10px"><strong>⚠️ 关键风险标注:</strong> 哈茨主胜概率虽为最高方向(51.5%)，但这是"90分钟赛果"概率——哈茨赢球但总比分仍出局(需赢5球以上)。模型方向"哈茨主胜"含金量极低，不可等同于"哈茨晋级"。此场比赛的体彩投注需区分"90分钟胜平负"和"晋级结果"。</p>
+
+<h3>⚽ 比分推荐 TOP 10</h3>
+<table>
+<tr><th>排名</th><th>比分</th><th>DC概率</th><th>MC频率</th><th>综合概率</th><th>方向</th></tr>
+<tr class="score-top"><td>1</td><td><strong>1:0</strong></td><td>7.8%</td><td>8.2%</td><td class="gold"><strong>8.0%</strong></td><td class="green">主胜</td></tr>
+<tr><td>2</td><td>2:1</td><td>7.2%</td><td>7.5%</td><td>7.3%</td><td class="green">主胜</td></tr>
+<tr><td>3</td><td>1:1</td><td>6.5%</td><td>6.8%</td><td>6.7%</td><td>平局</td></tr>
+<tr><td>4</td><td>2:0</td><td>6.2%</td><td>5.9%</td><td>6.0%</td><td class="green">主胜</td></tr>
+<tr><td>5</td><td>3:1</td><td>5.5%</td><td>5.2%</td><td>5.3%</td><td class="green">主胜</td></tr>
+<tr><td>6</td><td>0:0</td><td>4.5%</td><td>4.2%</td><td>4.4%</td><td>平局</td></tr>
+<tr><td>7</td><td>3:0</td><td>4.0%</td><td>3.8%</td><td>3.9%</td><td class="green">主胜</td></tr>
+<tr><td>8</td><td>1:2</td><td>3.5%</td><td>3.2%</td><td>3.3%</td><td class="red">客胜</td></tr>
+<tr><td>9</td><td>2:2</td><td>3.2%</td><td>3.0%</td><td>3.1%</td><td>平局</td></tr>
+<tr><td>10</td><td>0:1</td><td>3.8%</td><td>3.5%</td><td>3.6%</td><td class="red">客胜</td></tr>
+</table>
+<p style="font-size:0.85em;color:#8899aa">注: TOP5中4个为主胜方向，反映哈茨主场优势+荣誉战意。但即使哈茨赢球，总比分仍几乎不可能翻盘。</p>
+
+<h3>🔢 总进球数预测</h3>
+<table>
+<tr><th>进球数</th><th>泊松</th><th>MC</th><th>推荐概率</th></tr>
+<tr><td>0球</td><td>5.5%</td><td>5.2%</td><td>5.4%</td></tr>
+<tr><td>1球</td><td>15.2%</td><td>14.8%</td><td>15.0%</td></tr>
+<tr><td>2球</td><td>22.8%</td><td>23.5%</td><td>23.1%</td></tr>
+<tr><td>3球</td><td>24.5%</td><td>25.0%</td><td>24.8%</td></tr>
+<tr><td>4+球</td><td>32.0%</td><td>31.5%</td><td>31.7%</td></tr>
+</table>
+<p><strong>大小球3.0:</strong> 大球 <span class="gold">56.5%</span> / 小球 43.5%</p>
+
+<h3>🏟️ 半全场 TOP 3</h3>
+<table>
+<tr><th>排名</th><th>半全场</th><th>概率</th></tr>
+<tr><td>1</td><td>胜/胜</td><td>18.5%</td></tr>
+<tr><td>2</td><td>平/胜</td><td>10.2%</td></tr>
+<tr><td>3</td><td>胜/平</td><td>9.5%</td></tr>
+</table>
+
+<h3>🏥 伤停影响</h3>
+<table>
+<tr><th>球队</th><th>球员</th><th>位置</th><th>伤停类型</th><th>重要性</th><th>λ修正</th><th>来源</th></tr>
+<tr><td>哈茨</td><td>Craig Halkett</td><td>中卫</td><td>长期伤缺</td><td class="red">核心</td><td>-0.08</td><td>BritBrief/LotteryTom</td></tr>
+<tr><td>哈茨</td><td>Findlay</td><td>后卫</td><td>踝伤恢复中</td><td>主力</td><td>-0.04</td><td>BritBrief</td></tr>
+<tr><td>哈茨</td><td>Ageu</td><td>前锋</td><td>大腿伤</td><td>轮换</td><td>-0.02</td><td>StaceyWest</td></tr>
+<tr><td>哈茨</td><td>Kabore/Braga/Magnusson</td><td>多位置</td><td>刚恢复训练</td><td>主力/轮换</td><td>信息不确定</td><td>BritBrief</td></tr>
+<tr><td colspan="7" style="padding-top:10px"><strong>哈茨夏窗离队:</strong> Lawrence Shankland(→布鲁日), Lewis Devlin(离队) — 两位核心离队对整体实力影响显著</td></tr>
+</table>
+<table style="margin-top:10px">
+<tr><th>球队</th><th>球员</th><th>位置</th><th>伤停类型</th><th>重要性</th><th>λ修正</th><th>来源</th></tr>
+<tr><td>Sturm</td><td>Amady Camara</td><td>前锋</td><td>肌肉伤缺数周</td><td>主力</td><td>-0.05</td><td>Sturm官网</td></tr>
+<tr><td>Sturm</td><td>Filip Rózga</td><td>前腰/前锋</td><td>大腿伤缺数周</td><td>轮换</td><td>-0.03</td><td>Sturm官网</td></tr>
+<tr class="score-top"><td><strong>合计</strong></td><td colspan="5"><strong>Sturm λ修正: λ_away 1.25→1.17 (下修6.4%, 含轮换因素)</strong></td><td></td></tr>
+</table>
+<p style="font-size:0.85em;color:#ffd700">⚠️ Sturm手握4球优势，预计大面积轮换。即使无伤停的球员也可能被轮换。实际λ可能进一步低于模型估值。</p>
+
+<h3>📰 球队近期新闻</h3>
+<ul class="news-list">
+<li><span class="tag tag-tactic">战术</span>新帅Wouter Vrancken首秀即0-4惨败，赛后承认"两个定位球杀死比赛"，压力极大</li>
+<li><span class="tag tag-transfer">转会</span>哈茨夏窗核心流失严重: 射手王Shankland转会布鲁日，主力Devlin离队，阵容需重建</li>
+<li><span class="tag tag-tactic">战术</span>Vrancken确认Braga和Kabore已恢复训练，但未必首发。新帅仍磨合阵容阶段</li>
+<li><span class="tag tag-injury">伤停</span>中卫Halkett长期伤缺是防线最大软肋，首回合被定位球反复打穿暴露问题</li>
+<li><span class="tag tag-club">俱乐部</span>Sturm Graz奥甲亚军，赛季末状态出色(近10场7胜2平1负进32球)</li>
+<li><span class="tag tag-tactic">战术</span>Sturm进攻核心Kiteishvili被称为"球队灵魂"(15球)，首回合后教练希望他次回合可用</li>
+<li><span class="tag tag-tactic">战术</span>Sturm预计轮换: Kayombo+Jatta可能领衔锋线，Hodl+Soglo担任翼卫</li>
+</ul>
+
+<h3>💬 网友意见精华（已过滤小编内容）</h3>
+<div class="info-card">
+<p><strong>主流倾向:</strong> 几乎所有分析一致认为哈茨翻盘不可能，讨论焦点在哈茨能否赢回面子</p>
+<p><strong>网易分析:</strong> "四球落后且没有客场进球，哈茨至少要净胜五球才能直接翻盘——这在欧冠历史上几乎不可能。最可能比分1:1或2:1，哈茨赢球但总比分出局。"</p>
+<p><strong>搜狐分析:</strong> "格拉茨风暴近10场7胜2平1负进32球丢13球，前场状态火热。手握四球优势，心理上非常从容。"</p>
+<p><strong>另一观点:</strong> "哈茨主场角球数量一直很多，定位球有进球潜力，但后场防守容错太低。双方都有稳定得分渠道，很难零封。比分2:3。"</p>
+<p><strong>情绪倾向:</strong> 主胜(赢球但出局) 65% / 平局 20% / 客胜 15%</p>
+<p style="font-size:0.8em;color:#8899aa">来源评级: C（中文分析平台，仅供参考）</p>
+</div>
+
+<div class="rec-box">
+<h4>🎯 综合推荐</h4>
+<div class="rec-item"><span class="label">胜平负:</span> <strong class="green">哈茨主胜</strong> — 51.5% | 置信度: 中★★</div>
+<div class="rec-item"><span class="label">首选方向:</span> 哈茨主场为荣誉而战，赢球概率最高但晋级无望</div>
+<div class="rec-item"><span class="label">⚠️ 重要:</span> 哈茨主胜≠哈茨晋级！即使哈茨赢5-0也需加时，赢4-0仅加时，实际翻盘概率<1%</div>
+<div class="rec-item"><span class="label">半全场:</span> 胜/胜 — 概率18.5%</div>
+<div class="rec-item"><span class="label">总进球:</span> 大球3.0 — 56.5%（哈茨强攻+Sturm反击=进球偏多）</div>
+<div class="rec-item"><span class="label">比分首选:</span> 1:0 (8.0%)</div>
+<div class="rec-item"><span class="label">比分次选:</span> 2:1 (7.3%)</div>
+<div class="rec-item"><span class="label">比分备选:</span> 1:1 (6.7%)</div>
+<div class="rec-item"><span class="label">搏冷:</span> Sturm客场再胜 0:1 (3.6%) — 若Sturm不轮换全力争客场进球</div>
+</div>
+
+<h3>⚖️ 投注策略分析</h3>
+<div class="info-card">
+<p><strong>90分钟胜平负角度:</strong> 哈茨主胜概率最高(51.5%)，因主场优势+荣誉战意+Sturm大概率轮换。但Sturm轮换幅度不确定——若大面积轮换，哈茨主胜概率可升至55%+。</p>
+<p><strong>晋级角度:</strong> Sturm晋级概率>99%，哈茨翻盘概率<1%。</p>
+<p><strong>让球角度:</strong> 哈茨-0.5球，赔率1.78。哈茨赢1球概率约28-30%，赢2+球约22-23%，让0.5球覆盖概率约51-53%。与主胜概率基本一致。</p>
+<p><strong>大小球角度:</strong> 大3.0球赔率约1.90-2.00。双方都有进球动力（哈茨为荣誉进攻，Sturm反击不客气），总进球3+概率56.5%。</p>
+<p style="color:#ffd700"><strong>⚠️ 特别提醒:</strong> 体彩投注的是90分钟赛果，不是晋级结果。哈茨90分钟赢球概率高于Sturm，但哈茨不可能晋级。投注"哈茨主胜"等于投注"哈茨赢球但出局"，含金量有限。</p>
+</div>
+
+<div class="risk-box">
+<strong>⚠️ 风险提示:</strong>
+<br>• 哈茨主胜概率高但实际意义有限（无法改变出局命运）
+<br>• Sturm轮换幅度未知，若不轮换或少轮换，客队仍有较强战力
+<br>• 新帅Vrancken首秀惨败，士气严重受损，可能影响球员心态
+<br>• 哈茨防线残缺（Halkett长期缺阵，新援未融入），定位球防守是致命弱点
+<br>• 格拉茨风暴近10场欧战客场5场零封，防守反击效率极高
+<br>• 90分钟赛果与晋级结果完全不同，投注时需明确投注标的
+<br>• 足球比赛存在极大不确定性，任何模型预测均非100%准确
+<br>• 理性看待预测，切勿沉迷赌博
+</div>
+</div>
+</div>
+
+<div style="text-align:center;color:#556677;font-size:0.75em;margin-top:30px;padding:20px;border-top:1px solid #1e3a5f">
+<p>模型版本: v1.4.0 | DC+N B+Skellam+MC(10000) | 赔率校准: Shin(z=0.02/0.03) | 生成时间: 2026-07-28</p>
+<p>数据来源: Bet365/Dafabet/Betano/SportsMole/Goal.com/FotMob/FootyStats | 中文平台仅供参考</p>
+<p>本报告仅供分析参考，不构成任何投注建议。请理性购彩，量力而行。</p>
+</div>
+
+</div>
+</body>
+</html>

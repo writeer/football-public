@@ -1,0 +1,256 @@
+{
+  "date": "2026-08-28",
+  "day": "thursday",
+  "backtest_id": "BT-20260828-THU",
+  "model_version": "2.6.2",
+  "total_matches": 9,
+  "completed_matches": 9,
+  "pending_matches": [],
+  "source_files": {
+    "prediction_json": "reports/data/260827_thursday_predictions.json",
+    "analysis_report": "reports/analysis/20260828_thursday_analysis_zhihu.md",
+    "backtest_report": "reports/backtest/backtest_20260828_thursday_zhihu.md"
+  },
+  "actual_results_summary": "9场全完赛。方向(含次选)8/9(88.9%)创近期新高，半全场7/9(77.8%)优秀，比分TOP5 5/9(55.6%)一般，但总进球仅3/9(33.3%)暴露大球系统性低估。9场赛事：欧联附加赛次回合6场(001-006)、西甲首轮2场(007-008)、巴西杯1/4决赛首回合1场(009)。最大亮点：方向8/9且碾压方向(003/004/005/006/008)全中，规则65+规则63+单关逻辑全面验证。最大翻车：总进球大球低估——001比尔森4-1(90分钟5球)/002奥莫尼亚4-2(6球)等欧联次回合落后方主场大比分全部落空；007塞尔塔马科斯·阿隆索红牌致1-2被逆转。",
+  "hit_rates": {
+    "direction_first_and_second": { "hits": 8, "total": 9, "rate": 0.889, "rating": "优秀" },
+    "direction_first_only": { "hits": 6, "total": 9, "rate": 0.667, "rating": "良好" },
+    "ttg_top2": { "hits": 3, "total": 9, "rate": 0.333, "rating": "较差" },
+    "htft_top3": { "hits": 7, "total": 9, "rate": 0.778, "rating": "优秀" },
+    "crs_top5": { "hits": 5, "total": 9, "rate": 0.556, "rating": "一般" }
+  },
+  "direction_detail": {
+    "first_hits": ["001", "003", "004", "005", "006", "008"],
+    "second_hits": ["002", "009"],
+    "missed": ["007"]
+  },
+  "matches": [
+    {
+      "id": "001",
+      "league": "欧联附加赛次回合",
+      "home": "比尔森",
+      "away": "贝尔格莱德红星",
+      "actual_score": "4:1(90分钟，加时5-1)",
+      "actual_ht_score": "1:1",
+      "actual_direction": "主胜",
+      "actual_ttg": 5,
+      "actual_htft": "平胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.42 },
+        "had_second": { "direction": "平", "prob": 0.32 },
+        "ttg_top2": [2, 1],
+        "htft_top3": ["平胜", "平平", "胜胜"],
+        "crs_top5": ["1-0", "1-1", "0-0", "0-1", "2-0"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": false },
+      "notes": "核心教训场。落后3球的比尔森换帅后主场彻底放开，90分钟4-1总进球5(加时5-1总比分5-4逆转晋级)。L011'欧联次回合gap≥3保守lambda下修'应用于'需要进球的落后方主场'严重错误——落后方主场正是大球爆发温床。预测给2球/1球完全脱离实际。"
+    },
+    {
+      "id": "002",
+      "league": "欧联附加赛次回合",
+      "home": "奥莫尼亚",
+      "away": "圣图尔登",
+      "actual_score": "4:2",
+      "actual_ht_score": "2:1",
+      "actual_direction": "主胜",
+      "actual_ttg": 6,
+      "actual_htft": "胜胜",
+      "predictions": {
+        "had_first": { "direction": "平", "prob": 0.36 },
+        "had_second": { "direction": "主胜", "prob": 0.34 },
+        "ttg_top2": [1, 2],
+        "htft_top3": ["平平", "平胜", "平负"],
+        "crs_top5": ["1-0", "0-0", "1-1", "0-1", "2-0"]
+      },
+      "hits": { "direction": "✅次", "ttg": false, "htft": false, "crs": false },
+      "notes": "次选主胜命中保住方向颜面，但这是第二个大球低估样本。奥莫尼亚需赢2球才晋级，主场全力进攻+圣图尔登防线漏洞→6球大战(迪奥尼帽子戏法)。预测因奥莫尼亚4名攻击手缺阵给1球/2球低预期，完全低估'必须进球+防线残缺'的进攻爆发。L012残阵战意反弹在'必须赢'生死场完全应验。"
+    },
+    {
+      "id": "003",
+      "league": "欧联附加赛次回合",
+      "home": "萨尔茨堡",
+      "away": "米亚尔比",
+      "actual_score": "3:0",
+      "actual_ht_score": "0:0",
+      "actual_direction": "主胜",
+      "actual_ttg": 3,
+      "actual_htft": "平胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.74 },
+        "had_second": { "direction": "平", "prob": 0.15 },
+        "ttg_top2": [2, 3],
+        "htft_top3": ["胜胜", "平胜", "胜平"],
+        "crs_top5": ["2-0", "1-0", "3-0", "2-1", "1-1"]
+      },
+      "hits": { "direction": "✅首", "ttg": true, "htft": true, "crs": true },
+      "notes": "单关+规则65+规则63全链验证成功。5.97倍身价碾压→主胜首选命中，TTG 3球命中，比分3:0命中。L032教训(碾压场开单关不上修平局→维持主胜首选)再次验证正确。本轮最标准的碾压场正确预测。"
+    },
+    {
+      "id": "004",
+      "league": "欧联附加赛次回合",
+      "home": "奥胡斯",
+      "away": "本菲卡",
+      "actual_score": "1:3",
+      "actual_ht_score": "0:1",
+      "actual_direction": "客胜",
+      "actual_ttg": 4,
+      "actual_htft": "负负",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.51 },
+        "had_second": { "direction": "平", "prob": 0.24 },
+        "ttg_top2": [3, 2],
+        "htft_top3": ["负负", "平负", "胜负"],
+        "crs_top5": ["1-2", "1-1", "0-2", "0-1", "1-3"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": true },
+      "notes": "★★★碾压方向命中且比分1:3在TOP5内，规则65+L024(本菲卡刚7-0→lambda上修)方向正确。唯一遗憾TTG预测3球/2球实际4球，大球低估的又一轻微样本(第3个)。10.4倍身价→置信度★★★合理，方向与比分验证碾压场高确定性。"
+    },
+    {
+      "id": "005",
+      "league": "欧联附加赛次回合",
+      "home": "费伦茨瓦罗斯",
+      "away": "特拉布宗体育",
+      "actual_score": "4:0",
+      "actual_ht_score": "1:0",
+      "actual_direction": "主胜",
+      "actual_ttg": 4,
+      "actual_htft": "胜胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.58 },
+        "had_second": { "direction": "平", "prob": 0.24 },
+        "ttg_top2": [2, 3],
+        "htft_top3": ["平胜", "胜胜", "平平"],
+        "crs_top5": ["1-1", "1-0", "2-1", "2-0", "0-1"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": false },
+      "notes": "主胜命中但TTG 4球未覆盖(预测2/3球)、比分4-0落空。特拉布宗8+人欧联不合规+9人应战(红牌)→彻底崩盘4球。印证L050：残阵传统强队不机械下修客队lambda。费伦茨让(+1)胜正确命中。"
+    },
+    {
+      "id": "006",
+      "league": "欧联附加赛次回合",
+      "home": "安德莱赫特",
+      "away": "阿拉木图凯拉特",
+      "actual_score": "3:0",
+      "actual_ht_score": "1:0",
+      "actual_direction": "主胜",
+      "actual_ttg": 3,
+      "actual_htft": "胜胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.72 },
+        "had_second": { "direction": "平", "prob": 0.16 },
+        "ttg_top2": [2, 1],
+        "htft_top3": ["胜胜", "平胜", "胜平"],
+        "crs_top5": ["1-0", "2-0", "1-1", "0-0", "3-0"]
+      },
+      "hits": { "direction": "✅首", "ttg": false, "htft": true, "crs": true },
+      "notes": "单关+规则65碾压场+规则63(不上修平局)再次正确：主胜首选+比分3:0命中。但TTG预测2球/1球(受L010/L011保守下修影响)vs实际3球——9.9倍碾压场即便3-0领先保守作战仍是3球。印证L010/L011保守下修应仅适用于'高比分已锁定'的极端场景，而非普通领先。"
+    },
+    {
+      "id": "007",
+      "league": "西甲首轮",
+      "home": "塞尔塔",
+      "away": "奥萨苏纳",
+      "actual_score": "1:2",
+      "actual_ht_score": "1:0",
+      "actual_direction": "客胜",
+      "actual_ttg": 3,
+      "actual_htft": "胜负",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.54 },
+        "had_second": { "direction": "平", "prob": 0.26 },
+        "ttg_top2": [2, 3],
+        "htft_top3": ["平胜", "胜胜", "平平"],
+        "crs_top5": ["1-1", "1-0", "2-1", "2-0", "0-1"]
+      },
+      "hits": { "direction": "❌", "ttg": true, "htft": false, "crs": false },
+      "notes": "本轮最大翻车。塞尔塔2.4倍身价+主场+交锋占优→预测主胜首选，实际1-2负。关键变量：马科斯·阿隆索51分钟红牌→10人应战被逆转(巴哈尔+布迪米尔点球)。单关平局上修(规则63)→实际打客胜完全没覆盖。教训：西甲红牌率五大联赛最高(规则22-LL)，主队核心领牌风险需纳入半全场/方向风险标注。"
+    },
+    {
+      "id": "008",
+      "league": "西甲首轮",
+      "home": "巴萨",
+      "away": "毕尔巴鄂竞技",
+      "actual_score": "2:0",
+      "actual_ht_score": "1:0",
+      "actual_direction": "主胜",
+      "actual_ttg": 2,
+      "actual_htft": "胜胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.74 },
+        "had_second": { "direction": "平", "prob": 0.16 },
+        "ttg_top2": [2, 3],
+        "htft_top3": ["胜胜", "平胜", "胜平"],
+        "crs_top5": ["2-0", "1-0", "3-0", "2-1", "1-1"]
+      },
+      "hits": { "direction": "✅首", "ttg": true, "htft": true, "crs": true },
+      "notes": "5维度全维度命中(方向/总进球/半全场/比分/半场)。★★★巴萨5.3倍身价+交锋5连胜+毕巴4连败→主胜74%首选，方向+比分2:0+半全场胜胜+TTG 2球全中。完美执行规则65(Tier1+0.15)+L041(高置信度TTG同步3球档)的结果，本轮最完整标准答案。"
+    },
+    {
+      "id": "009",
+      "league": "巴西杯1/4决赛首回合",
+      "home": "巴西国际",
+      "away": "格雷米奥",
+      "actual_score": "0:0",
+      "actual_ht_score": "0:0",
+      "actual_direction": "平",
+      "actual_ttg": 0,
+      "actual_htft": "平平",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.4 },
+        "had_second": { "direction": "平", "prob": 0.3 },
+        "ttg_top2": [2, 1],
+        "htft_top3": ["平胜", "平负", "平平"],
+        "crs_top5": ["1-0", "1-1", "0-0", "0-1", "2-0"]
+      },
+      "hits": { "direction": "✅次", "ttg": false, "htft": true, "crs": true },
+      "notes": "次选平命中+比分0:0+半全场平平命中。但TTG预测2球/1球严重高估德比进球——实际0-0。格雷纳尔德比+双方巴甲降级区+防线残缺→低进球/平局是更合理预期。教训：高水平德比+双方状态差→低进球概率大幅上调，TTG应切0-1球档。L005杯赛首回合保守倾向正确但执行不完全。"
+    }
+  ],
+  "parlay_results": {
+    "direction": [
+      { "name": "稳健方向串", "matches": ["008巴萨主胜(✅2-0)", "004本菲卡客胜(✅1-3)"], "results": [true, true], "hit": true, "est_odds": 1.56 },
+      { "name": "价值方向串", "matches": ["005费伦茨主胜(✅4-0)", "007塞尔塔主胜(❌1-2)"], "results": [true, false], "hit": false, "est_odds": 5.04 },
+      { "name": "防守方向串", "matches": ["001比尔森主胜(✅4-1)", "003萨尔茨堡主胜(✅3-0)"], "results": [true, true], "hit": true, "est_odds": 2.26 }
+    ],
+    "handicap": [
+      { "name": "稳健让球串", "matches": ["005费伦茨让(+1)胜(✅4-0)", "002奥莫尼亚让(-1)负(❌4-2)"], "results": [true, false], "hit": false, "est_odds": 2.65 },
+      { "name": "价值让球串", "matches": ["007塞尔塔让(-1)负(✅1-2)", "009巴西国际让(-1)负(✅0-0)"], "results": [true, true], "hit": true, "est_odds": 3.37 }
+    ],
+    "mixed": [
+      { "name": "半全场串A", "matches": ["008巴萨胜胜(✅胜胜)", "003萨尔茨堡胜胜(❌平胜)"], "results": [true, false], "hit": false, "est_odds": 2.53 },
+      { "name": "半全场串B", "matches": ["006安德莱平胜(❌胜胜)", "005费伦茨平胜(❌胜胜)"], "results": [false, false], "hit": false, "est_odds": 27.65 },
+      { "name": "方向+半全场A", "matches": ["004本菲卡客胜(✅1-3)", "008巴萨胜胜(✅胜胜)"], "results": [true, true], "hit": true, "est_odds": 2.10 },
+      { "name": "方向+半全场B", "matches": ["003萨尔茨堡主胜(✅3-0)", "005费伦茨平胜(❌胜胜)"], "results": [true, false], "hit": false, "est_odds": 8.12 }
+    ],
+    "entertainment": [
+      { "name": "高赔比分串A", "matches": ["003萨尔茨堡3:0(✅3-0)", "008巴萨3:0(❌2-0)"], "results": [true, false], "hit": false, "est_odds": 64.0 },
+      { "name": "高赔比分串B", "matches": ["006安德莱1:0(❌3-0)", "005费伦茨1:0(❌4-0)"], "results": [false, false], "hit": false, "est_odds": 71.25 },
+      { "name": "高赔比分串C", "matches": ["007塞尔塔1:1(❌1-2)", "009巴西国际1:1(❌0-0)"], "results": [false, false], "hit": false, "est_odds": 42.53 },
+      { "name": "半全场混合串A", "matches": ["008巴萨胜胜(✅胜胜)", "001比尔森平平(❌平胜)"], "results": [true, false], "hit": false, "est_odds": 10.67 },
+      { "name": "半全场混合串B", "matches": ["003萨尔茨堡胜胜(❌平胜)", "005费伦茨平胜(❌胜胜)"], "results": [false, false], "hit": false, "est_odds": 11.20 },
+      { "name": "半全场混合串C", "matches": ["004本菲卡负负(✅负负)", "007塞尔塔平平(❌胜负)"], "results": [true, false], "hit": false, "est_odds": 8.55 },
+      { "name": "半全场混合串D", "matches": ["009巴西国际平平(✅平平)", "002奥莫尼亚平平(❌胜胜)"], "results": [true, false], "hit": false, "est_odds": 26.00 },
+      { "name": "总进球混合串A", "matches": ["008巴萨3球(❌2球)", "003萨尔茨堡3球(✅3球)"], "results": [false, true], "hit": false, "est_odds": 13.69 },
+      { "name": "总进球混合串B", "matches": ["007塞尔塔2球(❌3球)", "009巴西国际2球(❌0球)"], "results": [false, false], "hit": false, "est_odds": 10.24 },
+      { "name": "总进球混合串C", "matches": ["004本菲卡3球(❌4球)", "001比尔森2球(❌5球)"], "results": [false, false], "hit": false, "est_odds": 15.15 }
+    ]
+  },
+  "parlay_summary": {
+    "total_schemes": 19,
+    "robust_schemes": 9,
+    "entertainment_schemes": 10,
+    "robust_hit_rate": { "hit": 4, "total": 9, "rate": 0.444 },
+    "entertainment_hit_rate": { "hit": 0, "total": 10, "rate": 0.0 },
+    "hit_schemes": ["稳健方向串(~1.56)", "防守方向串(~2.26)", "价值让球串(~3.37)", "方向+半全场A(~2.10)"]
+  },
+  "lessons_applied": ["L010", "L011", "L012", "L024", "L029", "L031", "L032", "L034", "L035", "L036", "L041", "L045", "L050", "L005", "L020"],
+  "rules_triggered": ["规则65(多场身价碾压触发，003/004/005/006/008执行上修)", "规则63(003/006/007开单关)", "规则22-LL西甲红牌率", "规则12历史交锋", "规则62比分推演"],
+  "new_lessons": ["L052", "L053", "L054", "L055", "L056"],
+  "key_findings": [
+    "方向(含次选)8/9(88.9%)优秀，仅首选6/9(66.7%)良好——碾压方向(003/004/005/006/008)首选全中，规则65强制执行+单关L032'不上修平局'逻辑全面验证",
+    "欧联次回合大球系统性低估是最大短板：6场欧联次回合实际进球[5,6,3,4,4,3]=平均4.17球，预测TOP2最高才3球。L010/L011'欧联次回合保守lambda下修'被完全证伪——'需要进球的落后方主场'(001比尔森→5球/002奥莫尼亚→6球)是最大球温床，L045落后方主场开放对攻才是正确框架",
+    "07塞尔塔马科斯·阿隆索51分钟红牌→10人被逆转1-2，方向/半全场/比分全错，并拖累价值方向串+半全场串C+比分串C。西甲红牌率五大联赛最高(规则22-LL)，红牌应升级为需显性建模风险因子，半全场TOP3需覆盖'胜→负/平'逆转路径",
+    "比分TOP5达5/9，碾压场(003/004/006/008)比分命中率极高——4个碾压方向场次比分全部在TOP5内，再次验证L041'碾压场+方向高置信→比分同步给中高档位'",
+    "009巴西国际vs格雷米奥德比0-0：次选平+比分0:0+半全场平平命中，但TTG预测2球/1球严重高估德比进球——高水平德比+双方状态差→低进球概率大幅上调，TTG应切0-1球档"
+  ]
+}

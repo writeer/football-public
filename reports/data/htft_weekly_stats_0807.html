@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>竞彩半全场赛果周统计 (2026.07.31 - 08.06)</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+  background: #0f1117;
+  color: #e0e0e0;
+  padding: 20px;
+  line-height: 1.6;
+}
+.container { max-width: 1200px; margin: 0 auto; }
+h1 {
+  font-size: 1.6rem;
+  text-align: center;
+  background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 6px;
+}
+.subtitle { text-align: center; color: #888; font-size: 0.85rem; margin-bottom: 30px; }
+
+/* Summary Cards */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 30px;
+}
+.card {
+  background: #1a1d28;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #2a2d38;
+}
+.card h3 { font-size: 0.85rem; color: #888; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+.card .big { font-size: 2.2rem; font-weight: 700; }
+.card .green { color: #00e676; }
+.card .orange { color: #ffa726; }
+.card .red { color: #ef5350; }
+.card .blue { color: #42a5f5; }
+.card .small { font-size: 0.75rem; color: #666; margin-top: 4px; }
+
+/* HTFT Distribution Table */
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 30px 0 15px;
+  padding-left: 12px;
+  border-left: 3px solid #00d4ff;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+}
+th {
+  background: #1e2233;
+  padding: 10px 8px;
+  text-align: center;
+  font-weight: 500;
+  color: #8892b0;
+  border-bottom: 2px solid #2a2d38;
+  white-space: nowrap;
+}
+td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #1e2233;
+}
+tr:hover td { background: #1a1d28; }
+.htft-tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.tag-ss { background: #1b5e20; color: #00e676; }
+.tag-sp { background: #33691e; color: #aed581; }
+.tag-sl { background: #1b5e20; color: #81c784; }
+.tag-ps { background: #e65100; color: #ffb74d; }
+.tag-pp { background: #33691e; color: #c0ca33; }
+.tag-pl { background: #bf360c; color: #ff8a65; }
+.tag-ls { background: #4a148c; color: #ce93d8; }
+.tag-lp { background: #311b92; color: #b39ddb; }
+.tag-ll { background: #b71c1c; color: #ef5350; }
+.odds-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.odds-low { background: #1b5e20; color: #00e676; }
+.odds-mid { background: #e65100; color: #ffa726; }
+.odds-high { background: #b71c1c; color: #ef5350; }
+.league-tag {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 0.72rem;
+  background: #2a2d38;
+  color: #8892b0;
+}
+.date-tag { color: #5c6370; font-size: 0.78rem; }
+.score { font-weight: 700; color: #fff; }
+.highlight-row { background: #1e1e30 !important; }
+
+/* Bar chart */
+.bar-chart { margin: 15px 0; }
+.bar-row { display: flex; align-items: center; margin-bottom: 6px; }
+.bar-label { width: 60px; text-align: right; padding-right: 10px; font-size: 0.82rem; font-weight: 700; }
+.bar-container { flex: 1; height: 24px; background: #1a1d28; border-radius: 4px; overflow: hidden; position: relative; }
+.bar-fill { height: 100%; border-radius: 4px; display: flex; align-items: center; justify-content: flex-end; padding-right: 8px; font-size: 0.72rem; font-weight: 700; color: #fff; transition: width 0.5s ease; }
+.bar-odds { width: 80px; text-align: center; font-size: 0.78rem; color: #8892b0; }
+
+/* Findings */
+.findings {
+  background: #1a1d28;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #2a2d38;
+}
+.findings ul { list-style: none; padding: 0; }
+.findings li {
+  padding: 8px 0;
+  border-bottom: 1px solid #1e2233;
+  font-size: 0.85rem;
+}
+.findings li:last-child { border-bottom: none; }
+.findings .label { font-weight: 700; color: #00d4ff; }
+
+/* Filter buttons */
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+.filter-btn {
+  padding: 5px 14px;
+  border-radius: 6px;
+  background: #1a1d28;
+  border: 1px solid #2a2d38;
+  color: #8892b0;
+  cursor: pointer;
+  font-size: 0.82rem;
+  transition: all 0.2s;
+}
+.filter-btn:hover, .filter-btn.active {
+  background: #00d4ff;
+  color: #0f1117;
+  border-color: #00d4ff;
+}
+@media (max-width: 768px) {
+  .summary-grid { grid-template-columns: 1fr; }
+  table { font-size: 0.75rem; }
+  th, td { padding: 6px 4px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>竞彩半全场赛果周统计</h1>
+<p class="subtitle">数据周期：2026年7月31日（周五）— 8月6日（周四）｜ 共48场｜ 数据来源：唯彩看球 / 体彩官方</p>
+
+<!-- Summary Cards -->
+<div class="summary-grid">
+  <div class="card">
+    <h3>总场次</h3>
+    <div class="big blue">48</div>
+    <div class="small">7个竞彩开奖日</div>
+  </div>
+  <div class="card">
+    <h3>最高频半全场</h3>
+    <div class="big green">胜胜</div>
+    <div class="small">12场 / 25.0%｜均赔2.47</div>
+  </div>
+  <div class="card">
+    <h3>最高赔率中奖</h3>
+    <div class="big red">35.00</div>
+    <div class="small">负胜｜布拉格斯巴达 2:1 里昂</div>
+  </div>
+</div>
+
+<!-- HTFT Distribution Bar Chart -->
+<div class="section-title">半全场结果分布（附平均赔率）</div>
+<div class="bar-chart">
+  <div class="bar-row">
+    <div class="bar-label"><span class="htft-tag tag-ss">胜胜</span></div>
+    <div class="bar-container"><div class="bar-fill" style="width: 25%; background: #00e676; color: #000;">12场 (25.0%)</div></div>
+    <div class="bar-odds">均赔 2.47</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label"><span class="htft-tag tag-pp">平平</span></div>
+    <div class="bar-container"><div class="bar-fill" style="width: 20.8%; background: #c0ca33; color: #000;">10场 (20.8%)</div></div>
+    <div class="bar-odds">均赔 6.29</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label"><span class="htft-tag tag-ll">负负</span></div>
+    <div class="bar-container"><div class="bar-fill" style="width: 18.8%; background: #ef5350;">9场 (18.8%)</div></div>
+    <div class="bar-odds">均赔 6.61</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label"><span class="htft-tag tag-ps">平胜</span></div>
+    <div class="bar-container"><div class="bar-fill" style="width: 14.6%; background: #ffa726; color: #000;">7场 (14.6%)</div></div>
+    <div class="bar-odds">均赔 5.19</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label"><span class="htft-tag tag-pl">平负</span></div>
+    <div class="bar-container"><div class="bar-fill" style="width: 10.4%; background: #ff8a65;">5场 (10.4%)</div></div>
+    <div class="bar-odds">均赔 5.84</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label"><span class="htft-tag tag-sp">胜平</span></div>
+    <div class="bar-container"><div class="bar-fill" style="width: 4.2%; background: #aed581; color: #000;">2场 (4.2%)</div></div>
+    <div class="bar-odds">均赔 16.00</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label"><span class="htft-tag tag-lp">负平</span></div>
+    <div class="bar-container"><div class="bar-fill" style="width: 4.2%; background: #b39ddb;">2场 (4.2%)</div></div>
+    <div class="bar-odds">均赔 14.00</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label"><span class="htft-tag tag-ls">负胜</span></div>
+    <div class="bar-container"><div class="bar-fill" style="width: 2.1%; background: #ce93d8;">1场 (2.1%)</div></div>
+    <div class="bar-odds">均赔 35.00</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label"><span class="htft-tag tag-sl">胜负</span></div>
+    <div class="bar-container"><div class="bar-fill" style="width: 0%; background: #81c784;">0场 (0.0%)</div></div>
+    <div class="bar-odds">—</div>
+  </div>
+</div>
+
+<!-- Distribution Summary Table -->
+<table>
+  <thead>
+    <tr>
+      <th>半全场</th>
+      <th>含义</th>
+      <th>场次数</th>
+      <th>占比</th>
+      <th>平均赔率</th>
+      <th>最低赔率</th>
+      <th>最高赔率</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><span class="htft-tag tag-ss">胜胜</span></td><td>半场主胜/全场主胜</td><td>12</td><td>25.0%</td><td><span class="odds-badge odds-low">2.47</span></td><td>1.47</td><td>5.25</td></tr>
+    <tr><td><span class="htft-tag tag-pp">平平</span></td><td>半场平/全场平</td><td>10</td><td>20.8%</td><td><span class="odds-badge odds-mid">6.29</span></td><td>3.75</td><td>7.50</td></tr>
+    <tr><td><span class="htft-tag tag-ll">负负</span></td><td>半场客胜/全场客胜</td><td>9</td><td>18.8%</td><td><span class="odds-badge odds-mid">6.61</span></td><td>1.65</td><td>13.00</td></tr>
+    <tr><td><span class="htft-tag tag-ps">平胜</span></td><td>半场平/全场主胜</td><td>7</td><td>14.6%</td><td><span class="odds-badge odds-mid">5.19</span></td><td>3.85</td><td>8.25</td></tr>
+    <tr><td><span class="htft-tag tag-pl">平负</span></td><td>半场平/全场客胜</td><td>5</td><td>10.4%</td><td><span class="odds-badge odds-mid">5.84</span></td><td>4.50</td><td>8.00</td></tr>
+    <tr><td><span class="htft-tag tag-sp">胜平</span></td><td>半场主胜/全场平</td><td>2</td><td>4.2%</td><td><span class="odds-badge odds-high">16.00</span></td><td>15.00</td><td>17.00</td></tr>
+    <tr><td><span class="htft-tag tag-lp">负平</span></td><td>半场客胜/全场平</td><td>2</td><td>4.2%</td><td><span class="odds-badge odds-high">14.00</span></td><td>13.00</td><td>15.00</td></tr>
+    <tr><td><span class="htft-tag tag-ls">负胜</span></td><td>半场客胜/全场主胜</td><td>1</td><td>2.1%</td><td><span class="odds-badge odds-high">35.00</span></td><td>35.00</td><td>35.00</td></tr>
+    <tr><td><span class="htft-tag tag-sl">胜负</span></td><td>半场主胜/全场客胜</td><td>0</td><td>0.0%</td><td>—</td><td>—</td><td>—</td></tr>
+  </tbody>
+</table>
+
+<!-- Detailed Match Data -->
+<div class="section-title">逐场明细（48场）</div>
+<div class="filter-bar">
+  <button class="filter-btn active" onclick="filterTable('all')">全部</button>
+  <button class="filter-btn" onclick="filterTable('ss')">胜胜</button>
+  <button class="filter-btn" onclick="filterTable('pp')">平平</button>
+  <button class="filter-btn" onclick="filterTable('ll')">负负</button>
+  <button class="filter-btn" onclick="filterTable('ps')">平胜</button>
+  <button class="filter-btn" onclick="filterTable('pl')">平负</button>
+  <button class="filter-btn" onclick="filterTable('sp')">胜平</button>
+  <button class="filter-btn" onclick="filterTable('lp')">负平</button>
+  <button class="filter-btn" onclick="filterTable('ls')">负胜</button>
+</div>
+<table id="matchTable">
+  <thead>
+    <tr>
+      <th>日期</th>
+      <th>编号</th>
+      <th>联赛</th>
+      <th>主队</th>
+      <th>客队</th>
+      <th>全场比分</th>
+      <th>半场比分</th>
+      <th>半全场</th>
+      <th>半全场赔率</th>
+      <th>HAD赔率</th>
+      <th>让球赔率</th>
+      <th>比分赔率</th>
+      <th>TTG赔率</th>
+    </tr>
+  </thead>
+  <tbody>
+<!-- 07-31 -->
+<tr data-htft="ll"><td class="date-tag">07-31(五)</td><td>001</td><td><span class="league-tag">挪超</span></td><td>瓦勒伦加</td><td>汉坎</td><td class="score">0:3</td><td>0:1</td><td><span class="htft-tag tag-ll">负负</span></td><td><span class="odds-badge odds-mid">8.40</span></td><td>4.45</td><td>2.19</td><td>75.00</td><td>3.10</td></tr>
+<tr data-htft="ss"><td class="date-tag">07-31(五)</td><td>002</td><td><span class="league-tag">挪超</span></td><td>博德闪耀</td><td>利勒斯特罗姆</td><td class="score">4:0</td><td>2:0</td><td><span class="htft-tag tag-ss">胜胜</span></td><td><span class="odds-badge odds-low">1.47</span></td><td>1.15</td><td>2.43</td><td>12.00</td><td>3.80</td></tr>
+<tr data-htft="pp"><td class="date-tag">07-31(五)</td><td>003</td><td><span class="league-tag">美职业</span></td><td>纽约城</td><td>多伦多FC</td><td class="score">1:1</td><td>1:1</td><td><span class="htft-tag tag-pp">平平</span></td><td><span class="odds-badge odds-mid">6.90</span></td><td>4.05</td><td>2.30</td><td>7.50</td><td>3.80</td></tr>
+<!-- 08-01 -->
+<tr data-htft="ll"><td class="date-tag">08-01(六)</td><td>001</td><td><span class="league-tag">韩K联</span></td><td>江原FC</td><td>富川FC</td><td class="score">0:3</td><td>0:1</td><td><span class="htft-tag tag-ll">负负</span></td><td><span class="odds-badge odds-high">13.00</span></td><td>6.65</td><td>2.54</td><td>100.00</td><td>3.60</td></tr>
+<tr data-htft="pp"><td class="date-tag">08-01(六)</td><td>002</td><td><span class="league-tag">韩K联</span></td><td>全北现代</td><td>FC首尔</td><td class="score">0:0</td><td>0:0</td><td><span class="htft-tag tag-pp">平平</span></td><td><span class="odds-badge odds-mid">4.60</span></td><td>2.95</td><td>1.44</td><td>12.00</td><td>12.00</td></tr>
+<tr data-htft="pl"><td class="date-tag">08-01(六)</td><td>003</td><td><span class="league-tag">韩K联</span></td><td>浦项制铁</td><td>金泉尚武</td><td class="score">0:1</td><td>0:0</td><td><span class="htft-tag tag-pl">平负</span></td><td><span class="odds-badge odds-mid">7.00</span></td><td>3.21</td><td>1.60</td><td>9.50</td><td>4.10</td></tr>
+<tr data-htft="ss"><td class="date-tag">08-01(六)</td><td>004</td><td><span class="league-tag">芬超</span></td><td>TPS土尔库</td><td>玛丽港</td><td class="score">3:0</td><td>2:0</td><td><span class="htft-tag tag-ss">胜胜</span></td><td><span class="odds-badge odds-low">1.87</span></td><td>1.39</td><td>2.21</td><td>10.50</td><td>3.25</td></tr>
+<tr data-htft="pp"><td class="date-tag">08-01(六)</td><td>005</td><td><span class="league-tag">瑞典超</span></td><td>赫根</td><td>卡尔马</td><td class="score">1:1</td><td>1:1</td><td><span class="htft-tag tag-pp">平平</span></td><td><span class="odds-badge odds-mid">6.75</span></td><td>3.85</td><td>2.00</td><td>8.00</td><td>4.35</td></tr>
+<tr data-htft="ss"><td class="date-tag">08-01(六)</td><td>006</td><td><span class="league-tag">挪超</span></td><td>腓特烈斯塔</td><td>桑德菲杰</td><td class="score">1:0</td><td>1:0</td><td><span class="htft-tag tag-ss">胜胜</span></td><td><span class="odds-badge odds-mid">3.30</span></td><td>2.11</td><td>3.95</td><td>9.00</td><td>5.60</td></tr>
+<tr data-htft="ss"><td class="date-tag">08-01(六)</td><td>007</td><td><span class="league-tag">芬超</span></td><td>拉赫蒂</td><td>雅罗</td><td class="score">2:0</td><td>1:0</td><td><span class="htft-tag tag-ss">胜胜</span></td><td><span class="odds-badge odds-low">2.05</span></td><td>1.39</td><td>2.52</td><td>6.75</td><td>3.35</td></tr>
+<tr data-htft="ll"><td class="date-tag">08-01(六)</td><td>008</td><td><span class="league-tag">挪超</span></td><td>斯达</td><td>维京</td><td class="score">0:3</td><td>0:3</td><td><span class="htft-tag tag-ll">负负</span></td><td><span class="odds-badge odds-low">1.80</span></td><td>1.36</td><td>2.10</td><td>10.50</td><td>3.40</td></tr>
+<tr data-htft="ll"><td class="date-tag">08-01(六)</td><td>009</td><td><span class="league-tag">芬超</span></td><td>格尼斯坦</td><td>古比斯</td><td class="score">0:1</td><td>0:1</td><td><span class="htft-tag tag-ll">负负</span></td><td><span class="odds-badge odds-low">3.15</span></td><td>1.84</td><td>3.65</td><td>9.25</td><td>6.30</td></tr>
+<tr data-htft="sp"><td class="date-tag">08-01(六)</td><td>010</td><td><span class="league-tag">美职业</span></td><td>迈阿密国际</td><td>哥伦布机员</td><td class="score">2:2</td><td>2:1</td><td><span class="htft-tag tag-sp">胜平</span></td><td><span class="odds-badge odds-high">17.00</span></td><td>4.65</td><td>2.50</td><td>12.00</td><td>4.10</td></tr>
+<tr data-htft="lp"><td class="date-tag">08-01(六)</td><td>011</td><td><span class="league-tag">美职业</span></td><td>温哥华白浪</td><td>洛杉矶FC</td><td class="score">1:1</td><td>0:1</td><td><span class="htft-tag tag-lp">负平</span></td><td><span class="odds-badge odds-high">13.00</span></td><td>3.65</td><td>1.68</td><td>8.00</td><td>4.45</td></tr>
+<tr data-htft="pp"><td class="date-tag">08-01(六)</td><td>012</td><td><span class="league-tag">巴西杯</span></td><td>桑托斯</td><td>瑞模贝雷</td><td class="score">0:0</td><td>0:0</td><td><span class="htft-tag tag-pp">平平</span></td><td><span class="odds-badge odds-mid">6.25</span></td><td>3.82</td><td>2.44</td><td>12.50</td><td>12.50</td></tr>
+<tr data-htft="ps"><td class="date-tag">08-01(六)</td><td>013</td><td><span class="league-tag">美职业</span></td><td>芝加哥火焰</td><td>夏洛特FC</td><td class="score">2:1</td><td>1:1</td><td><span class="htft-tag tag-ps">平胜</span></td><td><span class="odds-badge odds-mid">4.30</span></td><td>1.37</td><td>3.45</td><td>6.75</td><td>3.50</td></tr>
+<tr data-htft="pp"><td class="date-tag">08-01(六)</td><td>014</td><td><span class="league-tag">美职业</span></td><td>圣路易斯城</td><td>皇家盐湖城</td><td class="score">1:1</td><td>0:0</td><td><span class="htft-tag tag-pp">平平</span></td><td><span class="odds-badge odds-mid">6.90</span></td><td>3.75</td><td>1.69</td><td>8.00</td><td>4.15</td></tr>
+<tr data-htft="pp"><td class="date-tag">08-01(六)</td><td>015</td><td><span class="league-tag">美职业</span></td><td>洛杉矶银河</td><td>达拉斯FC</td><td class="score">0:0</td><td>0:0</td><td><span class="htft-tag tag-pp">平平</span></td><td><span class="odds-badge odds-mid">6.15</span></td><td>3.35</td><td>1.51</td><td>20.00</td><td>20.00</td></tr>
+<tr data-htft="ps"><td class="date-tag">08-01(六)</td><td>016</td><td><span class="league-tag">美职业</span></td><td>波特兰伐木者</td><td>西雅图海湾人</td><td class="score">2:1</td><td>1:1</td><td><span class="htft-tag tag-ps">平胜</span></td><td><span class="odds-badge odds-mid">4.90</span></td><td>1.91</td><td>3.95</td><td>7.50</td><td>3.60</td></tr>
+<!-- 08-02 -->
+<tr data-htft="ps"><td class="date-tag">08-02(日)</td><td>001</td><td><span class="league-tag">韩K联</span></td><td>蔚山HD</td><td>FC安养</td><td class="score">3:1</td><td>0:0</td><td><span class="htft-tag tag-ps">平胜</span></td><td><span class="odds-badge odds-mid">4.90</span></td><td>2.02</td><td>4.15</td><td>14.00</td><td>5.10</td></tr>
+<tr data-htft="pp"><td class="date-tag">08-02(日)</td><td>002</td><td><span class="league-tag">韩K联</span></td><td>济州SK</td><td>仁川联队</td><td class="score">3:3</td><td>2:2</td><td><span class="htft-tag tag-pp">平平</span></td><td><span class="odds-badge odds-low">3.75</span></td><td>2.75</td><td>1.41</td><td>100.00</td><td>34.00</td></tr>
+<tr data-htft="ps"><td class="date-tag">08-02(日)</td><td>003</td><td><span class="league-tag">韩K联</span></td><td>大田市民</td><td>光州FC</td><td class="score">2:0</td><td>0:0</td><td><span class="htft-tag tag-ps">平胜</span></td><td><span class="odds-badge odds-low">3.85</span></td><td>1.44</td><td>2.50</td><td>6.00</td><td>3.20</td></tr>
+<tr data-htft="pl"><td class="date-tag">08-02(日)</td><td>004</td><td><span class="league-tag">瑞典超</span></td><td>布洛马波卡纳</td><td>马尔默</td><td class="score">1:2</td><td>0:0</td><td><span class="htft-tag tag-pl">平负</span></td><td><span class="odds-badge odds-mid">5.00</span></td><td>1.94</td><td>3.75</td><td>6.50</td><td>3.25</td></tr>
+<tr data-htft="ss"><td class="date-tag">08-02(日)</td><td>005</td><td><span class="league-tag">瑞典超</span></td><td>哥德堡</td><td>代格福什</td><td class="score">2:0</td><td>1:0</td><td><span class="htft-tag tag-ss">胜胜</span></td><td><span class="odds-badge odds-low">2.40</span></td><td>1.60</td><td>2.92</td><td>7.50</td><td>3.40</td></tr>
+<tr data-htft="ll"><td class="date-tag">08-02(日)</td><td>006</td><td><span class="league-tag">芬超</span></td><td>VPS瓦萨</td><td>图尔库国际</td><td class="score">0:1</td><td>0:1</td><td><span class="htft-tag tag-ll">负负</span></td><td><span class="odds-badge odds-low">3.75</span></td><td>2.42</td><td>1.37</td><td>8.50</td><td>4.80</td></tr>
+<tr data-htft="ps"><td class="date-tag">08-02(日)</td><td>007</td><td><span class="league-tag">芬超</span></td><td>奥卢</td><td>埃尔维斯</td><td class="score">1:0</td><td>0:0</td><td><span class="htft-tag tag-ps">平胜</span></td><td><span class="odds-badge odds-mid">5.70</span></td><td>2.35</td><td>4.30</td><td>9.25</td><td>5.60</td></tr>
+<tr data-htft="ll" class="highlight-row"><td class="date-tag">08-02(日)</td><td>008</td><td><span class="league-tag">瑞典超</span></td><td>索尔纳</td><td>奥尔格里特</td><td class="score">0:3</td><td>0:2</td><td><span class="htft-tag tag-ll">负负</span></td><td><span class="odds-badge odds-high">10.50</span></td><td>5.65</td><td>2.48</td><td>90.00</td><td>3.40</td></tr>
+<tr data-htft="ss"><td class="date-tag">08-02(日)</td><td>009</td><td><span class="league-tag">挪超</span></td><td>KFUM奥斯</td><td>克里斯蒂安松</td><td class="score">2:1</td><td>2:0</td><td><span class="htft-tag tag-ss">胜胜</span></td><td><span class="odds-badge odds-low">2.50</span></td><td>1.60</td><td>3.25</td><td>6.50</td><td>3.30</td></tr>
+<tr data-htft="pp"><td class="date-tag">08-02(日)</td><td>010</td><td><span class="league-tag">挪超</span></td><td>莫尔德</td><td>萨普斯堡</td><td class="score">3:3</td><td>1:1</td><td><span class="htft-tag tag-pp">平平</span></td><td><span class="odds-badge odds-mid">7.50</span></td><td>4.30</td><td>2.31</td><td>38.00</td><td>11.00</td></tr>
+<tr data-htft="pl"><td class="date-tag">08-02(日)</td><td>011</td><td><span class="league-tag">挪超</span></td><td>奥勒松</td><td>特罗姆瑟</td><td class="score">2:6</td><td>1:1</td><td><span class="htft-tag tag-pl">平负</span></td><td><span class="odds-badge odds-mid">4.70</span></td><td>1.83</td><td>3.60</td><td>300.00</td><td>21.00</td></tr>
+<tr data-htft="ss"><td class="date-tag">08-02(日)</td><td>012</td><td><span class="league-tag">挪超</span></td><td>布兰</td><td>罗森博格</td><td class="score">3:2</td><td>1:0</td><td><span class="htft-tag tag-ss">胜胜</span></td><td><span class="odds-badge odds-mid">3.10</span></td><td>1.90</td><td>3.85</td><td>17.00</td><td>6.50</td></tr>
+<tr data-htft="sp"><td class="date-tag">08-02(日)</td><td>013</td><td><span class="league-tag">巴西杯</span></td><td>米拉索</td><td>格雷米奥</td><td class="score">1:1</td><td>1:0</td><td><span class="htft-tag tag-sp">胜平</span></td><td><span class="odds-badge odds-high">15.00</span></td><td>2.90</td><td>1.77</td><td>5.75</td><td>2.80</td></tr>
+<tr data-htft="ps"><td class="date-tag">08-02(日)</td><td>014</td><td><span class="league-tag">巴西杯</span></td><td>巴西国际</td><td>科林蒂安</td><td class="score">2:0</td><td>0:0</td><td><span class="htft-tag tag-ps">平胜</span></td><td><span class="odds-badge odds-mid">4.40</span></td><td>2.24</td><td>5.55</td><td>9.50</td><td>3.00</td></tr>
+<!-- 08-03 -->
+<tr data-htft="ps"><td class="date-tag">08-03(一)</td><td>001</td><td><span class="league-tag">芬超</span></td><td>塞伊奈约基</td><td>赫尔辛基</td><td class="score">3:0</td><td>0:0</td><td><span class="htft-tag tag-ps">平胜</span></td><td><span class="odds-badge odds-high">8.25</span></td><td>3.30</td><td>1.80</td><td>40.00</td><td>3.15</td></tr>
+<tr data-htft="ll"><td class="date-tag">08-03(一)</td><td>002</td><td><span class="league-tag">瑞典超</span></td><td>哈尔姆斯塔德</td><td>天狼星</td><td class="score">0:2</td><td>0:2</td><td><span class="htft-tag tag-ll">负负</span></td><td><span class="odds-badge odds-low">1.65</span></td><td>1.25</td><td>1.77</td><td>6.75</td><td>4.60</td></tr>
+<tr data-htft="ss"><td class="date-tag">08-03(一)</td><td>003</td><td><span class="league-tag">瑞典超</span></td><td>尤尔加登</td><td>瓦斯特拉斯</td><td class="score">6:0</td><td>3:0</td><td><span class="htft-tag tag-ss">胜胜</span></td><td><span class="odds-badge odds-low">1.87</span></td><td>1.38</td><td>2.20</td><td>18.00</td><td>12.50</td></tr>
+<tr data-htft="ss"><td class="date-tag">08-03(一)</td><td>004</td><td><span class="league-tag">巴西杯</span></td><td>巴拉纳竞技</td><td>维多利亚</td><td class="score">2:0</td><td>1:0</td><td><span class="htft-tag tag-ss">胜胜</span></td><td><span class="odds-badge odds-low">2.55</span></td><td>1.54</td><td>3.11</td><td>5.00</td><td>2.80</td></tr>
+<!-- 08-04 -->
+<tr data-htft="pl"><td class="date-tag">08-04(二)</td><td>001</td><td><span class="league-tag">巴西杯</span></td><td>瑞模贝雷</td><td>桑托斯</td><td class="score">0:1</td><td>0:0</td><td><span class="htft-tag tag-pl">平负</span></td><td><span class="odds-badge odds-mid">4.50</span></td><td>2.02</td><td>3.30</td><td>7.00</td><td>4.10</td></tr>
+<tr data-htft="pl"><td class="date-tag">08-04(二)</td><td>002</td><td><span class="league-tag">欧冠杯</span></td><td>米亚尔比</td><td>布拉迪斯拉发</td><td class="score">1:2</td><td>0:0</td><td><span class="htft-tag tag-pl">平负</span></td><td><span class="odds-badge odds-high">8.00</span></td><td>3.25</td><td>1.64</td><td>10.50</td><td>3.45</td></tr>
+<tr data-htft="pp"><td class="date-tag">08-04(二)</td><td>003</td><td><span class="league-tag">欧冠杯</span></td><td>奥林匹亚科斯</td><td>奈梅亨</td><td class="score">0:0</td><td>0:0</td><td><span class="htft-tag tag-pp">平平</span></td><td><span class="odds-badge odds-mid">7.40</span></td><td>4.22</td><td>2.52</td><td>18.00</td><td>18.00</td></tr>
+<tr data-htft="pp"><td class="date-tag">08-04(二)</td><td>004</td><td><span class="league-tag">欧冠杯</span></td><td>圣吉罗斯</td><td>博德闪耀</td><td class="score">3:3</td><td>2:2</td><td><span class="htft-tag tag-pp">平平</span></td><td><span class="odds-badge odds-mid">6.70</span></td><td>3.60</td><td>1.48</td><td>40.00</td><td>18.00</td></tr>
+<tr data-htft="ls" class="highlight-row"><td class="date-tag">08-04(二)</td><td>005</td><td><span class="league-tag">欧冠杯</span></td><td>布拉格斯巴达</td><td>里昂</td><td class="score">2:1</td><td>0:1</td><td><span class="htft-tag tag-ls">负胜</span></td><td><span class="odds-badge odds-high">35.00</span></td><td>3.45</td><td>1.75</td><td>11.00</td><td>3.35</td></tr>
+<!-- 08-05 -->
+<tr data-htft="ll"><td class="date-tag">08-05(三)</td><td>001</td><td><span class="league-tag">巴西杯</span></td><td>弗鲁米嫩塞</td><td>瓦斯科达伽马</td><td class="score">1:3</td><td>0:1</td><td><span class="htft-tag tag-ll">负负</span></td><td><span class="odds-badge odds-mid">7.75</span></td><td>4.00</td><td>1.70</td><td>45.00</td><td>7.90</td></tr>
+<tr data-htft="ss"><td class="date-tag">08-05(三)</td><td>002</td><td><span class="league-tag">欧冠杯</span></td><td>奥胡斯</td><td>萨巴赫</td><td class="score">2:1</td><td>1:0</td><td><span class="htft-tag tag-ss">胜胜</span></td><td><span class="odds-badge odds-low">2.60</span></td><td>1.63</td><td>3.45</td><td>6.75</td><td>3.30</td></tr>
+<tr data-htft="ss"><td class="date-tag">08-05(三)</td><td>003</td><td><span class="league-tag">欧冠杯</span></td><td>费内巴切</td><td>格拉茨风暴</td><td class="score">2:0</td><td>2:0</td><td><span class="htft-tag tag-ss">胜胜</span></td><td><span class="odds-badge odds-low">1.70</span></td><td>1.25</td><td>1.84</td><td>6.25</td><td>4.45</td></tr>
+<!-- 08-06 -->
+<tr data-htft="lp"><td class="date-tag">08-06(四)</td><td>002</td><td><span class="league-tag">欧罗巴杯</span></td><td>古比斯</td><td>克拉约瓦大学</td><td class="score">1:1</td><td>0:1</td><td><span class="htft-tag tag-lp">负平</span></td><td><span class="odds-badge odds-high">15.00</span></td><td>3.16</td><td>1.61</td><td>6.25</td><td>3.20</td></tr>
+<tr data-htft="ss"><td class="date-tag">08-06(四)</td><td>003</td><td><span class="league-tag">欧罗巴杯</span></td><td>比亚韦斯托克</td><td>格拉斯哥流浪</td><td class="score">2:1</td><td>2:1</td><td><span class="htft-tag tag-ss">胜胜</span></td><td><span class="odds-badge odds-mid">5.25</span></td><td>2.88</td><td>1.52</td><td>8.50</td><td>3.40</td></tr>
+<tr data-htft="ll"><td class="date-tag">08-06(四)</td><td>004</td><td><span class="league-tag">欧罗巴杯</span></td><td>塞萨洛尼基</td><td>安德莱赫特</td><td class="score">0:1</td><td>0:1</td><td><span class="htft-tag tag-ll">负负</span></td><td><span class="odds-badge odds-high">9.50</span></td><td>5.40</td><td>2.28</td><td>15.00</td><td>5.60</td></tr>
+  </tbody>
+</table>
+
+<!-- Findings -->
+<div class="findings">
+  <div class="section-title" style="margin-top:0;">关键发现</div>
+  <ul>
+    <li><span class="label">分布特征：</span>胜胜（25%）和平平（20.8%）合计占近半数（45.8%），与理论预期一致——半场领先方通常能守住优势，半场平局也倾向于维持平局。</li>
+    <li><span class="label">零出现：</span>胜负（半场主胜/全场客胜）本周0次出现，是9种组合中最罕见的结果，反映主队上半场领先后被客队逆转的概率极低。</li>
+    <li><span class="label">高赔冷门：</span>最高赔率为负胜35.00（布拉格斯巴达0:1→2:1逆转里昂），其次为胜平17.00（迈阿密国际2:1→2:2被追平），均为"反转类"半全场。</li>
+    <li><span class="label">负负频率偏高：</span>负负出现9次（18.8%），高于平负5次（10.4%），说明客队半场领先后几乎不会丢失优势——客队上半场取得领先=全场客胜的强信号。</li>
+    <li><span class="label">半场平局走向：</span>半场平局共22场（平平10+平胜7+平负5），其中平局维持到终场（平平）占45.5%，主胜占31.8%，客胜占22.7%。半场平局后主队更易在下半场破门。</li>
+    <li><span class="label">赔率分层：</span>胜胜均赔2.47（低赔区），平平/负负均赔6-7（中赔区），胜平/负平/负胜均赔14-35（高赔冷门区）。投注半全场应优先考虑胜胜和平平作为稳健选择。</li>
+    <li><span class="label">索尔纳事件：</span>08-02索尔纳0:3奥尔格里特，半全场负负赔率10.50，比分赔率90.00——赛前8人伤停信息已公开但被忽略，市场已将赔率大幅调整，模型仍预测主胜50.6%导致翻车。</li>
+    <li><span class="label">数据说明：</span>赔率为开奖时各玩法中奖赔率（非赛前在售赔率），HAD/让球/比分/TTG赔率为对应实际赛果的中奖赔率。数据截至8月6日已开奖场次，08-06编号001和005因开赛较晚尚未开奖。</li>
+  </ul>
+</div>
+
+</div>
+
+<script>
+function filterTable(type) {
+  const rows = document.querySelectorAll('#matchTable tbody tr');
+  rows.forEach(row => {
+    if (type === 'all' || row.dataset.htft === type) {
+      row.style.display = '';
+    } else {
+      row.style.display = 'none';
+    }
+  });
+  document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>

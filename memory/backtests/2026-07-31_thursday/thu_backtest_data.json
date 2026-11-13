@@ -1,0 +1,530 @@
+{
+  "backtest_id": "thu_20260731_backtest",
+  "match_date": "2026-07-31",
+  "model_version": "v1.6.0_xg_v3",
+  "summary": {
+    "total_matches": 6,
+    "direction_hit": 1,
+    "direction_rate": "16.7%",
+    "score_top5_hit": 1,
+    "score_top5_rate": "16.7%",
+    "over_under_hit": 3,
+    "over_under_rate": "50.0%",
+    "half_time_hit": 2,
+    "half_time_rate": "33.3%",
+    "handicap_hit": 2,
+    "handicap_rate": "33.3%"
+  },
+  "matches": [
+    {
+      "match_id": "周四001",
+      "home": "中日德兰",
+      "away": "贝西克塔斯",
+      "league": "欧罗巴资格赛",
+      "prediction": {
+        "direction": "主胜",
+        "fused_prob": 46.7,
+        "confidence": "高 ★★★",
+        "top5_scores": [
+          {
+            "score": "1:0",
+            "prob": 20.6,
+            "direction": "主胜"
+          },
+          {
+            "score": "0:0",
+            "prob": 14.5,
+            "direction": "平局"
+          },
+          {
+            "score": "0:1",
+            "prob": 12.0,
+            "direction": "客胜"
+          },
+          {
+            "score": "2:0",
+            "prob": 11.2,
+            "direction": "主胜"
+          },
+          {
+            "score": "1:1",
+            "prob": 10.7,
+            "direction": "平局"
+          }
+        ],
+        "half_top3": [
+          {
+            "score": "0:0",
+            "prob": 43.1,
+            "direction": "平局"
+          },
+          {
+            "score": "1:0",
+            "prob": 24.2,
+            "direction": "主胜"
+          },
+          {
+            "score": "0:1",
+            "prob": 13.7,
+            "direction": "客胜"
+          }
+        ],
+        "over_2_5": 27.6,
+        "under_2_5": 72.4,
+        "lambda_home": 1.179,
+        "lambda_away": 0.646
+      },
+      "actual": {
+        "ft_score": "0:2",
+        "ft_direction": "客胜",
+        "ft_goals": 2,
+        "ht_score": "0:0",
+        "ht_direction": "平局",
+        "goal_details": "Rashica 70', Kökçü 76'(pen)",
+        "notes": "中日德兰53分钟红牌10人应战，70/76分钟连丢2球",
+        "agg": "贝西克塔斯 3-0 晋级"
+      },
+      "hit": {
+        "direction": false,
+        "score_top5": false,
+        "over_under": true,
+        "half_time": true,
+        "handicap": false
+      },
+      "handicap": {
+        "rq_line": -1,
+        "rq_actual": "让负",
+        "rq_predicted": "让胜"
+      }
+    },
+    {
+      "match_id": "周四002",
+      "home": "帕福斯FC",
+      "away": "斯普利特海杜克",
+      "league": "欧罗巴资格赛",
+      "prediction": {
+        "direction": "客胜",
+        "fused_prob": 37.5,
+        "confidence": "高 ★★★",
+        "top5_scores": [
+          {
+            "score": "0:1",
+            "prob": 17.8,
+            "direction": "客胜"
+          },
+          {
+            "score": "1:0",
+            "prob": 15.3,
+            "direction": "主胜"
+          },
+          {
+            "score": "0:0",
+            "prob": 14.8,
+            "direction": "平局"
+          },
+          {
+            "score": "1:1",
+            "prob": 11.6,
+            "direction": "平局"
+          },
+          {
+            "score": "0:2",
+            "prob": 7.9,
+            "direction": "客胜"
+          }
+        ],
+        "half_top3": [
+          {
+            "score": "0:0",
+            "prob": 43.5,
+            "direction": "平局"
+          },
+          {
+            "score": "0:1",
+            "prob": 20.5,
+            "direction": "客胜"
+          },
+          {
+            "score": "1:0",
+            "prob": 17.5,
+            "direction": "主胜"
+          }
+        ],
+        "over_2_5": 27.0,
+        "under_2_5": 73.0,
+        "lambda_home": 0.826,
+        "lambda_away": 0.977
+      },
+      "actual": {
+        "ft_score": "2:0",
+        "ft_direction": "主胜",
+        "ft_goals": 2,
+        "ht_score": "1:0",
+        "ht_direction": "主胜",
+        "goal_details": "Guga 40', Goldar 90+2'",
+        "notes": "90分钟2-0扳平总比分2-2，加时Biel 93'+Correia 117'进2球，AET 4-0，总比分4-2帕福斯晋级",
+        "agg": "帕福斯 4-2 晋级(加时)"
+      },
+      "hit": {
+        "direction": false,
+        "score_top5": false,
+        "over_under": true,
+        "half_time": false,
+        "handicap": false
+      },
+      "handicap": {
+        "rq_line": -1,
+        "rq_actual": "让胜",
+        "rq_predicted": "让负"
+      }
+    },
+    {
+      "match_id": "周四003",
+      "home": "安德莱赫特",
+      "away": "哈马比",
+      "league": "欧罗巴资格赛",
+      "prediction": {
+        "direction": "客胜",
+        "fused_prob": 37.5,
+        "confidence": "中 ★★",
+        "top5_scores": [
+          {
+            "score": "0:1",
+            "prob": 16.6,
+            "direction": "客胜"
+          },
+          {
+            "score": "1:0",
+            "prob": 13.0,
+            "direction": "主胜"
+          },
+          {
+            "score": "1:1",
+            "prob": 11.5,
+            "direction": "平局"
+          },
+          {
+            "score": "0:0",
+            "prob": 10.9,
+            "direction": "平局"
+          },
+          {
+            "score": "0:2",
+            "prob": 8.8,
+            "direction": "客胜"
+          }
+        ],
+        "half_top3": [
+          {
+            "score": "0:0",
+            "prob": 38.3,
+            "direction": "平局"
+          },
+          {
+            "score": "0:1",
+            "prob": 22.0,
+            "direction": "客胜"
+          },
+          {
+            "score": "1:0",
+            "prob": 16.9,
+            "direction": "主胜"
+          }
+        ],
+        "over_2_5": 34.2,
+        "under_2_5": 65.8,
+        "lambda_home": 0.889,
+        "lambda_away": 1.179
+      },
+      "actual": {
+        "ft_score": "3:1",
+        "ft_direction": "主胜",
+        "ft_goals": 4,
+        "ht_score": "0:1",
+        "ht_direction": "客胜",
+        "goal_details": "Abraham 3'(客), Sikan 48', Cvetkovic 81', Degreef 89'",
+        "notes": "哈马比3分钟闪击，安德莱赫特下半场逆转3球",
+        "agg": "安德莱赫特 4-2 晋级"
+      },
+      "hit": {
+        "direction": false,
+        "score_top5": false,
+        "over_under": false,
+        "half_time": false,
+        "handicap": false
+      },
+      "handicap": {
+        "rq_line": -1,
+        "rq_actual": "让胜",
+        "rq_predicted": "让负"
+      }
+    },
+    {
+      "match_id": "周四004",
+      "home": "费伦茨瓦罗斯",
+      "away": "特温特",
+      "league": "欧罗巴资格赛",
+      "prediction": {
+        "direction": "主胜",
+        "fused_prob": 39.2,
+        "confidence": "高 ★★★",
+        "top5_scores": [
+          {
+            "score": "1:0",
+            "prob": 13.6,
+            "direction": "主胜"
+          },
+          {
+            "score": "0:1",
+            "prob": 11.5,
+            "direction": "客胜"
+          },
+          {
+            "score": "1:1",
+            "prob": 11.3,
+            "direction": "平局"
+          },
+          {
+            "score": "2:1",
+            "prob": 8.5,
+            "direction": "主胜"
+          },
+          {
+            "score": "2:0",
+            "prob": 7.9,
+            "direction": "主胜"
+          }
+        ],
+        "half_top3": [
+          {
+            "score": "0:0",
+            "prob": 32.7,
+            "direction": "平局"
+          },
+          {
+            "score": "1:0",
+            "prob": 21.4,
+            "direction": "主胜"
+          },
+          {
+            "score": "0:1",
+            "prob": 17.8,
+            "direction": "客胜"
+          }
+        ],
+        "over_2_5": 43.0,
+        "under_2_5": 57.0,
+        "lambda_home": 1.317,
+        "lambda_away": 1.085
+      },
+      "actual": {
+        "ft_score": "2:2",
+        "ft_direction": "平局",
+        "ft_goals": 4,
+        "ht_score": "1:0",
+        "ht_direction": "主胜",
+        "goal_details": "Raemaekers 22'(pen), Joseph 50', Weghorst 83', Vennegoor 86'",
+        "notes": "费伦茨2-0领先到82分钟，特温特83'+86'连追2球扳平",
+        "agg": "费伦茨 4-3 晋级"
+      },
+      "hit": {
+        "direction": false,
+        "score_top5": false,
+        "over_under": false,
+        "half_time": false,
+        "handicap": true
+      },
+      "handicap": {
+        "rq_line": 1,
+        "rq_actual": "让胜",
+        "rq_predicted": "让胜"
+      }
+    },
+    {
+      "match_id": "周四005",
+      "home": "本菲卡",
+      "away": "圣加仑",
+      "league": "欧罗巴资格赛",
+      "prediction": {
+        "direction": "主胜",
+        "fused_prob": 63.9,
+        "confidence": "中 ★★",
+        "top5_scores": [
+          {
+            "score": "1:0",
+            "prob": 17.1,
+            "direction": "主胜"
+          },
+          {
+            "score": "2:0",
+            "prob": 14.8,
+            "direction": "主胜"
+          },
+          {
+            "score": "3:0",
+            "prob": 9.3,
+            "direction": "主胜"
+          },
+          {
+            "score": "2:1",
+            "prob": 8.9,
+            "direction": "主胜"
+          },
+          {
+            "score": "1:1",
+            "prob": 8.2,
+            "direction": "平局"
+          }
+        ],
+        "half_top3": [
+          {
+            "score": "0:0",
+            "prob": 31.9,
+            "direction": "平局"
+          },
+          {
+            "score": "1:0",
+            "prob": 28.7,
+            "direction": "主胜"
+          },
+          {
+            "score": "2:0",
+            "prob": 11.7,
+            "direction": "主胜"
+          }
+        ],
+        "over_2_5": 44.7,
+        "under_2_5": 55.3,
+        "lambda_home": 1.872,
+        "lambda_away": 0.597
+      },
+      "actual": {
+        "ft_score": "5:0",
+        "ft_direction": "主胜",
+        "ft_goals": 5,
+        "ht_score": "1:0",
+        "ht_direction": "主胜",
+        "goal_details": "Pavlidis 11', 55', 66', 74'(pen), Lenglet 82'",
+        "notes": "Pavlidis大四喜，本菲卡总比分6-2逆转晋级",
+        "agg": "本菲卡 6-2 晋级"
+      },
+      "hit": {
+        "direction": true,
+        "score_top5": false,
+        "over_under": false,
+        "half_time": false,
+        "handicap": true
+      },
+      "handicap": {
+        "rq_line": -2,
+        "rq_actual": "让胜",
+        "rq_predicted": "让胜"
+      }
+    },
+    {
+      "match_id": "周四006",
+      "home": "科林蒂安",
+      "away": "巴拉纳竞技",
+      "league": "巴甲",
+      "prediction": {
+        "direction": "主胜",
+        "fused_prob": 45.9,
+        "confidence": "中 ★★",
+        "top5_scores": [
+          {
+            "score": "1:0",
+            "prob": 22.9,
+            "direction": "主胜"
+          },
+          {
+            "score": "0:0",
+            "prob": 17.9,
+            "direction": "平局"
+          },
+          {
+            "score": "2:0",
+            "prob": 11.9,
+            "direction": "主胜"
+          },
+          {
+            "score": "0:1",
+            "prob": 11.8,
+            "direction": "客胜"
+          },
+          {
+            "score": "1:1",
+            "prob": 10.0,
+            "direction": "平局"
+          }
+        ],
+        "half_top3": [
+          {
+            "score": "0:0",
+            "prob": 47.0,
+            "direction": "平局"
+          },
+          {
+            "score": "1:0",
+            "prob": 24.6,
+            "direction": "主胜"
+          },
+          {
+            "score": "0:1",
+            "prob": 12.2,
+            "direction": "客胜"
+          }
+        ],
+        "over_2_5": 22.8,
+        "under_2_5": 77.2,
+        "lambda_home": 1.109,
+        "lambda_away": 0.534
+      },
+      "actual": {
+        "ft_score": "0:0",
+        "ft_direction": "平局",
+        "ft_goals": 0,
+        "ht_score": "0:0",
+        "ht_direction": "平局",
+        "goal_details": "无进球",
+        "notes": "0-0闷平，巴拉纳竞技中柱(73')险些绝杀",
+        "agg": "巴甲第21轮"
+      },
+      "hit": {
+        "direction": false,
+        "score_top5": true,
+        "over_under": true,
+        "half_time": true,
+        "handicap": false
+      },
+      "handicap": {
+        "rq_line": -1,
+        "rq_actual": "让负",
+        "rq_predicted": "让胜"
+      }
+    }
+  ],
+  "key_findings": [
+    "方向命中率仅16.7%(1/6)，除005本菲卡外全部翻车——模型系统性高估热门方、低估冷门",
+    "002帕福斯2-0逆转海杜克是最大冷门——模型预测客胜37.5%但实际主胜，帕福斯首回合0-2落后成功翻盘",
+    "003安德莱赫特3-1哈马比——模型预测客胜但实际主胜，哈马比3分钟闪击后被逆转，安德莱赫特下半场连进3球",
+    "004费伦茨2-2特温特——模型预测主胜但实际平局，特温特83'+86'连追2球，模型未考虑特温特后期爆发能力",
+    "006科林蒂安0-0巴拉纳——模型预测主胜45.9%但实际平局，巴甲平局系统性漏判问题仍然存在",
+    "比分TOP5命中率16.7%——5场大比分/冷门比分(0:2/2:0/3:1/2:2/5:0)均不在TOP5中",
+    "大小球命中率50%——模型6场均预测小球，但3场出大球(3:1/2:2/5:0)，系统性低估进球数",
+    "半场方向命中率33.3%——模型6场半场均预测平局，但实际仅2场半场平局，过于保守",
+    "让球命中率极低——模型方向仅1场命中，让球自然大面积翻车",
+    "核心问题：模型仍存在正路偏误，6场预测中4场主胜+2场客胜，0场平局预测，但实际3场主胜+2场平局+1场客胜"
+  ],
+  "improvements_applied": [
+    "平局预测需要更积极——实际2场平局(33%)但模型预测0场平局",
+    "大小球需要上调——资格赛次回合因翻盘需求往往打出大球",
+    "冷门检测需加强——002帕福斯翻盘+003安德莱赫特逆转均未预见",
+    "半场预测过于保守——不应默认所有比赛半场0:0"
+  ],
+  "source_files": {
+    "prediction_json": "memory/predictions/2026-07-30_thu/thu_predictions_xg_v3.json",
+    "analysis_script": "thu_analysis.py",
+    "html_report": "reports/html/thu_6_match_xg_enhanced.html"
+  },
+  "created_at": "2026-07-31 08:46:44"
+}

@@ -1,0 +1,151 @@
+{
+  "backtest_id": "20260819_wednesday_backtest",
+  "match_date": "2026-08-19",
+  "weekday": "周三",
+  "model_version": "AGENTS.md v2.3.3",
+  "match_count": 8,
+  "data_source": "WebSearch(懂球帝/球迷屋/UEFA官网/goal.com/FotMob/新浪/7M)",
+  "summary": {
+    "direction_first_or_second": "6/8 (75.0%)",
+    "direction_first_only": "3/8 (37.5%)",
+    "total_goals_top2": "5/8 (62.5%)",
+    "htft_top3": "3/8 (37.5%)",
+    "score_top5": "2/8 (25.0%)",
+    "parlays_hit": "1/13"
+  },
+  "matches": [
+    {
+      "match_num": "001", "league": "韩国杯1/8决赛", "home": "安养FC", "away": "济州SK",
+      "actual_score": "2-1", "actual_ht": "0-1", "actual_direction": "主胜", "actual_total_goals": 3, "actual_htft": "负胜",
+      "had_pred_first": "平(44%)", "had_pred_second": "客胜(28%)", "had_hit": "❌",
+      "ttg_pred": "2球/3球", "ttg_hit": "✅", "htft_pred": "平平/平负/平胜", "htft_hit": "❌",
+      "score_pred": "1-1(14%)/0-1(10%)/0-0(10%)/1-0(9%)/1-2(8%)", "score_hit": "❌",
+      "notes": "用户依规则12历史交锋买2:1命中(场次本身预测未中)，0-1半场→2-1逆转，半全场负胜未覆盖"
+    },
+    {
+      "match_num": "002", "league": "西甲第1轮", "home": "马竞", "away": "马拉加",
+      "actual_score": "2-0", "actual_ht": "0-0", "actual_direction": "主胜", "actual_total_goals": 2, "actual_htft": "平胜",
+      "had_pred_first": "主胜(58%)", "had_pred_second": "平(30%)", "had_hit": "✅首",
+      "ttg_pred": "1球/2球", "ttg_hit": "✅", "htft_pred": "胜胜/平胜/平平", "htft_hit": "✅次",
+      "score_pred": "1-0(18%)/2-0(15%)/0-0(12%)/1-1(11%)/2-1(8%)", "score_hit": "✅(2-0在次位)",
+      "notes": "马竞方向首选命中；0-0半场→2-0，半全场平胜命中次选；2-0比分TOP5次位命中"
+    },
+    {
+      "match_num": "003", "league": "解放者杯1/8次回合", "home": "波特诺", "away": "帕尔梅拉斯",
+      "actual_score": "0-1", "actual_ht": "0-1", "actual_direction": "客胜", "actual_total_goals": 1, "actual_htft": "负负",
+      "had_pred_first": "平(35%)", "had_pred_second": "客胜(37%)", "had_hit": "✅次",
+      "ttg_pred": "2球/1球", "ttg_hit": "✅", "htft_pred": "平平/平负/负负", "htft_hit": "✅次",
+      "score_pred": "1-1(14%)/0-1(13%)/0-0(11%)/1-0(11%)/0-2(8%)", "score_hit": "✅(0-1在次位)",
+      "notes": "杯赛次回合客胜次选命中；半全场负负次选命中；0-1比分预测次位命中"
+    },
+    {
+      "match_num": "004", "league": "美职第21轮", "home": "纽约红牛", "away": "纳什维尔",
+      "actual_score": "0-1", "actual_ht": "0-0", "actual_direction": "客胜", "actual_total_goals": 1, "actual_htft": "平负",
+      "had_pred_first": "客胜(38%)", "had_pred_second": "平(28%)", "had_hit": "✅首",
+      "ttg_pred": "2球/3球", "ttg_hit": "❌", "htft_pred": "平负/负负/平平", "htft_hit": "✅首",
+      "score_pred": "1-1(13%)/0-1(10%)/1-0(9%)/1-2(9%)/2-1(8%)", "score_hit": "✅(0-1在次位)",
+      "notes": "纳什维尔客胜首选命中；90+2补时绝杀，TTG预测低球完美错开(1球未进TOP2)"
+    },
+    {
+      "match_num": "005", "league": "美职第20轮", "home": "科罗拉多", "away": "洛杉矶FC",
+      "actual_score": "1-0", "actual_ht": "1-0", "actual_direction": "主胜", "actual_total_goals": 1, "actual_htft": "胜胜",
+      "had_pred_first": "客胜(38%)", "had_pred_second": "主胜(36%)", "had_hit": "✅次",
+      "ttg_pred": "2球/3球", "ttg_hit": "❌", "htft_pred": "平平/平负/负负", "htft_hit": "❌",
+      "score_pred": "1-1(13%)/0-1(10%)/1-0(9%)/1-2(8%)/2-1(8%)", "score_hit": "✅(1-0第3位)",
+      "notes": "科罗拉多主场爆冷1-0命中次选；22'乌龙即进，高原主场价值验证；总进球高估(仅1球、LAFC只1射正)"
+    },
+    {
+      "match_num": "006", "league": "欧冠附加赛首回合", "home": "凯尔特人", "away": "LASK林茨",
+      "actual_score": "3-0", "actual_ht": "1-0", "actual_direction": "主胜", "actual_total_goals": 3, "actual_htft": "胜胜",
+      "had_pred_first": "主胜(44%)", "had_pred_second": "平(37%)", "had_hit": "✅首",
+      "ttg_pred": "2球/3球", "ttg_hit": "✅", "htft_pred": "胜胜/平胜/平平", "htft_hit": "✅首",
+      "score_pred": "1-0(13%)/1-1(13%)/2-0(10%)/2-1(9%)/0-0(9%)", "score_hit": "❌(3-0未在TOP5)",
+      "notes": "凯尔特人主胜+半全场胜胜首选命中；3-0大胜未在比分TOP5，规则63平局上修反而低估了主胜强度"
+    },
+    {
+      "match_num": "007", "league": "欧冠附加赛首回合", "home": "奈梅亨", "away": "博德闪耀",
+      "actual_score": "1-3", "actual_ht": "0-2", "actual_direction": "客胜", "actual_total_goals": 4, "actual_htft": "负负",
+      "had_pred_first": "平(43%)", "had_pred_second": "客胜(29%)", "had_hit": "✅次",
+      "ttg_pred": "3球/4球", "ttg_hit": "✅", "htft_pred": "平平/平负/平胜", "htft_hit": "❌",
+      "score_pred": "1-1(14%)/2-1(9%)/1-2(9%)/2-2(8%)/1-0(8%)", "score_hit": "❌(1-3未在TOP5)",
+      "notes": "客胜次选命中；大球判断正确(4球,TTG榜首命中)；双残阵后防+对攻→客队崩盘而非平局，规则63平局上修方向性失败"
+    },
+    {
+      "match_num": "008", "league": "欧冠附加赛首回合", "home": "布拉迪斯", "away": "采列",
+      "actual_score": "1-1", "actual_ht": "1-1", "actual_direction": "平", "actual_total_goals": 2, "actual_htft": "平平",
+      "had_pred_first": "主胜(53%)", "had_pred_second": "平(29%)", "had_hit": "✅次",
+      "ttg_pred": "2球/1球", "ttg_hit": "✅", "htft_pred": "胜胜/平胜/平平", "htft_hit": "✅次",
+      "score_pred": "1-0(14%)/1-1(12%)/2-0(11%)/2-1(9%)/0-1(8%)", "score_hit": "✅(1-1在次位)",
+      "notes": "主胜爆冷1-1防冷命中次选；1-1比分次位命中；TTG 2球首选命中；半全场平平次选命中——008是最全面命中场"
+    }
+  ],
+  "parlays": {
+    "direction": [
+      {"name": "主胜方向串", "legs": "006凯尔特人胜✅ + 008布拉迪斯胜❌", "hit": "❌"},
+      {"name": "价值方向串", "legs": "004纳什维尔客胜✅ + 005LAFC客胜❌", "hit": "❌"},
+      {"name": "单关平局方向串", "legs": "001安养平❌ + 007奈梅亨平❌", "hit": "❌"}
+    ],
+    "handicap": [
+      {"name": "稳健让球串", "legs": "001安养让+1胜✅ + 006凯尔特人让-1负❌", "hit": "❌"},
+      {"name": "价值让球串", "legs": "002马竞让-1平❌ + 008布拉迪斯让-1负❌", "hit": "❌"},
+      {"name": "单关不败让球串", "legs": "007奈梅亨让-1负✅ + 001安养让+1胜✅", "hit": "✅~2.07"}
+    ],
+    "mixed": [
+      {"name": "半全场串A", "legs": "008布拉迪斯-胜胜❌ + 007奈梅亨-平平❌", "hit": "❌"},
+      {"name": "半全场串B", "legs": "006凯尔特人-胜胜✅ + 002马竞-胜胜❌", "hit": "❌"},
+      {"name": "方向+半全场A", "legs": "008布拉迪斯主胜❌ + 003波特诺-平平❌", "hit": "❌"},
+      {"name": "方向+半全场B", "legs": "001安养平❌ + 002马竞-平胜✅", "hit": "❌"}
+    ],
+    "entertainment": {
+      "total_goals": [
+        {"name": "总进球A", "legs": "006凯尔特人2球❌ + 008布拉迪斯3球❌", "hit": "❌"},
+        {"name": "总进球B", "legs": "007奈梅亨3球✅(实际4) + 005科罗拉多3球❌ + 002马拉加1球❌", "hit": "❌"}
+      ],
+      "htft_high": [
+        {"name": "高赔半全场A", "legs": "007奈梅亨-平平❌ + 003波特诺-平平❌", "hit": "❌"},
+        {"name": "高赔半全场B", "legs": "001安养-平胜❌ + 005科罗拉多-平负❌", "hit": "❌"},
+        {"name": "高赔半全场C", "legs": "006凯尔特人-平胜❌ + 004红牛-负胜❌", "hit": "❌"},
+        {"name": "高赔半全场D", "legs": "002马竞-胜平❌ + 005科罗拉多-负平❌", "hit": "❌"}
+      ],
+      "mixed_htft_ttg": [
+        {"name": "混合A", "legs": "008布拉迪斯-胜胜❌ + 007奈梅亨4球✅", "hit": "❌"},
+        {"name": "混合B", "legs": "006凯尔特人-胜胜✅ + 007奈梅亨3球❌(实际4)", "hit": "❌"},
+        {"name": "混合C", "legs": "003波特诺-平平❌ + 002马拉加1球❌", "hit": "❌"},
+        {"name": "混合D", "legs": "005科罗拉多-平负❌ + 007奈梅亨4球✅", "hit": "❌"}
+      ],
+      "score": [
+        {"name": "稳健比分串", "legs": "008布拉迪斯1-0❌ + 002马竞1-0❌", "hit": "❌"},
+        {"name": "混合比分串", "legs": "008(1-0/2-0)❌ + 002(1-0/2-0)❌(实际2-0中008未中)", "hit": "❌"},
+        {"name": "TOP5比分串", "legs": "008(1-0/2-0/1-1)✅次 + 002(1-0/2-0/0-0)✅(2-0/0-0) ", "hit": "❌(008采列未选1-1客考虑)"},
+        {"name": "搏冷比分串", "legs": "003波特诺-1-1❌ + 008布拉迪斯-2-0❌", "hit": "❌"},
+        {"name": "单挑比分①", "legs": "002马竞-0-0❌(实际2-0)", "hit": "❌"},
+        {"name": "单挑比分②", "legs": "008布拉迪斯-2-0❌(实际1-1)", "hit": "❌"}
+      ]
+    }
+  },
+  "key_findings": [
+    { "title": "方向命中6/8(75%)，次选贡献一半", "detail": "首选3场命中，次选3场命中，方向(首选+次选)75%达优秀线。次选(客胜/防冷)大幅贡献——003/005/007/008均靠次选命中，验证防冷与反向覆盖价值" },
+    { "title": "008布拉迪斯是全场最全面命中场", "detail": "方向次选平✅+总进球2球首选✅+半全场平平次选✅+比分1-1次选✅，四维同步命中，主胜53%方向靠防冷调整次选平兑现" },
+    { "title": "规则63单关平局上修方向性失效", "detail": "001/007两场单关平局晋身首选(44%/43%)均未打出平局，007反而客胜1-3大比分。001、007同为单关，008未开单关却打出平局——单关平局上修不是独立因果(与8-18回测L027结论呼应)" },
+    { "title": "001安养主胜2-1：用户规则12历史交锋命中", "detail": "用户基于历史交锋安养同主客几乎没输过买2:1精确命中，模型却判平44%首选。规则12实战再次验证——交锋延续性(2-1、复仇战意)战胜等级差名义" },
+    { "title": "大球主线007命中但005高估", "detail": "007双残阵大球判断正确(4球首选命中)，但005科罗拉多双门将伤停被高估只1-0(LAFC客攻疲软1射正)。大球主线需要区分哪边先崩、哪边死守" },
+    { "title": "半全场/比分命中率最低(37.5%/25%)", "detail": "半全场TOP3仅3/8命中，比分TOP5仅2/8。纯高赔(半全场/比分)玩法命中率远低于方向，只有方向+总进球具实战价值" }
+  ],
+  "rule_triggers": [
+    { "rule": "规则12历史交锋", "matches": "001", "execution": "用户依据安养同主客交锋几乎没输买2:1", "result": "✅命中(用户买分命中)" },
+    { "rule": "规则63单关平局上修", "matches": "001/006/007", "execution": "001平44%首选/006平37%次选/007平43%首选", "result": "❌001/007平局未出，006主胜胜出" },
+    { "rule": "规则9/9a残阵大球", "matches": "007/005", "execution": "双残阵TTG高估3/4球", "result": "007✅4球命中；005❌仅1球" },
+    { "rule": "规则21反热门", "matches": "002/008", "execution": "002马竞73.8%过热防冷、008主胜53%防冷", "result": "002✅未大胜(2-0小胜)；008✅1-1平防冷兑现" },
+    { "rule": "规则54杯赛次回合平局", "matches": "003", "execution": "平局35%首选", "result": "❌0-1客胜(平局未出但客胜次选命中)" }
+  ],
+  "new_rule_suggestions": [
+    { "suggested_rule": "规则63细化：单关平局上修不作为主胜拦截", "source_lesson": "007单关平局首选但客胜1-3大比分；008未开单关却平局", "summary": "单关平局上修更适用于势均力敌场(参考L027求稳)，对残阵基本面强烈指向分胜负的场次不应上修平局为首选；需叠加基本面方向判定，双门将/双后防残阵场弃平局改大球" },
+    { "suggested_rule": "规则12强化为计算硬锚点已落地(v2.3.3)", "source_lesson": "001安养2-1命中", "summary": "规则12已升级为历史交锋比分驱动，同主客交锋几乎没输过的方向不败+比分延续需体现在模型lambda与比分TOP5(001当担2-1权重)" },
+    { "suggested_rule": "大球主线需判断崩盘方", "source_lesson": "007✅005❌", "summary": "双残阵大球成立，但需判断先崩方与死守方：007博德压上对攻→大球+客胜；005科罗拉多主场死守→大球高估。残阵方向不可笼统" }
+  ],
+  "source_files": {
+    "prediction": "memory/predictions/20260819_wednesday/20260819_wednesday_predictions.json",
+    "report": "reports/html/20260819_wednesday_analysis_zhihu.md",
+    "backtest_report": "reports/html/backtest_20260819_wednesday_zhihu.md"
+  }
+}

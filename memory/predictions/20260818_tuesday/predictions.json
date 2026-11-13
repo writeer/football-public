@@ -1,0 +1,170 @@
+{
+  "date": "2026-08-18",
+  "weekday": "周二",
+  "matches": [
+    {
+      "match_id": "001",
+      "league": "南美解放者杯1/8决赛次回合",
+      "home_team": "里瓦达维亚独立",
+      "away_team": "弗鲁米嫩塞",
+      "date": "2026-08-19",
+      "had": { "home_win": 0.436, "draw": 0.286, "away_win": 0.278 },
+      "hafu": { "handicap": -1, "home_win": 0.22, "draw": 0.231, "away_win": 0.549 },
+      "crs": [
+        { "score": "1-1", "probability": 0.141 },
+        { "score": "1-0", "probability": 0.097 },
+        { "score": "0-0", "probability": 0.094 },
+        { "score": "2-1", "probability": 0.09 },
+        { "score": "2-0", "probability": 0.082 }
+      ],
+      "ttg": [
+        { "goals": 2, "probability": 0.254 },
+        { "goals": 3, "probability": 0.216 }
+      ],
+      "htft": [
+        { "result": "主-主", "probability": 0.246 },
+        { "result": "平-主", "probability": 0.177 },
+        { "result": "平-平", "probability": 0.173 }
+      ],
+      "ht_score": [
+        { "score": "0-0", "probability": 0.331 },
+        { "score": "1-0", "probability": 0.194 },
+        { "score": "0-1", "probability": 0.144 }
+      ],
+      "confidence": "★",
+      "odds_had": { "home_win": 2.36, "draw": 2.65, "away_win": 3.05 },
+      "odds_hafu": { "handicap": -1, "home_win": 5.65, "draw": 3.8, "away_win": 1.45 },
+      "odds_crs": { "1-1": 5.4, "1-0": 6.5, "0-0": 6.5, "2-1": 8.5, "2-0": 10.5 },
+      "odds_htft": { "主-主": 4.2, "平-主": 5.4, "平-平": 3.95 },
+      "odds_ttg": { "2": 3.1, "3": 4.3 },
+      "injuries_home": ["马加尼奥(门将,肌肉挫伤,老伤)"],
+      "injuries_away": ["肯尼迪(前锋,前交叉韧带,赛季报销)", "阿拉纳(后卫,伤)", "弗雷特斯(后卫,踝伤)", "雷斯(前锋,膝伤)", "伊格纳西奥(后卫,停赛)", "萨瓦里诺/费利佩/拉贝洛(存疑)"],
+      "lambda_home": 1.45,
+      "lambda_away": 1.10,
+      "notes": "次回合首回合0-0平局即点球大战；弗鲁米嫩塞单队≥5人伤停触发规则32强制低★；弗鲁米嫩塞换帅马尔康临时带队；身价碾压3倍但基本面反向"
+    },
+    {
+      "match_id": "002",
+      "league": "欧冠附加赛首回合",
+      "home_team": "索菲亚列夫斯基",
+      "away_team": "雅典AEK",
+      "date": "2026-08-19",
+      "had": { "home_win": 0.401, "draw": 0.29, "away_win": 0.309 },
+      "hafu": { "handicap": 1, "home_win": 0.709, "draw": 0.181, "away_win": 0.111 },
+      "crs": [
+        { "score": "1-1", "probability": 0.145 },
+        { "score": "0-0", "probability": 0.107 },
+        { "score": "1-0", "probability": 0.106 },
+        { "score": "2-1", "probability": 0.087 },
+        { "score": "2-0", "probability": 0.083 }
+      ],
+      "ttg": [
+        { "goals": 2, "probability": 0.261 },
+        { "goals": 1, "probability": 0.218 }
+      ],
+      "htft": [
+        { "result": "主-主", "probability": 0.235 },
+        { "result": "平-平", "probability": 0.186 },
+        { "result": "平-主", "probability": 0.176 }
+      ],
+      "ht_score": [
+        { "score": "0-0", "probability": 0.352 },
+        { "score": "1-0", "probability": 0.194 },
+        { "score": "0-1", "probability": 0.148 }
+      ],
+      "confidence": "★",
+      "odds_had": { "home_win": 3.05, "draw": 2.95, "away_win": 2.16 },
+      "odds_hafu": { "handicap": 1, "home_win": 1.53, "draw": 3.7, "away_win": 4.9 },
+      "odds_crs": { "1-1": 6.0, "0-0": 9.0, "1-0": 8.5, "2-1": 10.0, "2-0": 15.0 },
+      "odds_htft": { "主-主": 5.2, "平-平": 4.6, "平-主": 6.75 },
+      "odds_ttg": { "2": 3.25, "1": 4.1 },
+      "injuries_home": ["基里洛夫(主力边锋,膝伤)", "武利基奇(主力中卫,跖骨骨折)", "布拉斯(主力中前卫,肌肉伤)", "卡姆登(边卫,膝手术)", "桑加雷(前锋,肌肉伤)"],
+      "injuries_away": ["加契诺维奇(前腰,半月板伤)", "维塔利什/阿莱克西乌(无欧战资格)", "彭里斯/埃利亚松(离队)"],
+      "lambda_home": 1.35,
+      "lambda_away": 1.05,
+      "notes": "杯赛首回合L002基准lambda1.8-2.2；列夫斯基单队5人伤停触发规则32强制低★；模型主胜vs市场客胜分歧约11%；列夫斯基主场欧冠3连胜全零封"
+    },
+    {
+      "match_id": "003",
+      "league": "欧冠附加赛首回合",
+      "home_team": "萨格勒布迪纳摩",
+      "away_team": "维京",
+      "date": "2026-08-19",
+      "had": { "home_win": 0.608, "draw": 0.218, "away_win": 0.174 },
+      "hafu": { "handicap": -1, "home_win": 0.38, "draw": 0.228, "away_win": 0.392 },
+      "crs": [
+        { "score": "1-1", "probability": 0.107 },
+        { "score": "2-0", "probability": 0.105 },
+        { "score": "2-1", "probability": 0.099 },
+        { "score": "1-0", "probability": 0.087 },
+        { "score": "3-0", "probability": 0.073 }
+      ],
+      "ttg": [
+        { "goals": 3, "probability": 0.224 },
+        { "goals": 2, "probability": 0.22 }
+      ],
+      "htft": [
+        { "result": "主-主", "probability": 0.378 },
+        { "result": "平-主", "probability": 0.215 },
+        { "result": "平-平", "probability": 0.125 }
+      ],
+      "ht_score": [
+        { "score": "0-0", "probability": 0.267 },
+        { "score": "1-0", "probability": 0.226 },
+        { "score": "1-1", "probability": 0.116 }
+      ],
+      "confidence": "★★",
+      "odds_had": { "home_win": 1.58, "draw": 3.75, "away_win": 4.35 },
+      "odds_hafu": { "handicap": -1, "home_win": 2.78, "draw": 3.55, "away_win": 2.05 },
+      "odds_crs": { "2-0": 9.5, "2-1": 7.25, "1-0": 9.0, "3-0": 14.0, "1-1": 7.5 },
+      "odds_htft": { "主-主": 2.52, "平-主": 4.6, "平-平": 6.5 },
+      "odds_ttg": { "3": 3.65, "2": 3.9 },
+      "injuries_home": ["菲利波维奇(门将,红牌停赛,有替代)"],
+      "injuries_away": ["罗斯(主力中卫,膝伤)", "巴尔特尔森(后卫,脚骨折)", "贝里沙(前锋,大腿伤)", "达戈斯蒂诺(腿伤)", "贝尔/法尔赫纳(存疑)"],
+      "lambda_home": 2.10,
+      "lambda_away": 0.95,
+      "notes": "维京后防危机触发规则32后防线≥3人缺阵；迪纳摩连续不败24+场主场堡垒；维京轮空直进附加赛欧冠0场+体能告急；规则34欧冠TTG防3球；双方合计5人伤停不足★★★"
+    },
+    {
+      "match_id": "004",
+      "league": "欧冠附加赛首回合",
+      "home_team": "费内巴切",
+      "away_team": "里昂",
+      "date": "2026-08-19",
+      "had": { "home_win": 0.426, "draw": 0.268, "away_win": 0.306 },
+      "hafu": { "handicap": -1, "home_win": 0.218, "draw": 0.223, "away_win": 0.559 },
+      "crs": [
+        { "score": "1-1", "probability": 0.137 },
+        { "score": "1-2", "probability": 0.073 },
+        { "score": "0-0", "probability": 0.083 },
+        { "score": "2-1", "probability": 0.091 },
+        { "score": "1-0", "probability": 0.085 }
+      ],
+      "ttg": [
+        { "goals": 2, "probability": 0.245 },
+        { "goals": 3, "probability": 0.221 }
+      ],
+      "htft": [
+        { "result": "主-主", "probability": 0.241 },
+        { "result": "平-主", "probability": 0.171 },
+        { "result": "客-客", "probability": 0.156 }
+      ],
+      "ht_score": [
+        { "score": "0-0", "probability": 0.311 },
+        { "score": "1-0", "probability": 0.186 },
+        { "score": "0-1", "probability": 0.146 }
+      ],
+      "confidence": "★",
+      "odds_had": { "home_win": 1.81, "draw": 3.5, "away_win": 3.45 },
+      "odds_hafu": { "handicap": -1, "home_win": 3.45, "draw": 3.6, "away_win": 1.78 },
+      "odds_crs": { "1-1": 7.0, "1-2": 10.5, "0-0": 14.0, "2-1": 7.5, "1-0": 8.5 },
+      "odds_htft": { "主-主": 2.9, "平-主": 5.0, "客-客": 5.8 },
+      "odds_ttg": { "2": 3.75, "3": 3.65 },
+      "injuries_home": ["卢卡库(前锋,肌肉伤)", "瑟云聚(中卫,伤)", "奥斯特沃尔德(主力左后卫,跟腱伤)", "居诺克(门将,肌肉伤)", "阿姆拉巴特(中场,伤)", "穆萨巴(前锋,伤)", "扬达斯(中场,停赛)"],
+      "injuries_away": ["舒尔茨(核心攻击中场,膝伤)", "梅拉(中场,踝伤)", "塔利亚菲科(左后卫,缺席)"],
+      "lambda_home": 1.50,
+      "lambda_away": 1.20,
+      "notes": "费内巴切单队7人伤停触发规则32严重残阵强制低★；规则28模型+市场一致但基本面相反警惕追热；里昂H2H 4胜0负克星；费内巴切土超首轮爆冷负升班马"
+    }
+  ]
+}

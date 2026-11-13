@@ -1,0 +1,184 @@
+{
+  "backtest_id": "fri_20260731_backtest",
+  "match_date": "2026-07-31",
+  "match_day": "周五",
+  "model_version": "v1.7.0",
+  "weight_system": "v1.6.0",
+  "num_matches": 3,
+  "backtest_date": "2026-08-01",
+  "summary": {
+    "direction_hit_rate": "33.3% (1/3)",
+    "score_top5_hit_rate": "33.3% (1/3)",
+    "score_top10_hit_rate": "33.3% (1/3)",
+    "ht_score_top3_hit_rate": "33.3% (1/3)",
+    "ht_score_top5_hit_rate": "100.0% (3/3)",
+    "over_under_hit_rate": "100.0% (3/3)",
+    "handicap_hit_rate": "66.7% (2/3)",
+    "half_full_top3_hit_rate": "100.0% (3/3)",
+    "actual_draws": 1,
+    "predicted_draws": 0,
+    "draw_missed": 1
+  },
+  "matches": [
+    {
+      "match_id": "001",
+      "league": "挪超第16轮",
+      "home_team": "瓦勒伦加",
+      "away_team": "汉坎",
+      "actual_score": "0:3",
+      "actual_direction": "客胜",
+      "actual_ht_score": "0:1",
+      "actual_ht_direction": "客胜",
+      "actual_total_goals": 3,
+      "actual_over_under": "大球",
+      "actual_handicap_result": "客胜",
+      "actual_half_full": "负负",
+      "actual_goals_detail": [
+        {"minute": "45+3", "scorer": "Aksel Baran Potur", "team": "away", "score": "0:1"},
+        {"minute": "68", "scorer": "Martin Gjone", "team": "away", "score": "0:2"},
+        {"minute": "83", "scorer": "Patrick Metcalfe", "team": "away", "score": "0:3"}
+      ],
+      "red_card": {"minute": "13", "player": "Henrik Bjørdal", "team": "home"},
+      "prediction": {
+        "direction": "主胜",
+        "direction_prob": 47.9,
+        "confidence": "中 ★★",
+        "score_top5": [["1:1", 9.2], ["2:1", 8.9], ["1:2", 7.6], ["1:0", 7.4], ["2:2", 6.7]],
+        "ht_top3": [["0:0", 22.1], ["1:0", 18.9], ["0:1", 16.3]],
+        "ht_top5": [["0:0", 22.1], ["1:0", 18.9], ["0:1", 16.3], ["2:0", 7.2], ["1:1", 5.5]],
+        "over_prob": 63.8,
+        "handicap_pred": "客胜",
+        "handicap_prob": 55.3,
+        "half_full_top3": [["胜胜", 27.2], ["负负", 20.0], ["平胜", 13.5]]
+      },
+      "hit_check": {
+        "direction": false,
+        "score_top5": false,
+        "score_top10": false,
+        "ht_top3": true,
+        "ht_top5": true,
+        "over_under": true,
+        "handicap": true,
+        "half_full_top3": true
+      },
+      "analysis": "预测主胜47.9%但实际0:3客胜。13分钟红牌(Bjørdal)彻底改变比赛走势——瓦勒伦加被迫10人作战。模型已标注两名主力后卫停赛(纳斯贝格/芬宁松)迫使防线重组，但红牌的叠加效应无法预测。半场0:1命中TOP3(16.3%)，半全场负负命中TOP2(20.0%)，让球客胜55.3%命中。大球63.8%命中。客胜概率29.1%虽高于市场22.0%但仍低估。"
+    },
+    {
+      "match_id": "002",
+      "league": "挪超第16轮",
+      "home_team": "博德闪耀",
+      "away_team": "利勒斯特罗姆",
+      "actual_score": "4:0",
+      "actual_direction": "主胜",
+      "actual_ht_score": "2:0",
+      "actual_ht_direction": "主胜",
+      "actual_total_goals": 4,
+      "actual_over_under": "大球",
+      "actual_handicap_result": "主胜",
+      "actual_half_full": "胜胜",
+      "actual_goals_detail": [
+        {"minute": "17", "scorer": "Ole Blomberg (pen)", "team": "home", "score": "1:0"},
+        {"minute": "25", "scorer": "Sondre Fet", "team": "home", "score": "2:0"},
+        {"minute": "63", "scorer": "Jens Petter Hauge", "team": "home", "score": "3:0"},
+        {"minute": "77", "scorer": "Markus Karlsbakk (og)", "team": "home", "score": "4:0"}
+      ],
+      "red_card": null,
+      "prediction": {
+        "direction": "主胜",
+        "direction_prob": 65.7,
+        "confidence": "高 ★★★",
+        "score_top5": [["2:1", 9.8], ["2:0", 8.5], ["1:0", 8.4], ["1:1", 8.1], ["3:1", 7.2]],
+        "ht_top3": [["1:0", 22.6], ["0:0", 21.3], ["0:1", 12.1]],
+        "ht_top5": [["1:0", 22.6], ["0:0", 21.3], ["0:1", 12.1], ["2:0", 10.9], ["1:1", 10.7]],
+        "over_prob": 65.3,
+        "handicap_pred": "客胜",
+        "handicap_prob": 61.2,
+        "half_full_top3": [["胜胜", 40.3], ["平胜", 17.1], ["负负", 10.9]]
+      },
+      "hit_check": {
+        "direction": true,
+        "score_top5": false,
+        "score_top10": false,
+        "ht_top3": false,
+        "ht_top5": true,
+        "over_under": true,
+        "handicap": false,
+        "half_full_top3": true
+      },
+      "analysis": "方向命中(主胜65.7%)但比分4:0远超预测。模型已标注利勒斯特xGA(1.58)远高于实际失球(0.92)存在回归均值风险——实际4:0大胜正是xGA回归的极端体现。让球-2预测客胜61.2%但实际主胜——博德闪耀赢2球+概率被低估。半场2:0命中TOP5(10.9%第4位)，半全场胜胜命中TOP1(40.3%)。大球65.3%命中。比分4:0不在TOP10，模型对比分极端值的覆盖仍不足。"
+    },
+    {
+      "match_id": "003",
+      "league": "美职联常规赛",
+      "home_team": "纽约城",
+      "away_team": "多伦多FC",
+      "actual_score": "1:1",
+      "actual_direction": "平局",
+      "actual_ht_score": "1:1",
+      "actual_ht_direction": "平局",
+      "actual_total_goals": 2,
+      "actual_over_under": "小球",
+      "actual_handicap_result": "客胜",
+      "actual_half_full": "平平",
+      "actual_goals_detail": [
+        {"minute": "8", "scorer": "Nicolás Fernández (pen)", "team": "home", "score": "1:0"},
+        {"minute": "45+5", "scorer": "Djordje Mihailović", "team": "away", "score": "1:1"}
+      ],
+      "red_card": null,
+      "prediction": {
+        "direction": "主胜",
+        "direction_prob": 58.4,
+        "confidence": "高 ★★★",
+        "score_top5": [["1:0", 13.5], ["2:0", 11.5], ["1:1", 10.2], ["2:1", 9.7], ["3:0", 6.9]],
+        "ht_top3": [["0:0", 29.9], ["1:0", 25.2], ["0:1", 12.1]],
+        "ht_top5": [["0:0", 29.9], ["1:0", 25.2], ["0:1", 12.1], ["2:0", 9.9], ["1:1", 8.8]],
+        "over_prob": 49.1,
+        "handicap_pred": "客胜",
+        "handicap_prob": 39.5,
+        "half_full_top3": [["胜胜", 38.1], ["平胜", 19.0], ["平平", 13.6]]
+      },
+      "hit_check": {
+        "direction": false,
+        "score_top5": true,
+        "score_top10": true,
+        "ht_top3": false,
+        "ht_top5": true,
+        "over_under": true,
+        "handicap": true,
+        "half_full_top3": true
+      },
+      "analysis": "预测主胜58.4%但实际1:1平局。比分矩阵1:1在TOP3(10.2%)——比分矩阵再次比方向判决更准(规则17第三次验证)。多伦多5人伤停(含核心奥索里奥停赛)但仍客场逼平——伤病信息不等于实力直接折算。半场1:1命中TOP5(8.8%第5位)，半全场平平命中TOP3(13.6%)，让球客胜39.5%命中。小球50.9%命中。★★★高置信度再次翻车(连续问题)。"
+    }
+  ],
+  "key_findings": [
+    "方向命中率33.3%较周四16.7%回升但仍偏低，连续两期低于50%",
+    "半全场TOP3命中100%(3/3)——半全场模型持续表现最佳",
+    "半场比分TOP5命中100%(3/3)——半场泊松模型(lambda×0.45)持续稳定",
+    "大小球命中100%(3/3)——大小球判断本轮完美",
+    "比分矩阵>方向判决第三次验证(003纽约城1:1在TOP3但方向选主胜)——规则17持续成立",
+    "001红牌不可预测但两名主力后卫停赛已预警——防线重组+红牌叠加导致0:3惨败",
+    "002让球盘误判——xGA回归均值确认(利勒斯特0.92→实际丢4球)，赢2球+概率被低估",
+    "003★★★高置信度翻车——多伦多5人伤停仍逼平，伤病≠直接实力折算",
+    "平局漏判持续——3场1场平局(33.3%)，模型预测0场平局"
+  ],
+  "improvements_applied": [
+    "半场泊松模型(lambda×0.45)持续验证有效——半场TOP5 100%命中",
+    "半全场预测模型表现优异——TOP3 100%命中，应作为核心推荐维度",
+    "比分矩阵方向优先标注(规则17)再次验证——003比分TOP3含1:1但方向选主胜",
+    "大小球判断准确——3场全中，lambda总进球计算可靠"
+  ],
+  "improvements_needed": [
+    "方向判决需增加平局权重——连续多期平局漏判",
+    "★★★高置信度翻车问题持续——需引入更多不确定性因子",
+    "让球盘预测仍是短板——本期2/3但002让球-2主胜完全误判",
+    "极端比分(4:0, 0:3)覆盖不足——比分矩阵需扩展尾部比分概率",
+    "xGA回归均值效应需量化纳入lambda修正——利勒斯特案例"
+  ],
+  "source_files": {
+    "prediction_json": "memory/predictions/2026-07-31_friday/friday_predictions.json",
+    "html_report": "reports/html/friday_20260731_analysis.html",
+    "backtest_html": "reports/html/friday_20260731_backtest.html",
+    "league_data_norway": "memory/leagues/eliteserien_no.json",
+    "league_data_mls": "memory/leagues/mls_us.json"
+  }
+}

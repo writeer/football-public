@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>竞彩足球全方位分析报告 — 2026.07.16</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700;800&display=swap');
+  
+  :root {
+    --bg: #0f1117;
+    --card: #1a1d28;
+    --card-hover: #212436;
+    --border: #2a2d3a;
+    --text: #e8eaed;
+    --text-muted: #8b8fa3;
+    --accent: #3b82f6;
+    --accent-light: #60a5fa;
+    --green: #22c55e;
+    --green-bg: rgba(34,197,94,0.12);
+    --red: #ef4444;
+    --red-bg: rgba(239,68,68,0.12);
+    --amber: #f59e0b;
+    --amber-bg: rgba(245,158,11,0.12);
+    --blue: #3b82f6;
+    --blue-bg: rgba(59,130,246,0.12);
+    --purple: #8b5cf6;
+    --gradient-1: linear-gradient(135deg, #1e3a5f 0%, #1a1d28 100%);
+    --gradient-2: linear-gradient(135deg, #1a1d28 0%, #2d1b3d 100%);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, #1e3a5f 0%, #0f1117 50%, #2d1b3d 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 60px 0 40px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+    font-weight: 800;
+    background: linear-gradient(135deg, #60a5fa, #a78bfa, #f472b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+  }
+
+  .hero .subtitle {
+    color: var(--text-muted);
+    font-size: 1.1em;
+    margin-bottom: 16px;
+  }
+
+  .hero .meta-info {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: var(--text-muted);
+    font-size: 0.9em;
+  }
+
+  .hero .meta-info span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* Section */
+  .match-section {
+    margin: 40px 0 60px;
+  }
+
+  .match-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .match-header .teams {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .match-header .teams h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  .match-header .teams .vs {
+    color: var(--text-muted);
+    font-size: 1em;
+    font-weight: 300;
+  }
+
+  .match-header .badge {
+    background: var(--accent-bg);
+    color: var(--accent-light);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    border: 1px solid rgba(59,130,246,0.3);
+  }
+
+  .match-datetime {
+    color: var(--text-muted);
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  /* Card Grid */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.2s;
+  }
+
+  .card:hover {
+    background: var(--card-hover);
+  }
+
+  .card-wide {
+    grid-column: 1 / -1;
+  }
+
+  .card-title {
+    font-size: 0.85em;
+    font-weight: 600;
+    color: var(--accent-light);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .card-title .icon { font-size: 1.1em; }
+
+  /* Tables */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+  }
+
+  .data-table th {
+    text-align: left;
+    padding: 8px 10px;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.85em;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .data-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(42,45,58,0.5);
+  }
+
+  .data-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .data-table .highlight {
+    color: var(--accent-light);
+    font-weight: 600;
+  }
+
+  .data-table .green-text { color: var(--green); font-weight: 600; }
+  .data-table .red-text { color: var(--red); font-weight: 600; }
+  .data-table .amber-text { color: var(--amber); font-weight: 600; }
+
+  /* Probability Bar */
+  .prob-bar {
+    display: flex;
+    height: 28px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+
+  .prob-bar .segment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: white;
+    transition: width 0.5s;
+  }
+
+  .prob-bar .home-seg { background: var(--blue); }
+  .prob-bar .draw-seg { background: var(--amber); }
+  .prob-bar .away-seg { background: var(--red); }
+
+  /* Score Grid */
+  .score-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+
+  .score-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+    background: rgba(42,45,58,0.4);
+    border-radius: 6px;
+    font-size: 0.85em;
+  }
+
+  .score-item .score { font-weight: 600; }
+  .score-item .pct { color: var(--accent-light); }
+
+  /* Value indicator */
+  .value-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+
+  .value-positive { background: var(--green-bg); color: var(--green); }
+  .value-negative { background: var(--red-bg); color: var(--red); }
+  .value-neutral { background: var(--amber-bg); color: var(--amber); }
+
+  /* Recommendation Box */
+  .rec-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+  }
+
+  .rec-item {
+    background: rgba(42,45,58,0.5);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    text-align: center;
+  }
+
+  .rec-item .label {
+    font-size: 0.8em;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+  }
+
+  .rec-item .value {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--accent-light);
+  }
+
+  .rec-item .conf {
+    font-size: 0.75em;
+    margin-top: 4px;
+  }
+
+  .conf-high { color: var(--green); }
+  .conf-mid { color: var(--amber); }
+  .conf-low { color: var(--red); }
+
+  /* Risk warning */
+  .risk-warning {
+    background: linear-gradient(135deg, rgba(239,68,68,0.08), rgba(245,158,11,0.08));
+    border: 1px solid rgba(239,68,68,0.2);
+    border-radius: 12px;
+    padding: 24px;
+    margin: 40px 0;
+  }
+
+  .risk-warning h3 {
+    color: var(--amber);
+    margin-bottom: 12px;
+    font-size: 1em;
+  }
+
+  .risk-warning ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .risk-warning li {
+    padding: 4px 0;
+    font-size: 0.85em;
+    color: var(--text-muted);
+  }
+
+  .risk-warning li::before {
+    content: "⚠ ";
+    color: var(--amber);
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 30px 0;
+    color: var(--text-muted);
+    font-size: 0.8em;
+    border-top: 1px solid var(--border);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero h1 { font-size: 1.8em; }
+    .match-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .card-grid { grid-template-columns: 1fr; }
+  }
+
+  .sub-card {
+    font-size: 0.85em;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+
+  .sub-card strong {
+    color: var(--text);
+  }
+
+  .spacer { height: 8px; }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="container">
+    <h1>⚽ 竞彩足球全方位分析报告</h1>
+    <p class="subtitle">基于 Dixon-Coles 修正泊松 · Skellam · 负二项 · 蒙特卡洛 · Shin 去水 · 凯利公式</p>
+    <div class="meta-info">
+      <span>📅 2026年7月16日（周四）开售</span>
+      <span>💰 本金 10,000 元（默认）</span>
+      <span>🛡 风控策略：半凯利 (Kelly/2)</span>
+      <span>🔬 数据来源：500彩票网 / 竞彩网 / 体彩中心</span>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ============================================================ -->
+<!-- MATCH 1: 博塔弗戈 vs 桑托斯 -->
+<!-- ============================================================ -->
+<div class="match-section">
+  <div class="match-header">
+    <div class="teams">
+      <h2>博塔弗戈</h2>
+      <span class="vs">vs</span>
+      <h2>桑托斯</h2>
+    </div>
+    <span class="badge">巴甲 第19轮</span>
+  </div>
+
+  <div class="match-datetime">
+    <span>⏰ 2026-07-17 06:30（北京时间）</span>
+    <span>🏟 尼尔顿·桑托斯奥林匹克体育场 · 里约热内卢</span>
+  </div>
+
+  <!-- 联赛诊断 + 实力评级 -->
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-title"><span class="icon">🔬</span> 联赛诊断</div>
+      <div class="sub-card">
+        <strong>VMR 过离散检测：</strong> 1.15（过离散程度适中）<br>
+        <strong>零膨胀检测（0-0率）：</strong> 7.5%（ZIP 可选）<br>
+        <strong>推荐分布族：</strong> Dixon-Coles 修正泊松<br>
+        <strong>DC ρ 参数：</strong> 0.08
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🏅</span> 球队实力评级</div>
+      <div class="sub-card">
+        <strong>Elo 分：</strong> 主 1480 vs 客 1440<br>
+        <strong>联赛排名：</strong> 主 #12（22分）vs 客 #15（21分）<br>
+        <strong>上赛季排名：</strong> 主 #6 vs 客 #12<br>
+        <strong>近期10场：</strong> 主 4胜4平2负 vs 客 4胜2平4负<br>
+        <strong>上一场：</strong> 主 1-2负巴伊亚 / 客 3-1胜维多利亚
+      </div>
+    </div>
+  </div>
+
+  <!-- 赔率对比 -->
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-title"><span class="icon">💰</span> 欧赔对比</div>
+      <table class="data-table">
+        <tr>
+          <th>公司</th><th>主胜</th><th>平局</th><th>客胜</th>
+        </tr>
+        <tr>
+          <td>威廉希尔</td><td>1.91</td><td>3.30</td><td>3.70</td>
+        </tr>
+        <tr>
+          <td>bet365</td><td>1.90</td><td>3.25</td><td>4.00</td>
+        </tr>
+        <tr>
+          <td>澳门</td><td>1.97</td><td>3.38</td><td>3.08</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">均值</td>
+          <td class="highlight">1.92</td>
+          <td class="highlight">3.38</td>
+          <td class="highlight">3.80</td>
+        </tr>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">📊</span> 赔率校准 · 去抽水</div>
+      <table class="data-table">
+        <tr>
+          <th>方法</th><th>主胜</th><th>平局</th><th>客胜</th><th>抽水</th>
+        </tr>
+        <tr>
+          <td>归一化去水</td>
+          <td>48.2%</td><td>27.4%</td><td>24.4%</td>
+          <td class="red-text">7.98%</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">Shin 去水 ★</td>
+          <td>48.2%</td><td>27.4%</td><td>24.4%</td>
+          <td class="red-text">7.98%</td>
+        </tr>
+      </table>
+      <div class="sub-card" style="margin-top:8px;font-size:0.8em">
+        Shin z = 0.000（市场赔率紧凑，Shin 退化为归一化）
+      </div>
+    </div>
+  </div>
+
+  <!-- 亚盘 + 大小球 -->
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-title"><span class="icon">🎯</span> 亚盘</div>
+      <table class="data-table">
+        <tr><th>公司</th><th>盘口</th><th>主队水位</th><th>客队水位</th></tr>
+        <tr><td>威廉希尔</td><td>半球</td><td>0.91</td><td>0.83</td></tr>
+        <tr><td>bet365</td><td>半球</td><td>1.00</td><td>0.85</td></tr>
+        <tr><td style="font-weight:600">均值</td><td style="font-weight:600">半球</td><td>0.97</td><td>0.84</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">⚖️</span> 大小球 · 2.5球</div>
+      <table class="data-table">
+        <tr><th>公司</th><th>盘口</th><th>大球水位</th><th>小球水位</th></tr>
+        <tr><td>威廉希尔</td><td>2.5</td><td>0.85</td><td>0.85</td></tr>
+        <tr><td>bet365</td><td>2.5</td><td>0.85</td><td>0.95</td></tr>
+        <tr><td style="font-weight:600">均值</td><td style="font-weight:600">2.5</td><td>0.84</td><td>0.93</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- 模型预测 -->
+  <div class="card card-wide">
+    <div class="card-title"><span class="icon">📐</span> 多模型预测对比（核心）</div>
+    <div style="margin-bottom:12px">
+      <div class="prob-bar">
+        <div class="segment home-seg" style="width:51.6%">51.6%</div>
+        <div class="segment draw-seg" style="width:21.5%">21.5%</div>
+        <div class="segment away-seg" style="width:26.9%">26.9%</div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:0.75em;color:var(--text-muted)">
+        <span style="color:var(--blue)">● 主胜</span>
+        <span style="color:var(--amber)">● 平局</span>
+        <span style="color:var(--red)">● 客胜</span>
+      </div>
+    </div>
+    <table class="data-table">
+      <tr>
+        <th>模型</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th>
+      </tr>
+      <tr>
+        <td>DC 修正泊松（主力）</td>
+        <td>48.7%</td><td>24.5%</td><td>26.8%</td>
+      </tr>
+      <tr>
+        <td>Skellam 进球差</td>
+        <td>47.7%</td><td>26.5%</td><td>25.8%</td>
+      </tr>
+      <tr>
+        <td>蒙特卡洛模拟（10,000场）</td>
+        <td>49.0%</td><td>24.0%</td><td>27.0%</td>
+      </tr>
+      <tr>
+        <td>Elo 实力评级</td>
+        <td>69.1%</td><td>—</td><td>—</td>
+      </tr>
+      <tr>
+        <td style="font-weight:600;color:var(--accent-light)">⭐ 加权融合 ★</td>
+        <td style="font-weight:600;color:var(--accent-light)">51.6%</td>
+        <td style="font-weight:600;color:var(--accent-light)">21.5%</td>
+        <td style="font-weight:600;color:var(--accent-light)">26.9%</td>
+      </tr>
+    </table>
+    <div class="sub-card" style="margin-top:8px;font-size:0.8em">
+      加权权重：DC模型 35% + Skellam 15% + 蒙特卡洛 20% + Elo 15% + 市场赔率 15%
+    </div>
+  </div>
+
+  <!-- EV + 凯利 -->
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-title"><span class="icon">📈</span> EV 与 凯利分析</div>
+      <table class="data-table">
+        <tr>
+          <th>结果</th><th>加权概率</th><th>赔率</th><th>EV</th><th>凯利 f</th><th>半凯利</th>
+        </tr>
+        <tr>
+          <td>主胜</td>
+          <td>51.6%</td>
+          <td>1.92</td>
+          <td><span class="value-badge value-neutral">-0.9%</span></td>
+          <td class="red-text">0.00</td>
+          <td class="red-text">0.00</td>
+        </tr>
+        <tr>
+          <td>平局</td>
+          <td>21.5%</td>
+          <td>3.38</td>
+          <td><span class="value-badge value-negative">-27.4%</span></td>
+          <td class="red-text">0.00</td>
+          <td class="red-text">0.00</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">客胜</td>
+          <td style="font-weight:600">26.9%</td>
+          <td style="font-weight:600">3.80</td>
+          <td><span class="value-badge value-positive">+2.3%</span></td>
+          <td style="color:var(--green);font-weight:600">0.008</td>
+          <td style="color:var(--green)">0.004</td>
+        </tr>
+      </table>
+      <div class="sub-card" style="margin-top:8px;font-size:0.8em">
+        建议投注（半凯利）：客胜 41 元
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🔢</span> 总进球数预测</div>
+      <table class="data-table">
+        <tr><th>进球数</th><th>DC 概率</th><th>蒙特卡洛</th></tr>
+        <tr><td>0</td><td>7.7%</td><td>7.7%</td></tr>
+        <tr><td>1</td><td>23.3%</td><td>23.3%</td></tr>
+        <tr><td>2</td><td>25.0%</td><td>25.0%</td></tr>
+        <tr><td>3</td><td>21.1%</td><td>21.1%</td></tr>
+        <tr><td>4+</td><td>22.9%</td><td>22.9%</td></tr>
+      </table>
+      <div class="sub-card" style="margin-top:8px;font-size:0.8em">
+        <strong>⚖️ 大小球 2.5：</strong><br>
+        <span style="color:var(--green)">大球 44.0%</span> / <span style="color:var(--red)">小球 56.0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 比分 + 半全场 -->
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-title"><span class="icon">⚽</span> 最可能比分 Top 10</div>
+      <div class="score-grid">
+        <div class="score-item"><span class="score">1-0</span><span class="pct">13.7%</span></div>
+        <div class="score-item"><span class="score">1-1</span><span class="pct">11.5%</span></div>
+        <div class="score-item"><span class="score">0-1</span><span class="pct">9.6%</span></div>
+        <div class="score-item"><span class="score">2-0</span><span class="pct">9.2%</span></div>
+        <div class="score-item"><span class="score">2-1</span><span class="pct">9.1%</span></div>
+        <div class="score-item"><span class="score">0-0</span><span class="pct">7.7%</span></div>
+        <div class="score-item"><span class="score">1-2</span><span class="pct">6.2%</span></div>
+        <div class="score-item"><span class="score">2-2</span><span class="pct">4.5%</span></div>
+        <div class="score-item"><span class="score">3-0</span><span class="pct">4.4%</span></div>
+        <div class="score-item"><span class="score">3-1</span><span class="pct">4.4%</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🏟️</span> 半全场预测 Top 5</div>
+      <table class="data-table">
+        <tr><th>排名</th><th>半全场</th><th>概率</th></tr>
+        <tr><td>1</td><td>平 → 胜</td><td>27.8%</td></tr>
+        <tr><td>2</td><td>平 → 负</td><td>19.9%</td></tr>
+        <tr><td>3</td><td>胜 → 胜</td><td>18.1%</td></tr>
+        <tr><td>4</td><td>胜 → 平</td><td>9.3%</td></tr>
+        <tr><td>5</td><td>平 → 平</td><td>7.8%</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- 综合推荐 -->
+  <div class="card card-wide">
+    <div class="card-title"><span class="icon">🎯</span> 综合推荐</div>
+    <div class="rec-box">
+      <div class="rec-item">
+        <div class="label">胜平负</div>
+        <div class="value">博塔弗戈 不败</div>
+        <div class="conf conf-mid">（置信度：中）</div>
+      </div>
+      <div class="rec-item">
+        <div class="label">比分推荐</div>
+        <div class="value">1-0 / 2-1 / 1-1</div>
+        <div class="conf conf-mid">（置信度：中）</div>
+      </div>
+      <div class="rec-item">
+        <div class="label">总进球</div>
+        <div class="value">1-2 球</div>
+        <div class="conf conf-mid">（置信度：中）</div>
+      </div>
+      <div class="rec-item">
+        <div class="label">半全场</div>
+        <div class="value">平 → 胜</div>
+        <div class="conf conf-mid">（置信度：中）</div>
+      </div>
+      <div class="rec-item">
+        <div class="label">⚡ 让球（-1）</div>
+        <div class="value">主队让平/负</div>
+        <div class="conf conf-mid">（置信度：中）</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- MATCH 2: 芝加哥火焰 vs 温哥华白帽 -->
+<!-- ============================================================ -->
+<div class="match-section">
+  <div class="match-header">
+    <div class="teams">
+      <h2>🔥 芝加哥火焰</h2>
+      <span class="vs">vs</span>
+      <h2>⛵ 温哥华白帽</h2>
+    </div>
+    <span class="badge">美职联 第16轮</span>
+  </div>
+
+  <div class="match-datetime">
+    <span>⏰ 2026-07-17 08:30（北京时间）</span>
+    <span>🏟 士兵球场 · 芝加哥</span>
+  </div>
+
+  <!-- 联赛诊断 + 实力评级 -->
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-title"><span class="icon">🔬</span> 联赛诊断</div>
+      <div class="sub-card">
+        <strong>VMR 过离散检测：</strong> 1.25（过离散明显）<br>
+        <strong>零膨胀检测（0-0率）：</strong> 5.0%（无需 ZIP）<br>
+        <strong>推荐分布族：</strong> 负二项 + DC 模型<br>
+        <strong>DC ρ 参数：</strong> 0.06
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🏅</span> 球队实力评级</div>
+      <div class="sub-card">
+        <strong>Elo 分：</strong> 主 1420 vs 客 1500<br>
+        <strong>联盟排名：</strong> 主 #5（26分）vs 客 #2（32分）<br>
+        <strong>东部/西部排名：</strong> 主(东) #3 / 客(西) #2<br>
+        <strong>核心看点：</strong> ⭐ 莱万多夫斯基首秀！<br>
+        <strong>近期状态：</strong> 芝加哥3连胜 / 温哥华近期不败率高
+      </div>
+    </div>
+  </div>
+
+  <!-- 赔率对比 -->
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-title"><span class="icon">💰</span> 欧赔（从亚盘反推）</div>
+      <table class="data-table">
+        <tr><th>方向</th><th>赔率</th><th>隐含概率</th></tr>
+        <tr>
+          <td>主胜</td>
+          <td class="highlight">2.85</td><td>32.4%</td>
+        </tr>
+        <tr>
+          <td>平局</td>
+          <td class="highlight">3.40</td><td>27.1%</td>
+        </tr>
+        <tr>
+          <td>客胜</td>
+          <td class="highlight">2.28</td><td>40.5%</td>
+        </tr>
+      </table>
+      <div class="sub-card" style="margin-top:8px;font-size:0.8em">
+        抽水率：8.36%
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🎯</span> 亚盘</div>
+      <table class="data-table">
+        <tr><th>公司</th><th>盘口</th><th>主队水位</th><th>客队水位</th></tr>
+        <tr><td>威廉希尔</td><td>受平手/半球</td><td>0.72</td><td>0.93</td></tr>
+        <tr><td>bet365</td><td>受平手/半球</td><td>0.80</td><td>1.00</td></tr>
+        <tr><td>立博</td><td>受半球</td><td>0.60</td><td>1.20</td></tr>
+        <tr><td style="font-weight:600">均值</td><td style="font-weight:600">受平手/半球</td><td>0.85</td><td>1.03</td></tr>
+      </table>
+      <div class="sub-card" style="margin-top:8px;font-size:0.8em">
+        市场略偏向客队（温哥华客让）
+      </div>
+    </div>
+  </div>
+
+  <!-- 模型预测 -->
+  <div class="card card-wide">
+    <div class="card-title"><span class="icon">📐</span> 多模型预测对比（核心）</div>
+    <div style="margin-bottom:12px">
+      <div class="prob-bar">
+        <div class="segment home-seg" style="width:43.2%">43.2%</div>
+        <div class="segment draw-seg" style="width:19.6%">19.6%</div>
+        <div class="segment away-seg" style="width:37.1%">37.1%</div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:0.75em;color:var(--text-muted)">
+        <span style="color:var(--blue)">● 主胜</span>
+        <span style="color:var(--amber)">● 平局</span>
+        <span style="color:var(--red)">● 客胜</span>
+      </div>
+    </div>
+    <table class="data-table">
+      <tr>
+        <th>模型</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th>
+      </tr>
+      <tr>
+        <td>DC 修正泊松</td>
+        <td>43.7%</td><td>22.2%</td><td>34.1%</td>
+      </tr>
+      <tr>
+        <td style="color:var(--amber)">◆ 负二项（VMR=1.25 修正）</td>
+        <td>43.0%</td><td>22.4%</td><td>34.6%</td>
+      </tr>
+      <tr>
+        <td>Skellam 进球差</td>
+        <td>43.1%</td><td>23.4%</td><td>33.5%</td>
+      </tr>
+      <tr>
+        <td>蒙特卡洛模拟（10,000场）</td>
+        <td>44.3%</td><td>21.2%</td><td>34.5%</td>
+      </tr>
+      <tr>
+        <td style="font-weight:600;color:var(--accent-light)">⭐ 加权融合 ★</td>
+        <td style="font-weight:600;color:var(--accent-light)">43.2%</td>
+        <td style="font-weight:600;color:var(--accent-light)">19.6%</td>
+        <td style="font-weight:600;color:var(--accent-light)">37.1%</td>
+      </tr>
+    </table>
+    <div class="sub-card" style="margin-top:8px;font-size:0.8em">
+      加权权重：DC 20% + 负二项 25%（过离散优先） + Skellam 10% + 蒙特卡洛 15% + Elo 15% + 市场赔率 15%
+    </div>
+  </div>
+
+  <!-- EV + 凯利 -->
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-title"><span class="icon">📈</span> EV 与 凯利分析</div>
+      <table class="data-table">
+        <tr>
+          <th>结果</th><th>加权概率</th><th>赔率</th><th>EV</th><th>凯利 f</th><th>半凯利</th>
+        </tr>
+        <tr style="background:var(--green-bg)">
+          <td style="font-weight:600;color:var(--green)">🔥 主胜</td>
+          <td style="font-weight:600">43.2%</td>
+          <td style="font-weight:600">2.85</td>
+          <td><span class="value-badge value-positive">+23.2%</span></td>
+          <td style="color:var(--green);font-weight:600">0.126</td>
+          <td style="color:var(--green);font-weight:600">0.063</td>
+        </tr>
+        <tr>
+          <td>平局</td>
+          <td>19.6%</td>
+          <td>3.40</td>
+          <td><span class="value-badge value-negative">-33.3%</span></td>
+          <td class="red-text">0.00</td>
+          <td class="red-text">0.00</td>
+        </tr>
+        <tr>
+          <td>客胜</td>
+          <td>37.1%</td>
+          <td>2.28</td>
+          <td><span class="value-badge value-negative">-15.3%</span></td>
+          <td class="red-text">0.00</td>
+          <td class="red-text">0.00</td>
+        </tr>
+      </table>
+      <div class="sub-card" style="margin-top:8px;font-size:0.8em">
+        建议投注（半凯利）：主胜 627 元
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🔢</span> 总进球数预测</div>
+      <table class="data-table">
+        <tr><th>进球数</th><th>DC 概率</th><th>蒙特卡洛</th></tr>
+        <tr><td>0</td><td>3.6%</td><td>3.6%</td></tr>
+        <tr><td>1</td><td>14.6%</td><td>14.6%</td></tr>
+        <tr><td>2</td><td>20.5%</td><td>20.5%</td></tr>
+        <tr><td>3</td><td>22.3%</td><td>22.3%</td></tr>
+        <tr><td>4+</td><td>39.0%</td><td>39.0%</td></tr>
+      </table>
+      <div class="sub-card" style="margin-top:8px;font-size:0.8em">
+        <strong>⚖️ 大小球 2.5：</strong><br>
+        <span style="color:var(--green)">大球 61.1% 🔥</span> / <span style="color:var(--red)">小球 38.7%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 比分 + 半全场 -->
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-title"><span class="icon">⚽</span> 最可能比分 Top 10</div>
+      <div class="score-grid">
+        <div class="score-item"><span class="score">1-1</span><span class="pct">9.9%</span></div>
+        <div class="score-item"><span class="score">2-1</span><span class="pct">8.9%</span></div>
+        <div class="score-item"><span class="score">1-0</span><span class="pct">7.8%</span></div>
+        <div class="score-item"><span class="score">1-2</span><span class="pct">7.7%</span></div>
+        <div class="score-item"><span class="score">0-1</span><span class="pct">6.8%</span></div>
+        <div class="score-item"><span class="score">2-2</span><span class="pct">6.6%</span></div>
+        <div class="score-item"><span class="score">2-0</span><span class="pct">6.1%</span></div>
+        <div class="score-item"><span class="score">3-1</span><span class="pct">5.0%</span></div>
+        <div class="score-item"><span class="score">0-2</span><span class="pct">4.6%</span></div>
+        <div class="score-item"><span class="score">1-3</span><span class="pct">3.8%</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="icon">🏟️</span> 半全场预测 Top 5</div>
+      <table class="data-table">
+        <tr><th>排名</th><th>半全场</th><th>概率</th></tr>
+        <tr><td>1</td><td style="color:var(--green);font-weight:600">胜 → 胜</td><td style="color:var(--green);font-weight:600">25.8%</td></tr>
+        <tr><td>2</td><td>负 → 负</td><td>21.4%</td></tr>
+        <tr><td>3</td><td>平 → 胜</td><td>15.8%</td></tr>
+        <tr><td>4</td><td>平 → 负</td><td>15.8%</td></tr>
+        <tr><td>5</td><td>胜 → 平</td><td>7.0%</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- 莱万专题 -->
+  <div class="card card-wide" style="background:linear-gradient(135deg, rgba(139,92,246,0.12), rgba(59,130,246,0.12));border-color:rgba(139,92,246,0.3);">
+    <div class="card-title"><span class="icon">⭐</span> 专题：莱万多夫斯基首秀效应</div>
+    <div class="sub-card">
+      <strong>罗伯特·莱万多夫斯基（37岁）</strong> 以自由球员身份从巴塞罗那加盟芝加哥火焰，签下两年合同至2028年。<br><br>
+      <strong>对比赛的影响分析：</strong>
+      <ul style="list-style:disc;padding-left:20px;margin-top:6px;">
+        <li><strong>士气加成：</strong> 波兰传奇前锋首秀预计引爆主场球市，球队士气大幅提升</li>
+        <li><strong>进攻增强：</strong> 莱万尽管37岁，但门前嗅觉和终结能力仍属世界级，预计对温哥华防线构成巨大威胁</li>
+        <li><strong>对手准备难：</strong> 温哥华防守体系对莱万缺乏针对性战术准备</li>
+        <li><strong>市场低估：</strong> 赔率仅给主胜2.85，模型认为该赔率未充分反映莱万首秀的正面影响</li>
+      </ul>
+      <div style="margin-top:8px;color:var(--green);font-weight:600">
+        → 主胜 EV +23.2%，为全场最高价值投注方向
+      </div>
+    </div>
+  </div>
+
+  <!-- 综合推荐 -->
+  <div class="card card-wide">
+    <div class="card-title"><span class="icon">🎯</span> 综合推荐</div>
+    <div class="rec-box">
+      <div class="rec-item" style="border-color:var(--green);background:var(--green-bg)">
+        <div class="label">🔥 首选推荐</div>
+        <div class="value" style="color:var(--green)">主胜</div>
+        <div class="conf conf-high">（置信度：高）EV+23.2%</div>
+      </div>
+      <div class="rec-item">
+        <div class="label">比分推荐</div>
+        <div class="value">2-1 / 3-1 / 1-1</div>
+        <div class="conf conf-mid">（置信度：中）</div>
+      </div>
+      <div class="rec-item" style="border-color:var(--green);background:var(--green-bg)">
+        <div class="label">大球推荐</div>
+        <div class="value" style="color:var(--green)">大 2.5球</div>
+        <div class="conf conf-high">（61.1%概率）</div>
+      </div>
+      <div class="rec-item">
+        <div class="label">半全场</div>
+        <div class="value">胜 → 胜</div>
+        <div class="conf conf-mid">（置信度：中）</div>
+      </div>
+      <div class="rec-item">
+        <div class="label">💰 投注建议</div>
+        <div class="value" style="color:var(--green)">627 元</div>
+        <div class="conf conf-high">半凯利（本金10000）</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- 资金对比 -->
+<!-- ============================================================ -->
+<div class="card card-wide">
+  <div class="card-title"><span class="icon">💵</span> 资金管理对比（本金 10,000 元）</div>
+  <table class="data-table">
+    <tr>
+      <th>策略</th><th>比赛</th><th>方向</th><th>投注比例</th><th>投注金额</th>
+    </tr>
+    <tr>
+      <td rowspan="2" style="font-weight:600">半凯利（推荐）</td>
+      <td>博塔弗戈 vs 桑托斯</td>
+      <td>客胜</td>
+      <td>0.4%</td>
+      <td>41 元</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;color:var(--green)">🔥 芝加哥火焰 vs 温哥华白帽</td>
+      <td style="color:var(--green);font-weight:600">主胜</td>
+      <td>6.3%</td>
+      <td style="color:var(--green);font-weight:600">627 元</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600">固定 2%（保守）</td>
+      <td>每场</td>
+      <td>—</td>
+      <td>2%</td>
+      <td>200 元</td>
+    </tr>
+  </table>
+  <div class="sub-card" style="margin-top:8px;font-size:0.85em">
+    <strong>风控说明：</strong> 半凯利（Kelly/2）为本报告默认风控策略。凯利值 f &lt; 0.05 时建议观望，f = 0.05~0.10 谨慎推荐，f = 0.10~0.20 推荐，f &gt; 0.20 强推荐。芝加哥火焰主胜 f = 0.126，为推荐级别。
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- 风险提示 -->
+<!-- ============================================================ -->
+<div class="risk-warning">
+  <h3>⚠️ 重要风险提示</h3>
+  <ul>
+    <li>足球比赛存在极大不确定性，任何模型预测均非 100% 准确</li>
+    <li>模型基于历史数据，突发因素（红牌、点球、天气等）无法完全预测</li>
+    <li>赔率数据可能随时间变化，请以实时数据为准</li>
+    <li>DC 模型虽优于标准泊松，仍假设进球事件独立（已修正 0/1 球区间但无法完全消除）</li>
+    <li>负二项 / ZIP 校正可减少误差，但无法消除过离散带来的不确定性</li>
+    <li>蒙特卡洛模拟与凯利值受输入参数质量影响</li>
+    <li>凯利值仅供价值评估，不代表投注建议</li>
+    <li>历史回测不代表未来表现</li>
+    <li><strong>理性看待预测，切勿沉迷赌博</strong></li>
+  </ul>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>📊 本报告由足球全方位分析框架自动生成</p>
+  <p>模型版本：Dixon-Coles(ρ) + NB(VMR) + Skellam + MC(10000) + Shin + Kelly/2</p>
+  <p>数据获取时间：2026-07-15 | 报告生成时间：2026-07-15</p>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,2349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周日14场体彩足球全方位分析 - 2026年8月2日</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; background: #1a1a2e; color: #e0e0e0; line-height: 1.6; }
+.header { background: linear-gradient(135deg, #16213e, #0f3460); padding: 30px; text-align: center; border-bottom: 3px solid #e94560; }
+.header h1 { color: #e94560; font-size: 28px; margin-bottom: 10px; }
+.header .subtitle { color: #a0a0b0; font-size: 14px; }
+.header .meta { color: #e94560; font-size: 13px; margin-top: 8px; }
+.summary { background: #16213e; padding: 20px; margin: 20px; border-radius: 10px; border: 1px solid #0f3460; }
+.summary h2 { color: #e94560; margin-bottom: 15px; }
+.summary-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.summary-table th { background: #0f3460; color: #e94560; padding: 8px; text-align: center; }
+.summary-table td { padding: 6px 8px; text-align: center; border-bottom: 1px solid #1a1a3e; }
+.summary-table tr:hover { background: #1a1a3e; }
+.match-card { background: #16213e; margin: 20px; border-radius: 12px; overflow: hidden; border: 1px solid #0f3460; }
+.match-header { background: #0f3460; padding: 15px 20px; display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
+.match-id { background: #e94560; color: #fff; padding: 4px 10px; border-radius: 5px; font-weight: bold; font-size: 14px; }
+.league-tag { background: #1a1a4e; color: #a0d0ff; padding: 4px 10px; border-radius: 5px; font-size: 13px; }
+.match-time { color: #a0a0b0; font-size: 13px; }
+.match-title { color: #fff; font-size: 18px; font-weight: bold; flex: 1; }
+.match-title .vs { color: #e94560; font-size: 14px; margin: 0 8px; }
+.confidence-badge { color: #fff; padding: 4px 12px; border-radius: 5px; font-size: 13px; font-weight: bold; }
+.match-body { padding: 20px; }
+.info-row { display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 15px; }
+.info-item { background: #0f3460; padding: 8px 12px; border-radius: 6px; flex: 1; min-width: 120px; }
+.info-item .label { display: block; color: #a0a0b0; font-size: 11px; margin-bottom: 3px; }
+.info-item .value { color: #fff; font-size: 14px; font-weight: bold; }
+.probability-section { margin-bottom: 20px; }
+.probability-section h3, .model-section h3, .score-section h3, .ou-section h3, .hc-section h3, .lambda-section h3, .injury-section h3, .support-section h3, .notes-section h3 { color: #e94560; font-size: 16px; margin-bottom: 10px; border-bottom: 1px solid #0f3460; padding-bottom: 5px; }
+.prob-bar-container { display: flex; height: 35px; border-radius: 6px; overflow: hidden; }
+.prob-bar { display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 13px; min-width: 30px; }
+.prob-h { background: #e74c3c; }
+.prob-d { background: #f39c12; }
+.prob-a { background: #3498db; }
+.recommendation { margin-top: 10px; color: #fff; font-size: 15px; }
+.draw-warning { background: #3d2e0f; color: #f39c12; padding: 6px 12px; border-radius: 5px; margin-top: 8px; font-size: 13px; }
+.divergence { display: block; color: #e74c3c; margin-top: 8px; font-size: 13px; }
+.model-table, .score-table, .injury-tbl { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 10px; }
+.model-table th, .score-table th, .injury-tbl th { background: #0f3460; color: #a0d0ff; padding: 6px; text-align: center; }
+.model-table td, .score-table td, .injury-tbl td { padding: 6px; text-align: center; border-bottom: 1px solid #1a1a3e; }
+.score-table tr.highlight td { background: #1a1a4e; }
+.score-table .score { font-weight: bold; color: #e94560; font-size: 15px; }
+.bar-container { min-width: 80px; }
+.bar { height: 18px; border-radius: 3px; color: #fff; font-size: 11px; display: flex; align-items: center; padding-left: 4px; min-width: 20px; }
+.bar-h { background: #e74c3c; }
+.bar-d { background: #f39c12; }
+.bar-a { background: #3498db; }
+.model-note { color: #a0a0b0; font-size: 12px; margin-top: 5px; }
+.score-section, .model-section, .ou-section, .hc-section, .lambda-section, .injury-section, .support-section, .notes-section { margin-bottom: 20px; }
+.half-section { display: inline-block; width: 48%; vertical-align: top; }
+.ou-bar-container { display: flex; height: 30px; border-radius: 6px; overflow: hidden; }
+.ou-bar { display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; font-size: 12px; min-width: 30px; }
+.ou-over { background: #27ae60; }
+.ou-under { background: #8e44ad; }
+.ou-rec { margin-top: 8px; font-size: 14px; }
+.hc-probs { display: flex; gap: 20px; }
+.hc-prob { background: #0f3460; padding: 8px 20px; border-radius: 6px; font-size: 14px; }
+.corr-notes { background: #0f3460; padding: 10px; border-radius: 5px; font-size: 13px; color: #a0d0ff; margin-top: 8px; }
+.injury-tables { display: flex; gap: 20px; }
+.injury-table { flex: 1; }
+.injury-table h4 { color: #a0d0ff; margin-bottom: 8px; font-size: 14px; }
+.notes-content { background: #0f3460; padding: 12px; border-radius: 5px; font-size: 13px; color: #d0d0e0; line-height: 1.8; }
+.h2h-info { margin-top: 8px; color: #a0a0b0; font-size: 13px; }
+.footer { text-align: center; padding: 30px; color: #a0a0b0; font-size: 13px; border-top: 1px solid #0f3460; }
+.warning-box { background: #3d1a1a; border: 1px solid #e74c3c; padding: 15px; margin: 20px; border-radius: 8px; }
+.warning-box h3 { color: #e74c3c; margin-bottom: 8px; }
+.warning-box p { color: #d0a0a0; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>周日14场体彩足球全方位分析</h1>
+  <div class="subtitle">数学模型: DC/NB/ZIP/Skellam/蒙特卡洛/Shin校准 | 联赛: 韩职3 瑞超3 芬超2 挪超4 巴西杯2</div>
+  <div class="meta">分析日期: 2026-08-02 | 模型版本: v1.8.0 | 比分以标准泊松分布为主，1:1/2:2不人为放大</div>
+</div>
+
+<div class="warning-box">
+  <h3>⚠ 重要提示</h3>
+  <p>1. 市场赔率仅作参考，不代表比赛结果（规则28）<br>
+     2. 比分以标准泊松分布为主（rho=0），1:1/2:2完全由泊松自然输出，不再人为放大<br>
+     3. 平局修正仅限0:0（标准泊松确实低估0:0），其余平局比分不修正<br>
+     4. 大球概率已校准：×0.85下修（回测教训：大球系统性高估15-20%）<br>
+     5. 比分矩阵TOP1为平局时，规则17平局方向优先<br>
+     6. 伤停信息以官方信源为准，中文平台信息标注"未验证"</p>
+</div>
+
+<div class="summary">
+  <h2>汇总表</h2>
+  <table class="summary-table">
+    <thead>
+      <tr><th>编号</th><th>联赛</th><th>比赛</th><th>主胜%</th><th>平局%</th><th>客胜%</th><th>推荐</th><th>置信度</th><th>TOP1比分</th><th>大球%</th><th>让球推荐</th></tr>
+    </thead>
+    <tbody>
+<tr><td>001</td><td>韩职</td><td>蔚山现代vs安养FC</td><td>40.9</td><td>28.5</td><td>30.6</td><td>主胜</td><td>高 ★★★</td><td>1:1(12.0%)</td><td>40.4</td><td>让1客胜</td></tr><tr><td>002</td><td>韩职</td><td>济州SKvs仁川联</td><td>34.6</td><td>32.4</td><td>33.0</td><td>主胜</td><td>高 ★★★</td><td>1:0(13.6%)</td><td>29.7</td><td>受让1主胜</td></tr><tr><td>003</td><td>韩职</td><td>大田市民vs光州FC</td><td>48.5</td><td>25.4</td><td>26.1</td><td>主胜</td><td>中 ★★</td><td>1:0(18.2%)</td><td>30.1</td><td>让1客胜</td></tr><tr><td>004</td><td>瑞超</td><td>布鲁马波vs马尔默</td><td>35.6</td><td>26.6</td><td>37.8</td><td>客胜</td><td>高 ★★★</td><td>1:1(10.3%)</td><td>47.6</td><td>受让1主胜</td></tr><tr><td>005</td><td>瑞超</td><td>哥德堡vs代格福什</td><td>47.8</td><td>24.9</td><td>27.3</td><td>主胜</td><td>高 ★★★</td><td>1:0(14.9%)</td><td>30.3</td><td>让1客胜</td></tr><tr><td>008</td><td>瑞超</td><td>索尔纳vs厄格里特</td><td>50.6</td><td>22.9</td><td>26.5</td><td>主胜</td><td>中 ★★</td><td>1:0(13.8%)</td><td>36.0</td><td>让1客胜</td></tr><tr><td>006</td><td>芬超</td><td>瓦萨vs国际图尔库</td><td>39.7</td><td>28.6</td><td>31.7</td><td>主胜</td><td>高 ★★★</td><td>1:0(12.3%)</td><td>39.6</td><td>让1客胜</td></tr><tr><td>007</td><td>芬超</td><td>AC奥卢vs坦佩雷山猫</td><td>37.8</td><td>28.3</td><td>33.9</td><td>主胜</td><td>高 ★★★</td><td>1:1(12.3%)</td><td>39.8</td><td>让1客胜</td></tr><tr><td>009</td><td>挪超</td><td>奥斯KFUMvs克里斯蒂</td><td>41.3</td><td>30.7</td><td>28.0</td><td>主胜</td><td>中 ★★</td><td>1:0(15.2%)</td><td>27.8</td><td>让1客胜</td></tr><tr><td>010</td><td>挪超</td><td>莫尔德vs萨普斯堡</td><td>46.9</td><td>21.9</td><td>31.1</td><td>主胜</td><td>中 ★★</td><td>1:0(11.4%)</td><td>41.0</td><td>让1客胜</td></tr><tr><td>011</td><td>挪超</td><td>奥勒松vs特罗姆瑟</td><td>38.2</td><td>26.7</td><td>35.1</td><td>主胜</td><td>中 ★★</td><td>1:1(11.1%)</td><td>45.1</td><td>受让1主胜</td></tr><tr><td>012</td><td>挪超</td><td>布兰vs罗森博格</td><td>43.9</td><td>25.5</td><td>30.6</td><td>主胜</td><td>高 ★★★</td><td>2:1(10.6%)</td><td>49.6</td><td>让1客胜</td></tr><tr><td>013</td><td>巴西杯</td><td>米拉索尔vs格雷米奥</td><td>46.3</td><td>25.9</td><td>27.8</td><td>主胜</td><td>高 ★★★</td><td>1:0(14.4%)</td><td>33.1</td><td>让1客胜</td></tr><tr><td>014</td><td>巴西杯</td><td>巴西国际vs科林蒂安</td><td>40.9</td><td>28.1</td><td>30.9</td><td>主胜</td><td>高 ★★★</td><td>1:0(16.7%)</td><td>27.9</td><td>让1客胜</td></tr>
+    </tbody>
+  </table>
+</div>
+
+    <div class="match-card" id="match-001">
+      <div class="match-header">
+        <span class="match-id">001</span>
+        <span class="league-tag">韩职</span>
+        <span class="match-time">08-02 18:30</span>
+        <span class="match-title">蔚山现代 <span class="vs">VS</span> 安养FC</span>
+        <span class="confidence-badge" style="background:#e74c3c">高 ★★★</span>
+      </div>
+      
+      <div class="match-body">
+        <!-- 赔率与排名 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">主队排名</span><span class="value">第4位</span></div>
+          <div class="info-item"><span class="label">客队排名</span><span class="value">第5位</span></div>
+          <div class="info-item"><span class="label">体彩赔率</span><span class="value">1.86 / 3.45 / 3.32</span></div>
+          <div class="info-item"><span class="label">让球</span><span class="value">主队让1球</span></div>
+        </div>
+        
+        <!-- 场地天气 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">场地</span><span class="value">蔚山文殊球场</span></div>
+          <div class="info-item"><span class="label">城市</span><span class="value">蔚山</span></div>
+          <div class="info-item"><span class="label">草皮</span><span class="value">天然</span></div>
+          <div class="info-item"><span class="label">容量</span><span class="value">44,466</span></div>
+          <div class="info-item"><span class="label">天气</span><span class="value">多云 31°C</span></div>
+          <div class="info-item"><span class="label">风力</span><span class="value">微风</span></div>
+        </div>
+        
+        <!-- 融合概率 -->
+        <div class="probability-section">
+          <h3>融合概率（加权融合）</h3>
+          <div class="prob-bar-container">
+            <div class="prob-bar prob-h" style="width:40.89%;">主胜 40.9%</div>
+            <div class="prob-bar prob-d" style="width:28.51%;">平 28.5%</div>
+            <div class="prob-bar prob-a" style="width:30.599999999999998%;">客胜 30.6%</div>
+          </div>
+          <div class="recommendation">推荐方向: <strong>🔴 主胜 (40.9%)</strong></div>
+          <div class="draw-warning">📝 比分矩阵TOP1为平局→规则17平局方向优先</div>
+          
+        </div>
+        
+        <!-- 模型对比 -->
+        <div class="model-section">
+          <h3>各模型胜率对比</h3>
+          <table class="model-table">
+            <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+            <tbody><tr><td>DC模型</td><td><div class='bar-container'><div class='bar bar-h' style='width:95.3%'>47.6%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:51.300000000000004%'>25.7%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:53.400000000000006%'>26.7%</div></div></td></tr><tr><td>负二项</td><td><div class='bar-container'><div class='bar bar-h' style='width:93.92%'>47.0%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:50.760000000000005%'>25.4%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:55.34%'>27.7%</div></div></td></tr><tr><td>ZIP</td><td><div class='bar-container'><div class='bar bar-h' style='width:92.72%'>46.4%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:52.44%'>26.2%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:54.84%'>27.4%</div></div></td></tr><tr><td>Skellam</td><td><div class='bar-container'><div class='bar bar-h' style='width:53.839999999999996%'>26.9%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:51.6%'>25.8%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:94.56%'>47.3%</div></div></td></tr><tr><td>蒙特卡洛</td><td><div class='bar-container'><div class='bar bar-h' style='width:93.56%'>46.8%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:55.86%'>27.9%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:50.580000000000005%'>25.3%</div></div></td></tr><tr><td>Shin校准</td><td><div class='bar-container'><div class='bar bar-h' style='width:91.06%'>45.5%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:53.66%'>26.8%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:55.279999999999994%'>27.6%</div></div></td></tr></tbody>
+          </table>
+          <div class="model-note">模型间标准差: 0.0083 | Shin z参数: 0.0244</div>
+        </div>
+        
+        <!-- 比分预测 -->
+        <div class="score-section">
+          <h3>比分TOP10</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>1:1</td><td>12.0%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>1:0</td><td>11.8%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>2:1</td><td>9.9%</td><td>🔴主胜</td></tr><tr><td>4</td><td class='score'>2:0</td><td>8.4%</td><td>🔴主胜</td></tr><tr><td>5</td><td class='score'>0:1</td><td>8.4%</td><td>🔵客胜</td></tr><tr><td>6</td><td class='score'>0:0</td><td>7.9%</td><td>🟡平局</td></tr><tr><td>7</td><td class='score'>1:2</td><td>6.4%</td><td>🔵客胜</td></tr><tr><td>8</td><td class='score'>2:2</td><td>4.8%</td><td>🟡平局</td></tr><tr><td>9</td><td class='score'>3:1</td><td>4.5%</td><td>🔴主胜</td></tr><tr><td>10</td><td class='score'>0:2</td><td>4.3%</td><td>🔵客胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半场比分 -->
+        <div class="score-section">
+          <h3>半场比分TOP5</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>0:0</td><td>31.4%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>1:0</td><td>21.3%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>0:1</td><td>15.1%</td><td>🔵客胜</td></tr><tr><td>4</td><td class='score'>1:1</td><td>10.2%</td><td>🟡平局</td></tr><tr><td>5</td><td class='score'>2:0</td><td>7.2%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半全场 -->
+        <div class="score-section half-section">
+          <h3>半全场TOP3</h3>
+          <table class="score-table">
+            <thead><tr><th>组合</th><th>概率</th></tr></thead>
+            <tbody><tr class='highlight'><td>平胜</td><td>16.4%</td></tr><tr class='highlight'><td>胜胜</td><td>12.9%</td></tr><tr class='highlight'><td>平平</td><td>9.9%</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 大小球 -->
+        <div class="ou-section">
+          <h3>大小球2.5</h3>
+          <div class="ou-bar-container">
+            <div class="ou-bar ou-over" style="width:40.4%;">大球 40.4%</div>
+            <div class="ou-bar ou-under" style="width:59.6%;">小球 59.6%</div>
+          </div>
+          <div class="ou-rec">倾向: <strong>小球</strong>（已校准，大球概率×0.85）</div>
+        </div>
+        
+        <!-- 让球分析 -->
+        <div class="hc-section">
+          <h3>让球胜平负（主队让1球）</h3>
+          <div class="hc-probs">
+            <span class="hc-prob">主胜 23.2%</span>
+            <span class="hc-prob">平 24.5%</span>
+            <span class="hc-prob">客胜 52.4%</span>
+          </div>
+        </div>
+        
+        <!-- Lambda详情 -->
+        <div class="lambda-section">
+          <h3>Lambda计算详情</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主队λ</span><span class="value">1.505</span></div>
+            <div class="info-item"><span class="label">客队λ</span><span class="value">1.069</span></div>
+            <div class="info-item"><span class="label">xG校准比(主)</span><span class="value">0.911</span></div>
+            <div class="info-item"><span class="label">xG校准比(客)</span><span class="value">1.061</span></div>
+            <div class="info-item"><span class="label">修正系数(主)</span><span class="value">1.0</span></div>
+            <div class="info-item"><span class="label">修正系数(客)</span><span class="value">1.0</span></div>
+          </div>
+          <div class="corr-notes">无特殊修正</div>
+        </div>
+        
+        <!-- 伤停详情 -->
+        <div class="injury-section">
+          <h3>伤停详情</h3>
+          <div class="injury-tables">
+            <div class="injury-table">
+              <h4>主队 (蔚山现代)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td colspan="4">无伤停</td></tr></tbody>
+              </table>
+            </div>
+            <div class="injury-table">
+              <h4>客队 (安养FC)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td colspan="4">无伤停</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 市场支持率 -->
+        <div class="support-section">
+          <h3>市场支持率</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主胜支持</span><span class="value">43%</span></div>
+            <div class="info-item"><span class="label">平局支持</span><span class="value">29%</span></div>
+            <div class="info-item"><span class="label">客胜支持</span><span class="value">28%</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-item"><span class="label">让球主胜</span><span class="value">24%</span></div>
+            <div class="info-item"><span class="label">让球平</span><span class="value">31%</span></div>
+            <div class="info-item"><span class="label">让球客胜</span><span class="value">45%</span></div>
+          </div>
+        </div>
+        
+        <!-- 基本面分析 -->
+        <div class="notes-section">
+          <h3>基本面分析</h3>
+          <div class="notes-content">蔚山近4场仅1胜状态低迷；安养联赛4连胜势头强劲。交锋安养占优(2胜2平1负)，蔚山主场近2次对安养0球。蔚山xG联赛第1但转化差(-0.26)，安养xG低但效率好。无伤停。</div>
+          <div class="h2h-info">
+            历史交锋: 主胜1场 平2场 客胜2场 | 
+            场均进球1.6球
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="match-card" id="match-002">
+      <div class="match-header">
+        <span class="match-id">002</span>
+        <span class="league-tag">韩职</span>
+        <span class="match-time">08-02 18:30</span>
+        <span class="match-title">济州SK <span class="vs">VS</span> 仁川联</span>
+        <span class="confidence-badge" style="background:#e74c3c">高 ★★★</span>
+      </div>
+      
+      <div class="match-body">
+        <!-- 赔率与排名 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">主队排名</span><span class="value">第8位</span></div>
+          <div class="info-item"><span class="label">客队排名</span><span class="value">第6位</span></div>
+          <div class="info-item"><span class="label">体彩赔率</span><span class="value">3.11 / 2.9 / 2.16</span></div>
+          <div class="info-item"><span class="label">让球</span><span class="value">主队受让1球</span></div>
+        </div>
+        
+        <!-- 场地天气 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">场地</span><span class="value">济州世界杯球场</span></div>
+          <div class="info-item"><span class="label">城市</span><span class="value">济州</span></div>
+          <div class="info-item"><span class="label">草皮</span><span class="value">天然</span></div>
+          <div class="info-item"><span class="label">容量</span><span class="value">35,657</span></div>
+          <div class="info-item"><span class="label">天气</span><span class="value">多云 29°C</span></div>
+          <div class="info-item"><span class="label">风力</span><span class="value">中风</span></div>
+        </div>
+        
+        <!-- 融合概率 -->
+        <div class="probability-section">
+          <h3>融合概率（加权融合）</h3>
+          <div class="prob-bar-container">
+            <div class="prob-bar prob-h" style="width:34.57%;">主胜 34.6%</div>
+            <div class="prob-bar prob-d" style="width:32.41%;">平 32.4%</div>
+            <div class="prob-bar prob-a" style="width:33.019999999999996%;">客胜 33.0%</div>
+          </div>
+          <div class="recommendation">推荐方向: <strong>🔴 主胜 (34.6%)</strong></div>
+          <div class="draw-warning">📝 主客胜率差<15%→平局上修+10%；比分矩阵TOP1为平局→规则17平局方向优先</div>
+          <span class="divergence">⚠ 分歧标注: 模型首选主胜(37.3%) vs 市场首选客胜(39.7%)</span>
+        </div>
+        
+        <!-- 模型对比 -->
+        <div class="model-section">
+          <h3>各模型胜率对比</h3>
+          <table class="model-table">
+            <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+            <tbody><tr><td>DC模型</td><td><div class='bar-container'><div class='bar bar-h' style='width:74.53999999999999%'>37.3%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:60.08%'>30.0%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:65.38000000000001%'>32.7%</div></div></td></tr><tr><td>负二项</td><td><div class='bar-container'><div class='bar bar-h' style='width:74.03999999999999%'>37.0%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:59.36%'>29.7%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:66.60000000000001%'>33.3%</div></div></td></tr><tr><td>ZIP</td><td><div class='bar-container'><div class='bar bar-h' style='width:73.06%'>36.5%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:61.24000000000001%'>30.6%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:65.7%'>32.9%</div></div></td></tr><tr><td>Skellam</td><td><div class='bar-container'><div class='bar bar-h' style='width:66.12%'>33.1%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:59.919999999999995%'>30.0%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:73.96000000000001%'>37.0%</div></div></td></tr><tr><td>蒙特卡洛</td><td><div class='bar-container'><div class='bar bar-h' style='width:71.48%'>35.7%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:64.32%'>32.2%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:64.2%'>32.1%</div></div></td></tr><tr><td>Shin校准</td><td><div class='bar-container'><div class='bar bar-h' style='width:58.660000000000004%'>29.3%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:61.980000000000004%'>31.0%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:79.36%'>39.7%</div></div></td></tr></tbody>
+          </table>
+          <div class="model-note">模型间标准差: 0.0075 | Shin z参数: 0.0295</div>
+        </div>
+        
+        <!-- 比分预测 -->
+        <div class="score-section">
+          <h3>比分TOP10</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>1:0</td><td>13.6%</td><td>🔴主胜</td></tr><tr class='highlight'><td>2</td><td class='score'>1:1</td><td>13.1%</td><td>🟡平局</td></tr><tr class='highlight'><td>3</td><td class='score'>0:0</td><td>12.9%</td><td>🟡平局</td></tr><tr><td>4</td><td class='score'>0:1</td><td>12.7%</td><td>🔵客胜</td></tr><tr><td>5</td><td class='score'>2:1</td><td>7.8%</td><td>🔴主胜</td></tr><tr><td>6</td><td class='score'>2:0</td><td>7.0%</td><td>🔴主胜</td></tr><tr><td>7</td><td class='score'>1:2</td><td>6.6%</td><td>🔵客胜</td></tr><tr><td>8</td><td class='score'>0:2</td><td>6.1%</td><td>🔵客胜</td></tr><tr><td>9</td><td class='score'>2:2</td><td>3.6%</td><td>🟡平局</td></tr><tr><td>10</td><td class='score'>3:1</td><td>2.6%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半场比分 -->
+        <div class="score-section">
+          <h3>半场比分TOP5</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>0:0</td><td>38.9%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>1:0</td><td>19.0%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>0:1</td><td>17.7%</td><td>🔵客胜</td></tr><tr><td>4</td><td class='score'>1:1</td><td>8.6%</td><td>🟡平局</td></tr><tr><td>5</td><td class='score'>2:0</td><td>4.7%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半全场 -->
+        <div class="score-section half-section">
+          <h3>半全场TOP3</h3>
+          <table class="score-table">
+            <thead><tr><th>组合</th><th>概率</th></tr></thead>
+            <tbody><tr class='highlight'><td>平胜</td><td>15.4%</td></tr><tr class='highlight'><td>平负</td><td>13.5%</td></tr><tr class='highlight'><td>平平</td><td>13.2%</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 大小球 -->
+        <div class="ou-section">
+          <h3>大小球2.5</h3>
+          <div class="ou-bar-container">
+            <div class="ou-bar ou-over" style="width:29.7%;">大球 29.7%</div>
+            <div class="ou-bar ou-under" style="width:70.3%;">小球 70.3%</div>
+          </div>
+          <div class="ou-rec">倾向: <strong>小球</strong>（已校准，大球概率×0.85）</div>
+        </div>
+        
+        <!-- 让球分析 -->
+        <div class="hc-section">
+          <h3>让球胜平负（主队受让1球）</h3>
+          <div class="hc-probs">
+            <span class="hc-prob">主胜 67.3%</span>
+            <span class="hc-prob">平 20.6%</span>
+            <span class="hc-prob">客胜 12.1%</span>
+          </div>
+        </div>
+        
+        <!-- Lambda详情 -->
+        <div class="lambda-section">
+          <h3>Lambda计算详情</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主队λ</span><span class="value">1.086</span></div>
+            <div class="info-item"><span class="label">客队λ</span><span class="value">1.01</span></div>
+            <div class="info-item"><span class="label">xG校准比(主)</span><span class="value">0.775</span></div>
+            <div class="info-item"><span class="label">xG校准比(客)</span><span class="value">0.9</span></div>
+            <div class="info-item"><span class="label">修正系数(主)</span><span class="value">0.93</span></div>
+            <div class="info-item"><span class="label">修正系数(客)</span><span class="value">1.0</span></div>
+          </div>
+          <div class="corr-notes">济州杯赛120分钟体能消耗→lambda-7%</div>
+        </div>
+        
+        <!-- 伤停详情 -->
+        <div class="injury-section">
+          <h3>伤停详情</h3>
+          <div class="injury-tables">
+            <div class="injury-table">
+              <h4>主队 (济州SK)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td colspan="4">无伤停</td></tr></tbody>
+              </table>
+            </div>
+            <div class="injury-table">
+              <h4>客队 (仁川联)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td colspan="4">无伤停</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 市场支持率 -->
+        <div class="support-section">
+          <h3>市场支持率</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主胜支持</span><span class="value">30%</span></div>
+            <div class="info-item"><span class="label">平局支持</span><span class="value">35%</span></div>
+            <div class="info-item"><span class="label">客胜支持</span><span class="value">35%</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-item"><span class="label">让球主胜</span><span class="value">44%</span></div>
+            <div class="info-item"><span class="label">让球平</span><span class="value">31%</span></div>
+            <div class="info-item"><span class="label">让球客胜</span><span class="value">25%</span></div>
+          </div>
+        </div>
+        
+        <!-- 基本面分析 -->
+        <div class="notes-section">
+          <h3>基本面分析</h3>
+          <div class="notes-content">济州近4场不败但杯赛打满120分钟体能消耗大；仁川近4场2胜1平1负。交锋济州3胜2负，极度小球(5场仅7球)。济州xG第5但转化极差(-0.57)。无伤停。</div>
+          <div class="h2h-info">
+            历史交锋: 主胜3场 平0场 客胜2场 | 
+            场均进球1.4球
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="match-card" id="match-003">
+      <div class="match-header">
+        <span class="match-id">003</span>
+        <span class="league-tag">韩职</span>
+        <span class="match-time">08-02 18:30</span>
+        <span class="match-title">大田市民 <span class="vs">VS</span> 光州FC</span>
+        <span class="confidence-badge" style="background:#f39c12">中 ★★</span>
+      </div>
+      
+      <div class="match-body">
+        <!-- 赔率与排名 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">主队排名</span><span class="value">第9位</span></div>
+          <div class="info-item"><span class="label">客队排名</span><span class="value">第12位</span></div>
+          <div class="info-item"><span class="label">体彩赔率</span><span class="value">1.4 / 3.9 / 6.3</span></div>
+          <div class="info-item"><span class="label">让球</span><span class="value">主队让1球</span></div>
+        </div>
+        
+        <!-- 场地天气 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">场地</span><span class="value">大田世界杯球场</span></div>
+          <div class="info-item"><span class="label">城市</span><span class="value">大田</span></div>
+          <div class="info-item"><span class="label">草皮</span><span class="value">天然</span></div>
+          <div class="info-item"><span class="label">容量</span><span class="value">41,295</span></div>
+          <div class="info-item"><span class="label">天气</span><span class="value">晴 33°C</span></div>
+          <div class="info-item"><span class="label">风力</span><span class="value">微风</span></div>
+        </div>
+        
+        <!-- 融合概率 -->
+        <div class="probability-section">
+          <h3>融合概率（加权融合）</h3>
+          <div class="prob-bar-container">
+            <div class="prob-bar prob-h" style="width:48.47%;">主胜 48.5%</div>
+            <div class="prob-bar prob-d" style="width:25.44%;">平 25.4%</div>
+            <div class="prob-bar prob-a" style="width:26.1%;">客胜 26.1%</div>
+          </div>
+          <div class="recommendation">推荐方向: <strong>🔴 主胜 (48.5%)</strong></div>
+          
+          
+        </div>
+        
+        <!-- 模型对比 -->
+        <div class="model-section">
+          <h3>各模型胜率对比</h3>
+          <table class="model-table">
+            <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+            <tbody><tr><td>DC模型</td><td><div class='bar-container'><div class='bar bar-h' style='width:115.14%'>57.6%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:52.800000000000004%'>26.4%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:32.06%'>16.0%</div></div></td></tr><tr><td>负二项</td><td><div class='bar-container'><div class='bar bar-h' style='width:112.77999999999999%'>56.4%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:53.339999999999996%'>26.7%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:33.900000000000006%'>17.0%</div></div></td></tr><tr><td>ZIP</td><td><div class='bar-container'><div class='bar bar-h' style='width:111.08%'>55.5%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:55.379999999999995%'>27.7%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:33.54%'>16.8%</div></div></td></tr><tr><td>Skellam</td><td><div class='bar-container'><div class='bar bar-h' style='width:32.2%'>16.1%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:52.86%'>26.4%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:114.96%'>57.5%</div></div></td></tr><tr><td>蒙特卡洛</td><td><div class='bar-container'><div class='bar bar-h' style='width:112.44000000000001%'>56.2%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:57.04%'>28.5%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:30.520000000000003%'>15.3%</div></div></td></tr><tr><td>Shin校准</td><td><div class='bar-container'><div class='bar bar-h' style='width:122.7%'>61.4%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:46.26%'>23.1%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:31.019999999999996%'>15.5%</div></div></td></tr></tbody>
+          </table>
+          <div class="model-note">模型间标准差: 0.0075 | Shin z参数: 0.0079</div>
+        </div>
+        
+        <!-- 比分预测 -->
+        <div class="score-section">
+          <h3>比分TOP10</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>1:0</td><td>18.2%</td><td>🔴主胜</td></tr><tr class='highlight'><td>2</td><td class='score'>2:0</td><td>12.8%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>0:0</td><td>12.4%</td><td>🟡平局</td></tr><tr><td>4</td><td class='score'>1:1</td><td>11.1%</td><td>🟡平局</td></tr><tr><td>5</td><td class='score'>2:1</td><td>9.0%</td><td>🔴主胜</td></tr><tr><td>6</td><td class='score'>0:1</td><td>7.9%</td><td>🔵客胜</td></tr><tr><td>7</td><td class='score'>3:0</td><td>6.3%</td><td>🔴主胜</td></tr><tr><td>8</td><td class='score'>3:1</td><td>4.0%</td><td>🔴主胜</td></tr><tr><td>9</td><td class='score'>1:2</td><td>3.5%</td><td>🔵客胜</td></tr><tr><td>10</td><td class='score'>2:2</td><td>2.6%</td><td>🟡平局</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半场比分 -->
+        <div class="score-section">
+          <h3>半场比分TOP5</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>0:0</td><td>38.6%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>1:0</td><td>25.6%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>0:1</td><td>11.1%</td><td>🔵客胜</td></tr><tr><td>4</td><td class='score'>2:0</td><td>8.5%</td><td>🔴主胜</td></tr><tr><td>5</td><td class='score'>1:1</td><td>7.4%</td><td>🟡平局</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半全场 -->
+        <div class="score-section half-section">
+          <h3>半全场TOP3</h3>
+          <table class="score-table">
+            <thead><tr><th>组合</th><th>概率</th></tr></thead>
+            <tbody><tr class='highlight'><td>平胜</td><td>22.8%</td></tr><tr class='highlight'><td>胜胜</td><td>17.9%</td></tr><tr class='highlight'><td>平平</td><td>11.2%</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 大小球 -->
+        <div class="ou-section">
+          <h3>大小球2.5</h3>
+          <div class="ou-bar-container">
+            <div class="ou-bar ou-over" style="width:30.1%;">大球 30.1%</div>
+            <div class="ou-bar ou-under" style="width:69.9%;">小球 69.9%</div>
+          </div>
+          <div class="ou-rec">倾向: <strong>小球</strong>（已校准，大球概率×0.85）</div>
+        </div>
+        
+        <!-- 让球分析 -->
+        <div class="hc-section">
+          <h3>让球胜平负（主队让1球）</h3>
+          <div class="hc-probs">
+            <span class="hc-prob">主胜 29.0%</span>
+            <span class="hc-prob">平 28.5%</span>
+            <span class="hc-prob">客胜 42.4%</span>
+          </div>
+        </div>
+        
+        <!-- Lambda详情 -->
+        <div class="lambda-section">
+          <h3>Lambda计算详情</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主队λ</span><span class="value">1.476</span></div>
+            <div class="info-item"><span class="label">客队λ</span><span class="value">0.64</span></div>
+            <div class="info-item"><span class="label">xG校准比(主)</span><span class="value">0.876</span></div>
+            <div class="info-item"><span class="label">xG校准比(客)</span><span class="value">0.717</span></div>
+            <div class="info-item"><span class="label">修正系数(主)</span><span class="value">1.15</span></div>
+            <div class="info-item"><span class="label">修正系数(客)</span><span class="value">1.0</span></div>
+          </div>
+          <div class="corr-notes">韩职保级队(排名9)主场lambda+15%</div>
+        </div>
+        
+        <!-- 伤停详情 -->
+        <div class="injury-section">
+          <h3>伤停详情</h3>
+          <div class="injury-tables">
+            <div class="injury-table">
+              <h4>主队 (大田市民)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td colspan="4">无伤停</td></tr></tbody>
+              </table>
+            </div>
+            <div class="injury-table">
+              <h4>客队 (光州FC)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td colspan="4">无伤停</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 市场支持率 -->
+        <div class="support-section">
+          <h3>市场支持率</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主胜支持</span><span class="value">52%</span></div>
+            <div class="info-item"><span class="label">平局支持</span><span class="value">27%</span></div>
+            <div class="info-item"><span class="label">客胜支持</span><span class="value">21%</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-item"><span class="label">让球主胜</span><span class="value">37%</span></div>
+            <div class="info-item"><span class="label">让球平</span><span class="value">32%</span></div>
+            <div class="info-item"><span class="label">让球客胜</span><span class="value">31%</span></div>
+          </div>
+        </div>
+        
+        <!-- 基本面分析 -->
+        <div class="notes-section">
+          <h3>基本面分析</h3>
+          <div class="notes-content">大田4连平1负平局率极高；光州联赛垫底仅1胜。本赛季首回合大田5-0大胜。光州xG联赛最低(1.04)，攻防最差(场均失2.25球)。大田保级队主场→规则22加成。无伤停。</div>
+          <div class="h2h-info">
+            历史交锋: 主胜1场 平3场 客胜1场 | 
+            场均进球2.6球
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="match-card" id="match-004">
+      <div class="match-header">
+        <span class="match-id">004</span>
+        <span class="league-tag">瑞超</span>
+        <span class="match-time">08-02 20:00</span>
+        <span class="match-title">布鲁马波 <span class="vs">VS</span> 马尔默</span>
+        <span class="confidence-badge" style="background:#e74c3c">高 ★★★</span>
+      </div>
+      
+      <div class="match-body">
+        <!-- 赔率与排名 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">主队排名</span><span class="value">第12位</span></div>
+          <div class="info-item"><span class="label">客队排名</span><span class="value">第8位</span></div>
+          <div class="info-item"><span class="label">体彩赔率</span><span class="value">2.81 / 3.5 / 2.05</span></div>
+          <div class="info-item"><span class="label">让球</span><span class="value">主队受让1球</span></div>
+        </div>
+        
+        <!-- 场地天气 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">场地</span><span class="value">布鲁马波球场</span></div>
+          <div class="info-item"><span class="label">城市</span><span class="value">布鲁马</span></div>
+          <div class="info-item"><span class="label">草皮</span><span class="value">天然</span></div>
+          <div class="info-item"><span class="label">容量</span><span class="value">5,200</span></div>
+          <div class="info-item"><span class="label">天气</span><span class="value">多云 20°C</span></div>
+          <div class="info-item"><span class="label">风力</span><span class="value">微风</span></div>
+        </div>
+        
+        <!-- 融合概率 -->
+        <div class="probability-section">
+          <h3>融合概率（加权融合）</h3>
+          <div class="prob-bar-container">
+            <div class="prob-bar prob-h" style="width:35.56%;">主胜 35.6%</div>
+            <div class="prob-bar prob-d" style="width:26.61%;">平 26.6%</div>
+            <div class="prob-bar prob-a" style="width:37.830000000000005%;">客胜 37.8%</div>
+          </div>
+          <div class="recommendation">推荐方向: <strong>🔵 客胜 (37.8%)</strong></div>
+          <div class="draw-warning">📝 主客胜率差<15%→平局上修+10%；比分矩阵TOP1为平局→规则17平局方向优先</div>
+          <span class="divergence">⚠ 分歧标注: 模型首选主胜(41.9%) vs 市场首选客胜(41.6%)</span>
+        </div>
+        
+        <!-- 模型对比 -->
+        <div class="model-section">
+          <h3>各模型胜率对比</h3>
+          <table class="model-table">
+            <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+            <tbody><tr><td>DC模型</td><td><div class='bar-container'><div class='bar bar-h' style='width:83.89999999999999%'>41.9%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:47.12%'>23.6%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:68.96%'>34.5%</div></div></td></tr><tr><td>负二项</td><td><div class='bar-container'><div class='bar bar-h' style='width:82.02000000000001%'>41.0%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:47.699999999999996%'>23.8%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:70.3%'>35.1%</div></div></td></tr><tr><td>ZIP</td><td><div class='bar-container'><div class='bar bar-h' style='width:81.6%'>40.8%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:49.14%'>24.6%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:69.26%'>34.6%</div></div></td></tr><tr><td>Skellam</td><td><div class='bar-container'><div class='bar bar-h' style='width:69.16%'>34.6%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:49.16%'>24.6%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:81.67999999999999%'>40.8%</div></div></td></tr><tr><td>蒙特卡洛</td><td><div class='bar-container'><div class='bar bar-h' style='width:80.17999999999999%'>40.1%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:53.54%'>26.8%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:66.28%'>33.1%</div></div></td></tr><tr><td>Shin校准</td><td><div class='bar-container'><div class='bar bar-h' style='width:63.42%'>31.7%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:53.42%'>26.7%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:83.16%'>41.6%</div></div></td></tr></tbody>
+          </table>
+          <div class="model-note">模型间标准差: 0.0102 | Shin z参数: 0.0274</div>
+        </div>
+        
+        <!-- 比分预测 -->
+        <div class="score-section">
+          <h3>比分TOP10</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>1:1</td><td>10.3%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>2:1</td><td>10.0%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>1:2</td><td>8.3%</td><td>🔵客胜</td></tr><tr><td>4</td><td class='score'>1:0</td><td>7.8%</td><td>🔴主胜</td></tr><tr><td>5</td><td class='score'>0:1</td><td>7.0%</td><td>🔵客胜</td></tr><tr><td>6</td><td class='score'>2:2</td><td>6.4%</td><td>🟡平局</td></tr><tr><td>7</td><td class='score'>2:0</td><td>5.9%</td><td>🔴主胜</td></tr><tr><td>8</td><td class='score'>0:0</td><td>5.2%</td><td>🟡平局</td></tr><tr><td>9</td><td class='score'>0:2</td><td>4.7%</td><td>🔵客胜</td></tr><tr><td>10</td><td class='score'>3:1</td><td>4.7%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半场比分 -->
+        <div class="score-section">
+          <h3>半场比分TOP5</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>0:0</td><td>26.8%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>1:0</td><td>18.5%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>0:1</td><td>16.8%</td><td>🔵客胜</td></tr><tr><td>4</td><td class='score'>1:1</td><td>11.6%</td><td>🟡平局</td></tr><tr><td>5</td><td class='score'>2:0</td><td>6.4%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半全场 -->
+        <div class="score-section half-section">
+          <h3>半全场TOP3</h3>
+          <table class="score-table">
+            <thead><tr><th>组合</th><th>概率</th></tr></thead>
+            <tbody><tr class='highlight'><td>平胜</td><td>13.2%</td></tr><tr class='highlight'><td>平负</td><td>10.9%</td></tr><tr class='highlight'><td>胜胜</td><td>10.3%</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 大小球 -->
+        <div class="ou-section">
+          <h3>大小球2.5</h3>
+          <div class="ou-bar-container">
+            <div class="ou-bar ou-over" style="width:47.6%;">大球 47.6%</div>
+            <div class="ou-bar ou-under" style="width:52.4%;">小球 52.4%</div>
+          </div>
+          <div class="ou-rec">倾向: <strong>均势</strong>（已校准，大球概率×0.85）</div>
+        </div>
+        
+        <!-- 让球分析 -->
+        <div class="hc-section">
+          <h3>让球胜平负（主队受让1球）</h3>
+          <div class="hc-probs">
+            <span class="hc-prob">主胜 65.5%</span>
+            <span class="hc-prob">平 18.9%</span>
+            <span class="hc-prob">客胜 15.6%</span>
+          </div>
+        </div>
+        
+        <!-- Lambda详情 -->
+        <div class="lambda-section">
+          <h3>Lambda计算详情</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主队λ</span><span class="value">1.533</span></div>
+            <div class="info-item"><span class="label">客队λ</span><span class="value">1.392</span></div>
+            <div class="info-item"><span class="label">xG校准比(主)</span><span class="value">1.08</span></div>
+            <div class="info-item"><span class="label">xG校准比(客)</span><span class="value">1.169</span></div>
+            <div class="info-item"><span class="label">修正系数(主)</span><span class="value">1.0</span></div>
+            <div class="info-item"><span class="label">修正系数(客)</span><span class="value">1.0</span></div>
+          </div>
+          <div class="corr-notes">无特殊修正</div>
+        </div>
+        
+        <!-- 伤停详情 -->
+        <div class="injury-section">
+          <h3>伤停详情</h3>
+          <div class="injury-tables">
+            <div class="injury-table">
+              <h4>主队 (布鲁马波)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td colspan="4">无伤停</td></tr></tbody>
+              </table>
+            </div>
+            <div class="injury-table">
+              <h4>客队 (马尔默)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td colspan="4">无伤停</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 市场支持率 -->
+        <div class="support-section">
+          <h3>市场支持率</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主胜支持</span><span class="value">21%</span></div>
+            <div class="info-item"><span class="label">平局支持</span><span class="value">23%</span></div>
+            <div class="info-item"><span class="label">客胜支持</span><span class="value">56%</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-item"><span class="label">让球主胜</span><span class="value">32%</span></div>
+            <div class="info-item"><span class="label">让球平</span><span class="value">30%</span></div>
+            <div class="info-item"><span class="label">让球客胜</span><span class="value">38%</span></div>
+          </div>
+        </div>
+        
+        <!-- 基本面分析 -->
+        <div class="notes-section">
+          <h3>基本面分析</h3>
+          <div class="notes-content">布鲁马5场不胜(2平3负)状态低迷；马尔默近4场2胜1平1负。交锋全大球全BTTS(场均3.6球)。布鲁马xG联赛最低(1.20)。马尔默欧冠资格赛分心。无伤停。</div>
+          <div class="h2h-info">
+            历史交锋: 主胜1场 平1场 客胜3场 | 
+            场均进球3.6球
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="match-card" id="match-005">
+      <div class="match-header">
+        <span class="match-id">005</span>
+        <span class="league-tag">瑞超</span>
+        <span class="match-time">08-02 20:00</span>
+        <span class="match-title">哥德堡 <span class="vs">VS</span> 代格福什</span>
+        <span class="confidence-badge" style="background:#e74c3c">高 ★★★</span>
+      </div>
+      
+      <div class="match-body">
+        <!-- 赔率与排名 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">主队排名</span><span class="value">第13位</span></div>
+          <div class="info-item"><span class="label">客队排名</span><span class="value">第14位</span></div>
+          <div class="info-item"><span class="label">体彩赔率</span><span class="value">1.7 / 3.55 / 3.85</span></div>
+          <div class="info-item"><span class="label">让球</span><span class="value">主队让1球</span></div>
+        </div>
+        
+        <!-- 场地天气 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">场地</span><span class="value">哥德堡体育场</span></div>
+          <div class="info-item"><span class="label">城市</span><span class="value">哥德堡</span></div>
+          <div class="info-item"><span class="label">草皮</span><span class="value">天然</span></div>
+          <div class="info-item"><span class="label">容量</span><span class="value">18,000</span></div>
+          <div class="info-item"><span class="label">天气</span><span class="value">多云 19°C</span></div>
+          <div class="info-item"><span class="label">风力</span><span class="value">微风</span></div>
+        </div>
+        
+        <!-- 融合概率 -->
+        <div class="probability-section">
+          <h3>融合概率（加权融合）</h3>
+          <div class="prob-bar-container">
+            <div class="prob-bar prob-h" style="width:47.82%;">主胜 47.8%</div>
+            <div class="prob-bar prob-d" style="width:24.91%;">平 24.9%</div>
+            <div class="prob-bar prob-a" style="width:27.27%;">客胜 27.3%</div>
+          </div>
+          <div class="recommendation">推荐方向: <strong>🔴 主胜 (47.8%)</strong></div>
+          
+          
+        </div>
+        
+        <!-- 模型对比 -->
+        <div class="model-section">
+          <h3>各模型胜率对比</h3>
+          <table class="model-table">
+            <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+            <tbody><tr><td>DC模型</td><td><div class='bar-container'><div class='bar bar-h' style='width:96.6%'>48.3%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:54.32%'>27.2%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:49.08%'>24.5%</div></div></td></tr><tr><td>负二项</td><td><div class='bar-container'><div class='bar bar-h' style='width:92.25999999999999%'>46.1%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:57.34%'>28.7%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:50.42%'>25.2%</div></div></td></tr><tr><td>ZIP</td><td><div class='bar-container'><div class='bar bar-h' style='width:93.02%'>46.5%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:57.879999999999995%'>28.9%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:49.1%'>24.6%</div></div></td></tr><tr><td>Skellam</td><td><div class='bar-container'><div class='bar bar-h' style='width:48.96%'>24.5%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:57.599999999999994%'>28.8%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:93.44%'>46.7%</div></div></td></tr><tr><td>蒙特卡洛</td><td><div class='bar-container'><div class='bar bar-h' style='width:91.25999999999999%'>45.6%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:61.86000000000001%'>30.9%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:46.88%'>23.4%</div></div></td></tr><tr><td>Shin校准</td><td><div class='bar-container'><div class='bar bar-h' style='width:99.48%'>49.7%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:51.85999999999999%'>25.9%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:48.66%'>24.3%</div></div></td></tr></tbody>
+          </table>
+          <div class="model-note">模型间标准差: 0.0115 | Shin z参数: 0.0198</div>
+        </div>
+        
+        <!-- 比分预测 -->
+        <div class="score-section">
+          <h3>比分TOP10</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>1:0</td><td>14.9%</td><td>🔴主胜</td></tr><tr class='highlight'><td>2</td><td class='score'>1:1</td><td>11.9%</td><td>🟡平局</td></tr><tr class='highlight'><td>3</td><td class='score'>0:0</td><td>11.0%</td><td>🟡平局</td></tr><tr><td>4</td><td class='score'>0:1</td><td>9.8%</td><td>🔵客胜</td></tr><tr><td>5</td><td class='score'>2:1</td><td>9.7%</td><td>🔴主胜</td></tr><tr><td>6</td><td class='score'>2:0</td><td>9.5%</td><td>🔴主胜</td></tr><tr><td>7</td><td class='score'>1:2</td><td>5.8%</td><td>🔵客胜</td></tr><tr><td>8</td><td class='score'>3:0</td><td>4.5%</td><td>🔴主胜</td></tr><tr><td>9</td><td class='score'>0:2</td><td>3.9%</td><td>🔵客胜</td></tr><tr><td>10</td><td class='score'>3:1</td><td>3.8%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半场比分 -->
+        <div class="score-section">
+          <h3>半场比分TOP5</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>0:0</td><td>38.5%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>1:0</td><td>22.2%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>0:1</td><td>14.6%</td><td>🔵客胜</td></tr><tr><td>4</td><td class='score'>1:1</td><td>8.4%</td><td>🟡平局</td></tr><tr><td>5</td><td class='score'>2:0</td><td>6.4%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半全场 -->
+        <div class="score-section half-section">
+          <h3>半全场TOP3</h3>
+          <table class="score-table">
+            <thead><tr><th>组合</th><th>概率</th></tr></thead>
+            <tbody><tr class='highlight'><td>平胜</td><td>19.6%</td></tr><tr class='highlight'><td>胜胜</td><td>13.0%</td></tr><tr class='highlight'><td>平平</td><td>11.8%</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 大小球 -->
+        <div class="ou-section">
+          <h3>大小球2.5</h3>
+          <div class="ou-bar-container">
+            <div class="ou-bar ou-over" style="width:30.3%;">大球 30.3%</div>
+            <div class="ou-bar ou-under" style="width:69.7%;">小球 69.7%</div>
+          </div>
+          <div class="ou-rec">倾向: <strong>小球</strong>（已校准，大球概率×0.85）</div>
+        </div>
+        
+        <!-- 让球分析 -->
+        <div class="hc-section">
+          <h3>让球胜平负（主队让1球）</h3>
+          <div class="hc-probs">
+            <span class="hc-prob">主胜 22.0%</span>
+            <span class="hc-prob">平 26.3%</span>
+            <span class="hc-prob">客胜 51.7%</span>
+          </div>
+        </div>
+        
+        <!-- Lambda详情 -->
+        <div class="lambda-section">
+          <h3>Lambda计算详情</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主队λ</span><span class="value">1.281</span></div>
+            <div class="info-item"><span class="label">客队λ</span><span class="value">0.842</span></div>
+            <div class="info-item"><span class="label">xG校准比(主)</span><span class="value">0.822</span></div>
+            <div class="info-item"><span class="label">xG校准比(客)</span><span class="value">0.813</span></div>
+            <div class="info-item"><span class="label">修正系数(主)</span><span class="value">0.9</span></div>
+            <div class="info-item"><span class="label">修正系数(客)</span><span class="value">1.0</span></div>
+          </div>
+          <div class="corr-notes">哥德堡07-31欧战仅2天休息→lambda-10%</div>
+        </div>
+        
+        <!-- 伤停详情 -->
+        <div class="injury-section">
+          <h3>伤停详情</h3>
+          <div class="injury-tables">
+            <div class="injury-table">
+              <h4>主队 (哥德堡)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td colspan="4">无伤停</td></tr></tbody>
+              </table>
+            </div>
+            <div class="injury-table">
+              <h4>客队 (代格福什)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td colspan="4">无伤停</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 市场支持率 -->
+        <div class="support-section">
+          <h3>市场支持率</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主胜支持</span><span class="value">76%</span></div>
+            <div class="info-item"><span class="label">平局支持</span><span class="value">14%</span></div>
+            <div class="info-item"><span class="label">客胜支持</span><span class="value">10%</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-item"><span class="label">让球主胜</span><span class="value">54%</span></div>
+            <div class="info-item"><span class="label">让球平</span><span class="value">22%</span></div>
+            <div class="info-item"><span class="label">让球客胜</span><span class="value">24%</span></div>
+          </div>
+        </div>
+        
+        <!-- 基本面分析 -->
+        <div class="notes-section">
+          <h3>基本面分析</h3>
+          <div class="notes-content">哥德堡07-31刚踢完欧协联资格赛仅2天休息体能高风险；代格福什4连败。交锋哥德堡5战全胜进17球失3球。哥德堡xG第3(1.72)但转化差(-0.51)。无伤停。欧战牵制→lambda下修。</div>
+          <div class="h2h-info">
+            历史交锋: 主胜5场 平0场 客胜0场 | 
+            场均进球4.0球
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="match-card" id="match-008">
+      <div class="match-header">
+        <span class="match-id">008</span>
+        <span class="league-tag">瑞超</span>
+        <span class="match-time">08-02 22:30</span>
+        <span class="match-title">索尔纳 <span class="vs">VS</span> 厄格里特</span>
+        <span class="confidence-badge" style="background:#f39c12">中 ★★</span>
+      </div>
+      
+      <div class="match-body">
+        <!-- 赔率与排名 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">主队排名</span><span class="value">第6位</span></div>
+          <div class="info-item"><span class="label">客队排名</span><span class="value">第15位</span></div>
+          <div class="info-item"><span class="label">体彩赔率</span><span class="value">1.34 / 4.6 / 6.05</span></div>
+          <div class="info-item"><span class="label">让球</span><span class="value">主队让1球</span></div>
+        </div>
+        
+        <!-- 场地天气 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">场地</span><span class="value">索尔纳友谊球场</span></div>
+          <div class="info-item"><span class="label">城市</span><span class="value">索尔纳</span></div>
+          <div class="info-item"><span class="label">草皮</span><span class="value">天然</span></div>
+          <div class="info-item"><span class="label">容量</span><span class="value">54,329</span></div>
+          <div class="info-item"><span class="label">天气</span><span class="value">多云 20°C</span></div>
+          <div class="info-item"><span class="label">风力</span><span class="value">微风</span></div>
+        </div>
+        
+        <!-- 融合概率 -->
+        <div class="probability-section">
+          <h3>融合概率（加权融合）</h3>
+          <div class="prob-bar-container">
+            <div class="prob-bar prob-h" style="width:50.56%;">主胜 50.6%</div>
+            <div class="prob-bar prob-d" style="width:22.939999999999998%;">平 22.9%</div>
+            <div class="prob-bar prob-a" style="width:26.51%;">客胜 26.5%</div>
+          </div>
+          <div class="recommendation">推荐方向: <strong>🔴 主胜 (50.6%)</strong></div>
+          
+          
+        </div>
+        
+        <!-- 模型对比 -->
+        <div class="model-section">
+          <h3>各模型胜率对比</h3>
+          <table class="model-table">
+            <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+            <tbody><tr><td>DC模型</td><td><div class='bar-container'><div class='bar bar-h' style='width:102.02%'>51.0%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:51.4%'>25.7%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:46.58%'>23.3%</div></div></td></tr><tr><td>负二项</td><td><div class='bar-container'><div class='bar bar-h' style='width:98.82%'>49.4%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:52.5%'>26.2%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:48.68%'>24.3%</div></div></td></tr><tr><td>ZIP</td><td><div class='bar-container'><div class='bar bar-h' style='width:99.68%'>49.8%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:53.22%'>26.6%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:47.099999999999994%'>23.5%</div></div></td></tr><tr><td>Skellam</td><td><div class='bar-container'><div class='bar bar-h' style='width:46.839999999999996%'>23.4%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:53.0%'>26.5%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:100.16000000000001%'>50.1%</div></div></td></tr><tr><td>蒙特卡洛</td><td><div class='bar-container'><div class='bar bar-h' style='width:98.18%'>49.1%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:57.02%'>28.5%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:44.800000000000004%'>22.4%</div></div></td></tr><tr><td>Shin校准</td><td><div class='bar-container'><div class='bar bar-h' style='width:128.72%'>64.4%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:39.76%'>19.9%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:31.52%'>15.8%</div></div></td></tr></tbody>
+          </table>
+          <div class="model-note">模型间标准差: 0.0095 | Shin z参数: 0.0064</div>
+        </div>
+        
+        <!-- 比分预测 -->
+        <div class="score-section">
+          <h3>比分TOP10</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>1:0</td><td>13.8%</td><td>🔴主胜</td></tr><tr class='highlight'><td>2</td><td class='score'>1:1</td><td>12.0%</td><td>🟡平局</td></tr><tr class='highlight'><td>3</td><td class='score'>2:0</td><td>10.1%</td><td>🔴主胜</td></tr><tr><td>4</td><td class='score'>2:1</td><td>9.9%</td><td>🔴主胜</td></tr><tr><td>5</td><td class='score'>0:0</td><td>9.0%</td><td>🟡平局</td></tr><tr><td>6</td><td class='score'>0:1</td><td>8.6%</td><td>🔵客胜</td></tr><tr><td>7</td><td class='score'>1:2</td><td>5.6%</td><td>🔵客胜</td></tr><tr><td>8</td><td class='score'>3:0</td><td>4.8%</td><td>🔴主胜</td></tr><tr><td>9</td><td class='score'>3:1</td><td>4.4%</td><td>🔴主胜</td></tr><tr><td>10</td><td class='score'>2:2</td><td>4.1%</td><td>🟡平局</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半场比分 -->
+        <div class="score-section">
+          <h3>半场比分TOP5</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>0:0</td><td>34.3%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>1:0</td><td>22.6%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>0:1</td><td>14.1%</td><td>🔵客胜</td></tr><tr><td>4</td><td class='score'>1:1</td><td>9.3%</td><td>🟡平局</td></tr><tr><td>5</td><td class='score'>2:0</td><td>7.5%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半全场 -->
+        <div class="score-section half-section">
+          <h3>半全场TOP3</h3>
+          <table class="score-table">
+            <thead><tr><th>组合</th><th>概率</th></tr></thead>
+            <tbody><tr class='highlight'><td>平胜</td><td>18.7%</td></tr><tr class='highlight'><td>胜胜</td><td>14.4%</td></tr><tr class='highlight'><td>平平</td><td>10.4%</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 大小球 -->
+        <div class="ou-section">
+          <h3>大小球2.5</h3>
+          <div class="ou-bar-container">
+            <div class="ou-bar ou-over" style="width:36.0%;">大球 36.0%</div>
+            <div class="ou-bar ou-under" style="width:64.0%;">小球 64.0%</div>
+          </div>
+          <div class="ou-rec">倾向: <strong>小球</strong>（已校准，大球概率×0.85）</div>
+        </div>
+        
+        <!-- 让球分析 -->
+        <div class="hc-section">
+          <h3>让球胜平负（主队让1球）</h3>
+          <div class="hc-probs">
+            <span class="hc-prob">主胜 25.1%</span>
+            <span class="hc-prob">平 25.9%</span>
+            <span class="hc-prob">客胜 49.0%</span>
+          </div>
+        </div>
+        
+        <!-- Lambda详情 -->
+        <div class="lambda-section">
+          <h3>Lambda计算详情</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主队λ</span><span class="value">1.465</span></div>
+            <div class="info-item"><span class="label">客队λ</span><span class="value">0.911</span></div>
+            <div class="info-item"><span class="label">xG校准比(主)</span><span class="value">0.927</span></div>
+            <div class="info-item"><span class="label">xG校准比(客)</span><span class="value">0.888</span></div>
+            <div class="info-item"><span class="label">修正系数(主)</span><span class="value">1.0</span></div>
+            <div class="info-item"><span class="label">修正系数(客)</span><span class="value">1.0</span></div>
+          </div>
+          <div class="corr-notes">无特殊修正</div>
+        </div>
+        
+        <!-- 伤停详情 -->
+        <div class="injury-section">
+          <h3>伤停详情</h3>
+          <div class="injury-tables">
+            <div class="injury-table">
+              <h4>主队 (索尔纳)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td colspan="4">无伤停</td></tr></tbody>
+              </table>
+            </div>
+            <div class="injury-table">
+              <h4>客队 (厄格里特)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td colspan="4">无伤停</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 市场支持率 -->
+        <div class="support-section">
+          <h3>市场支持率</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主胜支持</span><span class="value">80%</span></div>
+            <div class="info-item"><span class="label">平局支持</span><span class="value">10%</span></div>
+            <div class="info-item"><span class="label">客胜支持</span><span class="value">10%</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-item"><span class="label">让球主胜</span><span class="value">66%</span></div>
+            <div class="info-item"><span class="label">让球平</span><span class="value">21%</span></div>
+            <div class="info-item"><span class="label">让球客胜</span><span class="value">13%</span></div>
+          </div>
+        </div>
+        
+        <!-- 基本面分析 -->
+        <div class="notes-section">
+          <h3>基本面分析</h3>
+          <div class="notes-content">索尔纳3连胜状态出色近5场4胜；厄格里特保级队防守最差(场均失2.36球)。索尔纳主场xG联赛第4(1.86)。无伤停。</div>
+          <div class="h2h-info">
+            历史交锋: 主胜4场 平0场 客胜1场 | 
+            场均进球2.4球
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="match-card" id="match-006">
+      <div class="match-header">
+        <span class="match-id">006</span>
+        <span class="league-tag">芬超</span>
+        <span class="match-time">08-02 20:00</span>
+        <span class="match-title">瓦萨 <span class="vs">VS</span> 国际图尔库</span>
+        <span class="confidence-badge" style="background:#e74c3c">高 ★★★</span>
+      </div>
+      
+      <div class="match-body">
+        <!-- 赔率与排名 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">主队排名</span><span class="value">第5位</span></div>
+          <div class="info-item"><span class="label">客队排名</span><span class="value">第2位</span></div>
+          <div class="info-item"><span class="label">体彩赔率</span><span class="value">2.42 / 3.15 / 2.52</span></div>
+          <div class="info-item"><span class="label">让球</span><span class="value">主队让1球</span></div>
+        </div>
+        
+        <!-- 场地天气 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">场地</span><span class="value">Hietalahti球场</span></div>
+          <div class="info-item"><span class="label">城市</span><span class="value">瓦萨</span></div>
+          <div class="info-item"><span class="label">草皮</span><span class="value">天然</span></div>
+          <div class="info-item"><span class="label">容量</span><span class="value">6,000</span></div>
+          <div class="info-item"><span class="label">天气</span><span class="value">多云 18°C</span></div>
+          <div class="info-item"><span class="label">风力</span><span class="value">微风</span></div>
+        </div>
+        
+        <!-- 融合概率 -->
+        <div class="probability-section">
+          <h3>融合概率（加权融合）</h3>
+          <div class="prob-bar-container">
+            <div class="prob-bar prob-h" style="width:39.739999999999995%;">主胜 39.7%</div>
+            <div class="prob-bar prob-d" style="width:28.59%;">平 28.6%</div>
+            <div class="prob-bar prob-a" style="width:31.669999999999998%;">客胜 31.7%</div>
+          </div>
+          <div class="recommendation">推荐方向: <strong>🔴 主胜 (39.7%)</strong></div>
+          <div class="draw-warning">📝 比分矩阵TOP1为平局→规则17平局方向优先</div>
+          
+        </div>
+        
+        <!-- 模型对比 -->
+        <div class="model-section">
+          <h3>各模型胜率对比</h3>
+          <table class="model-table">
+            <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+            <tbody><tr><td>DC模型</td><td><div class='bar-container'><div class='bar bar-h' style='width:98.9%'>49.5%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:50.63999999999999%'>25.3%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:50.46000000000001%'>25.2%</div></div></td></tr><tr><td>负二项</td><td><div class='bar-container'><div class='bar bar-h' style='width:96.28%'>48.1%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:50.980000000000004%'>25.5%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:52.739999999999995%'>26.4%</div></div></td></tr><tr><td>ZIP</td><td><div class='bar-container'><div class='bar bar-h' style='width:94.88%'>47.4%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:52.6%'>26.3%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:52.54%'>26.3%</div></div></td></tr><tr><td>Skellam</td><td><div class='bar-container'><div class='bar bar-h' style='width:51.459999999999994%'>25.7%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:51.62%'>25.8%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:96.92%'>48.5%</div></div></td></tr><tr><td>蒙特卡洛</td><td><div class='bar-container'><div class='bar bar-h' style='width:92.34%'>46.2%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:57.58%'>28.8%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:50.080000000000005%'>25.0%</div></div></td></tr><tr><td>Shin校准</td><td><div class='bar-container'><div class='bar bar-h' style='width:72.08%'>36.0%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:58.26%'>29.1%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:69.66%'>34.8%</div></div></td></tr></tbody>
+          </table>
+          <div class="model-note">模型间标准差: 0.0118 | Shin z参数: 0.0300</div>
+        </div>
+        
+        <!-- 比分预测 -->
+        <div class="score-section">
+          <h3>比分TOP10</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>1:0</td><td>12.3%</td><td>🔴主胜</td></tr><tr class='highlight'><td>2</td><td class='score'>1:1</td><td>12.0%</td><td>🟡平局</td></tr><tr class='highlight'><td>3</td><td class='score'>2:1</td><td>10.0%</td><td>🔴主胜</td></tr><tr><td>4</td><td class='score'>2:0</td><td>9.3%</td><td>🔴主胜</td></tr><tr><td>5</td><td class='score'>0:1</td><td>7.9%</td><td>🔵客胜</td></tr><tr><td>6</td><td class='score'>0:0</td><td>7.7%</td><td>🟡平局</td></tr><tr><td>7</td><td class='score'>1:2</td><td>6.2%</td><td>🔵客胜</td></tr><tr><td>8</td><td class='score'>2:2</td><td>4.7%</td><td>🟡平局</td></tr><tr><td>9</td><td class='score'>3:1</td><td>4.6%</td><td>🔴主胜</td></tr><tr><td>10</td><td class='score'>3:0</td><td>4.5%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半场比分 -->
+        <div class="score-section">
+          <h3>半场比分TOP5</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>0:0</td><td>31.9%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>1:0</td><td>21.7%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>0:1</td><td>14.7%</td><td>🔵客胜</td></tr><tr><td>4</td><td class='score'>1:1</td><td>10.0%</td><td>🟡平局</td></tr><tr><td>5</td><td class='score'>2:0</td><td>7.4%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半全场 -->
+        <div class="score-section half-section">
+          <h3>半全场TOP3</h3>
+          <table class="score-table">
+            <thead><tr><th>组合</th><th>概率</th></tr></thead>
+            <tbody><tr class='highlight'><td>平胜</td><td>17.2%</td></tr><tr class='highlight'><td>胜胜</td><td>13.6%</td></tr><tr class='highlight'><td>平平</td><td>9.8%</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 大小球 -->
+        <div class="ou-section">
+          <h3>大小球2.5</h3>
+          <div class="ou-bar-container">
+            <div class="ou-bar ou-over" style="width:39.6%;">大球 39.6%</div>
+            <div class="ou-bar ou-under" style="width:60.4%;">小球 60.4%</div>
+          </div>
+          <div class="ou-rec">倾向: <strong>小球</strong>（已校准，大球概率×0.85）</div>
+        </div>
+        
+        <!-- 让球分析 -->
+        <div class="hc-section">
+          <h3>让球胜平负（主队让1球）</h3>
+          <div class="hc-probs">
+            <span class="hc-prob">主胜 24.5%</span>
+            <span class="hc-prob">平 25.0%</span>
+            <span class="hc-prob">客胜 50.5%</span>
+          </div>
+        </div>
+        
+        <!-- Lambda详情 -->
+        <div class="lambda-section">
+          <h3>Lambda计算详情</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主队λ</span><span class="value">1.512</span></div>
+            <div class="info-item"><span class="label">客队λ</span><span class="value">1.027</span></div>
+            <div class="info-item"><span class="label">xG校准比(主)</span><span class="value">0.983</span></div>
+            <div class="info-item"><span class="label">xG校准比(客)</span><span class="value">0.904</span></div>
+            <div class="info-item"><span class="label">修正系数(主)</span><span class="value">1.0</span></div>
+            <div class="info-item"><span class="label">修正系数(客)</span><span class="value">0.93</span></div>
+          </div>
+          <div class="corr-notes">国际图尔库欧战一周双赛→lambda-7%</div>
+        </div>
+        
+        <!-- 伤停详情 -->
+        <div class="injury-section">
+          <h3>伤停详情</h3>
+          <div class="injury-tables">
+            <div class="injury-table">
+              <h4>主队 (瓦萨)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td>van Duijvenbode</td><td>前锋</td><td>伤病</td><td>⚠️未验证</td></tr></tbody>
+              </table>
+            </div>
+            <div class="injury-table">
+              <h4>客队 (国际图尔库)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td colspan="4">无伤停</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 市场支持率 -->
+        <div class="support-section">
+          <h3>市场支持率</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主胜支持</span><span class="value">28%</span></div>
+            <div class="info-item"><span class="label">平局支持</span><span class="value">30%</span></div>
+            <div class="info-item"><span class="label">客胜支持</span><span class="value">42%</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-item"><span class="label">让球主胜</span><span class="value">24%</span></div>
+            <div class="info-item"><span class="label">让球平</span><span class="value">22%</span></div>
+            <div class="info-item"><span class="label">让球客胜</span><span class="value">54%</span></div>
+          </div>
+        </div>
+        
+        <!-- 基本面分析 -->
+        <div class="notes-section">
+          <h3>基本面分析</h3>
+          <div class="notes-content">VPS主场龙(63%胜率，主场场均进2.13球)；国际图尔库客场龙(50%胜率)。国际图尔库xG第2(1.68)防守最佳(xGA 0.93)。VPS头号射手van Duijvenbode伤缺(中文平台未验证)。国际图尔库欧战一周双赛体能消耗。</div>
+          <div class="h2h-info">
+            历史交锋: 主胜0场 平1场 客胜4场 | 
+            场均进球3.0球
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="match-card" id="match-007">
+      <div class="match-header">
+        <span class="match-id">007</span>
+        <span class="league-tag">芬超</span>
+        <span class="match-time">08-02 22:00</span>
+        <span class="match-title">AC奥卢 <span class="vs">VS</span> 坦佩雷山猫</span>
+        <span class="confidence-badge" style="background:#e74c3c">高 ★★★</span>
+      </div>
+      
+      <div class="match-body">
+        <!-- 赔率与排名 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">主队排名</span><span class="value">第6位</span></div>
+          <div class="info-item"><span class="label">客队排名</span><span class="value">第9位</span></div>
+          <div class="info-item"><span class="label">体彩赔率</span><span class="value">2.12 / 3.4 / 2.75</span></div>
+          <div class="info-item"><span class="label">让球</span><span class="value">主队让1球</span></div>
+        </div>
+        
+        <!-- 场地天气 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">场地</span><span class="value">Raatti球场</span></div>
+          <div class="info-item"><span class="label">城市</span><span class="value">奥卢</span></div>
+          <div class="info-item"><span class="label">草皮</span><span class="value">人工</span></div>
+          <div class="info-item"><span class="label">容量</span><span class="value">5,000</span></div>
+          <div class="info-item"><span class="label">天气</span><span class="value">多云 16°C</span></div>
+          <div class="info-item"><span class="label">风力</span><span class="value">微风</span></div>
+        </div>
+        
+        <!-- 融合概率 -->
+        <div class="probability-section">
+          <h3>融合概率（加权融合）</h3>
+          <div class="prob-bar-container">
+            <div class="prob-bar prob-h" style="width:37.75%;">主胜 37.8%</div>
+            <div class="prob-bar prob-d" style="width:28.310000000000002%;">平 28.3%</div>
+            <div class="prob-bar prob-a" style="width:33.94%;">客胜 33.9%</div>
+          </div>
+          <div class="recommendation">推荐方向: <strong>🔴 主胜 (37.8%)</strong></div>
+          <div class="draw-warning">📝 主客胜率差<15%→平局上修+10%；比分矩阵TOP1为平局→规则17平局方向优先</div>
+          
+        </div>
+        
+        <!-- 模型对比 -->
+        <div class="model-section">
+          <h3>各模型胜率对比</h3>
+          <table class="model-table">
+            <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+            <tbody><tr><td>DC模型</td><td><div class='bar-container'><div class='bar bar-h' style='width:87.53999999999999%'>43.8%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:52.839999999999996%'>26.4%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:59.64%'>29.8%</div></div></td></tr><tr><td>负二项</td><td><div class='bar-container'><div class='bar bar-h' style='width:85.92%'>43.0%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:52.04%'>26.0%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:62.03999999999999%'>31.0%</div></div></td></tr><tr><td>ZIP</td><td><div class='bar-container'><div class='bar bar-h' style='width:84.82%'>42.4%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:53.580000000000005%'>26.8%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:61.6%'>30.8%</div></div></td></tr><tr><td>Skellam</td><td><div class='bar-container'><div class='bar bar-h' style='width:61.08%'>30.5%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:52.88%'>26.4%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:86.04%'>43.0%</div></div></td></tr><tr><td>蒙特卡洛</td><td><div class='bar-container'><div class='bar bar-h' style='width:83.6%'>41.8%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:57.879999999999995%'>28.9%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:58.52%'>29.3%</div></div></td></tr><tr><td>Shin校准</td><td><div class='bar-container'><div class='bar bar-h' style='width:80.67999999999999%'>40.3%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:54.7%'>27.4%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:64.62%'>32.3%</div></div></td></tr></tbody>
+          </table>
+          <div class="model-note">模型间标准差: 0.0095 | Shin z参数: 0.0283</div>
+        </div>
+        
+        <!-- 比分预测 -->
+        <div class="score-section">
+          <h3>比分TOP10</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>1:1</td><td>12.3%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>1:0</td><td>11.3%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>2:1</td><td>9.5%</td><td>🔴主胜</td></tr><tr><td>4</td><td class='score'>0:1</td><td>8.7%</td><td>🔵客胜</td></tr><tr><td>5</td><td class='score'>0:0</td><td>8.3%</td><td>🟡平局</td></tr><tr><td>6</td><td class='score'>2:0</td><td>7.9%</td><td>🔴主胜</td></tr><tr><td>7</td><td class='score'>1:2</td><td>7.0%</td><td>🔵客胜</td></tr><tr><td>8</td><td class='score'>0:2</td><td>5.0%</td><td>🔵客胜</td></tr><tr><td>9</td><td class='score'>2:2</td><td>4.9%</td><td>🟡平局</td></tr><tr><td>10</td><td class='score'>3:1</td><td>4.0%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半场比分 -->
+        <div class="score-section">
+          <h3>半场比分TOP5</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>0:0</td><td>31.8%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>1:0</td><td>20.1%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>0:1</td><td>16.3%</td><td>🔵客胜</td></tr><tr><td>4</td><td class='score'>1:1</td><td>10.3%</td><td>🟡平局</td></tr><tr><td>5</td><td class='score'>2:0</td><td>6.4%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半全场 -->
+        <div class="score-section half-section">
+          <h3>半全场TOP3</h3>
+          <table class="score-table">
+            <thead><tr><th>组合</th><th>概率</th></tr></thead>
+            <tbody><tr class='highlight'><td>平胜</td><td>15.4%</td></tr><tr class='highlight'><td>胜胜</td><td>11.1%</td></tr><tr class='highlight'><td>平负</td><td>10.6%</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 大小球 -->
+        <div class="ou-section">
+          <h3>大小球2.5</h3>
+          <div class="ou-bar-container">
+            <div class="ou-bar ou-over" style="width:39.8%;">大球 39.8%</div>
+            <div class="ou-bar ou-under" style="width:60.2%;">小球 60.2%</div>
+          </div>
+          <div class="ou-rec">倾向: <strong>小球</strong>（已校准，大球概率×0.85）</div>
+        </div>
+        
+        <!-- 让球分析 -->
+        <div class="hc-section">
+          <h3>让球胜平负（主队让1球）</h3>
+          <div class="hc-probs">
+            <span class="hc-prob">主胜 20.4%</span>
+            <span class="hc-prob">平 23.4%</span>
+            <span class="hc-prob">客胜 56.2%</span>
+          </div>
+        </div>
+        
+        <!-- Lambda详情 -->
+        <div class="lambda-section">
+          <h3>Lambda计算详情</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主队λ</span><span class="value">1.405</span></div>
+            <div class="info-item"><span class="label">客队λ</span><span class="value">1.141</span></div>
+            <div class="info-item"><span class="label">xG校准比(主)</span><span class="value">0.959</span></div>
+            <div class="info-item"><span class="label">xG校准比(客)</span><span class="value">1.117</span></div>
+            <div class="info-item"><span class="label">修正系数(主)</span><span class="value">1.0</span></div>
+            <div class="info-item"><span class="label">修正系数(客)</span><span class="value">0.93</span></div>
+          </div>
+          <div class="corr-notes">Ilves欧战体能消耗→lambda-7%</div>
+        </div>
+        
+        <!-- 伤停详情 -->
+        <div class="injury-section">
+          <h3>伤停详情</h3>
+          <div class="injury-tables">
+            <div class="injury-table">
+              <h4>主队 (AC奥卢)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td colspan="4">无伤停</td></tr></tbody>
+              </table>
+            </div>
+            <div class="injury-table">
+              <h4>客队 (坦佩雷山猫)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td colspan="4">无伤停</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 市场支持率 -->
+        <div class="support-section">
+          <h3>市场支持率</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主胜支持</span><span class="value">25%</span></div>
+            <div class="info-item"><span class="label">平局支持</span><span class="value">20%</span></div>
+            <div class="info-item"><span class="label">客胜支持</span><span class="value">55%</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-item"><span class="label">让球主胜</span><span class="value">19%</span></div>
+            <div class="info-item"><span class="label">让球平</span><span class="value">18%</span></div>
+            <div class="info-item"><span class="label">让球客胜</span><span class="value">63%</span></div>
+          </div>
+        </div>
+        
+        <!-- 基本面分析 -->
+        <div class="notes-section">
+          <h3>基本面分析</h3>
+          <div class="notes-content">AC奥卢主场强势(71%胜率，仅失0.71/场)但5场不胜；Ilves客场极弱(11%胜率，场均失2.44球)但客场进球不少(1.67/场)→客场场均总进球4.11。交锋Ilves占优(3胜2平0负)。Ilves欧战体能消耗。无伤停。</div>
+          <div class="h2h-info">
+            历史交锋: 主胜0场 平2场 客胜3场 | 
+            场均进球2.4球
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="match-card" id="match-009">
+      <div class="match-header">
+        <span class="match-id">009</span>
+        <span class="league-tag">挪超</span>
+        <span class="match-time">08-02 23:00</span>
+        <span class="match-title">奥斯KFUM <span class="vs">VS</span> 克里斯蒂</span>
+        <span class="confidence-badge" style="background:#f39c12">中 ★★</span>
+      </div>
+      
+      <div class="match-body">
+        <!-- 赔率与排名 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">主队排名</span><span class="value">第14位</span></div>
+          <div class="info-item"><span class="label">客队排名</span><span class="value">第15位</span></div>
+          <div class="info-item"><span class="label">体彩赔率</span><span class="value">1.6 / 3.75 / 4.2</span></div>
+          <div class="info-item"><span class="label">让球</span><span class="value">主队让1球</span></div>
+        </div>
+        
+        <!-- 场地天气 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">场地</span><span class="value">KFUM球场</span></div>
+          <div class="info-item"><span class="label">城市</span><span class="value">奥斯</span></div>
+          <div class="info-item"><span class="label">草皮</span><span class="value">天然</span></div>
+          <div class="info-item"><span class="label">容量</span><span class="value">4,000</span></div>
+          <div class="info-item"><span class="label">天气</span><span class="value">多云 15°C</span></div>
+          <div class="info-item"><span class="label">风力</span><span class="value">中风</span></div>
+        </div>
+        
+        <!-- 融合概率 -->
+        <div class="probability-section">
+          <h3>融合概率（加权融合）</h3>
+          <div class="prob-bar-container">
+            <div class="prob-bar prob-h" style="width:41.3%;">主胜 41.3%</div>
+            <div class="prob-bar prob-d" style="width:30.73%;">平 30.7%</div>
+            <div class="prob-bar prob-a" style="width:27.97%;">客胜 28.0%</div>
+          </div>
+          <div class="recommendation">推荐方向: <strong>🔴 主胜 (41.3%)</strong></div>
+          <div class="draw-warning">📝 主客胜率差<15%→平局上修+10%；比分矩阵TOP1为平局→规则17平局方向优先</div>
+          
+        </div>
+        
+        <!-- 模型对比 -->
+        <div class="model-section">
+          <h3>各模型胜率对比</h3>
+          <table class="model-table">
+            <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+            <tbody><tr><td>DC模型</td><td><div class='bar-container'><div class='bar bar-h' style='width:85.58%'>42.8%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:60.18%'>30.1%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:54.24%'>27.1%</div></div></td></tr><tr><td>负二项</td><td><div class='bar-container'><div class='bar bar-h' style='width:82.48%'>41.2%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:60.5%'>30.2%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:57.04%'>28.5%</div></div></td></tr><tr><td>ZIP</td><td><div class='bar-container'><div class='bar bar-h' style='width:83.5%'>41.8%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:60.660000000000004%'>30.3%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:55.84%'>27.9%</div></div></td></tr><tr><td>Skellam</td><td><div class='bar-container'><div class='bar bar-h' style='width:55.84%'>27.9%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:60.660000000000004%'>30.3%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:83.5%'>41.8%</div></div></td></tr><tr><td>蒙特卡洛</td><td><div class='bar-container'><div class='bar bar-h' style='width:81.62%'>40.8%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:65.34%'>32.7%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:53.04%'>26.5%</div></div></td></tr><tr><td>Shin校准</td><td><div class='bar-container'><div class='bar bar-h' style='width:105.91999999999999%'>53.0%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:49.16%'>24.6%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:44.92%'>22.5%</div></div></td></tr></tbody>
+          </table>
+          <div class="model-note">模型间标准差: 0.0096 | Shin z参数: 0.0163</div>
+        </div>
+        
+        <!-- 比分预测 -->
+        <div class="score-section">
+          <h3>比分TOP10</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>1:0</td><td>15.2%</td><td>🔴主胜</td></tr><tr class='highlight'><td>2</td><td class='score'>0:0</td><td>13.7%</td><td>🟡平局</td></tr><tr class='highlight'><td>3</td><td class='score'>1:1</td><td>12.7%</td><td>🟡平局</td></tr><tr><td>4</td><td class='score'>0:1</td><td>11.1%</td><td>🔵客胜</td></tr><tr><td>5</td><td class='score'>2:0</td><td>8.7%</td><td>🔴主胜</td></tr><tr><td>6</td><td class='score'>2:1</td><td>8.3%</td><td>🔴主胜</td></tr><tr><td>7</td><td class='score'>1:2</td><td>5.8%</td><td>🔵客胜</td></tr><tr><td>8</td><td class='score'>0:2</td><td>4.9%</td><td>🔵客胜</td></tr><tr><td>9</td><td class='score'>2:2</td><td>3.3%</td><td>🟡平局</td></tr><tr><td>10</td><td class='score'>3:0</td><td>3.3%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半场比分 -->
+        <div class="score-section">
+          <h3>半场比分TOP5</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>0:0</td><td>40.4%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>1:0</td><td>20.7%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>0:1</td><td>15.9%</td><td>🔵客胜</td></tr><tr><td>4</td><td class='score'>1:1</td><td>8.2%</td><td>🟡平局</td></tr><tr><td>5</td><td class='score'>2:0</td><td>5.3%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半全场 -->
+        <div class="score-section half-section">
+          <h3>半全场TOP3</h3>
+          <table class="score-table">
+            <thead><tr><th>组合</th><th>概率</th></tr></thead>
+            <tbody><tr class='highlight'><td>平胜</td><td>18.2%</td></tr><tr class='highlight'><td>平平</td><td>13.5%</td></tr><tr class='highlight'><td>平负</td><td>11.6%</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 大小球 -->
+        <div class="ou-section">
+          <h3>大小球2.5</h3>
+          <div class="ou-bar-container">
+            <div class="ou-bar ou-over" style="width:27.8%;">大球 27.8%</div>
+            <div class="ou-bar ou-under" style="width:72.2%;">小球 72.2%</div>
+          </div>
+          <div class="ou-rec">倾向: <strong>小球</strong>（已校准，大球概率×0.85）</div>
+        </div>
+        
+        <!-- 让球分析 -->
+        <div class="hc-section">
+          <h3>让球胜平负（主队让1球）</h3>
+          <div class="hc-probs">
+            <span class="hc-prob">主胜 17.9%</span>
+            <span class="hc-prob">平 24.9%</span>
+            <span class="hc-prob">客胜 57.2%</span>
+          </div>
+        </div>
+        
+        <!-- Lambda详情 -->
+        <div class="lambda-section">
+          <h3>Lambda计算详情</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主队λ</span><span class="value">1.141</span></div>
+            <div class="info-item"><span class="label">客队λ</span><span class="value">0.875</span></div>
+            <div class="info-item"><span class="label">xG校准比(主)</span><span class="value">0.914</span></div>
+            <div class="info-item"><span class="label">xG校准比(客)</span><span class="value">0.813</span></div>
+            <div class="info-item"><span class="label">修正系数(主)</span><span class="value">0.84</span></div>
+            <div class="info-item"><span class="label">修正系数(客)</span><span class="value">1.0</span></div>
+          </div>
+          <div class="corr-notes">主队Haltvik(头号射手)转会离队→lambda-20%<br>客队Júlíusson(中卫)停赛→主队lambda+5%</div>
+        </div>
+        
+        <!-- 伤停详情 -->
+        <div class="injury-section">
+          <h3>伤停详情</h3>
+          <div class="injury-tables">
+            <div class="injury-table">
+              <h4>主队 (奥斯KFUM)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td>Haltvik</td><td>前锋</td><td>转会离队</td><td>✅</td></tr></tbody>
+              </table>
+            </div>
+            <div class="injury-table">
+              <h4>客队 (克里斯蒂)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td>Júlíusson</td><td>中卫</td><td>停赛(红牌)</td><td>✅</td></tr><tr><td>Bruseth</td><td>中场</td><td>停赛(黄牌累积)</td><td>✅</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 市场支持率 -->
+        <div class="support-section">
+          <h3>市场支持率</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主胜支持</span><span class="value">54%</span></div>
+            <div class="info-item"><span class="label">平局支持</span><span class="value">22%</span></div>
+            <div class="info-item"><span class="label">客胜支持</span><span class="value">24%</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-item"><span class="label">让球主胜</span><span class="value">27%</span></div>
+            <div class="info-item"><span class="label">让球平</span><span class="value">29%</span></div>
+            <div class="info-item"><span class="label">让球客胜</span><span class="value">44%</span></div>
+          </div>
+        </div>
+        
+        <!-- 基本面分析 -->
+        <div class="notes-section">
+          <h3>基本面分析</h3>
+          <div class="notes-content">保级大战(14vs15)。KFUM头号射手Haltvik(6球)转会离队进攻受损；克里斯蒂中卫+中场双停赛。两队xG联赛最低并列(1.25)。KFUM近5轮全败。挪超大球率56%。</div>
+          <div class="h2h-info">
+            历史交锋: 主胜2场 平3场 客胜0场 | 
+            场均进球1.6球
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="match-card" id="match-010">
+      <div class="match-header">
+        <span class="match-id">010</span>
+        <span class="league-tag">挪超</span>
+        <span class="match-time">08-02 23:00</span>
+        <span class="match-title">莫尔德 <span class="vs">VS</span> 萨普斯堡</span>
+        <span class="confidence-badge" style="background:#f39c12">中 ★★</span>
+      </div>
+      
+      <div class="match-body">
+        <!-- 赔率与排名 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">主队排名</span><span class="value">第5位</span></div>
+          <div class="info-item"><span class="label">客队排名</span><span class="value">第6位</span></div>
+          <div class="info-item"><span class="label">体彩赔率</span><span class="value">1.47 / 4.35 / 4.55</span></div>
+          <div class="info-item"><span class="label">让球</span><span class="value">主队让1球</span></div>
+        </div>
+        
+        <!-- 场地天气 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">场地</span><span class="value">莫尔德球场</span></div>
+          <div class="info-item"><span class="label">城市</span><span class="value">莫尔德</span></div>
+          <div class="info-item"><span class="label">草皮</span><span class="value">天然</span></div>
+          <div class="info-item"><span class="label">容量</span><span class="value">11,800</span></div>
+          <div class="info-item"><span class="label">天气</span><span class="value">多云 15°C</span></div>
+          <div class="info-item"><span class="label">风力</span><span class="value">中风</span></div>
+        </div>
+        
+        <!-- 融合概率 -->
+        <div class="probability-section">
+          <h3>融合概率（加权融合）</h3>
+          <div class="prob-bar-container">
+            <div class="prob-bar prob-h" style="width:46.92%;">主胜 46.9%</div>
+            <div class="prob-bar prob-d" style="width:21.95%;">平 21.9%</div>
+            <div class="prob-bar prob-a" style="width:31.130000000000003%;">客胜 31.1%</div>
+          </div>
+          <div class="recommendation">推荐方向: <strong>🔴 主胜 (46.9%)</strong></div>
+          
+          
+        </div>
+        
+        <!-- 模型对比 -->
+        <div class="model-section">
+          <h3>各模型胜率对比</h3>
+          <table class="model-table">
+            <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+            <tbody><tr><td>DC模型</td><td><div class='bar-container'><div class='bar bar-h' style='width:107.96%'>54.0%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:46.6%'>23.3%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:45.440000000000005%'>22.7%</div></div></td></tr><tr><td>负二项</td><td><div class='bar-container'><div class='bar bar-h' style='width:102.02%'>51.0%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:49.0%'>24.5%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:48.980000000000004%'>24.5%</div></div></td></tr><tr><td>ZIP</td><td><div class='bar-container'><div class='bar bar-h' style='width:103.96000000000001%'>52.0%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:49.74%'>24.9%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:46.300000000000004%'>23.2%</div></div></td></tr><tr><td>Skellam</td><td><div class='bar-container'><div class='bar bar-h' style='width:46.300000000000004%'>23.2%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:49.74%'>24.9%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:103.96000000000001%'>52.0%</div></div></td></tr><tr><td>蒙特卡洛</td><td><div class='bar-container'><div class='bar bar-h' style='width:101.14000000000001%'>50.6%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:55.04%'>27.5%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:43.82%'>21.9%</div></div></td></tr><tr><td>Shin校准</td><td><div class='bar-container'><div class='bar bar-h' style='width:115.99999999999999%'>58.0%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:42.76%'>21.4%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:41.24%'>20.6%</div></div></td></tr></tbody>
+          </table>
+          <div class="model-note">模型间标准差: 0.0145 | Shin z参数: 0.0115</div>
+        </div>
+        
+        <!-- 比分预测 -->
+        <div class="score-section">
+          <h3>比分TOP10</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>1:0</td><td>11.4%</td><td>🔴主胜</td></tr><tr class='highlight'><td>2</td><td class='score'>2:1</td><td>11.0%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>1:1</td><td>10.7%</td><td>🟡平局</td></tr><tr><td>4</td><td class='score'>2:0</td><td>9.2%</td><td>🔴主胜</td></tr><tr><td>5</td><td class='score'>0:0</td><td>6.7%</td><td>🟡平局</td></tr><tr><td>6</td><td class='score'>0:1</td><td>6.6%</td><td>🔵客胜</td></tr><tr><td>7</td><td class='score'>1:2</td><td>6.1%</td><td>🔵客胜</td></tr><tr><td>8</td><td class='score'>3:1</td><td>5.9%</td><td>🔴主胜</td></tr><tr><td>9</td><td class='score'>3:0</td><td>5.5%</td><td>🔴主胜</td></tr><tr><td>10</td><td class='score'>2:2</td><td>5.0%</td><td>🟡平局</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半场比分 -->
+        <div class="score-section">
+          <h3>半场比分TOP5</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>0:0</td><td>31.0%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>1:0</td><td>22.5%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>0:1</td><td>13.8%</td><td>🔵客胜</td></tr><tr><td>4</td><td class='score'>1:1</td><td>10.0%</td><td>🟡平局</td></tr><tr><td>5</td><td class='score'>2:0</td><td>8.2%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半全场 -->
+        <div class="score-section half-section">
+          <h3>半全场TOP3</h3>
+          <table class="score-table">
+            <thead><tr><th>组合</th><th>概率</th></tr></thead>
+            <tbody><tr class='highlight'><td>平胜</td><td>18.3%</td></tr><tr class='highlight'><td>胜胜</td><td>15.7%</td></tr><tr class='highlight'><td>平平</td><td>8.9%</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 大小球 -->
+        <div class="ou-section">
+          <h3>大小球2.5</h3>
+          <div class="ou-bar-container">
+            <div class="ou-bar ou-over" style="width:41.0%;">大球 41.0%</div>
+            <div class="ou-bar ou-under" style="width:59.0%;">小球 59.0%</div>
+          </div>
+          <div class="ou-rec">倾向: <strong>小球</strong>（已校准，大球概率×0.85）</div>
+        </div>
+        
+        <!-- 让球分析 -->
+        <div class="hc-section">
+          <h3>让球胜平负（主队让1球）</h3>
+          <div class="hc-probs">
+            <span class="hc-prob">主胜 28.5%</span>
+            <span class="hc-prob">平 25.4%</span>
+            <span class="hc-prob">客胜 46.0%</span>
+          </div>
+        </div>
+        
+        <!-- Lambda详情 -->
+        <div class="lambda-section">
+          <h3>Lambda计算详情</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主队λ</span><span class="value">1.614</span></div>
+            <div class="info-item"><span class="label">客队λ</span><span class="value">0.988</span></div>
+            <div class="info-item"><span class="label">xG校准比(主)</span><span class="value">1.084</span></div>
+            <div class="info-item"><span class="label">xG校准比(客)</span><span class="value">0.862</span></div>
+            <div class="info-item"><span class="label">修正系数(主)</span><span class="value">0.889</span></div>
+            <div class="info-item"><span class="label">修正系数(客)</span><span class="value">1.0</span></div>
+          </div>
+          <div class="corr-notes">主队Hoff(中场)伤→lambda-8%<br>主队Dæhli(中场)伤→lambda-8%<br>客队Utvik(后卫)停赛→主队lambda+5%</div>
+        </div>
+        
+        <!-- 伤停详情 -->
+        <div class="injury-section">
+          <h3>伤停详情</h3>
+          <div class="injury-tables">
+            <div class="injury-table">
+              <h4>主队 (莫尔德)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td>Hoff</td><td>中场</td><td>伤病</td><td>✅</td></tr><tr><td>Dæhli</td><td>中场</td><td>长期伤病</td><td>✅</td></tr></tbody>
+              </table>
+            </div>
+            <div class="injury-table">
+              <h4>客队 (萨普斯堡)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td>Utvik</td><td>后卫</td><td>停赛(黄牌累积)</td><td>✅</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 市场支持率 -->
+        <div class="support-section">
+          <h3>市场支持率</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主胜支持</span><span class="value">54%</span></div>
+            <div class="info-item"><span class="label">平局支持</span><span class="value">16%</span></div>
+            <div class="info-item"><span class="label">客胜支持</span><span class="value">30%</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-item"><span class="label">让球主胜</span><span class="value">29%</span></div>
+            <div class="info-item"><span class="label">让球平</span><span class="value">25%</span></div>
+            <div class="info-item"><span class="label">让球客胜</span><span class="value">46%</span></div>
+          </div>
+        </div>
+        
+        <!-- 基本面分析 -->
+        <div class="notes-section">
+          <h3>基本面分析</h3>
+          <div class="notes-content">莫尔德主场强(近5主场赢4场)；萨尔普斯堡3连胜零封+交锋近3场全胜。莫尔德多名中场伤停(Hoff/Dæhli)。萨尔普斯堡后卫Utvik停赛但新签Lode可能替代。莫尔德xGvs实际+0.22效率好。挪超大球率56%。</div>
+          <div class="h2h-info">
+            历史交锋: 主胜0场 平0场 客胜3场 | 
+            场均进球5.0球
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="match-card" id="match-011">
+      <div class="match-header">
+        <span class="match-id">011</span>
+        <span class="league-tag">挪超</span>
+        <span class="match-time">08-02 23:00</span>
+        <span class="match-title">奥勒松 <span class="vs">VS</span> 特罗姆瑟</span>
+        <span class="confidence-badge" style="background:#f39c12">中 ★★</span>
+      </div>
+      
+      <div class="match-body">
+        <!-- 赔率与排名 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">主队排名</span><span class="value">第13位</span></div>
+          <div class="info-item"><span class="label">客队排名</span><span class="value">第3位</span></div>
+          <div class="info-item"><span class="label">体彩赔率</span><span class="value">3.46 / 3.55 / 1.79</span></div>
+          <div class="info-item"><span class="label">让球</span><span class="value">主队受让1球</span></div>
+        </div>
+        
+        <!-- 场地天气 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">场地</span><span class="value">Color Line球场</span></div>
+          <div class="info-item"><span class="label">城市</span><span class="value">奥勒松</span></div>
+          <div class="info-item"><span class="label">草皮</span><span class="value">天然</span></div>
+          <div class="info-item"><span class="label">容量</span><span class="value">10,778</span></div>
+          <div class="info-item"><span class="label">天气</span><span class="value">雨 14°C</span></div>
+          <div class="info-item"><span class="label">风力</span><span class="value">强风</span></div>
+        </div>
+        
+        <!-- 融合概率 -->
+        <div class="probability-section">
+          <h3>融合概率（加权融合）</h3>
+          <div class="prob-bar-container">
+            <div class="prob-bar prob-h" style="width:38.22%;">主胜 38.2%</div>
+            <div class="prob-bar prob-d" style="width:26.72%;">平 26.7%</div>
+            <div class="prob-bar prob-a" style="width:35.07%;">客胜 35.1%</div>
+          </div>
+          <div class="recommendation">推荐方向: <strong>🔴 主胜 (38.2%)</strong></div>
+          <div class="draw-warning">📝 比分矩阵TOP1为平局→规则17平局方向优先</div>
+          <span class="divergence">⚠ 分歧标注: 模型首选主胜(48.9%) vs 市场首选客胜(47.2%)</span>
+        </div>
+        
+        <!-- 模型对比 -->
+        <div class="model-section">
+          <h3>各模型胜率对比</h3>
+          <table class="model-table">
+            <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+            <tbody><tr><td>DC模型</td><td><div class='bar-container'><div class='bar bar-h' style='width:97.8%'>48.9%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:47.52%'>23.8%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:54.67999999999999%'>27.3%</div></div></td></tr><tr><td>负二项</td><td><div class='bar-container'><div class='bar bar-h' style='width:94.04%'>47.0%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:47.839999999999996%'>23.9%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:58.120000000000005%'>29.1%</div></div></td></tr><tr><td>ZIP</td><td><div class='bar-container'><div class='bar bar-h' style='width:94.98%'>47.5%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:49.220000000000006%'>24.6%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:55.800000000000004%'>27.9%</div></div></td></tr><tr><td>Skellam</td><td><div class='bar-container'><div class='bar bar-h' style='width:55.800000000000004%'>27.9%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:49.220000000000006%'>24.6%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:94.98%'>47.5%</div></div></td></tr><tr><td>蒙特卡洛</td><td><div class='bar-container'><div class='bar bar-h' style='width:92.38%'>46.2%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:53.959999999999994%'>27.0%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:53.66%'>26.8%</div></div></td></tr><tr><td>Shin校准</td><td><div class='bar-container'><div class='bar bar-h' style='width:53.28000000000001%'>26.6%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:52.22%'>26.1%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:94.48%'>47.2%</div></div></td></tr></tbody>
+          </table>
+          <div class="model-note">模型间标准差: 0.0119 | Shin z参数: 0.0225</div>
+        </div>
+        
+        <!-- 比分预测 -->
+        <div class="score-section">
+          <h3>比分TOP10</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>1:1</td><td>11.1%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>2:1</td><td>10.3%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>1:0</td><td>9.8%</td><td>🔴主胜</td></tr><tr><td>4</td><td class='score'>2:0</td><td>8.0%</td><td>🔴主胜</td></tr><tr><td>5</td><td class='score'>1:2</td><td>6.9%</td><td>🔵客胜</td></tr><tr><td>6</td><td class='score'>0:1</td><td>6.9%</td><td>🔵客胜</td></tr><tr><td>7</td><td class='score'>0:0</td><td>5.8%</td><td>🟡平局</td></tr><tr><td>8</td><td class='score'>3:1</td><td>5.6%</td><td>🔴主胜</td></tr><tr><td>9</td><td class='score'>2:2</td><td>5.6%</td><td>🟡平局</td></tr><tr><td>10</td><td class='score'>3:0</td><td>4.3%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半场比分 -->
+        <div class="score-section">
+          <h3>半场比分TOP5</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>0:0</td><td>28.4%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>1:0</td><td>20.7%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>0:1</td><td>15.1%</td><td>🔵客胜</td></tr><tr><td>4</td><td class='score'>1:1</td><td>11.0%</td><td>🟡平局</td></tr><tr><td>5</td><td class='score'>2:0</td><td>7.5%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半全场 -->
+        <div class="score-section half-section">
+          <h3>半全场TOP3</h3>
+          <table class="score-table">
+            <thead><tr><th>组合</th><th>概率</th></tr></thead>
+            <tbody><tr class='highlight'><td>平胜</td><td>15.7%</td></tr><tr class='highlight'><td>胜胜</td><td>13.3%</td></tr><tr class='highlight'><td>平负</td><td>9.0%</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 大小球 -->
+        <div class="ou-section">
+          <h3>大小球2.5</h3>
+          <div class="ou-bar-container">
+            <div class="ou-bar ou-over" style="width:45.1%;">大球 45.1%</div>
+            <div class="ou-bar ou-under" style="width:54.9%;">小球 54.9%</div>
+          </div>
+          <div class="ou-rec">倾向: <strong>均势</strong>（已校准，大球概率×0.85）</div>
+        </div>
+        
+        <!-- 让球分析 -->
+        <div class="hc-section">
+          <h3>让球胜平负（主队受让1球）</h3>
+          <div class="hc-probs">
+            <span class="hc-prob">主胜 72.7%</span>
+            <span class="hc-prob">平 16.3%</span>
+            <span class="hc-prob">客胜 11.0%</span>
+          </div>
+        </div>
+        
+        <!-- Lambda详情 -->
+        <div class="lambda-section">
+          <h3>Lambda计算详情</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主队λ</span><span class="value">1.617</span></div>
+            <div class="info-item"><span class="label">客队λ</span><span class="value">1.182</span></div>
+            <div class="info-item"><span class="label">xG校准比(主)</span><span class="value">0.91</span></div>
+            <div class="info-item"><span class="label">xG校准比(客)</span><span class="value">1.025</span></div>
+            <div class="info-item"><span class="label">修正系数(主)</span><span class="value">1.05</span></div>
+            <div class="info-item"><span class="label">修正系数(客)</span><span class="value">0.9</span></div>
+          </div>
+          <div class="corr-notes">特罗姆瑟周四欧战被淘汰+长途旅行→lambda-10%<br>客队Warneryd(后卫)停赛→主队lambda+5%</div>
+        </div>
+        
+        <!-- 伤停详情 -->
+        <div class="injury-section">
+          <h3>伤停详情</h3>
+          <div class="injury-tables">
+            <div class="injury-table">
+              <h4>主队 (奥勒松)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td>Christensen</td><td>中场</td><td>停赛(黄牌累积)</td><td>✅</td></tr></tbody>
+              </table>
+            </div>
+            <div class="injury-table">
+              <h4>客队 (特罗姆瑟)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td>Warneryd</td><td>后卫</td><td>停赛</td><td>✅</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 市场支持率 -->
+        <div class="support-section">
+          <h3>市场支持率</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主胜支持</span><span class="value">22%</span></div>
+            <div class="info-item"><span class="label">平局支持</span><span class="value">22%</span></div>
+            <div class="info-item"><span class="label">客胜支持</span><span class="value">56%</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-item"><span class="label">让球主胜</span><span class="value">38%</span></div>
+            <div class="info-item"><span class="label">让球平</span><span class="value">22%</span></div>
+            <div class="info-item"><span class="label">让球客胜</span><span class="value">40%</span></div>
+          </div>
+        </div>
+        
+        <!-- 基本面分析 -->
+        <div class="notes-section">
+          <h3>基本面分析</h3>
+          <div class="notes-content">特罗姆瑟第3但周四欧战被淘汰体能消耗大；奥勒松主场6场不败(1胜5平)。特罗姆瑟客场仅1胜。特罗姆瑟xG第4(1.66)攻防俱佳(xGD+0.41)。奥勒松中场Christensen停赛。挪超大球率56%。特罗姆瑟体能因素→lambda下修。</div>
+          <div class="h2h-info">
+            历史交锋: 主胜1场 平3场 客胜1场 | 
+            场均进球2.0球
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="match-card" id="match-012">
+      <div class="match-header">
+        <span class="match-id">012</span>
+        <span class="league-tag">挪超</span>
+        <span class="match-time">08-03 01:15</span>
+        <span class="match-title">布兰 <span class="vs">VS</span> 罗森博格</span>
+        <span class="confidence-badge" style="background:#e74c3c">高 ★★★</span>
+      </div>
+      
+      <div class="match-body">
+        <!-- 赔率与排名 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">主队排名</span><span class="value">第9位</span></div>
+          <div class="info-item"><span class="label">客队排名</span><span class="value">第10位</span></div>
+          <div class="info-item"><span class="label">体彩赔率</span><span class="value">1.76 / 3.8 / 3.35</span></div>
+          <div class="info-item"><span class="label">让球</span><span class="value">主队让1球</span></div>
+        </div>
+        
+        <!-- 场地天气 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">场地</span><span class="value">布兰球场</span></div>
+          <div class="info-item"><span class="label">城市</span><span class="value">卑尔根</span></div>
+          <div class="info-item"><span class="label">草皮</span><span class="value">天然</span></div>
+          <div class="info-item"><span class="label">容量</span><span class="value">17,686</span></div>
+          <div class="info-item"><span class="label">天气</span><span class="value">雨 15°C</span></div>
+          <div class="info-item"><span class="label">风力</span><span class="value">强风</span></div>
+        </div>
+        
+        <!-- 融合概率 -->
+        <div class="probability-section">
+          <h3>融合概率（加权融合）</h3>
+          <div class="prob-bar-container">
+            <div class="prob-bar prob-h" style="width:43.88%;">主胜 43.9%</div>
+            <div class="prob-bar prob-d" style="width:25.52%;">平 25.5%</div>
+            <div class="prob-bar prob-a" style="width:30.599999999999998%;">客胜 30.6%</div>
+          </div>
+          <div class="recommendation">推荐方向: <strong>🔴 主胜 (43.9%)</strong></div>
+          <div class="draw-warning">📝 比分矩阵TOP1为平局→规则17平局方向优先</div>
+          
+        </div>
+        
+        <!-- 模型对比 -->
+        <div class="model-section">
+          <h3>各模型胜率对比</h3>
+          <table class="model-table">
+            <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+            <tbody><tr><td>DC模型</td><td><div class='bar-container'><div class='bar bar-h' style='width:104.94000000000001%'>52.5%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:44.519999999999996%'>22.3%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:50.54%'>25.3%</div></div></td></tr><tr><td>负二项</td><td><div class='bar-container'><div class='bar bar-h' style='width:100.84%'>50.4%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:44.72%'>22.4%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:54.44%'>27.2%</div></div></td></tr><tr><td>ZIP</td><td><div class='bar-container'><div class='bar bar-h' style='width:102.24%'>51.1%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:46.14%'>23.1%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:51.62%'>25.8%</div></div></td></tr><tr><td>Skellam</td><td><div class='bar-container'><div class='bar bar-h' style='width:51.62%'>25.8%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:46.14%'>23.1%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:102.24%'>51.1%</div></div></td></tr><tr><td>蒙特卡洛</td><td><div class='bar-container'><div class='bar bar-h' style='width:99.3%'>49.6%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:49.7%'>24.9%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:51.0%'>25.5%</div></div></td></tr><tr><td>Shin校准</td><td><div class='bar-container'><div class='bar bar-h' style='width:96.08%'>48.0%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:49.4%'>24.7%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:54.52%'>27.3%</div></div></td></tr></tbody>
+          </table>
+          <div class="model-note">模型间标准差: 0.0109 | Shin z参数: 0.0214</div>
+        </div>
+        
+        <!-- 比分预测 -->
+        <div class="score-section">
+          <h3>比分TOP10</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>2:1</td><td>10.6%</td><td>🔴主胜</td></tr><tr class='highlight'><td>2</td><td class='score'>1:1</td><td>10.1%</td><td>🟡平局</td></tr><tr class='highlight'><td>3</td><td class='score'>1:0</td><td>8.7%</td><td>🔴主胜</td></tr><tr><td>4</td><td class='score'>2:0</td><td>7.9%</td><td>🔴主胜</td></tr><tr><td>5</td><td class='score'>1:2</td><td>6.5%</td><td>🔵客胜</td></tr><tr><td>6</td><td class='score'>3:1</td><td>6.4%</td><td>🔴主胜</td></tr><tr><td>7</td><td class='score'>2:2</td><td>5.9%</td><td>🟡平局</td></tr><tr><td>8</td><td class='score'>0:1</td><td>5.6%</td><td>🔵客胜</td></tr><tr><td>9</td><td class='score'>3:0</td><td>4.7%</td><td>🔴主胜</td></tr><tr><td>10</td><td class='score'>0:0</td><td>4.6%</td><td>🟡平局</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半场比分 -->
+        <div class="score-section">
+          <h3>半场比分TOP5</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>0:0</td><td>25.6%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>1:0</td><td>20.8%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>0:1</td><td>14.1%</td><td>🔵客胜</td></tr><tr><td>4</td><td class='score'>1:1</td><td>11.4%</td><td>🟡平局</td></tr><tr><td>5</td><td class='score'>2:0</td><td>8.5%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半全场 -->
+        <div class="score-section half-section">
+          <h3>半全场TOP3</h3>
+          <table class="score-table">
+            <thead><tr><th>组合</th><th>概率</th></tr></thead>
+            <tbody><tr class='highlight'><td>平胜</td><td>15.4%</td></tr><tr class='highlight'><td>胜胜</td><td>14.7%</td></tr><tr class='highlight'><td>平负</td><td>7.8%</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 大小球 -->
+        <div class="ou-section">
+          <h3>大小球2.5</h3>
+          <div class="ou-bar-container">
+            <div class="ou-bar ou-over" style="width:49.6%;">大球 49.6%</div>
+            <div class="ou-bar ou-under" style="width:50.4%;">小球 50.4%</div>
+          </div>
+          <div class="ou-rec">倾向: <strong>均势</strong>（已校准，大球概率×0.85）</div>
+        </div>
+        
+        <!-- 让球分析 -->
+        <div class="hc-section">
+          <h3>让球胜平负（主队让1球）</h3>
+          <div class="hc-probs">
+            <span class="hc-prob">主胜 28.9%</span>
+            <span class="hc-prob">平 23.6%</span>
+            <span class="hc-prob">客胜 47.5%</span>
+          </div>
+        </div>
+        
+        <!-- Lambda详情 -->
+        <div class="lambda-section">
+          <h3>Lambda计算详情</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主队λ</span><span class="value">1.808</span></div>
+            <div class="info-item"><span class="label">客队λ</span><span class="value">1.223</span></div>
+            <div class="info-item"><span class="label">xG校准比(主)</span><span class="value">1.141</span></div>
+            <div class="info-item"><span class="label">xG校准比(客)</span><span class="value">0.971</span></div>
+            <div class="info-item"><span class="label">修正系数(主)</span><span class="value">0.93</span></div>
+            <div class="info-item"><span class="label">修正系数(客)</span><span class="value">1.08</span></div>
+          </div>
+          <div class="corr-notes">布兰8月5日欧战赛程牵制→lambda-7%<br>主队Boakye(中卫)赛季报销→对手lambda+8%</div>
+        </div>
+        
+        <!-- 伤停详情 -->
+        <div class="injury-section">
+          <h3>伤停详情</h3>
+          <div class="injury-tables">
+            <div class="injury-table">
+              <h4>主队 (布兰)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td>Torsvik</td><td>后卫</td><td>脚踝伤</td><td>✅</td></tr><tr><td>Boakye</td><td>中卫</td><td>膝伤赛季报销</td><td>✅</td></tr></tbody>
+              </table>
+            </div>
+            <div class="injury-table">
+              <h4>客队 (罗森博格)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td>Islamovic</td><td>前锋</td><td>小腿伤</td><td>✅</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 市场支持率 -->
+        <div class="support-section">
+          <h3>市场支持率</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主胜支持</span><span class="value">43%</span></div>
+            <div class="info-item"><span class="label">平局支持</span><span class="value">22%</span></div>
+            <div class="info-item"><span class="label">客胜支持</span><span class="value">35%</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-item"><span class="label">让球主胜</span><span class="value">18%</span></div>
+            <div class="info-item"><span class="label">让球平</span><span class="value">23%</span></div>
+            <div class="info-item"><span class="label">让球客胜</span><span class="value">59%</span></div>
+          </div>
+        </div>
+        
+        <!-- 基本面分析 -->
+        <div class="notes-section">
+          <h3>基本面分析</h3>
+          <div class="notes-content">新帅对决：Horneland(布兰) vs Alexandersson(罗森博格，布兰前任)。罗森博格联赛3连胜0失球；布兰连续13场无零封。布兰后卫Torsvik+中卫Boakye伤停，罗森博格前锋Islamovic伤停。布兰欧战赛程牵制(8月5日)。挪超大球率56%。布兰主场xG联赛第3(1.88)。</div>
+          <div class="h2h-info">
+            历史交锋: 主胜13场 平5场 客胜13场 | 
+            场均进球3.23球
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="match-card" id="match-013">
+      <div class="match-header">
+        <span class="match-id">013</span>
+        <span class="league-tag">巴西杯</span>
+        <span class="match-time">08-03 05:00</span>
+        <span class="match-title">米拉索尔 <span class="vs">VS</span> 格雷米奥</span>
+        <span class="confidence-badge" style="background:#e74c3c">高 ★★★</span>
+      </div>
+      
+      <div class="match-body">
+        <!-- 赔率与排名 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">主队排名</span><span class="value">第14位</span></div>
+          <div class="info-item"><span class="label">客队排名</span><span class="value">第17位</span></div>
+          <div class="info-item"><span class="label">体彩赔率</span><span class="value">1.85 / 3.05 / 3.85</span></div>
+          <div class="info-item"><span class="label">让球</span><span class="value">主队让1球</span></div>
+        </div>
+        
+        <!-- 场地天气 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">场地</span><span class="value">Maião球场</span></div>
+          <div class="info-item"><span class="label">城市</span><span class="value">米拉索尔</span></div>
+          <div class="info-item"><span class="label">草皮</span><span class="value">天然</span></div>
+          <div class="info-item"><span class="label">容量</span><span class="value">15,000</span></div>
+          <div class="info-item"><span class="label">天气</span><span class="value">晴 24°C</span></div>
+          <div class="info-item"><span class="label">风力</span><span class="value">微风</span></div>
+        </div>
+        
+        <!-- 融合概率 -->
+        <div class="probability-section">
+          <h3>融合概率（加权融合）</h3>
+          <div class="prob-bar-container">
+            <div class="prob-bar prob-h" style="width:46.27%;">主胜 46.3%</div>
+            <div class="prob-bar prob-d" style="width:25.900000000000002%;">平 25.9%</div>
+            <div class="prob-bar prob-a" style="width:27.83%;">客胜 27.8%</div>
+          </div>
+          <div class="recommendation">推荐方向: <strong>🔴 主胜 (46.3%)</strong></div>
+          
+          
+        </div>
+        
+        <!-- 模型对比 -->
+        <div class="model-section">
+          <h3>各模型胜率对比</h3>
+          <table class="model-table">
+            <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+            <tbody><tr><td>DC模型</td><td><div class='bar-container'><div class='bar bar-h' style='width:93.84%'>46.9%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:55.800000000000004%'>27.9%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:50.38%'>25.2%</div></div></td></tr><tr><td>负二项</td><td><div class='bar-container'><div class='bar bar-h' style='width:91.78%'>45.9%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:55.60000000000001%'>27.8%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:52.64%'>26.3%</div></div></td></tr><tr><td>ZIP</td><td><div class='bar-container'><div class='bar bar-h' style='width:90.52%'>45.3%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:57.16%'>28.6%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:52.32%'>26.2%</div></div></td></tr><tr><td>Skellam</td><td><div class='bar-container'><div class='bar bar-h' style='width:51.72%'>25.9%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:56.00000000000001%'>28.0%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:92.28%'>46.1%</div></div></td></tr><tr><td>蒙特卡洛</td><td><div class='bar-container'><div class='bar bar-h' style='width:89.96%'>45.0%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:59.8%'>29.9%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:50.239999999999995%'>25.1%</div></div></td></tr><tr><td>Shin校准</td><td><div class='bar-container'><div class='bar bar-h' style='width:91.60000000000001%'>45.8%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:59.099999999999994%'>29.5%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:49.3%'>24.6%</div></div></td></tr></tbody>
+          </table>
+          <div class="model-note">模型间标准差: 0.0077 | Shin z参数: 0.0236</div>
+        </div>
+        
+        <!-- 比分预测 -->
+        <div class="score-section">
+          <h3>比分TOP10</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>1:0</td><td>14.4%</td><td>🔴主胜</td></tr><tr class='highlight'><td>2</td><td class='score'>1:1</td><td>12.6%</td><td>🟡平局</td></tr><tr class='highlight'><td>3</td><td class='score'>0:0</td><td>10.9%</td><td>🟡平局</td></tr><tr><td>4</td><td class='score'>2:0</td><td>9.5%</td><td>🔴主胜</td></tr><tr><td>5</td><td class='score'>0:1</td><td>9.5%</td><td>🔵客胜</td></tr><tr><td>6</td><td class='score'>2:1</td><td>9.2%</td><td>🔴主胜</td></tr><tr><td>7</td><td class='score'>1:2</td><td>5.8%</td><td>🔵客胜</td></tr><tr><td>8</td><td class='score'>0:2</td><td>4.3%</td><td>🔵客胜</td></tr><tr><td>9</td><td class='score'>3:0</td><td>4.0%</td><td>🔴主胜</td></tr><tr><td>10</td><td class='score'>2:2</td><td>3.8%</td><td>🟡平局</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半场比分 -->
+        <div class="score-section">
+          <h3>半场比分TOP5</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>0:0</td><td>36.4%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>1:0</td><td>21.7%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>0:1</td><td>15.0%</td><td>🔵客胜</td></tr><tr><td>4</td><td class='score'>1:1</td><td>9.0%</td><td>🟡平局</td></tr><tr><td>5</td><td class='score'>2:0</td><td>6.5%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半全场 -->
+        <div class="score-section half-section">
+          <h3>半全场TOP3</h3>
+          <table class="score-table">
+            <thead><tr><th>组合</th><th>概率</th></tr></thead>
+            <tbody><tr class='highlight'><td>平胜</td><td>18.2%</td></tr><tr class='highlight'><td>胜胜</td><td>12.4%</td></tr><tr class='highlight'><td>平平</td><td>11.7%</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 大小球 -->
+        <div class="ou-section">
+          <h3>大小球2.5</h3>
+          <div class="ou-bar-container">
+            <div class="ou-bar ou-over" style="width:33.1%;">大球 33.1%</div>
+            <div class="ou-bar ou-under" style="width:66.9%;">小球 66.9%</div>
+          </div>
+          <div class="ou-rec">倾向: <strong>小球</strong>（已校准，大球概率×0.85）</div>
+        </div>
+        
+        <!-- 让球分析 -->
+        <div class="hc-section">
+          <h3>让球胜平负（主队让1球）</h3>
+          <div class="hc-probs">
+            <span class="hc-prob">主胜 21.5%</span>
+            <span class="hc-prob">平 25.4%</span>
+            <span class="hc-prob">客胜 53.1%</span>
+          </div>
+        </div>
+        
+        <!-- Lambda详情 -->
+        <div class="lambda-section">
+          <h3>Lambda计算详情</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主队λ</span><span class="value">1.327</span></div>
+            <div class="info-item"><span class="label">客队λ</span><span class="value">0.917</span></div>
+            <div class="info-item"><span class="label">xG校准比(主)</span><span class="value">1.0</span></div>
+            <div class="info-item"><span class="label">xG校准比(客)</span><span class="value">1.0</span></div>
+            <div class="info-item"><span class="label">修正系数(主)</span><span class="value">1.05</span></div>
+            <div class="info-item"><span class="label">修正系数(客)</span><span class="value">1.0</span></div>
+          </div>
+          <div class="corr-notes">客队Kannemann(中卫)停赛→主队lambda+5%</div>
+        </div>
+        
+        <!-- 伤停详情 -->
+        <div class="injury-section">
+          <h3>伤停详情</h3>
+          <div class="injury-tables">
+            <div class="injury-table">
+              <h4>主队 (米拉索尔)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td>Negueba</td><td>前锋</td><td>膝伤</td><td>✅</td></tr><tr><td>Aldo Filho</td><td>中场</td><td>肌肉伤</td><td>✅</td></tr></tbody>
+              </table>
+            </div>
+            <div class="injury-table">
+              <h4>客队 (格雷米奥)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td>Kannemann</td><td>中卫</td><td>停赛(红牌)</td><td>✅</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 市场支持率 -->
+        <div class="support-section">
+          <h3>市场支持率</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主胜支持</span><span class="value">65%</span></div>
+            <div class="info-item"><span class="label">平局支持</span><span class="value">21%</span></div>
+            <div class="info-item"><span class="label">客胜支持</span><span class="value">14%</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-item"><span class="label">让球主胜</span><span class="value">32%</span></div>
+            <div class="info-item"><span class="label">让球平</span><span class="value">35%</span></div>
+            <div class="info-item"><span class="label">让球客胜</span><span class="value">33%</span></div>
+          </div>
+        </div>
+        
+        <!-- 基本面分析 -->
+        <div class="notes-section">
+          <h3>基本面分析</h3>
+          <div class="notes-content">巴西杯1/8决赛首回合。米拉索尔对格雷米奥历史4战全胜(含本赛季巴甲2-1)。格雷米奥主帅Luís Castro帅位不稳+南美杯被淘汰。格雷米奥中卫Kannemann停赛。米拉索尔主场堡垒。</div>
+          <div class="h2h-info">
+            历史交锋: 主胜4场 平0场 客胜0场 | 
+            场均进球2.0球
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="match-card" id="match-014">
+      <div class="match-header">
+        <span class="match-id">014</span>
+        <span class="league-tag">巴西杯</span>
+        <span class="match-time">08-03 06:30</span>
+        <span class="match-title">巴西国际 <span class="vs">VS</span> 科林蒂安</span>
+        <span class="confidence-badge" style="background:#e74c3c">高 ★★★</span>
+      </div>
+      
+      <div class="match-body">
+        <!-- 赔率与排名 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">主队排名</span><span class="value">第16位</span></div>
+          <div class="info-item"><span class="label">客队排名</span><span class="value">第9位</span></div>
+          <div class="info-item"><span class="label">体彩赔率</span><span class="value">2.22 / 2.78 / 3.15</span></div>
+          <div class="info-item"><span class="label">让球</span><span class="value">主队让1球</span></div>
+        </div>
+        
+        <!-- 场地天气 -->
+        <div class="info-row">
+          <div class="info-item"><span class="label">场地</span><span class="value">Beira-Rio球场</span></div>
+          <div class="info-item"><span class="label">城市</span><span class="value">阿雷格里港</span></div>
+          <div class="info-item"><span class="label">草皮</span><span class="value">天然</span></div>
+          <div class="info-item"><span class="label">容量</span><span class="value">50,128</span></div>
+          <div class="info-item"><span class="label">天气</span><span class="value">多云 19°C</span></div>
+          <div class="info-item"><span class="label">风力</span><span class="value">微风</span></div>
+        </div>
+        
+        <!-- 融合概率 -->
+        <div class="probability-section">
+          <h3>融合概率（加权融合）</h3>
+          <div class="prob-bar-container">
+            <div class="prob-bar prob-h" style="width:40.93%;">主胜 40.9%</div>
+            <div class="prob-bar prob-d" style="width:28.139999999999997%;">平 28.1%</div>
+            <div class="prob-bar prob-a" style="width:30.919999999999998%;">客胜 30.9%</div>
+          </div>
+          <div class="recommendation">推荐方向: <strong>🔴 主胜 (40.9%)</strong></div>
+          
+          
+        </div>
+        
+        <!-- 模型对比 -->
+        <div class="model-section">
+          <h3>各模型胜率对比</h3>
+          <table class="model-table">
+            <thead><tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr></thead>
+            <tbody><tr><td>DC模型</td><td><div class='bar-container'><div class='bar bar-h' style='width:95.08%'>47.5%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:59.08%'>29.5%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:45.86%'>22.9%</div></div></td></tr><tr><td>负二项</td><td><div class='bar-container'><div class='bar bar-h' style='width:92.88%'>46.4%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:59.06%'>29.5%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:48.06%'>24.0%</div></div></td></tr><tr><td>ZIP</td><td><div class='bar-container'><div class='bar bar-h' style='width:91.52%'>45.8%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:60.78%'>30.4%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:47.699999999999996%'>23.8%</div></div></td></tr><tr><td>Skellam</td><td><div class='bar-container'><div class='bar bar-h' style='width:47.18%'>23.6%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:59.199999999999996%'>29.6%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:93.62%'>46.8%</div></div></td></tr><tr><td>蒙特卡洛</td><td><div class='bar-container'><div class='bar bar-h' style='width:92.94%'>46.5%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:62.96000000000001%'>31.5%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:44.1%'>22.1%</div></div></td></tr><tr><td>Shin校准</td><td><div class='bar-container'><div class='bar bar-h' style='width:77.56%'>38.8%</div></div></td><td><div class='bar-container'><div class='bar bar-d' style='width:64.22%'>32.1%</div></div></td><td><div class='bar-container'><div class='bar bar-a' style='width:58.220000000000006%'>29.1%</div></div></td></tr></tbody>
+          </table>
+          <div class="model-note">模型间标准差: 0.0075 | Shin z参数: 0.0300</div>
+        </div>
+        
+        <!-- 比分预测 -->
+        <div class="score-section">
+          <h3>比分TOP10</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>1:0</td><td>16.7%</td><td>🔴主胜</td></tr><tr class='highlight'><td>2</td><td class='score'>0:0</td><td>13.7%</td><td>🟡平局</td></tr><tr class='highlight'><td>3</td><td class='score'>1:1</td><td>12.5%</td><td>🟡平局</td></tr><tr><td>4</td><td class='score'>2:0</td><td>10.3%</td><td>🔴主胜</td></tr><tr><td>5</td><td class='score'>0:1</td><td>10.1%</td><td>🔵客胜</td></tr><tr><td>6</td><td class='score'>2:1</td><td>8.5%</td><td>🔴主胜</td></tr><tr><td>7</td><td class='score'>1:2</td><td>4.9%</td><td>🔵客胜</td></tr><tr><td>8</td><td class='score'>3:0</td><td>4.0%</td><td>🔴主胜</td></tr><tr><td>9</td><td class='score'>0:2</td><td>4.0%</td><td>🔵客胜</td></tr><tr><td>10</td><td class='score'>3:1</td><td>3.2%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半场比分 -->
+        <div class="score-section">
+          <h3>半场比分TOP5</h3>
+          <table class="score-table">
+            <thead><tr><th>#</th><th>比分</th><th>概率</th><th>方向</th></tr></thead>
+            <tbody><tr class='highlight'><td>1</td><td class='score'>0:0</td><td>40.3%</td><td>🟡平局</td></tr><tr class='highlight'><td>2</td><td class='score'>1:0</td><td>22.4%</td><td>🔴主胜</td></tr><tr class='highlight'><td>3</td><td class='score'>0:1</td><td>14.2%</td><td>🔵客胜</td></tr><tr><td>4</td><td class='score'>1:1</td><td>7.9%</td><td>🟡平局</td></tr><tr><td>5</td><td class='score'>2:0</td><td>6.2%</td><td>🔴主胜</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 半全场 -->
+        <div class="score-section half-section">
+          <h3>半全场TOP3</h3>
+          <table class="score-table">
+            <thead><tr><th>组合</th><th>概率</th></tr></thead>
+            <tbody><tr class='highlight'><td>平胜</td><td>20.0%</td></tr><tr class='highlight'><td>平平</td><td>13.2%</td></tr><tr class='highlight'><td>胜胜</td><td>12.6%</td></tr></tbody>
+          </table>
+        </div>
+        
+        <!-- 大小球 -->
+        <div class="ou-section">
+          <h3>大小球2.5</h3>
+          <div class="ou-bar-container">
+            <div class="ou-bar ou-over" style="width:27.9%;">大球 27.9%</div>
+            <div class="ou-bar ou-under" style="width:72.1%;">小球 72.1%</div>
+          </div>
+          <div class="ou-rec">倾向: <strong>小球</strong>（已校准，大球概率×0.85）</div>
+        </div>
+        
+        <!-- 让球分析 -->
+        <div class="hc-section">
+          <h3>让球胜平负（主队让1球）</h3>
+          <div class="hc-probs">
+            <span class="hc-prob">主胜 21.0%</span>
+            <span class="hc-prob">平 26.6%</span>
+            <span class="hc-prob">客胜 52.5%</span>
+          </div>
+        </div>
+        
+        <!-- Lambda详情 -->
+        <div class="lambda-section">
+          <h3>Lambda计算详情</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主队λ</span><span class="value">1.235</span></div>
+            <div class="info-item"><span class="label">客队λ</span><span class="value">0.785</span></div>
+            <div class="info-item"><span class="label">xG校准比(主)</span><span class="value">1.0</span></div>
+            <div class="info-item"><span class="label">xG校准比(客)</span><span class="value">1.0</span></div>
+            <div class="info-item"><span class="label">修正系数(主)</span><span class="value">1.0</span></div>
+            <div class="info-item"><span class="label">修正系数(客)</span><span class="value">0.88</span></div>
+          </div>
+          <div class="corr-notes">客队Labyad(中场)ACL赛季报销→lambda-12%</div>
+        </div>
+        
+        <!-- 伤停详情 -->
+        <div class="injury-section">
+          <h3>伤停详情</h3>
+          <div class="injury-tables">
+            <div class="injury-table">
+              <h4>主队 (巴西国际)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td colspan="4">无伤停</td></tr></tbody>
+              </table>
+            </div>
+            <div class="injury-table">
+              <h4>客队 (科林蒂安)</h4>
+              <table class="injury-tbl">
+                <thead><tr><th>球员</th><th>位置</th><th>类型</th><th>验证</th></tr></thead>
+                <tbody><tr><td>Labyad</td><td>中场</td><td>ACL赛季报销</td><td>✅</td></tr><tr><td>Yuri Alberto</td><td>前锋</td><td>大腿肌肉伤</td><td>✅</td></tr></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 市场支持率 -->
+        <div class="support-section">
+          <h3>市场支持率</h3>
+          <div class="info-row">
+            <div class="info-item"><span class="label">主胜支持</span><span class="value">33%</span></div>
+            <div class="info-item"><span class="label">平局支持</span><span class="value">36%</span></div>
+            <div class="info-item"><span class="label">客胜支持</span><span class="value">31%</span></div>
+          </div>
+          <div class="info-row">
+            <div class="info-item"><span class="label">让球主胜</span><span class="value">25%</span></div>
+            <div class="info-item"><span class="label">让球平</span><span class="value">25%</span></div>
+            <div class="info-item"><span class="label">让球客胜</span><span class="value">50%</span></div>
+          </div>
+        </div>
+        
+        <!-- 基本面分析 -->
+        <div class="notes-section">
+          <h3>基本面分析</h3>
+          <div class="notes-content">巴西杯1/8决赛首回合。科林蒂安卫冕冠军(2025巴西杯)。科林蒂安Labyad ACL赛季报销+Yuri Alberto伤缺，进攻受损。巴西国际Victor Gabriel停赛暂停可出战。本赛季巴甲科林蒂安0-1负巴西国际。科林蒂安防守好(场均失0.95球)。</div>
+          <div class="h2h-info">
+            历史交锋: 主胜2场 平2场 客胜1场 | 
+            场均进球1.4球
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<div class="footer">
+  <p>分析基于多模型融合（DC/NB/ZIP/Skellam/蒙特卡洛/Shin校准）+ 联赛特化修正 + 基本面分析</p>
+  <p>v1.8.0 | 2026-08-02 | 足球比赛存在极大不确定性，理性看待预测</p>
+</div>
+</body>
+</html>

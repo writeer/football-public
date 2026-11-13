@@ -1,0 +1,848 @@
+{
+ "date": "2026-08-20",
+ "day": "thursday",
+ "updatedAt": "2026-08-20 12:10:00",
+ "matchCount": 9,
+ "summary": "周四共9场：001沙职R2、002西甲R2、003解放者杯1/8次回合、004-009欧联附加赛首回合。用户告知002/004/005开胜平负单关（v2.3.4起由用户告知而非检测），按规则63执行平局上修：002平局27→35%(主胜43%仍首选)、004平局31→44%(翻盘成首选平局)、005双残阵L029例外不适用(维持客胜+大球)。6场杯赛首回合+1场解放者杯次回合（保平即点球）→引用L027平局暴风眼、L028强弱分明高置信审慎；002西甲Rayo近5全胜+001新月交锋强势（规则12）；009本菲卡身价9.7倍碾压+交锋3胜1平+近期狂胜（L024） | 赔率已按体彩官方补全(HAD/HHAD，2026-08-20 12:04采集)",
+ "predictions": [
+  {
+   "matchNum": "周四001",
+   "league": "沙特职业联赛",
+   "kicked_off": "2026-08-21 02:00",
+   "home": "迈季迈阿宽广(Al-Fayha)",
+   "away": "利雅得新月(Al-Hilal)",
+   "rankHome": "[沙职12]",
+   "rankAway": "[沙职2]",
+   "bettingSingle": false,
+   "notes": "新赛季第2轮；Fayha赛季首战，新月第1轮4-2胜。身价差12倍(新月碾压)。新月Benzema肌腱伤(9月回归)+Neves/Cancelo状态存疑(rule10按出战成疑减半)。规则12交锋：新月对Fayha近5战4胜，客场小胜0-1/0-2/1-0为主。L028强弱分明+新月核心存疑→高置信审慎。引用L021/L028/L031",
+   "direction": {
+    "h": 15,
+    "d": 25,
+    "a": 60,
+    "recommend": "客胜(利雅得新月)",
+    "confidence": "中★★"
+   },
+   "hafu_recommend": "新月-2让球不稳，不建议主打让球；方向客胜60%",
+   "score_top5": [
+    {
+     "score": "0:1",
+     "prob": "~16%",
+     "source": "推演"
+    },
+    {
+     "score": "0:2",
+     "prob": "~12%",
+     "source": "推演"
+    },
+    {
+     "score": "1:2",
+     "prob": "~9%",
+     "source": "推演"
+    },
+    {
+     "score": "0:3",
+     "prob": "~8%",
+     "source": "推演"
+    },
+    {
+     "score": "1:1",
+     "prob": "~11%",
+     "source": "模型补充"
+    }
+   ],
+   "ttg_top2": [
+    {
+     "goal": "2球",
+     "prob": "~24%"
+    },
+    {
+     "goal": "3球",
+     "prob": "~23%"
+    }
+   ],
+   "htft_top3": [
+    {
+     "ht": "平负",
+     "prob": "~20%"
+    },
+    {
+     "ht": "负负",
+     "prob": "~16%"
+    },
+    {
+     "ht": "平胜",
+     "prob": "~12%"
+    }
+   ],
+   "ht_score_top3": [
+    {
+     "score": "0:1",
+     "prob": "~24%"
+    },
+    {
+     "score": "0:0",
+     "prob": "~22%"
+    },
+    {
+     "score": "0:2",
+     "prob": "~12%"
+    }
+   ],
+   "odds_had": {
+    "home_win": 10.0,
+    "draw": 5.72,
+    "away_win": 1.17
+   },
+   "odds_hafu": {
+    "handicap": 2,
+    "home_win": 2.03,
+    "draw": 3.9,
+    "away_win": 2.63
+   }
+  },
+  {
+   "matchNum": "周四002",
+   "league": "西班牙甲级联赛",
+   "kicked_off": "2026-08-21 03:00",
+   "home": "巴列卡诺(Rayo)",
+   "away": "阿拉维斯(Alavés)",
+   "rankHome": "[西甲17]",
+   "rankAway": "[西甲2]",
+   "bettingSingle": true,
+   "notes": "新赛季第2轮；Rayo第1轮客场1-2负Sevilla，Alavés主场3-0胜Getafe。规则12（核心）：Rayo近5次联赛对Alavés全胜，同主客主场近3次全胜(1-0/1-0/1-0)延续性强。Rayo攻击端Mendy(2340万)/Chavarría(1900万)离队削弱，Kumbulla存疑。西甲小球+主场优势。引用L021/L031/L025 | 规则63(用户告知002开单关)：平局21pp档+8%上修→27%→35%，主胜43%仍首选，次选平局35%>客胜22%。",
+   "direction": {
+    "h": 43,
+    "d": 35,
+    "a": 22,
+    "recommend": "主胜(巴列卡诺)",
+    "confidence": "中★★"
+   },
+   "hafu_recommend": "Rayo-1让球不稳(小胜为主)，不建议Hit让胜",
+   "score_top5": [
+    {
+     "score": "1:0",
+     "prob": "~14%",
+     "source": "推演"
+    },
+    {
+     "score": "2:1",
+     "prob": "~11%",
+     "source": "推演"
+    },
+    {
+     "score": "1:1",
+     "prob": "~12%",
+     "source": "推演"
+    },
+    {
+     "score": "2:0",
+     "prob": "~8%",
+     "source": "推演"
+    },
+    {
+     "score": "0:1",
+     "prob": "~9%",
+     "source": "模型补充"
+    }
+   ],
+   "ttg_top2": [
+    {
+     "goal": "2球",
+     "prob": "~28%"
+    },
+    {
+     "goal": "1球",
+     "prob": "~26%"
+    }
+   ],
+   "htft_top3": [
+    {
+     "ht": "平胜",
+     "prob": "~19%"
+    },
+    {
+     "ht": "胜胜",
+     "prob": "~17%"
+    },
+    {
+     "ht": "胜平",
+     "prob": "~12%"
+    }
+   ],
+   "ht_score_top3": [
+    {
+     "score": "1:0",
+     "prob": "~26%"
+    },
+    {
+     "score": "0:0",
+     "prob": "~22%"
+    },
+    {
+     "score": "0:1",
+     "prob": "~12%"
+    }
+   ],
+   "odds_had": {
+    "home_win": 2.01,
+    "draw": 2.84,
+    "away_win": 3.58
+   },
+   "odds_hafu": {
+    "handicap": -1,
+    "home_win": 4.6,
+    "draw": 3.4,
+    "away_win": 1.62
+   }
+  },
+  {
+   "matchNum": "周四003",
+   "league": "南美解放者杯",
+   "kicked_off": "2026-08-21 08:30",
+   "home": "科林蒂安(Corinthians)",
+   "away": "罗萨里奥中央(Rosario Central)",
+   "rankHome": "[解放者杯1]",
+   "rankAway": "[解放者杯2]",
+   "bettingSingle": false,
+   "notes": "1/8决赛次回合，首回合罗萨里奥0-0科林蒂安。罗萨里奥保平即点球(1/8无加时)→必死守；科林蒂安必须攻但进攻端至多7人缺阵/存疑(Yuri Alberto/Vitinho/Labyad/Pedro Raul等)，Memphis复出。罗萨里奥近4不败+阿甲防守强(21场失19)。身价2.5倍。首回合0-0+保平晋级→L027平局暴风眼，平局上修纳入评估。小球联赛(场均1.78)。引用L027/L002/L005",
+   "direction": {
+    "h": 45,
+    "d": 32,
+    "a": 23,
+    "recommend": "主胜(科林蒂安)",
+    "confidence": "中★★"
+   },
+   "hafu_recommend": "科林蒂安-1让球难(铁桶阵+进攻伤停)，不建议",
+   "score_top5": [
+    {
+     "score": "1:0",
+     "prob": "~15%",
+     "source": "推演"
+    },
+    {
+     "score": "0:0",
+     "prob": "~12%",
+     "source": "推演"
+    },
+    {
+     "score": "1:1",
+     "prob": "~14%",
+     "source": "推演"
+    },
+    {
+     "score": "2:0",
+     "prob": "~7%",
+     "source": "推演"
+    },
+    {
+     "score": "0:1",
+     "prob": "~8%",
+     "source": "模型补充"
+    }
+   ],
+   "ttg_top2": [
+    {
+     "goal": "1球",
+     "prob": "~27%"
+    },
+    {
+     "goal": "0球",
+     "prob": "~17%"
+    }
+   ],
+   "htft_top3": [
+    {
+     "ht": "平胜",
+     "prob": "~20%"
+    },
+    {
+     "ht": "平平",
+     "prob": "~16%"
+    },
+    {
+     "ht": "胜胜",
+     "prob": "~13%"
+    }
+   ],
+   "ht_score_top3": [
+    {
+     "score": "0:0",
+     "prob": "~30%"
+    },
+    {
+     "score": "1:0",
+     "prob": "~26%"
+    },
+    {
+     "score": "0:1",
+     "prob": "~11%"
+    }
+   ],
+   "odds_had": {
+    "home_win": 1.86,
+    "draw": 2.67,
+    "away_win": 4.6
+   },
+   "odds_hafu": {
+    "handicap": -1,
+    "home_win": 4.12,
+    "draw": 3.2,
+    "away_win": 1.74
+   }
+  },
+  {
+   "matchNum": "周四004",
+   "league": "欧罗巴联赛",
+   "kicked_off": "2026-08-20 23:00",
+   "home": "阿拉木图凯拉特(Kairat)",
+   "away": "安德莱赫特(Anderlecht)",
+   "bettingSingle": true,
+   "notes": "欧联附加赛首回合(次回合8-27安德莱赫特主)。身价8.8倍(安德莱赫特)。凯拉特人工草皮主场+远征5200km；安德莱赫特后防3伤(Camara/Sardella/Hey)+刚客场0-1负贝弗伦+换帅。无交锋(交锋空白→置信降级)。首回合求稳。引用L002/L005/L027 | 规则63(用户告知004开单关)：客胜40vs平局31(9pp档)+13%→平局44%翻盘首选；安德莱赫特后防3伤+换帅+远征+首回合求稳，平局动能足。",
+   "direction": {
+    "h": 24,
+    "d": 44,
+    "a": 32,
+    "recommend": "平局(首回合求稳+单关上修)",
+    "confidence": "中低★"
+   },
+   "hafu_recommend": "安德莱赫特-1不稳，不建议",
+   "score_top5": [
+    {
+     "score": "1:1",
+     "prob": "~14%",
+     "source": "推演"
+    },
+    {
+     "score": "0:0",
+     "prob": "~10%",
+     "source": "推演"
+    },
+    {
+     "score": "0:1",
+     "prob": "~13%",
+     "source": "推演"
+    },
+    {
+     "score": "1:0",
+     "prob": "~10%",
+     "source": "推演"
+    },
+    {
+     "score": "1:2",
+     "prob": "~9%",
+     "source": "模型补充"
+    }
+   ],
+   "ttg_top2": [
+    {
+     "goal": "2球",
+     "prob": "~27%"
+    },
+    {
+     "goal": "1球",
+     "prob": "~22%"
+    }
+   ],
+   "htft_top3": [
+    {
+     "ht": "平平",
+     "prob": "~14%"
+    },
+    {
+     "ht": "平负",
+     "prob": "~16%"
+    },
+    {
+     "ht": "平胜",
+     "prob": "~12%"
+    }
+   ],
+   "ht_score_top3": [
+    {
+     "score": "0:0",
+     "prob": "~28%"
+    },
+    {
+     "score": "0:1",
+     "prob": "~24%"
+    },
+    {
+     "score": "1:0",
+     "prob": "~12%"
+    }
+   ],
+   "odds_had": {
+    "home_win": 3.35,
+    "draw": 3.25,
+    "away_win": 1.91
+   },
+   "odds_hafu": {
+    "handicap": 1,
+    "home_win": 1.68,
+    "draw": 3.6,
+    "away_win": 3.9
+   }
+  },
+  {
+   "matchNum": "周四005",
+   "league": "欧罗巴联赛",
+   "kicked_off": "2026-08-21 00:00",
+   "home": "米亚尔比(Mjällby)",
+   "away": "萨尔茨堡(Red Bull Salzburg)",
+   "bettingSingle": true,
+   "notes": "欧联附加赛首回合。身价6.6倍(萨尔茨堡)。米亚尔比：瑞典超第11保级压力+中场3人停赛/伤，但2025瑞超冠军主场；萨尔茨堡：后防3-4人伤+主力前锋达吉姆离队+奥甲开局1-1，客场。无交锋(空白)。双残阵→大球判断(L029)+拉锯。引用L002/L029/L020 | 用户告知005开单关，但双残阵(L029)指向对攻分胜负→规则63平局上修不适用，维持客胜+TTG大球(2/3球)。",
+   "direction": {
+    "h": 29,
+    "d": 31,
+    "a": 40,
+    "recommend": "客胜(萨尔茨堡)",
+    "confidence": "中低★"
+   },
+   "hafu_recommend": "萨尔茨堡-1不稳，不建议",
+   "score_top5": [
+    {
+     "score": "0:1",
+     "prob": "~13%",
+     "source": "推演"
+    },
+    {
+     "score": "1:1",
+     "prob": "~14%",
+     "source": "推演"
+    },
+    {
+     "score": "0:2",
+     "prob": "~9%",
+     "source": "推演"
+    },
+    {
+     "score": "1:0",
+     "prob": "~11%",
+     "source": "推演"
+    },
+    {
+     "score": "1:2",
+     "prob": "~9%",
+     "source": "模型补充"
+    }
+   ],
+   "ttg_top2": [
+    {
+     "goal": "2球",
+     "prob": "~25%"
+    },
+    {
+     "goal": "3球",
+     "prob": "~22%"
+    }
+   ],
+   "htft_top3": [
+    {
+     "ht": "平负",
+     "prob": "~16%"
+    },
+    {
+     "ht": "负负",
+     "prob": "~14%"
+    },
+    {
+     "ht": "平平",
+     "prob": "~14%"
+    }
+   ],
+   "ht_score_top3": [
+    {
+     "score": "0:0",
+     "prob": "~26%"
+    },
+    {
+     "score": "0:1",
+     "prob": "~23%"
+    },
+    {
+     "score": "1:0",
+     "prob": "~12%"
+    }
+   ],
+   "odds_had": {
+    "home_win": 4.15,
+    "draw": 3.85,
+    "away_win": 1.59
+   },
+   "odds_hafu": {
+    "handicap": 1,
+    "home_win": 2.04,
+    "draw": 3.55,
+    "away_win": 2.8
+   }
+  },
+  {
+   "matchNum": "周四006",
+   "league": "欧罗巴联赛",
+   "kicked_off": "2026-08-21 01:00",
+   "home": "特拉布宗体育(Trabzonspor)",
+   "away": "费伦茨瓦罗斯(Ferencváros)",
+   "bettingSingle": false,
+   "notes": "欧联附加赛首回合。特拉布宗(土超第5)主场氛围火爆但中场伤4人(Batagov/Jabol-Folcarelli/Muci/Yokuslu)；费伦茨(匈甲冠军)阵容齐整+欧战经验。规则12交锋：特拉布宗主1-0费伦茨(2022欧联小组)。身价特拉布宗占优。L028强热门审慎(费伦茨欧战经验)。引用L002/L031/L028",
+   "direction": {
+    "h": 50,
+    "d": 28,
+    "a": 22,
+    "recommend": "主胜(特拉布宗体育)",
+    "confidence": "中★★"
+   },
+   "hafu_recommend": "特拉布宗-1不稳(小胜)，不建议主打",
+   "score_top5": [
+    {
+     "score": "2:1",
+     "prob": "~12%",
+     "source": "推演"
+    },
+    {
+     "score": "1:0",
+     "prob": "~13%",
+     "source": "推演"
+    },
+    {
+     "score": "1:1",
+     "prob": "~14%",
+     "source": "推演"
+    },
+    {
+     "score": "2:0",
+     "prob": "~9%",
+     "source": "推演"
+    },
+    {
+     "score": "1:2",
+     "prob": "~9%",
+     "source": "模型补充"
+    }
+   ],
+   "ttg_top2": [
+    {
+     "goal": "2球",
+     "prob": "~26%"
+    },
+    {
+     "goal": "3球",
+     "prob": "~23%"
+    }
+   ],
+   "htft_top3": [
+    {
+     "ht": "胜胜",
+     "prob": "~23%"
+    },
+    {
+     "ht": "平胜",
+     "prob": "~18%"
+    },
+    {
+     "ht": "平平",
+     "prob": "~13%"
+    }
+   ],
+   "ht_score_top3": [
+    {
+     "score": "1:0",
+     "prob": "~27%"
+    },
+    {
+     "score": "0:0",
+     "prob": "~22%"
+    },
+    {
+     "score": "1:1",
+     "prob": "~15%"
+    }
+   ],
+   "odds_had": {
+    "home_win": 1.53,
+    "draw": 3.77,
+    "away_win": 4.75
+   },
+   "odds_hafu": {
+    "handicap": -1,
+    "home_win": 2.65,
+    "draw": 3.47,
+    "away_win": 2.16
+   }
+  },
+  {
+   "matchNum": "周四007",
+   "league": "欧罗巴联赛",
+   "kicked_off": "2026-08-21 01:00",
+   "home": "波兹南莱赫(Lech Poznań)",
+   "away": "图恩(Thun)",
+   "bettingSingle": false,
+   "notes": "欧联附加赛首回合。莱赫(波甲冠军)主场统治力强(近6主5胜1平，欧联Q3两回合6-0)但头号射手Ishak缺阵(约3周)+中场3伤；图恩(瑞士超)防线灾难(客0-6年轻人)+中后场多人伤(十字韧带等)。无交锋(空白)。身价1.9倍接近2倍。L028审慎(Ishak缺阵)。引用L002/L028",
+   "direction": {
+    "h": 60,
+    "d": 25,
+    "a": 15,
+    "recommend": "主胜(波兹南莱赫)",
+    "confidence": "中★★"
+   },
+   "hafu_recommend": "莱赫-1可小注(主场统治)，若Ishak复出更稳",
+   "score_top5": [
+    {
+     "score": "2:0",
+     "prob": "~14%",
+     "source": "推演"
+    },
+    {
+     "score": "2:1",
+     "prob": "~12%",
+     "source": "推演"
+    },
+    {
+     "score": "3:0",
+     "prob": "~10%",
+     "source": "推演"
+    },
+    {
+     "score": "1:0",
+     "prob": "~14%",
+     "source": "推演"
+    },
+    {
+     "score": "3:1",
+     "prob": "~7%",
+     "source": "模型补充"
+    }
+   ],
+   "ttg_top2": [
+    {
+     "goal": "2球",
+     "prob": "~25%"
+    },
+    {
+     "goal": "3球",
+     "prob": "~24%"
+    }
+   ],
+   "htft_top3": [
+    {
+     "ht": "胜胜",
+     "prob": "~26%"
+    },
+    {
+     "ht": "平胜",
+     "prob": "~18%"
+    },
+    {
+     "ht": "平平",
+     "prob": "~12%"
+    }
+   ],
+   "ht_score_top3": [
+    {
+     "score": "1:0",
+     "prob": "~28%"
+    },
+    {
+     "score": "2:0",
+     "prob": "~20%"
+    },
+    {
+     "score": "0:0",
+     "prob": "~18%"
+    }
+   ],
+   "odds_had": {
+    "home_win": 1.4,
+    "draw": 4.15,
+    "away_win": 5.75
+   },
+   "odds_hafu": {
+    "handicap": -1,
+    "home_win": 2.31,
+    "draw": 3.45,
+    "away_win": 2.46
+   }
+  },
+  {
+   "matchNum": "周四008",
+   "league": "欧罗巴联赛",
+   "kicked_off": "2026-08-21 02:00",
+   "home": "贝尔格莱德红星(Red Star)",
+   "away": "比尔森(Viktoria Plzeň)",
+   "bettingSingle": false,
+   "notes": "欧联附加赛首回合。红星(塞超)主场强(开局3连胜进10失1)但欧冠资格赛低迷+中场核心阿布法尼红牌停赛+阿夫迪奇伤；比尔森(捷甲)开局1胜2平1负+中卫Jemelka/Paluska伤缺，客场。无交锋(交锋空白)。身价1.24倍接近。L028审慎。引用L002/L028",
+   "direction": {
+    "h": 52,
+    "d": 27,
+    "a": 21,
+    "recommend": "主胜(贝尔格莱德红星)",
+    "confidence": "中★★"
+   },
+   "hafu_recommend": "红星-1中性偏稳(主场强)，可小注",
+   "score_top5": [
+    {
+     "score": "2:0",
+     "prob": "~13%",
+     "source": "推演"
+    },
+    {
+     "score": "1:0",
+     "prob": "~14%",
+     "source": "推演"
+    },
+    {
+     "score": "2:1",
+     "prob": "~11%",
+     "source": "推演"
+    },
+    {
+     "score": "1:1",
+     "prob": "~13%",
+     "source": "推演"
+    },
+    {
+     "score": "3:0",
+     "prob": "~7%",
+     "source": "模型补充"
+    }
+   ],
+   "ttg_top2": [
+    {
+     "goal": "2球",
+     "prob": "~26%"
+    },
+    {
+     "goal": "3球",
+     "prob": "~23%"
+    }
+   ],
+   "htft_top3": [
+    {
+     "ht": "胜胜",
+     "prob": "~22%"
+    },
+    {
+     "ht": "平胜",
+     "prob": "~18%"
+    },
+    {
+     "ht": "平平",
+     "prob": "~13%"
+    }
+   ],
+   "ht_score_top3": [
+    {
+     "score": "1:0",
+     "prob": "~28%"
+    },
+    {
+     "score": "0:0",
+     "prob": "~22%"
+    },
+    {
+     "score": "2:0",
+     "prob": "~18%"
+    }
+   ],
+   "odds_had": {
+    "home_win": 1.61,
+    "draw": 3.65,
+    "away_win": 4.28
+   },
+   "odds_hafu": {
+    "handicap": -1,
+    "home_win": 2.96,
+    "draw": 3.4,
+    "away_win": 2.01
+   }
+  },
+  {
+   "matchNum": "周四009",
+   "league": "欧罗巴联赛",
+   "kicked_off": "2026-08-21 03:00",
+   "home": "本菲卡(Benfica)",
+   "away": "奥胡斯(AGF Aarhus)",
+   "bettingSingle": false,
+   "notes": "欧联附加赛首回合。身价9.7倍(本菲卡碾压)。本菲卡近期强攻(0-7卡萨皮亚/6-1哈茨/5-0圣加仑)+欧战3连胜，L024强队火热lambda额外+0.5-1.0；有轮换先例(对战哈茨轮换但Lenglet保留)+胃肠炎隐患。交锋本菲卡对奥胡斯4次3胜1平(1960欧冠QF 7-2等)延续强。奥胡斯丹麦超中游+欧冠出局转欧联。HAD未单独开出，让球本菲卡-2。推演指向大胜→TTG 3/4球联动。引用L024/L002/L031",
+   "direction": {
+    "h": 82,
+    "d": 11,
+    "a": 7,
+    "recommend": "主胜(本菲卡)",
+    "confidence": "高★★★"
+   },
+   "hafu_recommend": "本菲卡-2让胜可作大小注平衡(碾压+交锋延续)",
+   "score_top5": [
+    {
+     "score": "3:0",
+     "prob": "~15%",
+     "source": "推演"
+    },
+    {
+     "score": "2:0",
+     "prob": "~14%",
+     "source": "推演"
+    },
+    {
+     "score": "4:0",
+     "prob": "~9%",
+     "source": "推演"
+    },
+    {
+     "score": "3:1",
+     "prob": "~11%",
+     "source": "推演"
+    },
+    {
+     "score": "2:1",
+     "prob": "~10%",
+     "source": "模型补充"
+    }
+   ],
+   "ttg_top2": [
+    {
+     "goal": "3球",
+     "prob": "~26%"
+    },
+    {
+     "goal": "4球",
+     "prob": "~19%"
+    }
+   ],
+   "htft_top3": [
+    {
+     "ht": "胜胜",
+     "prob": "~32%"
+    },
+    {
+     "ht": "平胜",
+     "prob": "~16%"
+    },
+    {
+     "ht": "胜平",
+     "prob": "~8%"
+    }
+   ],
+   "ht_score_top3": [
+    {
+     "score": "2:0",
+     "prob": "~20%"
+    },
+    {
+     "score": "1:0",
+     "prob": "~20%"
+    },
+    {
+     "score": "0:0",
+     "prob": "~14%"
+    }
+   ],
+   "odds_had": null,
+   "odds_hafu": {
+    "handicap": -2,
+    "home_win": 2.18,
+    "draw": 4.0,
+    "away_win": 2.38
+   }
+  }
+ ]
+}

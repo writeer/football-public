@@ -1,0 +1,1872 @@
+{
+  "date": "2026-08-30",
+  "day": "sunday",
+  "matchCount": 25,
+  "source": "sporttery.cn MCP get_matches",
+  "reportPath": "reports/analysis/20260830_sunday_analysis_zhihu.md",
+  "oddsPath": "memory/predictions/20260830_sunday/odds_full_260830.json",
+  "rulesApplied": [
+    "Rule65(13matches)",
+    "Rule62-F",
+    "Rule12",
+    "Rule9a",
+    "Rule22-REF",
+    "Rule46",
+    "Rule53",
+    "Rule60",
+    "Rule61"
+  ],
+  "lessonsReferenced": [
+    "L062",
+    "L065",
+    "L063",
+    "L067",
+    "L040",
+    "L057",
+    "L042",
+    "L041",
+    "L053",
+    "L055"
+  ],
+  "matches": [
+    {
+      "matchNum": "001",
+      "league": "荷甲",
+      "home": "乌德勒支",
+      "away": "埃因霍温",
+      "had": {
+        "first": "客胜",
+        "prob": 56,
+        "second": "平",
+        "prob2": 21
+      },
+      "hafu": {
+        "first": "让(+1)负",
+        "prob": 56,
+        "second": "让(+1)平",
+        "prob2": 21
+      },
+      "crs": [
+        [
+          "1:2",
+          9.4
+        ],
+        [
+          "0:2",
+          7
+        ],
+        [
+          "1:3",
+          6.8
+        ],
+        [
+          "1:1",
+          8.8
+        ],
+        [
+          "0:1",
+          6.5
+        ]
+      ],
+      "ttg": {
+        "first": "3球",
+        "prob": 21.6,
+        "second": "4球",
+        "prob2": 18.9
+      },
+      "htft": {
+        "first": "负/负",
+        "prob": 18,
+        "second": "平/负",
+        "prob2": 14,
+        "third": "负/平",
+        "prob3": 8
+      },
+      "ht_score": [
+        [
+          "0:1",
+          15
+        ],
+        [
+          "0:0",
+          14
+        ],
+        [
+          "1:1",
+          8
+        ]
+      ],
+      "confidence": "★★",
+      "lambdaHome": 1.35,
+      "lambdaAway": 2.15,
+      "lambdaTotal": 3.5,
+      "rule65": true,
+      "rule65Tier": "Tier2"
+    },
+    {
+      "matchNum": "002",
+      "league": "韩职",
+      "home": "济州SK",
+      "away": "大田市民",
+      "had": {
+        "first": "客胜",
+        "prob": 43,
+        "second": "平",
+        "prob2": 26
+      },
+      "hafu": {
+        "first": "让(+1)负",
+        "prob": 43,
+        "second": "让(+1)平",
+        "prob2": 26
+      },
+      "crs": [
+        [
+          "1:1",
+          13
+        ],
+        [
+          "1:2",
+          10.5
+        ],
+        [
+          "0:1",
+          9.5
+        ],
+        [
+          "0:2",
+          7.5
+        ],
+        [
+          "2:1",
+          7
+        ]
+      ],
+      "ttg": {
+        "first": "2球",
+        "prob": 25,
+        "second": "3球",
+        "prob2": 22
+      },
+      "htft": {
+        "first": "平/负",
+        "prob": 14,
+        "second": "负/负",
+        "prob2": 12,
+        "third": "平/平",
+        "prob3": 11
+      },
+      "ht_score": [
+        [
+          "0:0",
+          18
+        ],
+        [
+          "0:1",
+          10
+        ],
+        [
+          "1:0",
+          8
+        ]
+      ],
+      "confidence": "★",
+      "lambdaHome": 1.28,
+      "lambdaAway": 1.42,
+      "lambdaTotal": 2.7,
+      "rule65": false
+    },
+    {
+      "matchNum": "003",
+      "league": "韩职",
+      "home": "仁川联",
+      "away": "全北现代",
+      "had": {
+        "first": "客胜",
+        "prob": 49,
+        "second": "平",
+        "prob2": 25
+      },
+      "hafu": {
+        "first": "让(+1)负",
+        "prob": 49,
+        "second": "让(+1)平",
+        "prob2": 25
+      },
+      "crs": [
+        [
+          "1:1",
+          12.5
+        ],
+        [
+          "0:1",
+          10
+        ],
+        [
+          "1:2",
+          8.5
+        ],
+        [
+          "1:0",
+          8
+        ],
+        [
+          "0:2",
+          7
+        ]
+      ],
+      "ttg": {
+        "first": "2球",
+        "prob": 25,
+        "second": "3球",
+        "prob2": 22
+      },
+      "htft": {
+        "first": "平/负",
+        "prob": 14,
+        "second": "负/负",
+        "prob2": 12,
+        "third": "平/平",
+        "prob3": 11
+      },
+      "ht_score": [
+        [
+          "0:0",
+          18
+        ],
+        [
+          "0:1",
+          10
+        ],
+        [
+          "1:0",
+          8
+        ]
+      ],
+      "confidence": "★",
+      "lambdaHome": 1.15,
+      "lambdaAway": 1.55,
+      "lambdaTotal": 2.7,
+      "rule65": true,
+      "rule65Tier": "Tier3"
+    },
+    {
+      "matchNum": "004",
+      "league": "德乙",
+      "home": "圣保利",
+      "away": "凯泽",
+      "had": {
+        "first": "主胜",
+        "prob": 51,
+        "second": "平",
+        "prob2": 31
+      },
+      "hafu": {
+        "first": "让(-1)负",
+        "prob": 49,
+        "second": "让(-1)平",
+        "prob2": 31
+      },
+      "crs": [
+        [
+          "2:1",
+          12
+        ],
+        [
+          "1:1",
+          10.5
+        ],
+        [
+          "1:0",
+          9
+        ],
+        [
+          "2:0",
+          8
+        ],
+        [
+          "3:1",
+          6.5
+        ]
+      ],
+      "ttg": {
+        "first": "2球",
+        "prob": 24,
+        "second": "3球",
+        "prob2": 22
+      },
+      "htft": {
+        "first": "平/胜",
+        "prob": 15,
+        "second": "胜/胜",
+        "prob2": 12,
+        "third": "平/平",
+        "prob3": 12
+      },
+      "ht_score": [
+        [
+          "0:0",
+          18
+        ],
+        [
+          "1:0",
+          10
+        ],
+        [
+          "0:1",
+          8
+        ]
+      ],
+      "confidence": "★",
+      "lambdaHome": 1.45,
+      "lambdaAway": 1.25,
+      "lambdaTotal": 2.7,
+      "rule65": true,
+      "rule65Tier": "Tier3"
+    },
+    {
+      "matchNum": "005",
+      "league": "瑞超",
+      "home": "索尔纳",
+      "away": "哈马比",
+      "had": {
+        "first": "客胜",
+        "prob": 64,
+        "second": "平",
+        "prob2": 21
+      },
+      "hafu": {
+        "first": "让(+1)负",
+        "prob": 64,
+        "second": "让(+1)平",
+        "prob2": 21
+      },
+      "crs": [
+        [
+          "0:2",
+          10.8
+        ],
+        [
+          "0:1",
+          10.5
+        ],
+        [
+          "1:2",
+          9.9
+        ],
+        [
+          "1:1",
+          9.7
+        ],
+        [
+          "0:3",
+          7.4
+        ]
+      ],
+      "ttg": {
+        "first": "3球",
+        "prob": 22.4,
+        "second": "4球",
+        "prob2": 16.6
+      },
+      "htft": {
+        "first": "负/负",
+        "prob": 22,
+        "second": "平/负",
+        "prob2": 13,
+        "third": "负/平",
+        "prob3": 8
+      },
+      "ht_score": [
+        [
+          "0:1",
+          12
+        ],
+        [
+          "0:0",
+          16
+        ],
+        [
+          "0:2",
+          8
+        ]
+      ],
+      "confidence": "★★",
+      "lambdaHome": 0.92,
+      "lambdaAway": 2.05,
+      "lambdaTotal": 2.97,
+      "rule65": true,
+      "rule65Tier": "Tier2"
+    },
+    {
+      "matchNum": "006",
+      "league": "荷甲",
+      "home": "费耶诺德",
+      "away": "海牙",
+      "had": {
+        "first": "主胜",
+        "prob": 81,
+        "second": "平",
+        "prob2": 12
+      },
+      "hafu": {
+        "first": "让(-2)胜",
+        "prob": 50,
+        "second": "让(-2)平",
+        "prob2": 20
+      },
+      "crs": [
+        [
+          "胜其它",
+          14
+        ],
+        [
+          "3:0",
+          11
+        ],
+        [
+          "2:0",
+          10
+        ],
+        [
+          "3:1",
+          9
+        ],
+        [
+          "2:1",
+          7.5
+        ]
+      ],
+      "ttg": {
+        "first": "3球",
+        "prob": 21,
+        "second": "4球",
+        "prob2": 19
+      },
+      "htft": {
+        "first": "胜/胜",
+        "prob": 35,
+        "second": "平/胜",
+        "prob2": 12,
+        "third": "胜/平",
+        "prob3": 8
+      },
+      "ht_score": [
+        [
+          "1:0",
+          16
+        ],
+        [
+          "0:0",
+          14
+        ],
+        [
+          "2:0",
+          10
+        ]
+      ],
+      "confidence": "★★★",
+      "lambdaHome": 2.85,
+      "lambdaAway": 0.72,
+      "lambdaTotal": 3.57,
+      "rule65": true,
+      "rule65Tier": "Tier2"
+    },
+    {
+      "matchNum": "007",
+      "league": "挪超",
+      "home": "博德闪耀",
+      "away": "罗森博格",
+      "had": {
+        "first": "主胜",
+        "prob": 79,
+        "second": "平",
+        "prob2": 13
+      },
+      "hafu": {
+        "first": "让(-1)胜",
+        "prob": 55,
+        "second": "让(-1)负",
+        "prob2": 25
+      },
+      "crs": [
+        [
+          "2:1",
+          10
+        ],
+        [
+          "3:1",
+          9.5
+        ],
+        [
+          "2:0",
+          9
+        ],
+        [
+          "3:0",
+          8
+        ],
+        [
+          "胜其它",
+          7
+        ]
+      ],
+      "ttg": {
+        "first": "3球",
+        "prob": 20,
+        "second": "4球",
+        "prob2": 20
+      },
+      "htft": {
+        "first": "胜/胜",
+        "prob": 25,
+        "second": "平/胜",
+        "prob2": 12,
+        "third": "胜/平",
+        "prob3": 8
+      },
+      "ht_score": [
+        [
+          "1:0",
+          15
+        ],
+        [
+          "0:0",
+          14
+        ],
+        [
+          "2:0",
+          9
+        ]
+      ],
+      "confidence": "★★",
+      "lambdaHome": 2.15,
+      "lambdaAway": 0.95,
+      "lambdaTotal": 3.1,
+      "rule65": true,
+      "rule65Tier": "Tier2"
+    },
+    {
+      "matchNum": "008",
+      "league": "英超",
+      "home": "桑德兰",
+      "away": "富勒姆",
+      "had": {
+        "first": "主胜",
+        "prob": 41,
+        "second": "平",
+        "prob2": 26
+      },
+      "hafu": {
+        "first": "让(-1)负",
+        "prob": 59,
+        "second": "让(-1)平",
+        "prob2": 26
+      },
+      "crs": [
+        [
+          "1:1",
+          12
+        ],
+        [
+          "0:1",
+          10
+        ],
+        [
+          "1:0",
+          9
+        ],
+        [
+          "0:0",
+          8.5
+        ],
+        [
+          "1:2",
+          7.5
+        ]
+      ],
+      "ttg": {
+        "first": "2球",
+        "prob": 25,
+        "second": "3球",
+        "prob2": 22
+      },
+      "htft": {
+        "first": "平/平",
+        "prob": 13,
+        "second": "负/负",
+        "prob2": 11,
+        "third": "平/负",
+        "prob3": 11
+      },
+      "ht_score": [
+        [
+          "0:0",
+          20
+        ],
+        [
+          "0:1",
+          9
+        ],
+        [
+          "1:0",
+          8
+        ]
+      ],
+      "confidence": "★",
+      "lambdaHome": 1.28,
+      "lambdaAway": 1.35,
+      "lambdaTotal": 2.63,
+      "rule65": false
+    },
+    {
+      "matchNum": "009",
+      "league": "英超",
+      "home": "利兹联",
+      "away": "布伦特福德",
+      "had": {
+        "first": "客胜",
+        "prob": 43,
+        "second": "主胜",
+        "prob2": 32
+      },
+      "hafu": {
+        "first": "让(+1)胜",
+        "prob": 65,
+        "second": "让(+1)平",
+        "prob2": 25
+      },
+      "crs": [
+        [
+          "1:2",
+          10
+        ],
+        [
+          "1:1",
+          9
+        ],
+        [
+          "0:1",
+          8.5
+        ],
+        [
+          "2:1",
+          8
+        ],
+        [
+          "1:0",
+          7.5
+        ]
+      ],
+      "ttg": {
+        "first": "2球",
+        "prob": 24,
+        "second": "3球",
+        "prob2": 22
+      },
+      "htft": {
+        "first": "负/负",
+        "prob": 12,
+        "second": "平/负",
+        "prob2": 11,
+        "third": "平/平",
+        "prob3": 11
+      },
+      "ht_score": [
+        [
+          "0:0",
+          18
+        ],
+        [
+          "0:1",
+          10
+        ],
+        [
+          "1:0",
+          9
+        ]
+      ],
+      "confidence": "★",
+      "lambdaHome": 1.35,
+      "lambdaAway": 1.42,
+      "lambdaTotal": 2.77,
+      "rule65": false
+    },
+    {
+      "matchNum": "010",
+      "league": "法甲",
+      "home": "巴黎FC",
+      "away": "尼斯",
+      "had": {
+        "first": "主胜",
+        "prob": 44,
+        "second": "平",
+        "prob2": 26
+      },
+      "hafu": {
+        "first": "让(-1)负",
+        "prob": 56,
+        "second": "让(-1)平",
+        "prob2": 26
+      },
+      "crs": [
+        [
+          "1:1",
+          12
+        ],
+        [
+          "1:0",
+          9.5
+        ],
+        [
+          "0:0",
+          8.5
+        ],
+        [
+          "0:1",
+          8
+        ],
+        [
+          "2:1",
+          7
+        ]
+      ],
+      "ttg": {
+        "first": "2球",
+        "prob": 25,
+        "second": "3球",
+        "prob2": 22
+      },
+      "htft": {
+        "first": "平/平",
+        "prob": 13,
+        "second": "胜/胜",
+        "prob2": 11,
+        "third": "平/胜",
+        "prob3": 10
+      },
+      "ht_score": [
+        [
+          "0:0",
+          20
+        ],
+        [
+          "1:0",
+          9
+        ],
+        [
+          "0:1",
+          8
+        ]
+      ],
+      "confidence": "★",
+      "lambdaHome": 1.35,
+      "lambdaAway": 1.25,
+      "lambdaTotal": 2.6,
+      "rule65": false
+    },
+    {
+      "matchNum": "011",
+      "league": "德甲",
+      "home": "弗赖堡",
+      "away": "不来梅",
+      "had": {
+        "first": "主胜",
+        "prob": 65,
+        "second": "平",
+        "prob2": 23
+      },
+      "hafu": {
+        "first": "让(-1)胜",
+        "prob": 40,
+        "second": "让(-1)负",
+        "prob2": 35
+      },
+      "crs": [
+        [
+          "2:1",
+          11
+        ],
+        [
+          "1:0",
+          10.5
+        ],
+        [
+          "2:0",
+          9
+        ],
+        [
+          "1:1",
+          8.5
+        ],
+        [
+          "3:1",
+          7
+        ]
+      ],
+      "ttg": {
+        "first": "2球",
+        "prob": 25,
+        "second": "3球",
+        "prob2": 22
+      },
+      "htft": {
+        "first": "胜/胜",
+        "prob": 18,
+        "second": "平/胜",
+        "prob2": 14,
+        "third": "平/平",
+        "prob3": 12
+      },
+      "ht_score": [
+        [
+          "0:0",
+          18
+        ],
+        [
+          "1:0",
+          12
+        ],
+        [
+          "0:1",
+          7
+        ]
+      ],
+      "confidence": "★★",
+      "lambdaHome": 1.65,
+      "lambdaAway": 1.15,
+      "lambdaTotal": 2.8,
+      "rule65": true,
+      "rule65Tier": "Tier1"
+    },
+    {
+      "matchNum": "012",
+      "league": "荷甲",
+      "home": "特尔斯达",
+      "away": "阿贾克斯",
+      "had": {
+        "first": "客胜",
+        "prob": 72,
+        "second": "平",
+        "prob2": 17
+      },
+      "hafu": {
+        "first": "让(+1)负",
+        "prob": 72,
+        "second": "让(+1)平",
+        "prob2": 17
+      },
+      "crs": [
+        [
+          "0:2",
+          13
+        ],
+        [
+          "0:3",
+          11
+        ],
+        [
+          "1:2",
+          9.5
+        ],
+        [
+          "0:1",
+          9
+        ],
+        [
+          "1:3",
+          7.5
+        ]
+      ],
+      "ttg": {
+        "first": "3球",
+        "prob": 22,
+        "second": "4球",
+        "prob2": 18
+      },
+      "htft": {
+        "first": "负/负",
+        "prob": 25,
+        "second": "平/负",
+        "prob2": 12,
+        "third": "负/平",
+        "prob3": 8
+      },
+      "ht_score": [
+        [
+          "0:1",
+          14
+        ],
+        [
+          "0:0",
+          14
+        ],
+        [
+          "0:2",
+          9
+        ]
+      ],
+      "confidence": "★★",
+      "lambdaHome": 0.72,
+      "lambdaAway": 2.35,
+      "lambdaTotal": 3.07,
+      "rule65": true,
+      "rule65Tier": "Tier2"
+    },
+    {
+      "matchNum": "013",
+      "league": "西甲",
+      "home": "皇马",
+      "away": "马拉加",
+      "had": {
+        "first": "主胜",
+        "prob": 90,
+        "second": "—",
+        "prob2": 0
+      },
+      "hafu": {
+        "first": "让(-2)胜",
+        "prob": 45,
+        "second": "让(-2)平",
+        "prob2": 25
+      },
+      "crs": [
+        [
+          "胜其它",
+          18
+        ],
+        [
+          "3:0",
+          12
+        ],
+        [
+          "2:0",
+          10
+        ],
+        [
+          "4:0",
+          8
+        ],
+        [
+          "3:1",
+          7
+        ]
+      ],
+      "ttg": {
+        "first": "3球",
+        "prob": 21,
+        "second": "4球",
+        "prob2": 19.4
+      },
+      "htft": {
+        "first": "胜/胜",
+        "prob": 40,
+        "second": "平/胜",
+        "prob2": 10,
+        "third": "胜/平",
+        "prob3": 5
+      },
+      "ht_score": [
+        [
+          "1:0",
+          18
+        ],
+        [
+          "0:0",
+          12
+        ],
+        [
+          "2:0",
+          10
+        ]
+      ],
+      "confidence": "★★★",
+      "lambdaHome": 3.25,
+      "lambdaAway": 0.45,
+      "lambdaTotal": 3.7,
+      "rule65": true,
+      "rule65Tier": "Tier1"
+    },
+    {
+      "matchNum": "014",
+      "league": "英超",
+      "home": "曼联",
+      "away": "伊普斯维奇",
+      "had": {
+        "first": "主胜",
+        "prob": 68,
+        "second": "平",
+        "prob2": 17
+      },
+      "hafu": {
+        "first": "让(-1)胜",
+        "prob": 45,
+        "second": "让(-1)负",
+        "prob2": 35
+      },
+      "crs": [
+        [
+          "2:1",
+          11
+        ],
+        [
+          "2:0",
+          10
+        ],
+        [
+          "1:0",
+          9.5
+        ],
+        [
+          "3:1",
+          8
+        ],
+        [
+          "1:1",
+          7.5
+        ]
+      ],
+      "ttg": {
+        "first": "3球",
+        "prob": 22,
+        "second": "2球",
+        "prob2": 21
+      },
+      "htft": {
+        "first": "胜/胜",
+        "prob": 22,
+        "second": "平/胜",
+        "prob2": 13,
+        "third": "胜/平",
+        "prob3": 10
+      },
+      "ht_score": [
+        [
+          "0:0",
+          16
+        ],
+        [
+          "1:0",
+          12
+        ],
+        [
+          "0:1",
+          7
+        ]
+      ],
+      "confidence": "★★",
+      "lambdaHome": 1.85,
+      "lambdaAway": 0.95,
+      "lambdaTotal": 2.8,
+      "rule65": false
+    },
+    {
+      "matchNum": "015",
+      "league": "德甲",
+      "home": "奥格斯堡",
+      "away": "沙尔克04",
+      "had": {
+        "first": "主胜",
+        "prob": 49,
+        "second": "平",
+        "prob2": 25
+      },
+      "hafu": {
+        "first": "让(-1)负",
+        "prob": 51,
+        "second": "让(-1)平",
+        "prob2": 25
+      },
+      "crs": [
+        [
+          "1:1",
+          12
+        ],
+        [
+          "1:0",
+          10
+        ],
+        [
+          "2:1",
+          8.5
+        ],
+        [
+          "0:0",
+          8
+        ],
+        [
+          "2:0",
+          7.5
+        ]
+      ],
+      "ttg": {
+        "first": "2球",
+        "prob": 25,
+        "second": "3球",
+        "prob2": 22
+      },
+      "htft": {
+        "first": "平/胜",
+        "prob": 13,
+        "second": "平/平",
+        "prob2": 12,
+        "third": "胜/胜",
+        "prob3": 11
+      },
+      "ht_score": [
+        [
+          "0:0",
+          19
+        ],
+        [
+          "1:0",
+          10
+        ],
+        [
+          "0:1",
+          8
+        ]
+      ],
+      "confidence": "★",
+      "lambdaHome": 1.45,
+      "lambdaAway": 1.25,
+      "lambdaTotal": 2.7,
+      "rule65": true,
+      "rule65Tier": "Tier1"
+    },
+    {
+      "matchNum": "016",
+      "league": "意甲",
+      "home": "那不勒斯",
+      "away": "科莫",
+      "had": {
+        "first": "主胜",
+        "prob": 47,
+        "second": "平",
+        "prob2": 30
+      },
+      "hafu": {
+        "first": "让(-1)负",
+        "prob": 53,
+        "second": "让(-1)平",
+        "prob2": 30
+      },
+      "crs": [
+        [
+          "1:1",
+          13
+        ],
+        [
+          "1:0",
+          10.5
+        ],
+        [
+          "0:0",
+          9
+        ],
+        [
+          "2:1",
+          8
+        ],
+        [
+          "0:1",
+          7.5
+        ]
+      ],
+      "ttg": {
+        "first": "2球",
+        "prob": 26,
+        "second": "3球",
+        "prob2": 22
+      },
+      "htft": {
+        "first": "平/平",
+        "prob": 14,
+        "second": "平/负",
+        "prob2": 12,
+        "third": "负/负",
+        "prob3": 10
+      },
+      "ht_score": [
+        [
+          "0:0",
+          20
+        ],
+        [
+          "0:1",
+          9
+        ],
+        [
+          "1:0",
+          8
+        ]
+      ],
+      "confidence": "★",
+      "lambdaHome": 1.35,
+      "lambdaAway": 1.15,
+      "lambdaTotal": 2.5,
+      "rule65": false
+    },
+    {
+      "matchNum": "017",
+      "league": "西甲",
+      "home": "拉科鲁尼亚",
+      "away": "巴伦西亚",
+      "had": {
+        "first": "主胜",
+        "prob": 47,
+        "second": "平",
+        "prob2": 27
+      },
+      "hafu": {
+        "first": "让(-1)负",
+        "prob": 53,
+        "second": "让(-1)平",
+        "prob2": 27
+      },
+      "crs": [
+        [
+          "1:1",
+          12.7
+        ],
+        [
+          "1:0",
+          11.1
+        ],
+        [
+          "0:1",
+          9.4
+        ],
+        [
+          "2:1",
+          8.6
+        ],
+        [
+          "0:0",
+          8.2
+        ]
+      ],
+      "ttg": {
+        "first": "2球",
+        "prob": 26,
+        "second": "3球",
+        "prob2": 21
+      },
+      "htft": {
+        "first": "胜/胜",
+        "prob": 14,
+        "second": "平/胜",
+        "prob2": 13,
+        "third": "平/平",
+        "prob3": 13
+      },
+      "ht_score": [
+        [
+          "0:0",
+          20
+        ],
+        [
+          "1:0",
+          10
+        ],
+        [
+          "0:1",
+          8
+        ]
+      ],
+      "confidence": "★★",
+      "lambdaHome": 1.35,
+      "lambdaAway": 1.15,
+      "lambdaTotal": 2.5,
+      "rule65": false
+    },
+    {
+      "matchNum": "018",
+      "league": "荷甲",
+      "home": "坎布尔",
+      "away": "特温特",
+      "had": {
+        "first": "客胜",
+        "prob": 74,
+        "second": "平",
+        "prob2": 17
+      },
+      "hafu": {
+        "first": "让(+1)负",
+        "prob": 74,
+        "second": "让(+1)平",
+        "prob2": 17
+      },
+      "crs": [
+        [
+          "0:2",
+          12.8
+        ],
+        [
+          "0:1",
+          10.9
+        ],
+        [
+          "0:3",
+          10
+        ],
+        [
+          "1:2",
+          9.2
+        ],
+        [
+          "1:1",
+          7.9
+        ]
+      ],
+      "ttg": {
+        "first": "3球",
+        "prob": 22.4,
+        "second": "4球",
+        "prob2": 17.2
+      },
+      "htft": {
+        "first": "负/负",
+        "prob": 25,
+        "second": "平/负",
+        "prob2": 12,
+        "third": "负/平",
+        "prob3": 8
+      },
+      "ht_score": [
+        [
+          "0:1",
+          13
+        ],
+        [
+          "0:0",
+          14
+        ],
+        [
+          "0:2",
+          9
+        ]
+      ],
+      "confidence": "★★",
+      "lambdaHome": 0.72,
+      "lambdaAway": 2.35,
+      "lambdaTotal": 3.07,
+      "rule65": true,
+      "rule65Tier": "Tier2"
+    },
+    {
+      "matchNum": "019",
+      "league": "意甲",
+      "home": "拉齐奥",
+      "away": "热那亚",
+      "had": {
+        "first": "主胜",
+        "prob": 56,
+        "second": "平",
+        "prob2": 26
+      },
+      "hafu": {
+        "first": "让(-1)负",
+        "prob": 44,
+        "second": "让(-1)平",
+        "prob2": 26
+      },
+      "crs": [
+        [
+          "1:0",
+          15.1
+        ],
+        [
+          "1:1",
+          11.8
+        ],
+        [
+          "2:0",
+          11.7
+        ],
+        [
+          "0:0",
+          9.7
+        ],
+        [
+          "2:1",
+          9.1
+        ]
+      ],
+      "ttg": {
+        "first": "2球",
+        "prob": 26.4,
+        "second": "1球",
+        "prob2": 22.7
+      },
+      "htft": {
+        "first": "胜/胜",
+        "prob": 18,
+        "second": "平/胜",
+        "prob2": 15,
+        "third": "平/平",
+        "prob3": 13
+      },
+      "ht_score": [
+        [
+          "0:0",
+          20
+        ],
+        [
+          "1:0",
+          14
+        ],
+        [
+          "0:1",
+          5
+        ]
+      ],
+      "confidence": "★★",
+      "lambdaHome": 1.55,
+      "lambdaAway": 0.78,
+      "lambdaTotal": 2.33,
+      "rule65": false
+    },
+    {
+      "matchNum": "020",
+      "league": "意甲",
+      "home": "卡利亚里",
+      "away": "国际米兰",
+      "had": {
+        "first": "客胜",
+        "prob": 78,
+        "second": "平",
+        "prob2": 17
+      },
+      "hafu": {
+        "first": "让(+1)负",
+        "prob": 78,
+        "second": "让(+1)平",
+        "prob2": 17
+      },
+      "crs": [
+        [
+          "0:2",
+          13.9
+        ],
+        [
+          "0:1",
+          12.4
+        ],
+        [
+          "0:3",
+          10.4
+        ],
+        [
+          "1:2",
+          9.1
+        ],
+        [
+          "1:1",
+          8
+        ]
+      ],
+      "ttg": {
+        "first": "3球",
+        "prob": 22.4,
+        "second": "4球",
+        "prob2": 16.2
+      },
+      "htft": {
+        "first": "负/负",
+        "prob": 28,
+        "second": "平/负",
+        "prob2": 13,
+        "third": "负/平",
+        "prob3": 6
+      },
+      "ht_score": [
+        [
+          "0:1",
+          14
+        ],
+        [
+          "0:0",
+          14
+        ],
+        [
+          "0:2",
+          9
+        ]
+      ],
+      "confidence": "★★★",
+      "lambdaHome": 0.65,
+      "lambdaAway": 2.25,
+      "lambdaTotal": 2.9,
+      "rule65": true,
+      "rule65Tier": "Tier1"
+    },
+    {
+      "matchNum": "021",
+      "league": "法甲",
+      "home": "摩纳哥",
+      "away": "马赛",
+      "had": {
+        "first": "客胜",
+        "prob": 40,
+        "second": "主胜",
+        "prob2": 39
+      },
+      "hafu": {
+        "first": "让(+1)胜",
+        "prob": 65,
+        "second": "让(+1)平",
+        "prob2": 25
+      },
+      "crs": [
+        [
+          "1:1",
+          12
+        ],
+        [
+          "1:0",
+          8.9
+        ],
+        [
+          "2:1",
+          8.5
+        ],
+        [
+          "0:1",
+          8.5
+        ],
+        [
+          "1:2",
+          8.1
+        ]
+      ],
+      "ttg": {
+        "first": "2球",
+        "prob": 24,
+        "second": "3球",
+        "prob2": 22
+      },
+      "htft": {
+        "first": "平/平",
+        "prob": 12,
+        "second": "负/负",
+        "prob2": 10,
+        "third": "平/负",
+        "prob3": 10
+      },
+      "ht_score": [
+        [
+          "0:0",
+          20
+        ],
+        [
+          "1:0",
+          9
+        ],
+        [
+          "0:1",
+          9
+        ]
+      ],
+      "confidence": "★",
+      "lambdaHome": 1.42,
+      "lambdaAway": 1.35,
+      "lambdaTotal": 2.77,
+      "rule65": false
+    },
+    {
+      "matchNum": "022",
+      "league": "巴甲",
+      "home": "弗拉门戈",
+      "away": "博塔弗戈",
+      "had": {
+        "first": "主胜",
+        "prob": 76,
+        "second": "平",
+        "prob2": 19
+      },
+      "hafu": {
+        "first": "让(-1)胜",
+        "prob": 50,
+        "second": "让(-1)负",
+        "prob2": 30
+      },
+      "crs": [
+        [
+          "2:0",
+          13.1
+        ],
+        [
+          "1:0",
+          12.2
+        ],
+        [
+          "2:1",
+          9.4
+        ],
+        [
+          "3:0",
+          9.4
+        ],
+        [
+          "1:1",
+          8.8
+        ]
+      ],
+      "ttg": {
+        "first": "2球",
+        "prob": 23.4,
+        "second": "3球",
+        "prob2": 22.3
+      },
+      "htft": {
+        "first": "胜/胜",
+        "prob": 28,
+        "second": "平/胜",
+        "prob2": 12,
+        "third": "胜/平",
+        "prob3": 8
+      },
+      "ht_score": [
+        [
+          "1:0",
+          16
+        ],
+        [
+          "0:0",
+          14
+        ],
+        [
+          "2:0",
+          8
+        ]
+      ],
+      "confidence": "★★★",
+      "lambdaHome": 2.15,
+      "lambdaAway": 0.72,
+      "lambdaTotal": 2.87,
+      "rule65": true,
+      "rule65Tier": "Tier1"
+    },
+    {
+      "matchNum": "023",
+      "league": "西甲",
+      "home": "塞尔塔",
+      "away": "毕尔巴鄂",
+      "had": {
+        "first": "主胜",
+        "prob": 39,
+        "second": "平",
+        "prob2": 26
+      },
+      "hafu": {
+        "first": "让(-1)负",
+        "prob": 57,
+        "second": "让(-1)平",
+        "prob2": 26
+      },
+      "crs": [
+        [
+          "1:1",
+          12.4
+        ],
+        [
+          "1:0",
+          9.7
+        ],
+        [
+          "0:1",
+          9
+        ],
+        [
+          "2:1",
+          8.5
+        ],
+        [
+          "1:2",
+          7.9
+        ]
+      ],
+      "ttg": {
+        "first": "2球",
+        "prob": 24.7,
+        "second": "3球",
+        "prob2": 21.9
+      },
+      "htft": {
+        "first": "平/平",
+        "prob": 13,
+        "second": "胜/胜",
+        "prob2": 11,
+        "third": "平/胜",
+        "prob3": 11
+      },
+      "ht_score": [
+        [
+          "0:0",
+          20
+        ],
+        [
+          "1:0",
+          9
+        ],
+        [
+          "0:1",
+          8
+        ]
+      ],
+      "confidence": "★",
+      "lambdaHome": 1.38,
+      "lambdaAway": 1.28,
+      "lambdaTotal": 2.66,
+      "rule65": false
+    },
+    {
+      "matchNum": "024",
+      "league": "葡超",
+      "home": "法马利康",
+      "away": "吉尔维森特",
+      "had": {
+        "first": "主胜",
+        "prob": 50,
+        "second": "平",
+        "prob2": 26
+      },
+      "hafu": {
+        "first": "让(-1)负",
+        "prob": 50,
+        "second": "让(-1)平",
+        "prob2": 26
+      },
+      "crs": [
+        [
+          "1:0",
+          14.1
+        ],
+        [
+          "1:1",
+          12
+        ],
+        [
+          "2:0",
+          10.9
+        ],
+        [
+          "2:1",
+          9.3
+        ],
+        [
+          "0:0",
+          9.1
+        ]
+      ],
+      "ttg": {
+        "first": "2球",
+        "prob": 26.1,
+        "second": "1球",
+        "prob2": 21.8
+      },
+      "htft": {
+        "first": "胜/胜",
+        "prob": 14,
+        "second": "平/胜",
+        "prob2": 12,
+        "third": "平/平",
+        "prob3": 12
+      },
+      "ht_score": [
+        [
+          "0:0",
+          20
+        ],
+        [
+          "1:0",
+          11
+        ],
+        [
+          "0:1",
+          6
+        ]
+      ],
+      "confidence": "★",
+      "lambdaHome": 1.55,
+      "lambdaAway": 0.85,
+      "lambdaTotal": 2.4,
+      "rule65": true,
+      "rule65Tier": "Tier1"
+    },
+    {
+      "matchNum": "025",
+      "league": "美职",
+      "home": "圣路易城",
+      "away": "达拉斯",
+      "had": {
+        "first": "主胜",
+        "prob": 46,
+        "second": "平",
+        "prob2": 25
+      },
+      "hafu": {
+        "first": "让(-1)负",
+        "prob": 54,
+        "second": "让(-1)平",
+        "prob2": 25
+      },
+      "crs": [
+        [
+          "1:1",
+          11.9
+        ],
+        [
+          "1:0",
+          10.1
+        ],
+        [
+          "2:1",
+          9.2
+        ],
+        [
+          "2:0",
+          7.8
+        ],
+        [
+          "0:1",
+          7.7
+        ]
+      ],
+      "ttg": {
+        "first": "2球",
+        "prob": 24.3,
+        "second": "3球",
+        "prob2": 22.1
+      },
+      "htft": {
+        "first": "平/平",
+        "prob": 13,
+        "second": "胜/胜",
+        "prob2": 11,
+        "third": "平/胜",
+        "prob3": 10
+      },
+      "ht_score": [
+        [
+          "0:0",
+          20
+        ],
+        [
+          "1:0",
+          10
+        ],
+        [
+          "0:1",
+          8
+        ]
+      ],
+      "confidence": "★",
+      "lambdaHome": 1.55,
+      "lambdaAway": 1.18,
+      "lambdaTotal": 2.73,
+      "rule65": false
+    }
+  ]
+}

@@ -1,0 +1,2014 @@
+{
+ "date": "2026-10-16",
+ "day": "周五",
+ "ticket_id": "261016",
+ "fetched_at": "2026-10-17 09:10（官方 JSON lastUpdateTime 08:49:46）",
+ "result_source": "体彩官方 getUniformMatchResultV1（/gateway/uniform/football/）；011巴甲官方未开奖，全场2:0与半场0:0均由用户告知，半场已补齐",
+ "rows": [
+  {
+   "id": "001",
+   "league": "澳超",
+   "home": "悉尼FC",
+   "away": "西悉尼漫步者",
+   "conf": "★★",
+   "single": true,
+   "ht": "0:0",
+   "ft": "0:0",
+   "goalLine": "-1",
+   "source": "体彩官方",
+   "had": {
+    "first": "主胜",
+    "second": "客胜",
+    "actual": "平",
+    "hit": "❌"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让负",
+    "second": "让平",
+    "actual": "让负",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "2-1",
+     "1-1",
+     "1-0",
+     "1-2",
+     "2-2"
+    ],
+    "actual": "0-0",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "3"
+    ],
+    "actual": "0",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "闷战超小球",
+    "actualGoals": 0,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "负负",
+     "平胜"
+    ],
+    "actual": "平平",
+    "hit": false,
+    "rank": 0
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 1
+   },
+   "bofen": {
+    "type": "爆冷",
+    "pick": "1-2",
+    "odds": 9,
+    "actual": "0-0",
+    "hit": "❌"
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": 1,
+    "actual": 0,
+    "krecBand": false
+   }
+  },
+  {
+   "id": "002",
+   "league": "德乙",
+   "home": "科特布斯",
+   "away": "纽伦堡",
+   "conf": "★★",
+   "single": false,
+   "ht": "0:0",
+   "ft": "1:1",
+   "goalLine": "+1",
+   "source": "体彩官方",
+   "had": {
+    "first": "客胜",
+    "second": "主胜",
+    "actual": "平",
+    "hit": "❌"
+   },
+   "hhad": {
+    "line": 1,
+    "first": "让胜",
+    "second": "让负",
+    "actual": "让胜",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "1-2",
+     "0-1",
+     "1-1",
+     "1-3",
+     "2-1"
+    ],
+    "actual": "1-1",
+    "hit": true,
+    "rank": 3
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "2"
+    ],
+    "actual": "2",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "常规正常球",
+    "actualGoals": 2,
+    "hit": true
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "胜胜",
+     "平负"
+    ],
+    "actual": "平平",
+    "hit": false,
+    "rank": 0
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "0-1",
+     "1-0"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 1
+   },
+   "bofen": {
+    "type": "穿盘大热",
+    "pick": "1-3",
+    "odds": 12,
+    "actual": "1-1",
+    "hit": "❌"
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": -1,
+    "actual": 0,
+    "krecBand": false
+   }
+  },
+  {
+   "id": "003",
+   "league": "瑞超",
+   "home": "布鲁马波卡纳",
+   "away": "佐加顿斯",
+   "conf": "★★",
+   "single": false,
+   "ht": "0:1",
+   "ft": "0:2",
+   "goalLine": "+1",
+   "source": "体彩官方",
+   "had": {
+    "first": "客胜",
+    "second": "主胜",
+    "actual": "客胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": 1,
+    "first": "让胜",
+    "second": "让负",
+    "actual": "让负",
+    "hit": "✅次"
+   },
+   "crs": {
+    "top5": [
+     "1-2",
+     "0-1",
+     "1-1",
+     "0-2",
+     "2-1"
+    ],
+    "actual": "0-2",
+    "hit": true,
+    "rank": 4
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "3"
+    ],
+    "actual": "2",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "常规正常球",
+    "actualGoals": 2,
+    "hit": true
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "平负",
+     "胜胜"
+    ],
+    "actual": "负负",
+    "hit": true,
+    "rank": 1
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "0-1",
+     "1-0"
+    ],
+    "actual": "0-1",
+    "hit": true,
+    "rank": 2
+   },
+   "bofen": {
+    "type": "穿盘大热",
+    "pick": "0-2",
+    "odds": 8,
+    "actual": "0-2",
+    "hit": "✅"
+   },
+   "k": {
+    "k_dist": -1,
+    "k_rec": -1,
+    "actual": -2,
+    "krecBand": true
+   }
+  },
+  {
+   "id": "004",
+   "league": "荷甲",
+   "home": "海伦芬",
+   "away": "SBV精英",
+   "conf": "★★",
+   "single": false,
+   "ht": "1:0",
+   "ft": "4:0",
+   "goalLine": "-1",
+   "source": "体彩官方",
+   "had": {
+    "first": "主胜",
+    "second": "客胜",
+    "actual": "主胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让负",
+    "second": "让胜",
+    "actual": "让胜",
+    "hit": "✅次"
+   },
+   "crs": {
+    "top5": [
+     "2-1",
+     "1-1",
+     "1-0",
+     "2-0",
+     "3-1"
+    ],
+    "actual": "4-0",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "4"
+    ],
+    "actual": "4",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "大球",
+    "actualGoals": 4,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "负负"
+    ],
+    "actual": "胜胜",
+    "hit": true,
+    "rank": 1
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "actual": "1-0",
+    "hit": true,
+    "rank": 2
+   },
+   "bofen": {
+    "type": "搏冷",
+    "pick": "2-2",
+    "odds": 11,
+    "actual": "4-0",
+    "hit": "❌"
+   },
+   "k": {
+    "k_dist": 1,
+    "k_rec": 1,
+    "actual": 4,
+    "krecBand": true
+   }
+  },
+  {
+   "id": "005",
+   "league": "荷乙",
+   "home": "登博思",
+   "away": "奥斯",
+   "conf": "★★",
+   "single": false,
+   "ht": "2:0",
+   "ft": "2:1",
+   "goalLine": "-1",
+   "source": "体彩官方",
+   "had": {
+    "first": "主胜",
+    "second": "客胜",
+    "actual": "主胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让负",
+    "second": "让胜",
+    "actual": "让平",
+    "hit": "❌"
+   },
+   "crs": {
+    "top5": [
+     "2-1",
+     "2-0",
+     "1-1",
+     "1-0",
+     "3-1"
+    ],
+    "actual": "2-1",
+    "hit": true,
+    "rank": 1
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "2"
+    ],
+    "actual": "3",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "常规正常球",
+    "actualGoals": 3,
+    "hit": true
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "负负"
+    ],
+    "actual": "胜胜",
+    "hit": true,
+    "rank": 1
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "actual": "2-0",
+    "hit": false,
+    "rank": 0
+   },
+   "bofen": {
+    "type": "穿盘大热",
+    "pick": "3-1",
+    "odds": 10,
+    "actual": "2-1",
+    "hit": "⚠️"
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": 1,
+    "actual": 1,
+    "krecBand": true
+   }
+  },
+  {
+   "id": "006",
+   "league": "德甲",
+   "home": "法兰克福",
+   "away": "科隆",
+   "conf": "★★",
+   "single": true,
+   "ht": "0:0",
+   "ft": "1:0",
+   "goalLine": "-1",
+   "source": "体彩官方",
+   "had": {
+    "first": "主胜",
+    "second": "平",
+    "actual": "主胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让负",
+    "second": "让胜",
+    "actual": "让平",
+    "hit": "❌"
+   },
+   "crs": {
+    "top5": [
+     "2-1",
+     "1-1",
+     "1-0",
+     "2-0",
+     "3-1"
+    ],
+    "actual": "1-0",
+    "hit": true,
+    "rank": 3
+   },
+   "ttg": {
+    "pick": [
+     "3",
+     "4"
+    ],
+    "actual": "1",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "闷战超小球",
+    "actualGoals": 1,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平胜",
+     "负负"
+    ],
+    "actual": "平胜",
+    "hit": true,
+    "rank": 2
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 1
+   },
+   "bofen": {
+    "type": "搏冷",
+    "pick": "1-1",
+    "odds": 8.25,
+    "actual": "1-0",
+    "hit": "❌"
+   },
+   "k": {
+    "k_dist": 1,
+    "k_rec": 1,
+    "actual": 1,
+    "krecBand": true
+   }
+  },
+  {
+   "id": "007",
+   "league": "意甲",
+   "home": "弗洛西诺内",
+   "away": "萨索洛",
+   "conf": "★",
+   "single": false,
+   "ht": "3:2",
+   "ft": "4:2",
+   "goalLine": "-1",
+   "source": "体彩官方",
+   "had": {
+    "first": "主胜",
+    "second": "客胜",
+    "actual": "主胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让负",
+    "second": "让平",
+    "actual": "让胜",
+    "hit": "❌"
+   },
+   "crs": {
+    "top5": [
+     "1-0",
+     "1-1",
+     "0-0",
+     "2-1",
+     "0-1"
+    ],
+    "actual": "4-2",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "3"
+    ],
+    "actual": "6",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "超大球",
+    "actualGoals": 6,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "负负",
+     "平平"
+    ],
+    "actual": "胜胜",
+    "hit": true,
+    "rank": 1
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "0-1",
+     "1-0"
+    ],
+    "actual": "3-2",
+    "hit": false,
+    "rank": 0
+   },
+   "bofen": {
+    "type": "爆冷",
+    "pick": "1-2",
+    "odds": 8.5,
+    "actual": "4-2",
+    "hit": "❌"
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": 1,
+    "actual": 2,
+    "krecBand": true
+   }
+  },
+  {
+   "id": "008",
+   "league": "法甲",
+   "home": "勒芒",
+   "away": "图卢兹",
+   "conf": "★",
+   "single": false,
+   "ht": "0:0",
+   "ft": "0:3",
+   "goalLine": "+1",
+   "source": "体彩官方",
+   "had": {
+    "first": "客胜",
+    "second": "主胜",
+    "actual": "客胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": 1,
+    "first": "让胜",
+    "second": "让平",
+    "actual": "让负",
+    "hit": "❌"
+   },
+   "crs": {
+    "top5": [
+     "0-1",
+     "1-1",
+     "1-0",
+     "1-2",
+     "0-0"
+    ],
+    "actual": "0-3",
+    "hit": false,
+    "rank": 0
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "3"
+    ],
+    "actual": "3",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "常规正常球",
+    "actualGoals": 3,
+    "hit": true
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "胜胜",
+     "平平"
+    ],
+    "actual": "平负",
+    "hit": false,
+    "rank": 0
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "0-1",
+     "1-0"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 1
+   },
+   "bofen": {
+    "type": "穿盘大热",
+    "pick": "0-2",
+    "odds": 12,
+    "actual": "0-3",
+    "hit": "⚠️"
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": -1,
+    "actual": -3,
+    "krecBand": true
+   }
+  },
+  {
+   "id": "009",
+   "league": "英冠",
+   "home": "伯恩利",
+   "away": "狼队",
+   "conf": "★",
+   "single": false,
+   "ht": "1:1",
+   "ft": "1:2",
+   "goalLine": "+1",
+   "source": "体彩官方",
+   "had": {
+    "first": "客胜",
+    "second": "主胜",
+    "actual": "客胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": 1,
+    "first": "让胜",
+    "second": "让平",
+    "actual": "让平",
+    "hit": "✅次"
+   },
+   "crs": {
+    "top5": [
+     "0-1",
+     "1-1",
+     "1-0",
+     "0-0",
+     "1-2"
+    ],
+    "actual": "1-2",
+    "hit": true,
+    "rank": 5
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "1"
+    ],
+    "actual": "3",
+    "hit": false
+   },
+   "bsize": {
+    "tier": "小球",
+    "actual": "常规正常球",
+    "actualGoals": 3,
+    "hit": false
+   },
+   "hafu": {
+    "top3": [
+     "负负",
+     "胜胜",
+     "平平"
+    ],
+    "actual": "平负",
+    "hit": false,
+    "rank": 0
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "0-1",
+     "1-0"
+    ],
+    "actual": "1-1",
+    "hit": false,
+    "rank": 0
+   },
+   "bofen": {
+    "type": "搏冷",
+    "pick": "1-1",
+    "odds": 6,
+    "actual": "1-2",
+    "hit": "❌"
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": -1,
+    "actual": -1,
+    "krecBand": true
+   }
+  },
+  {
+   "id": "010",
+   "league": "西甲",
+   "home": "拉科鲁尼亚",
+   "away": "莱万特",
+   "conf": "★",
+   "single": false,
+   "ht": "0:0",
+   "ft": "1:1",
+   "goalLine": "-1",
+   "source": "体彩官方",
+   "had": {
+    "first": "主胜",
+    "second": "客胜",
+    "actual": "平",
+    "hit": "❌"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让负",
+    "second": "让平",
+    "actual": "让负",
+    "hit": "✅首"
+   },
+   "crs": {
+    "top5": [
+     "1-0",
+     "1-1",
+     "0-0",
+     "2-0",
+     "0-1"
+    ],
+    "actual": "1-1",
+    "hit": true,
+    "rank": 2
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "3"
+    ],
+    "actual": "2",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "常规正常球",
+    "actualGoals": 2,
+    "hit": true
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平平",
+     "平胜"
+    ],
+    "actual": "平平",
+    "hit": true,
+    "rank": 2
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 1
+   },
+   "bofen": {
+    "type": "搏冷",
+    "pick": "0-0",
+    "odds": 11,
+    "actual": "1-1",
+    "hit": "⚠️"
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": 1,
+    "actual": 0,
+    "krecBand": false
+   }
+  },
+  {
+   "id": "011",
+   "league": "巴甲",
+   "home": "米拉索尔",
+   "away": "巴西国际",
+   "conf": "★★",
+   "single": false,
+   "ht": "0:0",
+   "ft": "2:0",
+   "goalLine": "-1",
+   "source": "全场2:0 用户告知（体彩官方 matchResultStatus=1 未开奖）；半场0:0 用户告知",
+   "had": {
+    "first": "主胜",
+    "second": "客胜",
+    "actual": "主胜",
+    "hit": "✅首"
+   },
+   "hhad": {
+    "line": -1,
+    "first": "让负",
+    "second": "让平",
+    "actual": "让胜",
+    "hit": "❌"
+   },
+   "crs": {
+    "top5": [
+     "1-0",
+     "1-1",
+     "2-1",
+     "0-0",
+     "2-0"
+    ],
+    "actual": "2-0",
+    "hit": true,
+    "rank": 5
+   },
+   "ttg": {
+    "pick": [
+     "2",
+     "3"
+    ],
+    "actual": "2",
+    "hit": true
+   },
+   "bsize": {
+    "tier": "常规正常球",
+    "actual": "常规正常球",
+    "actualGoals": 2,
+    "hit": true
+   },
+   "hafu": {
+    "top3": [
+     "胜胜",
+     "平平",
+     "负负"
+    ],
+    "actual": "平胜",
+    "hit": false,
+    "rank": 0
+   },
+   "htScore": {
+    "top3": [
+     "0-0",
+     "1-0",
+     "0-1"
+    ],
+    "actual": "0-0",
+    "hit": true,
+    "rank": 1
+   },
+   "bofen": {
+    "type": "穿盘大热",
+    "pick": "2-0",
+    "odds": 11,
+    "actual": "2-0",
+    "hit": "✅"
+   },
+   "k": {
+    "k_dist": 0,
+    "k_rec": 1,
+    "actual": 2,
+    "krecBand": true
+   }
+  }
+ ],
+ "tally": {
+  "n": 11,
+  "dirMerged": 8,
+  "dirFirst": 8,
+  "dirSecond": 0,
+  "hhadMerged": 6,
+  "hhadFirst": 3,
+  "hhadSecond": 3,
+  "ttg": 7,
+  "hafu": 6,
+  "hafuN": 11,
+  "crs": 7,
+  "bofen": 2,
+  "bofenDir": 3,
+  "bsize": 6,
+  "htScore": 8,
+  "htScoreN": 11,
+  "krecBand": 8
+ },
+ "byConf": {
+  "★★": {
+   "n": 7,
+   "hit": 5
+  },
+  "★": {
+   "n": 4,
+   "hit": 3
+  }
+ },
+ "parlays": [
+  {
+   "name": "方向串A",
+   "type": "方向串",
+   "odds": 3.33,
+   "legs": [
+    [
+     "002",
+     "客胜",
+     null
+    ],
+    [
+     "006",
+     "主胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "002",
+     "pick": "客胜",
+     "r": "N"
+    },
+    {
+     "id": "006",
+     "pick": "主胜",
+     "r": "Y"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "方向串B",
+   "type": "方向串",
+   "odds": 4.1,
+   "legs": [
+    [
+     "003",
+     "客胜",
+     null
+    ],
+    [
+     "004",
+     "主胜",
+     null
+    ],
+    [
+     "010",
+     "主胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "003",
+     "pick": "客胜",
+     "r": "Y"
+    },
+    {
+     "id": "004",
+     "pick": "主胜",
+     "r": "Y"
+    },
+    {
+     "id": "010",
+     "pick": "主胜",
+     "r": "N"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "方向串C",
+   "type": "方向串",
+   "odds": 8.09,
+   "legs": [
+    [
+     "001",
+     "主胜",
+     null
+    ],
+    [
+     "011",
+     "主胜",
+     null
+    ],
+    [
+     "006",
+     "主胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "001",
+     "pick": "主胜",
+     "r": "N"
+    },
+    {
+     "id": "011",
+     "pick": "主胜",
+     "r": "Y"
+    },
+    {
+     "id": "006",
+     "pick": "主胜",
+     "r": "Y"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "稳健让球串",
+   "type": "让球串",
+   "odds": 4.21,
+   "legs": [
+    [
+     "002",
+     "让胜",
+     null
+    ],
+    [
+     "009",
+     "让胜",
+     null
+    ],
+    [
+     "008",
+     "让胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "002",
+     "pick": "让胜",
+     "r": "Y"
+    },
+    {
+     "id": "009",
+     "pick": "让胜",
+     "r": "N"
+    },
+    {
+     "id": "008",
+     "pick": "让胜",
+     "r": "N"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "价值让球串",
+   "type": "让球串",
+   "odds": 8.12,
+   "legs": [
+    [
+     "003",
+     "让胜",
+     null
+    ],
+    [
+     "005",
+     "让负",
+     null
+    ],
+    [
+     "007",
+     "让负",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "003",
+     "pick": "让胜",
+     "r": "N"
+    },
+    {
+     "id": "005",
+     "pick": "让负",
+     "r": "N"
+    },
+    {
+     "id": "007",
+     "pick": "让负",
+     "r": "N"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "半全场串A",
+   "type": "混合串",
+   "odds": 14.35,
+   "legs": [
+    [
+     "006",
+     "胜胜",
+     null
+    ],
+    [
+     "004",
+     "胜胜",
+     null
+    ],
+    [
+     "005",
+     "胜胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "006",
+     "pick": "胜胜",
+     "r": "N"
+    },
+    {
+     "id": "004",
+     "pick": "胜胜",
+     "r": "Y"
+    },
+    {
+     "id": "005",
+     "pick": "胜胜",
+     "r": "Y"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "半全场串B",
+   "type": "混合串",
+   "odds": 19.34,
+   "legs": [
+    [
+     "002",
+     "负负",
+     null
+    ],
+    [
+     "003",
+     "负负",
+     null
+    ],
+    [
+     "011",
+     "胜胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "002",
+     "pick": "负负",
+     "r": "N"
+    },
+    {
+     "id": "003",
+     "pick": "负负",
+     "r": "Y"
+    },
+    {
+     "id": "011",
+     "pick": "胜胜",
+     "r": "N"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "方向+半全场A",
+   "type": "混合串",
+   "odds": 3.96,
+   "legs": [
+    [
+     "006",
+     "主胜",
+     null
+    ],
+    [
+     "004",
+     "胜胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "006",
+     "pick": "主胜",
+     "r": "Y"
+    },
+    {
+     "id": "004",
+     "pick": "胜胜",
+     "r": "Y"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": true
+  },
+  {
+   "name": "方向+半全场B",
+   "type": "混合串",
+   "odds": 3.52,
+   "legs": [
+    [
+     "002",
+     "客胜",
+     null
+    ],
+    [
+     "003",
+     "负负",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "002",
+     "pick": "客胜",
+     "r": "N"
+    },
+    {
+     "id": "003",
+     "pick": "负负",
+     "r": "Y"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "连续编号混合串A(004+005)",
+   "type": "混合串",
+   "odds": 5.13,
+   "legs": [
+    [
+     "004",
+     "胜胜",
+     null
+    ],
+    [
+     "005",
+     "胜胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "004",
+     "pick": "胜胜",
+     "r": "Y"
+    },
+    {
+     "id": "005",
+     "pick": "胜胜",
+     "r": "Y"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": true
+  },
+  {
+   "name": "连续编号混合串B(009+010)",
+   "type": "混合串",
+   "odds": 11.54,
+   "legs": [
+    [
+     "010",
+     "胜胜",
+     null
+    ],
+    [
+     "009",
+     "负负",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "010",
+     "pick": "胜胜",
+     "r": "N"
+    },
+    {
+     "id": "009",
+     "pick": "负负",
+     "r": "N"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "总进球串A",
+   "type": "高赔总进球串",
+   "odds": 60.64,
+   "legs": [
+    [
+     "006",
+     3,
+     null
+    ],
+    [
+     "002",
+     3,
+     null
+    ],
+    [
+     "003",
+     2,
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "006",
+     "pick": 3,
+     "r": "N"
+    },
+    {
+     "id": "002",
+     "pick": 3,
+     "r": "N"
+    },
+    {
+     "id": "003",
+     "pick": 2,
+     "r": "Y"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "总进球串B",
+   "type": "高赔总进球串",
+   "odds": 38.48,
+   "legs": [
+    [
+     "004",
+     3,
+     null
+    ],
+    [
+     "011",
+     2,
+     null
+    ],
+    [
+     "010",
+     2,
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "004",
+     "pick": 3,
+     "r": "N"
+    },
+    {
+     "id": "011",
+     "pick": 2,
+     "r": "Y"
+    },
+    {
+     "id": "010",
+     "pick": 2,
+     "r": "Y"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "连续编号总进球串①",
+   "type": "高赔总进球串",
+   "odds": 16.17,
+   "legs": [
+    [
+     "002",
+     3,
+     null
+    ],
+    [
+     "003",
+     2,
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "002",
+     "pick": 3,
+     "r": "N"
+    },
+    {
+     "id": "003",
+     "pick": 2,
+     "r": "Y"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "连续编号总进球串②",
+   "type": "高赔总进球串",
+   "odds": 11.7,
+   "legs": [
+    [
+     "009",
+     2,
+     null
+    ],
+    [
+     "010",
+     2,
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "009",
+     "pick": 2,
+     "r": "N"
+    },
+    {
+     "id": "010",
+     "pick": 2,
+     "r": "Y"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "高赔半全场串A",
+   "type": "高赔半全场串",
+   "odds": 14.35,
+   "legs": [
+    [
+     "006",
+     "胜胜",
+     null
+    ],
+    [
+     "004",
+     "胜胜",
+     null
+    ],
+    [
+     "005",
+     "胜胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "006",
+     "pick": "胜胜",
+     "r": "N"
+    },
+    {
+     "id": "004",
+     "pick": "胜胜",
+     "r": "Y"
+    },
+    {
+     "id": "005",
+     "pick": "胜胜",
+     "r": "Y"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "高赔半全场串B",
+   "type": "高赔半全场串",
+   "odds": 19.34,
+   "legs": [
+    [
+     "002",
+     "负负",
+     null
+    ],
+    [
+     "003",
+     "负负",
+     null
+    ],
+    [
+     "011",
+     "胜胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "002",
+     "pick": "负负",
+     "r": "N"
+    },
+    {
+     "id": "003",
+     "pick": "负负",
+     "r": "Y"
+    },
+    {
+     "id": "011",
+     "pick": "胜胜",
+     "r": "N"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "连续编号高赔半全场串①",
+   "type": "高赔半全场串",
+   "odds": 12.82,
+   "legs": [
+    [
+     "005",
+     "胜胜",
+     null
+    ],
+    [
+     "006",
+     "平胜",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "005",
+     "pick": "胜胜",
+     "r": "Y"
+    },
+    {
+     "id": "006",
+     "pick": "平胜",
+     "r": "Y"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": true
+  },
+  {
+   "name": "连续编号高赔半全场串②",
+   "type": "高赔半全场串",
+   "odds": 12.24,
+   "legs": [
+    [
+     "002",
+     "负负",
+     null
+    ],
+    [
+     "003",
+     "平负",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "002",
+     "pick": "负负",
+     "r": "N"
+    },
+    {
+     "id": "003",
+     "pick": "平负",
+     "r": "N"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "混合串A",
+   "type": "半全场混合总进球串",
+   "odds": 10.78,
+   "legs": [
+    [
+     "006",
+     "胜胜",
+     null
+    ],
+    [
+     "002",
+     3,
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "006",
+     "pick": "胜胜",
+     "r": "N"
+    },
+    {
+     "id": "002",
+     "pick": 3,
+     "r": "N"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "混合串B",
+   "type": "半全场混合总进球串",
+   "odds": 7.04,
+   "legs": [
+    [
+     "004",
+     "胜胜",
+     null
+    ],
+    [
+     "011",
+     2,
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "004",
+     "pick": "胜胜",
+     "r": "Y"
+    },
+    {
+     "id": "011",
+     "pick": 2,
+     "r": "Y"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": true
+  },
+  {
+   "name": "连续编号混合总进球串①",
+   "type": "半全场混合总进球串",
+   "odds": 10.4,
+   "legs": [
+    [
+     "010",
+     "胜胜",
+     null
+    ],
+    [
+     "011",
+     2,
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "010",
+     "pick": "胜胜",
+     "r": "N"
+    },
+    {
+     "id": "011",
+     "pick": 2,
+     "r": "Y"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "连续编号混合总进球串②",
+   "type": "半全场混合总进球串",
+   "odds": 20.21,
+   "legs": [
+    [
+     "001",
+     "平胜",
+     null
+    ],
+    [
+     "002",
+     3,
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "001",
+     "pick": "平胜",
+     "r": "N"
+    },
+    {
+     "id": "002",
+     "pick": 3,
+     "r": "N"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "稳健比分串",
+   "type": "比分串",
+   "odds": 64.8,
+   "legs": [
+    [
+     "003",
+     "0-1",
+     null
+    ],
+    [
+     "004",
+     "2-1",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "003",
+     "pick": "0-1",
+     "r": "N"
+    },
+    {
+     "id": "004",
+     "pick": "2-1",
+     "r": "N"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "搏冷比分串(反向推理)",
+   "type": "比分串",
+   "odds": 94.5,
+   "legs": [
+    [
+     "001",
+     "1-2",
+     null
+    ],
+    [
+     "009",
+     "1-0",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "001",
+     "pick": "1-2",
+     "r": "N"
+    },
+    {
+     "id": "009",
+     "pick": "1-0",
+     "r": "N"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "连续编号比分串①",
+   "type": "比分串",
+   "odds": 52.2,
+   "legs": [
+    [
+     "004",
+     "2-1",
+     null
+    ],
+    [
+     "005",
+     "2-1",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "004",
+     "pick": "2-1",
+     "r": "N"
+    },
+    {
+     "id": "005",
+     "pick": "2-1",
+     "r": "Y"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "连续编号比分串②",
+   "type": "比分串",
+   "odds": 54.25,
+   "legs": [
+    [
+     "010",
+     "1-0",
+     null
+    ],
+    [
+     "011",
+     "1-0",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "010",
+     "pick": "1-0",
+     "r": "N"
+    },
+    {
+     "id": "011",
+     "pick": "1-0",
+     "r": "N"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "单挑比分①",
+   "type": "比分串",
+   "odds": 8,
+   "legs": [
+    [
+     "002",
+     "1-2",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "002",
+     "pick": "1-2",
+     "r": "N"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  },
+  {
+   "name": "单挑比分②",
+   "type": "比分串",
+   "odds": 9,
+   "legs": [
+    [
+     "003",
+     "0-1",
+     null
+    ]
+   ],
+   "results": [
+    {
+     "id": "003",
+     "pick": "0-1",
+     "r": "N"
+    }
+   ],
+   "pending": false,
+   "unresolved": false,
+   "hit": false
+  }
+ ],
+ "parlayStats": {
+  "方向串": {
+   "n": 3,
+   "hit": 0
+  },
+  "让球串": {
+   "n": 2,
+   "hit": 0
+  },
+  "混合串": {
+   "n": 6,
+   "hit": 2
+  },
+  "高赔总进球串": {
+   "n": 4,
+   "hit": 0
+  },
+  "高赔半全场串": {
+   "n": 4,
+   "hit": 1
+  },
+  "半全场混合总进球串": {
+   "n": 4,
+   "hit": 1
+  },
+  "比分串": {
+   "n": 6,
+   "hit": 0
+  }
+ },
+ "pendingMatches": [],
+ "source_files": {
+  "predictions": "memory/predictions/20261016_friday/predictions.json",
+  "analysis_report": "reports/analysis/20261016_friday_analysis_zhihu.md",
+  "backtest_report": "reports/backtest/backtest_20261016_friday_zhihu.md",
+  "results_official": "reports/data/20261016_results_official.json",
+  "results_parsed": "reports/data/20261016_results_parsed.json",
+  "odds_raw": "reports/data/20261016_all_odds.json",
+  "model_output": "reports/data/20261016_model_out.json",
+  "lessons": "memory/lessons/20261016_friday_lessons.json"
+ },
+ "notes": "011半场0:0已于用户告知后补齐，半全场实际=平胜（预测TOP3为胜胜/平平/负负→未中），半场比分实际0-0（预测TOP1→命中）。"
+}

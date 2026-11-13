@@ -1,0 +1,55 @@
+{
+  "mcpServers": {
+    "sporttery-odds": {
+      "command": "node",
+      "args": [
+        "--no-warnings",
+        "--experimental-strip-types",
+        "SportteryAPI/mcp/server.ts"
+      ],
+      "env": {}
+    },
+    "football-charts": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "footballcharts-mcp"
+      ],
+      "env": {}
+    },
+    "betbetter-odds": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "betbetter-mcp"
+      ],
+      "env": {}
+    },
+    "football-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "football-docs"
+      ],
+      "env": {}
+    },
+    "odds-api": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@pipeworx/mcp-odds-api"
+      ],
+      "env": {
+        "ODDS_API_KEY": "test"
+      }
+    },
+    "mcp-sports-hub": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-sports-hub"
+      ],
+      "env": {}
+    }
+  }
+}

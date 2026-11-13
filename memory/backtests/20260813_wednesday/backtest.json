@@ -1,0 +1,148 @@
+{
+  "date": "2026-08-13",
+  "day": "wednesday",
+  "total_matches": 3,
+  "source_files": {
+    "predictions": "memory/predictions/20260813_wednesday/predictions.json",
+    "analysis_report": "reports/html/20260813_wednesday_analysis_zhihu.md",
+    "backtest_report": "reports/html/backtest_20260813_wednesday_zhihu.md"
+  },
+  "matches": [
+    {
+      "id": "001",
+      "home_team": "巴黎圣日耳曼",
+      "away_team": "阿斯顿维拉",
+      "league": "欧超杯",
+      "actual_score": "2:1",
+      "actual_ht_score": "1:1",
+      "actual_result": "H",
+      "actual_ttg": 3,
+      "actual_htft": "DH",
+      "actual_hafu": "D",
+      "predictions": {
+        "had_first": "H", "had_first_prob": 58.0,
+        "had_second": "D", "had_second_prob": 23.0,
+        "ttg_top2": [3, 2],
+        "htft_top3": ["HH", "DH", "DD"],
+        "crs_top5": ["2:0", "2:1", "1:1", "1:0", "3:1"],
+        "hafu_first": "A", "hafu_first_prob": 43.6,
+        "hafu_second": "D", "hafu_second_prob": 25.7
+      },
+      "hits": {
+        "had": true, "had_type": "first",
+        "ttg": true,
+        "htft": true, "htft_rank": 2,
+        "crs": true, "crs_rank": 2,
+        "hafu": true, "hafu_type": "second"
+      }
+    },
+    {
+      "id": "002",
+      "home_team": "普拉滕斯",
+      "away_team": "科金博联",
+      "league": "解放者杯",
+      "actual_score": "1:1",
+      "actual_ht_score": "1:0",
+      "actual_result": "D",
+      "actual_ttg": 2,
+      "actual_htft": "HD",
+      "actual_hafu": "A",
+      "predictions": {
+        "had_first": "H", "had_first_prob": 42.0,
+        "had_second": "D", "had_second_prob": 33.0,
+        "ttg_top2": [2, 1],
+        "htft_top3": ["HH", "DH", "DD"],
+        "crs_top5": ["1:0", "0:0", "1:1", "2:0", "2:1"],
+        "hafu_first": "A", "hafu_first_prob": 47.6,
+        "hafu_second": "D", "hafu_second_prob": 28.1
+      },
+      "hits": {
+        "had": true, "had_type": "second",
+        "ttg": true,
+        "htft": false,
+        "crs": true, "crs_rank": 3,
+        "hafu": true, "hafu_type": "first"
+      }
+    },
+    {
+      "id": "003",
+      "home_team": "帕尔梅拉斯",
+      "away_team": "波特诺山丘",
+      "league": "解放者杯",
+      "actual_score": "1:1",
+      "actual_ht_score": "0:0",
+      "actual_result": "D",
+      "actual_ttg": 2,
+      "actual_htft": "DD",
+      "actual_hafu": "A",
+      "predictions": {
+        "had_first": "H", "had_first_prob": 58.0,
+        "had_second": "D", "had_second_prob": 28.0,
+        "ttg_top2": [2, 1],
+        "htft_top3": ["HH", "DH", "DD"],
+        "crs_top5": ["1:0", "2:0", "0:0", "1:1", "2:1"],
+        "hafu_first": "H", "hafu_first_prob": 49.2,
+        "hafu_second": "D", "hafu_second_prob": 26.1
+      },
+      "hits": {
+        "had": true, "had_type": "second",
+        "ttg": true,
+        "htft": true, "htft_rank": 3,
+        "crs": true, "crs_rank": 4,
+        "hafu": false
+      }
+    }
+  ],
+  "hit_rates": {
+    "had_first_second": {"hit": 3, "total": 3, "rate": 100.0, "rating": "优秀"},
+    "had_first_only": {"hit": 1, "total": 3, "rate": 33.3, "rating": "较差"},
+    "ttg_top2": {"hit": 3, "total": 3, "rate": 100.0, "rating": "优秀"},
+    "htft_top3": {"hit": 2, "total": 3, "rate": 66.7, "rating": "良好"},
+    "crs_top5": {"hit": 3, "total": 3, "rate": 100.0, "rating": "优秀"}
+  },
+  "accumulator_results": [
+    {"name": "稳健方向串", "type": "方向串", "matches": ["001H", "003H"], "match_hits": [true, false], "hit": false, "odds": 1.83},
+    {"name": "防平方向串", "type": "方向串", "matches": ["001H", "002D"], "match_hits": [true, true], "hit": true, "odds": 4.70},
+    {"name": "全主胜三串", "type": "方向串", "matches": ["001H", "002H", "003H"], "match_hits": [true, false, false], "hit": false, "odds": 3.19},
+    {"name": "稳健让球串", "type": "让球串", "matches": ["001A(-1)", "003H(-1)"], "match_hits": [false, false], "hit": false, "odds": 3.87},
+    {"name": "价值让球串", "type": "让球串", "matches": ["001D(-1)", "002D(-1)"], "match_hits": [true, false], "hit": false, "odds": 10.71},
+    {"name": "半全场串A", "type": "混合串", "matches": ["001HH", "003HH"], "match_hits": [false, false], "hit": false, "odds": 4.20},
+    {"name": "半全场串B", "type": "混合串", "matches": ["002DH", "003DH"], "match_hits": [false, false], "hit": false, "odds": 15.51},
+    {"name": "方向+半全场A", "type": "混合串", "matches": ["001H", "002DD"], "match_hits": [true, false], "hit": false, "odds": 7.24},
+    {"name": "方向+半全场B", "type": "混合串", "matches": ["003H", "001DH"], "match_hits": [false, true], "hit": false, "odds": 5.12},
+    {"name": "总进球串A", "type": "娱乐串", "matches": ["001:3球", "002:2球", "003:2球"], "match_hits": [true, true, true], "hit": true, "odds": 40.72},
+    {"name": "总进球串B", "type": "娱乐串", "matches": ["001:2球", "002:1球", "003:1球"], "match_hits": [false, false, false], "hit": false, "odds": 59.82},
+    {"name": "总进球串C", "type": "娱乐串", "matches": ["001:4球", "002:2球", "003:2球"], "match_hits": [false, true, true], "hit": false, "odds": 56.76},
+    {"name": "高赔半全场串A", "type": "娱乐串", "matches": ["001DH", "002DH", "003DH"], "match_hits": [true, false, false], "hit": false, "odds": 66.71},
+    {"name": "高赔半全场串B", "type": "娱乐串", "matches": ["001DD", "002DD", "003DD"], "match_hits": [false, false, true], "hit": false, "odds": 231.24},
+    {"name": "高赔半全场串C", "type": "娱乐串", "matches": ["001HD", "002DA", "003DA"], "match_hits": [false, false, false], "hit": false, "odds": 3643.50},
+    {"name": "高赔半全场串D", "type": "娱乐串", "matches": ["001AD", "002AD", "003AD"], "match_hits": [false, false, false], "hit": false, "odds": 7854.00},
+    {"name": "稳健比分串", "type": "娱乐串", "matches": ["001:2:1", "003:2:0"], "match_hits": [true, false], "hit": false, "odds": 32.50},
+    {"name": "混合比分串", "type": "娱乐串", "matches": ["001:2:1或1:1", "002:1:0或1:1"], "match_hits": [true, true], "hit": true, "odds": 42.25},
+    {"name": "TOP5比分串", "type": "娱乐串", "matches": ["001:2:0/2:1/1:1", "002:1:0/0:0/1:1"], "match_hits": [true, true], "hit": true, "odds": 42.25},
+    {"name": "搏冷比分串", "type": "娱乐串", "matches": ["001:3:1", "002:0:0", "003:0:0"], "match_hits": [false, false, false], "hit": false, "odds": 1131.00},
+    {"name": "单挑比分①", "type": "娱乐串", "matches": ["001:2:1"], "match_hits": [true], "hit": true, "odds": 6.50},
+    {"name": "单挑比分②", "type": "娱乐串", "matches": ["002:1:1"], "match_hits": [true], "hit": true, "odds": 6.50}
+  ],
+  "accumulator_summary": {
+    "total_schemes": 22,
+    "total_hits": 6,
+    "hit_rate": 27.3,
+    "hit_schemes": ["防平方向串", "总进球串A", "混合比分串", "TOP5比分串", "单挑比分①", "单挑比分②"]
+  },
+  "chat_recommendation": {
+    "description": "聊天推荐的半全场三串：001平胜+002平平+003平胜",
+    "matches": ["001DH", "002DD", "003DH"],
+    "actual": ["001DH", "002HD", "003DD"],
+    "hits": [true, false, false],
+    "result": "❌",
+    "note": "002和003半全场互换——002实际胜平(非平平)，003实际平平(非平胜)"
+  },
+  "key_findings": [
+    "002和003半全场互换是最大教训：两场解放者杯均出现补时绝平(002第94分钟、003第92分钟)",
+    "方向次选覆盖价值显著：三场全中但首选仅1/3，002和003平局均通过次选命中",
+    "总进球和比分模型表现优异：三场总进球TOP2全中、比分TOP5全中",
+    "让球推荐全面失败：三场让球无一命中，003让胜推荐未充分考虑4后卫伤停影响",
+    "聊天半全场推荐差一步：001平胜命中但002平平(实际胜平)和003平胜(实际平平)互换"
+  ]
+}

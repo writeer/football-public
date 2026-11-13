@@ -1,0 +1,147 @@
+{
+    "league_info": {
+        "name_cn": "挪威超级联赛",
+        "name_en": "Eliteserien",
+        "country": "挪威",
+        "country_code": "NO",
+        "level": "顶级",
+        "num_teams": 16,
+        "format": "双循环，30轮",
+        "season_period": "3月-11月（不跨年）",
+        "is_cross_year": false,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.eliteserien.no",
+        "governing_body": "挪威足球协会（NFF）",
+        "cross_league_level": "L3",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.82,
+        "draw_rate": 0.23,
+        "home_win_rate": 0.45,
+        "away_win_rate": 0.32,
+        "over_2_5_rate": 0.56,
+        "under_2_5_rate": 0.44,
+        "btts_rate": 0.55,
+        "top_scores": [
+            {
+                "score": "2-1",
+                "frequency": 0.088,
+                "direction": "主胜"
+            },
+            {
+                "score": "3-1",
+                "frequency": 0.075,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.072,
+                "direction": "平局"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.065,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.062,
+                "direction": "主胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.048,
+            "1_goal": 0.14,
+            "2_goals": 0.22,
+            "3_goals": 0.24,
+            "4_goals": 0.2,
+            "5_plus_goals": 0.152
+        },
+        "avg_home_goals": 1.52,
+        "avg_away_goals": 1.3,
+        "home_advantage_factor": 1.18,
+        "ht_draw_rate": 0.325,
+        "ht_draw_rate_note": "挪超半场平局率。2026-09-12核算：BetExplorer 联赛HT/FT(半全场)逐队统计表，按全赛季所有阶段合并，半场平局场次/总场次=0.325（240场）。源为二级聚合站(BetExplorer)，经内部一致性校验(半场领先=半场落后、各队9项计数之和=MP)，但本环境无法独立复核原始逐场半场比分，**标记待复核**；使用时按中高/高档参考，勿作高置信依据。",
+        "ht_draw_rate_source": [
+            "https://www.betexplorer.com/football/"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "中低(0.30-0.35)",
+        "ht_draw_rate_confidence": "中(二级聚合源BetExplorer，未独立复核)",
+        "ht_draw_rate_status": "pending_verification"
+    },
+    "match_style": {
+        "tactical_character": "进攻性较强的北欧联赛。莫尔德和博德闪耀进攻火力极强。北极圈球队主场极强势（特罗姆瑟等）。赛季较短导致比赛密度高，体能因素影响大。",
+        "tempo": "快",
+        "physicality": "中",
+        "technical_focus": "中高",
+        "var_usage": "2023赛季引入VAR。",
+        "key_trends": [
+            "莫尔德/博德闪耀进攻强",
+            "北极圈球队主场极强势",
+            "赛季短密度高注意体能",
+            "大球率高于其他北欧联赛"
+        ],
+        "style_tags": [
+            "进攻",
+            "大球",
+            "北极圈主场",
+            "赛季短"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.65,
+        "avg_red_cards": 0.14,
+        "avg_penalties": 0.26,
+        "referee_style": "裁判尺度中等偏松，鼓励比赛流畅。",
+        "first_half_stoppage_avg": 2.0,
+        "second_half_stoppage_avg": 4.8,
+        "stoppage_note": "补时较短。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "挪威超整体廉洁度较高。"
+            }
+        ],
+        "discipline_features": "黄牌累积5张停1场。",
+        "official_rules": "IFAB规则+挪威超特别规则。",
+        "integrity_rating": "高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价挪威超'博德闪耀主场恐怖'，'进球多'。彩民认为'大球多'，'北极圈主场注意'。",
+        "betting_market": {
+            "market_efficiency": "中",
+            "liquidity": "中",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "中",
+        "jingcai_tips": [
+            "博德闪耀主场极强势",
+            "赛季短比赛密度高注意体能",
+            "莫尔德客场进攻力强",
+            "大球率较高",
+            "夏歇期后状态波动"
+        ],
+        "common_sayings": [
+            "博德主场龙",
+            "挪威大球",
+            "赛季短体能差"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    }
+}

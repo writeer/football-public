@@ -1,0 +1,175 @@
+{
+  "task": "261014 竞彩足球 第1步信息收集 001-007",
+  "collected_at": "2026-10-14T11:30:00+08:00",
+  "collector": "information_collector_subagent",
+  "note": "结构化原始采集，不做预测；矛盾信息全部保留移交审核器",
+  "matches": [
+    {
+      "num": "周三001", "matchId": 2041990, "kickoff_bjt": "2026-10-14 15:45",
+      "league": "亚冠二级(ACL Two) E组第2轮", "home": "墨尔本胜利", "away": "首尔FC",
+      "date_confirmed": true,
+      "stadium_status": "正常",
+      "stadium_note": "AAMI Park,墨尔本;10-11刚爆满举办澳足总杯决赛;无空场处罚",
+      "sanction": null,
+      "injuries_home": [
+        {"player": "Louis D'Arrigo", "position": "中场", "reason": "轻微腿筋,缺阵/轮休", "source": "melbournevictory.com.au", "level": "A"},
+        {"player": "Philipp Ziereis", "position": "中卫", "reason": "脑震荡协议复出竞争", "source": "melbournevictory.com.au", "level": "A"},
+        {"player": "Juan Mata", "position": "中场", "reason": "肘部骨折(自称5球12助)-仅搜狐L5未验证,与官方冲突", "source": "sohu", "level": "5-unverified"},
+        {"player": "Lockyer", "position": "后卫", "reason": "伤缺-仅搜狐L5未验证", "source": "sohu", "level": "5-unverified"}
+      ],
+      "injuries_away": "待补充(赛前阵容未公布)",
+      "market_value_home": "待补充", "market_value_away": "待补充",
+      "weather": "中雨转雨,14/6°C,西北风3-4级(AAMI Park有顶棚,影响有限)",
+      "recent_form": "墨尔本胜利:周六澳足总杯决赛点球负南墨尔本;首尔FC:待补充",
+      "h2h": ["2020-12-03 墨尔本胜利 2-1 首尔FC(亚冠小组赛)"],
+      "other": "墨尔本赛程密集(周六杯赛决赛后4天即赛);D'Arrigo雪藏留力10-18澳超首轮"
+    },
+    {
+      "num": "周三002", "matchId": 2041962, "kickoff_bjt": "2026-10-14 18:00",
+      "league": "亚冠精英 东亚区联赛阶段第2轮", "home": "神户胜利船", "away": "全北现代",
+      "date_confirmed": true,
+      "stadium_status": "正常", "stadium_note": "NOEVIR Stadium Kobe,30132座",
+      "sanction": null,
+      "injuries_home": "待补充", "injuries_away": "待补充",
+      "market_value_home": "€17.35m (Transfermarkt 26/27)", "market_value_away": "待补充",
+      "weather": "25/12°C,上午雷阵雨转晴,傍晚18-20°C",
+      "recent_form": "待补充",
+      "h2h": "待补充",
+      "other": "预测首发:前川黛也/山川哲史/图尔勒/大迫勇也/埃里克等(非官宣)"
+    },
+    {
+      "num": "周三003", "matchId": 2041963, "kickoff_bjt": "2026-10-14 18:00",
+      "league": "亚冠精英 东亚区第2轮", "home": "柏太阳神", "away": "曼谷港务(泰港/Port FC)",
+      "date_confirmed": true,
+      "stadium_status": "正常", "stadium_note": "三协柏足球场",
+      "sanction": null,
+      "injuries_home": [{"player": "手塚康平", "position": "中场", "reason": "膝关节受伤自08-27", "source": "qiumiwu", "level": "E-unverified"}],
+      "injuries_away": "暂无记录",
+      "market_value_home": "待补充", "market_value_away": "待补充",
+      "weather": "关东傍晚约20-23°C晴好",
+      "recent_form": "柏:近5场4-2胜神户,J1排第1;泰港:近10场6胜1平3负,10-11泰超3-2胜北大年府,亚冠首轮1-2负神户",
+      "h2h": "首次交锋;泰港对日本球队1平2负(搜狐L5)",
+      "other": "泰港10-11刚踢联赛即飞日本,时差草皮适应;主让2球深盘"
+    },
+    {
+      "num": "周三004", "matchId": 2041964, "kickoff_bjt": "2026-10-14 18:00",
+      "league": "日联赛杯 第3轮", "home": "横滨水手", "away": "清水鼓动",
+      "date_confirmed": true,
+      "stadium_status": "正常",
+      "sanction": null,
+      "injuries_home": [
+        {"player": "远野大弥", "position": "待补", "reason": "足踝伤缺", "source": "sohu", "level": "5-unverified"},
+        {"player": "鲁宾·白兰高", "position": "待补", "reason": "膝伤缺阵", "source": "sohu", "level": "5-unverified"},
+        {"player": "三井寺真", "position": "待补", "reason": "脑震荡恢复程序未复操", "source": "sohu", "level": "5-unverified"}
+      ],
+      "injuries_away": [{"player": "石川慧(Kei Ishikawa)", "position": "主力门将", "reason": "膝伤长期缺阵(自2025-11-03),梅田透吾顶替", "source": "aiscore/sohu", "level": "C"}],
+      "market_value_home": "待补充", "market_value_away": "待补充",
+      "weather": "27/18°C,晴间多云,NNE阵风13mph",
+      "recent_form": "横滨:J1 20轮7胜1平12负积22分排17,主场3胜0平7负;清水:10-11联赛1-2负水户蜀葵",
+      "h2h": "待补充(J1同联赛交锋丰富)",
+      "other": "Sportradar列双方No missing players,与中文名单冲突待裁决;横滨J1垫底杯赛或轮换"
+    },
+    {
+      "num": "周三005", "matchId": 2041965, "kickoff_bjt": "2026-10-15 00:45",
+      "league": "欧冠联赛阶段第2轮", "home": "费耶诺德", "away": "科莫",
+      "date_confirmed": true,
+      "stadium_status": "部分关闭",
+      "stadium_note": "De Kuip 47500座;仅客队球迷禁止入场,主场球迷正常(散票约4000张在售)",
+      "sanction": {
+        "type": "UEFA纪律处分-No away fans in stadium",
+        "reason": "费耶诺德球迷2025-26赛季欧战滋事(烟火/投掷物/堵塞通道),CEDB多次罚款并执行缓刑措施",
+        "decided_by": "UEFA Control, Ethics and Disciplinary Body",
+        "period": "2026-09-28 至 2028-09-23,Under probation",
+        "source_url": "https://disciplinary.uefa.com/stadium-bans/under-probation/",
+        "level": "A"
+      },
+      "injuries_home": [
+        {"player": "Thomas Beelen", "position": "中场", "reason": "伤缺", "source": "Sportradar", "level": "B"},
+        {"player": "Jordan Bos", "position": "后卫", "reason": "伤缺", "source": "Sportradar", "level": "B"},
+        {"player": "Bart Nieuwkoop", "position": "后卫", "reason": "伤缺", "source": "Sportradar", "level": "B"},
+        {"player": "Gijs Smal", "position": "后卫", "reason": "伤缺", "source": "Sportradar", "level": "B"},
+        {"player": "St. Juste", "position": "后卫", "reason": "伤缺(欧冠首轮首发)", "source": "qiumiwu", "level": "E-unverified"},
+        {"player": "渡边刚", "position": "后卫", "reason": "伤缺(欧冠首轮首发)", "source": "qiumiwu", "level": "E-unverified"},
+        {"player": "Gonçalo Borges", "position": "前锋", "reason": "伤缺", "source": "qiumiwu", "level": "E-unverified"},
+        {"player": "S. van Persie", "position": "前锋", "reason": "伤缺", "source": "qiumiwu", "level": "E-unverified"}
+      ],
+      "injuries_away": "待补具体名单;大名单含Moise Kean/Baturina/Ricci/Diao/Douvikas;主帅Cesc Fabregas",
+      "market_value_home": "€245.23m", "market_value_away": "€568.15m(夏窗净支出€43.55m后暴涨)",
+      "weather": "晴,15-16°C,西南风2-3级,湿度60-66%,降水0%",
+      "recent_form": "费耶诺德近10场6胜3平1负,上轮5-0胜乌德勒支,荷甲第2;科莫近10场7胜2平1负,意甲第8",
+      "h2h": "交锋空白(近10年无交手,史上首次正式交手)",
+      "other": "费耶诺德主帅van Bronckhorst;科莫夏窗重金引援纸面实力约为费耶诺德2.3倍,与客胜低赔一致"
+    },
+    {
+      "num": "周三006", "matchId": 2041966, "kickoff_bjt": "2026-10-15 00:45",
+      "league": "欧冠联赛阶段第2轮", "home": "LASK林茨", "away": "利物浦",
+      "date_confirmed": true,
+      "stadium_status": "正常",
+      "stadium_note": "Raiffeisen Arena(Oberosterreich Arena),林茨;客队购票限制为主场球票不得售英国籍球迷(俱乐部政策,非UEFA处罚);利物浦官方已售客队票;人工草待复核",
+      "sanction": null,
+      "injuries_home": [
+        {"player": "Moses Usor", "position": "待补", "reason": "伤缺", "source": "FotMob", "level": "C"},
+        {"player": "George Bello", "position": "待补", "reason": "伤缺", "source": "FotMob", "level": "C"},
+        {"player": "Ramiz Harakate", "position": "待补", "reason": "伤缺", "source": "FotMob", "level": "C"}
+      ],
+      "injuries_away": [
+        {"player": "Cody Gakpo", "position": "前锋", "reason": "国脚赛事后fitness问题,继续缺阵", "source": "liverpoolfc.com", "level": "A"},
+        {"player": "Alexander Isak", "position": "前锋", "reason": "大腿伤", "source": "liverpoolfc.com", "level": "A"},
+        {"player": "Dominik Szoboszlai", "position": "中场", "reason": "腿筋问题", "source": "liverpoolfc.com", "level": "A"},
+        {"player": "Conor Bradley", "position": "后卫", "reason": "膝伤", "source": "footmercato", "level": "C"},
+        {"player": "Giovanni Leoni", "position": "后卫", "reason": "十字韧带伤", "source": "footmercato", "level": "C"},
+        {"player": "Hugo Ekitike", "position": "前锋", "reason": "伤缺", "source": "FotMob", "level": "C"}
+      ],
+      "market_value_home": "€62.40m", "market_value_away": "€1.09bn(净支出€238.4m)",
+      "weather": "待补充(林茨10月中旬约8-14°C)",
+      "recent_form": "LASK:欧冠首轮客场0-1负AEK雅典,奥甲第3,近3场1胜0平2负,上轮联赛0-2负维也纳快速;利物浦:欧冠首轮2-1胜马竞,英超上轮负曼城,近10场4胜5平1负,英超第6",
+      "h2h": "近10年交手2场,LASK 0胜0平2负(利物浦全胜)",
+      "other": "利物浦主帅Iraola;23人名单赴奥;Gakpo/Isak/Szoboszlai接近复出但本场不出"
+    },
+    {
+      "num": "周三007", "matchId": 2041967, "kickoff_bjt": "2026-10-15 02:45",
+      "league": "英冠 第10轮", "home": "诺维奇", "away": "南安普敦",
+      "date_confirmed": true,
+      "stadium_status": "正常", "stadium_note": "Carrow Road,27244座",
+      "sanction": null,
+      "injuries_home": [
+        {"player": "Mohamed Toure", "position": "前锋", "reason": "肩部手术缺阵至2027年1月", "source": "dongqiudi", "level": "C"},
+        {"player": "Lucien Mahovo", "position": "待补", "reason": "伤缺", "source": "dongqiudi", "level": "C"},
+        {"player": "McLean", "position": "待补", "reason": "伤缺", "source": "dongqiudi", "level": "C"},
+        {"player": "Mirko Topic", "position": "待补", "reason": "伤缺", "source": "dongqiudi", "level": "C"},
+        {"player": "Ali Ahmed", "position": "待补", "reason": "伤缺", "source": "dongqiudi", "level": "C"},
+        {"player": "Gabriel Forsyth", "position": "待补", "reason": "伤缺", "source": "dongqiudi", "level": "C"}
+      ],
+      "injuries_away": [
+        {"player": "Cameron Bragg", "position": "待补", "reason": "红牌停赛(对朴茨茅斯德比)", "source": "dongqiudi", "level": "C"},
+        {"player": "Mads Roerslev", "position": "后卫", "reason": "继续缺阵", "source": "southamptonfc.com", "level": "A"},
+        {"player": "Leo Scienza/Ross Stewart", "position": "待补", "reason": "恢复合练(利好)", "source": "southamptonfc.com", "level": "A"}
+      ],
+      "market_value_home": "€113.03m", "market_value_away": "€154.30m(24/25口径待复核)",
+      "weather": "待补充(诺维奇10月中旬晚约8-13°C)",
+      "recent_form": "诺维奇近10场4胜0平6负,上轮3-4负博尔顿;南安普敦英冠第13,刚踢朴茨茅斯德比",
+      "h2h": "待补充",
+      "other": "Sportradar列Norwich No missing players与懂球帝6人伤缺冲突待裁决;南安普敦为英超降级队阵容厚度英冠顶级;诺维奇主帅Clement或轮换"
+    }
+  ],
+  "full_odds_task": {
+    "status": "成功",
+    "command": "node sporttery_bridge/bin/sporttery.mjs matches --pools had,hhad,crs,ttg,hafu",
+    "method": "mcp",
+    "file": "E:\\VibeCoding\\football\\reports\\data\\20261014_matches_full_odds.json",
+    "matchCount": 14, "pools": ["had", "hhad", "crs", "ttg", "hafu"],
+    "updated_at": "2026-10-14 11:16:55"
+  },
+  "self_check": {
+    "stadium_status_all_filled": true,
+    "injuries_sourced": true,
+    "market_value_status": "5场有数值,6队待补充(001双方/002全北/003双方/004双方)",
+    "items_for_auditor": [
+      "005费耶诺德部分关闭(UEFA禁客队球迷至2028-09-23)对主客场加成量化",
+      "001 Juan Mata肘部骨折仅L5来源与俱乐部官方冲突",
+      "004/007 Sportradar无伤员与中文伤停名单冲突",
+      "006 LASK主场是否人工草待证实",
+      "亚洲球队身价/部分交锋序列待补"
+    ]
+  }
+}

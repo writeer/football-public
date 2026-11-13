@@ -1,0 +1,56 @@
+{
+  "audit_type": "report_audit_step8",
+  "sale_day": "261014",
+  "date": "2026-10-14",
+  "weekday": "wednesday",
+  "report_file": "reports/analysis/20261014_wednesday_analysis_zhihu.md",
+  "match_count": 14,
+  "dimensions": {
+    "A_template_structure": { "status": "pass", "note": "章节齐全顺序正确；滚动统计块与confidence_stats.md逐项一致(高18/22=81.8%/中33/49=67.3%/低15/19=78.9%/极低1/1=100%/合计67/91=73.6%)；标题【分析】无【回测】混淆" },
+    "B_required_fields": { "status": "pass_with_caveat", "note": "14场场地天气/身价/伤停/模型vs市场/推荐表7行/置信度/点评/净胜球众数行齐全；身价缺失场(005/008/010)标注信息缺失；005标注口径见问题#1" },
+    "C_data_consistency": { "status": "pass_with_mustfix", "note": "HAD/HAFU/博分/置信度一致；008平32.7%、011平34.2%单关上修一致；013规则53 TTG含0球正确；净胜球众数行格式合规；唯009 TTG概率互换(见问题#2)" },
+    "D_recommendation_logic": { "status": "pass", "note": "规则62-F推演优先；规则67双轨制8分歧场(004/007/008/009/010/011/012/014)全禁入正向比分，正向仅用6一致场；让球三方向覆盖让平保留；规则74档位自洽；规则75博分每场唯一三选一与模型一致" },
+    "E_odds_spec": { "status": "pass", "note": "正文无单场赔率；predictions含odds_had/odds_hhad(含handicap=goalLine)/odds_crs/odds_ttg/odds_hafu；与matches_full_odds.json程序化比对HAD+HHAD(goalLine)14场0差异；串关乘积核算正确" },
+    "F_rule_execution": { "status": "pass_with_followup", "note": "规则71法甲0场纳入0场；规则70娱乐串18方案齐全(4+4+4+6)连续编号相邻；规则73逻辑簇A-E标注齐全(分散度在parlay.md)；规则63单关008/011标注；规则66半全场修正004/007/014体现；规则72的005见问题#1；规则67试用台账待总控登记" },
+    "G_format": { "status": "pass_with_mustfix", "note": "分割线0条；表格列数<=7；推荐表半全场体彩两字格式；逐场推荐表比分横杠；大小球总进球合并行；G5结尾=方案G逐字一致；唯娱乐串比分串表冒号比分见问题#3" }
+  },
+  "problems": {
+    "veto": [],
+    "must_fix": [
+      {
+        "id": 1,
+        "location": "L156标题 + L158场地行(005费耶诺德vs科莫)",
+        "type": "005_stadium_status_mislabel",
+        "issue": "标注为⚠️部分关闭，但审核核查裁决为正常开放(仅客队球迷禁入)、主场满座47500、主场加成不调整；部分关闭指主队看台封闭比例，本场仅客队看台约1-2%封闭，不属于部分关闭。标题标签会机械触发规则72部分关闭->主场加成折半误读，与predictions stadium_status=正常开放矛盾。",
+        "recommendation": "标题删去⚠️部分关闭；场地行改为'正常开放(仅UEFA客队球迷禁入，主场满座47500；关闭对象为客队看台约1-2%、非主队看台部分封闭，主场加成不调整)'",
+        "basis": "规则72 / 20261014_verified.md裁决 / predictions.json stadium_status"
+      },
+      {
+        "id": 2,
+        "location": "009推荐表大小球·总进球行 + 综合汇总行 + predictions.json ttg_top2",
+        "type": "ttg_probability_swapped",
+        "issue": "报告写3球(23.8%)/2球(22.2%)，但模型009原始ttg_dist为2球=0.2384(23.8%)、3球=0.2225(22.25%)；模型md第⑤节亦写首选2球(23.8%)/次选3球(22.2%)。按size_first=3球重排时概率数字错配。",
+        "recommendation": "二选一总控裁定：(A)改为2球(23.8%)/3球(22.2%)[推荐，与原始分布一致]；(B)若坚持首选3球则更正为3球(22.2%)/2球(23.8%)。同步更正predictions 009 ttg_top2。",
+        "basis": "model_008_014.json 009 ttg_dist"
+      },
+      {
+        "id": 3,
+        "location": "L553-L558娱乐串比分串表 + L560搏冷说明",
+        "type": "g1_colon_score",
+        "issue": "串关比分串行用冒号比分(1:2/0:0/2:1/0:1/1:0)，属G1明确检查范围。",
+        "recommendation": "全部改横杠：1:2->1-2、0:0->0-0、2:1->2-1、0:1->0-1、1:0->1-0",
+        "basis": "G1比分横杠格式"
+      }
+    ],
+    "suggestion": [
+      { "id": 4, "issue": "逐场规则62推演段L52-L429用冒号比分；G1检查范围未含推演段且模板line209自身用冒号，若求全文统一可批量替换", "severity": "suggestion" },
+      { "id": 5, "issue": "推演散文L139/L226/L342用'平胜/平负'斜杠列两备选，非推荐表格式可保留", "severity": "suggestion" },
+      { "id": 6, "issue": "模型md 009第⑤节(2球>3球)与第⑨节(size_first=3球)内部口径矛盾，建议模型引擎统一", "severity": "suggestion" },
+      { "id": 7, "issue": "规则67试用6场(001/002/003/005/006/013)台账登记待总控确认后写入memory/trials/score_parlay_trial.md/json", "severity": "followup" },
+      { "id": 8, "issue": "005博分穿盘大热1-2为客队1球小胜，称穿盘略勉强，属规则75既定标注可保留", "severity": "suggestion" }
+    ]
+  },
+  "overall_conclusion": "非一票否决，建议打回修订。必改#1/#2/#3修正后即达可交付总控做最终裁决状态。通过/打回与否由总控裁定。",
+  "veto": false,
+  "recommend_revision": true
+}

@@ -1,0 +1,252 @@
+{
+  "generated_at": "2026-11-12T05:58:30.706Z",
+  "sources": {
+    "espn_scoreboard": {
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=20261112",
+      "status": 200
+    },
+    "open_meteo": {
+      "url": "https://api.open-meteo.com/v1/forecast (timezone=UTC)",
+      "status": 200,
+      "note": "六场逐小时字段均返回"
+    },
+    "transfermarkt": {
+      "attempts": [
+        {
+          "url": "https://www.transfermarkt.com",
+          "result": "fetch failed"
+        },
+        {
+          "url": "https://www.transfermarkt.co.uk",
+          "status": 405,
+          "body": "<title>Human Verification</title>"
+        },
+        {
+          "url": "https://www.transfermarkt.us",
+          "status": 405,
+          "body": "<title>Human Verification</title>"
+        },
+        {
+          "url": "https://www.transfermarkt.com.tr",
+          "status": 405,
+          "body": "<title>Human Verification</title>"
+        },
+        {
+          "url": "https://transfermarkt-api.fly.dev/clubs/search/Turkey",
+          "status": 503,
+          "body": "Upstream refused the request (403)"
+        }
+      ]
+    },
+    "alternatives": {
+      "worldfootball": {
+        "status": 403,
+        "body": "Just a moment... (Cloudflare)"
+      },
+      "footballtransfers": {
+        "status": 403
+      },
+      "besoccer": {
+        "status": 406
+      },
+      "sofascore": {
+        "status": 403
+      },
+      "dongqiudi_search": {
+        "result": "fetch failed (DNS)"
+      },
+      "dongqiudi_home": {
+        "status": 200,
+        "bytes": 313681
+      }
+    }
+  },
+  "matches": {
+    "周四001": {
+      "espn_event": "401861145",
+      "kickoff_utc": "2026-11-12T17:00Z",
+      "venue": "Göztepe Gürsel Aksel Stadi",
+      "city": "Izmir",
+      "country": "Türkiye",
+      "weather_at_utc": "2026-11-12T17:00",
+      "weather": {
+        "temp_c": 19.2,
+        "pop_pct": 0,
+        "precip_mm": 0,
+        "wind_kmh": 8.6,
+        "code": 3
+      },
+      "roster_athletes": [
+        {
+          "team": "Türkiye",
+          "athletes": 0
+        },
+        {
+          "team": "Belgium",
+          "athletes": 0
+        }
+      ],
+      "injuries": 0,
+      "espn_news": [
+        "Spain's De la Fuente slams 'lying' over Lamine Yamal's 'special privileges'",
+        "Kylian Mbappé (hamstring) to miss France clash with Italy",
+        "Why Cole Palmer is on notice in Tuchel's new-look England: 'The competition is on'"
+      ]
+    },
+    "周四002": {
+      "espn_event": "401861146",
+      "kickoff_utc": "2026-11-12T17:00Z",
+      "venue": "Vazgen Sargsyan Republican Stadium",
+      "city": "Yerevan",
+      "country": "Armenia",
+      "weather_at_utc": "2026-11-12T17:00",
+      "weather": {
+        "temp_c": 3.3,
+        "pop_pct": 0,
+        "precip_mm": 0,
+        "wind_kmh": 8.7,
+        "code": 1
+      },
+      "roster_athletes": [
+        {
+          "team": "Armenia",
+          "athletes": 0
+        },
+        {
+          "team": "Cyprus",
+          "athletes": 0
+        }
+      ],
+      "injuries": 0,
+      "espn_news": [
+        "Spain's De la Fuente slams 'lying' over Lamine Yamal's 'special privileges'",
+        "Kylian Mbappé (hamstring) to miss France clash with Italy",
+        "Why Cole Palmer is on notice in Tuchel's new-look England: 'The competition is on'"
+      ]
+    },
+    "周四003": {
+      "espn_event": "401861147",
+      "kickoff_utc": "2026-11-12T19:45Z",
+      "venue": "Air Albania Stadium",
+      "city": "Tirana",
+      "country": "Albania",
+      "weather_at_utc": "2026-11-12T20:00",
+      "weather": {
+        "temp_c": 20.8,
+        "pop_pct": 10,
+        "precip_mm": 0,
+        "wind_kmh": 24,
+        "code": 3
+      },
+      "roster_athletes": [
+        {
+          "team": "Albania",
+          "athletes": 0
+        },
+        {
+          "team": "Finland",
+          "athletes": 0
+        }
+      ],
+      "injuries": 0,
+      "espn_news": [
+        "Spain's De la Fuente slams 'lying' over Lamine Yamal's 'special privileges'",
+        "Kylian Mbappé (hamstring) to miss France clash with Italy",
+        "Why Cole Palmer is on notice in Tuchel's new-look England: 'The competition is on'"
+      ]
+    },
+    "周四004": {
+      "espn_event": "401861152",
+      "kickoff_utc": "2026-11-12T19:45Z",
+      "venue": "Podgorica City Stadium",
+      "city": "Podgorica",
+      "country": "Montenegro",
+      "weather_at_utc": "2026-11-12T20:00",
+      "weather": {
+        "temp_c": 17.2,
+        "pop_pct": 100,
+        "precip_mm": 2.4,
+        "wind_kmh": 11.3,
+        "code": 61
+      },
+      "roster_athletes": [
+        {
+          "team": "Montenegro",
+          "athletes": 0
+        },
+        {
+          "team": "Latvia",
+          "athletes": 0
+        }
+      ],
+      "injuries": 0,
+      "espn_news": [
+        "Spain's De la Fuente slams 'lying' over Lamine Yamal's 'special privileges'",
+        "Kylian Mbappé (hamstring) to miss France clash with Italy",
+        "Why Cole Palmer is on notice in Tuchel's new-look England: 'The competition is on'"
+      ]
+    },
+    "周四005": {
+      "espn_event": "401861150",
+      "kickoff_utc": "2026-11-12T19:45Z",
+      "venue": "Wembley Stadium",
+      "city": "London",
+      "country": "England",
+      "weather_at_utc": "2026-11-12T20:00",
+      "weather": {
+        "temp_c": 5.5,
+        "pop_pct": 0,
+        "precip_mm": 0,
+        "wind_kmh": 11.2,
+        "code": 2
+      },
+      "roster_athletes": [
+        {
+          "team": "England",
+          "athletes": 0
+        },
+        {
+          "team": "Croatia",
+          "athletes": 0
+        }
+      ],
+      "injuries": 0,
+      "espn_news": [
+        "Spain's De la Fuente slams 'lying' over Lamine Yamal's 'special privileges'",
+        "Kylian Mbappé (hamstring) to miss France clash with Italy",
+        "Why Cole Palmer is on notice in Tuchel's new-look England: 'The competition is on'"
+      ]
+    },
+    "周四006": {
+      "espn_event": "401861148",
+      "kickoff_utc": "2026-11-12T19:45Z",
+      "venue": "Generali Arena",
+      "city": "Prague",
+      "country": "Czechia",
+      "weather_at_utc": "2026-11-12T20:00",
+      "weather": {
+        "temp_c": 5.6,
+        "pop_pct": 45,
+        "precip_mm": 0.1,
+        "wind_kmh": 9.4,
+        "code": 61
+      },
+      "roster_athletes": [
+        {
+          "team": "Czechia",
+          "athletes": 0
+        },
+        {
+          "team": "Spain",
+          "athletes": 0
+        }
+      ],
+      "injuries": 0,
+      "espn_news": [
+        "Spain's De la Fuente slams 'lying' over Lamine Yamal's 'special privileges'",
+        "Kylian Mbappé (hamstring) to miss France clash with Italy",
+        "Why Cole Palmer is on notice in Tuchel's new-look England: 'The competition is on'"
+      ]
+    }
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "task": "第1步信息收集 008-014",
+  "collect_time": "2026-10-14T11:25:00+08:00",
+  "sale_date": "261014",
+  "matchCount": 7,
+  "note": "本子Agent仅结构化采集罗列，不做预测推荐。stadium_status全部为正常（7场均无空场/部分关闭/中立场处罚记录，已按规则72中英双语检索并回溯罗马官网售票页佐证）。",
+  "matches": [
+    {
+      "matchNo": "008",
+      "league": "欧冠",
+      "home": "罗马",
+      "away": "皇家马德里",
+      "kickoff_beijing": "2026-10-15 03:00",
+      "venue": "Stadio Olimpico, 罗马",
+      "hhad_goalLine": 1,
+      "single_match": true,
+      "date_confirmed": true,
+      "stadium_status": "正常",
+      "closure_ratio": null,
+      "actual_venue": null,
+      "sanction_source": null,
+      "sanction_reason": null,
+      "injuries_home": [
+        {"player": "Mile Svilar", "zh": "斯维拉尔", "position": "主力门将", "reason": "手指骨折伤病", "status": "缺阵", "source": "https://www.si.com/soccer/roma-vs-real-madrid-preview-predictions-lineups-10-14-26 [C]"},
+        {"player": "Bryan Cristante", "zh": "克里斯坦特", "position": "中场", "reason": "伤病", "status": "缺阵", "source": "https://www.fotmob.com/matches/real-madrid-vs-roma/2hatyy [B]"}
+      ],
+      "injuries_away": [
+        {"player": "Éder Militão", "zh": "米利唐", "position": "中卫", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"},
+        {"player": "Ferland Mendy", "zh": "门迪", "position": "左后卫", "reason": "Eurosport称行政原因未报欧冠名单；FotMob标伤病（矛盾待复核）", "status": "缺阵", "source": "https://www.eurosport.es/apuestas/pronosticos/roma-vs-real-madrid-pronostico-consejos-y-cuotas-champions-league/ [C]"},
+        {"player": "Raúl Asencio", "zh": "阿森西奥", "position": "中卫", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"},
+        {"player": "Rodrygo", "zh": "罗德里戈", "position": "边锋", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"}
+      ],
+      "team_value_home": {"value": "€498.40m", "cn": "约4.98亿欧", "source": "https://www.transfermarkt.com/uefa-champions-league/teilnehmer/pokalwettbewerb/CL [B]"},
+      "team_value_away": {"value": "€1.50bn", "cn": "15.0亿欧", "source": "Transfermarkt UCL名单 [B]"},
+      "weather": "罗马少云转晴，12-23℃，开球约18℃，风1-2级，降水0%，影响小",
+      "recent_form": {"home": "欧冠首轮客场1-1费内巴切；马伦意甲6场6球", "away": "欧冠首轮主场2-1国米；西甲第4轮客场0-1负贝蒂斯", "note": "逐场近5轮待补充"},
+      "h2h": "总计约12次，皇马8胜1平3负；皇马对罗马4连胜且0失球（15/16 R16 2-0/2-0；18/19小组赛主3-0客2-0；04/05小组赛皇马4-2罗马）",
+      "other_notes": "穆里尼奥本场重返罗马奥林匹克球场（指向其现任皇马主帅）；SI称罗马主帅Gasperini，双方主帅归属待复核；姆巴佩冲皇马百场里程碑"
+    },
+    {
+      "matchNo": "009",
+      "league": "欧冠",
+      "home": "博德闪耀",
+      "away": "多特蒙德",
+      "kickoff_beijing": "2026-10-15 03:00",
+      "venue": "Aspmyra Stadion, 挪威博德（人工草皮）",
+      "hhad_goalLine": 1,
+      "single_match": false,
+      "date_confirmed": true,
+      "stadium_status": "正常",
+      "closure_ratio": null,
+      "actual_venue": null,
+      "sanction_source": null,
+      "sanction_reason": null,
+      "injuries_home": [
+        {"player": "Magnus Bech Riisnæs", "position": "—", "reason": "伤病", "status": "缺阵", "source": "https://www.fotmob.com/matches/bodoglimt-vs-borussia-dortmund/2qipf9 [B]"},
+        {"player": "Håkon Evjen", "position": "—", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"},
+        {"player": "August Mikkelsen", "position": "—", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"}
+      ],
+      "injuries_away": [
+        {"player": "Nico Schlotterbeck", "zh": "施洛特贝克", "position": "主力中卫", "reason": "负荷管理+脚踝伤未随队（人工草不适合脚踝）", "status": "缺阵", "source": "https://www.bvb.de/de/de/aktuelles/news/news.html/2026/10/13/UEFA-Champions-League-BVB-will-in-Norwegen-den-Heimsieg-veredeln.html [A]"},
+        {"player": "Justin Lerma", "position": "—", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"},
+        {"player": "Giannis Konstantelias", "position": "—", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"},
+        {"player": "Emre Can", "zh": "埃姆雷·詹", "position": "中场", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"},
+        {"player": "Julian Ryerson", "zh": "瑞尔森", "reason": "伤愈回归阵容", "status": "复出", "source": "bvb.de [A]"},
+        {"player": "Carney Chukwuemeka", "zh": "丘库埃梅卡", "reason": "伤愈回归阵容", "status": "复出", "source": "bvb.de [A]"}
+      ],
+      "team_value_home": {"value": "€79.18m", "cn": "约0.79亿欧", "source": "Transfermarkt UCL名单 [B]"},
+      "team_value_away": {"value": "€587.90m", "cn": "约5.88亿欧", "source": "Transfermarkt UCL名单 [B]"},
+      "weather": "博德约10/6℃，零星小雨后阴，SSW风29km/h，湿度77%，降水概率57%，影响中偏大（人工草+严寒有风）",
+      "recent_form": {"home": "2026-1-21欧冠主场3-1爆冷曼城", "away": "欧冠首轮德甲球队大比分失利；主场胜云达不莱梅", "note": "逐场近5轮待补充"},
+      "h2h": "仅1次：2025-12-11欧冠联赛阶段多特蒙德主场2-2博德闪耀；博德主场首次对阵多特（同主客空白）",
+      "other_notes": "Aspmyra人工草；多特7天3客场+11000公里飞行赛程密集；博德主场人工草爆冷能力强"
+    },
+    {
+      "matchNo": "010",
+      "league": "欧冠",
+      "home": "皇家贝蒂斯",
+      "away": "波尔图",
+      "kickoff_beijing": "2026-10-15 03:00",
+      "venue": "La Cartuja, 塞维利亚",
+      "hhad_goalLine": -1,
+      "single_match": false,
+      "date_confirmed": true,
+      "stadium_status": "正常",
+      "closure_ratio": null,
+      "actual_venue": null,
+      "sanction_source": null,
+      "sanction_reason": null,
+      "injuries_home": [
+        {"player": "Francis Guerrero", "position": "—", "reason": "伤病", "status": "缺阵", "source": "https://www.fotmob.com/id/matches/real-betis-vs-fc-porto/2sj7e9 [B]"},
+        {"player": "Takashi Inui", "zh": "伊涅", "position": "—", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"},
+        {"player": "William Gomes", "position": "—", "reason": "1度扭伤", "status": "缺阵", "source": "https://www.mundodeportivo.com/futbol/betis/20261013/1004238304/porto-buenas-noticias-sevilla.html [C]"},
+        {"player": "Nehuén Pérez", "zh": "佩雷斯", "position": "中卫", "reason": "伤愈复出", "status": "可用", "source": "Mundo Deportivo [C]"},
+        {"player": "Zaidu Sanusi", "zh": "萨努西", "position": "左后卫", "reason": "伤愈复出", "status": "可用", "source": "Mundo Deportivo [C]"},
+        {"player": "João Costa", "position": "门将", "reason": "伤愈复出", "status": "可用", "source": "Mundo Deportivo [C]"},
+        {"player": "Antony", "zh": "安东尼", "position": "边锋", "reason": "内收肌不适恢复中", "status": "可能进名单", "source": "https://www.ppsports.com/article/news/2634096.html [C]"}
+      ],
+      "injuries_away": [
+        {"player": "Diogo Leite", "zh": "迪奥戈·莱特", "position": "中卫", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"},
+        {"player": "Marius Mouandilmadji", "position": "—", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"},
+        {"player": "Pepe", "zh": "佩佩", "position": "老将中卫", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"},
+        {"player": "Renzo Saravia", "position": "—", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"},
+        {"player": "Fabiano", "position": "—", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"},
+        {"player": "Vincent Aboubakar", "zh": "阿布巴卡尔", "position": "前锋", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"}
+      ],
+      "team_value_home": {"value": "€258.10m", "cn": "约2.58亿欧", "source": "Transfermarkt UCL名单 [B]"},
+      "team_value_away": {"value": "€471.50m", "cn": "约4.72亿欧", "source": "Transfermarkt UCL名单 [B]"},
+      "weather": "塞维利亚晴到少云17-31℃，开球约25℃，东南风2-3级，降水0%，影响小",
+      "recent_form": {"home": "近10场7胜1平2负；5-2奥萨苏纳/1-1拉科/1-0赫塔菲/2-1比利亚雷亚尔；西甲第3(16分)；欧冠首轮客场3-2里尔", "away": "近10场8胜0平2负；上一场3-1本菲卡"},
+      "h2h": "两队正式比赛历史首次交锋（交锋空白）",
+      "other_notes": "贝蒂斯借用La Cartuja作欧冠主场；波尔图老将Pepe伤缺中卫线受损"
+    },
+    {
+      "matchNo": "011",
+      "league": "欧冠",
+      "home": "曼城",
+      "away": "巴黎圣日耳曼",
+      "kickoff_beijing": "2026-10-15 03:00",
+      "venue": "伊蒂哈德球场, 曼彻斯特",
+      "hhad_goalLine": -1,
+      "single_match": true,
+      "date_confirmed": true,
+      "stadium_status": "正常",
+      "closure_ratio": null,
+      "actual_venue": null,
+      "sanction_source": null,
+      "sanction_reason": null,
+      "injuries_home": [
+        {"player": "无明确缺阵", "position": "—", "reason": "FotMob: Manchester City does not have any unavailable players", "status": "阵容齐整", "source": "https://www.fotmob.com/matches/manchester-city-vs-paris-saint-germain/2rqiev [B]"}
+      ],
+      "injuries_away": [
+        {"player": "Senny Mayulu", "zh": "马尤卢", "position": "—", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"}
+      ],
+      "team_value_home": {"value": "€1.50bn", "cn": "15.0亿欧", "source": "Transfermarkt UCL名单 [B]"},
+      "team_value_away": {"value": "€1.36bn", "cn": "13.6亿欧", "source": "Transfermarkt UCL名单 [B]"},
+      "weather": "曼彻斯特多云转雨14/8℃，晚间约8-10℃可能有雨，影响中等",
+      "recent_form": {"home": "哈兰德各项赛事8球（含欧冠首轮对波尔图梅开二度）；上轮对利物浦进球", "away": "预测锋线Dembélé/Ferrán Torres/Kvaratskhelia"},
+      "h2h": "曼城vsPSG近年欧冠多次交手（含2020/21半决赛），近5次完整比分待补充；勿与曼城vs皇马交锋混淆",
+      "other_notes": "哈兰德健康可首发；姆巴佩已转会皇马不在PSG；曼城新援Donnarumma/Guéhi/Cherki/Enzo Fernández/Nunes；PSG主帅Enrique"
+    },
+    {
+      "matchNo": "012",
+      "league": "欧冠",
+      "home": "阿斯顿维拉",
+      "away": "费内巴切",
+      "kickoff_beijing": "2026-10-15 03:00",
+      "venue": "Villa Park (B6), 伯明翰",
+      "hhad_goalLine": -1,
+      "single_match": false,
+      "date_confirmed": true,
+      "stadium_status": "正常",
+      "closure_ratio": null,
+      "actual_venue": null,
+      "sanction_source": null,
+      "sanction_reason": null,
+      "injuries_home": [
+        {"player": "Matteo Ruggeri", "zh": "鲁杰里", "position": "左后卫", "reason": "大腿伤长期缺阵", "status": "缺阵", "source": "https://www.dazn.com/es-ES/... [C]"},
+        {"player": "Ian Maatsen", "zh": "马阿岑", "position": "左后卫", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"},
+        {"player": "George Hemmings", "position": "—", "reason": "膝伤", "status": "缺阵", "source": "UEFA [A]"},
+        {"player": "Modou Kéba Cissé", "position": "—", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"},
+        {"player": "Amadou Onana", "zh": "奥纳纳", "position": "中场", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"},
+        {"player": "Leon Goretzka", "zh": "戈雷茨卡", "position": "中场", "reason": "伤愈进大名单（夏窗加盟后首秀），状态存疑", "status": "进名单", "source": "https://www.avfc.co.uk/news/2026/october/13/news-team-news-for-fenerbahce-tilt/ [A]"}
+      ],
+      "injuries_away": [
+        {"player": "Mert Müldür", "zh": "米尔迪尔", "position": "后卫", "reason": "膝伤", "status": "缺阵", "source": "UEFA [A]"},
+        {"player": "Amara Diouf", "position": "—", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"},
+        {"player": "Jayden Oosterwolde", "position": "—", "reason": "伤病", "status": "缺阵", "source": "fotmob [B]"}
+      ],
+      "team_value_home": {"value": "€633.70m", "cn": "约6.34亿欧", "source": "Transfermarkt UCL名单 [B]"},
+      "team_value_away": {"value": "€261.20m", "cn": "约2.61亿欧", "source": "Transfermarkt UCL名单 [B]"},
+      "weather": "伯明翰英伦秋季晚间约8-12℃可能有雨（逐场精确天气待补充）",
+      "recent_form": {"home": "上轮英超主场2-2布伦特福德（Ruggeri伤退）；主帅埃梅里强调Villa Park堡垒", "away": "预测Ederson/Semedo/Škriniar/Aké/Brown/Guendouzi/Kanté/Greenwood/Asensio/Kerem/Muriqi"},
+      "h2h": "维拉vs费内巴切近5次交锋序列待补充（历史交手较少）",
+      "other_notes": "维拉左后卫两人同时伤缺危机；费内巴切夏窗大换血（Škriniar/Aké/Kanté/Guendouzi/Greenwood/Asensio/Muriqi）磨合存疑"
+    },
+    {
+      "matchNo": "013",
+      "league": "解放者杯",
+      "home": "弗鲁米嫩塞",
+      "away": "帕尔梅拉斯",
+      "kickoff_beijing": "2026-10-15 08:30",
+      "venue": "马拉卡纳球场, 里约热内卢",
+      "hhad_goalLine": 1,
+      "single_match": false,
+      "date_confirmed": true,
+      "stadium_status": "正常",
+      "closure_ratio": null,
+      "actual_venue": null,
+      "sanction_source": null,
+      "sanction_reason": null,
+      "stage": "解放者杯半决赛首回合（Semifinal Ida）",
+      "referee": "Facundo Tello（阿根廷）",
+      "injuries_home": [
+        {"player": "弗鲁米嫩塞5人缺阵", "position": "—", "reason": "懂球帝标题'五将缺战'，逐人名单待补充", "status": "缺阵", "source": "https://www.dongqiudi.com/articles/6483010.html [C]"}
+      ],
+      "injuries_away": [
+        {"player": "Abel Ferreira", "zh": "阿贝尔·费雷拉", "position": "主帅", "reason": "1/4决赛对LDU染红，执教席停赛", "status": "停赛", "source": "https://www.palmeiras.com.br/noticias/fluminense-x-palmeiras-informacoes-estatisticas-e-curiosidades-8/ [A]"},
+        {"player": "Jefté", "position": "后卫", "reason": "膝关节手术+兴奋剂案件预防性停赛", "status": "缺阵", "source": "https://esportenewsmundo.com.br/... [C]"},
+        {"player": "Vitor Roque", "zh": "维托尔·罗克", "position": "前锋", "reason": "右脚踝扭伤未随队", "status": "缺阵", "source": "https://www.band.com.br/esportes/futebol/libertadores/fluminense-x-palmeiras-com-mudancas-veja-as-provaveis-escalacoes [C]"},
+        {"player": "Ramón Sosa", "zh": "索萨", "position": "—", "reason": "右大腿撞伤出战存疑", "status": "存疑", "source": "https://portaldopalestra.com.br/... [C]"},
+        {"player": "Gustavo Gómez", "zh": "戈麦斯", "position": "中卫", "reason": "3黄停赛期满复出", "status": "复出", "source": "palmeiras.com.br [A]"}
+      ],
+      "team_value_home": {"value": "€121.13m", "cn": "约1.21亿欧", "source": "https://www.transfermarkt.com/fluminense-football-club/kader/verein/2462 [B]"},
+      "team_value_away": {"value": "待补充", "cn": "—", "source": "本轮未抓取帕尔梅拉斯Transfermarkt总身价页面"},
+      "weather": "里约局部阵雨18-27℃，晚间约20-22℃，湿度84%，降水概率50%，影响中等",
+      "recent_form": {"home": "巴甲密集双线", "away": "巴甲密集双线", "note": "逐场近5轮待补充"},
+      "h2h": "总计约95次交锋帕尔梅拉斯历史占优（约51胜/15平/弗鲁米嫩塞约29胜）；最近2025-11-20巴甲帕尔梅拉斯0-0弗鲁米嫩塞；同主客近几次比分待补充",
+      "other_notes": "半决赛首回合主场先踢次回合赴圣保罗；帕尔梅拉斯主帅执教席停赛；弗鲁米嫩塞蒂亚戈·席尔瓦+胡尔克老将坐镇"
+    },
+    {
+      "matchNo": "014",
+      "league": "美职",
+      "home": "圣路易斯城",
+      "away": "温哥华白帽",
+      "kickoff_beijing": "2026-10-15 08:30",
+      "venue": "Energizer Park, 圣路易斯",
+      "hhad_goalLine": -1,
+      "single_match": false,
+      "date_confirmed": true,
+      "stadium_status": "正常",
+      "closure_ratio": null,
+      "actual_venue": null,
+      "sanction_source": null,
+      "sanction_reason": null,
+      "stage": "MLS常规赛第30轮（Matchday 30，非季后赛），西部头名争夺",
+      "injuries_home": [
+        {"player": "Celio Pompeu", "zh": "蓬佩乌", "position": "中场", "reason": "膝伤", "status": "缺阵", "source": "https://www.mlssoccer.com/news/mlssoccer-com-injury-report [A]"},
+        {"player": "Kyle Hiebert", "zh": "希伯特", "position": "后卫", "reason": "髋伤（自7-28起）", "status": "缺阵", "source": "球迷屋 [E]"}
+      ],
+      "injuries_away": [
+        {"player": "Sam Adekugbe", "zh": "阿德库格贝", "position": "后卫", "reason": "腿筋伤", "status": "缺阵", "source": "MLS官网 [A]"},
+        {"player": "Jeevan Badwal", "position": "—", "reason": "腿筋伤", "status": "缺阵", "source": "MLS官网 [A]"},
+        {"player": "Kenji Cabrera", "position": "—", "reason": "足部伤", "status": "缺阵", "source": "MLS官网 [A]"},
+        {"player": "Belal Halbouni", "position": "—", "reason": "膝伤", "status": "缺阵", "source": "MLS官网 [A]"}
+      ],
+      "team_value_home": {"value": "€44.53m", "cn": "约0.45亿欧", "source": "https://www.transfermarkt.com/st-louis-city/startseite/verein/82686/sort/rn.desc [B]"},
+      "team_value_away": {"value": "€60.90m", "cn": "约0.61亿欧", "source": "https://www.transfermarkt.com/vancouver-whitecaps/startseite/verein/6321 [B]"},
+      "weather": "圣路易斯夜间约22℃阴有温雨，湿度99%，东南风2m/s，影响中等",
+      "recent_form": {"home": "主场3连胜，西部前列（美职第2）", "away": "15胜7平6负西部第2（美职第1），阵容不整客场"},
+      "h2h": "圣路易斯vs温哥华近几次交锋序列待补充",
+      "other_notes": "常规赛末段西部头名关键战；温哥华4人伤缺阵容不整；圣路易斯主场3连胜势头"
+    }
+  ],
+  "self_check": {
+    "stadium_status_all_filled": true,
+    "injuries_have_sources": true,
+    "team_value_have_numbers": "008/009/010/011/012/014有数值；013帕尔梅拉斯待补充（弗鲁米嫩塞有）",
+    "pending_supplements": [
+      "008/011/012/014部分近5轮逐场比分",
+      "011曼城vsPSG近5次完整交锋比分",
+      "012维拉vs费内巴切交锋序列",
+      "013弗鲁米嫩塞5名缺阵球员逐人名单、帕尔梅拉斯Transfermarkt身价、马拉卡纳近几次交锋比分",
+      "014圣路易斯vs温哥华交锋序列",
+      "012伯明翰逐场精确天气",
+      "008双方主帅最终归属矛盾（穆里尼奥/Gasperini）待复核",
+      "008皇马门迪缺阵原因矛盾（伤病vs未注册）待复核"
+    ]
+  }
+}

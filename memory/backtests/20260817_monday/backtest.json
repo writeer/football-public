@@ -1,0 +1,237 @@
+{
+  "date": "2026-08-17",
+  "day": "monday",
+  "total_matches": 6,
+  "source_files": {
+    "prediction_json": "memory/predictions/20260817_monday/predictions.json",
+    "analysis_report": "reports/html/20260817_monday_analysis_zhihu.md",
+    "backtest_report": "reports/html/backtest_20260817_monday_zhihu.md"
+  },
+  "hit_rates": {
+    "direction_first_and_second": { "hits": 6, "total": 6, "rate": 1.0, "rating": "优秀" },
+    "direction_first_only": { "hits": 4, "total": 6, "rate": 0.667, "rating": "良好" },
+    "ttg_top2": { "hits": 3, "total": 6, "rate": 0.5, "rating": "一般" },
+    "htft_top3": { "hits": 3, "total": 6, "rate": 0.5, "rating": "一般" },
+    "crs_top5": { "hits": 4, "total": 6, "rate": 0.667, "rating": "良好" },
+    "hafu_top1": { "hits": 3, "total": 6, "rate": 0.5, "rating": "一般" }
+  },
+  "direction_detail": {
+    "first_hits": ["001", "002", "003", "005"],
+    "second_hits": ["004", "006"],
+    "missed": []
+  },
+  "matches": [
+    {
+      "id": "001",
+      "league": "芬超",
+      "home": "赫尔火花(Gnistan)",
+      "away": "坦山猫(Ilves)",
+      "actual_score": "3:2",
+      "actual_ht_score": "2:2",
+      "actual_direction": "主胜",
+      "actual_ttg": 5,
+      "actual_htft": "平胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.42 },
+        "had_second": { "direction": "平", "prob": 0.30 },
+        "ttg_top2": [2, 1],
+        "htft_top3": ["平胜", "平平", "胜胜"],
+        "crs_top5": ["1:0", "1:1", "0:0", "0:1", "2:0"]
+      },
+      "hits": {
+        "direction": "✅首",
+        "ttg": false,
+        "htft": true,
+        "crs": false,
+        "hafu": false
+      },
+      "notes": "大球5球远超lambda_total 2.29预期。半场2:2已有4球。L021新赛季lambda+0.5-0.7仍不足。"
+    },
+    {
+      "id": "002",
+      "league": "瑞超",
+      "home": "赫根(Häcken)",
+      "away": "哈姆尔斯(Halmstads)",
+      "actual_score": "1:0",
+      "actual_ht_score": "1:0",
+      "actual_direction": "主胜",
+      "actual_ttg": 1,
+      "actual_htft": "胜胜",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.60 },
+        "had_second": { "direction": "平", "prob": 0.25 },
+        "ttg_top2": [1, 2],
+        "htft_top3": ["胜胜", "平胜", "平平"],
+        "crs_top5": ["1:0", "2:0", "0:0", "1:1", "2:1"]
+      },
+      "hits": {
+        "direction": "✅首",
+        "ttg": true,
+        "htft": true,
+        "crs": true,
+        "hafu": false
+      },
+      "notes": "四维全中。★★★高置信度验证有效。L020残阵反弹正确执行。Julius Lindberg 36'制胜。"
+    },
+    {
+      "id": "003",
+      "league": "英冠",
+      "home": "加的夫城(Cardiff)",
+      "away": "雷克斯(Wrexham)",
+      "actual_score": "1:1",
+      "actual_ht_score": "0:1",
+      "actual_direction": "平",
+      "actual_ttg": 2,
+      "actual_htft": "负平",
+      "predictions": {
+        "had_first": { "direction": "平", "prob": 0.41 },
+        "had_second": { "direction": "主胜", "prob": 0.36 },
+        "ttg_top2": [1, 2],
+        "htft_top3": ["平平", "平胜", "胜胜"],
+        "crs_top5": ["1:0", "0:0", "1:1", "0:1", "2:0"]
+      },
+      "hits": {
+        "direction": "✅首",
+        "ttg": "✅次",
+        "htft": false,
+        "crs": true,
+        "hafu": true
+      },
+      "notes": "规则57英冠平局上修验证有效。Moore 3'先拔头筹，Colwill 97'任意球绝平。负平不在TOP3。"
+    },
+    {
+      "id": "004",
+      "league": "西甲",
+      "home": "拉科(Deportivo)",
+      "away": "埃尔切(Elche)",
+      "actual_score": "1:1",
+      "actual_ht_score": "1:0",
+      "actual_direction": "平",
+      "actual_ttg": 2,
+      "actual_htft": "胜平",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.45 },
+        "had_second": { "direction": "平", "prob": 0.30 },
+        "ttg_top2": [2, 1],
+        "htft_top3": ["平胜", "胜胜", "平平"],
+        "crs_top5": ["1:0", "1:1", "0:0", "0:1", "2:0"]
+      },
+      "hits": {
+        "direction": "✅次",
+        "ttg": true,
+        "htft": false,
+        "crs": true,
+        "hafu": true
+      },
+      "notes": "Aubameyang 21'首秀进球，Aguado 76'扳平。胜平不在TOP3，跨联赛'领先被追平'模式。"
+    },
+    {
+      "id": "005",
+      "league": "葡超",
+      "home": "卡萨皮亚(Casa Pia)",
+      "away": "本菲卡(Benfica)",
+      "actual_score": "0:7",
+      "actual_ht_score": "0:2",
+      "actual_direction": "客胜",
+      "actual_ttg": 7,
+      "actual_htft": "负负",
+      "predictions": {
+        "had_first": { "direction": "客胜", "prob": 0.54 },
+        "had_second": { "direction": "平", "prob": 0.28 },
+        "ttg_top2": [2, 1],
+        "htft_top3": ["负负", "平负", "平平"],
+        "crs_top5": ["0:1", "1:1", "0:2", "0:0", "1:2"]
+      },
+      "hits": {
+        "direction": "✅首",
+        "ttg": false,
+        "htft": true,
+        "crs": false,
+        "hafu": false
+      },
+      "notes": "本轮最大翻车。lambda_away=1.67实际7球。Pavlidis帽子戏法。50场不败里程碑大胜。"
+    },
+    {
+      "id": "006",
+      "league": "巴甲",
+      "home": "巴西国际(Internacional)",
+      "away": "里莫(Remo)",
+      "actual_score": "1:1",
+      "actual_ht_score": "1:0",
+      "actual_direction": "平",
+      "actual_ttg": 2,
+      "actual_htft": "胜平",
+      "predictions": {
+        "had_first": { "direction": "主胜", "prob": 0.45 },
+        "had_second": { "direction": "平", "prob": 0.34 },
+        "ttg_top2": [1, 0],
+        "htft_top3": ["平平", "平胜", "平负"],
+        "crs_top5": ["0:0", "1:0", "0:1", "1:1", "2:0"]
+      },
+      "hits": {
+        "direction": "✅次",
+        "ttg": false,
+        "htft": false,
+        "crs": true,
+        "hafu": true
+      },
+      "notes": "Carbonero 3'进球，Vitor Bueno最后时刻扳平。规则8分歧标注正确。胜平不在TOP3。"
+    }
+  ],
+  "parlay_results": {
+    "direction": [
+      { "name": "方向串A", "matches": ["002 主胜", "004 主胜"], "results": [true, false], "hit": false, "est_odds": 2.61 },
+      { "name": "方向串B", "matches": ["003 平", "006 主胜"], "results": [true, false], "hit": false, "est_odds": 4.79 }
+    ],
+    "handicap": [
+      { "name": "稳健让球串", "matches": ["005 让(+2)胜", "006 让(-1)负"], "results": [false, true], "hit": false, "est_odds": 5.07 },
+      { "name": "价值让球串", "matches": ["001 让(-1)负", "003 让(-1)负"], "results": [false, true], "hit": false, "est_odds": 2.21 }
+    ],
+    "mixed": [
+      { "name": "半全场串A", "matches": ["002 胜胜", "005 负负"], "results": [true, true], "hit": true, "est_odds": 2.51 },
+      { "name": "半全场串B", "matches": ["004 平胜", "006 平平"], "results": [false, false], "hit": false, "est_odds": 98.80 },
+      { "name": "方向+半全场A", "matches": ["002 主胜", "003 平平"], "results": [true, false], "hit": false, "est_odds": 18.15 },
+      { "name": "方向+半全场B", "matches": ["004 主胜", "006 平胜"], "results": [false, false], "hit": false, "est_odds": 9.50 }
+    ],
+    "entertainment_ttg": [
+      { "name": "总进球串A", "matches": ["003 1球", "006 0球", "002 1球"], "results": [false, false, true], "hit": false, "est_odds": 528.00 },
+      { "name": "总进球串B", "matches": ["001 2球", "004 2球", "005 2球"], "results": [false, true, false], "hit": false, "est_odds": 51.90 },
+      { "name": "总进球串C", "matches": ["006 1球", "002 2球", "004 3球"], "results": [false, false, false], "hit": false, "est_odds": 89.76 }
+    ],
+    "entertainment_htft": [
+      { "name": "高赔半全场串A", "matches": ["003 平平", "006 平平", "001 平平"], "results": [false, false, false], "hit": false, "est_odds": 210.94 },
+      { "name": "高赔半全场串B", "matches": ["002 平胜", "004 平胜", "006 平胜"], "results": [false, false, false], "hit": false, "est_odds": 97.24 },
+      { "name": "高赔半全场串C", "matches": ["006 平负", "001 平负", "003 负负"], "results": [false, false, false], "hit": false, "est_odds": 369.60 },
+      { "name": "高赔半全场串D", "matches": ["001 负平", "003 平负", "004 平负"], "results": [false, false, false], "hit": false, "est_odds": 637.00 }
+    ],
+    "entertainment_mixed": [
+      { "name": "混合串A", "matches": ["006 平平(HTFT)", "003 1球(TTG)"], "results": [false, false], "hit": false, "est_odds": 104.50 },
+      { "name": "混合串B", "matches": ["001 平胜(HTFT)", "006 0球(TTG)"], "results": [true, false], "hit": false, "est_odds": 168.00 },
+      { "name": "混合串C", "matches": ["003 平平(HTFT)", "004 3球(TTG)"], "results": [false, false], "hit": false, "est_odds": 58.50 },
+      { "name": "混合串D", "matches": ["005 平负(HTFT)", "002 2球(TTG)"], "results": [false, false], "hit": false, "est_odds": 141.00 }
+    ],
+    "score": [
+      { "name": "稳健比分串", "matches": ["002 1:0", "006 0:0"], "results": [true, false], "hit": false, "est_odds": 96.00 },
+      { "name": "混合比分串", "matches": ["001 1:0/1:1", "006 0:0/1:0"], "results": [false, false], "hit": false, "est_odds": "84-193" },
+      { "name": "搏冷比分串", "matches": ["003 0:0", "006 1:1"], "results": [false, true], "hit": false, "est_odds": 45.00 },
+      { "name": "TOP5比分串", "matches": ["001 1:0/0:0", "006 0:0/1:0/1:1"], "results": [false, true], "hit": false, "est_odds": "84-193" },
+      { "name": "单挑比分①", "matches": ["006 0:0"], "results": [false], "hit": false, "est_odds": 12.00 },
+      { "name": "单挑比分②", "matches": ["002 1:0"], "results": [true], "hit": true, "est_odds": 8.00 }
+    ]
+  },
+  "parlay_summary": {
+    "total_schemes": 25,
+    "total_hits": 2,
+    "hit_rate": 0.08,
+    "hit_schemes": ["半全场串A (~2.51倍)", "单挑比分② (~8.00倍)"]
+  },
+  "lessons_applied": ["L015", "L020", "L021", "L022", "L023"],
+  "rules_triggered": ["规则8(006)", "规则21(002/003/006)", "规则32(003)", "规则53(006)", "规则57(003)", "规则60(全报告)", "规则61(娱乐串)"],
+  "key_findings": [
+    "方向命中率100%但首选仅66.7%，004/006首选主胜实际平局，次选平局覆盖有效",
+    "005本菲卡0:7——lambda_away=1.67严重低估，Pavlidis帽子戏法，强队火热状态需额外+0.5-1.0",
+    "'胜平'路径跨联赛系统性遗漏——004西甲/006巴甲均为半场领先被追平，L022原覆盖荷甲/美职/芬超需扩展",
+    "让球串连续3轮验证中断(0/2)，半全场串A为唯一多场串命中(2.51倍)",
+    "新赛季大球持续——001五球+005七球，规则35+0.5-0.7仍不足"
+  ]
+}

@@ -1,0 +1,146 @@
+{
+    "league_info": {
+        "name_cn": "比利时甲级联赛",
+        "name_en": "Belgian Pro League",
+        "country": "比利时",
+        "country_code": "BE",
+        "level": "顶级",
+        "num_teams": 16,
+        "format": "常规赛+争冠/保级组",
+        "season_period": "7月-次年5月（跨年）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.proleague.be",
+        "governing_body": "比利时足球协会（KBVB）",
+        "cross_league_level": "L2",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.85,
+        "draw_rate": 0.22,
+        "home_win_rate": 0.44,
+        "away_win_rate": 0.34,
+        "over_2_5_rate": 0.55,
+        "under_2_5_rate": 0.45,
+        "btts_rate": 0.55,
+        "top_scores": [
+            {
+                "score": "2-1",
+                "frequency": 0.09,
+                "direction": "主胜"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.075,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.072,
+                "direction": "平局"
+            },
+            {
+                "score": "3-1",
+                "frequency": 0.068,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.062,
+                "direction": "主胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.045,
+            "1_goal": 0.13,
+            "2_goals": 0.23,
+            "3_goals": 0.25,
+            "4_goals": 0.19,
+            "5_plus_goals": 0.155
+        },
+        "avg_home_goals": 1.55,
+        "avg_away_goals": 1.3,
+        "home_advantage_factor": 1.15,
+        "ht_draw_rate": 0.383,
+        "ht_draw_rate_note": "比甲半场平局率。2026-09-12核算：football-data.co.uk官方逐场半场比分，5季合并1542场→0.3833；单季2025/26=0.4148。属中高半场平局档(0.35-0.40)，lambda_ht系数0.42。",
+        "ht_draw_rate_source": [
+            "https://www.football-data.co.uk/mmz4281/2526/B1.csv"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "中高(0.35-0.40)",
+        "ht_draw_rate_confidence": "高(官方逐场半场比分/交叉验证一致)"
+    },
+    "match_style": {
+        "tactical_character": "攻守平衡的联赛。布鲁日、亨克、安德莱赫特竞争激烈。青训体系出色，德布劳内、卢卡库等出自比利时青训。近年战术风格多样化。",
+        "tempo": "中快",
+        "physicality": "中",
+        "technical_focus": "高",
+        "var_usage": "2019-20赛季引入VAR。",
+        "key_trends": [
+            "布鲁日/亨克/安德莱赫特竞争",
+            "青训出色",
+            "攻守平衡",
+            "大球率较高"
+        ],
+        "style_tags": [
+            "攻守平衡",
+            "青训",
+            "竞争激烈",
+            "大球"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 4.1,
+        "avg_red_cards": 0.16,
+        "avg_penalties": 0.26,
+        "referee_style": "裁判尺度中等。",
+        "first_half_stoppage_avg": 2.2,
+        "second_half_stoppage_avg": 5.3,
+        "stoppage_note": "补时中等。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "比利时甲级联赛整体廉洁度较高。"
+            }
+        ],
+        "discipline_features": "黄牌累积5张停1场。",
+        "official_rules": "IFAB规则+比利时甲特别规则。",
+        "integrity_rating": "高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价比利时甲'青训联赛'，'竞争激烈'。彩民认为'大球率较高'，'青训球队主场有活力'。",
+        "betting_market": {
+            "market_efficiency": "高",
+            "liquidity": "中",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "中高",
+        "jingcai_tips": [
+            "青训球队主场有活力",
+            "大球率较高",
+            "布鲁日/亨克内战进球多",
+            "常规赛末段冷门可能增多",
+            "争冠组比赛质量更高"
+        ],
+        "common_sayings": [
+            "比利时青训",
+            "大球联赛",
+            "布鲁日看强"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    }
+}

@@ -1,0 +1,628 @@
+﻿{
+  "success": true,
+  "method": "mcp",
+  "data": {
+    "matchId": 2041743,
+    "matchNum": 1004,
+    "matchNumStr": "周一004",
+    "matchNumDate": "260928",
+    "businessDate": "2026-09-28",
+    "matchDate": "2026-09-29",
+    "matchTime": "02:45:00",
+    "weekday": "周一",
+    "league": {
+      "id": 127,
+      "code": "ENL",
+      "abbName": "欧国联",
+      "allName": "欧洲国家联赛"
+    },
+    "home": {
+      "code": "TUR",
+      "abbName": "土耳其",
+      "allName": "土耳其",
+      "rank": "[Group 13]"
+    },
+    "away": {
+      "code": "ITA",
+      "abbName": "意大利",
+      "allName": "意大利",
+      "rank": "[Group 14]"
+    },
+    "status": "Selling",
+    "bettingSingle": false,
+    "bettingAllUp": false,
+    "markets": {
+      "had": {
+        "pool": "had",
+        "poolNameZh": "胜平负",
+        "updateTime": "09:23:01",
+        "outcomes": [
+          {
+            "code": "h",
+            "key": "home",
+            "labelZh": "主胜",
+            "odds": 2.65,
+            "trend": "flat",
+            "impliedProb": 0.377358,
+            "noVigProb": 0.334295,
+            "fairOdds": 2.9914
+          },
+          {
+            "code": "d",
+            "key": "draw",
+            "labelZh": "平",
+            "odds": 3.3,
+            "trend": "flat",
+            "impliedProb": 0.30303,
+            "noVigProb": 0.268449,
+            "fairOdds": 3.7251
+          },
+          {
+            "code": "a",
+            "key": "away",
+            "labelZh": "主负",
+            "odds": 2.23,
+            "trend": "flat",
+            "impliedProb": 0.44843,
+            "noVigProb": 0.397256,
+            "fairOdds": 2.5173
+          }
+        ],
+        "overround": 1.128819,
+        "returnRate": 0.885881,
+        "margin": 0.114119
+      },
+      "hhad": {
+        "pool": "hhad",
+        "poolNameZh": "让球胜平负",
+        "updateTime": "09:23:02",
+        "outcomes": [
+          {
+            "code": "h",
+            "key": "home",
+            "labelZh": "主胜",
+            "odds": 1.5,
+            "trend": "flat",
+            "impliedProb": 0.666667,
+            "noVigProb": 0.591037,
+            "fairOdds": 1.6919
+          },
+          {
+            "code": "d",
+            "key": "draw",
+            "labelZh": "平",
+            "odds": 4.1,
+            "trend": "flat",
+            "impliedProb": 0.243902,
+            "noVigProb": 0.216233,
+            "fairOdds": 4.6246
+          },
+          {
+            "code": "a",
+            "key": "away",
+            "labelZh": "主负",
+            "odds": 4.6,
+            "trend": "flat",
+            "impliedProb": 0.217391,
+            "noVigProb": 0.19273,
+            "fairOdds": 5.1886
+          }
+        ],
+        "goalLine": 1,
+        "overround": 1.12796,
+        "returnRate": 0.886556,
+        "margin": 0.113444
+      },
+      "crs": {
+        "pool": "crs",
+        "poolNameZh": "比分",
+        "updateTime": "09:23:07",
+        "outcomes": [
+          {
+            "code": "s01s00",
+            "key": "1:0",
+            "labelZh": "1:0",
+            "odds": 11,
+            "trend": "flat",
+            "impliedProb": 0.090909,
+            "noVigProb": 0.067858,
+            "fairOdds": 14.7366
+          },
+          {
+            "code": "s02s00",
+            "key": "2:0",
+            "labelZh": "2:0",
+            "odds": 15,
+            "trend": "flat",
+            "impliedProb": 0.066667,
+            "noVigProb": 0.049763,
+            "fairOdds": 20.0954
+          },
+          {
+            "code": "s02s01",
+            "key": "2:1",
+            "labelZh": "2:1",
+            "odds": 8.75,
+            "trend": "flat",
+            "impliedProb": 0.114286,
+            "noVigProb": 0.085307,
+            "fairOdds": 11.7223
+          },
+          {
+            "code": "s03s00",
+            "key": "3:0",
+            "labelZh": "3:0",
+            "odds": 31,
+            "trend": "flat",
+            "impliedProb": 0.032258,
+            "noVigProb": 0.024079,
+            "fairOdds": 41.5305
+          },
+          {
+            "code": "s03s01",
+            "key": "3:1",
+            "labelZh": "3:1",
+            "odds": 21,
+            "trend": "flat",
+            "impliedProb": 0.047619,
+            "noVigProb": 0.035545,
+            "fairOdds": 28.1335
+          },
+          {
+            "code": "s03s02",
+            "key": "3:2",
+            "labelZh": "3:2",
+            "odds": 26,
+            "trend": "flat",
+            "impliedProb": 0.038462,
+            "noVigProb": 0.028709,
+            "fairOdds": 34.832
+          },
+          {
+            "code": "s04s00",
+            "key": "4:0",
+            "labelZh": "4:0",
+            "odds": 80,
+            "trend": "flat",
+            "impliedProb": 0.0125,
+            "noVigProb": 0.009331,
+            "fairOdds": 107.1754
+          },
+          {
+            "code": "s04s01",
+            "key": "4:1",
+            "labelZh": "4:1",
+            "odds": 55,
+            "trend": "flat",
+            "impliedProb": 0.018182,
+            "noVigProb": 0.013572,
+            "fairOdds": 73.6831
+          },
+          {
+            "code": "s04s02",
+            "key": "4:2",
+            "labelZh": "4:2",
+            "odds": 70,
+            "trend": "flat",
+            "impliedProb": 0.014286,
+            "noVigProb": 0.010663,
+            "fairOdds": 93.7785
+          },
+          {
+            "code": "s05s00",
+            "key": "5:0",
+            "labelZh": "5:0",
+            "odds": 250,
+            "trend": "flat",
+            "impliedProb": 0.004,
+            "noVigProb": 0.002986,
+            "fairOdds": 334.9231
+          },
+          {
+            "code": "s05s01",
+            "key": "5:1",
+            "labelZh": "5:1",
+            "odds": 175,
+            "trend": "flat",
+            "impliedProb": 0.005714,
+            "noVigProb": 0.004265,
+            "fairOdds": 234.4461
+          },
+          {
+            "code": "s05s02",
+            "key": "5:2",
+            "labelZh": "5:2",
+            "odds": 250,
+            "trend": "flat",
+            "impliedProb": 0.004,
+            "noVigProb": 0.002986,
+            "fairOdds": 334.9231
+          },
+          {
+            "code": "s1sh",
+            "key": "win-other",
+            "labelZh": "胜其它",
+            "odds": 70,
+            "trend": "flat",
+            "impliedProb": 0.014286,
+            "noVigProb": 0.010663,
+            "fairOdds": 93.7785
+          },
+          {
+            "code": "s00s00",
+            "key": "0:0",
+            "labelZh": "0:0",
+            "odds": 15,
+            "trend": "flat",
+            "impliedProb": 0.066667,
+            "noVigProb": 0.049763,
+            "fairOdds": 20.0954
+          },
+          {
+            "code": "s01s01",
+            "key": "1:1",
+            "labelZh": "1:1",
+            "odds": 6.75,
+            "trend": "flat",
+            "impliedProb": 0.148148,
+            "noVigProb": 0.110584,
+            "fairOdds": 9.0429
+          },
+          {
+            "code": "s02s02",
+            "key": "2:2",
+            "labelZh": "2:2",
+            "odds": 11.5,
+            "trend": "flat",
+            "impliedProb": 0.086957,
+            "noVigProb": 0.064908,
+            "fairOdds": 15.4065
+          },
+          {
+            "code": "s03s03",
+            "key": "3:3",
+            "labelZh": "3:3",
+            "odds": 45,
+            "trend": "flat",
+            "impliedProb": 0.022222,
+            "noVigProb": 0.016588,
+            "fairOdds": 60.2861
+          },
+          {
+            "code": "s1sd",
+            "key": "draw-other",
+            "labelZh": "平其它",
+            "odds": 200,
+            "trend": "flat",
+            "impliedProb": 0.005,
+            "noVigProb": 0.003732,
+            "fairOdds": 267.9384
+          },
+          {
+            "code": "s00s01",
+            "key": "0:1",
+            "labelZh": "0:1",
+            "odds": 10,
+            "trend": "flat",
+            "impliedProb": 0.1,
+            "noVigProb": 0.074644,
+            "fairOdds": 13.3969
+          },
+          {
+            "code": "s00s02",
+            "key": "0:2",
+            "labelZh": "0:2",
+            "odds": 13,
+            "trend": "flat",
+            "impliedProb": 0.076923,
+            "noVigProb": 0.057418,
+            "fairOdds": 17.416
+          },
+          {
+            "code": "s01s02",
+            "key": "1:2",
+            "labelZh": "1:2",
+            "odds": 7.8,
+            "trend": "flat",
+            "impliedProb": 0.128205,
+            "noVigProb": 0.095697,
+            "fairOdds": 10.4496
+          },
+          {
+            "code": "s00s03",
+            "key": "0:3",
+            "labelZh": "0:3",
+            "odds": 24,
+            "trend": "flat",
+            "impliedProb": 0.041667,
+            "noVigProb": 0.031102,
+            "fairOdds": 32.1526
+          },
+          {
+            "code": "s01s03",
+            "key": "1:3",
+            "labelZh": "1:3",
+            "odds": 17,
+            "trend": "flat",
+            "impliedProb": 0.058824,
+            "noVigProb": 0.043908,
+            "fairOdds": 22.7748
+          },
+          {
+            "code": "s02s03",
+            "key": "2:3",
+            "labelZh": "2:3",
+            "odds": 23,
+            "trend": "flat",
+            "impliedProb": 0.043478,
+            "noVigProb": 0.032454,
+            "fairOdds": 30.8129
+          },
+          {
+            "code": "s00s04",
+            "key": "0:4",
+            "labelZh": "0:4",
+            "odds": 55,
+            "trend": "flat",
+            "impliedProb": 0.018182,
+            "noVigProb": 0.013572,
+            "fairOdds": 73.6831
+          },
+          {
+            "code": "s01s04",
+            "key": "1:4",
+            "labelZh": "1:4",
+            "odds": 45,
+            "trend": "flat",
+            "impliedProb": 0.022222,
+            "noVigProb": 0.016588,
+            "fairOdds": 60.2861
+          },
+          {
+            "code": "s02s04",
+            "key": "2:4",
+            "labelZh": "2:4",
+            "odds": 55,
+            "trend": "flat",
+            "impliedProb": 0.018182,
+            "noVigProb": 0.013572,
+            "fairOdds": 73.6831
+          },
+          {
+            "code": "s00s05",
+            "key": "0:5",
+            "labelZh": "0:5",
+            "odds": 150,
+            "trend": "flat",
+            "impliedProb": 0.006667,
+            "noVigProb": 0.004976,
+            "fairOdds": 200.9538
+          },
+          {
+            "code": "s01s05",
+            "key": "1:5",
+            "labelZh": "1:5",
+            "odds": 120,
+            "trend": "flat",
+            "impliedProb": 0.008333,
+            "noVigProb": 0.00622,
+            "fairOdds": 160.7631
+          },
+          {
+            "code": "s02s05",
+            "key": "2:5",
+            "labelZh": "2:5",
+            "odds": 150,
+            "trend": "flat",
+            "impliedProb": 0.006667,
+            "noVigProb": 0.004976,
+            "fairOdds": 200.9538
+          },
+          {
+            "code": "s1sa",
+            "key": "loss-other",
+            "labelZh": "负其它",
+            "odds": 55,
+            "trend": "flat",
+            "impliedProb": 0.018182,
+            "noVigProb": 0.013572,
+            "fairOdds": 73.6831
+          }
+        ],
+        "overround": 1.339692,
+        "returnRate": 0.74644,
+        "margin": 0.25356
+      },
+      "ttg": {
+        "pool": "ttg",
+        "poolNameZh": "总进球",
+        "updateTime": "09:23:09",
+        "outcomes": [
+          {
+            "code": "s0",
+            "key": "0",
+            "labelZh": "0球",
+            "odds": 15,
+            "trend": "flat",
+            "impliedProb": 0.066667,
+            "noVigProb": 0.055383,
+            "fairOdds": 18.0561
+          },
+          {
+            "code": "s1",
+            "key": "1",
+            "labelZh": "1球",
+            "odds": 5.8,
+            "trend": "flat",
+            "impliedProb": 0.172414,
+            "noVigProb": 0.143231,
+            "fairOdds": 6.9817
+          },
+          {
+            "code": "s2",
+            "key": "2",
+            "labelZh": "2球",
+            "odds": 3.85,
+            "trend": "flat",
+            "impliedProb": 0.25974,
+            "noVigProb": 0.215777,
+            "fairOdds": 4.6344
+          },
+          {
+            "code": "s3",
+            "key": "3",
+            "labelZh": "3球",
+            "odds": 3.55,
+            "trend": "flat",
+            "impliedProb": 0.28169,
+            "noVigProb": 0.234012,
+            "fairOdds": 4.2733
+          },
+          {
+            "code": "s4",
+            "key": "4",
+            "labelZh": "4球",
+            "odds": 5,
+            "trend": "flat",
+            "impliedProb": 0.2,
+            "noVigProb": 0.166148,
+            "fairOdds": 6.0187
+          },
+          {
+            "code": "s5",
+            "key": "5",
+            "labelZh": "5球",
+            "odds": 9,
+            "trend": "flat",
+            "impliedProb": 0.111111,
+            "noVigProb": 0.092305,
+            "fairOdds": 10.8337
+          },
+          {
+            "code": "s6",
+            "key": "6",
+            "labelZh": "6球",
+            "odds": 15,
+            "trend": "flat",
+            "impliedProb": 0.066667,
+            "noVigProb": 0.055383,
+            "fairOdds": 18.0561
+          },
+          {
+            "code": "s7",
+            "key": "7+",
+            "labelZh": "7球+",
+            "odds": 22,
+            "trend": "flat",
+            "impliedProb": 0.045455,
+            "noVigProb": 0.037761,
+            "fairOdds": 26.4824
+          }
+        ],
+        "overround": 1.203743,
+        "returnRate": 0.830742,
+        "margin": 0.169258
+      },
+      "hafu": {
+        "pool": "hafu",
+        "poolNameZh": "半全场",
+        "updateTime": "09:23:01",
+        "outcomes": [
+          {
+            "code": "hh",
+            "key": "HH",
+            "labelZh": "胜/胜",
+            "odds": 4.5,
+            "trend": "flat",
+            "impliedProb": 0.222222,
+            "noVigProb": 0.184578,
+            "fairOdds": 5.4178
+          },
+          {
+            "code": "hd",
+            "key": "HD",
+            "labelZh": "胜/平",
+            "odds": 14,
+            "trend": "flat",
+            "impliedProb": 0.071429,
+            "noVigProb": 0.059329,
+            "fairOdds": 16.8553
+          },
+          {
+            "code": "ha",
+            "key": "HA",
+            "labelZh": "胜/负",
+            "odds": 25,
+            "trend": "flat",
+            "impliedProb": 0.04,
+            "noVigProb": 0.033224,
+            "fairOdds": 30.0987
+          },
+          {
+            "code": "dh",
+            "key": "DH",
+            "labelZh": "平/胜",
+            "odds": 6.8,
+            "trend": "flat",
+            "impliedProb": 0.147059,
+            "noVigProb": 0.122147,
+            "fairOdds": 8.1868
+          },
+          {
+            "code": "dd",
+            "key": "DD",
+            "labelZh": "平/平",
+            "odds": 5.85,
+            "trend": "flat",
+            "impliedProb": 0.17094,
+            "noVigProb": 0.141983,
+            "fairOdds": 7.0431
+          },
+          {
+            "code": "da",
+            "key": "DA",
+            "labelZh": "平/负",
+            "odds": 5.8,
+            "trend": "flat",
+            "impliedProb": 0.172414,
+            "noVigProb": 0.143207,
+            "fairOdds": 6.9829
+          },
+          {
+            "code": "ah",
+            "key": "AH",
+            "labelZh": "负/胜",
+            "odds": 29,
+            "trend": "flat",
+            "impliedProb": 0.034483,
+            "noVigProb": 0.028641,
+            "fairOdds": 34.9145
+          },
+          {
+            "code": "ad",
+            "key": "AD",
+            "labelZh": "负/平",
+            "odds": 14,
+            "trend": "flat",
+            "impliedProb": 0.071429,
+            "noVigProb": 0.059329,
+            "fairOdds": 16.8553
+          },
+          {
+            "code": "aa",
+            "key": "AA",
+            "labelZh": "负/负",
+            "odds": 3.65,
+            "trend": "flat",
+            "impliedProb": 0.273973,
+            "noVigProb": 0.227562,
+            "fairOdds": 4.3944
+          }
+        ],
+        "overround": 1.203948,
+        "returnRate": 0.830601,
+        "margin": 0.169399
+      }
+    }
+  }
+}

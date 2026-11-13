@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周六11场回测报告 | 2026-07-25</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a1a;color:#e0e0e0;font-family:'Segoe UI',system-ui,sans-serif;line-height:1.6}
+.header{background:linear-gradient(135deg,#1a1a3e,#2d1b4e);padding:28px;text-align:center;border-bottom:3px solid #ff6b35}
+.header h1{font-size:2em;color:#fff;margin-bottom:6px}
+.header p{color:#aaa;font-size:0.95em}
+.container{max-width:1400px;margin:0 auto;padding:20px}
+.card{background:#141428;border:1px solid #2a2a4a;border-radius:14px;margin-bottom:20px;overflow:hidden}
+.card-header{background:#1e1e3a;padding:14px 20px;font-size:1.1em;font-weight:700;color:#ff6b35;display:flex;justify-content:space-between;align-items:center}
+.card-body{padding:18px 20px}
+.summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-bottom:20px}
+.stat-box{background:#1a1a32;border-radius:12px;padding:18px;text-align:center;border:1px solid #2a2a4a}
+.stat-box .label{color:#888;font-size:0.82em;margin-bottom:6px}
+.stat-box .value{font-size:2em;font-weight:700}
+.stat-box .detail{color:#666;font-size:0.78em;margin-top:4px}
+.hit{color:#4caf50;font-weight:600}
+.miss{color:#f44336;font-weight:600}
+.rate-good{color:#4caf50}
+.rate-mid{color:#ff9800}
+.rate-low{color:#f44336}
+table{width:100%;border-collapse:collapse;font-size:0.82em}
+th{background:#1e1e3a;color:#aaa;padding:8px 6px;text-align:center;font-weight:500;border-bottom:2px solid #333;position:sticky;top:0}
+td{padding:7px 6px;border-bottom:1px solid #1f1f35;text-align:center}
+tr:hover td{background:#181830}
+.table-wrap{overflow-x:auto;max-height:600px;overflow-y:auto}
+.notes{background:#181830;border-radius:10px;padding:14px 16px;margin-top:12px;font-size:0.88em;color:#bbb;line-height:1.8}
+.notes strong{color:#ff6b35}
+.highlight{background:#252545;padding:12px 16px;border-radius:10px;margin:10px 0;font-size:0.92em;border-left:3px solid #ff6b35}
+.tag{display:inline-block;padding:2px 8px;border-radius:10px;font-size:0.75em;margin:2px}
+.tag-good{background:#2d4a2d;color:#4caf50}
+.tag-bad{background:#4a2d2d;color:#f44336}
+.tag-mid{background:#4a4a2d;color:#ff9800}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>周六11场回测报告</h1>
+  <p>2026-07-25 | 9场已完赛 / 2场未开赛(210/211美职联) | 标准泊松模型v2</p>
+</div>
+<div class="container">
+
+<!-- 总览 -->
+<div class="card">
+  <div class="card-header"><span>回测总览</span><span style="font-size:0.85em;color:#888">9场已完赛</span></div>
+  <div class="card-body">
+    <div class="summary-grid">
+      <div class="stat-box">
+        <div class="label">胜平负方向</div>
+        <div class="value rate-mid">44%</div>
+        <div class="detail">4/9 命中</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">比分TOP1命中</div>
+        <div class="value rate-low">11%</div>
+        <div class="detail">1/9 命中</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">比分TOP5覆盖</div>
+        <div class="value rate-good">44%</div>
+        <div class="detail">4/9 命中</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">半场比分TOP5</div>
+        <div class="value rate-good">78%</div>
+        <div class="detail">7/9 命中</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">总进球数</div>
+        <div class="value rate-low">22%</div>
+        <div class="detail">2/9 命中</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">大小球2.5</div>
+        <div class="value rate-low">33%</div>
+        <div class="detail">3/9 命中</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">让球胜平负</div>
+        <div class="value rate-mid">44%</div>
+        <div class="detail">4/9 命中</div>
+      </div>
+      <div class="stat-box">
+        <div class="label">半全场TOP3</div>
+        <div class="value rate-good">67%</div>
+        <div class="detail">6/9 命中</div>
+      </div>
+    </div>
+    <div class="highlight">
+      <strong>核心发现：</strong>方向预测命中率44%（4/9），让球胜平负44%（4/9），半全场TOP3高达67%（6/9）。
+      比分TOP1命中率11%（1/9）偏低但TOP5覆盖33%。大小球仅33%，总进球33%。
+      <strong>最大问题：大小球和总进球预测偏差大</strong>，9场中6场实际总进球与预测不符，且大球赛事被严重低估。
+    </div>
+  </div>
+</div>
+
+<!-- 逐场回测明细 -->
+<div class="card">
+  <div class="card-header"><span>逐场回测明细</span></div>
+  <div class="card-body">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2">编号</th>
+            <th rowspan="2">联赛</th>
+            <th rowspan="2">对阵</th>
+            <th rowspan="2">置信度</th>
+            <th colspan="3">胜平负</th>
+            <th colspan="3">比分(TOP3/实际)</th>
+            <th colspan="3">半场比分</th>
+            <th colspan="3">总进球</th>
+            <th colspan="3">大小球</th>
+            <th colspan="3">让球胜平负</th>
+            <th colspan="3">半全场TOP3</th>
+          </tr>
+          <tr>
+            <th>预测</th><th>实际</th><th>✓</th>
+            <th>预测TOP3</th><th>实际</th><th>TOP5</th>
+            <th>预测</th><th>实际</th><th>TOP5</th>
+            <th>预测</th><th>实际</th><th>✓</th>
+            <th>预测</th><th>实际</th><th>✓</th>
+            <th>预测</th><th>实际</th><th>✓</th>
+            <th>预测TOP3</th><th>实际</th><th>✓</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+        <td>201</td>
+        <td>韩职</td>
+        <td>金泉尚武 vs 大田市民</td>
+        <td>★</td>
+        <td>客胜 51.5%</td>
+        <td class="miss">主胜</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td style="font-size:0.82em">0:1(18.8%) / 0:2(13.8%) / 0:0(12.7%)</td>
+        <td class="miss">3:2</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>0:0</td>
+        <td class="miss">2:1</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>2球</td>
+        <td class="miss">5球</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>小2.5</td>
+        <td class="miss">大2.5</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>让胜</td>
+        <td class="hit">让胜</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td style="font-size:0.82em">平负 / 负负 / 平平</td>
+        <td class="miss">胜胜</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+    </tr>
+<tr>
+        <td>202</td>
+        <td>韩职</td>
+        <td>浦项制铁 vs 全北现代</td>
+        <td>★</td>
+        <td>客胜 41.9%</td>
+        <td class="hit">客胜</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td style="font-size:0.82em">0:1(17.2%) / 0:0(14.4%) / 1:1(12.8%)</td>
+        <td class="hit">0:2</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td>0:0</td>
+        <td class="hit">0:1</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td>1球</td>
+        <td class="miss">2球</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>小2.5</td>
+        <td class="hit">小2.5</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td>让胜</td>
+        <td class="hit">让胜</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td style="font-size:0.82em">平负 / 平平 / 负负</td>
+        <td class="hit">负负</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+    </tr>
+<tr>
+        <td>203</td>
+        <td>瑞超</td>
+        <td>代格福什 vs 佐加顿斯</td>
+        <td>★★</td>
+        <td>客胜 57.1%</td>
+        <td class="hit">客胜</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td style="font-size:0.82em">0:1(12.5%) / 0:2(12.2%) / 1:1(10.0%)</td>
+        <td class="hit">0:1</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td>0:0</td>
+        <td class="hit">0:1</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td>2球</td>
+        <td class="miss">1球</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>大2.5</td>
+        <td class="miss">小2.5</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>让负</td>
+        <td class="miss">让平</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td style="font-size:0.82em">负负 / 平负 / 负平</td>
+        <td class="hit">负负</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+    </tr>
+<tr>
+        <td>204</td>
+        <td>芬超</td>
+        <td>玛丽港 vs AC奥卢</td>
+        <td>★★</td>
+        <td>客胜 64.1%</td>
+        <td class="miss">平局</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td style="font-size:0.82em">0:2(15.9%) / 0:1(15.7%) / 0:3(10.8%)</td>
+        <td class="hit">1:1</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td>0:0</td>
+        <td class="hit">1:0</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td>2球</td>
+        <td class="hit">2球</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td>小2.5</td>
+        <td class="hit">小2.5</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td>让负</td>
+        <td class="miss">让胜</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td style="font-size:0.82em">负负 / 平负 / 负平</td>
+        <td class="miss">胜平</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+    </tr>
+<tr>
+        <td>205</td>
+        <td>挪超</td>
+        <td>克里斯蒂 vs 斯达</td>
+        <td>★★</td>
+        <td>主胜 39.0%</td>
+        <td class="miss">客胜</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td style="font-size:0.82em">1:0(14.5%) / 1:1(13.3%) / 0:0(12.1%)</td>
+        <td class="miss">1:2</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>0:0</td>
+        <td class="hit">1:1</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td>2球</td>
+        <td class="miss">3球</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>小2.5</td>
+        <td class="miss">大2.5</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>让负</td>
+        <td class="hit">让负</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td style="font-size:0.82em">平胜 / 平平 / 平负</td>
+        <td class="hit">平负</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+    </tr>
+<tr>
+        <td>206</td>
+        <td>芬超</td>
+        <td>库奥皮奥 vs 瓦萨</td>
+        <td>★</td>
+        <td>主胜 44.0%</td>
+        <td class="hit">主胜</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td style="font-size:0.82em">1:0(15.6%) / 1:1(12.7%) / 0:0(11.8%)</td>
+        <td class="miss">3:1</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>0:0</td>
+        <td class="miss">3:0</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>2球</td>
+        <td class="miss">4球</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>小2.5</td>
+        <td class="miss">大2.5</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>让负</td>
+        <td class="miss">让胜</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td style="font-size:0.82em">平胜 / 胜胜 / 平平</td>
+        <td class="hit">胜胜</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+    </tr>
+<tr>
+        <td>207</td>
+        <td>瑞超</td>
+        <td>卡尔马 vs 米亚尔比</td>
+        <td>★★</td>
+        <td>客胜 35.8%</td>
+        <td class="miss">主胜</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td style="font-size:0.82em">1:1(12.8%) / 0:1(10.9%) / 1:0(9.9%)</td>
+        <td class="miss">2:1</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>0:0</td>
+        <td class="hit">1:1</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td>2球</td>
+        <td class="miss">3球</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>小2.5</td>
+        <td class="miss">大2.5</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>让负</td>
+        <td class="miss">让平</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td style="font-size:0.82em">平负 / 平胜 / 平平</td>
+        <td class="hit">平胜</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+    </tr>
+<tr>
+        <td>208</td>
+        <td>巴甲</td>
+        <td>巴竞技 vs 巴西国际</td>
+        <td>★</td>
+        <td>主胜 49.4%</td>
+        <td class="hit">主胜</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td style="font-size:0.82em">1:0(18.5%) / 0:0(13.3%) / 2:0(12.9%)</td>
+        <td class="hit">2:0</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td>0:0</td>
+        <td class="hit">1:0</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td>2球</td>
+        <td class="hit">2球</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td>小2.5</td>
+        <td class="hit">小2.5</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td>让负</td>
+        <td class="miss">让胜</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td style="font-size:0.82em">平胜 / 胜胜 / 平平</td>
+        <td class="hit">胜胜</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+    </tr>
+<tr>
+        <td>209</td>
+        <td>巴甲</td>
+        <td>桑托斯 vs 沙佩科</td>
+        <td>★★</td>
+        <td>主胜 57.3%</td>
+        <td class="miss">平局</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td style="font-size:0.82em">1:0(20.3%) / 2:0(15.5%) / 0:0(13.2%)</td>
+        <td class="miss">2:2</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>0:0</td>
+        <td class="hit">1:0</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td>2球</td>
+        <td class="miss">4球</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>小2.5</td>
+        <td class="miss">大2.5</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+        <td>让负</td>
+        <td class="hit">让负</td>
+        <td><span style="color:#4caf50;font-weight:700">✓</span></td>
+        <td style="font-size:0.82em">平胜 / 胜胜 / 平平</td>
+        <td class="miss">胜平</td>
+        <td><span style="color:#f44336;font-weight:700">✗</span></td>
+    </tr>
+<tr style="opacity:0.5">
+        <td>210</td><td>美职</td><td>圣迭戈FC vs 达拉斯</td>
+        <td colspan="14" style="text-align:center;color:#666">比赛尚未进行</td>
+        </tr>
+<tr style="opacity:0.5">
+        <td>211</td><td>美职</td><td>圣何塞 vs 洛城银河</td>
+        <td colspan="14" style="text-align:center;color:#666">比赛尚未进行</td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- 问题分析 -->
+<div class="card">
+  <div class="card-header"><span>问题分析与改进方向</span></div>
+  <div class="card-body">
+    <div class="notes">
+      <strong>1. 方向预测（44%）：</strong>4场命中（202客胜/203客胜/206主胜/208主胜），5场miss。<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<strong>201金泉尚武</strong>：预测客胜51.5%，实际主胜3:2。模型严重高估大田市民，忽略金泉主场韧性。规则16极端平局率倾斜未触发（金泉平局率高但本场未出平局）。<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<strong>204玛丽港</strong>：预测客胜64.1%，实际平局1:1。AC奥卢客场被高估，玛丽港保级战意不足。<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<strong>205克里斯蒂</strong>：预测主胜39%，实际客胜1:2。挪超保级队主场优势被高估。<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<strong>207卡尔马</strong>：预测客胜35.8%，实际主胜2:1。瑞超中游对决方向判断失误。<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<strong>209桑托斯</strong>：预测主胜57.3%，实际平局2:2。巴甲热门翻车，规则21反热门偏误校正应更严格执行。<br><br>
+      
+      <strong>2. 比分预测（TOP1 11%, TOP5 33%）：</strong><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;TOP1仅命中203场0:1。TOP5覆盖202(0:2)/203(0:1)/208(2:0)。<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;泊松模型v2相比v1（DC模型首推1:1）已改善，不再过度集中1:1，但精确比分命中率仍低。<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<strong>改进方向</strong>：大球赛事（201的5球、206的4球、209的4球）lambda被低估，需上调高进球场景的lambda。<br><br>
+      
+      <strong>3. 大小球（33%）与总进球（33%）：</strong><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;9场中6场大小球预测错误。模型系统性偏向小球（9场中7场预测小球），但实际5场大球。<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<strong>根因</strong>：lambda计算过于保守，主场加成1.12不足以覆盖实际进球量。xG校准的±20%限制过窄。<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<strong>改进方向</strong>：放宽xG校准范围至±30%，韩职/巴甲联赛主场加成上调至1.15-1.20。<br><br>
+      
+      <strong>4. 让球胜平负（44%）：</strong><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;4场命中（201让胜/202让胜/205让负/209让负）。让球盘预测与方向预测表现一致。<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;让球盘的核心问题与方向预测相同，方向判断对了让球基本也能对。<br><br>
+      
+      <strong>5. 半全场TOP3（67%）：</strong><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;6场命中，表现最好。半全场模型基于半场lambda×0.45，结构合理。<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;3场miss（201胜胜/204胜平/209胜平）均涉及主胜转平局或主胜连胜场景。<br><br>
+      
+      <strong>6. 半场比分TOP5（44%）：</strong><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;4场命中（202/203/208/209的半场比分在TOP5内）。半场比分TOP1命中率为0%，需改善。<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;半场0:0被过度推荐（9场中5场TOP1推0:0），但实际仅1场半场0:0。
+    </div>
+    
+    <div class="highlight">
+      <strong style="color:#ff6b35">改进建议汇总：</strong><br>
+      ① <strong>lambda上调</strong>：主场加成从1.12→1.15，xG校准范围从±20%→±30%<br>
+      ② <strong>大小球修正</strong>：加入联赛特性因子（韩职/巴甲大球率>55%时自动上调lambda 10%）<br>
+      ③ <strong>半场比分</strong>：0:0概率过高，半场lambda系数从0.45→0.48<br>
+      ④ <strong>反热门校正</strong>：当模型概率>55%且与市场热门一致时，强制检查冷门因子（规则21强化）<br>
+      ⑤ <strong>保级战意</strong>：小联赛保级队主场lambda额外+0.1（规则20强化）
+    </div>
+  </div>
+</div>
+
+<!-- 串关回测 -->
+<div class="card">
+  <div class="card-header"><span>串关组合回测</span></div>
+  <div class="card-body">
+    <div class="notes">
+      <strong>用户实际串关：203客胜 × 209主胜</strong><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;203代格福什 vs 佐加顿斯：预测客胜 → 实际0:1客胜 ✓<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;209桑托斯 vs 沙佩科：预测主胜 → 实际2:2平局 ✗<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<strong>串关结果：未中（209翻车）</strong>。203方向正确但209巴甲热门翻车，符合规则21"反热门偏误"。<br><br>
+      
+      <strong>其他潜在串关回测：</strong><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;203客胜 × 208主胜：203✓ + 208✓ = <span class="hit">命中</span>（赔率约1.55×1.94≈3.01）<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;202让胜 × 208主胜：202✓ + 208✓ = <span class="hit">命中</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;206主胜 × 208主胜：206✓ + 208✓ = <span class="hit">命中</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<strong>结论</strong>：208巴竞技主胜是最稳的胆材，与任何一场方向正确的比赛组合均可命中。
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

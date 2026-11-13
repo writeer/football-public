@@ -1,0 +1,682 @@
+{
+ "_meta": {
+  "date": "2026-10-30",
+  "collector": "第1步信息收集 + 第2步信息审核（俱乐部官网/联赛官网/FotMob/Transfermarkt/体彩官方/直播吧，多源交叉）",
+  "value_source": "Transfermarkt 2026/27 阵容总身价（欧元）",
+  "verified_at": "2026-10-30 11:20",
+  "notes": "伤停按俱乐部官网/FotMob/Transfermarkt/联赛官网交叉核对，中文源一律标注未验证；场地状态逐场四选一确认（12场均无空场/中立场公告，010为部分关闭=客队看台关闭）；单关状态按用户告知：周五007 埃尔沃斯堡vs美因茨 开胜平负单关。"
+ },
+ "周五001": {
+  "value": {
+   "home": 5930000,
+   "away": 7230000,
+   "home_url": "transfermarkt.com/brisbane-roar",
+   "away_url": "transfermarkt.com/auckland-fc"
+  },
+  "injury": {
+   "home": [
+    "瓦尔卡尼斯（伤/确认缺阵，来源：直播吧彩经2026-10-30，未验证）"
+   ],
+   "away": [
+    "科斯格罗夫（前锋/停赛或缺阵，来源：直播吧彩经，未验证）",
+    "卡姆·豪伊森（中场/伤，来源：直播吧彩经，未验证）",
+    "亚伦·卡尔弗（后卫/伤，来源：直播吧彩经，未验证）"
+   ],
+   "home_count": 1,
+   "away_count": 3,
+   "note": "奥克兰为卫冕冠军，本场缺停赛的Cosgrove与两名伤员，但主力框架仍在；狮吼仅1人伤缺，首轮2-1取胜状态正佳。伤停细节中文源未列伤型与复出时间（信息缺失）。"
+  },
+  "venue": {
+   "name": "Suncorp Stadium",
+   "city": "澳大利亚 布里斯班",
+   "pitch": "天然草",
+   "capacity": 52500,
+   "status": "正常",
+   "status_note": "俱乐部官方赛前预览确认正常开赛售票，无空场/部分关闭公告"
+  },
+  "weather": {
+   "temp": "21~27℃",
+   "desc": "多云间晴，降水概率20%（未验证）",
+   "wind": "微风",
+   "impact": "轻微"
+  },
+  "h2h": {
+   "summary": "奥克兰FC对布里斯班狮吼4战不败，两次做客Suncorp均2-0取胜（2026年1月）；狮吼主场对奥克兰尚无胜绩",
+   "rhythm": "奥克兰高位压迫+边路冲击克制狮吼后场出球，交锋比分偏客队",
+   "lam_shift": [
+    -0.18,
+    0.15
+   ]
+  },
+  "context": {
+   "stake": "澳超第3轮，狮吼首轮2-1取胜、奥克兰作为卫冕冠军开局平稳，双方均需抢分站稳上半区",
+   "fitness": "澳超开局阶段体能充沛，狮吼一周一赛，奥克兰上轮后休整6天",
+   "psych": "狮吼主场渴望打破对奥克兰不胜魔咒；奥克兰对Suncorp场地与对手心理优势明显",
+   "schedule": "澳超赛程宽松，无杯赛牵制"
+  },
+  "lineup": {
+   "home": "媒体预测（非官方）：4-2-3-1，首轮首发框架延续",
+   "away": "媒体预测（非官方）：4-2-3-1，Cosgrove停赛由替补前锋顶替"
+  }
+ },
+ "周五002": {
+  "value": {
+   "home": 15000000,
+   "away": 26380000,
+   "home_url": "transfermarkt.com/fc-energie-cottbus",
+   "away_url": "transfermarkt.com/vfl-bochum"
+  },
+  "injury": {
+   "home": [
+    "两名球员确认缺阵（含 Julian Guttau 中场/长期伤，来源：FotMob本场页；另一人姓名未完整披露）"
+   ],
+   "away": [
+    "Oliver Olsen（后卫/伤/2026-08起/预计11月中旬，俱乐部官网）",
+    "Jean Manuel Mbom（右后卫/脚踝重伤/缺阵数月，俱乐部官网）",
+    "Philipp Strompf（后卫/伤，FotMob）",
+    "Enis Çokaj（后腰/脚踝伤/预计11月初，Transfermarkt）",
+    "Babis Drakas（边锋/膝伤/预计11月初，Transfermarkt）"
+   ],
+   "home_count": 2,
+   "away_count": 5,
+   "note": "波鸿5人确认缺阵、其中3人为后卫/后腰，后防重组；Wittek头部伤口已恢复可出战，Rasmussen轻伤成疑。科特布斯2人缺阵，影响小于对手。"
+  },
+  "venue": {
+   "name": "LEV Energie Stadion",
+   "city": "德国 科特布斯",
+   "pitch": "天然草",
+   "capacity": 22528,
+   "status": "正常",
+   "status_note": "已售约1.6万张票，南入口仅因球迷分流临时封闭，不构成部分关闭"
+  },
+  "weather": {
+   "temp": "约10℃",
+   "desc": "多云（未验证）",
+   "wind": "微风",
+   "impact": "轻微"
+  },
+  "h2h": {
+   "summary": "队史22次交锋波鸿9胜7平6负；科特布斯近5次不胜，上次取胜为2011-11-21客场1-0；同主客近4次科特布斯1平3负",
+   "rhythm": "波鸿对科特布斯长期压制，交锋节奏偏中低比分",
+   "lam_shift": [
+    -0.05,
+    0.05
+   ]
+  },
+  "context": {
+   "stake": "德乙第10轮，科特布斯升班马积10分第11、波鸿积8分第14，双方都需要拉开与降级区距离",
+   "fitness": "波鸿周中德国杯客场2-0淘汰美因茨，轮换后仍有体能消耗；科特布斯一周一赛体能占优",
+   "psych": "科特布斯主场夜战氛围强，但交锋心理劣势明显；波鸿刚淘汰德甲球队士气高",
+   "schedule": "波鸿3天后联赛再战，杯赛晋级带来双线密度"
+  },
+  "lineup": {
+   "home": "媒体预测（非官方）：4-2-3-1，Butler、Ciğerci领衔锋线",
+   "away": "媒体预测（非官方）：4-2-3-1，后防因Olsen/Mbom缺阵重组"
+  }
+ },
+ "周五003": {
+  "value": {
+   "home": 150250000,
+   "away": 253400000,
+   "home_url": "transfermarkt.com/ogc-nice",
+   "away_url": "transfermarkt.com/stade-rennais-fc"
+  },
+  "injury": {
+   "home": [
+    "Antoine Mendy（后卫/十字韧带撕裂已手术/2026-09-05起/长期，俱乐部官网）",
+    "Laurent Abergel（中场/膝伤/确认缺阵，Ligue1）",
+    "Moïse Bombito（中卫/伤/确认缺阵，Ligue1）",
+    "Moïse Lumpungu（后卫/腿伤/确认缺阵，opstellingvandaag）",
+    "Ali Abdi（左后卫/肌肉伤/出战成疑，本周部分合练）"
+   ],
+   "away": [
+    "Estéban Lepaul（前锋/队内最佳射手7球/脚踝伤/2026-10-18起/确认缺阵）",
+    "Brice Samba（门将/大腿伤/2026-10-28训练后/出战成疑）"
+   ],
+   "home_count": 5,
+   "away_count": 2,
+   "note": "尼斯后防4人缺阵（两中卫+两边卫）+1人成疑，防线临时重组；雷恩失去头号射手Lepaul，门将Samba成疑。双方均有实质缺口，尼斯后防更严重。"
+  },
+  "venue": {
+   "name": "Allianz Riviera（安联里维埃拉）",
+   "city": "法国 尼斯",
+   "pitch": "天然草",
+   "capacity": 36178,
+   "status": "正常",
+   "status_note": "因安保原因由周六提前至周五19:00，俱乐部正常售票，无空场/部分关闭"
+  },
+  "weather": {
+   "temp": "16.8℃",
+   "desc": "晴间多云，降水概率0%",
+   "wind": "东南风6.4km/h",
+   "impact": "无影响"
+  },
+  "h2h": {
+   "summary": "队史106次交锋尼斯45胜24平37负；近5次雷恩3胜2负占优，最近一次2026-03雷恩客场4-0大胜；同主客近2次1胜1负",
+   "rhythm": "雷恩近年对尼斯进球效率高，交锋偏中高比分",
+   "lam_shift": [
+    -0.05,
+    0.08
+   ]
+  },
+  "context": {
+   "stake": "法甲第9轮，雷恩16分第2（落后PSG1分），尼斯11分第10；雷恩争冠集团需抢分，尼斯主场保不败",
+   "fitness": "尼斯一周一赛；雷恩下周中欧联杯主场对奥林匹亚科斯，存在轮换压力",
+   "psych": "尼斯主场4战2胜2平不败；雷恩客场本季疲软且刚刚0-4大胜过对手，心理占优",
+   "schedule": "雷恩双线作战，本场后3天欧联"
+  },
+  "lineup": {
+   "home": "媒体预测（非官方）：4-3-3，后防四人重组，Wahi领衔锋线",
+   "away": "媒体预测（非官方）：4-2-3-1，Lepaul缺阵由Kalimuendo顶替"
+  }
+ },
+ "周五004": {
+  "value": {
+   "home": 63150000,
+   "away": 1360000000,
+   "home_url": "transfermarkt.com/le-havre-ac",
+   "away_url": "transfermarkt.com/paris-saint-germain"
+  },
+  "injury": {
+   "home": [
+    "S. Zagadou（中卫/伤/确认缺阵，Ligue1）",
+    "Mpasi（门将/伤/确认缺阵，Ligue1）",
+    "Elias Jelert（后卫/伤/确认缺阵，foot-sur7）",
+    "Timothée Pembélé（后卫/伤/确认缺阵，foot-sur7）",
+    "Felix Mambimbi（前锋/跟腱伤/确认缺阵，foot-sur7）"
+   ],
+   "away": [
+    "Khvicha Kvaratskhelia（左边锋/右膝十字韧带撕裂已手术/2026-10起/缺阵数月，PSG Community）",
+    "Ousmane Dembélé（前锋/左大腿伤/2026-10起/预计11月国际比赛日后，foot-sur7）",
+    "Marquinhos（中卫/队长/右大腿伤/2026-10起/预计11月国际比赛日后，foot-sur7）",
+    "Nuno Mendes（左后卫/大腿伤/出战成疑）",
+    "Mika Godts（边锋/女友临产缺席训练/出战成疑）",
+    "Vitinha（中场/脚踝不适/已恢复合练）"
+   ],
+   "home_count": 5,
+   "away_count": 3,
+   "note": "勒阿弗尔5人缺阵、含两名中卫与门将，后防残阵；PSG 3名主力确认缺阵（Kvaratskhelia赛季报销、Dembélé、Marquinhos），Nuno Mendes与Godts成疑，但阵容深度远超对手。"
+  },
+  "venue": {
+   "name": "Stade Océane（Stade CMA CGM Océane）",
+   "city": "法国 勒阿弗尔",
+   "pitch": "天然草",
+   "capacity": 25178,
+   "status": "正常",
+   "status_note": "法甲官网与俱乐部票务确认正常进行，无空场/部分关闭"
+  },
+  "weather": {
+   "temp": "11.8℃",
+   "desc": "晴，降水概率0%",
+   "wind": "西南风15.5km/h",
+   "impact": "无实质影响"
+  },
+  "h2h": {
+   "summary": "勒阿弗尔重返法甲后对PSG 1平5负、近4次全败；同主客近3次全败（0-1、1-4、0-2）；上次击败PSG为1999年",
+   "rhythm": "PSG对HAC长期碾压，交锋多为PSG控场+多球",
+   "lam_shift": [
+    0.0,
+    0.08
+   ]
+  },
+  "context": {
+   "stake": "法甲第9轮，PSG 17分领跑（8连胜）、勒阿弗尔8轮2分垫底（2平6负），保级压力极大",
+   "fitness": "PSG双线作战但本场后无欧战紧接；HAC一周一赛",
+   "psych": "HAC主场必须抢分但心理被PSG压制；PSG伤兵多但轮换深度足够",
+   "schedule": "PSG 4天后欧冠客战比利亚雷亚尔（本场可能轮换部分主力）"
+  },
+  "lineup": {
+   "home": "媒体预测（非官方）：4-3-3，Maja领衔锋线，后防临时拼凑",
+   "away": "媒体预测（非官方）：4-3-3，Luis Enrique轮换，Barcola+Doué+边路组合"
+  }
+ },
+ "周五005": {
+  "value": {
+   "home": 79180000,
+   "away": 56000000,
+   "home_url": "transfermarkt.com/fk-bodo-glimt",
+   "away_url": "transfermarkt.com/viking-stavanger"
+  },
+  "injury": {
+   "home": [
+    "Magnus Bech Riisnæs（前锋/伤情未公开/2026-08-12起/确认缺阵）",
+    "Håkon Evjen（中场/膝关节损伤/2026-07-27起/确认缺阵）",
+    "Isak Sjong（门将/伤/2026-07-16起/确认缺阵）",
+    "August Mikkelsen（前锋/腹股沟/2026-05-09起/确认缺阵）"
+   ],
+   "away": [
+    "Veton Berisha（前锋/大腿伤/2026-05-18起/确认缺阵）",
+    "Anders Bærtelsen（中卫/足部骨折已手术/2026-07-27起/缺阵数月，俱乐部官网）",
+    "Sondre Flem Bjørshol（右后卫/膝关节损伤/2026-08-29起/确认缺阵）",
+    "Martin Ove Roseth（后卫/膝关节损伤/2026-03-13起/确认缺阵）"
+   ],
+   "home_count": 4,
+   "away_count": 4,
+   "note": "双方各4人缺阵，均为长期伤号；博德核心框架（Bjørkan、Helmersen）可用，维京后防两名主力缺阵。双方均接近最强阵容。"
+  },
+  "venue": {
+   "name": "Aspmyra Stadion",
+   "city": "挪威 博德",
+   "pitch": "人工草皮（带地暖说法存差异）",
+   "capacity": 8500,
+   "status": "正常",
+   "status_note": "俱乐部票务与转播正常，无空场/部分关闭公告"
+  },
+  "weather": {
+   "temp": "6.5℃",
+   "desc": "阴，无降水",
+   "wind": "7km/h",
+   "impact": "低温+人工草，无雨风小，基本无影响"
+  },
+  "h2h": {
+   "summary": "近6次交锋维京3胜1平2负；近9次交锋7场总进球≥5，典型高比分对攻；同主客博德近9个主场7胜1负（唯一失利2025-05-28 2-4）",
+   "rhythm": "双方交锋几乎场场对攻，进球数高、平局少",
+   "lam_shift": [
+    0.15,
+    0.25
+   ]
+  },
+  "context": {
+   "stake": "挪超第25轮争冠关键战：维京59分第1、博德56分第2，剩6轮，本场几乎决定冠军归属",
+   "fitness": "博德本周6天完整备战；维京欧冠双线消耗（3轮1分），客场近7场仅3胜",
+   "psych": "博德主场对维京长期占优，但上赛季主场2-4失利记忆犹新；维京领跑心态更稳",
+   "schedule": "博德11-04欧冠主场对里尔；维京欧战已基本出局，可全力联赛"
+  },
+  "lineup": {
+   "home": "媒体预测（非官方）：4-3-3，Helmersen、Bjørkan有望回首发",
+   "away": "媒体预测（非官方）：4-3-3，Haugen伤愈复出、Askildsen停赛结束回归"
+  }
+ },
+ "周五006": {
+  "value": {
+   "home": 6730000,
+   "away": 8180000,
+   "home_url": "transfermarkt.com/fc-volendam",
+   "away_url": "transfermarkt.com/de-graafschap"
+  },
+  "injury": {
+   "home": [],
+   "away": [
+    "Jason Meerstadt（中场/踝关节扭伤/2026-09-12起/确认缺阵）"
+   ],
+   "home_count": 0,
+   "away_count": 1,
+   "note": "福伦丹官方无伤停名单（中文源称有轮换攻击手缺阵但未列名，未验证）；格拉夫夏普仅1名中场缺阵。"
+  },
+  "venue": {
+   "name": "Kras Stadion",
+   "city": "荷兰 福伦丹",
+   "pitch": "天然草",
+   "capacity": 6800,
+   "status": "正常",
+   "status_note": "无空场/部分关闭公告"
+  },
+  "weather": {
+   "temp": "12.0℃",
+   "desc": "阴，无降水",
+   "wind": "20.5km/h（4级）",
+   "impact": "风力偏大，可能影响长传与高球落点"
+  },
+  "h2h": {
+   "summary": "近6次交锋各3胜、无平局，场均总进球4.5，属高比分对攻；同主客近4次福伦丹2胜1平1负",
+   "rhythm": "两队交锋大开大合、几乎必出大球",
+   "lam_shift": [
+    0.1,
+    0.05
+   ]
+  },
+  "context": {
+   "stake": "荷乙第13轮，福伦丹第7（距附加赛区一步）、格拉夫夏普第16（保级区）",
+   "fitness": "双方周中均踢荷兰杯（福伦丹3-5出局、格拉夫0-1出局），体能消耗相近",
+   "psych": "福伦丹主场是主要得分点；格拉夫夏普客场防守盯人失误多",
+   "schedule": "荷乙赛程密集，双方均一周双赛"
+  },
+  "lineup": {
+   "home": "媒体预测（非官方）：4-2-3-1，费尔曼（13球）领衔",
+   "away": "媒体预测（非官方）：4-3-3，客场防反"
+  }
+ },
+ "周五007": {
+  "value": {
+   "home": 74250000,
+   "away": 159700000,
+   "home_url": "transfermarkt.com/sv-07-elversberg",
+   "away_url": "transfermarkt.com/1-fsv-mainz-05"
+  },
+  "injury": {
+   "home": [
+    "Jan Gyamerah（右后卫/大腿腿筋伤/2026-10-25起/确认缺阵）",
+    "Luis Seifert（中卫/踝关节下胫腓韧带撕裂/2026-08-25起/确认缺阵）",
+    "Tom Zimmerschied（边锋/踝关节扭伤/2026-10-19起/确认缺阵）",
+    "Noah Darvich（前腰/腿筋伤/2026-10-18起/确认缺阵）",
+    "坎贝尔（右边锋/撞伤/出战成疑）",
+    "Lukas Pinckert（中卫/红牌停赛说法仅中文源，未验证/出战成疑）"
+   ],
+   "away": [
+    "Dominik Kohr（中卫/脚踝伤/2026-08-30起/预计2027-01，新浪）",
+    "Silas（前锋/胫腓骨骨折/2026-03-13起/预计2027-01）",
+    "Otto Ruoppi（轮换中场/膝关节损伤/2026-09-26起/确认缺阵）",
+    "Nadiem Amiri（中场核心/膝部不适缺席德国杯/出战成疑）"
+   ],
+   "home_count": 4,
+   "away_count": 3,
+   "note": "埃尔沃斯堡4人确认缺阵，覆盖右后卫/中卫/边锋/前腰，中前场创造力受损；美因茨3人缺阵（Kohr、Silas长期）+核心Amiri成疑。单关场次，平局按单关信号上修。"
+  },
+  "venue": {
+   "name": "Ursapharm-Arena an der Kaiserlinde",
+   "city": "德国 Spiesen-Elversberg（萨尔州）",
+   "pitch": "天然草（带地暖）",
+   "capacity": 9307,
+   "status": "正常",
+   "status_note": "bundesliga.com赛程与票务正常，无空场/部分关闭公告"
+  },
+  "weather": {
+   "temp": "6.7℃",
+   "desc": "晴/少云，无降水",
+   "wind": "10.5km/h",
+   "impact": "无实质影响"
+  },
+  "h2h": {
+   "summary": "正式交锋仅2次且均为德国杯（2023-08-13 埃尔沃斯堡0-1美因茨、2021-08-08 1-1），美因茨1胜1平；本场为两队史上首次联赛交锋",
+   "rhythm": "交锋样本极小（2场德国杯），无稳定节奏参考",
+   "lam_shift": [
+    0.0,
+    0.0
+   ]
+  },
+  "context": {
+   "stake": "德甲第9轮，埃尔沃斯堡10分第8、美因茨10分第7，同分直接卡位战；单关场次",
+   "fitness": "埃尔沃斯堡周中德国杯0-2出局（控球74%仍输），一周双赛；美因茨周中杯赛0-2负波鸿出局，同样双线",
+   "psych": "埃尔沃斯堡主场曾3-2胜勒沃库森、4-3胜奥格斯堡，主场气势足；美因茨客场3战全胜（进10失3）",
+   "schedule": "美因茨下周主场对拜仁，可能分心；埃尔沃斯堡无欧战"
+  },
+  "lineup": {
+   "home": "媒体预测（非官方）：4-2-3-1，中卫与右后卫重组",
+   "away": "媒体预测（非官方）：3-4-2-1，Kohr缺阵三中卫重组，Amiri赛前评估"
+  }
+ },
+ "周五008": {
+  "value": {
+   "home": 115750000,
+   "away": 102700000,
+   "home_url": "transfermarkt.com/sheffield-united",
+   "away_url": "transfermarkt.com/afc-wrexham"
+  },
+  "injury": {
+   "home": [
+    "Jamie Shackleton（中场/右后卫/足部伤/2026-09-21起/确认缺阵）",
+    "Matt Doherty（右后卫/伤/2026-09-20起/确认缺阵）",
+    "Ryan Oné（前锋/腿筋伤/2026-10起/确认缺阵）",
+    "Patrick Bamford（前锋/肩部伤/2026-10-24起/出战成疑）"
+   ],
+   "away": [
+    "Sebastian Revan（左后卫/腿筋伤/2026-02-15起/确认缺阵）",
+    "Josh Windass（前腰/踝关节扭伤/2026-10-11起/确认缺阵）",
+    "Liberato Cacace（左翼卫/小腿伤/2026-08-03起/确认缺阵）",
+    "Nathan Broadhead（前锋/大腿伤/2026-09-22起/确认缺阵）",
+    "George Thomason（中场/大腿伤/2026-08-27起/确认缺阵）",
+    "Max Cleworth（中卫/腿筋伤/出战成疑）"
+   ],
+   "home_count": 3,
+   "away_count": 5,
+   "note": "雷克斯汉姆5人确认缺阵（两名左路+两名前锋+1中场），伤病为赛季最严重阶段；谢菲联3人缺阵、Bamford肩伤成疑。"
+  },
+  "venue": {
+   "name": "Bramall Lane",
+   "city": "英格兰 谢菲尔德",
+   "pitch": "混合草",
+   "capacity": 32702,
+   "status": "正常",
+   "status_note": "Wrexham官网与本场票务/转播正常，无空场/部分关闭公告"
+  },
+  "weather": {
+   "temp": "10.1℃",
+   "desc": "晴间多云，无降水",
+   "wind": "4.7km/h",
+   "impact": "条件理想"
+  },
+  "h2h": {
+   "summary": "上赛季雷克斯汉姆联赛双杀谢菲联（主场5-3、客场2-1）；双方近5次交锋共27球；同主客2026-03-21谢菲联1-2负",
+   "rhythm": "交锋极端高比分、雷克斯汉姆心理占优（英冠交锋规律覆盖主场优势）",
+   "lam_shift": [
+    0.1,
+    0.15
+   ]
+  },
+  "context": {
+   "stake": "英冠第13轮，谢菲联16分第12、雷克斯汉姆14分第17，均需向上半区靠拢",
+   "fitness": "双方一周双赛，谢菲联上轮主场1-1德比郡（25射10正仍不胜）",
+   "psych": "谢菲联主场2026年尚未3连不败；雷克斯汉姆客场近7场仅1胜且连续7轮未零封",
+   "schedule": "英冠赛程密集，轮换空间有限"
+  },
+  "lineup": {
+   "home": "媒体预测（非官方）：4-2-3-1，Bamford若缺阵由Cannon顶替",
+   "away": "媒体预测（非官方）：3-5-2，Moore与O'Hare重返布拉莫巷"
+  }
+ },
+ "周五009": {
+  "value": {
+   "home": 368050000,
+   "away": 141600000,
+   "home_url": "transfermarkt.com/fc-villarreal",
+   "away_url": "transfermarkt.com/rcd-espanyol"
+  },
+  "injury": {
+   "home": [
+    "Pape Gueye（中场/停赛，10-24对瓦伦西亚直红）",
+    "Ilias Akhomach（边锋/伤/2026-10-24起/确认缺阵）",
+    "Carlos Romero（左后卫/伤/出战成疑）",
+    "Nathan Saliba（中场/伤/出战成疑）"
+   ],
+   "away": [
+    "Kike García（前锋/伤/确认缺阵）",
+    "Jofre Carreras（中场/伤/确认缺阵）"
+   ],
+   "home_count": 2,
+   "away_count": 2,
+   "note": "黄潜Gueye停赛+Akhomach伤缺，另有2人成疑，中前场略有缺口；西班牙人2人缺阵、Puado伤愈可出战。双方缺口均不致命。"
+  },
+  "venue": {
+   "name": "Estadio de la Cerámica（陶瓷球场）",
+   "city": "西班牙 比利亚雷亚尔",
+   "pitch": "天然草",
+   "capacity": 23008,
+   "status": "正常",
+   "status_note": "LaLiga本场页面无空场/部分关闭公告"
+  },
+  "weather": {
+   "temp": "18℃",
+   "desc": "多云，降雨概率40%，日降水约2mm",
+   "wind": "10km/h（阵风15km/h）",
+   "impact": "影响很小，草皮或略湿滑"
+  },
+  "h2h": {
+   "summary": "比利亚雷亚尔近7次西甲交锋全胜西班牙人，自2020年1月主场1-2负后再未输过；陶瓷球场近5次西甲主场4胜1负",
+   "rhythm": "黄潜对西班牙人形成稳定压制，交锋多为黄潜控场",
+   "lam_shift": [
+    0.05,
+    -0.05
+   ]
+  },
+  "context": {
+   "stake": "西甲第11轮，黄潜12分第10、西班牙人8分第18（降级区），一方争欧战区、一方保级",
+   "fitness": "黄潜10-27国王杯5-0大胜（7名青训首发、主力轮休），体能储备好；西班牙人同期国王杯3-4负第四级球队",
+   "psych": "西班牙人赛前解雇主帅Manolo González，Eder Sarabia已官宣接任但不指挥本场，士气与战术稳定性受冲击",
+   "schedule": "黄潜4天后欧冠客战PSG，本场可能保留部分主力"
+  },
+  "lineup": {
+   "home": "媒体预测（非官方）：4-4-2，Mikautadze（5球）领衔",
+   "away": "媒体预测（非官方）：4-4-2，临时主帅Sergio García带队"
+  }
+ },
+ "周五010": {
+  "value": {
+   "home": 253300000,
+   "away": 243000000,
+   "home_url": "transfermarkt.com/losc-lille",
+   "away_url": "transfermarkt.com/rc-lens"
+  },
+  "injury": {
+   "home": [
+    "Tanguy Nianzou（中卫/停赛，10-25对摩纳哥直红）",
+    "Ayase Ueda 上田绮世（前锋/左脚跖腱膜撕裂/确认缺阵）",
+    "Hamza Igamane（前锋/前十字韧带撕裂/确认缺阵）",
+    "Tiago Santos（右后卫/膝十字韧带断裂+半月板/长期）",
+    "Osame Sahraoui（边锋/轻伤/出战成疑）"
+   ],
+   "away": [
+    "Odsonne Édouard（前锋/内收肌慢性痛/2026-10-28手术/约2个月）",
+    "Abdallah Sima（前锋/大腿伤/预计11月底）",
+    "Maik Nawrocki（中卫/十字韧带撕裂/长期）",
+    "Ismaëlo Ganiou（中卫/半月板手术后/6-8周）",
+    "Jonathan Gradit（中卫/肌肉伤后已合练/出战成疑）",
+    "Jhoanner Chávez（左后卫/伤情未明/出战成疑）"
+   ],
+   "home_count": 4,
+   "away_count": 4,
+   "note": "里尔缺中卫Nianzou（停赛）+两名前锋+右后卫；朗斯缺两名中卫+两名前锋，Gradit成疑。双方中后场均有缺口，德比强度下防守稳定性下降。"
+  },
+  "venue": {
+   "name": "Decathlon Arena - Stade Pierre-Mauroy",
+   "city": "法国 Villeneuve-d'Ascq（里尔）",
+   "pitch": "天然草",
+   "capacity": 50186,
+   "status": "部分关闭",
+   "status_note": "朗斯俱乐部自主关闭本场客队看台（布鲁日客场烟火事件后续），主队看台正常；按部分关闭折减主场加成"
+  },
+  "weather": {
+   "temp": "8℃（体感约9℃）",
+   "desc": "晴，降水概率0%",
+   "wind": "东北风约8km/h",
+   "impact": "无影响，低温干爽"
+  },
+  "h2h": {
+   "summary": "近8次交锋里尔仅1负（5胜2平）；近6次法甲里尔4胜1平1负、进9失5；里尔主场对朗斯法甲4连胜且仅失1球，近11次主场10胜1负",
+   "rhythm": "里尔主场对朗斯长期压制，德比偏中低比分、身体对抗强",
+   "lam_shift": [
+    0.08,
+    -0.05
+   ]
+  },
+  "context": {
+   "stake": "法甲第9轮北方德比，里尔15分第3、朗斯13分第7；里尔争欧冠席位、朗斯冲击三连胜升第2",
+   "fitness": "里尔近6场各项仅1胜、近4场2平2负；朗斯联赛三连胜但客场每场都失球",
+   "psych": "里尔主场德比心理优势极强；朗斯无客队球迷助威，氛围劣势",
+   "schedule": "里尔4天后欧战任务，可能轮换；朗斯单线"
+  },
+  "lineup": {
+   "home": "媒体预测（非官方）：4-2-3-1，Nianzou停赛由Diakité顶替",
+   "away": "媒体预测（非官方）：3-4-2-1，Édouard缺阵由Said顶替"
+  }
+ },
+ "周五011": {
+  "value": {
+   "home": 27450000,
+   "away": 413700000,
+   "home_url": "transfermarkt.com/casa-pia",
+   "away_url": "transfermarkt.com/sporting-cp"
+  },
+  "injury": {
+   "home": [
+    "André Gomes（中场/伤/确认缺阵，zerozero）"
+   ],
+   "away": [
+    "Rodrigo Zalazar（中场/伤/确认缺阵，zerozero）",
+    "Nuno Santos（左边翼卫/伤/确认缺阵，zerozero）",
+    "Zeno Debast（中卫/伤/确认缺阵，zerozero）"
+   ],
+   "home_count": 1,
+   "away_count": 3,
+   "note": "卡萨皮亚仅1人缺阵、Pérez已恢复；里斯本竞技3名主力缺阵（中场+左翼卫+中卫），但阵容深度足够。"
+  },
+  "venue": {
+   "name": "Estádio Municipal de Rio Maior（卡萨皮亚借用主场）",
+   "city": "葡萄牙 Rio Maior（圣塔伦区）",
+   "pitch": "天然草（104×68m）",
+   "capacity": 7000,
+   "status": "正常",
+   "status_note": "借用主场，无空场/部分关闭公告"
+  },
+  "weather": {
+   "temp": "15℃",
+   "desc": "阴，降雨概率24%、预报0mm",
+   "wind": "NNE 13km/h",
+   "impact": "影响较小"
+  },
+  "h2h": {
+   "summary": "葡超10次交锋卡萨皮亚全负、进8失36；里斯本竞技对其22连胜、26场不败；同主客2025-08-08 0-2负",
+   "rhythm": "一边倒压制，葡体交锋场均进球高",
+   "lam_shift": [
+    0.0,
+    0.05
+   ]
+  },
+  "context": {
+   "stake": "葡超第10轮，卡萨皮亚7分第16（保级区）、里斯本竞技18分第3（落后榜首），一方保级一方争冠",
+   "fitness": "卡萨皮亚近3轮2胜且近2场零封、体能充沛；里斯本竞技6天3赛、周中欧冠负LASK，连续两负",
+   "psych": "卡萨皮亚对葡体22连败心理阴影大；葡体主帅Rui Borges承认压力",
+   "schedule": "葡体欧冠双线，本场后仍有欧战"
+  },
+  "lineup": {
+   "home": "媒体预测（非官方）：4-4-2，Livolant解禁复出",
+   "away": "媒体预测（非官方）：3-4-3，Suárez领衔锋线"
+  }
+ },
+ "周五012": {
+  "value": {
+   "home": 157000000,
+   "away": 30580000,
+   "home_url": "transfermarkt.com/corinthians-sao-paulo",
+   "away_url": "transfermarkt.com/mirassol"
+  },
+  "injury": {
+   "home": [
+    "Jesse Lingard（前腰/停赛累计3黄，另有肋骨轻微骨折）",
+    "Memphis Depay（前锋/右大腿股二头肌水肿/确认缺阵）",
+    "Gabriel Paulista（中卫/左大腿内收肌拉伤/确认缺阵）",
+    "Raniele（后腰/半月板手术恢复/确认缺阵）",
+    "Zakaria Labyad（前锋/膝前十字韧带/长期）",
+    "Kayke（前锋/膝前十字韧带/长期）"
+   ],
+   "away": [
+    "Negueba（边锋/右膝多韧带重伤已手术/长期）",
+    "José Aldo（中场/左大腿股直肌部分撕裂/约12周）"
+   ],
+   "home_count": 6,
+   "away_count": 2,
+   "note": "科林蒂安6人缺阵、覆盖前腰/两名前锋/中卫/后腰，锋线仅剩Yuri Alberto+Rodrigo Garro；米拉索尔2人缺阵。单队≥5人伤停→置信度强制降级。"
+  },
+  "venue": {
+   "name": "Neo Química Arena（伊塔克拉）",
+   "city": "巴西 圣保罗",
+   "pitch": "天然草",
+   "capacity": 49205,
+   "status": "正常",
+   "status_note": "巴甲官网/ESPN赛程无空场或部分关闭公告"
+  },
+  "weather": {
+   "temp": "19~21℃",
+   "desc": "阴，有零星小雨（INMET预报）",
+   "wind": "4~8km/h",
+   "impact": "草皮可能湿滑，对节奏略有影响，不构成延期风险"
+  },
+  "h2h": {
+   "summary": "近6次交锋科林蒂安4胜2负（无平局）、进12失5；同主客Neo Química Arena对米拉索尔3战全胜（3-0、3-0、2-1）仅失1球",
+   "rhythm": "科林蒂安主场对米拉索尔压制明显，交锋无平局、比分偏主队",
+   "lam_shift": [
+    0.05,
+    -0.05
+   ]
+  },
+  "context": {
+   "stake": "巴甲第33轮保级6分战：科林蒂安33分第18（降级区）、米拉索尔37分第15，仅差4分",
+   "fitness": "科林蒂安近10场0胜2平8负、近4轮丢10球；米拉索尔近10场3胜5平2负",
+   "psych": "科林蒂安新帅Seedorf首秀遭2-3逆转，保级压力极大；米拉索尔客场15战2胜、落后时100%输球",
+   "schedule": "巴甲收官阶段，双方均无杯赛牵制"
+  },
+  "lineup": {
+   "home": "媒体预测（非官方）：4-2-3-1，Yuri Alberto单箭头、Rodrigo Garro组织",
+   "away": "媒体预测（非官方）：4-4-2，Eduardo（近10场5球）领衔"
+  }
+ }
+}

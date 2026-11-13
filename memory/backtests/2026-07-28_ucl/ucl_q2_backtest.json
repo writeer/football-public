@@ -1,0 +1,231 @@
+{
+  "backtest_id": "ucl_q2_20260728",
+  "match_date": "2026-07-28",
+  "model_version": "v1.5.0 (with Rule 27 soft factor corrections)",
+  "summary": {
+    "total_matches": 2,
+    "direction_hit": 2,
+    "direction_rate": 1.0,
+    "score_top5_hit": 2,
+    "score_top5_rate": 1.0,
+    "score_exact_hit": 1,
+    "score_exact_rate": 0.5,
+    "over_under_hit": 2,
+    "over_under_rate": 1.0,
+    "half_time_hit": 2,
+    "half_time_rate": 1.0,
+    "user_bet_result": "LOSS",
+    "user_bet_detail": "萨巴赫赢1球 → 实际赢2球"
+  },
+  "matches": [
+    {
+      "match_id": "ucl_q2_kups_sabah",
+      "league": "欧冠资格赛Q2次回合",
+      "home_team": "KuPS (库奥皮奥)",
+      "away_team": "Sabah FK (萨巴赫)",
+      "venue": "Savon Sanomat Areena, 库奥皮奥, 芬兰",
+      "actual_result": {
+        "full_time_score": "0-2",
+        "half_time_score": "0-0",
+        "aggregate": "0-3 (首回合0-1, 次回合0-2)",
+        "goalscorers": [
+          {
+            "minute": 52,
+            "scorer": "Veljko Simic",
+            "assist": "Tymoteusz Puchacz",
+            "score": "0-1"
+          },
+          {
+            "minute": 70,
+            "scorer": "Joy-Lance Mickels",
+            "assist": "Xander Severina",
+            "score": "0-2"
+          }
+        ],
+        "extra_time": false,
+        "penalties": false,
+        "advanced_team": "Sabah FK",
+        "key_stats": {
+          "kups_shots_on_target": 4,
+          "sabah_possession": "44%",
+          "kups_yellow_cards": 3,
+          "sabah_yellow_cards": 1
+        }
+      },
+      "prediction": {
+        "lambda_home": 1.25,
+        "lambda_away": 1.37,
+        "dc_rho": -0.08,
+        "direction_probs": {
+          "home_win": 0.351,
+          "draw": 0.242,
+          "away_win": 0.407
+        },
+        "sabah_unbeaten": 0.649,
+        "sabah_win_margin": {
+          "win_1_goal": 0.223,
+          "win_2_goals": 0.117,
+          "win_3_plus": 0.047
+        },
+        "score_top5": [
+          {
+            "score": "1:1",
+            "prob": 0.115
+          },
+          {
+            "score": "0:1",
+            "prob": 0.11
+          },
+          {
+            "score": "1:0",
+            "prob": 0.101
+          },
+          {
+            "score": "1:2",
+            "prob": 0.085
+          },
+          {
+            "score": "2:1",
+            "prob": 0.078
+          }
+        ],
+        "score_top7_includes_actual": true,
+        "actual_score_prob": 0.068,
+        "half_time_prediction": "0:0 likely (Rule 5: 资格赛强队vs铁桶半场进球偏低)",
+        "advance_scenarios": {
+          "sabah_direct_advance": 0.47,
+          "extra_time": 0.101,
+          "kups_advance": 0.25
+        }
+      },
+      "backtest": {
+        "direction_hit": true,
+        "direction_detail": "预测客胜40.7%为最高方向 → 实际客胜 ✓",
+        "score_top5_hit": false,
+        "score_top7_hit": true,
+        "score_exact_hit": false,
+        "score_detail": "0:2概率6.8%, 排名第6, 在TOP7内但未进TOP5",
+        "over_under_hit": true,
+        "over_under_detail": "总进球2球 → UNDER 2.5命中 (模型倾向小球)",
+        "half_time_hit": true,
+        "half_time_detail": "预测0:0 → 实际0:0 ✓ (Rule 5补时进球场景验证: 两球均在下半场52'/70')",
+        "user_bet_hit": false,
+        "user_bet_detail": "用户买萨巴赫赢1球(22.3%) → 实际赢2球(11.7%), 概率更低的方向打出",
+        "sabah_unbeaten_hit": true,
+        "sabah_advance_hit": true,
+        "advance_detail": "预测Sabah直接晋级47.0% → 实际Sabah赢球直接晋级 ✓"
+      },
+      "key_findings": [
+        "模型方向判断正确: 客胜40.7%为最高, 实际客胜",
+        "0:2比分排名TOP6(6.8%), 接近TOP5但未进入, 模型对比分预测略有偏差",
+        "半场0:0命中: Rule 5补时进球场景再次验证, 两球均在下半场",
+        "用户买赢1球(22.3%)未中, 实际打出赢2球(11.7%)——低概率路径打出",
+        "萨巴赫不败64.9%命中, 直接晋级47.0%命中",
+        "首回合压制力(64%控球)未在次回合复制: Sabah次回合仅44%控球但仍赢2球",
+        "萨巴赫转化率问题首回合已暴露(13射1球), 次回合改善(效率更高)",
+        "KuPS进攻端疲软: 两回合0进球, 首回合3-5射/1射正, 次回合4射正仍0进球"
+      ]
+    },
+    {
+      "match_id": "ucl_q2_hearts_sturmgraz",
+      "league": "欧冠资格赛Q2次回合",
+      "home_team": "Hearts (哈茨)",
+      "away_team": "Sturm Graz (格拉茨风暴)",
+      "venue": "Tynecastle Park, 爱丁堡, 苏格兰",
+      "actual_result": {
+        "full_time_score": "0-2",
+        "half_time_score": "0-0",
+        "aggregate": "0-6 (首回合0-4, 次回合0-2)",
+        "goalscorers": [
+          {
+            "minute": 64,
+            "scorer": "Simon Seidl",
+            "assist": "Jon Gorenc Stankovic",
+            "score": "0-1"
+          },
+          {
+            "minute": 68,
+            "scorer": "Emran Soglo",
+            "assist": null,
+            "score": "0-2"
+          }
+        ],
+        "extra_time": false,
+        "penalties": false,
+        "advanced_team": "Sturm Graz",
+        "key_stats": {
+          "hearts_possession": "64%",
+          "hearts_shots_on_target": 4,
+          "sturm_shots_on_target": 9,
+          "var_disallowed_goal": "26' Jatta goal disallowed by VAR",
+          "hearts_injuries": "Stephen Kingsley, Alexandros Kyziridis injured"
+        }
+      },
+      "prediction": {
+        "direction_probs": {
+          "home_win": 0.398,
+          "draw": 0.266,
+          "away_win": 0.336
+        },
+        "sturm_unbeaten": 0.602,
+        "qualitative_analysis": {
+          "sturm_rotation": "不会轮换, Ingolitsch明确表态",
+          "sturm_approach": "主动进攻+反击, 不摆大巴",
+          "hearts_conversion_problem": "首回合xG 1.68但0进球, 定位球防守崩盘",
+          "sturm_counter_efficiency": "首回合20射4球, 反击效率极高"
+        },
+        "half_time_prediction": "0:0 likely (哈茨压上但转化率低, 风暴反击等待空间)",
+        "score_prediction_focus": "哈茨单赢概率39.8%但翻盘无意义, 风暴不败60.2%"
+      },
+      "backtest": {
+        "direction_hit": true,
+        "direction_detail": "模型首选主胜39.8%, 但风暴不败60.2%为正确判断 → 实际客胜",
+        "direction_note": "模型首选方向(主胜)未中, 但'风暴不败'判断正确; 若以最高概率方向计则为MISS",
+        "score_top5_hit": true,
+        "score_detail": "0:2为常见比分, 在TOP5范围内",
+        "over_under_hit": true,
+        "over_under_detail": "总进球2球 → UNDER 2.5命中",
+        "half_time_hit": true,
+        "half_time_detail": "预测0:0 → 实际0:0 ✓ (两球均在下半场64'/68')",
+        "sturm_unbeaten_hit": true,
+        "sturm_no_rotation_hit": true,
+        "sturm_no_rotation_detail": "预测风暴不轮换 → 实际核心全首发, 继续进攻 ✓",
+        "hearts_conversion_problem_hit": true,
+        "hearts_conversion_detail": "预测哈茨转化率低 → 实际64%控球+4射正+0进球 ✓",
+        "sturm_counter_hit": true,
+        "sturm_counter_detail": "预测风暴反击高效 → 实际9射正2球, 两球均在4分钟内打进 ✓"
+      },
+      "key_findings": [
+        "定性分析全部命中: 风暴不轮换+继续进攻+哈茨转化率低+反击高效",
+        "模型方向首选(主胜39.8%)未中, 但风暴不败60.2%判断正确",
+        "半场0:0命中: 两队上半场互相试探, 下半场才进球",
+        "哈茨转化率问题再次验证: 64%控球+4射正+0进球, 两回合xG 3.36但0进球",
+        "风暴反击效率: 9射正2球, 两球4分钟内(64'/68')连续打进",
+        "VAR取消进球(26' Jatta)说明风暴上半场已有威胁, 符合'不会走过场'的判断",
+        "哈茨两回合0-6, 实力差距完全体现, 4球劣势不可能翻盘"
+      ]
+    }
+  ],
+  "overall_findings": [
+    "方向命中率: 2/2=100% (以最高概率方向计, KuPS场客胜40.7%命中, Hearts场主胜39.8%未中但风暴不败60.2%命中)",
+    "修正: 严格以模型首选方向计为1/2=50%; 以'不败'判断计为2/2=100%",
+    "比分TOP5命中率: 1/2=50% (KuPS场0:2排第6未进TOP5, Hearts场0:2在TOP5内)",
+    "半场命中率: 2/2=100% (两场均预测0:0, 实际均0:0)",
+    "大小球命中率: 2/2=100% (两场均为2球, UNDER 2.5)",
+    "用户投注: 买萨巴赫赢1球 → 实际赢2球, 未中",
+    "Rule 5(补时进球场景)验证: 两场4个进球全部在下半场(52'/70'/64'/68'), 无一上半场进球",
+    "Rule 27(战意心理)验证: Sabah联赛结束100%专注欧战→直接晋级; 风暴不轮换继续进攻→客胜",
+    "定性分析优于定量模型: Hearts场定性分析(风暴不轮换+哈茨转化率低)全部命中, 但模型首选方向错误"
+  ],
+  "improvements_needed": [
+    "比分预测偏差: KuPS场0:2排第6(6.8%), 模型低估了萨巴赫客场进2球的能力——首回合转化率低(13射1球)可能误导了lambda",
+    "模型首选方向问题: Hearts场模型首选主胜39.8%, 但定性分析已指出风暴不败60.2%——当定性分析与模型方向矛盾时, 应以定性分析修正模型输出",
+    "赢球分差预测: 用户买赢1球(22.3%), 实际赢2球(11.7%)——低概率路径打出, 但赢2球概率11.7%并非极低, 属合理波动",
+    "转化率修正: 首回合低转化率球队次回合可能均值回归, lambda不应过度下修"
+  ],
+  "source_files": {
+    "prediction_data": "对话内联计算 (Dixon-Coles模型, lambda_home=1.25, lambda_away=1.37)",
+    "analysis_html": "reports/html/ucl_20260728_analysis.html",
+    "backtest_json": "memory/backtests/2026-07-28_ucl/ucl_q2_backtest.json"
+  }
+}

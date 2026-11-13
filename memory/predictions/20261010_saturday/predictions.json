@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-10",
+  "weekday": "周六",
+  "matchCount": 30,
+  "singleMatches": ["004", "010", "016", "020"],
+  "leagues": ["日职", "韩职", "英超", "西甲", "意甲", "德甲", "法甲", "瑞超", "荷甲", "葡超", "沙职", "巴甲", "德国杯"],
+  "keyRules": {
+    "rule63_single_draw": "004/010/016/020单关平局上修12%（均未翻转排序，L166/L171约束）",
+    "rule22_L1_ligue1": "017里尔/028摩纳哥降一级",
+    "rule69_ligue1_draw": "017/028平局上修5~7%",
+    "rule68_epl": "005/013/014/015/020英超主场系数下调+弱队状态上修",
+    "rule32_injuries": "005(7人)/007(5人)/008(6人)/010(5+6)/012(9人)/015(6人)/020(10人)/021(5+4)/023(6人)/025(5人)/027(6人)/030(8人)触发降级",
+    "rule65_big": "009/019/022/024/029/012触发大球上修",
+    "rule71_parlay_ligue1": "非PSG法甲2场(N<3)→娱乐串纳入0场"
+  },
+  "matches": [
+    {"num":"001","league":"日职","home":"大阪樱花","away":"横滨水手","had":{"pick":"主胜","prob":40.1,"second":"客胜","secondProb":34.2},"hafu":{"pick":"让(-1)负","prob":45.0,"second":"让(-1)平"},"crs_top5":["1:1","1:0","0:1","2:1","1:2"],"ttg":["2球","1球"],"htft_top3":["平平","平胜","胜胜"],"ht_score":["0:0","1:0","0:1"],"k_dist":0,"k_rec":1,"confidence":"★★","lambda":{"home":1.32,"away":1.20}},
+    {"num":"002","league":"韩职","home":"首尔FC","away":"济州SK","had":{"pick":"主胜","prob":54.3,"second":"平","secondProb":25.6},"hafu":{"pick":"让(-1)平","prob":28.0,"second":"让(-1)胜"},"crs_top5":["1:0","1:1","2:0","2:1","0:1"],"ttg":["2球","1球"],"htft_top3":["胜胜","平平","平胜"],"ht_score":["0:0","1:0","0:1"],"k_dist":1,"k_rec":1,"confidence":"★★","lambda":{"home":1.59,"away":0.89}},
+    {"num":"003","league":"韩职","home":"金泉尚武","away":"安养FC","had":{"pick":"主胜","prob":43.5,"second":"客胜","secondProb":30.9},"hafu":{"pick":"让(-1)负","prob":46.0,"second":"让(-1)平"},"crs_top5":["1:0","1:1","0:1","2:1","2:0"],"ttg":["2球","1球"],"htft_top3":["平平","平胜","胜胜"],"ht_score":["0:0","1:0","0:1"],"k_dist":0,"k_rec":1,"confidence":"★★","lambda":{"home":1.37,"away":1.11}},
+    {"num":"004","league":"日职","home":"京都","away":"町田泽维","single":true,"had":{"pick":"客胜","prob":49.0,"second":"平(单关上修)","secondProb":28.0},"hafu":{"pick":"让(+1)平","prob":24.8,"second":"让(+1)负"},"crs_top5":["0:1","1:1","1:2","0:2","1:0"],"ttg":["2球","1球"],"htft_top3":["平负","平平","负负"],"ht_score":["0:0","0:1","1:0"],"k_dist":0,"k_rec":-1,"confidence":"★★","lambda":{"home":1.01,"away":1.51}},
+    {"num":"005","league":"英超","home":"阿森纳","away":"利兹联","had":{"pick":"主胜","prob":56.0,"second":"平","secondProb":26.0},"hafu":{"pick":"让(-1)胜","prob":33.0,"second":"让(-1)平"},"crs_top5":["1:0","2:0","1:1","2:1","3:0"],"ttg":["2球","3球"],"htft_top3":["胜胜","平胜","平平"],"ht_score":["0:0","1:0","0:1"],"k_dist":1,"k_rec":1,"confidence":"★★","note":"7人伤停(后防4人)，规则32+11降级","lambda":{"home":1.62,"away":0.86}},
+    {"num":"006","league":"西甲","home":"巴列卡诺","away":"毕尔巴鄂","had":{"pick":"客胜","prob":38.7,"second":"主胜","secondProb":36.0},"hafu":{"pick":"让(+1)负","prob":21.6,"second":"让(+1)平"},"crs_top5":["1:1","0:1","1:0","1:2","2:1"],"ttg":["2球","3球"],"htft_top3":["平平","平负","平胜"],"ht_score":["0:0","0:1","1:0"],"k_dist":0,"k_rec":-1,"confidence":"★★","lambda":{"home":1.27,"away":1.33}},
+    {"num":"007","league":"意甲","home":"热那亚","away":"佛罗伦萨","had":{"pick":"客胜","prob":41.9,"second":"平","secondProb":25.1},"hafu":{"pick":"让(+1)负","prob":25.0,"second":"让(+1)平"},"crs_top5":["1:1","0:1","1:0","1:2","2:1"],"ttg":["2球","3球"],"htft_top3":["平平","平负","平胜"],"ht_score":["0:0","0:1","1:0"],"k_dist":0,"k_rec":-1,"confidence":"★★","lambda":{"home":1.20,"away":1.40}},
+    {"num":"008","league":"德甲","home":"柏林联合","away":"埃沃斯堡","had":{"pick":"主胜","prob":41.0,"second":"客胜","secondProb":33.9},"hafu":{"pick":"让(-1)负","prob":44.0,"second":"让(-1)平"},"crs_top5":["1:1","1:0","0:1","2:1","1:2"],"ttg":["3球","2球"],"htft_top3":["平胜","平平","胜胜"],"ht_score":["0:0","1:0","0:1"],"k_dist":0,"k_rec":1,"confidence":"★★","lambda":{"home":1.38,"away":1.22}},
+    {"num":"009","league":"德甲","home":"奥格斯堡","away":"拜仁","handicap":2,"had":{"pick":"客胜(让2)","prob":47.0,"second":"平(让2)","secondProb":24.4},"hafu":{"pick":"让(2)平","prob":24.4,"second":"让(2)胜"},"crs_top5":["1:2","0:3","1:3","0:2","1:4"],"ttg":["4球","3球"],"htft_top3":["负负","平负","胜平"],"ht_score":["0:1","0:2","1:1"],"k_dist":-1,"k_rec":-2,"confidence":"★★★","note":"无HAD，仅让球盘","lambda":{"home":0.72,"away":2.35}},
+    {"num":"010","league":"德甲","home":"美因茨","away":"勒沃库森","single":true,"had":{"pick":"客胜","prob":41.7,"second":"平(单关上修)","secondProb":28.0},"hafu":{"pick":"让(+1)负","prob":24.5,"second":"让(+1)平"},"crs_top5":["1:1","0:1","1:0","1:2","2:1"],"ttg":["2球","3球"],"htft_top3":["平平","平负","平胜"],"ht_score":["0:0","0:1","1:0"],"k_dist":0,"k_rec":-1,"confidence":"★","note":"双方合计11人伤停降级","lambda":{"home":1.21,"away":1.39}},
+    {"num":"011","league":"德国杯","home":"帕德博恩","away":"斯图加特","had":{"pick":"客胜","prob":54.7,"second":"平","secondProb":23.4},"hafu":{"pick":"让(1)平","prob":23.4,"second":"让(1)负"},"crs_top5":["1:2","0:2","1:3","1:1","2:2"],"ttg":["3球","4球"],"htft_top3":["平负","负负","平平"],"ht_score":["0:0","0:1","1:0"],"k_dist":-1,"k_rec":-1,"confidence":"★★","lambda":{"home":0.94,"away":1.66}},
+    {"num":"012","league":"德甲","home":"霍芬海姆","away":"汉堡","had":{"pick":"主胜","prob":59.3,"second":"平","secondProb":22.3},"hafu":{"pick":"让(-1)胜","prob":35.0,"second":"让(-1)平"},"crs_top5":["1:0","2:0","1:1","2:1","0:0"],"ttg":["3球","2球"],"htft_top3":["胜胜","平胜","平平"],"ht_score":["0:0","1:0","0:1"],"k_dist":1,"k_rec":1,"confidence":"★★","note":"汉堡9人严重残阵，双方合计10人降级","lambda":{"home":1.76,"away":0.84}},
+    {"num":"013","league":"英超","home":"伊普斯","away":"富勒姆","had":{"pick":"客胜","prob":39.4,"second":"平","secondProb":27.0},"hafu":{"pick":"让(+1)负","prob":23.0,"second":"让(+1)平"},"crs_top5":["1:1","0:1","1:0","1:2","2:1"],"ttg":["3球","2球"],"htft_top3":["平平","平负","平胜"],"ht_score":["0:0","0:1","1:0"],"k_dist":0,"k_rec":-1,"confidence":"★★","lambda":{"home":1.26,"away":1.34}},
+    {"num":"014","league":"英超","home":"切尔西","away":"伯恩茅斯","had":{"pick":"主胜","prob":52.0,"second":"平","secondProb":25.0},"hafu":{"pick":"让(-1)胜","prob":32.0,"second":"让(-1)平"},"crs_top5":["1:0","1:1","2:0","2:1","0:1"],"ttg":["3球","2球"],"htft_top3":["胜胜","平胜","平平"],"ht_score":["0:0","1:0","0:1"],"k_dist":1,"k_rec":1,"confidence":"★★","lambda":{"home":1.61,"away":0.99}},
+    {"num":"015","league":"英超","home":"维拉","away":"布伦特福德","had":{"pick":"客胜","prob":38.8,"second":"主胜","secondProb":35.9},"hafu":{"pick":"让(+1)负","prob":23.0,"second":"让(+1)平"},"crs_top5":["1:1","0:1","1:0","1:2","2:1"],"ttg":["3球","2球"],"htft_top3":["平平","平负","平胜"],"ht_score":["0:0","0:1","1:0"],"k_dist":0,"k_rec":-1,"confidence":"★","note":"维拉6人残阵+规则68双条款","lambda":{"home":1.22,"away":1.38}},
+    {"num":"016","league":"西甲","home":"阿拉维斯","away":"马竞","single":true,"had":{"pick":"客胜","prob":50.9,"second":"平(单关上修)","secondProb":27.0},"hafu":{"pick":"让(+1)负","prob":30.0,"second":"让(+1)平"},"crs_top5":["0:1","1:1","1:2","0:2","1:0"],"ttg":["2球","3球"],"htft_top3":["平负","负负","平平"],"ht_score":["0:0","0:1","1:0"],"k_dist":-1,"k_rec":-1,"confidence":"★★","lambda":{"home":1.02,"away":1.58}},
+    {"num":"017","league":"法甲","home":"里尔","away":"勒阿弗尔","had":{"pick":"主胜","prob":58.5,"second":"平","secondProb":24.5},"hafu":{"pick":"让(-1)胜","prob":34.0,"second":"让(-1)平"},"crs_top5":["1:0","2:0","1:1","2:1","0:1"],"ttg":["3球","2球"],"htft_top3":["胜胜","平胜","平平"],"ht_score":["0:0","1:0","0:1"],"k_dist":1,"k_rec":1,"confidence":"★","note":"法甲规则22-L1降级+规则69平局上修","lambda":{"home":1.74,"away":0.86}},
+    {"num":"018","league":"瑞超","home":"米亚尔比","away":"代格福什","had":{"pick":"主胜","prob":49.8,"second":"客胜","secondProb":25.9},"hafu":{"pick":"让(-1)负","prob":45.0,"second":"让(-1)平"},"crs_top5":["1:0","1:1","2:1","2:0","0:1"],"ttg":["2球","3球"],"htft_top3":["胜胜","平胜","平平"],"ht_score":["0:0","1:0","0:1"],"k_dist":1,"k_rec":1,"confidence":"★★","lambda":{"home":1.56,"away":1.04}},
+    {"num":"019","league":"意甲","home":"国际米兰","away":"帕尔马","handicap":2,"had":{"pick":"主胜(让2)","prob":41.1,"second":"平(让2)","secondProb":25.8},"hafu":{"pick":"让(2)平","prob":25.8,"second":"让(2)胜"},"crs_top5":["2:0","3:0","2:1","4:0","1:0"],"ttg":["3球","4球"],"htft_top3":["胜胜","平胜","平平"],"ht_score":["1:0","0:0","2:0"],"k_dist":1,"k_rec":2,"confidence":"★★★","note":"无HAD，仅让球盘","lambda":{"home":2.25,"away":0.62}},
+    {"num":"020","league":"英超","home":"曼联","away":"热刺","single":true,"had":{"pick":"主胜","prob":51.3,"second":"平(单关上修)","secondProb":26.5},"hafu":{"pick":"让(-1)胜","prob":31.0,"second":"让(-1)平"},"crs_top5":["1:0","1:1","2:1","2:0","0:1"],"ttg":["3球","2球"],"htft_top3":["胜胜","平胜","平平"],"ht_score":["0:0","1:0","0:1"],"k_dist":1,"k_rec":1,"confidence":"★","note":"曼联10人严重残阵降级","lambda":{"home":1.50,"away":1.05}},
+    {"num":"021","league":"德甲","home":"莱红牛","away":"法兰克福","had":{"pick":"主胜","prob":53.5,"second":"平","secondProb":23.6},"hafu":{"pick":"让(-1)胜","prob":33.0,"second":"让(-1)平"},"crs_top5":["1:0","1:1","2:0","2:1","2:2"],"ttg":["3球","4球"],"htft_top3":["胜胜","平胜","平平"],"ht_score":["0:0","1:0","0:1"],"k_dist":1,"k_rec":1,"confidence":"★★","note":"双方合计9人伤停降级","lambda":{"home":1.64,"away":0.96}},
+    {"num":"022","league":"西甲","home":"巴萨","away":"赫塔费","handicap":3,"had":{"pick":"主胜(让3)","prob":43.0,"second":"平(让3)","secondProb":24.1},"hafu":{"pick":"让(3)平","prob":24.1,"second":"让(3)胜"},"crs_top5":["胜其它","3:0","4:0","2:0","3:1"],"ttg":["4球","3球"],"htft_top3":["胜胜","平胜","平平"],"ht_score":["1:0","0:0","2:0"],"k_dist":1,"k_rec":3,"confidence":"★★★","note":"无HAD，仅让球盘","lambda":{"home":2.60,"away":0.48}},
+    {"num":"023","league":"荷甲","home":"费耶诺德","away":"阿尔克马","had":{"pick":"主胜","prob":51.0,"second":"客胜","secondProb":24.9},"hafu":{"pick":"让(-1)胜","prob":31.0,"second":"让(-1)平"},"crs_top5":["1:0","1:1","2:1","2:0","3:1"],"ttg":["3球","4球"],"htft_top3":["胜胜","平胜","平平"],"ht_score":["0:0","1:0","0:1"],"k_dist":1,"k_rec":1,"confidence":"★","note":"费耶诺德6人残阵+对手榜首降级","lambda":{"home":1.55,"away":1.03}},
+    {"num":"024","league":"葡超","home":"马里迪莫","away":"波尔图","had":{"pick":"客胜","prob":61.6,"second":"平","secondProb":21.7},"hafu":{"pick":"让(1)负","prob":33.0,"second":"让(1)平"},"crs_top5":["0:1","0:2","1:1","1:2","0:3"],"ttg":["3球","2球"],"htft_top3":["负负","平负","平平"],"ht_score":["0:0","0:1","1:0"],"k_dist":-1,"k_rec":-1,"confidence":"★★★","lambda":{"home":0.79,"away":1.81}},
+    {"num":"025","league":"沙职","home":"利雅新月","away":"吉达联合","had":{"pick":"主胜","prob":62.7,"second":"平","secondProb":21.0},"hafu":{"pick":"让(-2)平","prob":24.0,"second":"让(-2)胜"},"crs_top5":["1:0","2:0","1:1","2:1","3:0"],"ttg":["3球","4球"],"htft_top3":["胜胜","平胜","平平"],"ht_score":["0:0","1:0","0:1"],"k_dist":1,"k_rec":1,"confidence":"★★","note":"双方合计8人伤停降级+Al Dawsari存疑","lambda":{"home":1.83,"away":0.77}},
+    {"num":"026","league":"荷甲","home":"福图纳","away":"特温特","had":{"pick":"客胜","prob":57.9,"second":"平","secondProb":22.7},"hafu":{"pick":"让(1)负","prob":30.0,"second":"让(1)平"},"crs_top5":["0:1","0:2","1:1","1:2","1:0"],"ttg":["3球","4球"],"htft_top3":["负负","平负","平平"],"ht_score":["0:0","0:1","1:0"],"k_dist":-1,"k_rec":-1,"confidence":"★★","lambda":{"home":0.87,"away":1.73}},
+    {"num":"027","league":"意甲","home":"那不勒斯","away":"弗洛西诺","had":{"pick":"主胜","prob":57.8,"second":"平","secondProb":23.9},"hafu":{"pick":"让(-1)胜","prob":32.0,"second":"让(-1)平"},"crs_top5":["1:0","2:0","1:1","2:1","0:1"],"ttg":["3球","2球"],"htft_top3":["胜胜","平胜","平平"],"ht_score":["0:0","1:0","0:1"],"k_dist":1,"k_rec":1,"confidence":"★★","note":"那不勒斯6人残阵+双方10人降级","lambda":{"home":1.63,"away":0.92}},
+    {"num":"028","league":"法甲","home":"摩纳哥","away":"图卢兹","had":{"pick":"主胜","prob":55.5,"second":"平","secondProb":25.5},"hafu":{"pick":"让(-1)胜","prob":33.0,"second":"让(-1)平"},"crs_top5":["1:0","1:1","2:0","2:1","0:1"],"ttg":["3球","2球"],"htft_top3":["胜胜","平胜","平平"],"ht_score":["0:0","1:0","0:1"],"k_dist":1,"k_rec":1,"confidence":"★","note":"法甲规则22-L1降级+规则69上修","lambda":{"home":1.68,"away":0.92}},
+    {"num":"029","league":"西甲","home":"皇马","away":"比利亚雷","had":{"pick":"主胜","prob":61.0,"second":"平","secondProb":21.9},"hafu":{"pick":"让(-1)胜","prob":38.0,"second":"让(-1)平"},"crs_top5":["1:0","2:0","1:1","2:1","3:0"],"ttg":["4球","3球"],"htft_top3":["胜胜","平胜","平平"],"ht_score":["0:0","1:0","0:1"],"k_dist":1,"k_rec":1,"confidence":"★★★","lambda":{"home":1.79,"away":0.81}},
+    {"num":"030","league":"巴甲","home":"圣保罗","away":"维多利亚","had":{"pick":"主胜","prob":53.0,"second":"平","secondProb":25.0},"hafu":{"pick":"让(-1)负","prob":44.0,"second":"让(-1)平"},"crs_top5":["1:0","1:1","2:0","2:1","0:1"],"ttg":["2球","1球"],"htft_top3":["平平","平胜","胜胜"],"ht_score":["0:0","1:0","0:1"],"k_dist":1,"k_rec":1,"confidence":"★","note":"圣保罗8人严重残阵降级","lambda":{"home":1.48,"away":1.02}}
+  ],
+  "parlays": {
+    "direction": [
+      {"name":"稳健方向串A","legs":["002首尔主胜","012霍芬海姆主胜","024波尔图客胜"],"odds":"~2.31"},
+      {"name":"稳健方向串B","legs":["029皇马主胜","027那不勒斯主胜","022巴萨主胜"],"odds":"~1.66"},
+      {"name":"价值方向串","legs":["016马竞客胜","026特温特客胜","011斯图加特客胜"],"odds":"~3.23"}
+    ],
+    "handicap": [
+      {"name":"稳健让球串","legs":["024波尔图让(1)负","019国米让(2)平/胜"]},
+      {"name":"价值让球串","legs":["009拜仁让(2)平","022巴萨让(3)平","025新月让(-2)平"],"odds":"~89.6"}
+    ],
+    "entertainment": {
+      "ligue1_excluded": "非PSG法甲2场(N<3)→纳入0场",
+      "total_goals": ["009拜仁4球+019国米3球+022巴萨4球","012霍芬海姆2球+024波尔图2球+027那不勒斯2球","013+014","021+022"],
+      "htft": ["012胜胜+024负负+029胜胜","009负负+019胜胜+022胜胜","002+003","004+005"],
+      "mixed": ["016负负+019国米3球","024负负+029皇马3球","009+010","011+012"],
+      "score": {
+        "稳健比分串":["002首尔1:0","024波尔图0:1"],
+        "搏冷比分串":["005阿森纳1:1","020曼联1:1","030圣保罗1:1"],
+        "连续编号比分串①":["021莱红牛2:0","022巴萨3:0"],
+        "连续编号比分串②":["023费耶诺德2:1","024波尔图0:2"],
+        "单挑比分①":"029皇马2:0",
+        "单挑比分②":"014切尔西2:1"
+      }
+    }
+  }
+}

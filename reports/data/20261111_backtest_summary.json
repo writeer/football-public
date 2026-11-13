@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-11",
+  "weekday": "周三",
+  "batch": "261111",
+  "matches": 6,
+  "settled": 6,
+  "pending": 0,
+  "result_source": "体彩官方 getUniformMatchResultV1.qry（matchBeginDate=2026-11-11, matchEndDate=2026-11-12；回填 2026-11-12 08:32:51）",
+  "results": {
+    "周三001": {"score": "2:3", "ht": "2:1", "line": 1, "had": "客胜", "hhad": "让平", "ttg": 5, "hafu": "胜负"},
+    "周三002": {"score": "0:1", "ht": "0:0", "line": -1, "had": "客胜", "hhad": "让负", "ttg": 1, "hafu": "平负"},
+    "周三003": {"score": "1:2", "ht": "0:0", "line": 1, "had": "客胜", "hhad": "让平", "ttg": 3, "hafu": "平负"},
+    "周三004": {"score": "2:0", "ht": "0:0", "line": -1, "had": "主胜", "hhad": "让胜", "ttg": 2, "hafu": "平胜"},
+    "周三005": {"score": "0:4", "ht": "0:2", "line": -1, "had": "客胜", "hhad": "让负", "ttg": 4, "hafu": "负负"},
+    "周三006": {"score": "5:2", "ht": "3:0", "line": -1, "had": "主胜", "hhad": "让胜", "ttg": 7, "hafu": "胜胜"}
+  },
+  "hit": {
+    "had_first": 4,
+    "had_first_second": 5,
+    "hhad_first": 1,
+    "hhad_first_second": 6,
+    "ttg_top2": 1,
+    "ttg_top1": 0,
+    "hafu_top3": 4,
+    "hafu_top1": 1,
+    "score_top5": 3,
+    "score_top1": 0,
+    "ht_score_top3": 3,
+    "over_under": 4,
+    "band_cover": 2,
+    "band_strict": 1
+  },
+  "by_confidence": {
+    "★★": {"matches": ["周三004"], "had": "1/1", "hhad": "1/1", "ttg_top2": "0/1", "hafu_top3": "1/1", "score_top5": "1/1"},
+    "★": {"matches": ["周三001", "周三002", "周三003", "周三005"], "had": "3/4", "hhad": "4/4", "ttg_top2": "1/4", "hafu_top3": "3/4", "score_top5": "2/4"},
+    "☆": {"matches": ["周三006"], "had": "1/1", "hhad": "1/1", "ttg_top2": "0/1", "hafu_top3": "1/1", "score_top5": "0/1"}
+  },
+  "parlay": {
+    "plans": 31,
+    "tickets": 34,
+    "hit_plans": 2,
+    "hit_plan_names": ["方向串B（周三003客胜+周三004主胜）", "单挑比分①（周三002 0-1）"],
+    "hit_rate_pct": 6.5,
+    "stake_units": 34,
+    "return_units": 12.32,
+    "roi_pct": -63.8,
+    "by_group": {
+      "方向串": "1/3",
+      "让球串": "0/3",
+      "混合串": "0/7",
+      "娱乐串（总进球/高赔半全场/混合总进球）": "0/12",
+      "比分串（含单挑）": "1/6"
+    }
+  },
+  "sim": {
+    "bets": 4,
+    "settled": 4,
+    "staked": 1230.75,
+    "payout": 1143.06,
+    "profit": -87.69,
+    "start_balance": 10000.0,
+    "end_balance": 9912.31,
+    "return_rate_pct": 92.88,
+    "peak_balance": 10000.0,
+    "drawdown_pct": 0.88,
+    "remaining_debt": 100000.0,
+    "debt_progress_pct": 0.0
+  },
+  "notes": [
+    "6 场全部官方结算，无待结算场次，未使用任何外部比分顶替。",
+    "让球双选 6/6 满额，但仅首选 1/6；005 让球首选按赔率排序（让胜 2.12）而非模型最高（让负 43.1%），为口径缺陷。",
+    "总进球 TOP2 1/6、严格六档 1/6；001/005/006 三场实际球数落在 2-3 球档之外。",
+    "006 首选与第三选项仅差 6.2pp（<8pp），按 L284 应标方向弃权，方向命中不计入方法有效样本。"
+  ]
+}

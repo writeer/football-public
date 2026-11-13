@@ -1,0 +1,824 @@
+{
+ "parlays": [
+  {
+   "name": "方向串A",
+   "type": "方向串",
+   "legs": [
+    {
+     "num": "012",
+     "team": "曼城v桑德兰",
+     "kind": "dir",
+     "pick": "主胜",
+     "actual": "主胜",
+     "hit": true
+    },
+    {
+     "num": "026",
+     "team": "AC米兰v莱切",
+     "kind": "dir",
+     "pick": "主胜",
+     "actual": "主胜",
+     "hit": true
+    },
+    {
+     "num": "018",
+     "team": "维京v利勒斯特",
+     "kind": "dir",
+     "pick": "主胜",
+     "actual": "主胜",
+     "hit": true
+    }
+   ],
+   "hit": true,
+   "odds_est": 1.78,
+   "note": "稳胆型"
+  },
+  {
+   "name": "方向串B",
+   "type": "方向串",
+   "legs": [
+    {
+     "num": "023",
+     "team": "比利亚雷v莱万特",
+     "kind": "dir",
+     "pick": "主胜",
+     "actual": "主胜",
+     "hit": true
+    },
+    {
+     "num": "022",
+     "team": "尤文图斯v亚特兰大",
+     "kind": "dir",
+     "pick": "主胜",
+     "actual": "主胜",
+     "hit": true
+    },
+    {
+     "num": "007",
+     "team": "伍尔弗v西布罗姆",
+     "kind": "dir",
+     "pick": "主胜",
+     "actual": "主胜",
+     "hit": true
+    }
+   ],
+   "hit": true,
+   "odds_est": 3.68,
+   "note": "中赔型"
+  },
+  {
+   "name": "方向串C",
+   "type": "方向串",
+   "legs": [
+    {
+     "num": "027",
+     "team": "马赛v巴黎圣曼",
+     "kind": "dir",
+     "pick": "客胜",
+     "actual": "客胜",
+     "hit": true
+    },
+    {
+     "num": "014",
+     "team": "弗洛西诺v科莫",
+     "kind": "dir",
+     "pick": "客胜",
+     "actual": "主胜",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 1.77,
+   "note": "二串一"
+  },
+  {
+   "name": "稳健让球串",
+   "type": "让球串",
+   "legs": [
+    {
+     "num": "004",
+     "team": "仁川联v大田市民",
+     "kind": "hh",
+     "pick": "让+1胜",
+     "actual": "让胜",
+     "hit": true
+    },
+    {
+     "num": "003",
+     "team": "大阪钢巴v神户胜利",
+     "kind": "hh",
+     "pick": "让+1胜",
+     "actual": "让平",
+     "hit": false
+    },
+    {
+     "num": "016",
+     "team": "马竞v皇马",
+     "kind": "hh",
+     "pick": "让+1胜",
+     "actual": "让胜",
+     "hit": true
+    }
+   ],
+   "hit": false,
+   "odds_est": 4.59,
+   "note": "价值稳健"
+  },
+  {
+   "name": "价值让球串",
+   "type": "让球串",
+   "legs": [
+    {
+     "num": "010",
+     "team": "利兹联v水晶宫",
+     "kind": "hh",
+     "pick": "让-1胜",
+     "actual": "让负",
+     "hit": false
+    },
+    {
+     "num": "023",
+     "team": "比利亚雷v莱万特",
+     "kind": "hh",
+     "pick": "让-1胜",
+     "actual": "让胜",
+     "hit": true
+    }
+   ],
+   "hit": false,
+   "odds_est": 6.14,
+   "note": "高赔价值"
+  },
+  {
+   "name": "半全场串A",
+   "type": "混合串",
+   "legs": [
+    {
+     "num": "010",
+     "team": "利兹联v水晶宫",
+     "kind": "hf",
+     "pick": "平胜",
+     "actual": "平平",
+     "hit": false
+    },
+    {
+     "num": "013",
+     "team": "帕尔马v热那亚",
+     "kind": "hf",
+     "pick": "平平",
+     "actual": "胜胜",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 18.92,
+   "note": "纯半全场"
+  },
+  {
+   "name": "半全场串B",
+   "type": "混合串",
+   "legs": [
+    {
+     "num": "004",
+     "team": "仁川联v大田市民",
+     "kind": "hf",
+     "pick": "平平",
+     "actual": "胜平",
+     "hit": false
+    },
+    {
+     "num": "011",
+     "team": "伯恩茅斯v利物浦",
+     "kind": "hf",
+     "pick": "平负",
+     "actual": "平负",
+     "hit": true
+    }
+   ],
+   "hit": false,
+   "odds_est": 26.78,
+   "note": "纯半全场"
+  },
+  {
+   "name": "连续编号混合串A",
+   "type": "混合串",
+   "legs": [
+    {
+     "num": "021",
+     "team": "沙尔克04v埃沃斯堡",
+     "kind": "hf",
+     "pick": "平胜",
+     "actual": "平平",
+     "hit": false
+    },
+    {
+     "num": "022",
+     "team": "尤文图斯v亚特兰大",
+     "kind": "dir",
+     "pick": "主胜",
+     "actual": "主胜",
+     "hit": true
+    }
+   ],
+   "hit": false,
+   "odds_est": 8.68,
+   "note": "021+022"
+  },
+  {
+   "name": "连续编号混合串B",
+   "type": "混合串",
+   "legs": [
+    {
+     "num": "028",
+     "team": "巴伦西亚v皇家社会",
+     "kind": "dir",
+     "pick": "客胜",
+     "actual": "客胜",
+     "hit": true
+    },
+    {
+     "num": "029",
+     "team": "波尔图v本菲卡",
+     "kind": "hf",
+     "pick": "平平",
+     "actual": "胜胜",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 12.2,
+   "note": "028+029"
+  },
+  {
+   "name": "总进球串A",
+   "type": "总进球串",
+   "legs": [
+    {
+     "num": "005",
+     "team": "吉尔吉亚v日本亚",
+     "kind": "ttg",
+     "pick": 4,
+     "actual": 7,
+     "hit": false
+    },
+    {
+     "num": "009",
+     "team": "特温特v埃因霍温",
+     "kind": "ttg",
+     "pick": 5,
+     "actual": 5,
+     "hit": true
+    },
+    {
+     "num": "018",
+     "team": "维京v利勒斯特",
+     "kind": "ttg",
+     "pick": 3,
+     "actual": 3,
+     "hit": true
+    }
+   ],
+   "hit": false,
+   "odds_est": 87.72,
+   "note": ""
+  },
+  {
+   "name": "总进球串B",
+   "type": "总进球串",
+   "legs": [
+    {
+     "num": "008",
+     "team": "赫塔费v马拉加",
+     "kind": "ttg",
+     "pick": 1,
+     "actual": 1,
+     "hit": true
+    },
+    {
+     "num": "013",
+     "team": "帕尔马v热那亚",
+     "kind": "ttg",
+     "pick": 2,
+     "actual": 3,
+     "hit": false
+    },
+    {
+     "num": "029",
+     "team": "波尔图v本菲卡",
+     "kind": "ttg",
+     "pick": 3,
+     "actual": 4,
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 40.85,
+   "note": ""
+  },
+  {
+   "name": "连续编号总进球串①",
+   "type": "总进球串",
+   "legs": [
+    {
+     "num": "005",
+     "team": "吉尔吉亚v日本亚",
+     "kind": "ttg",
+     "pick": 4,
+     "actual": 7,
+     "hit": false
+    },
+    {
+     "num": "006",
+     "team": "佛罗伦萨v那不勒斯",
+     "kind": "ttg",
+     "pick": 2,
+     "actual": 2,
+     "hit": true
+    }
+   ],
+   "hit": false,
+   "odds_est": 15.27,
+   "note": "005+006"
+  },
+  {
+   "name": "连续编号总进球串②",
+   "type": "总进球串",
+   "legs": [
+    {
+     "num": "007",
+     "team": "伍尔弗v西布罗姆",
+     "kind": "ttg",
+     "pick": 3,
+     "actual": 1,
+     "hit": false
+    },
+    {
+     "num": "008",
+     "team": "赫塔费v马拉加",
+     "kind": "ttg",
+     "pick": 1,
+     "actual": 1,
+     "hit": true
+    }
+   ],
+   "hit": false,
+   "odds_est": 12.77,
+   "note": "007+008"
+  },
+  {
+   "name": "高赔半全场串A",
+   "type": "高赔半全场串",
+   "legs": [
+    {
+     "num": "010",
+     "team": "利兹联v水晶宫",
+     "kind": "hf",
+     "pick": "平胜",
+     "actual": "平平",
+     "hit": false
+    },
+    {
+     "num": "013",
+     "team": "帕尔马v热那亚",
+     "kind": "hf",
+     "pick": "平平",
+     "actual": "胜胜",
+     "hit": false
+    },
+    {
+     "num": "016",
+     "team": "马竞v皇马",
+     "kind": "hf",
+     "pick": "平负",
+     "actual": "平胜",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 97.44,
+   "note": ""
+  },
+  {
+   "name": "高赔半全场串B",
+   "type": "高赔半全场串",
+   "legs": [
+    {
+     "num": "004",
+     "team": "仁川联v大田市民",
+     "kind": "hf",
+     "pick": "平平",
+     "actual": "胜平",
+     "hit": false
+    },
+    {
+     "num": "011",
+     "team": "伯恩茅斯v利物浦",
+     "kind": "hf",
+     "pick": "平负",
+     "actual": "平负",
+     "hit": true
+    },
+    {
+     "num": "027",
+     "team": "马赛v巴黎圣曼",
+     "kind": "hf",
+     "pick": "平负",
+     "actual": "平负",
+     "hit": true
+    }
+   ],
+   "hit": false,
+   "odds_est": 117.81,
+   "note": ""
+  },
+  {
+   "name": "连续编号高赔半全场串①",
+   "type": "高赔半全场串",
+   "legs": [
+    {
+     "num": "009",
+     "team": "特温特v埃因霍温",
+     "kind": "hf",
+     "pick": "平负",
+     "actual": "负胜",
+     "hit": false
+    },
+    {
+     "num": "010",
+     "team": "利兹联v水晶宫",
+     "kind": "hf",
+     "pick": "平胜",
+     "actual": "平平",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 25.96,
+   "note": "009+010"
+  },
+  {
+   "name": "连续编号高赔半全场串②",
+   "type": "高赔半全场串",
+   "legs": [
+    {
+     "num": "011",
+     "team": "伯恩茅斯v利物浦",
+     "kind": "hf",
+     "pick": "平负",
+     "actual": "平负",
+     "hit": true
+    },
+    {
+     "num": "012",
+     "team": "曼城v桑德兰",
+     "kind": "hf",
+     "pick": "平胜",
+     "actual": "胜胜",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 20.48,
+   "note": "011+012"
+  },
+  {
+   "name": "混合串A",
+   "type": "半全场混合",
+   "legs": [
+    {
+     "num": "010",
+     "team": "利兹联v水晶宫",
+     "kind": "hf",
+     "pick": "平胜",
+     "actual": "平平",
+     "hit": false
+    },
+    {
+     "num": "009",
+     "team": "特温特v埃因霍温",
+     "kind": "ttg",
+     "pick": 4,
+     "actual": 5,
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 18.04,
+   "note": ""
+  },
+  {
+   "name": "混合串B",
+   "type": "半全场混合",
+   "legs": [
+    {
+     "num": "013",
+     "team": "帕尔马v热那亚",
+     "kind": "hf",
+     "pick": "平平",
+     "actual": "胜胜",
+     "hit": false
+    },
+    {
+     "num": "015",
+     "team": "勒沃库森v莱红牛",
+     "kind": "ttg",
+     "pick": 4,
+     "actual": 2,
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 18.28,
+   "note": ""
+  },
+  {
+   "name": "连续编号混合总进球串①",
+   "type": "半全场混合",
+   "legs": [
+    {
+     "num": "013",
+     "team": "帕尔马v热那亚",
+     "kind": "hf",
+     "pick": "平平",
+     "actual": "胜胜",
+     "hit": false
+    },
+    {
+     "num": "014",
+     "team": "弗洛西诺v科莫",
+     "kind": "ttg",
+     "pick": 4,
+     "actual": 2,
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 19.14,
+   "note": "013+014"
+  },
+  {
+   "name": "连续编号混合总进球串②",
+   "type": "半全场混合",
+   "legs": [
+    {
+     "num": "015",
+     "team": "勒沃库森v莱红牛",
+     "kind": "ttg",
+     "pick": 3,
+     "actual": 2,
+     "hit": false
+    },
+    {
+     "num": "016",
+     "team": "马竞v皇马",
+     "kind": "hf",
+     "pick": "平负",
+     "actual": "平胜",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 20.09,
+   "note": "015+016"
+  },
+  {
+   "name": "稳健比分串",
+   "type": "比分串",
+   "legs": [
+    {
+     "num": "026",
+     "team": "AC米兰v莱切",
+     "kind": "crs",
+     "pick": "2-1",
+     "actual": "3-0",
+     "hit": false
+    },
+    {
+     "num": "027",
+     "team": "马赛v巴黎圣曼",
+     "kind": "crs",
+     "pick": "1-2",
+     "actual": "1-2",
+     "hit": true
+    }
+   ],
+   "hit": false,
+   "odds_est": 54.25,
+   "note": "026+027"
+  },
+  {
+   "name": "搏冷比分串",
+   "type": "比分串",
+   "legs": [
+    {
+     "num": "011",
+     "team": "伯恩茅斯v利物浦",
+     "kind": "crs",
+     "pick": "2-1/1-0",
+     "actual": "0-1",
+     "hit": false
+    },
+    {
+     "num": "016",
+     "team": "马竞v皇马",
+     "kind": "crs",
+     "pick": "2-1/1-0",
+     "actual": "2-1",
+     "hit": true
+    }
+   ],
+   "hit": false,
+   "odds_est": 194.5,
+   "note": "反向推理"
+  },
+  {
+   "name": "连续编号比分串①",
+   "type": "比分串",
+   "legs": [
+    {
+     "num": "023",
+     "team": "比利亚雷v莱万特",
+     "kind": "crs",
+     "pick": "2-1",
+     "actual": "3-1",
+     "hit": false
+    },
+    {
+     "num": "024",
+     "team": "拉科v贝蒂斯",
+     "kind": "crs",
+     "pick": "1-2",
+     "actual": "1-1",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 54.38,
+   "note": "023+024"
+  },
+  {
+   "name": "连续编号比分串②",
+   "type": "比分串",
+   "legs": [
+    {
+     "num": "017",
+     "team": "米亚尔比v盖斯",
+     "kind": "crs",
+     "pick": "1-2",
+     "actual": "0-3",
+     "hit": false
+    },
+    {
+     "num": "018",
+     "team": "维京v利勒斯特",
+     "kind": "crs",
+     "pick": "2-1",
+     "actual": "3-0",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 60.0,
+   "note": "017+018"
+  },
+  {
+   "name": "连续编号比分串③",
+   "type": "比分串",
+   "legs": [
+    {
+     "num": "001",
+     "team": "伊朗亚v中国亚",
+     "kind": "crs",
+     "pick": "2-1",
+     "actual": "0-0",
+     "hit": false
+    },
+    {
+     "num": "002",
+     "team": "町田泽维v柏太阳神",
+     "kind": "crs",
+     "pick": "2-1",
+     "actual": "1-3",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 62.0,
+   "note": "001+002"
+  },
+  {
+   "name": "连续编号比分串④",
+   "type": "比分串",
+   "legs": [
+    {
+     "num": "003",
+     "team": "大阪钢巴v神户胜利",
+     "kind": "crs",
+     "pick": "1-2",
+     "actual": "0-1",
+     "hit": false
+    },
+    {
+     "num": "004",
+     "team": "仁川联v大田市民",
+     "kind": "crs",
+     "pick": "1-2",
+     "actual": "1-1",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 56.55,
+   "note": "003+004"
+  },
+  {
+   "name": "单挑比分①",
+   "type": "比分串",
+   "legs": [
+    {
+     "num": "005",
+     "team": "吉尔吉亚v日本亚",
+     "kind": "crs",
+     "pick": "1-3",
+     "actual": "0-7",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 10.0,
+   "note": ""
+  },
+  {
+   "name": "单挑比分②",
+   "type": "比分串",
+   "legs": [
+    {
+     "num": "012",
+     "team": "曼城v桑德兰",
+     "kind": "crs",
+     "pick": "2-1",
+     "actual": "5-3",
+     "hit": false
+    }
+   ],
+   "hit": false,
+   "odds_est": 7.75,
+   "note": ""
+  }
+ ],
+ "parlay_stats": {
+  "total": 29,
+  "hit": 2,
+  "miss": 27,
+  "rate": 0.069,
+  "by_type": {
+   "方向串": {
+    "total": 3,
+    "hit": 2
+   },
+   "让球串": {
+    "total": 2,
+    "hit": 0
+   },
+   "混合串": {
+    "total": 4,
+    "hit": 0
+   },
+   "总进球串": {
+    "total": 4,
+    "hit": 0
+   },
+   "高赔半全场串": {
+    "total": 4,
+    "hit": 0
+   },
+   "半全场混合": {
+    "total": 4,
+    "hit": 0
+   },
+   "比分串": {
+    "total": 8,
+    "hit": 0
+   }
+  },
+  "stable": {
+   "total": 9,
+   "hit": 2
+  },
+  "entertainment": {
+   "total": 20,
+   "hit": 0
+  }
+ },
+ "caliber_comparison": {
+  "common_10_legs": {
+   "A": "1/10=10.0%",
+   "B": "3/10=30.0%"
+  },
+  "all_legs": {
+   "A": "1/12=8.3%",
+   "B": "3/13=23.1%"
+  },
+  "note": "口径A=净胜球k_rec锚点+档位硬筛；口径B=总进球TTG TOP2档位锚点（不限净胜球）"
+ }
+}

@@ -1,0 +1,186 @@
+{
+    "league_info": {
+        "name_cn": "韩国杯",
+        "name_en": "Korea Cup (KFA Cup)",
+        "country": "韩国",
+        "country_code": "KR",
+        "level": "杯赛",
+        "competition_type": "淘汰赛",
+        "num_teams": "K1/K2/K3/K4全部球队+大学生杯赛获胜球队（约50+队）",
+        "format": "共7轮淘汰赛（前3轮预选赛+后4轮主赛圈）。第一圈到半准决赛（1/8决赛）单场淘汰，半决赛主客场两回合，决赛单场。每轮抽签决定主场。",
+        "season_period": "2月-12月（不跨年，2026-27赛季跨至次年）",
+        "is_cross_year": false,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.kfa.or.kr",
+        "governing_body": "大韩足球协会（KFA）",
+        "established_year": 1996,
+        "renamed_year": 2024,
+        "renamed_note": "2024赛季起由'韩国足总杯(FA Cup)'更名'韩国杯(Korea Cup)'，2026赛季起由韩亚银行冠名（Hana Bank Korea Cup）",
+        "venue_final": "决赛单场，场地由协会指定",
+        "participation_structure": "预选赛（K3/K4/大学生/业余）→第一轮→第二轮（K2加入）→第三轮（K1加入）→第四轮→1/4决赛→半决赛（两回合）→决赛",
+        "var_usage_scope": "从8强赛（1/4决赛）开始引入VAR",
+        "most_successful_club": "全北现代（6冠）与浦项制铁（6冠）并列最成功",
+        "recent_champion_2025": "全北现代（第6冠，完成国内双冠）",
+        "recent_champion_2024": "浦项制铁（第3冠）",
+        "recent_champion_2023": "浦项制铁（第2冠）",
+        "acl_qualification": "冠军且当赛季联赛排名前4→下赛季亚冠精英联赛；否则→亚冠二级联赛",
+        "prize_money": "2026赛季冠军奖金大幅上涨（3亿→5亿韩元），'史上首次'全面改编",
+        "competition_tier": null,
+        "cross_league_level": null,
+        "competition_tier_note": "规则76赛事本身等级（1欧冠精英/2欧联欧协联/3亚冠精英/4解放者杯/5欧国联/6亚运会；None=不适用），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2026-2027",
+        "sample_matches": null,
+        "sample_range": "韩国杯公开精确统计稀缺，以下为估算值",
+        "avg_goals_per_match": 2.5,
+        "draw_rate": 0.3,
+        "home_win_rate": 0.42,
+        "away_win_rate": 0.28,
+        "over_2_5_rate": 0.45,
+        "under_2_5_rate": 0.55,
+        "btts_rate": 0.45,
+        "top_scores": [
+            {
+                "score": "1-1",
+                "frequency": 0.09,
+                "direction": "平局"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.08,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-1",
+                "frequency": 0.07,
+                "direction": "客胜"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.065,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-0",
+                "frequency": 0.06,
+                "direction": "平局"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.07,
+            "1_goal": 0.18,
+            "2_goals": 0.27,
+            "3_goals": 0.22,
+            "4_goals": 0.15,
+            "5_plus_goals": 0.11
+        },
+        "avg_home_goals": 1.32,
+        "avg_away_goals": 1.18,
+        "home_advantage_factor": 1.2,
+        "key_finding": "单场淘汰制+低级别球队外援不限→冷门率极高。2026-27赛季32强16场中低级别球队赢6场（37.5%），K1领头羊FC首尔、蔚山HD、水原三星（K1）均被低级别球队淘汰。历史决赛多次1-0或点球决胜（2012浦项1-0庆南[加时]、2013浦项1-1全北[4-3点球]），90分钟平局率可能高于联赛常规30%。",
+        "penalty_shootout_frequency": "高（单场淘汰90分钟平局→加时→点球，无平局晋级）",
+        "statistics_disclaimer": "⚠️ 场均进球/平局率/大小球等为基于韩职联赛(K League 1)数据的估算值，韩国杯公开精确统计稀缺，confidence_level为低。实际分析应以当轮对阵球队近期状态为准。",
+        "ht_draw_rate": null,
+        "ht_draw_rate_note": "杯赛/淘汰赛为主或赛制混合（小组赛+淘汰赛），单一'半场平局率'不具代表性，规则66不按单值修正。如需可对小组赛阶段单独统计。2026-09-12标注。",
+        "ht_draw_rate_status": "not_applicable",
+        "ht_draw_rate_updated": "2026-09-12"
+    },
+    "match_style": {
+        "tactical_character": "【韩国杯特化】单场决胜制是最大特征：90分钟平局→加时30分钟→点球大战，无平局晋级，每场都是生死局。低级别球队对阵顶级联赛球队时无外援上场人数限制，弱队可堆外援爆冷。K1球队常轮换阵容（尤其对阵低级别球队），战意不对称极端：杯赛对中下游球队是'赛季唯一夺冠机会'，对豪门是'轮换练兵场'。2026-27赛季冷门温床特征明显：水原三星（'皇家水原'）客负K3釜山交通公社为最大冷门，晋州市民FC（K4领头）2-0淘汰K2安山绿人，抱川FC（K3）541防反掀翻K2城南的案例频出。",
+        "tempo": "中",
+        "physicality": "中高",
+        "technical_focus": "中（因K1轮换与低级别球队参差波动大）",
+        "var_usage": "从8强赛（1/4决赛）开始引入VAR。早期轮次不使用VAR。",
+        "key_trends": [
+            "单场淘汰制，无平局晋级，90分钟平局→加时→点球",
+            "低级别球队对顶级球队无外援限制，爆冷概率大幅提升",
+            "冷门温床：2026-27赛季32强16场低级别赢6场(37.5%)，首尔/蔚山/水原三星均被低级别淘汰",
+            "K1球队轮换阵容，战意不对称极端",
+            "中下游球队把杯赛当赛季唯一夺冠机会，战意极强",
+            "历史决赛多次1-0或点球决胜，90分钟平局率可能高于联赛",
+            "半决赛两回合制+VAR启用是分水岭，球队开始重视",
+            "抽签决定主场，主客场随机性大",
+            "冠军可获亚冠精英联赛资格（联赛前4）"
+        ],
+        "style_tags": [
+            "冷门杯",
+            "单场淘汰",
+            "加时点球",
+            "低级别外援不限",
+            "K1轮换",
+            "战意不对称",
+            "爆冷温床"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.8,
+        "avg_red_cards": 0.16,
+        "avg_penalties": 0.22,
+        "referee_style": "与K联赛裁判体系一致，尺度中等，出牌率不高。8强起使用VAR可能增加判罚审查时间。",
+        "first_half_stoppage_avg": 2.1,
+        "second_half_stoppage_avg": 5.2,
+        "stoppage_note": "补时中等（参考韩职联赛）。淘汰赛阶段若比分胶着，补时可能延长。加时赛上下半场各15分钟。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "韩国杯无重大假赛丑闻。韩国足球整体廉洁度较高（2013年K联赛有裁判涉嫌操纵的个别案件，未波及杯赛整体）。"
+            }
+        ],
+        "discipline_features": "黄牌累积5张停1场（参考K联赛）。红牌自动停赛。",
+        "official_rules": "IFAB规则+韩国杯特别规则。单场淘汰制（半决赛除外），90分钟平局→加时→点球，无客场进球规则。低级别球队对顶级球队无外援上场人数限制。",
+        "integrity_rating": "高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友/媒体普遍称韩国杯为'冷门温床'和'爆冷杯'。2026-27赛季第二轮被形容为'冷门的温床'、'大卫击败歌利亚'。彩民观点：单场决胜制下低级别队伍爆冷概率大幅提升；K1球队轮换阵容看不准；中下游球队拼了。懂球帝彩民支持率示例（2026-08-19安养vs济州）：平局37%、主胜35%、客胜28%，三项均衡平局略占优。",
+        "betting_market": {
+            "market_efficiency": "中低",
+            "liquidity": "中低",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主。早期轮次因K1轮换阵容不确定+低级别球队信息不对称，可能存在价值投注机会。"
+        },
+        "upset_frequency": "极高",
+        "jingcai_tips": [
+            "单场淘汰制→90分钟平局率可能高于联赛，平局概率需上修（杯赛平局暴风眼，引用L027）",
+            "低级别球队对顶级球队无外援限制→弱队爆冷概率高，警惕集体偏误（规则4）",
+            "K1球队轮换阵容是预测关键，需核查首发（规则32）",
+            "中下游球队战意极强（赛季唯一夺冠机会），战意不对称分析必做（规则27）",
+            "历史决赛多次1-0或点球决胜→强强对话总进球偏小",
+            "半决赛两回合+VAR是分水岭，此前的单场淘汰不确定性最高",
+            "抽签决定主场→主客场随机性大，主场优势系数参考韩职1.20",
+            "8强起VAR介入，点球判罚可能增多",
+            "冠军亚冠资格→争冠球队战意加成"
+        ],
+        "common_sayings": [
+            "冷门温床",
+            "单场定生死",
+            "低级别球队拼了",
+            "K1轮换看不准",
+            "爆冷杯",
+            "加时点球"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-08-19",
+        "sources": [
+            "https://www.jingcai.com/data/football/comp-589-13101",
+            "https://zq.titan007.com/cn/CupMatch/2026/468.html",
+            "https://m.sohu.com/a/1064522244_122653389/",
+            "https://www.starnewskorea.com/zh/sports/2026/05/21/2026052116443912459",
+            "https://www.starnewskorea.com/zh/sports/2026/07/30/2026073005574971164",
+            "https://pc.dongqiudi.com/articles/6041435.html",
+            "https://www.chosun.com/english/sports-en/2026/07/15/6W532DIRR5CTTHTRPYEE6GFHSE/",
+            "https://en.sedaily.com/sports/2025/12/06/jeonbuk-hyundai-claim-korea-cup-complete-domestic-double",
+            "https://www.rsssf.org/tabless/skorcuphist.html",
+            "https://www.sport.de/fussball/suedkorea-fa-cup/historie-siegerliste/",
+            "https://m.dongqiudi.com/article/6196083.html",
+            "https://c.m.163.com/news/a/L4LL44290556OY6R.html"
+        ],
+        "data_season": "2026-2027（赛制/冷门/冠军信息为2024-2026公开数据）",
+        "confidence_level": "低",
+        "notes": "赛制/历史冠军/冷门案例/外援规则/VAR范围/奖金/亚冠资格为公开可验证信息。场均进球/平局率/大小球等统计为基于韩职联赛(K League 1)数据的估算值，韩国杯公开精确统计稀缺，分析时须以当轮对阵球队近期状态为准。"
+    }
+}

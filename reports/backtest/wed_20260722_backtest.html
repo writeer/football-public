@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>周三体彩10场赛后复盘 v3.0</title>
+<style>
+body{font-family:'Segoe UI','Microsoft YaHei',sans-serif;max-width:1000px;margin:24px auto;padding:0 16px;background:#f6f7f9;color:#222;line-height:1.6}
+h1{text-align:center;color:#1a237e;margin-bottom:6px}
+.subtitle{text-align:center;color:#666;font-size:14px;margin-bottom:24px}
+.summary-box{background:#e8f5e9;border-radius:12px;padding:18px 20px;margin-bottom:20px}
+.summary-box h3{margin-top:0;color:#2e7d32}
+.match-card{background:#fff;border-radius:12px;padding:18px 20px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.match-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.match-id{font-weight:700;color:#1a237e;font-size:16px}
+.teams{font-size:17px;font-weight:600}
+.result-badge{padding:4px 12px;border-radius:6px;font-weight:700;font-size:14px}
+.result-correct{background:#c8e6c9;color:#1b5e20}
+.result-wrong{background:#ffcdd2;color:#b71c1c}
+.result-partial{background:#fff9c4;color:#f57f17}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+th{background:#e8eaf6;text-align:left;padding:6px 8px}
+td{padding:5px 8px;border-bottom:1px solid #eee}
+.ht-section{background:#f3e5f5;border-left:4px solid #7b1fa2;padding:10px 14px;margin:8px 0;border-radius:0 8px 8px 0;font-size:13px}
+.bet-section{background:#fff3e0;border-radius:12px;padding:18px 20px;margin:16px 0}
+.bet-section h3{margin-top:0;color:#e65100}
+.lesson-box{background:#e3f2fd;border-radius:12px;padding:18px 20px;margin:16px 0}
+.lesson-box h3{margin-top:0;color:#1565c0}
+.footer{text-align:center;color:#888;font-size:12px;margin-top:30px}
+</style>
+</head>
+<body>
+<h1>周三体彩10场 赛后复盘</h1>
+<div class="subtitle">回测日期: 2026-07-23 | 分析版本: v3.0 | 比赛日期: 2026-07-22</div>
+
+<div class="summary-box">
+<h3>总览</h3>
+<table>
+<tr><th>指标</th><th>结果</th></tr>
+<tr><td>方向命中</td><td><b>8/10 = 80%</b></td></tr>
+<tr><td>比分命中(TOP5内)</td><td><b>2/10 = 20%</b>（204 3:0、203 1:1）</td></tr>
+<tr><td>半场比分命中(TOP5内)</td><td><b>2/7 = 28.6%</b>（204 1:0、205 0:1）</td></tr>
+<tr><td>用户投注</td><td><b>2/3盈利</b>（串子已挂、博德3:0命中、维京胜命中）</td></tr>
+</table>
+</div>
+
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">【201】韩K联</span>
+<span class="result-badge result-correct">方向 ✓</span>
+</div>
+<div class="teams">首尔FC 3:1 浦项制铁</div>
+<table>
+<tr><th>项目</th><th>预测</th><th>实际</th><th>结果</th></tr>
+<tr><td>方向</td><td>主胜 51.5%</td><td>主胜</td><td>✓</td></tr>
+<tr><td>首选比分</td><td>1:0</td><td>3:1</td><td>✗ 未在TOP5</td></tr>
+<tr><td>总进球</td><td>2球(26.4%)</td><td>4球</td><td>✗ 偏低</td></tr>
+<tr><td>半场</td><td>—</td><td>1:0 主胜</td><td>—</td></tr>
+</table>
+<div class="ht-section"><b>复盘</b>：方向正确。首尔主场7胜1平不败延续。比分3:1未在TOP5中，模型低估了首尔主场进攻爆发力。半场1:0与全场首选比分1:0一致，说明半场趋势判断正确但全场延伸不足。</div>
+</div>
+
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">【202】韩K联</span>
+<span class="result-badge result-correct">方向 ✓</span>
+</div>
+<div class="teams">富川FC 2:3 安养FC</div>
+<table>
+<tr><th>项目</th><th>预测</th><th>实际</th><th>结果</th></tr>
+<tr><td>方向</td><td>客胜 37.9%</td><td>客胜</td><td>✓</td></tr>
+<tr><td>首选比分</td><td>0:0</td><td>2:3</td><td>✗ 大球爆出</td></tr>
+<tr><td>总进球</td><td>2球(26.5%)</td><td>5球</td><td>✗ 严重偏低</td></tr>
+<tr><td>半场</td><td>—</td><td>1:1</td><td>—</td></tr>
+</table>
+<div class="ht-section"><b>复盘</b>：方向正确，但比分和总进球严重偏离。模型预测0:0首选（15.1%），实际打出2:3大球。安养平局率50%的特质本场比赛完全失效，富川虽然进攻弱但双方合计打出5球。H2H心理权重中"进球惯性1.9球"被打破。这验证了规则4——当模型指向低进球时，大球冷门概率应被提高。</div>
+</div>
+
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">【203】韩K联</span>
+<span class="result-badge result-partial">方向 ✗ 比分 ✓</span>
+</div>
+<div class="teams">光州FC 1:1 金泉尚武</div>
+<table>
+<tr><th>项目</th><th>预测</th><th>实际</th><th>结果</th></tr>
+<tr><td>方向</td><td>客胜 44.7%</td><td>平局</td><td>✗</td></tr>
+<tr><td>首选比分</td><td>1:1 (12.2%)</td><td>1:1</td><td>✓ 命中!</td></tr>
+<tr><td>总进球</td><td>2球(25.6%)</td><td>2球</td><td>✓</td></tr>
+<tr><td>半场</td><td>—</td><td>1:1</td><td>—</td></tr>
+</table>
+<div class="ht-section"><b>复盘</b>：方向预测错误（预测客胜实际平局），但首选比分1:1精准命中！这非常有趣——模型的方向概率（客胜44.7% > 平局26.9%）虽然把客胜排第一，但比分矩阵中1:1的概率最高。这说明：比分概率分布的方向可能与综合方向概率不一致。金泉尚武平局率56%的特质最终压倒了模型的方向判断。<b>教训：当球队有极端平局率(>50%)时，方向预测应向平局倾斜。</b></div>
+</div>
+
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">【204】挪超 ★★★</span>
+<span class="result-badge result-correct">方向 ✓ 比分 ✓</span>
+</div>
+<div class="teams">博德闪耀 3:0 汉坎</div>
+<table>
+<tr><th>项目</th><th>预测</th><th>实际</th><th>结果</th></tr>
+<tr><td>方向</td><td>主胜 66.1%</td><td>主胜</td><td>✓</td></tr>
+<tr><td>首选比分</td><td>2:0 (8.9%)</td><td>3:0</td><td>✓ TOP5第5命中!</td></tr>
+<tr><td>总进球</td><td>3球(20.1%)</td><td>3球</td><td>✓</td></tr>
+<tr><td>半场比分</td><td>1:0 (23.0%)</td><td>1:0</td><td>✓ 半场首选命中!</td></tr>
+</table>
+<div class="ht-section"><b>复盘</b>：★★★满命中！方向、比分、总进球、半场比分四项全对。更关键的是——历史交锋3次主场全部3:0的"魔咒"第4次应验！用户100元单挑3:0比分命中。<b>3:0魔咒验证成功：博德闪耀主场对汉坎连续4场3:0，这不是巧合，而是风格克制的极致体现。</b></div>
+</div>
+
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">【205】挪超</span>
+<span class="result-badge result-correct">方向 ✓</span>
+</div>
+<div class="teams">利勒斯特罗姆 1:2 维京</div>
+<table>
+<tr><th>项目</th><th>预测</th><th>实际</th><th>结果</th></tr>
+<tr><td>方向</td><td>客胜 41.0%</td><td>客胜</td><td>✓</td></tr>
+<tr><td>首选比分</td><td>1:1 (11.1%)</td><td>1:2</td><td>✗ 未在TOP5</td></tr>
+<tr><td>总进球</td><td>3球(19.4%)</td><td>3球</td><td>✓</td></tr>
+<tr><td>半场比分</td><td>0:0 (27.2%)</td><td>0:1</td><td>✗ TOP5第2未中</td></tr>
+</table>
+<div class="ht-section"><b>复盘</b>：方向正确！维京零平局魔咒延续至第13场联赛（10胜0平3负，加上历史交锋7场共20场零平局）。用户300元重注维京客胜命中。但半场首选0:0未中——维京上半场就进球了（Askildsen 31'），说明零平局球队不仅不平局，还倾向于早早确立优势。Christiansen 55'破门再次验证了"Tripic+Christiansen双人组健康=维京进攻有保障"的判断。</div>
+</div>
+
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">【206】美职联</span>
+<span class="result-badge result-correct">方向 ✓</span>
+</div>
+<div class="teams">迈阿密国际 3:2 芝加哥火焰</div>
+<table>
+<tr><th>项目</th><th>预测</th><th>实际</th><th>结果</th></tr>
+<tr><td>方向</td><td>主胜 46.5%</td><td>主胜</td><td>✓</td></tr>
+<tr><td>首选比分</td><td>1:1 (8.1%)</td><td>3:2</td><td>✗ 未在TOP5</td></tr>
+<tr><td>总进球</td><td>3球(18.2%)</td><td>5球</td><td>✗ 严重偏低</td></tr>
+<tr><td>半场比分</td><td>0:0 (18.7%)</td><td>0:1</td><td>✗</td></tr>
+</table>
+<div class="ht-section"><b>复盘</b>：方向正确。梅西+德保罗缺阵但苏亚雷斯双响+莱万首秀，迈阿密3:2逆转。模型总进球严重低估（预测3球实际5球）。迈阿密场均失1.87球的防线+芝加哥莱万首秀的进攻火花，双方对攻打出大球。<b>教训：梅西缺阵不等于进攻减弱——苏亚雷斯和其他球星同样有carry比赛的能力。模型对"核心缺阵"的lambda下修可能过度。</b></div>
+</div>
+
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">【207】巴甲 ★★★</span>
+<span class="result-badge result-correct">方向 ✓</span>
+</div>
+<div class="teams">沙佩科恩斯 0:4 弗拉门戈</div>
+<table>
+<tr><th>项目</th><th>预测</th><th>实际</th><th>结果</th></tr>
+<tr><td>方向</td><td>客胜 55.6%</td><td>客胜</td><td>✓</td></tr>
+<tr><td>首选比分</td><td>0:1 (14.3%)</td><td>0:4</td><td>✗ 弗拉门戈更碾压</td></tr>
+<tr><td>总进球</td><td>2球(25.6%)</td><td>4球</td><td>✗ 偏低</td></tr>
+<tr><td>半场比分</td><td>0:0 (34.6%)</td><td>0:1+</td><td>✗</td></tr>
+</table>
+<div class="ht-section"><b>复盘</b>：方向正确但低估了弗拉门戈的碾压程度。0:4比预测的0:1更极端，Pedro梅开二度+Lorran+乌龙。沙佩科恩斯17轮不胜的颓势比模型预期更严重。<b>教训：当保级队面对争冠队时，"实力差距"可能比模型预期更大——保级队的斗志并不总是能缩小差距，有时反而会崩盘。</b></div>
+</div>
+
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">【208】巴甲</span>
+<span class="result-badge result-wrong">方向 ✗</span>
+</div>
+<div class="teams">圣保罗 1:2 巴拉纳竞技</div>
+<table>
+<tr><th>项目</th><th>预测</th><th>实际</th><th>结果</th></tr>
+<tr><td>方向</td><td>主胜 38.8%</td><td>客胜</td><td>✗</td></tr>
+<tr><td>首选比分</td><td>0:0 (13.2%)</td><td>1:2</td><td>✗</td></tr>
+<tr><td>总进球</td><td>2球(26.4%)</td><td>3球</td><td>✗ 略偏低</td></tr>
+<tr><td>半场比分</td><td>0:0 (37.8%)</td><td>1:0</td><td>✗</td></tr>
+</table>
+<div class="ht-section"><b>复盘</b>：方向错误。圣保罗18'领先（Artur进球），但Leozinho下半场5分钟内梅开二度逆转。圣保罗伤病潮（卢卡斯·莫拉+卢西亚诺缺阵）的影响被严重低估——虽然模型给了38.8%的主胜（三方向最接近的比赛之一），但实际伤病削弱了锋线终结能力，领先守不住。<b>教训重演：伤病集中在中前场时，lambda下修幅度不足（规则9再次验证）。Tolói比赛中受伤离场更是雪上加霜。</b></div>
+</div>
+
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">【209】美职联</span>
+<span class="result-badge result-correct">方向 ✓</span>
+</div>
+<div class="teams">洛杉矶FC 2:0 皇家盐湖城</div>
+<table>
+<tr><th>项目</th><th>预测</th><th>实际</th><th>结果</th></tr>
+<tr><td>方向</td><td>主胜 48.8%</td><td>主胜</td><td>✓</td></tr>
+<tr><td>首选比分</td><td>1:1 (10.4%)</td><td>2:0</td><td>✗ 未在TOP5</td></tr>
+<tr><td>总进球</td><td>2球(22.2%)</td><td>2球</td><td>✓</td></tr>
+<tr><td>半场比分</td><td>0:0 (25.7%)</td><td>0:0</td><td>✓ 半场首选命中!</td></tr>
+</table>
+<div class="ht-section"><b>复盘</b>：方向正确，总进球正确，半场比分0:0命中！LAFC 2:0零封胜出，Bouanga发挥关键。盐湖城5人伤停的影响如预期——客场进攻乏力。孙兴慜 Bobblehead Night 主场氛围加分。</div>
+</div>
+
+<div class="match-card">
+<div class="match-header">
+<span class="match-id">【210】欧冠资格赛</span>
+<span class="result-badge result-correct">方向 ✓</span>
+</div>
+<div class="teams">奥莫尼亚 1:0 阿拉木图凯拉特</div>
+<table>
+<tr><th>项目</th><th>预测</th><th>实际</th><th>结果</th></tr>
+<tr><td>方向</td><td>主胜 49.4%</td><td>主胜</td><td>✓</td></tr>
+<tr><td>首选比分</td><td>1:1 (11.4%)</td><td>1:0</td><td>✗ TOP5第2未中</td></tr>
+<tr><td>总进球</td><td>2球(24.2%)</td><td>1球</td><td>✗ 偏高</td></tr>
+<tr><td>半场比分</td><td>0:0 (29.7%)</td><td>0:0或0:1</td><td>可能✓</td></tr>
+</table>
+<div class="ht-section"><b>复盘</b>：方向正确。Andreou 13'进球，奥莫尼亚1:0小胜。阿拉木图虽然33'就多打一人（Nego红牌），但未能扳平——7连胜势头在欧冠客场被终结。<b>这验证了规则5：资格赛中强队vs铁桶的进球极少，1球定胜负。模型预测2.70总进球均值，实际仅1球。</b></div>
+</div>
+
+<div class="bet-section">
+<h3>用户投注盈亏</h3>
+<table>
+<tr><th>注单</th><th>金额</th><th>结果</th><th>回报</th></tr>
+<tr><td>首尔+富川+光州 比分串子</td><td>100</td><td>✗ 已挂（富川2:3大球）</td><td>0</td></tr>
+<tr><td>博德闪耀 3:0 单挑比分</td><td>100</td><td>✓ 命中！</td><td>100 × 体彩赔率（估7-10倍）= 700-1000</td></tr>
+<tr><td>维京客胜</td><td>300</td><td>✓ 命中！</td><td>300 × 1.93 = 579</td></tr>
+</table>
+<p style="font-size:14px;color:#558b2f"><b>总投入: 500元 | 总回报(估): 1,279-1,579元 | 净盈利(估): +779至+1,079元</b></p>
+<p style="font-size:13px;color:#666">注：博德3:0的体彩比分赔率需以实际出票为准，以上为估算区间</p>
+</div>
+
+<div class="lesson-box">
+<h3>关键教训总结</h3>
+<table>
+<tr><th>#</th><th>教训</th><th>关联规则</th><th>验证场次</th></tr>
+<tr><td>1</td><td><b>3:0魔咒真实存在</b>：博德主场对汉坎连续4场3:0，历史交锋心理权重价值被验证</td><td>规则12</td><td>204 ✓</td></tr>
+<tr><td>2</td><td><b>维京零平局延续</b>：20场零平局(13联赛+7交锋)，零平局特质可作为调整依据</td><td>规则4</td><td>205 ✓</td></tr>
+<tr><td>3</td><td><b>极端平局率球队方向应向平局倾斜</b>：金泉尚武56%平局率→实际1:1平局，虽然客胜概率最高但比分矩阵首选就是1:1</td><td>新增</td><td>203</td></tr>
+<tr><td>4</td><td><b>核心缺阵≠进攻崩塌</b>：梅西缺阵但苏亚雷斯双响，lambda下修过度</td><td>规则9</td><td>206</td></tr>
+<tr><td>5</td><td><b>伤病集中中前场时lambda下修不足（第4次重复）</b>：圣保罗卢卡斯·莫拉+卢西亚诺缺阵→1:2逆转</td><td>规则9</td><td>208</td></tr>
+<tr><td>6</td><td><b>资格赛1球定胜负</b>：奥莫尼亚1:0凯拉特，多打一人也无法扳平</td><td>规则5</td><td>210 ✓</td></tr>
+<tr><td>7</td><td><b>比分矩阵方向≠综合方向概率</b>：203综合方向客胜44.7%但比分矩阵1:1最高，最终打出1:1</td><td>新增</td><td>203</td></tr>
+<tr><td>8</td><td><b>保级队vs争冠队可能崩盘</b>：沙佩科0:4比预期0:1更极端</td><td>规则4</td><td>207</td></tr>
+</table>
+</div>
+
+<div class="lesson-box" style="background:#ffebee">
+<h3 style="color:#c62828">需要新增的规则</h3>
+<table>
+<tr><th>规则</th><th>内容</th><th>来源</th></tr>
+<tr><td>规则16</td><td>极端平局率倾斜：当球队赛季平局率>50%时，方向预测应将平局概率上修至少10%，不应仅依赖综合方向概率排序</td><td>203场</td></tr>
+<tr><td>规则17</td><td>比分矩阵方向优先：当综合方向概率首选方向与比分矩阵TOP1比分方向矛盾时，应在报告中明确标注分歧，比分矩阵的方向可能更准</td><td>203场</td></tr>
+<tr><td>规则18</td><td>核心缺阵非线性折算：核心球员缺阵时，应检查同位置是否有同级别替代者（如梅西缺阵→苏亚雷斯carry），不可机械下修lambda</td><td>206场</td></tr>
+</table>
+</div>
+
+<div class="footer">
+复盘报告生成时间: 2026-07-23 | 分析版本: v3.0 | 数据来源: FIFA.com, Goal.com, 直播吧, Sports Mole<br>
+⚠ 足球比赛存在极大不确定性，本报告仅供分析参考
+</div>
+</body>
+</html>

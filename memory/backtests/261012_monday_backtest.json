@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-12",
+  "day": "周一",
+  "totalMatches": 10,
+  "results": [
+    {"num":"001","match":"迪拜连接vs吉达国民","league":"亚冠精英","ht":"0:1","ft":"1:3","had":"客胜","hadHit":"first","hafu":"让(+1)负","hafuHit":"none","crsHit":false,"ttgHit":false,"htftHit":1,"htScoreHit":1},
+    {"num":"002","match":"亚特兰大vs威尼斯","league":"意甲","ht":"3:1","ft":"3:1","had":"主胜","hadHit":"first","hafu":"让(-1)胜","hafuHit":"second","crsHit":false,"ttgHit":false,"htftHit":1,"htScoreHit":0},
+    {"num":"003","match":"马尔默vs卡尔马","league":"瑞超","ht":"0:0","ft":"1:0","had":"主胜","hadHit":"first","hafu":"让(-1)平","hafuHit":"second","crsHit":true,"ttgHit":false,"htftHit":1,"htScoreHit":1},
+    {"num":"004","match":"奥斯KFUMvs瓦勒伦加","league":"挪超","ht":"1:1","ft":"2:1","had":"主胜","hadHit":"first","hafu":"让(+1)胜","hafuHit":"first","crsHit":true,"ttgHit":true,"htftHit":0,"htScoreHit":0},
+    {"num":"005","match":"都灵vs乌迪内斯","league":"意甲","ht":"1:1","ft":"2:1","had":"主胜","hadHit":"first","hafu":"让(-1)平","hafuHit":"second","crsHit":true,"ttgHit":false,"htftHit":1,"htScoreHit":0},
+    {"num":"006","match":"第戎vs梅斯","league":"法乙","ht":"3:1","ft":"4:2","had":"主胜","hadHit":"none","hafu":"让(+1)胜","hafuHit":"first","crsHit":false,"ttgHit":false,"htftHit":1,"htScoreHit":0},
+    {"num":"007","match":"考文垂vs纽卡斯尔","league":"英超","ht":"1:0","ft":"4:1","had":"主胜","hadHit":"none","hafu":"让(+1)胜","hafuHit":"first","crsHit":false,"ttgHit":false,"htftHit":0,"htScoreHit":1},
+    {"num":"008","match":"莱万特vs塞维利亚","league":"西甲","ht":"0:1","ft":"3:3","had":"平","hadHit":"none","hafu":"让(+1)胜","hafuHit":"first","crsHit":false,"ttgHit":false,"htftHit":0,"htScoreHit":1},
+    {"num":"009","match":"科里蒂巴vs博塔弗戈","league":"巴甲","ht":"1:1","ft":"1:1","had":"平","hadHit":"second","hafu":"让(+1)胜","hafuHit":"first","crsHit":true,"ttgHit":true,"htftHit":1,"htScoreHit":0},
+    {"num":"010","match":"法马利康vs阿尔维卡","league":"葡超","ht":"1:1","ft":"1:4","had":"客胜","hadHit":"none","hafu":"让(-1)负","hafuHit":"first","crsHit":false,"ttgHit":false,"htftHit":0,"htScoreHit":0}
+  ],
+  "singleMatches": {
+    "007": {"type":"单关","result":"4-1主胜","hadHit":"none","deepDecision":"避客胜正确；主推总进球2球/比分0-1双双落空"}
+  },
+  "summary": {
+    "direction": {"total":10,"hit":6,"first":5,"second":1,"rate":0.600},
+    "handicap": {"total":10,"hit":9,"first":6,"second":3,"rate":0.900},
+    "totalGoals": {"total":10,"hit":2,"rate":0.200},
+    "halfFull": {"total":10,"hit":6,"rate":0.600},
+    "halfScore": {"total":10,"hit":4,"rate":0.400},
+    "scoreTop5": {"total":10,"hit":4,"rate":0.400}
+  },
+  "parlays": [
+    {"name":"方向串A","type":"方向串","matches":["002","010"],"results":["✅3-1","❌1-4"],"hit":false,"odds_est":"~2.5"},
+    {"name":"方向串B","type":"方向串","matches":["006","007"],"results":["❌4-2","❌4-1"],"hit":false,"odds_est":"~4.3"},
+    {"name":"方向串C","type":"方向串","matches":["004","009"],"results":["✅2-1","❌1-1"],"hit":false,"odds_est":"~7.2"},
+    {"name":"稳健让球串","type":"让球串","matches":["004","009","001"],"results":["✅2-1","✅1-1","❌1-3"],"hit":false,"odds_est":"~3.7"},
+    {"name":"价值让球串","type":"让球串","matches":["005","007","010"],"results":["❌2-1","❌4-1","✅1-4"],"hit":false,"odds_est":"~11.1"},
+    {"name":"半全场串A","type":"混合串","matches":["002","010","009"],"results":["✅胜胜","❌平负","❌平平"],"hit":false,"odds_est":"~25.0"},
+    {"name":"半全场串B","type":"混合串","matches":["005","008","003"],"results":["❌平胜","❌负平","✅平胜"],"hit":false,"odds_est":"~117.0"},
+    {"name":"方向+半全场A","type":"混合串","matches":["002","010"],"results":["✅3-1","❌平负"],"hit":false,"odds_est":"~4.0"},
+    {"name":"方向+半全场B","type":"混合串","matches":["006","008"],"results":["❌4-2","❌负平"],"hit":false,"odds_est":"~11.4"},
+    {"name":"连续编号混合串A","type":"混合串","matches":["001","002"],"results":["❌1-3","✅胜胜"],"hit":false,"odds_est":"~3.3"},
+    {"name":"连续编号混合串B","type":"混合串","matches":["009","010"],"results":["✅1-1","❌平负"],"hit":false,"odds_est":"~4.1"},
+    {"name":"总进球串A","type":"总进球串","matches":["001","002","003"],"results":["❌4球","❌4球","❌1球"],"hit":false,"odds_est":"~46.0"},
+    {"name":"总进球串B","type":"总进球串","matches":["005","008","006"],"results":["❌3球","❌6球","❌6球"],"hit":false,"odds_est":"~52.4"},
+    {"name":"连续编号总进球串①","type":"总进球串","matches":["001","002"],"results":["❌4球","❌4球"],"hit":false,"odds_est":"~14.4"},
+    {"name":"连续编号总进球串②","type":"总进球串","matches":["009","010"],"results":["✅2球","❌5球"],"hit":false,"odds_est":"~11.6"},
+    {"name":"高赔半全场串A","type":"高赔半全场串","matches":["002","009","010"],"results":["✅","❌平平","❌平负"],"hit":false,"odds_est":"~25.0"},
+    {"name":"高赔半全场串B","type":"高赔半全场串","matches":["005","007","008"],"results":["❌平胜","❌胜胜","❌负平"],"hit":false,"odds_est":"~85.8"},
+    {"name":"连续编号高赔半全场串①","type":"高赔半全场串","matches":["003","004"],"results":["✅平胜","❌平胜"],"hit":false,"odds_est":"~20.7"},
+    {"name":"连续编号高赔半全场串②","type":"高赔半全场串","matches":["005","006"],"results":["❌平胜","❌胜胜"],"hit":false,"odds_est":"~27.0"},
+    {"name":"混合串A","type":"半全场混合","matches":["002","010"],"results":["✅","❌5球"],"hit":false,"odds_est":"~7.6"},
+    {"name":"混合串B","type":"半全场混合","matches":["005","008"],"results":["❌平胜","❌6球"],"hit":false,"odds_est":"~17.0"},
+    {"name":"连续编号混合总进球串①","type":"半全场混合","matches":["006","007"],"results":["❌胜胜","❌5球"],"hit":false,"odds_est":"~22.1"},
+    {"name":"连续编号混合总进球串②","type":"半全场混合","matches":["009","010"],"results":["❌平平","❌5球"],"hit":false,"odds_est":"~14.7"},
+    {"name":"稳健比分串","type":"比分串","matches":["002","003"],"results":["❌3-1","✅1-0"],"hit":false,"odds_est":"~66"},
+    {"name":"搏冷比分串","type":"比分串","matches":["007","003","006"],"results":["❌4-1","❌1-0","❌4-2"],"hit":false,"odds_est":"~368(1注)"},
+    {"name":"连续编号比分串①","type":"比分串","matches":["001","002"],"results":["❌1-3","❌3-1"],"hit":false,"odds_est":"~61.9"},
+    {"name":"连续编号比分串②","type":"比分串","matches":["009","010"],"results":["❌1-1","❌1-4"],"hit":false,"odds_est":"~68.3"},
+    {"name":"单挑比分①","type":"比分串","matches":["002"],"results":["❌3-1"],"hit":false,"odds_est":"8.25"},
+    {"name":"单挑比分②","type":"比分串","matches":["010"],"results":["❌1-4"],"hit":false,"odds_est":"6.5"}
+  ],
+  "parlaySummary": {
+    "totalHit": 0, "totalCount": 29, "rate": 0.0,
+    "steadyGroup": {"label": "稳健方案(方向串/让球串/混合串)", "hit": 0, "count": 11, "rate": 0.0},
+    "entertainmentGroup": {"label": "娱乐串(总进球串/高赔半全场串/半全场混合/比分串)", "hit": 0, "count": 18, "rate": 0.0}
+  },
+  "lessons": ["L188","L189","L190","L191","L192","L193"]
+}

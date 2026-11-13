@@ -1,0 +1,764 @@
+{
+  "step": 6,
+  "sales_date": "261014",
+  "business_date": "2026-10-14",
+  "producer": "parlay_optimizer",
+  "nature": "structured_output_no_final_decision",
+  "odds_source": "20261014_matches_full_odds.json (official)",
+  "parlay_odds_rule": "product of official per-leg odds",
+  "league11_note": "已按规则71排除法甲：当天非PSG法甲0场 → 纳入0场",
+  "cluster_legend": {
+    "A": "市场热门+模型一致",
+    "B": "残阵/主场小胜→让平/受让不败",
+    "C": "客队强打",
+    "D": "小球铁桶(≤2球)",
+    "E": "模型-市场分歧搏冷"
+  },
+  "direction_parlays": [
+    {
+      "id": "D1",
+      "type": "3串1",
+      "legs": [
+        {
+          "match": "002",
+          "pick": "主胜",
+          "odds": 1.5,
+          "cluster": "B"
+        },
+        {
+          "match": "005",
+          "pick": "客胜",
+          "odds": 1.74,
+          "cluster": "C"
+        },
+        {
+          "match": "014",
+          "pick": "主胜",
+          "odds": 2.1,
+          "cluster": "E"
+        }
+      ],
+      "parlay_odds": 5.48,
+      "risk": "中",
+      "clusters": "B/C/E"
+    },
+    {
+      "id": "D2",
+      "type": "2串1",
+      "legs": [
+        {
+          "match": "001",
+          "pick": "主胜",
+          "odds": 1.52,
+          "cluster": "B"
+        },
+        {
+          "match": "012",
+          "pick": "主胜",
+          "odds": 1.49,
+          "cluster": "E"
+        }
+      ],
+      "parlay_odds": 2.26,
+      "risk": "低-中",
+      "clusters": "B/E"
+    },
+    {
+      "id": "D3",
+      "type": "2串1",
+      "legs": [
+        {
+          "match": "010",
+          "pick": "主胜",
+          "odds": 1.83,
+          "cluster": "E"
+        },
+        {
+          "match": "008",
+          "pick": "客胜",
+          "odds": 1.7,
+          "cluster": "C"
+        }
+      ],
+      "parlay_odds": 3.11,
+      "risk": "中",
+      "clusters": "E/C"
+    }
+  ],
+  "handicap_parlays": [
+    {
+      "id": "R1",
+      "name": "稳健让球串(受让不败型)",
+      "type": "3串1",
+      "legs": [
+        {
+          "match": "013",
+          "pick": "让胜(+1)",
+          "odds": 1.37,
+          "cluster": "B"
+        },
+        {
+          "match": "007",
+          "pick": "让负(-1)",
+          "odds": 1.5,
+          "cluster": "D"
+        },
+        {
+          "match": "009",
+          "pick": "让胜(+1)",
+          "odds": 1.76,
+          "cluster": "E"
+        }
+      ],
+      "parlay_odds": 3.62,
+      "risk": "低",
+      "clusters": "B/D/E"
+    },
+    {
+      "id": "R2",
+      "name": "价值让球串(让平高赔)",
+      "type": "2串1",
+      "legs": [
+        {
+          "match": "006",
+          "pick": "让平(-1)",
+          "odds": 4.13,
+          "cluster": "C"
+        },
+        {
+          "match": "001",
+          "pick": "让平(-1)",
+          "odds": 3.5,
+          "cluster": "B"
+        }
+      ],
+      "parlay_odds": 14.46,
+      "risk": "高",
+      "clusters": "C/B"
+    }
+  ],
+  "mixed_parlays": [
+    {
+      "id": "M1",
+      "name": "纯半全场串A",
+      "legs": [
+        {
+          "match": "007",
+          "pick": "平平",
+          "odds": 6.5,
+          "cluster": "D"
+        },
+        {
+          "match": "002",
+          "pick": "平胜",
+          "odds": 4.2,
+          "cluster": "B"
+        }
+      ],
+      "parlay_odds": 27.3,
+      "risk": "中高",
+      "clusters": "D/B"
+    },
+    {
+      "id": "M2",
+      "name": "纯半全场串B",
+      "legs": [
+        {
+          "match": "004",
+          "pick": "平平",
+          "odds": 5.4,
+          "cluster": "D"
+        },
+        {
+          "match": "009",
+          "pick": "平胜",
+          "odds": 8.25,
+          "cluster": "E"
+        }
+      ],
+      "parlay_odds": 44.55,
+      "risk": "高",
+      "clusters": "D/E"
+    },
+    {
+      "id": "M3",
+      "name": "方向+半全场混合串A",
+      "legs": [
+        {
+          "match": "005",
+          "pick": "客胜",
+          "odds": 1.74,
+          "cluster": "C"
+        },
+        {
+          "match": "004",
+          "pick": "平平",
+          "odds": 5.4,
+          "cluster": "D"
+        }
+      ],
+      "parlay_odds": 9.4,
+      "risk": "中",
+      "clusters": "C/D"
+    },
+    {
+      "id": "M4",
+      "name": "方向+半全场混合串B",
+      "legs": [
+        {
+          "match": "012",
+          "pick": "主胜",
+          "odds": 1.49,
+          "cluster": "E"
+        },
+        {
+          "match": "008",
+          "pick": "平负",
+          "odds": 5.1,
+          "cluster": "C"
+        }
+      ],
+      "parlay_odds": 7.6,
+      "risk": "中",
+      "clusters": "E/C"
+    },
+    {
+      "id": "M5",
+      "name": "连续编号混合串①",
+      "segment": "001+002",
+      "legs": [
+        {
+          "match": "001",
+          "pick": "主胜",
+          "odds": 1.52,
+          "cluster": "B"
+        },
+        {
+          "match": "002",
+          "pick": "平胜",
+          "odds": 4.2,
+          "cluster": "D"
+        }
+      ],
+      "parlay_odds": 6.38,
+      "risk": "中",
+      "clusters": "B/D"
+    },
+    {
+      "id": "M6",
+      "name": "连续编号混合串②",
+      "segment": "008+009",
+      "legs": [
+        {
+          "match": "008",
+          "pick": "平负",
+          "odds": 5.1,
+          "cluster": "C"
+        },
+        {
+          "match": "009",
+          "pick": "平胜",
+          "odds": 8.25,
+          "cluster": "E"
+        }
+      ],
+      "parlay_odds": 42.07,
+      "risk": "高",
+      "clusters": "C/E"
+    }
+  ],
+  "entertainment_18": {
+    "ttg": [
+      {
+        "id": "T1",
+        "name": "总进球串A",
+        "legs": [
+          {
+            "match": "013",
+            "pick": "总进球1球",
+            "odds": 3.55,
+            "cluster": "D"
+          },
+          {
+            "match": "006",
+            "pick": "总进球3球",
+            "odds": 3.8,
+            "cluster": "C"
+          }
+        ],
+        "parlay_odds": 13.49,
+        "risk": "中"
+      },
+      {
+        "id": "T2",
+        "name": "总进球串B",
+        "legs": [
+          {
+            "match": "004",
+            "pick": "总进球1球",
+            "odds": 4.7,
+            "cluster": "D"
+          },
+          {
+            "match": "011",
+            "pick": "总进球3球",
+            "odds": 3.7,
+            "cluster": "E"
+          }
+        ],
+        "parlay_odds": 17.39,
+        "risk": "中高"
+      },
+      {
+        "id": "T3",
+        "name": "连续编号总进球串①",
+        "segment": "001+002",
+        "legs": [
+          {
+            "match": "001",
+            "pick": "总进球2球",
+            "odds": 4.1,
+            "cluster": "B"
+          },
+          {
+            "match": "002",
+            "pick": "总进球2球",
+            "odds": 3.5,
+            "cluster": "D"
+          }
+        ],
+        "parlay_odds": 14.35,
+        "risk": "中"
+      },
+      {
+        "id": "T4",
+        "name": "连续编号总进球串②",
+        "segment": "003+004",
+        "legs": [
+          {
+            "match": "003",
+            "pick": "总进球3球",
+            "odds": 3.7,
+            "cluster": "A"
+          },
+          {
+            "match": "004",
+            "pick": "总进球2球",
+            "odds": 3.5,
+            "cluster": "D"
+          }
+        ],
+        "parlay_odds": 12.95,
+        "risk": "中"
+      }
+    ],
+    "hafu": [
+      {
+        "id": "H1",
+        "name": "高赔半全场串A",
+        "legs": [
+          {
+            "match": "010",
+            "pick": "平胜",
+            "odds": 5.0,
+            "cluster": "E"
+          },
+          {
+            "match": "008",
+            "pick": "平负",
+            "odds": 5.1,
+            "cluster": "C"
+          }
+        ],
+        "parlay_odds": 25.5,
+        "risk": "高"
+      },
+      {
+        "id": "H2",
+        "name": "高赔半全场串B",
+        "legs": [
+          {
+            "match": "009",
+            "pick": "平胜",
+            "odds": 8.25,
+            "cluster": "E"
+          },
+          {
+            "match": "005",
+            "pick": "平负",
+            "odds": 5.2,
+            "cluster": "C"
+          }
+        ],
+        "parlay_odds": 42.9,
+        "risk": "高"
+      },
+      {
+        "id": "H3",
+        "name": "连续编号高赔半全场串①",
+        "segment": "001+002",
+        "legs": [
+          {
+            "match": "001",
+            "pick": "平胜",
+            "odds": 4.65,
+            "cluster": "B"
+          },
+          {
+            "match": "002",
+            "pick": "平平",
+            "odds": 6.3,
+            "cluster": "D"
+          }
+        ],
+        "parlay_odds": 29.3,
+        "risk": "高"
+      },
+      {
+        "id": "H4",
+        "name": "连续编号高赔半全场串②",
+        "segment": "013+014",
+        "legs": [
+          {
+            "match": "013",
+            "pick": "平平",
+            "odds": 3.85,
+            "cluster": "D"
+          },
+          {
+            "match": "014",
+            "pick": "平胜",
+            "odds": 5.7,
+            "cluster": "E"
+          }
+        ],
+        "parlay_odds": 21.95,
+        "risk": "中高"
+      }
+    ],
+    "mixed_ttg_hafu": [
+      {
+        "id": "X1",
+        "name": "混合总进球串A",
+        "legs": [
+          {
+            "match": "006",
+            "pick": "负负",
+            "odds": 1.65,
+            "cluster": "C"
+          },
+          {
+            "match": "011",
+            "pick": "总进球3球",
+            "odds": 3.7,
+            "cluster": "E"
+          }
+        ],
+        "parlay_odds": 6.1,
+        "risk": "低-中"
+      },
+      {
+        "id": "X2",
+        "name": "混合总进球串B",
+        "legs": [
+          {
+            "match": "003",
+            "pick": "总进球3球",
+            "odds": 3.7,
+            "cluster": "A"
+          },
+          {
+            "match": "012",
+            "pick": "平胜",
+            "odds": 4.3,
+            "cluster": "E"
+          }
+        ],
+        "parlay_odds": 15.91,
+        "risk": "中高"
+      },
+      {
+        "id": "X3",
+        "name": "连续编号混合总进球串①",
+        "segment": "008+009",
+        "legs": [
+          {
+            "match": "008",
+            "pick": "平负",
+            "odds": 5.1,
+            "cluster": "C"
+          },
+          {
+            "match": "009",
+            "pick": "总进球3球",
+            "odds": 3.9,
+            "cluster": "E"
+          }
+        ],
+        "parlay_odds": 19.89,
+        "risk": "高"
+      },
+      {
+        "id": "X4",
+        "name": "连续编号混合总进球串②",
+        "segment": "013+014",
+        "legs": [
+          {
+            "match": "013",
+            "pick": "总进球1球",
+            "odds": 3.55,
+            "cluster": "D"
+          },
+          {
+            "match": "014",
+            "pick": "平胜",
+            "odds": 5.7,
+            "cluster": "E"
+          }
+        ],
+        "parlay_odds": 20.23,
+        "risk": "中高"
+      }
+    ],
+    "score": [
+      {
+        "id": "S1",
+        "name": "稳健比分串",
+        "flow": "试用期流程(规则67-双轨制)",
+        "legs": [
+          {
+            "match": "006",
+            "pick": "1:2",
+            "odds": 7.5,
+            "cluster": "C",
+            "k_rec": -1
+          },
+          {
+            "match": "013",
+            "pick": "0:0",
+            "odds": 6.5,
+            "cluster": "D",
+            "k_rec": 0
+          }
+        ],
+        "parlay_odds": 48.75,
+        "risk": "高"
+      },
+      {
+        "id": "S2",
+        "name": "搏冷比分串",
+        "flow": "反向推理",
+        "cold_script": "博德人工草掀翻远征残阵多特→2:1；横滨主场虫保级轮换，清水客场偷鸡→0:1",
+        "legs": [
+          {
+            "match": "009",
+            "pick": "2:1",
+            "odds": 11.0,
+            "cluster": "E"
+          },
+          {
+            "match": "004",
+            "pick": "0:1",
+            "odds": 10.5,
+            "cluster": "D"
+          }
+        ],
+        "parlay_odds": 115.5,
+        "risk": "极高",
+        "in_trial_ledger": false
+      },
+      {
+        "id": "S3",
+        "name": "连续编号比分串①",
+        "segment": "001+002",
+        "flow": "试用期流程(规则67-双轨制)",
+        "legs": [
+          {
+            "match": "001",
+            "pick": "1:0",
+            "odds": 9.5,
+            "cluster": "B",
+            "k_rec": 1
+          },
+          {
+            "match": "002",
+            "pick": "1:0",
+            "odds": 7.0,
+            "cluster": "B",
+            "k_rec": 1
+          }
+        ],
+        "parlay_odds": 66.5,
+        "risk": "高"
+      },
+      {
+        "id": "S4",
+        "name": "连续编号比分串②",
+        "segment": "005+006",
+        "flow": "试用期流程(规则67-双轨制)",
+        "legs": [
+          {
+            "match": "005",
+            "pick": "0:1",
+            "odds": 12.5,
+            "cluster": "C",
+            "k_rec": -1
+          },
+          {
+            "match": "006",
+            "pick": "1:2",
+            "odds": 7.5,
+            "cluster": "C",
+            "k_rec": -1
+          }
+        ],
+        "parlay_odds": 93.75,
+        "risk": "高"
+      },
+      {
+        "id": "S5",
+        "name": "单挑比分①(单注)",
+        "flow": "试用期流程(规则67-双轨制)",
+        "single": true,
+        "leg": {
+          "match": "003",
+          "pick": "1:0",
+          "odds": 9.5,
+          "cluster": "A",
+          "k_rec": 1,
+          "model_prob": "13.4%"
+        },
+        "risk": "高"
+      },
+      {
+        "id": "S6",
+        "name": "单挑比分②(单注)",
+        "flow": "试用期流程(规则67-双轨制)",
+        "single": true,
+        "leg": {
+          "match": "005",
+          "pick": "0:1",
+          "odds": 12.5,
+          "cluster": "C",
+          "k_rec": -1,
+          "model_prob": "12.9%"
+        },
+        "risk": "高"
+      }
+    ]
+  },
+  "trial_ledger_pending": {
+    "note": "待总控确认后登记，未直接修改score_parlay_trial.md",
+    "positive_flow_matches": [
+      "001",
+      "002",
+      "003",
+      "005",
+      "006",
+      "013"
+    ],
+    "rows": [
+      {
+        "match": "001",
+        "fixture": "墨尔本胜利vs首尔FC",
+        "k_dist": "+1(26.6%)",
+        "k_rec": "+1(26.6%)",
+        "band_top3": "1-0(16.4%)>2-1(8.4%)>3-2(1.6%)",
+        "ttg": "2球/3球",
+        "k_dist_dir": "主胜",
+        "had_dir": "主胜",
+        "divergent": false,
+        "plan": "连续编号比分串①"
+      },
+      {
+        "match": "002",
+        "fixture": "神户vs全北现代",
+        "k_dist": "+1(27.1%)",
+        "k_rec": "+1(27.1%)",
+        "band_top3": "1-0(16.3%)>2-1(8.9%)>3-2(1.8%)",
+        "ttg": "1球/2球",
+        "k_dist_dir": "主胜",
+        "had_dir": "主胜",
+        "divergent": false,
+        "plan": "连续编号比分串①"
+      },
+      {
+        "match": "003",
+        "fixture": "柏太阳神vs曼谷港务",
+        "k_dist": "+1(24.7%)",
+        "k_rec": "+1(24.7%)",
+        "band_top3": "1-0(13.4%)>2-1(8.9%)>3-2(2.1%)",
+        "ttg": "3球/4球",
+        "k_dist_dir": "主胜",
+        "had_dir": "主胜",
+        "divergent": false,
+        "plan": "单挑比分①"
+      },
+      {
+        "match": "005",
+        "fixture": "费耶诺德vs科莫",
+        "k_dist": "-1(25.1%)",
+        "k_rec": "-1(25.1%)",
+        "band_top3": "0-1(12.9%)>1-2(9.3%)>2-3(2.5%)",
+        "ttg": "2球/3球",
+        "k_dist_dir": "客胜",
+        "had_dir": "客胜",
+        "divergent": false,
+        "plan": "连续编号比分串②+单挑②"
+      },
+      {
+        "match": "006",
+        "fixture": "LASKvs利物浦",
+        "k_dist": "-1(21.8%)",
+        "k_rec": "-1(21.8%)",
+        "band_top3": "1-2(8.9%)>0-1(8.9%)>2-3(3.3%)",
+        "ttg": "3球/4球",
+        "k_dist_dir": "客胜",
+        "had_dir": "客胜",
+        "divergent": false,
+        "plan": "稳健比分串+连续比分串②"
+      },
+      {
+        "match": "013",
+        "fixture": "弗鲁米嫩塞vs帕尔梅拉斯",
+        "k_dist": "0(35.3%)",
+        "k_rec": "0(35.3%)",
+        "band_top3": "0-0(20.2%)>1-1(12.9%)>2-2(2.1%)",
+        "ttg": "1球/2球",
+        "k_dist_dir": "平",
+        "had_dir": "平",
+        "divergent": false,
+        "plan": "稳健比分串"
+      }
+    ],
+    "reverse_only_not_recorded": [
+      "009",
+      "004"
+    ]
+  },
+  "dispersion_check": {
+    "max_involvement": 6,
+    "cap": 6,
+    "involvement": {
+      "001": 6,
+      "002": 6,
+      "003": 3,
+      "004": 5,
+      "005": 5,
+      "006": 5,
+      "007": 2,
+      "008": 5,
+      "009": 6,
+      "010": 2,
+      "011": 2,
+      "012": 3,
+      "013": 5,
+      "014": 3
+    },
+    "total_legs": 58,
+    "cluster_A_legs": 8,
+    "homogeneous_ratio": "13.8%",
+    "homogeneous_cap": "50%",
+    "note": "连续编号比分串①②受无分歧场+串内相邻双约束,可用段仅001+002(B/B)与005+006(C/C),同族系硬约束下唯一可行段"
+  }
+}

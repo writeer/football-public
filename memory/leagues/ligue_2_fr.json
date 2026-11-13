@@ -1,0 +1,169 @@
+{
+    "league_info": {
+        "name_cn": "法国足球乙级联赛",
+        "name_en": "Ligue 2 BKT (Ligue 2)",
+        "country": "法国",
+        "country_code": "FR",
+        "level": "第二级别",
+        "num_teams": 18,
+        "format": "双循环，34轮（自2024-25赛季起从20支缩减为18支）",
+        "season_period": "8月-次年5月（跨年）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.lfp.fr",
+        "governing_body": "LFP（法国职业足球联盟）/ FFF（法国足球协会）",
+        "sponsor": "BKT（印度轮胎制造商）",
+        "promotion_relegation": "前2名直接升入法甲；第5名vs第4名，胜者vs第3名，胜者与法甲倒数第三名进行主客场两回合附加赛；后2名直接降入法丙，倒数第三名参加附加赛",
+        "champion_2024_25": "洛里昂（Lorient，71分）",
+        "promoted_2024_25": "洛里昂、巴黎FC（Paris FC）",
+        "cross_league_level": "L4",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "total_matches": 306,
+        "avg_goals_per_match": 2.58,
+        "draw_rate": 0.235,
+        "home_win_rate": 0.487,
+        "away_win_rate": 0.278,
+        "over_2_5_rate": 0.49,
+        "under_2_5_rate": 0.52,
+        "btts_rate": 0.47,
+        "top_scores": [
+            {
+                "score": "1-0",
+                "frequency": 0.229,
+                "direction": "主胜为主"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.127,
+                "direction": "主胜为主"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.118,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.111,
+                "direction": "平局"
+            },
+            {
+                "score": "3-1",
+                "frequency": 0.082,
+                "direction": "主胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.06,
+            "1_goal": 0.23,
+            "2_goals": 0.23,
+            "3_goals": 0.21,
+            "4_goals": 0.15,
+            "5_plus_goals": 0.12
+        },
+        "avg_home_goals": 1.51,
+        "avg_away_goals": 1.07,
+        "home_advantage_factor": 1.41,
+        "key_finding": "主场优势极强（1.41），是欧洲主场优势最明显的联赛之一。主胜率48.7%远超客胜率27.8%。",
+        "best_home_attack": "洛里昂（主场49球，2.88球/场）",
+        "worst_home_attack": "马迪圭斯（主场13球，0.76球/场）",
+        "ht_draw_rate": 0.451,
+        "ht_draw_rate_note": "法乙半场平局率。2026-09-12核算：football-data.co.uk官方逐场半场比分，5季合并1749场→0.4511（各季0.459/0.475/0.457/0.425/0.431）。属高半场平局档(≥0.40)，lambda_ht系数0.38，半全场首选应含'平'。",
+        "ht_draw_rate_source": [
+            "https://www.football-data.co.uk/mmz4281/2526/F2.csv"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "高(≥0.40)",
+        "ht_draw_rate_confidence": "高(官方逐场半场比分/交叉验证一致)"
+    },
+    "match_style": {
+        "tactical_character": "法式战术纪律性强，组织防守严密，反击效率高。球队间实力差距较小。比赛节奏偏慢，方法论式推进，不追求快速攻防转换。防守和身体对抗是主旋律，定位球和反击是主要得分手段。",
+        "tempo": "中慢",
+        "physicality": "高",
+        "technical_focus": "中（防守组织优先于进攻创造力）",
+        "var_usage": "自2020-21赛季引入VAR。",
+        "key_trends": [
+            "主场优势极强（欧洲最明显之一），主场优势系数1.41",
+            "小球趋势明显（52% UNDER 2.5）",
+            "1-0是最常见比分（22.9%），远超其他比分",
+            "平局率适中（23.5%），但0-0和1-1集中",
+            "赛季末期战意分化大，争升级和保级球队战意远超中游",
+            "一周双赛时冷门频发"
+        ],
+        "style_tags": [
+            "小球联赛",
+            "身体对抗",
+            "主场优势",
+            "防守反击",
+            "战术纪律",
+            "低进球"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.74,
+        "avg_red_cards": 0.23,
+        "avg_penalties": 0.2,
+        "avg_fouls_per_match": 25.8,
+        "referee_style": "法乙作为身体对抗型联赛，犯规频率较高（25.8次/场）。裁判整体执法风格偏严格，对身体犯规容忍度较低。",
+        "first_half_stoppage_avg": 2.0,
+        "second_half_stoppage_avg": 5.0,
+        "stoppage_note": "未找到精确补时统计，基于一般规律估算。VAR复核和换人可能增加额外补时。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "尼姆（Nîmes）假球案",
+                "year": "约2014-2015",
+                "description": "法乙尼姆俱乐部卷入假球丑闻，俱乐部主席康拉德及股东卡斯帕里安等6人被起诉。法甲卡昂俱乐部主席福尔坦也涉嫌操纵比赛被起诉。纪律委员会最终裁决尼姆降级至法丙作为处罚。"
+            }
+        ],
+        "discipline_features": "身体对抗型联赛，犯规频率高。法国有严格的DNCG（国家管理控制方向）财务监管制度，可对财务不达标的俱乐部进行行政降级（如2024-25赛季阿雅克肖虽排名第12但被降级）。",
+        "official_rules": "IFAB规则+LFP特别规则。VAR覆盖所有比赛。",
+        "integrity_rating": "良好",
+        "integrity_measures": "LFP和FFF有完善的监管体系和纪律处罚机制。DNCG财务监管制度有效运行。尼姆假球案后整体诚信状况良好。"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "法乙被广泛认为是小球联赛，与阿甲、日职乙、葡超并列为典型小球联赛。被描述为欧洲主场优势最明显的联赛之一。球队实力相对接近，冷门频发。防守和身体对抗是主旋律。",
+        "betting_market": {
+            "market_efficiency": "中高",
+            "liquidity": "中",
+            "line_movement_frequency": "中频",
+            "sharp_money": "法国本土资金为主",
+            "market_notes": "小球趋势明显，平局赔率相对较低且分布集中（因球队实力差距不明显），预测时应给予主队更多权重"
+        },
+        "upset_frequency": "中偏高",
+        "jingcai_tips": [
+            "首选小球（UNDER 2.5，52%小球率）",
+            "主场优势极强（主胜48.7% vs 客胜27.8%），主胜赔率较低时仍有价值",
+            "1-0是最常见比分（22.9%），远超其他比分",
+            "常见比分参考：1-0、2-1、2-0、1-1",
+            "赛季末期重点分析战意差异（升级vs保级vs无欲无求）",
+            "警惕一周双赛导致的冷门",
+            "0-0和1-1平局集中，防守型对决时防小球平局"
+        ],
+        "common_sayings": [
+            "法乙小球多",
+            "法乙主场优势明显",
+            "法乙平局赔率低",
+            "法乙闷战多",
+            "法乙身体对抗是主旋律"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-08-07",
+        "sources": [
+            "https://fbref.com/en/comps/60/2024-2025/2024-2025-Ligue-2-Stats",
+            "https://liansai.500star.com/zuqiu-7188/",
+            "https://liansai.500.com/zuqiu-7188/shuju-21048/allscore/",
+            "https://m.qiumiwu.com/league/fayi",
+            "https://m.sohu.com/a/956909139_121947791/",
+            "https://m.sohu.com/a/949341821_122520250/"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高",
+        "notes": "赛果分布、场均进球、进球分布来自500star.com/500.com（精确统计）；黄牌/红牌/犯规来自fbref.com完整赛季数据（精确统计）；BTTS率为基于比分分布推算；点球和补时数据为估算值。场均2.58球高于法乙历史水平（约2.2-2.5），可能因18队赛制改革后实力集中化。"
+    }
+}

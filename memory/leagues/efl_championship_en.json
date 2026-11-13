@@ -1,0 +1,185 @@
+{
+    "league_info": {
+        "name_cn": "英格兰足球冠军联赛",
+        "name_en": "EFL Championship",
+        "country": "英格兰",
+        "country_code": "EN",
+        "level": "第二级别",
+        "num_teams": 24,
+        "format": "双循环，46轮，常规赛552场",
+        "season_period": "8月-次年5月（跨年，无正式冬歇期，圣诞/新年快车赛程为特色）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.efl.com",
+        "governing_body": "EFL（英格兰足球联赛）",
+        "established_year": 2004,
+        "promotion_relegation": "前2名直接升入英超；第3-6名通过附加赛争夺最后一个升级名额（半决赛两回合+决赛温布利单场）；后3名直接降入英甲",
+        "var_usage": "不使用VAR，仅有门线技术",
+        "champion_2024_25": "利兹联（Leeds United，100分）",
+        "promoted_2024_25": "利兹联、伯恩利（直接）、桑德兰（附加赛）",
+        "relegated_2024_25": "卢顿、普利茅斯、加的夫城",
+        "cross_league_level": "L4",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "total_matches": 552,
+        "total_goals": 1366,
+        "avg_goals_per_match": 2.45,
+        "draw_rate": 0.28,
+        "home_win_rate": 0.456,
+        "away_win_rate": 0.264,
+        "over_2_5_rate": 0.447,
+        "under_2_5_rate": 0.553,
+        "btts_rate": 0.5,
+        "top_scores": [
+            {
+                "score": "1-0",
+                "frequency": 0.212,
+                "direction": "主胜/客胜"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.181,
+                "direction": "主胜/客胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.138,
+                "direction": "平局"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.124,
+                "direction": "主胜/客胜"
+            },
+            {
+                "score": "0-0",
+                "frequency": 0.079,
+                "direction": "平局"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.08,
+            "1_goal": 0.21,
+            "2_goals": 0.28,
+            "3_goals": 0.21,
+            "4_goals": 0.13,
+            "5_plus_goals": 0.09
+        },
+        "avg_home_goals": 1.43,
+        "avg_away_goals": 1.02,
+        "home_advantage_factor": 1.4,
+        "max_score_match": "利兹联 7:0 加的夫城",
+        "best_attack": "利兹联 95球（2.07球/场）",
+        "worst_attack": "赫尔城 44球（0.96球/场）",
+        "best_defense": "伯恩利 16失球（0.35球/场，赛季奇迹级防守）",
+        "worst_defense": "普利茅斯 88失球（1.91球/场）",
+        "top_scorer": "Joël Piroe（利兹联）19球",
+        "most_draws": "普雷斯顿 20场平局",
+        "fewest_draws": "谢菲尔德联 8场平局",
+        "ht_draw_rate": 0.425,
+        "ht_home_win_rate": 0.45,
+        "ht_away_win_rate": 0.275,
+        "ht_note": "英冠半场平局率约25-30%，为竞彩开售联赛中较低水平。高对抗和直接打法使上半场容易产生进球和胜负，半场平局比例明显低于韩职/日职。",
+        "ht_draw_rate_note": "英冠半场平局率。2026-09-12核算：football-data.co.uk官方逐场半场比分，5季(2021/22-2025/26)合并2760场，半场平局1174场→0.4254；逐季0.435/0.440/0.433/0.424/0.395，高度稳定；单季2025/26=0.3949。thefishy.uk半场表(2025/26)得0.3949，验证一致。**修正原值0.275（误用了全场口径，全场平局率约0.265）**：英冠实际属高半场平局档(≥0.40)，lambda_ht系数0.38，半全场首选应含'平'。",
+        "ht_draw_rate_source": [
+            "https://www.football-data.co.uk/mmz4281/2526/E1.csv",
+            "https://www.thefishy.uk/leaguetable.php?table=2&season=23"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "高(≥0.40)",
+        "ht_draw_rate_confidence": "高(官方逐场半场比分/交叉验证一致)"
+    },
+    "match_style": {
+        "tactical_character": "欧洲最身体化、最高强度的次级联赛之一。战术多样性突出：既有控球型球队（如利兹联在Farke带领下传控打法），也有直接型球队（长传冲吊、定位球为主）。定位球是重要得分手段（占总进球25%-30%）。赛程密集（46轮+杯赛），阵容轮换和体能管理是关键。圣诞/新年快车赛程对球员体能消耗极大，伤病高发。无VAR意味着裁判判罚争议较多，主场优势被放大。",
+        "tempo": "快",
+        "physicality": "高",
+        "technical_focus": "中（偏重效率和直接性，非控球细腻配合）",
+        "var_usage": "不使用VAR，仅有门线技术。2026年4月EFL俱乐部投票否决引入VAR。",
+        "key_trends": [
+            "场均2.45球，偏小球联赛（Under 2.5达55.3%）",
+            "平局率28%，与德乙持平",
+            "主场优势显著（主胜45.6% vs 客胜26.4%），主场优势系数1.40",
+            "1-0和2-1是最常见比分，低分比赛占比高",
+            "赛季初（1-10轮）冷门高发，英超降级队首轮胜率不高",
+            "附加赛制度导致3-6名球队赛季末竞争白热化",
+            "圣诞/新年快车赛程期间冷门频发",
+            "无VAR增加比赛结果的不确定性"
+        ],
+        "style_tags": [
+            "小球联赛",
+            "高对抗",
+            "主场优势",
+            "快节奏",
+            "定位球重要",
+            "无VAR",
+            "冷门多",
+            "赛季末战意关键"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.8,
+        "avg_red_cards": 0.12,
+        "avg_penalties": 0.16,
+        "avg_fouls_per_match": 22.6,
+        "referee_style": "英冠裁判对身体对抗容忍度较高，比赛流畅度好。无VAR辅助，场上判罚为最终决定。",
+        "first_half_stoppage_avg": 2.0,
+        "second_half_stoppage_avg": 4.5,
+        "stoppage_note": "无VAR意味着无视频审查补时，换人和伤停为主要补时来源。圣诞/新年赛程期间因伤病增多补时略长。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛记录",
+                "year": "-",
+                "description": "英冠整体廉洁度较高。EFL有完善的财务监管（FFP/SCMP）和博彩监控机制。"
+            }
+        ],
+        "discipline_features": "红牌自动停赛3场（直红）或1场（两黄）。黄牌累积5张停1场。EFL纪律委员会独立运作。",
+        "official_rules": "IFAB规则+EFL特别规则。无VAR覆盖。",
+        "integrity_rating": "高",
+        "integrity_measures": "EFL建立了财务公平竞赛制度（FFP/SCMP）、博彩监控、裁判轮换制度。英冠作为全球关注度最高的次级联赛之一，监管体系完善。"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "英冠是欧洲关注度最高的次级联赛，以不可预测性和竞争激烈著称。24支球队实力差距相对较小，冷门频发。场均观众约2万人。附加赛制度被誉为最赚钱的足球比赛（温布利决赛价值约1.7亿英镑）。",
+        "betting_market": {
+            "market_efficiency": "中高",
+            "liquidity": "高",
+            "line_movement_frequency": "高频",
+            "sharp_money": "英国本土资金为主，市场成熟度高",
+            "upset_signals": "赛季初英超降级队首轮胜率低；圣诞/新年赛程期间强队轮换多；赛季末中游球队战意不足"
+        },
+        "upset_frequency": "高",
+        "jingcai_tips": [
+            "首选小球（UNDER 2.5，55.3%小球率）",
+            "主场优势明显（主胜45.6% vs 客胜26.4%），主场优势系数1.40",
+            "1-0/2-1/1-1是核心比分区间，0-0概率约8%",
+            "赛季初冷门高发，警惕英超降级队首轮翻车",
+            "圣诞/新年快车赛程注意轮换和伤病",
+            "赛季末务必确认战意（升级/保级/附加赛形势）",
+            "无VAR意味着点球和红牌判罚可能有争议",
+            "平局率28%与德乙持平，防平时需考虑"
+        ],
+        "common_sayings": [
+            "英冠无弱旅",
+            "英冠小球多",
+            "英冠看战意",
+            "英冠主场优势大",
+            "附加赛是最赚钱的比赛"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-08-15",
+        "sources": [
+            "https://www.soccerzz.com/edition/efl-championship-2024-2025/187528/stats",
+            "https://www.futbol24.com/national/England/Championship/2024-2025/statistics",
+            "https://ctc.data.7m.com.cn/history_matches_data/2024-2025/177/gb/index.shtml",
+            "https://fbref.com/en/comps/10/2024-2025/2024-2025-Championship-Stats",
+            "https://footystats.org/pt/england/championship"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "高",
+        "notes": "赛果分布、场均进球、主客场胜率、平局率、大小球率来自多源交叉验证（soccerzz/futbol24/7m/fbref），数据一致性高。黄牌/红牌/点球基于fbref全队汇总计算。BTTS率基于比分分布推算。"
+    }
+}

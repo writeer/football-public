@@ -1,0 +1,180 @@
+{
+    "league_info": {
+        "name_cn": "德国足球乙级联赛",
+        "name_en": "2. Bundesliga (2. Fußball-Bundesliga)",
+        "country": "德国",
+        "country_code": "DE",
+        "level": "第二级别",
+        "num_teams": 18,
+        "format": "双循环，34轮",
+        "season_period": "8月-次年5月（跨年，12月20日-1月10日冬歇期）",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.bundesliga.com/de/2bundesliga",
+        "governing_body": "DFB（德国足球协会）/ DFL（德国足球职业联盟）",
+        "established_year": 1974,
+        "promotion_relegation": "前2名直接升入德甲，第3名参加升级附加赛；后2名直接降入德丙，第16名参加降级附加赛",
+        "avg_attendance": 30493,
+        "champion_2024_25": "科隆（Köln，61分）",
+        "promoted_2024_25": "科隆、汉堡（Hamburger SV）",
+        "cross_league_level": "L4",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "total_matches": 306,
+        "total_goals": 925,
+        "avg_goals_per_match": 3.02,
+        "draw_rate": 0.281,
+        "home_win_rate": 0.405,
+        "away_win_rate": 0.314,
+        "over_2_5_rate": 0.595,
+        "under_2_5_rate": 0.405,
+        "btts_rate": 0.6,
+        "top_scores": [
+            {
+                "score": "2-1",
+                "frequency": 0.16,
+                "direction": "主胜/客胜"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.131,
+                "direction": "主胜/客胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.114,
+                "direction": "平局"
+            },
+            {
+                "score": "3-1",
+                "frequency": 0.092,
+                "direction": "主胜/客胜"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.088,
+                "direction": "主胜/客胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.07,
+            "1_goal": 0.13,
+            "2_goals": 0.2,
+            "3_goals": 0.22,
+            "4_goals": 0.19,
+            "5_plus_goals": 0.19
+        },
+        "avg_home_goals": 1.64,
+        "avg_away_goals": 1.39,
+        "home_advantage_factor": 1.18,
+        "max_score_match": "纽伦堡 8:3 雷根斯堡（第10轮）",
+        "best_attack": "汉堡 78球（2.29球/场）",
+        "worst_attack": "雷根斯堡 23球（0.68球/场）",
+        "best_defense": "汉诺威96 36失球（1.06球/场）",
+        "worst_defense": "雷根斯堡 71失球（2.09球/场）",
+        "top_scorer": "塞尔克（Davie Selke，汉堡）22球",
+        "ht_draw_rate": 0.392,
+        "ht_draw_rate_note": "德乙半场平局率。2026-09-12核算：football-data.co.uk官方逐场半场比分，5季合并1530场→0.3922；单季2025/26=0.4052。属中高半场平局档(0.35-0.40)，lambda_ht系数0.42。",
+        "ht_draw_rate_source": [
+            "https://www.football-data.co.uk/mmz4281/2526/D2.csv"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "中高(0.35-0.40)",
+        "ht_draw_rate_confidence": "高(官方逐场半场比分/交叉验证一致)"
+    },
+    "match_style": {
+        "tactical_character": "开放、快节奏、高对抗。德乙球队普遍采用直接简练的战术打法，较少依赖控球率（场均通常低于50%），以长传冲吊、边路突破和快速反击为主导。定位球是重要得分手段（占总进球25%-30%）。进球集中在下半场，尤其45-55分钟和85分钟至补时。",
+        "tempo": "快",
+        "physicality": "高",
+        "technical_focus": "中（注重效率和直接性，而非控球和细腻配合）",
+        "var_usage": "2019-20赛季引入VAR，覆盖所有2. Bundesliga比赛。使用场景：进球、点球、红牌、身份误认。",
+        "key_trends": [
+            "场均3.02球，典型大球联赛",
+            "平局率28.1%，胜负倾向明显",
+            "赛季初（1-10轮）冷门高发，德甲降级队首轮胜率仅约40%",
+            "赛季末最后10轮战意成为关键因素",
+            "强队初盘让球过大（-1.5球以上）时易被爆冷输盘",
+            "场均观众近3万人，欧洲次级联赛之首"
+        ],
+        "style_tags": [
+            "高进球",
+            "开放进攻",
+            "快节奏",
+            "强对抗",
+            "长传反击",
+            "定位球重要",
+            "冷门多",
+            "下半场进球多"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 4.25,
+        "avg_red_cards": 0.18,
+        "avg_penalties": 0.28,
+        "referee_style": "德国裁判以执法严格著称，严格但公正。鼓励身体对抗但犯规判罚明确。",
+        "first_half_stoppage_avg": 2.5,
+        "second_half_stoppage_avg": 5.0,
+        "stoppage_note": "2024-25赛季受全球足球补时增加趋势影响，下半场补时普遍较长。VAR审查可能增加额外补时。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "1971年德甲假球丑闻（Bundesligaskandal）",
+                "year": "1971",
+                "description": "发生于德甲联赛（当时德乙尚未成立）。涉及比勒菲尔德等球队在保级战中贿赂对手。导致多名球员和官员被禁赛。"
+            },
+            {
+                "event": "2005年霍泽尔裁判丑闻（Hoyzer scandal）",
+                "year": "2004-05",
+                "description": "裁判罗伯特·霍泽尔因参与赌球并操纵比赛被查处，主要操纵德国杯和低级别联赛比赛。被判2年5个月监禁。此事件后德国足球大幅加强裁判监管和诚信措施。"
+            }
+        ],
+        "discipline_features": "红牌自动停赛3场（直红）或1场（两黄）。黄牌累积5张停1场。DFB纪律委员会独立运作。",
+        "official_rules": "IFAB规则+DFB特别规则。VAR覆盖所有比赛。",
+        "integrity_rating": "高",
+        "integrity_measures": "DFB建立了完善的比赛监控和预警系统、裁判轮换制度、博彩监控、DFB诚信官制度。2005年后无重大假赛事件。"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "欧洲排名前三的次级联赛，以竞争激烈和悬念频出著称。场均观众近3万人，在欧洲次级联赛中首屈一指。拥有众多传统豪门：汉堡、沙尔克04、科隆、柏林赫塔、纽伦堡、凯泽斯劳滕等。",
+        "betting_market": {
+            "market_efficiency": "中高",
+            "liquidity": "中高",
+            "line_movement_frequency": "中频",
+            "sharp_money": "德国本土资金为主",
+            "upset_signals": "主队赔率1.31-1.44且实力占比<64%时，爆冷概率72.94%；主队赔率2.1-2.44且客队实力占比>57%时，客队不败概率高"
+        },
+        "upset_frequency": "高",
+        "jingcai_tips": [
+            "大球率高达59.5%，OVER 2.5是常规选择",
+            "平局率仅28.1%，强弱对话可优先排除平局",
+            "赛季初德甲降级队首轮胜率仅约40%，警惕冷门",
+            "强队让球过大（-1.5球以上）时易被爆冷输盘",
+            "赛季末战意是关键因素，务必确认升降级形势",
+            "总进球2-4球区间最优",
+            "下半场进球多于上半场，补时进球常见"
+        ],
+        "common_sayings": [
+            "德乙无弱旅",
+            "德乙出大球",
+            "德乙冷门多",
+            "降班马首轮易翻车",
+            "德乙看战意"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-08-06",
+        "sources": [
+            "https://fbref.com/en/comps/33/2024-2025/2024-2025-2-Bundesliga-Stats",
+            "https://liansai.500star.com/zuqiu-7223/",
+            "https://liansai.500.com/zuqiu-7223/shuju-21106/score/",
+            "https://m.baike.com/wiki/2024-25赛季德国足球乙级联赛",
+            "http://m.toutiao.com/group/7533419345809097255/",
+            "http://m.toutiao.com/group/7533508931055600138/"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高",
+        "notes": "赛果分布、场均进球、进球分布、积分榜为精确统计（来源fbref.com/500.com）；BTTS率为基于比分数据推算；黄牌/红牌/点球为基于德乙历史特征的估算值"
+    }
+}

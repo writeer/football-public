@@ -1,0 +1,4302 @@
+[
+  {
+    "match_id": "001",
+    "league": "日职",
+    "home_team": "大阪樱花",
+    "away_team": "冈山绿雉",
+    "kickoff": "18:00",
+    "venue": "洋马长居体育场,大阪",
+    "weather": "☀️ 33°C 晴",
+    "notes": "日职揭幕战，新帅马钦首秀，樱花9人伤停残阵但交锋碾压",
+    "odds": {
+      "home": 1.81,
+      "draw": 3.35,
+      "away": 3.6,
+      "hafu": {
+        "h": 3.65,
+        "d": 3.45,
+        "a": 1.77
+      }
+    },
+    "odds_source": "official",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.48945798413117153,
+      "draw": 0.2644534182917673,
+      "away": 0.24608859757706122,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          1,
+          0
+        ],
+        0.21172773386046545
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        0.17368433340069311
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.1527872125431325
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.09603296254908586
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        0.0756676529288971
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        0.06576402007761228
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.06379637617888971
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.0317807419689243
+      ],
+      [
+        [
+          4,
+          0
+        ],
+        0.029232988448670203
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.019606447172866085
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 5,
+      "level": "high",
+      "stars": "★★★",
+      "details": {
+        "model_consistency": "高度一致",
+        "odds_alignment": "对齐度一般",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "日职高山方向命中率55.2%，略高于随机，保持模型原判断",
+        "league_accuracy": 0.5517241379310345
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 1.4386433777632652,
+    "lambda_away": 0.42598902831839996,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 8,
+      "away": 2
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.5314923703949133,
+      "confidence": {
+        "score": 5,
+        "level": "high",
+        "stars": "★★★",
+        "details": {
+          "model_consistency": "高度一致",
+          "odds_alignment": "对齐度一般",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "日职高山方向命中率55.2%，略高于随机，保持模型原判断",
+          "league_accuracy": 0.5517241379310345
+        }
+      },
+      "scores": {
+        "primary": "1-0",
+        "alt1": "0-0",
+        "alt2": "2-0"
+      },
+      "total_goals": "小2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.11408104872257951,
+        "draw": -0.11408104872257963,
+        "away": -0.11408104872257963
+      }
+    }
+  },
+  {
+    "match_id": "002",
+    "league": "日职",
+    "home_team": "大宫松鼠",
+    "away_team": "新潟天鹅",
+    "kickoff": "18:00",
+    "venue": "NACK5体育场,埼玉",
+    "weather": "☀️ 35°C 晴",
+    "notes": "日乙揭幕战，大宫升级热门，新潟降班马，机构方向分歧",
+    "odds": {
+      "home": 1.81,
+      "draw": 3.5,
+      "away": 3.45,
+      "hafu": {
+        "h": 3.5,
+        "d": 3.6,
+        "a": 1.77
+      }
+    },
+    "odds_source": "official",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.48976860208075607,
+      "draw": 0.2532803342189053,
+      "away": 0.2569510637003387,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          2,
+          0
+        ],
+        0.0845524125356926
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.08079529209368301
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.07303624208810645
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        0.07189865599121911
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.07078329998992268
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.06735404790724207
+      ],
+      [
+        [
+          4,
+          0
+        ],
+        0.04970830633617888
+      ],
+      [
+        [
+          4,
+          1
+        ],
+        0.04835574395987876
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.024907202968709487
+      ],
+      [
+        [
+          3,
+          2
+        ],
+        0.01678312841795533
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 3,
+      "level": "high",
+      "stars": "★★★",
+      "details": {
+        "model_consistency": "高度一致",
+        "odds_alignment": "对齐度一般",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "日职高山方向命中率55.2%，略高于随机，保持模型原判断",
+        "league_accuracy": 0.5517241379310345
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 2.7053921975510207,
+    "lambda_away": 1.0274775510204082,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.5702605575202092,
+      "confidence": {
+        "score": 3,
+        "level": "high",
+        "stars": "★★★",
+        "details": {
+          "model_consistency": "高度一致",
+          "odds_alignment": "对齐度一般",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "日职高山方向命中率55.2%，略高于随机，保持模型原判断",
+          "league_accuracy": 0.5517241379310345
+        }
+      },
+      "scores": {
+        "primary": "2-0",
+        "alt1": "2-1",
+        "alt2": "1-1"
+      },
+      "total_goals": "大2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.11351883023383147,
+        "draw": -0.11351883023383147,
+        "away": -0.11351883023383136
+      }
+    }
+  },
+  {
+    "match_id": "003",
+    "league": "韩K",
+    "home_team": "安养FC",
+    "away_team": "大田市民",
+    "kickoff": "19:00",
+    "venue": "安养综合运动场",
+    "weather": "☀️ 31°C 晴",
+    "notes": "安养中场核心停赛+3主力伤缺，三家退盘，大田平局大师",
+    "odds": {
+      "home": 2.72,
+      "draw": 3.15,
+      "away": 2.25,
+      "hafu": {
+        "h": 1.49,
+        "d": 3.75,
+        "a": 5.22
+      }
+    },
+    "odds_source": "official",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.3254804711717297,
+      "draw": 0.28104980367844595,
+      "away": 0.3934697251498243,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          1,
+          1
+        ],
+        0.12488281369203791
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        0.10648625217159727
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        0.09803504544257623
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.08891389926287892
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.08067389239732892
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        0.07660305943252982
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.06690749709676785
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.053959648286603074
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.045517969082877724
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        0.03279173177256384
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 5,
+      "level": "high",
+      "stars": "★★★",
+      "details": {
+        "model_consistency": "中度一致",
+        "odds_alignment": "高度对齐",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "韩K样本不足(<20场)，高山验证跳过",
+        "league_accuracy": 0.4667931688804554
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 1.1334740415591065,
+    "lambda_away": 1.381536,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 4,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "客胜",
+      "direction_prob": 0.379809470786181,
+      "confidence": {
+        "score": 5,
+        "level": "high",
+        "stars": "★★★",
+        "details": {
+          "model_consistency": "中度一致",
+          "odds_alignment": "高度对齐",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "韩K样本不足(<20场)，高山验证跳过",
+          "league_accuracy": 0.4667931688804554
+        }
+      },
+      "scores": {
+        "primary": "1-1",
+        "alt1": "0-1",
+        "alt2": "0-0"
+      },
+      "total_goals": "2-3球",
+      "htft": "客-客",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.1146931184128952,
+        "draw": -0.11469311841289531,
+        "away": -0.11469311841289531
+      }
+    }
+  },
+  {
+    "match_id": "004",
+    "league": "韩K",
+    "home_team": "全北现代",
+    "away_team": "济州SK",
+    "kickoff": "19:00",
+    "venue": "全州世界杯体育场",
+    "weather": "☀️ 30°C 晴",
+    "notes": "全北榜首主场碾压，多家升盘力挺，但主场连续两轮0-0",
+    "odds": {
+      "home": 1.6,
+      "draw": 3.45,
+      "away": 4.65,
+      "hafu": {
+        "h": 2.99,
+        "d": 3.25,
+        "a": 2.05
+      }
+    },
+    "odds_source": "official",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.5531419705197828,
+      "draw": 0.256529609516421,
+      "away": 0.1903284199637962,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          2,
+          0
+        ],
+        0.17141557516001318
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.15094670392597007
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        0.13943071785461372
+      ],
+      [
+        [
+          4,
+          0
+        ],
+        0.08994600220859701
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        0.08720835720462945
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.05497436752406512
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.05152766822289867
+      ],
+      [
+        [
+          5,
+          0
+        ],
+        0.04950154828832109
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.04436765750524052
+      ],
+      [
+        [
+          4,
+          1
+        ],
+        0.01686987849951284
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 1,
+      "level": "medium",
+      "stars": "★★",
+      "details": {
+        "model_consistency": "中度一致",
+        "odds_alignment": "对齐度一般",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "韩K样本不足(<20场)，高山验证跳过",
+        "league_accuracy": 0.4667931688804554
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 2.508192,
+    "lambda_away": 0.32270399999999994,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 2,
+      "away": 2
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.6549457929815999,
+      "confidence": {
+        "score": 1,
+        "level": "medium",
+        "stars": "★★",
+        "details": {
+          "model_consistency": "中度一致",
+          "odds_alignment": "对齐度一般",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "韩K样本不足(<20场)，高山验证跳过",
+          "league_accuracy": 0.4667931688804554
+        }
+      },
+      "scores": {
+        "primary": "2-0",
+        "alt1": "1-0",
+        "alt2": "3-0"
+      },
+      "total_goals": "2-3球",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.11497284716834755,
+        "draw": -0.11497284716834744,
+        "away": -0.11497284716834755
+      }
+    }
+  },
+  {
+    "match_id": "005",
+    "league": "韩K",
+    "home_team": "金泉尚武",
+    "away_team": "首尔FC",
+    "kickoff": "19:00",
+    "venue": "金泉体育场",
+    "weather": "☀️ 29°C 晴",
+    "notes": "金泉近3次全胜首尔，客胜赔率分化严重，兵役球队主场平局率60%",
+    "odds": {
+      "home": 3.6,
+      "draw": 3.45,
+      "away": 1.78,
+      "hafu": {
+        "h": 1.81,
+        "d": 3.48,
+        "a": 3.45
+      }
+    },
+    "odds_source": "official",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.24594497176498858,
+      "draw": 0.2566382314069446,
+      "away": 0.4974167968280668,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          1,
+          1
+        ],
+        0.10534152464615103
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.0788861774838824
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.0733366935552435
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        0.06932053993990875
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.06424081666496945
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        0.05881061771065202
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        0.058420944466823894
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.05796432688339324
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.05139026080806487
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        0.04467594526373016
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 3,
+      "level": "high",
+      "stars": "★★★",
+      "details": {
+        "model_consistency": "高度一致",
+        "odds_alignment": "显著偏离",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "韩K样本不足(<20场)，高山验证跳过",
+        "league_accuracy": 0.4667931688804554
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 1.5103318274042552,
+    "lambda_away": 1.6463999999999996,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "客胜",
+      "direction_prob": 0.39293319303807767,
+      "confidence": {
+        "score": 3,
+        "level": "high",
+        "stars": "★★★",
+        "details": {
+          "model_consistency": "高度一致",
+          "odds_alignment": "显著偏离",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "韩K样本不足(<20场)，高山验证跳过",
+          "league_accuracy": 0.4667931688804554
+        }
+      },
+      "scores": {
+        "primary": "1-1",
+        "alt1": "1-2",
+        "alt2": "2-1"
+      },
+      "total_goals": "大2.5",
+      "htft": "客-客",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.11459810164604112,
+        "draw": -0.11459810164604112,
+        "away": -0.11459810164604112
+      }
+    }
+  },
+  {
+    "match_id": "006",
+    "league": "挪超",
+    "home_team": "瓦勒伦加",
+    "away_team": "博德闪耀",
+    "kickoff": "20:00",
+    "venue": "Intility Arena,奥斯陆",
+    "weather": "☀️ 22°C 晴",
+    "notes": "博德闪耀榜首5连胜，瓦勒伦加双边后卫伤缺，近3次交手博德全胜零封",
+    "odds": {
+      "home": 3.8,
+      "draw": 3.6,
+      "away": 1.75,
+      "hafu": {
+        "h": 1.45,
+        "d": 3.8,
+        "a": 5.5
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.2365752910251596,
+      "draw": 0.24971836274877957,
+      "away": 0.5137063462260608,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          1,
+          1
+        ],
+        0.08683808994617662
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.0838258240061799
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        0.06719766765262598
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        0.06262737738703895
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        0.058850864293191495
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.05493725257914271
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.05219085301175775
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        0.05023484858141267
+      ],
+      [
+        [
+          2,
+          3
+        ],
+        0.026254109849475123
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        0.022523429048216234
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 4,
+      "level": "high",
+      "stars": "★★★",
+      "details": {
+        "model_consistency": "中度一致",
+        "odds_alignment": "高度对齐",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "挪超高山方向命中率56.5%，略高于随机，保持模型原判断",
+        "league_accuracy": 0.5652173913043478
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 1.336445318057143,
+    "lambda_away": 2.2930757485714284,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 2,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "客胜",
+      "direction_prob": 0.48923599183181266,
+      "confidence": {
+        "score": 4,
+        "level": "high",
+        "stars": "★★★",
+        "details": {
+          "model_consistency": "中度一致",
+          "odds_alignment": "高度对齐",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "挪超高山方向命中率56.5%，略高于随机，保持模型原判断",
+          "league_accuracy": 0.5652173913043478
+        }
+      },
+      "scores": {
+        "primary": "1-1",
+        "alt1": "1-2",
+        "alt2": "0-2"
+      },
+      "total_goals": "大2.5",
+      "htft": "客-客",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.10101389410439365,
+        "draw": -0.10101389410439354,
+        "away": -0.10101389410439354
+      }
+    }
+  },
+  {
+    "match_id": "007",
+    "league": "英冠",
+    "home_team": "女王公园巡游者",
+    "away_team": "米尔沃尔",
+    "kickoff": "21:00",
+    "venue": "Loftus Road,伦敦",
+    "weather": "☁️ 20°C 多云",
+    "notes": "英联杯首轮，两队大规模轮换80%主力，同城德比低优先级杯赛",
+    "odds": {
+      "home": 2.55,
+      "draw": 3.1,
+      "away": 2.65,
+      "hafu": {
+        "h": 1.4,
+        "d": 3.75,
+        "a": 5.8
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.35908643864058576,
+      "draw": 0.2953775543656431,
+      "away": 0.3455360069937712,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          1,
+          1
+        ],
+        0.10222513578344564
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.09081429311874281
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.08928996912074877
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.08731588946937033
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        0.06547600170853513
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.05791163260898778
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        0.05699126396846033
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        0.05539004278692165
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.052677994147899886
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.048493521403151274
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 2,
+      "level": "medium",
+      "stars": "★★",
+      "details": {
+        "model_consistency": "高度一致",
+        "odds_alignment": "显著偏离",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "英冠高山方向命中率45.6%，接近随机，模型判断独立使用",
+        "league_accuracy": 0.4563106796116505
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 1.9478710588235295,
+    "lambda_away": 1.0909803921568628,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.4865698533372168,
+      "confidence": {
+        "score": 2,
+        "level": "medium",
+        "stars": "★★",
+        "details": {
+          "model_consistency": "高度一致",
+          "odds_alignment": "显著偏离",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "英冠高山方向命中率45.6%，接近随机，模型判断独立使用",
+          "league_accuracy": 0.4563106796116505
+        }
+      },
+      "scores": {
+        "primary": "1-1",
+        "alt1": "1-0",
+        "alt2": "2-1"
+      },
+      "total_goals": "大2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.08432958146650638,
+        "draw": -0.08432958146650638,
+        "away": -0.08432958146650638
+      }
+    }
+  },
+  {
+    "match_id": "008",
+    "league": "瑞超",
+    "home_team": "厄格里特",
+    "away_team": "索尔纳",
+    "kickoff": "21:00",
+    "venue": "Gamla Ullevi,哥德堡",
+    "weather": "☁️ 19°C 多云",
+    "notes": "厄格里特垫底主场进球倒数第一，索尔纳争欧战，近5次交手3平",
+    "odds": {
+      "home": 3.5,
+      "draw": 3.1,
+      "away": 2.05,
+      "hafu": {
+        "h": 1.42,
+        "d": 3.8,
+        "a": 6.0
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.2606644790812141,
+      "draw": 0.294298605414274,
+      "away": 0.4450369155045119,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          0,
+          1
+        ],
+        0.18156712191687757
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        0.1472730889181848
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        0.1367833284862356
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.11082391952268171
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.07526371104707968
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        0.0694356430056245
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.06848283596910208
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        0.03785312322887567
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.029397765914699638
+      ],
+      [
+        [
+          0,
+          4
+        ],
+        0.0281374621427518
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 1,
+      "level": "medium",
+      "stars": "★★",
+      "details": {
+        "model_consistency": "严重分歧",
+        "odds_alignment": "对齐度一般",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "瑞超高山方向命中率34.5%，接近随机，模型判断独立使用",
+        "league_accuracy": 0.3448275862068966
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 0.553816028769231,
+    "lambda_away": 1.4859230769230767,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 1,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "客胜",
+      "direction_prob": 0.48639049409340723,
+      "confidence": {
+        "score": 1,
+        "level": "medium",
+        "stars": "★★",
+        "details": {
+          "model_consistency": "严重分歧",
+          "odds_alignment": "对齐度一般",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "瑞超高山方向命中率34.5%，接近随机，模型判断独立使用",
+          "league_accuracy": 0.3448275862068966
+        }
+      },
+      "scores": {
+        "primary": "0-1",
+        "alt1": "0-0",
+        "alt2": "0-2"
+      },
+      "total_goals": "小2.5",
+      "htft": "客-客",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.08767432321575064,
+        "draw": -0.08767432321575064,
+        "away": -0.08767432321575064
+      }
+    }
+  },
+  {
+    "match_id": "009",
+    "league": "英超",
+    "home_team": "西汉姆联",
+    "away_team": "朴次茅斯",
+    "kickoff": "22:00",
+    "venue": "London Stadium,伦敦",
+    "weather": "☁️ 20°C 多云",
+    "notes": "跨级别对决，西汉姆英超vs朴次茅斯英甲，铁锤帮轮换但仍碾压",
+    "odds": {
+      "home": 1.5,
+      "draw": 3.8,
+      "away": 5.5,
+      "hafu": {
+        "h": 2.5,
+        "d": 3.25,
+        "a": 2.5
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.5997130559540889,
+      "draw": 0.23672883787661403,
+      "away": 0.16355810616929697,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          2,
+          1
+        ],
+        0.0797915799077272
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.07314353113230174
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.071084777630606
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.07003751120345643
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        0.06464288504209535
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.05600692295302413
+      ],
+      [
+        [
+          4,
+          1
+        ],
+        0.05096148220980566
+      ],
+      [
+        [
+          4,
+          0
+        ],
+        0.04652403438740447
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.02740319669192004
+      ],
+      [
+        [
+          3,
+          2
+        ],
+        0.025856932540469932
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 6,
+      "level": "high",
+      "stars": "★★★",
+      "details": {
+        "model_consistency": "高度一致",
+        "odds_alignment": "高度对齐",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "英超高山方向命中率45.0%，接近随机，模型判断独立使用",
+        "league_accuracy": 0.45038167938931295
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 2.830720754716981,
+    "lambda_away": 1.1479245283018868,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.6021792278533734,
+      "confidence": {
+        "score": 6,
+        "level": "high",
+        "stars": "★★★",
+        "details": {
+          "model_consistency": "高度一致",
+          "odds_alignment": "高度对齐",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "英超高山方向命中率45.0%，接近随机，模型判断独立使用",
+          "league_accuracy": 0.45038167938931295
+        }
+      },
+      "scores": {
+        "primary": "2-1",
+        "alt1": "2-0",
+        "alt2": "3-1"
+      },
+      "total_goals": "大2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.10043041606886671,
+        "draw": -0.10043041606886671,
+        "away": -0.1004304160688666
+      }
+    }
+  },
+  {
+    "match_id": "010",
+    "league": "英冠",
+    "home_team": "斯旺西",
+    "away_team": "伯明翰",
+    "kickoff": "22:00",
+    "venue": "Swansea.com Stadium",
+    "weather": "🌧 18°C 小雨",
+    "notes": "英冠同级球队，英联杯大规模轮换，变数极大",
+    "odds": {
+      "home": 2.4,
+      "draw": 3.1,
+      "away": 2.8,
+      "hafu": {
+        "h": 1.38,
+        "d": 3.7,
+        "a": 6.2
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.38003502626970226,
+      "draw": 0.2942206654991243,
+      "away": 0.32574430823117334,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          1,
+          1
+        ],
+        0.08749506913869527
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.08707860570233962
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.08462051239555504
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.07680009019359905
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.06507330306726095
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        0.0629459125184675
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        0.05161904830168746
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.04755832769346687
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.045524126241247465
+      ],
+      [
+        [
+          4,
+          1
+        ],
+        0.01704371839187038
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 1,
+      "level": "medium",
+      "stars": "★★",
+      "details": {
+        "model_consistency": "高度一致",
+        "odds_alignment": "显著偏离",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "英冠高山方向命中率45.6%，接近随机，模型判断独立使用",
+        "league_accuracy": 0.4563106796116505
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 2.290552078431373,
+    "lambda_away": 1.1011764705882352,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.5252683676966172,
+      "confidence": {
+        "score": 1,
+        "level": "medium",
+        "stars": "★★",
+        "details": {
+          "model_consistency": "高度一致",
+          "odds_alignment": "显著偏离",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "英冠高山方向命中率45.6%，接近随机，模型判断独立使用",
+          "league_accuracy": 0.4563106796116505
+        }
+      },
+      "scores": {
+        "primary": "1-1",
+        "alt1": "2-1",
+        "alt2": "2-0"
+      },
+      "total_goals": "大2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.0879159369527146,
+        "draw": -0.08791593695271471,
+        "away": -0.08791593695271471
+      }
+    }
+  },
+  {
+    "match_id": "011",
+    "league": "挪超",
+    "home_team": "维京",
+    "away_team": "萨普斯堡",
+    "kickoff": "23:00",
+    "venue": "SR-Bank Arena,斯塔万格",
+    "weather": "☀️ 21°C 晴",
+    "notes": "维京主场龙，萨普斯堡客场6连败，近4次维京主场全胜",
+    "odds": {
+      "home": 1.55,
+      "draw": 3.8,
+      "away": 4.8,
+      "hafu": {
+        "h": 2.7,
+        "d": 3.3,
+        "a": 2.3
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.5777636997149193,
+      "draw": 0.2356667722521381,
+      "away": 0.1865695280329427,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          3,
+          0
+        ],
+        0.10141697556298444
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.09639629815605799
+      ],
+      [
+        [
+          4,
+          0
+        ],
+        0.08879852576693655
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.06883372393334079
+      ],
+      [
+        [
+          5,
+          0
+        ],
+        0.06615554618041651
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.06255158312989706
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.0589682186054851
+      ],
+      [
+        [
+          4,
+          1
+        ],
+        0.049631933915935254
+      ],
+      [
+        [
+          5,
+          1
+        ],
+        0.0264023470196945
+      ],
+      [
+        [
+          6,
+          0
+        ],
+        0.025540955679533992
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": -1,
+      "level": "very_low",
+      "stars": "☆",
+      "details": {
+        "model_consistency": "中度一致",
+        "odds_alignment": "对齐度一般",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "挪超高山方向命中率56.5%，略高于随机，保持模型原判断",
+        "league_accuracy": 0.5652173913043478
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 3.62433744,
+    "lambda_away": 0.6244285714285713,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 2
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.6777973413283213,
+      "confidence": {
+        "score": -1,
+        "level": "very_low",
+        "stars": "☆",
+        "details": {
+          "model_consistency": "中度一致",
+          "odds_alignment": "对齐度一般",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "挪超高山方向命中率56.5%，略高于随机，保持模型原判断",
+          "league_accuracy": 0.5652173913043478
+        }
+      },
+      "scores": {
+        "primary": "3-0",
+        "alt1": "2-0",
+        "alt2": "4-0"
+      },
+      "total_goals": "大2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.1044662654418751,
+        "draw": -0.1044662654418752,
+        "away": -0.1044662654418751
+      }
+    }
+  },
+  {
+    "match_id": "012",
+    "league": "荷甲",
+    "home_team": "奈梅亨",
+    "away_team": "特尔斯达",
+    "kickoff": "22:30",
+    "venue": "Goffertstadion,奈梅亨",
+    "weather": "☁️ 19°C 多云",
+    "notes": "荷甲新赛季首轮，奈梅亨主场开门红，特尔斯达升班马首征荷甲",
+    "odds": {
+      "home": 1.75,
+      "draw": 3.5,
+      "away": 4.0,
+      "hafu": {
+        "h": 3.2,
+        "d": 3.35,
+        "a": 2.0
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.5161290322580645,
+      "draw": 0.25806451612903225,
+      "away": 0.22580645161290322,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          2,
+          1
+        ],
+        0.08531147770670519
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.08470659479900422
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.07873933418178307
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.068567570112369
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.06716310707104446
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        0.06166015176677654
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.04844763650667062
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.044580555661310715
+      ],
+      [
+        [
+          4,
+          1
+        ],
+        0.02528904048590273
+      ],
+      [
+        [
+          3,
+          2
+        ],
+        0.024079295365515892
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 6,
+      "level": "high",
+      "stars": "★★★",
+      "details": {
+        "model_consistency": "高度一致",
+        "odds_alignment": "高度对齐",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "荷甲高山方向命中率48.6%，接近随机，模型判断独立使用",
+        "league_accuracy": 0.4861111111111111
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 2.4041612903225804,
+    "lambda_away": 1.1445770322580648,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 2,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.5549360844303236,
+      "confidence": {
+        "score": 6,
+        "level": "high",
+        "stars": "★★★",
+        "details": {
+          "model_consistency": "高度一致",
+          "odds_alignment": "高度对齐",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "荷甲高山方向命中率48.6%，接近随机，模型判断独立使用",
+          "league_accuracy": 0.4861111111111111
+        }
+      },
+      "scores": {
+        "primary": "2-1",
+        "alt1": "1-1",
+        "alt2": "2-0"
+      },
+      "total_goals": "大2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.09677419354838712,
+        "draw": -0.09677419354838712,
+        "away": -0.09677419354838712
+      }
+    }
+  },
+  {
+    "match_id": "013",
+    "league": "葡超",
+    "home_team": "马里迪莫",
+    "away_team": "卡萨皮亚",
+    "kickoff": "00:15",
+    "venue": "Estádio dos Barreiros,丰沙尔",
+    "weather": "☀️ 26°C 晴",
+    "notes": "葡超首轮，马里迪莫主场优势，卡萨皮亚新援磨合不足",
+    "odds": {
+      "home": 2.2,
+      "draw": 3.1,
+      "away": 3.1,
+      "hafu": {
+        "h": 1.4,
+        "d": 3.7,
+        "a": 6.0
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.41333333333333333,
+      "draw": 0.29333333333333333,
+      "away": 0.29333333333333333,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          2,
+          0
+        ],
+        0.08228992608132296
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.0810892486037196
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        0.07154382525683352
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.07147148193101414
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.06984758627387799
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.06615378208545629
+      ],
+      [
+        [
+          4,
+          0
+        ],
+        0.049308942824530626
+      ],
+      [
+        [
+          4,
+          1
+        ],
+        0.048484003209280147
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.025312642990200432
+      ],
+      [
+        [
+          3,
+          2
+        ],
+        0.017133412379270276
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 1,
+      "level": "medium",
+      "stars": "★★",
+      "details": {
+        "model_consistency": "高度一致",
+        "odds_alignment": "显著偏离",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "葡超高山方向命中率51.1%，略高于随机，保持模型原判断",
+        "league_accuracy": 0.5106382978723404
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 2.717613387755102,
+    "lambda_away": 1.0481632653061221,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.5733268419658786,
+      "confidence": {
+        "score": 1,
+        "level": "medium",
+        "stars": "★★",
+        "details": {
+          "model_consistency": "高度一致",
+          "odds_alignment": "显著偏离",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "葡超高山方向命中率51.1%，略高于随机，保持模型原判断",
+          "league_accuracy": 0.5106382978723404
+        }
+      },
+      "scores": {
+        "primary": "2-0",
+        "alt1": "2-1",
+        "alt2": "3-0"
+      },
+      "total_goals": "大2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.09066666666666656,
+        "draw": -0.09066666666666667,
+        "away": -0.09066666666666667
+      }
+    }
+  },
+  {
+    "match_id": "014",
+    "league": "瑞超",
+    "home_team": "米亚尔比",
+    "away_team": "埃夫斯堡",
+    "kickoff": "23:30",
+    "venue": "Strandvallen,米亚尔比",
+    "weather": "☁️ 18°C 多云",
+    "notes": "瑞超中游均势，近8次交手6平，平局率75%",
+    "odds": {
+      "home": 2.55,
+      "draw": 2.9,
+      "away": 2.65,
+      "hafu": {
+        "h": 1.35,
+        "d": 3.5,
+        "a": 7.0
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.3519175729822553,
+      "draw": 0.30944476244991415,
+      "away": 0.33863766456783057,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          1,
+          0
+        ],
+        0.14074480139107484
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.1283814995150093
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        0.12430215651091299
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.10200333067983926
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        0.08425520505253475
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.08204916737059288
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.049654655982414246
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        0.04946500345757815
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.03908341364853093
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        0.038830950884764674
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 4,
+      "level": "high",
+      "stars": "★★★",
+      "details": {
+        "model_consistency": "高度一致",
+        "odds_alignment": "对齐度一般",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "瑞超高山方向命中率34.5%，接近随机，模型判断独立使用",
+        "league_accuracy": 0.3448275862068966
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 1.3961807999999998,
+    "lambda_away": 0.826476923076923,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.4359419084314236,
+      "confidence": {
+        "score": 4,
+        "level": "high",
+        "stars": "★★★",
+        "details": {
+          "model_consistency": "高度一致",
+          "odds_alignment": "对齐度一般",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "瑞超高山方向命中率34.5%，接近随机，模型判断独立使用",
+          "league_accuracy": 0.3448275862068966
+        }
+      },
+      "scores": {
+        "primary": "1-0",
+        "alt1": "1-1",
+        "alt2": "0-0"
+      },
+      "total_goals": "小2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.10261018889524909,
+        "draw": -0.10261018889524898,
+        "away": -0.10261018889524898
+      }
+    }
+  },
+  {
+    "match_id": "015",
+    "league": "default",
+    "home_team": "雅罗",
+    "away_team": "瓦萨",
+    "kickoff": "00:00",
+    "venue": "雅罗体育场",
+    "weather": "☀️ 20°C 晴",
+    "notes": "芬超弱队对决，场均合计不足1.8球，近5次4平",
+    "odds": {
+      "home": 2.65,
+      "draw": 2.95,
+      "away": 2.6,
+      "hafu": {
+        "h": 1.35,
+        "d": 3.5,
+        "a": 7.0
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.34275499944140325,
+      "draw": 0.3078985588202436,
+      "away": 0.3493464417383533,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          0,
+          0
+        ],
+        0.19365099666685143
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.1741135700104276
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.12714161603029706
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        0.11901027170261871
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.09251286413224596
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.062170080876495455
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        0.04469802224529228
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.042894690053363285
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        0.033133845502166664
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.012321326807597477
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 5,
+      "level": "high",
+      "stars": "★★★",
+      "details": {
+        "model_consistency": "高度一致",
+        "odds_alignment": "对齐度一般",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "default样本不足(<20场)，高山验证跳过",
+        "league_accuracy": 0.4667931688804554
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 1.0300711679999999,
+    "lambda_away": 0.6993599999999999,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.39550747915731066,
+      "confidence": {
+        "score": 5,
+        "level": "high",
+        "stars": "★★★",
+        "details": {
+          "model_consistency": "高度一致",
+          "odds_alignment": "对齐度一般",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "default样本不足(<20场)，高山验证跳过",
+          "league_accuracy": 0.4667931688804554
+        }
+      },
+      "scores": {
+        "primary": "0-0",
+        "alt1": "1-0",
+        "alt2": "1-1"
+      },
+      "total_goals": "小2.5",
+      "htft": "平-平",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.09169925148028146,
+        "draw": -0.09169925148028135,
+        "away": -0.09169925148028146
+      }
+    }
+  },
+  {
+    "match_id": "016",
+    "league": "荷甲",
+    "home_team": "前进之鹰",
+    "away_team": "威廉二世",
+    "kickoff": "00:30",
+    "venue": "De Adelaarshorst,代芬特尔",
+    "weather": "☁️ 18°C 多云",
+    "notes": "荷甲首轮，前进之鹰上赛季主场拿70%积分，威廉二世客场起伏大",
+    "odds": {
+      "home": 1.9,
+      "draw": 3.4,
+      "away": 3.6,
+      "hafu": {
+        "h": 3.6,
+        "d": 3.4,
+        "a": 1.8
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.47924823805794825,
+      "draw": 0.2678151918559123,
+      "away": 0.2529365700861394,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          2,
+          0
+        ],
+        0.099303124772537
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        0.08655970759252529
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.08121091215902702
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.07994574752726881
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.07247729059854158
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.06918520510877585
+      ],
+      [
+        [
+          4,
+          0
+        ],
+        0.06011134521106551
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        0.04976362154476602
+      ],
+      [
+        [
+          4,
+          1
+        ],
+        0.048040574059259114
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.020167045134890708
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 0,
+      "level": "low",
+      "stars": "★",
+      "details": {
+        "model_consistency": "中度一致",
+        "odds_alignment": "显著偏离",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "荷甲高山方向命中率48.6%，接近随机，模型判断独立使用",
+        "league_accuracy": 0.4861111111111111
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 2.731258064516129,
+    "lambda_away": 0.8283870967741935,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.6159745750119159,
+      "confidence": {
+        "score": 0,
+        "level": "low",
+        "stars": "★",
+        "details": {
+          "model_consistency": "中度一致",
+          "odds_alignment": "显著偏离",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "荷甲高山方向命中率48.6%，接近随机，模型判断独立使用",
+          "league_accuracy": 0.4861111111111111
+        }
+      },
+      "scores": {
+        "primary": "2-0",
+        "alt1": "3-0",
+        "alt2": "1-0"
+      },
+      "total_goals": "大2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.08942834768989838,
+        "draw": -0.08942834768989827,
+        "away": -0.08942834768989816
+      }
+    }
+  },
+  {
+    "match_id": "017",
+    "league": "葡超",
+    "home_team": "吉马良斯",
+    "away_team": "阿罗卡",
+    "kickoff": "01:00",
+    "venue": "D. Afonso Henriques,吉马良斯",
+    "weather": "☀️ 24°C 晴",
+    "notes": "葡超首轮，吉马良斯主场稳定，阿罗卡客场保守近10客场7平",
+    "odds": {
+      "home": 1.85,
+      "draw": 3.2,
+      "away": 4.0,
+      "hafu": {
+        "h": 3.4,
+        "d": 3.3,
+        "a": 1.9
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.4900459418070444,
+      "draw": 0.2833078101071976,
+      "away": 0.2266462480857581,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          2,
+          0
+        ],
+        0.10825365020801542
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        0.09887954617789357
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.08568775883680531
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.07452394466355196
+      ],
+      [
+        [
+          4,
+          0
+        ],
+        0.07238235897112416
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.06713014496098844
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.0631577296881762
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        0.04922938937849168
+      ],
+      [
+        [
+          5,
+          0
+        ],
+        0.04470462232113065
+      ],
+      [
+        [
+          4,
+          1
+        ],
+        0.036918829832039944
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 0,
+      "level": "low",
+      "stars": "★",
+      "details": {
+        "model_consistency": "中度一致",
+        "odds_alignment": "对齐度一般",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "葡超高山方向命中率51.1%，略高于随机，保持模型原判断",
+        "league_accuracy": 0.5106382978723404
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 2.903615999999999,
+    "lambda_away": 0.7102040816326529,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.6374038512324949,
+      "confidence": {
+        "score": 0,
+        "level": "low",
+        "stars": "★",
+        "details": {
+          "model_consistency": "中度一致",
+          "odds_alignment": "对齐度一般",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "葡超高山方向命中率51.1%，略高于随机，保持模型原判断",
+          "league_accuracy": 0.5106382978723404
+        }
+      },
+      "scores": {
+        "primary": "2-0",
+        "alt1": "3-0",
+        "alt2": "1-0"
+      },
+      "total_goals": "大2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.09341500765696775,
+        "draw": -0.09341500765696775,
+        "away": -0.09341500765696764
+      }
+    }
+  },
+  {
+    "match_id": "018",
+    "league": "荷甲",
+    "home_team": "埃因霍温",
+    "away_team": "福图纳锡塔德",
+    "kickoff": "01:30",
+    "venue": "Philips Stadion,埃因霍温",
+    "weather": "☁️ 19°C 多云",
+    "notes": "荷甲豪门vs下游，埃因霍温主场开门红势在必得",
+    "odds": {
+      "home": 1.25,
+      "draw": 5.0,
+      "away": 8.5,
+      "hafu": {
+        "h": 1.8,
+        "d": 3.5,
+        "a": 3.8
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.7157894736842105,
+      "draw": 0.17894736842105263,
+      "away": 0.10526315789473684,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          3,
+          0
+        ],
+        0.1153877873615193
+      ],
+      [
+        [
+          4,
+          0
+        ],
+        0.10867679679952524
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.10130882007212665
+      ],
+      [
+        [
+          5,
+          0
+        ],
+        0.08634143743962022
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.07115828253675675
+      ],
+      [
+        [
+          6,
+          0
+        ],
+        0.06100304634156976
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.046161545690483835
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.04535520380960346
+      ],
+      [
+        [
+          4,
+          1
+        ],
+        0.03245441206526211
+      ],
+      [
+        [
+          5,
+          1
+        ],
+        0.0259635296522097
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 3,
+      "level": "high",
+      "stars": "★★★",
+      "details": {
+        "model_consistency": "中度一致",
+        "odds_alignment": "高度对齐",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "荷甲高山方向命中率48.6%，接近随机，模型判断独立使用",
+        "league_accuracy": 0.4861111111111111
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 4.0,
+    "lambda_away": 0.449032258064516,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.7623772572313063,
+      "confidence": {
+        "score": 3,
+        "level": "high",
+        "stars": "★★★",
+        "details": {
+          "model_consistency": "中度一致",
+          "odds_alignment": "高度对齐",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "荷甲高山方向命中率48.6%，接近随机，模型判断独立使用",
+          "league_accuracy": 0.4861111111111111
+        }
+      },
+      "scores": {
+        "primary": "3-0",
+        "alt1": "4-0",
+        "alt2": "2-0"
+      },
+      "total_goals": "大2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.10526315789473684,
+        "draw": -0.10526315789473684,
+        "away": -0.10526315789473695
+      }
+    }
+  },
+  {
+    "match_id": "019",
+    "league": "法甲",
+    "home_team": "波城FC",
+    "away_team": "阿纳西",
+    "kickoff": "02:45",
+    "venue": "Nouveau Camp de Sébé,波城",
+    "weather": "☀️ 28°C 晴",
+    "notes": "法乙升级关键战，阿纳西升级区客场抢分，波城主场进攻乏力",
+    "odds": {
+      "home": 2.7,
+      "draw": 2.9,
+      "away": 2.65,
+      "hafu": {
+        "h": 1.35,
+        "d": 3.5,
+        "a": 7.0
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.33899426554918394,
+      "draw": 0.315615350683723,
+      "away": 0.3453903837670931,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          1,
+          1
+        ],
+        0.12361170468785422
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.1069148099121181
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        0.09390482113948133
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        0.08364567474117895
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.0825823562654918
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.07978960315883951
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.06433714250190888
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        0.049957238520342596
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.04607345745374042
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.023935552077422994
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 4,
+      "level": "high",
+      "stars": "★★★",
+      "details": {
+        "model_consistency": "高度一致",
+        "odds_alignment": "对齐度一般",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "法甲高山方向命中率41.6%，接近随机，模型判断独立使用",
+        "league_accuracy": 0.4157303370786517
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 1.4456879999999999,
+    "lambda_away": 1.1165217391304347,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.4144825484333901,
+      "confidence": {
+        "score": 4,
+        "level": "high",
+        "stars": "★★★",
+        "details": {
+          "model_consistency": "高度一致",
+          "odds_alignment": "对齐度一般",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "法甲高山方向命中率41.6%，接近随机，模型判断独立使用",
+          "league_accuracy": 0.4157303370786517
+        }
+      },
+      "scores": {
+        "primary": "1-1",
+        "alt1": "1-0",
+        "alt2": "0-0"
+      },
+      "total_goals": "2-3球",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.08471548301720333,
+        "draw": -0.08471548301720333,
+        "away": -0.08471548301720333
+      }
+    }
+  },
+  {
+    "match_id": "020",
+    "league": "法甲",
+    "home_team": "蒙彼利埃",
+    "away_team": "第戎",
+    "kickoff": "02:45",
+    "venue": "Stade de la Mosson,蒙彼利埃",
+    "weather": "☀️ 27°C 晴",
+    "notes": "蒙彼利埃法甲降班马实力碾压，第戎预算有限，蒙彼利埃升级热门",
+    "odds": {
+      "home": 1.7,
+      "draw": 3.3,
+      "away": 4.5,
+      "hafu": {
+        "h": 3.0,
+        "d": 3.3,
+        "a": 2.1
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.528281750266809,
+      "draw": 0.272145144076841,
+      "away": 0.19957310565635006,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          3,
+          0
+        ],
+        0.08666274725603484
+      ],
+      [
+        [
+          4,
+          0
+        ],
+        0.08064429079112446
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.07797657357218421
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.06421165009256756
+      ],
+      [
+        [
+          5,
+          0
+        ],
+        0.06388156848126789
+      ],
+      [
+        [
+          4,
+          1
+        ],
+        0.059006775262353255
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.05704607389379649
+      ],
+      [
+        [
+          5,
+          1
+        ],
+        0.030284553043231698
+      ],
+      [
+        [
+          6,
+          0
+        ],
+        0.026756109420759965
+      ],
+      [
+        [
+          6,
+          1
+        ],
+        0.014715791943006016
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": -2,
+      "level": "very_low",
+      "stars": "☆",
+      "details": {
+        "model_consistency": "中度一致",
+        "odds_alignment": "对齐度一般",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "法甲高山方向命中率41.6%，接近随机，模型判断独立使用",
+        "league_accuracy": 0.4157303370786517
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 3.8998799999999996,
+    "lambda_away": 0.7565217391304347,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.6836498480509718,
+      "confidence": {
+        "score": -2,
+        "level": "very_low",
+        "stars": "☆",
+        "details": {
+          "model_consistency": "中度一致",
+          "odds_alignment": "对齐度一般",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "法甲高山方向命中率41.6%，接近随机，模型判断独立使用",
+          "league_accuracy": 0.4157303370786517
+        }
+      },
+      "scores": {
+        "primary": "3-0",
+        "alt1": "4-0",
+        "alt2": "2-0"
+      },
+      "total_goals": "大2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.10192102454642471,
+        "draw": -0.10192102454642482,
+        "away": -0.10192102454642471
+      }
+    }
+  },
+  {
+    "match_id": "021",
+    "league": "法甲",
+    "home_team": "南特",
+    "away_team": "圣旺红星",
+    "kickoff": "02:45",
+    "venue": "Stade de la Beaujoire,南特",
+    "weather": "☀️ 26°C 晴",
+    "notes": "南特法甲降班马升级头号热门，圣旺红星攻防平庸",
+    "odds": {
+      "home": 1.6,
+      "draw": 3.4,
+      "away": 5.0,
+      "hafu": {
+        "h": 2.75,
+        "d": 3.3,
+        "a": 2.25
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.5584756898817346,
+      "draw": 0.2628120893561104,
+      "away": 0.17871222076215507,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          3,
+          0
+        ],
+        0.10078782703818365
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.09843974979452243
+      ],
+      [
+        [
+          4,
+          0
+        ],
+        0.08398294616126283
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.0713275431135809
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.06520078385991761
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.06384772625859195
+      ],
+      [
+        [
+          5,
+          0
+        ],
+        0.0590000223119584
+      ],
+      [
+        [
+          4,
+          1
+        ],
+        0.05421469057923432
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.04365289814864836
+      ],
+      [
+        [
+          5,
+          1
+        ],
+        0.02382570033945383
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": -1,
+      "level": "very_low",
+      "stars": "☆",
+      "details": {
+        "model_consistency": "中度一致",
+        "odds_alignment": "对齐度一般",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "法甲高山方向命中率41.6%，接近随机，模型判断独立使用",
+        "league_accuracy": 0.4157303370786517
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 3.4080479999999995,
+    "lambda_away": 0.6695652173913044,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.6778076153376011,
+      "confidence": {
+        "score": -1,
+        "level": "very_low",
+        "stars": "☆",
+        "details": {
+          "model_consistency": "中度一致",
+          "odds_alignment": "对齐度一般",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "法甲高山方向命中率41.6%，接近随机，模型判断独立使用",
+          "league_accuracy": 0.4157303370786517
+        }
+      },
+      "scores": {
+        "primary": "3-0",
+        "alt1": "2-0",
+        "alt2": "4-0"
+      },
+      "total_goals": "大2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.10643889618922464,
+        "draw": -0.10643889618922475,
+        "away": -0.10643889618922464
+      }
+    }
+  },
+  {
+    "match_id": "022",
+    "league": "荷甲",
+    "home_team": "阿尔克马尔",
+    "away_team": "海牙",
+    "kickoff": "03:00",
+    "venue": "AFAS Stadion,阿尔克马尔",
+    "weather": "☁️ 18°C 多云",
+    "notes": "荷甲强队vs升班马，阿尔克马尔青年军冲击力强，海牙阵容厚度不足",
+    "odds": {
+      "home": 1.4,
+      "draw": 4.2,
+      "away": 6.5,
+      "hafu": {
+        "h": 2.2,
+        "d": 3.3,
+        "a": 2.7
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.6456953642384106,
+      "draw": 0.21523178807947016,
+      "away": 0.1390728476821192,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          3,
+          0
+        ],
+        0.11250346067978803
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.10432162970708757
+      ],
+      [
+        [
+          4,
+          0
+        ],
+        0.10049012689100932
+      ],
+      [
+        [
+          5,
+          0
+        ],
+        0.07698163695329985
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0.07416290348313714
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.05218283307305849
+      ],
+      [
+        [
+          6,
+          0
+        ],
+        0.05147799823725507
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.05084866079272318
+      ],
+      [
+        [
+          4,
+          1
+        ],
+        0.033689997511776246
+      ],
+      [
+        [
+          5,
+          1
+        ],
+        0.025154734451837944
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 0,
+      "level": "low",
+      "stars": "★",
+      "details": {
+        "model_consistency": "中度一致",
+        "odds_alignment": "高度对齐",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "荷甲高山方向命中率48.6%，接近随机，模型判断独立使用",
+        "league_accuracy": 0.4861111111111111
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 3.7332645161290325,
+    "lambda_away": 0.5051612903225806,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.7271777945846447,
+      "confidence": {
+        "score": 0,
+        "level": "low",
+        "stars": "★",
+        "details": {
+          "model_consistency": "中度一致",
+          "odds_alignment": "高度对齐",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "荷甲高山方向命中率48.6%，接近随机，模型判断独立使用",
+          "league_accuracy": 0.4861111111111111
+        }
+      },
+      "scores": {
+        "primary": "3-0",
+        "alt1": "2-0",
+        "alt2": "4-0"
+      },
+      "total_goals": "大2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.09602649006622532,
+        "draw": -0.09602649006622532,
+        "away": -0.09602649006622521
+      }
+    }
+  },
+  {
+    "match_id": "023",
+    "league": "美职",
+    "home_team": "格雷米奥",
+    "away_team": "圣保罗",
+    "kickoff": "03:00",
+    "venue": "Arena do Grêmio,阿雷格里港",
+    "weather": "🌧 16°C 小雨",
+    "notes": "巴甲同城德比，主场加成强，德比平局占比高，突发意外概率3倍",
+    "odds": {
+      "home": 2.1,
+      "draw": 2.95,
+      "away": 3.2,
+      "hafu": {
+        "h": 1.38,
+        "d": 3.6,
+        "a": 6.5
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.4222768955490941,
+      "draw": 0.30060389174681273,
+      "away": 0.277119212704093,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          1,
+          0
+        ],
+        0.13556330906025332
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.12480656186045018
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        0.11399234337623369
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.10475947309154836
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.08530208047464977
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        0.07506516049049194
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        0.05360058088002682
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.048711821097423946
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.04382980562163945
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.020864435530111598
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 6,
+      "level": "high",
+      "stars": "★★★",
+      "details": {
+        "model_consistency": "高度一致",
+        "odds_alignment": "高度对齐",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "美职样本不足(<20场)，高山验证跳过",
+        "league_accuracy": 0.4667931688804554
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 1.4997027734068962,
+    "lambda_away": 0.8343310344827586,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.46124461932332667,
+      "confidence": {
+        "score": 6,
+        "level": "high",
+        "stars": "★★★",
+        "details": {
+          "model_consistency": "高度一致",
+          "odds_alignment": "高度对齐",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "美职样本不足(<20场)，高山验证跳过",
+          "league_accuracy": 0.4667931688804554
+        }
+      },
+      "scores": {
+        "primary": "1-0",
+        "alt1": "1-1",
+        "alt2": "0-0"
+      },
+      "total_goals": "小2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.11321851934690241,
+        "draw": -0.11321851934690241,
+        "away": -0.1132185193469023
+      }
+    }
+  },
+  {
+    "match_id": "024",
+    "league": "葡超",
+    "home_team": "阿马多拉",
+    "away_team": "里斯本竞技",
+    "kickoff": "03:00+",
+    "venue": "Estádio José Gomes,阿马多拉",
+    "weather": "☀️ 25°C 晴",
+    "notes": "葡超豪门碾压，里斯本竞技可能轮换，长途客场有丢平风险",
+    "odds": {
+      "home": 6.5,
+      "draw": 4.0,
+      "away": 1.4,
+      "hafu": {
+        "h": 1.85,
+        "d": 3.5,
+        "a": 3.3
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.1375921375921376,
+      "draw": 0.22358722358722358,
+      "away": 0.6388206388206388,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          0,
+          2
+        ],
+        0.09046247096074438
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        0.08370650616508293
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.07642430352037752
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        0.0705473173674672
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        0.07043771917573015
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.06551566453643667
+      ],
+      [
+        [
+          0,
+          4
+        ],
+        0.06184381104344401
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        0.05185094092187237
+      ],
+      [
+        [
+          0,
+          5
+        ],
+        0.022028486229087728
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.015035585878565636
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 3,
+      "level": "high",
+      "stars": "★★★",
+      "details": {
+        "model_consistency": "中度一致",
+        "odds_alignment": "高度对齐",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "葡超高山方向命中率51.1%，略高于随机，保持模型原判断",
+        "league_accuracy": 0.5106382978723404
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 0.8872159999999997,
+    "lambda_away": 2.925714285714285,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "客胜",
+      "direction_prob": 0.6427128380253274,
+      "confidence": {
+        "score": 3,
+        "level": "high",
+        "stars": "★★★",
+        "details": {
+          "model_consistency": "中度一致",
+          "odds_alignment": "高度对齐",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "葡超高山方向命中率51.1%，略高于随机，保持模型原判断",
+          "league_accuracy": 0.5106382978723404
+        }
+      },
+      "scores": {
+        "primary": "0-2",
+        "alt1": "0-3",
+        "alt2": "1-2"
+      },
+      "total_goals": "大2.5",
+      "htft": "客-客",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.10565110565110569,
+        "draw": -0.10565110565110569,
+        "away": -0.1056511056511058
+      }
+    }
+  },
+  {
+    "match_id": "025",
+    "league": "美职",
+    "home_team": "博塔弗戈",
+    "away_team": "弗鲁米嫩塞",
+    "kickoff": "03:00+",
+    "venue": "Estádio Nilton Santos,里约热内卢",
+    "weather": "🌧 22°C 小雨",
+    "notes": "里约德比火药味浓烈，红牌概率极高，赛果不可预判性极强",
+    "odds": {
+      "home": 2.15,
+      "draw": 2.9,
+      "away": 3.15,
+      "hafu": {
+        "h": 1.38,
+        "d": 3.6,
+        "a": 6.5
+      }
+    },
+    "odds_source": "estimated",
+    "fused_probs": {},
+    "dc_outcome": {},
+    "shin_probs": {
+      "home": 0.41255504121034214,
+      "draw": 0.3058597719318054,
+      "away": 0.28158518685785255,
+      "z": 0.07
+    },
+    "mc_result": {
+      "home_win": 0,
+      "draw": 0,
+      "away_win": 0,
+      "top_scores": []
+    },
+    "top_scores": [
+      [
+        [
+          1,
+          0
+        ],
+        0.1403812622074196
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0.11761098801998804
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0.116290423527373
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        0.10951706910140385
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0.08581198072702383
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        0.06702330674437315
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        0.06379182778979542
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        0.047657351570906385
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0.042578776972645664
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0.019237937940303915
+      ]
+    ],
+    "htft_top3": [],
+    "ttg_probs": {},
+    "ht_scores": [],
+    "confidence": {
+      "score": 5,
+      "level": "high",
+      "stars": "★★★",
+      "details": {
+        "model_consistency": "高度一致",
+        "odds_alignment": "对齐度一般",
+        "data_quality": "数据稳定",
+        "sample_size": "样本充足",
+        "external": "待高山验证"
+      },
+      "gaoshan": {
+        "confidence_adjustment": 0,
+        "reason": "美职样本不足(<20场)，高山验证跳过",
+        "league_accuracy": 0.4667931688804554
+      }
+    },
+    "league_diag": {},
+    "lambda_home": 1.6177896059586205,
+    "lambda_away": 0.7584827586206896,
+    "h2h_psychology": {
+      "strength": 0,
+      "outcome_bias": {}
+    },
+    "injuries_count": {
+      "home": 0,
+      "away": 0
+    },
+    "recommendation": {
+      "direction": "主胜",
+      "direction_prob": 0.4865485678362353,
+      "confidence": {
+        "score": 5,
+        "level": "high",
+        "stars": "★★★",
+        "details": {
+          "model_consistency": "高度一致",
+          "odds_alignment": "对齐度一般",
+          "data_quality": "数据稳定",
+          "sample_size": "样本充足",
+          "external": "待高山验证"
+        },
+        "gaoshan": {
+          "confidence_adjustment": 0,
+          "reason": "美职样本不足(<20场)，高山验证跳过",
+          "league_accuracy": 0.4667931688804554
+        }
+      },
+      "scores": {
+        "primary": "1-0",
+        "alt1": "1-1",
+        "alt2": "2-0"
+      },
+      "total_goals": "小2.5",
+      "htft": "主-主",
+      "positive_ev": false,
+      "ev_details": {
+        "home": -0.11300666139776439,
+        "draw": -0.11300666139776427,
+        "away": -0.1130066613977645
+      }
+    }
+  }
+]

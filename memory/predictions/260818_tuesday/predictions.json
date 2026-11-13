@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "date": "2026-08-18",
+    "weekday": "周二",
+    "match_count": 4,
+    "odds_source": "sporttery.cn MCP (mcp_sporttery-odds)",
+    "odds_updated_at": "2026-08-18 11:40:17",
+    "full_odds_file": "C:\\Users\\admin\\AppData\\Local\\Temp\\trae\\toolcall-output\\4476c843-b751-4bbe-a417-78934e2a203c.txt",
+    "report_file": "reports/html/260818_tuesday_analysis_zhihu.md",
+    "lessons_referenced": ["L002", "L005", "L012", "L016", "L020", "L025", "L026"],
+    "rules_triggered": ["rule5", "rule9a", "rule15", "rule24", "rule28", "rule32", "rule36", "rule46", "rule53", "rule55", "rule56", "rule60", "rule61"]
+  },
+  "predictions": {
+    "001": {
+      "match": "里瓦达维亚独立 vs 弗鲁米嫩塞",
+      "league": "南美解放者杯",
+      "competition_stage": "16强次回合",
+      "first_leg": "0:0",
+      "match_time": "08-19 06:00",
+      "stadium": "马尔维纳斯阿根廷人体育场, 门多萨",
+      "home_value_eur": 39330000,
+      "away_value_eur": 113280000,
+      "value_ratio": 2.88,
+      "injuries_home": ["马卡尼奥(门将,肌肉撕裂)", "比利亚(前锋,已转会)"],
+      "injuries_away": ["肯尼迪(前锋,膝伤赛季报销)", "雷伊斯(后卫,伤)", "弗雷特斯(中卫,踝伤)", "萨瓦里诺(前腰,小腿伤)", "里克尔梅(中场,伤)", "拉贝洛(中卫,伤)"],
+      "HAD": {"H": 0.452, "D": 0.342, "A": 0.206},
+      "HHAD": {"letBall": -1, "letH": 0.18, "letD": 0.27, "letA": 0.55},
+      "CRS_top5": [["0:0", 0.184], ["1:0", 0.181], ["1:1", 0.134], ["2:0", 0.105], ["0:1", 0.103]],
+      "TTG_top2": [["1", 0.284], ["0", 0.184]],
+      "HTFT_top3": [["DH", 0.242], ["DD", 0.183], ["HH", 0.138]],
+      "HTScores_top3": [["0:0", 0.461], ["1:0", 0.220], ["0:1", 0.128]],
+      "confidence": "★★",
+      "confidence_reason": "模型与市场分歧7.7%，次回合0:0张力+双方伤停",
+      "odds_had": {"H": 2.36, "D": 2.65, "A": 3.05},
+      "odds_hhad": {"letBall": -1, "H": 5.65, "D": 3.8, "A": 1.45}
+    },
+    "002": {
+      "match": "索菲亚列夫斯基 vs 雅典AEK",
+      "league": "欧洲冠军联赛",
+      "competition_stage": "附加赛首回合",
+      "match_time": "08-19 03:00",
+      "stadium": "瓦西尔·列夫斯基国家体育场, 索菲亚",
+      "home_value_eur": 39630000,
+      "away_value_eur": 85500000,
+      "value_ratio": 2.2,
+      "injuries_home": ["基里洛夫(前锋,膝伤)", "武利基奇(后卫,跖骨骨折)", "卡姆登(后卫,膝伤手术)", "桑加雷(前锋,肌肉伤存疑)", "布拉斯(中场,肌肉伤存疑)"],
+      "injuries_away": ["加西诺维奇(前腰,伤)"],
+      "HAD": {"H": 0.238, "D": 0.298, "A": 0.464},
+      "HHAD": {"letBall": 1, "letH": 0.54, "letD": 0.24, "letA": 0.22},
+      "CRS_top5": [["0:1", 0.145], ["1:1", 0.135], ["0:0", 0.123], ["0:2", 0.098], ["1:0", 0.093]],
+      "TTG_top2": [["2", 0.276], ["1", 0.238]],
+      "HTFT_top3": [["DA", 0.223], ["AA", 0.152], ["DD", 0.143]],
+      "HTScores_top3": [["0:0", 0.386], ["0:1", 0.219], ["1:0", 0.142]],
+      "confidence": "★★",
+      "confidence_reason": "首回合+列夫斯基主场不败13场+AEK身价碾压",
+      "odds_had": {"H": 3.05, "D": 2.95, "A": 2.16},
+      "odds_hhad": {"letBall": 1, "H": 1.53, "D": 3.7, "A": 4.9}
+    },
+    "003": {
+      "match": "萨格勒布迪纳摩 vs 维京",
+      "league": "欧洲冠军联赛",
+      "competition_stage": "附加赛首回合",
+      "match_time": "08-19 03:00",
+      "stadium": "马克西米尔体育场, 萨格勒布",
+      "home_value_eur": 66460000,
+      "away_value_eur": 48980000,
+      "value_ratio": 1.36,
+      "injuries_home": ["Filipovic(门将,红牌停赛)", "Stojakovic(前锋,脚伤)"],
+      "injuries_away": ["贝里沙(前锋,大腿伤)", "罗塞斯(中卫,膝伤)", "巴特森(中卫,脚骨折手术)", "贝尔(中场,腿伤)", "法尔奇纳(中卫,大腿伤)", "达戈斯蒂诺(前锋,腿伤)", "豪根(后卫,伤)"],
+      "HAD": {"H": 0.685, "D": 0.224, "A": 0.091},
+      "HHAD": {"letBall": -1, "letH": 0.38, "letD": 0.31, "letA": 0.32},
+      "CRS_top5": [["1:0", 0.176], ["2:0", 0.163], ["0:0", 0.106], ["3:0", 0.098], ["1:1", 0.096]],
+      "TTG_top2": [["2", 0.271], ["3", 0.204]],
+      "HTFT_top3": [["HH", 0.322], ["DH", 0.298], ["HD", 0.106]],
+      "HTScores_top3": [["0:0", 0.363], ["1:0", 0.287], ["2:0", 0.118]],
+      "confidence": "★★",
+      "confidence_reason": "模型68.5%但双方合计伤停≥5人(规则46条件5不满足)无法★★★",
+      "odds_had": {"H": 1.61, "D": 3.7, "A": 4.2},
+      "odds_hhad": {"letBall": -1, "H": 2.86, "D": 3.55, "A": 2.01}
+    },
+    "004": {
+      "match": "费内巴切 vs 里昂",
+      "league": "欧洲冠军联赛",
+      "competition_stage": "附加赛首回合",
+      "match_time": "08-19 03:00",
+      "stadium": "许克吕·萨拉焦格卢体育场, 伊斯坦布尔",
+      "home_value_eur": 266000000,
+      "away_value_eur": 283000000,
+      "value_ratio": 1.06,
+      "injuries_home": ["卢卡库(前锋,肌肉伤)", "瑟云聚(中卫,肌肉伤)", "奥斯特沃尔德(后卫,伤)", "阿姆拉巴特(后腰,肌肉伤)", "居诺克(门将,肌肉伤)", "埃德森(门将,生病存疑)", "穆萨巴(边锋,伤)", "扬达斯(中场,停赛)", "云德尔(边锋,伤)"],
+      "injuries_away": ["比德斯特鲁普(中场,伤)", "苏尔奇(中场,伤)", "梅拉(中场,伤)"],
+      "H2H": "里昂4胜1平0负(100%不败)",
+      "HAD": {"H": 0.456, "D": 0.276, "A": 0.267},
+      "HHAD": {"letBall": -1, "letH": 0.19, "letD": 0.27, "letA": 0.54},
+      "CRS_top5": [["1:1", 0.131], ["1:0", 0.113], ["2:1", 0.091], ["0:0", 0.088], ["2:0", 0.086]],
+      "TTG_top2": [["2", 0.263], ["3", 0.214]],
+      "HTFT_top3": [["DH", 0.203], ["HH", 0.153], ["DD", 0.123]],
+      "HTScores_top3": [["0:0", 0.332], ["1:0", 0.208], ["0:1", 0.149]],
+      "confidence": "★★",
+      "confidence_reason": "费内巴切7-9人残阵+H2H里昂碾压+双门将危机",
+      "odds_had": {"H": 1.81, "D": 3.5, "A": 3.45},
+      "odds_hhad": {"letBall": -1, "H": 3.45, "D": 3.6, "A": 1.78}
+    }
+  },
+  "parlays": {
+    "direction": [
+      {"name": "方向双串A", "matches": "003主胜+002客胜", "est_odds": 3.48, "risk": "中"},
+      {"name": "方向双串B", "matches": "003主胜+001主胜", "est_odds": 3.80, "risk": "中"}
+    ],
+    "letball": [
+      {"name": "稳健让球串", "matches": "002让(+1)胜+004让(-1)负", "est_odds": 2.72, "risk": "低中"},
+      {"name": "稳健让球串B", "matches": "002让(+1)胜+001让(-1)负", "est_odds": 2.22, "risk": "低"},
+      {"name": "价值让球串", "matches": "002让(+1)胜+003让(-1)胜", "est_odds": 4.38, "risk": "中高"}
+    ],
+    "mixed": [
+      {"name": "半全场串A", "matches": "003胜胜+002平负", "est_odds": 17.5, "risk": "高"},
+      {"name": "半全场串B", "matches": "004平胜+001平平", "est_odds": 27.0, "risk": "高"},
+      {"name": "方向+半全场A", "matches": "003主胜+002平负", "est_odds": 8.05, "risk": "中高"},
+      {"name": "方向+半全场B", "matches": "001平胜+003主胜", "est_odds": 7.57, "risk": "中高"}
+    ],
+    "entertainment": [
+      {"name": "混合娱乐串A", "matches": "001 0:0+003 3球", "est_odds": 34.7, "risk": "极高"},
+      {"name": "混合娱乐串B", "matches": "002平负+004让(-1)负", "est_odds": 8.90, "risk": "高"},
+      {"name": "混合娱乐串C", "matches": "003胜胜+004让(-1)负", "est_odds": 6.23, "risk": "高"},
+      {"name": "比分串A", "matches": "003 2:0+004 1:1", "est_odds": 46.4, "risk": "极高"},
+      {"name": "比分串B", "matches": "001 1:0+002 0:1", "est_odds": 38.0, "risk": "极高"}
+    ]
+  }
+}

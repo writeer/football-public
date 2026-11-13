@@ -1,0 +1,153 @@
+{
+  "date": "2026-08-06",
+  "day": "wednesday",
+  "source_files": {
+    "prediction_json": "memory/predictions/2026-08-06_wednesday/wednesday_predictions.json",
+    "html_report": "reports/html/wednesday_20260806_analysis.html",
+    "zhihu_report": "reports/html/wednesday_20260806_zhihu.md"
+  },
+  "matches": [
+    {
+      "match_id": "002",
+      "home_team": "AGF Aarhus",
+      "home_team_cn": "奥胡斯",
+      "away_team": "Sabah FK",
+      "away_team_cn": "萨巴赫",
+      "competition": "欧冠资格赛Q3首回合",
+      "actual_result": {
+        "score": "2:1",
+        "half_score": "1:0",
+        "direction": "主胜",
+        "total_goals": 3,
+        "htft": "胜胜",
+        "hafu_result": "让平(2:1→1:1)",
+        "goals": [
+          {"minute": 31, "team": "home", "scorer": "詹姆斯·博格尔", "score": "1:0"},
+          {"minute": 63, "team": "home", "scorer": "詹姆斯·博格尔", "assist": "克努森", "score": "2:0"},
+          {"minute": 67, "team": "away", "scorer": "韦利科·西米奇", "assist": "拉赫莫纳利耶夫", "score": "2:1"}
+        ],
+        "stats": {
+          "possession_home": 35,
+          "possession_away": 65,
+          "shots_on_target_home": 3,
+          "shots_on_target_away": 4,
+          "corners_home": 6,
+          "corners_away": 5,
+          "yellow_cards_home": 2,
+          "yellow_cards_away": 2
+        }
+      },
+      "prediction_recall": {
+        "had": {"predicted": "主胜/平 75%", "actual": "主胜", "hit": true},
+        "hafu": {"predicted_primary": "让负 49.9%", "predicted_secondary": "让平 27.0%", "actual": "让平", "hit_primary": false, "hit_secondary": true},
+        "crs": {"predicted_top5": ["1:0", "0:1", "1:1", "2:0", "0:0"], "actual": "2:1", "in_top5": false, "in_top10": true, "rank": 6, "actual_prob": 0.0858},
+        "ttg": {"predicted_primary": "2球(27.2%)", "predicted_secondary": "3球(19.9%)", "actual": 3, "hit": true, "hit_type": "次选"},
+        "htft": {"predicted_primary": "胜胜(28.4%)", "predicted_secondary": "平胜(18.0%)", "predicted_alternative": "平平(18.3%)", "actual": "胜胜", "hit": true, "hit_type": "首选"},
+        "half_score": {"predicted_top3": ["0:0(38.6%)", "1:0(23.6%)", "0:1(15.2%)"], "actual": "1:0", "hit": true, "hit_type": "次选"}
+      },
+      "backtest_notes": [
+        "控球率反直觉：奥胡斯35%控球率但赢球，采用防守反击战术效率极高",
+        "博格尔梅开二度(31'+63')是决定比赛的关键球员",
+        "萨巴赫65%控球率但射正4次仅进1球，进攻效率低下",
+        "借用场地(兰德斯球场)未对主队造成明显负面影响",
+        "2:1在比分TOP6(8.58%)，差一位进入TOP5",
+        "规则34验证成功：TTG次选3球命中",
+        "半全场首选胜胜命中——半场1:0全场2:1"
+      ]
+    },
+    {
+      "match_id": "003",
+      "home_team": "Fenerbahçe",
+      "home_team_cn": "费内巴切",
+      "away_team": "Sturm Graz",
+      "away_team_cn": "格拉茨风暴",
+      "competition": "欧冠资格赛Q3首回合",
+      "actual_result": {
+        "score": "2:0",
+        "half_score": "2:0",
+        "direction": "主胜",
+        "total_goals": 2,
+        "htft": "胜胜",
+        "hafu_result": "让胜(2:0→1:0)",
+        "goals": [
+          {"minute": 9, "team": "home", "scorer": "塔利斯卡", "assist": "阿克蒂尔科奥卢", "score": "1:0"},
+          {"minute": 45, "team": "home", "scorer": "格林伍德", "assist": "阿森西奥", "score": "2:0"}
+        ],
+        "stats": {
+          "possession_home": 73,
+          "possession_away": 27,
+          "shots_on_target_home": 10,
+          "shots_on_target_away": 1,
+          "shots_total_home": 15,
+          "shots_total_away": 5,
+          "corners_home": 4,
+          "corners_away": 2,
+          "yellow_cards_home": 0,
+          "yellow_cards_away": 3,
+          "pass_accuracy_home": 90,
+          "pass_accuracy_away": 74
+        }
+      },
+      "prediction_recall": {
+        "had": {"predicted": "主胜 62%", "actual": "主胜", "hit": true},
+        "hafu": {"predicted_primary": "让负 39.9%", "predicted_secondary": "让胜 33.3%", "actual": "让胜", "hit_primary": false, "hit_secondary": true},
+        "crs": {"predicted_top5": ["1:0", "2:0", "2:1", "1:1", "0:1"], "actual": "2:0", "in_top5": true, "rank": 2, "actual_prob": 0.114},
+        "ttg": {"predicted_primary": "2球(25.5%)", "predicted_secondary": "3球(21.7%)", "actual": 2, "hit": true, "hit_type": "首选"},
+        "htft": {"predicted_primary": "胜胜(36.4%)", "predicted_secondary": "平胜(19.4%)", "predicted_alternative": "平平(14.1%)", "actual": "胜胜", "hit": true, "hit_type": "首选"},
+        "half_score": {"predicted_top3": ["0:0(32.4%)", "1:0(25.8%)", "0:1(13.1%)"], "actual": "2:0", "hit": false, "note": "半场2:0概率极低，不在TOP3"}
+      },
+      "backtest_notes": [
+        "塔利斯卡出战并首开纪录(9')！预测标注'大概率出战'判断准确，实际出场并打进第1球，评分9.0全场最高",
+        "格林伍德半场补时进球(45')锁定比分，规则5(补时进球场景)再次验证",
+        "格拉茨风暴全场仅1次射正，Kiteishvili伤缺影响巨大——lambda_away×0.75修正方向正确",
+        "费内巴切73%控球率完全压制，15射门10射正效率极高",
+        "规则8触发判断正确：模型60.1% vs 市场72.7%，实际主胜但非碾压式，模型更接近真实",
+        "阿森西奥助攻格林伍德——预测中标注'左膝旧伤隐患'但实际出战并贡献助攻",
+        "半场比分miss：预测0:0/1:0/0:1，实际2:0(塔利斯卡9'闪击+格林伍德45'补时)"
+      ]
+    }
+  ],
+  "summary": {
+    "total_matches": 2,
+    "metrics": {
+      "had_direction": {"hit": 2, "total": 2, "rate": 1.0, "grade": "优秀"},
+      "hafu_primary": {"hit": 0, "total": 2, "rate": 0.0, "grade": "较差"},
+      "hafu_including_secondary": {"hit": 2, "total": 2, "rate": 1.0, "grade": "优秀"},
+      "crs_top5": {"hit": 1, "total": 2, "rate": 0.5, "grade": "良好"},
+      "crs_top10": {"hit": 2, "total": 2, "rate": 1.0, "grade": "优秀"},
+      "ttg": {"hit": 2, "total": 2, "rate": 1.0, "grade": "优秀"},
+      "htft": {"hit": 2, "total": 2, "rate": 1.0, "grade": "优秀"},
+      "half_score_top3": {"hit": 1, "total": 2, "rate": 0.5, "grade": "良好"}
+    },
+    "comparison_with_previous": {
+      "had_direction": "40%→100% ⬆",
+      "crs_top5": "20%→50% ⬆",
+      "ttg": "40%→100% ⬆",
+      "htft": "60%→100% ⬆"
+    },
+    "key_findings": [
+      "方向100%——两场主胜全部命中，规则28(基本面>模型>市场)持续有效",
+      "规则34再次验证——TTG 100%，2球/3球首选组合两场全中(003首选2球命中，002次选3球命中)",
+      "HTFT 100%——两场胜胜全部首选命中",
+      "让球-1系统性偏差——两场均预测让负首选，实际一让平一让胜。连续多期让-1方向偏差",
+      "塔利斯卡伤停判断正确——'大概率出战'判断准确，实际出战并打进首球(9分钟)",
+      "Kiteishvili伤缺影响验证——格拉茨风暴全场仅1次射正，lambda_away×0.75修正方向正确",
+      "002控球率反直觉——奥胡斯35%控球率但2:1赢球，防守反击效率极高",
+      "003半场比分miss——预测0:0/1:0/0:1，实际2:0(闪击+补时进球)"
+    ],
+    "rules_verified": {
+      "rule5": "补时进球场景——003格林伍德45'半场补时进球",
+      "rule8": "模型与市场分歧处理——003模型60.1% vs 市场72.7%，实际主胜但非碾压，模型更准",
+      "rule9": "伤停折算——Kiteishvili伤缺→lambda_away×0.75，格拉茨全场仅1次射正验证",
+      "rule28": "基本面>模型>市场——两场方向均正确",
+      "rule32": "伤停核查——塔利斯卡'大概率出战'判断准确",
+      "rule34": "欧冠TTG修正——2球/3球组合100%命中"
+    },
+    "improvements_needed": [
+      "让球-1方向需修正：连续多期预测让负首选但实际让平/让胜，需增加'强队让球后仍胜'修正权重",
+      "半场比分预测需考虑闪击场景：003塔利斯卡9分钟进球导致半场2:0，模型应增加早期进球概率",
+      "002控球率与结果背离：防守反击球队的控球率低但效率高，lambda计算应考虑战术风格匹配度",
+      "比分TOP5边缘miss：002的2:1在TOP6(8.58%)差一位，需提高2:1类比分权重"
+    ]
+  }
+}

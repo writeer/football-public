@@ -1,0 +1,227 @@
+{
+  "task": "2026-10-14 销售日261014 第4步基本面分析（结构化输出）",
+  "matches_covered": ["008", "009", "010", "011", "012", "013", "014"],
+  "output_date": "2026-10-14",
+  "note": "子Agent结构化输出，不做最终推荐结论；最终裁决由总控完成",
+  "matches": [
+    {
+      "match_id": "008",
+      "fixture": "罗马 vs 皇家马德里",
+      "competition": "欧冠联赛阶段第2轮",
+      "venue": "罗马奥林匹克球场",
+      "handicap": "主受+1",
+      "single_bet": true,
+      "market_novig": {"home": 25.5, "draw": 22.4, "away": 52.1},
+      "recent_form": {
+        "home": "欧冠首轮客场1-1费内巴切；意甲马伦6场6球、迪巴拉6场4助；详细近5轮逐场待补",
+        "away": "欧冠首轮主场2-1国米；西甲曾客场0-1负贝蒂斯；姆巴佩冲百场里程碑；详细近5轮逐场待补"
+      },
+      "style": "罗马Gasperini 3412高位压迫 vs 皇马穆里尼奥4231实用反击；节奏中偏快",
+      "motivation_schedule": "双方战意对称9/10；罗马主力门将Svilar手指骨折+Cristante缺阵；皇马Militão/Asencio/Rodrygo伤，门迪已伤愈合练但未报名欧冠名单(行政)；双方双线密集度相当",
+      "h2h": {
+        "summary": "皇马8胜1平3负；皇马对罗马4连胜且0失球(2015/16双2-0、2018/19主3-0客2-0)",
+        "same_venue_latest": "2018/19 皇马客场2-0罗马",
+        "rhythm": "皇马系统性零封小胜形态，硬锚点主λ下修"
+      },
+      "score_scenarios": [
+        {"scenario": "皇马控场零封剧本(交锋延续)", "scores": ["0-1", "0-2"]},
+        {"scenario": "罗马主场先进球但门将漏洞被姆巴佩惩罚", "scores": ["1-2", "1-1"]},
+        {"scenario": "罗马主场韧性爆冷(市场过热冷门检查)", "scores": ["1-0"]}
+      ],
+      "score_candidates": ["0-1", "0-2", "1-2", "1-1", "1-0"],
+      "situation": {"ttg": "中偏低(2-3球防1球)", "half_full": ["平负", "负负"], "draw_hedge": "平平(单关平局上修)"},
+      "ou_6tier": {"tier": "常规正常球(2-3球)下沿偏小球(1-2球)", "ttg_top2": ["2球", "3球"], "note": "历史零封小比分形态压过攻击力；不触发L198"},
+      "boost_score": {"type": "穿盘大热(首选)+搏冷(备选)", "candidates": ["0-2", "0-1", "1-1", "1-0"]},
+      "lambda_soft": {"home": "1.05-1.15", "away": "1.55-1.70", "total": "2.6-2.85", "divergence": "无", "single_draw_boost": "+8%"}
+    },
+    {
+      "match_id": "009",
+      "fixture": "博德闪耀 vs 多特蒙德",
+      "competition": "欧冠联赛阶段第2轮",
+      "venue": "Aspmyra Stadion(人工草)",
+      "handicap": "主受+1",
+      "single_bet": false,
+      "market_novig": {"home": 28.6, "draw": 23.0, "away": 48.4},
+      "recent_form": {
+        "home": "身价0.79亿；欧冠主场曾3-1爆冷曼城(2026-1-21)；Riisnæs/Evjen/Mikkelsen伤",
+        "away": "身价5.88亿(7.4倍)；首轮德甲球队大比分失利；施洛特贝克因人工草负荷管理未随队；Emre Can/Lerma/Konstantelias伤；Ryerson/Chukwuemeka复出"
+      },
+      "style": "博德北极圈人工草高位冲吊 vs 多特技术传控；人工草+严寒风雨对德国球队显著不适应",
+      "motivation_schedule": "多特首轮大败抢分压力9/10；7天3客场+11000km远征体能极端；天气10℃风雨降水57%",
+      "h2h": {
+        "summary": "仅1次正式交锋：2025-12-11多特主场2-2博德",
+        "same_venue_latest": "无(博德主场首次对阵多特)",
+        "rhythm": "博德对多特技术不怵但样本仅1场；同主客空白"
+      },
+      "score_scenarios": [
+        {"scenario": "人工草巨人杀手剧本", "scores": ["1-0", "2-1"]},
+        {"scenario": "多特实力底牌扳平/反超", "scores": ["1-1", "1-2"]},
+        {"scenario": "对攻互爆(L198欧冠对攻上修半档输入)", "scores": ["2-2"]}
+      ],
+      "score_candidates": ["1-0", "2-1", "1-1", "1-2", "2-2"],
+      "situation": {"ttg": "中(2-3球)边界偏大(3-4球)", "half_full": ["平胜", "胜胜"], "draw_hedge": "平平/平负"},
+      "ou_6tier": {"tier": "常规正常球(2-3球)上沿候选大球(4-5球)下沿", "ttg_top2": ["3球", "2球"], "note": "人工草+双方残后防+对攻战意；未达L198强制线≥4.5"},
+      "boost_score": {"type": "爆冷(首选)+搏冷(备选)", "candidates": ["2-1", "1-0", "2-2", "1-1"]},
+      "lambda_soft": {"home": "1.35-1.50", "away": "1.30-1.45", "total": "2.7-2.95", "divergence": "无", "l195_check": "λ_away~1.4不触发≥3.5×0.85；人工草+远征已扣减"}
+    },
+    {
+      "match_id": "010",
+      "fixture": "皇家贝蒂斯 vs 波尔图",
+      "competition": "欧冠联赛阶段第2轮",
+      "venue": "La Cartuja(借用中立球场)",
+      "handicap": "主让-1",
+      "single_bet": false,
+      "market_novig": {"home": 48.4, "draw": 25.3, "away": 26.3},
+      "recent_form": {
+        "home": "近10场7胜1平2负；西甲第3(5胜1平1负16分)；近5:5-2奥萨苏纳/1-1拉科/1-0赫塔菲/2-1比利亚雷亚尔/欧冠首轮客3-2里尔",
+        "away": "近10场8胜0平2负；上一场3-1本菲卡；6人缺阵(Pepe+Diogo Leite后防+Aboubakar锋线等)"
+      },
+      "style": "贝蒂斯西甲技术流主场控球 vs 波尔图实用反击；波尔图残阵后防难挡贝蒂斯火力",
+      "motivation_schedule": "贝蒂斯首轮客胜战意9/10；本场后10-17主战巴萨+11-4客多特赛程牵制；波尔图后防+锋线双受损",
+      "h2h": {
+        "summary": "历史首次交锋(交锋空白)",
+        "same_venue_latest": "不适用",
+        "rhythm": "规则19触发：参考依据有限，必给冷门比分，置信度降级"
+      },
+      "score_scenarios": [
+        {"scenario": "贝蒂斯主场火力延续(波尔图双中卫缺)", "scores": ["2-0", "2-1"]},
+        {"scenario": "波尔图个人能力偷分(空白不确定性)", "scores": ["1-1", "1-2"]},
+        {"scenario": "首次交锋闷局试探", "scores": ["1-0"]}
+      ],
+      "score_candidates": ["2-0", "2-1", "1-0", "1-1", "1-2"],
+      "situation": {"ttg": "中(2-3球)", "half_full": ["平胜", "胜胜"], "draw_hedge": "平平"},
+      "ou_6tier": {"tier": "常规正常球(2-3球)", "ttg_top2": ["2球", "3球"], "note": "贝蒂斯火力上拉与波尔图锋线缺阵下压对冲"},
+      "boost_score": {"type": "搏冷(首选,交锋空白)", "candidates": ["1-1", "1-2", "2-0", "2-1"]},
+      "lambda_soft": {"home": "1.55-1.65", "away": "1.10-1.20", "total": "2.7-2.85", "divergence": "无", "adjust": "波尔图后防双缺主λ+5%；La Cartuja借用主λ-5%；Aboubakar缺客λ-10%"}
+    },
+    {
+      "match_id": "011",
+      "fixture": "曼城 vs 巴黎圣日耳曼",
+      "competition": "欧冠联赛阶段第2轮焦点战",
+      "venue": "伊蒂哈德球场",
+      "handicap": "主让-1",
+      "single_bet": true,
+      "market_novig": {"home": 43.9, "draw": 24.3, "away": 31.9},
+      "recent_form": {
+        "home": "身价15亿；FotMob确认无不可用球员全主力；哈兰德各项赛事8球；Doku上轮造点+进球；新援Donnarumma/Guéhi/Cherki/Enzo融入",
+        "away": "身价13.6亿(基本相当)；仅Mayulu青年队伤；姆巴佩已转会皇马；预测锋线Dembélé/Ferrán Torres/Kvaratskhelia；刚世俱杯决赛0-3负切尔西"
+      },
+      "style": "双方传控+双边爆点对攻；湿滑场地利进攻失误",
+      "motivation_schedule": "焦点大战双方战意满格对称10/10；曼城全主力；PSG仅青年队伤",
+      "h2h": {
+        "summary": "近年欧冠多次交手(含2020/21半决赛)，逐场比分待补",
+        "same_venue_latest": "待补",
+        "rhythm": "样本缺失软提示；PSG不怵曼城"
+      },
+      "score_scenarios": [
+        {"scenario": "曼城主场传控压制哈兰德终结", "scores": ["2-1", "3-1"]},
+        {"scenario": "对攻互爆双边爆点互送", "scores": ["2-2", "3-2"]},
+        {"scenario": "PSG偷分爆冷(市场均衡冷门检查)", "scores": ["1-2"]}
+      ],
+      "score_candidates": ["2-1", "2-2", "3-1", "1-2", "3-2"],
+      "situation": {"ttg": "中高(3-4球)候选大球4-5球", "half_full": ["胜胜", "平胜"], "draw_hedge": "平平/平负"},
+      "ou_6tier": {"tier": "常规正常球(2-3球)上沿→大球(4-5球)下沿", "ttg_top2": ["3球", "4球"], "note": "本日λ_total最高3.0-3.2；未达L198强制线"},
+      "boost_score": {"type": "搏冷(首选,身价接近)", "candidates": ["2-2", "1-2", "2-1", "3-1"]},
+      "lambda_soft": {"home": "1.70-1.85", "away": "1.25-1.40", "total": "3.0-3.2", "divergence": "无", "single_draw_boost": "+10~12%"}
+    },
+    {
+      "match_id": "012",
+      "fixture": "阿斯顿维拉 vs 费内巴切",
+      "competition": "欧冠联赛阶段第2轮",
+      "venue": "Villa Park",
+      "handicap": "主让-1",
+      "single_bet": false,
+      "market_novig": {"home": 59.4, "draw": 22.1, "away": 18.4},
+      "recent_form": {
+        "home": "身价6.34亿(2.4倍)；上轮主场2-2布伦特福德；Emery强调Villa Park堡垒；左后卫Ruggeri+Maatsen双缺",
+        "away": "身价2.61亿；夏窗大换血Škriniar/Aké/Kanté/Guendouzi/Greenwood/Asensio/Muriqi；预测首发强阵但磨合存疑"
+      },
+      "style": "维拉Emery主场高位逼抢 vs 费内巴切新援控制+双边突击；维拉左路漏洞对位Greenwood右路突击",
+      "motivation_schedule": "Emery主场堡垒战意9/10；费内巴切新援证明自己战意9/10；维拉左后卫危机",
+      "h2h": {
+        "summary": "近年交锋序列待补(历史交手较少)",
+        "same_venue_latest": "待补",
+        "rhythm": "样本薄软提示"
+      },
+      "score_scenarios": [
+        {"scenario": "维拉主场堡垒剧本(费内磨合不足)", "scores": ["2-1", "1-0"]},
+        {"scenario": "费内巴切左路对位偷分", "scores": ["1-1", "1-2"]},
+        {"scenario": "中场对耗后失误互送", "scores": ["2-2"]}
+      ],
+      "score_candidates": ["2-1", "1-0", "1-1", "1-2", "2-2"],
+      "situation": {"ttg": "中(2-3球)边界偏大", "half_full": ["平胜", "胜胜"], "draw_hedge": "平平/平负"},
+      "ou_6tier": {"tier": "常规正常球(2-3球)上沿", "ttg_top2": ["2球", "3球"], "note": "维拉左路漏洞+费内新援爆点推高"},
+      "boost_score": {"type": "搏冷(首选,左路漏洞)", "candidates": ["1-1", "1-2", "2-1", "1-0"]},
+      "lambda_soft": {"home": "1.55-1.70", "away": "1.05-1.20", "total": "2.7-2.90", "divergence": "无", "adjust": "维拉左后卫双缺客λ+5%；费内磨合-5~10%"}
+    },
+    {
+      "match_id": "013",
+      "fixture": "弗鲁米嫩塞 vs 帕尔梅拉斯",
+      "competition": "解放者杯半决赛首回合",
+      "venue": "马拉卡纳球场",
+      "handicap": "主受+1",
+      "single_bet": false,
+      "market_novig": {"home": 32.8, "draw": 33.1, "away": 34.1},
+      "recent_form": {
+        "home": "身价1.21亿；5人缺阵(Cano+John Kennedy双核赛季报销+Alisson+Matheus Reis+Riquelme)；蒂亚戈·席尔瓦+胡尔克老将坐镇",
+        "away": "身价待补；主帅Abel Ferreira停赛(助教临场)；Vitor Roque+Jefté缺；Sosa大概率可战；Gustavo Gómez复出"
+      },
+      "style": "两队巴甲技术流互相熟悉；半决赛首回合必然谨慎保守",
+      "motivation_schedule": "双方夺冠热门战意满格对称10/10；首回合零封优先不冒进；里约阵雨20℃",
+      "h2h": {
+        "summary": "95次交锋帕尔梅拉斯占优(51胜/15平/弗鲁29胜)",
+        "same_venue_latest": "2025-11-20巴甲帕尔梅拉斯0-0弗鲁(圣保罗)；马拉卡纳近几次待补",
+        "rhythm": "近年闷平0-0实证+历史帕尔梅占优→低比分硬锚点"
+      },
+      "score_scenarios": [
+        {"scenario": "半决赛首回合闷平(最近0-0延续)", "scores": ["0-0"]},
+        {"scenario": "弗鲁主场老将偷分(蒂亚戈·席尔瓦后防+胡尔克经验)", "scores": ["1-0"]},
+        {"scenario": "帕尔梅拉斯客场偷分(历史占优心理)", "scores": ["0-1"]},
+        {"scenario": "双方残阵前锋终结不足低比分平", "scores": ["1-1"]}
+      ],
+      "score_candidates": ["0-0", "1-0", "0-1", "1-1", "2-0"],
+      "situation": {"ttg": "低(1-2球)防0球", "half_full": ["平平", "平胜", "平负"], "draw_hedge": "半场0-0概率极高"},
+      "ou_6tier": {"tier": "闷战超小球(0-1球)→小球(1-2球)", "ttg_top2": ["1球", "2球"], "note": "解放者杯场均1.78球小2.5=62%；规则65大球上修不覆盖；0-0不可剔除"},
+      "boost_score": {"type": "搏冷(首选,弗鲁残阵主场)", "candidates": ["0-0", "0-1", "1-0"]},
+      "lambda_soft": {"home": "0.75-0.85", "away": "0.75-0.85", "total": "1.5-1.70", "divergence": "无", "adjust": "Cano+John Kennedy双核缺主λ-15~20%；Vitor Roque缺客λ-10%；强制低★；L196搏冷须双腿"}
+    },
+    {
+      "match_id": "014",
+      "fixture": "圣路易斯城 vs 温哥华白帽",
+      "competition": "MLS常规赛第30轮西部头名战",
+      "venue": "Energizer Park",
+      "handicap": "主让-1",
+      "single_bet": false,
+      "market_novig": {"home": 42.2, "draw": 24.1, "away": 33.8},
+      "recent_form": {
+        "home": "身价0.45亿；主场3连胜scorching；美职rank第2；Pompeu+Hiebert缺阵",
+        "away": "身价0.61亿(1.4倍)；15胜7平6负西部第2(rank第1)；4人缺阵(Adekugbe/Badwal/Cabrera/Halbouni)short-handed"
+      },
+      "style": "美职开放对攻VAR积极；末轮卡位战双方不保守",
+      "motivation_schedule": "西部头名关键战双方战意满格对称10/10；温哥华残阵客场",
+      "h2h": {
+        "summary": "近几次交锋序列待补",
+        "same_venue_latest": "待补",
+        "rhythm": "样本缺失从MLS先验兜底(2-1/1-1/1-0)"
+      },
+      "score_scenarios": [
+        {"scenario": "圣路易斯主场连胜势头延续(温哥华残阵)", "scores": ["2-1", "2-0"]},
+        {"scenario": "温哥华残阵死守偷分", "scores": ["1-1"]},
+        {"scenario": "温哥华底蕴反客为主(市场主胜42.2%非大热)", "scores": ["1-2"]}
+      ],
+      "score_candidates": ["2-1", "1-1", "2-0", "1-2"],
+      "situation": {"ttg": "中(2-3球)", "half_full": ["胜胜", "平胜"], "draw_hedge": "平平/平负"},
+      "ou_6tier": {"tier": "常规正常球(2-3球)", "ttg_top2": ["2球", "3球"], "note": "MLS基准2.68；规则65倾向不触发(身价差1.4倍<2、排名差1位)"},
+      "boost_score": {"type": "爆冷(首选,主场爆冷因子)", "candidates": ["2-1", "2-0", "1-1", "1-2"]},
+      "lambda_soft": {"home": "1.50-1.60", "away": "0.95-1.10", "total": "2.5-2.70", "divergence": "无", "adjust": "温哥华4人缺客λ-15%；圣路易斯主场势头+5%"}
+    }
+  ],
+  "pending_supplements": [
+    "008/009/011/012/014近5轮逐场比分序列",
+    "011曼城vsPSG近5次完整交锋比分",
+    "012维拉vs费内巴切交锋序列",
+    "013同主客马拉卡纳近几次交锋比分、帕尔梅拉斯Transfermarkt身价",
+    "014圣路易斯vs温哥华交锋序列",
+    "012伯明翰逐场精确天气"
+  ]
+}

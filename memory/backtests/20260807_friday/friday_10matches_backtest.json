@@ -1,0 +1,945 @@
+{
+  "backtest_date": "2026-08-08 09:00",
+  "match_date": "2026-08-07",
+  "total_matches": 10,
+  "source_files": {
+    "predictions": "e:\\VibeCoding\\football\\memory\\predictions\\20260807_friday\\friday_10matches.json",
+    "html_report": "e:/VibeCoding/football/reports/html/friday_10matches_official_odds.html",
+    "zhihu_report": "e:/VibeCoding/football/reports/html/friday_10matches_zhihu.md"
+  },
+  "actual_results": {
+    "周五001": {
+      "home_team": "横滨水手",
+      "away_team": "鹿岛鹿角",
+      "score": "3-4",
+      "ht_score": "2-1",
+      "home_goals": 3,
+      "away_goals": 4,
+      "total_goals": 7,
+      "direction": "A",
+      "ht_direction": "H",
+      "htft": "半胜全负",
+      "htft_code": "HF",
+      "handicap": "+1",
+      "hafu": "D",
+      "notes": "中立场地7球大战，横滨3-4鹿岛"
+    },
+    "周五002": {
+      "home_team": "大阪钢巴",
+      "away_team": "浦和红钻",
+      "score": "4-3",
+      "ht_score": "2-1",
+      "home_goals": 4,
+      "away_goals": 3,
+      "total_goals": 7,
+      "direction": "H",
+      "ht_direction": "H",
+      "htft": "半胜全胜",
+      "htft_code": "HH",
+      "handicap": "-1",
+      "hafu": "D",
+      "notes": "浦和萨维奥17分钟两黄变红，10人应战7球大战"
+    },
+    "周五003": {
+      "home_team": "塞伊奈约基",
+      "away_team": "赫尔辛基火花",
+      "score": "2-2",
+      "ht_score": "1-2",
+      "home_goals": 2,
+      "away_goals": 2,
+      "total_goals": 4,
+      "direction": "D",
+      "ht_direction": "A",
+      "htft": "半负全平",
+      "htft_code": "AD",
+      "handicap": "-1",
+      "hafu": "A",
+      "notes": "半场1-2客队领先，下半场主队扳平2-2"
+    },
+    "周五004": {
+      "home_team": "桑纳菲尤尔",
+      "away_team": "奥斯陆KFUM",
+      "score": "0-1",
+      "ht_score": "0-1",
+      "home_goals": 0,
+      "away_goals": 1,
+      "total_goals": 1,
+      "direction": "A",
+      "ht_direction": "A",
+      "htft": "半负全负",
+      "htft_code": "AA",
+      "handicap": "-1",
+      "hafu": "A",
+      "notes": "保级战客队1-0小胜"
+    },
+    "周五005": {
+      "home_team": "坎布尔",
+      "away_team": "SBV精英",
+      "score": "0-4",
+      "ht_score": "0-3",
+      "home_goals": 0,
+      "away_goals": 4,
+      "total_goals": 4,
+      "direction": "A",
+      "ht_direction": "A",
+      "htft": "半负全负",
+      "htft_code": "AA",
+      "handicap": "-1",
+      "hafu": "A",
+      "notes": "SBV精英上半场3-0锁定胜局，坎布尔升班马惨败"
+    },
+    "周五006": {
+      "home_team": "奥斯",
+      "away_team": "布雷达",
+      "score": "1-2",
+      "ht_score": "1-0",
+      "home_goals": 1,
+      "away_goals": 2,
+      "total_goals": 3,
+      "direction": "A",
+      "ht_direction": "H",
+      "htft": "半胜全负",
+      "htft_code": "HA",
+      "handicap": "+1",
+      "hafu": "D",
+      "notes": "奥斯半场1-0领先，布雷达下半场逆转2-1"
+    },
+    "周五007": {
+      "home_team": "埃门",
+      "away_team": "罗达JC",
+      "score": "1-0",
+      "ht_score": "0-0",
+      "home_goals": 1,
+      "away_goals": 0,
+      "total_goals": 1,
+      "direction": "H",
+      "ht_direction": "D",
+      "htft": "半平全胜",
+      "htft_code": "DH",
+      "handicap": "-1",
+      "hafu": "D",
+      "notes": "埃门下半场进球1-0小胜"
+    },
+    "周五008": {
+      "home_team": "波鸿",
+      "away_team": "柏林赫塔",
+      "score": "0-1",
+      "ht_score": "0-1",
+      "home_goals": 0,
+      "away_goals": 1,
+      "total_goals": 1,
+      "direction": "A",
+      "ht_direction": "A",
+      "htft": "半负全负",
+      "htft_code": "AA",
+      "handicap": "-1",
+      "hafu": "A",
+      "notes": "柏林赫塔客场1-0小胜波鸿"
+    },
+    "周五009": {
+      "home_team": "米德尔斯堡",
+      "away_team": "雷克斯汉姆",
+      "score": "1-0",
+      "ht_score": "0-0",
+      "home_goals": 1,
+      "away_goals": 0,
+      "total_goals": 1,
+      "direction": "H",
+      "ht_direction": "D",
+      "htft": "半平全胜",
+      "htft_code": "DH",
+      "handicap": "-1",
+      "hafu": "D",
+      "notes": "杯赛闷战，米堡下半场进球1-0"
+    },
+    "周五010": {
+      "home_team": "埃斯托里尔",
+      "away_team": "法马利康",
+      "score": "1-1",
+      "ht_score": "0-1",
+      "home_goals": 1,
+      "away_goals": 1,
+      "total_goals": 2,
+      "direction": "D",
+      "ht_direction": "A",
+      "htft": "半负全平",
+      "htft_code": "AD",
+      "handicap": "+1",
+      "hafu": "H",
+      "notes": "法马利康半场0-1领先，埃斯托里尔下半场扳平1-1"
+    }
+  },
+  "results": [
+    {
+      "match_id": "周五001",
+      "league": "日职",
+      "home_team": "横滨水手",
+      "away_team": "鹿岛鹿角",
+      "actual_score": "3-4",
+      "actual_ht_score": "2-1",
+      "actual_direction": "A",
+      "actual_ttg": 7,
+      "actual_htft": "半胜全负",
+      "actual_htft_code": "HF",
+      "actual_htft_two_char": "",
+      "actual_hafu": "D",
+      "confidence": "★",
+      "had": {
+        "model_1st": "H",
+        "model_1st_prob": 0.3454,
+        "model_2nd": "A",
+        "model_2nd_prob": 0.3428,
+        "actual": "A",
+        "hit_1st": false,
+        "hit_2nd": true
+      },
+      "crs": {
+        "model_top5": [
+          "1-1",
+          "0-0",
+          "1-0",
+          "0-1",
+          "2-1"
+        ],
+        "actual": "3-4",
+        "hit": false
+      },
+      "ttg": {
+        "model_top2": [
+          2,
+          3
+        ],
+        "actual": 7,
+        "hit": false
+      },
+      "htft": {
+        "model_top3_codes": [
+          "DD",
+          "HH",
+          "DH"
+        ],
+        "model_top3_cn": [
+          "平平",
+          "胜胜",
+          "平胜"
+        ],
+        "actual_code": "HF",
+        "actual_cn": "",
+        "hit": false
+      },
+      "hafu": {
+        "model_1st": "A",
+        "model_2nd": "D",
+        "actual": "D",
+        "hit_1st": false,
+        "hit_2nd": true
+      },
+      "ht_score": {
+        "model_top3": [
+          "0-0",
+          "1-0",
+          "0-1"
+        ],
+        "actual": "2-1",
+        "hit": false
+      },
+      "notes": "中立场地7球大战，横滨3-4鹿岛"
+    },
+    {
+      "match_id": "周五002",
+      "league": "日职",
+      "home_team": "大阪钢巴",
+      "away_team": "浦和红钻",
+      "actual_score": "4-3",
+      "actual_ht_score": "2-1",
+      "actual_direction": "H",
+      "actual_ttg": 7,
+      "actual_htft": "半胜全胜",
+      "actual_htft_code": "HH",
+      "actual_htft_two_char": "胜胜",
+      "actual_hafu": "D",
+      "confidence": "★",
+      "had": {
+        "model_1st": "A",
+        "model_1st_prob": 0.6555,
+        "model_2nd": "D",
+        "model_2nd_prob": 0.2326,
+        "actual": "H",
+        "hit_1st": false,
+        "hit_2nd": false
+      },
+      "crs": {
+        "model_top5": [
+          "0-2",
+          "0-1",
+          "1-1",
+          "1-2",
+          "0-3"
+        ],
+        "actual": "4-3",
+        "hit": false
+      },
+      "ttg": {
+        "model_top2": [
+          2,
+          3
+        ],
+        "actual": 7,
+        "hit": false
+      },
+      "htft": {
+        "model_top3_codes": [
+          "AA",
+          "DA",
+          "DD"
+        ],
+        "model_top3_cn": [
+          "负负",
+          "平负",
+          "平平"
+        ],
+        "actual_code": "HH",
+        "actual_cn": "胜胜",
+        "hit": false
+      },
+      "hafu": {
+        "model_1st": "A",
+        "model_2nd": "D",
+        "actual": "D",
+        "hit_1st": false,
+        "hit_2nd": true
+      },
+      "ht_score": {
+        "model_top3": [
+          "0-0",
+          "0-1",
+          "0-2"
+        ],
+        "actual": "2-1",
+        "hit": false
+      },
+      "notes": "浦和萨维奥17分钟两黄变红，10人应战7球大战"
+    },
+    {
+      "match_id": "周五003",
+      "league": "芬超",
+      "home_team": "塞伊奈约基",
+      "away_team": "赫尔辛基火花",
+      "actual_score": "2-2",
+      "actual_ht_score": "1-2",
+      "actual_direction": "D",
+      "actual_ttg": 4,
+      "actual_htft": "半负全平",
+      "actual_htft_code": "AD",
+      "actual_htft_two_char": "负平",
+      "actual_hafu": "A",
+      "confidence": "★",
+      "had": {
+        "model_1st": "H",
+        "model_1st_prob": 0.368,
+        "model_2nd": "A",
+        "model_2nd_prob": 0.3233,
+        "actual": "D",
+        "hit_1st": false,
+        "hit_2nd": false
+      },
+      "crs": {
+        "model_top5": [
+          "1-1",
+          "0-0",
+          "1-0",
+          "0-1",
+          "2-1"
+        ],
+        "actual": "2-2",
+        "hit": false
+      },
+      "ttg": {
+        "model_top2": [
+          2,
+          3
+        ],
+        "actual": 4,
+        "hit": false
+      },
+      "htft": {
+        "model_top3_codes": [
+          "DD",
+          "HH",
+          "DH"
+        ],
+        "model_top3_cn": [
+          "平平",
+          "胜胜",
+          "平胜"
+        ],
+        "actual_code": "AD",
+        "actual_cn": "负平",
+        "hit": false
+      },
+      "hafu": {
+        "model_1st": "A",
+        "model_2nd": "D",
+        "actual": "A",
+        "hit_1st": true,
+        "hit_2nd": false
+      },
+      "ht_score": {
+        "model_top3": [
+          "0-0",
+          "1-0",
+          "0-1"
+        ],
+        "actual": "1-2",
+        "hit": false
+      },
+      "notes": "半场1-2客队领先，下半场主队扳平2-2"
+    },
+    {
+      "match_id": "周五004",
+      "league": "挪超",
+      "home_team": "桑纳菲尤尔",
+      "away_team": "奥斯陆KFUM",
+      "actual_score": "0-1",
+      "actual_ht_score": "0-1",
+      "actual_direction": "A",
+      "actual_ttg": 1,
+      "actual_htft": "半负全负",
+      "actual_htft_code": "AA",
+      "actual_htft_two_char": "负负",
+      "actual_hafu": "A",
+      "confidence": "★",
+      "had": {
+        "model_1st": "H",
+        "model_1st_prob": 0.416,
+        "model_2nd": "D",
+        "model_2nd_prob": 0.305,
+        "actual": "A",
+        "hit_1st": false,
+        "hit_2nd": false
+      },
+      "crs": {
+        "model_top5": [
+          "1-1",
+          "0-0",
+          "1-0",
+          "2-1",
+          "2-0"
+        ],
+        "actual": "0-1",
+        "hit": false
+      },
+      "ttg": {
+        "model_top2": [
+          2,
+          3
+        ],
+        "actual": 1,
+        "hit": false
+      },
+      "htft": {
+        "model_top3_codes": [
+          "DD",
+          "HH",
+          "DH"
+        ],
+        "model_top3_cn": [
+          "平平",
+          "胜胜",
+          "平胜"
+        ],
+        "actual_code": "AA",
+        "actual_cn": "负负",
+        "hit": false
+      },
+      "hafu": {
+        "model_1st": "A",
+        "model_2nd": "D",
+        "actual": "A",
+        "hit_1st": true,
+        "hit_2nd": false
+      },
+      "ht_score": {
+        "model_top3": [
+          "0-0",
+          "1-0",
+          "0-1"
+        ],
+        "actual": "0-1",
+        "hit": true
+      },
+      "notes": "保级战客队1-0小胜"
+    },
+    {
+      "match_id": "周五005",
+      "league": "荷甲",
+      "home_team": "坎布尔",
+      "away_team": "SBV精英",
+      "actual_score": "0-4",
+      "actual_ht_score": "0-3",
+      "actual_direction": "A",
+      "actual_ttg": 4,
+      "actual_htft": "半负全负",
+      "actual_htft_code": "AA",
+      "actual_htft_two_char": "负负",
+      "actual_hafu": "A",
+      "confidence": "★",
+      "had": {
+        "model_1st": "A",
+        "model_1st_prob": 0.8045,
+        "model_2nd": "D",
+        "model_2nd_prob": 0.1411,
+        "actual": "A",
+        "hit_1st": true,
+        "hit_2nd": false
+      },
+      "crs": {
+        "model_top5": [
+          "0-2",
+          "0-3",
+          "0-1",
+          "1-2",
+          "0-4"
+        ],
+        "actual": "0-4",
+        "hit": true
+      },
+      "ttg": {
+        "model_top2": [
+          3,
+          4
+        ],
+        "actual": 4,
+        "hit": true
+      },
+      "htft": {
+        "model_top3_codes": [
+          "AA",
+          "DA",
+          "DD"
+        ],
+        "model_top3_cn": [
+          "负负",
+          "平负",
+          "平平"
+        ],
+        "actual_code": "AA",
+        "actual_cn": "负负",
+        "hit": true
+      },
+      "hafu": {
+        "model_1st": "A",
+        "model_2nd": "D",
+        "actual": "A",
+        "hit_1st": true,
+        "hit_2nd": false
+      },
+      "ht_score": {
+        "model_top3": [
+          "0-1",
+          "0-0",
+          "0-2"
+        ],
+        "actual": "0-3",
+        "hit": false
+      },
+      "notes": "SBV精英上半场3-0锁定胜局，坎布尔升班马惨败"
+    },
+    {
+      "match_id": "周五006",
+      "league": "荷乙",
+      "home_team": "奥斯",
+      "away_team": "布雷达",
+      "actual_score": "1-2",
+      "actual_ht_score": "1-0",
+      "actual_direction": "A",
+      "actual_ttg": 3,
+      "actual_htft": "半胜全负",
+      "actual_htft_code": "HA",
+      "actual_htft_two_char": "胜负",
+      "actual_hafu": "D",
+      "confidence": "★★",
+      "had": {
+        "model_1st": "A",
+        "model_1st_prob": 0.6484,
+        "model_2nd": "D",
+        "model_2nd_prob": 0.2214,
+        "actual": "A",
+        "hit_1st": true,
+        "hit_2nd": false
+      },
+      "crs": {
+        "model_top5": [
+          "0-2",
+          "1-1",
+          "1-2",
+          "0-1",
+          "0-3"
+        ],
+        "actual": "1-2",
+        "hit": true
+      },
+      "ttg": {
+        "model_top2": [
+          2,
+          3
+        ],
+        "actual": 3,
+        "hit": true
+      },
+      "htft": {
+        "model_top3_codes": [
+          "AA",
+          "DA",
+          "DD"
+        ],
+        "model_top3_cn": [
+          "负负",
+          "平负",
+          "平平"
+        ],
+        "actual_code": "HA",
+        "actual_cn": "胜负",
+        "hit": false
+      },
+      "hafu": {
+        "model_1st": "A",
+        "model_2nd": "D",
+        "actual": "D",
+        "hit_1st": false,
+        "hit_2nd": true
+      },
+      "ht_score": {
+        "model_top3": [
+          "0-0",
+          "0-1",
+          "0-2"
+        ],
+        "actual": "1-0",
+        "hit": false
+      },
+      "notes": "奥斯半场1-0领先，布雷达下半场逆转2-1"
+    },
+    {
+      "match_id": "周五007",
+      "league": "荷乙",
+      "home_team": "埃门",
+      "away_team": "罗达JC",
+      "actual_score": "1-0",
+      "actual_ht_score": "0-0",
+      "actual_direction": "H",
+      "actual_ttg": 1,
+      "actual_htft": "半平全胜",
+      "actual_htft_code": "DH",
+      "actual_htft_two_char": "平胜",
+      "actual_hafu": "D",
+      "confidence": "★",
+      "had": {
+        "model_1st": "A",
+        "model_1st_prob": 0.6416,
+        "model_2nd": "D",
+        "model_2nd_prob": 0.2231,
+        "actual": "H",
+        "hit_1st": false,
+        "hit_2nd": false
+      },
+      "crs": {
+        "model_top5": [
+          "0-2",
+          "1-1",
+          "1-2",
+          "0-1",
+          "0-3"
+        ],
+        "actual": "1-0",
+        "hit": false
+      },
+      "ttg": {
+        "model_top2": [
+          2,
+          3
+        ],
+        "actual": 1,
+        "hit": false
+      },
+      "htft": {
+        "model_top3_codes": [
+          "AA",
+          "DA",
+          "DD"
+        ],
+        "model_top3_cn": [
+          "负负",
+          "平负",
+          "平平"
+        ],
+        "actual_code": "DH",
+        "actual_cn": "平胜",
+        "hit": false
+      },
+      "hafu": {
+        "model_1st": "A",
+        "model_2nd": "D",
+        "actual": "D",
+        "hit_1st": false,
+        "hit_2nd": true
+      },
+      "ht_score": {
+        "model_top3": [
+          "0-0",
+          "0-1",
+          "0-2"
+        ],
+        "actual": "0-0",
+        "hit": true
+      },
+      "notes": "埃门下半场进球1-0小胜"
+    },
+    {
+      "match_id": "周五008",
+      "league": "德乙",
+      "home_team": "波鸿",
+      "away_team": "柏林赫塔",
+      "actual_score": "0-1",
+      "actual_ht_score": "0-1",
+      "actual_direction": "A",
+      "actual_ttg": 1,
+      "actual_htft": "半负全负",
+      "actual_htft_code": "AA",
+      "actual_htft_two_char": "负负",
+      "actual_hafu": "A",
+      "confidence": "★",
+      "had": {
+        "model_1st": "H",
+        "model_1st_prob": 0.4338,
+        "model_2nd": "D",
+        "model_2nd_prob": 0.2871,
+        "actual": "A",
+        "hit_1st": false,
+        "hit_2nd": false
+      },
+      "crs": {
+        "model_top5": [
+          "1-1",
+          "2-1",
+          "1-0",
+          "0-0",
+          "2-0"
+        ],
+        "actual": "0-1",
+        "hit": false
+      },
+      "ttg": {
+        "model_top2": [
+          2,
+          3
+        ],
+        "actual": 1,
+        "hit": false
+      },
+      "htft": {
+        "model_top3_codes": [
+          "HH",
+          "DD",
+          "DH"
+        ],
+        "model_top3_cn": [
+          "胜胜",
+          "平平",
+          "平胜"
+        ],
+        "actual_code": "AA",
+        "actual_cn": "负负",
+        "hit": false
+      },
+      "hafu": {
+        "model_1st": "A",
+        "model_2nd": "D",
+        "actual": "A",
+        "hit_1st": true,
+        "hit_2nd": false
+      },
+      "ht_score": {
+        "model_top3": [
+          "0-0",
+          "1-0",
+          "0-1"
+        ],
+        "actual": "0-1",
+        "hit": true
+      },
+      "notes": "柏林赫塔客场1-0小胜波鸿"
+    },
+    {
+      "match_id": "周五009",
+      "league": "英联赛杯",
+      "home_team": "米德尔斯堡",
+      "away_team": "雷克斯汉姆",
+      "actual_score": "1-0",
+      "actual_ht_score": "0-0",
+      "actual_direction": "H",
+      "actual_ttg": 1,
+      "actual_htft": "半平全胜",
+      "actual_htft_code": "DH",
+      "actual_htft_two_char": "平胜",
+      "actual_hafu": "D",
+      "confidence": "★",
+      "had": {
+        "model_1st": "A",
+        "model_1st_prob": 0.36,
+        "model_2nd": "D",
+        "model_2nd_prob": 0.3499,
+        "actual": "H",
+        "hit_1st": false,
+        "hit_2nd": false
+      },
+      "crs": {
+        "model_top5": [
+          "0-0",
+          "1-1",
+          "0-1",
+          "1-0",
+          "0-2"
+        ],
+        "actual": "1-0",
+        "hit": true
+      },
+      "ttg": {
+        "model_top2": [
+          2,
+          1
+        ],
+        "actual": 1,
+        "hit": true
+      },
+      "htft": {
+        "model_top3_codes": [
+          "DD",
+          "DA",
+          "AA"
+        ],
+        "model_top3_cn": [
+          "平平",
+          "平负",
+          "负负"
+        ],
+        "actual_code": "DH",
+        "actual_cn": "平胜",
+        "hit": false
+      },
+      "hafu": {
+        "model_1st": "A",
+        "model_2nd": "D",
+        "actual": "D",
+        "hit_1st": false,
+        "hit_2nd": true
+      },
+      "ht_score": {
+        "model_top3": [
+          "0-0",
+          "0-1",
+          "1-0"
+        ],
+        "actual": "0-0",
+        "hit": true
+      },
+      "notes": "杯赛闷战，米堡下半场进球1-0"
+    },
+    {
+      "match_id": "周五010",
+      "league": "葡超",
+      "home_team": "埃斯托里尔",
+      "away_team": "法马利康",
+      "actual_score": "1-1",
+      "actual_ht_score": "0-1",
+      "actual_direction": "D",
+      "actual_ttg": 2,
+      "actual_htft": "半负全平",
+      "actual_htft_code": "AD",
+      "actual_htft_two_char": "负平",
+      "actual_hafu": "H",
+      "confidence": "★",
+      "had": {
+        "model_1st": "A",
+        "model_1st_prob": 0.6514,
+        "model_2nd": "D",
+        "model_2nd_prob": 0.2386,
+        "actual": "D",
+        "hit_1st": false,
+        "hit_2nd": true
+      },
+      "crs": {
+        "model_top5": [
+          "0-2",
+          "0-1",
+          "1-1",
+          "0-0",
+          "1-2"
+        ],
+        "actual": "1-1",
+        "hit": true
+      },
+      "ttg": {
+        "model_top2": [
+          2,
+          3
+        ],
+        "actual": 2,
+        "hit": true
+      },
+      "htft": {
+        "model_top3_codes": [
+          "AA",
+          "DA",
+          "DD"
+        ],
+        "model_top3_cn": [
+          "负负",
+          "平负",
+          "平平"
+        ],
+        "actual_code": "AD",
+        "actual_cn": "负平",
+        "hit": false
+      },
+      "hafu": {
+        "model_1st": "A",
+        "model_2nd": "D",
+        "actual": "H",
+        "hit_1st": false,
+        "hit_2nd": false
+      },
+      "ht_score": {
+        "model_top3": [
+          "0-0",
+          "0-1",
+          "0-2"
+        ],
+        "actual": "0-1",
+        "hit": true
+      },
+      "notes": "法马利康半场0-1领先，埃斯托里尔下半场扳平1-1"
+    }
+  ],
+  "stats": {
+    "total_matches": 10,
+    "had_1st": 2,
+    "had_1st_or_2nd": 4,
+    "crs_top5": 4,
+    "ttg_top2": 4,
+    "htft_top3": 1,
+    "hafu_1st": 4,
+    "hafu_1st_or_2nd": 9,
+    "ht_top3": 5
+  },
+  "conf_stats": {
+    "★": {
+      "total": 9,
+      "had_hit": 3
+    },
+    "★★": {
+      "total": 1,
+      "had_hit": 1
+    }
+  }
+}

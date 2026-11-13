@@ -1,0 +1,144 @@
+{
+    "league_info": {
+        "name_cn": "墨西哥超级联赛",
+        "name_en": "Liga MX",
+        "country": "墨西哥",
+        "country_code": "MX",
+        "level": "顶级",
+        "num_teams": 18,
+        "format": "双赛季（Apertura/Clausura）",
+        "season_period": "1月-12月（双赛季）",
+        "is_cross_year": false,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.ligamx.net",
+        "governing_body": "墨西哥足球协会（FMF）",
+        "cross_league_level": "L3",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.72,
+        "draw_rate": 0.24,
+        "home_win_rate": 0.44,
+        "away_win_rate": 0.32,
+        "over_2_5_rate": 0.52,
+        "under_2_5_rate": 0.48,
+        "btts_rate": 0.51,
+        "top_scores": [
+            {
+                "score": "2-1",
+                "frequency": 0.085,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.078,
+                "direction": "平局"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.072,
+                "direction": "主胜"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.065,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-1",
+                "frequency": 0.058,
+                "direction": "客胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.055,
+            "1_goal": 0.15,
+            "2_goals": 0.25,
+            "3_goals": 0.23,
+            "4_goals": 0.18,
+            "5_plus_goals": 0.135
+        },
+        "avg_home_goals": 1.48,
+        "avg_away_goals": 1.24,
+        "home_advantage_factor": 1.18,
+        "ht_draw_rate": null,
+        "ht_draw_rate_note": "2026-09-12尝试补录：本环境无法取得该联赛'最近完整赛季'的第一手半场数据——thefishy.uk无该联赛半场表、football-data.co.uk扩展文件仅含全场比分(无半场)、Transfermarkt/worldfootball/FootyStats/soccerstats/BetExplorer 均被反爬拦截。按诚实原则置 null，不用估算值。使用时按缺失字段处理（规则66默认中低档0.45系数）。待可访问一手源时补录。",
+        "ht_draw_rate_source": [],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_confidence": "无",
+        "ht_draw_rate_status": "unavailable"
+    },
+    "match_style": {
+        "tactical_character": "独特的双赛季赛制（Apertura秋季赛/Clausura春季赛）。美洲狮、蓝十字、瓜达拉哈拉竞争。高原主场优势明显（托卢卡等高原城市海拔2000+米）。北美最高水平联赛。",
+        "tempo": "中",
+        "physicality": "中高",
+        "technical_focus": "高",
+        "var_usage": "2019-20赛季引入VAR。",
+        "key_trends": [
+            "独特双赛季赛制",
+            "高原主场优势明显（托卢卡等）",
+            "美洲狮/蓝十字/瓜达拉哈拉竞争",
+            "北美最高水平联赛"
+        ],
+        "style_tags": [
+            "双赛季",
+            "高原主场",
+            "北美最高水平",
+            "竞争激烈"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 4.2,
+        "avg_red_cards": 0.18,
+        "avg_penalties": 0.26,
+        "referee_style": "裁判尺度中等。",
+        "first_half_stoppage_avg": 2.2,
+        "second_half_stoppage_avg": 5.3,
+        "stoppage_note": "补时中等。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "墨西哥超整体廉洁度中高。"
+            }
+        ],
+        "discipline_features": "黄牌累积5张停1场。",
+        "official_rules": "IFAB规则+墨西哥超特别规则。",
+        "integrity_rating": "中高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价墨超'双赛季注意'，'高原主场恐怖'。彩民认为'高原主场优势明显'，'开季阶段冷门多'。",
+        "betting_market": {
+            "market_efficiency": "中",
+            "liquidity": "中",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "中高",
+        "jingcai_tips": [
+            "双赛季注意开季阶段状态不稳定",
+            "高原主场优势明显（托卢卡等）",
+            "双赛季导致各阶段战意不同",
+            "美洲狮/蓝十字内战进球多",
+            "客队高原客场需注意体能"
+        ],
+        "common_sayings": [
+            "墨超双赛季",
+            "高原主场",
+            "开季谨慎"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    }
+}

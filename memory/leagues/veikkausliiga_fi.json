@@ -1,0 +1,145 @@
+{
+    "league_info": {
+        "name_cn": "芬兰超级联赛",
+        "name_en": "Veikkausliiga",
+        "country": "芬兰",
+        "country_code": "FI",
+        "level": "顶级",
+        "num_teams": 12,
+        "format": "三循环，27轮",
+        "season_period": "4月-10月（不跨年）",
+        "is_cross_year": false,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.veikkausliiga.fi",
+        "governing_body": "芬兰足球协会（SPL）"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.55,
+        "draw_rate": 0.28,
+        "home_win_rate": 0.42,
+        "away_win_rate": 0.3,
+        "over_2_5_rate": 0.48,
+        "under_2_5_rate": 0.52,
+        "btts_rate": 0.48,
+        "top_scores": [
+            {
+                "score": "1-0",
+                "frequency": 0.092,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.088,
+                "direction": "平局"
+            },
+            {
+                "score": "0-0",
+                "frequency": 0.075,
+                "direction": "平局"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.068,
+                "direction": "主胜"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.055,
+                "direction": "主胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.075,
+            "1_goal": 0.18,
+            "2_goals": 0.28,
+            "3_goals": 0.22,
+            "4_goals": 0.15,
+            "5_plus_goals": 0.095
+        },
+        "avg_home_goals": 1.35,
+        "avg_away_goals": 1.2,
+        "home_advantage_factor": 1.22,
+        "ht_draw_rate": 0.418,
+        "ht_draw_rate_note": "芬超半场平局率。2026-09-12核算：BetExplorer 联赛HT/FT(半全场)逐队统计表，按全赛季所有阶段合并，半场平局场次/总场次=0.418（177场）。源为二级聚合站(BetExplorer)，经内部一致性校验(半场领先=半场落后、各队9项计数之和=MP)，但本环境无法独立复核原始逐场半场比分，**标记待复核**；使用时按中高/高档参考，勿作高置信依据。",
+        "ht_draw_rate_source": [
+            "https://www.betexplorer.com/football/"
+        ],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_tier": "高(≥0.40)",
+        "ht_draw_rate_confidence": "中(二级聚合源BetExplorer，未独立复核)",
+        "ht_draw_rate_status": "pending_verification"
+    },
+    "match_style": {
+        "tactical_character": "北欧进球最少的联赛，防守导向。赫尔辛基长期垄断冠军。比赛节奏偏慢，注重战术纪律。球队整体实力差距较大。",
+        "tempo": "慢",
+        "physicality": "中",
+        "technical_focus": "中",
+        "var_usage": "VAR使用有限。",
+        "key_trends": [
+            "北欧进球最少联赛",
+            "防守导向",
+            "赫尔辛基垄断",
+            "主场优势北欧最高之一"
+        ],
+        "style_tags": [
+            "防守",
+            "小球",
+            "赫尔辛基垄断",
+            "主场优势"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.9,
+        "avg_red_cards": 0.16,
+        "avg_penalties": 0.23,
+        "referee_style": "裁判尺度中等。",
+        "first_half_stoppage_avg": 2.1,
+        "second_half_stoppage_avg": 5.2,
+        "stoppage_note": "补时中等。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "芬兰超整体廉洁度较高。"
+            }
+        ],
+        "discipline_features": "黄牌累积5张停1场。",
+        "official_rules": "IFAB规则+芬兰超特别规则。",
+        "integrity_rating": "高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价芬兰超'进球少'，'赫尔辛基太强'。彩民认为'小球为主'，'赫尔辛基主场稳'。",
+        "betting_market": {
+            "market_efficiency": "中低",
+            "liquidity": "低",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "低",
+        "jingcai_tips": [
+            "小球为主，UNDER 2.5是常规选择",
+            "赫尔辛基主场强势",
+            "平局率偏高",
+            "三循环赛制下强队体能消耗大",
+            "赛季末冷门可能增多"
+        ],
+        "common_sayings": [
+            "芬兰超小球",
+            "赫尔辛基主场",
+            "进球少"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-07-26",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    }
+}

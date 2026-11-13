@@ -1,0 +1,321 @@
+{
+    "league_info": {
+        "name_cn": "亚运会男子足球",
+        "name_en": "Asian Games Men's Football",
+        "country": "亚洲（多国）",
+        "country_code": "AS",
+        "level": "洲际杯赛（U-23）",
+        "num_teams": 15,
+        "format": "小组赛+淘汰赛",
+        "season_period": "9月14日-10月3日（2026爱知·名古屋）",
+        "is_cross_year": false,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.aichi-nagoya2026.org",
+        "governing_body": "亚奥理事会（OCA）/ AFC技术指导",
+        "competition_tier": 6,
+        "cross_league_level": null,
+        "competition_tier_note": "规则76赛事本身等级（1欧冠精英/2欧联欧协联/3亚冠精英/4解放者杯/5欧国联/6亚运会；None=不适用），2026-10-14建立"
+    },
+    "statistics": {
+        "historical_data": {
+            "2022_hangzhou": {
+                "matches": 45,
+                "goals": 123,
+                "avg_goals_per_match": 2.73,
+                "teams": 23,
+                "gold": "韩国",
+                "silver": "日本",
+                "bronze": "乌兹别克斯坦"
+            },
+            "2018_jakarta": {
+                "matches": 56,
+                "goals": 165,
+                "avg_goals_per_match": 2.95,
+                "teams": 25,
+                "gold": "韩国",
+                "silver": "日本",
+                "bronze": "阿联酋",
+                "home_win_rate": 0.32,
+                "away_win_rate": 0.5,
+                "draw_rate": 0.18,
+                "over_2_5_rate": 0.59,
+                "under_2_5_rate": 0.41
+            },
+            "2014_incheon": {
+                "matches": 56,
+                "goals": 179,
+                "avg_goals_per_match": 3.2,
+                "teams": 29,
+                "gold": "韩国",
+                "silver": "朝鲜",
+                "bronze": "伊拉克"
+            }
+        },
+        "three_edition_avg_goals": 2.96,
+        "trend": "场均进球递减：3.20(2014) → 2.95(2018) → 2.73(2022)，弱队防守改善但强队碾压仍在",
+        "draw_rate": 0.18,
+        "draw_rate_note": "仅2018有详细分布数据(sportradar)。杯赛淘汰赛平局更少（加时/点球决胜）。2018年18%平局率低于联赛平均水平。",
+        "home_win_rate": 0.32,
+        "away_win_rate": 0.5,
+        "home_win_rate_note": "亚运会为赛会制，主客场名义分配，实际为中立场。2018数据显示'客胜'50%高于'主胜'32%，反映名义主客场无实质优势。东道主(2018印尼/2014韩国/2022中国/2026日本)有现场观众优势但不体现在名义主客场统计中。",
+        "home_advantage_factor": 1.0,
+        "home_advantage_note": "赛会制中立场，名义主客场无实质优势。东道主可视为特殊主场优势(+0.10)。",
+        "over_2_5_rate": 0.59,
+        "under_2_5_rate": 0.41,
+        "btts_rate": null,
+        "btts_rate_note": "无可靠交叉验证源，标注信息缺失。",
+        "ht_draw_rate": null,
+        "ht_draw_rate_note": "赛会制杯赛，半场数据不可靠且不具代表性。2026-09-16标注。",
+        "ht_draw_rate_status": "not_applicable",
+        "ht_draw_rate_updated": "2026-09-16",
+        "avg_home_goals": 1.34,
+        "avg_away_goals": 1.61,
+        "avg_home_away_note": "2018 sportradar数据，名义主客场进球倒挂(客队进球更多)，反映赛会制无实质主场优势。",
+        "top_scores": [
+            {
+                "score": "2-0",
+                "frequency": 0.1,
+                "direction": "胜",
+                "note": "强队碾压弱队最常见比分"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.09,
+                "direction": "胜"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.08,
+                "direction": "胜"
+            },
+            {
+                "score": "0-0",
+                "frequency": 0.07,
+                "direction": "平局"
+            },
+            {
+                "score": "3-0",
+                "frequency": 0.06,
+                "direction": "胜"
+            },
+            {
+                "score": "3-1",
+                "frequency": 0.05,
+                "direction": "胜"
+            },
+            {
+                "score": "4-0",
+                "frequency": 0.04,
+                "direction": "胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.05,
+                "direction": "平局"
+            }
+        ],
+        "top_scores_note": "基于2022+2018比赛结果汇总估算，非精确统计。强队碾压式大胜(4-0/5-0/9-0)在小组赛频发但淘汰赛骤减。",
+        "goals_distribution": {
+            "0_goals": 0.07,
+            "1_goal": 0.13,
+            "2_goals": 0.22,
+            "3_goals": 0.22,
+            "4_goals": 0.16,
+            "5_plus_goals": 0.2,
+            "note": "5+球占比高达20%，远高于联赛(通常10-15%)，反映强弱差距大。2014韩国9-0科威特、2014韩国全胜13球0失球。"
+        }
+    },
+    "match_style": {
+        "tactical_character": "U-23年龄限制赛事(每队最多3名超龄球员)。战术纪律性低于成年国家队，进攻端更有冲劲但防守端失误多。强弱差距极大：韩日伊沙为第一梯队，东南亚/南亚球队为鱼腩。小组赛频现大比分碾压，淘汰赛趋紧。东道主有现场观众优势。韩国连续3届(2014/2018/2022)夺金，U-23体系成熟。",
+        "tempo": "快",
+        "physicality": "高",
+        "technical_focus": "中",
+        "var_usage": "2026年预计使用VAR（待官方确认）",
+        "key_trends": [
+            "U-23赛事战术纪律偏低",
+            "强弱差距极大小组赛碾压",
+            "韩国连续3届金牌统治力",
+            "淘汰赛比分骤紧",
+            "东道主观众优势明显",
+            "场均进球递减趋势(3.20→2.95→2.73)"
+        ],
+        "style_tags": [
+            "U-23",
+            "赛会制",
+            "强弱悬殊",
+            "大球频发",
+            "韩国统治"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": null,
+        "avg_red_cards": null,
+        "avg_penalties": null,
+        "referee_style": "亚足联指派裁判，水平参差。U-23赛事判罚尺度通常偏松，鼓励进攻。淘汰赛阶段判罚趋严。",
+        "first_half_stoppage_avg": 2.0,
+        "second_half_stoppage_avg": 5.0,
+        "stoppage_note": "赛会制比赛补时与常规联赛接近。淘汰赛加时赛常见。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "亚运会足球整体廉洁度较高，但部分东南亚/南亚球队曾出现争议判罚引发质疑。"
+            }
+        ],
+        "discipline_features": "红牌停赛1-3场。U-23赛事年轻球员情绪控制较差，红黄牌数可能偏高。",
+        "official_rules": "IFAB规则 + OCA/AFC赛事特别规则。U-23年龄限制(每队最多3名超龄球员)。",
+        "integrity_rating": "高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价亚运男足'韩国无敌'、'小组赛看大球'、'淘汰赛防小球'。中国球迷关注度高（国足参赛），但近年成绩一般。日韩球迷视为奥运练兵。",
+        "betting_market": {
+            "market_efficiency": "中低",
+            "liquidity": "中",
+            "line_movement_frequency": "低频",
+            "sharp_money": "有限，信息不对称大"
+        },
+        "upset_frequency": "中高",
+        "upset_note": "小组赛弱队爆冷少但淘汰赛偶有冷门(2022中国香港闯入四强)。名义强队（韩日伊沙）小组赛碾压但淘汰赛可能翻车。",
+        "jingcai_tips": [
+            "小组赛追大球(场均3.0+)",
+            "淘汰赛防小球(2-1/1-0常见)",
+            "韩国U-23体系成熟可追胜",
+            "东道主日本有观众优势",
+            "名义主客场无实质优势",
+            "U-23赛事情绪化红黄牌多",
+            "强弱悬殊时4+球概率高(20%)"
+        ],
+        "common_sayings": [
+            "韩国三连金",
+            "小组赛看大球",
+            "亚运看东道主"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-09-16",
+        "sources": [
+            {
+                "name": "acronymsmeanings.com (Wikipedia镜像)",
+                "url": "https://www.acronymsmeanings.com/references-for/football-at-the-2022-asian-games-mens-tournament",
+                "data_points": [
+                    "2022年45场123球2.73/场",
+                    "金韩国银日本铜乌兹"
+                ]
+            },
+            {
+                "name": "sportradar (statshub)",
+                "url": "https://statshub.sportradar.com/sportradar/en/sport/1/tournament/1862?seasonId=56381",
+                "data_points": [
+                    "2018年56场165球2.95/场",
+                    "主胜32%客胜50%平18%",
+                    "大2.5球59%"
+                ]
+            },
+            {
+                "name": "Wikipedia (2018/2014)",
+                "url": "https://a.osmarks.net/content/wikipedia_en_all_maxi_2020-08/A/Football_at_the_2018_Asian_Games_%E2%80%93_Men%27s_tournament",
+                "data_points": [
+                    "2018: 56场165球2.95/场(交叉验证)",
+                    "2014: 56场179球3.20/场",
+                    "25队/29队"
+                ]
+            },
+            {
+                "name": "tsp21.com",
+                "url": "https://www.tsp21.com/sports/soccer/nations/asiangames2022.html",
+                "data_points": [
+                    "2022年全部45场逐场比分",
+                    "6组小组赛+淘汰赛完整赛果",
+                    "23队参赛"
+                ]
+            },
+            {
+                "name": "新华社/新华网",
+                "url": "https://www.news.cn/sports/20260723/76bb1eed03bd4ca09f9436cb89c95f87/c.html",
+                "data_points": [
+                    "2026年15队4组",
+                    "U-23+3超龄",
+                    "9月14日-10月3日",
+                    "爱知/岐阜/静冈/大阪7场馆"
+                ]
+            },
+            {
+                "name": "sportsdigest.in",
+                "url": "https://sportsdigest.in/asian-games-2026-football-schedule-teams-groups-venues/203246/",
+                "data_points": [
+                    "2026分组: A(日泰吉港) B(中阿伊朝) C(越乌菲科) D(韩沙卡)",
+                    "15队4组前2晋级QF"
+                ]
+            }
+        ],
+        "data_season": "2022(2018/2014历史交叉验证)",
+        "confidence_level": "中高",
+        "note": "2022年数据由逐场赛果汇总计算与Wikipedia镜像交叉验证一致。2018/2014数据来自Wikipedia/sportradar交叉验证。2026赛制信息来自新华社+日方官网+印度体育媒体多源验证。比分分布为2022+2018汇总估算，非精确统计。"
+    },
+    "ttg_analysis_rules": {
+        "rule_id": null,
+        "rule_name": "亚运男足总进球修正——3.0基准+小组赛大球/淘汰赛小球",
+        "added_date": "2026-09-16",
+        "source": "2014/2018/2022三届统计(56+56+45=157场)汇总",
+        "core_logic": "亚运男足U-23赛事场均进球2.96(三届均值)，远高于联赛。强弱悬殊导致5+球占比20%。但淘汰赛比分骤紧(2-1/1-0/2-0)。总进球推荐需区分阶段：小组赛追3球/4球，淘汰赛回2球/3球。",
+        "ttg_rules": {
+            "group_stage_top2": "3球/4球",
+            "knockout_top2": "2球/3球",
+            "lambda_total_range_group": "2.8-3.4",
+            "lambda_total_range_knockout": "2.2-2.6",
+            "cold_protection": "防0-0(7%概率，弱队防守型对决时)",
+            "blowout_warning": "强vs弱小组赛lambda可高达3.5+，4+球概率20%"
+        },
+        "score_special": {
+            "blowout_scores": "4-0/5-0/5-1/9-0在小组赛频发，淘汰赛几乎消失",
+            "tight_scores": "淘汰赛以1-0/2-0/2-1为主",
+            "draw_rate_low": "平局仅18%远低于联赛，淘汰赛加时/点球进一步降低"
+        }
+    },
+    "competition_format_2026": {
+        "host": "日本（爱知·名古屋）",
+        "dates": "2026年9月14日-10月3日",
+        "teams": 15,
+        "age_limit": "U-23（每队最多3名超龄球员）",
+        "groups": {
+            "Group_A": [
+                "日本",
+                "泰国",
+                "吉尔吉斯斯坦",
+                "中国香港"
+            ],
+            "Group_B": [
+                "中国",
+                "阿联酋",
+                "伊朗",
+                "朝鲜"
+            ],
+            "Group_C": [
+                "越南",
+                "乌兹别克斯坦",
+                "菲律宾",
+                "科威特"
+            ],
+            "Group_D": [
+                "韩国",
+                "沙特阿拉伯",
+                "卡塔尔"
+            ]
+        },
+        "group_stage": "每组单循环，前2名晋级八强",
+        "knockout": "四分之一决赛→半决赛→决赛/铜牌赛",
+        "max_matches_per_team": 6,
+        "venues": [
+            "爱知国际竞技场",
+            "岐阜长良川竞技场",
+            "静冈体育场",
+            "大阪长居陆上竞技场",
+            "paloma瑞穗",
+            "丰田体育场",
+            "名古屋市港足球场"
+        ],
+        "note": "伊拉克退出导致D组仅3队。东道主日本为种子队。中国与伊朗/阿联酋/朝鲜同在B组（死亡之组）。"
+    }
+}

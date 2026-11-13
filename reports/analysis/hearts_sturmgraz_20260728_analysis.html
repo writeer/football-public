@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>哈茨 vs 格拉茨风暴 | 欧冠资格赛深度分析</title>
+<style>
+:root {
+  --bg-dark: #0a0e1a;
+  --bg-card: #131826;
+  --bg-card-alt: #1a2033;
+  --text-primary: #e8eaed;
+  --text-secondary: #9aa0a6;
+  --accent-blue: #4a9eff;
+  --accent-green: #34a853;
+  --accent-red: #ea4335;
+  --accent-yellow: #fbbc04;
+  --accent-purple: #9c27b0;
+  --border-color: #2a3050;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-primary);
+  line-height: 1.7;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a1f3a 0%, #0d1525 100%);
+  border-radius: 16px;
+  margin-bottom: 30px;
+  border: 1px solid var(--border-color);
+}
+.header h1 {
+  font-size: 2.2em;
+  background: linear-gradient(90deg, #4a9eff, #9c27b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+.header .subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1em;
+}
+.header .match-info {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.match-info-item {
+  text-align: center;
+}
+.match-info-item .label {
+  font-size: 0.85em;
+  color: var(--text-secondary);
+}
+.match-info-item .value {
+  font-size: 1.15em;
+  font-weight: 600;
+}
+.first-leg-banner {
+  background: rgba(234, 67, 53, 0.15);
+  border: 1px solid rgba(234, 67, 53, 0.3);
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+.first-leg-banner .score {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: var(--accent-red);
+}
+.section {
+  background: var(--bg-card);
+  border-radius: 14px;
+  padding: 25px 30px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border-color);
+}
+.section h2 {
+  font-size: 1.4em;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section h2 .icon { font-size: 1.1em; }
+.section h3 {
+  font-size: 1.1em;
+  margin: 16px 0 10px;
+  color: var(--accent-blue);
+}
+.section h4 {
+  font-size: 1.0em;
+  margin: 12px 0 8px;
+  color: var(--accent-yellow);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 0.92em;
+}
+th, td {
+  padding: 8px 12px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+th {
+  background: var(--bg-card-alt);
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+td.home { color: var(--accent-blue); }
+td.away { color: var(--accent-red); }
+td.draw { color: var(--accent-yellow); }
+.score-prob {
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+}
+.prob-bar {
+  display: inline-block;
+  height: 8px;
+  border-radius: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.tag-red { background: rgba(234,67,53,0.2); color: var(--accent-red); }
+.tag-green { background: rgba(52,168,83,0.2); color: var(--accent-green); }
+.tag-yellow { background: rgba(251,188,4,0.2); color: var(--accent-yellow); }
+.tag-blue { background: rgba(74,158,255,0.2); color: var(--accent-blue); }
+.warning-box {
+  background: rgba(234, 67, 53, 0.1);
+  border-left: 4px solid var(--accent-red);
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+.info-box {
+  background: rgba(74, 158, 255, 0.08);
+  border-left: 4px solid var(--accent-blue);
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+.success-box {
+  background: rgba(52, 168, 83, 0.08);
+  border-left: 4px solid var(--accent-green);
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+.team-card {
+  background: var(--bg-card-alt);
+  border-radius: 10px;
+  padding: 16px;
+}
+.team-card h4 {
+  margin-bottom: 10px;
+}
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(42,48,80,0.5);
+  font-size: 0.9em;
+}
+.stat-row:last-child { border-bottom: none; }
+.stat-row .label { color: var(--text-secondary); }
+.stat-row .value { font-weight: 600; }
+.highlight-number {
+  font-size: 2em;
+  font-weight: 700;
+}
+.conclusion-card {
+  background: linear-gradient(135deg, #1a2535, #0d1a2a);
+  border-radius: 14px;
+  padding: 25px 30px;
+  margin-top: 20px;
+  border: 2px solid var(--accent-purple);
+}
+.conclusion-card h2 {
+  color: var(--accent-purple);
+}
+.disclaimer {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.85em;
+  padding: 20px;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .header h1 { font-size: 1.6em; }
+  .match-info { gap: 15px; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>哈茨 vs 格拉茨风暴</h1>
+  <div class="subtitle">欧冠资格赛第二轮 次回合 | 深度分析报告</div>
+  <div class="match-info">
+    <div class="match-info-item">
+      <div class="label">比赛时间</div>
+      <div class="value">7月29日 02:45 (北京时间)</div>
+    </div>
+    <div class="match-info-item">
+      <div class="label">比赛场地</div>
+      <div class="value">泰因卡斯尔公园</div>
+    </div>
+    <div class="match-info-item">
+      <div class="label">总比分</div>
+      <div class="value" style="color:var(--accent-red)">0:4 (哈茨落后)</div>
+    </div>
+  </div>
+</div>
+
+<div class="first-leg-banner">
+  <div style="color:var(--text-secondary);font-size:0.9em;margin-bottom:5px">首回合结果</div>
+  <div class="score">格拉茨风暴 4 : 0 哈茨</div>
+  <div style="font-size:0.9em;margin-top:8px;color:var(--text-secondary)">
+    Stankovic 4' · Mitchell 50' · Weinhandl 53' · Heil 59'
+  </div>
+</div>
+
+<!-- 比赛场地与天气 -->
+<div class="section">
+  <h2><span class="icon">🏟️</span> 比赛场地与天气</h2>
+  <div class="grid-2">
+    <div class="team-card">
+      <h4>泰因卡斯尔公园球场</h4>
+      <div class="stat-row"><span class="label">城市</span><span class="value">爱丁堡（苏格兰）</span></div>
+      <div class="stat-row"><span class="label">容量</span><span class="value">约 20,099 人</span></div>
+      <div class="stat-row"><span class="label">草皮类型</span><span class="value">天然草皮</span></div>
+      <div class="stat-row"><span class="label">特点</span><span class="value">紧凑型球场，看台紧邻球场，主场氛围浓烈</span></div>
+    </div>
+    <div class="team-card">
+      <h4>天气情况</h4>
+      <div class="stat-row"><span class="label">温度</span><span class="value">约 18-22°C</span></div>
+      <div class="stat-row"><span class="label">天气</span><span class="value">多云转晴，傍晚有降雨可能（60%）</span></div>
+      <div class="stat-row"><span class="label">风力</span><span class="value">西南风 10-20 km/h</span></div>
+      <div class="stat-row"><span class="label">影响评估</span><span class="value">轻度影响，湿滑草皮利反击不利控球</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- 首回合数据复盘 -->
+<div class="section">
+  <h2><span class="icon">📊</span> 首回合数据复盘</h2>
+  <div class="info-box">
+    首回合哈茨控球率67%、射门12-16次、角球8-12次，但0进球；格拉茨风暴控球33%、6次射正进4球，xG 2.77 vs 1.43。<strong>数据面哈茨占优，结果面风暴碾压</strong>——典型的"效率足球"战胜"无效控球"。
+  </div>
+  <table>
+    <tr>
+      <th>数据项</th>
+      <th>格拉茨风暴（主场）</th>
+      <th>哈茨（客场）</th>
+    </tr>
+    <tr><td>控球率</td><td class="away">33%</td><td class="home">67%</td></tr>
+    <tr><td>射门次数</td><td class="away">16</td><td class="home">12</td></tr>
+    <tr><td>射正球门</td><td class="away">7（进4球）</td><td class="home">4（进0球）</td></tr>
+    <tr><td>角球</td><td class="away">4</td><td class="home">8-12</td></tr>
+    <tr><td>xG（期望进球）</td><td class="away">2.77</td><td class="home">1.43</td></tr>
+    <tr><td>传球（准确率）</td><td class="away">221（66%）</td><td class="home">438（80%）</td></tr>
+    <tr><td>犯规</td><td class="away">18</td><td class="home">13</td></tr>
+    <tr><td>黄牌</td><td class="away">1</td><td class="home">2</td></tr>
+  </table>
+  <div class="warning-box">
+    <strong>关键发现：</strong>哈茨创造了5次"big chances"却全部浪费，门将Schwolow零扑救。格拉茨风暴的4个进球中3个来自下半场开局15分钟——哈茨中场休息后心理崩盘。
+  </div>
+</div>
+
+<!-- 球队近期新闻 -->
+<div class="section">
+  <h2><span class="icon">📰</span> 球队近期新闻</h2>
+
+  <div class="grid-2">
+    <div class="team-card">
+      <h4 style="color:var(--accent-blue)">哈茨 (Hearts)</h4>
+      <div class="stat-row"><span class="label">新帅上任</span><span class="value">Wouter Vrancken（比利时籍）</span></div>
+      <div class="stat-row"><span class="label">首秀灾难</span><span class="value">0:4惨败，执教首战即危机</span></div>
+      <div class="stat-row"><span class="label">友谊赛调整</span><span class="value">7.24 1:0胜Raith Rovers（轮换）</span></div>
+      <div class="stat-row"><span class="label">此前友谊赛</span><span class="value">2:1胜巴列卡诺、3:1胜St Mirren</span></div>
+      <div class="stat-row"><span class="label">转会动态</span><span class="value">Ipswich/Lyon争夺£10m核心Spittal</span></div>
+      <div class="stat-row"><span class="label">联赛状态</span><span class="value">苏超未开赛（8月2日首轮）</span></div>
+      <div class="stat-row"><span class="label">上赛季排名</span><span class="value">苏超第2（凯尔特人之后）</span></div>
+    </div>
+
+    <div class="team-card">
+      <h4 style="color:var(--accent-red)">格拉茨风暴 (Sturm Graz)</h4>
+      <div class="stat-row"><span class="label">主教练</span><span class="value">Fabio Ingolitsch</span></div>
+      <div class="stat-row"><span class="label">近期状态</span><span class="value">22场仅1败（12胜9平），极稳</span></div>
+      <div class="stat-row"><span class="label">友谊赛</span><span class="value">5:1圣彼得堡泽尼特、1:0波贡</span></div>
+      <div class="stat-row"><span class="label">杯赛</span><span class="value">7.25 3:0胜Seekirchen（大幅轮换）</span></div>
+      <div class="stat-row"><span class="label">联赛状态</span><span class="value">奥甲未开赛（8月9日首轮）</span></div>
+      <div class="stat-row"><span class="label">上赛季排名</span><span class="value">奥甲第2（萨尔茨堡之后）</span></div>
+      <div class="stat-row"><span class="label">欧战经验</span><span class="value">连续5年欧战正赛参赛</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- 伤停详情 -->
+<div class="section">
+  <h2><span class="icon">🤕</span> 伤停详情</h2>
+  <table>
+    <tr>
+      <th>球队</th>
+      <th>球员</th>
+      <th>位置</th>
+      <th>伤停类型</th>
+      <th>状态</th>
+      <th>信息来源</th>
+    </tr>
+    <tr>
+      <td class="away">格拉茨风暴</td>
+      <td>Amady Camara</td>
+      <td>前锋</td>
+      <td>大腿拉伤</td>
+      <td>确认缺阵</td>
+      <td>Sportsmole / 官方</td>
+    </tr>
+    <tr>
+      <td class="away">格拉茨风暴</td>
+      <td>Jacob Hodl</td>
+      <td>边翼卫</td>
+      <td>伤病（首回合受伤）</td>
+      <td>出战成疑</td>
+      <td>Sportsmole</td>
+    </tr>
+    <tr>
+      <td class="away">格拉茨风暴</td>
+      <td>Jon Gorenc Stankovic</td>
+      <td>中场/后卫</td>
+      <td>信息缺失</td>
+      <td>需赛前确认</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td class="home">哈茨</td>
+      <td>—</td>
+      <td>—</td>
+      <td>无报告伤停</td>
+      <td>阵容完整</td>
+      <td>Bettors.co.za</td>
+    </tr>
+  </table>
+  <div class="info-box">
+    <strong>信息矛盾标注：</strong>搜狐等中文平台称格拉茨风暴"卡马拉、格尔季奇、洛兹加三名轮换球员因伤缺席"，但Sportsmole仅确认Camara（大腿拉伤）和Hodl（出战成疑）。中文平台信息可能存在夸大，以英文信源为准（规则25）。
+  </div>
+  <div class="warning-box">
+    <strong>赛前1小时必须确认：</strong>Hodl是否进入大名单；Stankovic是否健康首发。若Stankovic缺阵，风暴中场核心受损。
+  </div>
+</div>
+
+<!-- 预计首发 -->
+<div class="section">
+  <h2><span class="icon">👥</span> 预计首发阵容</h2>
+  <div class="grid-2">
+    <div class="team-card">
+      <h4 style="color:var(--accent-blue)">哈茨 (4-3-3 / 可能变阵3-4-3)</h4>
+      <div style="font-size:0.9em;color:var(--text-secondary);margin-bottom:8px">
+        Schwolow; Borchgrevink, Fagan-Walcott, Findlay, Milne; Magnusson, McEntee; Kerjota, Ba-Sy, Kyziridis; Braga
+      </div>
+      <div class="stat-row"><span class="label">轮换预期</span><span class="value">Vrancken可能多处调整</span></div>
+      <div class="stat-row"><span class="label">关键变化</span><span class="value">Ba-Sy首发替Parzyszek</span></div>
+      <div class="stat-row"><span class="label">核心球员</span><span class="value">Braga(前锋)、Ba-Sy(前锋)</span></div>
+    </div>
+    <div class="team-card">
+      <h4 style="color:var(--accent-red)">格拉茨风暴 (4-4-2)</h4>
+      <div style="font-size:0.9em;color:var(--text-secondary);margin-bottom:8px">
+        Khudyakov; Heil, Vallci, Mitchell, Soglo; Seidl, Stankovic, Weinhandl, Fosso; Wlodarczyk, Jatta
+      </div>
+      <div class="stat-row"><span class="label">轮换预期</span><span class="value">可能微调，Hodl位置由Fosso顶替</span></div>
+      <div class="stat-row"><span class="label">核心球员</span><span class="value">Jatta(前锋)、Stankovic(中场)</span></div>
+      <div class="stat-row"><span class="label">战术变化</span><span class="value">预计收缩防线打反击</span></div>
+    </div>
+  </div>
+  <div class="warning-box">
+    <strong>实际首发阵容：</strong>开球前1小时内确认，此处为预测。请赛前查阅UEFA官方match sheet。
+  </div>
+</div>
+
+<!-- 战意心理与体能分析 (规则27) -->
+<div class="section" style="border-color: var(--accent-purple);">
+  <h2 style="color: var(--accent-purple);"><span class="icon">🧠</span> 战意心理与体能分析（规则27）</h2>
+
+  <h3>战意不对称分析</h3>
+  <div class="grid-2">
+    <div class="team-card">
+      <h4 style="color:var(--accent-blue)">哈茨</h4>
+      <table>
+        <tr><td>联赛状态</td><td>苏超未开赛 → <span class="tag tag-green">100%专注欧战</span></td></tr>
+        <tr><td>排名压力</td><td>无（联赛未开始）</td></tr>
+        <tr><td>晋级条件</td><td>必须净胜4球且不丢球 → <span class="tag tag-red">翻盘概率<1%</span></td></tr>
+        <tr><td>战略优先级</td><td>欧战是唯一赛事，但翻盘无望 → <span class="tag tag-yellow">为荣誉而战</span></td></tr>
+        <tr><td>战意评分</td><td><strong>6/10</strong>（名义上全力，实际翻盘无望可能影响投入度）</td></tr>
+      </table>
+    </div>
+    <div class="team-card">
+      <h4 style="color:var(--accent-red)">格拉茨风暴</h4>
+      <table>
+        <tr><td>联赛状态</td><td>奥甲未开赛 → <span class="tag tag-green">100%专注欧战</span></td></tr>
+        <tr><td>排名压力</td><td>无（联赛未开始）</td></tr>
+        <tr><td>晋级条件</td><td>守住4球优势 → <span class="tag tag-green">保平即可，甚至小负可接受</span></td></tr>
+        <tr><td>战略优先级</td><td>确保晋级，避免伤病 → <span class="tag tag-yellow">保守优先</span></td></tr>
+        <tr><td>战意评分</td><td><strong>8/10</strong>（优势巨大但需正式确认晋级）</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="info-box">
+    <strong>战意不对称等级：轻度不对称</strong><br>
+    哈茨虽100%专注欧战，但0:4的总比分让"翻盘"几乎不可能（需净胜4球且不丢球，概率<1%）。实际战意更多是"为荣誉而战"+"为球迷而战"。格拉茨风暴战意明确：确保晋级、避免伤病、节省体能。双方联赛均未开赛，不存在联赛分心问题。
+  </div>
+
+  <h3>体能与休息分析</h3>
+  <table>
+    <tr>
+      <th>检查项</th>
+      <th class="home">哈茨</th>
+      <th class="away">格拉茨风暴</th>
+    </tr>
+    <tr><td>上场比赛</td><td>7.24 vs Raith Rovers（友谊赛，轮换）</td><td>7.25 vs Seekirchen（杯赛，大幅轮换）</td></tr>
+    <tr><td>休息天数</td><td>4天</td><td>3天</td></tr>
+    <tr><td>7天赛程密度</td><td>2场（首回合+友谊赛）</td><td>2场（首回合+杯赛）</td></tr>
+    <tr><td>旅行距离</td><td>无（主场）</td><td>奥地利→爱丁堡（约2小时飞行）</td></tr>
+    <tr><td>赛季阶段</td><td>赛季初（友谊赛阶段）</td><td>赛季初（友谊赛阶段）</td></tr>
+    <tr><td>伤停累积</td><td>无疲劳伤</td><td>Camara大腿伤（训练中）</td></tr>
+  </table>
+  <div class="info-box">
+    <strong>体能指数计算：</strong><br>
+    哈茨：休息4天(0.95) + 7天2场(0.92) + 无旅行(1.0) + 赛季初(0.95) + 无疲劳伤(1.0) → <strong>体能指数 0.964</strong><br>
+    风暴：休息3天(0.88) + 7天2场(0.92) + 欧洲旅行(0.93) + 赛季初(0.95) + 1人疲劳伤(0.95) → <strong>体能指数 0.923</strong><br>
+    <strong>lambda修正：</strong>哈茨不修正（>0.95），风暴λ×0.95（接近0.90阈值但未触发）
+  </div>
+
+  <h3>心理因素分析</h3>
+  <table>
+    <tr><th>心理因素</th><th>分析</th><th>修正方向</th></tr>
+    <tr>
+      <td>首回合比分心理</td>
+      <td>哈茨0:4惨败 → 信心崩塌；风暴4:0大胜 → 自信爆棚</td>
+      <td>哈茨λ×0.93，风暴λ×1.03</td>
+    </tr>
+    <tr>
+      <td>主场压力/氛围</td>
+      <td>泰因卡斯尔公园球场紧凑热烈，但0:4后球迷情绪复杂——可能激励也可能施压</td>
+      <td>哈茨λ波动±5%（年轻队更可能紧张）</td>
+    </tr>
+    <tr>
+      <td>换帅效应</td>
+      <td>Vrancken首场0:4惨败 → 不确定区间放大，教练权威受损</td>
+      <td>哈茨λ波动±8%，置信度降级</td>
+    </tr>
+    <tr>
+      <td>连胜/连败势头</td>
+      <td>哈茨首回合惨败但友谊赛1:0小胜（止损）；风暴22场1败+杯赛3:0（势如破竹）</td>
+      <td>风暴λ×1.03</td>
+    </tr>
+    <tr>
+      <td>"保平即可"心理陷阱</td>
+      <td>风暴手握4球优势可能过度保守 → 被偷袭风险增加</td>
+      <td>风暴平局概率+5%，但哈茨反击偷袭概率也+3%</td>
+    </tr>
+  </table>
+
+  <h3>赛程牵制分析</h3>
+  <div class="grid-2">
+    <div class="team-card">
+      <h4 style="color:var(--accent-blue)">哈茨后续赛程</h4>
+      <div class="stat-row"><span class="label">8月2日</span><span class="value">苏超首轮（对手待定）</span></div>
+      <div class="stat-row"><span class="label">牵制等级</span><span class="value">低（6天后，间隔充足）</span></div>
+      <div class="stat-row"><span class="label">修正</span><span class="value">不修正</span></div>
+    </div>
+    <div class="team-card">
+      <h4 style="color:var(--accent-red)">格拉茨风暴后续赛程</h4>
+      <div class="stat-row"><span class="label">8月9日</span><span class="value">奥甲首轮 vs Hartberg</span></div>
+      <div class="stat-row"><span class="label">牵制等级</span><span class="value">低（12天后，间隔充足）</span></div>
+      <div class="stat-row"><span class="label">修正</span><span class="value">不修正</span></div>
+    </div>
+  </div>
+
+  <h3>综合软因素修正</h3>
+  <div class="info-box">
+    <strong>哈茨综合修正系数：0.93 × 1.0（体能不修） × 1.10（必须进攻） = 1.023</strong><br>
+    <strong>格拉茨风暴综合修正系数：1.03 × 0.95（体能） × 0.90（保守） × 1.08（反击加成） = 0.953</strong><br><br>
+    <strong>修正后lambda：home=1.38, away=1.44</strong><br>
+    关键逻辑：哈茨必须进攻（λ上修10%），但信心崩塌（λ下修7%），净效果+3%；风暴可保守（λ下修10%），但反击效率高（λ上修8%），净效果-5%。
+  </div>
+</div>
+
+<!-- 历史交锋 -->
+<div class="section">
+  <h2><span class="icon">⚔️</span> 历史交锋</h2>
+  <div class="warning-box">
+    <strong>两队无历史交锋记录（首回合为首次正式交手），参考依据有限。</strong>（规则19）
+  </div>
+  <table>
+    <tr><th>日期</th><th>赛事</th><th>对阵</th><th>比分</th></tr>
+    <tr><td>2026-07-22</td><td>欧冠资格赛首回合</td><td>格拉茨风暴 vs 哈茨</td><td class="away">4:0</td></tr>
+  </table>
+  <div class="info-box">
+    <strong>心理权重：</strong>首回合4:0的碾压性比分在次回合形成强烈心理压制。哈茨球员在主场球迷面前需要克服"被同一对手再次碾压"的恐惧。但风暴可能因过度自信而松懈。
+  </div>
+</div>
+
+<!-- 赔率分析 -->
+<div class="section">
+  <h2><span class="icon">💰</span> 赔率分析</h2>
+  <table>
+    <tr>
+      <th>来源</th>
+      <th class="home">哈茨胜</th>
+      <th class="draw">平局</th>
+      <th class="away">风暴胜</th>
+    </tr>
+    <tr><td>外盘参考 (Betano/10Bet)</td><td>1.81-1.87</td><td>3.89-4.10</td><td>3.91-3.95</td></tr>
+    <tr><td>市场隐含概率（归一化）</td><td>51.9%</td><td>24.1%</td><td>24.0%</td></tr>
+    <tr><td>Shin校准概率</td><td>48.3%</td><td>25.9%</td><td>25.8%</td></tr>
+    <tr><td>抽水率</td><td colspan="3">约6.5%</td></tr>
+  </table>
+  <div class="info-box">
+    <strong>赔率解读：</strong>市场将哈茨定价为单场热门（隐含胜率约48-52%），但这反映的是<strong>"单场比赛"而非"晋级概率"</strong>。哈茨主胜赔率低是因为主场优势+必须进攻的战意，而非实力占优。风暴客场赔率3.91偏高，考虑到他们首回合4:0碾压且22场仅1败，存在价值。
+  </div>
+</div>
+
+<!-- 核心模型结果 -->
+<div class="section">
+  <h2><span class="icon">🧮</span> 核心模型结果</h2>
+
+  <h3>Lambda参数（规则27修正后）</h3>
+  <table>
+    <tr><th>参数</th><th class="home">哈茨</th><th class="away">格拉茨风暴</th></tr>
+    <tr><td>基础lambda</td><td>1.35</td><td>1.55</td></tr>
+    <tr><td>战意修正</td><td>×1.10（必须进攻）</td><td>×0.90（可保守）</td></tr>
+    <tr><td>心理修正</td><td>×0.93（信心崩塌）</td><td>×1.03（自信爆棚）</td></tr>
+    <tr><td>体能修正</td><td>×1.00</td><td>×0.95</td></tr>
+    <tr><td>战术修正</td><td>—</td><td>×1.08（反击加成）</td></tr>
+    <tr><td><strong>最终lambda</strong></td><td class="home"><strong>1.38</strong></td><td class="away"><strong>1.44</strong></td></tr>
+    <tr><td>总期望进球</td><td colspan="2">2.82</td></tr>
+  </table>
+
+  <h3>方向概率对比</h3>
+  <table>
+    <tr>
+      <th>模型</th>
+      <th class="home">哈茨胜</th>
+      <th class="draw">平局</th>
+      <th class="away">风暴胜</th>
+    </tr>
+    <tr><td>Dixon-Coles</td><td>35.1%</td><td>27.1%</td><td>37.9%</td></tr>
+    <tr><td>蒙特卡洛(10000场)</td><td>36.2%</td><td>26.0%</td><td>37.8%</td></tr>
+    <tr><td>Shin校准</td><td>48.3%</td><td>25.9%</td><td>25.8%</td></tr>
+    <tr><td>Elo/Pi评级</td><td>48.0%</td><td>26.0%</td><td>26.0%</td></tr>
+    <tr><td>公众意见</td><td>40.0%</td><td>25.0%</td><td>35.0%</td></tr>
+    <tr><td>有序逻辑回归</td><td>45.0%</td><td>28.0%</td><td>27.0%</td></tr>
+    <tr style="background:rgba(156,39,176,0.15)">
+      <td><strong>加权融合</strong></td>
+      <td class="home"><strong>39.8%</strong></td>
+      <td class="draw"><strong>26.6%</strong></td>
+      <td class="away"><strong>33.6%</strong></td>
+    </tr>
+  </table>
+
+  <div class="warning-box">
+    <strong>模型与市场分歧（规则8检查）：</strong>模型主胜39.8% vs 市场隐含48.3%，差值8.4%（<15%阈值，未触发严重分歧）。但方向值得注意：模型认为风暴单场不败概率（60.2%）显著高于市场定价（49.7%），风暴客场有价值。
+  </div>
+
+  <h3>模型方差分析</h3>
+  <table>
+    <tr><th>方向</th><th>模型均值</th><th>标准差</th><th>一致性</th></tr>
+    <tr><td class="home">哈茨胜</td><td>42.1%</td><td>5.3%</td><td>中度一致</td></tr>
+    <tr><td class="draw">平局</td><td>26.3%</td><td>1.0%</td><td>高度一致</td></tr>
+    <tr><td class="away">风暴胜</td><td>31.6%</td><td>5.4%</td><td>中度一致</td></tr>
+  </table>
+  <div class="info-box">
+    <strong>置信度评级：中置信度 ★★</strong>（平均标准差3.9%，模型间中度一致。市场与模型在主胜方向分歧较大，但未达15%严重分歧阈值。）
+  </div>
+</div>
+
+<!-- 比分预测 -->
+<div class="section">
+  <h2><span class="icon">🎯</span> 比分预测</h2>
+
+  <h3>全场TOP比分（DC模型 + 蒙特卡洛融合）</h3>
+  <table>
+    <tr>
+      <th>排名</th>
+      <th>比分</th>
+      <th>DC概率</th>
+      <th>MC概率</th>
+      <th>方向</th>
+      <th>备注</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td class="score-prob draw">1:1</td>
+      <td>12.8%</td>
+      <td>12.3%</td>
+      <td><span class="tag tag-yellow">平局</span></td>
+      <td>风暴保守+哈茨进攻乏力</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td class="score-prob away">1:2</td>
+      <td>8.6%</td>
+      <td>8.2%</td>
+      <td><span class="tag tag-red">客胜</span></td>
+      <td>哈茨压上被反击</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td class="score-prob home">2:1</td>
+      <td>8.2%</td>
+      <td>7.9%</td>
+      <td><span class="tag tag-blue">主胜</span></td>
+      <td>主场扳回一城但不够翻盘</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td class="score-prob away">0:1</td>
+      <td>7.6%</td>
+      <td>8.4%</td>
+      <td><span class="tag tag-red">客胜</span></td>
+      <td>风暴反击偷一个</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td class="score-prob home">1:0</td>
+      <td>7.3%</td>
+      <td>8.1%</td>
+      <td><span class="tag tag-blue">主胜</span></td>
+      <td>哈茨小胜挽回颜面</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td class="score-prob draw">0:0</td>
+      <td>6.9%</td>
+      <td>5.8%</td>
+      <td><span class="tag tag-yellow">平局</span></td>
+      <td>双方互交白卷</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td class="score-prob away">0:2</td>
+      <td>6.2%</td>
+      <td>6.4%</td>
+      <td><span class="tag tag-red">客胜</span></td>
+      <td>风暴客场再下一城</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td class="score-prob draw">2:2</td>
+      <td>5.9%</td>
+      <td>6.2%</td>
+      <td><span class="tag tag-yellow">平局</span></td>
+      <td>对攻战平</td>
+    </tr>
+  </table>
+
+  <div class="info-box">
+    <strong>比分矩阵方向标注（规则17）：</strong>综合方向概率首选为风暴不败（60.2%），但比分矩阵TOP1为1:1（平局方向）。两者方向一致——平局/客胜是最高概率区间。主胜虽在比分TOP3出现（2:1、1:0），但概率分散且总比分无晋级意义。
+  </div>
+
+  <h3>半场TOP比分（规则13）</h3>
+  <table>
+    <tr>
+      <th>排名</th>
+      <th>半场比分</th>
+      <th>概率</th>
+      <th>方向</th>
+      <th>逻辑</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td class="score-prob draw">0:0</td>
+      <td>29.0%</td>
+      <td><span class="tag tag-yellow">平局</span></td>
+      <td>风暴保守试探，哈茨不敢冒进</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td class="score-prob away">0:1</td>
+      <td>17.3%</td>
+      <td><span class="tag tag-red">客胜</span></td>
+      <td>哈茨压上后被反击偷袭</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td class="score-prob home">1:0</td>
+      <td>16.6%</td>
+      <td><span class="tag tag-blue">主胜</span></td>
+      <td>主场气势开场抢攻</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td class="score-prob draw">1:1</td>
+      <td>12.2%</td>
+      <td><span class="tag tag-yellow">平局</span></td>
+      <td>互有攻守</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td class="score-prob away">0:2</td>
+      <td>5.9%</td>
+      <td><span class="tag tag-red">客胜</span></td>
+      <td>风暴客场早早锁定</td>
+    </tr>
+  </table>
+  <div class="info-box">
+    <strong>半场逻辑（规则5关联）：</strong>半场lambda = 全场lambda × 0.45（HT_home=0.62, HT_away=0.65）。半场0:0概率高达29%——风暴手握4球优势上半场大概率保守，哈茨虽需进攻但不敢过度压上（怕再被偷一个就彻底完蛋）。若半场0:0，下半场哈茨必须提速，60分钟后进球概率上升。
+  </div>
+</div>
+
+<!-- 大小球与让球 -->
+<div class="section">
+  <h2><span class="icon">📈</span> 大小球与让球分析</h2>
+
+  <h3>总进球</h3>
+  <table>
+    <tr><th>盘口</th><th>概率</th><th>备注</th></tr>
+    <tr><td>Over 2.5</td><td>53.6%</td><td>哈茨必须进攻+风暴反击效率高</td></tr>
+    <tr><td>Under 2.5</td><td>46.4%</td><td>风暴保守可能压低进球数</td></tr>
+    <tr><td>BTTS (双方进球)</td><td>58.1%</td><td>哈茨主场大概率破蛋，风暴反击也大概率进球</td></tr>
+  </table>
+
+  <h3>让球分析</h3>
+  <table>
+    <tr><th>盘口</th><th>让胜</th><th>让平</th><th>让负</th></tr>
+    <tr><td>哈茨 -1</td><td>16.4%</td><td>18.7%</td><td>64.9%</td></tr>
+  </table>
+  <div class="info-box">
+    哈茨让1球情况下，让负概率64.9%——即哈茨无法净胜2球以上的概率很高。考虑到翻盘需要净胜4球（概率<1%），让球盘基本指向风暴方向。
+  </div>
+</div>
+
+<!-- 搏冷建议 -->
+<div class="section">
+  <h2><span class="icon">❄️</span> 搏冷建议（规则19）</h2>
+  <div class="warning-box">
+    <strong>两队正式交锋仅1次（首回合），参考依据有限。</strong>
+  </div>
+  <table>
+    <tr><th>冷门比分</th><th>概率</th><th>逻辑</th><th>风险等级</th></tr>
+    <tr>
+      <td class="score-prob home">3:1</td>
+      <td>~4.0%</td>
+      <td>哈茨主场爆发+风暴过度松懈，挽回颜面</td>
+      <td><span class="tag tag-red">娱乐注</span></td>
+    </tr>
+    <tr>
+      <td class="score-prob home">3:2</td>
+      <td>~2.5%</td>
+      <td>对攻大战哈茨险胜，但总比分仍出局</td>
+      <td><span class="tag tag-red">极小注</span></td>
+    </tr>
+    <tr>
+      <td class="score-prob draw">2:2</td>
+      <td>~6.0%</td>
+      <td>双方放弃防守打对攻</td>
+      <td><span class="tag tag-yellow">小注</span></td>
+    </tr>
+  </table>
+</div>
+
+<!-- 综合结论 -->
+<div class="conclusion-card">
+  <h2><span class="icon">📋</span> 综合结论</h2>
+
+  <h3>核心判断</h3>
+  <div class="grid-3">
+    <div class="team-card" style="text-align:center">
+      <div style="color:var(--text-secondary);font-size:0.85em">主胜概率</div>
+      <div class="highlight-number" style="color:var(--accent-blue)">39.8%</div>
+      <div style="font-size:0.85em;color:var(--text-secondary)">置信度：中 ★★</div>
+    </div>
+    <div class="team-card" style="text-align:center">
+      <div style="color:var(--text-secondary);font-size:0.85em">平局概率</div>
+      <div class="highlight-number" style="color:var(--accent-yellow)">26.6%</div>
+      <div style="font-size:0.85em;color:var(--text-secondary)">置信度：中 ★★</div>
+    </div>
+    <div class="team-card" style="text-align:center">
+      <div style="color:var(--text-secondary);font-size:0.85em">客胜概率</div>
+      <div class="highlight-number" style="color:var(--accent-red)">33.6%</div>
+      <div style="font-size:0.85em;color:var(--text-secondary)">置信度：中 ★★</div>
+    </div>
+  </div>
+
+  <h3>关键发现</h3>
+  <div class="info-box">
+    <strong>1. 翻盘概率<1%，比赛性质已变</strong><br>
+    哈茨需净胜4球且不丢球才能翻盘，这在欧冠资格赛历史上几乎不存在。这场比赛的实质是"荣誉战"——哈茨为球迷挽回颜面，风暴确保正式晋级。
+  </div>
+  <div class="info-box">
+    <strong>2. 模型与市场在风暴方向存在价值</strong><br>
+    模型认为风暴单场不败概率60.2%，市场定价仅49.7%。首回合4:0证明风暴实力碾压，即使轮换保守，反击效率仍可能偷分。
+  </div>
+  <div class="info-box">
+    <strong>3. 最可能剧本：1:1平局</strong><br>
+    比分矩阵TOP1为1:1（12.8%），半场TOP1为0:0（29.0%）。逻辑：风暴上半场保守试探→0:0→下半场哈茨提速进攻→进球→风暴反击也进一个→1:1收场。总比分5:1风暴晋级。
+  </div>
+  <div class="info-box">
+    <strong>4. 哈茨可能赢单场但无意义</strong><br>
+    哈茨主场小胜（2:1或1:0）概率合计约15%，但即使赢球总比分仍是1:4或2:4出局。市场主胜赔率1.81反映的是"单场"预期，不等于"晋级"。
+  </div>
+
+  <h3>方向推荐</h3>
+  <table>
+    <tr><th>推荐项</th><th>方向</th><th>概率</th><th>说明</th></tr>
+    <tr>
+      <td>胜平负</td>
+      <td><span class="tag tag-yellow">平局/客胜（风暴不败）</span></td>
+      <td>60.2%</td>
+      <td>风暴实力碾压+反击高效，客场不败概率高</td>
+    </tr>
+    <tr>
+      <td>比分首选</td>
+      <td class="score-prob draw">1:1</td>
+      <td>12.8%</td>
+      <td>双方各进一球，风暴总比分5:1晋级</td>
+    </tr>
+    <tr>
+      <td>比分次选</td>
+      <td class="score-prob away">1:2</td>
+      <td>8.6%</td>
+      <td>哈茨压上被反击双杀</td>
+    </tr>
+    <tr>
+      <td>大小球</td>
+      <td><span class="tag tag-green">大2.5</span></td>
+      <td>53.6%</td>
+      <td>哈茨必须进攻+风暴反击=进球多</td>
+    </tr>
+    <tr>
+      <td>BTTS</td>
+      <td><span class="tag tag-green">是</span></td>
+      <td>58.1%</td>
+      <td>双方大概率都进球</td>
+    </tr>
+    <tr>
+      <td>半场</td>
+      <td class="score-prob draw">0:0</td>
+      <td>29.0%</td>
+      <td>风暴保守+哈茨不敢冒进</td>
+    </tr>
+  </table>
+
+  <div class="warning-box">
+    <strong>风险提示：</strong><br>
+    1. 哈茨新帅Vrancken首场0:4惨败后可能做出大幅战术调整，模型预测存在不确定性<br>
+    2. 风暴4:0领先可能过度轮换/保守，实际首发需赛前1小时确认<br>
+    3. 翻盘概率<1%，本场对竞彩而言是"单场"投注而非"晋级"投注<br>
+    4. 规则4警示：当所有分析指向同一方向时，应提高冷门比分权重——本场冷门为哈茨3:1或3:2大胜挽回颜面
+  </div>
+</div>
+
+<div class="disclaimer">
+  本报告基于数学模型与公开数据分析，足球比赛存在极大不确定性。<br>
+  赔率数据可能随时间变化，请以实时数据为准。理性看待预测，切勿沉迷赌博。<br>
+  模型版本: v1.5.0 | 生成时间: 2026-07-28 | 规则版本: 27条
+</div>
+
+</body>
+</html>

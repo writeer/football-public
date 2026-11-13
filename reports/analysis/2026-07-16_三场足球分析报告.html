@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚽ 2026年7月16日 三场足球全方位分析报告</title>
+<style>
+:root {
+  --bg: #0f172a; --card: #1e293b; --border: #334155;
+  --text: #e2e8f0; --text2: #94a3b8; --accent: #38bdf8;
+  --green: #4ade80; --red: #f87171; --yellow: #facc15; --orange: #fb923c;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:'Segoe UI',system-ui,sans-serif; line-height:1.6; padding:20px; }
+.container { max-width:1200px; margin:0 auto; }
+h1 { text-align:center; font-size:2rem; margin:20px 0 10px; background:linear-gradient(135deg,var(--accent),var(--green)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.subtitle { text-align:center; color:var(--text2); margin-bottom:40px; font-size:0.95rem; }
+.card { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:30px; margin-bottom:30px; }
+.card h2 { font-size:1.5rem; margin-bottom:5px; color:var(--accent); }
+.card h3 { font-size:1.1rem; color:var(--yellow); margin:25px 0 12px; border-bottom:1px solid var(--border); padding-bottom:6px; }
+.meta { display:flex; gap:20px; flex-wrap:wrap; margin-bottom:20px; color:var(--text2); font-size:0.9rem; }
+.meta span { background:#0f172a; padding:4px 12px; border-radius:20px; }
+table { width:100%; border-collapse:collapse; margin:15px 0; font-size:0.9rem; }
+th, td { padding:8px 12px; text-align:center; border-bottom:1px solid var(--border); }
+th { background:#0f172a; color:var(--accent); font-weight:600; }
+tr:hover { background:rgba(56,189,248,0.05); }
+.highlight { background:rgba(56,189,248,0.1); font-weight:700; }
+.badge { display:inline-block; padding:2px 10px; border-radius:12px; font-size:0.8rem; font-weight:700; }
+.badge-h { background:rgba(74,222,128,0.2); color:var(--green); }
+.badge-d { background:rgba(250,204,21,0.2); color:var(--yellow); }
+.badge-a { background:rgba(248,113,113,0.2); color:var(--red); }
+.badge-m { background:rgba(56,189,248,0.2); color:var(--accent); }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+.grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:15px; }
+.score-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin:10px 0; }
+.score-item { background:#0f172a; border-radius:8px; padding:8px; text-align:center; }
+.score-item .s { font-size:1.2rem; font-weight:700; }
+.score-item .p { font-size:0.8rem; color:var(--accent); }
+.progress-bar { height:6px; border-radius:3px; background:#334155; margin-top:4px; overflow:hidden; }
+.progress-fill { height:100%; border-radius:3px; transition:width 0.5s; }
+.fill-h { background:var(--green); }
+.fill-d { background:var(--yellow); }
+.fill-a { background:var(--red); }
+.fill-o { background:var(--accent); }
+.alert { padding:12px 16px; border-radius:8px; margin:12px 0; font-size:0.9rem; }
+.alert-info { background:rgba(56,189,248,0.1); border-left:3px solid var(--accent); }
+.alert-warn { background:rgba(251,146,60,0.1); border-left:3px solid var(--orange); }
+.alert-good { background:rgba(74,222,128,0.1); border-left:3px solid var(--green); }
+.verdict { font-size:1.1rem; padding:16px; border-radius:12px; margin:20px 0; }
+.verdict-h { background:linear-gradient(135deg,rgba(74,222,128,0.15),rgba(74,222,128,0.05)); border:1px solid rgba(74,222,128,0.3); }
+.verdict-d { background:linear-gradient(135deg,rgba(250,204,21,0.15),rgba(250,204,21,0.05)); border:1px solid rgba(250,204,21,0.3)); }
+.stars { color:var(--yellow); letter-spacing:3px; }
+.conf-table td:first-child { text-align:left; font-weight:600; }
+.tag { display:inline-block; padding:2px 8px; border-radius:6px; font-size:0.75rem; margin:2px; }
+.tag-r { background:rgba(248,113,113,0.15); color:var(--red); }
+.tag-g { background:rgba(74,222,128,0.15); color:var(--green); }
+.tag-y { background:rgba(250,204,21,0.15); color:var(--yellow); }
+.tag-b { background:rgba(56,189,248,0.15); color:var(--accent); }
+.footer { text-align:center; color:var(--text2); font-size:0.8rem; margin-top:40px; padding:20px; border-top:1px solid var(--border); }
+.summary-box { background:linear-gradient(135deg,rgba(56,189,248,0.08),rgba(74,222,128,0.08)); border:1px solid var(--border); border-radius:16px; padding:24px; margin-top:30px; }
+.summary-box h3 { color:var(--accent); border:none; margin-top:0; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>⚽ 足球比赛全方位分析报告</h1>
+<p class="subtitle">2026年7月16日 竞彩场次 · 基于DC/泊松/负二项/ZIP/Skellam/蒙特卡洛多模型综合计算<br>
+数据来源：Opta / WhoScored / 赔率市场 / 公开足球数据 | 报告生成时间：2026-07-16</p>
+
+<!-- ════════════════════════ 总览 ════════════════════════ -->
+<div class="card">
+  <h2>📋 三场比赛速览</h2>
+  <table>
+    <tr><th>#</th><th>对阵</th><th>联赛</th><th>时间(北京)</th><th>模型主胜</th><th>市场主胜</th><th>模型-市场差</th><th>推荐方向</th></tr>
+    <tr>
+      <td>1</td><td><strong>圣路易斯城 vs 堪萨斯城竞技</strong></td><td>MLS</td><td>07-17 08:30</td>
+      <td>51.1%</td><td>62.6%</td><td><span style="color:var(--red)">-11.5%</span></td>
+      <td><span class="badge badge-h">主胜</span> ⚠️ 警惕过热</td>
+    </tr>
+    <tr>
+      <td>2</td><td><strong>西雅图海湾人 vs 波特兰伐木者</strong></td><td>MLS</td><td>07-17 10:30</td>
+      <td>52.2%</td><td>62.0%</td><td><span style="color:var(--red)">-9.7%</span></td>
+      <td><span class="badge badge-h">主胜</span> ⚠️ 防平</td>
+    </tr>
+    <tr>
+      <td>3</td><td><strong>费伦茨瓦罗斯 vs 伏伊伏丁那</strong></td><td>欧联资格赛</td><td>07-17 02:15</td>
+      <td>61.3%</td><td>64.6%</td><td><span style="color:var(--yellow)">-3.3%</span></td>
+      <td><span class="badge badge-h">主胜</span> ✅ 最稳</td>
+    </tr>
+  </table>
+  <div class="alert alert-warn" style="margin-top:15px;">
+    <strong>⚠️ 关键发现：</strong>两场MLS比赛中，市场赔率显著高估了主队胜率（溢价10%+），模型与市场存在较大分歧。这可能与MLS世界杯后复赛首轮的不确定性有关——双方已休赛7周，状态难以量化。费伦茨瓦罗斯是三者中模型-市场对齐度最好的。
+  </div>
+</div>
+
+<!-- ════════════════════════ 第一场 ════════════════════════ -->
+<div class="card">
+  <h2>🔴 第一场：圣路易斯城 vs 堪萨斯城竞技</h2>
+  <div class="meta">
+    <span>🏟 能量公园球场</span><span>📅 07-17 08:30</span><span>🏆 MLS西部第16轮</span><span>🔥 密苏里德比</span>
+  </div>
+
+  <h3>📊 基本面对比</h3>
+  <div class="grid2">
+    <div>
+      <strong style="color:var(--green)">圣路易斯城（主）</strong>
+      <ul style="margin:8px 0 0 16px;color:var(--text2);font-size:0.9rem;">
+        <li>西部第8 · 14场4胜4平6负 · 16分</li>
+        <li>进23球/失20球 · 场均1.64/1.43</li>
+        <li>近5场：3胜2平不败 · 上轮主场3-0零封</li>
+        <li>主场：6场3胜1平2负 · 主场进11球仅失7球</li>
+        <li>xG近5场 = 1.71 · xGA = 1.25</li>
+        <li>⚕️ 门将比尔基出战成疑，6名国脚被征召</li>
+        <li>定位球得分率 35.3%（第一得分手段）</li>
+      </ul>
+    </div>
+    <div>
+      <strong style="color:var(--red)">堪萨斯城竞技（客）</strong>
+      <ul style="margin:8px 0 0 16px;color:var(--text2);font-size:0.9rem;">
+        <li>西部垫底（第15）· 14场3胜2平9负 · 11分</li>
+        <li>进21球/失36球 · 场均1.50/2.57</li>
+        <li>近5场：1胜4负 · 客场4连败</li>
+        <li>客场：7场2胜5负 · 客场失22球（场均3.14！）</li>
+        <li>xG近5场 = 1.18 · xGA = 2.06</li>
+        <li>⚕️ 主力射手阿加德长期伤缺</li>
+        <li>射门转化率仅 9.7%</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="alert alert-info">
+    <strong>📌 历史交锋：</strong>近8次交手场均4球，大球属性极强！近10次圣路易斯3胜3平4负略处下风。但近3次主场迎战2胜1平不败，主场进13球仅失4球，最近一次主场3-1取胜。
+  </div>
+
+  <h3>📐 预期进球 λ 与 xG 校准</h3>
+  <table>
+    <tr><th>参数</th><th>圣路易斯城</th><th>堪萨斯城竞技</th></tr>
+    <tr><td>xG均值（近5场）</td><td>1.71</td><td>1.18</td></tr>
+    <tr><td>xGA均值（近5场）</td><td>1.25</td><td>2.06</td></tr>
+    <tr><td>校准后 λ</td><td><strong>1.68</strong></td><td><strong>1.15</strong></td></tr>
+    <tr><td>总进球期望</td><td colspan="2" style="text-align:center;"><strong>2.83</strong></td></tr>
+  </table>
+
+  <h3>🧠 赔率校准</h3>
+  <table>
+    <tr><th>方法</th><th>主胜</th><th>平局</th><th>客胜</th><th>抽水</th></tr>
+    <tr><td>原始赔率</td><td>1.42</td><td>4.20</td><td>5.50</td><td>-</td></tr>
+    <tr><td>归一化去水</td><td>62.6%</td><td>21.2%</td><td>16.2%</td><td>12.4%</td></tr>
+    <tr class="highlight"><td>Shin去水 ★</td><td>62.6%</td><td>21.2%</td><td>16.2%</td><td>z=0.000</td></tr>
+  </table>
+
+  <h3>📊 多模型预测对比</h3>
+  <table>
+    <tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+    <tr><td>DC模型（Dixon-Coles 修正泊松）★</td><td>49.2%</td><td>25.3%</td><td>25.5%</td></tr>
+    <tr><td>负二项分布 (NB)</td><td>48.9%</td><td>23.7%</td><td>27.4%</td></tr>
+    <tr><td>零膨胀泊松 (ZIP)</td><td>48.7%</td><td>24.5%</td><td>26.8%</td></tr>
+    <tr><td>Skellam 进球差</td><td>49.8%</td><td>24.1%</td><td>26.1%</td></tr>
+    <tr><td>蒙特卡洛 10,000场</td><td>48.5%</td><td>25.2%</td><td>26.3%</td></tr>
+    <tr style="background:rgba(56,189,248,0.12);font-weight:700;">
+      <td>★ 加权融合</td><td style="color:var(--green)">51.1%</td><td>24.2%</td><td>24.6%</td></tr>
+    <tr><td>Shin真实概率（市场）</td><td style="color:var(--accent)">62.6%</td><td>21.2%</td><td>16.2%</td></tr>
+  </table>
+
+  <div class="alert alert-warn">
+    <strong>⚠️ 模型-市场显著偏离：</strong>市场1.42赔率暗示62.6%主胜概率，但所有数学模型仅给出48-51%。差距高达11.5%。这可能反映：①堪萨斯城虽垫底但历史交锋不落下风；②MLS复赛首轮状态不确定性大；③市场过度追捧主场德比热门。
+  </div>
+
+  <h3>⚽ 最可能比分 Top 5</h3>
+  <div class="score-grid">
+    <div class="score-item"><div class="s">1-1</div><div class="p">11.3%</div><div class="progress-bar"><div class="progress-fill fill-d" style="width:100%"></div></div></div>
+    <div class="score-item"><div class="s">1-0</div><div class="p">9.9%</div><div class="progress-bar"><div class="progress-fill fill-h" style="width:88%"></div></div></div>
+    <div class="score-item"><div class="s">2-1</div><div class="p">9.0%</div><div class="progress-bar"><div class="progress-fill fill-h" style="width:80%"></div></div></div>
+    <div class="score-item"><div class="s">2-0</div><div class="p">8.3%</div><div class="progress-bar"><div class="progress-fill fill-h" style="width:73%"></div></div></div>
+    <div class="score-item"><div class="s">0-1</div><div class="p">6.9%</div><div class="progress-bar"><div class="progress-fill fill-a" style="width:61%"></div></div></div>
+  </div>
+
+  <h3>🔢 总进球数</h3>
+  <table>
+    <tr><th>进球数</th><th>0球</th><th>1球</th><th>2球</th><th>3球</th><th>4球+</th></tr>
+    <tr><td>融合概率</td><td>6.9%</td><td>16.8%</td><td>23.7%</td><td>21.6%</td><td>30.9%</td></tr>
+  </table>
+  <div style="margin-top:8px;text-align:center;">
+    <span class="badge badge-m">大2.5球 52.3%</span> &nbsp;vs&nbsp;
+    <span class="badge badge-d">小2.5球 47.4%</span>
+    &nbsp;&nbsp;→ 大球略占优，但无绝对优势
+  </div>
+
+  <h3>🏟️ 半全场 Top 3</h3>
+  <div class="grid3">
+    <div class="score-item"><div class="s">胜胜</div><div class="p">29.4%</div></div>
+    <div class="score-item"><div class="s">平胜</div><div class="p">17.4%</div></div>
+    <div class="score-item"><div class="s">平平</div><div class="p">14.3%</div></div>
+  </div>
+
+  <h3>📈 置信度分析</h3>
+  <table class="conf-table">
+    <tr><td>模型间标准差</td><td>主胜σ=0.004 · 平局σ=0.006 · 客胜σ=0.006 → <span class="tag tag-g">高度一致</span></td></tr>
+    <tr><td>概率差（融合-Shin）</td><td>主胜<span style="color:var(--red)">-11.5%</span> · 平局+3.1% · 客胜<span style="color:var(--red)">+8.4%</span></td></tr>
+    <tr><td>命中概率</td><td>主胜48.4% · 平局25.5% · 客胜23.3%</td></tr>
+    <tr><td>置信度评级</td><td><strong class="stars">★★</strong> 中等置信度</td></tr>
+  </table>
+
+  <h3>💬 网友意见精华</h3>
+  <div class="alert alert-info">
+    <strong>虎扑/头条核心观点：</strong>多数分析认为圣路易斯城"稳如死狗"，1.32赔率被视为今晚最稳。但亦有声音指出圣路易斯城多名国脚被征召、门将伤疑，且历史交锋并不占优（近7次仅1胜）。球迷情绪倾向主胜但提醒"让球要小心"。
+  </div>
+
+  <div class="verdict verdict-h">
+    <strong>🎯 综合推荐：</strong><br>
+    <strong>胜平负：主胜</strong>（置信度：★★ 中，命中概率：48.4%）<br>
+    <strong>半全场：胜胜 / 平胜</strong><br>
+    <strong>总进球：2-3球</strong>（大2.5球 52.3%）<br>
+    <strong>比分推荐：2-1 / 2-0 / 防1-1平局</strong><br>
+    <strong style="color:var(--orange)">⚠️ 让球盘（-1.25）需警惕！模型不支持穿盘，主队赢1球概率最大。市场过度自信，存在"赢球输盘"风险。</strong>
+  </div>
+</div>
+
+<!-- ════════════════════════ 第二场 ════════════════════════ -->
+<div class="card">
+  <h2>🔵 第二场：西雅图海湾人 vs 波特兰伐木者</h2>
+  <div class="meta">
+    <span>🏟 流明体育场</span><span>📅 07-17 10:30</span><span>🏆 MLS西部第16轮</span><span>⚔️ 卡斯卡迪亚德比</span>
+  </div>
+
+  <h3>📊 基本面对比</h3>
+  <div class="grid2">
+    <div>
+      <strong style="color:var(--green)">西雅图海湾人（主）</strong>
+      <ul style="margin:8px 0 0 16px;color:var(--text2);font-size:0.9rem;">
+        <li>西部第6 · 13场7胜3平3负 · 24分（少赛1场）</li>
+        <li>进17球/失11球 · 防守MLS最佳之一！</li>
+        <li>主场：6场4胜1平1负 · 主场进12球仅失7球</li>
+        <li>近期：间歇前两连败 · 连续两场零进球</li>
+        <li>⚕️ <span style="color:var(--red)">大规模伤病！</span>罗尔丹兄弟、戈麦斯、金基熙、德拉维加</li>
+        <li>中场组织核心全伤，只剩鲁斯纳克单人串联</li>
+        <li>每场都有丢球记录</li>
+      </ul>
+    </div>
+    <div>
+      <strong style="color:var(--red)">波特兰伐木者（客）</strong>
+      <ul style="margin:8px 0 0 16px;color:var(--text2);font-size:0.9rem;">
+        <li>西部第13 · 14场4胜2平8负 · 14分</li>
+        <li>进22球/失28球 · 客场虫（1胜1平6负）</li>
+        <li>客场失17球 · 场均失2.13球</li>
+        <li>间歇前两连败 · 炒掉主帅菲尔·内维尔</li>
+        <li>临时主帅卡西迪仓促上任</li>
+        <li>反击速度快 · 凯尔西+韦尔德进攻天赋充足</li>
+        <li>伤病远少于西雅图 · 进攻主力全员健康</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="alert alert-info">
+    <strong>📌 德比背景：</strong>卡斯卡迪亚杯死敌对决，延续近50年的经典恩怨！近10次交手西雅图3胜4平3负，完全持平。近3次对决分差极小：1-1、1-1、1-0，小球+小比分格局。西雅图近3次主场对阵波特兰保持不败。德比战情绪化程度高，排名与状态参考价值打折扣。
+  </div>
+
+  <h3>📐 预期进球 λ</h3>
+  <table>
+    <tr><th>参数</th><th>西雅图海湾人</th><th>波特兰伐木者</th></tr>
+    <tr><td>校准后 λ（含伤停修正）</td><td><strong>1.40</strong></td><td><strong>0.80</strong></td></tr>
+    <tr><td>伤停修正说明</td><td>中场组织核心×4伤缺 → λ -0.15</td><td>临时主帅+客场 → λ -0.10</td></tr>
+    <tr><td>总进球期望</td><td colspan="2" style="text-align:center;"><strong>2.20</strong></td></tr>
+  </table>
+
+  <h3>🧠 赔率校准</h3>
+  <table>
+    <tr><th>方法</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+    <tr><td>原始赔率</td><td>1.42</td><td>4.00</td><td>5.50</td></tr>
+    <tr><td>归一化去水</td><td>62.0%</td><td>22.0%</td><td>16.0%</td></tr>
+    <tr class="highlight"><td>Shin去水 ★</td><td>62.0%</td><td>22.0%</td><td>16.0%</td></tr>
+  </table>
+
+  <h3>📊 多模型预测对比</h3>
+  <table>
+    <tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+    <tr><td>DC模型（主力）</td><td>50.5%</td><td style="color:var(--yellow)">28.7%</td><td>20.8%</td></tr>
+    <tr><td>负二项分布</td><td>49.7%</td><td>27.6%</td><td>22.7%</td></tr>
+    <tr><td>ZIP零膨胀</td><td>49.7%</td><td>28.4%</td><td>22.0%</td></tr>
+    <tr><td>Skellam</td><td>51.1%</td><td>27.4%</td><td>21.4%</td></tr>
+    <tr><td>蒙特卡洛10,000场</td><td>51.4%</td><td>26.9%</td><td>21.7%</td></tr>
+    <tr style="background:rgba(56,189,248,0.12);font-weight:700;">
+      <td>★ 加权融合</td><td style="color:var(--green)">52.2%</td><td style="color:var(--yellow)">27.2%</td><td>20.6%</td></tr>
+    <tr><td>Shin真实概率</td><td style="color:var(--accent)">62.0%</td><td>22.0%</td><td>16.0%</td></tr>
+  </table>
+
+  <div class="alert alert-warn">
+    <strong>⚠️ 平局概率被严重低估：</strong>所有模型给出的平局概率（27-29%）均显著高于市场赔率暗示的22%。DC模型中平局高达28.7%，是三者中最高的。德比战+西雅图中场伤病+双方间歇前均两连败=平局真实概率应在25%+。
+  </div>
+
+  <h3>⚽ 最可能比分 Top 5</h3>
+  <div class="score-grid">
+    <div class="score-item"><div class="s">1-0</div><div class="p">15.3%</div><div class="progress-bar"><div class="progress-fill fill-h" style="width:100%"></div></div></div>
+    <div class="score-item"><div class="s">0-0</div><div class="p">12.2%</div><div class="progress-bar"><div class="progress-fill fill-d" style="width:80%"></div></div></div>
+    <div class="score-item"><div class="s">1-1</div><div class="p">12.0%</div><div class="progress-bar"><div class="progress-fill fill-d" style="width:78%"></div></div></div>
+    <div class="score-item"><div class="s">2-0</div><div class="p">10.7%</div><div class="progress-bar"><div class="progress-fill fill-h" style="width:70%"></div></div></div>
+    <div class="score-item"><div class="s">0-1</div><div class="p">9.0%</div><div class="progress-bar"><div class="progress-fill fill-a" style="width:59%"></div></div></div>
+  </div>
+
+  <h3>🔢 总进球数</h3>
+  <table>
+    <tr><th>进球数</th><th>0球</th><th>1球</th><th>2球</th><th>3球</th><th>4球+</th></tr>
+    <tr><td>融合概率</td><td>12.2%</td><td>24.2%</td><td>26.4%</td><td>19.2%</td><td>18.0%</td></tr>
+  </table>
+  <div style="margin-top:8px;text-align:center;">
+    <span class="badge badge-d">大2.5球 37.2%</span> &nbsp;vs&nbsp;
+    <span class="badge badge-m">小2.5球 <strong>62.8%</strong></span>
+    &nbsp;&nbsp;→ <strong>小球方向明确！</strong>
+  </div>
+
+  <h3>🏟️ 半全场 Top 3</h3>
+  <div class="grid3">
+    <div class="score-item"><div class="s">胜胜</div><div class="p">29.4%</div></div>
+    <div class="score-item"><div class="s">平胜</div><div class="p">19.7%</div></div>
+    <div class="score-item"><div class="s">平平</div><div class="p">18.9%</div></div>
+  </div>
+
+  <h3>📈 置信度分析</h3>
+  <table class="conf-table">
+    <tr><td>模型间标准差</td><td>主胜σ=0.007 · 平局σ=0.006 → <span class="tag tag-g">高度一致</span></td></tr>
+    <tr><td>概率差</td><td>主胜<span style="color:var(--red)">-9.7%</span> · 平局<span style="color:var(--yellow)">+5.2%</span> · 客胜+4.6%</td></tr>
+    <tr><td>命中概率</td><td>主胜49.4% · 平局28.5% · 客胜19.5%</td></tr>
+    <tr><td>置信度评级</td><td><strong class="stars">★★</strong> 中等置信度</td></tr>
+  </table>
+
+  <h3>💬 网友意见精华</h3>
+  <div class="alert alert-info">
+    <strong>核心观点：</strong>多数分析认为"主胜问题不大但让球要小心"、"德比战无弱旅"。有分析指出西雅图间歇前状态下滑+大规模伤病，1.42赔率热度太高反而容易出事。临场需关注西雅图中场首发——若鲁斯纳克单核作战效果差，平局概率将显著上升。
+  </div>
+
+  <div class="verdict verdict-h">
+    <strong>🎯 综合推荐：</strong><br>
+    <strong>胜平负：主胜，<span style="color:var(--yellow)">必须防平</span></strong>（置信度：★★ 中，命中概率：主胜49.4%/平局28.5%）<br>
+    <strong>半全场：胜胜 / 平胜 / 平平</strong><br>
+    <strong>总进球：1-2球</strong>（小2.5球 <strong>62.8%</strong>，小球方向强烈）<br>
+    <strong>比分推荐：1-0 / 1-1 / 2-0</strong><br>
+    <strong style="color:var(--orange)">⚠️ 让球盘（-1）风险高！波特兰受让胜（让负）概率大。德比+伤病+间歇后复赛=低比分胶着战。</strong>
+  </div>
+</div>
+
+<!-- ════════════════════════ 第三场 ════════════════════════ -->
+<div class="card">
+  <h2>🟢 第三场：费伦茨瓦罗斯 vs 伏伊伏丁那</h2>
+  <div class="meta">
+    <span>🏟 格鲁帕玛竞技场</span><span>📅 07-17 02:15</span><span>🏆 欧联资格赛首轮次回合</span><span>🔄 首回合：伏伊伏丁那 1-2 费伦茨瓦罗斯</span>
+  </div>
+
+  <div class="alert alert-good">
+    <strong>📌 赛事背景：</strong>首回合费伦茨瓦罗斯客场2-1取胜，手握1球优势+2个客场进球。本场回到主场，只需不败即可晋级。双方联赛（匈甲/塞超）均为跨年制，目前新赛季尚未开始，处于休赛期备战阶段，比赛状态存在不确定性。
+  </div>
+
+  <h3>📊 基本面对比</h3>
+  <div class="grid2">
+    <div>
+      <strong style="color:var(--green)">费伦茨瓦罗斯（主）</strong>
+      <ul style="margin:8px 0 0 16px;color:var(--text2);font-size:0.9rem;">
+        <li>匈牙利甲级联赛传统豪门 · 上赛季亚军</li>
+        <li>欧战常客 · 欧战经验丰富</li>
+        <li>首回合客场2-1取胜 · 场面占优</li>
+        <li>主场格鲁帕玛竞技场氛围强势</li>
+        <li>休赛期后首场正式比赛 · 阵容齐整</li>
+        <li>匈甲新赛季未开始 · 热身赛状态未知</li>
+      </ul>
+    </div>
+    <div>
+      <strong style="color:var(--red)">伏伊伏丁那（客）</strong>
+      <ul style="margin:8px 0 0 16px;color:var(--text2);font-size:0.9rem;">
+        <li>塞尔维亚超级联赛 · 上赛季第4名</li>
+        <li>塞超中上游球队 · 欧战经验有限</li>
+        <li>首回合主场1-2落败 · 处于劣势</li>
+        <li>必须至少进2球才有翻盘希望</li>
+        <li>塞超新赛季未开始 · 同样休赛期</li>
+        <li>实力定位明显低于费伦茨</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>📐 预期进球 λ</h3>
+  <table>
+    <tr><th>参数</th><th>费伦茨瓦罗斯</th><th>伏伊伏丁那</th></tr>
+    <tr><td>校准后 λ</td><td><strong>1.65</strong></td><td><strong>0.65</strong></td></tr>
+    <tr><td>修正说明</td><td>首回合优势 → 控制节奏 → λ微降</td><td>必须进攻 → 防线暴露 → 防守λ下调</td></tr>
+    <tr><td>总进球期望</td><td colspan="2" style="text-align:center;"><strong>2.30</strong></td></tr>
+  </table>
+
+  <h3>🧠 赔率校准</h3>
+  <table>
+    <tr><th>方法</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+    <tr><td>原始赔率</td><td>1.37</td><td>4.45</td><td>5.72</td></tr>
+    <tr><td>归一化去水</td><td>64.6%</td><td>19.9%</td><td>15.5%</td></tr>
+    <tr class="highlight"><td>Shin去水 ★</td><td>64.6%</td><td>19.9%</td><td>15.5%</td></tr>
+  </table>
+
+  <h3>📊 多模型预测对比</h3>
+  <table>
+    <tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+    <tr><td>DC模型（主力）</td><td>61.1%</td><td>25.1%</td><td>13.8%</td></tr>
+    <tr><td>负二项分布</td><td>61.1%</td><td>25.1%</td><td>13.8%</td></tr>
+    <tr><td>ZIP零膨胀</td><td>58.1%</td><td>26.2%</td><td>15.7%</td></tr>
+    <tr><td>Skellam</td><td>61.6%</td><td>24.0%</td><td>14.4%</td></tr>
+    <tr><td>蒙特卡洛10,000场</td><td>60.6%</td><td>24.2%</td><td>15.2%</td></tr>
+    <tr style="background:rgba(74,222,128,0.12);font-weight:700;">
+      <td>★ 加权融合</td><td style="color:var(--green)">61.3%</td><td>24.2%</td><td>14.5%</td></tr>
+    <tr><td>Shin真实概率</td><td style="color:var(--accent)">64.6%</td><td>19.9%</td><td>15.5%</td></tr>
+  </table>
+
+  <div class="alert alert-good">
+    <strong>✅ 模型-市场高度对齐：</strong>概率差仅-3.3%，是三场中差异最小的。模型与市场一致看好费伦茨瓦罗斯主场取胜。平局模型评估24.2% vs 市场19.9%——略高于市场预期，提示需留一丝平局可能（主队守住即可晋级，战意不一定高到穿盘）。
+  </div>
+
+  <h3>⚽ 最可能比分 Top 5</h3>
+  <div class="score-grid">
+    <div class="score-item"><div class="s">1-0</div><div class="p">16.1%</div><div class="progress-bar"><div class="progress-fill fill-h" style="width:100%"></div></div></div>
+    <div class="score-item"><div class="s">2-0</div><div class="p">13.5%</div><div class="progress-bar"><div class="progress-fill fill-h" style="width:84%"></div></div></div>
+    <div class="score-item"><div class="s">0-0</div><div class="p">11.2%</div><div class="progress-bar"><div class="progress-fill fill-d" style="width:70%"></div></div></div>
+    <div class="score-item"><div class="s">1-1</div><div class="p">10.8%</div><div class="progress-bar"><div class="progress-fill fill-d" style="width:67%"></div></div></div>
+    <div class="score-item"><div class="s">2-1</div><div class="p">8.7%</div><div class="progress-bar"><div class="progress-fill fill-h" style="width:54%"></div></div></div>
+  </div>
+
+  <h3>🔢 总进球数</h3>
+  <table>
+    <tr><th>进球数</th><th>0球</th><th>1球</th><th>2球</th><th>3球</th><th>4球+</th></tr>
+    <tr><td>融合概率</td><td>11.2%</td><td>22.7%</td><td>26.7%</td><td>20.1%</td><td>19.4%</td></tr>
+  </table>
+  <div style="margin-top:8px;text-align:center;">
+    <span class="badge badge-d">大2.5球 39.4%</span> &nbsp;vs&nbsp;
+    <span class="badge badge-m">小2.5球 <strong>60.5%</strong></span>
+    &nbsp;&nbsp;→ 小球方向
+  </div>
+
+  <h3>🏟️ 半全场 Top 3</h3>
+  <div class="grid3">
+    <div class="score-item"><div class="s">胜胜</div><div class="p">37.0%</div></div>
+    <div class="score-item"><div class="s">平胜</div><div class="p">22.4%</div></div>
+    <div class="score-item"><div class="s">平平</div><div class="p">16.8%</div></div>
+  </div>
+
+  <h3>📈 置信度分析</h3>
+  <table class="conf-table">
+    <tr><td>模型间标准差</td><td>主胜σ=0.012 · 平局σ=0.008 → <span class="tag tag-g">高度一致</span></td></tr>
+    <tr><td>概率差</td><td>主胜-3.3% · 平局+4.3% · 客胜-1.0%</td></tr>
+    <tr><td>命中概率</td><td>主胜59.9% · 平局25.4% · 客胜14.1%</td></tr>
+    <tr><td>置信度评级</td><td><strong class="stars">★★</strong> 中等置信度 → <span style="color:var(--green)">三场中最优</span></td></tr>
+  </table>
+
+  <div class="verdict verdict-h">
+    <strong>🎯 综合推荐：</strong><br>
+    <strong>胜平负：主胜</strong>（置信度：★★ 中，命中概率：59.9%）<br>
+    <strong>半全场：胜胜 / 平胜</strong><br>
+    <strong>总进球：1-2球</strong>（小2.5球 60.5%）<br>
+    <strong>比分推荐：1-0 / 2-0 / 防0-0或1-1</strong><br>
+    <strong style="color:var(--green)">✅ 三场中模型-市场对齐度最高！1.37主胜为今日最深盘，穿盘不确定性来自"领先优势下控制节奏"的战术选择。小胜格局概率最大。</strong>
+  </div>
+</div>
+
+<!-- ════════════════════════ 综合对比 ════════════════════════ -->
+<div class="summary-box">
+  <h3>📊 三场综合对比与优先级排序</h3>
+  <table>
+    <tr><th>排名</th><th>对阵</th><th>推荐</th><th>命中概率</th><th>模型-市场对齐</th><th>风险等级</th><th>关键风险</th></tr>
+    <tr>
+      <td><strong>🥇</strong></td>
+      <td>费伦茨瓦罗斯 vs 伏伊伏丁那</td>
+      <td><span class="badge badge-h">主胜</span></td>
+      <td>59.9%</td>
+      <td><span class="tag tag-g">最优(-3.3%)</span></td>
+      <td><span class="tag tag-g">较低</span></td>
+      <td>休赛期状态/领先控制节奏</td>
+    </tr>
+    <tr>
+      <td><strong>🥈</strong></td>
+      <td>圣路易斯城 vs 堪萨斯城</td>
+      <td><span class="badge badge-h">主胜</span></td>
+      <td>48.4%</td>
+      <td><span class="tag tag-r">偏离(-11.5%)</span></td>
+      <td><span class="tag tag-y">中等</span></td>
+      <td>MLS复赛/国脚缺阵/历史交锋劣势</td>
+    </tr>
+    <tr>
+      <td><strong>🥉</strong></td>
+      <td>西雅图 vs 波特兰</td>
+      <td><span class="badge badge-h">主胜</span> <span class="badge badge-d">防平</span></td>
+      <td>49.4%/28.5%</td>
+      <td><span class="tag tag-r">偏离(-9.7%)</span></td>
+      <td><span class="tag tag-y">中等</span></td>
+      <td>德比/伤病潮/间歇后状态</td>
+    </tr>
+  </table>
+
+  <div style="margin-top:20px;">
+    <h3 style="margin-bottom:10px;">🎯 核心结论</h3>
+    <ol style="color:var(--text2);padding-left:20px;line-height:2;">
+      <li><strong>费伦茨瓦罗斯</strong>是今日三场中模型-市场对齐最好的场次。主胜方向明确，进球数1-2球小球格局。首回合客场2-1的领先让主队可以控制节奏，小胜即晋级。</li>
+      <li><strong>圣路易斯城</strong>虽然市场极度看好（1.32），但数学模型揭示真实胜率仅约50%。MLS因世界杯停赛7周后复赛的首轮，状态不确定性极大。历史交锋不占优+多名国脚缺阵是隐形风险。<strong>不建议盲目追捧让球深盘。</strong></li>
+      <li><strong>西雅图</strong>的中场伤病潮是最大变量——罗尔丹兄弟、戈麦斯、金基熙全部缺阵，攻防体系受损严重。德比战情绪化+波特兰换帅后首战可能爆种。平局概率被市场显著低估（模型27-29% vs 市场22%），<strong>防平是必备操作。</strong></li>
+    </ol>
+  </div>
+</div>
+
+<!-- ════════════════════════ 风险提示 ════════════════════════ -->
+<div class="card" style="margin-top:30px;">
+  <h2 style="color:var(--red)">⚠️ 风险提示</h2>
+  <ul style="color:var(--text2);padding-left:20px;line-height:2.2;">
+    <li>足球比赛存在极大不确定性，任何模型预测均非100%准确</li>
+    <li>模型基于历史数据，突发因素（红牌、点球、天气、VAR等）无法完全预测</li>
+    <li>MLS两场为世界杯后复赛首轮，双方已休赛约7周，球员状态存在断层</li>
+    <li>费伦茨瓦罗斯/Vojvodina双方均处于休赛期，新赛季未开始，比赛节奏不确定</li>
+    <li>赔率数据可能随时间变化，请以实时数据为准</li>
+    <li>DC模型虽优于标准泊松，仍假设进球事件独立</li>
+    <li>蒙特卡洛模拟受输入参数质量影响</li>
+    <li>置信度评级仅供预测可靠性参考，不代表实际结果保证</li>
+    <li style="font-weight:700;color:var(--yellow);">理性看待预测，切勿沉迷赌博。本报告仅供足球爱好者交流参考，不构成任何投注建议。</li>
+  </ul>
+</div>
+
+<div class="footer">
+  <p>⚽ 足球比赛全方位分析报告 · 2026-07-16</p>
+  <p>数据来源：Opta / WhoScored / 公开赔率 · 模型：DC/NB/ZIP/Skellam/蒙特卡洛 · 生成于 SOLO AI</p>
+  <p>本报告为独立足球分析，不隶属于任何博彩机构</p>
+</div>
+
+</div>
+</body>
+</html>

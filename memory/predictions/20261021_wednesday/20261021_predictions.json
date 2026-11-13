@@ -1,0 +1,1877 @@
+[
+ {
+  "num": "周三001",
+  "league": "日职",
+  "home": "东京FC",
+  "away": "柏太阳神",
+  "kickoff": "2026-10-21 18:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "lambda_home": 2.09,
+  "lambda_away": 1.179,
+  "lambda_total": 3.269,
+  "lambda_source": "fundamental(rule79)",
+  "rule76": null,
+  "value_mult": null,
+  "model_prob": {
+   "home": 0.5651,
+   "draw": 0.2172,
+   "away": 0.2178
+  },
+  "market_prob": {
+   "home": 0.4242,
+   "draw": 0.257,
+   "away": 0.3189
+  },
+  "primary": {
+   "dir": "home",
+   "cn": "主胜",
+   "prob": 0.5651
+  },
+  "secondary": {
+   "dir": "away",
+   "cn": "客胜",
+   "prob": 0.2178
+  },
+  "had": {
+   "odds": {
+    "home": 2.09,
+    "draw": 3.45,
+    "away": 2.78
+   },
+   "single_note": ""
+  },
+  "hhad": {
+   "line": -1,
+   "odds": {
+    "home": 4.4,
+    "draw": 3.85,
+    "away": 1.56
+   },
+   "first": {
+    "dir": "away",
+    "cn": "让负",
+    "prob": 0.4171
+   },
+   "second": {
+    "dir": "draw",
+    "cn": "让平",
+    "prob": 0.2271
+   },
+   "draw_prob": 0.2149
+  },
+  "top_scores": [
+   {
+    "score": "1-1",
+    "prob": 0.1059
+   },
+   {
+    "score": "2-1",
+    "prob": 0.098
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0831
+   },
+   {
+    "score": "3-1",
+    "prob": 0.0682
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0673
+   }
+  ],
+  "k_dist": 0,
+  "k_dist_prob": 0.2324,
+  "k_rec": 1,
+  "k_rec_prob": 0.2149,
+  "k_consistent": false,
+  "band": [
+   {
+    "score": "2-1",
+    "prob": 0.098
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0673
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0402
+   }
+  ],
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "top2": [
+    3,
+    2
+   ],
+   "p": [
+    0.2215,
+    0.2155
+   ]
+  },
+  "htft_top3": [
+   {
+    "path": "胜胜",
+    "prob": 0.3233
+   },
+   {
+    "path": "平胜",
+    "prob": 0.213
+   },
+   {
+    "path": "平平",
+    "prob": 0.1238
+   }
+  ],
+  "ht_scores": [
+   {
+    "score": "0-0",
+    "prob": 0.3021
+   },
+   {
+    "score": "1-0",
+    "prob": 0.216
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1161
+   }
+  ],
+  "confidence": "★★"
+ },
+ {
+  "num": "周三002",
+  "league": "日职",
+  "home": "川崎前锋",
+  "away": "神户胜利",
+  "kickoff": "2026-10-21 18:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "lambda_home": 1.383,
+  "lambda_away": 1.175,
+  "lambda_total": 2.558,
+  "lambda_source": "fundamental(rule79)",
+  "rule76": null,
+  "value_mult": null,
+  "model_prob": {
+   "home": 0.4095,
+   "draw": 0.2745,
+   "away": 0.316
+  },
+  "market_prob": {
+   "home": 0.3783,
+   "draw": 0.2604,
+   "away": 0.3613
+  },
+  "primary": {
+   "dir": "home",
+   "cn": "主胜",
+   "prob": 0.4095
+  },
+  "secondary": {
+   "dir": "away",
+   "cn": "客胜",
+   "prob": 0.316
+  },
+  "had": {
+   "odds": {
+    "home": 2.34,
+    "draw": 3.4,
+    "away": 2.45
+   },
+   "single_note": ""
+  },
+  "hhad": {
+   "line": -1,
+   "odds": {
+    "home": 5.05,
+    "draw": 4.15,
+    "away": 1.45
+   },
+   "first": {
+    "dir": "away",
+    "cn": "让负",
+    "prob": 0.5833
+   },
+   "second": {
+    "dir": "draw",
+    "cn": "让平",
+    "prob": 0.2212
+   },
+   "draw_prob": 0.2048
+  },
+  "top_scores": [
+   {
+    "score": "1-1",
+    "prob": 0.1422
+   },
+   {
+    "score": "0-0",
+    "prob": 0.0938
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0908
+   },
+   {
+    "score": "2-1",
+    "prob": 0.087
+   },
+   {
+    "score": "0-1",
+    "prob": 0.0746
+   }
+  ],
+  "k_dist": 0,
+  "k_dist_prob": 0.2974,
+  "k_rec": 1,
+  "k_rec_prob": 0.2048,
+  "k_consistent": false,
+  "band": [
+   {
+    "score": "1-0",
+    "prob": 0.0908
+   },
+   {
+    "score": "2-1",
+    "prob": 0.087
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0236
+   }
+  ],
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "top2": [
+    2,
+    1
+   ],
+   "p": [
+    0.2698,
+    0.1654
+   ]
+  },
+  "htft_top3": [
+   {
+    "path": "胜胜",
+    "prob": 0.2115
+   },
+   {
+    "path": "平胜",
+    "prob": 0.1782
+   },
+   {
+    "path": "平平",
+    "prob": 0.1754
+   }
+  ],
+  "ht_scores": [
+   {
+    "score": "0-0",
+    "prob": 0.3899
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1873
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1574
+   }
+  ],
+  "confidence": "★"
+ },
+ {
+  "num": "周三003",
+  "league": "日乙",
+  "home": "大宫松鼠",
+  "away": "富山胜利",
+  "kickoff": "2026-10-21 18:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "lambda_home": 1.76,
+  "lambda_away": 0.81,
+  "lambda_total": 2.57,
+  "lambda_source": "fundamental(rule79)",
+  "rule76": null,
+  "value_mult": null,
+  "model_prob": {
+   "home": 0.5806,
+   "draw": 0.246,
+   "away": 0.1734
+  },
+  "market_prob": {
+   "home": 0.4117,
+   "draw": 0.2412,
+   "away": 0.3471
+  },
+  "primary": {
+   "dir": "home",
+   "cn": "主胜",
+   "prob": 0.5806
+  },
+  "secondary": {
+   "dir": "draw",
+   "cn": "平",
+   "prob": 0.246
+  },
+  "had": {
+   "odds": {
+    "home": 2.15,
+    "draw": 3.67,
+    "away": 2.55
+   },
+   "single_note": ""
+  },
+  "hhad": {
+   "line": -1,
+   "odds": {
+    "home": 4.25,
+    "draw": 4.15,
+    "away": 1.53
+   },
+   "first": {
+    "dir": "away",
+    "cn": "让负",
+    "prob": 0.4003
+   },
+   "second": {
+    "dir": "draw",
+    "cn": "让平",
+    "prob": 0.2565
+   },
+   "draw_prob": 0.2423
+  },
+  "top_scores": [
+   {
+    "score": "1-1",
+    "prob": 0.1233
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1206
+   },
+   {
+    "score": "2-0",
+    "prob": 0.1186
+   },
+   {
+    "score": "2-1",
+    "prob": 0.096
+   },
+   {
+    "score": "0-0",
+    "prob": 0.0908
+   }
+  ],
+  "k_dist": 0,
+  "k_dist_prob": 0.2596,
+  "k_rec": 1,
+  "k_rec_prob": 0.2423,
+  "k_consistent": false,
+  "band": [
+   {
+    "score": "1-0",
+    "prob": 0.1206
+   },
+   {
+    "score": "2-1",
+    "prob": 0.096
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0228
+   }
+  ],
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "top2": [
+    2,
+    1
+   ],
+   "p": [
+    0.267,
+    0.1684
+   ]
+  },
+  "htft_top3": [
+   {
+    "path": "胜胜",
+    "prob": 0.3599
+   },
+   {
+    "path": "平胜",
+    "prob": 0.2064
+   },
+   {
+    "path": "平平",
+    "prob": 0.1569
+   }
+  ],
+  "ht_scores": [
+   {
+    "score": "0-0",
+    "prob": 0.3264
+   },
+   {
+    "score": "1-0",
+    "prob": 0.2374
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1028
+   }
+  ],
+  "confidence": "★"
+ },
+ {
+  "num": "周三004",
+  "league": "欧冠",
+  "home": "科莫",
+  "away": "曼联",
+  "kickoff": "2026-10-22 00:45:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "lambda_home": 2.441,
+  "lambda_away": 1.382,
+  "lambda_total": 3.823,
+  "lambda_source": "fundamental(rule79)",
+  "rule76": null,
+  "value_mult": 0.971,
+  "model_prob": {
+   "home": 0.5854,
+   "draw": 0.1942,
+   "away": 0.2205
+  },
+  "market_prob": {
+   "home": 0.4118,
+   "draw": 0.2566,
+   "away": 0.3316
+  },
+  "primary": {
+   "dir": "home",
+   "cn": "主胜",
+   "prob": 0.5854
+  },
+  "secondary": {
+   "dir": "draw",
+   "cn": "平",
+   "prob": 0.1942
+  },
+  "had": {
+   "odds": {
+    "home": 2.15,
+    "draw": 3.45,
+    "away": 2.67
+   },
+   "single_note": ""
+  },
+  "hhad": {
+   "line": -1,
+   "odds": {
+    "home": 4.45,
+    "draw": 4,
+    "away": 1.53
+   },
+   "first": {
+    "dir": "away",
+    "cn": "让负",
+    "prob": 0.3924
+   },
+   "second": {
+    "dir": "draw",
+    "cn": "让平",
+    "prob": 0.2109
+   },
+   "draw_prob": 0.2013
+  },
+  "top_scores": [
+   {
+    "score": "2-1",
+    "prob": 0.09
+   },
+   {
+    "score": "1-1",
+    "prob": 0.0833
+   },
+   {
+    "score": "3-1",
+    "prob": 0.0732
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0651
+   },
+   {
+    "score": "2-2",
+    "prob": 0.0622
+   }
+  ],
+  "k_dist": 0,
+  "k_dist_prob": 0.2059,
+  "k_rec": 1,
+  "k_rec_prob": 0.2013,
+  "k_consistent": false,
+  "band": [
+   {
+    "score": "2-1",
+    "prob": 0.09
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0506
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0438
+   }
+  ],
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "top2": [
+    3,
+    4
+   ],
+   "p": [
+    0.2036,
+    0.1946
+   ]
+  },
+  "htft_top3": [
+   {
+    "path": "胜胜",
+    "prob": 0.3635
+   },
+   {
+    "path": "平胜",
+    "prob": 0.1789
+   },
+   {
+    "path": "负负",
+    "prob": 0.1068
+   }
+  ],
+  "ht_scores": [
+   {
+    "score": "0-0",
+    "prob": 0.1949
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1807
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1382
+   }
+  ],
+  "confidence": "★★"
+ },
+ {
+  "num": "周三005",
+  "league": "欧冠",
+  "home": "里尔",
+  "away": "加拉塔萨",
+  "kickoff": "2026-10-22 00:45:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "lambda_home": 1.761,
+  "lambda_away": 1.441,
+  "lambda_total": 3.202,
+  "lambda_source": "fundamental(rule79)",
+  "rule76": {
+   "side": "away",
+   "mult": 0.95,
+   "gap": 1,
+   "note": "土超L2 vs 法甲L1，等级差1档，加拉塔萨雷攻击λ×0.95"
+  },
+  "value_mult": 0.943,
+  "model_prob": {
+   "home": 0.4443,
+   "draw": 0.2374,
+   "away": 0.3183
+  },
+  "market_prob": {
+   "home": 0.466,
+   "draw": 0.253,
+   "away": 0.2811
+  },
+  "primary": {
+   "dir": "home",
+   "cn": "主胜",
+   "prob": 0.4443
+  },
+  "secondary": {
+   "dir": "away",
+   "cn": "客胜",
+   "prob": 0.3183
+  },
+  "had": {
+   "odds": {
+    "home": 1.9,
+    "draw": 3.5,
+    "away": 3.15
+   },
+   "single_note": ""
+  },
+  "hhad": {
+   "line": -1,
+   "odds": {
+    "home": 3.7,
+    "draw": 3.8,
+    "away": 1.68
+   },
+   "first": {
+    "dir": "away",
+    "cn": "让负",
+    "prob": 0.5475
+   },
+   "second": {
+    "dir": "home",
+    "cn": "让胜",
+    "prob": 0.2423
+   },
+   "draw_prob": 0.1968
+  },
+  "top_scores": [
+   {
+    "score": "1-1",
+    "prob": 0.1167
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0909
+   },
+   {
+    "score": "1-2",
+    "prob": 0.0744
+   },
+   {
+    "score": "2-2",
+    "prob": 0.0655
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0631
+   }
+  ],
+  "k_dist": 0,
+  "k_dist_prob": 0.258,
+  "k_rec": 1,
+  "k_rec_prob": 0.1968,
+  "k_consistent": false,
+  "band": [
+   {
+    "score": "2-1",
+    "prob": 0.0909
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0582
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0384
+   }
+  ],
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "top2": [
+    3,
+    2
+   ],
+   "p": [
+    0.2226,
+    0.222
+   ]
+  },
+  "htft_top3": [
+   {
+    "path": "胜胜",
+    "prob": 0.2583
+   },
+   {
+    "path": "负负",
+    "prob": 0.1716
+   },
+   {
+    "path": "平胜",
+    "prob": 0.1554
+   }
+  ],
+  "ht_scores": [
+   {
+    "score": "0-0",
+    "prob": 0.2526
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1718
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1377
+   }
+  ],
+  "confidence": "★★"
+ },
+ {
+  "num": "周三006",
+  "league": "西甲",
+  "home": "莱万特",
+  "away": "毕尔巴鄂",
+  "kickoff": "2026-10-22 02:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "lambda_home": 0.846,
+  "lambda_away": 0.898,
+  "lambda_total": 1.743,
+  "lambda_source": "fundamental(rule79)",
+  "rule76": null,
+  "value_mult": null,
+  "model_prob": {
+   "home": 0.2971,
+   "draw": 0.3782,
+   "away": 0.3247
+  },
+  "market_prob": {
+   "home": 0.2668,
+   "draw": 0.2858,
+   "away": 0.4474
+  },
+  "primary": {
+   "dir": "draw",
+   "cn": "平",
+   "prob": 0.3782
+  },
+  "secondary": {
+   "dir": "away",
+   "cn": "客胜",
+   "prob": 0.3247
+  },
+  "had": {
+   "odds": {
+    "home": 3.32,
+    "draw": 3.1,
+    "away": 1.98
+   },
+   "single_note": ""
+  },
+  "hhad": {
+   "line": 1,
+   "odds": {
+    "home": 1.64,
+    "draw": 3.6,
+    "away": 4.15
+   },
+   "first": {
+    "dir": "home",
+    "cn": "让胜",
+    "prob": 0.6532
+   },
+   "second": {
+    "dir": "draw",
+    "cn": "让平",
+    "prob": 0.2247
+   },
+   "draw_prob": 0.2074
+  },
+  "top_scores": [
+   {
+    "score": "0-0",
+    "prob": 0.1923
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1501
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1398
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1307
+   },
+   {
+    "score": "0-2",
+    "prob": 0.0705
+   }
+  ],
+  "k_dist": 0,
+  "k_dist_prob": 0.3697,
+  "k_rec": 0,
+  "k_rec_prob": 0.3697,
+  "k_consistent": true,
+  "band": [
+   {
+    "score": "0-0",
+    "prob": 0.1923
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1501
+   },
+   {
+    "score": "2-2",
+    "prob": 0.0252
+   }
+  ],
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "top2": [
+    2,
+    1
+   ],
+   "p": [
+    0.2831,
+    0.2705
+   ]
+  },
+  "htft_top3": [
+   {
+    "path": "平平",
+    "prob": 0.2623
+   },
+   {
+    "path": "平负",
+    "prob": 0.1693
+   },
+   {
+    "path": "负负",
+    "prob": 0.1634
+   }
+  ],
+  "ht_scores": [
+   {
+    "score": "0-0",
+    "prob": 0.523
+   },
+   {
+    "score": "0-1",
+    "prob": 0.1685
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1583
+   }
+  ],
+  "confidence": "★"
+ },
+ {
+  "num": "周三007",
+  "league": "欧冠",
+  "home": "皇马",
+  "away": "莱红牛",
+  "kickoff": "2026-10-22 03:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "lambda_home": 3.433,
+  "lambda_away": 1.391,
+  "lambda_total": 4.824,
+  "lambda_source": "fundamental(rule79)",
+  "rule76": null,
+  "value_mult": 1.066,
+  "model_prob": {
+   "home": 0.7122,
+   "draw": 0.1404,
+   "away": 0.1475
+  },
+  "market_prob": {
+   "home": 0.7632,
+   "draw": 0.1362,
+   "away": 0.1006
+  },
+  "primary": {
+   "dir": "home",
+   "cn": "主胜",
+   "prob": 0.7122
+  },
+  "secondary": {
+   "dir": "away",
+   "cn": "客胜",
+   "prob": 0.1475
+  },
+  "had": {
+   "odds": {
+    "home": 1.16,
+    "draw": 6.5,
+    "away": 8.8
+   },
+   "single_note": ""
+  },
+  "hhad": {
+   "line": -2,
+   "odds": {
+    "home": 2.15,
+    "draw": 4.35,
+    "away": 2.3
+   },
+   "first": {
+    "dir": "draw",
+    "cn": "让平",
+    "prob": 0.1853
+   },
+   "second": {
+    "dir": "away",
+    "cn": "让负",
+    "prob": 0.4128
+   },
+   "draw_prob": 0.1853
+  },
+  "top_scores": [
+   {
+    "score": "3-1",
+    "prob": 0.0754
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0659
+   },
+   {
+    "score": "4-1",
+    "prob": 0.0647
+   },
+   {
+    "score": "3-0",
+    "prob": 0.0542
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0524
+   }
+  ],
+  "k_dist": 2,
+  "k_dist_prob": 0.1853,
+  "k_rec": 2,
+  "k_rec_prob": 0.1853,
+  "k_consistent": true,
+  "band": [
+   {
+    "score": "3-1",
+    "prob": 0.0754
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0473
+   },
+   {
+    "score": "4-2",
+    "prob": 0.045
+   }
+  ],
+  "ttg": {
+   "tier": "大球(4-5球)",
+   "top2": [
+    4,
+    5
+   ],
+   "p": [
+    0.1813,
+    0.1749
+   ]
+  },
+  "htft_top3": [
+   {
+    "path": "胜胜",
+    "prob": 0.4585
+   },
+   {
+    "path": "平胜",
+    "prob": 0.1772
+   },
+   {
+    "path": "平平",
+    "prob": 0.0609
+   }
+  ],
+  "ht_scores": [
+   {
+    "score": "1-0",
+    "prob": 0.1619
+   },
+   {
+    "score": "2-0",
+    "prob": 0.1361
+   },
+   {
+    "score": "0-0",
+    "prob": 0.1284
+   }
+  ],
+  "confidence": "★★"
+ },
+ {
+  "num": "周三008",
+  "league": "欧冠",
+  "home": "维拉",
+  "away": "维京",
+  "kickoff": "2026-10-22 03:00:00",
+  "is_single": true,
+  "stadium_status": "部分关闭",
+  "lambda_home": 2.361,
+  "lambda_away": 1.197,
+  "lambda_total": 3.558,
+  "lambda_source": "fundamental(rule79)",
+  "rule76": {
+   "side": "away",
+   "mult": 0.85,
+   "gap": 2,
+   "note": "挪超L3 vs 英超L1，等级差2档（跨级），维京攻击λ×0.85"
+  },
+  "value_mult": 1.548,
+  "model_prob": {
+   "home": 0.5791,
+   "draw": 0.2371,
+   "away": 0.1839
+  },
+  "market_prob": {
+   "home": 0.7697,
+   "draw": 0.1362,
+   "away": 0.0942
+  },
+  "primary": {
+   "dir": "home",
+   "cn": "主胜",
+   "prob": 0.5791
+  },
+  "secondary": {
+   "dir": "draw",
+   "cn": "平",
+   "prob": 0.2371
+  },
+  "had": {
+   "odds": {
+    "home": 1.15,
+    "draw": 6.5,
+    "away": 9.4
+   },
+   "single_note": "单关平局上修+4.0pp（首选-平差距41.2pp）"
+  },
+  "hhad": {
+   "line": -2,
+   "odds": {
+    "home": 2.42,
+    "draw": 4.1,
+    "away": 2.12
+   },
+   "first": {
+    "dir": "away",
+    "cn": "让负",
+    "prob": 0.5868
+   },
+   "second": {
+    "dir": "home",
+    "cn": "让胜",
+    "prob": 0.2269
+   },
+   "draw_prob": 0.1863
+  },
+  "top_scores": [
+   {
+    "score": "2-1",
+    "prob": 0.0951
+   },
+   {
+    "score": "1-1",
+    "prob": 0.091
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0794
+   },
+   {
+    "score": "3-1",
+    "prob": 0.0748
+   },
+   {
+    "score": "3-0",
+    "prob": 0.0625
+   }
+  ],
+  "k_dist": 1,
+  "k_dist_prob": 0.2089,
+  "k_rec": 1,
+  "k_rec_prob": 0.2089,
+  "k_consistent": true,
+  "band": [
+   {
+    "score": "2-1",
+    "prob": 0.0951
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0568
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0448
+   }
+  ],
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "top2": [
+    3,
+    2
+   ],
+   "p": [
+    0.2139,
+    0.1909
+   ]
+  },
+  "htft_top3": [
+   {
+    "path": "胜胜",
+    "prob": 0.3838
+   },
+   {
+    "path": "平胜",
+    "prob": 0.189
+   },
+   {
+    "path": "平平",
+    "prob": 0.1059
+   }
+  ],
+  "ht_scores": [
+   {
+    "score": "0-0",
+    "prob": 0.2167
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1993
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1304
+   }
+  ],
+  "confidence": "★★"
+ },
+ {
+  "num": "周三009",
+  "league": "欧冠",
+  "home": "贝蒂斯",
+  "away": "费耶诺德",
+  "kickoff": "2026-10-22 03:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "lambda_home": 2.056,
+  "lambda_away": 1.877,
+  "lambda_total": 3.933,
+  "lambda_source": "fundamental(rule79)",
+  "rule76": {
+   "side": "away",
+   "mult": 0.97,
+   "gap": 1,
+   "note": "荷甲L2 vs 西甲L1，等级差1档，费耶诺德攻击λ×0.97"
+  },
+  "value_mult": 1.006,
+  "model_prob": {
+   "home": 0.4277,
+   "draw": 0.209,
+   "away": 0.3632
+  },
+  "market_prob": {
+   "home": 0.6189,
+   "draw": 0.1967,
+   "away": 0.1844
+  },
+  "primary": {
+   "dir": "home",
+   "cn": "主胜",
+   "prob": 0.4277
+  },
+  "secondary": {
+   "dir": "away",
+   "cn": "客胜",
+   "prob": 0.3632
+  },
+  "had": {
+   "odds": {
+    "home": 1.43,
+    "draw": 4.5,
+    "away": 4.8
+   },
+   "single_note": ""
+  },
+  "hhad": {
+   "line": -1,
+   "odds": {
+    "home": 2.26,
+    "draw": 3.8,
+    "away": 2.36
+   },
+   "first": {
+    "dir": "away",
+    "cn": "让负",
+    "prob": 0.5693
+   },
+   "second": {
+    "dir": "home",
+    "cn": "让胜",
+    "prob": 0.2432
+   },
+   "draw_prob": 0.1777
+  },
+  "top_scores": [
+   {
+    "score": "1-1",
+    "prob": 0.0854
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0777
+   },
+   {
+    "score": "2-2",
+    "prob": 0.0729
+   },
+   {
+    "score": "1-2",
+    "prob": 0.0709
+   },
+   {
+    "score": "3-1",
+    "prob": 0.0533
+   }
+  ],
+  "k_dist": 0,
+  "k_dist_prob": 0.2279,
+  "k_rec": 1,
+  "k_rec_prob": 0.1777,
+  "k_consistent": false,
+  "band": [
+   {
+    "score": "2-1",
+    "prob": 0.0777
+   },
+   {
+    "score": "3-2",
+    "prob": 0.05
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0305
+   }
+  ],
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "top2": [
+    3,
+    4
+   ],
+   "p": [
+    0.1986,
+    0.1953
+   ]
+  },
+  "htft_top3": [
+   {
+    "path": "胜胜",
+    "prob": 0.2428
+   },
+   {
+    "path": "负负",
+    "prob": 0.1989
+   },
+   {
+    "path": "平胜",
+    "prob": 0.1381
+   }
+  ],
+  "ht_scores": [
+   {
+    "score": "0-0",
+    "prob": 0.1877
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1504
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1403
+   }
+  ],
+  "confidence": "★"
+ },
+ {
+  "num": "周三010",
+  "league": "欧冠",
+  "home": "拜仁",
+  "away": "阿森纳",
+  "kickoff": "2026-10-22 03:00:00",
+  "is_single": true,
+  "stadium_status": "正常",
+  "lambda_home": 2.277,
+  "lambda_away": 1.295,
+  "lambda_total": 3.572,
+  "lambda_source": "fundamental(rule79)",
+  "rule76": null,
+  "value_mult": 0.983,
+  "model_prob": {
+   "home": 0.5463,
+   "draw": 0.2438,
+   "away": 0.2099
+  },
+  "market_prob": {
+   "home": 0.4685,
+   "draw": 0.2494,
+   "away": 0.282
+  },
+  "primary": {
+   "dir": "home",
+   "cn": "主胜",
+   "prob": 0.5463
+  },
+  "secondary": {
+   "dir": "draw",
+   "cn": "平",
+   "prob": 0.2438
+  },
+  "had": {
+   "odds": {
+    "home": 1.89,
+    "draw": 3.55,
+    "away": 3.14
+   },
+   "single_note": "单关平局上修+4.0pp（首选-平差距37.1pp）"
+  },
+  "hhad": {
+   "line": -1,
+   "odds": {
+    "home": 3.65,
+    "draw": 3.8,
+    "away": 1.69
+   },
+   "first": {
+    "dir": "away",
+    "cn": "让负",
+    "prob": 0.4052
+   },
+   "second": {
+    "dir": "draw",
+    "cn": "让平",
+    "prob": 0.2179
+   },
+   "draw_prob": 0.2072
+  },
+  "top_scores": [
+   {
+    "score": "2-1",
+    "prob": 0.0943
+   },
+   {
+    "score": "1-1",
+    "prob": 0.0936
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0728
+   },
+   {
+    "score": "3-1",
+    "prob": 0.0716
+   },
+   {
+    "score": "2-2",
+    "prob": 0.0611
+   }
+  ],
+  "k_dist": 0,
+  "k_dist_prob": 0.2178,
+  "k_rec": 1,
+  "k_rec_prob": 0.2072,
+  "k_consistent": false,
+  "band": [
+   {
+    "score": "2-1",
+    "prob": 0.0943
+   },
+   {
+    "score": "1-0",
+    "prob": 0.0532
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0464
+   }
+  ],
+  "ttg": {
+   "tier": "常规正常球(2-3球)",
+   "top2": [
+    3,
+    4
+   ],
+   "p": [
+    0.2135,
+    0.1906
+   ]
+  },
+  "htft_top3": [
+   {
+    "path": "胜胜",
+    "prob": 0.356
+   },
+   {
+    "path": "平胜",
+    "prob": 0.1816
+   },
+   {
+    "path": "平平",
+    "prob": 0.1096
+   }
+  ],
+  "ht_scores": [
+   {
+    "score": "0-0",
+    "prob": 0.216
+   },
+   {
+    "score": "1-0",
+    "prob": 0.1898
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1352
+   }
+  ],
+  "confidence": "★★"
+ },
+ {
+  "num": "周三011",
+  "league": "欧冠",
+  "home": "里斯本",
+  "away": "LASK林茨",
+  "kickoff": "2026-10-22 03:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "lambda_home": 3.254,
+  "lambda_away": 1.576,
+  "lambda_total": 4.83,
+  "lambda_source": "fundamental(rule79)",
+  "rule76": null,
+  "value_mult": 1.12,
+  "model_prob": {
+   "home": 0.6609,
+   "draw": 0.1537,
+   "away": 0.1854
+  },
+  "market_prob": {
+   "home": 0.7729,
+   "draw": 0.134,
+   "away": 0.093
+  },
+  "primary": {
+   "dir": "home",
+   "cn": "主胜",
+   "prob": 0.6609
+  },
+  "secondary": {
+   "dir": "away",
+   "cn": "客胜",
+   "prob": 0.1854
+  },
+  "had": {
+   "odds": null,
+   "single_note": ""
+  },
+  "hhad": {
+   "line": -2,
+   "odds": {
+    "home": 2.18,
+    "draw": 4.1,
+    "away": 2.35
+   },
+   "first": {
+    "dir": "draw",
+    "cn": "让平",
+    "prob": 0.1807
+   },
+   "second": {
+    "dir": "away",
+    "cn": "让负",
+    "prob": 0.4786
+   },
+   "draw_prob": 0.1807
+  },
+  "top_scores": [
+   {
+    "score": "3-1",
+    "prob": 0.0723
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0666
+   },
+   {
+    "score": "4-1",
+    "prob": 0.0588
+   },
+   {
+    "score": "3-2",
+    "prob": 0.057
+   },
+   {
+    "score": "2-2",
+    "prob": 0.0525
+   }
+  ],
+  "k_dist": 2,
+  "k_dist_prob": 0.1807,
+  "k_rec": 2,
+  "k_rec_prob": 0.1807,
+  "k_consistent": true,
+  "band": [
+   {
+    "score": "3-1",
+    "prob": 0.0723
+   },
+   {
+    "score": "4-2",
+    "prob": 0.0463
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0423
+   }
+  ],
+  "ttg": {
+   "tier": "大球(4-5球)",
+   "top2": [
+    4,
+    5
+   ],
+   "p": [
+    0.1811,
+    0.175
+   ]
+  },
+  "htft_top3": [
+   {
+    "path": "胜胜",
+    "prob": 0.4163
+   },
+   {
+    "path": "平胜",
+    "prob": 0.1727
+   },
+   {
+    "path": "负负",
+    "prob": 0.0778
+   }
+  ],
+  "ht_scores": [
+   {
+    "score": "1-0",
+    "prob": 0.1512
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1335
+   },
+   {
+    "score": "0-0",
+    "prob": 0.1291
+   }
+  ],
+  "confidence": "★★"
+ },
+ {
+  "num": "周三012",
+  "league": "欧冠",
+  "home": "布鲁日",
+  "away": "朗斯",
+  "kickoff": "2026-10-22 03:00:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "lambda_home": 3.033,
+  "lambda_away": 1.092,
+  "lambda_total": 4.124,
+  "lambda_source": "fundamental(rule79)",
+  "rule76": {
+   "side": "home",
+   "mult": 0.94,
+   "gap": 1,
+   "note": "比甲L2 vs 法甲L1，等级差1档，布鲁日攻击λ×0.94"
+  },
+  "value_mult": 0.998,
+  "model_prob": {
+   "home": 0.7218,
+   "draw": 0.1512,
+   "away": 0.127
+  },
+  "market_prob": {
+   "home": 0.4658,
+   "draw": 0.2392,
+   "away": 0.295
+  },
+  "primary": {
+   "dir": "home",
+   "cn": "主胜",
+   "prob": 0.7218
+  },
+  "secondary": {
+   "dir": "draw",
+   "cn": "平",
+   "prob": 0.1512
+  },
+  "had": {
+   "odds": {
+    "home": 1.9,
+    "draw": 3.7,
+    "away": 3
+   },
+   "single_note": ""
+  },
+  "hhad": {
+   "line": -1,
+   "odds": {
+    "home": 3.6,
+    "draw": 3.9,
+    "away": 1.68
+   },
+   "first": {
+    "dir": "home",
+    "cn": "让胜",
+    "prob": 0.5723
+   },
+   "second": {
+    "dir": "away",
+    "cn": "让负",
+    "prob": 0.238
+   },
+   "draw_prob": 0.1827
+  },
+  "top_scores": [
+   {
+    "score": "3-1",
+    "prob": 0.0821
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0812
+   },
+   {
+    "score": "3-0",
+    "prob": 0.0752
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0744
+   },
+   {
+    "score": "4-1",
+    "prob": 0.0622
+   }
+  ],
+  "k_dist": 2,
+  "k_dist_prob": 0.1991,
+  "k_rec": 2,
+  "k_rec_prob": 0.1991,
+  "k_consistent": true,
+  "band": [
+   {
+    "score": "3-1",
+    "prob": 0.0821
+   },
+   {
+    "score": "2-0",
+    "prob": 0.0744
+   },
+   {
+    "score": "4-2",
+    "prob": 0.034
+   }
+  ],
+  "ttg": {
+   "tier": "大球(4-5球)",
+   "top2": [
+    4,
+    3
+   ],
+   "p": [
+    0.195,
+    0.1891
+   ]
+  },
+  "htft_top3": [
+   {
+    "path": "胜胜",
+    "prob": 0.4774
+   },
+   {
+    "path": "平胜",
+    "prob": 0.1924
+   },
+   {
+    "path": "平平",
+    "prob": 0.0725
+   }
+  ],
+  "ht_scores": [
+   {
+    "score": "1-0",
+    "prob": 0.1997
+   },
+   {
+    "score": "0-0",
+    "prob": 0.1699
+   },
+   {
+    "score": "2-0",
+    "prob": 0.1456
+   }
+  ],
+  "confidence": "★★"
+ },
+ {
+  "num": "周三013",
+  "league": "解放者杯",
+  "home": "帕梅拉斯",
+  "away": "弗鲁米嫩",
+  "kickoff": "2026-10-22 08:30:00",
+  "is_single": false,
+  "stadium_status": "正常",
+  "lambda_home": 1.164,
+  "lambda_away": 0.472,
+  "lambda_total": 1.636,
+  "lambda_source": "fundamental(rule79)",
+  "rule76": null,
+  "value_mult": null,
+  "model_prob": {
+   "home": 0.5042,
+   "draw": 0.3519,
+   "away": 0.1439
+  },
+  "market_prob": {
+   "home": 0.5303,
+   "draw": 0.2684,
+   "away": 0.2013
+  },
+  "primary": {
+   "dir": "home",
+   "cn": "主胜",
+   "prob": 0.5042
+  },
+  "secondary": {
+   "dir": "draw",
+   "cn": "平",
+   "prob": 0.3519
+  },
+  "had": {
+   "odds": {
+    "home": 1.67,
+    "draw": 3.3,
+    "away": 4.4
+   },
+   "single_note": ""
+  },
+  "hhad": {
+   "line": -1,
+   "odds": {
+    "home": 3.38,
+    "draw": 3.2,
+    "away": 1.92
+   },
+   "first": {
+    "dir": "away",
+    "cn": "让负",
+    "prob": 0.4674
+   },
+   "second": {
+    "dir": "draw",
+    "cn": "让平",
+    "prob": 0.2949
+   },
+   "draw_prob": 0.281
+  },
+  "top_scores": [
+   {
+    "score": "1-0",
+    "prob": 0.2127
+   },
+   {
+    "score": "0-0",
+    "prob": 0.2086
+   },
+   {
+    "score": "2-0",
+    "prob": 0.1319
+   },
+   {
+    "score": "1-1",
+    "prob": 0.1209
+   },
+   {
+    "score": "0-1",
+    "prob": 0.078
+   }
+  ],
+  "k_dist": 0,
+  "k_dist_prob": 0.3452,
+  "k_rec": 1,
+  "k_rec_prob": 0.281,
+  "k_consistent": false,
+  "band": [
+   {
+    "score": "1-0",
+    "prob": 0.2127
+   },
+   {
+    "score": "2-1",
+    "prob": 0.0623
+   },
+   {
+    "score": "3-2",
+    "prob": 0.0057
+   }
+  ],
+  "ttg": {
+   "tier": "闷战超小球(0-1球)",
+   "top2": [
+    1,
+    2
+   ],
+   "p": [
+    0.2908,
+    0.2746
+   ]
+  },
+  "htft_top3": [
+   {
+    "path": "胜胜",
+    "prob": 0.303
+   },
+   {
+    "path": "平平",
+    "prob": 0.2612
+   },
+   {
+    "path": "平胜",
+    "prob": 0.2149
+   }
+  ],
+  "ht_scores": [
+   {
+    "score": "0-0",
+    "prob": 0.4858
+   },
+   {
+    "score": "1-0",
+    "prob": 0.2439
+   },
+   {
+    "score": "0-1",
+    "prob": 0.0948
+   }
+  ],
+  "confidence": "★★"
+ }
+]

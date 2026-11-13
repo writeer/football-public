@@ -1,0 +1,1616 @@
+[
+  {
+    "match_id": "001",
+    "league": "芬超",
+    "home_team": "塞伊奈",
+    "away_team": "赫尔辛基",
+    "lambda_h": 1.548,
+    "lambda_a": 1.489,
+    "probs": {
+      "home": 38.1,
+      "draw": 28.5,
+      "away": 33.4
+    },
+    "market_probs": {
+      "home": 30.8,
+      "draw": 24.0,
+      "away": 45.2
+    },
+    "top10_scores": [
+      [
+        1,
+        1,
+        13.1
+      ],
+      [
+        2,
+        1,
+        9.0
+      ],
+      [
+        1,
+        2,
+        7.5
+      ],
+      [
+        0,
+        0,
+        6.6
+      ],
+      [
+        2,
+        2,
+        6.1
+      ],
+      [
+        1,
+        0,
+        6.0
+      ],
+      [
+        2,
+        0,
+        5.8
+      ],
+      [
+        0,
+        1,
+        5.2
+      ],
+      [
+        0,
+        2,
+        4.8
+      ],
+      [
+        3,
+        1,
+        4.8
+      ]
+    ],
+    "ht_top5": [
+      [
+        0,
+        0,
+        27.1
+      ],
+      [
+        1,
+        0,
+        16.2
+      ],
+      [
+        0,
+        1,
+        15.5
+      ],
+      [
+        1,
+        1,
+        13.4
+      ],
+      [
+        2,
+        0,
+        6.2
+      ]
+    ],
+    "htft_top3": [
+      [
+        "0:0/1:1",
+        4.9
+      ],
+      [
+        "0:0/2:1",
+        3.5
+      ],
+      [
+        "1:0/1:1",
+        2.9
+      ]
+    ],
+    "total_goals": {
+      "over_2_5": 58.9,
+      "under_2_5": 41.1,
+      "0_goals": 6.3,
+      "1_goal": 11.3,
+      "2_goals": 23.4,
+      "3_goals": 21.8,
+      "4_goals": 17.3,
+      "5_plus": 19.8
+    },
+    "handicap_probs": {
+      "home": 65.7,
+      "draw": 17.0,
+      "away": 17.3
+    },
+    "confidence": "★ 低",
+    "corrections": [
+      "规则27: 主队保级战意 +8%",
+      "规则27: 客队三线作战体能保留 -7%",
+      "规则27: 客队休息仅3天 -8%",
+      "规则27: 主队充分休息 +2%"
+    ],
+    "match_data": {
+      "match_id": "001",
+      "league": "芬超",
+      "home_team": "塞伊奈",
+      "away_team": "赫尔辛基",
+      "home_rank": 11,
+      "away_rank": 3,
+      "odds_home": 2.88,
+      "odds_draw": 3.7,
+      "odds_away": 1.96,
+      "handicap": 1,
+      "handicap_odds_home": 1.66,
+      "handicap_odds_draw": 3.9,
+      "handicap_odds_away": 3.7,
+      "support_home": 0.15,
+      "support_draw": 0.2,
+      "support_away": 0.65,
+      "home_avg_scored": 1.13,
+      "home_avg_conceded": 1.56,
+      "away_avg_scored": 1.65,
+      "away_avg_conceded": 1.18,
+      "home_xg": 1.58,
+      "home_xga": 1.49,
+      "away_xg": 1.53,
+      "away_xga": 1.46,
+      "home_home_scored": 1.25,
+      "home_home_conceded": 1.38,
+      "away_away_scored": 1.88,
+      "away_away_conceded": 1.13,
+      "league_avg_goals": 2.55,
+      "league_home_advantage": 1.22,
+      "league_draw_rate": 0.28,
+      "league_over_2_5": 0.48,
+      "league_top5": [
+        {
+          "score": "1-0",
+          "frequency": 0.092
+        },
+        {
+          "score": "1-1",
+          "frequency": 0.088
+        },
+        {
+          "score": "0-0",
+          "frequency": 0.075
+        },
+        {
+          "score": "2-1",
+          "frequency": 0.068
+        },
+        {
+          "score": "2-0",
+          "frequency": 0.055
+        }
+      ],
+      "h2h_avg_goals": 4.6,
+      "h2h_strong_home_net": null,
+      "home_form": "1胜1平3负",
+      "away_form": "4胜1负",
+      "venue": "OmaSP Stadion, 塞伊奈约基",
+      "pitch": "人工草皮",
+      "capacity": "5,817",
+      "weather": "17°C, 雨渐停, 风速18km/h",
+      "home_motivation": "保级（第11位，急需积分）",
+      "away_motivation": "争冠（第3位，距榜首8分）+欧战牵制",
+      "home_rest_days": 9,
+      "away_rest_days": 3,
+      "home_fatigue": "充分休息",
+      "away_fatigue": "三线作战，周一/周四/周日三赛",
+      "injuries_home": "无官方伤停信息",
+      "injuries_away": "David Ezeh(前锋,伤缺), Eemil Toivonen(伤缺); Nallo(新援可用), Tikkanen(解禁复出), Nylund(伤愈复出)",
+      "lambda_h_base": 1.25,
+      "lambda_a_base": 1.88
+    },
+    "odds_had": {
+      "home": 3.18,
+      "draw": 3.85,
+      "away": 1.8,
+      "source": "sporttery.cn"
+    },
+    "odds_hafu": {
+      "handicap": "+1",
+      "home": 1.78,
+      "draw": 3.8,
+      "away": 3.3,
+      "source": "sporttery.cn"
+    },
+    "odds_crs": {
+      "win": {
+        "1:0": 17.0,
+        "2:0": 22.0,
+        "2:1": 10.5,
+        "3:0": 42.0,
+        "3:1": 22.0,
+        "3:2": 24.0,
+        "4:0": 90.0,
+        "4:1": 55.0,
+        "4:2": 55.0,
+        "5:0": 250.0,
+        "5:1": 120.0,
+        "5:2": 120.0,
+        "win_other": 45.0
+      },
+      "draw": {
+        "0:0": 23.0,
+        "1:1": 8.0,
+        "2:2": 10.5,
+        "3:3": 30.0,
+        "draw_other": 120.0
+      },
+      "lose": {
+        "0:1": 10.5,
+        "0:2": 10.5,
+        "1:2": 7.0,
+        "0:3": 17.0,
+        "1:3": 11.5,
+        "2:3": 17.0,
+        "0:4": 38.0,
+        "1:4": 26.0,
+        "2:4": 38.0,
+        "0:5": 90.0,
+        "1:5": 70.0,
+        "2:5": 80.0,
+        "lose_other": 28.0
+      },
+      "source": "sporttery.cn"
+    },
+    "odds_htft": {
+      "win_win": 4.6,
+      "win_draw": 13.0,
+      "win_lose": 18.0,
+      "draw_win": 7.6,
+      "draw_draw": 7.0,
+      "draw_lose": 5.4,
+      "lose_win": 25.0,
+      "lose_draw": 13.0,
+      "lose_lose": 3.05,
+      "source": "sporttery.cn"
+    },
+    "odds_ttg": {
+      "0": 25.0,
+      "1": 7.4,
+      "2": 4.4,
+      "3": 3.4,
+      "4": 4.35,
+      "5": 6.3,
+      "6": 11.0,
+      "7+": 13.0,
+      "source": "sporttery.cn"
+    },
+    "injuries_h_structured": [
+      {
+        "player_en": "Albin Björkskog",
+        "player_cn": "阿尔宾·比约克斯科格",
+        "position": "前锋/边锋",
+        "injury_type": "伤病(膝关节)",
+        "start_date": "2026-02-22",
+        "duration": "已伤停5个月",
+        "expected_return": "预计赛季报销",
+        "source": "Veikkausliiga官方(veikkausliiga.com)",
+        "conflict_note": "无矛盾，多来源一致"
+      },
+      {
+        "player_en": "Kasper Paananen",
+        "player_cn": "卡斯珀·帕纳宁",
+        "position": "中场",
+        "injury_type": "停赛(累计黄牌-未确认)",
+        "start_date": "不详",
+        "duration": "本轮",
+        "expected_return": "下轮",
+        "source": "球迷屋(qiumiwu.com)单一来源",
+        "conflict_note": "⚠️官方未确认，仅单一来源"
+      }
+    ],
+    "injuries_a_structured": [
+      {
+        "player_en": "David Ezeh",
+        "player_cn": "大卫·埃泽",
+        "position": "前锋",
+        "injury_type": "伤病(长期)",
+        "start_date": "~2026-06-18",
+        "duration": "已伤停~1.5个月",
+        "expected_return": "未明确",
+        "source": "Veikkausliiga官方+SportsMole+球迷屋三源确认",
+        "conflict_note": "无矛盾，19岁前锋9场5球，核心缺阵"
+      },
+      {
+        "player_en": "Eemil Toivonen",
+        "player_cn": "埃米尔·托伊沃宁",
+        "position": "后卫",
+        "injury_type": "伤病(长期)",
+        "start_date": "~2025-06-19",
+        "duration": "已伤停超1年",
+        "expected_return": "未明确",
+        "source": "Veikkausliiga官方+SportsMole",
+        "conflict_note": "无矛盾，超长期伤号"
+      },
+      {
+        "player_en": "Amara Nallo",
+        "player_cn": "阿马拉·纳洛",
+        "position": "后卫",
+        "injury_type": "新援可用(利物浦租借)",
+        "start_date": "N/A",
+        "duration": "N/A",
+        "expected_return": "本场首次可出战",
+        "source": "Veikkausliiga官方",
+        "conflict_note": "正面消息"
+      },
+      {
+        "player_en": "Antton Nylund",
+        "player_cn": "安顿·尼隆德",
+        "position": "中场",
+        "injury_type": "接近复出",
+        "start_date": "~2026-05-03",
+        "duration": "已伤停3个月",
+        "expected_return": "已代表预备队出场",
+        "source": "Veikkausliiga官方",
+        "conflict_note": "正面消息，接近回归"
+      }
+    ],
+    "injury_assessment": {
+      "home": "2人伤停（前锋1/中场1）→ 后防≥3人？否 → 核心缺阵？否(2月已适应) → ≥5人？否 → lambda_h×0.97",
+      "away": "2人确认伤停（前锋1/后卫1）→ 后防≥3人？否 → 核心缺阵？是(Ezeh 9场5球) → 替代者：明显下降 → lambda_a×0.90",
+      "label": "正常"
+    },
+    "rule32_checklist": {
+      "step1_main": true,
+      "step2_away": true,
+      "step3_fotmob": true,
+      "step4_sportsmole": true,
+      "step5_injuries_filled": true,
+      "step6_lambda_adjusted": true,
+      "step7_force_downgrade": false,
+      "step8_source_url": true,
+      "result": "✅ 全部通过(7/8项，第7项不触发)"
+    },
+    "model_version": "v1.9.1",
+    "rules_applied": [
+      "规则0(信息收集前置)",
+      "规则8(模型vs基本面)",
+      "规则15(全玩法赔率)",
+      "规则26(场地天气新闻)",
+      "规则27(战意心理体能)",
+      "规则28(基本面决定论)",
+      "规则31(大球修正)",
+      "规则32(强制伤停核查)"
+    ],
+    "odds_source": "中国体彩官方 sporttery.cn",
+    "odds_update_time": "2026-08-03 13:27-13:44",
+    "injury_search_date": "2026-08-03"
+  },
+  {
+    "match_id": "002",
+    "league": "瑞超",
+    "home_team": "哈尔姆斯",
+    "away_team": "天狼星",
+    "lambda_h": 1.019,
+    "lambda_a": 2.468,
+    "probs": {
+      "home": 13.4,
+      "draw": 19.5,
+      "away": 67.1
+    },
+    "market_probs": {
+      "home": 12.5,
+      "draw": 16.7,
+      "away": 70.8
+    },
+    "top10_scores": [
+      [
+        1,
+        2,
+        9.4
+      ],
+      [
+        1,
+        1,
+        9.2
+      ],
+      [
+        0,
+        2,
+        9.0
+      ],
+      [
+        1,
+        3,
+        7.7
+      ],
+      [
+        0,
+        3,
+        7.6
+      ],
+      [
+        0,
+        1,
+        6.9
+      ],
+      [
+        2,
+        2,
+        4.8
+      ],
+      [
+        1,
+        4,
+        4.8
+      ],
+      [
+        0,
+        4,
+        4.7
+      ],
+      [
+        2,
+        1,
+        4.5
+      ]
+    ],
+    "ht_top5": [
+      [
+        0,
+        0,
+        22.2
+      ],
+      [
+        0,
+        1,
+        21.8
+      ],
+      [
+        0,
+        2,
+        12.9
+      ],
+      [
+        1,
+        1,
+        12.0
+      ],
+      [
+        1,
+        0,
+        8.2
+      ]
+    ],
+    "htft_top3": [
+      [
+        "0:0/1:2",
+        2.9
+      ],
+      [
+        "0:0/1:1",
+        2.9
+      ],
+      [
+        "0:1/1:2",
+        2.9
+      ]
+    ],
+    "total_goals": {
+      "over_2_5": 67.0,
+      "under_2_5": 33.0,
+      "0_goals": 3.9,
+      "1_goal": 9.2,
+      "2_goals": 19.9,
+      "3_goals": 21.9,
+      "4_goals": 18.6,
+      "5_plus": 26.5
+    },
+    "handicap_probs": {
+      "home": 32.9,
+      "draw": 21.2,
+      "away": 45.9
+    },
+    "confidence": "★ 低(规则32强制降级)",
+    "corrections": [
+      "规则27: 主队保级战意 +8%",
+      "规则27: 主队充分休息 +2%",
+      "规则27: 客队不败赛季信心 +3%",
+      "规则27: 主队垫底信心不足 -5%"
+    ],
+    "match_data": {
+      "match_id": "002",
+      "league": "瑞超",
+      "home_team": "哈尔姆斯",
+      "away_team": "天狼星",
+      "home_rank": 16,
+      "away_rank": 1,
+      "odds_home": 7.1,
+      "odds_draw": 5.3,
+      "odds_away": 1.25,
+      "handicap": 1,
+      "handicap_odds_home": 3.1,
+      "handicap_odds_draw": 3.9,
+      "handicap_odds_away": 1.82,
+      "support_home": 0.12,
+      "support_draw": 0.11,
+      "support_away": 0.77,
+      "home_avg_scored": 0.79,
+      "home_avg_conceded": 2.07,
+      "away_avg_scored": 2.86,
+      "away_avg_conceded": 1.21,
+      "home_xg": 1.25,
+      "home_xga": 1.92,
+      "away_xg": 1.7,
+      "away_xga": 1.46,
+      "home_home_scored": 0.79,
+      "home_home_conceded": 2.07,
+      "away_away_scored": 2.86,
+      "away_away_conceded": 1.21,
+      "league_avg_goals": 2.65,
+      "league_home_advantage": 1.2,
+      "league_draw_rate": 0.25,
+      "league_over_2_5": 0.53,
+      "league_top5": [
+        {
+          "score": "2-1",
+          "frequency": 0.09
+        },
+        {
+          "score": "1-1",
+          "frequency": 0.085
+        },
+        {
+          "score": "1-0",
+          "frequency": 0.078
+        },
+        {
+          "score": "2-0",
+          "frequency": 0.065
+        },
+        {
+          "score": "0-1",
+          "frequency": 0.058
+        }
+      ],
+      "h2h_avg_goals": 2.6,
+      "h2h_strong_home_net": null,
+      "home_form": "0胜2平3负",
+      "away_form": "3胜2平0负",
+      "venue": "Örjans Vall, 哈尔姆斯塔德",
+      "pitch": "天然草皮",
+      "capacity": "10,000",
+      "weather": "27°C/17°C, 阵雨, 风力3-4级",
+      "home_motivation": "保级（第16位垫底，距安全区3分）",
+      "away_motivation": "争冠（第1位，不败赛季）",
+      "home_rest_days": 8,
+      "away_rest_days": 8,
+      "home_fatigue": "充分休息",
+      "away_fatigue": "充分休息",
+      "injuries_home": "无伤停（Goal.com）",
+      "injuries_away": "Milleskog(前锋,肩伤,8月中旬复出); Persson(出战成疑); Wikman(不确定)",
+      "lambda_h_base": 0.79,
+      "lambda_a_base": 2.86
+    },
+    "odds_had": {
+      "home": 7.1,
+      "draw": 5.3,
+      "away": 1.25,
+      "source": "sporttery.cn"
+    },
+    "odds_hafu": {
+      "handicap": "+1",
+      "home": 3.12,
+      "draw": 4.0,
+      "away": 1.79,
+      "source": "sporttery.cn"
+    },
+    "odds_crs": {
+      "win": {
+        "1:0": 25.0,
+        "2:0": 45.0,
+        "2:1": 20.0,
+        "3:0": 100.0,
+        "3:1": 60.0,
+        "3:2": 50.0,
+        "4:0": 300.0,
+        "4:1": 175.0,
+        "4:2": 175.0,
+        "5:0": 700.0,
+        "5:1": 600.0,
+        "5:2": 500.0,
+        "win_other": 150.0
+      },
+      "draw": {
+        "0:0": 27.0,
+        "1:1": 10.5,
+        "2:2": 16.0,
+        "3:3": 55.0,
+        "draw_other": 200.0
+      },
+      "lose": {
+        "0:1": 10.0,
+        "0:2": 7.0,
+        "1:2": 7.25,
+        "0:3": 8.75,
+        "1:3": 8.25,
+        "2:3": 18.0,
+        "0:4": 14.0,
+        "1:4": 15.0,
+        "2:4": 29.0,
+        "0:5": 29.0,
+        "1:5": 28.0,
+        "2:5": 60.0,
+        "lose_other": 13.5
+      },
+      "source": "sporttery.cn"
+    },
+    "odds_htft": {
+      "win_win": 12.0,
+      "win_draw": 19.0,
+      "win_lose": 20.0,
+      "draw_win": 17.0,
+      "draw_draw": 9.2,
+      "draw_lose": 4.1,
+      "lose_win": 60.0,
+      "lose_draw": 19.0,
+      "lose_lose": 1.7,
+      "source": "sporttery.cn"
+    },
+    "odds_ttg": {
+      "0": 29.0,
+      "1": 7.5,
+      "2": 4.7,
+      "3": 3.5,
+      "4": 4.2,
+      "5": 6.2,
+      "6": 10.0,
+      "7+": 11.5,
+      "source": "sporttery.cn"
+    },
+    "injuries_h_structured": [
+      {
+        "player_en": "Rami Kaib",
+        "player_cn": "拉米·凯布",
+        "position": "左后卫",
+        "injury_type": "停赛(累计3黄)",
+        "start_date": "本轮",
+        "duration": "本轮停赛",
+        "expected_return": "下轮",
+        "source": "Sirius官网赛前确认(siriusfotboll.se)",
+        "conflict_note": "无矛盾，天狼星官网明确确认，13场出场"
+      },
+      {
+        "player_en": "Rocco Ascone",
+        "player_cn": "罗科·阿斯科内",
+        "position": "中场",
+        "injury_type": "停赛(累计3黄)",
+        "start_date": "本轮",
+        "duration": "本轮停赛",
+        "expected_return": "下轮",
+        "source": "Sirius官网赛前确认",
+        "conflict_note": "无矛盾，14场2球，主力中场"
+      },
+      {
+        "player_en": "Elko Tugjas",
+        "player_cn": "埃尔科·图格亚斯",
+        "position": "后卫",
+        "injury_type": "缺阵(原因不明)",
+        "start_date": "不详",
+        "duration": "不详",
+        "expected_return": "不详",
+        "source": "头条(单一来源)",
+        "conflict_note": "⚠️未交叉验证，0场出场可能为青年队"
+      }
+    ],
+    "injuries_a_structured": [
+      {
+        "player_en": "Melker Heier",
+        "player_cn": "梅尔克·海耶尔",
+        "position": "中场/后腰",
+        "injury_type": "停赛(累计黄牌)",
+        "start_date": "本轮",
+        "duration": "本轮停赛",
+        "expected_return": "下轮",
+        "source": "Fotmob+头条",
+        "conflict_note": "无矛盾，14场0球，主力后腰"
+      },
+      {
+        "player_en": "Joakim Persson",
+        "player_cn": "约阿基姆·佩尔松",
+        "position": "前锋/边锋",
+        "injury_type": "伤缺(大腿肌肉伤)",
+        "start_date": "2026-03",
+        "duration": "已伤停~5个月",
+        "expected_return": "不确定",
+        "source": "Fotmob+Sirius官网",
+        "conflict_note": "3场0球，替补前锋"
+      },
+      {
+        "player_en": "Noel Milleskog",
+        "player_cn": "诺埃尔·米勒斯科格",
+        "position": "右边锋",
+        "injury_type": "已恢复训练但未达比赛状态",
+        "start_date": "2026-06",
+        "duration": "已伤停~2个月",
+        "expected_return": "预计8月中旬",
+        "source": "Sirius官网(siriusfotboll.se)",
+        "conflict_note": "0场出场，长期伤号接近回归"
+      },
+      {
+        "player_en": "Neo Jönsson",
+        "player_cn": "尼奥·约恩松",
+        "position": "前锋",
+        "injury_type": "伤缺(肌肉伤)",
+        "start_date": "不详",
+        "duration": "数周",
+        "expected_return": "数周后",
+        "source": "头条",
+        "conflict_note": "4场1球，替补前锋"
+      },
+      {
+        "player_en": "Matthias Nartey",
+        "player_cn": "马蒂亚斯·纳泰",
+        "position": "中场",
+        "injury_type": "伤缺(踝关节伤)",
+        "start_date": "2026-07中旬",
+        "duration": "已伤停~2周",
+        "expected_return": "不确定",
+        "source": "头条",
+        "conflict_note": "9场0球，轮换中场"
+      },
+      {
+        "player_en": "Marcus Lindberg",
+        "player_cn": "马库斯·林德贝里",
+        "position": "中场",
+        "injury_type": "出战成疑",
+        "start_date": "不详",
+        "duration": "本轮待定",
+        "expected_return": "本轮待定",
+        "source": "头条",
+        "conflict_note": "状态不确定"
+      },
+      {
+        "player_en": "Adam Wikman",
+        "player_cn": "亚当·维克曼",
+        "position": "门将",
+        "injury_type": "伤缺(未知)",
+        "start_date": "不详",
+        "duration": "不详",
+        "expected_return": "不详",
+        "source": "Besoccer(单一来源)",
+        "conflict_note": "⚠️天狼星官网和Fotmob未提及，可能为替补"
+      }
+    ],
+    "injury_assessment": {
+      "home": "3人缺阵（后卫2/中场1）→ 后防≥3人？接近(Kaib+Tugjas) → 核心缺阵？是(Ascone 14场2球) → ≥5人？否 → lambda_h×0.90",
+      "away": "⚠️5+人缺阵（停赛1/伤4-5/门将1）→ 规则32强制触发！→ 置信度强制降为低★ → 但核心阵容完整(主力射手/后防线健康) → 后防≥3人？否 → 核心缺阵？否(Heier有替代) → 替代者：同级别 → lambda_a×0.93(规则18非线性折算)",
+      "label": "客队轻度残阵(≥5人但核心完整)"
+    },
+    "rule32_checklist": {
+      "step1_main": true,
+      "step2_away": true,
+      "step3_fotmob": true,
+      "step4_sportsmole": true,
+      "step5_injuries_filled": true,
+      "step6_lambda_adjusted": true,
+      "step7_force_downgrade": true,
+      "step8_source_url": true,
+      "result": "✅ 全部通过(8/8项)，第7项触发：天狼星5+人伤停强制降级"
+    },
+    "confidence_original": "★★★ 高",
+    "confidence_change_reason": "天狼星5+人伤停触发规则32C强制降级",
+    "model_version": "v1.9.1",
+    "rules_applied": [
+      "规则0(信息收集前置)",
+      "规则8(模型vs基本面)",
+      "规则15(全玩法赔率)",
+      "规则26(场地天气新闻)",
+      "规则27(战意心理体能)",
+      "规则28(基本面决定论)",
+      "规则31(大球修正)",
+      "规则32(强制伤停核查)"
+    ],
+    "odds_source": "中国体彩官方 sporttery.cn",
+    "odds_update_time": "2026-08-03 13:27-13:44",
+    "injury_search_date": "2026-08-03"
+  },
+  {
+    "match_id": "003",
+    "league": "瑞超",
+    "home_team": "佐加顿斯",
+    "away_team": "韦斯特罗",
+    "lambda_h": 2.242,
+    "lambda_a": 1.366,
+    "probs": {
+      "home": 56.7,
+      "draw": 22.1,
+      "away": 21.2
+    },
+    "market_probs": {
+      "home": 64.2,
+      "draw": 19.7,
+      "away": 16.1
+    },
+    "top10_scores": [
+      [
+        2,
+        1,
+        10.4
+      ],
+      [
+        1,
+        1,
+        9.8
+      ],
+      [
+        2,
+        0,
+        7.1
+      ],
+      [
+        3,
+        1,
+        6.8
+      ],
+      [
+        2,
+        2,
+        6.2
+      ],
+      [
+        1,
+        2,
+        5.5
+      ],
+      [
+        1,
+        0,
+        5.2
+      ],
+      [
+        3,
+        0,
+        5.0
+      ],
+      [
+        3,
+        2,
+        4.6
+      ],
+      [
+        4,
+        1,
+        3.8
+      ]
+    ],
+    "ht_top5": [
+      [
+        0,
+        0,
+        21.3
+      ],
+      [
+        1,
+        0,
+        18.3
+      ],
+      [
+        1,
+        1,
+        13.8
+      ],
+      [
+        0,
+        1,
+        10.5
+      ],
+      [
+        2,
+        0,
+        10.0
+      ]
+    ],
+    "htft_top3": [
+      [
+        "0:0/2:1",
+        3.2
+      ],
+      [
+        "0:0/1:1",
+        3.0
+      ],
+      [
+        "1:0/2:1",
+        2.7
+      ]
+    ],
+    "total_goals": {
+      "over_2_5": 69.1,
+      "under_2_5": 30.9,
+      "0_goals": 3.6,
+      "1_goal": 8.0,
+      "2_goals": 19.3,
+      "3_goals": 22.0,
+      "4_goals": 18.6,
+      "5_plus": 28.5
+    },
+    "handicap_probs": {
+      "home": 35.0,
+      "draw": 21.6,
+      "away": 43.3
+    },
+    "confidence": "★★ 中",
+    "corrections": [
+      "规则27: 主队135周年纪念战意 +3%",
+      "规则27: 主队充分休息 +2%"
+    ],
+    "match_data": {
+      "match_id": "003",
+      "league": "瑞超",
+      "home_team": "佐加顿斯",
+      "away_team": "韦斯特罗",
+      "home_rank": 4,
+      "away_rank": 5,
+      "odds_home": 1.38,
+      "odds_draw": 4.5,
+      "odds_away": 5.5,
+      "handicap": -1,
+      "handicap_odds_home": 2.13,
+      "handicap_odds_draw": 3.68,
+      "handicap_odds_away": 2.58,
+      "support_home": 0.66,
+      "support_draw": 0.19,
+      "support_away": 0.15,
+      "home_avg_scored": 2.08,
+      "home_avg_conceded": 1.15,
+      "away_avg_scored": 1.71,
+      "away_avg_conceded": 1.64,
+      "home_xg": 1.9,
+      "home_xga": 1.32,
+      "away_xg": 1.27,
+      "away_xga": 1.57,
+      "home_home_scored": 2.29,
+      "home_home_conceded": 1.29,
+      "away_away_scored": 1.43,
+      "away_away_conceded": 1.57,
+      "league_avg_goals": 2.65,
+      "league_home_advantage": 1.2,
+      "league_draw_rate": 0.25,
+      "league_over_2_5": 0.53,
+      "league_top5": [
+        {
+          "score": "2-1",
+          "frequency": 0.09
+        },
+        {
+          "score": "1-1",
+          "frequency": 0.085
+        },
+        {
+          "score": "1-0",
+          "frequency": 0.078
+        },
+        {
+          "score": "2-0",
+          "frequency": 0.065
+        },
+        {
+          "score": "0-1",
+          "frequency": 0.058
+        }
+      ],
+      "h2h_avg_goals": 2.5,
+      "h2h_strong_home_net": 1.5,
+      "home_form": "3胜2平0负",
+      "away_form": "3胜1平1负",
+      "venue": "3Arena, 斯德哥尔摩",
+      "pitch": "天然草皮",
+      "capacity": "30,000",
+      "weather": "24°C/13°C, 晴天, 风力16km/h",
+      "home_motivation": "争冠（第4位，若胜可升至第2）+135周年纪念",
+      "away_motivation": "争欧战资格（第5位，距前3仅1-3分）",
+      "home_rest_days": 9,
+      "away_rest_days": 9,
+      "home_fatigue": "充分休息",
+      "away_fatigue": "充分休息",
+      "injuries_home": "无伤停（Goal.com）；8人黄牌风险（再1张停赛）",
+      "injuries_away": "无伤停；Ladefoged(9球2助,转会不确定,出战成疑)",
+      "lambda_h_base": 2.29,
+      "lambda_a_base": 1.43
+    },
+    "odds_had": {
+      "home": 1.4,
+      "draw": 4.4,
+      "away": 5.35,
+      "source": "sporttery.cn"
+    },
+    "odds_hafu": {
+      "handicap": "-1",
+      "home": 2.2,
+      "draw": 3.65,
+      "away": 2.5,
+      "source": "sporttery.cn"
+    },
+    "odds_crs": {
+      "win": {
+        "1:0": 9.75,
+        "2:0": 7.75,
+        "2:1": 6.75,
+        "3:0": 11.0,
+        "3:1": 9.0,
+        "3:2": 17.0,
+        "4:0": 18.0,
+        "4:1": 17.0,
+        "4:2": 30.0,
+        "5:0": 35.0,
+        "5:1": 35.0,
+        "5:2": 75.0,
+        "win_other": 18.0
+      },
+      "draw": {
+        "0:0": 23.0,
+        "1:1": 9.5,
+        "2:2": 13.0,
+        "3:3": 45.0,
+        "draw_other": 250.0
+      },
+      "lose": {
+        "0:1": 21.0,
+        "0:2": 36.0,
+        "1:2": 15.0,
+        "0:3": 80.0,
+        "1:3": 45.0,
+        "2:3": 35.0,
+        "0:4": 250.0,
+        "1:4": 125.0,
+        "2:4": 125.0,
+        "0:5": 500.0,
+        "1:5": 350.0,
+        "2:5": 350.0,
+        "lose_other": 95.0
+      },
+      "source": "sporttery.cn"
+    },
+    "odds_htft": {
+      "win_win": 1.92,
+      "win_draw": 17.0,
+      "win_lose": 40.0,
+      "draw_win": 4.3,
+      "draw_draw": 8.0,
+      "draw_lose": 13.5,
+      "lose_win": 19.0,
+      "lose_draw": 17.0,
+      "lose_lose": 9.5,
+      "source": "sporttery.cn"
+    },
+    "odds_ttg": {
+      "0": 23.0,
+      "1": 7.5,
+      "2": 4.4,
+      "3": 3.5,
+      "4": 4.25,
+      "5": 6.35,
+      "6": 10.5,
+      "7+": 13.0,
+      "source": "sporttery.cn"
+    },
+    "injuries_h_structured": [
+      {
+        "player_en": "Peter Langhoff",
+        "player_cn": "彼得·朗霍夫",
+        "position": "中场",
+        "injury_type": "伤缺(臀部伤)",
+        "start_date": "2026-08初",
+        "duration": "数天",
+        "expected_return": "预计8月中旬",
+        "source": "头条+Besoccer",
+        "conflict_note": "5场0球，替补中场"
+      },
+      {
+        "player_en": "Daniel Stensson",
+        "player_cn": "丹尼尔·斯滕松",
+        "position": "中场",
+        "injury_type": "伤缺(身体不适)",
+        "start_date": "不详",
+        "duration": "不详",
+        "expected_return": "不确定",
+        "source": "头条",
+        "conflict_note": "2场0球，替补中场"
+      },
+      {
+        "player_en": "M. Nilsson",
+        "player_cn": "M·尼尔森",
+        "position": "门将",
+        "injury_type": "长期伤缺(肘关节伤)",
+        "start_date": "2025-03-14",
+        "duration": "超1年",
+        "expected_return": "不详",
+        "source": "球迷屋",
+        "conflict_note": "长期伤号，替补门将"
+      }
+    ],
+    "injuries_a_structured": [
+      {
+        "player_en": "Frédéric Nsabiyumva",
+        "player_cn": "弗雷德里克·恩萨比永古姆瓦",
+        "position": "中后卫",
+        "injury_type": "伤缺(脚部伤)",
+        "start_date": "2026-05-18",
+        "duration": "已伤停~2.5个月",
+        "expected_return": "预计8月中旬",
+        "source": "Fotmob+头条",
+        "conflict_note": "8场1球，主力中卫"
+      },
+      {
+        "player_en": "Jonathan Ring",
+        "player_cn": "乔纳森·林格",
+        "position": "中场/前锋",
+        "injury_type": "出战成疑(未知伤病)",
+        "start_date": "2026-06-01",
+        "duration": "已伤停~2个月",
+        "expected_return": "本轮待定",
+        "source": "Fotmob+头条",
+        "conflict_note": "7场0球，轮换球员"
+      },
+      {
+        "player_en": "Moussa Diallo",
+        "player_cn": "穆萨·迪亚洛",
+        "position": "前锋",
+        "injury_type": "伤缺(未知)",
+        "start_date": "2026-04-27",
+        "duration": "已伤停~3个月",
+        "expected_return": "不详",
+        "source": "头条+球迷屋",
+        "conflict_note": "0场0球，替补前锋"
+      }
+    ],
+    "injury_assessment": {
+      "home": "3人伤停（中场2/门将1）→ 后防≥3人？否 → 核心缺阵？否(均替补) → ≥5人？否 → lambda_h×0.98",
+      "away": "3人伤停（后卫1/中场1/前锋1）→ 后防≥3人？否(仅1人) → 核心缺阵？否(Ring出战成疑) → ≥5人？否 → lambda_a×0.95。Ladefoged(9球2助)转会传闻但可出战",
+      "label": "正常"
+    },
+    "rule32_checklist": {
+      "step1_main": true,
+      "step2_away": true,
+      "step3_fotmob": true,
+      "step4_sportsmole": true,
+      "step5_injuries_filled": true,
+      "step6_lambda_adjusted": true,
+      "step7_force_downgrade": false,
+      "step8_source_url": true,
+      "result": "✅ 全部通过(7/8项，第7项不触发)"
+    },
+    "confidence_original": "★★★ 高",
+    "confidence_change_reason": "基本面分析佐加顿斯主场对手多为弱队，赔率过热，模型vs市场差7.5%",
+    "model_version": "v1.9.1",
+    "rules_applied": [
+      "规则0(信息收集前置)",
+      "规则8(模型vs基本面)",
+      "规则15(全玩法赔率)",
+      "规则26(场地天气新闻)",
+      "规则27(战意心理体能)",
+      "规则28(基本面决定论)",
+      "规则31(大球修正)",
+      "规则32(强制伤停核查)"
+    ],
+    "odds_source": "中国体彩官方 sporttery.cn",
+    "odds_update_time": "2026-08-03 13:27-13:44",
+    "injury_search_date": "2026-08-03"
+  },
+  {
+    "match_id": "004",
+    "league": "巴西杯",
+    "home_team": "巴竞技",
+    "away_team": "维多利亚",
+    "lambda_h": 1.286,
+    "lambda_a": 1.025,
+    "probs": {
+      "home": 41.7,
+      "draw": 33.1,
+      "away": 25.2
+    },
+    "market_probs": {
+      "home": 59.8,
+      "draw": 23.9,
+      "away": 16.2
+    },
+    "top10_scores": [
+      [
+        1,
+        1,
+        15.8
+      ],
+      [
+        0,
+        0,
+        12.4
+      ],
+      [
+        1,
+        0,
+        11.0
+      ],
+      [
+        2,
+        0,
+        8.9
+      ],
+      [
+        2,
+        1,
+        8.7
+      ],
+      [
+        0,
+        1,
+        7.6
+      ],
+      [
+        1,
+        2,
+        6.0
+      ],
+      [
+        0,
+        2,
+        4.7
+      ],
+      [
+        2,
+        2,
+        4.2
+      ],
+      [
+        3,
+        0,
+        4.0
+      ]
+    ],
+    "ht_top5": [
+      [
+        0,
+        0,
+        36.6
+      ],
+      [
+        1,
+        0,
+        19.2
+      ],
+      [
+        0,
+        1,
+        15.1
+      ],
+      [
+        1,
+        1,
+        10.7
+      ],
+      [
+        2,
+        0,
+        5.9
+      ]
+    ],
+    "htft_top3": [
+      [
+        "0:0/1:1",
+        7.9
+      ],
+      [
+        "0:0/0:0",
+        6.2
+      ],
+      [
+        "0:0/1:0",
+        5.9
+      ]
+    ],
+    "total_goals": {
+      "over_2_5": 40.1,
+      "under_2_5": 59.9,
+      "0_goals": 11.8,
+      "1_goal": 19.1,
+      "2_goals": 29.0,
+      "3_goals": 20.8,
+      "4_goals": 11.2,
+      "5_plus": 8.1
+    },
+    "handicap_probs": {
+      "home": 20.7,
+      "draw": 22.1,
+      "away": 57.3
+    },
+    "confidence": "★ 低(严重残阵)",
+    "corrections": [
+      "规则27: 客队全力专注杯赛 +5%",
+      "规则27: 客队上轮惨败心理打击 -7%",
+      "杯赛首回合: 平局概率需上修+15-20%"
+    ],
+    "match_data": {
+      "match_id": "004",
+      "league": "巴西杯",
+      "home_team": "巴竞技",
+      "away_team": "维多利亚",
+      "home_rank": 3,
+      "away_rank": 13,
+      "odds_home": 1.48,
+      "odds_draw": 3.7,
+      "odds_away": 5.45,
+      "handicap": -1,
+      "handicap_odds_home": 2.63,
+      "handicap_odds_draw": 3.2,
+      "handicap_odds_away": 2.3,
+      "support_home": 0.67,
+      "support_draw": 0.19,
+      "support_away": 0.14,
+      "home_avg_scored": 1.33,
+      "home_avg_conceded": 0.9,
+      "away_avg_scored": 1.05,
+      "away_avg_conceded": 1.48,
+      "home_xg": 1.33,
+      "home_xga": 0.9,
+      "away_xg": 1.05,
+      "away_xga": 1.48,
+      "home_home_scored": 1.33,
+      "home_home_conceded": 0.9,
+      "away_away_scored": 1.05,
+      "away_away_conceded": 1.48,
+      "league_avg_goals": 2.45,
+      "league_home_advantage": 1.16,
+      "league_draw_rate": 0.28,
+      "league_over_2_5": 0.44,
+      "league_top5": [
+        {
+          "score": "1-0",
+          "frequency": 0.088
+        },
+        {
+          "score": "1-1",
+          "frequency": 0.085
+        },
+        {
+          "score": "0-0",
+          "frequency": 0.072
+        },
+        {
+          "score": "2-1",
+          "frequency": 0.068
+        },
+        {
+          "score": "2-0",
+          "frequency": 0.055
+        }
+      ],
+      "h2h_avg_goals": 2.6,
+      "h2h_strong_home_net": 2.0,
+      "home_form": "4胜1平0负",
+      "away_form": "2胜1平2负",
+      "venue": "Arena da Baixada, 库里蒂巴",
+      "pitch": "天然草皮",
+      "capacity": "42,000",
+      "weather": "18°C, 多云, 风力7km/h",
+      "home_motivation": "巴西杯1/8决赛首回合主场，夺冠雄心（2019年冠军）",
+      "away_motivation": "巴西杯1/8决赛首回合客场，巴甲暂停全力专注杯赛",
+      "home_rest_days": 4,
+      "away_rest_days": 5,
+      "home_fatigue": "巴甲7月31日刚踢完",
+      "away_fatigue": "巴甲7月30日0-4惨败，体能+心理双重打击",
+      "injuries_home": "无伤停（Goal.com/Fotmob）",
+      "injuries_away": "Cacá(中卫,红牌停赛但可出战巴西杯), Luan Cândido(左后卫,红牌但可出战巴西杯); 0-4惨败后士气低落",
+      "lambda_h_base": 1.33,
+      "lambda_a_base": 1.05,
+      "is_cup": true,
+      "cup_first_leg": true
+    },
+    "odds_had": {
+      "home": 1.46,
+      "draw": 3.7,
+      "away": 5.75,
+      "source": "sporttery.cn"
+    },
+    "odds_hafu": {
+      "handicap": "-1",
+      "home": 2.56,
+      "draw": 3.2,
+      "away": 2.35,
+      "source": "sporttery.cn"
+    },
+    "odds_crs": {
+      "win": {
+        "1:0": 5.25,
+        "2:0": 6.0,
+        "2:1": 6.5,
+        "3:0": 10.5,
+        "3:1": 11.0,
+        "3:2": 32.0,
+        "4:0": 25.0,
+        "4:1": 30.0,
+        "4:2": 65.0,
+        "5:0": 65.0,
+        "5:1": 75.0,
+        "5:2": 150.0,
+        "win_other": 65.0
+      },
+      "draw": {
+        "0:0": 9.5,
+        "1:1": 7.25,
+        "2:2": 19.0,
+        "3:3": 90.0,
+        "draw_other": 550.0
+      },
+      "lose": {
+        "0:1": 12.5,
+        "0:2": 30.0,
+        "1:2": 18.0,
+        "0:3": 90.0,
+        "1:3": 55.0,
+        "2:3": 60.0,
+        "0:4": 350.0,
+        "1:4": 250.0,
+        "2:4": 300.0,
+        "0:5": 1000.0,
+        "1:5": 650.0,
+        "2:5": 750.0,
+        "lose_other": 300.0
+      },
+      "source": "sporttery.cn"
+    },
+    "odds_htft": {
+      "win_win": 2.1,
+      "win_draw": 18.0,
+      "win_lose": 55.0,
+      "draw_win": 3.9,
+      "draw_draw": 6.0,
+      "draw_lose": 12.0,
+      "lose_win": 25.0,
+      "lose_draw": 18.0,
+      "lose_lose": 9.75,
+      "source": "sporttery.cn"
+    },
+    "odds_ttg": {
+      "0": 10.0,
+      "1": 4.4,
+      "2": 3.25,
+      "3": 3.55,
+      "4": 5.75,
+      "5": 11.0,
+      "6": 22.0,
+      "7+": 36.0,
+      "source": "sporttery.cn"
+    },
+    "injuries_h_structured": [
+      {
+        "player_en": "Mycael",
+        "player_cn": "迈卡尔",
+        "position": "门将(替补)",
+        "injury_type": "伤病(腿部手术恢复)",
+        "start_date": "2026-05月底",
+        "duration": "已伤停~2个月",
+        "expected_return": "预计8月中旬",
+        "source": "Fotmob+Minuto Parana+Notícias ao Máximo",
+        "conflict_note": "无矛盾，替补门将影响极小"
+      }
+    ],
+    "injuries_a_structured": [
+      {
+        "player_en": "Nathan Mendes",
+        "player_cn": "内森·门德斯",
+        "position": "右后卫",
+        "injury_type": "伤病(左膝十字韧带重建手术)",
+        "start_date": "2026上半年",
+        "duration": "数月",
+        "expected_return": "赛季报销可能",
+        "source": "Leão da Barra+Meu Vitória+Bahia Notícias",
+        "conflict_note": "无矛盾，主力右后卫"
+      },
+      {
+        "player_en": "Rúben Ismael",
+        "player_cn": "鲁本·伊斯梅尔",
+        "position": "中卫",
+        "injury_type": "伤病(左膝十字韧带手术康复)",
+        "start_date": "~2025下半年",
+        "duration": "近1年",
+        "expected_return": "接近复出但无确认日期",
+        "source": "同上",
+        "conflict_note": "无矛盾，康复最后阶段"
+      },
+      {
+        "player_en": "Camutanga",
+        "player_cn": "卡穆坦加",
+        "position": "中卫",
+        "injury_type": "伤病(足部Lisfranc损伤,已手术)",
+        "start_date": "不详",
+        "duration": "数月",
+        "expected_return": "预计2026-10月中旬",
+        "source": "同上+Fotmob",
+        "conflict_note": "无矛盾，主力中卫"
+      },
+      {
+        "player_en": "Edu",
+        "player_cn": "埃杜",
+        "position": "后卫",
+        "injury_type": "伤病(左脚跟腱重建手术)",
+        "start_date": "不详",
+        "duration": "不详",
+        "expected_return": "未确认",
+        "source": "Leão da Barra+Meu Vitória",
+        "conflict_note": "无矛盾"
+      },
+      {
+        "player_en": "Dudu",
+        "player_cn": "杜杜",
+        "position": "中场",
+        "injury_type": "伤病(腰椎区域手术)",
+        "start_date": "不详",
+        "duration": "不详",
+        "expected_return": "未确认",
+        "source": "同上",
+        "conflict_note": "无矛盾"
+      },
+      {
+        "player_en": "Anderson Pato",
+        "player_cn": "安德森·帕托",
+        "position": "前锋",
+        "injury_type": "伤病(右膝半月板手术)",
+        "start_date": "不详",
+        "duration": "数周",
+        "expected_return": "预计8月中旬",
+        "source": "同上+Fotmob",
+        "conflict_note": "无矛盾"
+      },
+      {
+        "player_en": "Walace",
+        "player_cn": "瓦拉斯",
+        "position": "中场",
+        "injury_type": "家庭原因(儿子意外需手术)",
+        "start_date": "本轮",
+        "duration": "本轮",
+        "expected_return": "不详",
+        "source": "Bahia Notícias",
+        "conflict_note": "非伤停，主力中场缺阵"
+      },
+      {
+        "player_en": "Tomás Pochettino",
+        "player_cn": "托马斯·波凯蒂诺",
+        "position": "中场",
+        "injury_type": "巴西杯报名规则限制(每队仅可注册3名已代表其他球队参赛球员)",
+        "start_date": "本轮",
+        "duration": "本轮",
+        "expected_return": "N/A",
+        "source": "Bahia Notícias",
+        "conflict_note": "非伤停，规则限制缺阵"
+      }
+    ],
+    "injury_assessment": {
+      "home": "1人伤停（门将1替补）→ 影响极小 → lambda_h×1.00。正面加成：3名主力伤愈复出(Esquivel/Gustavo/Dias) → lambda_h×1.03",
+      "away": "⚠️严重残阵 8人无法出场（后卫4伤/中场2伤/中场1家庭/中场1规则/前锋1伤）→ 后防≥3人缺阵？是(4名后卫伤停) → 但Cacá和Luan Cândido可出战 → 首发后防线有替代者 → 实际影响从×0.75上修至×0.85(规则18) → ≥7人？是(8人) → 标注'⚠️严重残阵' → lambda_a×0.85。杯赛首回合平局+15-20%，0:0额外+10%",
+      "label": "⚠️严重残阵(8人无法出场，含4名后卫伤停)"
+    },
+    "rule32_checklist": {
+      "step1_main": true,
+      "step2_away": true,
+      "step3_fotmob": true,
+      "step4_sportsmole": true,
+      "step5_injuries_filled": true,
+      "step6_lambda_adjusted": true,
+      "step7_force_downgrade": true,
+      "step8_source_url": true,
+      "result": "✅ 全部通过(8/8项)，第7项触发：维多利亚8人严重残阵强制降级"
+    },
+    "confidence_original": "★ 低",
+    "confidence_change_reason": "维多利亚8人无法出场，后防线4人伤停，规则32C严重残阵",
+    "model_version": "v1.9.1",
+    "rules_applied": [
+      "规则0(信息收集前置)",
+      "规则8(模型vs基本面)",
+      "规则15(全玩法赔率)",
+      "规则26(场地天气新闻)",
+      "规则27(战意心理体能)",
+      "规则28(基本面决定论)",
+      "规则31(大球修正)",
+      "规则32(强制伤停核查)"
+    ],
+    "odds_source": "中国体彩官方 sporttery.cn",
+    "odds_update_time": "2026-08-03 13:27-13:44",
+    "injury_search_date": "2026-08-03"
+  }
+]

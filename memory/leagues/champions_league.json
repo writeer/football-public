@@ -1,0 +1,312 @@
+{
+    "league_info": {
+        "name_cn": "欧洲冠军联赛",
+        "name_en": "UEFA Champions League",
+        "country": "欧洲",
+        "country_code": "EU",
+        "level": "杯赛",
+        "num_teams": 36,
+        "format": "瑞士轮+淘汰赛",
+        "season_period": "9月-次年6月",
+        "is_cross_year": true,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.uefa.com/uefachampionsleague",
+        "governing_body": "欧足联（UEFA）",
+        "competition_tier": 1,
+        "cross_league_level": null,
+        "competition_tier_note": "规则76赛事本身等级（1欧冠精英/2欧联欧协联/3亚冠精英/4解放者杯/5欧国联/6亚运会；None=不适用），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024-2025",
+        "avg_goals_per_match": 2.82,
+        "draw_rate": 0.23,
+        "home_win_rate": 0.45,
+        "away_win_rate": 0.32,
+        "over_2_5_rate": 0.54,
+        "under_2_5_rate": 0.46,
+        "btts_rate": 0.54,
+        "top_scores": [
+            {
+                "score": "2-1",
+                "frequency": 0.085,
+                "direction": "主胜"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.08,
+                "direction": "平局"
+            },
+            {
+                "score": "1-0",
+                "frequency": 0.075,
+                "direction": "主胜"
+            },
+            {
+                "score": "2-0",
+                "frequency": 0.065,
+                "direction": "主胜"
+            },
+            {
+                "score": "3-1",
+                "frequency": 0.06,
+                "direction": "主胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.05,
+            "1_goal": 0.14,
+            "2_goals": 0.24,
+            "3_goals": 0.24,
+            "4_goals": 0.18,
+            "5_plus_goals": 0.15
+        },
+        "avg_home_goals": 1.55,
+        "avg_away_goals": 1.27,
+        "home_advantage_factor": 1.1,
+        "ht_draw_rate": null,
+        "ht_draw_rate_note": "杯赛/淘汰赛为主或赛制混合（小组赛+淘汰赛），单一'半场平局率'不具代表性，规则66不按单值修正。如需可对小组赛阶段单独统计。2026-09-12标注。",
+        "ht_draw_rate_status": "not_applicable",
+        "ht_draw_rate_updated": "2026-09-12",
+        "current_season_statistics": {
+            "season": "2026-2027 联赛阶段前3轮（截至2026-10-20）",
+            "matches_played": 45,
+            "goals_total": 187,
+            "avg_goals_per_match": 4.16,
+            "by_round": [
+                {
+                    "round": 1,
+                    "matches": 18,
+                    "goals": 69,
+                    "avg": 3.83
+                },
+                {
+                    "round": 2,
+                    "matches": 18,
+                    "goals": 78,
+                    "avg": 4.33,
+                    "note": "欧冠单轮进球历史纪录"
+                },
+                {
+                    "round": 3,
+                    "matches": 9,
+                    "goals": 40,
+                    "avg": 4.44,
+                    "note": "仅统计2026-10-20周二9场欧冠；同日003为英冠不计入"
+                }
+            ],
+            "over_2_5_rate_sample": {
+                "sample_matches": 26,
+                "over_2_5": 18,
+                "rate": 0.692,
+                "note": "样本=前两轮17场逐场校验（11场大2.5）+第3轮9场（7场大2.5）；非45场全样本，待补全"
+            },
+            "btts_rate_sample": {
+                "sample_matches": 17,
+                "btts": 10,
+                "rate": 0.588,
+                "note": "仅前两轮17场样本"
+            },
+            "model_baseline_goals": 3.9,
+            "model_baseline_formula": "0.7×4.16 + 0.3×3.2 = 3.872 → 3.9",
+            "model_baseline_scope": "仅2026-27欧冠联赛阶段；淘汰赛恢复2.55",
+            "source": "UEFA.com 第3轮赛事汇总 + ESPN/Transfermarkt 逐场比分 + 体彩赔率文件",
+            "updated": "2026-10-21"
+        }
+    },
+    "match_style": {
+        "tactical_character": "世界最高水平俱乐部赛事。2024-25赛季改制为36队瑞士轮『联赛阶段』（8轮）。强强对话进球偏少，但**强弱对局/豪门对局大球显著**——联赛阶段为争直接晋级（前8）避免打附加赛而狂刷净胜球；小组赛冷门频发，淘汰赛防守导向。主场优势低于联赛平均水平。",
+        "tempo": "快",
+        "physicality": "高",
+        "technical_focus": "极高",
+        "var_usage": "半自动越位技术，VAR使用频率极高且水平最高。",
+        "key_trends": [
+            "第2轮78球创欧冠单轮历史纪录；第3轮周二9场40球（4.44/场）",
+            "2026-27联赛阶段大球化：前3轮45场187球（4.16/场），模型基准按规则80上调至3.9",
+            "瑞士轮新赛制（联赛阶段8轮）",
+            "最高水平俱乐部赛事",
+            "强强对话小球",
+            "强弱对局/豪门对局大球多（刷净胜球避免附加赛）",
+            "淘汰赛防守导向",
+            "小组赛冷门频发"
+        ],
+        "style_tags": [
+            "最高水平",
+            "瑞士轮",
+            "强弱对局大球",
+            "淘汰赛防守",
+            "冷门频发"
+        ]
+    },
+    "league_phase_big_score": {
+        "added_date": "2026-10-15",
+        "source": "用户明确要求记录（2026-10-15）",
+        "conclusion": "欧冠小组赛（现行36队瑞士轮『联赛阶段』）大球多，尤其是强弱对局、豪门对局。",
+        "mechanism": "现行赛制联赛阶段8轮：前8名直接晋级16强；第9-24名须打两回合『淘汰赛附加赛（play-off）』；第25-36名直接淘汰。强队/豪门为避免多打两回合附加赛的体能与伤病消耗，必须全力争取直接晋级席位，遇到弱旅时倾向狂刷净胜球而非保守控场。",
+        "trigger_scenarios": [
+            "豪门 vs 弱旅（身价差≥2倍，或规则76等级差≥2档的跨级对阵）",
+            "豪门处于直接晋级线（前8）边缘、净胜球吃紧时",
+            "联赛阶段中后段（第5-8轮），净胜球竞争白热化时"
+        ],
+        "calibration": {
+            "rule74_tier": "强弱/豪门对局默认由『常规正常球(2-3球)』上移至『大球(4-5球)』；极端碾压可至『超大球(5-6球)』",
+            "lambda_total": "强弱对局λ_total上修至4.0-5.0（常规2.2-2.6基准上浮半档以上）",
+            "ttg_top2": "至少含4球或5球其一（规则34默认TOP2为2球/3球，强弱对局须外扩）",
+            "score_top5": "含净胜≥3的大比分候选（如3-0/4-0/4-1），不得以低比分主导",
+            "handicap": "深盘（让球≥2球）概率上修，净胜球众数上修",
+            "confidence_note": "『大球倾向』与『方向倾向』分开判定：豪门客场/人工草/极端天气仍按L195对客λ下修；大球≠必胜"
+        },
+        "evidence": {
+            "date": "2026-10-13",
+            "sample": "欧冠联赛阶段第2轮8场",
+            "observation": "实力差大/豪门对局4场（005国米vs布鲁日7球、008维京vs拜仁6球、010加拉塔vs巴萨5球、006阿森纳vs里尔3球）全部≥3球、其中3场≥5球；实力接近4场（004朗斯2球、007黄潜4球、009莱比锡1球、011马竞2球）仅1场≥3球——与『强弱对局大球多』判断一致",
+            "ref_lesson": "L198（欧冠大球夜击穿TTG：005七球/008六球/010五球）"
+        }
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 3.8,
+        "avg_red_cards": 0.16,
+        "avg_penalties": 0.3,
+        "referee_style": "裁判水平世界最高，VAR辅助精准。",
+        "first_half_stoppage_avg": 2.0,
+        "second_half_stoppage_avg": 5.2,
+        "stoppage_note": "补时严格，下半场普遍5-7分钟。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "欧冠整体廉洁度极高。"
+            }
+        ],
+        "discipline_features": "红牌停赛1-3场，黄牌累积3张停1场（低于联赛的5张）。",
+        "official_rules": "IFAB规则+欧冠特别规则。",
+        "integrity_rating": "极高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价欧冠'最高水平'，'小组赛冷门多'。彩民认为'淘汰赛小球多'，'强队客胜率偏低'。",
+        "betting_market": {
+            "market_efficiency": "极高",
+            "liquidity": "极高",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主"
+        },
+        "upset_frequency": "中高",
+        "jingcai_tips": [
+            "小组赛冷门多需谨慎",
+            "联赛阶段强弱/豪门对局大球多（争直接晋级刷净胜球）",
+            "淘汰赛防守导向小球为主",
+            "强队客胜率偏低",
+            "瑞士轮新赛制需适应",
+            "主场优势低于联赛"
+        ],
+        "common_sayings": [
+            "欧冠看淘汰赛",
+            "小组赛冷门",
+            "淘汰赛小球"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-08-05",
+        "sources": [
+            "https://www.fbref.com",
+            "https://www.whoscored.com",
+            "https://www.flashscore.com"
+        ],
+        "data_season": "2024-2025",
+        "confidence_level": "中高"
+    },
+    "ttg_analysis_rules": {
+        "rule_id": "规则34",
+        "rule_name": "欧冠总进球数修正——1球是小概率，防冷防3球",
+        "added_date": "2026-08-05",
+        "source": "用户核心洞察 + 2026-08-05欧冠Q3首回合8场回测",
+        "core_logic": "1球只存在于双方都进攻无力+防守差不多的场景(如意甲/巴甲)。欧冠双方都有进攻实力，上半场1:0后下半场落后方压上→后防打开→2:0或1:1。1球路径极窄，3球才是众数。",
+        "backtest_data": {
+            "date": "2026-08-05",
+            "total_matches": 8,
+            "goals_distribution": {
+                "0_goals": {
+                    "count": 1,
+                    "rate": 0.125,
+                    "scenario": "双方严重残阵"
+                },
+                "1_goal": {
+                    "count": 2,
+                    "rate": 0.25,
+                    "scenario": "实力差距大"
+                },
+                "2_goals": {
+                    "count": 0,
+                    "rate": 0.0,
+                    "scenario": "无"
+                },
+                "3_goals": {
+                    "count": 3,
+                    "rate": 0.375,
+                    "scenario": "众数！双方都有进攻实力"
+                },
+                "5_plus_goals": {
+                    "count": 2,
+                    "rate": 0.25,
+                    "scenario": "碾压式大胜"
+                }
+            },
+            "predicted_avg_goals": 1.84,
+            "actual_avg_goals": 3.0,
+            "ttg_hit_rate_before_rule": "0%",
+            "ttg_hit_rate_after_rule_estimated": "50%+"
+        },
+        "ttg_rules": {
+            "default_top2": "2球/3球",
+            "default_top2_prev": "1球/2球(已废弃)",
+            "cold_protection": "防3球(不再是防1球)",
+            "lambda_total_range": "2.2-2.6",
+            "lambda_total_range_prev": "1.7-2.1(偏低,已废弃)"
+        },
+        "one_goal_selection_conditions": {
+            "description": "1球仅在满足以下核心条件至少2条时才可选入TOP2",
+            "core_conditions": [
+                "双方合计伤停≥8人且集中在中前场",
+                "双方近5场场均进球均<1.0",
+                "双方防守型联赛风格(意甲/巴甲型)"
+            ],
+            "auxiliary_condition": "比赛温度≥35°C（辅助参考，非决定性条件）",
+            "note": "温度不是最重要的条件"
+        },
+        "three_goals_boost": {
+            "condition": "双方都有进攻实力(场均进球≥1.2)",
+            "boost": "+5-8%"
+        },
+        "league_cross_reference": {
+            "rule": "小球联赛认知不可跨赛事套用",
+            "small_ball_leagues": [
+                "意甲",
+                "巴甲",
+                "巴西杯"
+            ],
+            "not_applicable_to": [
+                "欧冠",
+                "欧联"
+            ],
+            "reference_table": {
+                "意甲/巴甲/巴西杯": {
+                    "trait": "偏小球，1球常见",
+                    "ttg_top2": "1球/2球"
+                },
+                "欧冠/欧联资格赛": {
+                    "trait": "3球是众数，1球小概率",
+                    "ttg_top2": "2球/3球"
+                },
+                "北欧联赛(芬超/瑞超)": {
+                    "trait": "大球率高",
+                    "ttg_top2": "3球/4球"
+                },
+                "韩职": {
+                    "trait": "中等进球",
+                    "ttg_top2": "2球/3球"
+                }
+            }
+        }
+    }
+}

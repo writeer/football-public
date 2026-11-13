@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周五竞彩3场深度分析 - 2026-07-31</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Segoe UI','Microsoft YaHei',sans-serif; background:#0f1117; color:#e0e0e0; line-height:1.6; }
+.container { max-width:1200px; margin:0 auto; padding:20px; }
+.header { text-align:center; padding:30px 0; border-bottom:2px solid #2a2d35; margin-bottom:30px; }
+.header h1 { font-size:28px; color:#fff; margin-bottom:10px; }
+.header .subtitle { color:#888; font-size:14px; }
+.header .date { color:#FFD700; font-size:16px; margin-top:5px; }
+.match-card { background:#1a1d24; border-radius:12px; padding:25px; margin-bottom:30px; border:1px solid #2a2d35; }
+.match-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; padding-bottom:15px; border-bottom:1px solid #2a2d35; }
+.match-title { font-size:22px; color:#fff; }
+.match-title .vs { color:#FFD700; margin:0 10px; }
+.match-info { font-size:13px; color:#888; }
+.badge { display:inline-block; padding:3px 10px; border-radius:4px; font-size:12px; font-weight:bold; margin-right:5px; }
+.badge-league { background:#1e3a5f; color:#4FC3F7; }
+.badge-conf { padding:3px 10px; border-radius:4px; font-size:12px; font-weight:bold; }
+.section { margin-bottom:20px; }
+.section h3 { font-size:16px; color:#FFD700; margin-bottom:10px; padding-left:10px; border-left:3px solid #FFD700; }
+table { width:100%; border-collapse:collapse; margin-bottom:15px; font-size:13px; }
+th { background:#222530; padding:8px; text-align:center; color:#aaa; font-weight:600; border-bottom:2px solid #2a2d35; }
+td { padding:8px; text-align:center; border-bottom:1px solid #1e2128; }
+tr:hover { background:#1e2128; }
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:15px; }
+.grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:15px; }
+.info-box { background:#1e2128; border-radius:8px; padding:15px; margin-bottom:10px; }
+.info-box h4 { color:#4FC3F7; margin-bottom:8px; font-size:14px; }
+.info-box p { font-size:13px; color:#bbb; }
+.bar-bg { background:#2a2d35; border-radius:3px; height:20px; display:inline-block; vertical-align:middle; }
+.bar-fill { height:100%; border-radius:3px; transition:width 0.5s; }
+.prob-row { display:flex; align-items:center; gap:10px; margin-bottom:5px; }
+.prob-label { width:60px; font-size:13px; text-align:right; }
+.prob-value { width:50px; font-size:13px; font-weight:bold; }
+.score-table td:first-child { font-weight:bold; color:#FFD700; }
+.recommendation { background:linear-gradient(135deg,#1a237e,#0d47a1); border-radius:8px; padding:20px; margin-top:15px; }
+.recommendation h3 { color:#FFD700; border:none; padding:0; margin-bottom:15px; }
+.rec-item { display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.1); }
+.rec-label { color:#aaa; }
+.rec-value { color:#FFD700; font-weight:bold; }
+.warning { background:#2d1b1b; border-left:3px solid #f44336; padding:10px 15px; margin:10px 0; border-radius:4px; font-size:13px; }
+.tip { background:#1b2d1b; border-left:3px solid #4CAF50; padding:10px 15px; margin:10px 0; border-radius:4px; font-size:13px; }
+.disclaimer { text-align:center; padding:20px; color:#666; font-size:12px; margin-top:30px; border-top:1px solid #2a2d35; }
+.injury-table td:nth-child(2) { color:#ff6b6b; }
+.hcp-warn { color:#ff9800; font-size:12px; }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>周五竞彩3场深度分析</h1>
+<div class="subtitle">DC修正泊松 + Skellam + 蒙特卡洛10000场 + Shin校准 + 基本面融合</div>
+<div class="date">2026-07-31 (周五) | 模型版本 v1.7.0</div>
+</div>
+
+<div class="match-card">
+<div class="match-header">
+<div>
+<span class="badge badge-league">挪超第16轮</span>
+<span class="badge badge-conf" style="background:#FF980022;color:#FF9800;border:1px solid #FF980044">周五001 中 ★★</span>
+<span class="match-title">瓦勒伦加 <span class="vs">VS</span> 汉坎</span>
+</div>
+<div class="match-info">
+<div>开赛: 07-31 01:00</div>
+<div>乌勒瓦尔体育场 · 奥斯陆</div>
+</div>
+</div>
+
+<!-- 基本信息 -->
+<div class="section">
+<h3>基本信息</h3>
+<div class="grid-2">
+<div class="info-box">
+<h4>比赛场地</h4>
+<p>体育场: 乌勒瓦尔体育场<br>城市: 奥斯陆<br>草皮: 天然草皮<br>容量: 28,000</p>
+</div>
+<div class="info-box">
+<h4>天气情况</h4>
+<p>21°C，局部多云，降水概率21%，西风22km/h，湿度58%</p>
+</div>
+</div>
+</div>
+
+<!-- 球队近期新闻 -->
+<div class="section">
+<h3>球队近期新闻</h3>
+<div class="grid-2">
+<div class="info-box">
+<h4>瓦勒伦加（主）</h4>
+<p>防线两名主力停赛被迫重组，中卫搭档缺少磨合；前场攻击群全部健康(索瓦尔德森等)，攻强守弱</p>
+</div>
+<div class="info-box">
+<h4>汉坎（客）</h4>
+<p>排名中下游，客场表现一般；近期状态起伏，保级压力不大</p>
+</div>
+</div>
+</div>
+
+<!-- 战意心理与体能分析 (规则27) -->
+<div class="section">
+<h3>战意心理与体能分析</h3>
+<div class="grid-2">
+<div class="info-box">
+<h4>战意不对称</h4>
+<p><b>瓦勒伦加:</b> 中游球队，无明显战意压力；主场作战有一定优势<br><b>汉坎:</b> 排名第10接近降级区，有保级战意加成</p>
+</div>
+<div class="info-box">
+<h4>赛程与体能</h4>
+<p>挪超赛季中段(7月)，比赛密度正常<br>博德主场北极圈城市，客队需长途旅行<br>美职联夏季高温影响体能<br>两队均无一周双赛压力</p>
+</div>
+</div>
+<div class="info-box">
+<h4>心理因素</h4>
+<p>近8次: 2胜4平2负，非常均衡；本赛季首回合汉坎主场1-0胜</p>
+</div>
+</div>
+
+<!-- 伤停详情 -->
+<div class="section">
+<h3>伤停详情（规则25/29 官方信源验证）</h3>
+<table class="injury-table">
+<tr><th>球队</th><th>球员</th><th>位置</th><th>类型</th><th>重要性</th></tr>
+<tr><td>瓦勒伦加</td><td>纳斯贝格</td><td>中卫</td><td>停赛</td><td>主力</td></tr><tr><td>瓦勒伦加</td><td>芬宁松</td><td>边卫</td><td>停赛</td><td>主力</td></tr>
+</table>
+<div class="tip">数据来源: Fotmob / Goal.com / mlssoccer.com | 赛前1小时内须用实际首发复核</div>
+</div>
+
+<!-- 赔率对比 -->
+<div class="section">
+<h3>赔率对比</h3>
+<table>
+<tr><th>赔率类型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>体彩官方</td><td style="color:#FFD700;font-weight:bold">1.49</td><td>4.15</td><td>4.6</td></tr>
+<tr><td>让球(-1)</td><td>2.43</td><td>3.65</td><td>2.25</td></tr>
+</table>
+</div>
+
+<!-- 赔率校准 -->
+<div class="section">
+<h3>赔率校准对比</h3>
+<table>
+<tr><th>方法</th><th>主胜%</th><th>平局%</th><th>客胜%</th><th>说明</th></tr>
+<tr><td>归一化去水</td><td>59.4</td><td>21.3</td><td>19.2</td><td>抽水率12.9%</td></tr>
+<tr><td>Shin去水 ★</td><td style="color:#4FC3F7">54.6</td><td style="color:#4FC3F7">23.5</td><td style="color:#4FC3F7">22.0</td><td>z≈0.03</td></tr>
+</table>
+</div>
+
+<!-- 球队实力与xG -->
+<div class="section">
+<h3>球队实力与xG校准分析</h3>
+<div class="grid-2">
+<div class="info-box">
+<h4>瓦勒伦加（主）</h4>
+<p>排名: 第7/20分<br>战绩: 14场6胜2平6负，进22失24<br>近期: 近5场: 胜胜负胜负<br>xG: 1.75 | 实际进球: 1.65 | 偏离: +0.10<br>xGA: 1.46 | 实际失球: 1.69 | 偏离: -0.23</p>
+</div>
+<div class="info-box">
+<h4>汉坎（客）</h4>
+<p>排名: 第10/18分<br>战绩: 14场5胜3平6负，进17失20<br>近期: 近5场: 负胜负胜负<br>xG: 1.3 | 实际进球: 1.25 | 偏离: +0.05<br>xGA: 1.45 | 实际失球: 1.35 | 偏离: +0.10</p>
+</div>
+</div>
+<div class="info-box">
+<h4>lambda校准结果</h4>
+<p>校准前λ_home: 1.60 → 校准后λ_home: <b style="color:#4CAF50">1.77</b><br>
+校准前λ_away: 1.38 → 校准后λ_away: <b style="color:#f44336">1.52</b><br>
+总进球期望λ_total: <b style="color:#FFD700">3.29</b></p>
+</div>
+</div>
+
+<!-- 模型预测对比 -->
+<div class="section">
+<h3>模型预测对比（核心）</h3>
+<table>
+<tr><th>模型</th><th>主胜%</th><th>平局%</th><th>客胜%</th><th>可视化</th></tr>
+<tr><td>DC修正泊松</td><td>44.7</td><td>21.3</td><td>34.0</td><td><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:44.7%;background:#4CAF50"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:21.3%;background:#FF9800"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:34.0%;background:#f44336"></div></div></td></tr>
+<tr><td>Skellam进球差</td><td>43.9</td><td>22.9</td><td>33.2</td><td><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:43.9%;background:#4CAF50"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:22.9%;background:#FF9800"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:33.2%;background:#f44336"></div></div></td></tr>
+<tr><td>蒙特卡洛10000场</td><td>43.2</td><td>24.2</td><td>32.6</td><td><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:43.2%;background:#4CAF50"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:24.2%;background:#FF9800"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:32.6%;background:#f44336"></div></div></td></tr>
+<tr><td>Shin校准(参考)</td><td>54.6</td><td>23.5</td><td>22.0</td><td><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:54.6%;background:#4CAF50"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:23.5%;background:#FF9800"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:22.0%;background:#f44336"></div></div></td></tr>
+<tr style="background:#222530"><td style="color:#FFD700;font-weight:bold">加权融合</td><td style="color:#FFD700;font-weight:bold">47.9</td><td style="color:#FFD700;font-weight:bold">23.0</td><td style="color:#FFD700;font-weight:bold">29.1</td><td><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:47.9%;background:#FFD700"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:23.0%;background:#FF9800"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:29.1%;background:#f44336"></div></div></td></tr>
+</table>
+<div style="font-size:12px;color:#ff9800;margin-top:5px">模型vs市场分歧: 6.7% - 存在分歧，需关注</div>
+</div>
+
+<!-- 置信度 -->
+<div class="section">
+<h3>置信度与命中概率</h3>
+<div class="info-box">
+<p>置信度评级: <span style="color:#FF9800;font-weight:bold;font-size:16px">中 ★★</span><br>
+模型一致性: 中度一致<br>
+推荐方向: <b style="color:#FFD700">主胜</b> (融合概率 47.9%)</p>
+</div>
+</div>
+
+<!-- 比分TOP10 -->
+<div class="section">
+<h3>比分推荐 TOP10</h3>
+<table class="score-table">
+<tr><th>排名</th><th>比分</th><th>概率</th><th>方向</th></tr>
+<tr><td>1</td><td>1:1</td><td>9.2%</td><td style='color:#FF9800'>平局</td></tr><tr><td>2</td><td>2:1</td><td>8.9%</td><td style='color:#4CAF50'>主胜</td></tr><tr><td>3</td><td>1:2</td><td>7.6%</td><td style='color:#f44336'>客胜</td></tr><tr><td>4</td><td>1:0</td><td>7.4%</td><td style='color:#4CAF50'>主胜</td></tr><tr><td>5</td><td>2:2</td><td>6.7%</td><td style='color:#FF9800'>平局</td></tr><tr><td>6</td><td>0:1</td><td>6.5%</td><td style='color:#f44336'>客胜</td></tr><tr><td>7</td><td>2:0</td><td>5.9%</td><td style='color:#4CAF50'>主胜</td></tr><tr><td>8</td><td>3:1</td><td>5.2%</td><td style='color:#4CAF50'>主胜</td></tr><tr><td>9</td><td>0:2</td><td>4.3%</td><td style='color:#f44336'>客胜</td></tr><tr><td>10</td><td>3:2</td><td>4.0%</td><td style='color:#4CAF50'>主胜</td></tr>
+</table>
+</div>
+
+<!-- 半场比分 -->
+<div class="section">
+<h3>半场比分推荐 TOP3（规则13）</h3>
+<table class="score-table">
+<tr><th>半场比分</th><th>概率</th><th>方向</th></tr>
+<tr><td>0:0</td><td>22.1%</td><td>平局</td></tr><tr><td>1:0</td><td>18.9%</td><td>主胜</td></tr><tr><td>0:1</td><td>16.3%</td><td>客胜</td></tr>
+</table>
+</div>
+
+<!-- 半全场 -->
+<div class="section">
+<h3>半全场推荐 TOP3</h3>
+<table>
+<tr><th>排名</th><th>半全场</th><th>概率</th></tr>
+<tr><td>1</td><td style='color:#FFD700;font-weight:bold'>胜胜</td><td>27.2%</td></tr><tr><td>2</td><td style='color:#FFD700;font-weight:bold'>负负</td><td>20.0%</td></tr><tr><td>3</td><td style='color:#FFD700;font-weight:bold'>平胜</td><td>13.5%</td></tr>
+</table>
+</div>
+
+<!-- 总进球 -->
+<div class="section">
+<h3>总进球预测</h3>
+<div class="info-box">
+<p>大球(2.5): <b style="color:#4CAF50">63.8%</b> | 小球(2.5): <b style="color:#FF9800">36.2%</b><br>
+总进球期望: 3.29球</p>
+</div>
+</div>
+
+<!-- 让球分析 -->
+<div class="section">
+<h3>让球胜平负(-1)</h3>
+<table>
+<tr><th>让球主胜</th><th>让球平</th><th>让球客胜</th></tr>
+<tr><td>23.4%</td><td>21.3%</td><td style="color:#f44336">55.3%</td></tr>
+</table>
+<div class='warning'>让球客胜概率55.3%较高，瓦勒伦加赢1球+概率较低</div></div>
+<div class="section">
+<h3>网友意见精华（已过滤不可靠信息）</h3>
+<div class="info-box">
+<p>头条/知乎倾向主胜，但历史交锋均衡提示冷门可能；部分分析看好汉坎客场拿分</p>
+</div>
+</div>
+
+<div class="recommendation">
+<h3>综合推荐</h3>
+<div class="rec-item"><span class="rec-label">胜平负推荐:</span><span class="rec-value">主胜 (47.9%)</span></div>
+<div class="rec-item"><span class="rec-label">置信度:</span><span class="rec-value">中 ★★</span></div>
+<div class="rec-item"><span class="rec-label">比分推荐:</span><span class="rec-value">1:1 (9.2%) / 2:1 (8.9%) / 1:2 (7.6%)</span></div>
+<div class="rec-item"><span class="rec-label">半全场推荐:</span><span class="rec-value">胜胜 (27.2%)</span></div>
+<div class="rec-item"><span class="rec-label">总进球推荐:</span><span class="rec-value">3-4球</span></div>
+<div class="rec-item"><span class="rec-label">大小球:</span><span class="rec-value">大球 (63.8/36.2)</span></div>
+<div class="rec-item"><span class="rec-label">让球推荐:</span><span class="rec-value">让球客胜</span></div>
+</div>
+
+<div class="warning">
+<b>模型vs市场分歧标注（规则8/28）:</b><br>
+模型融合主胜47.9% vs Shin市场主胜54.6%，分歧6.7%<br>
+基本面方向: 防线两名主力停赛被迫重组，中卫搭档缺少磨合；前场攻击群全部健康(索瓦尔德森等)，攻强守弱...<br>
+决策: 以基本面为裁判，模型与市场方向一致时正常推荐，分歧时标注不确定性
+</div>
+</div>
+<div class="match-card">
+<div class="match-header">
+<div>
+<span class="badge badge-league">挪超第16轮</span>
+<span class="badge badge-conf" style="background:#4CAF5022;color:#4CAF50;border:1px solid #4CAF5044">周五002 高 ★★★</span>
+<span class="match-title">博德闪耀 <span class="vs">VS</span> 利勒斯特罗姆</span>
+</div>
+<div class="match-info">
+<div>开赛: 07-31 03:00</div>
+<div>阿斯姆拉球场 · 博德</div>
+</div>
+</div>
+
+<!-- 基本信息 -->
+<div class="section">
+<h3>基本信息</h3>
+<div class="grid-2">
+<div class="info-box">
+<h4>比赛场地</h4>
+<p>体育场: 阿斯姆拉球场<br>城市: 博德<br>草皮: 天然草皮<br>容量: 8,200</p>
+</div>
+<div class="info-box">
+<h4>天气情况</h4>
+<p>13°C，小雨，降水概率50%，西南风10mph</p>
+</div>
+</div>
+</div>
+
+<!-- 球队近期新闻 -->
+<div class="section">
+<h3>球队近期新闻</h3>
+<div class="grid-2">
+<div class="info-box">
+<h4>博德闪耀（主）</h4>
+<p>头号射手霍格离队，但布莱尼尔德森和赫尔默森接棒；夏歇后4连胜全部零封；上轮客场3-0大胜桑纳菲尤尔</p>
+</div>
+<div class="info-box">
+<h4>利勒斯特罗姆（客）</h4>
+<p>近期输维京、输奥斯陆，防线漏洞大；客场13分排名第三但面对顶级球队实力差距明显；xGA(1.58)远高于实际失球(0.92)，门将超常或运气成分大</p>
+</div>
+</div>
+</div>
+
+<!-- 战意心理与体能分析 (规则27) -->
+<div class="section">
+<h3>战意心理与体能分析</h3>
+<div class="grid-2">
+<div class="info-box">
+<h4>战意不对称</h4>
+<p><b>博德闪耀:</b> 争冠关键期，主场必须赢球巩固榜首；主场胜率83%极强势<br><b>利勒斯特罗姆:</b> 中游排名，客场面对榜首无太大压力；但防线漏洞大</p>
+</div>
+<div class="info-box">
+<h4>赛程与体能</h4>
+<p>挪超赛季中段(7月)，比赛密度正常<br>博德主场北极圈城市，客队需长途旅行<br>美职联夏季高温影响体能<br>两队均无一周双赛压力</p>
+</div>
+</div>
+<div class="info-box">
+<h4>心理因素</h4>
+<p>近10次: 7胜1平2负；本赛季2次交手全胜(联赛2-0, 挪威杯4-0)；主场连续4次赢球场均净胜2球+</p>
+</div>
+</div>
+
+<!-- 伤停详情 -->
+<div class="section">
+<h3>伤停详情（规则25/29 官方信源验证）</h3>
+<table class="injury-table">
+<tr><th>球队</th><th>球员</th><th>位置</th><th>类型</th><th>重要性</th></tr>
+<tr><td colspan='5'>无重大伤停</td></tr>
+</table>
+<div class="tip">数据来源: Fotmob / Goal.com / mlssoccer.com | 赛前1小时内须用实际首发复核</div>
+</div>
+
+<!-- 赔率对比 -->
+<div class="section">
+<h3>赔率对比</h3>
+<table>
+<tr><th>赔率类型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>体彩官方</td><td style="color:#FFD700;font-weight:bold">1.17</td><td>6.1</td><td>9.0</td></tr>
+<tr><td>让球(-2)</td><td>2.45</td><td>4.2</td><td>2.07</td></tr>
+</table>
+</div>
+
+<!-- 赔率校准 -->
+<div class="section">
+<h3>赔率校准对比</h3>
+<table>
+<tr><th>方法</th><th>主胜%</th><th>平局%</th><th>客胜%</th><th>说明</th></tr>
+<tr><td>归一化去水</td><td>75.7</td><td>14.5</td><td>9.8</td><td>抽水率13.0%</td></tr>
+<tr><td>Shin去水 ★</td><td style="color:#4FC3F7">66.1</td><td style="color:#4FC3F7">18.2</td><td style="color:#4FC3F7">15.7</td><td>z≈0.03</td></tr>
+</table>
+</div>
+
+<!-- 球队实力与xG -->
+<div class="section">
+<h3>球队实力与xG校准分析</h3>
+<div class="grid-2">
+<div class="info-box">
+<h4>博德闪耀（主）</h4>
+<p>排名: 第1/32分<br>战绩: 14场10胜2平2负，进33失12<br>近期: 近5场: 胜胜胜胜(夏歇后4连胜零封)<br>xG: 2.25 | 实际进球: 2.38 | 偏离: -0.13<br>xGA: 0.98 | 实际失球: 0.85 | 偏离: +0.13</p>
+</div>
+<div class="info-box">
+<h4>利勒斯特罗姆（客）</h4>
+<p>排名: 第8/19分<br>战绩: 14场5胜4平5负，进21失13<br>近期: 近5场: 负负胜负负<br>xG: 1.52 | 实际进球: 1.51 | 偏离: +0.01<br>xGA: 1.58 | 实际失球: 0.92 | 偏离: +0.66</p>
+</div>
+</div>
+<div class="info-box">
+<h4>lambda校准结果</h4>
+<p>校准前λ_home: 1.92 → 校准后λ_home: <b style="color:#4CAF50">2.21</b><br>
+校准前λ_away: 1.25 → 校准后λ_away: <b style="color:#f44336">1.15</b><br>
+总进球期望λ_total: <b style="color:#FFD700">3.37</b></p>
+</div>
+</div>
+
+<!-- 模型预测对比 -->
+<div class="section">
+<h3>模型预测对比（核心）</h3>
+<table>
+<tr><th>模型</th><th>主胜%</th><th>平局%</th><th>客胜%</th><th>可视化</th></tr>
+<tr><td>DC修正泊松</td><td>62.1</td><td>18.4</td><td>19.6</td><td><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:62.1%;background:#4CAF50"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:18.4%;background:#FF9800"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:19.6%;background:#f44336"></div></div></td></tr>
+<tr><td>Skellam进球差</td><td>61.4</td><td>19.8</td><td>18.9</td><td><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:61.4%;background:#4CAF50"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:19.8%;background:#FF9800"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:18.9%;background:#f44336"></div></div></td></tr>
+<tr><td>蒙特卡洛10000场</td><td>61.3</td><td>20.0</td><td>18.7</td><td><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:61.3%;background:#4CAF50"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:20.0%;background:#FF9800"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:18.7%;background:#f44336"></div></div></td></tr>
+<tr><td>Shin校准(参考)</td><td>66.1</td><td>18.2</td><td>15.7</td><td><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:66.1%;background:#4CAF50"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:18.2%;background:#FF9800"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:15.7%;background:#f44336"></div></div></td></tr>
+<tr style="background:#222530"><td style="color:#FFD700;font-weight:bold">加权融合</td><td style="color:#FFD700;font-weight:bold">65.7</td><td style="color:#FFD700;font-weight:bold">17.7</td><td style="color:#FFD700;font-weight:bold">16.6</td><td><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:65.7%;background:#FFD700"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:17.7%;background:#FF9800"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:16.6%;background:#f44336"></div></div></td></tr>
+</table>
+<div style="font-size:12px;color:#4CAF50;margin-top:5px">模型vs市场分歧: 0.4% - 基本一致</div>
+</div>
+
+<!-- 置信度 -->
+<div class="section">
+<h3>置信度与命中概率</h3>
+<div class="info-box">
+<p>置信度评级: <span style="color:#4CAF50;font-weight:bold;font-size:16px">高 ★★★</span><br>
+模型一致性: 中度一致<br>
+推荐方向: <b style="color:#FFD700">主胜</b> (融合概率 65.7%)</p>
+</div>
+</div>
+
+<!-- 比分TOP10 -->
+<div class="section">
+<h3>比分推荐 TOP10</h3>
+<table class="score-table">
+<tr><th>排名</th><th>比分</th><th>概率</th><th>方向</th></tr>
+<tr><td>1</td><td>2:1</td><td>9.8%</td><td style='color:#4CAF50'>主胜</td></tr><tr><td>2</td><td>2:0</td><td>8.5%</td><td style='color:#4CAF50'>主胜</td></tr><tr><td>3</td><td>1:0</td><td>8.4%</td><td style='color:#4CAF50'>主胜</td></tr><tr><td>4</td><td>1:1</td><td>8.1%</td><td style='color:#FF9800'>平局</td></tr><tr><td>5</td><td>3:1</td><td>7.2%</td><td style='color:#4CAF50'>主胜</td></tr><tr><td>6</td><td>3:0</td><td>6.2%</td><td style='color:#4CAF50'>主胜</td></tr><tr><td>7</td><td>2:2</td><td>5.6%</td><td style='color:#FF9800'>平局</td></tr><tr><td>8</td><td>1:2</td><td>5.1%</td><td style='color:#f44336'>客胜</td></tr><tr><td>9</td><td>0:1</td><td>4.7%</td><td style='color:#f44336'>客胜</td></tr><tr><td>10</td><td>3:2</td><td>4.1%</td><td style='color:#4CAF50'>主胜</td></tr>
+</table>
+</div>
+
+<!-- 半场比分 -->
+<div class="section">
+<h3>半场比分推荐 TOP3（规则13）</h3>
+<table class="score-table">
+<tr><th>半场比分</th><th>概率</th><th>方向</th></tr>
+<tr><td>1:0</td><td>22.6%</td><td>主胜</td></tr><tr><td>0:0</td><td>21.3%</td><td>平局</td></tr><tr><td>0:1</td><td>12.1%</td><td>客胜</td></tr>
+</table>
+</div>
+
+<!-- 半全场 -->
+<div class="section">
+<h3>半全场推荐 TOP3</h3>
+<table>
+<tr><th>排名</th><th>半全场</th><th>概率</th></tr>
+<tr><td>1</td><td style='color:#FFD700;font-weight:bold'>胜胜</td><td>40.3%</td></tr><tr><td>2</td><td style='color:#FFD700;font-weight:bold'>平胜</td><td>17.1%</td></tr><tr><td>3</td><td style='color:#FFD700;font-weight:bold'>负负</td><td>10.9%</td></tr>
+</table>
+</div>
+
+<!-- 总进球 -->
+<div class="section">
+<h3>总进球预测</h3>
+<div class="info-box">
+<p>大球(2.5): <b style="color:#4CAF50">65.3%</b> | 小球(2.5): <b style="color:#FF9800">34.7%</b><br>
+总进球期望: 3.37球</p>
+</div>
+</div>
+
+<!-- 让球分析 -->
+<div class="section">
+<h3>让球胜平负(-2)</h3>
+<table>
+<tr><th>让球主胜</th><th>让球平</th><th>让球客胜</th></tr>
+<tr><td>20.4%</td><td>18.4%</td><td style="color:#f44336">61.2%</td></tr>
+</table>
+<div class='warning'>让球客胜概率61.2%较高，博德闪耀赢2球+概率较低</div></div>
+<div class="section">
+<h3>网友意见精华（已过滤不可靠信息）</h3>
+<div class="info-box">
+<p>一致看好博德闪耀主胜(76%胜率预期)；让球盘-2有分歧，部分认为赢2球+不易</p>
+</div>
+</div>
+
+<div class="recommendation">
+<h3>综合推荐</h3>
+<div class="rec-item"><span class="rec-label">胜平负推荐:</span><span class="rec-value">主胜 (65.7%)</span></div>
+<div class="rec-item"><span class="rec-label">置信度:</span><span class="rec-value">高 ★★★</span></div>
+<div class="rec-item"><span class="rec-label">比分推荐:</span><span class="rec-value">2:1 (9.8%) / 2:0 (8.5%) / 1:0 (8.4%)</span></div>
+<div class="rec-item"><span class="rec-label">半全场推荐:</span><span class="rec-value">胜胜 (40.3%)</span></div>
+<div class="rec-item"><span class="rec-label">总进球推荐:</span><span class="rec-value">3-4球</span></div>
+<div class="rec-item"><span class="rec-label">大小球:</span><span class="rec-value">大球 (65.3/34.7)</span></div>
+<div class="rec-item"><span class="rec-label">让球推荐:</span><span class="rec-value">让球客胜</span></div>
+</div>
+</div>
+<div class="match-card">
+<div class="match-header">
+<div>
+<span class="badge badge-league">美职联常规赛</span>
+<span class="badge badge-conf" style="background:#4CAF5022;color:#4CAF50;border:1px solid #4CAF5044">周五003 高 ★★★</span>
+<span class="match-title">纽约城 <span class="vs">VS</span> 多伦多FC</span>
+</div>
+<div class="match-info">
+<div>开赛: 07-31 07:30</div>
+<div>洋基体育场 · 纽约</div>
+</div>
+</div>
+
+<!-- 基本信息 -->
+<div class="section">
+<h3>基本信息</h3>
+<div class="grid-2">
+<div class="info-box">
+<h4>比赛场地</h4>
+<p>体育场: 洋基体育场<br>城市: 纽约<br>草皮: 天然草皮<br>容量: 27,000</p>
+</div>
+<div class="info-box">
+<h4>天气情况</h4>
+<p>30°C(86°F)，夏季高温，湿度较高</p>
+</div>
+</div>
+</div>
+
+<!-- 球队近期新闻 -->
+<div class="section">
+<h3>球队近期新闻</h3>
+<div class="grid-2">
+<div class="info-box">
+<h4>纽约城（主）</h4>
+<p>近两轮连胜(3-1胜芝加哥火焰)，追平赛季最长三连胜机会；Fernandez 12球2助攻状态火热</p>
+</div>
+<div class="info-box">
+<h4>多伦多FC（客）</h4>
+<p>深陷不胜泥潭；中场核心奥索里奥停赛+多名中后场伤病(5人缺阵)；进攻乏力，客场士气低落</p>
+</div>
+</div>
+</div>
+
+<!-- 战意心理与体能分析 (规则27) -->
+<div class="section">
+<h3>战意心理与体能分析</h3>
+<div class="grid-2">
+<div class="info-box">
+<h4>战意不对称</h4>
+<p><b>纽约城:</b> 东部第5，争取季后赛主场优势，本场必须赢；追平三连胜纪录战意足<br><b>多伦多FC:</b> 东部第14，季后赛希望渺茫，客场士气低落；伤病满营雪上加霜</p>
+</div>
+<div class="info-box">
+<h4>赛程与体能</h4>
+<p>挪超赛季中段(7月)，比赛密度正常<br>博德主场北极圈城市，客队需长途旅行<br>美职联夏季高温影响体能<br>两队均无一周双赛压力</p>
+</div>
+</div>
+<div class="info-box">
+<h4>心理因素</h4>
+<p>近6次交手纽约城全胜；近10次赢6场；多伦多近6次做客纽约城仅赢1场；上赛季主场3-1胜</p>
+</div>
+</div>
+
+<!-- 伤停详情 -->
+<div class="section">
+<h3>伤停详情（规则25/29 官方信源验证）</h3>
+<table class="injury-table">
+<tr><th>球队</th><th>球员</th><th>位置</th><th>类型</th><th>重要性</th></tr>
+<tr><td>纽约城</td><td>莫拉莱斯</td><td>中场</td><td>伤病</td><td>核心</td></tr><tr><td>纽约城</td><td>奥图尔</td><td>后卫</td><td>伤病</td><td>主力</td></tr><tr><td>多伦多FC</td><td>奥索里奥</td><td>中场</td><td>停赛(黄牌)</td><td>核心</td></tr><tr><td>多伦多FC</td><td>戈米斯</td><td>后卫</td><td>伤病</td><td>主力</td></tr><tr><td>多伦多FC</td><td>温格</td><td>后卫</td><td>伤病</td><td>主力</td></tr><tr><td>多伦多FC</td><td>佩雷拉</td><td>后卫</td><td>伤病</td><td>主力</td></tr><tr><td>多伦多FC</td><td>西富恩特斯</td><td>中场</td><td>伤病</td><td>主力</td></tr>
+</table>
+<div class="tip">数据来源: Fotmob / Goal.com / mlssoccer.com | 赛前1小时内须用实际首发复核</div>
+</div>
+
+<!-- 赔率对比 -->
+<div class="section">
+<h3>赔率对比</h3>
+<table>
+<tr><th>赔率类型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>体彩官方</td><td style="color:#FFD700;font-weight:bold">1.65</td><td>3.95</td><td>4.65</td></tr>
+<tr><td>让球(-1)</td><td>2.85</td><td>3.35</td><td>2.15</td></tr>
+</table>
+</div>
+
+<!-- 赔率校准 -->
+<div class="section">
+<h3>赔率校准对比</h3>
+<table>
+<tr><th>方法</th><th>主胜%</th><th>平局%</th><th>客胜%</th><th>说明</th></tr>
+<tr><td>归一化去水</td><td>56.4</td><td>23.6</td><td>20.0</td><td>抽水率7.4%</td></tr>
+<tr><td>Shin去水 ★</td><td style="color:#4FC3F7">51.8</td><td style="color:#4FC3F7">25.3</td><td style="color:#4FC3F7">22.8</td><td>z≈0.03</td></tr>
+</table>
+</div>
+
+<!-- 球队实力与xG -->
+<div class="section">
+<h3>球队实力与xG校准分析</h3>
+<div class="grid-2">
+<div class="info-box">
+<h4>纽约城（主）</h4>
+<p>排名: 东部第5/25分<br>战绩: 17场7胜4平6负，进25失22<br>近期: 近5场: 胜胜负胜负(近2轮连胜)<br>xG: 1.55 | 实际进球: 1.47 | 偏离: +0.08<br>xGA: 1.3 | 实际失球: 1.29 | 偏离: +0.01</p>
+</div>
+<div class="info-box">
+<h4>多伦多FC（客）</h4>
+<p>排名: 东部第14/16分<br>战绩: 17场3胜7平7负，进20失26<br>近期: 近5场: 平负平负负(深陷不胜泥潭)<br>xG: 1.1 | 实际进球: 1.15 | 偏离: -0.05<br>xGA: 1.65 | 实际失球: 1.5 | 偏离: +0.15</p>
+</div>
+</div>
+<div class="info-box">
+<h4>lambda校准结果</h4>
+<p>校准前λ_home: 1.60 → 校准后λ_home: <b style="color:#4CAF50">1.79</b><br>
+校准前λ_away: 1.20 → 校准后λ_away: <b style="color:#f44336">0.84</b><br>
+总进球期望λ_total: <b style="color:#FFD700">2.64</b></p>
+</div>
+</div>
+
+<!-- 模型预测对比 -->
+<div class="section">
+<h3>模型预测对比（核心）</h3>
+<table>
+<tr><th>模型</th><th>主胜%</th><th>平局%</th><th>客胜%</th><th>可视化</th></tr>
+<tr><td>DC修正泊松</td><td>60.5</td><td>21.5</td><td>17.9</td><td><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:60.5%;background:#4CAF50"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:21.5%;background:#FF9800"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:17.9%;background:#f44336"></div></div></td></tr>
+<tr><td>Skellam进球差</td><td>59.9</td><td>22.8</td><td>17.3</td><td><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:59.9%;background:#4CAF50"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:22.8%;background:#FF9800"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:17.3%;background:#f44336"></div></div></td></tr>
+<tr><td>蒙特卡洛10000场</td><td>60.0</td><td>23.0</td><td>17.0</td><td><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:60.0%;background:#4CAF50"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:23.0%;background:#FF9800"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:17.0%;background:#f44336"></div></div></td></tr>
+<tr><td>Shin校准(参考)</td><td>51.8</td><td>25.3</td><td>22.8</td><td><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:51.8%;background:#4CAF50"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:25.3%;background:#FF9800"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:22.8%;background:#f44336"></div></div></td></tr>
+<tr style="background:#222530"><td style="color:#FFD700;font-weight:bold">加权融合</td><td style="color:#FFD700;font-weight:bold">58.4</td><td style="color:#FFD700;font-weight:bold">22.7</td><td style="color:#FFD700;font-weight:bold">18.9</td><td><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:58.4%;background:#FFD700"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:22.7%;background:#FF9800"></div></div><div class="bar-bg" style="width:200px"><div class="bar-fill" style="width:18.9%;background:#f44336"></div></div></td></tr>
+</table>
+<div style="font-size:12px;color:#ff9800;margin-top:5px">模型vs市场分歧: 6.6% - 存在分歧，需关注</div>
+</div>
+
+<!-- 置信度 -->
+<div class="section">
+<h3>置信度与命中概率</h3>
+<div class="info-box">
+<p>置信度评级: <span style="color:#4CAF50;font-weight:bold;font-size:16px">高 ★★★</span><br>
+模型一致性: 中度一致<br>
+推荐方向: <b style="color:#FFD700">主胜</b> (融合概率 58.4%)</p>
+</div>
+</div>
+
+<!-- 比分TOP10 -->
+<div class="section">
+<h3>比分推荐 TOP10</h3>
+<table class="score-table">
+<tr><th>排名</th><th>比分</th><th>概率</th><th>方向</th></tr>
+<tr><td>1</td><td>1:0</td><td>13.5%</td><td style='color:#4CAF50'>主胜</td></tr><tr><td>2</td><td>2:0</td><td>11.5%</td><td style='color:#4CAF50'>主胜</td></tr><tr><td>3</td><td>1:1</td><td>10.2%</td><td style='color:#FF9800'>平局</td></tr><tr><td>4</td><td>2:1</td><td>9.7%</td><td style='color:#4CAF50'>主胜</td></tr><tr><td>5</td><td>3:0</td><td>6.9%</td><td style='color:#4CAF50'>主胜</td></tr><tr><td>6</td><td>0:1</td><td>6.7%</td><td style='color:#f44336'>客胜</td></tr><tr><td>7</td><td>0:0</td><td>6.5%</td><td style='color:#FF9800'>平局</td></tr><tr><td>8</td><td>3:1</td><td>5.8%</td><td style='color:#4CAF50'>主胜</td></tr><tr><td>9</td><td>1:2</td><td>4.6%</td><td style='color:#f44336'>客胜</td></tr><tr><td>10</td><td>2:2</td><td>4.1%</td><td style='color:#FF9800'>平局</td></tr>
+</table>
+</div>
+
+<!-- 半场比分 -->
+<div class="section">
+<h3>半场比分推荐 TOP3（规则13）</h3>
+<table class="score-table">
+<tr><th>半场比分</th><th>概率</th><th>方向</th></tr>
+<tr><td>0:0</td><td>29.9%</td><td>平局</td></tr><tr><td>1:0</td><td>25.2%</td><td>主胜</td></tr><tr><td>0:1</td><td>12.1%</td><td>客胜</td></tr>
+</table>
+</div>
+
+<!-- 半全场 -->
+<div class="section">
+<h3>半全场推荐 TOP3</h3>
+<table>
+<tr><th>排名</th><th>半全场</th><th>概率</th></tr>
+<tr><td>1</td><td style='color:#FFD700;font-weight:bold'>胜胜</td><td>38.1%</td></tr><tr><td>2</td><td style='color:#FFD700;font-weight:bold'>平胜</td><td>19.0%</td></tr><tr><td>3</td><td style='color:#FFD700;font-weight:bold'>平平</td><td>13.6%</td></tr>
+</table>
+</div>
+
+<!-- 总进球 -->
+<div class="section">
+<h3>总进球预测</h3>
+<div class="info-box">
+<p>大球(2.5): <b style="color:#4CAF50">49.1%</b> | 小球(2.5): <b style="color:#FF9800">50.9%</b><br>
+总进球期望: 2.64球</p>
+</div>
+</div>
+
+<!-- 让球分析 -->
+<div class="section">
+<h3>让球胜平负(-1)</h3>
+<table>
+<tr><th>让球主胜</th><th>让球平</th><th>让球客胜</th></tr>
+<tr><td>34.6%</td><td>26.0%</td><td style="color:#f44336">39.5%</td></tr>
+</table>
+</div>
+<div class="section">
+<h3>网友意见精华（已过滤不可靠信息）</h3>
+<div class="info-box">
+<p>一致看好纽约城主胜(58%胜率预期)；多伦多客场被看衰，伤病情况严重</p>
+</div>
+</div>
+
+<div class="recommendation">
+<h3>综合推荐</h3>
+<div class="rec-item"><span class="rec-label">胜平负推荐:</span><span class="rec-value">主胜 (58.4%)</span></div>
+<div class="rec-item"><span class="rec-label">置信度:</span><span class="rec-value">高 ★★★</span></div>
+<div class="rec-item"><span class="rec-label">比分推荐:</span><span class="rec-value">1:0 (13.5%) / 2:0 (11.5%) / 1:1 (10.2%)</span></div>
+<div class="rec-item"><span class="rec-label">半全场推荐:</span><span class="rec-value">胜胜 (38.1%)</span></div>
+<div class="rec-item"><span class="rec-label">总进球推荐:</span><span class="rec-value">2-3球</span></div>
+<div class="rec-item"><span class="rec-label">大小球:</span><span class="rec-value">五五开 (49.1/50.9)</span></div>
+<div class="rec-item"><span class="rec-label">让球推荐:</span><span class="rec-value">让球主胜</span></div>
+</div>
+
+<div class="warning">
+<b>模型vs市场分歧标注（规则8/28）:</b><br>
+模型融合主胜58.4% vs Shin市场主胜51.8%，分歧6.6%<br>
+基本面方向: 近两轮连胜(3-1胜芝加哥火焰)，追平赛季最长三连胜机会；Fernandez 12球2助攻状态火热...<br>
+决策: 以基本面为裁判，模型与市场方向一致时正常推荐，分歧时标注不确定性
+</div>
+</div>
+<div class="disclaimer">
+<p>风险提示: 足球比赛存在极大不确定性，任何模型预测均非100%准确。模型基于历史数据，突发因素(红牌、点球、天气等)无法完全预测。赔率数据可能随时间变化，请以实时数据为准。理性看待预测，切勿沉迷赌博。</p>
+<p>数据来源: 雷速体育/sporttery.cn(赔率) | Goal.com/Sofascore(比赛数据) | Fotmob(伤停) | footystats(xG) | 虎扑/知乎(网友意见)</p>
+<p>模型版本: v1.7.0 | 生成时间: 2026-07-31 | 权重体系: v1.6.0(基本面15%+模型35%+Shin8%+公众7%)</p>
+</div>
+</div>
+</body>
+</html>

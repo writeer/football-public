@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>韩K联第19轮 三场深度分析 | 2026-07-21</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans SC',sans-serif;background:#0f1923;color:#e0e6ed;line-height:1.6;max-width:1100px;margin:0 auto;padding:20px}
+.header{text-align:center;padding:30px 0 20px;border-bottom:2px solid #1e3a5f;margin-bottom:30px}
+.header h1{font-size:1.7em;color:#4fc3f7;font-weight:700}
+.header .sub{color:#78909c;font-size:0.9em;margin-top:6px}
+.match{background:#162230;border-radius:12px;padding:24px;margin-bottom:28px;border:1px solid #1e3a5f;box-shadow:0 4px 20px rgba(0,0,0,0.3)}
+.match-header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid #1e3a5f}
+.match-title{font-size:1.3em;font-weight:700;color:#4fc3f7}
+.match-meta{display:flex;gap:16px;color:#78909c;font-size:0.85em;flex-wrap:wrap}
+.match-meta span{background:#1a3045;padding:3px 10px;border-radius:4px}
+h2{color:#4fc3f7;font-size:1.05em;margin:18px 0 10px;padding-bottom:6px;border-bottom:1px solid #1e3a5f}
+h3{color:#81d4fa;font-size:0.92em;margin:14px 0 8px}
+table{width:100%;border-collapse:collapse;margin:8px 0 14px;font-size:0.85em}
+th{background:#1a3045;color:#4fc3f7;padding:8px 10px;text-align:center;font-weight:500;border:1px solid #1e3a5f;white-space:nowrap}
+td{padding:7px 10px;text-align:center;border:1px solid #1e3a5f;color:#cfd8dc}
+tr:hover{background:#1a3045}
+.highlight{background:#1e3a2f!important;color:#4fc3f7!important;font-weight:700}
+.warn{background:#3a2f1e!important;color:#ffb74d!important}
+.danger{background:#3a1e1e!important;color:#ef5350!important}
+.section{margin:14px 0}
+.section p{color:#b0bec5;font-size:0.88em;margin-bottom:8px}
+.badge{display:inline-block;padding:2px 8px;border-radius:3px;font-size:0.78em;font-weight:500}
+.badge-high{background:#1b5e20;color:#81c784}
+.badge-mid{background:#e65100;color:#ffb74d}
+.badge-low{background:#b71c1c;color:#ef9a9a}
+.rec-box{background:linear-gradient(135deg,#162230,#1a3045);border:2px solid #2a4a6f;border-radius:10px;padding:18px;margin:16px 0}
+.rec-box h3{margin-top:0;color:#4fc3f7}
+.rec-item{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #1e3a5f;font-size:0.88em}
+.rec-item:last-child{border-bottom:none}
+.rec-label{color:#78909c}
+.rec-value{color:#e0e6ed;font-weight:500}
+.score-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(85px,1fr));gap:6px;margin:8px 0}
+.score-item{background:#1a3045;padding:6px 8px;border-radius:6px;text-align:center;font-size:0.82em;border:1px solid #1e3a5f}
+.score-item .prob{color:#4fc3f7;font-weight:700;font-size:1.05em}
+.score-item .score{color:#b0bec5}
+.score-item.top{border-color:#4fc3f7;background:#1a3a55}
+.risk{background:#3a1e1e;border:1px solid #5a2e2e;border-radius:8px;padding:14px;margin:16px 0;font-size:0.82em;color:#ef9a9a}
+.risk strong{color:#ff8a80}
+.goals-bar{display:flex;height:22px;border-radius:4px;overflow:hidden;margin:4px 0 8px}
+.goals-bar div{text-align:center;line-height:22px;font-size:0.72em;font-weight:500;min-width:30px}
+.diverge{background:#2e2a1e;border:1px solid #5a5030;border-radius:8px;padding:12px;margin:10px 0;font-size:0.84em;color:#ffd54f}
+.two-box{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
+@media(max-width:768px){.two-box{grid-template-columns:1fr}}
+.combo-box{background:#1a3045;border:2px solid #2a5a3f;border-radius:10px;padding:16px;margin:14px 0}
+.combo-box h3{color:#81c784;margin-top:0}
+.combo-item{padding:5px 0;border-bottom:1px solid #1e3a5f;font-size:0.85em}
+.combo-item:last-child{border-bottom:none}
+.footer{text-align:center;color:#546e7a;font-size:0.78em;padding:20px 0;border-top:1px solid #1e3a5f;margin-top:30px}
+</style>
+</head>
+<body>
+
+<div class="header">
+<h1>韩K联第19轮 — 三场深度分析</h1>
+<div class="sub">2026年7月21日 18:30 同时开球 | 模型：Dixon-Coles + Shin去水 + 蒙特卡洛10000场<br>数据截至 2026-07-21 00:00</div>
+</div>
+
+<!-- ==================== MATCH 1: 济州SK vs 江原FC ==================== -->
+<div class="match">
+<div class="match-header">
+<div class="match-title">济州SK vs 江原FC</div>
+<div class="match-meta">
+<span>韩K联第19轮</span>
+<span>07-21 18:30</span>
+<span>济州世界杯体育场</span>
+<span>竞彩场次：周二201</span>
+</div>
+</div>
+
+<h2>球队基本面</h2>
+<div class="section">
+<p><strong>济州SK（主队，联赛第8，23分）</strong>：18轮6胜5平7负。主场10战3胜3平4负，胜率仅30%，场均进0.9球（联赛下游）。上轮主场2-1击败浦项制铁终结四轮不败，士气回暖。距前6附加赛区仅1分，抢分战意强烈。进攻端锋线稳定得分点稀缺，主打边路传中与定位球，面对密集防守攻坚效率偏低。<strong>伤停：</strong>主力右后卫赛季报销、中卫和中场核心伤停，新援前锋久疏战阵无法登场。</p>
+<p><strong>江原FC（客队，联赛第2，31分）</strong>：18轮8胜7平3负。韩职顶级防守强队——18轮仅失11球，场均0.6球（联赛第一）；客场场均失球仅0.57球。近6场4胜2平保持不败，同期仅丢1球。核心前锋金大元7球领跑队内射手榜，反击推进+中场绞杀体系成熟，客场擅长5-4-1密集防守+快速偷鸡。<strong>伤停：</strong>仅轮换层轻伤，主力框架基本完整。唯一隐患：中场主力牟在铉出战成疑。</p>
+</div>
+
+<h2>历史交锋</h2>
+<table>
+<tr><th>时间</th><th>赛事</th><th>主队</th><th>比分</th><th>客队</th></tr>
+<tr class="highlight"><td>近10次正赛</td><td colspan="4" style="text-align:left">济州SK <strong>0胜7平3负</strong>，平局率高达70%</td></tr>
+<tr><td>济州主场近5次</td><td colspan="4" style="text-align:left"><strong>3平2负未尝一胜</strong>，多以0-0、1-1小比分收尾</td></tr>
+</table>
+<p>交锋大小球率极低，0-0和1-1频繁出现。江原堪称济州"克星"。</p>
+
+<h2>伤停情况</h2>
+<table>
+<tr><th>球队</th><th>球员</th><th>位置</th><th>影响</th></tr>
+<tr class="warn"><td>济州SK</td><td>主力右后卫</td><td>后卫</td><td>赛季报销，边路协防削弱</td></tr>
+<tr class="warn"><td>济州SK</td><td>中卫核心</td><td>中卫</td><td>伤停</td></tr>
+<tr class="warn"><td>济州SK</td><td>中场核心</td><td>中场</td><td>伤停，拦截硬度下滑</td></tr>
+<tr><td>江原FC</td><td>牟在铉</td><td>中场</td><td>出战成疑，轮换深度充足可覆盖</td></tr>
+</table>
+
+<h2>赔率校准</h2>
+<table>
+<tr><th>方法</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th></tr>
+<tr><td>归一化去水</td><td>27.85%</td><td>29.71%</td><td>42.44%</td></tr>
+<tr class="highlight"><td>Shin 去水 ★</td><td>30.67%</td><td>31.49%</td><td>37.84%</td></tr>
+</table>
+<p><strong>参考欧指：</strong>主胜 3.20 / 平局 3.00 / 客胜 2.10 | <strong>亚盘：</strong>客让平半（0.25球） | <strong>大小球：</strong>2/2.25球（极低盘口，反映进球稀缺预期）</p>
+
+<h2>模型预测（Dixon-Coles + 蒙特卡洛10000场）</h2>
+<table>
+<tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>DC模型（主力）</td><td>28.20%</td><td class="highlight">32.94%</td><td>38.87%</td></tr>
+<tr><td>蒙特卡洛模拟</td><td>28.01%</td><td class="highlight">33.26%</td><td>38.73%</td></tr>
+<tr><td>Shin 市场概率</td><td>30.67%</td><td class="highlight">31.49%</td><td>37.84%</td></tr>
+<tr style="font-weight:700;background:#1a3045"><td>加权融合</td><td>28.51%</td><td class="highlight">29.27%</td><td>42.22%</td></tr>
+</table>
+<p><strong>λ参数：</strong>济州 0.85（主场进攻极弱，伤停下修） / 江原 1.05（客场稳健但非进攻型，实际进球更多靠零封）</p>
+
+<h2>置信度分析</h2>
+<p><strong>置信度评级：</strong><span class="badge badge-high">高 ★★★</span> | 模型间标准差：0.012（高度一致）| 模型与市场高度对齐，客胜方向一致</p>
+<p>平局概率在29-33%区间，是全场三场中最高的——这与双方交锋70%平局率高度吻合。模型和Shin市场均指向客胜概率最高，但平局概率异常偏高，0-0（15.6%）是全场所有比赛中最高的零比零概率。</p>
+
+<h2>最可能比分 Top 5</h2>
+<div class="score-list">
+<div class="score-item top"><div class="score">0-0</div><div class="prob">15.6%</div></div>
+<div class="score-item"><div class="score">0-1</div><div class="prob">15.0%</div></div>
+<div class="score-item"><div class="score">1-1</div><div class="prob">14.0%</div></div>
+<div class="score-item"><div class="score">1-0</div><div class="prob">12.1%</div></div>
+<div class="score-item"><div class="score">0-2</div><div class="prob">8.3%</div></div>
+</div>
+
+<h2>总进球 / 半全场 / 大小球</h2>
+<p>λ总计 = 1.90 | 大小球2/2.25：大球 29.6% / 小球 70.4%</p>
+<div class="goals-bar">
+<div style="width:15.6%;background:#546e7a">0球 15.6%</div>
+<div style="width:27.1%;background:#37474f">1球 27.1%</div>
+<div style="width:27.7%;background:#455a64">2球 27.7%</div>
+<div style="width:17.1%;background:#546e7a">3球 17.1%</div>
+<div style="width:12.5%;background:#37474f">4+球 12.5%</div>
+</div>
+<p><strong>半全场 Top 3：</strong>平平 21.2% / 平胜 19.1% / 负负 16.6%</p>
+
+<div class="rec-box">
+<h3>单场推荐</h3>
+<div class="rec-item"><span class="rec-label">胜平负</span><span class="rec-value">客胜/平局（客胜 ~42%，平局 ~29%）</span></div>
+<div class="rec-item"><span class="rec-label">半全场</span><span class="rec-value">平平 / 平负</span></div>
+<div class="rec-item"><span class="rec-label">总进球</span><span class="rec-value">1球 或 2球</span></div>
+<div class="rec-item"><span class="rec-label">大小球</span><span class="rec-value">小球 2/2.25（70.4%）</span></div>
+<div class="rec-item"><span class="rec-label">比分</span><span class="rec-value">0-1 / 0-0 / 1-1 / 冷门：1-0</span></div>
+</div>
+</div>
+
+<!-- ==================== MATCH 2: 全北现代 vs 大田市民 ==================== -->
+<div class="match">
+<div class="match-header">
+<div class="match-title">全北现代 vs 大田市民</div>
+<div class="match-meta">
+<span>韩K联第19轮</span>
+<span>07-21 18:30</span>
+<span>全州世界杯体育场</span>
+<span>竞彩场次：周二202</span>
+</div>
+</div>
+
+<h2>球队基本面</h2>
+<div class="section">
+<p><strong>全北现代（主队，联赛第3，29分）</strong>：18轮8胜5平5负。主场9战5胜2平2负，胜率67%，进16球失10球，场均进1.78球。距榜首仅3分，冲冠战意强烈。上轮客场0-1爆冷负于仁川联，终结3轮不败。主打4-2-3-1控球体系，核心得分依赖边路传中+定位球。</p>
+<p><strong>大田市民（客队，联赛第9，19分）</strong>：18轮4胜7平7负。连续7轮联赛不胜（4平3负），整体状态低迷。但客场表现韧性突出：8战4胜2平2负，胜率50%，进14球失6球。上轮主场2-2逼平榜首蔚山现代。主打5-4-1深度防守，周敏圭（10球）为唯一稳定射手。</p>
+</div>
+
+<h2>历史交锋</h2>
+<table>
+<tr><th>时间</th><th>赛事</th><th>主队</th><th>比分</th><th>客队</th></tr>
+<tr class="highlight"><td>2026-03-21</td><td>韩K联</td><td>大田市民</td><td>0-1</td><td>全北现代</td></tr>
+<tr><td>2026-01</td><td>韩K超杯</td><td>全北现代</td><td>2-0</td><td>大田市民</td></tr>
+<tr><td>2025-09-13</td><td>韩K联</td><td>全北现代</td><td>1-0 (0-0)</td><td>大田市民</td></tr>
+<tr><td>2025-05-14</td><td>韩足总</td><td>大田市民</td><td>2-3 (0-1)</td><td>全北现代</td></tr>
+<tr><td>2025-05-06</td><td>韩K联</td><td>全北现代</td><td>1-1 (0-0)</td><td>大田市民</td></tr>
+<tr><td>2025-04-05</td><td>韩K联</td><td>大田市民</td><td>0-2 (0-0)</td><td>全北现代</td></tr>
+<tr><td>2024-10-19</td><td>韩K联</td><td>全北现代</td><td>0-2</td><td>大田市民</td></tr>
+<tr><td>2024-09-22</td><td>韩K联</td><td>大田市民</td><td>0-0</td><td>全北现代</td></tr>
+<tr><td>2024-07-07</td><td>韩K联</td><td>大田市民</td><td>2-2</td><td>全北现代</td></tr>
+<tr><td>2024-03-01</td><td>韩K联</td><td>全北现代</td><td>1-1</td><td>大田市民</td></tr>
+</table>
+<p><strong>历史交锋统计（32场总）：</strong>全北15胜10平7负，胜率46.9%。近10次：全北5胜4平1负，不败率90%。本赛季双杀（超杯2-0、联赛客场1-0），连续两场零封大田。近6次交锋5场总进球<=2球，一球分胜负占比超6成。</p>
+
+<h2>伤停情况（精细化分析）</h2>
+<table>
+<tr><th>球队</th><th>球员</th><th>位置</th><th>重要性</th><th>影响</th></tr>
+<tr class="danger"><td>全北现代</td><td>李昇祐</td><td>前锋/头号射手</td><td>极高</td><td>黄牌停赛</td></tr>
+<tr class="danger"><td>全北现代</td><td>孔帕尼奥</td><td>前锋/支点</td><td>极高</td><td>伤病，前场高点缺失</td></tr>
+<tr class="danger"><td>全北现代</td><td>朴主英</td><td>边锋/爆点</td><td>高</td><td>伤病</td></tr>
+<tr class="danger"><td>全北现代</td><td>蒂亚戈</td><td>前锋</td><td>高</td><td>骨折长期缺阵</td></tr>
+<tr class="warn"><td>大田市民</td><td>河昌来/徐永在/严元相/石田雅俊</td><td>后卫+中场</td><td>主力x4</td><td>4人伤缺，但队长李淳敏解禁复出</td></tr>
+</table>
+<p><strong>伤停折算：</strong>全北4名前锋集体缺阵，阵地战攻坚效率显著下滑，lambda下修约20%。大田4名主力伤缺但防守核心李淳敏复出，影响略小于全北。</p>
+
+<h2>赔率校准</h2>
+<table>
+<tr><th>方法</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th></tr>
+<tr><td>归一化去水</td><td>55.51%</td><td>26.17%</td><td>18.32%</td></tr>
+<tr class="highlight"><td>Shin 去水 ★</td><td>43.97%</td><td>29.40%</td><td>26.62%</td></tr>
+</table>
+<p><strong>参考欧指：</strong>主胜 1.65 / 平局 3.50 / 客胜 5.00 | <strong>亚盘：</strong>主让半球 | <strong>大小球：</strong>2.5球</p>
+
+<h2>模型预测（Dixon-Coles + 蒙特卡洛10000场）</h2>
+<table>
+<tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>DC模型（主力）</td><td>43.79%</td><td>29.75%</td><td>26.46%</td></tr>
+<tr><td>蒙特卡洛模拟</td><td>44.51%</td><td>29.51%</td><td>25.98%</td></tr>
+<tr><td>Shin 市场概率</td><td>43.97%</td><td>29.40%</td><td>26.62%</td></tr>
+<tr style="font-weight:700;background:#1a3045"><td>加权融合</td><td>41.49%</td><td>27.10%</td><td>31.41%</td></tr>
+</table>
+<p><strong>λ参数：</strong>全北 1.30（原始约1.60，伤停下修20%） / 大田 0.95（原始约1.10，伤停下修15%）</p>
+
+<h2>置信度分析</h2>
+<p><strong>置信度评级：</strong><span class="badge badge-high">高 ★★★</span> | 模型间标准差：0.002（高度一致）| 模型与市场基本对齐</p>
+<p>全北主胜概率因4前锋缺阵被大幅下修，导致三方概率相对分散（41/27/31），没有绝对强势方。</p>
+
+<h2>最可能比分 Top 5</h2>
+<div class="score-list">
+<div class="score-item top"><div class="score">1-1</div><div class="prob">13.8%</div></div>
+<div class="score-item"><div class="score">1-0</div><div class="prob">12.9%</div></div>
+<div class="score-item"><div class="score">0-0</div><div class="prob">11.3%</div></div>
+<div class="score-item"><div class="score">0-1</div><div class="prob">9.2%</div></div>
+<div class="score-item"><div class="score">2-0</div><div class="prob">8.9%</div></div>
+</div>
+
+<h2>总进球 / 半全场 / 大小球</h2>
+<p>λ总计 = 2.25 | 大小球2.5：大球 39.0% / 小球 61.0%</p>
+<div class="goals-bar">
+<div style="width:11.3%;background:#546e7a">0球 11.3%</div>
+<div style="width:22.2%;background:#37474f">1球 22.2%</div>
+<div style="width:27.5%;background:#455a64">2球 27.5%</div>
+<div style="width:20.0%;background:#546e7a">3球 20.0%</div>
+<div style="width:19.0%;background:#37474f">4+球 19.0%</div>
+</div>
+<p><strong>半全场 Top 3：</strong>平胜 24.9% / 胜胜 18.5% / 平平 17.6%</p>
+
+<div class="rec-box">
+<h3>单场推荐</h3>
+<div class="rec-item"><span class="rec-label">胜平负</span><span class="rec-value">主胜/平局（主胜 ~41%，平局 ~27%）</span></div>
+<div class="rec-item"><span class="rec-label">半全场</span><span class="rec-value">平胜 / 平平</span></div>
+<div class="rec-item"><span class="rec-label">总进球</span><span class="rec-value">1球 或 2球</span></div>
+<div class="rec-item"><span class="rec-label">大小球</span><span class="rec-value">小球 2.5（61.0%）</span></div>
+<div class="rec-item"><span class="rec-label">比分</span><span class="rec-value">1-0 / 1-1 / 0-0 / 冷门：0-1</span></div>
+</div>
+</div>
+
+<!-- ==================== MATCH 3: 蔚山现代 vs 仁川联 ==================== -->
+<div class="match">
+<div class="match-header">
+<div class="match-title">蔚山现代 vs 仁川联队</div>
+<div class="match-meta">
+<span>韩K联第19轮</span>
+<span>07-21 18:30</span>
+<span>蔚山文殊体育场</span>
+<span>竞彩场次：周二203</span>
+</div>
+</div>
+
+<h2>球队基本面</h2>
+<div class="section">
+<p><strong>蔚山现代（主队，联赛第4，28分）</strong>：18轮8胜4平6负。近期遭遇4轮联赛不胜（2平2负），上轮客场2-2战平大田市民，此前先后惨败全北现代、不敌江原FC。赛季攻强守弱：总进球26粒（联赛上游），总失球22粒。主场9战4胜1平4负，胜率仅44%，主场丢15球零封仅2场。亚戈（8球）和法里亚斯状态在线，前场人手相对充足。<strong>伤停：</strong>后卫尹正圭、替补前锋佩德里尼奥，对主力框架影响有限。</p>
+<p><strong>仁川联队（客队，联赛第7，24分）</strong>：18轮7胜3平8负。近10场5胜1平4负，状态逆势走高。近10场仅丢5球，完成7次零封，防守效率联赛顶级。上轮主场1-0爆冷击败全北现代，士气正盛。客场8战3胜3平2负，不败率75%，场均失球仅1.0粒。</p>
+</div>
+
+<h2>历史交锋</h2>
+<table>
+<tr><th>时间</th><th>赛事</th><th>主队</th><th>比分</th><th>客队</th></tr>
+<tr class="highlight"><td>2026-04</td><td>韩K联</td><td>仁川联</td><td>1-2</td><td>蔚山现代</td></tr>
+<tr><td>2025</td><td>韩国杯</td><td>蔚山现代</td><td>3-0</td><td>仁川联</td></tr>
+<tr><td>2024</td><td>韩K联</td><td>蔚山现代</td><td>3-3</td><td>仁川联</td></tr>
+<tr><td>2024</td><td>韩K联</td><td>仁川联</td><td>0-0</td><td>蔚山现代</td></tr>
+<tr><td>2024</td><td>韩K联</td><td>蔚山现代</td><td>1-0</td><td>仁川联</td></tr>
+<tr><td>2024</td><td>韩K联</td><td>仁川联</td><td>1-1</td><td>蔚山现代</td></tr>
+</table>
+<p><strong>历史交锋统计（近10次）：</strong>蔚山4胜4平2负，近6次不败（2连胜）。本赛季首回合蔚山客场2-1绝杀。仁川做客蔚山近5次1胜2平2负，并非完全被动。交锋半场平局概率超60%。</p>
+
+<h2>伤停情况（精细化分析）</h2>
+<table>
+<tr><th>球队</th><th>球员</th><th>位置</th><th>影响</th></tr>
+<tr class="warn"><td>蔚山现代</td><td>尹正圭</td><td>后卫</td><td>轮换，影响有限</td></tr>
+<tr class="warn"><td>蔚山现代</td><td>佩德里尼奥</td><td>前锋</td><td>替补，锋线仍充足</td></tr>
+<tr class="danger"><td>仁川联</td><td>穆戈沙</td><td>前锋/头号射手</td><td>7球，队内第一得分点</td></tr>
+<tr class="danger"><td>仁川联</td><td>李太熙</td><td>门将</td><td>主力</td></tr>
+<tr class="danger"><td>仁川联</td><td>文智焕</td><td>后腰</td><td>主力</td></tr>
+<tr class="danger"><td>仁川联</td><td>政原进</td><td>前腰</td><td>主力</td></tr>
+<tr class="danger"><td>仁川联</td><td>杨承元</td><td>左后卫</td><td>主力</td></tr>
+</table>
+<p><strong>伤停折算：</strong>蔚山仅轮换层2人缺阵，主力框架完整。仁川遭遇毁灭性打击：头号射手穆戈沙（7球）+门将+后腰+前腰+边后卫共5名核心伤缺，攻防中轴线折损近半。仁川进攻lambda下修约25%。</p>
+
+<h2>赔率校准</h2>
+<table>
+<tr><th>方法</th><th>主胜概率</th><th>平局概率</th><th>客胜概率</th></tr>
+<tr><td>归一化去水</td><td>51.89%</td><td>28.38%</td><td>19.74%</td></tr>
+<tr class="highlight"><td>Shin 去水 ★</td><td>42.31%</td><td>30.49%</td><td>27.20%</td></tr>
+</table>
+<p><strong>参考欧指：</strong>主胜 1.75 / 平局 3.20 / 客胜 4.60 | <strong>亚盘：</strong>蔚山让平手/半球 | <strong>大小球：</strong>2/2.5球</p>
+
+<h2>模型预测（Dixon-Coles + 蒙特卡洛10000场）</h2>
+<table>
+<tr><th>模型</th><th>主胜</th><th>平局</th><th>客胜</th></tr>
+<tr><td>DC模型（主力）</td><td>47.81%</td><td>29.23%</td><td>22.96%</td></tr>
+<tr><td>蒙特卡洛模拟</td><td>47.39%</td><td>29.14%</td><td>23.47%</td></tr>
+<tr><td>Shin 市场概率</td><td>42.31%</td><td>30.49%</td><td>27.20%</td></tr>
+<tr style="font-weight:700;background:#1a3045"><td>加权融合</td><td>43.12%</td><td>27.22%</td><td>29.66%</td></tr>
+</table>
+<p><strong>λ参数：</strong>蔚山 1.35（状态低迷小幅下修） / 仁川 0.85（穆戈沙+4核心缺阵，下修约25%）</p>
+
+<h2>置信度分析</h2>
+<p><strong>置信度评级：</strong><span class="badge badge-high">高 ★★★</span> | 模型间标准差：0.017（高度一致）| 蔚山主胜概率43%，并非碾压局，仁川防守底子仍在。</p>
+
+<h2>最可能比分 Top 5</h2>
+<div class="score-list">
+<div class="score-item top"><div class="score">1-0</div><div class="prob">14.3%</div></div>
+<div class="score-item"><div class="score">1-1</div><div class="prob">13.4%</div></div>
+<div class="score-item"><div class="score">0-0</div><div class="prob">11.7%</div></div>
+<div class="score-item"><div class="score">2-0</div><div class="prob">10.1%</div></div>
+<div class="score-item"><div class="score">0-1</div><div class="prob">8.8%</div></div>
+</div>
+
+<h2>总进球 / 半全场 / 大小球</h2>
+<p>λ总计 = 2.20 | 大小球2.5：大球 37.7% / 小球 62.3%</p>
+<div class="goals-bar">
+<div style="width:11.7%;background:#546e7a">0球 11.7%</div>
+<div style="width:23.1%;background:#37474f">1球 23.1%</div>
+<div style="width:27.5%;background:#455a64">2球 27.5%</div>
+<div style="width:19.7%;background:#546e7a">3球 19.7%</div>
+<div style="width:18.0%;background:#37474f">4+球 18.0%</div>
+</div>
+<p><strong>半全场 Top 3：</strong>平胜 25.7% / 胜胜 20.4% / 平平 17.6%</p>
+
+<div class="rec-box">
+<h3>单场推荐</h3>
+<div class="rec-item"><span class="rec-label">胜平负</span><span class="rec-value">主胜/平局（主胜 ~43%，平局 ~27%）</span></div>
+<div class="rec-item"><span class="rec-label">半全场</span><span class="rec-value">平胜 / 胜胜 / 平平</span></div>
+<div class="rec-item"><span class="rec-label">总进球</span><span class="rec-value">1球 或 2球</span></div>
+<div class="rec-item"><span class="rec-label">大小球</span><span class="rec-value">小球 2.5（62.3%）</span></div>
+<div class="rec-item"><span class="rec-label">比分</span><span class="rec-value">1-0 / 1-1 / 0-0 / 冷门：0-1</span></div>
+</div>
+</div>
+
+<!-- ==================== 三场综合 + 二串一方案 ==================== -->
+<div class="match" style="border-color:#4fc3f7">
+<div class="match-header">
+<div class="match-title" style="color:#81d4fa">三场综合速览 + 二串一方案</div>
+</div>
+
+<h3>三场平局概率对比</h3>
+<table>
+<tr><th>场次</th><th>对阵</th><th>DC平局</th><th>MC平局</th><th>Shin平局</th><th>融合平局</th></tr>
+<tr><td>201</td><td>济州SK vs 江原FC</td><td class="highlight">32.94%</td><td class="highlight">33.26%</td><td class="highlight">31.49%</td><td class="highlight">29.27%</td></tr>
+<tr><td>202</td><td>全北现代 vs 大田市民</td><td>29.75%</td><td>29.51%</td><td>29.40%</td><td>27.10%</td></tr>
+<tr><td>203</td><td>蔚山现代 vs 仁川联</td><td>29.23%</td><td>29.14%</td><td>30.49%</td><td>27.22%</td></tr>
+</table>
+<p style="color:#ffd54f">201场济州vs江原的平局概率全场最高（DC 32.9%），与双方70%历史平局率高度吻合。</p>
+
+<h3>模型综合速览</h3>
+<table>
+<tr><th>场次</th><th>对阵</th><th>融合主胜</th><th>融合平局</th><th>融合客胜</th><th>首选比分</th><th>小球概率</th></tr>
+<tr><td>201</td><td>济州SK vs 江原FC</td><td>28.5%</td><td>29.3%</td><td class="highlight">42.2%</td><td>0-0 / 0-1</td><td>70.4%</td></tr>
+<tr><td>202</td><td>全北现代 vs 大田市民</td><td class="highlight">41.5%</td><td>27.1%</td><td>31.4%</td><td>1-1 / 1-0</td><td>61.0%</td></tr>
+<tr><td>203</td><td>蔚山现代 vs 仁川联</td><td class="highlight">43.1%</td><td>27.2%</td><td>29.7%</td><td>1-0 / 1-1</td><td>62.3%</td></tr>
+</table>
+
+<div class="two-box">
+<div class="combo-box">
+<h3>方案A：稳健型（推荐）</h3>
+<div class="combo-item"><strong>201 江原FC 客胜/平</strong> <span style="color:#81c784">双选覆盖</span></div>
+<div class="combo-item"><strong>202 全北现代 主胜/平</strong> <span style="color:#81c784">双选覆盖</span></div>
+<div class="combo-item"><strong>203 蔚山现代 主胜/平</strong> <span style="color:#81c784">双选覆盖</span></div>
+<div class="combo-item" style="margin-top:8px;color:#b0bec5">201覆盖概率：客胜42%+平局29%=71%<br>202覆盖概率：主胜41%+平局27%=68%<br>203覆盖概率：主胜43%+平局27%=70%</div>
+</div>
+
+<div class="combo-box">
+<h3>方案B：2串1精选（三组）</h3>
+<div class="combo-item" style="color:#81c784"><strong>组合1（保守）：</strong>201 江原不败 + 202 全北不败</div>
+<div class="combo-item" style="color:#ffb74d"><strong>组合2（均衡）：</strong>202 全北主胜 + 203 蔚山主胜</div>
+<div class="combo-item" style="color:#ef9a9a"><strong>组合3（博冷）：</strong>201 平局 + 202 平局</div>
+<div class="combo-item" style="margin-top:8px;color:#b0bec5">组合1：江原客胜42%+全北主胜41%，逻辑最稳<br>组合2：两场主场优势+客队核心缺阵，收益更高<br>组合3：两场平局概率均>27%，高赔冷门</div>
+</div>
+</div>
+
+<div class="combo-box" style="border-color:#5a2e2e">
+<h3 style="color:#ef9a9a">大小球3串1（全场最高信心方向）</h3>
+<div class="combo-item"><strong>201 济州vs江原 小球2/2.25</strong> <span style="color:#ef9a9a">概率70.4%</span></div>
+<div class="combo-item"><strong>202 全北vs大田 小球2.5</strong> <span style="color:#ef9a9a">概率61.0%</span></div>
+<div class="combo-item"><strong>203 蔚山vs仁川 小球2.5</strong> <span style="color:#ef9a9a">概率62.3%</span></div>
+<div class="combo-item" style="margin-top:8px;color:#b0bec5">三场λ总计分别为1.90、2.25、2.20，均低于2.5阈值。<br>双方伤停严重削弱进攻，历史交锋小球率高。<br>这是全场模型最有信心的方向。</div>
+</div>
+
+<div class="diverge">
+<strong>关键提示：</strong>三场比赛中，202和203的主胜概率均未超过45%，201更是客胜概率最高（42%）但平局概率全场最高（29%）。三场都是"优势方优势不大+高平局"的格局，韩K联本轮整体小球+高平局特征显著。
+</div>
+</div>
+
+<div class="risk">
+<strong>风险提示</strong><br>
+• 足球比赛存在极大不确定性，任何模型预测均非100%准确<br>
+• 韩K联各队实力接近，主场优势不如欧洲联赛明显<br>
+• 伤停信息可能在赛前发生变化，请以临场为准<br>
+• 三场同时开球（18:30），无法根据前序结果调整后续<br>
+• 201场济州vs江原近10次70%平局率极高，但"高平局"不代表"一定平局"<br>
+• 模型基于历史数据，临场战术变化无法预测<br>
+• <strong>理性看待预测，切勿沉迷赌博</strong>
+</div>
+
+<div class="footer">
+数据来源：体彩竞彩官网 | 500彩票网 | 搜狐体育 | 今日头条体育前瞻 | SouPng足球网<br>
+模型：Dixon-Coles修正泊松 + Shin去水 + 蒙特卡洛10000场 + Platt校准<br>
+生成时间：2026-07-21 | 分析仅供参考
+</div>
+
+</body>
+</html>

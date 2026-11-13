@@ -1,0 +1,160 @@
+{
+    "league_info": {
+        "name_cn": "日本职业足球乙级联赛",
+        "name_en": "J2 League",
+        "country": "日本",
+        "country_code": "JP",
+        "level": "第二级别",
+        "num_teams": 20,
+        "format": "双循环，38轮",
+        "season_period": "2月-12月（不跨年）",
+        "is_cross_year": false,
+        "jingcai_status": "常规开售",
+        "official_website": "https://www.jleague.co",
+        "governing_body": "日本职业足球联盟（JLeague）",
+        "promotion_relegation": "前2名直接升入J1；第3-6名附加赛争夺最后一个升级名额；最后2名直接降入J3",
+        "champion_2024": "清水鼓动（82分）",
+        "promoted_2024": "清水鼓动、横滨FC",
+        "cross_league_level": "L4",
+        "cross_league_level_note": "规则76跨联赛等级判定分档（L1欧洲顶级/L2欧洲强二级/L3中二级/L4次级），2026-10-14建立"
+    },
+    "statistics": {
+        "season": "2024",
+        "total_matches": 380,
+        "avg_goals_per_match": 2.49,
+        "draw_rate": 0.234,
+        "home_win_rate": 0.408,
+        "away_win_rate": 0.358,
+        "over_2_5_rate": 0.48,
+        "under_2_5_rate": 0.52,
+        "btts_rate": 0.48,
+        "top_scores": [
+            {
+                "score": "1-0",
+                "frequency": 0.108,
+                "direction": "主胜"
+            },
+            {
+                "score": "2-1",
+                "frequency": 0.1,
+                "direction": "主胜"
+            },
+            {
+                "score": "0-0",
+                "frequency": 0.097,
+                "direction": "平局"
+            },
+            {
+                "score": "1-1",
+                "frequency": 0.095,
+                "direction": "平局"
+            },
+            {
+                "score": "0-1",
+                "frequency": 0.095,
+                "direction": "客胜"
+            }
+        ],
+        "goals_distribution": {
+            "0_goals": 0.097,
+            "1_goal": 0.198,
+            "2_goals": 0.225,
+            "3_goals": 0.245,
+            "4_goals": 0.125,
+            "5_plus_goals": 0.109
+        },
+        "avg_home_goals": 1.37,
+        "avg_away_goals": 1.12,
+        "home_advantage_factor": 1.22,
+        "best_attack": "长崎航海 74球（1.95球/场）",
+        "worst_attack": "群马温泉 24球（0.63球/场）",
+        "best_defense": "横滨FC 27失球（0.71球/场）",
+        "max_score_match": "千叶市原 8:0 枇木SC（第8轮）",
+        "ht_draw_rate": null,
+        "ht_draw_rate_note": "2026-09-12尝试补录：本环境无法取得该联赛'最近完整赛季'的第一手半场数据——thefishy.uk无该联赛半场表、football-data.co.uk扩展文件仅含全场比分(无半场)、Transfermarkt/worldfootball/FootyStats/soccerstats/BetExplorer 均被反爬拦截。按诚实原则置 null，不用估算值。使用时按缺失字段处理（规则66默认中低档0.45系数）。待可访问一手源时补录。",
+        "ht_draw_rate_source": [],
+        "ht_draw_rate_updated": "2026-09-12",
+        "ht_draw_rate_confidence": "无",
+        "ht_draw_rate_status": "unavailable"
+    },
+    "match_style": {
+        "tactical_character": "比J1更具身体对抗性和直接性。既有J1降级的传统强队（如清水鼓动、横滨FC），也有冲击顶级联赛的中游球队。比赛风格兼具技术流与高强度对抗，竞争激烈。球队间实力差距较大，强弱分明。防守型球队较多，小球比例偏高。",
+        "tempo": "中",
+        "physicality": "中高（高于J1）",
+        "technical_focus": "中（低于J1）",
+        "var_usage": "2021赛季全面引入VAR（J1于2019年率先引入，J联盟2021年推广至J2）。",
+        "key_trends": [
+            "身体对抗强于J1",
+            "J1降级队与升班马实力差距大",
+            "防守型球队多，小球偏多（52%小球率）",
+            "客胜率不低（36%），不宜盲目追主队",
+            "赛季末保级战异常激烈"
+        ],
+        "style_tags": [
+            "身体对抗",
+            "直接",
+            "防守型",
+            "竞争激烈",
+            "强弱分明",
+            "小球偏多"
+        ]
+    },
+    "referee_and_stoppage": {
+        "avg_yellow_cards": 4.2,
+        "avg_red_cards": 0.17,
+        "avg_penalties": 0.22,
+        "referee_style": "裁判尺度中等偏严，注重比赛纪律。J2身体对抗较多，裁判对犯规容忍度略低于J1。",
+        "first_half_stoppage_avg": 2.0,
+        "second_half_stoppage_avg": 5.0,
+        "stoppage_note": "补时中等。J2比赛节奏较快，伤停补时与J1相近。"
+    },
+    "integrity_and_discipline": {
+        "match_fixing_history": [
+            {
+                "event": "无重大假赛",
+                "year": "-",
+                "description": "J联赛整体廉洁度极高，J2作为次级联赛同样保持高诚信度。"
+            }
+        ],
+        "discipline_features": "黄牌累积5张停1场（与J1一致）。红牌自动停赛1场。",
+        "official_rules": "IFAB规则+J联赛特别规则。",
+        "integrity_rating": "极高"
+    },
+    "public_opinion_and_market": {
+        "public_evaluation": "网友评价日乙对抗激烈、小球多、强弱分明。彩民认为降班马实力碾压、保级队末期拼命。整体认为J2比J1更难预测，冷门不少但强队主场相对稳。",
+        "betting_market": {
+            "market_efficiency": "中高",
+            "liquidity": "中",
+            "line_movement_frequency": "中频",
+            "sharp_money": "亚洲资金为主，日本本土资金参与度高"
+        },
+        "upset_frequency": "中高",
+        "jingcai_tips": [
+            "日乙小球偏多，UNDER 2.5是常规选择（52%小球率）",
+            "J1降级队主场强势，可重点关注",
+            "保级末段弱队主场可能有超常发挥",
+            "客胜率不低（36%），不宜盲目追主队",
+            "赛季初球队状态波动大",
+            "平局率23%适中，不必过度防平",
+            "1-0和2-1是最常见比分，1-0主胜概率高"
+        ],
+        "common_sayings": [
+            "日乙小球",
+            "降班马碾压",
+            "保级队拼命",
+            "客胜不低"
+        ]
+    },
+    "data_sources": {
+        "last_updated": "2026-08-07",
+        "sources": [
+            "https://liansai.500.com/zuqiu-7084/",
+            "https://m.qiumiwu.com/league/rizhiyi",
+            "https://www.flashscore.com/football/japan/j2-league/",
+            "https://www.jleague.co"
+        ],
+        "data_season": "2024",
+        "confidence_level": "中高",
+        "notes": "赛果分布、场均进球、进球分布来自500.com官方联赛页面（精确统计）；常见比分为基于球队视角双计数据折算（估算±1%）；BTTS率为基于比分分布推算；黄牌/红牌/点球为基于J1参考值及J2特点的估算值"
+    }
+}

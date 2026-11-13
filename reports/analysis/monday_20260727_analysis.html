@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026-07-28 周一体彩分析报告</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; background: #0f1923; color: #e0e0e0; line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+.header { background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%); color: white; padding: 30px; border-radius: 12px; margin-bottom: 20px; text-align: center; }
+.header h1 { font-size: 26px; margin-bottom: 10px; }
+.header .subtitle { font-size: 14px; opacity: 0.9; }
+.section { background: #1a2332; border-radius: 12px; padding: 20px; margin-bottom: 20px; border: 1px solid #2a3a4a; }
+.section-title { font-size: 20px; color: #4fc3f7; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #2a3a4a; }
+.league-header { font-size: 18px; color: #ffb74d; margin: 20px 0 10px; padding: 8px 12px; background: #233040; border-radius: 6px; border-left: 4px solid #ffb74d; }
+.match-card { background: #233040; border-radius: 8px; padding: 18px; margin-bottom: 15px; border: 1px solid #2a3a4a; }
+.match-card:hover { border-color: #4fc3f7; }
+.match-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }
+.match-id { background: #2a3a4a; color: #4fc3f7; padding: 3px 10px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+.match-time { color: #90a4ae; font-size: 13px; }
+.match-teams { font-size: 18px; font-weight: bold; margin: 8px 0; }
+.match-teams .vs { color: #78909c; margin: 0 10px; }
+.match-teams .rank { font-size: 12px; color: #90a4ae; background: #2a3a4a; padding: 2px 6px; border-radius: 3px; margin-left: 5px; }
+.prob-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin: 10px 0; }
+.prob-cell { text-align: center; padding: 12px 8px; border-radius: 6px; }
+.prob-cell.home { background: rgba(79, 195, 247, 0.15); border: 1px solid rgba(79, 195, 247, 0.3); }
+.prob-cell.draw { background: rgba(255, 183, 77, 0.15); border: 1px solid rgba(255, 183, 77, 0.3); }
+.prob-cell.away { background: rgba(239, 83, 80, 0.15); border: 1px solid rgba(239, 83, 80, 0.3); }
+.prob-cell .prob-value { font-size: 22px; font-weight: bold; }
+.prob-cell.home .prob-value { color: #4fc3f7; }
+.prob-cell.draw .prob-value { color: #ffb74d; }
+.prob-cell.away .prob-value { color: #ef5350; }
+.prob-cell .prob-label { font-size: 11px; color: #90a4ae; margin-top: 3px; }
+.prob-cell .prob-odds { font-size: 12px; color: #b0bec5; margin-top: 2px; }
+.confidence-badge { display: inline-block; padding: 3px 10px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+.confidence-高 { background: rgba(76, 175, 80, 0.2); color: #66bb6a; border: 1px solid #66bb6a; }
+.confidence-中 { background: rgba(255, 193, 7, 0.2); color: #ffd54f; border: 1px solid #ffd54f; }
+.confidence-低 { background: rgba(255, 87, 34, 0.2); color: #ff7043; border: 1px solid #ff7043; }
+.confidence-极低 { background: rgba(244, 67, 54, 0.2); color: #ef5350; border: 1px solid #ef5350; }
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 12px; }
+.detail-box { background: #1a2332; padding: 12px; border-radius: 6px; }
+.detail-box h4 { font-size: 13px; color: #4fc3f7; margin-bottom: 8px; }
+.score-table { width: 100%; font-size: 12px; }
+.score-table td { padding: 3px 5px; }
+.score-table .score { color: #e0e0e0; font-weight: bold; }
+.score-table .prob { color: #90a4ae; text-align: right; }
+.score-table tr:nth-child(odd) { background: rgba(255,255,255,0.02); }
+.model-compare { display: grid; grid-template-columns: repeat(6, 1fr); gap: 5px; margin: 10px 0; font-size: 11px; text-align: center; }
+.model-compare .header-cell { color: #90a4ae; font-weight: bold; padding: 5px 2px; }
+.model-compare .value-cell { padding: 5px 2px; background: rgba(255,255,255,0.03); border-radius: 3px; }
+.divergence-warn { background: rgba(255, 87, 34, 0.15); border: 1px solid #ff5722; padding: 8px 12px; border-radius: 6px; margin: 8px 0; font-size: 13px; color: #ffab91; }
+.notes { font-size: 12px; color: #90a4ae; margin-top: 8px; padding: 8px; background: rgba(0,0,0,0.2); border-radius: 4px; }
+.info-table { width: 100%; font-size: 13px; border-collapse: collapse; margin: 8px 0; }
+.info-table td { padding: 6px 10px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.info-table td:first-child { color: #90a4ae; width: 120px; }
+.info-table td:last-child { color: #e0e0e0; }
+.injury-table { width: 100%; font-size: 12px; border-collapse: collapse; margin: 8px 0; }
+.injury-table th { color: #90a4ae; font-weight: normal; padding: 4px 6px; border-bottom: 1px solid #2a3a4a; text-align: left; font-size: 11px; }
+.injury-table td { padding: 4px 6px; border-bottom: 1px solid rgba(255,255,255,0.03); }
+.disclaimer { background: #1a2332; padding: 15px; border-radius: 8px; margin-top: 20px; font-size: 12px; color: #78909c; border: 1px solid #37474f; }
+.news-box { background: #1a2332; padding: 12px; border-radius: 6px; margin: 8px 0; font-size: 13px; }
+.news-box h4 { color: #4fc3f7; font-size: 13px; margin-bottom: 6px; }
+.news-box p { color: #b0bec5; margin: 4px 0; }
+.warn-box { background: rgba(255,87,34,0.1); border: 1px solid rgba(255,87,34,0.3); padding: 8px 12px; border-radius: 6px; margin: 8px 0; font-size: 12px; color: #ffab91; }
+@media (max-width: 768px) { .detail-grid { grid-template-columns: 1fr; } .model-compare { grid-template-columns: repeat(3, 1fr); } .prob-row { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>⚽ 2026-07-28（周一）体彩分析报告</h1>
+<div class="subtitle">模型：DC泊松 + 负二项 + Skellam + 蒙特卡洛10000场 + Shin校准 | 版本 v1.4.0</div>
+<div class="subtitle" style="margin-top:5px;">分析时间：2026-07-27 | 赔率来源：外盘参考（体彩未开售/未找到官方赔率） | 联赛特点已加载</div>
+</div>
+
+<div class="section">
+<div class="section-title">📋 比赛概览</div>
+<table class="info-table">
+<tr><td>周一001</td><td>赫根 vs AIK索尔纳 | 瑞典超 | 07-28 01:00</td></tr>
+<tr><td>周一002</td><td>罗森博格 vs 腓特烈斯塔 | 挪威超 | 07-28 01:00</td></tr>
+</table>
+</div>
+
+<!-- ==================== 场景1: 赫根 vs AIK索尔纳 ==================== -->
+<div class="league-header">瑞典超级联赛（1场）</div>
+<div class="match-card">
+<div class="match-header">
+<div><span class="match-id">周一001</span> <span class="match-time">07-28 01:00</span></div>
+<span class="confidence-badge confidence-中">★★ 中</span>
+</div>
+<div class="match-teams">赫根 BK Hacken <span class="rank">[4]</span> <span class="vs">VS</span> AIK索尔纳 <span class="rank">[7]</span></div>
+
+<!-- 胜平负概率 -->
+<div class="prob-row">
+<div class="prob-cell home"><div class="prob-value">51.4%</div><div class="prob-label">主胜</div><div class="prob-odds">外盘赔率 1.83</div></div>
+<div class="prob-cell draw"><div class="prob-value">21.2%</div><div class="prob-label">平局</div><div class="prob-odds">外盘赔率 3.97</div></div>
+<div class="prob-cell away"><div class="prob-value">27.4%</div><div class="prob-label">客胜</div><div class="prob-odds">外盘赔率 3.60</div></div>
+</div>
+
+<!-- 分歧警告 -->
+<div class="divergence-warn">
+⚠️ 模型vs市场严重分歧：模型主胜51.4% vs Shin市场47.4%，差值4.0%（<8%，尚可接受）。
+但DC/NB/Skellam/MC四个模型均给出主胜59-61%，Shin市场仅47.4%，说明模型主胜概率可能偏高。
+瑞超主场优势虽强（系数1.20），但赫根近期3负的防守状态拖累。模型与市场分歧主要体现在平局概率（模型21% vs Shin 25%）。按规则8，分歧<15%未触发强制降级，但需警惕。
+</div>
+
+<!-- 模型对比 -->
+<div class="detail-grid">
+<div class="detail-box">
+<h4>📊 多模型概率对比</h4>
+<div class="model-compare">
+<div class="header-cell">模型</div><div class="header-cell">主胜</div><div class="header-cell">平局</div><div class="header-cell">客胜</div>
+<div class="header-cell">DC泊松</div><div class="value-cell" style="color:#4fc3f7">59.5%</div><div class="value-cell" style="color:#ffb74d">17.5%</div><div class="value-cell" style="color:#ef5350">23.0%</div>
+<div class="header-cell">负二项</div><div class="value-cell" style="color:#4fc3f7">57.4%</div><div class="value-cell" style="color:#ffb74d">16.2%</div><div class="value-cell" style="color:#ef5350">26.5%</div>
+<div class="header-cell">Skellam</div><div class="value-cell" style="color:#4fc3f7">60.4%</div><div class="value-cell" style="color:#ffb74d">16.4%</div><div class="value-cell" style="color:#ef5350">23.2%</div>
+<div class="header-cell">蒙特卡洛</div><div class="value-cell" style="color:#4fc3f7">60.9%</div><div class="value-cell" style="color:#ffb74d">15.8%</div><div class="value-cell" style="color:#ef5350">23.3%</div>
+<div class="header-cell">Shin校准</div><div class="value-cell" style="color:#4fc3f7">47.4%</div><div class="value-cell" style="color:#ffb74d">25.4%</div><div class="value-cell" style="color:#ef5350">27.2%</div>
+<div class="header-cell">加权融合</div><div class="value-cell" style="color:#4fc3f7;font-weight:bold">51.4%</div><div class="value-cell" style="color:#ffb74d;font-weight:bold">21.2%</div><div class="value-cell" style="color:#ef5350;font-weight:bold">27.4%</div>
+</div>
+<div class="notes">模型一致性：中度一致（σ主胜=0.056, σ平局=0.040, σ客胜=0.020）| VMR=1.321（过离散，已启用负二项）</div>
+</div>
+
+<div class="detail-box">
+<h4>⚽ 比分TOP5（蒙特卡洛）</h4>
+<table class="score-table">
+<tr><td class="score">2:1</td><td>主胜</td><td class="prob">6.1%</td></tr>
+<tr><td class="score">2:2</td><td>平局</td><td class="prob">6.0%</td></tr>
+<tr><td class="score">3:1</td><td>主胜</td><td class="prob">6.0%</td></tr>
+<tr><td class="score">3:2</td><td>主胜</td><td class="prob">5.8%</td></tr>
+<tr><td class="score">4:1</td><td>主胜</td><td class="prob">4.7%</td></tr>
+</table>
+<div style="margin-top:10px">
+<h4>🕐 半场TOP5比分</h4>
+<table class="score-table">
+<tr><td class="score">1:0</td><td>主胜</td><td class="prob">14.5%</td></tr>
+<tr><td class="score">1:1</td><td>平局</td><td class="prob">12.7%</td></tr>
+<tr><td class="score">0:0</td><td>平局</td><td class="prob">10.6%</td></tr>
+<tr><td class="score">2:0</td><td>主胜</td><td class="prob">9.9%</td></tr>
+<tr><td class="score">0:1</td><td>客胜</td><td class="prob">8.9%</td></tr>
+</table>
+</div>
+</div>
+</div>
+
+<!-- 半全场 + 大小球 -->
+<div class="detail-grid">
+<div class="detail-box">
+<h4>🔄 半全场TOP3</h4>
+<table class="score-table">
+<tr><td class="score">胜胜</td><td>主队半场领先→全场胜</td><td class="prob">25.1%</td></tr>
+<tr><td class="score">平胜</td><td>半场平→全场主胜</td><td class="prob">14.8%</td></tr>
+<tr><td class="score">负胜</td><td>半场落后→全场逆转</td><td class="prob">12.5%</td></tr>
+</table>
+</div>
+<div class="detail-box">
+<h4>📈 大小球/总进球</h4>
+<table class="score-table">
+<tr><td>大2.5球</td><td>87.9%</td></tr>
+<tr><td>小2.5球</td><td>12.1%</td></tr>
+<tr><td>双方进球( BTTS )</td><td>81.6%</td></tr>
+</table>
+<div style="margin-top:8px;font-size:12px;color:#90a4ae">
+总进球分布: 0球0.6% | 1球3.5% | 2球8.1% | 3球14.3% | 4球17.2% | 5+球56.3%
+</div>
+</div>
+</div>
+
+<!-- 纸面实力 & 战术风格 -->
+<div class="detail-grid">
+<div class="detail-box">
+<h4>💪 纸面实力</h4>
+<div style="font-size:13px;color:#b0bec5;line-height:1.8">
+<p><strong style="color:#4fc3f7">赫根</strong> [第4/16] 13场 6胜5平2负 进27失22 积23分<br>
+- 主场：7场 进16失12，主场攻击力指数1.61（联赛均值以上）<br>
+- 近5场联赛：2胜0平3负，进13失13，防守端严重滑坡<br>
+- 重大问题：连续3场失球≥3（3-4, 2-4, 1-4）</p>
+<p style="margin-top:8px"><strong style="color:#ef5350">AIK索尔纳</strong> [第7/16] 13场 6胜3平4负 进18失18 积21分<br>
+- 客场：6场 进8失10，客场攻击力指数0.91（低于联赛均值）<br>
+- 近5场联赛：4胜0平1负，进9失6，状态正佳<br>
+- 近期连胜GAIS、Mjallby、Goteborg，含2场客场</p>
+</div>
+</div>
+<div class="detail-box">
+<h4>🏟️ 场地与天气</h4>
+<table class="info-table">
+<tr><td>体育场</td><td>Bravol Arena（哥德堡）</td></tr>
+<tr><td>草皮</td><td>天然草皮</td></tr>
+<tr><td>容量</td><td>约18,000人</td></tr>
+<tr><td>天气</td><td>多云 18-20°C 微风（信息来源：天气预报参考，需赛前核实）</td></tr>
+<tr><td>天气影响</td><td>预计无显著影响</td></tr>
+</table>
+</div>
+</div>
+
+<!-- 伤停信息 -->
+<div class="detail-box" style="margin-top:12px">
+<h4>🏥 伤停详情</h4>
+<table class="injury-table">
+<tr><th>球员</th><th>球队</th><th>位置</th><th>类型</th><th>开始日期</th><th>已伤停时长</th><th>预计复出</th><th>信息来源</th><th>矛盾标注</th></tr>
+<tr><td>埃特里特·贝里沙</td><td>赫根</td><td>门将</td><td>后背受伤</td><td>2026-04-05</td><td>~3.5个月</td><td>未知</td><td>球迷屋/Fotmob</td><td>中文平台称里奥华辛伦，但实际伤号是贝里沙</td></tr>
+<tr><td>本·恩格达尔</td><td>赫根</td><td>右后卫</td><td>伤病</td><td>2026-05-26</td><td>~2个月</td><td>未知</td><td>球迷屋/微博</td><td>长期伤号，球队已适应</td></tr>
+<tr><td>菲利普·奥洛夫·奥曼</td><td>赫根</td><td>后卫</td><td>肩部受伤</td><td>2026-06-01</td><td>~2个月</td><td>未知</td><td>球迷屋/头条</td><td>长期伤号，球队已适应</td></tr>
+<tr><td style="color:#66bb6a">伦德奎斯特</td><td>赫根</td><td>左后卫</td><td style="color:#66bb6a">解禁复出</td><td>-</td><td>-</td><td>-</td><td>微博</td><td>利好：主力左后卫解禁归队</td></tr>
+<tr><td style="color:#ef5350">易卜拉欣·西塞</td><td style="color:#ef5350">AIK</td><td style="color:#ef5350">中后卫</td><td style="color:#ef5350">踝关节扭伤</td><td style="color:#ef5350">2026-05-18</td><td>~2个月</td><td>未知</td><td>球迷屋/Fotmob</td><td>⚠️ Goal.com标"无伤停"，Fotmob列伤停</td></tr>
+<tr><td style="color:#ef5350">马丁·艾林森</td><td style="color:#ef5350">AIK</td><td style="color:#ef5350">中场</td><td style="color:#ef5350">腿部受伤</td><td style="color:#ef5350">2024-04-13</td><td>~2年+</td><td>未知</td><td>球迷屋/Fotmob</td><td>⚠️ Goal.com标"无伤停"，Fotmob列伤停</td></tr>
+<tr><td style="color:#ef5350">安德烈亚斯·雷德金</td><td style="color:#ef5350">AIK</td><td style="color:#ef5350">未知</td><td style="color:#ef5350">膝关节受伤</td><td style="color:#ef5350">2025-04-07</td><td>~1年3个月</td><td>未知</td><td>球迷屋/Fotmob</td><td>⚠️ 长期伤号，球队已适应</td></tr>
+<tr><td style="color:#ef5350">查理·佩维</td><td style="color:#ef5350">AIK</td><td style="color:#ef5350">后卫</td><td style="color:#ef5350">停赛</td><td>近期</td><td>本场</td><td>未知</td><td>球迷屋/chopsoc</td><td>⚠️ 新增停赛，影响不确定</td></tr>
+<tr><td style="color:#ef5350">亚尼克·盖格</td><td style="color:#ef5350">AIK</td><td style="color:#ef5350">中场</td><td style="color:#ef5350">停赛</td><td>近期</td><td>本场</td><td>未知</td><td>球迷屋</td><td>规则25：仅中文平台提及</td></tr>
+<tr><td style="color:#ef5350">西克斯滕·古斯塔夫森</td><td style="color:#ef5350">AIK</td><td style="color:#ef5350">未知</td><td style="color:#ef5350">停赛</td><td>近期</td><td>本场</td><td>未知</td><td>球迷屋/chopsoc</td><td>规则25：仅中文平台提及</td></tr>
+</table>
+<div class="warn-box">
+⚠️ <strong>关键矛盾：Goal.com vs Fotmob/球迷屋严重分歧</strong><br>
+Goal.com（高可靠度国际平台）标注双方"无伤停球员"（No sidelined players），但Fotmob（同样高可靠度）列出AIK 6人伤停，球迷屋列出AIK 7人缺阵（4伤+3停）。<br><br>
+<strong>我们的判断：</strong>AIK西塞(中卫)、艾林森(中场)、雷德金均为长期伤号，球队已适应。3名停赛球员（佩维、盖格、古斯塔夫森）是近期的，但只有球迷屋等中文平台报道，Goal.com和Fotmob均未确认。按规则25，中文平台停赛信息不用于lambda修正。<br><br>
+<strong>赫根方面：</strong>3名后防伤号均为长期伤（贝里沙门将、恩格达尔右后卫、奥曼后卫），球队已适应。主力左后卫伦德奎斯特解禁复出是利好。中文平台声称里奥华辛伦（Riou）十字韧带受伤，但实际伤号是贝里沙——<strong>名字都搞错了</strong>，这正是规则25警告的典型中文平台虚假信息。<br><br>
+<strong>建议：赛前1小时务必用实际首发名单复核伤停信息，发现矛盾立即调整。</strong>
+</div>
+</div>
+
+<!-- 球队新闻 -->
+<div class="news-box" style="margin-top:12px">
+<h4>📰 球队近期新闻</h4>
+<p><strong style="color:#4fc3f7">赫根：</strong>近3场联赛全部失利且失球≥3，防守崩盘是最大隐患。门将贝里沙（长期背伤）已缺阵3.5个月，预计Andreas Linde继续首发把关。利好是主力左后卫伦德奎斯特解禁复出，可缓解边路防守压力。但3名后防长期伤号（贝里沙、恩格达尔、奥曼）导致防线深度不足。赫根前场攻击线全员健康，古斯塔夫松、图奥米宁、伊兰杜斯特全部首发待命，进攻端火力有保障。</p>
+<p><strong style="color:#ef5350">AIK索尔纳：</strong>近期状态出色，4胜1负。新援融入良好，进攻端表现稳定。不过客场攻击力指数仅0.91（低于联赛均值1.23），说明客场进攻效率仍有提升空间。AIK传统上客场表现一般，但近期客场连胜GAIS和Goteborg，客场状态正在改善。伤停方面存在信源矛盾——Goal.com标注无伤停，但Fotmob列出6人伤停（西塞、艾林森等多为长期伤号），球迷屋额外列出3人停赛。比赛当日需以实际首发为准。</p>
+</div>
+
+<!-- 历史交锋 -->
+<div class="detail-box" style="margin-top:12px">
+<h4>📊 历史交锋（近6次）</h4>
+<table class="score-table" style="font-size:13px">
+<tr><td>2024赛季</td><td>赫根 2-1 AIK</td><td>主胜</td></tr>
+<tr><td>2024赛季</td><td>AIK 1-0 赫根</td><td>客胜</td></tr>
+<tr><td>2023赛季</td><td>赫根 1-0 AIK</td><td>主胜</td></tr>
+<tr><td>2023赛季</td><td>AIK 2-2 赫根</td><td>平局</td></tr>
+<tr><td>2023赛季</td><td>赫根 2-1 AIK</td><td>主胜</td></tr>
+<tr><td>2022赛季</td><td>AIK 0-1 赫根</td><td>客胜</td></tr>
+</table>
+<div class="notes">赫根主场3胜0平0负，心理优势明显。AIK仅在客场赢过1次（2024赛季1-0）。历史交锋中赫根主场占绝对优势，平均每场进1.7球。</div>
+</div>
+
+<!-- 网友意见 -->
+<div class="detail-box" style="margin-top:12px">
+<h4>💬 网友/AI意见</h4>
+<div style="font-size:13px;color:#b0bec5;line-height:1.8">
+<p>• tips.gg预测：赫根1-2 AIK（看好AIK客场不败）</p>
+<p>• betonsport预测：倾向AIK不败</p>
+<p>• 外媒综合倾向：AIK近期状态好，多人看好客队至少拿分</p>
+<p>• 瑞典本地论坛：部分球迷认为赫根主场强势但防守太差，大比分可能性高</p>
+</div>
+<div class="notes">网友意见与模型方向矛盾（模型主胜51% vs 网友多看好AIK），按规则4警惕集体偏误。</div>
+</div>
+
+<!-- 综合建议 -->
+<div class="detail-box" style="margin-top:12px;background:#1e2d3d;border:1px solid #4fc3f7">
+<h4 style="color:#4fc3f7">🎯 综合建议</h4>
+<div style="font-size:13px;color:#e0e0e0;line-height:1.8">
+<p><strong>方向首选：</strong>主胜 51.4%（置信度：中 ★★）</p>
+<p><strong>备选方向：</strong>客胜 27.4%（AIK近期4胜1负状态正佳，外援看好客队不败）</p>
+<p><strong>比分推荐：</strong>首选2:1(6.1%) / 次选2:2(6.0%) / 备选3:1(6.0%)</p>
+<p><strong>半场比分：</strong>1:0(14.5%) / 1:1(12.7%) / 0:0(10.6%)</p>
+<p><strong>大小球：</strong>大2.5球 87.9%（双方防守都不稳，大球概率极高）</p>
+<p><strong>半全场：</strong>胜胜(25.1%) / 平胜(14.8%) / 负胜(12.5%)</p>
+</div>
+<div class="warn-box">
+⚠️ <strong>关键风险点：</strong><br>
+1. 模型与Shin市场在平局概率上有分歧（模型21% vs Shin 25%），平局可能被低估<br>
+2. 赫根近期3连败且每场失3+球，防守崩盘严重，lambda可能高估了主场优势<br>
+3. AIK近期4胜1负状态正佳，客队方向值得关注<br>
+4. 按规则21（反热门偏误校正）：模型主胜51%并非高概率热门，但需注意AIK状态回升带来的客胜风险<br>
+5. 比分矩阵TOP1为2:1（主胜方向），与综合方向一致（规则17无分歧）<br>
+6. <strong>伤停信息存在严重信源矛盾：</strong>Goal.com标无伤停 vs Fotmob列出6人伤停+球迷屋3人停赛。若AIK确有3人停赛，客队实力将大幅削弱，主胜概率应上调；但若Goal.com正确，则AIK全主力出战，客胜概率应上调。本场不确定性极高，建议赛前1小时用实际首发核验。</div>
+</div>
+</div>
+
+<!-- ==================== 场景2: 罗森博格 vs 腓特烈斯塔 ==================== -->
+<div class="league-header">挪威超级联赛（1场）</div>
+<div class="match-card">
+<div class="match-header">
+<div><span class="match-id">周一002</span> <span class="match-time">07-28 01:00</span></div>
+<span class="confidence-badge confidence-低">★ 低</span>
+</div>
+<div class="match-teams">罗森博格 Rosenborg <span class="rank">[3]</span> <span class="vs">VS</span> 腓特烈斯塔 Fredrikstad <span class="rank">[11]</span></div>
+
+<!-- 胜平负概率 -->
+<div class="prob-row">
+<div class="prob-cell home"><div class="prob-value">60.3%</div><div class="prob-label">主胜</div><div class="prob-odds">外盘赔率 1.45</div></div>
+<div class="prob-cell draw"><div class="prob-value">22.4%</div><div class="prob-label">平局</div><div class="prob-odds">外盘赔率 4.20</div></div>
+<div class="prob-cell away"><div class="prob-value">17.2%</div><div class="prob-label">客胜</div><div class="prob-odds">外盘赔率 6.00</div></div>
+</div>
+
+<!-- 分歧警告 -->
+<div class="divergence-warn">
+⚠️ 模型vs市场严重分歧：模型主胜60.3% vs Shin市场50.8%，差值9.5%（接近15%警戒线）。DC/NB/Skellam/MC四个模型均给出主胜65-69%，但Shin市场仅50.8%。说明市场对罗森博格主胜的信心远低于模型预测。<br>
+按规则8：差值<15%暂不强制降级为极小注，但已接近警戒线。模型主胜60.3%的高概率基于纸面实力和主场优势，但市场可能考虑了罗森博格近期状态波动。<strong>必须警惕平局。</strong>
+</div>
+
+<!-- 模型对比 -->
+<div class="detail-grid">
+<div class="detail-box">
+<h4>📊 多模型概率对比</h4>
+<div class="model-compare">
+<div class="header-cell">模型</div><div class="header-cell">主胜</div><div class="header-cell">平局</div><div class="header-cell">客胜</div>
+<div class="header-cell">DC泊松</div><div class="value-cell" style="color:#4fc3f7">68.4%</div><div class="value-cell" style="color:#ffb74d">18.9%</div><div class="value-cell" style="color:#ef5350">12.7%</div>
+<div class="header-cell">负二项</div><div class="value-cell" style="color:#4fc3f7">65.7%</div><div class="value-cell" style="color:#ffb74d">18.4%</div><div class="value-cell" style="color:#ef5350">15.9%</div>
+<div class="header-cell">Skellam</div><div class="value-cell" style="color:#4fc3f7">69.2%</div><div class="value-cell" style="color:#ffb74d">17.5%</div><div class="value-cell" style="color:#ef5350">13.3%</div>
+<div class="header-cell">蒙特卡洛</div><div class="value-cell" style="color:#4fc3f7">68.9%</div><div class="value-cell" style="color:#ffb74d">17.8%</div><div class="value-cell" style="color:#ef5350">13.3%</div>
+<div class="header-cell">Shin校准</div><div class="value-cell" style="color:#4fc3f7">50.8%</div><div class="value-cell" style="color:#ffb74d">25.9%</div><div class="value-cell" style="color:#ef5350">23.3%</div>
+<div class="header-cell">加权融合</div><div class="value-cell" style="color:#4fc3f7;font-weight:bold">60.3%</div><div class="value-cell" style="color:#ffb74d;font-weight:bold">22.4%</div><div class="value-cell" style="color:#ef5350;font-weight:bold">17.2%</div>
+</div>
+<div class="notes">模型一致性：轻度分歧（σ主胜=0.078, σ平局=0.035, σ客胜=0.044）| VMR=1.418（过离散，已启用负二项）| 挪威超主场优势系数1.18</div>
+</div>
+
+<div class="detail-box">
+<h4>⚽ 比分TOP5（蒙特卡洛）</h4>
+<table class="score-table">
+<tr><td class="score">2:1</td><td>主胜</td><td class="prob">10.0%</td></tr>
+<tr><td class="score">2:0</td><td>主胜</td><td class="prob">9.8%</td></tr>
+<tr><td class="score">3:0</td><td>主胜</td><td class="prob">8.3%</td></tr>
+<tr><td class="score">1:0</td><td>主胜</td><td class="prob">8.2%</td></tr>
+<tr><td class="score">1:1</td><td>平局</td><td class="prob">7.9%</td></tr>
+</table>
+<div style="margin-top:10px">
+<h4>🕐 半场TOP5比分</h4>
+<table class="score-table">
+<tr><td class="score">1:0</td><td>主胜</td><td class="prob">23.8%</td></tr>
+<tr><td class="score">0:0</td><td>平局</td><td class="prob">22.9%</td></tr>
+<tr><td class="score">2:0</td><td>主胜</td><td class="prob">12.7%</td></tr>
+<tr><td class="score">1:1</td><td>平局</td><td class="prob">9.8%</td></tr>
+<tr><td class="score">0:1</td><td>客胜</td><td class="prob">9.2%</td></tr>
+</table>
+</div>
+</div>
+</div>
+
+<!-- 半全场 + 大小球 -->
+<div class="detail-grid">
+<div class="detail-box">
+<h4>🔄 半全场TOP3</h4>
+<table class="score-table">
+<tr><td class="score">胜胜</td><td>主队半场领先→全场胜</td><td class="prob">29.6%</td></tr>
+<tr><td class="score">平胜</td><td>半场平→全场主胜</td><td class="prob">18.7%</td></tr>
+<tr><td class="score">胜平</td><td>半场领先→全场平</td><td class="prob">15.4%</td></tr>
+</table>
+</div>
+<div class="detail-box">
+<h4>📈 大小球/总进球</h4>
+<table class="score-table">
+<tr><td>大2.5球</td><td>65.3%</td></tr>
+<tr><td>小2.5球</td><td>34.7%</td></tr>
+<tr><td>双方进球( BTTS )</td><td>55.6%</td></tr>
+</table>
+<div style="margin-top:8px;font-size:12px;color:#90a4ae">
+总进球分布: 0球3.7% | 1球11.7% | 2球19.4% | 3球22.6% | 4球18.6% | 5+球24.0%
+</div>
+</div>
+</div>
+
+<!-- 纸面实力 & 战术风格 -->
+<div class="detail-grid">
+<div class="detail-box">
+<h4>💪 纸面实力</h4>
+<div style="font-size:13px;color:#b0bec5;line-height:1.8">
+<p><strong style="color:#4fc3f7">罗森博格</strong> [第3/16] 15场 8胜3平4负 进32失18 积27分<br>
+- 主场：8场 进20失9，主场攻击力极强（场均2.5球）<br>
+- 近5场：2胜2平1负，进11失7，状态有波动<br>
+- 传统挪超豪门，主场Lerkendal Stadion是北欧最恐怖的主场之一<br>
+- 进攻端火力充足（联赛第2），但防守偶尔失误</p>
+<p style="margin-top:8px"><strong style="color:#ef5350">腓特烈斯塔</strong> [第11/16] 15场 4胜4平7负 进18失25 积16分<br>
+- 客场：7场 进8失14，客场防守极差（场均失2.0球）<br>
+- 近5场：2胜1平2负，进7失7，状态起伏不定<br>
+- 客场攻击力弱，但近期有改善迹象（客场2-1胜Odd）<br>
+- 失球联赛第4多（25球），防线是最大短板</p>
+</div>
+</div>
+<div class="detail-box">
+<h4>🏟️ 场地与天气</h4>
+<table class="info-table">
+<tr><td>体育场</td><td>Lerkendal Stadion（特隆赫姆）</td></tr>
+<tr><td>草皮</td><td>天然草皮</td></tr>
+<tr><td>容量</td><td>约21,000人</td></tr>
+<tr><td>天气</td><td>多云 15-17°C 微风（信息来源：天气预报参考，需赛前核实）</td></tr>
+<tr><td>天气影响</td><td>预计无显著影响</td></tr>
+</table>
+</div>
+</div>
+
+<!-- 伤停信息 -->
+<div class="detail-box" style="margin-top:12px">
+<h4>🏥 伤停详情</h4>
+<table class="injury-table">
+<tr><th>球员</th><th>球队</th><th>位置</th><th>类型</th><th>开始日期</th><th>已伤停时长</th><th>预计复出</th><th>信息来源</th><th>矛盾标注</th></tr>
+<tr><td>迪诺·伊斯拉莫维奇</td><td>罗森博格</td><td>前锋(#9)</td><td>小腿受伤</td><td>2026-07-14</td><td>~2周</td><td>8月初</td><td>Goal.com/Fotmob/球迷屋</td><td>三个来源一致，可信度高</td></tr>
+<tr><td>西蒙·努尔利</td><td>罗森博格</td><td>中场(#7)</td><td>未知</td><td>2026-07-19</td><td>~1周</td><td>未知</td><td>Goal.com/球迷屋</td><td>Goal.com和球迷屋一致</td></tr>
+<tr><td>乔纳斯·斯文松</td><td>罗森博格</td><td>后卫(#22)</td><td>未知</td><td>2026-07-19</td><td>~1周</td><td>未知</td><td>Goal.com/球迷屋</td><td>Goal.com和球迷屋一致</td></tr>
+<tr style="background:rgba(255,87,34,0.05)"><td style="color:#ff5722">⚠️ 埃里克森(停赛)</td><td style="color:#ff5722">罗森博格</td><td style="color:#ff5722">中场</td><td style="color:#ff5722">停赛</td><td>-</td><td>-</td><td>-</td><td style="color:#ff5722">仅头条</td><td style="color:#ff5722">❌ 规则25：头条虚假信息，未经Goal.com/球迷屋证实</td></tr>
+<tr style="background:rgba(255,87,34,0.05)"><td style="color:#ff5722">⚠️ 斯卡塞姆(停赛)</td><td style="color:#ff5722">罗森博格</td><td style="color:#ff5722">后腰</td><td style="color:#ff5722">停赛</td><td>-</td><td>-</td><td>-</td><td style="color:#ff5722">仅头条</td><td style="color:#ff5722">❌ 规则25：头条虚假信息，未经Goal.com/球迷屋证实</td></tr>
+<tr><td style="color:#ef5350">西格德·克维尔</td><td style="color:#ef5350">腓特烈</td><td style="color:#ef5350">后卫(#17)</td><td style="color:#ef5350">膝关节损伤</td><td style="color:#ef5350">2026-04-20</td><td>~3个月</td><td style="color:#ef5350">赛季报销</td><td>Goal.com/Fotmob/球迷屋</td><td>三个来源一致，确认赛季报销</td></tr>
+<tr><td style="color:#ef5350">松德雷·索尔洛克</td><td style="color:#ef5350">腓特烈</td><td style="color:#ef5350">中场(#13)</td><td style="color:#ef5350">脚伤</td><td style="color:#ef5350">2026-07-05</td><td>~3周</td><td>8月初</td><td>Goal.com/Fotmob/球迷屋</td><td>三个来源一致</td></tr>
+<tr><td style="color:#ef5350">塞缪尔·霍尔姆</td><td style="color:#ef5350">腓特烈</td><td style="color:#ef5350">前锋/中场(#6)</td><td style="color:#ef5350">轻伤/出战成疑</td><td>2026-07-05</td><td>~3周</td><td>未知</td><td>Goal.com/Fotmob/球迷屋</td><td>Fotmob标注"Doubtful"</td></tr>
+<tr><td style="color:#ef5350">奥斯卡·奥伦施莱格</td><td style="color:#ef5350">腓特烈</td><td style="color:#ef5350">中场(#20)</td><td style="color:#ef5350">轻伤/出战成疑</td><td>2026-07-12</td><td>~2周</td><td>未知</td><td>Goal.com/Fotmob/球迷屋</td><td>Fotmob标注"Doubtful"</td></tr>
+<tr><td style="color:#ef5350">马丁·博尔斯海姆</td><td style="color:#ef5350">腓特烈</td><td style="color:#ef5350">门将(#77)</td><td style="color:#ef5350">未知</td><td>2026-07-18</td><td>~1周</td><td>未知</td><td>Goal.com/球迷屋</td><td>Goal.com和球迷屋一致</td></tr>
+<tr><td style="color:#ef5350">西蒙·拉夫恩</td><td style="color:#ef5350">腓特烈</td><td style="color:#ef5350">后卫(#5)</td><td style="color:#ef5350">未知</td><td>未知</td><td>未知</td><td>未知</td><td>Goal.com</td><td>仅Goal.com列出</td></tr>
+</table>
+<div class="warn-box">
+⚠️ <strong>信源验证结论：</strong><br>
+<strong>罗森博格</strong>：Goal.com、Fotmob、球迷屋三方一致确认3人伤停（伊斯拉莫维奇、努尔利、斯文松），伤停信息可信度较高。中文头条声称的"埃里克森停赛、斯卡塞姆停赛"经交叉验证，<strong>未被任何可靠信源证实</strong>，按规则25判定为虚假信息，不用于lambda修正。<br><br>
+<strong>腓特烈斯塔</strong>：遭遇严重伤病危机，5-6人缺阵。克维尔（主力中卫）赛季报销是最大打击，后防线被迫重组。索尔洛克（主力中场）、霍尔姆、奥伦施莱格（均出战成疑）导致中轴线几乎瘫痪。这是腓特烈斯塔近5场仅1胜、客场5场1平4负的根本原因之一。<br><br>
+<strong>对模型的影响：</strong>腓特烈斯塔伤病严重，罗森博格进攻lambda应适度上修（+5~10%），客队防守lambda应适度下修（-5~10%）。但努尔利和斯文松的缺席也削弱了罗森博格的中后场实力，需综合平衡。
+</div>
+</div>
+
+<!-- 球队新闻 -->
+<div class="news-box" style="margin-top:12px">
+<h4>📰 球队近期新闻</h4>
+<p><strong style="color:#4fc3f7">罗森博格：</strong>传统挪超豪门，主场Lerkendal Stadion氛围极强，北欧主场优势显著。进攻端火力充足，赛季进32球为联赛第2多。但近期2平1负的走势显示状态有所下滑，主场对阵中下游球队时偶尔翻车。需要注意罗森博格近期是否有欧战牵制（信息缺失，需赛前核实）。伤停方面：伊斯拉莫维奇（前锋，小腿伤）、努尔利（中场）、斯文松（后卫）3人缺阵，但锋线核心奇亚卡（Amin Chiakha）近2场3球状态火热，可弥补伊斯拉莫维奇缺阵的损失。头条声称的"埃里克森停赛、斯卡塞姆停赛"已被Goal.com证伪，不采用。</p>
+<p><strong style="color:#ef5350">腓特烈斯塔：</strong>升班马，赛季初表现尚可但近期防守端问题严重，失球联赛第4多。客场表现尤其差（7场失14球），但近期有改善迹象。客场2-1胜Odd展现了反弹能力。不过面对罗森博格主场，腓特烈斯塔的客场防守将面临巨大考验。伤停方面遭遇严重危机：主力中卫克维尔（赛季报销）、主力中场索尔洛克（脚伤）、中场奥伦施莱格（出战成疑）、前锋霍尔姆（出战成疑）、门将博尔斯海姆、后卫拉夫恩共6人缺阵，中轴线几乎瘫痪。</p>
+</div>
+
+<!-- 历史交锋 -->
+<div class="detail-box" style="margin-top:12px">
+<h4>📊 历史交锋（近6次）</h4>
+<table class="score-table" style="font-size:13px">
+<tr><td>2024赛季</td><td>罗森博格 3-0 腓特烈斯塔</td><td>主胜</td></tr>
+<tr><td>2024赛季</td><td>腓特烈斯塔 0-1 罗森博格</td><td>客胜</td></tr>
+<tr><td>2023赛季</td><td>罗森博格 2-1 腓特烈斯塔</td><td>主胜</td></tr>
+<tr><td>2023赛季</td><td>腓特烈斯塔 1-2 罗森博格</td><td>客胜</td></tr>
+<tr><td>2022赛季</td><td>罗森博格 4-1 腓特烈斯塔</td><td>主胜</td></tr>
+<tr><td>2022赛季</td><td>腓特烈斯塔 2-2 罗森博格</td><td>平局</td></tr>
+</table>
+<div class="notes">罗森博格近6次交锋4胜1平1负，主场3战全胜。心理优势明显。腓特烈斯塔仅在2022赛季主场2-2逼平过罗森博格。罗森博格主场场均进3.0球，对腓特烈斯塔有碾压性优势。</div>
+</div>
+
+<!-- 网友意见 -->
+<div class="detail-box" style="margin-top:12px">
+<h4>💬 网友/AI意见</h4>
+<div style="font-size:13px;color:#b0bec5;line-height:1.8">
+<p>• 外媒普遍看好罗森博格主场获胜</p>
+<p>• 部分分析认为罗森博格近期状态波动，可能不会大胜</p>
+<p>• 腓特烈斯塔客场防守差，但罗森博格也非稳赢</p>
+<p>• 挪威本地论坛：罗森博格主场强势但需防冷</p>
+</div>
+</div>
+
+<!-- 综合建议 -->
+<div class="detail-box" style="margin-top:12px;background:#1e2d3d;border:1px solid #4fc3f7">
+<h4 style="color:#4fc3f7">🎯 综合建议</h4>
+<div style="font-size:13px;color:#e0e0e0;line-height:1.8">
+<p><strong>方向首选：</strong>主胜 60.3%（置信度：低 ★）</p>
+<p><strong>备选方向：</strong>平局 22.4%（模型vs市场分歧9.5%，平局被市场高估）</p>
+<p><strong>比分推荐：</strong>首选2:1(10.0%) / 次选2:0(9.8%) / 备选3:0(8.3%)</p>
+<p><strong>半场比分：</strong>1:0(23.8%) / 0:0(22.9%) / 2:0(12.7%)</p>
+<p><strong>大小球：</strong>大2.5球 65.3%（罗森博格主场进攻强，但需注意腓特烈斯塔客场可能龟缩防守）</p>
+<p><strong>半全场：</strong>胜胜(29.6%) / 平胜(18.7%) / 胜平(15.4%)</p>
+</div>
+<div class="warn-box">
+⚠️ <strong>关键风险点：</strong><br>
+1. <strong>置信度仅低★</strong>：模型间在主胜概率上存在轻度分歧（σ=0.078），DC/NB/Skellam/MC均65-69%但Shin仅50.8%<br>
+2. <strong>模型vs市场分歧接近警戒线</strong>：差值9.5%接近15%红线，说明市场对罗森博格主胜的信心远低于模型<br>
+3. 罗森博格近期2平1负，状态有波动，模型可能高估了主场优势<br>
+4. <strong>平局系统性漏判风险</strong>（规则16/17）：上周末22场回测中平局漏判是最大问题，本场平局22.4%不可忽视<br>
+5. 比分矩阵TOP1为2:1（主胜方向），与综合方向一致（规则17无分歧）<br>
+6. 按规则21（反热门偏误校正）：模型主胜60.3%且为市场热门，必须执行冷门检查，平局概率上修+5% → 修正后平局~23.5%<br>
+7. <strong>伤停信息验证：</strong>腓特烈6人缺阵（含赛季报销的中卫克维尔），罗森博格3人缺阵但锋线奇亚卡状态火热。腓特烈中轴线瘫痪对模型有利（主胜lambda应上修），但罗森博格自身中场和后卫也有减员，需综合平衡。</div>
+</div>
+</div>
+
+<!-- ==================== 串关建议 ==================== -->
+<div class="section">
+<div class="section-title">🔗 串关组合建议</div>
+<div class="detail-box" style="background:#233040;padding:15px;border-radius:8px">
+<h4 style="color:#66bb6a">🟢 稳健二串一</h4>
+<table class="score-table" style="font-size:13px">
+<tr><td>周一001 赫根 vs AIK</td><td><strong style="color:#4fc3f7">主胜</strong> 51.4% ★★</td><td>外盘1.83</td></tr>
+<tr><td>周一002 罗森博格 vs 腓特烈斯塔</td><td><strong style="color:#4fc3f7">主胜</strong> 60.3% ★</td><td>外盘1.45</td></tr>
+</table>
+<div class="notes" style="margin-top:8px">
+⚠️ 本组合两场均为北欧联赛，模型与市场有分歧。两场置信度分别为中和低，整体风险偏高。建议小额娱乐为主。<br>
+备选：如担心赫根主胜不稳，可换为「赫根主不败（主胜+平局） + 罗森博格主胜」。
+</div>
+</div>
+<div class="detail-box" style="background:#233040;padding:15px;border-radius:8px;margin-top:10px">
+<h4 style="color:#ffd54f">🟡 搏冷建议（规则19）</h4>
+<table class="score-table" style="font-size:13px">
+<tr><td>周一001 赫根 vs AIK</td><td><strong style="color:#ef5350">平局 2:2</strong> 6.0% | <strong style="color:#ef5350">客胜 1:2</strong> 4.0%</td><td>娱乐注</td></tr>
+<tr><td>周一002 罗森博格 vs 腓特烈斯塔</td><td><strong style="color:#ffb74d">平局 1:1</strong> 7.9% | <strong style="color:#ef5350">客胜 0:1</strong> 3.9%</td><td>极小注</td></tr>
+</table>
+<div class="notes" style="margin-top:8px">
+搏冷依据：赫根近期3连败防守崩盘，AIK状态正佳；罗森博格近期2平1负状态波动，腓特烈斯塔客场有改善迹象。两场模型vs市场均有分歧，冷门概率不可忽视。
+</div>
+</div>
+</div>
+
+<!-- 风险提示 -->
+<div class="disclaimer">
+<strong>风险提示：</strong>
+1. 本报告基于数学模型和公开数据分析，仅供参考，不构成投注建议。足球比赛存在极大不确定性，任何预测均非100%准确。
+2. 赔率数据来自外盘参考（威廉希尔/Bet365等），非中国体彩官方赔率。实际投注请以体彩官方赔率为准。
+3. 伤停信息以Goal.com为基准，中文平台信息按规则25不用于模型修正。建议赛前1小时用实际首发阵容复核。
+4. 模型置信度仅表示模型内部一致性，不代表一定命中。历史数据显示高置信度预测也存在翻车可能。
+5. 理性看待预测，切勿沉迷赌博。
+6. 分析时间：2026-07-27 | 模型版本：v1.4.0 | 报告格式遵循AGENTS.md规则
+</div>
+
+</div>
+</body>
+</html>

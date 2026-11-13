@@ -1,0 +1,49 @@
+{
+  "date": "2026-08-30",
+  "day": "sunday",
+  "backtestDate": "2026-08-31",
+  "totalMatches": 25,
+  "hitRates": {
+    "direction_first_plus_second": {"hit": 19, "total": 25, "rate": "76.0%"},
+    "direction_first_only": {"hit": 14, "total": 25, "rate": "56.0%"},
+    "hafu_first_plus_second": {"hit": 18, "total": 25, "rate": "72.0%"},
+    "hafu_first_only": {"hit": 15, "total": 25, "rate": "60.0%"},
+    "ttg_top2": {"hit": 13, "total": 25, "rate": "52.0%"},
+    "htft_top3": {"hit": 15, "total": 25, "rate": "60.0%"},
+    "crs_top5": {"hit": 8, "total": 25, "rate": "32.0%"}
+  },
+  "parlayBacktest": {
+    "hitSchemes": 5,
+    "totalSchemes": 27,
+    "rate": "18.5%",
+    "directionSerial": {"hit": 2, "total": 3},
+    "hafuSerial": {"hit": 2, "total": 3},
+    "hybridSerial": {"hit": 1, "total": 4},
+    "entertainmentSerial": {"hit": 0, "total": 15},
+    "soloScore": {"hit": 1, "total": 2, "note": "单挑比分① 013皇马4-0(约8.0倍)命中"}
+  },
+  "misses": {
+    "directionMoreThanSecond": ["002", "004", "005", "009", "016", "023"],
+    "bigTotalGoalsMissed": [
+      {"match": "001", "actual": 7, "topPredicted": 4},
+      {"match": "005", "actual": 5, "topPredicted": 4},
+      {"match": "007", "actual": 6, "topPredicted": 4},
+      {"match": "011", "actual": 5, "topPredicted": 3},
+      {"match": "014", "actual": 7, "topPredicted": 3},
+      {"match": "018", "actual": 5, "topPredicted": 4},
+      {"match": "025", "actual": 6, "topPredicted": 3}
+    ]
+  },
+  "lessonsKey": {
+    "L068": "★★★高置信度需并入杯赛消耗降级：006费耶诺德主胜81%被海牙2-2逼平，主队周中欧战消耗+荷甲势均对决被低估，一场拖垮6个串关。加固规则46:主队杯赛消耗+对手非降级弱旅→最高★★。",
+    "L069": "让负容错的死角=受让方主队爆冷赢球：稳健让球串(020+005让负)失败因两场主队(005索尔纳3-2赢、020卡利亚里其实输球但平)未按受让不败兑现。让(+1)负=受让方(主队)平或输，主队爆冷赢球时失效，需识别主场爆冷能力场次。",
+    "L070": "大球覆盖仍不足≥5球档：实际≥5球7场全未覆盖(001/005/007/011/014/018/025)，TTG TOP2最高4球。规则65 Tier2给4球档仍不够，残阵防线(011不来梅失5球)+对攻场(007挪超/014曼联/001荷甲/025美职)需覆盖5球+。",
+    "L071": "碾压场五维全中是天花板：013皇马4-0+022弗拉门戈3-0两场★★★极限碾压场方向/让球/总进球/半全场/比分全中，内含单挑比分①13-0命中，是串关底仓+比分王牌的最优来源。"
+  },
+  "sourceFiles": {
+    "predictions": "memory/predictions/20260830_sunday/predictions_260830.json",
+    "results": "memory/backtests/20260831_sunday/results_260830.json",
+    "analysisReport": "reports/analysis/20260830_sunday_analysis_zhihu.md",
+    "backtestReport": "reports/backtest/backtest_20260830_sunday_zhihu.md"
+  }
+}
